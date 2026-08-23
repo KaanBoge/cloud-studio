@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cloud Crushing Studio</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --page: #f4f6f7; --surface: #fdfefe; --ink: #16191d; --muted: #646b73;
+    --faint: #a3a9b0; --line: #e2e6e9; --chip: #eef1f3;
+    --accent: #1f7a8c; --hot: #b0357f; --good: #1a8a5a; --warn: #b07c10;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --page: #101214; --surface: #191c1f; --ink: #eef0f1; --muted: #9aa1a8;
+      --faint: #6b7178; --line: #2b2f33; --chip: #22262a;
+      --accent: #35b3c9; --hot: #d95fa8; --good: #2fae76; --warn: #d09a2a;
+    }
+  }
+  :root[data-theme="light"] {
+    color-scheme: light;
+    --page: #f4f6f7; --surface: #fdfefe; --ink: #16191d; --muted: #646b73;
+    --faint: #a3a9b0; --line: #e2e6e9; --chip: #eef1f3;
+    --accent: #1f7a8c; --hot: #b0357f; --good: #1a8a5a; --warn: #b07c10;
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --page: #101214; --surface: #191c1f; --ink: #eef0f1; --muted: #9aa1a8;
+    --faint: #6b7178; --line: #2b2f33; --chip: #22262a;
+    --accent: #35b3c9; --hot: #d95fa8; --good: #2fae76; --warn: #d09a2a;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--page); color: var(--ink);
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.5; }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 28px 20px 60px; }
+  .eyebrow { font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin: 0 0 4px; }
+  h1 { font-size: 27px; font-weight: 650; margin: 0 0 2px; }
+  .sub { color: var(--muted); font-size: 14px; margin: 0 0 18px; max-width: 88ch; }
+  nav.tabs { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 18px; border-bottom: 1px solid var(--line); padding-bottom: 10px; }
+  nav.tabs button { font: 600 13.5px system-ui; padding: 7px 14px; border-radius: 999px; border: 1.5px solid var(--line); background: var(--surface); color: var(--muted); cursor: pointer; }
+  nav.tabs button.on { border-color: var(--accent); color: #fff; background: var(--accent); }
+  nav.tabs button:focus-visible, .rebtns button:focus-visible, .mini:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .toolbar { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center;
+    background: color-mix(in srgb, var(--surface) 86%, transparent); backdrop-filter: blur(8px);
+    border: 1px solid var(--line); border-radius: 12px; padding: 10px 14px; margin-bottom: 16px;
+    position: sticky; top: 10px; z-index: 20; }
+  .rebtns { display: flex; flex-wrap: wrap; gap: 6px; }
+  .rebtns button { font: 600 12.5px system-ui; padding: 4px 11px; border-radius: 999px; border: 1.5px solid var(--line); background: var(--surface); color: var(--muted); cursor: pointer; }
+  .rebtns button.on { border-color: var(--accent); color: var(--accent); background: color-mix(in srgb, var(--accent) 10%, transparent); }
+  .lab { font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--faint); }
+  .mini { font: 600 13px system-ui; padding: 4px 12px; border-radius: 7px; border: 1.5px solid var(--line); background: var(--surface); color: var(--muted); cursor: pointer; }
+  .mini:hover { color: var(--accent); border-color: var(--accent); }
+  .panel { display: none; }
+  .panel.on { display: block; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 14px; }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; box-shadow: 0 1px 3px color-mix(in srgb, var(--ink) 6%, transparent); }
+  .card h3 { font-size: 14px; font-weight: 650; margin: 0 0 2px; }
+  .card h3 .chi { color: var(--hot); }
+  .card .cap { color: var(--faint); font-size: 11.5px; margin: 2px 0 8px; }
+  .card img { width: 100%; display: block; border-radius: 8px; background: #000; cursor: zoom-in; aspect-ratio: 2 / 1; object-fit: cover; }
+  .fr { display: flex; align-items: center; gap: 10px; margin-top: 8px; font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .fr input { flex: 1; accent-color: var(--accent); height: 22px; }
+  video { width: 100%; border-radius: 8px; background: #000; display: block; }
+  #lightbox { position: fixed; inset: 0; background: color-mix(in srgb, var(--page) 92%, transparent); backdrop-filter: blur(6px); display: none; align-items: center; justify-content: center; z-index: 60; flex-direction: column; gap: 8px; cursor: zoom-out; }
+  #lightbox img { max-width: 96vw; max-height: 86vh; border-radius: 8px; }
+  #lightbox .cap { color: var(--muted); font-size: 13px; }
+  .twrap { display: grid; grid-template-columns: 250px 1fr; gap: 14px; }
+  #tlist button { display: block; width: 100%; text-align: left; margin-bottom: 6px; background: var(--surface); border: 1.5px solid var(--line); color: var(--ink); padding: 8px 11px; border-radius: 10px; cursor: pointer; font: 600 13px system-ui; }
+  #tlist button.on { border-color: var(--accent); color: var(--accent); background: color-mix(in srgb, var(--accent) 8%, transparent); }
+  #tlist .m { display: block; color: var(--faint); font-size: 11px; font-weight: 500; }
+  #cv, #vcv { width: 100%; height: 68vh; border-radius: 12px; border: 1px solid var(--line); background: #0a0d16; display: block; touch-action: none; }
+  #vlist button { display: block; width: 100%; text-align: left; margin-bottom: 6px; background: var(--surface); border: 1.5px solid var(--line); color: var(--ink); padding: 8px 11px; border-radius: 10px; cursor: pointer; font: 600 13px system-ui; }
+  #vlist button.on { border-color: var(--hot); color: var(--hot); background: color-mix(in srgb, var(--hot) 8%, transparent); }
+  #vlist .m { display: block; color: var(--faint); font-size: 11px; font-weight: 500; }
+  .ctl { display: flex; gap: 14px; align-items: center; margin-top: 8px; color: var(--muted); font-size: 12.5px; flex-wrap: wrap; }
+  .ctl input[type=range] { accent-color: var(--accent); width: 170px; }
+  .note { background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--accent); padding: 10px 14px; border-radius: 10px; color: var(--muted); font-size: 13.5px; max-width: 88ch; margin: 0 0 14px; }
+  @media (max-width: 900px) { .twrap { grid-template-columns: 1fr; } #cv { height: 55vh; }
+    #tlist { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 6px; }
+    #tlist button { min-width: 190px; flex: 0 0 auto; } }
+  @media (max-width: 640px) {
+    .wrap { padding: 14px 10px 40px; } h1 { font-size: 22px; }
+    .toolbar { position: static; padding: 8px 10px; }
+    nav.tabs { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: thin; }
+    nav.tabs button { white-space: nowrap; flex: 0 0 auto; padding: 6px 10px; font-size: 12.5px; }
+    .grid { grid-template-columns: 1fr; }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .panel.on { animation: panelIn .26s ease-out; }
+    @keyframes panelIn { from { opacity: 0; transform: translateY(7px); } to { opacity: 1; transform: none; } }
+    .card { transition: box-shadow .18s ease, transform .18s ease; }
+    .card:hover { transform: translateY(-1px); box-shadow: 0 4px 14px color-mix(in srgb, var(--ink) 10%, transparent); }
+    nav.tabs button, .rebtns button, .mini { transition: background .15s ease, color .15s ease, border-color .15s ease; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">Research companion for the Horizon cloud-crushing study</p>
+  <h1>Cloud Crushing Studio</h1>
+  <p class="sub">The cloud-crushing problem, run with identical physics across a growing roster of
+    simulation codes. Galleries, movies, and drag-to-orbit 3D views where gas density becomes
+    altitude; new codes, resolutions, and runs appear here as they finish computing.
+    Filter by code and overdensity; click any frame for full resolution.</p>
+
+  <nav class="tabs" id="tabs">
+    <button data-tab="gallery" class="on">Gallery</button>
+    <button data-tab="movies">Movies</button>
+    <button data-tab="terrain">3D terrain</button>
+    <button data-tab="volumes">3D volumes</button>
+  </nav>
+
+  <div class="toolbar">
+    <span class="lab">Code</span><div class="rebtns" id="codeF"></div>
+    <span class="lab">Overdensity</span><div class="rebtns" id="chiF"></div>
+    <button class="mini" id="themeBtn" style="margin-left:auto">Theme: Auto</button>
+  </div>
+
+  <section class="panel on" id="p-gallery"><div class="grid" id="gGrid"></div></section>
+
+  <section class="panel" id="p-movies"><div class="grid" id="mGrid"></div></section>
+
+  <section class="panel" id="p-terrain">
+    <div class="note">Density becomes altitude. Drag to orbit, scroll to zoom, right-drag to pan.
+      The wind blows left to right; the mountains are the cloud.</div>
+    <div class="twrap">
+      <div id="tlist"></div>
+      <div>
+        <canvas id="cv"></canvas>
+        <div class="ctl">
+          <label>Height <input id="exag" type="range" min="0" max="100" value="35"></label>
+          <span id="tinfo"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel" id="p-volumes">
+    <div class="note">A real 3D simulation, in your hands: nested density shells from the run itself.
+      Drag to orbit, scroll to zoom, right-drag to pan. The faint outer shell is shocked wind, the
+      middle shell is the cloud surface, the solid core is the densest gas. More runs join as they
+      finish computing.</div>
+    <div class="twrap">
+      <div id="vlist"><p class="note">No 3D runs harvested yet; they are computing now.</p></div>
+      <div>
+        <canvas id="vcv"></canvas>
+        <div class="ctl" id="vtoggles"></div>
+        <div class="ctl"><span id="vinfo"></span></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div id="lightbox"><img id="lbImg" alt=""><div class="cap" id="lbCap"></div></div>
+
+<script>var STUDIO_DATA = {}; var VOL_DATA = {};</script>
+<script src="data/manifest.js"></script>
+<script src="data/terrains.js"></script>
+<script>
+  (STUDIO_TERRAINS || []).forEach(function (id) {
+    var s = document.createElement("script"); s.src = "data/" + id + ".js"; document.head.appendChild(s);
+  });
+  (typeof STUDIO_VOLS !== "undefined" ? STUDIO_VOLS : []).forEach(function (nm) {
+    var s = document.createElement("script"); s.src = "data/" + nm + ".js"; document.head.appendChild(s);
+  });
+
+  // ---------- friendly naming: always "code + level/resolution + chi" ----------
+  function chiTxt(c) { return c === 0 ? "Sedov blast" : "χ = " + c; }
+  function movieLabel(m) {
+    var n = m.name, r;
+    var slow = /_slow$/.test(n) ? ", slow motion" : "";
+    var base = n.replace(/_slow$/, "");
+    if ((r = base.match(/^flash_chi(\d+)_lref(\d+)(_partial)?$/)))
+      return { title: "FLASH, level " + r[2] + (r[3] ? ", partial run" : "") + slow, chi: +r[1], code: "FLASH" };
+    if ((r = base.match(/^cloudcrush_lref(\d+)$/)))
+      return { title: "FLASH, level " + r[1] + slow, chi: 10, code: "FLASH" };
+    if ((r = base.match(/^apk_chi(\d+)_(\d+)$/)))
+      return { title: "AthenaPK on the GPU, " + r[2] + " grid" + slow, chi: +r[1], code: "AthenaPK (GPU)" };
+    if ((r = base.match(/^athw_chi(\d+)_(\d+)$/)))
+      return { title: "Athena 4.2 wind tunnel, " + r[2] + " grid" + slow, chi: +r[1], code: "Athena 4.2" };
+    if ((r = base.match(/^athena_shock_d(\d+)_(\d+)$/)))
+      return { title: "Athena 4.2, " + r[2] + " grid, old shock setup" + slow, chi: +r[1], code: "Athena 4.2" };
+    if ((r = base.match(/^athena_shk_cloud_(hires|ultra)$/)))
+      return { title: "Athena 4.2, " + (r[1] === "hires" ? "1800x900" : "3600x1800") + ", shock-driven" + slow, chi: 10, code: "Athena 4.2" };
+    return { title: n, chi: null, code: null };
+  }
+  function normCode(c) { return (c && c.indexOf("AthenaPK") === 0) ? "AthenaPK (GPU)" : c; }
+  function terrainLabel(d) {
+    var m = d.meta || {};
+    return { title: (m.code || "?") + ", " + (m.res || ""), chi: m.chi, t: m.t || "" };
+  }
+
+  // ---------- theme ----------
+  var themeSeq = ["Auto", "Light", "Dark"], themeIx = 0;
+  document.getElementById("themeBtn").onclick = function () {
+    themeIx = (themeIx + 1) % 3;
+    var v = themeSeq[themeIx];
+    if (v === "Auto") document.documentElement.removeAttribute("data-theme");
+    else document.documentElement.setAttribute("data-theme", v.toLowerCase());
+    this.textContent = "Theme: " + v;
+  };
+
+  // ---------- tabs ----------
+  document.querySelectorAll("nav.tabs button").forEach(function (b) {
+    b.onclick = function () {
+      document.querySelectorAll("nav.tabs button").forEach(function (x) { x.classList.remove("on"); });
+      b.classList.add("on");
+      document.querySelectorAll(".panel").forEach(function (p) { p.classList.remove("on"); });
+      document.getElementById("p-" + b.dataset.tab).classList.add("on");
+      if (b.dataset.tab === "terrain") initTerrain();
+      if (b.dataset.tab === "volumes" && window.initVols) window.initVols();
+    };
+  });
+
+  // ---------- filters ----------
+  var codeSel = "All", chiSel = "All";
+  function pill(el, items, sel, cb) {
+    el.innerHTML = "";
+    items.forEach(function (it) {
+      var b = document.createElement("button");
+      b.textContent = (it === "All") ? "All" : (typeof it === "number" ? chiTxt(it) : it);
+      if (String(sel) === String(it)) b.classList.add("on");
+      b.onclick = function () { cb(it); };
+      el.appendChild(b);
+    });
+  }
+  function drawFilters() {
+    var codes = ["All"], chis = ["All"];
+    function addC(c) { if (c && codes.indexOf(c) < 0) codes.push(c); }
+    function addX(x) { if (x !== null && x !== undefined && chis.indexOf(x) < 0) chis.push(x); }
+    STUDIO_GALLERY.forEach(function (g) { addC(g.code); addX(g.chi); });
+    STUDIO_MOVIES.forEach(function (m) { var l = movieLabel(m); addC(l.code); addX(l.chi); });
+    (STUDIO_TERRAINS || []).forEach(function (id) {
+      var d = STUDIO_DATA[id]; if (d && d.meta) { addC(normCode(d.meta.code)); addX(d.meta.chi); }
+    });
+    chis = [chis[0]].concat(chis.slice(1).sort(function (a, b) { return a - b; }));
+    pill(document.getElementById("codeF"), codes, codeSel, function (v) { codeSel = v; drawFilters(); drawAll(); });
+    pill(document.getElementById("chiF"), chis, chiSel, function (v) { chiSel = v; drawFilters(); drawAll(); });
+  }
+  function passes(code, chi) {
+    if (codeSel !== "All" && code !== codeSel) return false;
+    if (chiSel !== "All" && chi !== chiSel) return false;
+    return true;
+  }
+
+  // ---------- gallery ----------
+  function drawGallery() {
+    var grid = document.getElementById("gGrid"); grid.innerHTML = "";
+    STUDIO_GALLERY.forEach(function (g) {
+      if (!passes(g.code, g.chi)) return;
+      var card = document.createElement("div"); card.className = "card";
+      var h = document.createElement("h3");
+      h.innerHTML = g.code + ", " + g.kind + " <span class='chi'>" + chiTxt(g.chi) + "</span>";
+      var cap = document.createElement("div"); cap.className = "cap";
+      var img = document.createElement("img"); img.loading = "lazy";
+      var fr = document.createElement("div"); fr.className = "fr";
+      var rng = document.createElement("input"); rng.type = "range";
+      rng.min = 0; rng.max = g.files.length - 1; rng.value = g.files.length - 1;
+      var ftxt = document.createElement("span");
+      function setF(i) {
+        img.src = g.dir + "/" + g.files[i];
+        ftxt.textContent = "frame " + (Number(i) + 1) + " / " + g.files.length;
+      }
+      rng.oninput = function () { setF(this.value); };
+      setF(g.files.length - 1);
+      img.onclick = function () { openLb(img.src, g.code + ", " + g.kind + ", " + chiTxt(g.chi)); };
+      fr.appendChild(rng); fr.appendChild(ftxt);
+      card.appendChild(h); card.appendChild(cap); card.appendChild(img);
+      if (g.files.length > 1) card.appendChild(fr);
+      grid.appendChild(card);
+    });
+    if (!grid.children.length) grid.innerHTML = "<p class='note'>No runs match this filter yet.</p>";
+  }
+  function openLb(src, cap) {
+    document.getElementById("lbImg").src = src;
+    document.getElementById("lbCap").textContent = cap;
+    document.getElementById("lightbox").style.display = "flex";
+  }
+  document.getElementById("lightbox").onclick = function () { this.style.display = "none"; };
+
+  // ---------- movies ----------
+  function drawMovies() {
+    var grid = document.getElementById("mGrid"); grid.innerHTML = "";
+    STUDIO_MOVIES.forEach(function (m) {
+      var lb = movieLabel(m);
+      if (lb.code !== null && !passes(lb.code, lb.chi)) return;
+      var c = document.createElement("div"); c.className = "card";
+      var h = document.createElement("h3");
+      h.innerHTML = lb.title + (lb.chi !== null ? " <span class='chi'>" + chiTxt(lb.chi) + "</span>" : "");
+      var v = document.createElement("video");
+      v.controls = true; v.loop = true; v.preload = "metadata"; v.playsInline = true;
+      v.src = m.src;
+      c.appendChild(h); c.appendChild(v); grid.appendChild(c);
+    });
+    if (!grid.children.length) grid.innerHTML = "<p class='note'>No movies match this filter yet.</p>";
+  }
+  window.studioFilters = function () { return { code: codeSel, chi: chiSel }; };
+  window.studioPasses = passes;
+  window.studioNormCode = normCode;
+  function drawAll() {
+    drawGallery(); drawMovies();
+    if (window.refreshTerrainList) window.refreshTerrainList();
+    if (window.refreshVolList) window.refreshVolList();
+  }
+  drawFilters(); drawAll();
+  window.addEventListener("load", function () { drawFilters(); drawAll(); });
+
+</script>
+
+<script type="importmap">
+  {"imports": {"three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+               "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"}}
+</script>
+<script type="module">
+  import * as THREE from "three";
+  import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+
+  var started = false, scene, cam, ren, ctrl, mesh, curId = null;
+  var VIRIDIS = [[68,1,84],[72,40,120],[62,74,137],[49,104,142],[38,130,142],
+                 [31,158,137],[53,183,121],[109,205,89],[180,222,44],[253,231,37]];
+  function vmap(t) {
+    var x = Math.max(0, Math.min(0.9999, t)) * (VIRIDIS.length - 1);
+    var i = Math.floor(x), f = x - i, a = VIRIDIS[i], b = VIRIDIS[i + 1];
+    return [a[0]+(b[0]-a[0])*f, a[1]+(b[1]-a[1])*f, a[2]+(b[2]-a[2])*f];
+  }
+  function chiTxt2(c) { return c === 0 ? "Sedov" : "χ = " + c; }
+
+  window.initTerrain = function () {
+    if (started) return;
+    started = true;
+    var cv = document.getElementById("cv");
+    ren = new THREE.WebGLRenderer({ canvas: cv, antialias: true });
+    scene = new THREE.Scene();
+    scene.background = new THREE.Color(0x0a0d16);
+    cam = new THREE.PerspectiveCamera(45, 2, 0.01, 100);
+    cam.position.set(0, 1.1, 1.6);
+    ctrl = new OrbitControls(cam, cv);
+    ctrl.enableDamping = true;
+    scene.add(new THREE.AmbientLight(0xffffff, 0.55));
+    var dl = new THREE.DirectionalLight(0xffffff, 1.2); dl.position.set(1, 2, 1); scene.add(dl);
+    document.getElementById("exag").oninput = function () { if (curId) show(curId, true); };
+    (function loop() {
+      requestAnimationFrame(loop);
+      var c2 = ren.domElement, w = c2.clientWidth, h = c2.clientHeight;
+      if (c2.width !== w || c2.height !== h) {
+        ren.setSize(w, h, false); cam.aspect = w / Math.max(h, 1); cam.updateProjectionMatrix();
+      }
+      ctrl.update(); ren.render(scene, cam);
+    })();
+    refreshList();
+    var avail = visibleTerrains();
+    if (avail.length) show(avail[0]);
+  };
+
+  function visibleTerrains() {
+    return (STUDIO_TERRAINS || []).filter(function (id) {
+      var d = STUDIO_DATA[id]; if (!d || !d.meta) return false;
+      return window.studioPasses(window.studioNormCode(d.meta.code), d.meta.chi);
+    });
+  }
+  function refreshList() {
+    var list = document.getElementById("tlist"); list.innerHTML = "";
+    visibleTerrains().forEach(function (id) {
+      var d = STUDIO_DATA[id], m = d.meta || {};
+      var b = document.createElement("button");
+      b.innerHTML = (m.code || id) + ", " + chiTxt2(m.chi) +
+        "<span class='m'>" + (m.res || "") + "&nbsp; " + (m.t || "") + "</span>";
+      b.dataset.id = id;
+      b.classList.toggle("on", id === curId);
+      b.onclick = function () { window.initTerrain(); show(id); };
+      list.appendChild(b);
+    });
+    if (!list.children.length)
+      list.innerHTML = "<p class='note'>No 3D views match this filter yet.</p>";
+  }
+  window.refreshTerrainList = function () {
+    refreshList();
+    if (started) {
+      var avail = visibleTerrains();
+      if (avail.length && avail.indexOf(curId) < 0) show(avail[0]);
+    }
+  };
+  window.addEventListener("load", function () { if (!started) refreshList(); });
+
+  function show(id, keepCam) {
+    var d = STUDIO_DATA[id];
+    if (!d) return;
+    curId = id;
+    document.querySelectorAll("#tlist button").forEach(function (b) {
+      b.classList.toggle("on", b.dataset.id === id);
+    });
+    var raw = atob(d.d), n = raw.length, hgt = new Uint8Array(n);
+    for (var i = 0; i < n; i++) hgt[i] = raw.charCodeAt(i);
+    var W = d.w, H = d.h;
+    var exag = document.getElementById("exag").value / 100 * 0.45;
+    var geo = new THREE.PlaneGeometry(2, 1, W - 1, H - 1);
+    geo.rotateX(-Math.PI / 2);
+    var pos = geo.attributes.position;
+    var cols = new Float32Array(pos.count * 3);
+    for (var j = 0; j < pos.count; j++) {
+      var ix = j % W, iy = Math.floor(j / W);
+      var v = hgt[(H - 1 - iy) * W + ix] / 255;
+      pos.setY(j, v * exag);
+      var c = vmap(v);
+      cols[3 * j] = c[0] / 255; cols[3 * j + 1] = c[1] / 255; cols[3 * j + 2] = c[2] / 255;
+    }
+    geo.setAttribute("color", new THREE.BufferAttribute(cols, 3));
+    geo.computeVertexNormals();
+    var mat = new THREE.MeshStandardMaterial({ vertexColors: true, roughness: 0.85 });
+    if (mesh) { scene.remove(mesh); mesh.geometry.dispose(); mesh.material.dispose(); }
+    mesh = new THREE.Mesh(geo, mat);
+    scene.add(mesh);
+    if (!keepCam) { cam.position.set(0, 1.0, 1.5); ctrl.target.set(0, 0.1, 0); }
+    var m = d.meta || {};
+    document.getElementById("tinfo").textContent =
+      (m.code || "") + ", " + chiTxt2(m.chi) + ", " + (m.res || "") + " at " + (m.t || "");
+  }
+
+  // ---------- interactive 3D volumes ----------
+  var vStarted = false, vScene, vCam, vRen, vCtrl, vGroup = null, vCur = null;
+  window.initVols = function () {
+    if (vStarted) return;
+    vStarted = true;
+    var cv = document.getElementById("vcv");
+    vRen = new THREE.WebGLRenderer({ canvas: cv, antialias: true });
+    vScene = new THREE.Scene();
+    vScene.background = new THREE.Color(0x0a0d16);
+    vCam = new THREE.PerspectiveCamera(45, 2, 0.05, 500);
+    vCtrl = new OrbitControls(vCam, cv);
+    vCtrl.enableDamping = true;
+    vScene.add(new THREE.AmbientLight(0xffffff, 0.5));
+    var d1 = new THREE.DirectionalLight(0xffffff, 1.1); d1.position.set(1, 2, 1.5); vScene.add(d1);
+    var d2 = new THREE.DirectionalLight(0xffffff, 0.5); d2.position.set(-1, -1, -1); vScene.add(d2);
+    (function vloop() {
+      requestAnimationFrame(vloop);
+      var c = vRen.domElement, w = c.clientWidth, h = c.clientHeight;
+      if (c.width !== w || c.height !== h) {
+        vRen.setSize(w, h, false); vCam.aspect = w / Math.max(h, 1); vCam.updateProjectionMatrix();
+      }
+      vCtrl.update(); vRen.render(vScene, vCam);
+    })();
+    var ids = volIds();
+    if (ids.length) vShow(ids[0]);
+  };
+  function volIds() {
+    return Object.keys(VOL_DATA).filter(function (id) {
+      var m = VOL_DATA[id].meta || {};
+      return window.studioPasses(window.studioNormCode(m.code), m.chi);
+    });
+  }
+  window.refreshVolList = function () {
+    var list = document.getElementById("vlist"); list.innerHTML = "";
+    var ids = volIds();
+    ids.forEach(function (id) {
+      var m = VOL_DATA[id].meta || {};
+      var b = document.createElement("button");
+      b.innerHTML = (m.code || id) + ", " + chiTxt2(m.chi) +
+        "<span class='m'>3D " + (m.res || "") + "&nbsp; " + (m.t || "") + "</span>";
+      b.dataset.id = id;
+      b.classList.toggle("on", id === vCur);
+      b.onclick = function () { window.initVols(); vShow(id); };
+      list.appendChild(b);
+    });
+    if (!list.children.length)
+      list.innerHTML = "<p class='note'>No 3D runs harvested yet; they are computing now.</p>";
+    if (vStarted && ids.length && ids.indexOf(vCur) < 0) vShow(ids[0]);
+  };
+  function vShow(id) {
+    var d = VOL_DATA[id]; if (!d) return;
+    vCur = id;
+    if (!vStarted) return;
+    document.querySelectorAll("#vlist button").forEach(function (b) {
+      b.classList.toggle("on", b.dataset.id === id);
+    });
+    if (vGroup) {
+      vScene.remove(vGroup);
+      vGroup.traverse(function (o) {
+        if (o.geometry) o.geometry.dispose();
+        if (o.material) o.material.dispose();
+      });
+    }
+    vGroup = new THREE.Group();
+    var togg = document.getElementById("vtoggles"); togg.innerHTML = "";
+    d.surfaces.forEach(function (s) {
+      var raw = atob(s.pos), n = raw.length, buf = new Uint8Array(n);
+      for (var i = 0; i < n; i++) buf[i] = raw.charCodeAt(i);
+      var geo = new THREE.BufferGeometry();
+      geo.setAttribute("position", new THREE.BufferAttribute(new Float32Array(buf.buffer), 3));
+      geo.computeVertexNormals();
+      var mat = new THREE.MeshStandardMaterial({
+        color: new THREE.Color(s.color[0], s.color[1], s.color[2]),
+        transparent: s.opacity < 0.9, opacity: s.opacity,
+        roughness: 0.6, side: THREE.DoubleSide, depthWrite: s.opacity >= 0.9
+      });
+      var mesh = new THREE.Mesh(geo, mat);
+      vGroup.add(mesh);
+      var lb = document.createElement("label");
+      lb.style.color = "var(--muted)"; lb.style.fontSize = "12.5px";
+      var cb = document.createElement("input"); cb.type = "checkbox"; cb.checked = true;
+      cb.onchange = function () { mesh.visible = cb.checked; };
+      lb.appendChild(cb);
+      lb.appendChild(document.createTextNode(" shell at density " + s.level.toFixed(1)));
+      togg.appendChild(lb);
+    });
+    vScene.add(vGroup);
+    var m = d.meta || {};
+    vCam.position.set(7, 8, 15); vCtrl.target.set(4, 0, 0);
+    document.getElementById("vinfo").textContent =
+      (m.code || "") + ", " + chiTxt2(m.chi) + ", 3D " + (m.res || "") + " at " + (m.t || "");
+  }
+</script>
+</body>
+</html>
