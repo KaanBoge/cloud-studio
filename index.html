@@ -61,6 +61,13 @@
     border-radius: 999px; padding: 1px 7px; margin-left: 6px; white-space: nowrap; }
   .badge.gpu { color: #0b6b4f; background: color-mix(in srgb, var(--good) 18%, transparent); }
   .badge.cpu { color: var(--muted); background: var(--chip); }
+  .vbtns { display: flex; gap: 5px; margin-top: 8px; flex-wrap: wrap; }
+  .vbtns button { font: 600 11.5px system-ui; border: 1px solid var(--line);
+    background: var(--surface); color: var(--muted); border-radius: 999px;
+    padding: 2px 10px; cursor: pointer; }
+  .vbtns button.on { border-color: var(--accent); color: var(--accent);
+    background: color-mix(in srgb, var(--accent) 10%, transparent); }
+  .vbtns button:hover { color: var(--accent); }
   .detbtn { font: 600 11.5px system-ui; border: 1px solid var(--line); background: var(--surface);
     color: var(--muted); border-radius: 6px; padding: 2px 9px; cursor: pointer; margin-top: 8px; }
   .detbtn:hover { color: var(--accent); border-color: var(--accent); }
@@ -234,11 +241,11 @@
   <img id="lbImg" alt=""><div class="cap" id="lbCap"></div>
 </div>
 
-<script>var STUDIO_V="1787583230"; var STUDIO_DATA = {}; var VOL_DATA = {}; var VOLSEQ_DATA = {};</script>
-<script src="data/manifest.js?v=1787583230"></script>
-<script src="data/terrains.js?v=1787583230"></script>
-<script src="data/codefiles.js?v=1787583230"></script>
-<script src="data/runinfo.js?v=1787583230"></script>
+<script>var STUDIO_V="1787584515"; var STUDIO_DATA = {}; var VOL_DATA = {}; var VOLSEQ_DATA = {};</script>
+<script src="data/manifest.js?v=1787584515"></script>
+<script src="data/terrains.js?v=1787584515"></script>
+<script src="data/codefiles.js?v=1787584515"></script>
+<script src="data/runinfo.js?v=1787584515"></script>
 <script>
   (STUDIO_TERRAINS || []).forEach(function (id) {
     var s = document.createElement("script"); s.src = "data/" + id + ".js?v=" + STUDIO_V; document.head.appendChild(s);
@@ -310,8 +317,11 @@
       return { title: "GIZMO MFV, meshless" + slow, chi: +r[1], code: "GIZMO MFV", res: 400 };
     if ((r = base.match(/^gasoline_chi(\d+)$/)))
       return { title: "Gasoline, SPH" + slow, chi: +r[1], code: "Gasoline", res: 320 };
+    if ((r = base.match(/^flashx_chi(\d+)_l(\d+)$/)))
+      return { title: "Flash-X, level " + r[2] + slow, chi: +r[1], code: "Flash-X",
+               res: FLASH_LREF[+r[2]] || 512 };
     if ((r = base.match(/^flashx_chi(\d+)$/)))
-      return { title: "Flash-X, adaptive mesh" + slow, chi: +r[1], code: "Flash-X", res: 512 };
+      return { title: "Flash-X, level 6" + slow, chi: +r[1], code: "Flash-X", res: 512 };
     if ((r = base.match(/^gadget4_chi(\d+)$/)))
       return { title: "Gadget-4, SPH" + slow, chi: +r[1], code: "Gadget-4", res: 512 };
     if ((r = base.match(/^flash3d_chi(\d+)_lref(\d+)$/)))
@@ -674,14 +684,33 @@
   };
 
   // ---------- movies ----------
+  // one card per simulation, with its playback versions behind buttons
+  function movieGroups() {
+    var by = {};
+    STUDIO_MOVIES.forEach(function (m) {
+      var variant = /_slow$/.test(m.name) ? "slow"
+                  : (/_smooth$/.test(m.name) ? "smooth" : "normal");
+      var base = m.name.replace(/_slow$/, "").replace(/_smooth$/, "");
+      if (!by[base]) by[base] = { base: base, variants: {} };
+      by[base].variants[variant] = m;
+    });
+    return Object.keys(by).map(function (k) {
+      var g = by[k];
+      var any = g.variants.normal || g.variants.smooth || g.variants.slow;
+      g.label = movieLabel({ name: g.base, src: any.src });
+      g.src = any.src;
+      return g;
+    });
+  }
+  var VARIANT_NAME = { normal: "Normal", smooth: "Smooth", slow: "Slow motion" };
   function drawMovies(target, kind) {
     var grid = document.getElementById(target); grid.innerHTML = "";
-    var list = sortByMode(STUDIO_MOVIES,
-      function (m) { return movieLabel(m).res; },
-      function (m) { return movieLabel(m).code; },
-      function (m) { return movieLabel(m).chi; });
-    list.forEach(function (m) {
-      var lb = movieLabel(m);
+    var list = sortByMode(movieGroups(),
+      function (g) { return g.label.res; },
+      function (g) { return g.label.code; },
+      function (g) { return g.label.chi; });
+    list.forEach(function (g) {
+      var lb = g.label;
       if (lb.code !== null && !passes(lb.code, lb.chi)) return;
       var mk = lb.terrain ? "terrain" : (lb.d3 ? "vol" : "flat");
       if (mk !== kind) return;
@@ -691,12 +720,37 @@
         (lb.res ? " <span class='muted' style='font-weight:400'>" +
           (levelOf(lb.res, lb.d3) ? "level " + levelOf(lb.res, lb.d3) + " &middot; " : "") +
           lb.res + (lb.d3 ? " cells long, 3D" : " cells long") + "</span>" : "");
-      var minfo = runForMovie(m.name);
+      var minfo = runForMovie(g.base);
       h.innerHTML += hwBadge(minfo);
       var v = document.createElement("video");
       v.controls = true; v.loop = true; v.preload = "metadata"; v.playsInline = true;
-      v.src = m.src;
+      var order = ["normal", "smooth", "slow"];
+      var have = order.filter(function (k2) { return g.variants[k2]; });
+      var startWith = g.variants.normal ? "normal" : have[0];
+      v.src = g.variants[startWith].src;
       c.appendChild(h); c.appendChild(v);
+      if (have.length > 1) {
+        var row = document.createElement("div"); row.className = "vbtns";
+        have.forEach(function (k2) {
+          var b = document.createElement("button");
+          b.textContent = VARIANT_NAME[k2];
+          if (k2 === startWith) b.classList.add("on");
+          b.onclick = function () {
+            var wasPlaying = !v.paused;
+            var frac = (v.duration && isFinite(v.duration)) ? v.currentTime / v.duration : 0;
+            v.src = g.variants[k2].src;
+            v.addEventListener("loadedmetadata", function once() {
+              v.removeEventListener("loadedmetadata", once);
+              if (frac > 0 && isFinite(v.duration)) v.currentTime = frac * v.duration;
+              if (wasPlaying) v.play();
+            });
+            row.querySelectorAll("button").forEach(function (x) { x.classList.remove("on"); });
+            b.classList.add("on");
+          };
+          row.appendChild(b);
+        });
+        c.appendChild(row);
+      }
       if (minfo) c.appendChild(detailsButton(minfo));
       grid.appendChild(c);
     });
