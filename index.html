@@ -239,7 +239,9 @@
     if (!txt) return txt;
     if (/level/i.test(txt)) return txt;   // already stated as a level
     return String(txt).replace(/(\d+)x(\d+)(x(\d+))?/g, function (m, a, b, g3, c) {
-      var lv = levelOf(a, !!c);
+      var dims = [+a, +b];
+      if (c) dims.push(+c);
+      var lv = levelOf(Math.max.apply(null, dims), !!c);
       return lv ? ("level " + lv + " (" + m + ")") : m;
     });
   }
