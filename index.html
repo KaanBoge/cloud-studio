@@ -230,6 +230,12 @@
     var lv = levelOf(n, is3d);
     return lv ? ("level " + lv) : (n + (is3d ? " cells long" : " grid"));
   }
+  // the old shock-driven setup used a box half as wide, so its grids sit between levels
+  function shockLevel(n) {
+    var lv = 6 + Math.log(n / 256) / Math.LN2;
+    var r = Math.round(lv);
+    return (Math.abs(lv - r) < 0.02 ? "level " : "about level ") + r;
+  }
   // rewrite "2048x1024" or "256x128x128" inside any text as "level N (2048x1024)"
   function withLevel(txt) {
     if (!txt) return txt;
@@ -285,9 +291,9 @@
     if ((r = base.match(/^athw_chi(\d+)_(\d+)$/)))
       return { title: "Athena 4.2 wind tunnel, " + gridTxt(r[2], false) + slow, chi: +r[1], code: "Athena 4.2", res: +r[2] };
     if ((r = base.match(/^athena_shock_d(\d+)_(\d+)$/)))
-      return { title: "Athena 4.2, " + gridTxt(r[2], false) + ", old shock setup" + slow, chi: +r[1], code: "Athena 4.2", res: +r[2] };
+      return { title: "Athena 4.2, " + shockLevel(+r[2]) + ", shock-driven" + slow, chi: +r[1], code: "Athena 4.2", res: +r[2] * 2 };
     if ((r = base.match(/^athena_shk_cloud_(hires|ultra)$/)))
-      return { title: "Athena 4.2, " + (r[1] === "hires" ? "1800x900" : "3600x1800") + ", shock-driven" + slow, chi: 10, code: "Athena 4.2", res: (r[1] === "hires" ? 1800 : 3600) };
+      return { title: "Athena 4.2, " + shockLevel(r[1] === "hires" ? 1800 : 3600) + ", shock-driven" + slow, chi: 10, code: "Athena 4.2", res: (r[1] === "hires" ? 3600 : 7200) };
     return { title: n, chi: null, code: null, res: 0 };
   }
   function normCode(c) { return (c && c.indexOf("AthenaPK") === 0) ? "AthenaPK (GPU)" : c; }
