@@ -179,6 +179,20 @@
     var n = m.name, r;
     var slow = /_slow$/.test(n) ? ", slow motion" : "";
     var base = n.replace(/_slow$/, "");
+    if ((r = base.match(/^athpp_chi(\d+)_(\d+)$/)))
+      return { title: "Athena++, " + r[2] + " grid" + slow, chi: +r[1], code: "Athena++" };
+    if ((r = base.match(/^ramses_chi(\d+)_(\d+)$/)))
+      return { title: "RAMSES, " + r[2] + " grid" + slow, chi: +r[1], code: "RAMSES" };
+    if ((r = base.match(/^enzo_chi(\d+)_(\d+)$/)))
+      return { title: "Enzo, " + r[2] + " grid" + slow, chi: +r[1], code: "Enzo" };
+    if ((r = base.match(/^arepo_chi(\d+)$/)))
+      return { title: "Arepo, moving mesh" + slow, chi: +r[1], code: "Arepo" };
+    if ((r = base.match(/^gizmo_mfm_chi(\d+)$/)))
+      return { title: "GIZMO MFM, meshless" + slow, chi: +r[1], code: "GIZMO MFM" };
+    if ((r = base.match(/^gizmo_mfv_chi(\d+)$/)))
+      return { title: "GIZMO MFV, meshless" + slow, chi: +r[1], code: "GIZMO MFV" };
+    if ((r = base.match(/^gadget4_chi(\d+)$/)))
+      return { title: "Gadget-4, SPH" + slow, chi: +r[1], code: "Gadget-4" };
     if ((r = base.match(/^flash3d_chi(\d+)_lref(\d+)$/)))
       return { title: "FLASH, 3D, level " + r[2] + slow, chi: +r[1], code: "FLASH" };
     if ((r = base.match(/^athw3d_chi(\d+)_(\d+)$/)))
