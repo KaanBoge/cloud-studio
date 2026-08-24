@@ -145,6 +145,11 @@
       <div id="vlist"><p class="note">No 3D runs harvested yet; they are computing now.</p></div>
       <div>
         <canvas id="vcv"></canvas>
+        <div class="ctl" id="vtime" style="display:none">
+          <button class="mini" id="vplay">▶ Play</button>
+          <input id="vslider" type="range" min="0" max="0" value="0" style="flex:1;min-width:160px">
+          <span id="vtlabel"></span>
+        </div>
         <div class="ctl" id="vtoggles"></div>
         <div class="ctl"><span id="vinfo"></span></div>
       </div>
@@ -154,7 +159,7 @@
 
 <div id="lightbox"><img id="lbImg" alt=""><div class="cap" id="lbCap"></div></div>
 
-<script>var STUDIO_DATA = {}; var VOL_DATA = {};</script>
+<script>var STUDIO_DATA = {}; var VOL_DATA = {}; var VOLSEQ_DATA = {};</script>
 <script src="data/manifest.js"></script>
 <script src="data/terrains.js"></script>
 <script>
@@ -164,6 +169,9 @@
   (typeof STUDIO_VOLS !== "undefined" ? STUDIO_VOLS : []).forEach(function (nm) {
     var s = document.createElement("script"); s.src = "data/" + nm + ".js"; document.head.appendChild(s);
   });
+  (typeof STUDIO_VOLSEQS !== "undefined" ? STUDIO_VOLSEQS : []).forEach(function (nm) {
+    var s = document.createElement("script"); s.src = "data/" + nm + ".js"; document.head.appendChild(s);
+  });
 
   // ---------- friendly naming: always "code + level/resolution + chi" ----------
   function chiTxt(c) { return c === 0 ? "Sedov blast" : "χ = " + c; }
@@ -171,6 +179,12 @@
     var n = m.name, r;
     var slow = /_slow$/.test(n) ? ", slow motion" : "";
     var base = n.replace(/_slow$/, "");
+    if ((r = base.match(/^flash3d_chi(\d+)_lref(\d+)$/)))
+      return { title: "FLASH, 3D, level " + r[2] + slow, chi: +r[1], code: "FLASH" };
+    if ((r = base.match(/^athw3d_chi(\d+)_(\d+)$/)))
+      return { title: "Athena 4.2 wind tunnel, 3D, " + r[2] + " long" + slow, chi: +r[1], code: "Athena 4.2" };
+    if ((r = base.match(/^apk3d_chi(\d+)_(\d+)$/)))
+      return { title: "AthenaPK on the GPU, 3D, " + r[2] + " long" + slow, chi: +r[1], code: "AthenaPK (GPU)" };
     if ((r = base.match(/^flash_chi(\d+)_lref(\d+)(_partial)?$/)))
       return { title: "FLASH, level " + r[2] + (r[3] ? ", partial run" : "") + slow, chi: +r[1], code: "FLASH" };
     if ((r = base.match(/^cloudcrush_lref(\d+)$/)))
@@ -466,13 +480,8 @@
       list.innerHTML = "<p class='note'>No 3D runs harvested yet; they are computing now.</p>";
     if (vStarted && ids.length && ids.indexOf(vCur) < 0) vShow(ids[0]);
   };
-  function vShow(id) {
-    var d = VOL_DATA[id]; if (!d) return;
-    vCur = id;
-    if (!vStarted) return;
-    document.querySelectorAll("#vlist button").forEach(function (b) {
-      b.classList.toggle("on", b.dataset.id === id);
-    });
+  var vShellsOn = [];
+  function vBuild(surfs) {
     if (vGroup) {
       vScene.remove(vGroup);
       vGroup.traverse(function (o) {
@@ -482,7 +491,7 @@
     }
     vGroup = new THREE.Group();
     var togg = document.getElementById("vtoggles"); togg.innerHTML = "";
-    d.surfaces.forEach(function (s) {
+    surfs.forEach(function (s, si) {
       var raw = atob(s.pos), n = raw.length, buf = new Uint8Array(n);
       for (var i = 0; i < n; i++) buf[i] = raw.charCodeAt(i);
       var geo = new THREE.BufferGeometry();
@@ -494,20 +503,65 @@
         roughness: 0.6, side: THREE.DoubleSide, depthWrite: s.opacity >= 0.9
       });
       var mesh = new THREE.Mesh(geo, mat);
+      if (vShellsOn[si] === false) mesh.visible = false;
       vGroup.add(mesh);
       var lb = document.createElement("label");
       lb.style.color = "var(--muted)"; lb.style.fontSize = "12.5px";
-      var cb = document.createElement("input"); cb.type = "checkbox"; cb.checked = true;
-      cb.onchange = function () { mesh.visible = cb.checked; };
+      var cb = document.createElement("input"); cb.type = "checkbox";
+      cb.checked = mesh.visible;
+      cb.onchange = function () { mesh.visible = cb.checked; vShellsOn[si] = cb.checked; };
       lb.appendChild(cb);
       lb.appendChild(document.createTextNode(" shell at density " + s.level.toFixed(1)));
       togg.appendChild(lb);
     });
     vScene.add(vGroup);
+  }
+
+  var vPlayTimer = null;
+  function vStopPlay() {
+    if (vPlayTimer) { clearInterval(vPlayTimer); vPlayTimer = null; }
+    document.getElementById("vplay").textContent = "▶ Play";
+  }
+  function vShow(id) {
+    var d = VOL_DATA[id]; if (!d) return;
+    vCur = id;
+    if (!vStarted) return;
+    vStopPlay();
+    vShellsOn = [];
+    document.querySelectorAll("#vlist button").forEach(function (b) {
+      b.classList.toggle("on", b.dataset.id === id);
+    });
+    var seq = VOLSEQ_DATA[id];
+    var trow = document.getElementById("vtime");
+    var sl = document.getElementById("vslider");
     var m = d.meta || {};
+    if (seq && seq.frames && seq.frames.length > 1) {
+      trow.style.display = "flex";
+      sl.min = 0; sl.max = seq.frames.length - 1; sl.value = seq.frames.length - 1;
+      var apply = function () {
+        var i = +sl.value;
+        vBuild(seq.frames[i]);
+        document.getElementById("vtlabel").textContent = "t = " + seq.times[i] + " t_cc";
+      };
+      sl.oninput = function () { vStopPlay(); apply(); };
+      document.getElementById("vplay").onclick = function () {
+        if (vPlayTimer) { vStopPlay(); return; }
+        this.textContent = "❚❚ Pause";
+        vPlayTimer = setInterval(function () {
+          sl.value = (+sl.value + 1) % (seq.frames.length);
+          apply();
+        }, 420);
+      };
+      apply();
+    } else {
+      trow.style.display = "none";
+      vBuild(d.surfaces);
+      document.getElementById("vtlabel").textContent = "";
+    }
     vCam.position.set(7, 8, 15); vCtrl.target.set(4, 0, 0);
     document.getElementById("vinfo").textContent =
-      (m.code || "") + ", " + chiTxt2(m.chi) + ", 3D " + (m.res || "") + " at " + (m.t || "");
+      (m.code || "") + ", " + chiTxt2(m.chi) + ", 3D " + (m.res || "") +
+      (seq ? ", scrub or play through time" : " at " + (m.t || ""));
   }
 </script>
 </body>
