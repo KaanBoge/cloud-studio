@@ -115,20 +115,18 @@
   <div class="toolbar">
     <span class="lab">Code</span><div class="rebtns" id="codeF"></div>
     <span class="lab">Overdensity</span><div class="rebtns" id="chiF"></div>
+    <span class="lab">Sort</span>
+    <div class="rebtns" id="mSort">
+      <button data-sort="res_desc" class="on">Highest level first</button>
+      <button data-sort="res_asc">Lowest level first</button>
+      <button data-sort="code">Grouped by code</button>
+    </div>
     <button class="mini" id="themeBtn" style="margin-left:auto">Theme: Auto</button>
   </div>
 
   <section class="panel on" id="p-gallery"><div class="grid" id="gGrid"></div></section>
 
   <section class="panel" id="p-movies">
-    <div class="ctl" style="margin-bottom:12px">
-      <span class="lab">Sort</span>
-      <div class="rebtns" id="mSort">
-        <button data-sort="res_desc" class="on">Highest level first</button>
-        <button data-sort="res_asc">Lowest level first</button>
-        <button data-sort="code">Grouped by code</button>
-      </div>
-    </div>
     <div class="grid" id="mGrid"></div>
   </section>
 
@@ -400,7 +398,7 @@
   });
 
   // ---------- filters ----------
-  var codeSel = "All", chiSel = "All";
+  var codeSel = "All", chiSel = "All", mSortMode = "res_desc";
   function pill(el, items, sel, cb) {
     el.innerHTML = "";
     items.forEach(function (it) {
@@ -424,6 +422,29 @@
     pill(document.getElementById("codeF"), codes, codeSel, function (v) { codeSel = v; drawFilters(); drawAll(); });
     pill(document.getElementById("chiF"), chis, chiSel, function (v) { chiSel = v; drawFilters(); drawAll(); });
   }
+  // longest axis of any "WxH" or "WxHxD" label; shock-setup boxes are half as wide
+  function dimsOf(txt) {
+    var m = String(txt || "").match(/(\d+)x(\d+)(?:x(\d+))?/);
+    if (!m) return 0;
+    var v = [+m[1], +m[2]];
+    if (m[3]) v.push(+m[3]);
+    return Math.max.apply(null, v);
+  }
+  function galRes(g) {
+    var n = dimsOf(g.kind);
+    return /shock/i.test(g.kind || "") ? n * 2 : n;
+  }
+  function sortByMode(arr, resFn, codeFn, chiFn) {
+    if (mSortMode === "code") return arr;
+    var sgn = (mSortMode === "res_desc") ? -1 : 1;
+    return arr.slice().sort(function (a, b) {
+      var d = ((resFn(a) || 0) - (resFn(b) || 0)) * sgn;
+      if (d) return d;
+      var ca = codeFn(a) || "", cb = codeFn(b) || "";
+      if (ca !== cb) return ca < cb ? -1 : 1;
+      return (chiFn(a) || 0) - (chiFn(b) || 0);
+    });
+  }
   function passes(code, chi) {
     if (codeSel !== "All" && code !== codeSel) return false;
     if (chiSel !== "All" && chi !== chiSel) return false;
@@ -434,7 +455,8 @@
   function is3D(g) { return /3D/.test(g.kind || ""); }
   function drawGallery(target, want3d) {
     var grid = document.getElementById(target); grid.innerHTML = "";
-    STUDIO_GALLERY.forEach(function (g) {
+    sortByMode(STUDIO_GALLERY, galRes, function (g) { return g.code; },
+               function (g) { return g.chi; }).forEach(function (g) {
       if (!passes(g.code, g.chi)) return;
       if (is3D(g) !== want3d) return;
       var card = document.createElement("div"); card.className = "card";
@@ -468,20 +490,12 @@
   document.getElementById("lightbox").onclick = function () { this.style.display = "none"; };
 
   // ---------- movies ----------
-  var mSortMode = "res_desc";
   function drawMovies(target, kind) {
     var grid = document.getElementById(target); grid.innerHTML = "";
-    var list = STUDIO_MOVIES.slice();
-    if (mSortMode !== "code") {
-      var sgn = (mSortMode === "res_desc") ? -1 : 1;
-      list.sort(function (a, b) {
-        var la = movieLabel(a), lb = movieLabel(b);
-        var d = ((la.res || 0) - (lb.res || 0)) * sgn;
-        if (d) return d;
-        if ((la.code || "") !== (lb.code || "")) return (la.code || "") < (lb.code || "") ? -1 : 1;
-        return (la.chi || 0) - (lb.chi || 0);
-      });
-    }
+    var list = sortByMode(STUDIO_MOVIES,
+      function (m) { return movieLabel(m).res; },
+      function (m) { return movieLabel(m).code; },
+      function (m) { return movieLabel(m).chi; });
     list.forEach(function (m) {
       var lb = movieLabel(m);
       if (lb.code !== null && !passes(lb.code, lb.chi)) return;
@@ -508,12 +522,18 @@
   window.studioFilters = function () { return { code: codeSel, chi: chiSel }; };
   window.studioPasses = passes;
   window.studioNormCode = normCode;
+  window.studioSort = function (ids, metaFn) {
+    return sortByMode(ids,
+      function (id) { return dimsOf(metaFn(id).res); },
+      function (id) { return normCode(metaFn(id).code); },
+      function (id) { return metaFn(id).chi; });
+  };
   document.querySelectorAll("#mSort button").forEach(function (b) {
     b.onclick = function () {
       document.querySelectorAll("#mSort button").forEach(function (x) { x.classList.remove("on"); });
       b.classList.add("on");
       mSortMode = b.dataset.sort;
-      drawAllMovies();
+      drawAll();
     };
   });
   function drawAll() {
@@ -573,10 +593,11 @@
   };
 
   function visibleTerrains() {
-    return (STUDIO_TERRAINS || []).filter(function (id) {
+    var vis = (STUDIO_TERRAINS || []).filter(function (id) {
       var d = STUDIO_DATA[id]; if (!d || !d.meta) return false;
       return window.studioPasses(window.studioNormCode(d.meta.code), d.meta.chi);
     });
+    return window.studioSort(vis, function (id) { return STUDIO_DATA[id].meta; });
   }
   function refreshList() {
     var list = document.getElementById("tlist"); list.innerHTML = "";
@@ -663,10 +684,11 @@
     if (ids.length) vShow(ids[0]);
   };
   function volIds() {
-    return Object.keys(VOL_DATA).filter(function (id) {
+    var vis = Object.keys(VOL_DATA).filter(function (id) {
       var m = VOL_DATA[id].meta || {};
       return window.studioPasses(window.studioNormCode(m.code), m.chi);
     });
+    return window.studioSort(vis, function (id) { return VOL_DATA[id].meta || {}; });
   }
   window.refreshVolList = function () {
     var list = document.getElementById("vlist"); list.innerHTML = "";
