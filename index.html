@@ -145,6 +145,10 @@
         </div>
       </div>
     </div>
+    <h3 style="font-size:15px;font-weight:650;margin:26px 0 4px">Terrain flyover movies</h3>
+    <p class="note">The same landscapes recorded in motion: the camera orbits while the
+      simulation evolves.</p>
+    <div class="grid" id="tmGrid"></div>
   </section>
 
   <section class="panel" id="p-volumes">
@@ -165,6 +169,11 @@
         <div class="ctl"><span id="vinfo"></span></div>
       </div>
     </div>
+    <h3 style="font-size:15px;font-weight:650;margin:26px 0 4px">3D simulation movies</h3>
+    <p class="note">Mid-plane slices through the three-dimensional runs, over time.</p>
+    <div class="grid" id="vmGrid"></div>
+    <h3 style="font-size:15px;font-weight:650;margin:26px 0 4px">3D image sets</h3>
+    <div class="grid" id="vgGrid"></div>
   </section>
 
   <section class="panel" id="p-code">
@@ -220,16 +229,16 @@
     var base = n.replace(/_slow$/, "").replace(/_smooth$/, "");
     if ((r = base.match(/^terrain_flash_chi(\d+)_lref(\d+)$/)))
       return { title: "FLASH, terrain flyover, level " + r[2] + slow, chi: +r[1],
-               code: "FLASH", res: FLASH_LREF[+r[2]] || 0, d3: true };
+               code: "FLASH", res: FLASH_LREF[+r[2]] || 0, d3: true, terrain: true };
     if ((r = base.match(/^terrain_athw_chi(\d+)_(\d+)$/)))
       return { title: "Athena 4.2 wind tunnel, terrain flyover, " + r[2] + " grid" + slow,
-               chi: +r[1], code: "Athena 4.2", res: +r[2], d3: true };
+               chi: +r[1], code: "Athena 4.2", res: +r[2], d3: true, terrain: true };
     if ((r = base.match(/^terrain_apk_chi(\d+)_(\d+)$/)))
       return { title: "AthenaPK on the GPU, terrain flyover, " + r[2] + " grid" + slow,
-               chi: +r[1], code: "AthenaPK (GPU)", res: +r[2], d3: true };
+               chi: +r[1], code: "AthenaPK (GPU)", res: +r[2], d3: true, terrain: true };
     if ((r = base.match(/^terrain_athpp_chi(\d+)_(\d+)$/)))
       return { title: "Athena++, terrain flyover, " + r[2] + " grid" + slow,
-               chi: +r[1], code: "Athena++", res: +r[2], d3: true };
+               chi: +r[1], code: "Athena++", res: +r[2], d3: true, terrain: true };
     if ((r = base.match(/^athpp_chi(\d+)_(\d+)$/)))
       return { title: "Athena++, " + r[2] + " grid" + slow, chi: +r[1], code: "Athena++", res: +r[2] };
     if ((r = base.match(/^ramses_chi(\d+)_(\d+)$/)))
@@ -399,10 +408,12 @@
   }
 
   // ---------- gallery ----------
-  function drawGallery() {
-    var grid = document.getElementById("gGrid"); grid.innerHTML = "";
+  function is3D(g) { return /3D/.test(g.kind || ""); }
+  function drawGallery(target, want3d) {
+    var grid = document.getElementById(target); grid.innerHTML = "";
     STUDIO_GALLERY.forEach(function (g) {
       if (!passes(g.code, g.chi)) return;
+      if (is3D(g) !== want3d) return;
       var card = document.createElement("div"); card.className = "card";
       var h = document.createElement("h3");
       h.innerHTML = g.code + ", " + g.kind + " <span class='chi'>" + chiTxt(g.chi) + "</span>";
@@ -435,8 +446,8 @@
 
   // ---------- movies ----------
   var mSortMode = "res_desc";
-  function drawMovies() {
-    var grid = document.getElementById("mGrid"); grid.innerHTML = "";
+  function drawMovies(target, kind) {
+    var grid = document.getElementById(target); grid.innerHTML = "";
     var list = STUDIO_MOVIES.slice();
     if (mSortMode !== "code") {
       var sgn = (mSortMode === "res_desc") ? -1 : 1;
@@ -451,6 +462,8 @@
     list.forEach(function (m) {
       var lb = movieLabel(m);
       if (lb.code !== null && !passes(lb.code, lb.chi)) return;
+      var mk = lb.terrain ? "terrain" : (lb.d3 ? "vol" : "flat");
+      if (mk !== kind) return;
       var c = document.createElement("div"); c.className = "card";
       var h = document.createElement("h3");
       h.innerHTML = lb.title + (lb.chi !== null ? " <span class='chi'>" + chiTxt(lb.chi) + "</span>" : "") +
@@ -463,6 +476,11 @@
     });
     if (!grid.children.length) grid.innerHTML = "<p class='note'>No movies match this filter yet.</p>";
   }
+  function drawAllMovies() {
+    drawMovies("mGrid", "flat");
+    drawMovies("tmGrid", "terrain");
+    drawMovies("vmGrid", "vol");
+  }
   window.studioFilters = function () { return { code: codeSel, chi: chiSel }; };
   window.studioPasses = passes;
   window.studioNormCode = normCode;
@@ -471,11 +489,11 @@
       document.querySelectorAll("#mSort button").forEach(function (x) { x.classList.remove("on"); });
       b.classList.add("on");
       mSortMode = b.dataset.sort;
-      drawMovies();
+      drawAllMovies();
     };
   });
   function drawAll() {
-    drawGallery(); drawMovies();
+    drawGallery("gGrid", false); drawGallery("vgGrid", true); drawAllMovies();
     if (window.refreshTerrainList) window.refreshTerrainList();
     if (window.refreshVolList) window.refreshVolList();
     if (window.refreshCodeList) window.refreshCodeList();
