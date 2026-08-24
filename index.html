@@ -223,20 +223,20 @@
   <img id="lbImg" alt=""><div class="cap" id="lbCap"></div>
 </div>
 
-<script>var STUDIO_DATA = {}; var VOL_DATA = {}; var VOLSEQ_DATA = {};</script>
-<script src="data/manifest.js"></script>
-<script src="data/terrains.js"></script>
-<script src="data/codefiles.js"></script>
-<script src="data/runinfo.js"></script>
+<script>var STUDIO_V="1787575634"; var STUDIO_DATA = {}; var VOL_DATA = {}; var VOLSEQ_DATA = {};</script>
+<script src="data/manifest.js?v=1787575634"></script>
+<script src="data/terrains.js?v=1787575634"></script>
+<script src="data/codefiles.js?v=1787575634"></script>
+<script src="data/runinfo.js?v=1787575634"></script>
 <script>
   (STUDIO_TERRAINS || []).forEach(function (id) {
-    var s = document.createElement("script"); s.src = "data/" + id + ".js"; document.head.appendChild(s);
+    var s = document.createElement("script"); s.src = "data/" + id + ".js?v=" + STUDIO_V; document.head.appendChild(s);
   });
   (typeof STUDIO_VOLS !== "undefined" ? STUDIO_VOLS : []).forEach(function (nm) {
-    var s = document.createElement("script"); s.src = "data/" + nm + ".js"; document.head.appendChild(s);
+    var s = document.createElement("script"); s.src = "data/" + nm + ".js?v=" + STUDIO_V; document.head.appendChild(s);
   });
   (typeof STUDIO_VOLSEQS !== "undefined" ? STUDIO_VOLSEQS : []).forEach(function (nm) {
-    var s = document.createElement("script"); s.src = "data/" + nm + ".js"; document.head.appendChild(s);
+    var s = document.createElement("script"); s.src = "data/" + nm + ".js?v=" + STUDIO_V; document.head.appendChild(s);
   });
 
   // ---------- friendly naming: always "code + level/resolution + chi" ----------
@@ -388,7 +388,7 @@
           b.classList.add("on");
           document.getElementById("cInfo").textContent = "loading " + f.path + " ...";
           document.getElementById("cClose").style.display = "inline-block";
-          fetch(f.file).then(function (r) { return r.text(); }).then(function (txt) {
+          fetch(f.file + "?v=" + STUDIO_V).then(function (r) { return r.text(); }).then(function (txt) {
             document.getElementById("cView").textContent = txt;
             document.getElementById("cInfo").innerHTML = f.code + " &middot; " + f.path +
               " &middot; " + f.lines + " lines" +
