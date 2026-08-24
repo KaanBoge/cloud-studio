@@ -124,8 +124,8 @@
     <div class="ctl" style="margin-bottom:12px">
       <span class="lab">Sort</span>
       <div class="rebtns" id="mSort">
-        <button data-sort="res_desc" class="on">Highest resolution first</button>
-        <button data-sort="res_asc">Lowest resolution first</button>
+        <button data-sort="res_desc" class="on">Highest level first</button>
+        <button data-sort="res_asc">Lowest level first</button>
         <button data-sort="code">Grouped by code</button>
       </div>
     </div>
@@ -222,6 +222,23 @@
   function chiTxt(c) { return c === 0 ? "Sedov blast" : "χ = " + c; }
   // effective linear resolution (cells or particles across the long axis of the box)
   var FLASH_LREF = { 4: 128, 5: 256, 6: 512, 7: 1024, 8: 2048, 9: 4096, 10: 8192 };
+  // every code spans the same 20 x 10 cloud-radii box, so a grid size IS a refinement level
+  var LEVEL_2D = { 512: 6, 1024: 7, 2048: 8, 4096: 9, 8192: 10 };
+  var LEVEL_3D = { 128: 4, 256: 5, 512: 6 };
+  function levelOf(n, is3d) { return (is3d ? LEVEL_3D : LEVEL_2D)[+n] || null; }
+  function gridTxt(n, is3d) {
+    var lv = levelOf(n, is3d);
+    return lv ? ("level " + lv) : (n + (is3d ? " cells long" : " grid"));
+  }
+  // rewrite "2048x1024" or "256x128x128" inside any text as "level N (2048x1024)"
+  function withLevel(txt) {
+    if (!txt) return txt;
+    if (/level/i.test(txt)) return txt;   // already stated as a level
+    return String(txt).replace(/(\d+)x(\d+)(x(\d+))?/g, function (m, a, b, g3, c) {
+      var lv = levelOf(a, !!c);
+      return lv ? ("level " + lv + " (" + m + ")") : m;
+    });
+  }
   function movieLabel(m) {
     var n = m.name, r;
     var slow = /_slow$/.test(n) ? ", slow motion" :
@@ -231,20 +248,20 @@
       return { title: "FLASH, terrain flyover, level " + r[2] + slow, chi: +r[1],
                code: "FLASH", res: FLASH_LREF[+r[2]] || 0, d3: true, terrain: true };
     if ((r = base.match(/^terrain_athw_chi(\d+)_(\d+)$/)))
-      return { title: "Athena 4.2 wind tunnel, terrain flyover, " + r[2] + " grid" + slow,
+      return { title: "Athena 4.2 wind tunnel, terrain flyover, " + gridTxt(r[2], false) + slow,
                chi: +r[1], code: "Athena 4.2", res: +r[2], d3: true, terrain: true };
     if ((r = base.match(/^terrain_apk_chi(\d+)_(\d+)$/)))
-      return { title: "AthenaPK on the GPU, terrain flyover, " + r[2] + " grid" + slow,
+      return { title: "AthenaPK on the GPU, terrain flyover, " + gridTxt(r[2], false) + slow,
                chi: +r[1], code: "AthenaPK (GPU)", res: +r[2], d3: true, terrain: true };
     if ((r = base.match(/^terrain_athpp_chi(\d+)_(\d+)$/)))
-      return { title: "Athena++, terrain flyover, " + r[2] + " grid" + slow,
+      return { title: "Athena++, terrain flyover, " + gridTxt(r[2], false) + slow,
                chi: +r[1], code: "Athena++", res: +r[2], d3: true, terrain: true };
     if ((r = base.match(/^athpp_chi(\d+)_(\d+)$/)))
-      return { title: "Athena++, " + r[2] + " grid" + slow, chi: +r[1], code: "Athena++", res: +r[2] };
+      return { title: "Athena++, " + gridTxt(r[2], false) + slow, chi: +r[1], code: "Athena++", res: +r[2] };
     if ((r = base.match(/^ramses_chi(\d+)_(\d+)$/)))
-      return { title: "RAMSES, " + r[2] + " grid" + slow, chi: +r[1], code: "RAMSES", res: +r[2] };
+      return { title: "RAMSES, " + gridTxt(r[2], false) + slow, chi: +r[1], code: "RAMSES", res: +r[2] };
     if ((r = base.match(/^enzo_chi(\d+)_(\d+)$/)))
-      return { title: "Enzo, " + r[2] + " grid" + slow, chi: +r[1], code: "Enzo", res: +r[2] };
+      return { title: "Enzo, " + gridTxt(r[2], false) + slow, chi: +r[1], code: "Enzo", res: +r[2] };
     if ((r = base.match(/^arepo_chi(\d+)$/)))
       return { title: "Arepo, moving mesh" + slow, chi: +r[1], code: "Arepo", res: 512 };
     if ((r = base.match(/^gizmo_mfm_chi(\d+)$/)))
@@ -256,19 +273,19 @@
     if ((r = base.match(/^flash3d_chi(\d+)_lref(\d+)$/)))
       return { title: "FLASH, 3D, level " + r[2] + slow, chi: +r[1], code: "FLASH", res: FLASH_LREF[+r[2]] || 0, d3: true };
     if ((r = base.match(/^athw3d_chi(\d+)_(\d+)$/)))
-      return { title: "Athena 4.2 wind tunnel, 3D, " + r[2] + " long" + slow, chi: +r[1], code: "Athena 4.2", res: +r[2], d3: true };
+      return { title: "Athena 4.2 wind tunnel, 3D, " + gridTxt(r[2], true) + slow, chi: +r[1], code: "Athena 4.2", res: +r[2], d3: true };
     if ((r = base.match(/^apk3d_chi(\d+)_(\d+)$/)))
-      return { title: "AthenaPK on the GPU, 3D, " + r[2] + " long" + slow, chi: +r[1], code: "AthenaPK (GPU)", res: +r[2], d3: true };
+      return { title: "AthenaPK on the GPU, 3D, " + gridTxt(r[2], true) + slow, chi: +r[1], code: "AthenaPK (GPU)", res: +r[2], d3: true };
     if ((r = base.match(/^flash_chi(\d+)_lref(\d+)(_partial)?$/)))
       return { title: "FLASH, level " + r[2] + (r[3] ? ", partial run" : "") + slow, chi: +r[1], code: "FLASH", res: FLASH_LREF[+r[2]] || 0 };
     if ((r = base.match(/^cloudcrush_lref(\d+)$/)))
       return { title: "FLASH, level " + r[1] + slow, chi: 10, code: "FLASH", res: FLASH_LREF[+r[1]] || 0 };
     if ((r = base.match(/^apk_chi(\d+)_(\d+)$/)))
-      return { title: "AthenaPK on the GPU, " + r[2] + " grid" + slow, chi: +r[1], code: "AthenaPK (GPU)", res: +r[2] };
+      return { title: "AthenaPK on the GPU, " + gridTxt(r[2], false) + slow, chi: +r[1], code: "AthenaPK (GPU)", res: +r[2] };
     if ((r = base.match(/^athw_chi(\d+)_(\d+)$/)))
-      return { title: "Athena 4.2 wind tunnel, " + r[2] + " grid" + slow, chi: +r[1], code: "Athena 4.2", res: +r[2] };
+      return { title: "Athena 4.2 wind tunnel, " + gridTxt(r[2], false) + slow, chi: +r[1], code: "Athena 4.2", res: +r[2] };
     if ((r = base.match(/^athena_shock_d(\d+)_(\d+)$/)))
-      return { title: "Athena 4.2, " + r[2] + " grid, old shock setup" + slow, chi: +r[1], code: "Athena 4.2", res: +r[2] };
+      return { title: "Athena 4.2, " + gridTxt(r[2], false) + ", old shock setup" + slow, chi: +r[1], code: "Athena 4.2", res: +r[2] };
     if ((r = base.match(/^athena_shk_cloud_(hires|ultra)$/)))
       return { title: "Athena 4.2, " + (r[1] === "hires" ? "1800x900" : "3600x1800") + ", shock-driven" + slow, chi: 10, code: "Athena 4.2", res: (r[1] === "hires" ? 1800 : 3600) };
     return { title: n, chi: null, code: null, res: 0 };
@@ -416,7 +433,7 @@
       if (is3D(g) !== want3d) return;
       var card = document.createElement("div"); card.className = "card";
       var h = document.createElement("h3");
-      h.innerHTML = g.code + ", " + g.kind + " <span class='chi'>" + chiTxt(g.chi) + "</span>";
+      h.innerHTML = g.code + ", " + withLevel(g.kind) + " <span class='chi'>" + chiTxt(g.chi) + "</span>";
       var cap = document.createElement("div"); cap.className = "cap";
       var img = document.createElement("img"); img.loading = "lazy";
       var fr = document.createElement("div"); fr.className = "fr";
@@ -429,7 +446,7 @@
       }
       rng.oninput = function () { setF(this.value); };
       setF(g.files.length - 1);
-      img.onclick = function () { openLb(img.src, g.code + ", " + g.kind + ", " + chiTxt(g.chi)); };
+      img.onclick = function () { openLb(img.src, g.code + ", " + withLevel(g.kind) + ", " + chiTxt(g.chi)); };
       fr.appendChild(rng); fr.appendChild(ftxt);
       card.appendChild(h); card.appendChild(cap); card.appendChild(img);
       if (g.files.length > 1) card.appendChild(fr);
@@ -467,8 +484,9 @@
       var c = document.createElement("div"); c.className = "card";
       var h = document.createElement("h3");
       h.innerHTML = lb.title + (lb.chi !== null ? " <span class='chi'>" + chiTxt(lb.chi) + "</span>" : "") +
-        (lb.res ? " <span class='muted' style='font-weight:400'>" + lb.res +
-          (lb.d3 ? " cells long, 3D" : " cells long") + "</span>" : "");
+        (lb.res ? " <span class='muted' style='font-weight:400'>" +
+          (levelOf(lb.res, lb.d3) ? "level " + levelOf(lb.res, lb.d3) + " &middot; " : "") +
+          lb.res + (lb.d3 ? " cells long, 3D" : " cells long") + "</span>" : "");
       var v = document.createElement("video");
       v.controls = true; v.loop = true; v.preload = "metadata"; v.playsInline = true;
       v.src = m.src;
@@ -560,7 +578,7 @@
       var d = STUDIO_DATA[id], m = d.meta || {};
       var b = document.createElement("button");
       b.innerHTML = (m.code || id) + ", " + chiTxt2(m.chi) +
-        "<span class='m'>" + (m.res || "") + "&nbsp; " + (m.t || "") + "</span>";
+        "<span class='m'>" + withLevel(m.res || "") + "&nbsp; " + (m.t || "") + "</span>";
       b.dataset.id = id;
       b.classList.toggle("on", id === curId);
       b.onclick = function () { window.initTerrain(); show(id); };
@@ -609,7 +627,7 @@
     if (!keepCam) { cam.position.set(0, 1.0, 1.5); ctrl.target.set(0, 0.1, 0); }
     var m = d.meta || {};
     document.getElementById("tinfo").textContent =
-      (m.code || "") + ", " + chiTxt2(m.chi) + ", " + (m.res || "") + " at " + (m.t || "");
+      (m.code || "") + ", " + chiTxt2(m.chi) + ", " + withLevel(m.res || "") + " at " + (m.t || "");
   }
 
   // ---------- interactive 3D volumes ----------
@@ -651,7 +669,7 @@
       var m = VOL_DATA[id].meta || {};
       var b = document.createElement("button");
       b.innerHTML = (m.code || id) + ", " + chiTxt2(m.chi) +
-        "<span class='m'>3D " + (m.res || "") + "&nbsp; " + (m.t || "") + "</span>";
+        "<span class='m'>3D " + withLevel(m.res || "") + "&nbsp; " + (m.t || "") + "</span>";
       b.dataset.id = id;
       b.classList.toggle("on", id === vCur);
       b.onclick = function () { window.initVols(); vShow(id); };
@@ -741,7 +759,7 @@
     }
     vCam.position.set(7, 8, 15); vCtrl.target.set(4, 0, 0);
     document.getElementById("vinfo").textContent =
-      (m.code || "") + ", " + chiTxt2(m.chi) + ", 3D " + (m.res || "") +
+      (m.code || "") + ", " + chiTxt2(m.chi) + ", 3D " + withLevel(m.res || "") +
       (seq ? ", scrub or play through time" : " at " + (m.t || ""));
   }
 </script>
