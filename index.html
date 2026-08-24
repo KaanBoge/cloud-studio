@@ -177,7 +177,10 @@
     <div class="twrap">
       <div id="cList"></div>
       <div>
-        <div class="ctl" style="margin-top:0"><span id="cInfo"></span></div>
+        <div class="ctl" style="margin-top:0">
+          <button class="mini" id="cClose" style="display:none">✕ Close file</button>
+          <span id="cInfo"></span>
+        </div>
         <pre id="cView" style="background:var(--surface);border:1px solid var(--line);
           border-radius:10px;padding:12px 14px;overflow:auto;max-height:72vh;
           font:12.5px/1.5 ui-monospace,Consolas,monospace;white-space:pre;margin:6px 0 0">Select a file from the list.</pre>
@@ -186,7 +189,10 @@
   </section>
 </div>
 
-<div id="lightbox"><img id="lbImg" alt=""><div class="cap" id="lbCap"></div></div>
+<div id="lightbox">
+  <button class="mini" id="lbClose" style="position:absolute;top:16px;right:18px">✕ Close</button>
+  <img id="lbImg" alt=""><div class="cap" id="lbCap"></div>
+</div>
 
 <script>var STUDIO_DATA = {}; var VOL_DATA = {}; var VOLSEQ_DATA = {};</script>
 <script src="data/manifest.js"></script>
@@ -326,6 +332,7 @@
           document.querySelectorAll("#cList button").forEach(function (x) { x.classList.remove("on"); });
           b.classList.add("on");
           document.getElementById("cInfo").textContent = "loading " + f.path + " ...";
+          document.getElementById("cClose").style.display = "inline-block";
           fetch(f.file).then(function (r) { return r.text(); }).then(function (txt) {
             document.getElementById("cView").textContent = txt;
             document.getElementById("cInfo").innerHTML = f.code + " &middot; " + f.path +
@@ -344,6 +351,21 @@
   window.refreshCodeList = function () {
     if (document.getElementById("p-code").classList.contains("on")) drawCode();
   };
+  function closeCodeFile() {
+    document.getElementById("cView").textContent = "Select a file from the list.";
+    document.getElementById("cInfo").textContent = "";
+    document.getElementById("cClose").style.display = "none";
+    document.querySelectorAll("#cList button").forEach(function (x) { x.classList.remove("on"); });
+  }
+  document.getElementById("cClose").onclick = closeCodeFile;
+  document.addEventListener("keydown", function (e) {
+    if (e.key !== "Escape") return;
+    if (document.getElementById("lightbox").style.display === "flex") {
+      document.getElementById("lightbox").style.display = "none";
+    } else if (document.getElementById("p-code").classList.contains("on")) {
+      closeCodeFile();
+    }
+  });
 
   // ---------- filters ----------
   var codeSel = "All", chiSel = "All";
