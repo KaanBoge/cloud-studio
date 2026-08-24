@@ -477,7 +477,7 @@
     RUNBY[r.tag.toLowerCase()] = r;
   });
   function runForGallery(g) {
-    var t = String(g.dir || "").split("/").pop().toLowerCase();
+    var t = String(g.tag || String(g.dir || "").split("/").pop()).toLowerCase();
     return RUNBY[t] || null;
   }
   function runForMovie(name) {
