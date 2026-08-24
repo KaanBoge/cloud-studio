@@ -68,7 +68,18 @@
   #rmTable td:first-child { color: var(--muted); white-space: nowrap; width: 34%; }
   .card .cap { color: var(--faint); font-size: 11.5px; margin: 2px 0 8px; }
   .card img { width: 100%; display: block; border-radius: 8px; background: #000; cursor: zoom-in; aspect-ratio: 2 / 1; object-fit: cover; }
-  .fr { display: flex; align-items: center; gap: 10px; margin-top: 8px; font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .fr { display: flex; align-items: center; gap: 8px; margin-top: 8px; font-size: 12px;
+    color: var(--muted); font-variant-numeric: tabular-nums; }
+  .fr .step { border: 1px solid var(--line); background: var(--surface); color: var(--muted);
+    border-radius: 6px; width: 26px; height: 24px; cursor: pointer; font-size: 13px; padding: 0;
+    display: flex; align-items: center; justify-content: center; }
+  .fr .step:hover, .fr .step:focus-visible { color: var(--accent); border-color: var(--accent); }
+  .fr .count { min-width: 62px; text-align: right; }
+  .imgwrap { position: relative; }
+  .imgwrap .spin { position: absolute; inset: 0; display: none; align-items: center;
+    justify-content: center; background: color-mix(in srgb, var(--surface) 55%, transparent);
+    font-size: 12px; color: var(--muted); border-radius: 8px; }
+  .imgwrap.loading .spin { display: flex; }
   .fr input { flex: 1; accent-color: var(--accent); height: 22px; }
   video { width: 100%; border-radius: 8px; background: #000; display: block; }
   #lightbox { position: fixed; inset: 0; background: color-mix(in srgb, var(--page) 92%, transparent); backdrop-filter: blur(6px); display: none; align-items: center; justify-content: center; z-index: 60; flex-direction: column; gap: 8px; cursor: zoom-out; }
@@ -223,11 +234,11 @@
   <img id="lbImg" alt=""><div class="cap" id="lbCap"></div>
 </div>
 
-<script>var STUDIO_V="1787582223"; var STUDIO_DATA = {}; var VOL_DATA = {}; var VOLSEQ_DATA = {};</script>
-<script src="data/manifest.js?v=1787582223"></script>
-<script src="data/terrains.js?v=1787582223"></script>
-<script src="data/codefiles.js?v=1787582223"></script>
-<script src="data/runinfo.js?v=1787582223"></script>
+<script>var STUDIO_V="1787582883"; var STUDIO_DATA = {}; var VOL_DATA = {}; var VOLSEQ_DATA = {};</script>
+<script src="data/manifest.js?v=1787582883"></script>
+<script src="data/terrains.js?v=1787582883"></script>
+<script src="data/codefiles.js?v=1787582883"></script>
+<script src="data/runinfo.js?v=1787582883"></script>
 <script>
   (STUDIO_TERRAINS || []).forEach(function (id) {
     var s = document.createElement("script"); s.src = "data/" + id + ".js?v=" + STUDIO_V; document.head.appendChild(s);
@@ -562,20 +573,76 @@
       h.innerHTML = g.code + ", " + withLevel(g.kind) + " <span class='chi'>" + chiTxt(g.chi) +
         "</span>" + hwBadge(rinfo);
       var cap = document.createElement("div"); cap.className = "cap";
+      var wrap = document.createElement("div"); wrap.className = "imgwrap";
       var img = document.createElement("img"); img.loading = "lazy";
+      var spin = document.createElement("div"); spin.className = "spin";
+      spin.textContent = "loading frames";
+      wrap.appendChild(img); wrap.appendChild(spin);
+
       var fr = document.createElement("div"); fr.className = "fr";
+      var prev = document.createElement("button"); prev.className = "step";
+      prev.innerHTML = "&#9664;"; prev.title = "Previous frame";
+      var play = document.createElement("button"); play.className = "step";
+      play.innerHTML = "&#9654;"; play.title = "Play through the frames";
+      var next = document.createElement("button"); next.className = "step";
+      next.innerHTML = "&#9654;|"; next.title = "Next frame";
       var rng = document.createElement("input"); rng.type = "range";
       rng.min = 0; rng.max = g.files.length - 1; rng.value = g.files.length - 1;
-      var ftxt = document.createElement("span");
-      function setF(i) {
+      rng.title = "Drag to scrub through the frames";
+      var ftxt = document.createElement("span"); ftxt.className = "count";
+
+      var cur = g.files.length - 1, pending = null, timer = null, cached = false;
+      function paint(i) {
         img.src = g.dir + "/" + g.files[i];
-        ftxt.textContent = "frame " + (Number(i) + 1) + " / " + g.files.length;
+        ftxt.textContent = (Number(i) + 1) + " / " + g.files.length;
       }
-      rng.oninput = function () { setF(this.value); };
-      setF(g.files.length - 1);
+      // one repaint per animation frame, so dragging never queues dozens of loads
+      function setF(i) {
+        cur = Math.max(0, Math.min(g.files.length - 1, Number(i)));
+        rng.value = cur;
+        if (pending !== null) return;
+        pending = requestAnimationFrame(function () { pending = null; paint(cur); });
+      }
+      // fetch every frame once, on first interaction, so scrubbing is instant afterwards
+      function warm() {
+        if (cached) return;
+        cached = true;
+        if (g.files.length < 2) return;
+        wrap.classList.add("loading");
+        var left = g.files.length;
+        g.files.forEach(function (f) {
+          var im = new Image();
+          im.onload = im.onerror = function () {
+            if (--left <= 0) wrap.classList.remove("loading");
+          };
+          im.src = g.dir + "/" + f;
+        });
+      }
+      rng.addEventListener("pointerdown", warm);
+      rng.addEventListener("focus", warm);
+      rng.oninput = function () { stop(); setF(this.value); };
+      prev.onclick = function () { stop(); warm(); setF(cur - 1); };
+      next.onclick = function () { stop(); warm(); setF(cur + 1); };
+      function stop() {
+        if (timer) { clearInterval(timer); timer = null; play.innerHTML = "&#9654;"; }
+      }
+      play.onclick = function () {
+        if (timer) { stop(); return; }
+        warm();
+        play.innerHTML = "&#10073;&#10073;";
+        timer = setInterval(function () {
+          setF((cur + 1) % g.files.length);
+        }, 220);
+      };
+      rng.addEventListener("keydown", function (e) {
+        if (e.key === "ArrowLeft") { stop(); setF(cur - 1); }
+        if (e.key === "ArrowRight") { stop(); setF(cur + 1); }
+      });
+      paint(cur);
       img.onclick = function () { openLb(img.src, g.code + ", " + withLevel(g.kind) + ", " + chiTxt(g.chi)); };
+      fr.appendChild(prev); fr.appendChild(play); fr.appendChild(next);
       fr.appendChild(rng); fr.appendChild(ftxt);
-      card.appendChild(h); card.appendChild(cap); card.appendChild(img);
+      card.appendChild(h); card.appendChild(cap); card.appendChild(wrap);
       if (g.files.length > 1) card.appendChild(fr);
       if (rinfo) card.appendChild(detailsButton(rinfo));
       grid.appendChild(card);
