@@ -1,0 +1,63 @@
+<comment>
+problem = cloud-wind matched setup (2D, chi=10, 512x256) for multi-code comparison
+config  = python3 configure.py --prob=cloud_wind --eos=adiabatic --nscalars=1 -mpi -hdf5 -h5double --include=/usr/include/hdf5/openmpi --lib_path=/usr/lib/x86_64-linux-gnu/hdf5/openmpi
+note1   = wind rho=1 P=1 vx=2.582 (Mach 2, c_s=1.291) +x past static chi=10 cloud, r=1 at origin
+note2   = tanh-smoothed edge f=0.5*(1-tanh((r-1)/0.1)); t_cc=sqrt(10)/2.582=1.2249; tlim=5*t_cc=6.12
+note3   = inflow (user BC, fixed wind) on inner-x1, outflow elsewhere; passive scalar r0 tags cloud
+note4   = run: mpirun -np N bin/athena -i athinput.cloud_wind -d . (8 meshblocks of 128x128)
+
+<job>
+problem_id  = CloudWind    # basename of output filenames
+
+<output1>
+file_type   = hst          # history data dump
+dt          = 0.0612       # matched to 0.05*t_end cadence
+
+<output2>
+file_type = hdf5          # VTK data dump, matches A8/Athena4.2 pipeline
+variable    = prim         # primitive variables (+ scalar concentration r0)
+dt = 1.531
+
+# uncomment for HDF5/athdf output instead of (or alongside) vtk
+#<output3>
+#file_type  = hdf5
+#variable   = prim
+#dt         = 0.153
+
+<time>
+cfl_number  = 0.4          # CFL number (vl2 integrator, 2D)
+nlim        = -1           # cycle limit (no limit)
+tlim = 61.24
+integrator  = vl2          # time integration algorithm
+xorder      = 2            # spatial reconstruction (PLM)
+ncycle_out  = 100          # interval for stdout summary info
+
+<mesh>
+nx1         = 512          # zones in x1
+x1min       = -3.0         # minimum x1
+x1max       = 17.0         # maximum x1
+ix1_bc      = user         # inner-x1: user inflow BC (fixed wind state)
+ox1_bc      = outflow      # outer-x1: outflow
+
+nx2         = 256          # zones in x2
+x2min       = -5.0         # minimum x2
+x2max       = 5.0          # maximum x2
+ix2_bc      = outflow      # inner-x2: outflow
+ox2_bc      = outflow      # outer-x2: outflow
+
+nx3         = 1            # zones in x3 (2D)
+x3min       = -5.0
+x3max       = 5.0
+ix3_bc      = outflow
+ox3_bc      = outflow
+
+<meshblock>
+nx1         = 128          # 4 x 2 = 8 meshblocks; works for np = 1,2,4,8
+nx2         = 128
+
+<hydro>
+gamma       = 1.6666666666666667   # 5/3, ideal adiabatic hydro
+
+<problem>
+Mach        = 2.0          # wind Mach number -> v_wind = 2.0*sqrt(5/3) = 2.582
+drat = 1000.0

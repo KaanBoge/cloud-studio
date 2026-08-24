@@ -1,0 +1,108 @@
+# AthenaPK input: cloud-wind matched setup (2D, chi=10, 512x256)
+# for the multi-code cloud-crushing comparison (9th code: AthenaPK, Kokkos/CUDA)
+#
+# Uses AthenaPK's shipped "cloud" problem generator (src/pgen/cloud.cpp,
+# Grete et al.), NOT a custom port. Parameter mapping to the matched spec:
+#
+#   - WIND DIRECTION: AthenaPK's cloud pgen blows the wind along +x2 (y),
+#     with the fixed-wind inflow BC "cloud_inflow_x2" on inner-x2. The whole
+#     setup is therefore ROTATED 90 deg relative to the Athena++/FLASH runs:
+#     here x2 (streamwise) spans [-3,17] and x1 (transverse) spans [-5,5].
+#     Physics is identical; swap axes when comparing fields.
+#   - UNITS: pgen parameters are CGS and divided by code units. We set
+#     code_length/mass/time_cgs = 1, so CGS numbers ARE code units.
+#     rho_wind_cgs=1, r0_cgs=1, v_wind_cgs=2.581988897471611 (Mach 2).
+#   - PRESSURE/TEMPERATURE: the pgen sets P = T_wind*rho_wind/mbar_over_kb
+#     with mbar_over_kb = mu*m_h/k_B, mu=0.5 from He_mass_fraction=0.
+#     T_wind_cgs = 6.061408316891257e-09 K = mbar_over_kb  =>  P = 1 exactly
+#     (c_s = sqrt(5/3) = 1.291, wind Mach = 2). There is no T_cloud input;
+#     the cloud is in pressure equilibrium automatically (T_cloud = T_wind/chi).
+#   - DENSITY PROFILE: pgen rho = rho_wind + 0.5*(rho_cloud-rho_wind)
+#     *(1 - tanh(steepness*(r/r0 - 1))). With steepness=10, r0=1 this is
+#     EXACTLY the matched f = 0.5*(1 - tanh((r-1)/0.1)), rho = 1+(chi-1)f.
+#   - VELOCITY PROFILE (known difference): the matched spec uses
+#     vx = v_wind*(1-f) (tanh-smoothed). AthenaPK's pgen instead uses a step:
+#     v = v_wind for r > 1.3*r0, v = 0 for r <= 1.3*r0 (Gronnow+18 factor).
+#     At r = 1.3 the spec profile is 0.9975*v_wind, so the IC mismatch is
+#     <0.25% outside the cloud plus a static shell for 1 < r < 1.3 that the
+#     spec would give up to ~50% wind speed. Documented, not patched.
+#   - PASSIVE SCALAR (known difference): pgen tags s = rho for r <= r0
+#     (sharp), not s = rho*f (tanh-weighted) as in the Athena++ run.
+#   - TIMES: t_cc = sqrt(10)/2.582 = 1.2247; matched tlim = 6.12 = 5*t_cc
+#     (rounded as in the other 8 codes). rescale_code_time_to_tcc = false,
+#     all times below are plain code units.
+
+<comment>
+problem = cloud-wind matched setup, chi=10, 2D 512x256, AthenaPK GPU
+
+<job>
+problem_id = cloud          # selects the "cloud" pgen in main.cpp
+
+<parthenon/mesh>
+refinement = none
+nghost = 3
+
+nx1 = 1024
+x1min = -5.0
+x1max = 5.0
+ix1_bc = outflow
+ox1_bc = outflow
+
+nx2 = 2048
+x2min = -3.0
+x2max = 17.0
+ix2_bc = cloud_inflow_x2  # fixed wind state (pgen-registered inflow BC)
+ox2_bc = outflow
+
+nx3 = 1
+x3min = -5.0
+x3max = 5.0
+ix3_bc = outflow
+ox3_bc = outflow
+
+pack_size = -1
+
+<parthenon/meshblock>
+nx1 = 256
+nx2 = 256
+
+<parthenon/time>
+integrator = vl2
+cfl = 0.40
+tlim = 6.12
+nlim = -1
+ncycle_out = 100
+
+<hydro>
+fluid = euler
+eos = adiabatic
+riemann = hllc            # matches Athena++ adiabatic-hydro default
+reconstruction = plm      # matches xorder=2
+gamma = 1.6666666666666667
+He_mass_fraction = 0.0    # mu = 0.5; needed only to define mbar_over_kb
+nscalars = 1              # cloud tracer (sharp r<=1 tagging, see header)
+
+<units>
+code_length_cgs = 1.0     # code units == CGS: spec numbers used verbatim
+code_mass_cgs = 1.0
+code_time_cgs = 1.0
+
+<problem/cloud>
+r0_cgs = 1.0
+rho_cloud_cgs = 10.0
+rho_wind_cgs = 1.0
+T_wind_cgs = 6.061408316891257e-09   # = mu*m_h/k_B  =>  P = 1, c_s = 1.291
+v_wind_cgs = 2.581988897471611       # Mach 2
+cloud_steepness = 10.0    # tanh width 0.1*r0, matched profile
+rescale_code_time_to_tcc = false
+plasma_beta = -1.0        # pure hydro, no B field
+
+<parthenon/output0>
+file_type = hst
+dt = 0.0612
+
+<parthenon/output1>
+file_type = hdf5
+variables = prim
+id = prim
+dt = 0.153

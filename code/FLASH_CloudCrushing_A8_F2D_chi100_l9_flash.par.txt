@@ -1,0 +1,80 @@
+#	CloudCrush ULTIMATE take 2: lrefine_max=9 (4096x2048 effective).
+#	Robust hydro settings after the Roe run aborted at t=0.447 with a
+#	collapsed timestep (resolved shear layers produced an unphysical
+#	state): HLLC Riemann solver, cfl 0.45, shock flattening on.
+
+sim_pAmbient	= 1.0
+sim_rhoAmbient	= 1.0
+sim_windVel	= 2.582
+sim_rhoCloud = 100.0
+sim_rCloud	= 0.1
+sim_smoothWidth	= 0.1
+sim_xctr	= 0.3
+sim_yctr	= 0.5
+sim_zctr	= 0.5
+
+gamma           = 1.6666666666666667
+
+geometry = "cartesian"
+Nblockx		= 2
+Nblocky		= 1
+xmin		= 0.
+xmax		= 2.
+ymin		= 0.
+ymax		= 1.
+
+xl_boundary_type = "user"
+xr_boundary_type = "outflow"
+yl_boundary_type = "outflow"
+yr_boundary_type = "outflow"
+
+cfl		= 0.45
+basenm          = "cloudcrush_"
+restart         = .false.
+
+checkpointFileIntervalTime = 0.065
+checkpointFileIntervalStep = 0
+checkpointFileNumber = 0
+
+plotfileIntervalTime = 0.
+plotfileIntervalStep = 0
+plotfileNumber = 0
+
+nend = 9999999
+tmax = 1.94
+
+run_comment     = "Cloud crushing ULTIMATE take2: lref 9, HLLC, cfl 0.45"
+log_file        = "cloudcrush.log"
+eintSwitch     = 1.e-4
+
+plot_var_1 = "dens"
+plot_var_2 = "pres"
+plot_var_3 = "temp"
+
+lrefine_max = 9
+refine_var_1 = "dens"
+refine_var_2 = "pres"
+
+iProcs = 1
+jProcs = 1
+kProcs = 1
+
+order		= 3
+slopeLimiter    = "mc"
+LimitedSlopeBeta= 1.
+charLimiting	= .true.
+
+use_avisc	= .true.
+cvisc		= 0.1
+use_flattening	= .true.
+use_steepening	= .false.
+use_upwindTVD	= .false.
+
+RiemannSolver	= "HLLC"
+entropy         = .false.
+
+shockDetect	= .true.
+
+useSTS                  = .false.
+nstepTotalSTS           = 5
+nuSTS                   = 0.2

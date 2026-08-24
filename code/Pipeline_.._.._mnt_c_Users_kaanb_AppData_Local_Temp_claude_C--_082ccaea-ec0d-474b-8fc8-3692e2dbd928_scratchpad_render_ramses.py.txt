@@ -1,0 +1,58 @@
+"""Unified renderer for RAMSES outputs (yt cannot read this single-precision build).
+
+Usage: render_ramses.py <chi> <tcc> <label> <rundir>
+Renders every output_NNNNN directory to the standard comparison window.
+"""
+import glob
+import os
+import sys
+
+import matplotlib
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
+import numpy as np
+
+sys.path.insert(0, "/home/kaan")
+from ramses_reader import read_output  # noqa: E402
+
+CHI, TCC, LABEL, RUNDIR = int(sys.argv[1]), float(sys.argv[2]), sys.argv[3], sys.argv[4]
+
+CLIM = {10: (-1.0, 1.5), 100: (-1.0, 2.5), 1000: (-1.0, 3.5)}
+vmin, vmax = CLIM.get(CHI, (-1.0, 1.5))
+EXTENT = (-3.0, 17.0, -5.0, 5.0)
+OX, OY = 3.0, 10.0          # cloud centre in RAMSES box coordinates
+NX, NY = 512, 256
+
+xedges = np.linspace(EXTENT[0], EXTENT[1], NX + 1)
+yedges = np.linspace(EXTENT[2], EXTENT[3], NY + 1)
+
+dirs = sorted(glob.glob(os.path.join(RUNDIR, "output_[0-9][0-9][0-9][0-9][0-9]")))
+n = 0
+for d in dirs:
+    out = os.path.join(RUNDIR, os.path.basename(d) + "_dens.png")
+    if os.path.exists(out):
+        continue
+    try:
+        t, c = read_output(d)
+        x = c[:, 0] - OX
+        y = c[:, 1] - OY
+        rho = c[:, 3]
+        num, _, _ = np.histogram2d(x, y, bins=[xedges, yedges], weights=rho)
+        cnt, _, _ = np.histogram2d(x, y, bins=[xedges, yedges])
+        arr = np.where(cnt > 0, num / np.maximum(cnt, 1), 1.0).T
+        la = np.log10(np.clip(arr, 1e-8, None))
+        fig, ax = plt.subplots(figsize=(14.0, 6.5), dpi=115)
+        im = ax.imshow(la, extent=EXTENT, origin="lower", cmap="viridis",
+                       vmin=vmin, vmax=vmax, aspect="equal", interpolation="nearest")
+        ax.set_title("%s    chi = %d    t = %.1f t_cc" % (LABEL, CHI, t / TCC), fontsize=13)
+        ax.set_xlabel("x / r_cloud")
+        ax.set_ylabel("y / r_cloud")
+        cb = fig.colorbar(im, ax=ax, shrink=0.85)
+        cb.set_label("log10 density / wind density")
+        fig.tight_layout()
+        fig.savefig(out)
+        plt.close(fig)
+        n += 1
+    except Exception as e:
+        print("FAIL", d, repr(e))
+print("rendered %d/%d in %s" % (n, len(dirs), RUNDIR))

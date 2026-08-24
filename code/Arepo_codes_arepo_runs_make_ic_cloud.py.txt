@@ -1,0 +1,112 @@
+"""Create AREPO HDF5 initial conditions for the 2D cloud-crushing test.
+
+Cloud-wind matched setup (identical physics across codes):
+  ambient/wind: rho=1, P=1, vx = 2.582 (Mach 2, cs=1.291), gamma=5/3
+  cloud: overdensity chi, static, P=1, radius 1.0
+  smooth edge: f = 0.5*(1 - tanh((r-1.0)/0.1)); rho = 1+(chi-1)*f; vx = 2.582*(1-f)
+
+Periodic long-box variant (Braspenning+2023 style), as appropriate for a
+moving-mesh code: box 20 x 10 (code coords x in [0,20], y in [0,10]),
+cloud centered 3 units from the left edge at (3, 5).
+AREPO compile-time: BoxSize=10 with LONG_X=2.0 gives the 20x10 box.
+
+Header structure copied from examples/gresho_2d/create.py (Rainer Weinberger).
+
+Usage: python make_ic_cloud.py <output_dir> [chi] [ny]
+  chi: cloud overdensity (default 10)
+  ny : mesh-generating points across the y extent (10 units); nx = 2*ny.
+       Default 64 (128x64 = 8192 cells, smoke test). Production: 256+.
+"""
+import sys
+import numpy as np
+import h5py
+
+outdir = sys.argv[1] if len(sys.argv) > 1 else '.'
+chi = float(sys.argv[2]) if len(sys.argv) > 2 else 10.0
+ny = int(sys.argv[3]) if len(sys.argv) > 3 else 64
+nx = 2 * ny
+
+FloatType = np.float64
+IntType = np.int32
+
+# geometry (code coordinates)
+Boxsize = FloatType(10.0)        # y extent; x extent = LONG_X * Boxsize = 20
+Lx, Ly = 20.0, 10.0
+cloud_x, cloud_y = 3.0, 5.0      # cloud center: 3 from left edge, mid-plane
+R_cloud = 1.0
+dr_edge = 0.1
+
+# physics
+gamma = 5.0 / 3.0
+rho_wind = 1.0
+P0 = 1.0
+v_wind = 2.582                    # Mach 2.0 (cs = sqrt(gamma*P/rho) = 1.291)
+
+# mesh-generating points on a uniform grid with a tiny deterministic jitter
+# (avoids degenerate Voronoi construction on a perfectly regular lattice)
+dx = Lx / nx
+dy = Ly / ny
+assert abs(dx - dy) < 1e-12
+xc = (np.arange(nx) + 0.5) * dx
+yc = (np.arange(ny) + 0.5) * dy
+X, Y = np.meshgrid(xc, yc, indexing='ij')
+x = X.ravel()
+y = Y.ravel()
+N = x.size
+
+rng = np.random.default_rng(42)
+x += rng.uniform(-0.05, 0.05, N) * dx
+y += rng.uniform(-0.05, 0.05, N) * dy
+
+Pos = np.zeros((N, 3), dtype=FloatType)
+Pos[:, 0] = x
+Pos[:, 1] = y
+
+# tanh cloud profile
+r = np.sqrt((x - cloud_x) ** 2 + (y - cloud_y) ** 2)
+f = 0.5 * (1.0 - np.tanh((r - R_cloud) / dr_edge))
+rho = rho_wind + (chi - 1.0) * f
+vx = v_wind * (1.0 - f)
+
+cell_volume = dx * dy             # 2D: area per cell
+Mass = (rho * cell_volume).astype(FloatType)
+Vel = np.zeros((N, 3), dtype=FloatType)
+Vel[:, 0] = vx
+Uthermal = (P0 / rho / (gamma - 1.0)).astype(FloatType)
+Tracer = f.astype(FloatType).reshape(N, 1)   # passive scalar: cloud fraction
+
+# write IC file; header modeled on examples/gresho_2d/create.py
+with h5py.File(outdir + '/IC.hdf5', 'w') as IC:
+    header = IC.create_group("Header")
+    part0 = IC.create_group("PartType0")
+
+    NumPart = np.array([N, 0, 0, 0, 0, 0], dtype=IntType)
+    header.attrs.create("NumPart_ThisFile", NumPart)
+    header.attrs.create("NumPart_Total", NumPart)
+    header.attrs.create("NumPart_Total_HighWord", np.zeros(6, dtype=IntType))
+    header.attrs.create("MassTable", np.zeros(6, dtype=IntType))
+    header.attrs.create("Time", 0.0)
+    header.attrs.create("Redshift", 0.0)
+    header.attrs.create("BoxSize", Boxsize)
+    header.attrs.create("NumFilesPerSnapshot", 1)
+    header.attrs.create("Omega0", 0.0)
+    header.attrs.create("OmegaB", 0.0)
+    header.attrs.create("OmegaLambda", 0.0)
+    header.attrs.create("HubbleParam", 1.0)
+    header.attrs.create("Flag_Sfr", 0)
+    header.attrs.create("Flag_Cooling", 0)
+    header.attrs.create("Flag_StellarAge", 0)
+    header.attrs.create("Flag_Metals", 0)
+    header.attrs.create("Flag_Feedback", 0)
+    header.attrs.create("Flag_DoublePrecision", 1 if Pos.dtype == np.float64 else 0)
+
+    part0.create_dataset("ParticleIDs", data=np.arange(1, N + 1))
+    part0.create_dataset("Coordinates", data=Pos)
+    part0.create_dataset("Masses", data=Mass)
+    part0.create_dataset("Velocities", data=Vel)
+    part0.create_dataset("InternalEnergy", data=Uthermal)
+    part0.create_dataset("PassiveScalars", data=Tracer)
+
+t_cc = np.sqrt(chi) * R_cloud / v_wind
+print("wrote %s/IC.hdf5: %d cells (%dx%d), chi=%g, t_cc=%.4f, 5*t_cc=%.3f"
+      % (outdir, N, nx, ny, chi, t_cc, 5 * t_cc))

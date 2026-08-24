@@ -1,0 +1,403 @@
+MPI_Init: NumberOfProcessors = 4
+warning: the following parameter line was not interpreted:
+CloudWindAmbientDensity    = 1.0
+warning: the following parameter line was not interpreted:
+CloudWindAmbientPressure   = 1.0
+warning: the following parameter line was not interpreted:
+CloudWindVelocity          = 2.581989
+warning: the following parameter line was not interpreted:
+CloudWindChi               = 10
+warning: the following parameter line was not interpreted:
+CloudWindCloudRadius       = 1.0
+warning: the following parameter line was not interpreted:
+CloudWindSmoothWidth       = 0.1
+warning: the following parameter line was not interpreted:
+CloudWindCenter            = 0.0 0.0 0.0
+warning: the following parameter line was not interpreted:
+CloudWindUseTracer         = 1
+Global Dir set to .
+CloudWind warning: the following parameter line was not interpreted:
+# PROBLEM DEFINITION FILE: CloudWind (cloud crushing), 2D, chi=10
+
+CloudWind warning: the following parameter line was not interpreted:
+ProblemType                = 15       // CloudWind
+
+CloudWind warning: the following parameter line was not interpreted:
+# PROBLEM DEFINITION FILE: CloudWind (cloud crushing), 2D, chi=10
+
+CloudWind warning: the following parameter line was not interpreted:
+ProblemType                = 15       // CloudWind
+
+CloudWind warning: the following parameter line was not interpreted:
+# PROBLEM DEFINITION FILE: CloudWind (cloud crushing), 2D, chi=10
+
+CloudWind warning: the following parameter line was not interpreted:
+ProblemType                = 15       // CloudWind
+
+CloudWind warning: the following parameter line was not interpreted:
+# PROBLEM DEFINITION FILE: CloudWind (cloud crushing), 2D, chi=10
+
+CloudWind warning: the following parameter line was not interpreted:
+ProblemType                = 15       // CloudWind
+
+ENZO_layout 2 x 2 x 0
+PartitionGrid (on all processors): Layout = 2 2 1
+NumberOfNewGrids = 4
+GridDims[0]:  256 256
+GridDims[1]:  128 128
+GridDims[2]:  1
+StartIndex[0]:  0 256
+StartIndex[1]:  0 128
+StartIndex[2]:  0
+Grid distribution
+Delete OldGrid
+OldGrid deleted
+Successfully read in parameter file CloudWind.enzo.
+INITIALIZATION TIME =   1.52464280e-02
+Continuation Flag = 1
+TopGrid dt = 3.025768e-03     time = 0    cycle = 0
+TopGrid dt = 3.025768e-03     time = 0.0030257680278609    cycle = 1
+TopGrid dt = 3.025768e-03     time = 0.0060515360557219    cycle = 2
+TopGrid dt = 3.025768e-03     time = 0.0090773040835828    cycle = 3
+TopGrid dt = 3.025768e-03     time = 0.012103072111444    cycle = 4
+TopGrid dt = 3.025768e-03     time = 0.015128840139305    cycle = 5
+TopGrid dt = 3.025768e-03     time = 0.018154608167166    cycle = 6
+TopGrid dt = 3.025768e-03     time = 0.021180376195026    cycle = 7
+TopGrid dt = 3.025768e-03     time = 0.024206144222887    cycle = 8
+TopGrid dt = 3.025768e-03     time = 0.027231912250748    cycle = 9
+TopGrid dt = 3.025768e-03     time = 0.030257680278609    cycle = 10
+TopGrid dt = 3.025768e-03     time = 0.03328344830647    cycle = 11
+TopGrid dt = 3.025768e-03     time = 0.036309216334331    cycle = 12
+TopGrid dt = 3.025768e-03     time = 0.039334984362192    cycle = 13
+TopGrid dt = 3.025768e-03     time = 0.042360752390053    cycle = 14
+TopGrid dt = 3.025768e-03     time = 0.045386520417914    cycle = 15
+TopGrid dt = 3.025768e-03     time = 0.048412288445775    cycle = 16
+TopGrid dt = 3.025768e-03     time = 0.051438056473636    cycle = 17
+TopGrid dt = 3.025768e-03     time = 0.054463824501497    cycle = 18
+TopGrid dt = 3.025768e-03     time = 0.057489592529358    cycle = 19
+TopGrid dt = 3.025768e-03     time = 0.060515360557219    cycle = 20
+TopGrid dt = 3.025768e-03     time = 0.063541128585079    cycle = 21
+TopGrid dt = 3.025768e-03     time = 0.06656689661294    cycle = 22
+TopGrid dt = 3.025768e-03     time = 0.069592664640801    cycle = 23
+TopGrid dt = 3.025768e-03     time = 0.072618432668662    cycle = 24
+TopGrid dt = 3.025768e-03     time = 0.075644200696523    cycle = 25
+TopGrid dt = 3.025768e-03     time = 0.078669968724384    cycle = 26
+TopGrid dt = 3.025768e-03     time = 0.081695736752245    cycle = 27
+TopGrid dt = 3.025768e-03     time = 0.084721504780106    cycle = 28
+TopGrid dt = 3.025768e-03     time = 0.087747272807967    cycle = 29
+TopGrid dt = 3.025768e-03     time = 0.090773040835828    cycle = 30
+TopGrid dt = 3.025768e-03     time = 0.093798808863689    cycle = 31
+TopGrid dt = 3.025768e-03     time = 0.09682457689155    cycle = 32
+TopGrid dt = 3.025768e-03     time = 0.09985034491941    cycle = 33
+TopGrid dt = 3.016078e-03     time = 0.10287611294727    cycle = 34
+TopGrid dt = 2.991782e-03     time = 0.10589219089999    cycle = 35
+TopGrid dt = 2.960819e-03     time = 0.10888397252386    cycle = 36
+TopGrid dt = 2.927634e-03     time = 0.11184479183485    cycle = 37
+TopGrid dt = 2.897415e-03     time = 0.11477242593747    cycle = 38
+TopGrid dt = 2.874675e-03     time = 0.11766984094628    cycle = 39
+TopGrid dt = 2.849864e-03     time = 0.12054451590669    cycle = 40
+TopGrid dt = 2.836912e-03     time = 0.12339437992494    cycle = 41
+TopGrid dt = 2.819167e-03     time = 0.12623129173959    cycle = 42
+TopGrid dt = 2.812443e-03     time = 0.1290504582703    cycle = 43
+TopGrid dt = 2.798288e-03     time = 0.13186290112542    cycle = 44
+TopGrid dt = 2.765843e-03     time = 0.13466118959097    cycle = 45
+TopGrid dt = 2.733208e-03     time = 0.13742703250805    cycle = 46
+TopGrid dt = 2.697974e-03     time = 0.14016024040648    cycle = 47
+TopGrid dt = 2.670644e-03     time = 0.14285821444644    cycle = 48
+TopGrid dt = 2.641881e-03     time = 0.14552885839405    cycle = 49
+TopGrid dt = 2.630248e-03     time = 0.14817073908889    cycle = 50
+TopGrid dt = 2.197703e-03     time = 0.1508009870738    cycle = 51
+Continuation Flag = 1
+TopGrid dt = 2.618576e-03     time = 0.15299868974829    cycle = 52
+TopGrid dt = 2.614246e-03     time = 0.15561726586046    cycle = 53
+TopGrid dt = 2.618185e-03     time = 0.15823151177816    cycle = 54
+TopGrid dt = 2.615288e-03     time = 0.16084969668322    cycle = 55
+TopGrid dt = 2.604152e-03     time = 0.16346498508141    cycle = 56
+TopGrid dt = 2.589683e-03     time = 0.16606913757818    cycle = 57
+TopGrid dt = 2.583050e-03     time = 0.16865882097449    cycle = 58
+TopGrid dt = 2.576791e-03     time = 0.17124187088827    cycle = 59
+TopGrid dt = 2.575076e-03     time = 0.17381866153703    cycle = 60
+TopGrid dt = 2.571887e-03     time = 0.17639373799978    cycle = 61
+TopGrid dt = 2.572422e-03     time = 0.17896562451056    cycle = 62
+TopGrid dt = 2.571355e-03     time = 0.18153804700243    cycle = 63
+TopGrid dt = 2.572902e-03     time = 0.18410940203232    cycle = 64
+TopGrid dt = 2.571793e-03     time = 0.18668230430573    cycle = 65
+TopGrid dt = 2.572300e-03     time = 0.18925409685809    cycle = 66
+TopGrid dt = 2.570949e-03     time = 0.19182639718491    cycle = 67
+TopGrid dt = 2.571462e-03     time = 0.19439734600788    cycle = 68
+TopGrid dt = 2.559859e-03     time = 0.19696880780695    cycle = 69
+TopGrid dt = 2.552680e-03     time = 0.19952866688087    cycle = 70
+TopGrid dt = 2.543622e-03     time = 0.20208134682081    cycle = 71
+TopGrid dt = 2.537363e-03     time = 0.2046249692618    cycle = 72
+TopGrid dt = 2.528865e-03     time = 0.20716233240568    cycle = 73
+TopGrid dt = 2.524752e-03     time = 0.20969119762772    cycle = 74
+TopGrid dt = 2.518250e-03     time = 0.2122159491697    cycle = 75
+TopGrid dt = 2.516296e-03     time = 0.21473419929945    cycle = 76
+TopGrid dt = 2.511839e-03     time = 0.21725049533811    cycle = 77
+TopGrid dt = 2.511504e-03     time = 0.21976233467075    cycle = 78
+TopGrid dt = 2.507275e-03     time = 0.22227383897708    cycle = 79
+TopGrid dt = 2.498103e-03     time = 0.22478111383321    cycle = 80
+TopGrid dt = 2.491102e-03     time = 0.22727921655901    cycle = 81
+TopGrid dt = 2.485024e-03     time = 0.22977031815599    cycle = 82
+TopGrid dt = 2.480119e-03     time = 0.23225534244362    cycle = 83
+TopGrid dt = 2.476155e-03     time = 0.23473546110906    cycle = 84
+TopGrid dt = 2.473428e-03     time = 0.23721161571364    cycle = 85
+TopGrid dt = 2.472290e-03     time = 0.23968504350683    cycle = 86
+TopGrid dt = 2.471958e-03     time = 0.24215733397366    cycle = 87
+TopGrid dt = 2.472890e-03     time = 0.24462929200849    cycle = 88
+TopGrid dt = 2.474296e-03     time = 0.24710218218565    cycle = 89
+TopGrid dt = 2.470927e-03     time = 0.2495764779474    cycle = 90
+TopGrid dt = 2.466693e-03     time = 0.25204740526178    cycle = 91
+TopGrid dt = 2.464400e-03     time = 0.25451409864429    cycle = 92
+TopGrid dt = 2.463371e-03     time = 0.25697849890586    cycle = 93
+TopGrid dt = 2.463701e-03     time = 0.25944186983547    cycle = 94
+TopGrid dt = 2.462367e-03     time = 0.26190557073813    cycle = 95
+TopGrid dt = 2.461185e-03     time = 0.26436793741054    cycle = 96
+TopGrid dt = 2.459534e-03     time = 0.26682912253416    cycle = 97
+TopGrid dt = 2.459389e-03     time = 0.26928865652168    cycle = 98
+TopGrid dt = 2.458317e-03     time = 0.2717480454669    cycle = 99
+TopGrid dt = 2.456250e-03     time = 0.2742063621364    cycle = 100
+TopGrid dt = 2.453392e-03     time = 0.27666261196267    cycle = 101
+TopGrid dt = 2.452642e-03     time = 0.27911600438494    cycle = 102
+TopGrid dt = 2.449034e-03     time = 0.28156864602171    cycle = 103
+TopGrid dt = 2.445167e-03     time = 0.28401768017076    cycle = 104
+TopGrid dt = 2.442517e-03     time = 0.28646284679414    cycle = 105
+TopGrid dt = 2.442041e-03     time = 0.28890536392836    cycle = 106
+TopGrid dt = 2.442146e-03     time = 0.29134740473396    cycle = 107
+TopGrid dt = 2.443449e-03     time = 0.29378955089065    cycle = 108
+TopGrid dt = 2.443728e-03     time = 0.29623300022792    cycle = 109
+TopGrid dt = 2.444616e-03     time = 0.2986767280355    cycle = 110
+TopGrid dt = 2.445826e-03     time = 0.30112134369964    cycle = 111
+TopGrid dt = 2.431543e-03     time = 0.30356717016101    cycle = 112
+Continuation Flag = 1
+TopGrid dt = 2.450643e-03     time = 0.30599871312998    cycle = 113
+TopGrid dt = 2.450019e-03     time = 0.30844935627516    cycle = 114
+TopGrid dt = 2.446872e-03     time = 0.31089937485417    cycle = 115
+TopGrid dt = 2.444594e-03     time = 0.31334624640408    cycle = 116
+TopGrid dt = 2.442379e-03     time = 0.31579084040655    cycle = 117
+TopGrid dt = 2.441336e-03     time = 0.318233219803    cycle = 118
+TopGrid dt = 2.441236e-03     time = 0.32067455565664    cycle = 119
+TopGrid dt = 2.441827e-03     time = 0.32311579208581    cycle = 120
+TopGrid dt = 2.441457e-03     time = 0.32555761952022    cycle = 121
+TopGrid dt = 2.441661e-03     time = 0.32799907683809    cycle = 122
+TopGrid dt = 2.441975e-03     time = 0.33044073752017    cycle = 123
+TopGrid dt = 2.442309e-03     time = 0.3328827123266    cycle = 124
+TopGrid dt = 2.440674e-03     time = 0.33532502112336    cycle = 125
+TopGrid dt = 2.439890e-03     time = 0.33776569471916    cycle = 126
+TopGrid dt = 2.439668e-03     time = 0.34020558521155    cycle = 127
+TopGrid dt = 2.440793e-03     time = 0.34264525323528    cycle = 128
+TopGrid dt = 2.441929e-03     time = 0.34508604589407    cycle = 129
+TopGrid dt = 2.441655e-03     time = 0.34752797506823    cycle = 130
+TopGrid dt = 2.440036e-03     time = 0.34996962989435    cycle = 131
+TopGrid dt = 2.439132e-03     time = 0.35240966631209    cycle = 132
+TopGrid dt = 2.438989e-03     time = 0.35484879879432    cycle = 133
+TopGrid dt = 2.439935e-03     time = 0.35728778792828    cycle = 134
+TopGrid dt = 2.441596e-03     time = 0.35972772259745    cycle = 135
+TopGrid dt = 2.441370e-03     time = 0.36216931843029    cycle = 136
+TopGrid dt = 2.442020e-03     time = 0.36461068799378    cycle = 137
+TopGrid dt = 2.441376e-03     time = 0.36705270788412    cycle = 138
+TopGrid dt = 2.440977e-03     time = 0.36949408398181    cycle = 139
+TopGrid dt = 2.441589e-03     time = 0.37193506088167    cycle = 140
+
+... [2120 lines omitted from the middle of this file; the complete file is on the research machine] ...
+
+TopGrid dt = 2.597964e-03     time = 5.6455069939219    cycle = 2227
+TopGrid dt = 2.598897e-03     time = 5.6481049581344    cycle = 2228
+TopGrid dt = 2.598534e-03     time = 5.6507038553497    cycle = 2229
+TopGrid dt = 2.599404e-03     time = 5.6533023898061    cycle = 2230
+TopGrid dt = 2.599749e-03     time = 5.6559017939828    cycle = 2231
+TopGrid dt = 2.497176e-03     time = 5.658501543428    cycle = 2232
+Continuation Flag = 1
+TopGrid dt = 2.599995e-03     time = 5.6609987196927    cycle = 2233
+TopGrid dt = 2.600390e-03     time = 5.6635987143756    cycle = 2234
+TopGrid dt = 2.599922e-03     time = 5.6661991046421    cycle = 2235
+TopGrid dt = 2.599784e-03     time = 5.668799026375    cycle = 2236
+TopGrid dt = 2.597900e-03     time = 5.6713988106129    cycle = 2237
+TopGrid dt = 2.597979e-03     time = 5.6739967102871    cycle = 2238
+TopGrid dt = 2.597265e-03     time = 5.6765946896662    cycle = 2239
+TopGrid dt = 2.596696e-03     time = 5.6791919544302    cycle = 2240
+TopGrid dt = 2.595249e-03     time = 5.6817886506862    cycle = 2241
+TopGrid dt = 2.595717e-03     time = 5.684383899673    cycle = 2242
+TopGrid dt = 2.594553e-03     time = 5.6869796169574    cycle = 2243
+TopGrid dt = 2.594366e-03     time = 5.6895741698201    cycle = 2244
+TopGrid dt = 2.593350e-03     time = 5.6921685359646    cycle = 2245
+TopGrid dt = 2.594216e-03     time = 5.6947618856058    cycle = 2246
+TopGrid dt = 2.592625e-03     time = 5.6973561014762    cycle = 2247
+TopGrid dt = 2.592826e-03     time = 5.699948726857    cycle = 2248
+TopGrid dt = 2.592228e-03     time = 5.7025415525604    cycle = 2249
+TopGrid dt = 2.592769e-03     time = 5.7051337800823    cycle = 2250
+TopGrid dt = 2.591474e-03     time = 5.7077265495248    cycle = 2251
+TopGrid dt = 2.592060e-03     time = 5.7103180231028    cycle = 2252
+TopGrid dt = 2.591860e-03     time = 5.7129100831226    cycle = 2253
+TopGrid dt = 2.591973e-03     time = 5.7155019426902    cycle = 2254
+TopGrid dt = 2.591093e-03     time = 5.7180939161896    cycle = 2255
+TopGrid dt = 2.592031e-03     time = 5.7206850087547    cycle = 2256
+TopGrid dt = 2.591635e-03     time = 5.7232770396886    cycle = 2257
+TopGrid dt = 2.591950e-03     time = 5.7258686746628    cycle = 2258
+TopGrid dt = 2.591483e-03     time = 5.7284606245099    cycle = 2259
+TopGrid dt = 2.592754e-03     time = 5.7310521071258    cycle = 2260
+TopGrid dt = 2.591886e-03     time = 5.7336448610861    cycle = 2261
+TopGrid dt = 2.592560e-03     time = 5.736236747116    cycle = 2262
+TopGrid dt = 2.592470e-03     time = 5.7388293073498    cycle = 2263
+TopGrid dt = 2.593644e-03     time = 5.7414217775823    cycle = 2264
+TopGrid dt = 2.593055e-03     time = 5.7440154218261    cycle = 2265
+TopGrid dt = 2.594067e-03     time = 5.7466084770053    cycle = 2266
+TopGrid dt = 2.594178e-03     time = 5.7492025443474    cycle = 2267
+TopGrid dt = 2.594842e-03     time = 5.7517967224137    cycle = 2268
+TopGrid dt = 2.594753e-03     time = 5.7543915644701    cycle = 2269
+TopGrid dt = 2.595684e-03     time = 5.7569863176656    cycle = 2270
+TopGrid dt = 2.595153e-03     time = 5.759582002118    cycle = 2271
+TopGrid dt = 2.596207e-03     time = 5.7621771554712    cycle = 2272
+TopGrid dt = 2.596538e-03     time = 5.7647733623427    cycle = 2273
+TopGrid dt = 2.596499e-03     time = 5.7673699007538    cycle = 2274
+TopGrid dt = 2.596438e-03     time = 5.7699663996701    cycle = 2275
+TopGrid dt = 2.596259e-03     time = 5.7725628381588    cycle = 2276
+TopGrid dt = 2.595640e-03     time = 5.7751590975707    cycle = 2277
+TopGrid dt = 2.595115e-03     time = 5.7777547375582    cycle = 2278
+TopGrid dt = 2.594760e-03     time = 5.7803498522529    cycle = 2279
+TopGrid dt = 2.594530e-03     time = 5.7829446120637    cycle = 2280
+TopGrid dt = 2.594473e-03     time = 5.7855391420325    cycle = 2281
+TopGrid dt = 2.594120e-03     time = 5.7881336145412    cycle = 2282
+TopGrid dt = 2.593288e-03     time = 5.7907277341282    cycle = 2283
+TopGrid dt = 2.592768e-03     time = 5.7933210217124    cycle = 2284
+TopGrid dt = 2.592507e-03     time = 5.7959137895464    cycle = 2285
+TopGrid dt = 2.592613e-03     time = 5.7985062962125    cycle = 2286
+TopGrid dt = 2.591684e-03     time = 5.8010989094792    cycle = 2287
+TopGrid dt = 2.592325e-03     time = 5.8036905933675    cycle = 2288
+TopGrid dt = 2.591872e-03     time = 5.8062829180099    cycle = 2289
+TopGrid dt = 2.591357e-03     time = 5.8088747899479    cycle = 2290
+TopGrid dt = 2.532577e-03     time = 5.8114661466348    cycle = 2291
+Continuation Flag = 1
+TopGrid dt = 2.590135e-03     time = 5.8139987232323    cycle = 2292
+TopGrid dt = 2.589839e-03     time = 5.8165888583455    cycle = 2293
+TopGrid dt = 2.589904e-03     time = 5.8191786968769    cycle = 2294
+TopGrid dt = 2.589222e-03     time = 5.8217686012556    cycle = 2295
+TopGrid dt = 2.588212e-03     time = 5.8243578234627    cycle = 2296
+TopGrid dt = 2.587411e-03     time = 5.8269460349628    cycle = 2297
+TopGrid dt = 2.586915e-03     time = 5.8295334463701    cycle = 2298
+TopGrid dt = 2.586697e-03     time = 5.8321203612241    cycle = 2299
+TopGrid dt = 2.586871e-03     time = 5.8347070581657    cycle = 2300
+TopGrid dt = 2.587207e-03     time = 5.8372939296398    cycle = 2301
+TopGrid dt = 2.586717e-03     time = 5.8398811370413    cycle = 2302
+TopGrid dt = 2.586176e-03     time = 5.8424678540717    cycle = 2303
+TopGrid dt = 2.585792e-03     time = 5.8450540298329    cycle = 2304
+TopGrid dt = 2.585661e-03     time = 5.8476398219572    cycle = 2305
+TopGrid dt = 2.585813e-03     time = 5.8502254832781    cycle = 2306
+TopGrid dt = 2.586189e-03     time = 5.8528112958006    cycle = 2307
+TopGrid dt = 2.586875e-03     time = 5.8553974851063    cycle = 2308
+TopGrid dt = 2.586585e-03     time = 5.8579843596329    cycle = 2309
+TopGrid dt = 2.586350e-03     time = 5.8605709441631    cycle = 2310
+TopGrid dt = 2.585917e-03     time = 5.8631572943471    cycle = 2311
+TopGrid dt = 2.585560e-03     time = 5.865743211842    cycle = 2312
+TopGrid dt = 2.585345e-03     time = 5.8683287721739    cycle = 2313
+TopGrid dt = 2.585465e-03     time = 5.8709141173795    cycle = 2314
+TopGrid dt = 2.585714e-03     time = 5.8734995827097    cycle = 2315
+TopGrid dt = 2.585662e-03     time = 5.8760852962572    cycle = 2316
+TopGrid dt = 2.585077e-03     time = 5.878670957954    cycle = 2317
+TopGrid dt = 2.584578e-03     time = 5.8812560346711    cycle = 2318
+TopGrid dt = 2.584218e-03     time = 5.8838406128113    cycle = 2319
+TopGrid dt = 2.584094e-03     time = 5.8864248304534    cycle = 2320
+TopGrid dt = 2.584163e-03     time = 5.8890089244839    cycle = 2321
+TopGrid dt = 2.584631e-03     time = 5.8915930872827    cycle = 2322
+TopGrid dt = 2.585251e-03     time = 5.894177718033    cycle = 2323
+TopGrid dt = 2.584838e-03     time = 5.8967629692576    cycle = 2324
+TopGrid dt = 2.584433e-03     time = 5.8993478069026    cycle = 2325
+TopGrid dt = 2.584159e-03     time = 5.9019322394731    cycle = 2326
+TopGrid dt = 2.584074e-03     time = 5.9045163989699    cycle = 2327
+TopGrid dt = 2.584297e-03     time = 5.9071004734532    cycle = 2328
+TopGrid dt = 2.584702e-03     time = 5.9096847708895    cycle = 2329
+TopGrid dt = 2.585158e-03     time = 5.9122694733101    cycle = 2330
+TopGrid dt = 2.584644e-03     time = 5.9148546311856    cycle = 2331
+TopGrid dt = 2.584221e-03     time = 5.9174392747024    cycle = 2332
+TopGrid dt = 2.583945e-03     time = 5.9200234956364    cycle = 2333
+TopGrid dt = 2.583813e-03     time = 5.9226074409003    cycle = 2334
+TopGrid dt = 2.583732e-03     time = 5.92519125411    cycle = 2335
+TopGrid dt = 2.583902e-03     time = 5.9277749862601    cycle = 2336
+TopGrid dt = 2.584158e-03     time = 5.9303588879498    cycle = 2337
+TopGrid dt = 2.584518e-03     time = 5.9329430464389    cycle = 2338
+TopGrid dt = 2.583958e-03     time = 5.9355275646596    cycle = 2339
+TopGrid dt = 2.583457e-03     time = 5.9381115231472    cycle = 2340
+TopGrid dt = 2.583038e-03     time = 5.9406949802234    cycle = 2341
+TopGrid dt = 2.582735e-03     time = 5.9432780184503    cycle = 2342
+TopGrid dt = 2.582491e-03     time = 5.9458607539181    cycle = 2343
+TopGrid dt = 2.582521e-03     time = 5.9484432448283    cycle = 2344
+TopGrid dt = 2.582654e-03     time = 5.9510257655568    cycle = 2345
+TopGrid dt = 2.583041e-03     time = 5.9536084192005    cycle = 2346
+TopGrid dt = 2.582720e-03     time = 5.9561914603911    cycle = 2347
+TopGrid dt = 2.581952e-03     time = 5.9587741807753    cycle = 2348
+TopGrid dt = 2.581294e-03     time = 5.9613561327933    cycle = 2349
+TopGrid dt = 2.580743e-03     time = 5.963937427278    cycle = 2350
+TopGrid dt = 4.803475e-04     time = 5.966518170573    cycle = 2351
+Continuation Flag = 1
+TopGrid dt = 2.580212e-03     time = 5.9669985180299    cycle = 2352
+TopGrid dt = 2.580045e-03     time = 5.9695787301071    cycle = 2353
+TopGrid dt = 2.580116e-03     time = 5.9721587749412    cycle = 2354
+TopGrid dt = 2.580320e-03     time = 5.9747388904738    cycle = 2355
+TopGrid dt = 2.579855e-03     time = 5.9773192108148    cycle = 2356
+TopGrid dt = 2.578953e-03     time = 5.9798990658204    cycle = 2357
+TopGrid dt = 2.578121e-03     time = 5.982478019314    cycle = 2358
+TopGrid dt = 2.577505e-03     time = 5.9850561407894    cycle = 2359
+TopGrid dt = 2.577084e-03     time = 5.9876336459308    cycle = 2360
+TopGrid dt = 2.576919e-03     time = 5.9902107303248    cycle = 2361
+TopGrid dt = 2.577027e-03     time = 5.9927876493916    cycle = 2362
+TopGrid dt = 2.577354e-03     time = 5.9953646767377    cycle = 2363
+TopGrid dt = 2.576392e-03     time = 5.9979420304528    cycle = 2364
+TopGrid dt = 2.575686e-03     time = 6.0005184223804    cycle = 2365
+TopGrid dt = 2.575165e-03     time = 6.0030941079249    cycle = 2366
+TopGrid dt = 2.574978e-03     time = 6.0056692732143    cycle = 2367
+TopGrid dt = 2.574961e-03     time = 6.0082442508926    cycle = 2368
+TopGrid dt = 2.574985e-03     time = 6.010819212216    cycle = 2369
+TopGrid dt = 2.574696e-03     time = 6.0133941974727    cycle = 2370
+TopGrid dt = 2.574491e-03     time = 6.0159688931465    cycle = 2371
+TopGrid dt = 2.573673e-03     time = 6.0185433845135    cycle = 2372
+TopGrid dt = 2.572654e-03     time = 6.0211170578828    cycle = 2373
+TopGrid dt = 2.571775e-03     time = 6.0236897122382    cycle = 2374
+TopGrid dt = 2.571059e-03     time = 6.0262614874005    cycle = 2375
+TopGrid dt = 2.570602e-03     time = 6.0288325463389    cycle = 2376
+TopGrid dt = 2.570386e-03     time = 6.0314031485312    cycle = 2377
+TopGrid dt = 2.570556e-03     time = 6.0339735343801    cycle = 2378
+TopGrid dt = 2.570951e-03     time = 6.0365440903504    cycle = 2379
+TopGrid dt = 2.570100e-03     time = 6.0391150410857    cycle = 2380
+TopGrid dt = 2.569480e-03     time = 6.0416851409053    cycle = 2381
+TopGrid dt = 2.569086e-03     time = 6.0442546205447    cycle = 2382
+TopGrid dt = 2.569011e-03     time = 6.0468237069766    cycle = 2383
+TopGrid dt = 2.569297e-03     time = 6.0493927181996    cycle = 2384
+TopGrid dt = 2.569921e-03     time = 6.0519620156225    cycle = 2385
+TopGrid dt = 2.570650e-03     time = 6.0545319361518    cycle = 2386
+TopGrid dt = 2.570290e-03     time = 6.0571025857118    cycle = 2387
+TopGrid dt = 2.569474e-03     time = 6.0596728754912    cycle = 2388
+TopGrid dt = 2.568779e-03     time = 6.0622423496986    cycle = 2389
+TopGrid dt = 2.568314e-03     time = 6.0648111287322    cycle = 2390
+TopGrid dt = 2.568093e-03     time = 6.0673794423383    cycle = 2391
+TopGrid dt = 2.568153e-03     time = 6.0699475356898    cycle = 2392
+TopGrid dt = 2.568388e-03     time = 6.0725156886439    cycle = 2393
+TopGrid dt = 2.568680e-03     time = 6.0750840765199    cycle = 2394
+TopGrid dt = 2.568156e-03     time = 6.0776527561077    cycle = 2395
+TopGrid dt = 2.567817e-03     time = 6.0802209124265    cycle = 2396
+TopGrid dt = 2.567660e-03     time = 6.0827887293121    cycle = 2397
+TopGrid dt = 2.567743e-03     time = 6.0853563891066    cycle = 2398
+TopGrid dt = 2.568054e-03     time = 6.087924132267    cycle = 2399
+TopGrid dt = 2.568734e-03     time = 6.090492186467    cycle = 2400
+TopGrid dt = 2.569670e-03     time = 6.0930609204421    cycle = 2401
+TopGrid dt = 2.568971e-03     time = 6.0956305905392    cycle = 2402
+TopGrid dt = 2.568494e-03     time = 6.0981995613626    cycle = 2403
+TopGrid dt = 2.568226e-03     time = 6.1007680553198    cycle = 2404
+TopGrid dt = 2.568207e-03     time = 6.1033362816023    cycle = 2405
+TopGrid dt = 2.568409e-03     time = 6.1059044890577    cycle = 2406
+TopGrid dt = 2.568840e-03     time = 6.1084728976749    cycle = 2407
+TopGrid dt = 2.569492e-03     time = 6.1110417373197    cycle = 2408
+TopGrid dt = 2.569272e-03     time = 6.113611229789    cycle = 2409
+TopGrid dt = 2.569099e-03     time = 6.116180501826    cycle = 2410
+TopGrid dt = 1.248994e-03     time = 6.1187496005022    cycle = 2411
+Continuation Flag = 1
+TopGrid dt = 1.405113e-06     time = 6.1199985948869    cycle = 2412
+Stopping on top grid time limit.
+Time     =  6.120000   CycleNumber =   2413    Wallclock   = 41.257961
+StopTime =  6.120000   StopCycle   = 100000
+Continuation Flag = 1
+Communication: processor 2 CommunicationTime = 2.694358
+Communication: processor 1 CommunicationTime = 4.138954
+Communication: processor 3 CommunicationTime = 4.073971
+Communication: processor 0 CommunicationTime = 2.637798
+enzo.C:926 Exiting.
+Successful run, exiting.

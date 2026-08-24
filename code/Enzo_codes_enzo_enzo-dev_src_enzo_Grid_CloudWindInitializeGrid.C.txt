@@ -1,0 +1,115 @@
+/***********************************************************************
+/
+/  GRID CLASS (INITIALIZE GRID FOR A CLOUD-WIND / CLOUD CRUSHING PROBLEM)
+/
+/  written by: Claude (cloud-crushing code comparison, HARP/Horizon)
+/  date:       August 2026
+/
+/  PURPOSE: set the initial state
+/      f    = 0.5*(1 - tanh((r - R)/w))
+/      rho  = rho_amb * (1 + (chi-1)*f)
+/      vx   = v_wind * (1 - f)
+/      P    = P_amb  (uniform)
+/      tracer (Metal_Density) = f * rho
+/
+************************************************************************/
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include "ErrorExceptions.h"
+#include "macros_and_parameters.h"
+#include "typedefs.h"
+#include "global_data.h"
+#include "Fluxes.h"
+#include "GridList.h"
+#include "ExternalBoundary.h"
+#include "Grid.h"
+
+int grid::CloudWindInitializeGrid(float AmbientDensity,
+				  float AmbientPressure,
+				  float WindVelocity,
+				  float Chi,
+				  FLOAT CloudRadius,
+				  FLOAT SmoothWidth,
+				  FLOAT CloudCenter[MAX_DIMENSION],
+				  int   UseTracer)
+{
+
+  int DensNum = -1, Vel1Num = -1, Vel2Num = -1, Vel3Num = -1;
+  int TENum = -1, IENum = -1, MetalNum = -1;
+
+  NumberOfBaryonFields = 0;
+  FieldType[DensNum = NumberOfBaryonFields++] = Density;
+  FieldType[Vel1Num = NumberOfBaryonFields++] = Velocity1;
+  if (GridRank > 1 || HydroMethod > 2) {
+    FieldType[Vel2Num = NumberOfBaryonFields++] = Velocity2;
+    if (GridRank > 2 || HydroMethod > 2) {
+      FieldType[Vel3Num = NumberOfBaryonFields++] = Velocity3;
+    }
+  }
+  FieldType[TENum = NumberOfBaryonFields++] = TotalEnergy;
+  if (DualEnergyFormalism) {
+    FieldType[IENum = NumberOfBaryonFields++] = InternalEnergy;
+  }
+  if (UseTracer) {
+    FieldType[MetalNum = NumberOfBaryonFields++] = Metallicity;
+  }
+
+  /* Return if this doesn't concern us. */
+
+  if (ProcessorNumber != MyProcessorNumber) {
+    return SUCCESS;
+  }
+
+  this->AllocateGrids();
+
+  int i, j, k, index, dim;
+  FLOAT x, y, z, r2;
+  float f, rho, vx, etot;
+
+  for (k = 0; k < GridDimension[2]; k++) {
+    for (j = 0; j < GridDimension[1]; j++) {
+      for (i = 0; i < GridDimension[0]; i++) {
+
+	index = i + GridDimension[0]*(j + GridDimension[1]*k);
+
+	/* cell-center position; unused dimensions sit at the
+	   cloud-center plane so they do not contribute to r */
+
+	x = CellLeftEdge[0][i] + 0.5*CellWidth[0][i];
+	y = (GridRank > 1) ?
+	  CellLeftEdge[1][j] + 0.5*CellWidth[1][j] : CloudCenter[1];
+	z = (GridRank > 2) ?
+	  CellLeftEdge[2][k] + 0.5*CellWidth[2][k] : CloudCenter[2];
+
+	r2 = (x - CloudCenter[0])*(x - CloudCenter[0]) +
+	     (y - CloudCenter[1])*(y - CloudCenter[1]) +
+	     (z - CloudCenter[2])*(z - CloudCenter[2]);
+
+	f   = 0.5*(1.0 - tanh((sqrt(r2) - CloudRadius)/SmoothWidth));
+	rho = AmbientDensity*(1.0 + (Chi - 1.0)*f);
+	vx  = WindVelocity*(1.0 - f);
+
+	etot = AmbientPressure/((Gamma - 1.0)*rho);
+	if (HydroMethod != Zeus_Hydro)
+	  etot += 0.5*vx*vx;
+
+	BaryonField[DensNum][index] = rho;
+	BaryonField[Vel1Num][index] = vx;
+	if (Vel2Num > -1)
+	  BaryonField[Vel2Num][index] = 0.0;
+	if (Vel3Num > -1)
+	  BaryonField[Vel3Num][index] = 0.0;
+	BaryonField[TENum][index] = etot;
+	if (IENum > -1)
+	  BaryonField[IENum][index] = AmbientPressure/((Gamma - 1.0)*rho);
+	if (MetalNum > -1)
+	  BaryonField[MetalNum][index] = max(f*rho, tiny_number);
+
+      }
+    }
+  }
+
+  return SUCCESS;
+}

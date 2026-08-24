@@ -1,0 +1,86 @@
+"""Unified renderer for the particle/moving-mesh codes (Arepo, GIZMO, Gadget-4).
+
+Usage: render_particles.py <chi> <tcc> <label> <dir> <glob>
+Reads Gadget-format HDF5 snapshots, bins PartType0 onto the standard comparison
+window (x in [-3,17], y in [-5,5] cloud radii, cloud at origin) and writes PNGs
+matching the grid-code renderer exactly.
+"""
+import glob
+import os
+import sys
+
+import h5py
+import matplotlib
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
+import numpy as np
+
+CHI, TCC, LABEL, DIR, PATTERN = (
+    int(sys.argv[1]), float(sys.argv[2]), sys.argv[3], sys.argv[4], sys.argv[5])
+
+CLIM = {10: (-1.0, 1.5), 100: (-1.0, 2.5), 1000: (-1.0, 3.5)}
+vmin, vmax = CLIM.get(CHI, (-1.0, 1.5))
+EXTENT = (-3.0, 17.0, -5.0, 5.0)
+NX, NY = 400, 200
+
+
+def smooth(a, passes=2):
+    """Dependency-free 3x3 box blur, repeated."""
+    out = a.astype(np.float64)
+    for _ in range(passes):
+        p = np.pad(out, 1, mode="edge")
+        out = (p[:-2, :-2] + p[:-2, 1:-1] + p[:-2, 2:] +
+               p[1:-1, :-2] + p[1:-1, 1:-1] + p[1:-1, 2:] +
+               p[2:, :-2] + p[2:, 1:-1] + p[2:, 2:]) / 9.0
+    return out
+# cloud centre in the periodic box coordinates used by every particle IC generator
+OX, OY = 3.0, 5.0
+
+xedges = np.linspace(EXTENT[0], EXTENT[1], NX + 1)
+yedges = np.linspace(EXTENT[2], EXTENT[3], NY + 1)
+cell_area = ((EXTENT[1] - EXTENT[0]) / NX) * ((EXTENT[3] - EXTENT[2]) / NY)
+
+files = sorted(glob.glob(os.path.join(DIR, PATTERN)))
+n = 0
+for fn in files:
+    out = os.path.join(DIR, os.path.basename(fn).replace(".hdf5", "") + "_dens.png")
+    if os.path.exists(out):
+        continue
+    try:
+        with h5py.File(fn, "r") as f:
+            g = f["PartType0"]
+            pos = np.array(g["Coordinates"], dtype=np.float64)
+            mass = np.array(g["Masses"], dtype=np.float64) if "Masses" in g else None
+            dens = np.array(g["Density"], dtype=np.float64) if "Density" in g else None
+            t = float(f["Header"].attrs.get("Time", 0.0))
+        x = pos[:, 0] - OX
+        y = pos[:, 1] - OY
+        if dens is not None and mass is not None:
+            # mass-weighted mean density: smooth numerator and denominator, then divide,
+            # so sparsely sampled cells blend with neighbours instead of speckling
+            num, _, _ = np.histogram2d(x, y, bins=[xedges, yedges], weights=mass * dens)
+            den, _, _ = np.histogram2d(x, y, bins=[xedges, yedges], weights=mass)
+            num, den = smooth(num.T), smooth(den.T)
+            floor = den.max() * 1e-6 if den.max() > 0 else 1e-30
+            arr = np.where(den > floor, num / np.maximum(den, 1e-300), 1.0)
+        else:
+            w = mass if mass is not None else np.ones_like(x)
+            arr, _, _ = np.histogram2d(x, y, bins=[xedges, yedges], weights=w)
+            arr = smooth(arr.T) / cell_area
+            arr = np.where(arr > 0, arr, 1.0)
+        la = np.log10(np.clip(arr, 1e-8, None))
+        fig, ax = plt.subplots(figsize=(14.0, 6.5), dpi=115)
+        im = ax.imshow(la, extent=EXTENT, origin="lower", cmap="viridis",
+                       vmin=vmin, vmax=vmax, aspect="equal", interpolation="nearest")
+        ax.set_title("%s    chi = %d    t = %.1f t_cc" % (LABEL, CHI, t / TCC), fontsize=13)
+        ax.set_xlabel("x / r_cloud")
+        ax.set_ylabel("y / r_cloud")
+        cb = fig.colorbar(im, ax=ax, shrink=0.85)
+        cb.set_label("log10 density / wind density")
+        fig.tight_layout()
+        fig.savefig(out)
+        plt.close(fig)
+        n += 1
+    except Exception as e:
+        print("FAIL", fn, repr(e))
+print("rendered %d/%d in %s" % (n, len(files), DIR))

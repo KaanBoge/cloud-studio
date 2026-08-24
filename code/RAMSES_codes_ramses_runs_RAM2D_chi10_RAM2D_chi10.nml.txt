@@ -1,0 +1,84 @@
+! RAMSES cloud-wind matched setup (multi-code comparison), 2D, chi=10
+!
+! GEOMETRY NOTE: current RAMSES supports a single interior coarse cell, so the
+! domain is a SQUARE box [0,20]^2. Mapping to the physical SPEC frame:
+!   x_phys = x_box - 3   (x_phys in [-3,17], as in the SPEC)
+!   y_phys = y_box - 10  (y_phys in [-10,10]; SPEC asks [-5,5] - RAMSES box is
+!                         2x wider in y; outflow boundaries are simply farther
+!                         from the cloud, cloud dynamics unaffected)
+! Cloud center at box (3,10) = physical origin, radius 1.0.
+! Uniform effective resolution levelmin=levelmax=9: dx = 20/512 = 0.0390625,
+! IDENTICAL to the SPEC 512x256 grid spacing on [-3,17]x[-5,5].
+! For light AMR instead, set levelmin=8 (or 7) and keep levelmax=9;
+! &REFINE_PARAMS err_grad_d/err_grad_p then track cloud, bow shock and wake.
+!
+! t_cc = sqrt(10)*1.0/2.582 = 1.2249 ; t_end = 5*t_cc = 6.12
+! Outputs every 0.153 (40 dumps), matching the Athena ATHW2D_chi10_512 run.
+! Run:  nice -n 19 mpirun -np 2 ../../bin/ramses_cw2d RAM2D_chi10.nml
+
+&RUN_PARAMS
+hydro=.true.
+nrestart=0
+ncontrol=10
+nremap=10
+nsubcycle=30*1
+verbose=.false.
+/
+
+&AMR_PARAMS
+levelmin=9
+levelmax=9
+ngridmax=200000
+nexpand=1
+boxlen=20.0
+/
+
+&INIT_PARAMS
+condinit_kind='cloudwind'
+/
+
+&CLOUDWIND_PARAMS
+chi=10.0
+r_cloud=1.0
+edge=0.1
+rho_wind=1.0
+p_wind=1.0
+v_wind=2.582
+x_cloud=3.0
+y_cloud=10.0
+/
+
+&BOUNDARY_PARAMS
+nboundary=4
+ibound_min=-1,+1,-1,-1
+ibound_max=-1,+1,+1,+1
+jbound_min= 0, 0,-1,+1
+jbound_max= 0, 0,-1,+1
+bound_type= 3, 2, 2, 2
+d_bound=1.0
+u_bound=2.582
+v_bound=0.0
+p_bound=1.0
+/
+
+&HYDRO_PARAMS
+gamma=1.6666667
+courant_factor=0.8
+slope_type=1
+scheme='muscl'
+riemann='hllc'
+smallr=1.0d-10
+smallc=1.0d-10
+/
+
+&REFINE_PARAMS
+err_grad_d=0.1
+err_grad_p=0.1
+interpol_type=1
+interpol_var=0
+/
+
+&OUTPUT_PARAMS
+tend=6.12
+delta_tout=0.153
+/

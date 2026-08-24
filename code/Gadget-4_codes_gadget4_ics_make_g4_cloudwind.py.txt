@@ -1,0 +1,138 @@
+#!/usr/bin/env python3
+"""
+GADGET-4 HDF5 IC generator for the cloud-wind matched setup (SPEC).
+
+Cloud-wind matched setup, periodic-box variant (Braspenning+2023 style,
+appropriate for particle codes; grid codes in this comparison use
+inflow/outflow instead):
+
+  - Ideal hydro, gamma = 5/3, non-radiative, no gravity, no B.
+  - Ambient/wind: rho = 1.0, P = 1.0 (c_s = 1.291), vx = 2.582 (Mach 2).
+  - Cloud: overdensity chi, static, P = 1.0, radius 1.0.
+  - Smooth edge: f = 0.5*(1 - tanh((r - 1.0)/0.1))
+       rho = 1 + (chi-1)*f ;  vx = 2.582*(1-f)
+  - Domain: x in [-3,17], y in [-5,5] (2D), z in [-5,5] (3D).
+    Shifted so the box is [0,20] x [0,10] (x [0,10] in z); the cloud
+    center sits at (3, 5[, 5]).  Fully periodic.
+
+Particles are laid on a uniform cell-centered lattice with variable
+masses m = rho * dx^dim  (variable-mass lattice; fine for chi=10, for
+chi >= 100 consider equal-mass ICs, see notes at bottom).
+
+Cloud material tagging (passive-scalar substitute, Lagrangian codes):
+particles with f >= 0.5 get ParticleIDs >= CLOUD_ID0 = 1_000_000_000,
+everything else gets IDs starting at 1.  Select cloud material in any
+snapshot with (ParticleIDs >= 1000000000).
+
+Header/datasets follow src/io/snap_io.cc read_header_fields():
+NumPart_ThisFile & NumPart_Total (uint64, NTYPES entries), MassTable
+(double), Time, Redshift, BoxSize (double), NumFilesPerSnapshot (int).
+
+Usage:
+  python3 make_g4_cloudwind.py --chi 10 --dim 2 --nx 128 --out ics.hdf5
+  (nx = lattice cells across the 20-long x direction; ny = nx/2, nz = nx/2)
+"""
+import argparse
+import numpy as np
+import h5py
+
+GAMMA = 5.0 / 3.0
+MACH = 2.0
+CS_AMB = np.sqrt(GAMMA * 1.0 / 1.0)      # 1.291
+VWIND = MACH * CS_AMB                     # 2.582
+RCLOUD = 1.0
+DR = 0.1
+P0 = 1.0
+NTYPES = 2
+CLOUD_ID0 = 1_000_000_000
+
+XLEN, YLEN, ZLEN = 20.0, 10.0, 10.0       # box spans (x:[-3,17]->[0,20], y/z:[-5,5]->[0,10])
+CLOUD_CENTER = np.array([3.0, 5.0, 5.0])  # origin of SPEC frame after shift
+
+
+def make_ics(chi, dim, nx, fname):
+    dx = XLEN / nx
+    ny = int(round(YLEN / dx))
+    nz = int(round(ZLEN / dx)) if dim == 3 else 1
+
+    x1 = (np.arange(nx) + 0.5) * dx
+    y1 = (np.arange(ny) + 0.5) * dx
+    if dim == 3:
+        z1 = (np.arange(nz) + 0.5) * dx
+        X, Y, Z = np.meshgrid(x1, y1, z1, indexing="ij")
+    else:
+        X, Y = np.meshgrid(x1, y1, indexing="ij")
+        Z = np.zeros_like(X)
+
+    X = X.ravel(); Y = Y.ravel(); Z = Z.ravel()
+    n = X.size
+
+    if dim == 3:
+        r = np.sqrt((X - CLOUD_CENTER[0])**2 + (Y - CLOUD_CENTER[1])**2 + (Z - CLOUD_CENTER[2])**2)
+    else:
+        r = np.sqrt((X - CLOUD_CENTER[0])**2 + (Y - CLOUD_CENTER[1])**2)
+
+    f = 0.5 * (1.0 - np.tanh((r - RCLOUD) / DR))
+    rho = 1.0 + (chi - 1.0) * f
+    vx = VWIND * (1.0 - f)
+    u = P0 / ((GAMMA - 1.0) * rho)        # internal energy per unit mass
+    mass = rho * dx**dim                  # variable-mass lattice
+
+    ids = np.zeros(n, dtype=np.uint64)
+    cloud = f >= 0.5
+    ncl = int(cloud.sum())
+    ids[~cloud] = np.arange(1, n - ncl + 1, dtype=np.uint64)
+    ids[cloud] = CLOUD_ID0 + np.arange(ncl, dtype=np.uint64)
+
+    pos = np.column_stack([X, Y, Z])
+    vel = np.column_stack([vx, np.zeros(n), np.zeros(n)])
+
+    with h5py.File(fname, "w") as fp:
+        h = fp.create_group("Header")
+        npart = np.zeros(NTYPES, dtype=np.uint64); npart[0] = n
+        h.attrs["NumPart_ThisFile"] = npart
+        h.attrs["NumPart_Total"] = npart
+        h.attrs["NumPart_Total_HighWord"] = np.zeros(NTYPES, dtype=np.uint64)
+        h.attrs["MassTable"] = np.zeros(NTYPES, dtype=np.float64)
+        h.attrs["Time"] = np.float64(0.0)
+        h.attrs["Redshift"] = np.float64(0.0)
+        h.attrs["BoxSize"] = np.float64(XLEN)   # nominal box; y (and z in 2D) reduced via LONG_Y_BITS
+        h.attrs["NumFilesPerSnapshot"] = np.int32(1)
+        h.attrs["Flag_Sfr"] = np.int32(0)
+        h.attrs["Flag_Cooling"] = np.int32(0)
+        h.attrs["Flag_StellarAge"] = np.int32(0)
+        h.attrs["Flag_Metals"] = np.int32(0)
+        h.attrs["Flag_Feedback"] = np.int32(0)
+        h.attrs["Flag_DoublePrecision"] = np.int32(1)
+
+        g = fp.create_group("PartType0")
+        g.create_dataset("Coordinates", data=pos.astype(np.float64))
+        g.create_dataset("Velocities", data=vel.astype(np.float64))
+        g.create_dataset("ParticleIDs", data=ids)
+        g.create_dataset("Masses", data=mass.astype(np.float64))
+        g.create_dataset("InternalEnergy", data=u.astype(np.float64))
+
+    tcc = np.sqrt(chi) * RCLOUD / VWIND
+    print(f"wrote {fname}: dim={dim} chi={chi} lattice {nx}x{ny}" +
+          (f"x{nz}" if dim == 3 else "") + f" N={n} (cloud-tagged {ncl})")
+    print(f"  dx={dx:.4f}  m_amb={dx**dim:.3e}  m_cloud_max={mass.max():.3e}")
+    print(f"  t_cc={tcc:.4f}  5*t_cc={5*tcc:.4f}")
+
+
+if __name__ == "__main__":
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--chi", type=float, default=10.0)
+    ap.add_argument("--dim", type=int, default=2, choices=[2, 3])
+    ap.add_argument("--nx", type=int, default=128,
+                    help="lattice cells across x-span (20); ny=nx/2, nz=nx/2")
+    ap.add_argument("--out", default="ics.hdf5")
+    a = ap.parse_args()
+    make_ics(a.chi, a.dim, a.nx, a.out)
+
+# Notes:
+# - Variable-mass lattice: at chi=1000 the mass contrast is 1000x, which SPH
+#   handles poorly.  For the chi>=100 rungs, generate equal-mass ICs instead
+#   (denser lattice inside the cloud, e.g. stretched-radial mapping), or use
+#   the GIZMO generator's equal-mass mode if/when it exists.
+# - 3D runs need a Config.sh without TWODIMS and with LONG_Y_BITS=1,
+#   LONG_Z_BITS=1 (box 20x10x10), then rebuild.

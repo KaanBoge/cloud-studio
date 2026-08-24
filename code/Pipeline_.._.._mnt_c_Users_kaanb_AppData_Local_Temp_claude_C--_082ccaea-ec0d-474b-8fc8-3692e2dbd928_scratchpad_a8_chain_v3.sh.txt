@@ -1,0 +1,75 @@
+#!/bin/bash
+# A8 chain v3: chi1000_l8 restart leg + wind-Athena ladders + 7-code 2D rungs + 3D program + ceilings
+set -u
+CC=/home/kaan/CloudCrushing
+A8=$CC/A8
+CO=/home/kaan/codes
+LOG=$A8/chain.log
+
+run_stage() {
+  local name=$1 dir=$2 cap=$3; shift 3
+  if [ -f "$dir/RUNDONE" ]; then echo "[$(date '+%F %T')] SKIP $name (done)" >> "$LOG"; return; fi
+  echo "[$(date '+%F %T')] START $name cap=${cap}s" >> "$LOG"
+  pkill -9 flash4 2>/dev/null; pkill -9 athena_mpi 2>/dev/null; sleep 5
+  cd "$dir" || { echo "[$(date '+%F %T')] CDFAIL $name" >> "$LOG"; return; }
+  local t0=$(date +%s)
+  timeout "$cap" bash -c "$*" > run.out 2>&1
+  local rc=$?
+  local t1=$(date +%s)
+  echo "[$(date '+%F %T')] END $name rc=$rc wall=$((t1-t0))s" >> "$LOG"
+  if [ $rc -eq 0 ]; then touch RUNDONE; fi
+}
+F="mpirun --bind-to core -np 8 ./flash4"
+A="mpirun --bind-to core -np 8 ./athena_mpi -i athinput"
+
+echo "[$(date '+%F %T')] ===== A8 CHAIN V3 LAUNCH =====" >> "$LOG"
+
+# Finish the 2D FLASH program
+run_stage F2D_chi1000_l8_restart $A8/F2D_chi1000_l8                21600 "$F"
+run_stage F2D_chi10_l10_restart  $CC/FLASH_RUNS_LOCAL/CloudCrush_l10 21600 "$F"
+
+# Matched wind-tunnel Athena ladders
+run_stage ATHW2D_chi10_512     $A8/ATHW2D_chi10_512     600   "$A"
+run_stage ATHW2D_chi100_512    $A8/ATHW2D_chi100_512    1800  "$A"
+run_stage ATHW2D_chi1000_512   $A8/ATHW2D_chi1000_512   3600  "$A"
+run_stage ATHW2D_chi10_1024    $A8/ATHW2D_chi10_1024    1800  "$A"
+run_stage ATHW2D_chi100_1024   $A8/ATHW2D_chi100_1024   5400  "$A"
+run_stage ATHW2D_chi10_2048    $A8/ATHW2D_chi10_2048    7200  "$A"
+run_stage ATHW2D_chi1000_1024  $A8/ATHW2D_chi1000_1024  10800 "$A"
+run_stage ATHW2D_chi100_2048   $A8/ATHW2D_chi100_2048   14400 "$A"
+run_stage ATHW2D_chi1000_2048  $A8/ATHW2D_chi1000_2048  21600 "$A"
+echo "[$(date '+%F %T')] MILESTONE_2D_CORE_V2" >> "$LOG"
+
+# New-code chi=10 2D production rungs (identical physics, per-code runners)
+run_stage ATHPP2D_chi10_512 $CO/athenapp/runs/ATHPP2D_chi10_512 3600 "mpirun -np 8 /home/kaan/codes/athenapp/bin/athena -i athinput.cloud_wind -d ."
+run_stage RAM2D_chi10       $CO/ramses/runs/RAM2D_chi10         7200 "mpirun -np 4 /home/kaan/codes/ramses/bin/ramses_cw2d RAM2D_chi10.nml"
+run_stage ENZO2D_chi10_512  $CO/enzo/runs/CW2D_chi10_512        7200 "mpirun -np 4 /home/kaan/codes/enzo/enzo-dev/src/enzo/enzo.exe CloudWind.enzo"
+run_stage AREPO2D_chi10     $CO/arepo/runs/AREPO2D_chi10        14400 "/home/kaan/venv/bin/python ../make_ic_cloud.py . 10 256 && rm -rf output && mkdir -p output && mpirun -np 4 /home/kaan/codes/arepo/Arepo param.txt"
+run_stage GIZMO2D_chi10_mfm $CO/gizmo/runs/GIZMO2D_chi10_mfm    14400 "mpirun -np 4 /home/kaan/codes/gizmo/GIZMO_MFM params.txt"
+run_stage GIZMO2D_chi10_mfv $CO/gizmo/runs/GIZMO2D_chi10_mfv    14400 "mpirun -np 4 /home/kaan/codes/gizmo/GIZMO_MFV params.txt"
+run_stage G4_2D_chi10       $CO/gadget4/runs/G4_2D_chi10        14400 "mpirun -np 4 ./Gadget4 param.txt"
+echo "[$(date '+%F %T')] MILESTONE_NEWCODES_2D" >> "$LOG"
+
+# 3D ladders, low rungs first
+run_stage ATHW3D_chi10_256   $A8/ATHW3D_chi10_256   3600  "$A"
+run_stage F3D_chi10_l4       $A8/F3D_chi10_l4       1800  "$F"
+run_stage F3D_chi10_l5       $A8/F3D_chi10_l5       10800 "$F"
+run_stage ATHW3D_chi100_256  $A8/ATHW3D_chi100_256  10800 "$A"
+run_stage ATHW3D_chi10_384   $A8/ATHW3D_chi10_384   10800 "$A"
+run_stage F3D_chi100_l5      $A8/F3D_chi100_l5      25200 "$F"
+run_stage ATHW3D_chi1000_256 $A8/ATHW3D_chi1000_256 28800 "$A"
+run_stage F3D_chi10_l6       $A8/F3D_chi10_l6       32400 "$F"
+run_stage ATHW3D_chi100_384  $A8/ATHW3D_chi100_384  28800 "$A"
+echo "[$(date '+%F %T')] MILESTONE_3D_BASE_V2" >> "$LOG"
+
+# Ceiling rungs (chi1000 lref9 2D dropped: ~5-8 day extrapolation, beyond any cap)
+run_stage F3D_chi1000_l5   $A8/F3D_chi1000_l5   43200 "$F"
+run_stage ATHW3D_chi10_512 $A8/ATHW3D_chi10_512 21600 "$A"
+run_stage F2D_chi100_l9    $A8/F2D_chi100_l9    25200 "$F"
+run_stage F3D_chi100_l6    $A8/F3D_chi100_l6    43200 "$F"
+run_stage ATHW3D_chi100_512 $A8/ATHW3D_chi100_512 43200 "$A"
+run_stage ATHW2D_chi10_4096 $A8/ATHW2D_chi10_4096 28800 "$A"
+run_stage ATHW3D_chi1000_384 $A8/ATHW3D_chi1000_384 43200 "$A"
+run_stage F3D_chi1000_l6   $A8/F3D_chi1000_l6   64800 "$F"
+echo "[$(date '+%F %T')] MILESTONE_ALL_DONE_V3" >> "$LOG"
+touch $A8/A8_CHAIN_DONE

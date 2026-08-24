@@ -1,0 +1,35 @@
+# Configuration file for the CloudStatic problem:
+# a cold, dense cloud in a hot, dilute ambient medium in pressure
+# equilibrium, everything at rest.  Physically nothing should happen;
+# this tests that a custom initial condition holds equilibrium and
+# shows how much the code numerically diffuses the cloud edge.
+# (Assignment 6, task 3 — modified from the Sedov problem.)
+
+REQUIRES Driver
+REQUIRES physics/Hydro
+REQUIRES physics/Eos
+
+D sim_pAmbient     Uniform pressure everywhere (pressure equilibrium)
+PARAMETER sim_pAmbient     REAL    1.0
+
+D sim_rhoAmbient   Density of the hot ambient medium
+PARAMETER sim_rhoAmbient   REAL    1.0
+
+D sim_rhoCloud     Density of the cold cloud (chi = sim_rhoCloud/sim_rhoAmbient)
+PARAMETER sim_rhoCloud     REAL    100.0
+
+D sim_rCloud       Cloud radius
+PARAMETER sim_rCloud       REAL    0.1
+
+D sim_smoothWidth  Width of tanh smoothing at the cloud edge, in units of
+D &                sim_rCloud (0 gives a sharp edge)
+PARAMETER sim_smoothWidth  REAL    0.1
+
+D sim_xctr         Cloud center x-coordinate
+PARAMETER sim_xctr         REAL    0.5
+
+D sim_yctr         Cloud center y-coordinate
+PARAMETER sim_yctr         REAL    0.5
+
+D sim_zctr         Cloud center z-coordinate
+PARAMETER sim_zctr         REAL    0.5

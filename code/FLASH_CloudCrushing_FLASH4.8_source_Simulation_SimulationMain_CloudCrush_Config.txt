@@ -1,0 +1,36 @@
+# Configuration file for the CloudCrush problem (Assignment 6, task 4):
+# cloud crushing — a supersonic wind strikes a dense, cold, initially
+# static cloud.  Built by combining the CloudStatic initial condition
+# (task 3) with the inflow boundary machinery of the WindTunnel problem.
+
+REQUIRES Grid/GridBoundaryConditions/OneRow
+REQUIRES physics/Hydro
+REQUIRES physics/Eos/EosMain/Gamma
+
+D sim_pAmbient     Uniform initial pressure (wind and cloud)
+PARAMETER sim_pAmbient     REAL    1.0
+
+D sim_rhoAmbient   Density of the wind / ambient medium
+PARAMETER sim_rhoAmbient   REAL    1.0
+
+D sim_windVel      Wind inflow velocity (parallel to x-axis)
+PARAMETER sim_windVel      REAL    2.582
+
+D sim_rhoCloud     Density of the cloud (chi = sim_rhoCloud/sim_rhoAmbient)
+PARAMETER sim_rhoCloud     REAL    10.0
+
+D sim_rCloud       Cloud radius
+PARAMETER sim_rCloud       REAL    0.1
+
+D sim_smoothWidth  Width of tanh smoothing at the cloud edge, in units of
+D &                sim_rCloud (0 gives a sharp edge)
+PARAMETER sim_smoothWidth  REAL    0.1
+
+D sim_xctr         Cloud center x-coordinate
+PARAMETER sim_xctr         REAL    0.3
+
+D sim_yctr         Cloud center y-coordinate
+PARAMETER sim_yctr         REAL    0.5
+
+D sim_zctr         Cloud center z-coordinate
+PARAMETER sim_zctr         REAL    0.5

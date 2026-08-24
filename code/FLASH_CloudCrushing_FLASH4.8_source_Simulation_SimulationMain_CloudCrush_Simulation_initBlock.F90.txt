@@ -1,0 +1,124 @@
+!!****if* source/Simulation/SimulationMain/CloudCrush/Simulation_initBlock
+!!
+!! NAME
+!!  Simulation_initBlock
+!!
+!! SYNOPSIS
+!!  call Simulation_initBlock(integer(IN) :: blockId)
+!!
+!! DESCRIPTION
+!!  Initializes the cloud crushing problem: a supersonic wind of density
+!!  sim_rhoAmbient moving at sim_windVel in +x fills the domain, except
+!!  for a dense cold cloud (radius sim_rCloud, density sim_rhoCloud)
+!!  initially at rest, centered at (sim_xctr, sim_yctr, sim_zctr).
+!!  Pressure is uniform, so the cloud is in pressure equilibrium until
+!!  the wind hits it.  Both the density and the velocity transition are
+!!  smoothed with the same tanh profile of width sim_smoothWidth*sim_rCloud.
+!!
+!!  Cloud fraction:  f(r) = 0.5*(1 - tanh((r - r_cl)/delta))   (1 inside, 0 outside)
+!!  Density:         rho(r) = rho_wind + (rho_cloud - rho_wind)*f(r)
+!!  Velocity:        vx(r)  = v_wind * (1 - f(r))              (0 inside cloud)
+!!
+!!  The left (x-min) boundary uses the WindTunnel-style USER_DEFINED
+!!  inflow (see Grid_applyBCEdge.F90) to keep feeding fresh wind.
+!!
+!! ARGUMENTS
+!!  blockId -  The number of the block to initialize
+!!
+!!***
+
+subroutine Simulation_initBlock(blockId)
+
+  use Simulation_data, ONLY: sim_pAmbient, sim_rhoAmbient, sim_windVel, &
+       sim_rhoCloud, sim_rCloud, sim_smoothWidth, &
+       sim_xCenter, sim_yCenter, sim_zCenter, &
+       sim_gamma, sim_smallP, sim_smallT, sim_gCell
+  use Grid_interface, ONLY : Grid_getBlkIndexLimits, Grid_getCellCoords, &
+       Grid_putPointData
+
+  implicit none
+
+#include "constants.h"
+#include "Flash.h"
+
+  integer, intent(IN) :: blockId
+
+  integer :: i, j, k, sizeX, sizeY, sizeZ, istat
+  integer, dimension(2,MDIM) :: blkLimits, blkLimitsGC
+  integer, dimension(MDIM)   :: axis
+  real, allocatable, dimension(:) :: xCoord, yCoord, zCoord
+  real :: xDist, yDist, zDist, radius, delta, cloudFrac
+  real :: rho, p, vx, eint, ener
+
+  call Grid_getBlkIndexLimits(blockId, blkLimits, blkLimitsGC)
+
+  sizeX = blkLimitsGC(HIGH,IAXIS)
+  sizeY = blkLimitsGC(HIGH,JAXIS)
+  sizeZ = blkLimitsGC(HIGH,KAXIS)
+
+  allocate(xCoord(sizeX), stat=istat)
+  allocate(yCoord(sizeY), stat=istat)
+  allocate(zCoord(sizeZ), stat=istat)
+  xCoord = 0.0
+  yCoord = 0.0
+  zCoord = 0.0
+
+  if (NDIM == 3) call Grid_getCellCoords(KAXIS, blockId, CENTER, sim_gCell, zCoord, sizeZ)
+  if (NDIM >= 2) call Grid_getCellCoords(JAXIS, blockId, CENTER, sim_gCell, yCoord, sizeY)
+  call Grid_getCellCoords(IAXIS, blockId, CENTER, sim_gCell, xCoord, sizeX)
+
+  ! width of the smoothed cloud edge; avoid division by zero for sharp edge
+  delta = max(sim_smoothWidth * sim_rCloud, tiny(1.0))
+
+  do k = blkLimitsGC(LOW,KAXIS), blkLimitsGC(HIGH,KAXIS)
+     zDist = 0.0
+     if (NDIM == 3) zDist = zCoord(k) - sim_zCenter
+     do j = blkLimitsGC(LOW,JAXIS), blkLimitsGC(HIGH,JAXIS)
+        yDist = 0.0
+        if (NDIM >= 2) yDist = yCoord(j) - sim_yCenter
+        do i = blkLimitsGC(LOW,IAXIS), blkLimitsGC(HIGH,IAXIS)
+           xDist = xCoord(i) - sim_xCenter
+
+           radius = sqrt(xDist**2 + yDist**2 + zDist**2)
+
+           ! 1 deep inside the cloud, 0 far outside
+           cloudFrac = 0.5 * (1.0 - tanh((radius - sim_rCloud)/delta))
+
+           rho = sim_rhoAmbient + (sim_rhoCloud - sim_rhoAmbient) * cloudFrac
+           vx  = sim_windVel * (1.0 - cloudFrac)
+
+           p    = max(sim_pAmbient, sim_smallP)
+           eint = p / ((sim_gamma - 1.0) * rho)
+           ener = eint + 0.5 * vx**2
+
+           axis(IAXIS) = i
+           axis(JAXIS) = j
+           axis(KAXIS) = k
+
+           call Grid_putPointData(blockId, CENTER, DENS_VAR, EXTERIOR, axis, rho)
+           call Grid_putPointData(blockId, CENTER, PRES_VAR, EXTERIOR, axis, p)
+           call Grid_putPointData(blockId, CENTER, VELX_VAR, EXTERIOR, axis, vx)
+           call Grid_putPointData(blockId, CENTER, VELY_VAR, EXTERIOR, axis, 0.0)
+           call Grid_putPointData(blockId, CENTER, VELZ_VAR, EXTERIOR, axis, 0.0)
+           call Grid_putPointData(blockId, CENTER, ENER_VAR, EXTERIOR, axis, ener)
+#ifdef EINT_VAR
+           call Grid_putPointData(blockId, CENTER, EINT_VAR, EXTERIOR, axis, eint)
+#endif
+#ifdef GAME_VAR
+           call Grid_putPointData(blockId, CENTER, GAME_VAR, EXTERIOR, axis, sim_gamma)
+#endif
+#ifdef GAMC_VAR
+           call Grid_putPointData(blockId, CENTER, GAMC_VAR, EXTERIOR, axis, sim_gamma)
+#endif
+#ifdef TEMP_VAR
+           call Grid_putPointData(blockId, CENTER, TEMP_VAR, EXTERIOR, axis, sim_smallT)
+#endif
+        enddo
+     enddo
+  enddo
+
+  deallocate(xCoord)
+  deallocate(yCoord)
+  deallocate(zCoord)
+
+end subroutine Simulation_initBlock

@@ -1,0 +1,78 @@
+"""Export a TIME SEQUENCE of 3D isosurfaces for the studio's viewer time slider.
+
+Usage: vol_export_seq.py <vol_id> <kind> <chi> <tcc> <files...>
+Writes vol_seq_<vol_id>.js defining VOLSEQ_DATA[<vol_id>] = {times:[], frames:[[surf,..],..]}
+"""
+import base64
+import json
+import sys
+
+import numpy as np
+import yt
+import matplotlib
+from skimage.measure import marching_cubes
+
+yt.set_log_level(40)
+
+VID, KIND, CHI, TCC = sys.argv[1], sys.argv[2], int(sys.argv[3]), float(sys.argv[4])
+FILES = sys.argv[5:]
+OUT = "/mnt/c/Users/kaanb/CloudCrushing/studio/data/vol_seq_%s.js" % VID
+
+CLIM = {10: (-1.0, 1.5), 100: (-1.0, 2.5), 1000: (-1.0, 3.5)}
+lo, hi = CLIM.get(CHI, (-1.0, 1.5))
+LEVELS = [0.15 * CHI, 0.6 * CHI]
+OPAC = [0.45, 0.95]
+viridis = matplotlib.colormaps["viridis"]
+
+times, frames = [], []
+for fn in FILES:
+    ds = yt.load(fn)
+    dims = [int(v) for v in ds.domain_dimensions]
+    lvl = 0
+    if KIND == "flash":
+        lvl = min(4, ds.index.max_level)
+        dims = [d * 2 ** lvl for d in dims]
+    cg = ds.covering_grid(lvl, ds.domain_left_edge, dims)
+    rho = np.array(cg[("gas", "density")], dtype=np.float32)
+    dle = np.array(ds.domain_left_edge, dtype=float)
+    dre = np.array(ds.domain_right_edge, dtype=float)
+    if KIND == "apk":
+        rho = np.transpose(rho, (1, 0, 2))
+        lo_xyz = [dle[1], dle[0], dle[2]]
+        hi_xyz = [dre[1], dre[0], dre[2]]
+    else:
+        lo_xyz = list(dle[:3])
+        hi_xyz = list(dre[:3])
+        if KIND == "flash":
+            lo_xyz = [(lo_xyz[0] - 0.3) / 0.1, (lo_xyz[1] - 0.5) / 0.1, (lo_xyz[2] - 0.5) / 0.1]
+            hi_xyz = [(hi_xyz[0] - 0.3) / 0.1, (hi_xyz[1] - 0.5) / 0.1, (hi_xyz[2] - 0.5) / 0.1]
+    while max(rho.shape) > 192:
+        rho = rho[::2, ::2, ::2]
+    sp = [(hi_xyz[i] - lo_xyz[i]) / rho.shape[i] for i in range(3)]
+    surfs = []
+    for lev, op in zip(LEVELS, OPAC):
+        if lev >= float(rho.max()) or lev <= float(rho.min()):
+            continue
+        try:
+            verts, faces, _, _ = marching_cubes(rho, level=lev, step_size=1)
+        except Exception:
+            continue
+        while len(faces) > 12000:
+            faces = faces[::2]
+        tri = verts[faces].reshape(-1, 3).astype(np.float32)
+        for i in range(3):
+            tri[:, i] = lo_xyz[i] + tri[:, i] * sp[i]
+        frac = (np.log10(lev) - lo) / (hi - lo)
+        r, g, b, _ = viridis(min(max(frac, 0.0), 1.0))
+        surfs.append({"level": lev, "opacity": op,
+                      "color": [round(r, 3), round(g, 3), round(b, 3)],
+                      "pos": base64.b64encode(tri.tobytes()).decode()})
+    t = float(ds.current_time)
+    times.append(round(t / TCC, 2))
+    frames.append(surfs)
+    print("t=%.2f t_cc: %d shells" % (t / TCC, len(surfs)))
+
+with open(OUT, "w") as f:
+    f.write("VOLSEQ_DATA[%s]={times:%s,frames:%s};\n" % (
+        json.dumps(VID), json.dumps(times), json.dumps(frames)))
+print("wrote", OUT)

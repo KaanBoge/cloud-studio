@@ -1,0 +1,7 @@
+# GADGET-4 cloud-crushing config: 2D SPH, periodic 20x10 box, no gravity
+PERIODIC
+NTYPES=2
+TWODIMS
+LONG_Y_BITS=1
+DOUBLEPRECISION=1
+OUTPUT_PRESSURE

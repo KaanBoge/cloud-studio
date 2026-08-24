@@ -1,0 +1,403 @@
+wrote ./IC.hdf5: 131072 cells (512x256), chi=10, t_cc=1.2247, 5*t_cc=6.124
+
+   __    ____  ____  ____  _____
+  /__\  (  _ \( ___)(  _ \(  _  )
+ /(__)\  )   / )__)  )___/ )(_)(
+(__)(__)(_)\_)(____)(__)  (_____)
+
+
+-------------------------------------------------------------------------------------------------------------------------
+AvailMem:	 Largest =   27487.08 Mb (on task=   0), Smallest =   27487.08 Mb (on task=   0), Average =   27487.08 Mb
+Total Mem:	 Largest =   28063.64 Mb (on task=   0), Smallest =   28063.64 Mb (on task=   0), Average =   28063.64 Mb
+Committed_AS:	 Largest =     576.57 Mb (on task=   0), Smallest =     576.57 Mb (on task=   0), Average =     576.57 Mb
+SwapTotal:	 Largest =       0.00 Mb (on task=   0), Smallest =       0.00 Mb (on task=   0), Average =       0.00 Mb
+SwapFree:	 Largest =       0.00 Mb (on task=   0), Smallest =       0.00 Mb (on task=   0), Average =       0.00 Mb
+AllocMem:	 Largest =     576.57 Mb (on task=   0), Smallest =     576.57 Mb (on task=   0), Average =     576.57 Mb
+-------------------------------------------------------------------------------------------------------------------------
+Task=0 has the maximum commited memory and is host: Axstarl
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This is Arepo, version Arepo public 1.0.
+
+Running with 4 MPI tasks.
+
+Apparently we're using 1 compute nodes (we have a minimum of 4 MPI tasks per node, and a maximum of 4)
+
+Code was compiled with settings:
+
+        TWODIMS
+        LONG_X=2.0
+        PASSIVE_SCALARS=1
+        REGULARIZE_MESH_CM_DRIFT
+        REGULARIZE_MESH_CM_DRIFT_USE_SOUNDSPEED
+        REGULARIZE_MESH_FACE_ANGLE
+        TREE_BASED_TIMESTEPS
+        DOUBLEPRECISION=1
+        INPUT_IN_DOUBLEPRECISION
+        OUTPUT_IN_DOUBLEPRECISION
+        OUTPUT_CENTER_OF_MASS
+        HAVE_HDF5
+
+Obtaining parameters from file 'param.txt':
+
+        InitCondFile                                      ./IC
+        ICFormat                                          3
+        OutputDir                                         ./output/
+        SnapshotFileBase                                  snap
+        SnapFormat                                        3
+        NumFilesPerSnapshot                               1
+        NumFilesWrittenInParallel                         1
+        ResubmitOn                                        0
+        ResubmitCommand                                   my-scriptfile
+        OutputListFilename                                ol
+        OutputListOn                                      0
+        CoolingOn                                         0
+        StarformationOn                                   0
+        Omega0                                            0
+        OmegaBaryon                                       0
+        OmegaLambda                                       0
+        HubbleParam                                       1
+        BoxSize                                           10
+        PeriodicBoundariesOn                              1
+        ComovingIntegrationOn                             0
+        MaxMemSize                                        2500
+        TimeOfFirstSnapshot                               0
+        CpuTimeBetRestartFile                             9000
+        TimeLimitCPU                                      90000
+        TimeBetStatistics                                 0.153
+        TimeBegin                                         0
+        TimeMax                                           6.12
+        TimeBetSnapshot                                   0.153
+        UnitVelocity_in_cm_per_s                          1
+        UnitLength_in_cm                                  1
+        UnitMass_in_g                                     1
+        GravityConstantInternal                           0
+        ErrTolIntAccuracy                                 0.1
+        ErrTolTheta                                       0.1
+        ErrTolForceAcc                                    0.1
+        MaxSizeTimestep                                   0.05
+        MinSizeTimestep                                   1e-07
+        CourantFac                                        0.3
+        LimitUBelowThisDensity                            0
+        LimitUBelowCertainDensityToThisValue              0
+        DesNumNgb                                         64
+        MaxNumNgbDeviation                                2
+        MultipleDomains                                   2
+        TopNodeFactor                                     4
+        ActivePartFracForNewDomainDecomp                  0.5
+        TypeOfTimestepCriterion                           0
+        TypeOfOpeningCriterion                            1
+        GasSoftFactor                                     0.01
+        SofteningComovingType0                            0.1
+        SofteningComovingType1                            0.1
+        SofteningComovingType2                            0.1
+        SofteningComovingType3                            0.1
+        SofteningComovingType4                            0.1
+        SofteningComovingType5                            0.1
+        SofteningMaxPhysType0                             0.1
+        SofteningMaxPhysType1                             0.1
+        SofteningMaxPhysType2                             0.1
+        SofteningMaxPhysType3                             0.1
+        SofteningMaxPhysType4                             0.1
+        SofteningMaxPhysType5                             0.1
+        SofteningTypeOfPartType0                          0
+        SofteningTypeOfPartType1                          0
+        SofteningTypeOfPartType2                          0
+        SofteningTypeOfPartType3                          0
+        SofteningTypeOfPartType4                          0
+        SofteningTypeOfPartType5                          0
+        InitGasTemp                                       0
+        MinGasTemp                                        0
+        MinEgySpec                                        0
+        MinimumDensityOnStartUp                           0
+        CellShapingSpeed                                  0.5
+        CellMaxAngleFactor                                2.25
+
+BEGRUN: Size of particle structure       120  [bytes]
+BEGRUN: Size of sph particle structure   360  [bytes]
+BEGRUN: Size of gravity tree node         80  [bytes]
+BEGRUN: Hubble (internal units)   = 3.24078e-18
+BEGRUN: G (internal units)        = 6.6738e-08
+BEGRUN: UnitMass_in_g             = 1
+BEGRUN: UnitTime_in_s             = 1
+BEGRUN: UnitVelocity_in_cm_per_s  = 1
+BEGRUN: UnitDensity_in_cgs        = 1
+BEGRUN: UnitEnergy_in_cgs         = 1
+
+BEGRUN: MinEgySpec set to 0 based on MinGasTemp=0
+INIT: 1/1 Scalars used.
+INIT: 6/6 Gradients used.
+READIC: Reading file `./IC.hdf5' on task=0 and distribute it to 0 to 3 (contains 131072 particles).
+ALLOCATE: initial allocation for MaxPart = 40960
+ALLOCATE: initial allocation for MaxPartSph = 40960
+
+READIC: filenr=0, './IC.hdf5' contains:
+READIC: Type 0 (gas):     131072  (tot=         131072) masstab= 0
+READIC: Type 1 (halo):         0  (tot=              0) masstab= 0
+READIC: Type 2 (disk):         0  (tot=              0) masstab= 0
+READIC: Type 3 (bulge):        0  (tot=              0) masstab= 0
+READIC: Type 4 (stars):        0  (tot=              0) masstab= 0
+READIC: Type 5 (bndry):        0  (tot=              0) masstab= 0
+
+READIC: reading block 0 (Coordinates)...
+READIC: reading block 1 (Velocities)...
+READIC: reading block 2 (ParticleIDs)...
+READIC: reading block 3 (Masses)...
+READIC: reading block 4 (InternalEnergy)...
+READIC: reading block 5 (Density)...
+	Dataset Density not present for particle type 0, using zero.
+READIC: reading block 8 (CenterOfMass)...
+	Dataset CenterOfMass not present for particle type 0, using zero.
+READIC: reading block 36 (PassiveScalars)...
+READIC: reading done (took 0.0277717 sec).
+READIC: Total number of particles :  131072
+
+INIT: MeanVolume=0.00152588
+INIT: Testing ID uniqueness...
+INIT: success.  took=0.00343593 sec
+VORONOI: init connectivity
+VORONOI: done with init of connectivity
+DOMAIN: Begin domain decomposition (sync-point 0).
+DOMAIN: NTopleaves=50, determination of top-level tree involved 3 iterations and took 0.00608907 sec
+DOMAIN: cost summation for top-level tree took 0.000192379 sec
+DOMAIN: balance reached among multiple-domains=1.00003, average leave-nodes per domain=6.25  (took 9.9e-07 sec)
+DOMAIN: combining multiple-domains took 0.000168319 sec
+DOMAIN: task reshuffling took 0.000286349 sec
+DOMAIN: particle rearrangement work took 0.000646366 sec
+DOMAIN: exchange of 65536 particles done. (took 0.00662847 sec)
+DOMAIN: domain decomposition done. (took in total 0.0157264 sec)
+DOMAIN: Peano-Hilbert order done, took 0.00573492 sec.
+NGBTREE: Ngb-tree construction.  (presently allocated=36.8466 MB)
+NGBTREE: Ngb-tree construction done. took 0.00312137 sec  <numnodes>=11001  NTopnodes=57 NTopleaves=50
+FORCETREE: Tree construction.  (inserting 131072 points)
+FORCETREE: Tree construction done.  <avg imported/local ratio>=0 <numnodes>=10975 NTopnodes=57 NTopleaves=50 tree-build-scalability=0.996105
+VORONOI: create delaunay mesh
+side-length of enclosing triangle=132.564 tetra_height=114.804 box=21
+VORONOI: iter=0: 131072 local points, points/sec/task = 1.43546e+07, took 0.00228276 secs
+VORONOI: iter=1: 4445 additional points, points/sec/task = 43097.1, took 0.0257848 secs
+VORONOI: still undecided 12974 tetrahedras
+VORONOI: iter=2: 835 additional points, points/sec/task = 152489, took 0.00136895 secs
+VORONOI: still undecided 4279 tetrahedras
+VORONOI: iter=3: 0 additional points, took 0.000334578 secs
+VORONOI: Total volume of active cells = 200
+VORONOI: done with updating connectivity.
+VORONOI: Calculating Gradients...
+VORONOI: Limiting gradients...
+
+RUN: Setting next time for snapshot file to Time_next= 0  (DumpFlag=1)
+
+
+
+Sync-Point 0, Time: 0, Systemstep: 0, Nsync-grv:     131072, Nsync-hyd:     131072
+DOMAIN: Begin domain decomposition (sync-point 0).
+DOMAIN: NTopleaves=50, determination of top-level tree involved 3 iterations and took 0.00683496 sec
+DOMAIN: cost summation for top-level tree took 0.000350788 sec
+DOMAIN: balance reached among multiple-domains=1.00003, average leave-nodes per domain=6.25  (took 1.12e-06 sec)
+DOMAIN: combining multiple-domains took 0.000275429 sec
+DOMAIN: task reshuffling took 0.000479637 sec
+DOMAIN: particle rearrangement work took 0.00470957 sec
+DOMAIN: exchange of 0 particles done. (took 0.000217239 sec)
+DOMAIN: domain decomposition done. (took in total 0.0138601 sec)
+
+... [132879 lines omitted from the middle of this file; the complete file is on the research machine] ...
+
+VORONOI: iter=2: 0 additional points, took 1.539e-05 secs
+VORONOI: Total volume of active cells = 2.89997
+VORONOI: done with updating connectivity.
+FLUX: exchanged fluxes over 11822 faces, with 0 reduced (fraction 0), cumulative fraction 0
+TIMESTEPS: timestep-treewalk: sec=0.00124609
+VORONOI: Calculating Gradients...
+VORONOI: Limiting gradients...
+FLUX: exchanged fluxes over 11822 faces, with 0 reduced (fraction 0), cumulative fraction 0
+
+
+Sync-Point 4078, Time: 6.11402, Systemstep: 0.00149414, Nsync-grv:     131072, Nsync-hyd:     128680
+DOMAIN: Begin domain decomposition (sync-point 4078).
+DOMAIN: NTopleaves=50, determination of top-level tree involved 3 iterations and took 0.00796482 sec
+DOMAIN: cost summation for top-level tree took 0.00535413 sec
+DOMAIN: balance reached among multiple-domains=1.70832, average leave-nodes per domain=6.25  (took 2.24e-06 sec)
+DOMAIN: combining multiple-domains took 0.00150052 sec
+DOMAIN: task reshuffling took 0.000629976 sec
+DOMAIN: particle rearrangement work took 0.00816465 sec
+DOMAIN: exchange of 44079 particles done. (took 0.00438714 sec)
+DOMAIN: domain decomposition done. (took in total 0.0292252 sec)
+DOMAIN: Peano-Hilbert order done, took 0.00934291 sec.
+DOMAIN: done with rearranging connection information (took 0.0407411 sec)
+NGBTREE: Ngb-tree construction.  (presently allocated=39.3572 MB)
+NGBTREE: Ngb-tree construction done. took 0.00743947 sec  <numnodes>=16225  NTopnodes=57 NTopleaves=50
+VORONOI: create delaunay mesh
+side-length of enclosing triangle=132.564 tetra_height=114.804 box=21
+VORONOI: done with connected particles
+VORONOI: Peano-Hilbert of DP points done.
+VORONOI: iter=0: 133812 local points, points/sec/task = 2.32885e+06, took 0.0143646 secs
+VORONOI: iter=1: 40 additional points, points/sec/task = 208.589, took 0.0479411 secs
+VORONOI: still undecided 306 tetrahedras
+VORONOI: iter=2: 1 additional points, points/sec/task = 815.347, took 0.000306618 secs
+VORONOI: still undecided 10 tetrahedras
+VORONOI: iter=3: 0 additional points, took 0.00015873 secs
+VORONOI: Total volume of active cells = 190.368
+VORONOI: done with updating connectivity.
+FLUX: exchanged fluxes over 386645 faces, with 0 reduced (fraction 0), cumulative fraction 0
+TIMESTEPS: timestep-treewalk: sec=0.0251405
+VORONOI: Calculating Gradients...
+VORONOI: Limiting gradients...
+FLUX: exchanged fluxes over 386645 faces, with 0 reduced (fraction 0), cumulative fraction 0
+
+
+Sync-Point 4079, Time: 6.11552, Systemstep: 0.00149414, Nsync-grv:     131072, Nsync-hyd:       3614
+DOMAIN: Begin domain decomposition (sync-point 4079).
+DOMAIN: NTopleaves=50, determination of top-level tree involved 3 iterations and took 0.00574247 sec
+DOMAIN: cost summation for top-level tree took 0.000476727 sec
+DOMAIN: balance reached among multiple-domains=1.59531, average leave-nodes per domain=6.25  (took 1.47e-06 sec)
+DOMAIN: combining multiple-domains took 0.000310189 sec
+DOMAIN: task reshuffling took 0.00165387 sec
+DOMAIN: particle rearrangement work took 0.0139373 sec
+DOMAIN: exchange of 44107 particles done. (took 0.00599109 sec)
+DOMAIN: domain decomposition done. (took in total 0.0295602 sec)
+DOMAIN: Peano-Hilbert order done, took 0.0108409 sec.
+DOMAIN: done with rearranging connection information (took 0.046945 sec)
+NGBTREE: Ngb-tree construction.  (presently allocated=39.3572 MB)
+NGBTREE: Ngb-tree construction done. took 0.00853724 sec  <numnodes>=16225  NTopnodes=57 NTopleaves=50
+VORONOI: create delaunay mesh
+side-length of enclosing triangle=132.564 tetra_height=114.804 box=21
+VORONOI: done with connected particles
+VORONOI: Peano-Hilbert of DP points done.
+VORONOI: iter=0: 4579 local points, points/sec/task = 1.51657e+06, took 0.000754826 secs
+VORONOI: iter=1: 1 additional points, points/sec/task = 118.54, took 0.00210898 secs
+VORONOI: still undecided 5 tetrahedras
+VORONOI: iter=2: 0 additional points, took 1.77e-05 secs
+VORONOI: Total volume of active cells = 2.88822
+VORONOI: done with updating connectivity.
+FLUX: exchanged fluxes over 11785 faces, with 0 reduced (fraction 0), cumulative fraction 0
+TIMESTEPS: timestep-treewalk: sec=0.00143059
+VORONOI: Calculating Gradients...
+VORONOI: Limiting gradients...
+FLUX: exchanged fluxes over 11785 faces, with 0 reduced (fraction 0), cumulative fraction 0
+
+
+Sync-Point 4080, Time: 6.11701, Systemstep: 0.00149414, Nsync-grv:     131072, Nsync-hyd:     114001
+DOMAIN: Begin domain decomposition (sync-point 4080).
+DOMAIN: NTopleaves=50, determination of top-level tree involved 3 iterations and took 0.00760304 sec
+DOMAIN: cost summation for top-level tree took 0.00413229 sec
+DOMAIN: balance reached among multiple-domains=1.64066, average leave-nodes per domain=6.25  (took 2.16e-06 sec)
+DOMAIN: combining multiple-domains took 0.00111698 sec
+DOMAIN: task reshuffling took 0.000564497 sec
+DOMAIN: particle rearrangement work took 0.00828374 sec
+DOMAIN: exchange of 44108 particles done. (took 0.0042308 sec)
+DOMAIN: domain decomposition done. (took in total 0.0269052 sec)
+DOMAIN: Peano-Hilbert order done, took 0.00930901 sec.
+DOMAIN: done with rearranging connection information (took 0.0405363 sec)
+NGBTREE: Ngb-tree construction.  (presently allocated=39.3572 MB)
+NGBTREE: Ngb-tree construction done. took 0.00687666 sec  <numnodes>=16249  NTopnodes=57 NTopleaves=50
+VORONOI: create delaunay mesh
+side-length of enclosing triangle=132.564 tetra_height=114.804 box=21
+VORONOI: done with connected particles
+VORONOI: Peano-Hilbert of DP points done.
+VORONOI: iter=0: 120270 local points, points/sec/task = 2.19625e+06, took 0.0136904 secs
+VORONOI: iter=1: 65 additional points, points/sec/task = 412.041, took 0.0394378 secs
+VORONOI: still undecided 405 tetrahedras
+VORONOI: iter=2: 7 additional points, points/sec/task = 3173.76, took 0.000551397 secs
+VORONOI: still undecided 53 tetrahedras
+VORONOI: iter=3: 0 additional points, took 0.000108141 secs
+VORONOI: Total volume of active cells = 154.794
+VORONOI: done with updating connectivity.
+FLUX: exchanged fluxes over 344471 faces, with 0 reduced (fraction 0), cumulative fraction 0
+TIMESTEPS: timestep-treewalk: sec=0.0324823
+VORONOI: Calculating Gradients...
+VORONOI: Limiting gradients...
+FLUX: exchanged fluxes over 344471 faces, with 0 reduced (fraction 0), cumulative fraction 0
+
+
+Sync-Point 4081, Time: 6.11851, Systemstep: 0.00149414, Nsync-grv:     131072, Nsync-hyd:       3566
+DOMAIN: Begin domain decomposition (sync-point 4081).
+DOMAIN: NTopleaves=50, determination of top-level tree involved 3 iterations and took 0.00715323 sec
+DOMAIN: cost summation for top-level tree took 0.000460298 sec
+DOMAIN: balance reached among multiple-domains=1.59383, average leave-nodes per domain=6.25  (took 1.44e-06 sec)
+DOMAIN: combining multiple-domains took 0.000425988 sec
+DOMAIN: task reshuffling took 0.000867126 sec
+DOMAIN: particle rearrangement work took 0.0195702 sec
+DOMAIN: exchange of 44085 particles done. (took 0.00514305 sec)
+DOMAIN: domain decomposition done. (took in total 0.0352514 sec)
+DOMAIN: Peano-Hilbert order done, took 0.00837878 sec.
+DOMAIN: done with rearranging connection information (took 0.0590653 sec)
+NGBTREE: Ngb-tree construction.  (presently allocated=39.3572 MB)
+NGBTREE: Ngb-tree construction done. took 0.0109543 sec  <numnodes>=16225  NTopnodes=57 NTopleaves=50
+VORONOI: create delaunay mesh
+side-length of enclosing triangle=132.564 tetra_height=114.804 box=21
+VORONOI: done with connected particles
+VORONOI: Peano-Hilbert of DP points done.
+VORONOI: iter=0: 4477 local points, points/sec/task = 408492, took 0.00273996 secs
+VORONOI: iter=1: 0 additional points, took 0.00387847 secs
+VORONOI: still undecided 1 tetrahedras
+VORONOI: iter=2: 0 additional points, took 5.0669e-05 secs
+VORONOI: Total volume of active cells = 2.84886
+VORONOI: done with updating connectivity.
+FLUX: exchanged fluxes over 11615 faces, with 0 reduced (fraction 0), cumulative fraction 0
+TIMESTEPS: timestep-treewalk: sec=0.00341274
+VORONOI: Calculating Gradients...
+VORONOI: Limiting gradients...
+FLUX: exchanged fluxes over 11615 faces, with 0 reduced (fraction 0), cumulative fraction 0
+
+
+Sync-Point 4082, Time: 6.12, Systemstep: 0.00149414, Nsync-grv:     131072, Nsync-hyd:     131072
+DOMAIN: Begin domain decomposition (sync-point 4082).
+DOMAIN: NTopleaves=50, determination of top-level tree involved 3 iterations and took 0.00610645 sec
+DOMAIN: cost summation for top-level tree took 0.000402738 sec
+DOMAIN: balance reached among multiple-domains=1.69815, average leave-nodes per domain=6.25  (took 9.1e-07 sec)
+DOMAIN: combining multiple-domains took 0.000374428 sec
+DOMAIN: task reshuffling took 0.000633346 sec
+DOMAIN: particle rearrangement work took 0.0054863 sec
+DOMAIN: exchange of 44083 particles done. (took 0.0039435 sec)
+DOMAIN: domain decomposition done. (took in total 0.0180673 sec)
+DOMAIN: Peano-Hilbert order done, took 0.0129578 sec.
+DOMAIN: done with rearranging connection information (took 0.0429383 sec)
+NGBTREE: Ngb-tree construction.  (presently allocated=39.3572 MB)
+NGBTREE: Ngb-tree construction done. took 0.0171112 sec  <numnodes>=16241  NTopnodes=57 NTopleaves=50
+VORONOI: create delaunay mesh
+side-length of enclosing triangle=132.564 tetra_height=114.804 box=21
+VORONOI: done with connected particles
+VORONOI: Peano-Hilbert of DP points done.
+VORONOI: iter=0: 135825 local points, points/sec/task = 1.85434e+06, took 0.0183117 secs
+VORONOI: iter=1: 48 additional points, points/sec/task = 272.744, took 0.0439973 secs
+VORONOI: still undecided 490 tetrahedras
+VORONOI: iter=2: 2 additional points, points/sec/task = 2057.71, took 0.000242989 secs
+VORONOI: still undecided 14 tetrahedras
+VORONOI: iter=3: 0 additional points, took 0.00013216 secs
+VORONOI: Total volume of active cells = 200
+VORONOI: done with updating connectivity.
+FLUX: exchanged fluxes over 393207 faces, with 0 reduced (fraction 0), cumulative fraction 0
+
+writing snapshot file #40 @ time 6.12 ... (DumpFlag=1)
+writing snapshot files group 1 out of 1 - files 0-0 (total of 1 files): './output/snap_040'
+writing block 0 (Coordinates)...
+writing block 1 (Velocities)...
+writing block 2 (ParticleIDs)...
+writing block 3 (Masses)...
+writing block 4 (InternalEnergy)...
+writing block 5 (Density)...
+writing block 8 (CenterOfMass)...
+writing block 36 (PassiveScalars)...
+done with writing snapshot (took 0.0275344 sec).
+
+RUN: There is no valid time for a further snapshot file.
+
+Final time=6.12 reached. Simulation ends.
+RESTART: PageSize = 4096
+RESTART: Writing restart files.
+RESTART: Backup restart files...
+RESTART: no pre-existing restart files found.
+RESTART: Writing restart files group #1 out of 4...
+RESTART: Writing restart files group #2 out of 4...
+RESTART: Writing restart files group #3 out of 4...
+RESTART: Writing restart files group #4 out of 4...
+RESTART: Checking restart files group #1 out of 4...
+RESTART: Checking restart files group #2 out of 4...
+RESTART: Checking restart files group #3 out of 4...
+RESTART: Checking restart files group #4 out of 4...
+All restart files written successfully.
+RESTART: load/save took 0.963562 sec, corresponds to I/O rate of 263.532 MB/sec
+RESTART: done.
+Code run for 1031.230190 seconds!
+endrun called, calling MPI_Finalize()
+bye!
+

@@ -1,0 +1,88 @@
+import base64
+import glob
+import json
+import os
+
+import numpy as np
+import yt
+
+OUT = "/mnt/c/Users/kaanb/CloudCrushing/studio/data"
+os.makedirs(OUT, exist_ok=True)
+
+H = "/home/kaan"
+CC = H + "/CloudCrushing"
+
+
+def latest(pattern):
+    fs = sorted(glob.glob(pattern))
+    return fs[-1] if fs else None
+
+
+# id, file, title, meta(code,chi,res,t), bounds (x0,x1,y0,y1), transpose
+TERRAINS = [
+    ("flash_chi10_l9", latest(CC + "/FLASH_RUNS_LOCAL/CloudCrush_l9b/cloudcrush_hdf5_chk_????"),
+     "FLASH chi=10 level 9", {"code": "FLASH", "chi": 10, "res": "4096x2048", "t": "5.0 t_cc"},
+     (0.0, 2.0, 0.0, 1.0), False),
+    ("flash_chi100_l8", latest(CC + "/A8/F2D_chi100_l8/cloudcrush_hdf5_chk_????"),
+     "FLASH chi=100 level 8", {"code": "FLASH", "chi": 100, "res": "2048x1024", "t": "5.0 t_cc"},
+     (0.0, 2.0, 0.0, 1.0), False),
+    ("flash_chi1000_l7", latest(CC + "/A8/F2D_chi1000_l7/cloudcrush_hdf5_chk_????"),
+     "FLASH chi=1000 level 7", {"code": "FLASH", "chi": 1000, "res": "1024x512", "t": "5.0 t_cc"},
+     (0.0, 2.0, 0.0, 1.0), False),
+    ("apk_chi10_2048", latest(H + "/codes/athenapk/runs/APK2D_chi10_2048/*.phdf"),
+     "AthenaPK GPU chi=10", {"code": "AthenaPK GPU", "chi": 10, "res": "2048x1024", "t": "5.0 t_cc"},
+     None, True),
+    ("apk_chi100_2048", latest(H + "/codes/athenapk/runs/APK2D_chi100_2048/*.phdf"),
+     "AthenaPK GPU chi=100", {"code": "AthenaPK GPU", "chi": 100, "res": "2048x1024", "t": "5.0 t_cc"},
+     None, True),
+    ("apk_chi1000_512", latest(H + "/codes/athenapk/runs/APK2D_chi1000_512/*.phdf"),
+     "AthenaPK GPU chi=1000", {"code": "AthenaPK GPU", "chi": 1000, "res": "512x256", "t": "5.0 t_cc"},
+     None, True),
+    ("athena_d10_ultra", latest(CC + "/ATHENA_RUNS_LOCAL/shk_cloud_ultra/Cloud.[0-9]*.vtk"),
+     "Athena shock chi=10 ultra", {"code": "Athena 4.2", "chi": 10, "res": "3600x1800", "t": "t=1.85"},
+     None, False),
+]
+
+W, HH = 512, 256
+made = []
+for tid, path, title, meta, bounds, transpose in TERRAINS:
+    if not path or not os.path.exists(path):
+        print("SKIP", tid, "(no file)")
+        continue
+    try:
+        ds = yt.load(path)
+        ad = ds.all_data()
+        c = ds.domain_center
+        slc = ds.slice("z", c[2])
+        dle, dre = ds.domain_left_edge, ds.domain_right_edge
+        wx = float(dre[0] - dle[0])
+        wy = float(dre[1] - dle[1])
+        frb = slc.to_frb((wx, "code_length"), (W, HH), height=(wy, "code_length"))
+        arr = np.array(frb[("gas", "density")], dtype=np.float64)
+        if arr.shape != (HH, W):
+            arr = arr.T
+        if transpose:
+            # AthenaPK domain is rotated (wind along y); rotate then un-mirror so wind runs left->right
+            arr = np.rot90(arr, k=-1)[:, ::-1]
+            if arr.shape != (HH, W):
+                # after rotation aspect flips; resample by simple striding to 512x256
+                from numpy import linspace
+                yi = np.clip((np.linspace(0, arr.shape[0] - 1, HH)).astype(int), 0, arr.shape[0] - 1)
+                xi = np.clip((np.linspace(0, arr.shape[1] - 1, W)).astype(int), 0, arr.shape[1] - 1)
+                arr = arr[np.ix_(yi, xi)]
+        larr = np.log10(np.clip(arr, 1e-8, None))
+        CLIM = {10: (-1.0, 1.5), 100: (-1.0, 2.5), 1000: (-1.0, 3.5)}
+        lo, hi = CLIM.get(meta.get("chi", 10), (-1.0, 1.5))
+        u8 = np.clip((larr - lo) / max(hi - lo, 1e-9) * 255.0, 0, 255).astype(np.uint8)
+        b64 = base64.b64encode(u8.tobytes()).decode()
+        with open(os.path.join(OUT, tid + ".js"), "w") as f:
+            f.write("STUDIO_DATA[%s]={w:%d,h:%d,lo:%.3f,hi:%.3f,title:%s,meta:%s,d:%s};\n" % (
+                json.dumps(tid), W, HH, lo, hi, json.dumps(title), json.dumps(meta), json.dumps(b64)))
+        made.append(tid)
+        print("OK", tid, os.path.basename(path))
+    except Exception as e:
+        print("FAIL", tid, repr(e))
+
+with open(os.path.join(OUT, "terrains.js"), "w") as f:
+    f.write("var STUDIO_TERRAINS=%s;\n" % json.dumps(made))
+print("terrains:", made)

@@ -109,6 +109,7 @@
     <button data-tab="movies">Movies</button>
     <button data-tab="terrain">3D terrain</button>
     <button data-tab="volumes">3D volumes</button>
+    <button data-tab="code">Code &amp; logs</button>
   </nav>
 
   <div class="toolbar">
@@ -119,7 +120,17 @@
 
   <section class="panel on" id="p-gallery"><div class="grid" id="gGrid"></div></section>
 
-  <section class="panel" id="p-movies"><div class="grid" id="mGrid"></div></section>
+  <section class="panel" id="p-movies">
+    <div class="ctl" style="margin-bottom:12px">
+      <span class="lab">Sort</span>
+      <div class="rebtns" id="mSort">
+        <button data-sort="res_desc" class="on">Highest resolution first</button>
+        <button data-sort="res_asc">Lowest resolution first</button>
+        <button data-sort="code">Grouped by code</button>
+      </div>
+    </div>
+    <div class="grid" id="mGrid"></div>
+  </section>
 
   <section class="panel" id="p-terrain">
     <div class="note">Density becomes altitude. Drag to orbit, scroll to zoom, right-drag to pan.
@@ -155,6 +166,24 @@
       </div>
     </div>
   </section>
+
+  <section class="panel" id="p-code">
+    <div class="note">Everything the simulations were actually built and run from: the problem
+      source each code was given, the input file for every run, the run logs, and the analysis
+      and rendering scripts. Very long logs are shown head and tail with the middle omitted.</div>
+    <div class="ctl" style="margin-bottom:12px">
+      <span class="lab">Section</span><div class="rebtns" id="cCat"></div>
+    </div>
+    <div class="twrap">
+      <div id="cList"></div>
+      <div>
+        <div class="ctl" style="margin-top:0"><span id="cInfo"></span></div>
+        <pre id="cView" style="background:var(--surface);border:1px solid var(--line);
+          border-radius:10px;padding:12px 14px;overflow:auto;max-height:72vh;
+          font:12.5px/1.5 ui-monospace,Consolas,monospace;white-space:pre;margin:6px 0 0">Select a file from the list.</pre>
+      </div>
+    </div>
+  </section>
 </div>
 
 <div id="lightbox"><img id="lbImg" alt=""><div class="cap" id="lbCap"></div></div>
@@ -162,6 +191,7 @@
 <script>var STUDIO_DATA = {}; var VOL_DATA = {}; var VOLSEQ_DATA = {};</script>
 <script src="data/manifest.js"></script>
 <script src="data/terrains.js"></script>
+<script src="data/codefiles.js"></script>
 <script>
   (STUDIO_TERRAINS || []).forEach(function (id) {
     var s = document.createElement("script"); s.src = "data/" + id + ".js"; document.head.appendChild(s);
@@ -175,43 +205,58 @@
 
   // ---------- friendly naming: always "code + level/resolution + chi" ----------
   function chiTxt(c) { return c === 0 ? "Sedov blast" : "χ = " + c; }
+  // effective linear resolution (cells or particles across the long axis of the box)
+  var FLASH_LREF = { 4: 128, 5: 256, 6: 512, 7: 1024, 8: 2048, 9: 4096, 10: 8192 };
   function movieLabel(m) {
     var n = m.name, r;
-    var slow = /_slow$/.test(n) ? ", slow motion" : "";
-    var base = n.replace(/_slow$/, "");
+    var slow = /_slow$/.test(n) ? ", slow motion" :
+               (/_smooth$/.test(n) ? ", smoothed playback" : "");
+    var base = n.replace(/_slow$/, "").replace(/_smooth$/, "");
+    if ((r = base.match(/^terrain_flash_chi(\d+)_lref(\d+)$/)))
+      return { title: "FLASH, terrain flyover, level " + r[2] + slow, chi: +r[1],
+               code: "FLASH", res: FLASH_LREF[+r[2]] || 0, d3: true };
+    if ((r = base.match(/^terrain_athw_chi(\d+)_(\d+)$/)))
+      return { title: "Athena 4.2 wind tunnel, terrain flyover, " + r[2] + " grid" + slow,
+               chi: +r[1], code: "Athena 4.2", res: +r[2], d3: true };
+    if ((r = base.match(/^terrain_apk_chi(\d+)_(\d+)$/)))
+      return { title: "AthenaPK on the GPU, terrain flyover, " + r[2] + " grid" + slow,
+               chi: +r[1], code: "AthenaPK (GPU)", res: +r[2], d3: true };
+    if ((r = base.match(/^terrain_athpp_chi(\d+)_(\d+)$/)))
+      return { title: "Athena++, terrain flyover, " + r[2] + " grid" + slow,
+               chi: +r[1], code: "Athena++", res: +r[2], d3: true };
     if ((r = base.match(/^athpp_chi(\d+)_(\d+)$/)))
-      return { title: "Athena++, " + r[2] + " grid" + slow, chi: +r[1], code: "Athena++" };
+      return { title: "Athena++, " + r[2] + " grid" + slow, chi: +r[1], code: "Athena++", res: +r[2] };
     if ((r = base.match(/^ramses_chi(\d+)_(\d+)$/)))
-      return { title: "RAMSES, " + r[2] + " grid" + slow, chi: +r[1], code: "RAMSES" };
+      return { title: "RAMSES, " + r[2] + " grid" + slow, chi: +r[1], code: "RAMSES", res: +r[2] };
     if ((r = base.match(/^enzo_chi(\d+)_(\d+)$/)))
-      return { title: "Enzo, " + r[2] + " grid" + slow, chi: +r[1], code: "Enzo" };
+      return { title: "Enzo, " + r[2] + " grid" + slow, chi: +r[1], code: "Enzo", res: +r[2] };
     if ((r = base.match(/^arepo_chi(\d+)$/)))
-      return { title: "Arepo, moving mesh" + slow, chi: +r[1], code: "Arepo" };
+      return { title: "Arepo, moving mesh" + slow, chi: +r[1], code: "Arepo", res: 512 };
     if ((r = base.match(/^gizmo_mfm_chi(\d+)$/)))
-      return { title: "GIZMO MFM, meshless" + slow, chi: +r[1], code: "GIZMO MFM" };
+      return { title: "GIZMO MFM, meshless" + slow, chi: +r[1], code: "GIZMO MFM", res: 400 };
     if ((r = base.match(/^gizmo_mfv_chi(\d+)$/)))
-      return { title: "GIZMO MFV, meshless" + slow, chi: +r[1], code: "GIZMO MFV" };
+      return { title: "GIZMO MFV, meshless" + slow, chi: +r[1], code: "GIZMO MFV", res: 400 };
     if ((r = base.match(/^gadget4_chi(\d+)$/)))
-      return { title: "Gadget-4, SPH" + slow, chi: +r[1], code: "Gadget-4" };
+      return { title: "Gadget-4, SPH" + slow, chi: +r[1], code: "Gadget-4", res: 512 };
     if ((r = base.match(/^flash3d_chi(\d+)_lref(\d+)$/)))
-      return { title: "FLASH, 3D, level " + r[2] + slow, chi: +r[1], code: "FLASH" };
+      return { title: "FLASH, 3D, level " + r[2] + slow, chi: +r[1], code: "FLASH", res: FLASH_LREF[+r[2]] || 0, d3: true };
     if ((r = base.match(/^athw3d_chi(\d+)_(\d+)$/)))
-      return { title: "Athena 4.2 wind tunnel, 3D, " + r[2] + " long" + slow, chi: +r[1], code: "Athena 4.2" };
+      return { title: "Athena 4.2 wind tunnel, 3D, " + r[2] + " long" + slow, chi: +r[1], code: "Athena 4.2", res: +r[2], d3: true };
     if ((r = base.match(/^apk3d_chi(\d+)_(\d+)$/)))
-      return { title: "AthenaPK on the GPU, 3D, " + r[2] + " long" + slow, chi: +r[1], code: "AthenaPK (GPU)" };
+      return { title: "AthenaPK on the GPU, 3D, " + r[2] + " long" + slow, chi: +r[1], code: "AthenaPK (GPU)", res: +r[2], d3: true };
     if ((r = base.match(/^flash_chi(\d+)_lref(\d+)(_partial)?$/)))
-      return { title: "FLASH, level " + r[2] + (r[3] ? ", partial run" : "") + slow, chi: +r[1], code: "FLASH" };
+      return { title: "FLASH, level " + r[2] + (r[3] ? ", partial run" : "") + slow, chi: +r[1], code: "FLASH", res: FLASH_LREF[+r[2]] || 0 };
     if ((r = base.match(/^cloudcrush_lref(\d+)$/)))
-      return { title: "FLASH, level " + r[1] + slow, chi: 10, code: "FLASH" };
+      return { title: "FLASH, level " + r[1] + slow, chi: 10, code: "FLASH", res: FLASH_LREF[+r[1]] || 0 };
     if ((r = base.match(/^apk_chi(\d+)_(\d+)$/)))
-      return { title: "AthenaPK on the GPU, " + r[2] + " grid" + slow, chi: +r[1], code: "AthenaPK (GPU)" };
+      return { title: "AthenaPK on the GPU, " + r[2] + " grid" + slow, chi: +r[1], code: "AthenaPK (GPU)", res: +r[2] };
     if ((r = base.match(/^athw_chi(\d+)_(\d+)$/)))
-      return { title: "Athena 4.2 wind tunnel, " + r[2] + " grid" + slow, chi: +r[1], code: "Athena 4.2" };
+      return { title: "Athena 4.2 wind tunnel, " + r[2] + " grid" + slow, chi: +r[1], code: "Athena 4.2", res: +r[2] };
     if ((r = base.match(/^athena_shock_d(\d+)_(\d+)$/)))
-      return { title: "Athena 4.2, " + r[2] + " grid, old shock setup" + slow, chi: +r[1], code: "Athena 4.2" };
+      return { title: "Athena 4.2, " + r[2] + " grid, old shock setup" + slow, chi: +r[1], code: "Athena 4.2", res: +r[2] };
     if ((r = base.match(/^athena_shk_cloud_(hires|ultra)$/)))
-      return { title: "Athena 4.2, " + (r[1] === "hires" ? "1800x900" : "3600x1800") + ", shock-driven" + slow, chi: 10, code: "Athena 4.2" };
-    return { title: n, chi: null, code: null };
+      return { title: "Athena 4.2, " + (r[1] === "hires" ? "1800x900" : "3600x1800") + ", shock-driven" + slow, chi: 10, code: "Athena 4.2", res: (r[1] === "hires" ? 1800 : 3600) };
+    return { title: n, chi: null, code: null, res: 0 };
   }
   function normCode(c) { return (c && c.indexOf("AthenaPK") === 0) ? "AthenaPK (GPU)" : c; }
   function terrainLabel(d) {
@@ -238,8 +283,67 @@
       document.getElementById("p-" + b.dataset.tab).classList.add("on");
       if (b.dataset.tab === "terrain") initTerrain();
       if (b.dataset.tab === "volumes" && window.initVols) window.initVols();
+      if (b.dataset.tab === "code") drawCode();
     };
   });
+
+  // ---------- code and logs ----------
+  var cCat = null;
+  function drawCode() {
+    var all = (typeof STUDIO_CODEFILES !== "undefined") ? STUDIO_CODEFILES : [];
+    if (!all.length) {
+      document.getElementById("cList").innerHTML =
+        "<p class='note'>No files published yet.</p>";
+      return;
+    }
+    var cats = [];
+    all.forEach(function (f) { if (cats.indexOf(f.cat) < 0) cats.push(f.cat); });
+    if (!cCat) cCat = cats[0];
+    var cf = document.getElementById("cCat"); cf.innerHTML = "";
+    cats.forEach(function (c) {
+      var b = document.createElement("button");
+      b.textContent = c;
+      if (c === cCat) b.classList.add("on");
+      b.onclick = function () { cCat = c; drawCode(); };
+      cf.appendChild(b);
+    });
+    var list = document.getElementById("cList"); list.innerHTML = "";
+    var shown = all.filter(function (f) {
+      return f.cat === cCat && (codeSel === "All" || f.code === codeSel ||
+             f.code === "All codes" || f.code === "Pipeline");
+    });
+    var byCode = {};
+    shown.forEach(function (f) { (byCode[f.code] = byCode[f.code] || []).push(f); });
+    Object.keys(byCode).sort().forEach(function (code) {
+      var h = document.createElement("div");
+      h.className = "lab"; h.style.margin = "8px 0 4px"; h.textContent = code;
+      list.appendChild(h);
+      byCode[code].forEach(function (f) {
+        var b = document.createElement("button");
+        b.innerHTML = f.name + "<span class='m'>" + f.path +
+          (f.trunc ? " &middot; shortened" : "") + "</span>";
+        b.onclick = function () {
+          document.querySelectorAll("#cList button").forEach(function (x) { x.classList.remove("on"); });
+          b.classList.add("on");
+          document.getElementById("cInfo").textContent = "loading " + f.path + " ...";
+          fetch(f.file).then(function (r) { return r.text(); }).then(function (txt) {
+            document.getElementById("cView").textContent = txt;
+            document.getElementById("cInfo").innerHTML = f.code + " &middot; " + f.path +
+              " &middot; " + f.lines + " lines" +
+              " &middot; <a href='" + f.file + "' download style='color:var(--accent)'>download</a>";
+          }).catch(function () {
+            document.getElementById("cView").textContent = "Could not load this file.";
+          });
+        };
+        list.appendChild(b);
+      });
+    });
+    if (!list.children.length)
+      list.innerHTML = "<p class='note'>No files in this section for the selected code.</p>";
+  }
+  window.refreshCodeList = function () {
+    if (document.getElementById("p-code").classList.contains("on")) drawCode();
+  };
 
   // ---------- filters ----------
   var codeSel = "All", chiSel = "All";
@@ -308,14 +412,28 @@
   document.getElementById("lightbox").onclick = function () { this.style.display = "none"; };
 
   // ---------- movies ----------
+  var mSortMode = "res_desc";
   function drawMovies() {
     var grid = document.getElementById("mGrid"); grid.innerHTML = "";
-    STUDIO_MOVIES.forEach(function (m) {
+    var list = STUDIO_MOVIES.slice();
+    if (mSortMode !== "code") {
+      var sgn = (mSortMode === "res_desc") ? -1 : 1;
+      list.sort(function (a, b) {
+        var la = movieLabel(a), lb = movieLabel(b);
+        var d = ((la.res || 0) - (lb.res || 0)) * sgn;
+        if (d) return d;
+        if ((la.code || "") !== (lb.code || "")) return (la.code || "") < (lb.code || "") ? -1 : 1;
+        return (la.chi || 0) - (lb.chi || 0);
+      });
+    }
+    list.forEach(function (m) {
       var lb = movieLabel(m);
       if (lb.code !== null && !passes(lb.code, lb.chi)) return;
       var c = document.createElement("div"); c.className = "card";
       var h = document.createElement("h3");
-      h.innerHTML = lb.title + (lb.chi !== null ? " <span class='chi'>" + chiTxt(lb.chi) + "</span>" : "");
+      h.innerHTML = lb.title + (lb.chi !== null ? " <span class='chi'>" + chiTxt(lb.chi) + "</span>" : "") +
+        (lb.res ? " <span class='muted' style='font-weight:400'>" + lb.res +
+          (lb.d3 ? " cells long, 3D" : " cells long") + "</span>" : "");
       var v = document.createElement("video");
       v.controls = true; v.loop = true; v.preload = "metadata"; v.playsInline = true;
       v.src = m.src;
@@ -326,10 +444,19 @@
   window.studioFilters = function () { return { code: codeSel, chi: chiSel }; };
   window.studioPasses = passes;
   window.studioNormCode = normCode;
+  document.querySelectorAll("#mSort button").forEach(function (b) {
+    b.onclick = function () {
+      document.querySelectorAll("#mSort button").forEach(function (x) { x.classList.remove("on"); });
+      b.classList.add("on");
+      mSortMode = b.dataset.sort;
+      drawMovies();
+    };
+  });
   function drawAll() {
     drawGallery(); drawMovies();
     if (window.refreshTerrainList) window.refreshTerrainList();
     if (window.refreshVolList) window.refreshVolList();
+    if (window.refreshCodeList) window.refreshCodeList();
   }
   drawFilters(); drawAll();
   window.addEventListener("load", function () { drawFilters(); drawAll(); });

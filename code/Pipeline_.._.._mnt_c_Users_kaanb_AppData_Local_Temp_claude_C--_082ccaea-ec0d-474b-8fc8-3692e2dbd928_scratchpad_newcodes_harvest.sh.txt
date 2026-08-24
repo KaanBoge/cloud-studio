@@ -1,0 +1,77 @@
+#!/bin/bash
+# Render every frame of all seven new codes, encode movies, stage galleries
+set -u
+CO=/home/kaan/codes
+PY=/home/kaan/venv/bin/python
+SP=/mnt/c/Users/kaanb/AppData/Local/Temp/claude/C--/082ccaea-ec0d-474b-8fc8-3692e2dbd928/scratchpad
+RU=/home/kaan/render_unified.py
+RP=/home/kaan/render_particles.py
+RR=/home/kaan/render_ramses.py
+WIN=/mnt/c/Users/kaanb/CloudCrushing
+OUT=$WIN/results_A8/movies
+LOG=$WIN/results_A8/newcodes.log
+echo "start $(date)" > "$LOG"
+
+cp $SP/render_unified.py $RU; cp $SP/render_particles.py $RP; cp $SP/render_ramses.py $RR
+sed -i 's/\r$//' $RU $RP $RR
+sed '/^for outdir in sys.argv/,$d' $CO/ramses/runs/RAM2D_chi10/smoke/read_ramses.py > /home/kaan/ramses_reader.py
+
+enc() { # dir glob fps name
+  cd "$1" || return
+  nice -n 19 ffmpeg -y -loglevel error -framerate "$3" -pattern_type glob -i "$2" \
+    -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" -c:v libx264 -crf 20 -pix_fmt yuv420p "$OUT/$4.mp4" \
+    && nice -n 19 ffmpeg -y -loglevel error -i "$OUT/$4.mp4" -filter:v "setpts=2.5*PTS" -an "$OUT/$4_slow.mp4" \
+    && echo "encoded $4" >> "$LOG"
+}
+stage() { mkdir -p "$WIN/results_A8/$2"; cp "$1"/*_dens.png "$WIN/results_A8/$2/" 2>/dev/null; }
+
+echo "--- Athena++ ---" >> "$LOG"
+D=$CO/athenapp/runs/ATHPP2D_chi10_512
+nice -n 19 $PY $RU athenapp 10 1.2247 "Athena++" "$D" '*.athdf' >> "$LOG" 2>&1
+stage "$D" ATHPP2D_chi10_512
+enc "$D" '*_dens.png' 6 athpp_chi10_512
+
+echo "--- RAMSES ---" >> "$LOG"
+D=$CO/ramses/runs/RAM2D_chi10
+nice -n 19 $PY $RR 10 1.2247 "RAMSES" "$D" >> "$LOG" 2>&1
+stage "$D" RAM2D_chi10
+enc "$D" 'output_[0-9]*_dens.png' 6 ramses_chi10_512
+
+echo "--- Enzo ---" >> "$LOG"
+D=$CO/enzo/runs/CW2D_chi10_512
+for dd in "$D"/DD[0-9][0-9][0-9][0-9]; do
+  b=$(basename "$dd")
+  nice -n 19 $PY $RU enzo 10 1.2247 "Enzo" "$dd" "CW_${b#DD}" >> "$LOG" 2>&1
+done
+mkdir -p "$WIN/results_A8/CW2D_chi10_512"
+cp "$D"/DD[0-9]*/CW_[0-9]*_dens.png "$WIN/results_A8/CW2D_chi10_512/" 2>/dev/null
+cp "$D"/DD[0-9]*/CW_[0-9]*_dens.png "$D/" 2>/dev/null
+enc "$D" 'CW_[0-9]*_dens.png' 6 enzo_chi10_512
+
+echo "--- Arepo ---" >> "$LOG"
+D=$CO/arepo/runs/AREPO2D_chi10/output
+nice -n 19 $PY $RP 10 1.2247 "Arepo" "$D" 'snap_[0-9]*.hdf5' >> "$LOG" 2>&1
+stage "$D" AREPO2D_chi10
+enc "$D" 'snap_[0-9]*_dens.png' 6 arepo_chi10
+
+echo "--- GIZMO MFM ---" >> "$LOG"
+D=$CO/gizmo/runs/GIZMO2D_chi10_mfm/output
+nice -n 19 $PY $RP 10 1.2247 "GIZMO MFM" "$D" 'snapshot_[0-9]*.hdf5' >> "$LOG" 2>&1
+stage "$D" GIZMO2D_chi10_mfm
+enc "$D" 'snapshot_[0-9]*_dens.png' 6 gizmo_mfm_chi10
+
+echo "--- GIZMO MFV ---" >> "$LOG"
+D=$CO/gizmo/runs/GIZMO2D_chi10_mfv/output
+nice -n 19 $PY $RP 10 1.2247 "GIZMO MFV" "$D" 'snapshot_[0-9]*.hdf5' >> "$LOG" 2>&1
+stage "$D" GIZMO2D_chi10_mfv
+enc "$D" 'snapshot_[0-9]*_dens.png' 6 gizmo_mfv_chi10
+
+echo "--- Gadget-4 ---" >> "$LOG"
+D=$CO/gadget4/runs/G4_2D_chi10/output
+nice -n 19 $PY $RP 10 1.2247 "Gadget-4" "$D" 'snapshot_[0-9]*.hdf5' >> "$LOG" 2>&1
+stage "$D" G4_2D_chi10
+enc "$D" 'snapshot_[0-9]*_dens.png' 6 gadget4_chi10
+
+nice -n 19 $PY $SP/studio_manifest.py >> "$LOG" 2>&1
+echo "=== NEWCODES HARVEST DONE $(date) ===" >> "$LOG"
+grep -E "rendered|encoded|FAIL|gallery groups" "$LOG" | tail -30

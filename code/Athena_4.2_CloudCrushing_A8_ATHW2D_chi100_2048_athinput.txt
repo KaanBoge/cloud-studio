@@ -1,0 +1,56 @@
+<comment>
+problem = shock cloud interaction (2D, single uniform grid, HIGH RESOLUTION MPI)
+author  = M.-S. Shin, G. Snyder, & J.M. Stone
+config  = --with-problem=shk_cloud --with-gas=hydro --with-nscalars=1 --enable-mpi
+note1   = high-resolution rerun of the 600x300 serial run at 1800x900
+note2   = MPI domain decomposition 4x2 = 8 ranks (NGrid_x1=4, NGrid_x2=2)
+
+<job>
+problem_id      = Cloud      # problem ID: basename of output filenames
+maxout          = 2          # Output blocks number from 1 -> maxout
+num_domains     = 1          # number of Domains in Mesh
+
+<time>
+cour_no         = 0.8       # The Courant, Friedrichs, & Lewy (CFL) Number
+nlim            = 1000000   # cycle limit
+tlim = 19.4
+
+<output1>
+out_fmt = hst               # History data dump
+dt = 0.484
+
+<output2>
+out_fmt = vtk               # VTK data dump (all primitive variables)
+out     = prim
+dt = 0.484
+
+<domain1>
+level           = 0         # refinement level this Domain (root=0)
+Nx1 = 2048
+x1min           = -3.0      # minimum value of X
+x1max = 17.0
+bc_ix1          = 1         # inner-I (X1) flag; overridden by user postshock-inflow BC
+bc_ox1          = 2         # outflow on outer-I (X1)
+
+Nx2 = 1024
+x2min = -5.0
+x2max = 5.0
+bc_ix2          = 2         # outflow
+bc_ox2          = 2         # outflow
+
+Nx3 = 1
+x3min = -5.0
+x3max = 5.0
+bc_ix3          = 2         # boundary condition flag for inner-K (X3)
+bc_ox3          = 2         # boundary condition flag for outer-K (X3)
+
+NGrid_x1 = 4
+NGrid_x2 = 2
+NGrid_x3 = 1
+
+<problem>
+iso_csound      = 1.0
+gamma           = 1.66667   # gamma = C_p/C_v
+Mach = 2.0
+drat = 100
+iprob           = 1         # selects problem type

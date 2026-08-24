@@ -1,0 +1,110 @@
+"""Animated 3D terrain movies: density becomes altitude, camera orbits while the
+simulation evolves. Same colours and fixed scale as every other view.
+
+Usage: render_terrain_movie.py <kind> <chi> <tcc> <label> <outname> <dir> <glob>
+  kind: flash | athena | athw | apk | athenapp | enzo
+"""
+import glob
+import os
+import subprocess
+import sys
+
+import matplotlib
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
+import numpy as np
+import yt
+
+yt.set_log_level(40)
+
+KIND, CHI, TCC, LABEL, OUTNAME, DIR, PATTERN = (
+    sys.argv[1], int(sys.argv[2]), float(sys.argv[3]), sys.argv[4],
+    sys.argv[5], sys.argv[6], sys.argv[7])
+
+CLIM = {10: (-1.0, 1.5), 100: (-1.0, 2.5), 1000: (-1.0, 3.5)}
+lo, hi = CLIM.get(CHI, (-1.0, 1.5))
+NX, NY = 240, 120
+FRAMEDIR = os.path.join(DIR, "_terrain_frames")
+os.makedirs(FRAMEDIR, exist_ok=True)
+ORIGIN_R = {"athenapp": ((0.0, 0.0), 1.0), "enzo": ((0.0, 0.0), 1.0),
+            "ramses": ((3.0, 10.0), 1.0)}
+
+
+def grid(fn):
+    ds = yt.load(fn)
+    zc = float(ds.domain_center[2])
+    slc = ds.slice(2, zc)
+    dle, dre = ds.domain_left_edge, ds.domain_right_edge
+    if KIND in ORIGIN_R:
+        (ox, oy), R = ORIGIN_R[KIND]
+        frb = slc.to_frb(width=(20.0 * R, "code_length"), resolution=(NX, NY),
+                         center=[ox + 7.0 * R, oy, zc], height=(10.0 * R, "code_length"))
+        arr = np.array(frb[("gas", "density")], dtype=np.float64)
+    elif KIND == "apk":
+        frb = slc.to_frb((float(dre[0] - dle[0]), "code_length"), (NY, NX),
+                         height=(float(dre[1] - dle[1]), "code_length"))
+        arr = np.array(frb[("gas", "density")], dtype=np.float64)
+        if arr.shape != (NX, NY):
+            arr = arr.T
+        arr = np.rot90(arr, k=-1)[:, ::-1]
+    else:
+        frb = slc.to_frb((float(dre[0] - dle[0]), "code_length"), (NX, NY),
+                         height=(float(dre[1] - dle[1]), "code_length"))
+        arr = np.array(frb[("gas", "density")], dtype=np.float64)
+    if arr.shape != (NY, NX):
+        arr = arr.T
+    return arr, float(ds.current_time)
+
+
+files = sorted(glob.glob(os.path.join(DIR, PATTERN)))
+files = [f for f in files if "final" not in os.path.basename(f)]
+if not files:
+    print("no files for", DIR, PATTERN)
+    sys.exit(0)
+
+X, Y = np.meshgrid(np.linspace(-3, 17, NX), np.linspace(-5, 5, NY))
+cmap = matplotlib.colormaps["viridis"]
+n = 0
+for i, fn in enumerate(files):
+    out = os.path.join(FRAMEDIR, "f%04d.png" % i)
+    if os.path.exists(out):
+        n += 1
+        continue
+    try:
+        arr, t = grid(fn)
+        la = np.log10(np.clip(arr, 1e-8, None))
+        z = np.clip((la - lo) / (hi - lo), 0, 1)
+        fig = plt.figure(figsize=(12.8, 7.2), dpi=100)
+        ax = fig.add_subplot(111, projection="3d")
+        ax.plot_surface(X, Y, z * 6.0, facecolors=cmap(z), rstride=1, cstride=1,
+                        linewidth=0, antialiased=False, shade=True)
+        ax.set_zlim(0, 6.5)
+        ax.set_box_aspect((2.0, 1.0, 0.42))
+        # slow orbit while the simulation evolves
+        az = -60 + 120.0 * i / max(len(files) - 1, 1)
+        ax.view_init(elev=42, azim=az)
+        ax.set_xlabel("x / r_cloud", labelpad=8)
+        ax.set_ylabel("y / r_cloud", labelpad=6)
+        ax.set_zticks([])
+        ax.set_title("%s    chi = %d    t = %.1f t_cc    (height = log density)"
+                     % (LABEL, CHI, t / TCC), fontsize=13)
+        ax.set_facecolor("white")
+        fig.tight_layout()
+        fig.savefig(out)
+        plt.close(fig)
+        n += 1
+    except Exception as e:
+        print("FAIL", fn, repr(e))
+print("terrain frames: %d/%d" % (n, len(files)))
+
+OUT = "/mnt/c/Users/kaanb/CloudCrushing/results_A8/movies/%s.mp4" % OUTNAME
+fps = "8" if len(files) > 25 else "4"
+subprocess.run(["nice", "-n", "19", "ffmpeg", "-y", "-loglevel", "error",
+                "-framerate", fps, "-i", os.path.join(FRAMEDIR, "f%04d.png"),
+                "-vf", "scale=trunc(iw/2)*2:trunc(ih/2)*2",
+                "-c:v", "libx264", "-crf", "20", "-pix_fmt", "yuv420p", OUT], check=False)
+subprocess.run(["nice", "-n", "19", "ffmpeg", "-y", "-loglevel", "error", "-i", OUT,
+                "-vf", "minterpolate=fps=30:mi_mode=mci:mc_mode=aobmc:vsbmc=1",
+                "-c:v", "libx264", "-crf", "20", "-pix_fmt", "yuv420p",
+                OUT.replace(".mp4", "_smooth.mp4")], check=False)
+print("wrote", OUT)

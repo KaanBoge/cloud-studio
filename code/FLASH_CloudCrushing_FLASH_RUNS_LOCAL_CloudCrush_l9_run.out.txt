@@ -1,0 +1,403 @@
+ Grid_init: resolution based on runtime params:
+  lrefine          dx              dy
+      1             0.125           0.125
+      2             0.062           0.062
+      3             0.031           0.031
+      4             0.016           0.016
+      5             0.008           0.008
+      6             0.004           0.004
+      7             0.002           0.002
+      8             0.001           0.001
+      9         4.883E-04       4.883E-04
+ MaterialProperties initialized
+ Cosmology initialized
+ Source terms initialized
+  iteration, no. not moved =            0           0
+ refined: total leaf blocks =            2
+ refined: total blocks =            2
+ [amr_morton_process]: Initializing surr_blks using standard orrery implementation
+  iteration, no. not moved =            0           1
+  iteration, no. not moved =            1           0
+ refined: total leaf blocks =            5
+ refined: total blocks =            6
+  iteration, no. not moved =            0           3
+  iteration, no. not moved =            1           0
+ refined: total leaf blocks =           20
+ refined: total blocks =           26
+  iteration, no. not moved =            0           9
+  iteration, no. not moved =            1           1
+  iteration, no. not moved =            2           0
+ refined: total leaf blocks =           38
+ refined: total blocks =           50
+  iteration, no. not moved =            0          14
+  iteration, no. not moved =            1           3
+  iteration, no. not moved =            2           0
+ refined: total leaf blocks =           92
+ refined: total blocks =          122
+  Finished with Grid_initDomain, no restart
+ Ready to call Hydro_init
+ Hydro initialized
+ Gravity initialized
+ Initial dt verified
+ *** Wrote checkpoint file to cloudcrush_hdf5_chk_0000 ****
+ *** Wrote plotfile to cloudcrush_hdf5_plt_cnt_0000 ****
+ Initial plotfile written
+ Driver init all done
+       n          t         dt  (         x,          y,          z) |  dt_hydro  dt_Diff  
+       1 1.0000E-10 2.0000E-10  ( 0.129    ,  0.254    ,   0.00    ) |  1.614E-03 2.441E+25
+       2 3.0000E-10 4.0000E-10  ( 0.129    ,  0.254    ,   0.00    ) |  1.614E-03 2.441E+25
+       3 7.0000E-10 8.0000E-10  ( 0.129    ,  0.254    ,   0.00    ) |  1.614E-03 2.441E+25
+       4 1.5000E-09 1.6000E-09  ( 0.129    ,  0.254    ,   0.00    ) |  1.614E-03 2.441E+25
+       5 3.1000E-09 3.2000E-09  ( 0.129    ,  0.254    ,   0.00    ) |  1.614E-03 2.441E+25
+       6 6.3000E-09 6.4000E-09  ( 0.129    ,  0.254    ,   0.00    ) |  1.614E-03 2.441E+25
+       7 1.2700E-08 1.2800E-08  ( 0.129    ,  0.254    ,   0.00    ) |  1.614E-03 2.441E+25
+       8 2.5500E-08 2.5600E-08  ( 0.129    ,  0.254    ,   0.00    ) |  1.614E-03 2.441E+25
+       9 5.1100E-08 5.1200E-08  ( 0.129    ,  0.254    ,   0.00    ) |  1.614E-03 2.441E+25
+      10 1.0230E-07 1.0240E-07  ( 0.129    ,  0.254    ,   0.00    ) |  1.614E-03 2.441E+25
+      11 2.0470E-07 2.0480E-07  ( 0.129    ,  0.254    ,   0.00    ) |  1.614E-03 2.441E+25
+      12 4.0950E-07 4.0960E-07  ( 0.129    ,  0.254    ,   0.00    ) |  1.614E-03 2.441E+25
+      13 8.1910E-07 8.1920E-07  ( 0.129    ,  0.254    ,   0.00    ) |  1.614E-03 2.441E+25
+      14 1.6383E-06 1.6384E-06  ( 0.129    ,  0.254    ,   0.00    ) |  1.614E-03 2.441E+25
+      15 3.2767E-06 3.2768E-06  ( 0.129    ,  0.254    ,   0.00    ) |  1.614E-03 2.441E+25
+      16 6.5535E-06 6.5536E-06  ( 0.129    ,  0.254    ,   0.00    ) |  1.614E-03 2.441E+25
+      17 1.3107E-05 1.3107E-05  ( 0.129    ,  0.254    ,   0.00    ) |  1.614E-03 2.441E+25
+      18 2.6214E-05 2.6214E-05  ( 0.129    ,  0.254    ,   0.00    ) |  1.614E-03 2.441E+25
+      19 5.2429E-05 5.2429E-05  ( 0.129    ,  0.254    ,   0.00    ) |  1.614E-03 2.441E+25
+      20 1.0486E-04 1.0486E-04  ( 0.129    ,  0.254    ,   0.00    ) |  1.614E-03 2.441E+25
+      21 2.0972E-04 2.0972E-04  ( 0.129    ,  0.254    ,   0.00    ) |  1.614E-03 2.441E+25
+      22 4.1943E-04 4.1943E-04  ( 0.129    ,  0.254    ,   0.00    ) |  1.614E-03 2.441E+25
+      23 8.3886E-04 8.3886E-04  ( 0.129    ,  0.254    ,   0.00    ) |  1.614E-03 2.441E+25
+  iteration, no. not moved =            0          37
+  iteration, no. not moved =            1          10
+  iteration, no. not moved =            2           0
+ refined: total leaf blocks =          164
+ refined: total blocks =          218
+      24 1.6777E-03 8.0687E-04  ( 0.127    ,  0.623    ,   0.00    ) |  8.069E-04 6.104E+24
+      25 2.4846E-03 8.0687E-04  ( 0.127    ,  0.377    ,   0.00    ) |  8.069E-04 6.104E+24
+  iteration, no. not moved =            0          67
+  iteration, no. not moved =            1           2
+  iteration, no. not moved =            2           0
+ refined: total leaf blocks =          350
+ refined: total blocks =          466
+      26 3.2915E-03 4.0344E-04  ( 0.405    ,  0.376    ,   0.00    ) |  4.034E-04 1.526E+24
+      27 3.6949E-03 4.0345E-04  ( 0.405    ,  0.376    ,   0.00    ) |  4.034E-04 1.526E+24
+  iteration, no. not moved =            0         165
+  iteration, no. not moved =            1           2
+  iteration, no. not moved =            2           0
+ refined: total leaf blocks =          752
+ refined: total blocks =         1002
+      28 4.0983E-03 2.0195E-04  ( 0.188    ,  0.438    ,   0.00    ) |  2.019E-04 3.815E+23
+      29 4.3003E-03 2.0193E-04  ( 0.188    ,  0.562    ,   0.00    ) |  2.019E-04 3.815E+23
+  iteration, no. not moved =            0         424
+  iteration, no. not moved =            1           3
+  iteration, no. not moved =            2           0
+ refined: total leaf blocks =         1646
+ refined: total blocks =         2194
+      30 4.5022E-03 1.0276E-04  ( 0.267    ,  0.601    ,   0.00    ) |  1.028E-04 9.537E+22
+      31 4.6050E-03 1.0213E-04  ( 0.267    ,  0.601    ,   0.00    ) |  1.021E-04 9.537E+22
+  iteration, no. not moved =            0         222
+  iteration, no. not moved =            1           0
+ refined: total leaf blocks =         1688
+ refined: total blocks =         2250
+      32 4.7071E-03 1.0263E-04  ( 0.268    ,  0.601    ,   0.00    ) |  1.026E-04 9.537E+22
+      33 4.8098E-03 1.0244E-04  ( 0.268    ,  0.601    ,   0.00    ) |  1.024E-04 9.537E+22
+  iteration, no. not moved =            0         229
+  iteration, no. not moved =            1           0
+ refined: total leaf blocks =         1712
+ refined: total blocks =         2282
+      34 4.9122E-03 1.0267E-04  ( 0.268    ,  0.601    ,   0.00    ) |  1.027E-04 9.537E+22
+      35 5.0149E-03 1.0269E-04  ( 0.268    ,  0.601    ,   0.00    ) |  1.027E-04 9.537E+22
+  iteration, no. not moved =            0         363
+  iteration, no. not moved =            1           0
+ refined: total leaf blocks =         1724
+ refined: total blocks =         2298
+      36 5.1176E-03 1.0280E-04  ( 0.269    ,  0.601    ,   0.00    ) |  1.028E-04 9.537E+22
+      37 5.2204E-03 1.0304E-04  ( 0.203    ,  0.554    ,   0.00    ) |  1.030E-04 9.537E+22
+  iteration, no. not moved =            0        1735
+  iteration, no. not moved =            1           3
+  iteration, no. not moved =            2           0
+ refined: total leaf blocks =         1736
+ refined: total blocks =         2314
+      38 5.3234E-03 1.0294E-04  ( 0.203    ,  0.554    ,   0.00    ) |  1.029E-04 9.537E+22
+      39 5.4263E-03 1.0285E-04  ( 0.203    ,  0.554    ,   0.00    ) |  1.028E-04 9.537E+22
+  iteration, no. not moved =            0         332
+  iteration, no. not moved =            1           0
+ refined: total leaf blocks =         1742
+ refined: total blocks =         2322
+      40 5.5292E-03 1.0277E-04  ( 0.203    ,  0.554    ,   0.00    ) |  1.028E-04 9.537E+22
+      41 5.6319E-03 1.0269E-04  ( 0.203    ,  0.554    ,   0.00    ) |  1.027E-04 9.537E+22
+  iteration, no. not moved =            0         277
+  iteration, no. not moved =            1           0
+ refined: total leaf blocks =         1748
+ refined: total blocks =         2330
+      42 5.7346E-03 1.0262E-04  ( 0.203    ,  0.446    ,   0.00    ) |  1.026E-04 9.537E+22
+      43 5.8373E-03 1.0256E-04  ( 0.203    ,  0.446    ,   0.00    ) |  1.026E-04 9.537E+22
+  iteration, no. not moved =            0         446
+  iteration, no. not moved =            1           0
+ refined: total leaf blocks =         1766
+ refined: total blocks =         2354
+      44 5.9398E-03 1.0251E-04  ( 0.203    ,  0.446    ,   0.00    ) |  1.025E-04 9.537E+22
+      45 6.0423E-03 1.0246E-04  ( 0.203    ,  0.446    ,   0.00    ) |  1.025E-04 9.537E+22
+  iteration, no. not moved =            0        1689
+  iteration, no. not moved =            1           4
+  iteration, no. not moved =            2           0
+ refined: total leaf blocks =         1790
+ refined: total blocks =         2386
+      46 6.1448E-03 1.0242E-04  ( 0.203    ,  0.446    ,   0.00    ) |  1.024E-04 9.537E+22
+      47 6.2472E-03 1.0239E-04  ( 0.203    ,  0.554    ,   0.00    ) |  1.024E-04 9.537E+22
+      48 6.3496E-03 1.0236E-04  ( 0.203    ,  0.554    ,   0.00    ) |  1.024E-04 9.537E+22
+      49 6.4520E-03 1.0233E-04  ( 0.203    ,  0.554    ,   0.00    ) |  1.023E-04 9.537E+22
+  iteration, no. not moved =            0         105
+  iteration, no. not moved =            1           0
+ refined: total leaf blocks =         1796
+ refined: total blocks =         2394
+      50 6.5543E-03 1.0231E-04  ( 0.203    ,  0.554    ,   0.00    ) |  1.023E-04 9.537E+22
+      51 6.6566E-03 1.0229E-04  ( 0.203    ,  0.554    ,   0.00    ) |  1.023E-04 9.537E+22
+      52 6.7589E-03 1.0226E-04  ( 0.203    ,  0.554    ,   0.00    ) |  1.023E-04 9.537E+22
+      53 6.8612E-03 1.0224E-04  ( 0.203    ,  0.554    ,   0.00    ) |  1.022E-04 9.537E+22
+  iteration, no. not moved =            0        2014
+  iteration, no. not moved =            1           4
+  iteration, no. not moved =            2           0
+ refined: total leaf blocks =         1802
+ refined: total blocks =         2402
+      54 6.9634E-03 1.0222E-04  ( 0.203    ,  0.446    ,   0.00    ) |  1.022E-04 9.537E+22
+      55 7.0656E-03 1.0219E-04  ( 0.203    ,  0.446    ,   0.00    ) |  1.022E-04 9.537E+22
+  iteration, no. not moved =            0         398
+  iteration, no. not moved =            1           0
+ refined: total leaf blocks =         1814
+ refined: total blocks =         2418
+      56 7.1678E-03 1.0216E-04  ( 0.219    ,  0.578    ,   0.00    ) |  1.022E-04 9.537E+22
+      57 7.2700E-03 1.0213E-04  ( 0.219    ,  0.422    ,   0.00    ) |  1.021E-04 9.537E+22
+  iteration, no. not moved =            0         393
+  iteration, no. not moved =            1           0
+ refined: total leaf blocks =         1850
+ refined: total blocks =         2466
+      58 7.3721E-03 1.0210E-04  ( 0.219    ,  0.578    ,   0.00    ) |  1.021E-04 9.537E+22
+      59 7.4742E-03 1.0207E-04  ( 0.219    ,  0.578    ,   0.00    ) |  1.021E-04 9.537E+22
+  iteration, no. not moved =            0        2120
+  iteration, no. not moved =            1           2
+  iteration, no. not moved =            2           0
+ refined: total leaf blocks =         1856
+ refined: total blocks =         2474
+      60 7.5763E-03 1.0204E-04  ( 0.219    ,  0.578    ,   0.00    ) |  1.020E-04 9.537E+22
+      61 7.6783E-03 1.0201E-04  ( 0.219    ,  0.578    ,   0.00    ) |  1.020E-04 9.537E+22
+      62 7.7803E-03 1.0198E-04  ( 0.219    ,  0.578    ,   0.00    ) |  1.020E-04 9.537E+22
+      63 7.8823E-03 1.0195E-04  ( 0.235    ,  0.406    ,   0.00    ) |  1.019E-04 9.537E+22
+  iteration, no. not moved =            0         323
+  iteration, no. not moved =            1           0
+ refined: total leaf blocks =         1868
+ refined: total blocks =         2490
+      64 7.9842E-03 1.0191E-04  ( 0.235    ,  0.594    ,   0.00    ) |  1.019E-04 9.537E+22
+      65 8.0862E-03 1.0188E-04  ( 0.235    ,  0.406    ,   0.00    ) |  1.019E-04 9.537E+22
+      66 8.1880E-03 1.0185E-04  ( 0.235    ,  0.406    ,   0.00    ) |  1.018E-04 9.537E+22
+      67 8.2899E-03 1.0182E-04  ( 0.235    ,  0.406    ,   0.00    ) |  1.018E-04 9.537E+22
+  iteration, no. not moved =            0         268
+  iteration, no. not moved =            1           0
+ refined: total leaf blocks =         1892
+ refined: total blocks =         2522
+      68 8.3917E-03 1.0179E-04  ( 0.235    ,  0.406    ,   0.00    ) |  1.018E-04 9.537E+22
+      69 8.4935E-03 1.0176E-04  ( 0.235    ,  0.406    ,   0.00    ) |  1.018E-04 9.537E+22
+  iteration, no. not moved =            0         413
+
+... [16675 lines omitted from the middle of this file; the complete file is on the research machine] ...
+
+    5240 4.4290E-01 8.1037E-05  ( 0.655    ,  0.310    ,   0.00    ) |  8.104E-05 9.537E+22
+    5241 4.4299E-01 8.0993E-05  ( 0.655    ,  0.310    ,   0.00    ) |  8.099E-05 9.537E+22
+  iteration, no. not moved =            0        4001
+  iteration, no. not moved =            1           0
+ refined: total leaf blocks =        17738
+ refined: total blocks =        23650
+    5242 4.4307E-01 8.1018E-05  ( 0.656    ,  0.690    ,   0.00    ) |  8.102E-05 9.537E+22
+    5243 4.4315E-01 8.0999E-05  ( 0.656    ,  0.310    ,   0.00    ) |  8.100E-05 9.537E+22
+  iteration, no. not moved =            0        3709
+  iteration, no. not moved =            1           0
+ refined: total leaf blocks =        17744
+ refined: total blocks =        23658
+    5244 4.4323E-01 8.0990E-05  ( 0.656    ,  0.690    ,   0.00    ) |  8.099E-05 9.537E+22
+    5245 4.4331E-01 8.1018E-05  ( 0.656    ,  0.310    ,   0.00    ) |  8.102E-05 9.537E+22
+  iteration, no. not moved =            0       14747
+  iteration, no. not moved =            1           5
+  iteration, no. not moved =            2           0
+ refined: total leaf blocks =        17732
+ refined: total blocks =        23642
+    5246 4.4339E-01 8.0979E-05  ( 0.656    ,  0.690    ,   0.00    ) |  8.098E-05 9.537E+22
+    5247 4.4347E-01 8.1032E-05  ( 0.656    ,  0.690    ,   0.00    ) |  8.103E-05 9.537E+22
+  iteration, no. not moved =            0       11618
+  iteration, no. not moved =            1           0
+ refined: total leaf blocks =        17786
+ refined: total blocks =        23714
+    5248 4.4355E-01 8.0995E-05  ( 0.657    ,  0.310    ,   0.00    ) |  8.100E-05 9.537E+22
+    5249 4.4363E-01 8.1009E-05  ( 0.656    ,  0.690    ,   0.00    ) |  8.101E-05 9.537E+22
+  iteration, no. not moved =            0       10650
+  iteration, no. not moved =            1           0
+ refined: total leaf blocks =        17804
+ refined: total blocks =        23738
+    5250 4.4372E-01 8.1025E-05  ( 0.656    ,  0.690    ,   0.00    ) |  8.102E-05 9.537E+22
+    5251 4.4380E-01 8.0998E-05  ( 0.656    ,  0.690    ,   0.00    ) |  8.100E-05 9.537E+22
+  iteration, no. not moved =            0       17006
+  iteration, no. not moved =            1           3
+  iteration, no. not moved =            2           0
+ refined: total leaf blocks =        17828
+ refined: total blocks =        23770
+    5252 4.4388E-01 8.1019E-05  ( 0.657    ,  0.690    ,   0.00    ) |  8.102E-05 9.537E+22
+    5253 4.4396E-01 8.1017E-05  ( 0.657    ,  0.310    ,   0.00    ) |  8.102E-05 9.537E+22
+  iteration, no. not moved =            0        1755
+  iteration, no. not moved =            1           0
+ refined: total leaf blocks =        17834
+ refined: total blocks =        23778
+    5254 4.4404E-01 8.1004E-05  ( 0.657    ,  0.690    ,   0.00    ) |  8.100E-05 9.537E+22
+    5255 4.4412E-01 8.1048E-05  ( 0.658    ,  0.690    ,   0.00    ) |  8.105E-05 9.537E+22
+  iteration, no. not moved =            0        9321
+  iteration, no. not moved =            1           1
+  iteration, no. not moved =            2           0
+ refined: total leaf blocks =        17846
+ refined: total blocks =        23794
+    5256 4.4420E-01 8.0997E-05  ( 0.658    ,  0.690    ,   0.00    ) |  8.100E-05 9.537E+22
+    5257 4.4428E-01 8.1008E-05  ( 0.658    ,  0.690    ,   0.00    ) |  8.101E-05 9.537E+22
+  iteration, no. not moved =            0       22778
+  iteration, no. not moved =            1           4
+  iteration, no. not moved =            2           0
+ refined: total leaf blocks =        17864
+ refined: total blocks =        23818
+    5258 4.4436E-01 8.0998E-05  ( 0.658    ,  0.310    ,   0.00    ) |  8.100E-05 9.537E+22
+    5259 4.4444E-01 8.0972E-05  ( 0.659    ,  0.690    ,   0.00    ) |  8.097E-05 9.537E+22
+  iteration, no. not moved =            0        2238
+  iteration, no. not moved =            1           0
+ refined: total leaf blocks =        17918
+ refined: total blocks =        23890
+    5260 4.4453E-01 8.1023E-05  ( 0.659    ,  0.310    ,   0.00    ) |  8.102E-05 9.537E+22
+    5261 4.4461E-01 8.0958E-05  ( 0.659    ,  0.690    ,   0.00    ) |  8.096E-05 9.537E+22
+  iteration, no. not moved =            0        6330
+  iteration, no. not moved =            1           0
+ refined: total leaf blocks =        17942
+ refined: total blocks =        23922
+    5262 4.4469E-01 8.1023E-05  ( 0.658    ,  0.691    ,   0.00    ) |  8.102E-05 9.537E+22
+    5263 4.4477E-01 8.0975E-05  ( 0.660    ,  0.310    ,   0.00    ) |  8.097E-05 9.537E+22
+  iteration, no. not moved =            0       22350
+  iteration, no. not moved =            1           7
+  iteration, no. not moved =            2           0
+ refined: total leaf blocks =        17954
+ refined: total blocks =        23938
+    5264 4.4485E-01 8.0991E-05  ( 0.659    ,  0.691    ,   0.00    ) |  8.099E-05 9.537E+22
+    5265 4.4493E-01 8.1008E-05  ( 0.659    ,  0.691    ,   0.00    ) |  8.101E-05 9.537E+22
+  iteration, no. not moved =            0       19175
+  iteration, no. not moved =            1           4
+  iteration, no. not moved =            2           0
+ refined: total leaf blocks =        17954
+ refined: total blocks =        23938
+    5266 4.4501E-01 8.0980E-05  ( 0.659    ,  0.691    ,   0.00    ) |  8.098E-05 9.537E+22
+    5267 4.4509E-01 8.0991E-05  ( 0.660    ,  0.691    ,   0.00    ) |  8.099E-05 9.537E+22
+  iteration, no. not moved =            0       16104
+  iteration, no. not moved =            1           3
+  iteration, no. not moved =            2           0
+ refined: total leaf blocks =        17960
+ refined: total blocks =        23946
+    5268 4.4517E-01 8.0992E-05  ( 0.660    ,  0.691    ,   0.00    ) |  8.099E-05 9.537E+22
+    5269 4.4525E-01 8.0977E-05  ( 0.660    ,  0.691    ,   0.00    ) |  8.098E-05 9.537E+22
+  iteration, no. not moved =            0       22345
+  iteration, no. not moved =            1           7
+  iteration, no. not moved =            2           0
+ refined: total leaf blocks =        17954
+ refined: total blocks =        23938
+    5270 4.4534E-01 8.1011E-05  ( 0.661    ,  0.691    ,   0.00    ) |  8.101E-05 9.537E+22
+    5271 4.4542E-01 8.0976E-05  ( 0.661    ,  0.691    ,   0.00    ) |  8.098E-05 9.537E+22
+  iteration, no. not moved =            0         904
+  iteration, no. not moved =            1           0
+ refined: total leaf blocks =        17954
+ refined: total blocks =        23938
+    5272 4.4550E-01 8.0968E-05  ( 0.661    ,  0.691    ,   0.00    ) |  8.097E-05 9.537E+22
+    5273 4.4558E-01 8.0983E-05  ( 0.661    ,  0.309    ,   0.00    ) |  8.098E-05 9.537E+22
+  iteration, no. not moved =            0        8640
+  iteration, no. not moved =            1           1
+  iteration, no. not moved =            2           0
+ refined: total leaf blocks =        17924
+ refined: total blocks =        23898
+    5274 4.4566E-01 6.7048E-05  ( 0.855    ,  0.613    ,   0.00    ) |  6.705E-05 9.537E+22
+    5275 4.4573E-01 8.0979E-05  ( 0.662    ,  0.309    ,   0.00    ) |  8.098E-05 9.537E+22
+  iteration, no. not moved =            0         279
+  iteration, no. not moved =            1           0
+ refined: total leaf blocks =        17900
+ refined: total blocks =        23866
+    5276 4.4581E-01 8.0921E-05  ( 0.662    ,  0.691    ,   0.00    ) |  8.092E-05 9.537E+22
+    5277 4.4589E-01 8.0973E-05  ( 0.661    ,  0.691    ,   0.00    ) |  8.097E-05 9.537E+22
+  iteration, no. not moved =            0       11396
+  iteration, no. not moved =            1           1
+  iteration, no. not moved =            2           0
+ refined: total leaf blocks =        17906
+ refined: total blocks =        23874
+    5278 4.4597E-01 8.0925E-05  ( 0.663    ,  0.691    ,   0.00    ) |  8.093E-05 9.537E+22
+    5279 4.4605E-01 8.0940E-05  ( 0.662    ,  0.691    ,   0.00    ) |  8.094E-05 9.537E+22
+  iteration, no. not moved =            0        1001
+  iteration, no. not moved =            1           0
+ refined: total leaf blocks =        17930
+ refined: total blocks =        23906
+    5280 4.4613E-01 8.0927E-05  ( 0.660    ,  0.691    ,   0.00    ) |  8.093E-05 9.537E+22
+    5281 4.4621E-01 8.0886E-05  ( 0.660    ,  0.691    ,   0.00    ) |  8.089E-05 9.537E+22
+  iteration, no. not moved =            0       16411
+  iteration, no. not moved =            1           1
+  iteration, no. not moved =            2           0
+ refined: total leaf blocks =        17978
+ refined: total blocks =        23970
+    5282 4.4629E-01 7.1666E-05  ( 0.856    ,  0.387    ,   0.00    ) |  7.167E-05 9.537E+22
+    5283 4.4636E-01 8.0861E-05  ( 0.660    ,  0.691    ,   0.00    ) |  8.086E-05 9.537E+22
+  iteration, no. not moved =            0       14643
+  iteration, no. not moved =            1           1
+  iteration, no. not moved =            2           0
+ refined: total leaf blocks =        17984
+ refined: total blocks =        23978
+    5284 4.4645E-01 8.0900E-05  ( 0.661    ,  0.691    ,   0.00    ) |  8.090E-05 9.537E+22
+    5285 4.4653E-01 8.0842E-05  ( 0.661    ,  0.691    ,   0.00    ) |  8.084E-05 9.537E+22
+  iteration, no. not moved =            0       18638
+  iteration, no. not moved =            1           5
+  iteration, no. not moved =            2           0
+ refined: total leaf blocks =        17990
+ refined: total blocks =        23986
+    5286 4.4661E-01 8.0140E-05  ( 0.857    ,  0.387    ,   0.00    ) |  8.014E-05 9.537E+22
+    5287 4.4669E-01 8.0898E-05  ( 0.661    ,  0.691    ,   0.00    ) |  8.090E-05 9.537E+22
+  iteration, no. not moved =            0        4723
+  iteration, no. not moved =            1           0
+ refined: total leaf blocks =        17984
+ refined: total blocks =        23978
+    5288 4.4677E-01 8.0905E-05  ( 0.664    ,  0.691    ,   0.00    ) |  8.090E-05 9.537E+22
+    5289 4.4685E-01 6.3114E-05  ( 0.858    ,  0.388    ,   0.00    ) |  6.311E-05 9.537E+22
+  iteration, no. not moved =            0       10073
+  iteration, no. not moved =            1           3
+  iteration, no. not moved =            2           0
+ refined: total leaf blocks =        17978
+ refined: total blocks =        23970
+    5290 4.4691E-01 8.0682E-05  ( 0.858    ,  0.612    ,   0.00    ) |  8.068E-05 9.537E+22
+    5291 4.4699E-01 8.0866E-05  ( 0.665    ,  0.691    ,   0.00    ) |  8.087E-05 9.537E+22
+  iteration, no. not moved =            0       18369
+  iteration, no. not moved =            1           3
+  iteration, no. not moved =            2           0
+ refined: total leaf blocks =        17984
+ refined: total blocks =        23978
+    5292 4.4707E-01 8.0894E-05  ( 0.665    ,  0.309    ,   0.00    ) |  8.089E-05 9.537E+22
+    5293 4.4715E-01 1.5169E-10  ( 0.859    ,  0.388    ,   0.00    ) |  1.517E-10 9.537E+22
+  iteration, no. not moved =            0        7667
+  iteration, no. not moved =            1           1
+  iteration, no. not moved =            2           0
+ refined: total leaf blocks =        18014
+ refined: total blocks =        24018
+    5294 4.4715E-01 1.0000E-10  ( 0.859    ,  0.612    ,   0.00    ) |  9.719E-18 9.537E+22
+    5295 4.4715E-01 1.0000E-10  ( 0.859    ,  0.388    ,   0.00    ) |  3.514E-83 9.537E+22
+ dtCheck=   0.0000000000000000     
+ DRIVER_ABORT: [Hydro]: Computed dt is not positive! Aborting!
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 1 in communicator MPI_COMM_WORLD
+  Proc: [[57347,1],1]
+  Errorcode: 1
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+ --------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    prun:proc-ordered-abort
+But I couldn't open the help file:
+    /usr/lib/x86_64-linux-gnu/pmix2/share/pmix/help-prun.txt: No such file or directory
+    /usr/lib/x86_64-linux-gnu/prrte3/share/prte/help-prun.txt: No such file or directory.
+Sorry!
+--------------------------------------------------------------------------
+ 

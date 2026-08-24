@@ -1,0 +1,114 @@
+"""Unified comparison renderer: same colors, orientation, and coordinates for every code.
+
+Usage: render_unified.py <kind> <chi> <tcc> <label> <dir> <pattern>
+  kind: flash | athena | apk
+Writes PNGs next to the inputs using the same filenames the galleries already use.
+"""
+import glob
+import os
+import sys
+
+import matplotlib
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
+import numpy as np
+import yt
+
+yt.set_log_level(40)
+
+KIND, CHI, TCC, LABEL, DIR, PATTERN = (
+    sys.argv[1], int(sys.argv[2]), float(sys.argv[3]), sys.argv[4], sys.argv[5], sys.argv[6])
+
+CLIM = {10: (-1.0, 1.5), 100: (-1.0, 2.5), 1000: (-1.0, 3.5)}
+vmin, vmax = CLIM.get(CHI, (-1.0, 1.5))
+
+# extent in cloud radii (x, y), cloud at origin, wind left -> right
+EXTENT = {
+    "flash": (-3.0, 17.0, -5.0, 5.0),
+    "athena": (-3.0, 7.0, -2.5, 2.5),
+    "athw": (-3.0, 17.0, -5.0, 5.0),
+    "apk": (-3.0, 17.0, -5.0, 5.0),
+    "athenapp": (-3.0, 17.0, -5.0, 5.0),
+    "enzo": (-3.0, 17.0, -5.0, 5.0),
+    "ramses": (-3.0, 17.0, -5.0, 5.0),
+}[KIND]
+
+# cloud centre in each code's own coordinates, and code units per cloud radius
+ORIGIN_R = {
+    "athenapp": ((0.0, 0.0), 1.0),
+    "enzo": ((0.0, 0.0), 1.0),
+    "ramses": ((3.0, 10.0), 1.0),
+}
+
+
+def extract_region(fn):
+    """Sample the standard comparison window for codes with their own coordinates."""
+    (ox, oy), R = ORIGIN_R[KIND]
+    ds = yt.load(fn)
+    zc = float(ds.domain_center[2])
+    slc = ds.slice(2, zc)
+    frb = slc.to_frb(width=(20.0 * R, "code_length"), resolution=(1600, 800),
+                     center=[ox + 7.0 * R, oy, zc], height=(10.0 * R, "code_length"))
+    arr = np.array(frb[("gas", "density")], dtype=np.float64)
+    if arr.shape != (800, 1600):
+        arr = arr.T
+    return arr, float(ds.current_time)
+
+
+def extract(fn):
+    if KIND in ORIGIN_R:
+        return extract_region(fn)
+    ds = yt.load(fn)
+    c = ds.domain_center
+    slc = ds.slice("z", c[2])
+    dle, dre = ds.domain_left_edge, ds.domain_right_edge
+    wx = float(dre[0] - dle[0])
+    wy = float(dre[1] - dle[1])
+    if KIND == "apk":
+        # domain is rotated (wind +y). Extract tall, rotate, then un-mirror.
+        frb = slc.to_frb((wx, "code_length"), (800, 1600), height=(wy, "code_length"))
+        arr = np.array(frb[("gas", "density")], dtype=np.float64)
+        if arr.shape != (1600, 800):
+            arr = arr.T
+        arr = np.rot90(arr, k=-1)[:, ::-1]
+    else:
+        frb = slc.to_frb((wx, "code_length"), (1600, 800), height=(wy, "code_length"))
+        arr = np.array(frb[("gas", "density")], dtype=np.float64)
+        if arr.shape != (800, 1600):
+            arr = arr.T
+    return arr, float(ds.current_time)
+
+
+def outname(fn):
+    if KIND == "flash":
+        return fn + "_Slice_z_density.png"
+    b = os.path.basename(fn.rstrip("/"))
+    for ext in (".vtk", ".phdf", ".athdf", ".txt"):
+        if b.endswith(ext):
+            b = b[: -len(ext)]
+            break
+    return os.path.join(DIR, b + "_dens.png")
+
+
+files = sorted(glob.glob(os.path.join(DIR, PATTERN)))
+files = [f for f in files if "final" not in os.path.basename(f)]
+n = 0
+for fn in files:
+    try:
+        arr, t = extract(fn)
+        la = np.log10(np.clip(arr, 1e-8, None))
+        fig, ax = plt.subplots(figsize=(14.0, 6.5), dpi=115)
+        im = ax.imshow(la, extent=EXTENT, origin="lower", cmap="viridis",
+                       vmin=vmin, vmax=vmax, aspect="equal")
+        ax.set_title("%s    chi = %d    t = %.1f t_cc" % (LABEL, CHI, t / TCC), fontsize=13)
+        ax.set_xlabel("x / r_cloud")
+        ax.set_ylabel("y / r_cloud")
+        cb = fig.colorbar(im, ax=ax, shrink=0.85)
+        cb.set_label("log10 density / wind density")
+        fig.tight_layout()
+        fig.savefig(outname(fn))
+        plt.close(fig)
+        n += 1
+    except Exception as e:
+        print("FAIL", fn, repr(e))
+print("rendered %d/%d in %s" % (n, len(files), DIR))

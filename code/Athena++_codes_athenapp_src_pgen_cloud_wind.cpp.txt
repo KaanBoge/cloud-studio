@@ -1,0 +1,157 @@
+//========================================================================================
+// Athena++ astrophysical MHD code
+// Copyright(C) 2014 James M. Stone <jmstone@princeton.edu> and other code contributors
+// Licensed under the 3-clause BSD License, see LICENSE file for details
+//========================================================================================
+//! \file cloud_wind.cpp
+//! \brief Cloud-wind ("wind tunnel") problem generator, matched to the multi-code
+//!  cloud-crushing comparison setup (FLASH CloudCrush / Athena4.2 cloud_wind.c port).
+//!
+//!  A uniform Mach-M wind (rho=1, P=1, vx = Mach*c_s flowing +x1) streams past a
+//!  static spherical cloud of overdensity drat (chi) in exact pressure equilibrium.
+//!  Cloud radius fixed at 1.0, centered at the origin. Density and velocity are
+//!  smoothed across the cloud edge with the tanh profile used by FLASH:
+//!     f  = 0.5*(1 - tanh((r - 1.0)/0.1))
+//!     rho = 1 + (chi - 1)*f
+//!     vx  = v_wind*(1 - f)
+//!  Suggested domain: x1 in [-3,17], x2 in [-5,5] (x3 in [-5,5] for 3D).
+//!  Input parameters:
+//!    - problem/Mach = wind Mach number (v_wind / c_s,ambient)
+//!    - problem/drat = cloud/ambient density ratio (chi)
+//!  Cloud material is labeled with passive scalar r(0) = f when NSCALARS > 0.
+//!  Inner-x1 boundary must be set to "user" in the input file: it holds the
+//!  fixed wind state (inflow BC).
+//========================================================================================
+
+// C headers
+
+// C++ headers
+#include <cmath>      // sqrt(), tanh()
+#include <iostream>   // endl
+#include <sstream>    // stringstream
+#include <stdexcept>  // runtime_error
+#include <string>     // c_str()
+
+// Athena++ headers
+#include "../athena.hpp"
+#include "../athena_arrays.hpp"
+#include "../bvals/bvals.hpp"
+#include "../coordinates/coordinates.hpp"
+#include "../eos/eos.hpp"
+#include "../field/field.hpp"
+#include "../hydro/hydro.hpp"
+#include "../mesh/mesh.hpp"
+#include "../parameter_input.hpp"
+#include "../scalars/scalars.hpp"
+
+// wind state, shared with the inner-x1 boundary function
+namespace {
+Real gmma1, dl, pl, ul;
+} // namespace
+
+// fixes BCs on L-x1 (left edge) of grid to the wind state (inflow)
+void CloudWindInnerX1(MeshBlock *pmb, Coordinates *pco, AthenaArray<Real> &prim,
+                      FaceField &b, Real time, Real dt,
+                      int il, int iu, int jl, int ju, int kl, int ku, int ngh);
+
+//========================================================================================
+//! \fn void Mesh::InitUserMeshData(ParameterInput *pin)
+//  \brief Enroll the user inflow boundary on inner-x1.
+//========================================================================================
+
+void Mesh::InitUserMeshData(ParameterInput *pin) {
+  EnrollUserBoundaryFunction(BoundaryFace::inner_x1, CloudWindInnerX1);
+  return;
+}
+
+//========================================================================================
+//! \fn void MeshBlock::ProblemGenerator(ParameterInput *pin)
+//  \brief Problem Generator for the cloud-wind (wind tunnel) problem
+//========================================================================================
+
+void MeshBlock::ProblemGenerator(ParameterInput *pin) {
+  Real gmma  = peos->GetGamma();
+  gmma1 = gmma - 1.0;
+
+  // Read input parameters
+  Real rad  = 1.0;         // cloud radius, fixed
+  Real edge = 0.1*rad;     // tanh smoothing width, matches FLASH
+  Real mach = pin->GetReal("problem","Mach");
+  Real drat = pin->GetReal("problem","drat");
+
+  if (MAGNETIC_FIELDS_ENABLED) {
+    std::stringstream msg;
+    msg << "### FATAL ERROR in cloud_wind.cpp ProblemGenerator" << std::endl
+        << "This comparison setup is pure hydro; configure without -b" << std::endl;
+    ATHENA_ERROR(msg);
+  }
+
+  // Ambient (wind) state: rho=1, P=1 so c_s = sqrt(gamma) ~ 1.291, as in FLASH
+  Real dr = 1.0;
+  Real pr = 1.0;
+
+  // Wind state shared with the boundary function
+  dl = dr;
+  pl = pr;
+  ul = mach*std::sqrt(gmma*pr/dr);
+
+  // Initialize the grid: wind everywhere, static smoothed cloud at the origin
+  for (int k=ks; k<=ke; k++) {
+    for (int j=js; j<=je; j++) {
+      for (int i=is; i<=ie; i++) {
+        Real diag = std::sqrt(SQR(pcoord->x1v(i)) + SQR(pcoord->x2v(j))
+                              + SQR(pcoord->x3v(k)));
+        Real f  = 0.5*(1.0 - std::tanh((diag - rad)/edge));
+        Real d  = dr*(1.0 + (drat - 1.0)*f);
+        Real vx = ul*(1.0 - f);
+
+        phydro->u(IDN,k,j,i) = d;
+        phydro->u(IM1,k,j,i) = d*vx;
+        phydro->u(IM2,k,j,i) = 0.0;
+        phydro->u(IM3,k,j,i) = 0.0;
+        phydro->u(IEN,k,j,i) = pr/gmma1 + 0.5*d*vx*vx;
+
+        // passive scalar tracer of cloud material: concentration r = f
+        if (NSCALARS > 0) {
+          for (int n=0; n<NSCALARS; ++n) {
+            pscalars->s(n,k,j,i) = d*f;
+          }
+        }
+      }
+    }
+  }
+  return;
+}
+
+//----------------------------------------------------------------------------------------
+//! \fn void CloudWindInnerX1()
+//  \brief Inflow boundary on inner-x1: ghost zones held fixed at the wind state.
+
+void CloudWindInnerX1(MeshBlock *pmb, Coordinates *pco, AthenaArray<Real> &prim,
+                      FaceField &b, Real time, Real dt,
+                      int il, int iu, int jl, int ju, int kl, int ku, int ngh) {
+  for (int k=kl; k<=ku; ++k) {
+    for (int j=jl; j<=ju; ++j) {
+      for (int i=1; i<=ngh; ++i) {
+        prim(IDN,k,j,il-i) = dl;
+        prim(IVX,k,j,il-i) = ul;
+        prim(IVY,k,j,il-i) = 0.0;
+        prim(IVZ,k,j,il-i) = 0.0;
+        prim(IPR,k,j,il-i) = pl;
+      }
+    }
+  }
+  // pure wind carries no cloud material
+  if (NSCALARS > 0) {
+    for (int n=0; n<NSCALARS; ++n) {
+      for (int k=kl; k<=ku; ++k) {
+        for (int j=jl; j<=ju; ++j) {
+          for (int i=1; i<=ngh; ++i) {
+            pmb->pscalars->r(n,k,j,il-i) = 0.0;
+            pmb->pscalars->s(n,k,j,il-i) = 0.0;
+          }
+        }
+      }
+    }
+  }
+}

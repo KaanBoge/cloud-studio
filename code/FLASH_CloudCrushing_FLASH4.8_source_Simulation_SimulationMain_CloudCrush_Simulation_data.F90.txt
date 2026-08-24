@@ -1,0 +1,30 @@
+!!****if* source/Simulation/SimulationMain/CloudCrush/Simulation_data
+!!
+!! NAME
+!!  Simulation_data
+!!
+!! SYNOPSIS
+!!  use Simulation_data
+!!
+!! DESCRIPTION
+!!  Stores the runtime parameters of the CloudCrush problem: a supersonic
+!!  wind (fed by the WindTunnel-style USER_DEFINED inflow boundary on the
+!!  left edge) striking a dense cold cloud initially at rest.
+!!
+!!***
+
+module Simulation_data
+
+  implicit none
+
+  !! Runtime parameters
+  real, save :: sim_pAmbient, sim_rhoAmbient, sim_windVel
+  real, save :: sim_rhoCloud, sim_rCloud, sim_smoothWidth
+  real, save :: sim_xCenter, sim_yCenter, sim_zCenter
+  real, save :: sim_gamma, sim_smallP, sim_smallX, sim_smallT
+
+  logical, save :: sim_gCell = .true.
+
+  integer, save :: sim_meshMe
+
+end module Simulation_data

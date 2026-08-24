@@ -1,0 +1,403 @@
+-------------------------------------------------------------------------------------------
+AvailMem:	 Largest =   26441.11 Mb (on task=0), Smallest =   26441.11 Mb (on task=0), Average =   26441.11 Mb
+Total Mem:	 Largest =   28063.64 Mb (on task=0), Smallest =   28063.64 Mb (on task=0), Average =   28063.64 Mb
+Committed_AS:	 Largest =    1622.54 Mb (on task=0), Smallest =    1622.54 Mb (on task=0), Average =    1622.54 Mb
+SwapTotal:	 Largest =       0.00 Mb (on task=0), Smallest =       0.00 Mb (on task=0), Average =       0.00 Mb
+SwapFree:	 Largest =       0.00 Mb (on task=0), Smallest =       0.00 Mb (on task=0), Average =       0.00 Mb
+AllocMem:	 Largest =    1622.54 Mb (on task=0), Smallest =    1622.54 Mb (on task=0), Average =    1622.54 Mb
+-------------------------------------------------------------------------------------------
+
+Task with the maximum commited memory
+System time: Sun Aug 23 22:26:42 2026
+This is GIZMO, version 2022, running on Axstarl as kaan.
+Build on  by kaan from master:a828c4b at https://github.com/pfhopkins/gizmo-public.git, Aug 23 2026 11:49:39
+
+Code was compiled with settings:
+
+        HYDRO_MESHLESS_FINITE_MASS
+        BOX_SPATIAL_DIMENSION=2
+        BOX_PERIODIC
+        BOX_LONG_X=2
+        SELFGRAVITY_OFF
+        EOS_GAMMA=(5.0/3.0)
+
+Running on 4 MPI tasks.
+
+Size of particle structure       288  [bytes]
+Size of hydro-cell structure   312  [bytes]
+
+Obtaining parameters from file 'params.txt':
+InitCondFile                                      ics_chi10_2d
+OutputDir                                         output
+ICFormat                                          3
+SnapFormat                                        3
+RestartFile                                       restart
+SnapshotFileBase                                  snapshot
+OutputListOn                                      0
+NumFilesPerSnapshot                               1
+NumFilesWrittenInParallel                         1
+TimeOfFirstSnapshot                               0
+TimeBetSnapshot                                   0.153
+TimeLimitCPU                                      86400
+CpuTimeBetRestartFile                             3600
+MaxMemSize                                        1600
+PartAllocFactor                                   5
+BufferSize                                        100
+TimeBegin                                         0
+TimeMax                                           6.12
+ComovingIntegrationOn                             0
+BoxSize                                           10
+Omega_Matter                                      0
+Omega_Lambda                                      0
+Omega_Baryon                                      0
+HubbleParam                                       1
+MaxSizeTimestep                                   0.05
+MinSizeTimestep                                   1e-12
+UnitLength_in_cm                                  1
+UnitMass_in_g                                     1
+UnitVelocity_in_cm_per_s                          1
+GravityConstantInternal                           1
+InitGasTemp                                       0
+MinGasTemp                                        0
+DesNumNgb                                         20
+MaxHsml                                           10
+MinGasHsmlFractional                              0
+Softening_Type0                                   0.05
+Softening_Type1                                   0.05
+Softening_Type2                                   0.05
+Softening_Type3                                   0.05
+Softening_Type4                                   0.05
+Softening_Type5                                   0.05
+
+Tag TreeDomainUpdateFrequency (TreeRebuild_ActiveFraction) not set in parameter file: defaulting to guess that we should re-build whenever 0.5 percent of the system is active. But this should be adjusted manually for performance and accuracy in most cases (=0.005) 
+
+Code units to be used: make sure you check these are correct! 
+  Hubble H0 (internal units) = 3.24078e-18 
+  Gravity G (internal units) = 1 
+  unit Mass in g             = 1 
+  unit Length in cm          = 1 
+  unit Time in s             = 1 
+  unit Velocity in cm/s      = 1 
+  unit Energy in erg         = 1 
+  unit Density in g/cm^3     = 1 
+  unit Pressure in erg/cm^3  = 1 
+  unit Luminosity in erg/s   = 1 
+  unit Flux in erg/s/cm^2    = 1 
+  unit B[internal] in gauss  = 3.54491 
+
+Allocated 32.7689 MByte for particle data storage.
+Allocated 33.9664 MByte for storage of hydro data.
+
+Reading file `ics_chi10_2d.hdf5' on task=0 (contains 91326 particles.)
+ ..distributing this file to tasks 0-3
+Type 0 (gas):      91326  (tot=     0000091326) masstab=0
+Type 1 (halo):         0  (tot=     0000000000) masstab=0
+Type 2 (alt):          0  (tot=     0000000000) masstab=0
+Type 3 (pic):          0  (tot=     0000000000) masstab=0
+Type 4 (stars):        0  (tot=     0000000000) masstab=0
+Type 5 (sink):         0  (tot=     0000000000) masstab=0
+
+reading block 0 (Coordinates)...
+reading block 1 (Velocities)...
+reading block 2 (ParticleIDs)...
+reading block 5 (Masses)...
+reading block 6 (InternalEnergy)...
+Reading done. Total number of particles :  0000091326
+
+Domain decomposition building... LevelToTimeBin[TakeLevel=0]=0  (presently allocated=66.7356 MB)
+ ..allocated 0.0595169 MByte for top-level domain structure
+ ..using 1.82573 MB of temporary storage for domain decomposition... (presently allocated=68.6211 MB)
+
+In 'DOMAIN', domain_Decomposition()/domain.c/208: Largest Allocation = 68.6211 Mbyte (on task=0), Smallest = 68.6211 Mbyte, Average = 68.6211 Mbyte
+------------------------ Allocated Memory Blocks----------------------------------------
+Task   Nr F          Variable      MBytes   Cumulative         Function/File/Linenumber
+----------------------------------------------------------------------------------------
+   0    0 0        Exportflag      0.0000       0.0000  allocate_memory()/system/allocate/31
+   0    1 0       Exportindex      0.0000       0.0001  allocate_memory()/system/allocate/32
+   0    2 0   Exportnodecount      0.0000       0.0001  allocate_memory()/system/allocate/33
+   0    3 0        Send_count      0.0000       0.0001  allocate_memory()/system/allocate/35
+   0    4 0       Send_offset      0.0000       0.0002  allocate_memory()/system/allocate/36
+   0    5 0        Recv_count      0.0000       0.0002  allocate_memory()/system/allocate/37
+   0    6 0       Recv_offset      0.0000       0.0002  allocate_memory()/system/allocate/38
+   0    7 0     ProcessedFlag      0.1089       0.1091  allocate_memory()/system/allocate/40
+   0    8 0   NextActiveParti      0.4355       0.5446  allocate_memory()/system/allocate/43
+   0    9 0     NextInTimeBin      0.4355       0.9801  allocate_memory()/system/allocate/46
+   0   10 0     PrevInTimeBin      0.4355       1.4156  allocate_memory()/system/allocate/49
+   0   11 0    ParticleData_P     31.3536      32.7692  allocate_memory()/system/allocate/55
+   0   12 0     GasCellData_P     33.9664      66.7356  allocate_memory()/system/allocate/69
+   0   13 0   DomainStartList      0.0001      66.7357  domain_allocate()/domain.c/296
+   0   14 0     DomainEndList      0.0001      66.7358  domain_allocate()/domain.c/299
+   0   15 0          TopNodes      0.0593      66.7951  domain_allocate()/domain.c/302
+   0   16 0        domain_key      1.7419      68.5370  domain_Decompos()/domain.c/155
+   0   17 0              toGo      0.0000      68.5370  domain_Decompos()/domain.c/158
+   0   18 0           toGoGas      0.0000      68.5371  domain_Decompos()/domain.c/160
+   0   19 0             toGet      0.0000      68.5371  domain_Decompos()/domain.c/162
+   0   20 0          toGetGas      0.0000      68.5371  domain_Decompos()/domain.c/164
+   0   21 0      list_NumPart      0.0000      68.5372  domain_Decompos()/domain.c/166
+   0   22 0        list_N_gas      0.0000      68.5372  domain_Decompos()/domain.c/168
+   0   23 0         list_load      0.0000      68.5372  domain_Decompos()/domain.c/170
+   0   24 0      list_loadgas      0.0000      68.5373  domain_Decompos()/domain.c/172
+   0   25 0         list_work      0.0000      68.5373  domain_Decompos()/domain.c/174
+   0   26 0      list_workgas      0.0000      68.5373  domain_Decompos()/domain.c/176
+   0   27 0        domainWork      0.0035      68.5408  domain_Decompos()/domain.c/178
+   0   28 0     domainWorkGas      0.0035      68.5443  domain_Decompos()/domain.c/180
+   0   29 0       domainCount      0.0035      68.5479  domain_Decompos()/domain.c/182
+   0   30 0    domainCountGas      0.0035      68.5514  domain_Decompos()/domain.c/184
+   0   31 0          topNodes      0.0697      68.6211  domain_Decompos()/domain.c/196
+----------------------------------------------------------------------------------------
+ ..NTopNodes before=465
+ ..NTopnodes after=489
+ ..NTopleaves= 428  NTopnodes=489 (space for 914)
+Balance: gravity work-load balance=1.00212   memory-balance=1.00212   hydro work-load balance=1.00212
+ ..iter=0 exchange of 0000061762 particles (ret=0)
+ ..domain decomposition done. (took 0.0683672 sec)
+Begin Peano-Hilbert order...
+ ..Peano-Hilbert done
+ ..freed 0.0259399 MByte in top-level domain structure
+Allocated 10.3685 MByte for tree, and 0.00163269 Mbyte for top-leaves.  (presently allocated 77.1378 MB)
+Begin Ngb-tree construction.
+Ngb-Tree contruction finished 
+
+Setting next time for snapshot file to Time_next= 0  (DumpFlag=1)
+
+Sync-Point 0, Time: 0, Systemstep: 0
+Occupied timebins: non-cells     cells       dt                 cumulative A D    avg-time  cpu-frac
+ X  bin= 0               0       91326     0.000000000000            91326 < *        0.00      0.0%
+               ------------------------
+Total active:            0       91326    Sum:      91326
+
+Domain decomposition building... LevelToTimeBin[TakeLevel=0]=0  (presently allocated=66.7356 MB)
+ ..allocated 0.0595169 MByte for top-level domain structure
+ ..using 1.82573 MB of temporary storage for domain decomposition... (presently allocated=68.6211 MB)
+ ..NTopNodes before=481
+ ..NTopnodes after=481
+ ..NTopleaves= 421  NTopnodes=481 (space for 914)
+Balance: gravity work-load balance=1.00206   memory-balance=1.00212   hydro work-load balance=1.00212
+ ..iter=0 exchange of 0000065987 particles (ret=0)
+ ..domain decomposition done. (took 0.0218252 sec)
+Begin Peano-Hilbert order...
+ ..Peano-Hilbert done
+ ..freed 0.0264282 MByte in top-level domain structure
+Start gravity force computation...
+Tree construction initiated (presently allocated=77.1357 MB)
+ ..Tree construction done.
+ ..gravity force computation done
+Start hydrodynamics computation...
+ ..Hmax exchange: 0 topleaves out of 421
+ ..density & tree-update computation done...
+ ..gradient computation done.
+ ..hydro force computation done.
+Predicting next timestep: 0.00298828
+
+writing snapshot file #0... 
+writing block 0 (Coordinates)...
+writing block 1 (Velocities)...
+writing block 2 (ParticleIDs)...
+writing block 3 (ParticleChildIDsNumber)...
+writing block 4 (ParticleIDGenerationNumber)...
+writing block 5 (Masses)...
+writing block 6 (InternalEnergy)...
+writing block 7 (Density)...
+
+... [27112 lines omitted from the middle of this file; the complete file is on the research machine] ...
+
+    bin=52               0        1992     0.023906250000            90879   *        0.30     17.4%
+    bin=51               0       58892     0.011953125000            88887   *        0.30     34.4%
+ X  bin=50               0       29993     0.005976562500            29995 < *        0.13     28.8%
+ X  bin=49               0           2     0.002988281250                2            0.00      1.7%
+               ------------------------
+Total active:            0       29995    Sum:      29995
+
+Balance: gravity work-load balance=1.06832   memory-balance=1.0683   hydro work-load balance=1.03151
+
+Sync-Point 2044, Time: 6.06919921875, Systemstep: 0.00298828
+Occupied timebins: non-cells     cells       dt                 cumulative A D    avg-time  cpu-frac
+    bin=53               0         447     0.047812500000            91326   *        0.31     17.7%
+    bin=52               0        1992     0.023906250000            90879   *        0.30     17.3%
+    bin=51               0       58892     0.011953125000            88887   *        0.30     34.3%
+    bin=50               0       29993     0.005976562500            29995   *        0.13     28.9%
+ X  bin=49               0           2     0.002988281250                2 <          0.00      1.7%
+               ------------------------
+Total active:            0           2    Sum:          2
+
+
+Sync-Point 2045, Time: 6.0721875, Systemstep: 0.00298828
+Occupied timebins: non-cells     cells       dt                 cumulative A D    avg-time  cpu-frac
+ X  bin=53               0         447     0.047812500000            91326 < *        0.31     17.7%
+ X  bin=52               0        1992     0.023906250000            90879   *        0.30     17.3%
+ X  bin=51               0       58892     0.011953125000            88887   *        0.30     34.3%
+ X  bin=50               0       29993     0.005976562500            29995   *        0.13     29.0%
+ X  bin=49               0           2     0.002988281250                2            0.00      1.7%
+               ------------------------
+Total active:            0       91326    Sum:      91326
+
+Domain decomposition building... LevelToTimeBin[TakeLevel=0]=0  (presently allocated=66.7356 MB)
+ ..allocated 0.0595169 MByte for top-level domain structure
+ ..using 1.82573 MB of temporary storage for domain decomposition... (presently allocated=68.6211 MB)
+ ..NTopNodes before=649
+ ..NTopnodes after=713
+ ..NTopleaves= 624  NTopnodes=713 (space for 914)
+Balance: gravity work-load balance=1.00095   memory-balance=1.00094   hydro work-load balance=1.00094
+ ..iter=0 exchange of 0000070184 particles (ret=0)
+ ..domain decomposition done. (took 0.0234854 sec)
+Begin Peano-Hilbert order...
+ ..Peano-Hilbert done
+ ..freed 0.0122681 MByte in top-level domain structure
+Start gravity force computation...
+Tree construction initiated (presently allocated=77.1949 MB)
+ ..Tree construction done.
+ ..gravity force computation done
+Start hydrodynamics computation...
+ ..Hmax exchange: 126 topleaves out of 624
+ ..density & tree-update computation done...
+ ..gradient computation done.
+ ..hydro force computation done.
+Predicting next timestep: 0.00298828
+
+Sync-Point 2046, Time: 6.07517578125, Systemstep: 0.00298828
+Occupied timebins: non-cells     cells       dt                 cumulative A D    avg-time  cpu-frac
+    bin=53               0         422     0.047812500000            91326   *        0.31     17.6%
+    bin=52               0        2015     0.023906250000            90904   *        0.30     17.4%
+    bin=51               0       58883     0.011953125000            88889   *        0.30     34.4%
+    bin=50               0       30005     0.005976562500            30006   *        0.13     29.0%
+ X  bin=49               0           1     0.002988281250                1 <          0.00      1.7%
+               ------------------------
+Total active:            0           1    Sum:          1
+
+
+Sync-Point 2047, Time: 6.0781640625, Systemstep: 0.00298828
+Occupied timebins: non-cells     cells       dt                 cumulative A D    avg-time  cpu-frac
+    bin=53               0         422     0.047812500000            91326   *        0.31     17.6%
+    bin=52               0        2015     0.023906250000            90904   *        0.30     17.3%
+    bin=51               0       58883     0.011953125000            88889   *        0.30     34.3%
+ X  bin=50               0       30005     0.005976562500            30006 < *        0.13     29.0%
+ X  bin=49               0           1     0.002988281250                1            0.00      1.7%
+               ------------------------
+Total active:            0       30006    Sum:      30006
+
+Balance: gravity work-load balance=1.06009   memory-balance=1.06007   hydro work-load balance=1.04926
+
+Sync-Point 2048, Time: 6.084140625, Systemstep: 0.00597656
+Occupied timebins: non-cells     cells       dt                 cumulative A D    avg-time  cpu-frac
+    bin=53               0         422     0.047812500000            91326   *        0.31     18.0%
+    bin=52               0        2015     0.023906250000            90904   *        0.30     17.7%
+ X  bin=51               0       58883     0.011953125000            88889 < *        0.30     35.0%
+ X  bin=50               0       30006     0.005976562500            30006   *        0.13     29.3%
+               ------------------------
+Total active:            0       88889    Sum:      88889
+
+Balance: gravity work-load balance=1.00647   memory-balance=1.0065   hydro work-load balance=1.00696
+
+Sync-Point 2049, Time: 6.0901171875, Systemstep: 0.00597656
+Occupied timebins: non-cells     cells       dt                 cumulative A D    avg-time  cpu-frac
+    bin=53               0         422     0.047812500000            91326   *        0.31     18.0%
+    bin=52               0        2015     0.023906250000            90904   *        0.30     17.7%
+    bin=51               0       58821     0.011953125000            88889   *        0.30     35.0%
+ X  bin=50               0       30068     0.005976562500            30068 < *        0.13     29.4%
+               ------------------------
+Total active:            0       30068    Sum:      30068
+
+Balance: gravity work-load balance=1.08958   memory-balance=1.08959   hydro work-load balance=1.05933
+
+Sync-Point 2050, Time: 6.096093750000001, Systemstep: 0.00597656
+Occupied timebins: non-cells     cells       dt                 cumulative A D    avg-time  cpu-frac
+    bin=53               0         422     0.047812500000            91326   *        0.31     18.0%
+ X  bin=52               0        2015     0.023906250000            90904 < *        0.30     17.7%
+ X  bin=51               0       58821     0.011953125000            88889   *        0.30     35.0%
+ X  bin=50               0       30068     0.005976562500            30068   *        0.13     29.4%
+               ------------------------
+Total active:            0       90904    Sum:      90904
+
+Balance: gravity work-load balance=1.00146   memory-balance=1.00147   hydro work-load balance=1.00343
+
+Sync-Point 2051, Time: 6.1020703125, Systemstep: 0.00597656
+Occupied timebins: non-cells     cells       dt                 cumulative A D    avg-time  cpu-frac
+    bin=53               0         422     0.047812500000            91326   *        0.31     17.9%
+    bin=52               0        2005     0.023906250000            90904   *        0.30     17.7%
+    bin=51               0       58811     0.011953125000            88899   *        0.30     34.9%
+ X  bin=50               0       30088     0.005976562500            30088 < *        0.13     29.4%
+               ------------------------
+Total active:            0       30088    Sum:      30088
+
+Balance: gravity work-load balance=1.07598   memory-balance=1.07606   hydro work-load balance=1.04866
+
+Sync-Point 2052, Time: 6.108046875, Systemstep: 0.00597656
+Occupied timebins: non-cells     cells       dt                 cumulative A D    avg-time  cpu-frac
+    bin=53               0         422     0.047812500000            91326   *        0.31     17.9%
+    bin=52               0        2005     0.023906250000            90904   *        0.30     17.7%
+ X  bin=51               0       58811     0.011953125000            88899 < *        0.30     34.9%
+ X  bin=50               0       30088     0.005976562500            30088   *        0.13     29.4%
+               ------------------------
+Total active:            0       88899    Sum:      88899
+
+Balance: gravity work-load balance=1.00519   memory-balance=1.00515   hydro work-load balance=1.00869
+
+Sync-Point 2053, Time: 6.1140234375, Systemstep: 0.00597656
+Occupied timebins: non-cells     cells       dt                 cumulative A D    avg-time  cpu-frac
+    bin=53               0         422     0.047812500000            91326   *        0.31     18.0%
+    bin=52               0        2005     0.023906250000            90904   *        0.30     17.8%
+    bin=51               0       58805     0.011953125000            88899   *        0.30     34.6%
+ X  bin=50               0       30094     0.005976562500            30094 < *        0.13     29.5%
+               ------------------------
+Total active:            0       30094    Sum:      30094
+
+Balance: gravity work-load balance=1.05704   memory-balance=1.057   hydro work-load balance=1.0543
+
+writing snapshot file #40... 
+writing block 0 (Coordinates)...
+writing block 1 (Velocities)...
+writing block 2 (ParticleIDs)...
+writing block 3 (ParticleChildIDsNumber)...
+writing block 4 (ParticleIDGenerationNumber)...
+writing block 5 (Masses)...
+writing block 6 (InternalEnergy)...
+writing block 7 (Density)...
+writing block 10 (SmoothingLength)...
+done with snapshot.
+
+There is no valid time for a further snapshot file.
+
+Sync-Point 2054, Time: 6.12, Systemstep: 0.00597656
+Occupied timebins: non-cells     cells       dt                 cumulative A D    avg-time  cpu-frac
+ X  bin=53               0         422     0.047812500000            91326 < *        0.31     18.1%
+ X  bin=52               0        2005     0.023906250000            90904   *        0.30     17.9%
+ X  bin=51               0       58805     0.011953125000            88899   *        0.30     34.7%
+ X  bin=50               0       30094     0.005976562500            30094   *        0.13     29.4%
+               ------------------------
+Total active:            0       91326    Sum:      91326
+
+Domain decomposition building... LevelToTimeBin[TakeLevel=0]=0  (presently allocated=66.7356 MB)
+ ..allocated 0.0595169 MByte for top-level domain structure
+ ..using 1.82573 MB of temporary storage for domain decomposition... (presently allocated=68.6211 MB)
+ ..NTopNodes before=673
+ ..NTopnodes after=713
+ ..NTopleaves= 624  NTopnodes=713 (space for 914)
+Balance: gravity work-load balance=1.00312   memory-balance=1.003   hydro work-load balance=1.003
+ ..iter=0 exchange of 0000069233 particles (ret=0)
+ ..domain decomposition done. (took 0.0183504 sec)
+Begin Peano-Hilbert order...
+ ..Peano-Hilbert done
+ ..freed 0.0122681 MByte in top-level domain structure
+Start gravity force computation...
+Tree construction initiated (presently allocated=77.1949 MB)
+ ..Tree construction done.
+ ..gravity force computation done
+Start hydrodynamics computation...
+ ..Hmax exchange: 130 topleaves out of 624
+ ..density & tree-update computation done...
+ ..gradient computation done.
+ ..hydro force computation done.
+
+Final time=6.12 reached. Simulation ends.
+
+writing snapshot file #41... 
+writing block 0 (Coordinates)...
+writing block 1 (Velocities)...
+writing block 2 (ParticleIDs)...
+writing block 3 (ParticleChildIDsNumber)...
+writing block 4 (ParticleIDGenerationNumber)...
+writing block 5 (Masses)...
+writing block 6 (InternalEnergy)...
+writing block 7 (Density)...
+writing block 10 (SmoothingLength)...
+done with snapshot.

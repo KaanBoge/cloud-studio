@@ -1,0 +1,403 @@
+Shared memory islands host a minimum of 4 and a maximum of 4 MPI ranks.
+
+  ___    __    ____    ___  ____  ____       __
+ / __)  /__\  (  _ \  / __)( ___)(_  _)___  /. |
+( (_-. /(__)\  )(_) )( (_-. )__)   )( (___)(_  _)
+ \___/(__)(__)(____/  \___/(____) (__)       (_)
+
+This is Gadget, version 4.0.
+Git commit 2046797b578a3be27433a23a9ba912715a829626, Wed Aug 5 21:50:20 2026 +0200
+
+Code was compiled with the following compiler and flags:
+mpicxx  -std=c++11  -ggdb -O3 -march=native  -Wall -Wno-format-security    -I/usr/include/hdf5/serial      -Ibuild -Isrc
+
+
+Code was compiled with the following settings:
+    DOUBLEPRECISION=1
+    LONG_Y_BITS=1
+    NTYPES=2
+    OUTPUT_PRESSURE
+    PERIODIC
+    TWODIMS
+
+
+Running on 4 MPI tasks.
+
+
+BEGRUN: Size of particle structure        112  [bytes]
+BEGRUN: Size of sph particle structure    192  [bytes]
+BEGRUN: Size of gravity tree node         104  [bytes]
+BEGRUN: Size of neighbour tree node       192  [bytes]
+BEGRUN: Size of subfind auxiliary data     56  [bytes]
+
+
+-------------------------------------------------------------------------------------------------------------------------
+AvailMem:	 Largest =   26440.66 Mb (on task=   0), Smallest =   26440.66 Mb (on task=   0), Average =   26440.66 Mb
+Total Mem:	 Largest =   28063.64 Mb (on task=   0), Smallest =   28063.64 Mb (on task=   0), Average =   28063.64 Mb
+Committed_AS:	 Largest =    1622.99 Mb (on task=   0), Smallest =    1622.99 Mb (on task=   0), Average =    1622.99 Mb
+SwapTotal:	 Largest =       0.00 Mb (on task=   0), Smallest =       0.00 Mb (on task=   0), Average =       0.00 Mb
+SwapFree:	 Largest =       0.00 Mb (on task=   0), Smallest =       0.00 Mb (on task=   0), Average =       0.00 Mb
+AllocMem:	 Largest =    1622.99 Mb (on task=   0), Smallest =    1622.99 Mb (on task=   0), Average =    1622.99 Mb
+avail /dev/shm:	 Largest =   14030.78 Mb (on task=   0), Smallest =   14030.78 Mb (on task=   0), Average =   14030.78 Mb
+-------------------------------------------------------------------------------------------------------------------------
+Task=0 has the maximum commited memory and is host: Axstarl
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Obtaining parameters from file 'param.txt':
+
+        InitCondFile                                      ./ics_chi10_2d
+        OutputDir                                         ./output
+        SnapshotFileBase                                  snapshot
+        OutputListFilename                                outputs.txt
+        ICFormat                                          3
+        SnapFormat                                        3
+        TimeLimitCPU                                      86400
+        CpuTimeBetRestartFile                             7200
+        MaxMemSize                                        1000
+        TimeBegin                                         0
+        TimeMax                                           6.124
+        ComovingIntegrationOn                             0
+        Omega0                                            0
+        OmegaLambda                                       0
+        OmegaBaryon                                       0
+        HubbleParam                                       1
+        Hubble                                            0
+        BoxSize                                           20
+        OutputListOn                                      0
+        TimeBetSnapshot                                   0.2
+        TimeOfFirstSnapshot                               0
+        TimeBetStatistics                                 0.1
+        NumFilesPerSnapshot                               1
+        MaxFilesWithConcurrentIO                          1
+        ErrTolIntAccuracy                                 0.025
+        CourantFac                                        0.15
+        MaxSizeTimestep                                   0.05
+        MinSizeTimestep                                   0
+        TopNodeFactor                                     2.5
+        ActivePartFracForNewDomainDecomp                  0.01
+        TypeOfOpeningCriterion                            1
+        ErrTolTheta                                       0.5
+        ErrTolThetaMax                                    0.9
+        ErrTolForceAcc                                    0.005
+        SofteningComovingClass0                           0.05
+        SofteningComovingClass1                           0.05
+        SofteningMaxPhysClass0                            0.05
+        SofteningMaxPhysClass1                            0.05
+        SofteningClassOfPartType0                         0
+        SofteningClassOfPartType1                         1
+        DesNumNgb                                         20
+        MaxNumNgbDeviation                                1
+        UnitLength_in_cm                                  1
+        UnitMass_in_g                                     1
+        UnitVelocity_in_cm_per_s                          1
+        GravityConstantInternal                           1
+        ArtBulkViscConst                                  1
+        MinEgySpec                                        0
+        InitGasTemp                                       0
+
+MALLOC: Allocation of shared memory took 4.2589e-05 sec
+BEGRUN: Hubble (internal units)  = 0
+BEGRUN: h                        = 1
+BEGRUN: G (internal units)       = 1
+BEGRUN: UnitMass_in_g            = 1
+BEGRUN: UnitLenth_in_cm          = 1
+BEGRUN: UnitTime_in_s            = 1
+BEGRUN: UnitVelocity_in_cm_per_s = 1
+BEGRUN: UnitDensity_in_cgs       = 1
+BEGRUN: UnitEnergy_in_cgs        = 1
+
+
+READIC: filenr=0, './ics_chi10_2d.hdf5' contains:
+READIC: Type 0 (gas):     131072  (tot=         131072) masstab= 0
+READIC: Type 1:                0  (tot=              0) masstab= 0
+
+READIC: Reading file `./ics_chi10_2d.hdf5' on task=0 and distribute it to 0 to 3.
+READIC: reading block 0 (Coordinates)...
+READIC: reading block 1 (Velocities)...
+READIC: reading block 2 (ParticleIDs)...
+READIC: reading block 3 (Masses)...
+READIC: reading block 4 (InternalEnergy)...
+READIC: reading block 5 (Density)...
+	Dataset Density not present for particle type 0, using zero.
+READIC: reading block 6 (SmoothingLength)...
+	Dataset SmoothingLength not present for particle type 0, using zero.
+READIC: reading done. Took 0.0343543 sec, total size 9 MB, corresponds to effective I/O rate of 261.976 MB/sec
+
+READIC: Total number of particles :  131072
+
+INIT: Testing ID uniqueness...
+INIT: success.  took=0.00214301 sec
+
+DOMAIN: Begin domain decomposition (sync-point 0).
+DOMAIN: Sum=4  TotalCost=4  NumTimeBinsToBeBalanced=1  MultipleDomains=4
+DOMAIN: Increasing TopNodeAllocFactor=0.08  new value=0.104
+DOMAIN: Increasing TopNodeAllocFactor=0.104  new value=0.1352
+DOMAIN: Increasing TopNodeAllocFactor=0.1352  new value=0.17576
+DOMAIN: Increasing TopNodeAllocFactor=0.17576  new value=0.228488
+DOMAIN: Increasing TopNodeAllocFactor=0.228488  new value=0.297034
+DOMAIN: Increasing TopNodeAllocFactor=0.297034  new value=0.386145
+DOMAIN: Increasing TopNodeAllocFactor=0.386145  new value=0.501988
+DOMAIN: Increasing TopNodeAllocFactor=0.501988  new value=0.652585
+DOMAIN: Increasing TopNodeAllocFactor=0.652585  new value=0.84836
+DOMAIN: Increasing TopNodeAllocFactor=0.84836  new value=1.10287
+DOMAIN: Increasing TopNodeAllocFactor=1.10287  new value=1.43373
+DOMAIN: Increasing TopNodeAllocFactor=1.43373  new value=1.86385
+DOMAIN: Increasing TopNodeAllocFactor=1.86385  new value=2.423
+DOMAIN: Increasing TopNodeAllocFactor=2.423  new value=3.1499
+DOMAIN: Increasing TopNodeAllocFactor=3.1499  new value=4.09487
+DOMAIN: NTopleaves=302, determination of top-level tree involved 4 iterations and took 0.011681 sec
+DOMAIN: we are going to try at most 113 different settings for combining the domains on tasks=4, nnodes=1
+DOMAIN: total_cost=3  total_load=2
+DOMAIN: combining multiple-domains succeeded, target=4  NTask=4
+DOMAIN: best solution found after 1 iterations by task=0 for nextra=0, reaching maximum imbalance of 1|1.01
+DOMAIN: combining multiple-domains took 0.000548828 sec
+DOMAIN: exchange of 0 particles
+DOMAIN: particle exchange done. (took 0.0130838 sec)
+DOMAIN: domain decomposition done. (took in total 0.0255997 sec)
+PEANO: Begin Peano-Hilbert order...
+PEANO: done, took 0.00389417 sec.
+TREE: Full tree construction for all particles. (presently allocated=18.9611 MB)
+NGBTREE: Ngb-tree construction done. took 0.0133111 sec  <numnodes>=11225  NTopnodes=345 NTopleaves=302
+INIT: Setup smoothing lengths.
+TREE: Full tree construction for all particles. (presently allocated=20.6455 MB)
+GRAVTREE: Tree construction done. took 0.00587156 sec  <numnodes>=11225  NTopnodes=345 NTopleaves=302 tree-build-scalability=0.976949
+SPH-DENSITY: Begin density calculation. (presently allocated=20.8967 MB)
+SPH-DENSITY: Ndensities=131072 (task zero has: NumGas=32768, Ndensities=32768)
+SPH-DENSITY: ngb iteration    1: took    0.092  , need to repeat for 000000032715 local particles.
+SPH-DENSITY: ngb iteration    2: took    0.062  , need to repeat for 000000032409 local particles.
+SPH-DENSITY: ngb iteration    3: took    0.037  , need to repeat for 000000031899 local particles.
+SPH-DENSITY: ngb iteration    4: took    0.036  , need to repeat for 000000000495 local particles.
+SPH-DENSITY: ngb iteration    5: took    0.001  , need to repeat for 000000000254 local particles.
+SPH-DENSITY: ngb iteration    6: took    0.000  , need to repeat for 000000000102 local particles.
+SPH-DENSITY: ngb iteration    7: took    0.000  , need to repeat for 000000000066 local particles.
+SPH-DENSITY: ngb iteration    8: took    0.000  , need to repeat for 000000000033 local particles.
+SPH-DENSITY: ngb iteration    9: took    0.000  , need to repeat for 000000000007 local particles.
+SPH-DENSITY: ngb iteration   10: took    0.000
+SPH-DENSITY: density computation done. took    0.230
+INIT: Converting u -> entropy
+
+SNAPSHOT: Setting next time for snapshot file to Time_next= 0  (DumpFlag=1)
+
+
+
+Sync-Point 0, Time: 0, Systemstep: 0, Nsync-grv:     131072, Nsync-hyd:     131072
+DOMAIN: Begin domain decomposition (sync-point 0).
+DOMAIN: Sum=4  TotalCost=4  NumTimeBinsToBeBalanced=1  MultipleDomains=4
+DOMAIN: NTopleaves=302, determination of top-level tree involved 4 iterations and took 0.00766619 sec
+DOMAIN: we are going to try at most 113 different settings for combining the domains on tasks=4, nnodes=1
+DOMAIN: total_cost=3  total_load=2
+DOMAIN: combining multiple-domains succeeded, target=4  NTask=4
+DOMAIN: best solution found after 1 iterations by task=0 for nextra=0, reaching maximum imbalance of 1|1.01
+DOMAIN: combining multiple-domains took 0.000822356 sec
+DOMAIN: exchange of 0 particles
+DOMAIN: particle exchange done. (took 0.00651326 sec)
+DOMAIN: domain decomposition done. (took in total 0.0153563 sec)
+PEANO: Begin Peano-Hilbert order...
+PEANO: done, took 0.00137431 sec.
+TREE: Full tree construction for all particles. (presently allocated=19.2319 MB)
+NGBTREE: Ngb-tree construction done. took 0.0228289 sec  <numnodes>=11225  NTopnodes=345 NTopleaves=302
+SPH-DENSITY: Begin density calculation. (presently allocated=19.4831 MB)
+SPH-DENSITY: Ndensities=131072 (task zero has: NumGas=32768, Ndensities=32768)
+SPH-DENSITY: ngb iteration    1: took    0.047
+
+... [64846 lines omitted from the middle of this file; the complete file is on the research machine] ...
+
+DOMAIN: combining multiple-domains succeeded, target=4  NTask=4
+DOMAIN: best solution found after 5 iterations by task=0 for nextra=0, reaching maximum imbalance of 1.1123|1.11642
+DOMAIN: combining multiple-domains took 0.00152131 sec
+DOMAIN: exchange of 0 particles
+DOMAIN: particle exchange done. (took 0.0201293 sec)
+DOMAIN: domain decomposition done. (took in total 0.031681 sec)
+PEANO: Begin Peano-Hilbert order...
+PEANO: done, took 0.0208013 sec.
+TREE: Full tree construction for all particles. (presently allocated=19.0526 MB)
+NGBTREE: Ngb-tree construction done. took 0.0110623 sec  <numnodes>=8064.25  NTopnodes=153 NTopleaves=134
+SPH-DENSITY: Begin density calculation. (presently allocated=19.3309 MB)
+SPH-DENSITY: Ndensities=130846 (task zero has: NumGas=36399, Ndensities=36385)
+SPH-DENSITY: ngb iteration    1: took    0.056  , need to repeat for 000000000055 local particles.
+SPH-DENSITY: ngb iteration    2: took    0.000
+SPH-DENSITY: density computation done. took    0.056
+SPH-HYDRO: Begin hydro-force calculation.  (presently allocated=20.3026 MB)
+SPH-HYDRO: global Nhydro=130846 (task zero: NumGas=36399, Nhydro=36385)
+SPH-HYDRO: hydro-force computation done. took    0.067
+GRAVTREE/FMM: Setting OldAcc!
+KICKS: 1st gravity for highest active timebin=21:  particles 0
+TIMESTEP-TREEWALK: Begin
+TIMESTEP-TREEWALK: took 0.0273017 sec, max_ncycles = 1, part/sec = 1.19815e+06
+SPH-HYDRO: Begin hydro-force calculation.  (presently allocated=19.4698 MB)
+SPH-HYDRO: global Nhydro=130846 (task zero: NumGas=36399, Nhydro=36385)
+SPH-HYDRO: hydro-force computation done. took    0.087
+
+
+Sync-Point 1997, Time: 6.10606, Systemstep: 0.00598047, Nsync-grv:          0, Nsync-hyd:      94782
+DOMAIN: Begin domain decomposition (sync-point 1997).
+DOMAIN: Sum=3  TotalCost=3  NumTimeBinsToBeBalanced=1  MultipleDomains=3
+DOMAIN: NTopleaves=176, determination of top-level tree involved 4 iterations and took 0.00959452 sec
+DOMAIN: we are going to try at most 111 different settings for combining the domains on tasks=4, nnodes=1
+DOMAIN: total_cost=3  total_load=2
+DOMAIN: total_cost=3  total_load=2
+DOMAIN: total_cost=3  total_load=2
+DOMAIN: total_cost=3  total_load=2
+DOMAIN: total_cost=3  total_load=2
+DOMAIN: total_cost=3  total_load=2
+DOMAIN: combining multiple-domains succeeded, target=4  NTask=4
+DOMAIN: best solution found after 6 iterations by task=0 for nextra=0, reaching maximum imbalance of 1.13781|1.14552
+DOMAIN: combining multiple-domains took 0.000523097 sec
+DOMAIN: exchange of 0 particles
+DOMAIN: particle exchange done. (took 0.00706056 sec)
+DOMAIN: domain decomposition done. (took in total 0.0175434 sec)
+PEANO: Begin Peano-Hilbert order...
+PEANO: done, took 0.0063546 sec.
+TREE: Full tree construction for all particles. (presently allocated=19.0335 MB)
+NGBTREE: Ngb-tree construction done. took 0.00695905 sec  <numnodes>=8097  NTopnodes=201 NTopleaves=176
+SPH-DENSITY: Begin density calculation. (presently allocated=19.3079 MB)
+SPH-DENSITY: Ndensities=94782 (task zero has: NumGas=35858, Ndensities=26961)
+SPH-DENSITY: ngb iteration    1: took    0.037  , need to repeat for 000000000008 local particles.
+SPH-DENSITY: ngb iteration    2: took    0.000
+SPH-DENSITY: density computation done. took    0.038
+SPH-HYDRO: Begin hydro-force calculation.  (presently allocated=20.0619 MB)
+SPH-HYDRO: global Nhydro=94782 (task zero: NumGas=35858, Nhydro=26961)
+SPH-HYDRO: hydro-force computation done. took    0.055
+GRAVTREE/FMM: Setting OldAcc!
+KICKS: 1st gravity for highest active timebin=19:  particles 0
+TIMESTEP-TREEWALK: Begin
+TIMESTEP-TREEWALK: took 0.0267415 sec, max_ncycles = 1, part/sec = 886093
+SPH-HYDRO: Begin hydro-force calculation.  (presently allocated=19.4448 MB)
+SPH-HYDRO: global Nhydro=94782 (task zero: NumGas=35858, Nhydro=26961)
+SPH-HYDRO: hydro-force computation done. took    0.052
+
+
+Sync-Point 1998, Time: 6.11204, Systemstep: 0.00598047, Nsync-grv:          0, Nsync-hyd:     129068
+DOMAIN: Begin domain decomposition (sync-point 1998).
+DOMAIN: Sum=3  TotalCost=3  NumTimeBinsToBeBalanced=1  MultipleDomains=3
+DOMAIN: NTopleaves=134, determination of top-level tree involved 4 iterations and took 0.00911941 sec
+DOMAIN: we are going to try at most 111 different settings for combining the domains on tasks=4, nnodes=1
+DOMAIN: total_cost=3  total_load=2
+DOMAIN: total_cost=3  total_load=2
+DOMAIN: total_cost=3  total_load=2
+DOMAIN: total_cost=3  total_load=2
+DOMAIN: total_cost=3  total_load=2
+DOMAIN: combining multiple-domains succeeded, target=4  NTask=4
+DOMAIN: best solution found after 5 iterations by task=0 for nextra=0, reaching maximum imbalance of 1.10333|1.11642
+DOMAIN: combining multiple-domains took 0.000432478 sec
+DOMAIN: exchange of 0 particles
+DOMAIN: particle exchange done. (took 0.00712769 sec)
+DOMAIN: domain decomposition done. (took in total 0.017094 sec)
+PEANO: Begin Peano-Hilbert order...
+PEANO: done, took 0.00542428 sec.
+TREE: Full tree construction for all particles. (presently allocated=19.027 MB)
+NGBTREE: Ngb-tree construction done. took 0.00824021 sec  <numnodes>=8086  NTopnodes=153 NTopleaves=134
+SPH-DENSITY: Begin density calculation. (presently allocated=19.3016 MB)
+SPH-DENSITY: Ndensities=129068 (task zero has: NumGas=35917, Ndensities=35601)
+SPH-DENSITY: ngb iteration    1: took    0.051  , need to repeat for 000000000050 local particles.
+SPH-DENSITY: ngb iteration    2: took    0.000
+SPH-DENSITY: density computation done. took    0.051
+SPH-HYDRO: Begin hydro-force calculation.  (presently allocated=20.2535 MB)
+SPH-HYDRO: global Nhydro=129068 (task zero: NumGas=35917, Nhydro=35601)
+SPH-HYDRO: hydro-force computation done. took    0.086
+GRAVTREE/FMM: Setting OldAcc!
+KICKS: 1st gravity for highest active timebin=20:  particles 0
+TIMESTEP-TREEWALK: Begin
+TIMESTEP-TREEWALK: took 0.0262864 sec, max_ncycles = 1, part/sec = 1.22752e+06
+SPH-HYDRO: Begin hydro-force calculation.  (presently allocated=19.4387 MB)
+SPH-HYDRO: global Nhydro=129068 (task zero: NumGas=35917, Nhydro=35601)
+SPH-HYDRO: hydro-force computation done. took    0.064
+
+
+Sync-Point 1999, Time: 6.11802, Systemstep: 0.00598047, Nsync-grv:          0, Nsync-hyd:      94736
+DOMAIN: Begin domain decomposition (sync-point 1999).
+DOMAIN: Sum=3  TotalCost=3  NumTimeBinsToBeBalanced=1  MultipleDomains=3
+DOMAIN: NTopleaves=176, determination of top-level tree involved 4 iterations and took 0.0103003 sec
+DOMAIN: we are going to try at most 111 different settings for combining the domains on tasks=4, nnodes=1
+DOMAIN: total_cost=3  total_load=2
+DOMAIN: total_cost=3  total_load=2
+DOMAIN: total_cost=3  total_load=2
+DOMAIN: total_cost=3  total_load=2
+DOMAIN: total_cost=3  total_load=2
+DOMAIN: total_cost=3  total_load=2
+DOMAIN: combining multiple-domains succeeded, target=4  NTask=4
+DOMAIN: best solution found after 6 iterations by task=0 for nextra=0, reaching maximum imbalance of 1.13921|1.14552
+DOMAIN: combining multiple-domains took 0.000814685 sec
+DOMAIN: exchange of 0 particles
+DOMAIN: particle exchange done. (took 0.00739488 sec)
+DOMAIN: domain decomposition done. (took in total 0.0190439 sec)
+PEANO: Begin Peano-Hilbert order...
+PEANO: done, took 0.00728152 sec.
+TREE: Full tree construction for all particles. (presently allocated=19.0339 MB)
+NGBTREE: Ngb-tree construction done. took 0.0109579 sec  <numnodes>=8117  NTopnodes=201 NTopleaves=176
+SPH-DENSITY: Begin density calculation. (presently allocated=19.3083 MB)
+SPH-DENSITY: Ndensities=94736 (task zero has: NumGas=35864, Ndensities=26981)
+SPH-DENSITY: ngb iteration    1: took    0.053  , need to repeat for 000000000007 local particles.
+SPH-DENSITY: ngb iteration    2: took    0.000
+SPH-DENSITY: density computation done. took    0.054
+SPH-HYDRO: Begin hydro-force calculation.  (presently allocated=20.0627 MB)
+SPH-HYDRO: global Nhydro=94736 (task zero: NumGas=35864, Nhydro=26981)
+SPH-HYDRO: hydro-force computation done. took    0.050
+GRAVTREE/FMM: Setting OldAcc!
+KICKS: 1st gravity for highest active timebin=19:  particles 0
+TIMESTEP-TREEWALK: Begin
+TIMESTEP-TREEWALK: took 0.0240018 sec, max_ncycles = 1, part/sec = 986758
+SPH-HYDRO: Begin hydro-force calculation.  (presently allocated=19.4451 MB)
+SPH-HYDRO: global Nhydro=94736 (task zero: NumGas=35864, Nhydro=26981)
+SPH-HYDRO: hydro-force computation done. took    0.053
+
+
+Sync-Point 2000, Time: 6.124, Systemstep: 0.00598047, Nsync-grv:     131072, Nsync-hyd:     131072
+DOMAIN: Begin domain decomposition (sync-point 2000).
+DOMAIN: Sum=4  TotalCost=4  NumTimeBinsToBeBalanced=1  MultipleDomains=4
+DOMAIN: NTopleaves=246, determination of top-level tree involved 4 iterations and took 0.00854861 sec
+DOMAIN: we are going to try at most 113 different settings for combining the domains on tasks=4, nnodes=1
+DOMAIN: total_cost=3  total_load=2
+DOMAIN: total_cost=3  total_load=2
+DOMAIN: total_cost=3  total_load=2
+DOMAIN: total_cost=3  total_load=2
+DOMAIN: total_cost=3  total_load=2
+DOMAIN: best solution found after 5 iterations by task=1 for nextra=1, reaching maximum imbalance of 1.1026|1.10481
+DOMAIN: combining multiple-domains took 0.000502517 sec
+DOMAIN: exchange of 0 particles
+DOMAIN: particle exchange done. (took 0.0124265 sec)
+DOMAIN: domain decomposition done. (took in total 0.0219107 sec)
+PEANO: Begin Peano-Hilbert order...
+PEANO: done, took 0.0213407 sec.
+TREE: Full tree construction for all particles. (presently allocated=19.0645 MB)
+NGBTREE: Ngb-tree construction done. took 0.0108602 sec  <numnodes>=8178.75  NTopnodes=281 NTopleaves=246
+SPH-DENSITY: Begin density calculation. (presently allocated=19.3412 MB)
+SPH-DENSITY: Ndensities=131072 (task zero has: NumGas=27426, Ndensities=27426)
+SPH-DENSITY: ngb iteration    1: took    0.043  , need to repeat for 000000000035 local particles.
+SPH-DENSITY: ngb iteration    2: took    0.000
+SPH-DENSITY: density computation done. took    0.056
+SPH-HYDRO: Begin hydro-force calculation.  (presently allocated=20.0737 MB)
+SPH-HYDRO: global Nhydro=131072 (task zero: NumGas=27426, Nhydro=27426)
+SPH-HYDRO: hydro-force computation done. took    0.065
+ACCEL: Start tree gravity force computation... (131072 particles)
+ACCEL: tree force computation done.
+KICKS: 2nd gravity for highest active timebin=22:  particles 131072
+GRAVTREE/FMM: Setting OldAcc!
+
+Final time=6.124 reached. Simulation ends.
+
+SNAPSHOT: writing snapshot file #31 @ time 6.124 ... 
+SNAPSHOT: writing snapshot file: './output/snapshot_031' (file 1 of 1)
+SNAPSHOT: writing snapshot block 0 (Coordinates)...
+SNAPSHOT: writing snapshot block 1 (Velocities)...
+SNAPSHOT: writing snapshot block 2 (ParticleIDs)...
+SNAPSHOT: writing snapshot block 3 (Masses)...
+SNAPSHOT: writing snapshot block 4 (InternalEnergy)...
+SNAPSHOT: writing snapshot block 5 (Density)...
+SNAPSHOT: writing snapshot block 6 (SmoothingLength)...
+SNAPSHOT: writing snapshot block 7 (Pressure)...
+SNAPSHOT: done with writing snapshot.  Took 0.0123524 sec, total size 6 MB, corresponds to effective I/O rate of 485.736 MB/sec
+
+SNAPSHOT: There is no valid time for a further snapshot file.
+TREE: Full tree construction for all particles. (presently allocated=19.0645 MB)
+NGBTREE: Ngb-tree construction done. took 0.00775779 sec  <numnodes>=8178.75  NTopnodes=281 NTopleaves=246
+RESTART: Writing restart files.
+RESTART: Backing up restart files...
+RESTART: no pre-existing restart files for renaming were found.
+RESTART: Writing restart files group #1 out of 4...
+RESTART: Writing restart files group #2 out of 4...
+RESTART: Writing restart files group #3 out of 4...
+RESTART: Writing restart files group #4 out of 4...
+RESTART: done. load/save took 0.0578391 sec, total size 48.0223 MB, corresponds to effective I/O rate of 830.275 MB/sec
+endrun called, calling MPI_Finalize()
+bye!
+

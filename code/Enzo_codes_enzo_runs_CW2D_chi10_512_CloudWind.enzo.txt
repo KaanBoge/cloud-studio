@@ -1,0 +1,41 @@
+#
+# PROBLEM DEFINITION FILE: CloudWind (cloud crushing), 2D, chi=10
+# Matched setup: rho_amb=1 P=1 gamma=5/3, wind Mach 2 (vx=2.581989),
+# cloud radius 1 at origin, tanh edge width 0.1, passive tracer on.
+# t_cc = sqrt(chi)/2.581989 ; StopTime = 5*t_cc
+#
+ProblemType                = 15       // CloudWind
+TopGridRank                = 2
+TopGridDimensions          = 512 256
+DomainLeftEdge             = -3.0 -5.0
+DomainRightEdge            = 17.0  5.0
+LeftFaceBoundaryCondition  = 2 1      // inflow (wind) on -x, outflow -y
+RightFaceBoundaryCondition = 1 1      // outflow +x +y
+#
+CloudWindAmbientDensity    = 1.0
+CloudWindAmbientPressure   = 1.0
+CloudWindVelocity          = 2.581989
+CloudWindChi               = 10
+CloudWindCloudRadius       = 1.0
+CloudWindSmoothWidth       = 0.1
+CloudWindCenter            = 0.0 0.0 0.0
+CloudWindUseTracer         = 1
+#
+StopTime                   = 6.12
+dtDataDump                 = 0.153
+DataDumpName               = CW_
+#
+Gamma                      = 1.666667
+HydroMethod                = 0        // PPM
+CourantSafetyNumber        = 0.4
+PPMDiffusionParameter      = 0
+PPMFlatteningParameter     = 1
+PPMSteepeningParameter     = 1
+DualEnergyFormalism        = 0
+FluxCorrection             = 1
+SelfGravity                = 0
+RadiativeCooling           = 0
+MultiSpecies               = 0
+#
+StaticHierarchy            = 1        // unigrid
+MaximumRefinementLevel     = 0

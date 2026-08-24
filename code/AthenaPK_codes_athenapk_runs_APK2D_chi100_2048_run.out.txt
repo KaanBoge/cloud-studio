@@ -1,0 +1,261 @@
+######################################
+###### Cloud in wind problem generator
+#### Input parameters
+## Cloud radius: 3.2e-22 kpc
+## Cloud density: 1e+02 g/cm^3
+## Wind density: 1 g/cm^3
+## Wind temperature: 6.1e-09 K
+## Wind velocity: 2.6e-05 km/s
+#### Derived parameters
+## Cloud temperature (from pressure equ.): 6.1e-11 K
+## Cloud to wind density ratio: 1e+02
+## Cloud to wind temperature ratio: 0.01
+## Uniform pressure (code units): 1
+## Wind sonic Mach: 2
+## Cloud crushing time: 1.2e-13 Myr
+######################################
+Starting up hydro driver
+### PARTHENON WARNING
+  Message:     The following input parameters are set but unused:
+comment/problem
+
+
+  File:        /home/kaan/codes/athenapk/external/parthenon/src/parameter_input.cpp
+  Line number: 687
+# Variables in use:
+# Package: parthenon::resolved_state
+# ---------------------------------------------------
+# Variables:
+# Name	Metadata flags
+# ---------------------------------------------------
+prim                      Cell,Provides,Real,Derived,Hydro,parthenon::resolved_state
+cons                      Cell,Provides,Real,Independent,FillGhost,WithFluxes,Hydro,parthenon::resolved_state
+bnd_flux::cons            Face,Provides,Real,Derived,OneCopy,Flux,CellMemAligned,parthenon::resolved_state
+# ---------------------------------------------------
+# Sparse Variables:
+# Name	sparse id	Metadata flags
+# ---------------------------------------------------
+# ---------------------------------------------------
+# Swarms:
+# Swarm	Value	metadata
+# ---------------------------------------------------
+
+
+Setup complete, executing driver...
+
+cycle=0 time=0.0000000000000000e+00 dt=1.0085894130748483e-03 zone-cycles/wsec_step=0.00e+00 wsec_total=5.03e-01 wsec_step=1.04e+00
+cycle=100 time=1.0082406639113571e-01 dt=1.0021532167110078e-03 zone-cycles/wsec_step=1.17e+08 wsec_total=2.30e+00 wsec_step=1.80e+00
+cycle=200 time=1.9950415951140105e-01 dt=9.7225548969525136e-04 zone-cycles/wsec_step=1.22e+08 wsec_total=4.02e+00 wsec_step=1.72e+00
+cycle=300 time=2.9534039995906086e-01 dt=9.4653906991580571e-04 zone-cycles/wsec_step=1.23e+08 wsec_total=5.72e+00 wsec_step=1.71e+00
+cycle=400 time=3.8916209926118939e-01 dt=9.3105458713125568e-04 zone-cycles/wsec_step=1.22e+08 wsec_total=7.44e+00 wsec_step=1.72e+00
+cycle=500 time=4.8176084418150344e-01 dt=9.2148758198335855e-04 zone-cycles/wsec_step=1.22e+08 wsec_total=9.16e+00 wsec_step=1.73e+00
+cycle=600 time=5.7361687005590090e-01 dt=9.1631817691810241e-04 zone-cycles/wsec_step=8.38e+07 wsec_total=1.17e+01 wsec_step=2.50e+00
+cycle=700 time=6.6510701372463865e-01 dt=9.1299828667217400e-04 zone-cycles/wsec_step=1.20e+08 wsec_total=1.34e+01 wsec_step=1.74e+00
+cycle=800 time=7.5637778305702419e-01 dt=9.1286082995810846e-04 zone-cycles/wsec_step=1.22e+08 wsec_total=1.51e+01 wsec_step=1.72e+00
+cycle=900 time=8.4764173458333969e-01 dt=9.1304109913750069e-04 zone-cycles/wsec_step=1.21e+08 wsec_total=1.69e+01 wsec_step=1.73e+00
+cycle=1000 time=9.3905898732820348e-01 dt=9.1545794986830950e-04 zone-cycles/wsec_step=1.21e+08 wsec_total=1.86e+01 wsec_step=1.73e+00
+cycle=1100 time=1.0307133290195292e+00 dt=9.1796873973109367e-04 zone-cycles/wsec_step=7.54e+07 wsec_total=2.14e+01 wsec_step=2.78e+00
+cycle=1200 time=1.1226471940397087e+00 dt=9.2063954299305699e-04 zone-cycles/wsec_step=1.21e+08 wsec_total=2.31e+01 wsec_step=1.74e+00
+cycle=1300 time=1.2148197862972814e+00 dt=9.2281861071371154e-04 zone-cycles/wsec_step=1.19e+08 wsec_total=2.49e+01 wsec_step=1.76e+00
+cycle=1400 time=1.3072002822281981e+00 dt=9.2481609834956934e-04 zone-cycles/wsec_step=1.20e+08 wsec_total=2.66e+01 wsec_step=1.75e+00
+cycle=1500 time=1.3997636834867735e+00 dt=9.2629662261060799e-04 zone-cycles/wsec_step=1.20e+08 wsec_total=2.84e+01 wsec_step=1.74e+00
+cycle=1600 time=1.4924289568691036e+00 dt=9.2674046970725964e-04 zone-cycles/wsec_step=6.82e+07 wsec_total=3.15e+01 wsec_step=3.08e+00
+cycle=1700 time=1.5850896234348673e+00 dt=9.2648206733844272e-04 zone-cycles/wsec_step=1.19e+08 wsec_total=3.32e+01 wsec_step=1.76e+00
+cycle=1800 time=1.6777279581107838e+00 dt=9.2632272929241545e-04 zone-cycles/wsec_step=1.18e+08 wsec_total=3.50e+01 wsec_step=1.78e+00
+cycle=1900 time=1.7703642106433759e+00 dt=9.2638710292924302e-04 zone-cycles/wsec_step=1.19e+08 wsec_total=3.68e+01 wsec_step=1.77e+00
+cycle=2000 time=1.8630089050944487e+00 dt=9.2655878936874112e-04 zone-cycles/wsec_step=1.19e+08 wsec_total=3.85e+01 wsec_step=1.76e+00
+cycle=2100 time=1.9556803625801800e+00 dt=9.2693527032464563e-04 zone-cycles/wsec_step=6.16e+07 wsec_total=4.19e+01 wsec_step=3.40e+00
+cycle=2200 time=2.0483982712337765e+00 dt=9.2746956809941885e-04 zone-cycles/wsec_step=1.19e+08 wsec_total=4.37e+01 wsec_step=1.77e+00
+cycle=2300 time=2.1411711802300708e+00 dt=9.2806460700411628e-04 zone-cycles/wsec_step=1.19e+08 wsec_total=4.55e+01 wsec_step=1.77e+00
+cycle=2400 time=2.2339756873126522e+00 dt=9.2796903675456332e-04 zone-cycles/wsec_step=1.18e+08 wsec_total=4.72e+01 wsec_step=1.77e+00
+cycle=2500 time=2.3267782202925891e+00 dt=9.2818233764969255e-04 zone-cycles/wsec_step=1.19e+08 wsec_total=4.90e+01 wsec_step=1.77e+00
+cycle=2600 time=2.4196161109389571e+00 dt=9.2850053386397111e-04 zone-cycles/wsec_step=1.18e+08 wsec_total=5.08e+01 wsec_step=1.78e+00
+cycle=2700 time=2.5124978409244654e+00 dt=9.2916267134068734e-04 zone-cycles/wsec_step=5.43e+07 wsec_total=5.46e+01 wsec_step=3.86e+00
+cycle=2800 time=2.6054606869349133e+00 dt=9.2984593138996168e-04 zone-cycles/wsec_step=1.19e+08 wsec_total=5.64e+01 wsec_step=1.76e+00
+cycle=2900 time=2.6984368999910955e+00 dt=9.2972072525899108e-04 zone-cycles/wsec_step=1.19e+08 wsec_total=5.82e+01 wsec_step=1.76e+00
+cycle=3000 time=2.7914041550280664e+00 dt=9.2960694121472934e-04 zone-cycles/wsec_step=1.19e+08 wsec_total=5.99e+01 wsec_step=1.77e+00
+cycle=3100 time=2.8839037796529099e+00 dt=9.2066129962238910e-04 zone-cycles/wsec_step=1.19e+08 wsec_total=6.17e+01 wsec_step=1.77e+00
+cycle=3200 time=2.9760115776386566e+00 dt=9.2135378454426221e-04 zone-cycles/wsec_step=5.11e+07 wsec_total=6.58e+01 wsec_step=4.10e+00
+cycle=3300 time=3.0682313577219817e+00 dt=9.2375654163060318e-04 zone-cycles/wsec_step=1.18e+08 wsec_total=6.76e+01 wsec_step=1.77e+00
+cycle=3400 time=3.1606719408496504e+00 dt=9.2522596632057760e-04 zone-cycles/wsec_step=1.19e+08 wsec_total=6.93e+01 wsec_step=1.77e+00
+cycle=3500 time=3.2532884052750854e+00 dt=9.2699975339430416e-04 zone-cycles/wsec_step=1.18e+08 wsec_total=7.11e+01 wsec_step=1.78e+00
+cycle=3600 time=3.3460208660851687e+00 dt=9.2744439164874992e-04 zone-cycles/wsec_step=1.18e+08 wsec_total=7.29e+01 wsec_step=1.78e+00
+cycle=3700 time=3.4389110772855123e+00 dt=9.3040241717057704e-04 zone-cycles/wsec_step=4.92e+07 wsec_total=7.72e+01 wsec_step=4.26e+00
+cycle=3800 time=3.5319853454795327e+00 dt=9.3084274402549744e-04 zone-cycles/wsec_step=1.19e+08 wsec_total=7.89e+01 wsec_step=1.76e+00
+cycle=3900 time=3.6250990591518311e+00 dt=9.3203855226783546e-04 zone-cycles/wsec_step=1.19e+08 wsec_total=8.07e+01 wsec_step=1.77e+00
+cycle=4000 time=3.7184795793386711e+00 dt=9.3559136452239723e-04 zone-cycles/wsec_step=1.18e+08 wsec_total=8.25e+01 wsec_step=1.77e+00
+cycle=4100 time=3.8121583738758109e+00 dt=9.3794748301971901e-04 zone-cycles/wsec_step=1.18e+08 wsec_total=8.42e+01 wsec_step=1.78e+00
+cycle=4200 time=3.9059592051324095e+00 dt=9.2604881182176526e-04 zone-cycles/wsec_step=4.80e+07 wsec_total=8.86e+01 wsec_step=4.37e+00
+cycle=4300 time=3.9967214904076660e+00 dt=9.0201136160853162e-04 zone-cycles/wsec_step=1.18e+08 wsec_total=9.04e+01 wsec_step=1.78e+00
+cycle=4400 time=4.0864265122944348e+00 dt=8.9685021427906436e-04 zone-cycles/wsec_step=1.18e+08 wsec_total=9.22e+01 wsec_step=1.77e+00
+cycle=4500 time=4.1766271120154528e+00 dt=9.0443366254372047e-04 zone-cycles/wsec_step=1.19e+08 wsec_total=9.39e+01 wsec_step=1.77e+00
+cycle=4600 time=4.2671506909513877e+00 dt=9.0651002574648103e-04 zone-cycles/wsec_step=1.19e+08 wsec_total=9.57e+01 wsec_step=1.77e+00
+cycle=4700 time=4.3579250602008148e+00 dt=9.0865234792934411e-04 zone-cycles/wsec_step=4.80e+07 wsec_total=1.00e+02 wsec_step=4.37e+00
+cycle=4800 time=4.4487361560434966e+00 dt=9.0363468377436303e-04 zone-cycles/wsec_step=1.16e+08 wsec_total=1.02e+02 wsec_step=1.81e+00
+cycle=4900 time=4.5389129833038595e+00 dt=9.0067837115973069e-04 zone-cycles/wsec_step=1.16e+08 wsec_total=1.04e+02 wsec_step=1.81e+00
+cycle=5000 time=4.6291606658179409e+00 dt=9.0383070468937608e-04 zone-cycles/wsec_step=1.18e+08 wsec_total=1.05e+02 wsec_step=1.78e+00
+cycle=5100 time=4.7190771757678309e+00 dt=8.9882880283450629e-04 zone-cycles/wsec_step=1.18e+08 wsec_total=1.07e+02 wsec_step=1.78e+00
+cycle=5200 time=4.8093563655776990e+00 dt=9.0472636099741773e-04 zone-cycles/wsec_step=1.18e+08 wsec_total=1.09e+02 wsec_step=1.78e+00
+cycle=5300 time=4.9001588418518409e+00 dt=9.1198497141069344e-04 zone-cycles/wsec_step=4.75e+07 wsec_total=1.13e+02 wsec_step=4.42e+00
+cycle=5400 time=4.9915772889588119e+00 dt=9.1470508345463343e-04 zone-cycles/wsec_step=1.19e+08 wsec_total=1.15e+02 wsec_step=1.76e+00
+cycle=5500 time=5.0831417738316258e+00 dt=9.1756541094023579e-04 zone-cycles/wsec_step=1.19e+08 wsec_total=1.17e+02 wsec_step=1.77e+00
+cycle=5600 time=5.1751066551647043e+00 dt=9.2162994818831192e-04 zone-cycles/wsec_step=1.18e+08 wsec_total=1.19e+02 wsec_step=1.77e+00
+cycle=5700 time=5.2674228273326662e+00 dt=9.2459530757851057e-04 zone-cycles/wsec_step=1.18e+08 wsec_total=1.21e+02 wsec_step=1.78e+00
+cycle=5800 time=5.3596188282882524e+00 dt=9.1586364141253262e-04 zone-cycles/wsec_step=4.74e+07 wsec_total=1.25e+02 wsec_step=4.43e+00
+cycle=5900 time=5.4506922293362789e+00 dt=9.0636745884282739e-04 zone-cycles/wsec_step=1.18e+08 wsec_total=1.27e+02 wsec_step=1.77e+00
+cycle=6000 time=5.5410567041089669e+00 dt=9.0145105303361748e-04 zone-cycles/wsec_step=1.18e+08 wsec_total=1.28e+02 wsec_step=1.78e+00
+cycle=6100 time=5.6310714226722043e+00 dt=8.9983330217862246e-04 zone-cycles/wsec_step=1.19e+08 wsec_total=1.30e+02 wsec_step=1.77e+00
+cycle=6200 time=5.7212261684890446e+00 dt=9.0383096917826889e-04 zone-cycles/wsec_step=1.18e+08 wsec_total=1.32e+02 wsec_step=1.77e+00
+cycle=6300 time=5.8118368573931560e+00 dt=9.0849879061020858e-04 zone-cycles/wsec_step=4.78e+07 wsec_total=1.36e+02 wsec_step=4.39e+00
+cycle=6400 time=5.9028869714558079e+00 dt=9.1205799153200426e-04 zone-cycles/wsec_step=1.14e+08 wsec_total=1.38e+02 wsec_step=1.83e+00
+cycle=6500 time=5.9943962446177093e+00 dt=9.1902899244708427e-04 zone-cycles/wsec_step=1.19e+08 wsec_total=1.40e+02 wsec_step=1.76e+00
+cycle=6600 time=6.0865628973074930e+00 dt=9.2345912681817115e-04 zone-cycles/wsec_step=1.19e+08 wsec_total=1.42e+02 wsec_step=1.76e+00
+cycle=6700 time=6.1791069991581882e+00 dt=9.2604266562427604e-04 zone-cycles/wsec_step=1.18e+08 wsec_total=1.44e+02 wsec_step=1.77e+00
+cycle=6800 time=6.2716752346012008e+00 dt=9.2589993341719943e-04 zone-cycles/wsec_step=1.18e+08 wsec_total=1.45e+02 wsec_step=1.78e+00
+cycle=6900 time=6.3642691324352549e+00 dt=9.2514454268583239e-04 zone-cycles/wsec_step=4.86e+07 wsec_total=1.50e+02 wsec_step=4.31e+00
+cycle=7000 time=6.4569035103919159e+00 dt=9.2830547099445138e-04 zone-cycles/wsec_step=1.19e+08 wsec_total=1.51e+02 wsec_step=1.77e+00
+cycle=7100 time=6.5498172120757783e+00 dt=9.2898405391365977e-04 zone-cycles/wsec_step=1.19e+08 wsec_total=1.53e+02 wsec_step=1.77e+00
+cycle=7200 time=6.6426346196197574e+00 dt=9.2748834712453676e-04 zone-cycles/wsec_step=1.18e+08 wsec_total=1.55e+02 wsec_step=1.77e+00
+cycle=7300 time=6.7353926629685761e+00 dt=9.2828027633614296e-04 zone-cycles/wsec_step=1.19e+08 wsec_total=1.57e+02 wsec_step=1.77e+00
+cycle=7400 time=6.8282919473973376e+00 dt=9.2953649608325034e-04 zone-cycles/wsec_step=4.85e+07 wsec_total=1.61e+02 wsec_step=4.32e+00
+cycle=7500 time=6.9212688107895506e+00 dt=9.3090068135233536e-04 zone-cycles/wsec_step=1.18e+08 wsec_total=1.63e+02 wsec_step=1.77e+00
+cycle=7600 time=7.0145032005496466e+00 dt=9.3314136055591907e-04 zone-cycles/wsec_step=1.18e+08 wsec_total=1.65e+02 wsec_step=1.78e+00
+cycle=7700 time=7.1077623623498409e+00 dt=9.3168694155717666e-04 zone-cycles/wsec_step=1.19e+08 wsec_total=1.66e+02 wsec_step=1.76e+00
+cycle=7800 time=7.2008079829891321e+00 dt=9.2880226628449169e-04 zone-cycles/wsec_step=1.19e+08 wsec_total=1.68e+02 wsec_step=1.76e+00
+cycle=7900 time=7.2935428015390222e+00 dt=9.2653324720080019e-04 zone-cycles/wsec_step=4.63e+07 wsec_total=1.73e+02 wsec_step=4.53e+00
+cycle=8000 time=7.3862751253009060e+00 dt=9.2843634320488556e-04 zone-cycles/wsec_step=1.18e+08 wsec_total=1.74e+02 wsec_step=1.78e+00
+cycle=8100 time=7.4792182118147137e+00 dt=9.3101978868837974e-04 zone-cycles/wsec_step=1.18e+08 wsec_total=1.76e+02 wsec_step=1.78e+00
+cycle=8200 time=7.5726276828126746e+00 dt=9.3727145087872448e-04 zone-cycles/wsec_step=1.18e+08 wsec_total=1.78e+02 wsec_step=1.78e+00
+cycle=8300 time=7.6664272876376875e+00 dt=9.3914398688158668e-04 zone-cycles/wsec_step=1.18e+08 wsec_total=1.80e+02 wsec_step=1.78e+00
+cycle=8400 time=7.7605554257761966e+00 dt=9.4233786705783028e-04 zone-cycles/wsec_step=4.58e+07 wsec_total=1.84e+02 wsec_step=4.58e+00
+cycle=8500 time=7.8548213300554899e+00 dt=9.4328069860155335e-04 zone-cycles/wsec_step=1.18e+08 wsec_total=1.86e+02 wsec_step=1.78e+00
+cycle=8600 time=7.9491699551109702e+00 dt=9.4414840223298641e-04 zone-cycles/wsec_step=1.17e+08 wsec_total=1.88e+02 wsec_step=1.79e+00
+cycle=8700 time=8.0435079556069073e+00 dt=9.4246924157107177e-04 zone-cycles/wsec_step=1.19e+08 wsec_total=1.90e+02 wsec_step=1.76e+00
+cycle=8800 time=8.1376912243790578e+00 dt=9.4124355890659096e-04 zone-cycles/wsec_step=1.18e+08 wsec_total=1.91e+02 wsec_step=1.77e+00
+cycle=8900 time=8.2317508720104655e+00 dt=9.3988587864661055e-04 zone-cycles/wsec_step=4.74e+07 wsec_total=1.96e+02 wsec_step=4.42e+00
+cycle=9000 time=8.3256663417920684e+00 dt=9.3838992398240510e-04 zone-cycles/wsec_step=1.18e+08 wsec_total=1.98e+02 wsec_step=1.78e+00
+cycle=9100 time=8.4194279957325389e+00 dt=9.3672342078848477e-04 zone-cycles/wsec_step=1.19e+08 wsec_total=1.99e+02 wsec_step=1.77e+00
+cycle=9200 time=8.5130096138847193e+00 dt=9.3491349462206672e-04 zone-cycles/wsec_step=1.19e+08 wsec_total=2.01e+02 wsec_step=1.76e+00
+cycle=9300 time=8.6064096163290422e+00 dt=9.3311681256639785e-04 zone-cycles/wsec_step=1.18e+08 wsec_total=2.03e+02 wsec_step=1.77e+00
+cycle=9400 time=8.6996413412369105e+00 dt=9.3153781822561755e-04 zone-cycles/wsec_step=1.17e+08 wsec_total=2.05e+02 wsec_step=1.79e+00
+cycle=9500 time=8.7927330335971163e+00 dt=9.3033844879914721e-04 zone-cycles/wsec_step=4.78e+07 wsec_total=2.09e+02 wsec_step=4.38e+00
+cycle=9600 time=8.8857508897135080e+00 dt=9.3021733419664855e-04 zone-cycles/wsec_step=1.19e+08 wsec_total=2.11e+02 wsec_step=1.76e+00
+cycle=9700 time=8.9788016946188822e+00 dt=9.3099279361590493e-04 zone-cycles/wsec_step=1.18e+08 wsec_total=2.13e+02 wsec_step=1.77e+00
+cycle=9800 time=9.0716363220139264e+00 dt=9.2550400843552502e-04 zone-cycles/wsec_step=1.19e+08 wsec_total=2.14e+02 wsec_step=1.77e+00
+cycle=9900 time=9.1639536167997910e+00 dt=9.2117594849892110e-04 zone-cycles/wsec_step=1.19e+08 wsec_total=2.16e+02 wsec_step=1.76e+00
+cycle=10000 time=9.2559477248077897e+00 dt=9.1905113154394408e-04 zone-cycles/wsec_step=4.65e+07 wsec_total=2.21e+02 wsec_step=4.51e+00
+cycle=10100 time=9.3478433494043021e+00 dt=9.1925518845695328e-04 zone-cycles/wsec_step=1.18e+08 wsec_total=2.22e+02 wsec_step=1.77e+00
+cycle=10200 time=9.4399184366818343e+00 dt=9.2284278845818730e-04 zone-cycles/wsec_step=1.17e+08 wsec_total=2.24e+02 wsec_step=1.80e+00
+cycle=10300 time=9.5324745428935582e+00 dt=9.2817637256040479e-04 zone-cycles/wsec_step=1.18e+08 wsec_total=2.26e+02 wsec_step=1.77e+00
+cycle=10400 time=9.6254422826428758e+00 dt=9.3141577788925659e-04 zone-cycles/wsec_step=1.18e+08 wsec_total=2.28e+02 wsec_step=1.77e+00
+cycle=10500 time=9.7184918844634449e+00 dt=9.2826313954508526e-04 zone-cycles/wsec_step=4.58e+07 wsec_total=2.32e+02 wsec_step=4.58e+00
+cycle=10600 time=9.8111998540497574e+00 dt=9.2642607038592403e-04 zone-cycles/wsec_step=1.16e+08 wsec_total=2.34e+02 wsec_step=1.81e+00
+cycle=10700 time=9.9036783181086161e+00 dt=9.2229888905261148e-04 zone-cycles/wsec_step=1.17e+08 wsec_total=2.36e+02 wsec_step=1.79e+00
+cycle=10800 time=9.9957365303014480e+00 dt=9.1920328624161087e-04 zone-cycles/wsec_step=1.17e+08 wsec_total=2.38e+02 wsec_step=1.79e+00
+cycle=10900 time=1.0087616778021026e+01 dt=9.1873308611251580e-04 zone-cycles/wsec_step=1.14e+08 wsec_total=2.40e+02 wsec_step=1.84e+00
+cycle=11000 time=1.0179537715136194e+01 dt=9.1995230635773240e-04 zone-cycles/wsec_step=4.45e+07 wsec_total=2.44e+02 wsec_step=4.71e+00
+cycle=11100 time=1.0271663297850301e+01 dt=9.2274766645331389e-04 zone-cycles/wsec_step=1.09e+08 wsec_total=2.46e+02 wsec_step=1.93e+00
+cycle=11200 time=1.0364124696063316e+01 dt=9.2493688922228956e-04 zone-cycles/wsec_step=1.10e+08 wsec_total=2.48e+02 wsec_step=1.91e+00
+cycle=11300 time=1.0456061480165735e+01 dt=9.1467172657816215e-04 zone-cycles/wsec_step=1.15e+08 wsec_total=2.50e+02 wsec_step=1.82e+00
+cycle=11400 time=1.0547118555963911e+01 dt=9.0744183644616986e-04 zone-cycles/wsec_step=1.13e+08 wsec_total=2.52e+02 wsec_step=1.86e+00
+cycle=11500 time=1.0637688631644808e+01 dt=9.0422942341622427e-04 zone-cycles/wsec_step=1.15e+08 wsec_total=2.54e+02 wsec_step=1.83e+00
+cycle=11600 time=1.0728117122024877e+01 dt=9.0520142502819592e-04 zone-cycles/wsec_step=4.44e+07 wsec_total=2.58e+02 wsec_step=4.73e+00
+cycle=11700 time=1.0818879747370476e+01 dt=9.1028319399491108e-04 zone-cycles/wsec_step=1.17e+08 wsec_total=2.60e+02 wsec_step=1.79e+00
+cycle=11800 time=1.0910189493163340e+01 dt=9.1550994036610715e-04 zone-cycles/wsec_step=1.15e+08 wsec_total=2.62e+02 wsec_step=1.82e+00
+cycle=11900 time=1.1001760953391937e+01 dt=9.1544254329843633e-04 zone-cycles/wsec_step=1.16e+08 wsec_total=2.64e+02 wsec_step=1.81e+00
+cycle=12000 time=1.1093294909358415e+01 dt=9.1554246263696670e-04 zone-cycles/wsec_step=1.19e+08 wsec_total=2.66e+02 wsec_step=1.76e+00
+cycle=12100 time=1.1184955070731100e+01 dt=9.1780603283533380e-04 zone-cycles/wsec_step=4.75e+07 wsec_total=2.70e+02 wsec_step=4.42e+00
+cycle=12200 time=1.1276983897399523e+01 dt=9.2168925125912880e-04 zone-cycles/wsec_step=1.12e+08 wsec_total=2.72e+02 wsec_step=1.88e+00
+cycle=12300 time=1.1369296695231700e+01 dt=9.2477303156478111e-04 zone-cycles/wsec_step=1.10e+08 wsec_total=2.74e+02 wsec_step=1.91e+00
+cycle=12400 time=1.1461782954763729e+01 dt=9.2270154786692126e-04 zone-cycles/wsec_step=1.09e+08 wsec_total=2.76e+02 wsec_step=1.93e+00
+cycle=12500 time=1.1553833297147696e+01 dt=9.2033731629428148e-04 zone-cycles/wsec_step=1.06e+08 wsec_total=2.78e+02 wsec_step=1.98e+00
+cycle=12600 time=1.1646244625794665e+01 dt=9.2971395910329850e-04 zone-cycles/wsec_step=4.50e+07 wsec_total=2.82e+02 wsec_step=4.66e+00
+cycle=12700 time=1.1739658392909623e+01 dt=9.3335560516159116e-04 zone-cycles/wsec_step=1.16e+08 wsec_total=2.84e+02 wsec_step=1.81e+00
+cycle=12800 time=1.1832578712842940e+01 dt=9.2700247150160849e-04 zone-cycles/wsec_step=1.15e+08 wsec_total=2.86e+02 wsec_step=1.82e+00
+cycle=12900 time=1.1925408256036299e+01 dt=9.3080504203104937e-04 zone-cycles/wsec_step=1.13e+08 wsec_total=2.88e+02 wsec_step=1.85e+00
+cycle=13000 time=1.2018719728644266e+01 dt=9.3530703004252524e-04 zone-cycles/wsec_step=1.13e+08 wsec_total=2.90e+02 wsec_step=1.86e+00
+cycle=13100 time=1.2112580879971365e+01 dt=9.4079353948579912e-04 zone-cycles/wsec_step=4.60e+07 wsec_total=2.94e+02 wsec_step=4.56e+00
+cycle=13200 time=1.2206751351961318e+01 dt=9.4265849267736047e-04 zone-cycles/wsec_step=1.12e+08 wsec_total=2.96e+02 wsec_step=1.88e+00
+cycle=13300 time=1.2301105463236100e+01 dt=9.4227478107735243e-04 zone-cycles/wsec_step=1.14e+08 wsec_total=2.98e+02 wsec_step=1.84e+00
+cycle=13400 time=1.2395243732058766e+01 dt=9.4152230344135372e-04 zone-cycles/wsec_step=1.16e+08 wsec_total=3.00e+02 wsec_step=1.81e+00
+cycle=13500 time=1.2489803795059132e+01 dt=9.4724900960724994e-04 zone-cycles/wsec_step=1.05e+08 wsec_total=3.02e+02 wsec_step=2.00e+00
+cycle=13600 time=1.2584418392345635e+01 dt=9.4528616488668096e-04 zone-cycles/wsec_step=4.93e+07 wsec_total=3.06e+02 wsec_step=4.25e+00
+cycle=13700 time=1.2678909570425681e+01 dt=9.4477261900455028e-04 zone-cycles/wsec_step=1.09e+08 wsec_total=3.08e+02 wsec_step=1.93e+00
+cycle=13800 time=1.2773335146951187e+01 dt=9.4201428972205095e-04 zone-cycles/wsec_step=1.14e+08 wsec_total=3.10e+02 wsec_step=1.84e+00
+cycle=13900 time=1.2867277839255866e+01 dt=9.3721211962065245e-04 zone-cycles/wsec_step=1.17e+08 wsec_total=3.12e+02 wsec_step=1.80e+00
+cycle=14000 time=1.2960936686218790e+01 dt=9.3653055542474654e-04 zone-cycles/wsec_step=1.15e+08 wsec_total=3.13e+02 wsec_step=1.83e+00
+cycle=14100 time=1.3054723347368766e+01 dt=9.3702310466252468e-04 zone-cycles/wsec_step=1.19e+08 wsec_total=3.15e+02 wsec_step=1.76e+00
+cycle=14200 time=1.3147884497517566e+01 dt=9.2697551462692671e-04 zone-cycles/wsec_step=4.91e+07 wsec_total=3.19e+02 wsec_step=4.27e+00
+cycle=14300 time=1.3240313859580928e+01 dt=9.2186646363422034e-04 zone-cycles/wsec_step=1.18e+08 wsec_total=3.21e+02 wsec_step=1.78e+00
+cycle=14400 time=1.3332271203321495e+01 dt=9.1802868428066456e-04 zone-cycles/wsec_step=1.17e+08 wsec_total=3.23e+02 wsec_step=1.79e+00
+cycle=14500 time=1.3424076153019364e+01 dt=9.1957461331090373e-04 zone-cycles/wsec_step=1.18e+08 wsec_total=3.25e+02 wsec_step=1.77e+00
+cycle=14600 time=1.3516470964745615e+01 dt=9.3032646705053809e-04 zone-cycles/wsec_step=1.16e+08 wsec_total=3.27e+02 wsec_step=1.81e+00
+cycle=14700 time=1.3609988190502834e+01 dt=9.3699819690488788e-04 zone-cycles/wsec_step=4.78e+07 wsec_total=3.31e+02 wsec_step=4.39e+00
+cycle=14800 time=1.3703827205746528e+01 dt=9.4070890990156193e-04 zone-cycles/wsec_step=1.18e+08 wsec_total=3.33e+02 wsec_step=1.78e+00
+cycle=14900 time=1.3798044088098518e+01 dt=9.4373259447847542e-04 zone-cycles/wsec_step=1.18e+08 wsec_total=3.35e+02 wsec_step=1.77e+00
+cycle=15000 time=1.3892792606098078e+01 dt=9.4883898803771081e-04 zone-cycles/wsec_step=1.19e+08 wsec_total=3.36e+02 wsec_step=1.76e+00
+cycle=15100 time=1.3987665468846538e+01 dt=9.4857217812981598e-04 zone-cycles/wsec_step=1.19e+08 wsec_total=3.38e+02 wsec_step=1.77e+00
+cycle=15200 time=1.4082472556983110e+01 dt=9.4760651060170331e-04 zone-cycles/wsec_step=4.82e+07 wsec_total=3.42e+02 wsec_step=4.35e+00
+cycle=15300 time=1.4177263432001768e+01 dt=9.4808610154767554e-04 zone-cycles/wsec_step=1.16e+08 wsec_total=3.44e+02 wsec_step=1.81e+00
+cycle=15400 time=1.4272064981939664e+01 dt=9.4796891360490884e-04 zone-cycles/wsec_step=1.19e+08 wsec_total=3.46e+02 wsec_step=1.77e+00
+cycle=15500 time=1.4366862438240210e+01 dt=9.4774778921272521e-04 zone-cycles/wsec_step=1.17e+08 wsec_total=3.48e+02 wsec_step=1.79e+00
+cycle=15600 time=1.4461663838713381e+01 dt=9.4847207266337381e-04 zone-cycles/wsec_step=1.11e+08 wsec_total=3.50e+02 wsec_step=1.90e+00
+cycle=15700 time=1.4556525322521631e+01 dt=9.4870344641381039e-04 zone-cycles/wsec_step=4.52e+07 wsec_total=3.54e+02 wsec_step=4.63e+00
+cycle=15800 time=1.4651404383665055e+01 dt=9.4886271002945751e-04 zone-cycles/wsec_step=1.17e+08 wsec_total=3.56e+02 wsec_step=1.79e+00
+cycle=15900 time=1.4746307296634249e+01 dt=9.4921134939888313e-04 zone-cycles/wsec_step=1.18e+08 wsec_total=3.58e+02 wsec_step=1.77e+00
+cycle=16000 time=1.4841248771804372e+01 dt=9.4954376118269116e-04 zone-cycles/wsec_step=1.19e+08 wsec_total=3.60e+02 wsec_step=1.77e+00
+cycle=16100 time=1.4936183551561045e+01 dt=9.4917065478175014e-04 zone-cycles/wsec_step=1.17e+08 wsec_total=3.61e+02 wsec_step=1.79e+00
+cycle=16200 time=1.5031082296034961e+01 dt=9.4891911837636687e-04 zone-cycles/wsec_step=4.74e+07 wsec_total=3.66e+02 wsec_step=4.43e+00
+cycle=16300 time=1.5125953839558244e+01 dt=9.4842080365851750e-04 zone-cycles/wsec_step=1.10e+08 wsec_total=3.68e+02 wsec_step=1.90e+00
+cycle=16400 time=1.5220768169696479e+01 dt=9.4770308957343714e-04 zone-cycles/wsec_step=1.15e+08 wsec_total=3.70e+02 wsec_step=1.82e+00
+cycle=16500 time=1.5315275334465900e+01 dt=9.4238712551698790e-04 zone-cycles/wsec_step=1.17e+08 wsec_total=3.71e+02 wsec_step=1.80e+00
+cycle=16600 time=1.5408951924648042e+01 dt=9.3074450752464802e-04 zone-cycles/wsec_step=1.17e+08 wsec_total=3.73e+02 wsec_step=1.80e+00
+cycle=16700 time=1.5501753860300301e+01 dt=9.2707106065014096e-04 zone-cycles/wsec_step=4.79e+07 wsec_total=3.78e+02 wsec_step=4.38e+00
+cycle=16800 time=1.5594824230043754e+01 dt=9.3786226963998582e-04 zone-cycles/wsec_step=1.19e+08 wsec_total=3.79e+02 wsec_step=1.77e+00
+cycle=16900 time=1.5689337712420960e+01 dt=9.4715309698877633e-04 zone-cycles/wsec_step=1.19e+08 wsec_total=3.81e+02 wsec_step=1.76e+00
+cycle=17000 time=1.5784021848593300e+01 dt=9.4572425986939792e-04 zone-cycles/wsec_step=1.21e+08 wsec_total=3.83e+02 wsec_step=1.74e+00
+cycle=17100 time=1.5878502405723749e+01 dt=9.4442665277553832e-04 zone-cycles/wsec_step=1.20e+08 wsec_total=3.85e+02 wsec_step=1.75e+00
+cycle=17200 time=1.5973045060359988e+01 dt=9.4648450798913257e-04 zone-cycles/wsec_step=5.07e+07 wsec_total=3.89e+02 wsec_step=4.14e+00
+cycle=17300 time=1.6067685942905257e+01 dt=9.4614758680497478e-04 zone-cycles/wsec_step=1.04e+08 wsec_total=3.91e+02 wsec_step=2.02e+00
+cycle=17400 time=1.6162009296137320e+01 dt=9.3992654640134431e-04 zone-cycles/wsec_step=1.16e+08 wsec_total=3.93e+02 wsec_step=1.80e+00
+cycle=17500 time=1.6255627588612239e+01 dt=9.3318084398012226e-04 zone-cycles/wsec_step=1.17e+08 wsec_total=3.94e+02 wsec_step=1.79e+00
+cycle=17600 time=1.6349435233007970e+01 dt=9.4239727622634668e-04 zone-cycles/wsec_step=1.19e+08 wsec_total=3.96e+02 wsec_step=1.76e+00
+cycle=17700 time=1.6443983973610560e+01 dt=9.4676797939108955e-04 zone-cycles/wsec_step=1.18e+08 wsec_total=3.98e+02 wsec_step=1.78e+00
+cycle=17800 time=1.6538439643373131e+01 dt=9.4154531231079161e-04 zone-cycles/wsec_step=4.77e+07 wsec_total=4.02e+02 wsec_step=4.40e+00
+cycle=17900 time=1.6632746665096047e+01 dt=9.4724685033302936e-04 zone-cycles/wsec_step=1.19e+08 wsec_total=4.04e+02 wsec_step=1.76e+00
+cycle=18000 time=1.6727476608822730e+01 dt=9.4738815181611086e-04 zone-cycles/wsec_step=1.18e+08 wsec_total=4.06e+02 wsec_step=1.78e+00
+cycle=18100 time=1.6822216642325721e+01 dt=9.4736221065632072e-04 zone-cycles/wsec_step=1.16e+08 wsec_total=4.08e+02 wsec_step=1.81e+00
+cycle=18200 time=1.6916935436824343e+01 dt=9.4691183068833923e-04 zone-cycles/wsec_step=1.18e+08 wsec_total=4.09e+02 wsec_step=1.77e+00
+cycle=18300 time=1.7011434038439866e+01 dt=9.4207716418065988e-04 zone-cycles/wsec_step=4.44e+07 wsec_total=4.14e+02 wsec_step=4.72e+00
+cycle=18400 time=1.7105307539822448e+01 dt=9.3478637223600889e-04 zone-cycles/wsec_step=1.10e+08 wsec_total=4.16e+02 wsec_step=1.91e+00
+cycle=18500 time=1.7198824545011842e+01 dt=9.4338889892707934e-04 zone-cycles/wsec_step=1.11e+08 wsec_total=4.18e+02 wsec_step=1.89e+00
+cycle=18600 time=1.7292749533336188e+01 dt=9.3296177223583957e-04 zone-cycles/wsec_step=1.12e+08 wsec_total=4.20e+02 wsec_step=1.88e+00
+cycle=18700 time=1.7385695022678739e+01 dt=9.2659836198315292e-04 zone-cycles/wsec_step=1.14e+08 wsec_total=4.22e+02 wsec_step=1.84e+00
+cycle=18800 time=1.7478353128576885e+01 dt=9.2698733865347830e-04 zone-cycles/wsec_step=4.87e+07 wsec_total=4.26e+02 wsec_step=4.31e+00
+cycle=18900 time=1.7571076864510246e+01 dt=9.2689910123950822e-04 zone-cycles/wsec_step=1.12e+08 wsec_total=4.28e+02 wsec_step=1.87e+00
+cycle=19000 time=1.7663764267774699e+01 dt=9.2699984153789500e-04 zone-cycles/wsec_step=1.15e+08 wsec_total=4.30e+02 wsec_step=1.82e+00
+cycle=19100 time=1.7756557258173913e+01 dt=9.2873648631990350e-04 zone-cycles/wsec_step=1.19e+08 wsec_total=4.31e+02 wsec_step=1.76e+00
+cycle=19200 time=1.7849556014993883e+01 dt=9.3136901289349913e-04 zone-cycles/wsec_step=1.17e+08 wsec_total=4.33e+02 wsec_step=1.80e+00
+cycle=19300 time=1.7942905092048036e+01 dt=9.3585333900855381e-04 zone-cycles/wsec_step=4.50e+07 wsec_total=4.38e+02 wsec_step=4.66e+00
+cycle=19400 time=1.8036477207076583e+01 dt=9.3569932847568341e-04 zone-cycles/wsec_step=1.07e+08 wsec_total=4.40e+02 wsec_step=1.95e+00
+cycle=19500 time=1.8130040275657240e+01 dt=9.3566631646456542e-04 zone-cycles/wsec_step=1.16e+08 wsec_total=4.42e+02 wsec_step=1.81e+00
+cycle=19600 time=1.8223607726835731e+01 dt=9.3570489803136204e-04 zone-cycles/wsec_step=1.13e+08 wsec_total=4.44e+02 wsec_step=1.85e+00
+cycle=19700 time=1.8317184666626556e+01 dt=9.3577674854477633e-04 zone-cycles/wsec_step=1.10e+08 wsec_total=4.45e+02 wsec_step=1.91e+00
+cycle=19800 time=1.8410765783637089e+01 dt=9.3576708422293635e-04 zone-cycles/wsec_step=4.72e+07 wsec_total=4.50e+02 wsec_step=4.45e+00
+cycle=19900 time=1.8504339058736026e+01 dt=9.3566066115770448e-04 zone-cycles/wsec_step=1.15e+08 wsec_total=4.52e+02 wsec_step=1.82e+00
+cycle=20000 time=1.8597894726500460e+01 dt=9.3552487726080195e-04 zone-cycles/wsec_step=1.18e+08 wsec_total=4.53e+02 wsec_step=1.78e+00
+cycle=20100 time=1.8691432918981970e+01 dt=9.3526310696789763e-04 zone-cycles/wsec_step=1.17e+08 wsec_total=4.55e+02 wsec_step=1.79e+00
+cycle=20200 time=1.8784954742230756e+01 dt=9.3513313675106099e-04 zone-cycles/wsec_step=1.17e+08 wsec_total=4.57e+02 wsec_step=1.79e+00
+cycle=20300 time=1.8877739084137765e+01 dt=9.2378406118606433e-04 zone-cycles/wsec_step=5.15e+07 wsec_total=4.61e+02 wsec_step=4.07e+00
+cycle=20400 time=1.8969719229574061e+01 dt=9.1654313292609214e-04 zone-cycles/wsec_step=1.07e+08 wsec_total=4.63e+02 wsec_step=1.95e+00
+cycle=20500 time=1.9061299780811993e+01 dt=9.1651704459269818e-04 zone-cycles/wsec_step=1.15e+08 wsec_total=4.65e+02 wsec_step=1.82e+00
+cycle=20600 time=1.9152010309809057e+01 dt=8.9073311193466715e-04 zone-cycles/wsec_step=1.18e+08 wsec_total=4.67e+02 wsec_step=1.78e+00
+cycle=20700 time=1.9240398261213798e+01 dt=8.8624118401512081e-04 zone-cycles/wsec_step=1.18e+08 wsec_total=4.68e+02 wsec_step=1.78e+00
+cycle=20800 time=1.9331026158377927e+01 dt=9.2052237561944495e-04 zone-cycles/wsec_step=1.18e+08 wsec_total=4.70e+02 wsec_step=1.78e+00
+
+Driver completed.
+time=1.94e+01 cycle=20832
+tlim=1.94e+01 nlim=-1
+
+walltime used = 4.73e+02
+zone-cycles/wallsecond = 9.24e+07

@@ -1,0 +1,403 @@
+Simulation started on Mon Aug 24 00:30:54 2026
+
+Added out1
+Added out2
+# --------------------- PAR_DUMP -----------------------
+
+<comment>
+problem = shock cloud interaction (2D, single uniform grid, HIGH RESOLUTION MPI)  
+author  = M.-S. Shin, G. Snyder, & J.M. Stone                                     
+config  = --with-problem=shk_cloud --with-gas=hydro --with-nscalars=1 --enable-mpi
+note1   = high-resolution rerun of the 600x300 serial run at 1800x900             
+note2   = MPI domain decomposition 4x2 = 8 ranks (NGrid_x1=4, NGrid_x2=2)         
+
+<job>
+problem_id  = Cloud # problem ID: basename of output filenames
+maxout      = 2     # Output blocks number from 1 -> maxout
+num_domains = 1     # number of Domains in Mesh
+
+<time>
+cour_no = 0.8     # The Courant, Friedrichs, & Lewy (CFL) Number
+nlim    = 1000000 # cycle limit
+tlim    = 61.2   
+
+<output1>
+out_fmt = hst                   # History data dump
+dt      = 1.53                 
+time    = 0.000000000000000e+00 # Default Value
+num     = 0                     # Default Value
+level   = -1                    # Default Value
+domain  = -1                    # Default Value
+id      = out1                  # Default Value
+out     = cons                  # Default Value
+
+<output2>
+out_fmt = vtk                   # VTK data dump (all primitive variables)
+out     = prim                 
+dt      = 1.53                 
+time    = 0.000000000000000e+00 # Default Value
+num     = 0                     # Default Value
+level   = -1                    # Default Value
+domain  = -1                    # Default Value
+id      = out2                  # Default Value
+
+<domain1>
+level         = 0    # refinement level this Domain (root=0)
+Nx1           = 2048
+x1min         = -3.0 # minimum value of X
+x1max         = 17.0
+bc_ix1        = 1    # inner-I (X1) flag; overridden by user postshock-inflow BC
+bc_ox1        = 2    # outflow on outer-I (X1)
+Nx2           = 1024
+x2min         = -5.0
+x2max         = 5.0 
+bc_ix2        = 2    # outflow
+bc_ox2        = 2    # outflow
+Nx3           = 1   
+x3min         = -5.0
+x3max         = 5.0 
+bc_ix3        = 2    # boundary condition flag for inner-K (X3)
+bc_ox3        = 2    # boundary condition flag for outer-K (X3)
+NGrid_x1      = 4   
+NGrid_x2      = 2   
+NGrid_x3      = 1   
+AutoWithNProc = 0    # Default Value
+
+<problem>
+iso_csound = 1.0    
+gamma      = 1.66667 # gamma = C_p/C_v
+Mach       = 2.0    
+drat       = 1000   
+iprob      = 1       # selects problem type
+
+<configure>
+problem            = shk_cloud # Name of the problem file
+gas                = hydro     # Hydrodynamic gas
+eq_state           = adiabatic # Equation of state
+nscalars           = 1         # Number of passive scalars
+self-gravity       = OFF       # Self-gravity algorithm
+resistivity        = OFF       # resistivity algorithm
+viscosity          = OFF       # viscosity algorithm
+thermal conduction = OFF       # conduction algorithm
+particles          = none      # no particles
+coord              = Cartesian # coordinate system
+special relativity = no        # Special relativistic?
+order              = 3         # Order of accuracy
+flux               = hllc      # Flux function
+integrator         = ctu       # Unsplit integrator
+precision          = double    # Type of Real variables
+write_ghost        = no        # Ghost cells included in output?
+mpi                = yes       # Is code MPI parallel enabled?
+H-correction       = no        # H-correction enabled?
+FFT                = no        # FFT enabled?
+ShearingBox        = no        # Shearing box enabled?
+FARGO              = no        # FARGO enabled?
+SMR                = no        # SMR enabled?
+
+<log>
+file_open = 0 # Default Value
+iflush    = 1 # Default Value
+out_level = 0 # Default Value
+err_level = 0 # Default Value
+
+# --------------------- PAR_DUMP -------------------------
+
+Setup complete, entering main loop...
+
+cycle=0 time=0.000000e+00 next dt=2.017177e-03
+cycle=1 time=2.017177e-03 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=2 time=4.034354e-03 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=3 time=6.051530e-03 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=4 time=8.068707e-03 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=5 time=1.008588e-02 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=6 time=1.210306e-02 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=7 time=1.412024e-02 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=8 time=1.613741e-02 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=9 time=1.815459e-02 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=10 time=2.017177e-02 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=11 time=2.218894e-02 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=12 time=2.420612e-02 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=13 time=2.622330e-02 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=14 time=2.824048e-02 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=15 time=3.025765e-02 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=16 time=3.227483e-02 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=17 time=3.429201e-02 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=18 time=3.630918e-02 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=19 time=3.832636e-02 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=20 time=4.034354e-02 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=21 time=4.236071e-02 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=22 time=4.437789e-02 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=23 time=4.639507e-02 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=24 time=4.841224e-02 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=25 time=5.042942e-02 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=26 time=5.244660e-02 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=27 time=5.446377e-02 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=28 time=5.648095e-02 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=29 time=5.849813e-02 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=30 time=6.051530e-02 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=31 time=6.253248e-02 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=32 time=6.454966e-02 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=33 time=6.656683e-02 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=34 time=6.858401e-02 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=35 time=7.060119e-02 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=36 time=7.261837e-02 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=37 time=7.463554e-02 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=38 time=7.665272e-02 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=39 time=7.866990e-02 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=40 time=8.068707e-02 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=41 time=8.270425e-02 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=42 time=8.472143e-02 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=43 time=8.673860e-02 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=44 time=8.875578e-02 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=45 time=9.077296e-02 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=46 time=9.279013e-02 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=47 time=9.480731e-02 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=48 time=9.682449e-02 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=49 time=9.884166e-02 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=50 time=1.008588e-01 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=51 time=1.028760e-01 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=52 time=1.048932e-01 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=53 time=1.069104e-01 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=54 time=1.089275e-01 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=55 time=1.109447e-01 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=56 time=1.129619e-01 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=57 time=1.149791e-01 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=58 time=1.169963e-01 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=59 time=1.190134e-01 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=60 time=1.210306e-01 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=61 time=1.230478e-01 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=62 time=1.250650e-01 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=63 time=1.270821e-01 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=64 time=1.290993e-01 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=65 time=1.311165e-01 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=66 time=1.331337e-01 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=67 time=1.351508e-01 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=68 time=1.371680e-01 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=69 time=1.391852e-01 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=70 time=1.412024e-01 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=71 time=1.432196e-01 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=72 time=1.452367e-01 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=73 time=1.472539e-01 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=74 time=1.492711e-01 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=75 time=1.512883e-01 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=76 time=1.533054e-01 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=77 time=1.553226e-01 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=78 time=1.573398e-01 next dt=2.017177e-03 last dt=2.017177e-03
+cycle=79 time=1.593570e-01 next dt=2.017176e-03 last dt=2.017177e-03
+cycle=80 time=1.613741e-01 next dt=2.017084e-03 last dt=2.017176e-03
+cycle=81 time=1.633912e-01 next dt=2.016907e-03 last dt=2.017084e-03
+cycle=82 time=1.654081e-01 next dt=2.016650e-03 last dt=2.016907e-03
+cycle=83 time=1.674248e-01 next dt=2.016318e-03 last dt=2.016650e-03
+cycle=84 time=1.694411e-01 next dt=2.015911e-03 last dt=2.016318e-03
+cycle=85 time=1.714570e-01 next dt=2.015445e-03 last dt=2.015911e-03
+cycle=86 time=1.734725e-01 next dt=2.014920e-03 last dt=2.015445e-03
+cycle=87 time=1.754874e-01 next dt=2.014318e-03 last dt=2.014920e-03
+cycle=88 time=1.775017e-01 next dt=2.013674e-03 last dt=2.014318e-03
+cycle=89 time=1.795154e-01 next dt=2.012968e-03 last dt=2.013674e-03
+cycle=90 time=1.815283e-01 next dt=2.012230e-03 last dt=2.012968e-03
+cycle=91 time=1.835406e-01 next dt=2.011424e-03 last dt=2.012230e-03
+cycle=92 time=1.855520e-01 next dt=2.010583e-03 last dt=2.011424e-03
+cycle=93 time=1.875626e-01 next dt=2.009717e-03 last dt=2.010583e-03
+
+... [35050 lines omitted from the middle of this file; the complete file is on the research machine] ...
+
+cycle=35144 time=6.089248e+01 next dt=1.662666e-03 last dt=1.662998e-03
+cycle=35145 time=6.089414e+01 next dt=1.662239e-03 last dt=1.662666e-03
+cycle=35146 time=6.089580e+01 next dt=1.661716e-03 last dt=1.662239e-03
+cycle=35147 time=6.089747e+01 next dt=1.661086e-03 last dt=1.661716e-03
+cycle=35148 time=6.089913e+01 next dt=1.660413e-03 last dt=1.661086e-03
+cycle=35149 time=6.090079e+01 next dt=1.659495e-03 last dt=1.660413e-03
+cycle=35150 time=6.090245e+01 next dt=1.658670e-03 last dt=1.659495e-03
+cycle=35151 time=6.090410e+01 next dt=1.658216e-03 last dt=1.658670e-03
+cycle=35152 time=6.090576e+01 next dt=1.658564e-03 last dt=1.658216e-03
+cycle=35153 time=6.090742e+01 next dt=1.659547e-03 last dt=1.658564e-03
+cycle=35154 time=6.090908e+01 next dt=1.659566e-03 last dt=1.659547e-03
+cycle=35155 time=6.091074e+01 next dt=1.660022e-03 last dt=1.659566e-03
+cycle=35156 time=6.091240e+01 next dt=1.660974e-03 last dt=1.660022e-03
+cycle=35157 time=6.091406e+01 next dt=1.661379e-03 last dt=1.660974e-03
+cycle=35158 time=6.091572e+01 next dt=1.661210e-03 last dt=1.661379e-03
+cycle=35159 time=6.091738e+01 next dt=1.660591e-03 last dt=1.661210e-03
+cycle=35160 time=6.091904e+01 next dt=1.659752e-03 last dt=1.660591e-03
+cycle=35161 time=6.092070e+01 next dt=1.659256e-03 last dt=1.659752e-03
+cycle=35162 time=6.092236e+01 next dt=1.659377e-03 last dt=1.659256e-03
+cycle=35163 time=6.092402e+01 next dt=1.660423e-03 last dt=1.659377e-03
+cycle=35164 time=6.092568e+01 next dt=1.659966e-03 last dt=1.660423e-03
+cycle=35165 time=6.092734e+01 next dt=1.659956e-03 last dt=1.659966e-03
+cycle=35166 time=6.092900e+01 next dt=1.660786e-03 last dt=1.659956e-03
+cycle=35167 time=6.093066e+01 next dt=1.660548e-03 last dt=1.660786e-03
+cycle=35168 time=6.093232e+01 next dt=1.660654e-03 last dt=1.660548e-03
+cycle=35169 time=6.093399e+01 next dt=1.659166e-03 last dt=1.660654e-03
+cycle=35170 time=6.093564e+01 next dt=1.658318e-03 last dt=1.659166e-03
+cycle=35171 time=6.093730e+01 next dt=1.655376e-03 last dt=1.658318e-03
+cycle=35172 time=6.093896e+01 next dt=1.657940e-03 last dt=1.655376e-03
+cycle=35173 time=6.094062e+01 next dt=1.656445e-03 last dt=1.657940e-03
+cycle=35174 time=6.094227e+01 next dt=1.656368e-03 last dt=1.656445e-03
+cycle=35175 time=6.094393e+01 next dt=1.657872e-03 last dt=1.656368e-03
+cycle=35176 time=6.094559e+01 next dt=1.656081e-03 last dt=1.657872e-03
+cycle=35177 time=6.094724e+01 next dt=1.656878e-03 last dt=1.656081e-03
+cycle=35178 time=6.094890e+01 next dt=1.657813e-03 last dt=1.656878e-03
+cycle=35179 time=6.095056e+01 next dt=1.657952e-03 last dt=1.657813e-03
+cycle=35180 time=6.095222e+01 next dt=1.658748e-03 last dt=1.657952e-03
+cycle=35181 time=6.095387e+01 next dt=1.660308e-03 last dt=1.658748e-03
+cycle=35182 time=6.095553e+01 next dt=1.656892e-03 last dt=1.660308e-03
+cycle=35183 time=6.095719e+01 next dt=1.658813e-03 last dt=1.656892e-03
+cycle=35184 time=6.095885e+01 next dt=1.658738e-03 last dt=1.658813e-03
+cycle=35185 time=6.096051e+01 next dt=1.659354e-03 last dt=1.658738e-03
+cycle=35186 time=6.096217e+01 next dt=1.659661e-03 last dt=1.659354e-03
+cycle=35187 time=6.096383e+01 next dt=1.656722e-03 last dt=1.659661e-03
+cycle=35188 time=6.096548e+01 next dt=1.659832e-03 last dt=1.656722e-03
+cycle=35189 time=6.096714e+01 next dt=1.659248e-03 last dt=1.659832e-03
+cycle=35190 time=6.096880e+01 next dt=1.660083e-03 last dt=1.659248e-03
+cycle=35191 time=6.097046e+01 next dt=1.659043e-03 last dt=1.660083e-03
+cycle=35192 time=6.097212e+01 next dt=1.656950e-03 last dt=1.659043e-03
+cycle=35193 time=6.097378e+01 next dt=1.659699e-03 last dt=1.656950e-03
+cycle=35194 time=6.097544e+01 next dt=1.659585e-03 last dt=1.659699e-03
+cycle=35195 time=6.097710e+01 next dt=1.660911e-03 last dt=1.659585e-03
+cycle=35196 time=6.097876e+01 next dt=1.659566e-03 last dt=1.660911e-03
+cycle=35197 time=6.098042e+01 next dt=1.658540e-03 last dt=1.659566e-03
+cycle=35198 time=6.098208e+01 next dt=1.659842e-03 last dt=1.658540e-03
+cycle=35199 time=6.098374e+01 next dt=1.660356e-03 last dt=1.659842e-03
+cycle=35200 time=6.098540e+01 next dt=1.661513e-03 last dt=1.660356e-03
+cycle=35201 time=6.098706e+01 next dt=1.661407e-03 last dt=1.661513e-03
+cycle=35202 time=6.098872e+01 next dt=1.662417e-03 last dt=1.661407e-03
+cycle=35203 time=6.099038e+01 next dt=1.660207e-03 last dt=1.662417e-03
+cycle=35204 time=6.099204e+01 next dt=1.661928e-03 last dt=1.660207e-03
+cycle=35205 time=6.099371e+01 next dt=1.662752e-03 last dt=1.661928e-03
+cycle=35206 time=6.099537e+01 next dt=1.664342e-03 last dt=1.662752e-03
+cycle=35207 time=6.099703e+01 next dt=1.663160e-03 last dt=1.664342e-03
+cycle=35208 time=6.099870e+01 next dt=1.662202e-03 last dt=1.663160e-03
+cycle=35209 time=6.100036e+01 next dt=1.664617e-03 last dt=1.662202e-03
+cycle=35210 time=6.100202e+01 next dt=1.664949e-03 last dt=1.664617e-03
+cycle=35211 time=6.100369e+01 next dt=1.666971e-03 last dt=1.664949e-03
+cycle=35212 time=6.100536e+01 next dt=1.664550e-03 last dt=1.666971e-03
+cycle=35213 time=6.100702e+01 next dt=1.664004e-03 last dt=1.664550e-03
+cycle=35214 time=6.100868e+01 next dt=1.667502e-03 last dt=1.664004e-03
+cycle=35215 time=6.101035e+01 next dt=1.667407e-03 last dt=1.667502e-03
+cycle=35216 time=6.101202e+01 next dt=1.668525e-03 last dt=1.667407e-03
+cycle=35217 time=6.101369e+01 next dt=1.666367e-03 last dt=1.668525e-03
+cycle=35218 time=6.101535e+01 next dt=1.667336e-03 last dt=1.666367e-03
+cycle=35219 time=6.101702e+01 next dt=1.668733e-03 last dt=1.667336e-03
+cycle=35220 time=6.101869e+01 next dt=1.668950e-03 last dt=1.668733e-03
+cycle=35221 time=6.102036e+01 next dt=1.669962e-03 last dt=1.668950e-03
+cycle=35222 time=6.102203e+01 next dt=1.668275e-03 last dt=1.669962e-03
+cycle=35223 time=6.102370e+01 next dt=1.670445e-03 last dt=1.668275e-03
+cycle=35224 time=6.102537e+01 next dt=1.669458e-03 last dt=1.670445e-03
+cycle=35225 time=6.102704e+01 next dt=1.670555e-03 last dt=1.669458e-03
+cycle=35226 time=6.102871e+01 next dt=1.671286e-03 last dt=1.670555e-03
+cycle=35227 time=6.103038e+01 next dt=1.671223e-03 last dt=1.671286e-03
+cycle=35228 time=6.103205e+01 next dt=1.670200e-03 last dt=1.671223e-03
+cycle=35229 time=6.103372e+01 next dt=1.670536e-03 last dt=1.670200e-03
+cycle=35230 time=6.103539e+01 next dt=1.672509e-03 last dt=1.670536e-03
+cycle=35231 time=6.103706e+01 next dt=1.672899e-03 last dt=1.672509e-03
+cycle=35232 time=6.103874e+01 next dt=1.673633e-03 last dt=1.672899e-03
+cycle=35233 time=6.104041e+01 next dt=1.670730e-03 last dt=1.673633e-03
+cycle=35234 time=6.104208e+01 next dt=1.671841e-03 last dt=1.670730e-03
+cycle=35235 time=6.104375e+01 next dt=1.674010e-03 last dt=1.671841e-03
+cycle=35236 time=6.104543e+01 next dt=1.674335e-03 last dt=1.674010e-03
+cycle=35237 time=6.104710e+01 next dt=1.673535e-03 last dt=1.674335e-03
+cycle=35238 time=6.104877e+01 next dt=1.671200e-03 last dt=1.673535e-03
+cycle=35239 time=6.105045e+01 next dt=1.673701e-03 last dt=1.671200e-03
+cycle=35240 time=6.105212e+01 next dt=1.674830e-03 last dt=1.673701e-03
+cycle=35241 time=6.105379e+01 next dt=1.674614e-03 last dt=1.674830e-03
+cycle=35242 time=6.105547e+01 next dt=1.674136e-03 last dt=1.674614e-03
+cycle=35243 time=6.105714e+01 next dt=1.672244e-03 last dt=1.674136e-03
+cycle=35244 time=6.105881e+01 next dt=1.673759e-03 last dt=1.672244e-03
+cycle=35245 time=6.106049e+01 next dt=1.673493e-03 last dt=1.673759e-03
+cycle=35246 time=6.106216e+01 next dt=1.673220e-03 last dt=1.673493e-03
+cycle=35247 time=6.106384e+01 next dt=1.673018e-03 last dt=1.673220e-03
+cycle=35248 time=6.106551e+01 next dt=1.672819e-03 last dt=1.673018e-03
+cycle=35249 time=6.106718e+01 next dt=1.672649e-03 last dt=1.672819e-03
+cycle=35250 time=6.106885e+01 next dt=1.672469e-03 last dt=1.672649e-03
+cycle=35251 time=6.107053e+01 next dt=1.672264e-03 last dt=1.672469e-03
+cycle=35252 time=6.107220e+01 next dt=1.672108e-03 last dt=1.672264e-03
+cycle=35253 time=6.107387e+01 next dt=1.671877e-03 last dt=1.672108e-03
+cycle=35254 time=6.107554e+01 next dt=1.671692e-03 last dt=1.671877e-03
+cycle=35255 time=6.107721e+01 next dt=1.671568e-03 last dt=1.671692e-03
+cycle=35256 time=6.107889e+01 next dt=1.671461e-03 last dt=1.671568e-03
+cycle=35257 time=6.108056e+01 next dt=1.671402e-03 last dt=1.671461e-03
+cycle=35258 time=6.108223e+01 next dt=1.671389e-03 last dt=1.671402e-03
+cycle=35259 time=6.108390e+01 next dt=1.670976e-03 last dt=1.671389e-03
+cycle=35260 time=6.108557e+01 next dt=1.670849e-03 last dt=1.670976e-03
+cycle=35261 time=6.108724e+01 next dt=1.670733e-03 last dt=1.670849e-03
+cycle=35262 time=6.108891e+01 next dt=1.670846e-03 last dt=1.670733e-03
+cycle=35263 time=6.109058e+01 next dt=1.671258e-03 last dt=1.670846e-03
+cycle=35264 time=6.109225e+01 next dt=1.671556e-03 last dt=1.671258e-03
+cycle=35265 time=6.109393e+01 next dt=1.671669e-03 last dt=1.671556e-03
+cycle=35266 time=6.109560e+01 next dt=1.672278e-03 last dt=1.671669e-03
+cycle=35267 time=6.109727e+01 next dt=1.672634e-03 last dt=1.672278e-03
+cycle=35268 time=6.109894e+01 next dt=1.673044e-03 last dt=1.672634e-03
+cycle=35269 time=6.110062e+01 next dt=1.673562e-03 last dt=1.673044e-03
+cycle=35270 time=6.110229e+01 next dt=1.673291e-03 last dt=1.673562e-03
+cycle=35271 time=6.110396e+01 next dt=1.673058e-03 last dt=1.673291e-03
+cycle=35272 time=6.110564e+01 next dt=1.672853e-03 last dt=1.673058e-03
+cycle=35273 time=6.110731e+01 next dt=1.672654e-03 last dt=1.672853e-03
+cycle=35274 time=6.110898e+01 next dt=1.672503e-03 last dt=1.672654e-03
+cycle=35275 time=6.111065e+01 next dt=1.672293e-03 last dt=1.672503e-03
+cycle=35276 time=6.111233e+01 next dt=1.672059e-03 last dt=1.672293e-03
+cycle=35277 time=6.111400e+01 next dt=1.671833e-03 last dt=1.672059e-03
+cycle=35278 time=6.111567e+01 next dt=1.671637e-03 last dt=1.671833e-03
+cycle=35279 time=6.111734e+01 next dt=1.671433e-03 last dt=1.671637e-03
+cycle=35280 time=6.111901e+01 next dt=1.671257e-03 last dt=1.671433e-03
+cycle=35281 time=6.112068e+01 next dt=1.671073e-03 last dt=1.671257e-03
+cycle=35282 time=6.112236e+01 next dt=1.670888e-03 last dt=1.671073e-03
+cycle=35283 time=6.112403e+01 next dt=1.670698e-03 last dt=1.670888e-03
+cycle=35284 time=6.112570e+01 next dt=1.670498e-03 last dt=1.670698e-03
+cycle=35285 time=6.112737e+01 next dt=1.670270e-03 last dt=1.670498e-03
+cycle=35286 time=6.112904e+01 next dt=1.670029e-03 last dt=1.670270e-03
+cycle=35287 time=6.113071e+01 next dt=1.669787e-03 last dt=1.670029e-03
+cycle=35288 time=6.113238e+01 next dt=1.669528e-03 last dt=1.669787e-03
+cycle=35289 time=6.113405e+01 next dt=1.669276e-03 last dt=1.669528e-03
+cycle=35290 time=6.113572e+01 next dt=1.669027e-03 last dt=1.669276e-03
+cycle=35291 time=6.113739e+01 next dt=1.668796e-03 last dt=1.669027e-03
+cycle=35292 time=6.113905e+01 next dt=1.668565e-03 last dt=1.668796e-03
+cycle=35293 time=6.114072e+01 next dt=1.668378e-03 last dt=1.668565e-03
+cycle=35294 time=6.114239e+01 next dt=1.668175e-03 last dt=1.668378e-03
+cycle=35295 time=6.114406e+01 next dt=1.667980e-03 last dt=1.668175e-03
+cycle=35296 time=6.114573e+01 next dt=1.667719e-03 last dt=1.667980e-03
+cycle=35297 time=6.114739e+01 next dt=1.667455e-03 last dt=1.667719e-03
+cycle=35298 time=6.114906e+01 next dt=1.667181e-03 last dt=1.667455e-03
+cycle=35299 time=6.115073e+01 next dt=1.666930e-03 last dt=1.667181e-03
+cycle=35300 time=6.115240e+01 next dt=1.666687e-03 last dt=1.666930e-03
+cycle=35301 time=6.115406e+01 next dt=1.666445e-03 last dt=1.666687e-03
+cycle=35302 time=6.115573e+01 next dt=1.666217e-03 last dt=1.666445e-03
+cycle=35303 time=6.115740e+01 next dt=1.665990e-03 last dt=1.666217e-03
+cycle=35304 time=6.115906e+01 next dt=1.665802e-03 last dt=1.665990e-03
+cycle=35305 time=6.116073e+01 next dt=1.665603e-03 last dt=1.665802e-03
+cycle=35306 time=6.116239e+01 next dt=1.665416e-03 last dt=1.665603e-03
+cycle=35307 time=6.116406e+01 next dt=1.665271e-03 last dt=1.665416e-03
+cycle=35308 time=6.116572e+01 next dt=1.665166e-03 last dt=1.665271e-03
+cycle=35309 time=6.116739e+01 next dt=1.665016e-03 last dt=1.665166e-03
+cycle=35310 time=6.116905e+01 next dt=1.664901e-03 last dt=1.665016e-03
+cycle=35311 time=6.117072e+01 next dt=1.664829e-03 last dt=1.664901e-03
+cycle=35312 time=6.117238e+01 next dt=1.664796e-03 last dt=1.664829e-03
+cycle=35313 time=6.117405e+01 next dt=1.664721e-03 last dt=1.664796e-03
+cycle=35314 time=6.117571e+01 next dt=1.664692e-03 last dt=1.664721e-03
+cycle=35315 time=6.117738e+01 next dt=1.664707e-03 last dt=1.664692e-03
+cycle=35316 time=6.117904e+01 next dt=1.664704e-03 last dt=1.664707e-03
+cycle=35317 time=6.118071e+01 next dt=1.664717e-03 last dt=1.664704e-03
+cycle=35318 time=6.118237e+01 next dt=1.664768e-03 last dt=1.664717e-03
+cycle=35319 time=6.118404e+01 next dt=1.664785e-03 last dt=1.664768e-03
+cycle=35320 time=6.118570e+01 next dt=1.664838e-03 last dt=1.664785e-03
+cycle=35321 time=6.118737e+01 next dt=1.664892e-03 last dt=1.664838e-03
+cycle=35322 time=6.118903e+01 next dt=1.664940e-03 last dt=1.664892e-03
+cycle=35323 time=6.119070e+01 next dt=1.665025e-03 last dt=1.664940e-03
+cycle=35324 time=6.119236e+01 next dt=1.665072e-03 last dt=1.665025e-03
+cycle=35325 time=6.119403e+01 next dt=1.665147e-03 last dt=1.665072e-03
+cycle=35326 time=6.119569e+01 next dt=1.665236e-03 last dt=1.665147e-03
+cycle=35327 time=6.119736e+01 next dt=1.665300e-03 last dt=1.665236e-03
+cycle=35328 time=6.119902e+01 next dt=9.780028e-04 last dt=1.665300e-03
+cycle=35329 time=6.120000e+01 next dt=1.665441e-03 last dt=9.780028e-04
+
+terminating on time limit
+  tlim= 6.120000e+01   nlim= 1000000
+  time= 6.120000e+01  cycle= 35329
+
+zone-cycles/cpu-second = 8.886711e+05
+
+elapsed wall time = 1.043383e+04 sec.
+
+zone-cycles/wall-second = 8.876207e+05
+
+total zone-cycles/wall-second = 7.100966e+06
+
+Simulation terminated on Mon Aug 24 03:24:48 2026

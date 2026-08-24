@@ -1,0 +1,166 @@
+!================================================================
+! Cloud-wind matched setup ("cloud crushing") patch for RAMSES
+! Implements the multi-code comparison SPEC:
+!   ambient/wind: rho=1, P=1, vx=v_wind (Mach 2 => 2.582), +x
+!   cloud: overdensity chi, static, P=1, radius r_cloud, smooth
+!          tanh edge of width "edge":
+!            f  = 0.5*(1 - tanh((r - r_cloud)/edge))
+!            rho= rho_wind*(1 + (chi-1)*f)
+!            vx = v_wind*(1-f)
+!   passive scalar (if NPSCAL>0): tracer = f (cloud material)
+! Positions: RAMSES box is [0,boxlen] x [0,boxlen*ny/nx].
+! Physical domain x in [-3,17], y in [-5,5] maps to boxlen=20,
+! nx=2, ny=1, cloud center at (x_cloud,y_cloud)=(3,5) box units.
+! Select with condinit_kind='cloudwind' in &INIT_PARAMS and set
+! parameters in the &CLOUDWIND_PARAMS namelist block.
+!================================================================
+subroutine condinit(x,u,dx,nn)
+  use amr_commons
+  use hydro_parameters
+  implicit none
+  integer ::nn                            ! Number of cells
+  real(dp)::dx                            ! Cell size
+  real(dp),dimension(1:nvector,1:nvar)::u ! Conservative variables
+  real(dp),dimension(1:nvector,1:ndim)::x ! Cell center position.
+  logical,save:: first_call = .true.      ! True if this is the first call to condinit
+#if NENER>0 || NVAR>NHYDRO+NENER
+  integer::ivar
+#endif
+  real(dp),dimension(1:nvector,1:nvar),save::q   ! Primitive variables
+
+  select case (condinit_kind)
+
+  case('region')
+     ! Call built-in initial condition generator
+     call region_condinit(x, q, dx, nn)
+
+  case('cloudwind')
+     call cloudwind_condinit(x, q, dx, nn)
+
+  case DEFAULT
+     if (myid == 1.and. first_call)  write(*,*) "[condinit] Void or invalid condinit_kind, using default IC"
+     call region_condinit(x, q, dx, nn)
+
+  end select
+
+  first_call = .false.
+
+  ! Convert primitive to conservative variables
+  ! density -> density
+  u(1:nn,1)=q(1:nn,1)
+  ! velocity -> momentum
+  u(1:nn,2)=q(1:nn,1)*q(1:nn,2)
+#if NDIM>1
+  u(1:nn,3)=q(1:nn,1)*q(1:nn,3)
+#endif
+#if NDIM>2
+  u(1:nn,4)=q(1:nn,1)*q(1:nn,4)
+#endif
+  ! kinetic energy
+  u(1:nn,neul)=0.0d0
+  u(1:nn,neul)=u(1:nn,neul)+0.5d0*q(1:nn,1)*q(1:nn,2)**2
+#if NDIM>1
+  u(1:nn,neul)=u(1:nn,neul)+0.5d0*q(1:nn,1)*q(1:nn,3)**2
+#endif
+#if NDIM>2
+  u(1:nn,neul)=u(1:nn,neul)+0.5d0*q(1:nn,1)*q(1:nn,4)**2
+#endif
+  ! thermal pressure -> total fluid energy
+  u(1:nn,neul)=u(1:nn,neul)+q(1:nn,neul)/(gamma-1.0d0)
+#if NENER>0
+  ! radiative pressure -> radiative energy
+  ! radiative energy -> total fluid energy
+  do ivar=1,nener
+     u(1:nn,nhydro+ivar)=q(1:nn,nhydro+ivar)/(gamma_rad(ivar)-1.0d0)
+     u(1:nn,neul)=u(1:nn,neul)+u(1:nn,nhydro+ivar)
+  enddo
+#endif
+#if NVAR>NHYDRO+NENER
+  ! passive scalars
+  do ivar=nhydro+1+nener,nvar
+     u(1:nn,ivar)=q(1:nn,1)*q(1:nn,ivar)
+  end do
+#endif
+
+end subroutine condinit
+
+
+!================================================================
+!================================================================
+subroutine cloudwind_condinit(x,q,dx,nn)
+  use amr_commons, ONLY: myid, namelist_file
+  use amr_parameters
+  use hydro_parameters
+  implicit none
+  integer ::nn                            ! Number of cells
+  real(dp)::dx                            ! Cell size
+  real(dp),dimension(1:nvector,1:nvar)::q ! Primitive variables
+  real(dp),dimension(1:nvector,1:ndim)::x ! Cell center position.
+  !----------------------------------------------------------------
+  ! Cloud-wind SPEC parameters (user units), overridable from the
+  ! &CLOUDWIND_PARAMS block of the run namelist.
+  !----------------------------------------------------------------
+  real(dp),save::chi      = 10.0d0   ! cloud overdensity
+  real(dp),save::r_cloud  = 1.0d0    ! cloud radius
+  real(dp),save::edge     = 0.1d0    ! tanh edge width
+  real(dp),save::rho_wind = 1.0d0    ! ambient/wind density
+  real(dp),save::p_wind   = 1.0d0    ! uniform pressure
+  real(dp),save::v_wind   = 2.582d0  ! wind speed (+x), Mach 2
+  real(dp),save::x_cloud  = 3.0d0    ! cloud center, box units
+  real(dp),save::y_cloud  = 5.0d0
+  real(dp),save::z_cloud  = 5.0d0
+  logical,save::nml_read  = .false.
+  namelist/cloudwind_params/chi,r_cloud,edge,rho_wind,p_wind,v_wind, &
+       & x_cloud,y_cloud,z_cloud
+
+  integer::i,nml_err
+#if NVAR>NHYDRO+NENER
+  integer::ivar
+#endif
+  real(dp)::r2,r,f,dd
+
+  if(.not.nml_read)then
+     open(unit=43,file=TRIM(namelist_file),status='old',action='read')
+     read(43,NML=cloudwind_params,IOSTAT=nml_err)
+     close(43)
+     if(myid==1)then
+        if(nml_err/=0)write(*,*)'[cloudwind] no valid &CLOUDWIND_PARAMS block, using defaults'
+        write(*,'(A,3(1PE12.4))')' [cloudwind] chi, r_cloud, edge   =',chi,r_cloud,edge
+        write(*,'(A,3(1PE12.4))')' [cloudwind] rho_w, p_w, v_wind   =',rho_wind,p_wind,v_wind
+        write(*,'(A,3(1PE12.4))')' [cloudwind] cloud center (box u) =',x_cloud,y_cloud,z_cloud
+     end if
+     nml_read=.true.
+  end if
+
+  do i=1,nn
+     r2 = (x(i,1)-x_cloud)**2
+#if NDIM>1
+     r2 = r2 + (x(i,2)-y_cloud)**2
+#endif
+#if NDIM>2
+     r2 = r2 + (x(i,3)-z_cloud)**2
+#endif
+     r  = sqrt(r2)
+     f  = 0.5d0*(1.0d0 - tanh((r-r_cloud)/edge))
+     dd = rho_wind*(1.0d0 + (chi-1.0d0)*f)
+     ! density
+     q(i,1) = dd
+     ! velocity: wind everywhere, cloud static, smooth transition
+     q(i,2) = v_wind*(1.0d0-f)
+#if NDIM>1
+     q(i,3) = 0.0d0
+#endif
+#if NDIM>2
+     q(i,4) = 0.0d0
+#endif
+     ! uniform thermal pressure
+     q(i,neul) = p_wind
+#if NVAR>NHYDRO+NENER
+     ! passive scalar(s): cloud material tracer
+     do ivar=nhydro+1+nener,nvar
+        q(i,ivar) = f
+     end do
+#endif
+  end do
+
+end subroutine cloudwind_condinit

@@ -1,0 +1,29 @@
+# High-quality plotting for hires FLASH runs: big slice buffers, 300 dpi.
+# Usage: python plot_hires_flash.py <chk_glob> <buff_x> <buff_y> [t_cc]
+import glob
+import sys
+
+import yt
+
+yt.set_log_level("error")
+
+pattern = sys.argv[1]
+bx, by = int(sys.argv[2]), int(sys.argv[3])
+t_cc = float(sys.argv[4]) if len(sys.argv) > 4 else None
+
+fs = sorted(glob.glob(pattern))
+print("checkpoints:", len(fs))
+
+for fn in fs:
+    ds = yt.load(fn)
+    t = float(ds.current_time)
+    p = yt.SlicePlot(ds, "z", "density", origin="native")
+    p.set_log("density", True)
+    p.set_buff_size((bx, by))
+    p.set_figure_size(8)
+    if t_cc:
+        p.annotate_title(f"t = {t:.2f}  ({t/t_cc:.1f} cloud-crushing times)")
+    else:
+        p.annotate_title(f"t = {t:.3f}")
+    p.save(mpl_kwargs=dict(dpi=300))
+print("done")
