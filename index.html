@@ -57,6 +57,15 @@
   .card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; box-shadow: 0 1px 3px color-mix(in srgb, var(--ink) 6%, transparent); }
   .card h3 { font-size: 14px; font-weight: 650; margin: 0 0 2px; }
   .card h3 .chi { color: var(--hot); }
+  .badge { font-size: 10.5px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+    border-radius: 999px; padding: 1px 7px; margin-left: 6px; white-space: nowrap; }
+  .badge.gpu { color: #0b6b4f; background: color-mix(in srgb, var(--good) 18%, transparent); }
+  .badge.cpu { color: var(--muted); background: var(--chip); }
+  .detbtn { font: 600 11.5px system-ui; border: 1px solid var(--line); background: var(--surface);
+    color: var(--muted); border-radius: 6px; padding: 2px 9px; cursor: pointer; margin-top: 8px; }
+  .detbtn:hover { color: var(--accent); border-color: var(--accent); }
+  #rmTable td { padding: 5px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  #rmTable td:first-child { color: var(--muted); white-space: nowrap; width: 34%; }
   .card .cap { color: var(--faint); font-size: 11.5px; margin: 2px 0 8px; }
   .card img { width: 100%; display: block; border-radius: 8px; background: #000; cursor: zoom-in; aspect-ratio: 2 / 1; object-fit: cover; }
   .fr { display: flex; align-items: center; gap: 10px; margin-top: 8px; font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
@@ -196,6 +205,19 @@
   </section>
 </div>
 
+<div id="runmodal" style="position:fixed;inset:0;display:none;align-items:center;
+     justify-content:center;z-index:70;background:color-mix(in srgb, var(--page) 88%, transparent);
+     backdrop-filter:blur(6px);padding:20px">
+  <div style="background:var(--surface);border:1px solid var(--line);border-radius:14px;
+       max-width:640px;width:100%;max-height:86vh;overflow:auto;padding:18px 20px">
+    <div style="display:flex;align-items:baseline;gap:12px">
+      <h3 id="rmTitle" style="font-size:16px;font-weight:650;margin:0"></h3>
+      <button class="mini" id="rmClose" style="margin-left:auto">&#10005; Close</button>
+    </div>
+    <table id="rmTable" style="width:100%;border-collapse:collapse;font-size:13.5px;margin-top:12px">
+    </table>
+  </div>
+</div>
 <div id="lightbox">
   <button class="mini" id="lbClose" style="position:absolute;top:16px;right:18px">✕ Close</button>
   <img id="lbImg" alt=""><div class="cap" id="lbCap"></div>
@@ -205,6 +227,7 @@
 <script src="data/manifest.js"></script>
 <script src="data/terrains.js"></script>
 <script src="data/codefiles.js"></script>
+<script src="data/runinfo.js"></script>
 <script>
   (STUDIO_TERRAINS || []).forEach(function (id) {
     var s = document.createElement("script"); s.src = "data/" + id + ".js"; document.head.appendChild(s);
@@ -392,7 +415,9 @@
   document.getElementById("cClose").onclick = closeCodeFile;
   document.addEventListener("keydown", function (e) {
     if (e.key !== "Escape") return;
-    if (document.getElementById("lightbox").style.display === "flex") {
+    if (document.getElementById("runmodal").style.display === "flex") {
+      document.getElementById("runmodal").style.display = "none";
+    } else if (document.getElementById("lightbox").style.display === "flex") {
       document.getElementById("lightbox").style.display = "none";
     } else if (document.getElementById("p-code").classList.contains("on")) {
       closeCodeFile();
@@ -447,6 +472,71 @@
       return (chiFn(a) || 0) - (chiFn(b) || 0);
     });
   }
+  var RUNBY = {};
+  (typeof STUDIO_RUNINFO !== "undefined" ? STUDIO_RUNINFO : []).forEach(function (r) {
+    RUNBY[r.tag.toLowerCase()] = r;
+  });
+  function runForGallery(g) {
+    var t = String(g.dir || "").split("/").pop().toLowerCase();
+    return RUNBY[t] || null;
+  }
+  function runForMovie(name) {
+    var b = String(name).replace(/_slow$/, "").replace(/_smooth$/, "").replace(/^terrain_/, "");
+    var cands = [b];
+    var m;
+    if ((m = b.match(/^flash_chi(\d+)_lref(\d+)/))) cands.push("f2d_chi" + m[1] + "_l" + m[2]);
+    if ((m = b.match(/^flash3d_chi(\d+)_lref(\d+)/))) cands.push("f3d_chi" + m[1] + "_l" + m[2]);
+    if ((m = b.match(/^cloudcrush_lref(\d+)/))) cands.push("cloudcrush_hires", "cloudcrush_l9b");
+    if ((m = b.match(/^athw_chi(\d+)_(\d+)/))) cands.push("athw2d_chi" + m[1] + "_" + m[2]);
+    if ((m = b.match(/^athw3d_chi(\d+)_(\d+)/))) cands.push("athw3d_chi" + m[1] + "_" + m[2]);
+    if ((m = b.match(/^apk_chi(\d+)_(\d+)/))) cands.push("apk2d_chi" + m[1] + "_" + m[2]);
+    if ((m = b.match(/^apk3d_chi(\d+)_?(\d+)?/))) cands.push("apk3d_chi" + m[1] + "_" + (m[2] || "256"));
+    if ((m = b.match(/^athpp_chi(\d+)_(\d+)/))) cands.push("athpp2d_chi" + m[1] + "_" + m[2]);
+    if ((m = b.match(/^ramses_chi(\d+)/))) cands.push("ram2d_chi" + m[1]);
+    if ((m = b.match(/^enzo_chi(\d+)_(\d+)/))) cands.push("cw2d_chi" + m[1] + "_" + m[2]);
+    if ((m = b.match(/^arepo_chi(\d+)/))) cands.push("arepo2d_chi" + m[1]);
+    if ((m = b.match(/^gizmo_(mfm|mfv)_chi(\d+)/))) cands.push("gizmo2d_chi" + m[2] + "_" + m[1]);
+    if ((m = b.match(/^gadget4_chi(\d+)/))) cands.push("g4_2d_chi" + m[1]);
+    for (var i = 0; i < cands.length; i++) {
+      if (RUNBY[cands[i].toLowerCase()]) return RUNBY[cands[i].toLowerCase()];
+    }
+    return null;
+  }
+  function hwBadge(r) {
+    if (!r) return "";
+    return " <span class='badge " + r.hw + "'>" + (r.hw === "gpu" ? "GPU" : "CPU") + "</span>";
+  }
+  function showRun(r) {
+    if (!r) return;
+    document.getElementById("rmTitle").textContent =
+      r.code + ", " + (r.chi ? "\u03c7 = " + r.chi : "") + ", " + r.dim;
+    var rows = [
+      ["Code and method", r.code + " \u2014 " + r.method],
+      ["Hardware", r.hardware],
+      ["Parallelism", r.ranks],
+      ["Resolution", r.dims + " (" + r.cells + " cells or particles)"],
+      ["Overdensity", "\u03c7 = " + r.chi],
+      ["Simulated to", r.tend],
+      ["Wall-clock time", r.walltime],
+      ["Timesteps", r.steps || "not recorded"],
+      ["Throughput", r.throughput || "not recorded"],
+      ["Memory", r.ram],
+      ["Frames saved", r.frames],
+      ["Run tag", r.tag],
+    ];
+    if (r.note) rows.push(["Note", r.note]);
+    document.getElementById("rmTable").innerHTML = rows.map(function (kv) {
+      return "<tr><td>" + kv[0] + "</td><td>" + kv[1] + "</td></tr>";
+    }).join("");
+    document.getElementById("runmodal").style.display = "flex";
+  }
+  function detailsButton(r) {
+    var b = document.createElement("button");
+    b.className = "detbtn";
+    b.textContent = "Run details";
+    b.onclick = function (e) { e.stopPropagation(); showRun(r); };
+    return b;
+  }
   function passes(code, chi) {
     if (codeSel !== "All" && code !== codeSel) return false;
     if (chiSel !== "All" && chi !== chiSel) return false;
@@ -463,7 +553,9 @@
       if (is3D(g) !== want3d) return;
       var card = document.createElement("div"); card.className = "card";
       var h = document.createElement("h3");
-      h.innerHTML = g.code + ", " + withLevel(g.kind) + " <span class='chi'>" + chiTxt(g.chi) + "</span>";
+      var rinfo = runForGallery(g);
+      h.innerHTML = g.code + ", " + withLevel(g.kind) + " <span class='chi'>" + chiTxt(g.chi) +
+        "</span>" + hwBadge(rinfo);
       var cap = document.createElement("div"); cap.className = "cap";
       var img = document.createElement("img"); img.loading = "lazy";
       var fr = document.createElement("div"); fr.className = "fr";
@@ -480,6 +572,7 @@
       fr.appendChild(rng); fr.appendChild(ftxt);
       card.appendChild(h); card.appendChild(cap); card.appendChild(img);
       if (g.files.length > 1) card.appendChild(fr);
+      if (rinfo) card.appendChild(detailsButton(rinfo));
       grid.appendChild(card);
     });
     if (!grid.children.length) grid.innerHTML = "<p class='note'>No runs match this filter yet.</p>";
@@ -490,6 +583,12 @@
     document.getElementById("lightbox").style.display = "flex";
   }
   document.getElementById("lightbox").onclick = function () { this.style.display = "none"; };
+  document.getElementById("rmClose").onclick = function () {
+    document.getElementById("runmodal").style.display = "none";
+  };
+  document.getElementById("runmodal").onclick = function (e) {
+    if (e.target === this) this.style.display = "none";
+  };
 
   // ---------- movies ----------
   function drawMovies(target, kind) {
@@ -509,10 +608,14 @@
         (lb.res ? " <span class='muted' style='font-weight:400'>" +
           (levelOf(lb.res, lb.d3) ? "level " + levelOf(lb.res, lb.d3) + " &middot; " : "") +
           lb.res + (lb.d3 ? " cells long, 3D" : " cells long") + "</span>" : "");
+      var minfo = runForMovie(m.name);
+      h.innerHTML += hwBadge(minfo);
       var v = document.createElement("video");
       v.controls = true; v.loop = true; v.preload = "metadata"; v.playsInline = true;
       v.src = m.src;
-      c.appendChild(h); c.appendChild(v); grid.appendChild(c);
+      c.appendChild(h); c.appendChild(v);
+      if (minfo) c.appendChild(detailsButton(minfo));
+      grid.appendChild(c);
     });
     if (!grid.children.length) grid.innerHTML = "<p class='note'>No movies match this filter yet.</p>";
   }
