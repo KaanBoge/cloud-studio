@@ -194,9 +194,9 @@
         <div class="ctl"><span id="vinfo"></span></div>
       </div>
     </div>
-    <h3 style="font-size:15px;font-weight:650;margin:26px 0 4px">3D simulation movies</h3>
-    <p class="note">Mid-plane slices through the three-dimensional runs, over time.</p>
-    <div class="grid" id="vmGrid"></div>
+    <p class="note" style="margin-top:22px">Drag to turn the cloud, scroll to zoom, and use the
+      slider above to move through time. Recorded videos of the 3D runs, including the
+      mid-plane slices, are in the Movies tab.</p>
     <h3 style="font-size:15px;font-weight:650;margin:26px 0 4px">3D image sets</h3>
     <div class="grid" id="vgGrid"></div>
   </section>
@@ -241,11 +241,11 @@
   <img id="lbImg" alt=""><div class="cap" id="lbCap"></div>
 </div>
 
-<script>var STUDIO_V="1787677616"; var STUDIO_DATA = {}; var VOL_DATA = {}; var VOLSEQ_DATA = {};</script>
-<script src="data/manifest.js?v=1787677616"></script>
-<script src="data/terrains.js?v=1787677616"></script>
-<script src="data/codefiles.js?v=1787677616"></script>
-<script src="data/runinfo.js?v=1787677616"></script>
+<script>var STUDIO_V="1787679744"; var STUDIO_DATA = {}; var VOL_DATA = {}; var VOLSEQ_DATA = {};</script>
+<script src="data/manifest.js?v=1787679744"></script>
+<script src="data/terrains.js?v=1787679744"></script>
+<script src="data/codefiles.js?v=1787679744"></script>
+<script src="data/runinfo.js?v=1787679744"></script>
 <script>
   (STUDIO_TERRAINS || []).forEach(function (id) {
     var s = document.createElement("script"); s.src = "data/" + id + ".js?v=" + STUDIO_V; document.head.appendChild(s);
@@ -286,6 +286,9 @@
       return lv ? ("level " + lv + " (" + m + ")") : m;
     });
   }
+  // A z-slice through a 3D run is a flat picture of 3D data, not a 3D view.
+  // Saying so keeps it out of the 3D section honestly rather than by omission.
+  var SLICE = "z-slice through the 3D run";
   function movieLabelBase(m) {
     var n = m.name, r;
     var slow = /_slow$/.test(n) ? ", slow motion" :
@@ -325,11 +328,11 @@
     if ((r = base.match(/^gadget4_chi(\d+)$/)))
       return { title: "Gadget-4, SPH" + slow, chi: +r[1], code: "Gadget-4", res: 512 };
     if ((r = base.match(/^flash3d_chi(\d+)_lref(\d+)$/)))
-      return { title: "FLASH, 3D, level " + r[2] + slow, chi: +r[1], code: "FLASH", res: FLASH_LREF[+r[2]] || 0, d3: true };
+      return { title: "FLASH, " + SLICE + ", level " + r[2] + slow, chi: +r[1], code: "FLASH", res: FLASH_LREF[+r[2]] || 0, d3: true };
     if ((r = base.match(/^athw3d_chi(\d+)_(\d+)$/)))
-      return { title: "Athena 4.2 wind tunnel, 3D, " + gridTxt(r[2], true) + slow, chi: +r[1], code: "Athena 4.2", res: +r[2], d3: true };
+      return { title: "Athena 4.2 wind tunnel, " + SLICE + ", " + gridTxt(r[2], true) + slow, chi: +r[1], code: "Athena 4.2", res: +r[2], d3: true };
     if ((r = base.match(/^apk3d_chi(\d+)_(\d+)$/)))
-      return { title: "AthenaPK on the GPU, 3D, " + gridTxt(r[2], true) + slow, chi: +r[1], code: "AthenaPK (GPU)", res: +r[2], d3: true };
+      return { title: "AthenaPK on the GPU, " + SLICE + ", " + gridTxt(r[2], true) + slow, chi: +r[1], code: "AthenaPK (GPU)", res: +r[2], d3: true };
     if ((r = base.match(/^flash_chi(\d+)_lref(\d+)(_partial)?$/)))
       return { title: "FLASH, level " + r[2] + (r[3] ? ", partial run" : "") + slow, chi: +r[1], code: "FLASH", res: FLASH_LREF[+r[2]] || 0 };
     if ((r = base.match(/^cloudcrush_lref(\d+)$/)))
@@ -354,7 +357,7 @@
       var num = r[3] ? +r[3] : 0;
       // a small number is a level, a large one is already a cell count
       var cells = num > 32 ? num : (num ? Math.pow(2, num + 3) : 0);
-      return { title: (C3[r[1]] || r[1]) + ", 3D" + (cells ? ", " + gridTxt(cells, true) : "") + slow,
+      return { title: (C3[r[1]] || r[1]) + ", " + SLICE + (cells ? ", " + gridTxt(cells, true) : "") + slow,
                chi: +r[2], code: C3[r[1]] || r[1], res: cells, d3: true };
     }
     return { title: n, chi: null, code: null, res: 0 };
@@ -374,6 +377,7 @@
     var tail = /_slow$/.test(n) ? ", slow motion"
              : (/_smooth$/.test(n) ? ", smoothed playback" : "");
     lb.title = lb.title.replace(/, (slow motion|smoothed playback)$/, "")
+                       .replace(", " + SLICE, "")
              + ", true 3D isosurface" + tail;
     return lb;
   }
@@ -745,14 +749,18 @@
     list.forEach(function (g) {
       var lb = g.label;
       if (lb.code !== null && !passes(lb.code, lb.chi)) return;
-      var mk = lb.terrain ? "terrain" : (lb.d3 ? "vol" : "flat");
+      // No video belongs in the 3D volumes tab. A recorded camera path, however
+      // it was made, forces one viewing angle on you; the interactive viewer in
+      // that tab is the actual 3D object you can turn and zoom yourself. Videos
+      // live with the other videos, labelled for what they show.
+      var mk = lb.terrain ? "terrain" : "flat";
       if (mk !== kind) return;
       var c = document.createElement("div"); c.className = "card";
       var h = document.createElement("h3");
       h.innerHTML = lb.title + (lb.chi !== null ? " <span class='chi'>" + chiTxt(lb.chi) + "</span>" : "") +
         (lb.res ? " <span class='muted' style='font-weight:400'>" +
           (levelOf(lb.res, lb.d3) ? "level " + levelOf(lb.res, lb.d3) + " &middot; " : "") +
-          lb.res + (lb.d3 ? " cells long, 3D" : " cells long") + "</span>" : "");
+          lb.res + " cells long</span>" : "");
       var minfo = runForMovie(g.base);
       h.innerHTML += hwBadge(minfo);
       var v = document.createElement("video");
@@ -792,7 +800,6 @@
   function drawAllMovies() {
     drawMovies("mGrid", "flat");
     drawMovies("tmGrid", "terrain");
-    drawMovies("vmGrid", "vol");
   }
   window.studioFilters = function () { return { code: codeSel, chi: chiSel }; };
   window.studioPasses = passes;
