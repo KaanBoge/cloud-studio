@@ -195,10 +195,9 @@
       </div>
     </div>
     <p class="note" style="margin-top:22px">Drag to turn the cloud, scroll to zoom, and use the
-      slider above to move through time. Recorded videos of the 3D runs, including the
-      mid-plane slices, are in the Movies tab.</p>
-    <h3 style="font-size:15px;font-weight:650;margin:26px 0 4px">3D image sets</h3>
-    <div class="grid" id="vgGrid"></div>
+      slider above to move through time. Everything else made from the 3D runs is a flat picture
+      of three-dimensional data: the recorded videos are in Movies and the frame sets are in
+      Gallery, both labelled as slices.</p>
   </section>
 
   <section class="panel" id="p-code">
@@ -241,11 +240,11 @@
   <img id="lbImg" alt=""><div class="cap" id="lbCap"></div>
 </div>
 
-<script>var STUDIO_V="1787680064"; var STUDIO_DATA = {}; var VOL_DATA = {}; var VOLSEQ_DATA = {};</script>
-<script src="data/manifest.js?v=1787680064"></script>
-<script src="data/terrains.js?v=1787680064"></script>
-<script src="data/codefiles.js?v=1787680064"></script>
-<script src="data/runinfo.js?v=1787680064"></script>
+<script>var STUDIO_V="1787680727"; var STUDIO_DATA = {}; var VOL_DATA = {}; var VOLSEQ_DATA = {};</script>
+<script src="data/manifest.js?v=1787680727"></script>
+<script src="data/terrains.js?v=1787680727"></script>
+<script src="data/codefiles.js?v=1787680727"></script>
+<script src="data/runinfo.js?v=1787680727"></script>
 <script>
   (STUDIO_TERRAINS || []).forEach(function (id) {
     var s = document.createElement("script"); s.src = "data/" + id + ".js?v=" + STUDIO_V; document.head.appendChild(s);
@@ -613,11 +612,13 @@
     sortByMode(STUDIO_GALLERY, galRes, function (g) { return g.code; },
                function (g) { return g.chi; }).forEach(function (g) {
       if (!passes(g.code, g.chi)) return;
-      if (is3D(g) !== want3d) return;
+      // want3d null means "no filter": one gallery for every frame set
+      if (want3d !== null && is3D(g) !== want3d) return;
       var card = document.createElement("div"); card.className = "card";
       var h = document.createElement("h3");
       var rinfo = runForGallery(g);
-      h.innerHTML = g.code + ", " + withLevel(g.kind) + " <span class='chi'>" + chiTxt(g.chi) +
+      h.innerHTML = g.code + ", " + withLevel(g.kind) +
+        (is3D(g) ? ", " + SLICE : "") + " <span class='chi'>" + chiTxt(g.chi) +
         "</span>" + hwBadge(rinfo);
       var cap = document.createElement("div"); cap.className = "cap";
       var wrap = document.createElement("div"); wrap.className = "imgwrap";
@@ -819,7 +820,10 @@
     };
   });
   function drawAll() {
-    drawGallery("gGrid", false); drawGallery("vgGrid", true); drawAllMovies();
+    // one gallery holding every frame set, 2D runs and 3D runs alike: a frame
+    // set from a 3D run is still a flat slice, so it has no business sitting in
+    // the 3D tab pretending otherwise
+    drawGallery("gGrid", null); drawAllMovies();
     if (window.refreshTerrainList) window.refreshTerrainList();
     if (window.refreshVolList) window.refreshVolList();
     if (window.refreshCodeList) window.refreshCodeList();
