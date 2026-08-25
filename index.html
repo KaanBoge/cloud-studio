@@ -198,6 +198,14 @@
       slider above to move through time. Everything else made from the 3D runs is a flat picture
       of three-dimensional data: the recorded videos are in Movies and the frame sets are in
       Gallery, both labelled as slices.</p>
+    <p style="margin:14px 0 4px">
+      <a id="fullview" href="viewer.html" target="_blank" rel="noopener"
+         style="display:inline-block;padding:9px 14px;border-radius:9px;text-decoration:none;
+                border:1px solid rgba(110,168,255,.5);background:rgba(110,168,255,.14);
+                font-weight:600;font-size:13.5px">Open the full 3D viewer &#8599;</a>
+      <span class="note" style="margin-left:10px">Opens in a new tab: full screen, higher
+        detail meshes, shadows, shell toggles and 60&nbsp;fps playback.</span>
+    </p>
   </section>
 
   <section class="panel" id="p-code">
@@ -240,11 +248,11 @@
   <img id="lbImg" alt=""><div class="cap" id="lbCap"></div>
 </div>
 
-<script>var STUDIO_V="1787680727"; var STUDIO_DATA = {}; var VOL_DATA = {}; var VOLSEQ_DATA = {};</script>
-<script src="data/manifest.js?v=1787680727"></script>
-<script src="data/terrains.js?v=1787680727"></script>
-<script src="data/codefiles.js?v=1787680727"></script>
-<script src="data/runinfo.js?v=1787680727"></script>
+<script>var STUDIO_V="1787690242"; var STUDIO_DATA = {}; var VOL_DATA = {}; var VOLSEQ_DATA = {};</script>
+<script src="data/manifest.js?v=1787690242"></script>
+<script src="data/terrains.js?v=1787690242"></script>
+<script src="data/codefiles.js?v=1787690242"></script>
+<script src="data/runinfo.js?v=1787690242"></script>
 <script>
   (STUDIO_TERRAINS || []).forEach(function (id) {
     var s = document.createElement("script"); s.src = "data/" + id + ".js?v=" + STUDIO_V; document.head.appendChild(s);
@@ -1038,6 +1046,9 @@
   function vShow(id) {
     var d = VOL_DATA[id]; if (!d) return;
     vCur = id;
+    // keep the full-viewer link pointed at whatever run is on screen
+    var fv = document.getElementById("fullview");
+    if (fv) fv.href = "viewer.html?run=" + encodeURIComponent(id);
     if (!vStarted) return;
     vStopPlay();
     vShellsOn = [];
