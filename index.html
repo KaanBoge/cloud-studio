@@ -241,11 +241,11 @@
   <img id="lbImg" alt=""><div class="cap" id="lbCap"></div>
 </div>
 
-<script>var STUDIO_V="1787654217"; var STUDIO_DATA = {}; var VOL_DATA = {}; var VOLSEQ_DATA = {};</script>
-<script src="data/manifest.js?v=1787654217"></script>
-<script src="data/terrains.js?v=1787654217"></script>
-<script src="data/codefiles.js?v=1787654217"></script>
-<script src="data/runinfo.js?v=1787654217"></script>
+<script>var STUDIO_V="1787677616"; var STUDIO_DATA = {}; var VOL_DATA = {}; var VOLSEQ_DATA = {};</script>
+<script src="data/manifest.js?v=1787677616"></script>
+<script src="data/terrains.js?v=1787677616"></script>
+<script src="data/codefiles.js?v=1787677616"></script>
+<script src="data/runinfo.js?v=1787677616"></script>
 <script>
   (STUDIO_TERRAINS || []).forEach(function (id) {
     var s = document.createElement("script"); s.src = "data/" + id + ".js?v=" + STUDIO_V; document.head.appendChild(s);
@@ -286,7 +286,7 @@
       return lv ? ("level " + lv + " (" + m + ")") : m;
     });
   }
-  function movieLabel(m) {
+  function movieLabelBase(m) {
     var n = m.name, r;
     var slow = /_slow$/.test(n) ? ", slow motion" :
                (/_smooth$/.test(n) ? ", smoothed playback" : "");
@@ -342,7 +342,40 @@
       return { title: "Athena 4.2, " + shockLevel(+r[2]) + ", shock-driven" + slow, chi: +r[1], code: "Athena 4.2", res: +r[2] * 2 };
     if ((r = base.match(/^athena_shk_cloud_(hires|ultra)$/)))
       return { title: "Athena 4.2, " + shockLevel(r[1] === "hires" ? 1800 : 3600) + ", shock-driven" + slow, chi: 10, code: "Athena 4.2", res: (r[1] === "hires" ? 3600 : 7200) };
+    // generic 3D family: <code>3d_chi<chi>[_l<level> | _lref<level> | _<cells>]
+    // catches the runs whose names carry a level instead of a cell count, and
+    // the ones that carry neither, so nothing 3D falls through to the flat tab
+    if ((r = base.match(/^(flash3d|flashx3d|athw3d|apk3d|athpp3d|enzo3d|enzoe3d|ram3d|ramses3d|gizmo3d|arepo3d|gadget3d|gasoline3d)_chi(\d+)(?:_(?:l|lref)?(\d+))?$/))) {
+      var C3 = { flash3d: "FLASH", flashx3d: "Flash-X", athw3d: "Athena 4.2",
+                 apk3d: "AthenaPK (GPU)", athpp3d: "Athena++", enzo3d: "Enzo",
+                 enzoe3d: "Enzo-E", ram3d: "RAMSES", ramses3d: "RAMSES",
+                 gizmo3d: "GIZMO MFM", arepo3d: "Arepo", gadget3d: "Gadget-4",
+                 gasoline3d: "Gasoline" };
+      var num = r[3] ? +r[3] : 0;
+      // a small number is a level, a large one is already a cell count
+      var cells = num > 32 ? num : (num ? Math.pow(2, num + 3) : 0);
+      return { title: (C3[r[1]] || r[1]) + ", 3D" + (cells ? ", " + gridTxt(cells, true) : "") + slow,
+               chi: +r[2], code: C3[r[1]] || r[1], res: cells, d3: true };
+    }
     return { title: n, chi: null, code: null, res: 0 };
+  }
+  // Isosurface movies are named <base>_iso3d[_slow|_smooth]. Strip the marker,
+  // label from the base name, then force the result into the 3D section: these
+  // are the genuinely three-dimensional views, not slices, so they must never
+  // land in the flat Movies tab.
+  function movieLabel(m) {
+    var n = m.name || "";
+    var iso = /_iso3d(_slow|_smooth)?$/.test(n);
+    if (!iso) return movieLabelBase(m);
+    var lb = movieLabelBase({ name: n.replace(/_iso3d(?=(_slow|_smooth)?$)/, "") });
+    lb.d3 = true;
+    lb.terrain = false;          // belongs with the volumes, not the flyovers
+    lb.iso = true;
+    var tail = /_slow$/.test(n) ? ", slow motion"
+             : (/_smooth$/.test(n) ? ", smoothed playback" : "");
+    lb.title = lb.title.replace(/, (slow motion|smoothed playback)$/, "")
+             + ", true 3D isosurface" + tail;
+    return lb;
   }
   function normCode(c) { return (c && c.indexOf("AthenaPK") === 0) ? "AthenaPK (GPU)" : c; }
   function terrainLabel(d) {
