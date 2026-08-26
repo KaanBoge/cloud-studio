@@ -4,91 +4,124 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <style>
   :root{
-    --bg:#0a0d16; --panel:rgba(16,20,32,.82); --line:rgba(255,255,255,.13);
-    --fg:#e8ecf6; --mut:#98a2bb; --acc:#6ea8ff;
+    --bg:#0a0d16; --panel:rgba(16,20,32,.85); --line:rgba(255,255,255,.13);
+    --fg:#e8ecf6; --mut:#98a2bb; --acc:#6ea8ff; --acc2:#ffb46e;
   }
   *{box-sizing:border-box}
   html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);
     font:14px/1.45 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;overflow:hidden}
-  canvas{display:block;width:100%;height:100%;outline:none}
-  #wrap{position:fixed;inset:0}
+  canvas.view{display:block;width:100%;height:100%;outline:none}
+  #wrap{position:fixed;inset:0;display:grid;grid-template-columns:1fr}
+  #wrap.split{grid-template-columns:1fr 1fr}
+  .pane{position:relative;min-width:0}
+  .pane+.pane{border-left:1px solid var(--line)}
+  .ptitle{position:absolute;top:10px;left:50%;transform:translateX(-50%);
+    font-size:13px;color:var(--mut);background:var(--panel);border:1px solid var(--line);
+    border-radius:8px;padding:4px 12px;white-space:nowrap;pointer-events:none}
+  .ptitle b{color:var(--fg);font-weight:600}
 
-  .pane{position:fixed;background:var(--panel);border:1px solid var(--line);
+  .card{position:fixed;background:var(--panel);border:1px solid var(--line);
     border-radius:12px;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
     box-shadow:0 10px 40px rgba(0,0,0,.45)}
-  #side{top:14px;left:14px;width:290px;max-height:calc(100vh - 28px);
-    overflow:auto;padding:14px 14px 10px}
-  #side h1{margin:0 0 2px;font-size:15px;font-weight:650;letter-spacing:.01em}
-  #side .sub{color:var(--mut);font-size:12px;margin:0 0 12px}
+  #side{top:14px;left:14px;width:302px;max-height:calc(100vh - 28px);
+    overflow:auto;padding:14px 14px 10px;z-index:5}
+  #side h1{margin:0 0 2px;font-size:15px;font-weight:650}
+  #side .sub{color:var(--mut);font-size:12px;margin:0 0 10px}
   .lbl{font-size:11px;text-transform:uppercase;letter-spacing:.09em;color:var(--mut);
-    margin:14px 0 6px;font-weight:600}
-  #runs{display:flex;flex-direction:column;gap:5px}
-  #runs button{all:unset;cursor:pointer;padding:8px 10px;border-radius:8px;
-    border:1px solid transparent;font-size:12.5px;line-height:1.3}
+    margin:12px 0 6px;font-weight:600}
+  .chips{display:flex;flex-wrap:wrap;gap:5px}
+  .chips button{all:unset;cursor:pointer;padding:4px 9px;border-radius:999px;font-size:12px;
+    border:1px solid var(--line);color:var(--mut)}
+  .chips button.on{background:rgba(110,168,255,.16);border-color:rgba(110,168,255,.5);color:var(--fg)}
+  #runs{display:flex;flex-direction:column;gap:4px;margin-top:4px}
+  #runs .grp{font-size:11.5px;font-weight:650;color:var(--mut);margin:8px 0 2px;
+    text-transform:uppercase;letter-spacing:.06em}
+  #runs button{all:unset;cursor:pointer;padding:6px 9px;border-radius:8px;font-size:12.5px;
+    border:1px solid transparent;display:flex;justify-content:space-between;gap:8px}
   #runs button:hover{background:rgba(255,255,255,.06)}
   #runs button.on{background:rgba(110,168,255,.16);border-color:rgba(110,168,255,.45)}
-  #runs button .m{display:block;color:var(--mut);font-size:11px;margin-top:2px}
+  #runs button .m{color:var(--mut);font-size:11.5px;white-space:nowrap}
+  .row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+  .chk{display:flex;gap:6px;align-items:center;font-size:12px;color:var(--mut);cursor:pointer}
+  .chk input{accent-color:var(--acc);cursor:pointer}
+  select{background:rgba(255,255,255,.06);color:var(--fg);border:1px solid var(--line);
+    border-radius:7px;padding:5px 7px;font-size:12px;max-width:100%}
+  a.back{color:var(--acc);text-decoration:none;font-size:12px}
 
-  #bar{left:50%;transform:translateX(-50%);bottom:14px;padding:10px 14px;
-    display:flex;align-items:center;gap:12px;min-width:min(720px,calc(100vw - 28px))}
+  #bar{left:50%;transform:translateX(-50%);bottom:14px;padding:10px 14px;z-index:5;
+    display:flex;align-items:center;gap:12px;min-width:min(760px,calc(100vw - 28px))}
   #bar button{all:unset;cursor:pointer;width:34px;height:34px;border-radius:8px;
     display:grid;place-items:center;border:1px solid var(--line);font-size:13px}
   #bar button:hover{background:rgba(255,255,255,.08)}
   #slider{flex:1;accent-color:var(--acc);cursor:pointer}
-  #tlab{min-width:118px;text-align:right;color:var(--mut);font-variant-numeric:tabular-nums;font-size:12.5px}
+  #tlab{min-width:112px;text-align:right;color:var(--mut);font-variant-numeric:tabular-nums;font-size:12.5px}
 
-  #hud{top:14px;right:14px;padding:9px 12px;font-variant-numeric:tabular-nums;
-    font-size:12px;color:var(--mut);text-align:right;line-height:1.6}
+  #hud{top:14px;right:14px;padding:9px 12px;font-size:12px;color:var(--mut);
+    text-align:right;line-height:1.6;z-index:5}
   #hud b{color:var(--fg);font-weight:600}
-  .row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
-  .chk{display:flex;gap:6px;align-items:center;font-size:12px;color:var(--mut);cursor:pointer}
-  .chk input{accent-color:var(--acc);cursor:pointer}
-  a.back{color:var(--acc);text-decoration:none;font-size:12px}
-  a.back:hover{text-decoration:underline}
+
+  #chartcard{right:14px;bottom:70px;width:330px;padding:10px 12px 6px;z-index:5}
+  #chartcard .lbl{margin-top:0}
+  #chart{width:100%;height:150px;display:block}
+  #chartnote{font-size:11px;color:var(--mut);margin:2px 0 4px}
+  .sw{display:inline-block;width:14px;height:3px;border-radius:2px;vertical-align:middle;margin-right:5px}
   #msg{position:fixed;inset:0;display:grid;place-items:center;color:var(--mut);
-    font-size:13px;pointer-events:none}
-  select{background:rgba(255,255,255,.06);color:var(--fg);border:1px solid var(--line);
-    border-radius:7px;padding:5px 7px;font-size:12px}
+    font-size:13px;pointer-events:none;z-index:4}
 </style>
 
-<div id="wrap"><canvas id="cv"></canvas></div>
+<div id="wrap"><div class="pane" id="paneA"><canvas class="view" id="cvA"></canvas>
+  <div class="ptitle" id="titleA">&mdash;</div></div></div>
 <div id="msg">loading&hellip;</div>
 
-<div class="pane" id="side">
+<div class="card" id="side">
   <h1>3D viewer</h1>
   <p class="sub">Drag to turn &middot; scroll to zoom &middot; right-drag to pan
     &middot; <a class="back" href="index.html">back to studio</a></p>
+  <div class="lbl">Overdensity</div>
+  <div class="chips" id="chiChips">
+    <button data-chi="all" class="on">all</button><button data-chi="10">&chi; = 10</button>
+    <button data-chi="100">&chi; = 100</button><button data-chi="1000">&chi; = 1000</button>
+  </div>
+  <div class="lbl">Level</div>
+  <div class="chips" id="lvlChips">
+    <button data-lvl="all" class="on">all</button><button data-lvl="3">3</button>
+    <button data-lvl="4">4</button><button data-lvl="5">5</button><button data-lvl="6">6</button>
+  </div>
   <div class="lbl">Run</div>
   <div id="runs"></div>
+  <div class="lbl">Compare</div>
+  <div class="row">
+    <label class="chk"><input type="checkbox" id="cmpOn"> side by side</label>
+    <label class="chk"><input type="checkbox" id="cmpLink" checked> link cameras</label>
+  </div>
+  <select id="cmpSel" style="margin-top:6px;width:100%" disabled></select>
   <div class="lbl">Quality</div>
   <div class="row">
     <label class="chk"><input type="checkbox" id="qShadow" checked> shadow</label>
     <label class="chk"><input type="checkbox" id="qBox" checked> box</label>
     <label class="chk"><input type="checkbox" id="qSpin"> spin</label>
-  </div>
-  <div class="row" style="margin-top:8px">
-    <span style="font-size:12px;color:var(--mut)">render</span>
-    <select id="qScale">
-      <option value="1">1&times;</option>
-      <option value="1.5">1.5&times;</option>
-      <option value="2" selected>2&times; (crisp)</option>
-      <option value="3">3&times; (max)</option>
-    </select>
+    <select id="qScale"><option value="1">1&times;</option><option value="1.5">1.5&times;</option>
+      <option value="2" selected>2&times;</option><option value="3">3&times;</option></select>
   </div>
   <div class="lbl">Shells</div>
   <div id="shells" class="row"></div>
 </div>
 
-<div class="pane" id="hud">
+<div class="card" id="hud">
   <div><b id="fps">&mdash;</b> fps</div>
   <div><b id="tris">&mdash;</b> triangles</div>
-  <div id="gridinfo">&mdash;</div>
 </div>
 
-<div class="pane" id="bar">
-  <button id="prev" title="Previous frame">&#9664;</button>
-  <button id="play" title="Play">&#9654;</button>
-  <button id="next" title="Next frame">&#9654;&#9654;</button>
+<div class="card" id="chartcard">
+  <div class="lbl">Surviving dense mass</div>
+  <canvas id="chart" width="640" height="300"></canvas>
+  <div id="chartnote">fraction of total mass still at cloud density, vs t/t_cc</div>
+</div>
+
+<div class="card" id="bar">
+  <button id="prev">&#9664;</button>
+  <button id="play">&#9654;</button>
+  <button id="next">&#9654;&#9654;</button>
   <input id="slider" type="range" min="0" max="0" value="0" step="1">
   <span id="tlab">&mdash;</span>
 </div>
@@ -103,124 +136,131 @@
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 
-const msg = document.getElementById("msg");
-const cv  = document.getElementById("cv");
-
-// ---------------------------------------------------------------- renderer
-const ren = new THREE.WebGLRenderer({ canvas: cv, antialias: true, powerPreference: "high-performance" });
-ren.setClearColor(0x0a0d16, 1);
-ren.toneMapping = THREE.ACESFilmicToneMapping;
-ren.toneMappingExposure = 1.05;
-ren.shadowMap.enabled = true;
-ren.shadowMap.type = THREE.PCFSoftShadowMap;
-
-const scene = new THREE.Scene();
-scene.fog = new THREE.Fog(0x0a0d16, 26, 70);
-const cam = new THREE.PerspectiveCamera(42, 2, 0.05, 500);
-cam.position.set(14, -17, 10);
-const ctrl = new OrbitControls(cam, cv);
-ctrl.enableDamping = true;
-ctrl.dampingFactor = 0.075;
-ctrl.rotateSpeed = 0.85;
-ctrl.target.set(5, 0, 0);
-
-scene.add(new THREE.HemisphereLight(0xbcd4ff, 0x202634, 0.85));
-const key = new THREE.DirectionalLight(0xffffff, 2.0);
-key.position.set(9, -14, 16);
-key.castShadow = true;
-key.shadow.mapSize.set(2048, 2048);
-key.shadow.camera.near = 1; key.shadow.camera.far = 80;
-key.shadow.camera.left = -14; key.shadow.camera.right = 24;
-key.shadow.camera.top = 14; key.shadow.camera.bottom = -14;
-scene.add(key);
-const rim = new THREE.DirectionalLight(0x9dc0ff, 0.7); rim.position.set(-10, 8, -6); scene.add(rim);
-
-// the comparison window, drawn so the cloud has a place to sit in
 const XL = [-3, 17], YL = [-5, 5], ZL = [-5, 5];
-const boxG = new THREE.Group();
-{
-  const g = new THREE.BoxGeometry(XL[1]-XL[0], YL[1]-YL[0], ZL[1]-ZL[0]);
-  const e = new THREE.LineSegments(new THREE.EdgesGeometry(g),
-      new THREE.LineBasicMaterial({ color: 0x4a5570, transparent: true, opacity: 0.55 }));
-  e.position.set((XL[0]+XL[1])/2, 0, 0);
-  boxG.add(e);
-  const floor = new THREE.Mesh(new THREE.PlaneGeometry(XL[1]-XL[0], YL[1]-YL[0]),
-      new THREE.ShadowMaterial({ opacity: 0.34 }));
-  floor.position.set((XL[0]+XL[1])/2, 0, ZL[0] + 0.01);
-  floor.receiveShadow = true;
-  boxG.add(floor);
-}
-scene.add(boxG);
+const msg = document.getElementById("msg");
+const qScale = document.getElementById("qScale");
 
-// ------------------------------------------------------------------- data
+// ------------------------------------------------------------------ data ids
+function loadScript(src) {
+  return new Promise((res, rej) => {
+    const s = document.createElement("script");
+    s.src = src; s.onload = res; s.onerror = () => rej(new Error(src));
+    document.head.appendChild(s);
+  });
+}
+let ids = (window.STUDIO_VOLS || []).map(s => String(s).replace(/^volhq_|^vol_seq_|^vol_/, ""))
+          .filter((v, i, a) => a.indexOf(v) === i)
+          .filter(id => !/_(384|448|1800|3600|7200|8192)(_|$)/.test(id));
+
+const CODE_OF = { apk: "AthenaPK (GPU)", apk3d: "AthenaPK (GPU)", athpp: "Athena++",
+  athpp3d: "Athena++", athw: "Athena 4.2", athw3d: "Athena 4.2", f: "FLASH 4.8", f3d: "FLASH 4.8",
+  flash: "FLASH 4.8", flashx: "Flash-X", enzo: "Enzo", arepo: "Arepo",
+  gzmfm: "GIZMO MFM", gzmfv: "GIZMO MFV", g4: "Gadget-4", gas: "Gasoline" };
+function meta(id) {
+  const pre = (id.match(/^([a-z0-9]+?)(?:3d)?_/) || [, ""])[1];
+  const chi = +((id.match(/chi(\d+)/) || [, 0])[1]);
+  let lvl = null;
+  let m = id.match(/_[lL](\d)\b|_[lL](\d)(?:m|hq|_)/);
+  if (m) lvl = +(m[1] || m[2]);
+  else if ((m = id.match(/_(\d{3,4})(?:_|$)/))) {
+    const L = Math.log2(+m[1]) - 3;
+    if (Math.abs(L - Math.round(L)) < 0.02) lvl = Math.round(L);
+  }
+  return { code: CODE_OF[pre] || pre, chi, lvl };
+}
+// only integer-ladder entries with an identifiable level
+ids = ids.filter(id => meta(id).lvl !== null);
+// one entry per (code, chi, level): the new-style tags (apk_L5_chi10) carry the
+// diagnostics and the freshest exports, so they win over old-style duplicates
+ids.sort((a, b) => (/3d/.test(a) ? 1 : 0) - (/3d/.test(b) ? 1 : 0));
+{
+  const seen = new Set();
+  ids = ids.filter(id => {
+    const m = meta(id), k = m.code + "|" + m.chi + "|" + m.lvl;
+    if (seen.has(k)) return false;
+    seen.add(k); return true;
+  });
+}
+
+// ------------------------------------------------------------------- panes
 function bytes(b64) {
   const raw = atob(b64), n = raw.length, buf = new Uint8Array(n);
   for (let i = 0; i < n; i++) buf[i] = raw.charCodeAt(i);
   return buf;
 }
-// High-quality shells store uint16 positions quantised over the mesh's own
-// bounding box, which halves the payload for the same visual result. Older
-// shells store raw float32. Tell them apart by the presence of qlo.
 function decode(s) {
   const buf = bytes(s.pos);
   if (!s.qlo) return new Float32Array(buf.buffer);
-  const q = new Uint16Array(buf.buffer);
-  const out = new Float32Array(q.length);
+  const q = new Uint16Array(buf.buffer), out = new Float32Array(q.length);
   const lo = s.qlo, hi = s.qhi;
-  const sx = (hi[0] - lo[0]) / 65535, sy = (hi[1] - lo[1]) / 65535, sz = (hi[2] - lo[2]) / 65535;
+  const sx = (hi[0]-lo[0])/65535, sy = (hi[1]-lo[1])/65535, sz = (hi[2]-lo[2])/65535;
   for (let i = 0; i < q.length; i += 3) {
-    out[i]     = lo[0] + q[i]     * sx;
-    out[i + 1] = lo[1] + q[i + 1] * sy;
-    out[i + 2] = lo[2] + q[i + 2] * sz;
+    out[i] = lo[0]+q[i]*sx; out[i+1] = lo[1]+q[i+1]*sy; out[i+2] = lo[2]+q[i+2]*sz;
   }
   return out;
 }
 
-function loadScript(src) {
-  return new Promise((res, rej) => {
-    const s = document.createElement("script");
-    s.src = src; s.onload = res; s.onerror = () => rej(new Error("failed: " + src));
-    document.head.appendChild(s);
-  });
+function makePane(cv) {
+  const p = {};
+  p.ren = new THREE.WebGLRenderer({ canvas: cv, antialias: true, powerPreference: "high-performance" });
+  p.ren.setClearColor(0x0a0d16, 1);
+  p.ren.toneMapping = THREE.ACESFilmicToneMapping;
+  p.ren.shadowMap.enabled = true;
+  p.ren.shadowMap.type = THREE.PCFSoftShadowMap;
+  p.scene = new THREE.Scene();
+  p.scene.fog = new THREE.Fog(0x0a0d16, 26, 70);
+  p.cam = new THREE.PerspectiveCamera(42, 2, 0.05, 500);
+  p.cam.up.set(0, 0, 1);
+  p.cam.position.set(14, -17, 10);
+  p.ctrl = new OrbitControls(p.cam, cv);
+  p.ctrl.enableDamping = true; p.ctrl.dampingFactor = 0.075;
+  p.ctrl.target.set(5, 0, 0);
+  p.scene.add(new THREE.HemisphereLight(0xbcd4ff, 0x202634, 0.85));
+  const key = new THREE.DirectionalLight(0xffffff, 2.0);
+  key.position.set(9, -14, 16); key.castShadow = true;
+  key.shadow.mapSize.set(2048, 2048);
+  key.shadow.camera.near = 1; key.shadow.camera.far = 80;
+  key.shadow.camera.left = -14; key.shadow.camera.right = 24;
+  key.shadow.camera.top = 14; key.shadow.camera.bottom = -14;
+  p.scene.add(key);
+  const rim = new THREE.DirectionalLight(0x9dc0ff, 0.7); rim.position.set(-10, 8, -6); p.scene.add(rim);
+  p.boxG = new THREE.Group();
+  const g = new THREE.BoxGeometry(XL[1]-XL[0], YL[1]-YL[0], ZL[1]-ZL[0]);
+  const e = new THREE.LineSegments(new THREE.EdgesGeometry(g),
+      new THREE.LineBasicMaterial({ color: 0x4a5570, transparent: true, opacity: 0.55 }));
+  e.position.set((XL[0]+XL[1])/2, 0, 0); p.boxG.add(e);
+  const floor = new THREE.Mesh(new THREE.PlaneGeometry(XL[1]-XL[0], YL[1]-YL[0]),
+      new THREE.ShadowMaterial({ opacity: 0.34 }));
+  floor.position.set((XL[0]+XL[1])/2, 0, ZL[0]+0.01); floor.receiveShadow = true;
+  p.boxG.add(floor);
+  p.scene.add(p.boxG);
+  p.root = new THREE.Group(); p.scene.add(p.root);
+  p.frames = []; p.times = []; p.cur = 0; p.id = null; p.tris = 0;
+  p.cv = cv; p.lastW = 0; p.lastH = 0;
+  return p;
 }
 
-// every frame is built ONCE into a Group and then simply shown or hidden.
-// scrubbing and playback never rebuild geometry, which is what keeps it at 60 fps.
-let frames = [], times = [], cur = 0, shellOn = [];
-let root = new THREE.Group(); scene.add(root);
-
-function clearRun() {
-  root.traverse(o => { if (o.geometry) o.geometry.dispose(); if (o.material) o.material.dispose(); });
-  scene.remove(root); root = new THREE.Group(); scene.add(root);
-  frames = []; times = [];
+function clearPane(p) {
+  p.root.traverse(o => { if (o.geometry) o.geometry.dispose(); if (o.material) o.material.dispose(); });
+  p.scene.remove(p.root);
+  p.root = new THREE.Group(); p.scene.add(p.root);
+  p.frames = []; p.times = []; p.tris = 0;
 }
 
-async function showRun(id, label) {
-  msg.textContent = "loading " + label + "…";
-  msg.style.display = "grid";
-  clearRun();
-  // prefer the high-quality export when one exists for this run
-  let hq = false;
-  try {
-    if (!VOLHQ_DATA[id]) await loadScript("data/volhq_" + id + ".js");
-    hq = !!VOLHQ_DATA[id];
-  } catch (e) { hq = false; }
-  if (!hq) {
-    try {
-      if (!VOLSEQ_DATA[id]) await loadScript("data/vol_seq_" + id + ".js");
-    } catch (e) {
-      try { if (!VOL_DATA[id]) await loadScript("data/vol_" + id + ".js"); }
-      catch (e2) { msg.textContent = "no 3D data for " + label; return; }
-    }
+async function loadRun(p, id, titleEl) {
+  msg.textContent = "loading " + id + "…"; msg.style.display = "grid";
+  clearPane(p); p.id = id;
+  let seq = null;
+  try { if (!VOLHQ_DATA[id]) await loadScript("data/volhq_" + id + ".js"); } catch (e) {}
+  seq = VOLHQ_DATA[id];
+  if (!seq) {
+    try { if (!VOLSEQ_DATA[id]) await loadScript("data/vol_seq_" + id + ".js"); } catch (e) {}
+    seq = VOLSEQ_DATA[id];
   }
-  const seq = hq ? VOLHQ_DATA[id] : VOLSEQ_DATA[id];
-  const single = VOL_DATA[id];
-  const list = seq && seq.frames ? seq.frames : (single ? [single.surfs || single.shells || []] : []);
-  times = seq && seq.times ? seq.times : [""];
-  if (!list.length) { msg.textContent = "no surfaces in " + label; return; }
-
+  if (!seq || !seq.frames || !seq.frames.length) { msg.textContent = "no 3D data for " + id; return; }
+  p.times = seq.times || [];
   let tri = 0;
-  list.forEach((surfs, fi) => {
+  seq.frames.forEach((surfs, fi) => {
     const g = new THREE.Group(); g.visible = (fi === 0);
     (surfs || []).forEach((s, si) => {
       const pos = decode(s);
@@ -230,118 +270,193 @@ async function showRun(id, label) {
       const opaque = s.opacity >= 0.9;
       const mat = new THREE.MeshPhysicalMaterial({
         color: new THREE.Color(s.color[0], s.color[1], s.color[2]),
-        transparent: !opaque, opacity: s.opacity,
-        roughness: 0.42, metalness: 0.0, clearcoat: opaque ? 0.35 : 0.0,
-        side: THREE.DoubleSide, depthWrite: opaque,
-        transmission: opaque ? 0 : 0.08
-      });
-      const m = new THREE.Mesh(geo, mat);
-      m.castShadow = opaque; m.receiveShadow = false;
-      m.userData.shell = si;
-      g.add(m);
+        transparent: !opaque, opacity: s.opacity, roughness: 0.42,
+        clearcoat: opaque ? 0.35 : 0, side: THREE.DoubleSide, depthWrite: opaque });
+      const mm = new THREE.Mesh(geo, mat);
+      mm.castShadow = opaque; mm.userData.shell = si;
+      g.add(mm);
       if (fi === 0) tri += pos.length / 9;
     });
-    frames.push(g); root.add(g);
+    p.frames.push(g); p.root.add(g);
   });
-
-  const sl = document.getElementById("slider");
-  sl.min = 0; sl.max = frames.length - 1; sl.value = 0;
-  cur = 0; setFrame(0);
-  document.getElementById("tris").textContent = Math.round(tri).toLocaleString();
-  const meta = (VOL_DATA[id] && VOL_DATA[id].meta) || (seq && seq.meta) || {};
-  document.getElementById("gridinfo").textContent =
-    (meta.res || "") + (meta.chi ? "  χ = " + meta.chi : "");
+  p.tris = Math.round(tri);
+  const mt = meta(id);
+  if (titleEl) titleEl.innerHTML = "<b>" + mt.code + "</b> &middot; &chi; = " + mt.chi + " &middot; level " + mt.lvl;
+  setFrameAll(0);
   buildShellToggles();
+  updateHud();
+  loadDiag(id, p === A ? 0 : 1);
   msg.style.display = "none";
 }
 
-function setFrame(i) {
-  if (!frames.length) return;
-  frames[cur].visible = false;
-  cur = Math.max(0, Math.min(frames.length - 1, i));
-  frames[cur].visible = true;
-  frames[cur].children.forEach(m => {
+// ------------------------------------------------------------ frame control
+const A = makePane(document.getElementById("cvA"));
+let B = null;
+let shellOn = [];
+function setFrame(p, i) {
+  if (!p || !p.frames.length) return;
+  p.frames[p.cur].visible = false;
+  p.cur = Math.max(0, Math.min(p.frames.length - 1, i));
+  p.frames[p.cur].visible = true;
+  p.frames[p.cur].children.forEach(m => {
     if (shellOn.length) m.visible = shellOn[m.userData.shell] !== false;
   });
-  document.getElementById("slider").value = cur;
-  document.getElementById("tlab").textContent =
-    times[cur] !== undefined && times[cur] !== "" ? "t = " + times[cur] + " t_cc"
-                                                 : (cur + 1) + " / " + frames.length;
 }
-
+function setFrameAll(i) {
+  const nA = A.frames.length;
+  setFrame(A, i);
+  if (B && B.frames.length) {
+    const frac = nA > 1 ? A.cur / (nA - 1) : 0;
+    setFrame(B, Math.round(frac * (B.frames.length - 1)));
+  }
+  const sl = document.getElementById("slider");
+  sl.max = Math.max(nA - 1, 0); sl.value = A.cur;
+  const t = A.times[A.cur];
+  document.getElementById("tlab").textContent =
+    (t !== undefined && t !== "") ? "t = " + t + " t_cc" : (A.cur + 1) + " / " + nA;
+  drawChart();
+}
 function buildShellToggles() {
   const host = document.getElementById("shells"); host.innerHTML = "";
-  const n = frames[0] ? frames[0].children.length : 0;
+  const n = A.frames[0] ? A.frames[0].children.length : 0;
   shellOn = new Array(n).fill(true);
-  const names = ["outer", "cloud", "core"];
+  const names = ["outer", "core"];
   for (let i = 0; i < n; i++) {
     const l = document.createElement("label"); l.className = "chk";
     const c = document.createElement("input"); c.type = "checkbox"; c.checked = true;
-    c.onchange = () => { shellOn[i] = c.checked; setFrame(cur); };
-    l.appendChild(c);
-    l.appendChild(document.createTextNode(names[i] || ("shell " + (i + 1))));
+    c.onchange = () => { shellOn[i] = c.checked; setFrameAll(A.cur); };
+    l.appendChild(c); l.appendChild(document.createTextNode(names[i] || "shell " + (i+1)));
     host.appendChild(l);
   }
 }
-
-// ------------------------------------------------------------- run picker
-function runList() {
-  const ids = Object.keys(VOL_DATA);
-  const seqOnly = Object.keys(VOLSEQ_DATA).filter(i => ids.indexOf(i) < 0);
-  return ids.concat(seqOnly);
-}
-const host = document.getElementById("runs");
-// the manifest advertises file stems ("vol_apk3d_chi10"); the dataset id is the
-// part after that prefix, and it is what keys VOL_DATA and names the data file
-let ids = (window.STUDIO_VOLS && window.STUDIO_VOLS.length) ? window.STUDIO_VOLS.slice() : runList();
-if (!ids.length && window.STUDIO_DATA && STUDIO_DATA.vols) ids = STUDIO_DATA.vols.slice();
-ids = ids.filter(Boolean)
-         .map(s => String(s).replace(/^volhq_/, "").replace(/^vol_seq_/, "").replace(/^vol_/, ""))
-         .filter((v, i, a) => a.indexOf(v) === i)
-         // The ladder is integer levels only. A 384-cell grid is level 5.58 and
-         // a 448 is 5.81, so they cannot be set beside another code's level 5
-         // or 6; listing them would invite a comparison that is not valid.
-         .filter(id => !/_(384|448|1800|3600|7200|8192)(_|$)/.test(id));
-
-const CODE_OF = { apk3d: "AthenaPK (GPU)", athpp3d: "Athena++", athw3d: "Athena 4.2",
-                  f3d: "FLASH", flashx3d: "Flash-X", enzo3d: "Enzo", ram3d: "RAMSES",
-                  gizmo3d: "GIZMO MFM", arepo3d: "Arepo", gadget3d: "Gadget-4" };
-// level = log2(streamwise cells) - 3, so 128 -> 4, 256 -> 5, 512 -> 6
-function levelOf(cells) {
-  const L = Math.log2(cells) - 3;
-  return Number.isFinite(L) ? Math.round(L * 10) / 10 : null;
-}
-function pretty(id) {
-  const m = (VOL_DATA[id] && VOL_DATA[id].meta) || {};
-  const pre = (id.match(/^([a-z0-9]+?3d|f3d)/) || [])[1] || "";
-  const code = m.code || CODE_OF[pre] || pre.toUpperCase() || id;
-  const chiM = id.match(/chi(\d+)/);
-  const chi = m.chi || (chiM ? +chiM[1] : null);
-  let lvl = null;
-  const lM = id.match(/_l(\d+)(?:m|_matched)?$/);
-  const cM = id.match(/_(\d{3,4})$/);
-  if (lM) lvl = +lM[1];
-  else if (cM) lvl = levelOf(+cM[1]);
-  const bits = [];
-  if (chi) bits.push("χ = " + chi);
-  bits.push(lvl !== null ? "level " + lvl : "level ?");
-  if (m.res) bits.push(m.res);
-  return { title: code, sub: bits.join("  ·  ") };
+function updateHud() {
+  document.getElementById("tris").textContent =
+    (A.tris + (B ? B.tris : 0)).toLocaleString();
 }
 
-ids.forEach(id => {
-  const b = document.createElement("button");
-  const p = pretty(id);
-  b.innerHTML = p.title + "<span class='m'>" + (p.sub || id) + "</span>";
-  b.onclick = () => {
-    document.querySelectorAll("#runs button").forEach(x => x.classList.remove("on"));
+// --------------------------------------------------------------- run list
+const state = { chi: "all", lvl: "all" };
+function chip(hostId, key) {
+  document.getElementById(hostId).addEventListener("click", e => {
+    const b = e.target.closest("button"); if (!b) return;
+    document.querySelectorAll("#" + hostId + " button").forEach(x => x.classList.remove("on"));
     b.classList.add("on");
-    stop(); showRun(id, p.title);
-    history.replaceState(null, "", "?run=" + encodeURIComponent(id));
-  };
-  b.dataset.id = id;
-  host.appendChild(b);
-});
+    state[key] = b.dataset[key === "chi" ? "chi" : "lvl"];
+    buildList();
+  });
+}
+chip("chiChips", "chi"); chip("lvlChips", "lvl");
+
+function visibleIds() {
+  return ids.filter(id => {
+    const m = meta(id);
+    if (state.chi !== "all" && String(m.chi) !== state.chi) return false;
+    if (state.lvl !== "all" && String(m.lvl) !== state.lvl) return false;
+    return true;
+  });
+}
+function buildList() {
+  const host = document.getElementById("runs"); host.innerHTML = "";
+  const vis = visibleIds();
+  const byCode = {};
+  vis.forEach(id => { const c = meta(id).code; (byCode[c] = byCode[c] || []).push(id); });
+  Object.keys(byCode).sort().forEach(code => {
+    const h = document.createElement("div"); h.className = "grp"; h.textContent = code;
+    host.appendChild(h);
+    byCode[code].sort((a, b) => (meta(b).lvl - meta(a).lvl) || (meta(a).chi - meta(b).chi))
+      .forEach(id => {
+        const m = meta(id);
+        const b = document.createElement("button");
+        b.innerHTML = "<span>&chi; = " + m.chi + "</span><span class='m'>level " + m.lvl + "</span>";
+        b.dataset.id = id;
+        b.classList.toggle("on", id === A.id);
+        b.onclick = () => {
+          document.querySelectorAll("#runs button").forEach(x => x.classList.remove("on"));
+          b.classList.add("on");
+          stop(); loadRun(A, id, document.getElementById("titleA"));
+          history.replaceState(null, "", "?run=" + encodeURIComponent(id) + (B && B.id ? "&vs=" + encodeURIComponent(B.id) : ""));
+        };
+        host.appendChild(b);
+      });
+  });
+  // compare dropdown mirrors the filtered list
+  const sel = document.getElementById("cmpSel");
+  sel.innerHTML = "";
+  vis.forEach(id => {
+    const m = meta(id);
+    const o = document.createElement("option");
+    o.value = id; o.textContent = m.code + "  χ=" + m.chi + "  L" + m.lvl;
+    sel.appendChild(o);
+  });
+}
+
+// ---------------------------------------------------------------- compare
+const cmpOn = document.getElementById("cmpOn");
+const cmpSel = document.getElementById("cmpSel");
+cmpOn.onchange = () => {
+  cmpSel.disabled = !cmpOn.checked;
+  const wrap = document.getElementById("wrap");
+  if (cmpOn.checked) {
+    if (!B) {
+      const pane = document.createElement("div"); pane.className = "pane"; pane.id = "paneB";
+      pane.innerHTML = '<canvas class="view" id="cvB"></canvas><div class="ptitle" id="titleB">&mdash;</div>';
+      wrap.appendChild(pane);
+      B = makePane(document.getElementById("cvB"));
+    }
+    document.getElementById("paneB").style.display = "";
+    wrap.classList.add("split");
+    const pick = cmpSel.value || (visibleIds().find(i => i !== A.id) || A.id);
+    cmpSel.value = pick;
+    loadRun(B, pick, document.getElementById("titleB"));
+  } else {
+    wrap.classList.remove("split");
+    if (B) { document.getElementById("paneB").style.display = "none"; clearPane(B); B.id = null; }
+    diagB = null; drawChart(); updateHud();
+  }
+};
+cmpSel.onchange = () => { if (cmpOn.checked && B) { stop(); loadRun(B, cmpSel.value, document.getElementById("titleB")); } };
+
+// ------------------------------------------------------------- diagnostics
+let diagA = null, diagB = null;
+async function loadDiag(id, slot) {
+  let d = null;
+  try {
+    const r = await fetch("data/diag_" + id + ".json", { cache: "no-store" });
+    if (r.ok) d = await r.json();
+  } catch (e) {}
+  if (slot === 0) diagA = d; else diagB = d;
+  drawChart();
+}
+function drawChart() {
+  const cv = document.getElementById("chart"), ctx = cv.getContext("2d");
+  const W = cv.width, H = cv.height;
+  ctx.clearRect(0, 0, W, H);
+  ctx.strokeStyle = "rgba(255,255,255,.15)"; ctx.lineWidth = 1;
+  ctx.strokeRect(40, 8, W - 52, H - 42);
+  ctx.fillStyle = "#98a2bb"; ctx.font = "20px sans-serif";
+  ctx.fillText("0", 24, H - 30); ctx.fillText("1", 24, 24);
+  ctx.fillText("0", 38, H - 12); ctx.fillText("5 t_cc", W - 70, H - 12);
+  const X = t => 40 + (W - 52) * Math.min(Math.max(t / 5, 0), 1);
+  const Y = v => 8 + (H - 50) * (1 - Math.min(Math.max(v, 0), 1));
+  function line(d, color, dash) {
+    if (!d || !d.series || !d.series.length) return;
+    ctx.strokeStyle = color; ctx.lineWidth = 3; ctx.setLineDash(dash ? [8, 6] : []);
+    ctx.beginPath();
+    d.series.forEach((r, i) => { const x = X(r.t), y = Y(r.mass_frac); i ? ctx.lineTo(x, y) : ctx.moveTo(x, y); });
+    ctx.stroke(); ctx.setLineDash([]);
+  }
+  line(diagA, "#6ea8ff", false);
+  line(diagB, "#ffb46e", true);
+  const t = parseFloat(A.times[A.cur]);
+  if (isFinite(t)) {
+    ctx.strokeStyle = "rgba(255,255,255,.45)"; ctx.lineWidth = 1.5;
+    ctx.beginPath(); ctx.moveTo(X(t), 8); ctx.lineTo(X(t), H - 34); ctx.stroke();
+  }
+  const note = document.getElementById("chartnote");
+  if (!diagA && !diagB) note.textContent = "no measured series for this run yet";
+  else note.innerHTML = (diagA ? "<span class='sw' style='background:#6ea8ff'></span>" + (A.id||"") + " " : "")
+                      + (diagB ? "&nbsp;<span class='sw' style='background:#ffb46e'></span>" + (B && B.id || "") : "");
+}
 
 // ---------------------------------------------------------------- playback
 let timer = null;
@@ -350,44 +465,49 @@ function stop() { if (timer) { clearInterval(timer); timer = null; playBtn.inner
 playBtn.onclick = () => {
   if (timer) return stop();
   playBtn.innerHTML = "&#10074;&#10074;";
-  timer = setInterval(() => setFrame((cur + 1) % frames.length), 90);
+  timer = setInterval(() => setFrameAll((A.cur + 1) % Math.max(A.frames.length, 1)), 90);
 };
-document.getElementById("prev").onclick = () => { stop(); setFrame(cur - 1); };
-document.getElementById("next").onclick = () => { stop(); setFrame(cur + 1); };
-document.getElementById("slider").oninput = e => { stop(); setFrame(+e.target.value); };
+document.getElementById("prev").onclick = () => { stop(); setFrameAll(A.cur - 1); };
+document.getElementById("next").onclick = () => { stop(); setFrameAll(A.cur + 1); };
+document.getElementById("slider").oninput = e => { stop(); setFrameAll(+e.target.value); };
 addEventListener("keydown", e => {
   if (e.key === " ") { e.preventDefault(); playBtn.click(); }
-  if (e.key === "ArrowLeft") { stop(); setFrame(cur - 1); }
-  if (e.key === "ArrowRight") { stop(); setFrame(cur + 1); }
+  if (e.key === "ArrowLeft") { stop(); setFrameAll(A.cur - 1); }
+  if (e.key === "ArrowRight") { stop(); setFrameAll(A.cur + 1); }
 });
-
-document.getElementById("qShadow").onchange = e => { ren.shadowMap.enabled = e.target.checked; scene.traverse(o => { if (o.material) o.material.needsUpdate = true; }); };
-document.getElementById("qBox").onchange = e => { boxG.visible = e.target.checked; };
+document.getElementById("qShadow").onchange = e => {
+  [A, B].forEach(p => { if (p) p.ren.shadowMap.enabled = e.target.checked; });
+};
+document.getElementById("qBox").onchange = e => { [A, B].forEach(p => { if (p) p.boxG.visible = e.target.checked; }); };
 let spin = false;
 document.getElementById("qSpin").onchange = e => { spin = e.target.checked; };
-const qScale = document.getElementById("qScale");
-qScale.onchange = () => resize(true);
+qScale.onchange = () => { [A, B].forEach(p => { if (p) { p.lastW = 0; } }); };
 
 // -------------------------------------------------------------- main loop
-let lastW = 0, lastH = 0;
-function resize(force) {
-  const w = cv.clientWidth, h = cv.clientHeight;
-  if (!force && w === lastW && h === lastH) return;
-  lastW = w; lastH = h;
+function resizePane(p) {
+  const w = p.cv.clientWidth, h = p.cv.clientHeight;
+  if (w === p.lastW && h === p.lastH) return;
+  p.lastW = w; p.lastH = h;
   const dpr = Math.min(+qScale.value || 2, window.devicePixelRatio || 1, 3);
-  ren.setPixelRatio(dpr);
-  ren.setSize(w, h, false);
-  cam.aspect = w / Math.max(h, 1);
-  cam.updateProjectionMatrix();
+  p.ren.setPixelRatio(dpr); p.ren.setSize(w, h, false);
+  p.cam.aspect = w / Math.max(h, 1); p.cam.updateProjectionMatrix();
 }
-
 let fCount = 0, fLast = performance.now();
 function loop(now) {
   requestAnimationFrame(loop);
-  resize(false);
-  if (spin) { ctrl.autoRotate = true; ctrl.autoRotateSpeed = 0.8; } else { ctrl.autoRotate = false; }
-  ctrl.update();
-  ren.render(scene, cam);
+  const link = document.getElementById("cmpLink").checked;
+  [A, B].forEach(p => {
+    if (!p || !p.cv.offsetParent) return;
+    resizePane(p);
+    p.ctrl.autoRotate = spin; p.ctrl.autoRotateSpeed = 0.8;
+    p.ctrl.update();
+  });
+  if (B && link && B.cv.offsetParent) {
+    B.cam.position.copy(A.cam.position);
+    B.cam.quaternion.copy(A.cam.quaternion);
+    B.ctrl.target.copy(A.ctrl.target);
+  }
+  [A, B].forEach(p => { if (p && p.cv.offsetParent) p.ren.render(p.scene, p.cam); });
   fCount++;
   if (now - fLast >= 500) {
     document.getElementById("fps").textContent = Math.round(fCount * 1000 / (now - fLast));
@@ -396,14 +516,19 @@ function loop(now) {
 }
 requestAnimationFrame(loop);
 
-// ---------------------------------------------------------------- startup
-cam.up.set(0, 0, 1);
-ctrl.update();
-const want = new URLSearchParams(location.search).get("run");
-const first = (want && ids.indexOf(want) >= 0) ? want : ids[0];
+// ----------------------------------------------------------------- startup
+buildList();
+const q = new URLSearchParams(location.search);
+const want = q.get("run");
+const first = (want && ids.indexOf(want) >= 0) ? want : (visibleIds()[0] || null);
 if (first) {
   const b = document.querySelector('#runs button[data-id="' + CSS.escape(first) + '"]');
-  if (b) b.click(); else showRun(first, first);
+  if (b) b.click(); else loadRun(A, first, document.getElementById("titleA"));
+  const vs = q.get("vs");
+  if (vs && ids.indexOf(vs) >= 0) {
+    cmpOn.checked = true; cmpOn.onchange();
+    cmpSel.value = vs; cmpSel.onchange();
+  }
 } else {
   msg.textContent = "no 3D volumes found";
 }
