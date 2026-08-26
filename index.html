@@ -248,11 +248,11 @@
   <img id="lbImg" alt=""><div class="cap" id="lbCap"></div>
 </div>
 
-<script>var STUDIO_V="1787690242"; var STUDIO_DATA = {}; var VOL_DATA = {}; var VOLSEQ_DATA = {};</script>
-<script src="data/manifest.js?v=1787690242"></script>
-<script src="data/terrains.js?v=1787690242"></script>
-<script src="data/codefiles.js?v=1787690242"></script>
-<script src="data/runinfo.js?v=1787690242"></script>
+<script>var STUDIO_V="1787776527"; var STUDIO_DATA = {}; var VOL_DATA = {}; var VOLSEQ_DATA = {};</script>
+<script src="data/manifest.js?v=1787776527"></script>
+<script src="data/terrains.js?v=1787776527"></script>
+<script src="data/codefiles.js?v=1787776527"></script>
+<script src="data/runinfo.js?v=1787776527"></script>
 <script>
   (STUDIO_TERRAINS || []).forEach(function (id) {
     var s = document.createElement("script"); s.src = "data/" + id + ".js?v=" + STUDIO_V; document.head.appendChild(s);
@@ -387,6 +387,17 @@
                        .replace(", " + SLICE, "")
              + ", true 3D isosurface" + tail;
     return lb;
+  }
+  // The ladder is integer levels only. A 384-cell grid is level 5.58 and a 448
+  // is 5.81; neither can be set beside another code's level 5 or 6, so showing
+  // them invites a comparison that is not valid. Hide anything off the ladder.
+  function onLadder(res, d3) {
+    if (!res) return true;                 // no grid recorded: leave it visible
+    var L = Math.log(res) / Math.LN2 - 3;
+    if (!isFinite(L)) return false;
+    if (Math.abs(L - Math.round(L)) > 0.02) return false;   // 5.58, 5.81, ...
+    var lv = Math.round(L);
+    return d3 ? (lv >= 1 && lv <= 6) : (lv >= 1 && lv <= 9);
   }
   function normCode(c) { return (c && c.indexOf("AthenaPK") === 0) ? "AthenaPK (GPU)" : c; }
   function terrainLabel(d) {
@@ -758,6 +769,7 @@
     list.forEach(function (g) {
       var lb = g.label;
       if (lb.code !== null && !passes(lb.code, lb.chi)) return;
+      if (!onLadder(lb.res, lb.d3)) return;
       // No video belongs in the 3D volumes tab. A recorded camera path, however
       // it was made, forces one viewing angle on you; the interactive viewer in
       // that tab is the actual 3D object you can turn and zoom yourself. Videos
@@ -980,6 +992,8 @@
   function volIds() {
     var vis = Object.keys(VOL_DATA).filter(function (id) {
       var m = VOL_DATA[id].meta || {};
+      // off-ladder grids (384 -> 5.58, 448 -> 5.81) are not comparable
+      if (/_(384|448)(_|$)/.test(id)) return false;
       return window.studioPasses(window.studioNormCode(m.code), m.chi);
     });
     return window.studioSort(vis, function (id) { return VOL_DATA[id].meta || {}; });

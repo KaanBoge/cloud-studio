@@ -296,8 +296,12 @@ const host = document.getElementById("runs");
 let ids = (window.STUDIO_VOLS && window.STUDIO_VOLS.length) ? window.STUDIO_VOLS.slice() : runList();
 if (!ids.length && window.STUDIO_DATA && STUDIO_DATA.vols) ids = STUDIO_DATA.vols.slice();
 ids = ids.filter(Boolean)
-         .map(s => String(s).replace(/^vol_seq_/, "").replace(/^vol_/, ""))
-         .filter((v, i, a) => a.indexOf(v) === i);
+         .map(s => String(s).replace(/^volhq_/, "").replace(/^vol_seq_/, "").replace(/^vol_/, ""))
+         .filter((v, i, a) => a.indexOf(v) === i)
+         // The ladder is integer levels only. A 384-cell grid is level 5.58 and
+         // a 448 is 5.81, so they cannot be set beside another code's level 5
+         // or 6; listing them would invite a comparison that is not valid.
+         .filter(id => !/_(384|448|1800|3600|7200|8192)(_|$)/.test(id));
 
 const CODE_OF = { apk3d: "AthenaPK (GPU)", athpp3d: "Athena++", athw3d: "Athena 4.2",
                   f3d: "FLASH", flashx3d: "Flash-X", enzo3d: "Enzo", ram3d: "RAMSES",
