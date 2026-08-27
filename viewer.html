@@ -88,6 +88,8 @@
     <button data-lvl="4">4</button><button data-lvl="5">5</button><button data-lvl="6">6</button>
   </div>
   <div class="lbl">Run</div>
+  <label class="chk" style="margin-bottom:6px"><input type="checkbox" id="hideLegacy">
+    hide legacy runs (17-frame only)</label>
   <div id="runs"></div>
   <div class="lbl">Compare</div>
   <div class="row">
@@ -130,8 +132,8 @@
 <script src="data/manifest.js"></script>
 <script src="data/densemap.js"></script>
 <script type="importmap">
-  {"imports": {"three": "https://unpkg.com/three@0.160.0/build/three.module.js",
-               "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"}}
+  {"imports": {"three": "./vendor/three.module.js",
+               "three/addons/": "./vendor/addons/"}}
 </script>
 <script type="module">
 import * as THREE from "three";
@@ -150,6 +152,7 @@ function loadScript(src) {
   });
 }
 let ids = (window.STUDIO_VOLS || []).map(s => String(s).replace(/^volhq_|^vol_seq_|^vol_/, ""))
+          .concat(typeof DENSE_RUNS !== "undefined" ? Object.keys(DENSE_RUNS) : [])
           .filter((v, i, a) => a.indexOf(v) === i)
           .filter(id => !/_(384|448|1800|3600|7200|8192)(_|$)/.test(id));
 
@@ -488,14 +491,17 @@ function chip(hostId, key) {
 }
 chip("chiChips", "chi"); chip("lvlChips", "lvl");
 
+const isDense = id => typeof DENSE_RUNS !== "undefined" && DENSE_RUNS[id] >= 8;
 function visibleIds() {
   return ids.filter(id => {
     const m = meta(id);
     if (state.chi !== "all" && String(m.chi) !== state.chi) return false;
     if (state.lvl !== "all" && String(m.lvl) !== state.lvl) return false;
+    if (document.getElementById("hideLegacy").checked && !isDense(id)) return false;
     return true;
   });
 }
+document.getElementById("hideLegacy").onchange = () => buildList();
 function buildList() {
   const host = document.getElementById("runs"); host.innerHTML = "";
   const vis = visibleIds();
@@ -508,7 +514,9 @@ function buildList() {
       .forEach(id => {
         const m = meta(id);
         const b = document.createElement("button");
-        b.innerHTML = "<span>&chi; = " + m.chi + "</span><span class='m'>level " + m.lvl + "</span>";
+        const fr = isDense(id) ? DENSE_RUNS[id] + "f" : "17f";
+        b.innerHTML = "<span>&chi; = " + m.chi + "</span><span class='m'>level " + m.lvl +
+                      " &middot; " + fr + "</span>";
         b.dataset.id = id;
         b.classList.toggle("on", id === A.id);
         b.onclick = () => {
