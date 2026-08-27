@@ -159,6 +159,8 @@ const CODE_OF = { apk: "AthenaPK (GPU)", apk3d: "AthenaPK (GPU)", athpp: "Athena
 function meta(id) {
   const pre = (id.match(/^([a-z0-9]+?)(?:3d)?_/) || [, ""])[1];
   const chi = +((id.match(/chi(\d+)/) || [, 0])[1]);
+  // magnetized runs are their own physics, never merged with hydro entries
+  const mhd = id.match(/_mhd_b(\d+)_/);
   let lvl = null;
   let m = id.match(/_[lL](\d)\b|_[lL](\d)(?:m|hq|_)/);
   if (m) lvl = +(m[1] || m[2]);
@@ -166,7 +168,9 @@ function meta(id) {
     const L = Math.log2(+m[1]) - 3;
     if (Math.abs(L - Math.round(L)) < 0.02) lvl = Math.round(L);
   }
-  return { code: CODE_OF[pre] || pre, chi, lvl };
+  let code = CODE_OF[pre] || pre;
+  if (mhd) code += " MHD β=" + mhd[1];
+  return { code, chi, lvl };
 }
 // only integer-ladder entries with an identifiable level
 ids = ids.filter(id => meta(id).lvl !== null);
