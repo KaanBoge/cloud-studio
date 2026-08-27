@@ -1,1 +1,0 @@
-{"run": "athw_L6_chi1000", "kind": "athw", "chi": 1000.0, "t_cc": 12.247396, "columns": ["t_over_tcc", "dense_mass_fraction", "dense_x_centre_of_mass", "peak_density", "mixed_mass_fraction"], "series": [{"t": 0.0, "mass_frac": 0.634583, "xcom": 0.0001, "rho_max": 1000.0, "mix_frac": 0.04877}]}

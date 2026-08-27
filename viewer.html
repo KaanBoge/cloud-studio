@@ -128,6 +128,7 @@
 
 <script>var STUDIO_DATA={},VOL_DATA={},VOLSEQ_DATA={},VOLHQ_DATA={};</script>
 <script src="data/manifest.js"></script>
+<script src="data/densemap.js"></script>
 <script type="importmap">
   {"imports": {"three": "https://unpkg.com/three@0.160.0/build/three.module.js",
                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"}}
@@ -249,11 +250,124 @@ function clearPane(p) {
   p.scene.remove(p.root);
   p.root = new THREE.Group(); p.scene.add(p.root);
   p.frames = []; p.times = []; p.tris = 0;
+  if (p.dense) {
+    p.dense.cache.forEach(g => g.traverse(o => {
+      if (o.geometry) o.geometry.dispose(); if (o.material) o.material.dispose();
+    }));
+  }
+  p.dense = null;
+}
+
+// ------------------------------------------------- dense streaming frames
+// Every snapshot of a run, fetched on demand from the frames branch as
+// indexed gzipped meshes. The site itself stays under the 1 GB Pages cap
+// because this data never enters the published bundle.
+async function denseFetch(p, i) {
+  const d = p.dense;
+  if (d.cache.has(i)) return d.cache.get(i);
+  if (d.pending.has(i)) return d.pending.get(i);
+  const job = (async () => {
+    const r = await fetch(d.base + d.tag + "/" + d.index.frames[i], { cache: "force-cache" });
+    if (!r.ok) throw new Error("frame " + i + ": " + r.status);
+    let buf;
+    if (typeof DecompressionStream !== "undefined") {
+      buf = await new Response(r.body.pipeThrough(new DecompressionStream("gzip"))).arrayBuffer();
+    } else {
+      buf = await r.arrayBuffer();       // very old browsers: served raw would fail; acceptable
+    }
+    const dv = new DataView(buf);
+    let o = 0;
+    const nsh = dv.getUint8(o); o += 1;
+    const grp = new THREE.Group();
+    for (let s = 0; s < nsh; s++) {
+      const level = dv.getFloat32(o, true); o += 4;
+      const op = dv.getFloat32(o, true); o += 4;
+      const col = [dv.getFloat32(o, true), dv.getFloat32(o + 4, true), dv.getFloat32(o + 8, true)]; o += 12;
+      const qlo = [dv.getFloat32(o, true), dv.getFloat32(o + 4, true), dv.getFloat32(o + 8, true)]; o += 12;
+      const qhi = [dv.getFloat32(o, true), dv.getFloat32(o + 4, true), dv.getFloat32(o + 8, true)]; o += 12;
+      const nv = dv.getUint32(o, true); o += 4;
+      const nf = dv.getUint32(o, true); o += 4;
+      const q = new Uint16Array(buf.slice(o, o + nv * 6)); o += nv * 6;
+      const faces = new Uint32Array(buf.slice(o, o + nf * 12)); o += nf * 12;
+      const pos = new Float32Array(nv * 3);
+      const sx = (qhi[0] - qlo[0]) / 65535, sy = (qhi[1] - qlo[1]) / 65535, sz = (qhi[2] - qlo[2]) / 65535;
+      for (let k = 0; k < nv * 3; k += 3) {
+        pos[k] = qlo[0] + q[k] * sx; pos[k + 1] = qlo[1] + q[k + 1] * sy; pos[k + 2] = qlo[2] + q[k + 2] * sz;
+      }
+      const geo = new THREE.BufferGeometry();
+      geo.setAttribute("position", new THREE.BufferAttribute(pos, 3));
+      geo.setIndex(new THREE.BufferAttribute(new Uint32Array(faces), 1));
+      geo.computeVertexNormals();
+      const opaque = op >= 0.9;
+      const mat = new THREE.MeshPhysicalMaterial({
+        color: new THREE.Color(col[0], col[1], col[2]),
+        transparent: !opaque, opacity: op, roughness: 0.42,
+        clearcoat: opaque ? 0.35 : 0, side: THREE.DoubleSide, depthWrite: opaque });
+      const mesh = new THREE.Mesh(geo, mat);
+      mesh.castShadow = opaque; mesh.userData.shell = s;
+      grp.add(mesh);
+    }
+    d.pending.delete(i);
+    d.cache.set(i, grp);
+    d.order.push(i);
+    while (d.order.length > 28) {                    // LRU: bound GPU memory
+      const ev = d.order.shift();
+      if (ev === p.cur || ev === i) { d.order.push(ev); break; }
+      const g = d.cache.get(ev);
+      if (g) {
+        if (g.parent) g.parent.remove(g);
+        g.traverse(x => { if (x.geometry) x.geometry.dispose(); if (x.material) x.material.dispose(); });
+        d.cache.delete(ev);
+      }
+    }
+    return grp;
+  })();
+  d.pending.set(i, job);
+  return job;
+}
+async function denseShow(p, i) {
+  const d = p.dense;
+  i = Math.max(0, Math.min(d.index.frames.length - 1, i));
+  const token = ++d.token;
+  let grp;
+  try { grp = await denseFetch(p, i); } catch (e) { return; }
+  if (token !== d.token) return;                     // a newer scrub superseded us
+  if (d.shown && d.shown.parent) p.root.remove(d.shown);
+  p.root.add(grp);
+  grp.children.forEach(m => { if (shellOn.length) m.visible = shellOn[m.userData.shell] !== false; });
+  d.shown = grp; p.cur = i;
+  p.tris = (d.index.tris && d.index.tris[i]) || p.tris;
+  updateHud();
+  // prefetch neighbours so scrubbing stays fluid
+  if (i + 1 < d.index.frames.length) denseFetch(p, i + 1).catch(() => {});
+  if (i > 0) denseFetch(p, i - 1).catch(() => {});
 }
 
 async function loadRun(p, id, titleEl) {
   msg.textContent = "loading " + id + "…"; msg.style.display = "grid";
   clearPane(p); p.id = id;
+  // dense first: every frame the run produced, streamed on demand
+  if (typeof DENSE_RUNS !== "undefined" && DENSE_RUNS[id]) {
+    try {
+      const r = await fetch(DENSE_BASE + id + "/index.json", { cache: "no-cache" });
+      if (r.ok) {
+        const index = await r.json();
+        p.dense = { tag: id, base: DENSE_BASE, index, cache: new Map(),
+                    pending: new Map(), order: [], token: 0, shown: null };
+        p.times = index.times || [];
+        p.frames = { length: index.frames.length };   // slider sizing only
+        const mt = meta(id);
+        if (titleEl) titleEl.innerHTML = "<b>" + mt.code + "</b> &middot; &chi; = " + mt.chi +
+          " &middot; level " + mt.lvl + " &middot; " + index.frames.length + " frames";
+        buildShellTogglesDense();
+        await denseShow(p, 0);
+        setFrameAll(0);
+        loadDiag(id, p === A ? 0 : 1);
+        msg.style.display = "none";
+        return;
+      }
+    } catch (e) { /* fall through to embedded volumes */ }
+  }
   let seq = null;
   try { if (!VOLHQ_DATA[id]) await loadScript("data/volhq_" + id + ".js"); } catch (e) {}
   seq = VOLHQ_DATA[id];
@@ -296,9 +410,12 @@ async function loadRun(p, id, titleEl) {
 // ------------------------------------------------------------ frame control
 const A = makePane(document.getElementById("cvA"));
 let B = null;
+window.__A = A;                       // diagnostics only
 let shellOn = [];
 function setFrame(p, i) {
-  if (!p || !p.frames.length) return;
+  if (!p) return;
+  if (p.dense) { denseShow(p, i); return; }
+  if (!p.frames.length) return;
   p.frames[p.cur].visible = false;
   p.cur = Math.max(0, Math.min(p.frames.length - 1, i));
   p.frames[p.cur].visible = true;
@@ -306,18 +423,38 @@ function setFrame(p, i) {
     if (shellOn.length) m.visible = shellOn[m.userData.shell] !== false;
   });
 }
+function buildShellTogglesDense() {
+  const host = document.getElementById("shells"); host.innerHTML = "";
+  shellOn = [true, true];
+  ["outer", "core"].forEach((nm, i) => {
+    const l = document.createElement("label"); l.className = "chk";
+    const c = document.createElement("input"); c.type = "checkbox"; c.checked = true;
+    c.onchange = () => {
+      shellOn[i] = c.checked;
+      [A, B].forEach(p => {
+        if (p && p.dense && p.dense.shown)
+          p.dense.shown.children.forEach(m => { m.visible = shellOn[m.userData.shell] !== false; });
+        else if (p) setFrame(p, p.cur);
+      });
+    };
+    l.appendChild(c); l.appendChild(document.createTextNode(nm));
+    host.appendChild(l);
+  });
+}
 function setFrameAll(i) {
   const nA = A.frames.length;
-  setFrame(A, i);
+  const ni = Math.max(0, Math.min(nA - 1, i));
+  A.curTarget = ni;
+  setFrame(A, ni);
   if (B && B.frames.length) {
-    const frac = nA > 1 ? A.cur / (nA - 1) : 0;
+    const frac = nA > 1 ? ni / (nA - 1) : 0;
     setFrame(B, Math.round(frac * (B.frames.length - 1)));
   }
   const sl = document.getElementById("slider");
-  sl.max = Math.max(nA - 1, 0); sl.value = A.cur;
-  const t = A.times[A.cur];
+  sl.max = Math.max(nA - 1, 0); sl.value = ni;
+  const t = A.times[ni];
   document.getElementById("tlab").textContent =
-    (t !== undefined && t !== "") ? "t = " + t + " t_cc" : (A.cur + 1) + " / " + nA;
+    (t !== undefined && t !== null && t !== "") ? "t = " + t + " t_cc" : (ni + 1) + " / " + nA;
   drawChart();
 }
 function buildShellToggles() {
@@ -469,15 +606,23 @@ function stop() { if (timer) { clearInterval(timer); timer = null; playBtn.inner
 playBtn.onclick = () => {
   if (timer) return stop();
   playBtn.innerHTML = "&#10074;&#10074;";
-  timer = setInterval(() => setFrameAll((A.cur + 1) % Math.max(A.frames.length, 1)), 90);
+  timer = setInterval(() => {
+    const cur = (A.curTarget !== undefined) ? A.curTarget : A.cur;
+    const next = (cur + 1) % Math.max(A.frames.length, 1);
+    // streaming panes only advance onto frames that are ready, so playback
+    // never outruns the network; the fetch is kicked regardless
+    if (A.dense && !A.dense.cache.has(next)) { denseFetch(A, next).catch(() => {}); return; }
+    setFrameAll(next);
+  }, 90);
 };
-document.getElementById("prev").onclick = () => { stop(); setFrameAll(A.cur - 1); };
-document.getElementById("next").onclick = () => { stop(); setFrameAll(A.cur + 1); };
+const curT = () => (A.curTarget !== undefined) ? A.curTarget : A.cur;
+document.getElementById("prev").onclick = () => { stop(); setFrameAll(curT() - 1); };
+document.getElementById("next").onclick = () => { stop(); setFrameAll(curT() + 1); };
 document.getElementById("slider").oninput = e => { stop(); setFrameAll(+e.target.value); };
 addEventListener("keydown", e => {
   if (e.key === " ") { e.preventDefault(); playBtn.click(); }
-  if (e.key === "ArrowLeft") { stop(); setFrameAll(A.cur - 1); }
-  if (e.key === "ArrowRight") { stop(); setFrameAll(A.cur + 1); }
+  if (e.key === "ArrowLeft") { stop(); setFrameAll(curT() - 1); }
+  if (e.key === "ArrowRight") { stop(); setFrameAll(curT() + 1); }
 });
 document.getElementById("qShadow").onchange = e => {
   [A, B].forEach(p => { if (p) p.ren.shadowMap.enabled = e.target.checked; });
