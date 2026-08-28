@@ -88,9 +88,11 @@
     <button data-lvl="4">4</button><button data-lvl="5">5</button><button data-lvl="6">6</button>
   </div>
   <div class="lbl">Run</div>
-  <label class="chk" style="margin-bottom:6px"><input type="checkbox" id="hideLegacy">
-    hide legacy runs (17-frame only)</label>
   <div id="runs"></div>
+  <button id="legacyHdr" style="all:unset;cursor:pointer;display:block;margin:10px 0 4px;
+    font-size:11.5px;font-weight:650;color:var(--mut);text-transform:uppercase;
+    letter-spacing:.06em"></button>
+  <div id="legacyRuns" style="display:none"></div>
   <div class="lbl">Compare</div>
   <div class="row">
     <label class="chk"><input type="checkbox" id="cmpOn"> side by side</label>
@@ -492,21 +494,21 @@ function chip(hostId, key) {
 chip("chiChips", "chi"); chip("lvlChips", "lvl");
 
 const isDense = id => typeof DENSE_RUNS !== "undefined" && DENSE_RUNS[id] >= 8;
+// legacy (17-frame) runs live in their own collapsible section, folded away by
+// default; the choice sticks per browser
+let legacyOpen = false;
+try { legacyOpen = localStorage.getItem("cc_legacyOpen") === "1"; } catch (e) {}
 function visibleIds() {
   return ids.filter(id => {
     const m = meta(id);
     if (state.chi !== "all" && String(m.chi) !== state.chi) return false;
     if (state.lvl !== "all" && String(m.lvl) !== state.lvl) return false;
-    if (document.getElementById("hideLegacy").checked && !isDense(id)) return false;
     return true;
   });
 }
-document.getElementById("hideLegacy").onchange = () => buildList();
-function buildList() {
-  const host = document.getElementById("runs"); host.innerHTML = "";
-  const vis = visibleIds();
+function renderGroups(host, list) {
   const byCode = {};
-  vis.forEach(id => { const c = meta(id).code; (byCode[c] = byCode[c] || []).push(id); });
+  list.forEach(id => { const c = meta(id).code; (byCode[c] = byCode[c] || []).push(id); });
   Object.keys(byCode).sort().forEach(code => {
     const h = document.createElement("div"); h.className = "grp"; h.textContent = code;
     host.appendChild(h);
@@ -520,7 +522,7 @@ function buildList() {
         b.dataset.id = id;
         b.classList.toggle("on", id === A.id);
         b.onclick = () => {
-          document.querySelectorAll("#runs button").forEach(x => x.classList.remove("on"));
+          document.querySelectorAll("#runs button, #legacyRuns button").forEach(x => x.classList.remove("on"));
           b.classList.add("on");
           stop(); loadRun(A, id, document.getElementById("titleA"));
           history.replaceState(null, "", "?run=" + encodeURIComponent(id) + (B && B.id ? "&vs=" + encodeURIComponent(B.id) : ""));
@@ -528,10 +530,32 @@ function buildList() {
         host.appendChild(b);
       });
   });
-  // compare dropdown mirrors the filtered list
+}
+function buildList() {
+  const vis = visibleIds();
+  const dense = vis.filter(isDense), legacy = vis.filter(id => !isDense(id));
+  const host = document.getElementById("runs"); host.innerHTML = "";
+  renderGroups(host, dense);
+  const hdr = document.getElementById("legacyHdr");
+  const lhost = document.getElementById("legacyRuns"); lhost.innerHTML = "";
+  if (legacy.length) {
+    hdr.style.display = "block";
+    hdr.innerHTML = (legacyOpen ? "&#9662;" : "&#9656;") + " legacy runs (" + legacy.length +
+                    ") &middot; 17 frames";
+    lhost.style.display = legacyOpen ? "block" : "none";
+    if (legacyOpen) renderGroups(lhost, legacy);
+    hdr.onclick = () => {
+      legacyOpen = !legacyOpen;
+      try { localStorage.setItem("cc_legacyOpen", legacyOpen ? "1" : "0"); } catch (e) {}
+      buildList();
+    };
+  } else {
+    hdr.style.display = "none"; lhost.style.display = "none";
+  }
+  // compare dropdown mirrors what is on screen
   const sel = document.getElementById("cmpSel");
   sel.innerHTML = "";
-  vis.forEach(id => {
+  dense.concat(legacyOpen ? legacy : []).forEach(id => {
     const m = meta(id);
     const o = document.createElement("option");
     o.value = id; o.textContent = m.code + "  χ=" + m.chi + "  L" + m.lvl;
@@ -677,9 +701,12 @@ requestAnimationFrame(loop);
 buildList();
 const q = new URLSearchParams(location.search);
 const want = q.get("run");
-const first = (want && ids.indexOf(want) >= 0) ? want : (visibleIds()[0] || null);
+const vis0 = visibleIds();
+const first = (want && ids.indexOf(want) >= 0) ? want
+            : (vis0.find(isDense) || vis0[0] || null);
+if (first && !isDense(first) && !legacyOpen) { legacyOpen = true; buildList(); }
 if (first) {
-  const b = document.querySelector('#runs button[data-id="' + CSS.escape(first) + '"]');
+  const b = document.querySelector('#runs button[data-id="' + CSS.escape(first) + '"], #legacyRuns button[data-id="' + CSS.escape(first) + '"]');
   if (b) b.click(); else loadRun(A, first, document.getElementById("titleA"));
   const vs = q.get("vs");
   if (vs && ids.indexOf(vs) >= 0) {
