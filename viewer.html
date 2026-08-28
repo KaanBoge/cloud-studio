@@ -73,7 +73,13 @@
   <div class="ptitle" id="titleA">&mdash;</div></div></div>
 <div id="msg">loading&hellip;</div>
 
+<button class="card" id="sideShow" style="display:none;top:14px;left:14px;z-index:6;
+  cursor:pointer;color:var(--fg);padding:8px 12px;font-size:13px;border:1px solid var(--line)">
+  &#9776; menu</button>
 <div class="card" id="side">
+  <button id="sideHide" title="hide this panel" style="all:unset;cursor:pointer;
+    position:absolute;top:10px;right:12px;color:var(--mut);font-size:15px;
+    padding:2px 6px;border-radius:6px">&#10094;</button>
   <h1>3D viewer</h1>
   <p class="sub">Drag to turn &middot; scroll to zoom &middot; right-drag to pan
     &middot; <a class="back" href="index.html">back to studio</a></p>
@@ -416,6 +422,20 @@ async function loadRun(p, id, titleEl) {
 const A = makePane(document.getElementById("cvA"));
 let B = null;
 window.__A = A;                       // diagnostics only
+
+// -------------------------------------------------- collapsible legend panel
+{
+  const side = document.getElementById("side");
+  const show = document.getElementById("sideShow");
+  const apply = hidden => {
+    side.style.display = hidden ? "none" : "";
+    show.style.display = hidden ? "" : "none";
+    try { localStorage.setItem("cc_sideHidden", hidden ? "1" : "0"); } catch (e) {}
+  };
+  document.getElementById("sideHide").onclick = () => apply(true);
+  show.onclick = () => apply(false);
+  try { if (localStorage.getItem("cc_sideHidden") === "1") apply(true); } catch (e) {}
+}
 let shellOn = [];
 function setFrame(p, i) {
   if (!p) return;
