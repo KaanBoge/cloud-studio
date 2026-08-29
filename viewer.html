@@ -483,8 +483,22 @@ function setFrameAll(i) {
   A.curTarget = ni;
   setFrame(A, ni);
   if (B && B.frames.length) {
-    const frac = nA > 1 ? ni / (nA - 1) : 0;
-    setFrame(B, Math.round(frac * (B.frames.length - 1)));
+    // sync the panes by TIME, not slider fraction: two runs with different
+    // frame counts must still show the same physical moment side by side
+    const tA = parseFloat(A.times[ni]);
+    let bi = -1;
+    if (isFinite(tA) && B.times && B.times.length === B.frames.length) {
+      let best = Infinity;
+      for (let k = 0; k < B.times.length; k++) {
+        const d = Math.abs(parseFloat(B.times[k]) - tA);
+        if (isFinite(d) && d < best) { best = d; bi = k; }
+      }
+    }
+    if (bi < 0) {                         // no usable times: fall back to fraction
+      const frac = nA > 1 ? ni / (nA - 1) : 0;
+      bi = Math.round(frac * (B.frames.length - 1));
+    }
+    setFrame(B, bi);
   }
   const sl = document.getElementById("slider");
   sl.max = Math.max(nA - 1, 0); sl.value = ni;
