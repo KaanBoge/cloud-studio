@@ -363,6 +363,17 @@ async function loadRun(p, id, titleEl) {
       const r = await fetch(DENSE_BASE + id + "/index.json", { cache: "no-cache" });
       if (r.ok) {
         const index = await r.json();
+        // belt and braces: never trust frame order from the network. Sort by
+        // time, drop untimed frames and anything past 5 t_cc, so a bad index
+        // can never make a run "restart" mid-scrub.
+        {
+          const rows = index.frames.map((f, j) => [index.times[j], f,
+              (index.tris || [])[j]]).filter(r2 => r2[0] !== null && r2[0] !== undefined && r2[0] <= 5.05);
+          rows.sort((a2, b2) => a2[0] - b2[0]);
+          index.times = rows.map(r2 => r2[0]);
+          index.frames = rows.map(r2 => r2[1]);
+          index.tris = rows.map(r2 => r2[2]);
+        }
         p.dense = { tag: id, base: DENSE_BASE, index, cache: new Map(),
                     pending: new Map(), order: [], token: 0, shown: null };
         p.times = index.times || [];
