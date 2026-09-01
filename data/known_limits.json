@@ -1,0 +1,12 @@
+{
+  "flashx_L2_chi1000": {
+    "status": "does not converge",
+    "reason": "timestep collapses to ~1e-8 and stalls; cloud spans 1.6 cells at chi=1000",
+    "note": "AthenaPK, Athena++, Athena 4.2 and RAMSES complete this cell"
+  },
+  "flashx_L3_chi1000": {
+    "status": "does not converge",
+    "reason": "same timestep collapse at t=2.85; threshold lies between level 3 and 4",
+    "note": "Flash-X level 4 chi=1000 completes normally"
+  }
+}
