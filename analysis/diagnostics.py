@@ -20,7 +20,38 @@ import yt
 
 yt.set_log_level(50)
 
-RID, KIND, CHI, TCC = sys.argv[1], sys.argv[2], float(sys.argv[3]), float(sys.argv[4])
+RID, KIND = sys.argv[1], sys.argv[2]
+CHI, TCC = float(sys.argv[3]), float(sys.argv[4])
+
+# The run's own parameter file is authoritative. Values on the command line are
+# a fallback for runs whose inputs have been swept, and are reported as such.
+# Passing chi and t_cc blind is how FLASH 4.8, whose R_cloud is 0.1 rather than
+# 1.0, ended up normalised by a t_cc ten times too large.
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+try:
+    from run_params import find_params, derive, report
+    _dir = os.path.dirname(os.path.abspath(sys.argv[5])) if len(sys.argv) > 5 else None
+    # snapshots may sit one level below the run directory (Enzo DD####, RAMSES
+    # output_#####, the particle codes' output/)
+    _p = None
+    for _cand in ([_dir, os.path.dirname(_dir)] if _dir else []):
+        if _cand:
+            _p = derive(find_params(_cand))
+            if _p:
+                break
+    print("=== %s (%s) ===" % (RID, KIND))
+    _ok = report(_p, expected_chi=CHI, expected_tcc=TCC)
+    if _p and _p.get("chi"):
+        CHI = _p["chi"]
+    if _p and _p.get("t_cc"):
+        TCC = _p["t_cc"]
+    if not _ok:
+        print("  [params] using the values from the parameter file, not argv")
+    print("  [params] USING chi = %g, t_cc = %.6f" % (CHI, TCC))
+except ImportError:
+    print("=== %s (%s) ===" % (RID, KIND))
+    print("  [params] run_params.py not importable; USING argv values "
+          "chi = %g, t_cc = %.6f (UNVERIFIED)" % (CHI, TCC))
 FILES = sys.argv[5:]
 OUT = "/mnt/c/Users/kaanb/CloudCrushing/studio/data/diag_%s.json" % RID
 
