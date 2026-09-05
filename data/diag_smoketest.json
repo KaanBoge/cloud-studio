@@ -1,0 +1,1 @@
+{"run": "smoketest", "kind": "athpp", "chi": 10.0, "t_cc": 1.2247448713915892, "columns": ["t_over_tcc", "dense_mass_fraction", "dense_x_centre_of_mass", "peak_density", "mixed_mass_fraction"], "series": [{"t": 5.0, "mass_frac": 0.013638, "xcom": 4.4554, "rho_max": 7.8641, "mix_frac": 0.002977}]}
