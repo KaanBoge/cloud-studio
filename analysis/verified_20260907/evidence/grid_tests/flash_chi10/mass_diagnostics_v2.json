@@ -1,0 +1,89 @@
+{
+  "schema_version": 2,
+  "kind": "flash",
+  "parameters": {
+    "source": "/home/kaan/ic_audit_20260907/grid_tests/flash_chi10/flash.par",
+    "parameter_sha256": "77daebef8adf4f1e4defd508a3afb81a784cb4dd7e9e67dfd8841b85e3c6b5f0",
+    "assumptions": [],
+    "gamma": 1.6666666666666667,
+    "r_cloud": 0.1,
+    "rho_wind": 1.0,
+    "p_wind": 1.0,
+    "v_wind": 2.581988897471611,
+    "chi": 10.0,
+    "rv_scale": 1.3,
+    "tmax": 0.001,
+    "output_dt": 0.001,
+    "mach": 2.0,
+    "kind": "flash",
+    "t_cc": 0.12247448713915893
+  },
+  "comparison_group": "IC-audit-short-tests-not-science-production",
+  "initial_grid": {
+    "finest_equivalent_dimensions": [
+      64,
+      32,
+      32
+    ],
+    "leaf_cells": 65536,
+    "uniform": true,
+    "domain_width_over_R": [
+      20.0,
+      10.0,
+      10.0
+    ]
+  },
+  "selection": "rho > rho_cloud_initial/3",
+  "normalization": "M_dense(t) / M_dense(0); denominator is fixed",
+  "warning": "Density-selected gas includes ambient material if it becomes dense. This is not tracer mass or a radiative cold-temperature selection.",
+  "series": [
+    {
+      "dense_mass": 0.041703282774836224,
+      "total_mass_in_box": 2.0386586850365864,
+      "dense_centroid_code": 0.3008090995064859,
+      "density_max": 9.999998390171383,
+      "time_code": 0.0,
+      "t_over_tcc": 0.0,
+      "grid": {
+        "finest_equivalent_dimensions": [
+          64,
+          32,
+          32
+        ],
+        "leaf_cells": 65536,
+        "uniform": true,
+        "domain_width_over_R": [
+          20.0,
+          10.0,
+          10.0
+        ]
+      },
+      "snapshot": "/home/kaan/ic_audit_20260907/grid_tests/flash_chi10/cloudcrush_hdf5_chk_0000",
+      "dense_mass_over_initial_dense_mass": 1.0
+    },
+    {
+      "dense_mass": 0.04170328276942889,
+      "total_mass_in_box": 2.0386586850365864,
+      "dense_centroid_code": 0.30080909950666446,
+      "density_max": 9.999998390171383,
+      "time_code": 3e-10,
+      "t_over_tcc": 2.4494897427831775e-09,
+      "grid": {
+        "finest_equivalent_dimensions": [
+          64,
+          32,
+          32
+        ],
+        "leaf_cells": 65536,
+        "uniform": true,
+        "domain_width_over_R": [
+          20.0,
+          10.0,
+          10.0
+        ]
+      },
+      "snapshot": "/home/kaan/ic_audit_20260907/grid_tests/flash_chi10/cloudcrush_hdf5_chk_0001",
+      "dense_mass_over_initial_dense_mass": 0.9999999998703379
+    }
+  ]
+}

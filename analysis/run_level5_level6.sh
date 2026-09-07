@@ -1,4 +1,7 @@
 #!/bin/bash
+printf '%s\n' 'Historical queue disabled: binaries, ICs, boundaries and raw-data retention need revalidation. See analysis/README.md and verified_20260907/run_corrected_athpp.py.' >&2
+exit 2
+# Historical body below is preserved for provenance, not executed.
 # ============================================================================
 # LEVEL 5 AND LEVEL 6 RUNS, all codes.
 #

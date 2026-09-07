@@ -1,0 +1,58 @@
+ _/_/_/       _/_/     _/    _/    _/_/_/   _/_/_/_/    _/_/_/  
+ _/    _/    _/  _/    _/_/_/_/   _/    _/  _/         _/    _/ 
+ _/    _/   _/    _/   _/ _/ _/   _/        _/         _/       
+ _/_/_/     _/_/_/_/   _/    _/     _/_/    _/_/_/       _/_/   
+ _/    _/   _/    _/   _/    _/         _/  _/               _/ 
+ _/    _/   _/    _/   _/    _/   _/    _/  _/         _/    _/ 
+ _/    _/   _/    _/   _/    _/    _/_/_/   _/_/_/_/    _/_/_/  
+                         Version 3.0                            
+        written by Romain Teyssier (Princeton University)       
+            (c) CEA 1999-2007, UZH 2008-2021, PU 2022           
+  
+ Working with nproc =     1 for ndim = 3
+ Using solver = hydro with nvar =  6
+  
+ compile date    = 09/07/26-12:50:58
+ compile command = make  -j1 -- EXEC=ramses_ic_rect PATCH=../patch/cloudwind_l6 NPSCAL=1 MPI=1 NDIM=3
+ patch dir       = ../patch/cloudwind_l6
+ remote repo     = https://github.com/ramses-organisation/ramses.git
+ local branch    = dev
+ last commit     = bcb8de501edf22f64781bea746e4198f731ab930
+  
+ [cloudwind_l6] interior coarse cells nx,ny,nz =   2   1   1
+__________________________________________________
+ Hydro var indices:
+__________________________________________________
+ Building initial AMR grid
+ [cloudwind] chi, r_cloud, edge   =  1.0000E+01  1.0000E+00  1.0000E-01
+ [cloudwind] rho_w, p_w, v_wind   =  1.0000E+00  1.0000E+00  2.5820E+00
+ [cloudwind] cloud center (box u) =  3.0000E+00  5.0000E+00  5.0000E+00
+ [cloudwind] rv_scale (v edge / R) =  1.3000E+00
+ Time elapsed since startup:   5.6549812999999997E-002
+ Initial mesh structure
+ Level  1 has          2 grids (       2,       2,       2,)
+ Level  2 has         16 grids (      16,      16,      16,)
+ Level  3 has        128 grids (     128,     128,     128,)
+ Level  4 has       1024 grids (    1024,    1024,    1024,)
+ Level  5 has       8192 grids (    8192,    8192,    8192,)
+ Starting time integration
+ Fine step=      0 t= 0.00000E+00 dt= 1.936E-02 a= 1.000E+00 mem=13.3% 
+ Mesh structure
+ Level  1 has          2 grids (       2,       2,       2,)
+ Level  2 has         16 grids (      16,      16,      16,)
+ Level  3 has        128 grids (     128,     128,     128,)
+ Level  4 has       1024 grids (    1024,    1024,    1024,)
+ Level  5 has       8192 grids (    8192,    8192,    8192,)
+ Main step=      1 mcons= 0.00E+00 econs= 0.00E+00 epot= 0.00E+00 ekin= 9.64E+03
+ Fine step=      1 t= 1.93645E-02 dt= 1.815E-02 a= 1.000E+00 mem=13.3% 
+ Run completed
+ Total elapsed time:   4.6666453999999996E-002
+
+     seconds         %    STEP (rank=      1)
+       0.015      26.9    io                      
+       0.002       2.9    courant                 
+       0.000       0.5    hydro - set unew        
+       0.038      69.0    hydro - godunov         
+       0.000       0.4    hydro - set uold        
+       0.000       0.3    hydro - ghostzones      
+       0.055     100.0    TOTAL

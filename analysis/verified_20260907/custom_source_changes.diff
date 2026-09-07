@@ -1,0 +1,780 @@
+--- /mnt/c/Users/kaanb/CloudCrushing/audit_20260907/before/home/kaan/codes/ramses/patch/cloudwind/condinit.f90	2026-08-25 15:31:15.000000000 +0300
++++ /mnt/c/Users/kaanb/CloudCrushing/audit_20260907/source/home/kaan/codes/ramses/patch/cloudwind/condinit.f90	2026-09-07 12:36:38.446475600 +0300
+@@ -6,7 +6,7 @@
+ !          tanh edge of width "edge":
+ !            f  = 0.5*(1 - tanh((r - r_cloud)/edge))
+ !            rho= rho_wind*(1 + (chi-1)*f)
+-!            fv = 0.5*(1 - tanh((r - rv_scale*r_cloud)/edge))
++!            fv = 1 for r <= rv_scale*r_cloud, otherwise 0
+ !            vx = v_wind*(1-fv)     [rv_scale default 1.3]
+ !   passive scalar (if NPSCAL>0): tracer = f (cloud material)
+ ! Positions: RAMSES box is [0,boxlen] x [0,boxlen*ny/nx].
+@@ -145,14 +145,13 @@
+ #endif
+      r  = sqrt(r2)
+      f  = 0.5d0*(1.0d0 - tanh((r-r_cloud)/edge))
+-     fv = 0.5d0*(1.0d0 - tanh((r-rv_scale*r_cloud)/edge))
++     fv = 0.0d0
++     if (r <= rv_scale*r_cloud) fv = 1.0d0
+      dd = rho_wind*(1.0d0 + (chi-1.0d0)*f)
+      ! density
+      q(i,1) = dd
+-     ! velocity: wind everywhere, cloud static, smooth transition.
+-     ! The velocity edge sits OUTSIDE the density edge (rv_scale=1.3 by
+-     ! default, Gronnow et al. 2018) so dense and fast gas never share a
+-     ! cell.  Set rv_scale=1.0 to recover the old behaviour.
++     ! Sharp velocity boundary (Gronnow et al. 2018, section 2).
++     ! Density smoothing is a separate prescription.
+      q(i,2) = v_wind*(1.0d0-fv)
+ #if NDIM>1
+      q(i,3) = 0.0d0
+
+--- /mnt/c/Users/kaanb/CloudCrushing/audit_20260907/before/home/kaan/codes/ramses/patch/cloudwind_l6/condinit.f90	2026-08-26 00:03:03.000000000 +0300
++++ /mnt/c/Users/kaanb/CloudCrushing/audit_20260907/source/home/kaan/codes/ramses/patch/cloudwind_l6/condinit.f90	2026-09-07 12:36:38.446475600 +0300
+@@ -6,7 +6,7 @@
+ !          tanh edge of width "edge":
+ !            f  = 0.5*(1 - tanh((r - r_cloud)/edge))
+ !            rho= rho_wind*(1 + (chi-1)*f)
+-!            fv = 0.5*(1 - tanh((r - rv_scale*r_cloud)/edge))
++!            fv = 1 for r <= rv_scale*r_cloud, otherwise 0
+ !            vx = v_wind*(1-fv)     [rv_scale default 1.3]
+ !   passive scalar (if NPSCAL>0): tracer = f (cloud material)
+ ! Positions: RAMSES box is [0,boxlen] x [0,boxlen*ny/nx].
+@@ -145,14 +145,13 @@
+ #endif
+      r  = sqrt(r2)
+      f  = 0.5d0*(1.0d0 - tanh((r-r_cloud)/edge))
+-     fv = 0.5d0*(1.0d0 - tanh((r-rv_scale*r_cloud)/edge))
++     fv = 0.0d0
++     if (r <= rv_scale*r_cloud) fv = 1.0d0
+      dd = rho_wind*(1.0d0 + (chi-1.0d0)*f)
+      ! density
+      q(i,1) = dd
+-     ! velocity: wind everywhere, cloud static, smooth transition.
+-     ! The velocity edge sits OUTSIDE the density edge (rv_scale=1.3 by
+-     ! default, Gronnow et al. 2018) so dense and fast gas never share a
+-     ! cell.  Set rv_scale=1.0 to recover the old behaviour.
++     ! Sharp velocity boundary (Gronnow et al. 2018, section 2).
++     ! Density smoothing is a separate prescription.
+      q(i,2) = v_wind*(1.0d0-fv)
+ #if NDIM>1
+      q(i,3) = 0.0d0
+
+--- /mnt/c/Users/kaanb/CloudCrushing/audit_20260907/before/home/kaan/codes/gizmo/scripts/make_cloudwind_ic.py	2026-08-26 03:43:42.000000000 +0300
++++ /mnt/c/Users/kaanb/CloudCrushing/audit_20260907/source/home/kaan/codes/gizmo/scripts/make_cloudwind_ic.py	2026-09-07 12:46:53.553946600 +0300
+@@ -1,64 +1,24 @@
+ #!/usr/bin/env python3
+-"""
+-Cloud-wind matched setup IC generator for GIZMO (Gadget-format HDF5).
+-Modeled on gizmo-public/scripts/make_IC.py.
++"""GIZMO cloud-wind initial-condition generator.
+ 
+-Physics (identical across all codes in the comparison):
+-  ambient/wind: rho=1, P=1, vx=2.582 (Mach 2, cs=1.291), gamma=5/3
+-  cloud: overdensity chi, static, P=1, radius 1, centered at origin
+-  density edge:  f   = 0.5*(1 - tanh((r - 1.0)/0.1));    rho = 1 + (chi-1)*f
+-  velocity edge: f_v = 0.5*(1 - tanh((r - RV*1.0)/0.1)); vx  = 2.582*(1 - f_v)
+-
+-RV (--rv-scale) defaults to 1.3: the velocity transition is deliberately placed
+-OUTSIDE the dense edge so that no particle is simultaneously dense and fast.
+-Particles that are both dense and fast produce catastrophic cancellation between
+-kinetic and total energy and poison the early evolution.  This matches
+-arepo/runs/make_ic_cloud.py (--rv-scale 1.3), gasoline/ics/make_gasoline_cloudwind.py
+-(RV_SCALE = 1.3) and the Athena++ problem generator CloudCrushing/A8/cloud_wind.c.
+-
+-  CAVEAT (measured 2026-08-26): rv_scale=1.3 delivers its stated property only at
+-  chi=10.  The max density among material moving faster than 0.1*v_wind is 1.20 at
+-  chi=10, 3.16 at chi=100 and 22.8 at chi=1000 -- this is the tanh tail, not a
+-  sampling artifact, and it is identical in every code in the campaign.  It is
+-  kept at 1.3 anyway because eight grid runs at chi=100/1000 are already finished
+-  with 1.3 and consistency with them dominates.
+-
+-  NOTE ON REPRODUCIBILITY: the archived 2D ICs under runs/GIZMO2D_chi10_mfm and
+-  runs/GIZMO2D_chi10_mfv were written by the earlier version of this script,
+-  which used the co-located form vx = 2.582*(1 - f).  Those .hdf5 files are
+-  untouched.  To regenerate them bit-for-bit, pass --rv-scale 1.0.
+-  domain: x in [-3,17], y in [-5,5] (2D); +z in [-5,5] (3D)
+-
+-GIZMO variant: long box (Braspenning+2023 style).  Coordinates are shifted so the
+-box is [0,20]x[0,10]x[0,10] (BoxSize=10, BOX_LONG_X=2); cloud center -> (3,5,5).
+-x stays periodic (GIZMO has no wind injector); the transverse faces are OUTFLOW
+-via BOX_OUTFLOW_Y / BOX_OUTFLOW_Z in Config_MFM_3D.sh and Config_MFV_3D.sh.
+-
+-SAMPLING CONVENTION (--mass-mode), settled 2026-08-26 for the twelve-code
+-campaign:
+-
+-  volume  EQUAL VOLUME / variable mass.  THE LADDER CONVENTION.  A single
+-          regular lattice of spacing dx covers the whole box; every particle
+-          carries m = rho(r)*dx^ndims and u = P0/((gamma-1)*rho(r)).  N is
+-          independent of chi, the spatial resolution equals the grid codes'
+-          cell size at EVERY radius, and P = P0 holds exactly everywhere by
+-          construction.  Identical in spirit to arepo/runs/make_ic_cloud.py
+-          (Mass = rho*cell_volume) and gadget4/ics/make_g4_cloudwind.py
+-          (mass = rho*dx**dim).
+-
+-  equal   EQUAL MASS / chi-refined cloud.  LEGACY, and the SPH-literature
+-          default (Agertz+2007, Hopkins 2015, Braspenning+2023).  Kept as the
+-          module default so every existing call site and every archived IC
+-          reproduces bit-for-bit.  Use it only for an explicitly-labelled
+-          equal-mass control set, never for a ladder rung: it resolves the
+-          cloud interior chi^(1/3) times finer than the wind (and than the grid
+-          codes at the same rung), it makes N a function of chi, and the
+-          r<=1.4 sampling seam puts a pressure dip of 0.3% / 3.2% / 25% at
+-          chi = 10 / 100 / 1000 into the cloud's near wake.
+-
+-Usage: python3 make_cloudwind_ic.py --chi 10 --dx 0.05 --ndims 2 --fname ics.hdf5
+-       python3 make_cloudwind_ic.py --chi 1000 --level 5 --ndims 3 \
+-               --mass-mode volume --fname ics.hdf5
++Density: rho = rho_wind * [1 + (chi-1)/2 * (1-tanh((r/R-1)/0.1))].
++Velocity: zero for r <= rv_scale*R; constant wind speed outside.
++rv_scale defaults to 1.3. This is a sharp VELOCITY boundary, not a tanh.
++Reference: Gronnow et al. (2018), section 2, https://arxiv.org/pdf/1805.03903 .
++The paper supports this boundary prescription, not the former tanh velocity law.
++Changing rv_scale moves the sharp boundary and cannot reproduce old tanh ICs.
++
++This is a custom initializer for GIZMO; GIZMO evolves its own equations.
++It does not establish identical boundary conditions or effective resolution
++across codes. Equal-volume sampling matches initial lattice spacing only.
++SPH and moving-mesh densities can differ from mass divided by lattice volume.
++Use each run's parameter file and compile flags to establish boundary conditions.
++
++Historical sources are preserved in CloudCrushing/audit_20260907/before/.
++Existing IC files and completed simulation outputs have not been rewritten.
++The writer refuses to overwrite an existing IC file.
++Output format: Gadget-style HDF5 initial conditions.
++Run this script with --help for its own supported arguments.
+ """
+ import argparse
+ import numpy as np
+@@ -69,15 +29,14 @@
+     return 1.0 + (chi - 1.0) * f, f
+ 
+ def vel_profile(r, vwind, rv_scale=1.3):
+-    """Velocity edge, pushed out to rv_scale*R_cloud so no particle is both
+-    dense and fast (see module docstring)."""
+-    f_v = 0.5 * (1.0 - np.tanh((r - rv_scale * 1.0) / 0.1))
++    """Sharp velocity boundary at rv_scale*R, separate from density."""
++    f_v = (r <= rv_scale * 1.0).astype(float)
+     return vwind * (1.0 - f_v)
+ 
+ 
+ def _write(fname, pos, vel, ids, m, u, N):
+     """Gadget/HDF5 type-3 writer, shared by both sampling modes."""
+-    with h5py.File(fname, 'w') as fh:
++    with h5py.File(fname, 'x') as fh:
+         npart = np.array([N, 0, 0, 0, 0, 0])
+         h = fh.create_group('Header')
+         h.attrs['NumPart_ThisFile'] = npart
+
+--- /mnt/c/Users/kaanb/CloudCrushing/audit_20260907/before/home/kaan/codes/gasoline/ics/make_gasoline_cloudwind.py	2026-08-25 15:37:24.000000000 +0300
++++ /mnt/c/Users/kaanb/CloudCrushing/audit_20260907/source/home/kaan/codes/gasoline/ics/make_gasoline_cloudwind.py	2026-09-07 12:46:53.554946300 +0300
+@@ -1,100 +1,24 @@
+ #!/usr/bin/env python3
+-"""
+-GASOLINE (Wadsley, Stadel & Quinn 2004; Wadsley+2017 "Gasoline2") IC generator
+-for the cloud-wind matched setup.  Writes TIPSY binary directly.
+-
+-THIS IS REAL GASOLINE, NOT ChaNGa.  github.com/N-BodyShop/gasoline is public and
+-was cloned/built successfully, so no substitution was needed.
++"""Gasoline cloud-wind initial-condition generator.
+ 
+-Modelled on the two reference generators already on disk:
+-  ~/codes/gadget4/ics/make_g4_cloudwind.py   (lattice + tanh profile + tagging)
+-  ~/codes/gizmo/scripts/make_cloudwind_ic.py (equal-mass Lagrangian sampling)
+-Only the file format differs: Gasoline reads TIPSY, not Gadget HDF5.
+-
+---------------------------------------------------------------------------
+-PHYSICS (identical to the ten codes already installed)
+---------------------------------------------------------------------------
+-  Ideal hydro, gamma = 5/3, non-radiative, no gravity, no B, no cooling.
+-  Wind    : rho = 1, P = 1  (c_s = sqrt(5/3) = 1.29099), vx = 2.58199 (Mach 2), +x.
+-  Cloud   : overdensity chi, static, P = 1, radius 1.0, centred at the origin.
+-  Edge    : f_rho = 0.5*(1 - tanh((r - 1.0)/0.1));  rho = 1 + (chi-1)*f_rho
+-  Velocity: transition placed OUTSIDE the dense edge, at RV*R with RV = 1.3 --
+-            f_v = 0.5*(1 - tanh((r - 1.3)/0.1));    vx  = 2.58199*(1 - f_v)
+-            (dense+fast cells cause energy cancellation at high chi.)
+-            RV is the runtime flag --rv-scale, default 1.3; all four particle/
+-            moving-mesh generators on this machine now share this convention
+-            (arepo/runs/make_ic_cloud.py, gizmo/scripts/make_cloudwind_ic.py,
+-            gadget4/ics/make_g4_cloudwind.py).  Pass --rv-scale 1.0 to get the
+-            legacy co-located form back for controlled comparison.
+-  t_cc    = sqrt(chi)/2.58199 ; runs target 5 t_cc (chi=10 -> 6.124).
+-
+---------------------------------------------------------------------------
+-GEOMETRY -- why a thin 3D slab
+---------------------------------------------------------------------------
+-Gasoline is a 3D TREESPH code; it has no 2D mode (the SPH kernels in
+-SphPressureTerms.h / smoothfcn.c are 3D normalised).  So the "2D" chi=10 run is
+-done as a THIN PERIODIC 3D SLAB: the cloud is a CYLINDER of radius 1 whose axis
+-is +z, and the slab is only nz_slab particle layers thick.  Profiles therefore
+-use the cylindrical radius r = sqrt((x-xc)^2 + (y-yc)^2).  A sphere of radius 1
+-simply does not fit in a slab this thin, and a cylinder is the standard way to
+-reproduce the 2D problem with a 3D code.
+-
+-Domain: SPEC asks for x in [-3,17], y in [-5,5] cloud radii, periodic long box
+-(Braspenning+2023 style, as Arepo/GIZMO/Gadget-4 use here).  Gasoline's periodic
+-box is CENTRED ON THE ORIGIN, so the box is x in [-10,10], y in [-5,5],
+-z in [-Lz/2, Lz/2] and the cloud centre is placed at (-7, 0, 0).  That gives
+-exactly 3 cloud radii of upstream padding and 17 downstream, i.e. the SPEC
+-domain in the cloud frame.
+-
+---------------------------------------------------------------------------
+-TIPSY BINARY FORMAT AS WRITTEN HERE  (gasoline: bStandard = 1)
+---------------------------------------------------------------------------
+-Gasoline reads two tipsy flavours (master.c msrReadTipsy / pkd.c pkdReadTipsy):
+-  bStandard = 0 -> native: raw fread of `struct dump` (tipsydefs.h), host endian,
+-                   header = sizeof(struct dump) = 32 bytes on x86-64 (double +
+-                   5 ints + 4 bytes tail padding), gas record 48 bytes.
+-  bStandard = 1 -> XDR: every field passed through xdr_double/xdr_int/xdr_float,
+-                   i.e. BIG-ENDIAN, header exactly 32 B, gas record exactly 48 B
+-                   (pkdSeek() hard-codes 32 and 48 for the standard path).
+-We write bStandard = 1 (XDR / big-endian) because it is byte-exact and
+-self-describing; the param file sets bStandard = 1 to match.
+-
+-  HEADER, 32 bytes, big-endian:
+-    offset  0 : float64  time        (0.0)
+-    offset  8 : int32    nbodies     (total particle count)
+-    offset 12 : int32    ndim        (3)
+-    offset 16 : int32    nsph        (= nbodies here; all gas)
+-    offset 20 : int32    ndark       (0)
+-    offset 24 : int32    nstar       (0)
+-    offset 28 : int32    pad         (0; xdrHeader() in master.c writes it)
+-
+-  GAS PARTICLE RECORD, 48 bytes, big-endian, 12 x float32, in this order
+-  (tipsydefs.h `struct gas_particle`, read field-by-field in pkdReadTipsy):
+-    mass, pos[0], pos[1], pos[2], vel[0], vel[1], vel[2],
+-    rho, temp, eps, metals, phi
+-  Dark and star records would follow, but there are none.
+-
+-  UNITS / THE `temp` FIELD:  pkdReadTipsy does  p->u = dTuFac * temp  with
+-    dTuFac = dGasConst / ((dConstGamma - 1) * dMeanMolWeight)      [master.c]
+-  The param file sets dGasConst = 2/3, dConstGamma = 5/3, dMeanMolWeight = 1,
+-  so dTuFac = (2/3)/((2/3)*1) = 1 EXACTLY and the `temp` field IS the specific
+-  internal energy u = P/((gamma-1)*rho).  Nothing is rescaled on read.
+-
+---------------------------------------------------------------------------
+-CLOUD MATERIAL TRACER
+---------------------------------------------------------------------------
+-Tipsy has no ParticleID field, but Gasoline assigns iOrder = position in the
+-file.  Cloud-region particles are written FIRST, so cloud material is
+-iOrder < Ncloud for all time.  In addition the `metals` field carries
+-f_rho in [0,1] as a genuine advected passive scalar (Gasoline advects fMetals;
+-dMetalDiffusionCoeff = 0 in the param file keeps it purely Lagrangian).
+-
+---------------------------------------------------------------------------
+-USAGE
+---------------------------------------------------------------------------
+-  python3 make_gasoline_cloudwind.py --chi 10 --dx 0.0625 --nz-slab 8 \
+-          --out cloudwind_chi10.std
+-  python3 make_gasoline_cloudwind.py --check cloudwind_chi10.std
++Density: rho = rho_wind * [1 + (chi-1)/2 * (1-tanh((r/R-1)/0.1))].
++Velocity: zero for r <= rv_scale*R; constant wind speed outside.
++rv_scale defaults to 1.3. This is a sharp VELOCITY boundary, not a tanh.
++Reference: Gronnow et al. (2018), section 2, https://arxiv.org/pdf/1805.03903 .
++The paper supports this boundary prescription, not the former tanh velocity law.
++Changing rv_scale moves the sharp boundary and cannot reproduce old tanh ICs.
++
++This is a custom initializer for Gasoline; Gasoline evolves its own equations.
++It does not establish identical boundary conditions or effective resolution
++across codes. Equal-volume sampling matches initial lattice spacing only.
++SPH and moving-mesh densities can differ from mass divided by lattice volume.
++Use each run's parameter file and compile flags to establish boundary conditions.
++
++Historical sources are preserved in CloudCrushing/audit_20260907/before/.
++Existing IC files and completed simulation outputs have not been rewritten.
++The writer refuses to overwrite an existing IC file.
++Gasoline files use TIPSY. make_gasoline_cloudwind_3d.py creates spherical 3D clouds; the older base generator creates a cylindrical slab.
++Run this script with --help for its own supported arguments.
+ """
+ import argparse
+ import numpy as np
+@@ -133,10 +57,8 @@
+ 
+ 
+ def f_vel(r, rv_scale=RV_SCALE):
+-    """Velocity weight: transition moved out to rv_scale*R (default 1.3) so it is
+-    not co-located with the dense edge (dense+fast cells -> energy cancellation
+-    at high chi).  rv_scale=1.0 restores the legacy co-located convention."""
+-    return 0.5 * (1.0 - np.tanh((r - rv_scale * RCLOUD) / DR))
++    """Stationary fraction: one through rv_scale*R, zero outside."""
++    return (r <= rv_scale * RCLOUD).astype(float)
+ 
+ 
+ def write_tipsy(fname, mass, pos, vel, rho, u, eps, metals, time=0.0):
+@@ -160,7 +82,7 @@
+     gas['metals'] = metals
+     gas['phi'] = 0.0
+ 
+-    with open(fname, 'wb') as fh:
++    with open(fname, 'xb') as fh:
+         fh.write(hdr.tobytes())
+         fh.write(gas.tobytes())
+     return n
+
+--- /mnt/c/Users/kaanb/CloudCrushing/audit_20260907/before/home/kaan/codes/gasoline/ics/make_gasoline_cloudwind_3d.py	2026-08-26 02:27:34.000000000 +0300
++++ /mnt/c/Users/kaanb/CloudCrushing/audit_20260907/source/home/kaan/codes/gasoline/ics/make_gasoline_cloudwind_3d.py	2026-09-07 12:46:53.555946500 +0300
+@@ -1,36 +1,24 @@
+ #!/usr/bin/env python3
+-"""
+-GASOLINE IC generator for the cloud-wind setup in TRUE 3D: a SPHERICAL cloud in
+-the full 20 x 10 x 10 domain, not the thin slab with a cylindrical cloud that
+-make_gasoline_cloudwind.py produces.
+-
+-WHY THIS FILE EXISTS
+---------------------
+-make_gasoline_cloudwind.py deliberately builds a thin periodic slab (nz_slab
+-layers, cloud = an infinite cylinder along z) because it was written to
+-reproduce the *2D* problem with a 3D-only code.  That geometry cannot be
+-compared against the 3D grid runs: a cylinder is not a sphere.  This file keeps
+-every physical constant, the tanh edges, the rv_scale convention, the equal-mass
+-Lagrangian sampling and the TIPSY writer byte-for-byte identical by importing
+-them from the original module, and changes exactly two things:
+-
+-    r  is the SPHERICAL radius sqrt((x-xc)^2 + (y-yc)^2 + (z-zc)^2)
+-    the box is the full LZ = 10 in z, so z in [-5,5] as the spec requires
++"""Gasoline cloud-wind initial-condition generator.
+ 
+-MATCHED SPEC (unchanged): x in [-3,17], y,z in [-5,5] cloud radii; gamma 5/3;
+-wind rho=1, P=1, vx=2.581989 (Mach 2); R_cloud=1; tanh edge width 0.1 R;
+-velocity transition at 1.3 R; run to 5 t_cc, t_cc = sqrt(chi) R / v_wind.
++Density: rho = rho_wind * [1 + (chi-1)/2 * (1-tanh((r/R-1)/0.1))].
++Velocity: zero for r <= rv_scale*R; constant wind speed outside.
++rv_scale defaults to 1.3. This is a sharp VELOCITY boundary, not a tanh.
++Reference: Gronnow et al. (2018), section 2, https://arxiv.org/pdf/1805.03903 .
++The paper supports this boundary prescription, not the former tanh velocity law.
++Changing rv_scale moves the sharp boundary and cannot reproduce old tanh ICs.
+ 
+-ELEMENT COUNT.  --dx is the ambient inter-particle spacing, so the number of
+-resolution elements per cloud radius is 1/dx:
+-    dx = 0.078125  -> 12.8 per R  ("level 5",  4,194,304 ambient lattice sites)
+-    dx = 0.0390625 -> 25.6 per R  ("level 6", 33,554,432 ambient lattice sites)
+-Equal-mass sampling adds particles inside the cloud, so the actual N is
+-    N = nx*ny*nz + (chi-1) * 4.2917 / dx**3
+-which is +1.9% at chi=10, +21% at chi=100 and +214% at chi=1000.
++This is a custom initializer for Gasoline; Gasoline evolves its own equations.
++It does not establish identical boundary conditions or effective resolution
++across codes. Equal-volume sampling matches initial lattice spacing only.
++SPH and moving-mesh densities can differ from mass divided by lattice volume.
++Use each run's parameter file and compile flags to establish boundary conditions.
+ 
+-Usage:
+-    python3 make_gasoline_cloudwind_3d.py --chi 10 --dx 0.0390625 --out l6.std
++Historical sources are preserved in CloudCrushing/audit_20260907/before/.
++Existing IC files and completed simulation outputs have not been rewritten.
++The writer refuses to overwrite an existing IC file.
++Gasoline files use TIPSY. make_gasoline_cloudwind_3d.py creates spherical 3D clouds; the older base generator creates a cylindrical slab.
++Run this script with --help for its own supported arguments.
+ """
+ import argparse
+ import os
+
+--- /mnt/c/Users/kaanb/CloudCrushing/audit_20260907/before/home/kaan/codes/gadget4/ics/make_g4_cloudwind.py	2026-08-25 14:59:47.000000000 +0300
++++ /mnt/c/Users/kaanb/CloudCrushing/audit_20260907/source/home/kaan/codes/gadget4/ics/make_g4_cloudwind.py	2026-09-07 13:18:03.782262600 +0300
+@@ -1,50 +1,24 @@
+ #!/usr/bin/env python3
+-"""
+-GADGET-4 HDF5 IC generator for the cloud-wind matched setup (SPEC).
++"""GADGET-4 cloud-wind initial-condition generator.
+ 
+-Cloud-wind matched setup, periodic-box variant (Braspenning+2023 style,
+-appropriate for particle codes; grid codes in this comparison use
+-inflow/outflow instead):
+-
+-  - Ideal hydro, gamma = 5/3, non-radiative, no gravity, no B.
+-  - Ambient/wind: rho = 1.0, P = 1.0 (c_s = 1.291), vx = 2.582 (Mach 2).
+-  - Cloud: overdensity chi, static, P = 1.0, radius 1.0.
+-  - Smooth edges:
+-       density  f   = 0.5*(1 - tanh((r - 1.0)/0.1));      rho = 1 + (chi-1)*f
+-       velocity f_v = 0.5*(1 - tanh((r - RV*1.0)/0.1));   vx  = 2.582*(1 - f_v)
+-  - Domain: x in [-3,17], y in [-5,5] (2D), z in [-5,5] (3D).
+-    Shifted so the box is [0,20] x [0,10] (x [0,10] in z); the cloud
+-    center sits at (3, 5[, 5]).  Fully periodic.
+-
+-RV (--rv-scale) defaults to 1.3: the velocity transition is deliberately
+-placed OUTSIDE the dense edge, so no cell/particle is both dense and fast.
+-Co-locating them (RV = 1.0) puts high-density material at wind speed inside
+-the same smoothing kernel as static cloud material, which causes catastrophic
+-energy cancellation.  RV = 1.3 matches arepo/runs/make_ic_cloud.py
+-(--rv-scale 1.3), gizmo/scripts/make_cloudwind_ic.py, gasoline/ics/
+-make_gasoline_cloudwind.py (RV_SCALE = 1.3) and the Athena++ problem
+-generator CloudCrushing/A8/cloud_wind.c.
+-
+-NOTE: ics_chi10_2d.hdf5 in runs/G4_2D_chi10 was written by the earlier
+-version of this script, which used the co-located form vx = 2.582*(1 - f).
+-That file is unchanged; use --rv-scale 1.0 to reproduce it.
+-
+-Particles are laid on a uniform cell-centered lattice with variable
+-masses m = rho * dx^dim  (variable-mass lattice; fine for chi=10, for
+-chi >= 100 consider equal-mass ICs, see notes at bottom).
+-
+-Cloud material tagging (passive-scalar substitute, Lagrangian codes):
+-particles with f >= 0.5 (density edge) get ParticleIDs >= CLOUD_ID0 =
+-1_000_000_000, everything else gets IDs starting at 1.  Select cloud
+-material in any snapshot with (ParticleIDs >= 1000000000).
+-
+-Header/datasets follow src/io/snap_io.cc read_header_fields():
+-NumPart_ThisFile & NumPart_Total (uint64, NTYPES entries), MassTable
+-(double), Time, Redshift, BoxSize (double), NumFilesPerSnapshot (int).
+-
+-Usage:
+-  python3 make_g4_cloudwind.py --chi 10 --dim 3 --nx 160 --out ics.hdf5
+-  (nx = lattice cells across the 20-long x direction; ny = nx/2, nz = nx/2)
++Density: rho = rho_wind * [1 + (chi-1)/2 * (1-tanh((r/R-1)/0.1))].
++Velocity: zero for r <= rv_scale*R; constant wind speed outside.
++rv_scale defaults to 1.3. This is a sharp VELOCITY boundary, not a tanh.
++Reference: Gronnow et al. (2018), section 2, https://arxiv.org/pdf/1805.03903 .
++The paper supports this boundary prescription, not the former tanh velocity law.
++Changing rv_scale moves the sharp boundary and cannot reproduce old tanh ICs.
++
++This is a custom initializer for GADGET-4; GADGET-4 evolves its own equations.
++It does not establish identical boundary conditions or effective resolution
++across codes. Equal-volume sampling matches initial lattice spacing only.
++SPH and moving-mesh densities can differ from mass divided by lattice volume.
++Use each run's parameter file and compile flags to establish boundary conditions.
++
++Historical sources are preserved in CloudCrushing/audit_20260907/before/.
++Existing IC files and completed simulation outputs have not been rewritten.
++The writer refuses to overwrite an existing IC file.
++Output format: Gadget-style HDF5 initial conditions.
++Run this script with --help for its own supported arguments.
+ """
+ import argparse
+ import numpy as np
+@@ -88,7 +62,7 @@
+ 
+     # density edge at RCLOUD; velocity edge pushed out to rv_scale*RCLOUD
+     f = 0.5 * (1.0 - np.tanh((r - RCLOUD) / DR))
+-    f_v = 0.5 * (1.0 - np.tanh((r - rv_scale * RCLOUD) / DR))
++    f_v = (r <= rv_scale * RCLOUD).astype(float)
+     rho = 1.0 + (chi - 1.0) * f
+     vx = VWIND * (1.0 - f_v)
+     u = P0 / ((GAMMA - 1.0) * rho)        # internal energy per unit mass
+@@ -103,7 +77,7 @@
+     pos = np.column_stack([X, Y, Z])
+     vel = np.column_stack([vx, np.zeros(n), np.zeros(n)])
+ 
+-    with h5py.File(fname, "w") as fp:
++    with h5py.File(fname, "x") as fp:
+         h = fp.create_group("Header")
+         npart = np.zeros(NTYPES, dtype=np.uint64); npart[0] = n
+         h.attrs["NumPart_ThisFile"] = npart
+@@ -134,7 +108,7 @@
+           (f"x{nz}" if dim == 3 else "") + f" N={n} (cloud-tagged {ncl})")
+     print(f"  dx={dx:.4f}  m_amb={dx**dim:.3e}  m_cloud_max={mass.max():.3e}")
+     print(f"  rv_scale={rv_scale}: max rho among particles with vx>0.1*vwind = "
+-          f"{dense_fast:.4f} (should be ~1 for rv_scale=1.3)")
++          f"{dense_fast:.4f} (the density tail can remain above ambient at high chi)")
+     print(f"  t_cc={tcc:.4f}  5*t_cc={5*tcc:.4f}")
+ 
+ 
+@@ -146,7 +120,7 @@
+                     help="lattice cells across x-span (20); ny=nx/2, nz=nx/2")
+     ap.add_argument("--rv-scale", type=float, default=1.3, dest="rv_scale",
+                     help="velocity edge radius in units of the cloud radius "
+-                         "(default 1.3; use 1.0 to reproduce the legacy 2D ICs)")
++                         "(default 1.3; moves the sharp boundary, not historical tanh ICs)")
+     ap.add_argument("--out", default="ics.hdf5")
+     a = ap.parse_args()
+     make_ics(a.chi, a.dim, a.nx, a.out, a.rv_scale)
+
+--- /mnt/c/Users/kaanb/CloudCrushing/audit_20260907/before/home/kaan/codes/flashx/source/Simulation/SimulationMain/CloudWind/Simulation_initBlock.F90	2026-08-25 15:33:08.000000000 +0300
++++ /mnt/c/Users/kaanb/CloudCrushing/audit_20260907/source/home/kaan/codes/flashx/source/Simulation/SimulationMain/CloudWind/Simulation_initBlock.F90	2026-09-07 13:11:22.745344700 +0300
+@@ -14,16 +14,15 @@
+ !!  density sim_rhoCloud) initially at rest, centered at
+ !!  (sim_xctr, sim_yctr, sim_zctr).  Pressure is uniform.
+ !!
+-!!  Density and velocity are smoothed with tanh profiles of the same width
+-!!  delta = sim_smoothWidth*sim_rCloud, but at DIFFERENT radii: the velocity
+-!!  transition sits at sim_rvScale*sim_rCloud (default 1.3), deliberately
+-!!  outside the density edge at sim_rCloud.  This is the published convention
+-!!  (Gronnow et al. 2018) and keeps dense and fast gas out of the same cell,
+-!!  avoiding the energy cancellation that crashes high-chi runs.
+-!!  sim_rvScale = 1.0 recovers the old matched-edge form.
++!!  Density alone has a tanh edge with delta=sim_smoothWidth*sim_rCloud.
++!!  Velocity is a sharp step at sim_rvScale*sim_rCloud (default 1.3),
++!!  as specified for velocity in Gronnow et al. (2018), section 2,
++!!  arXiv:1805.03903. This is not a stability guarantee; dense moving
++!!  gas can still occur in the density tail at high chi.
++!!  rvScale=1 moves the sharp boundary, not the old tanh velocity law.
+ !!
+ !!  Density fraction:  f_rho(r) = 0.5*(1 - tanh((r - r_cl)/delta))
+-!!  Velocity fraction: f_v(r)   = 0.5*(1 - tanh((r - rvScale*r_cl)/delta))
++!!  Velocity fraction: f_v(r)   = 1 for r <= rvScale*r_cl, otherwise 0
+ !!  Density:           rho(r) = rho_wind + (rho_cloud - rho_wind)*f_rho(r)
+ !!  Velocity:          vx(r)  = v_wind * (1 - f_v(r))
+ !!
+@@ -98,9 +97,10 @@
+            ! density edge: 1 deep inside the cloud, 0 far outside
+            cloudFrac = 0.5 * (1.0 - tanh((radius - sim_rCloud)/delta))
+ 
+-           ! velocity edge, deliberately outside the density edge so that no
+-           ! cell holds both dense and fast gas
+-           velFrac   = 0.5 * (1.0 - tanh((radius - sim_rvScale*sim_rCloud)/delta))
++           ! Sharp velocity boundary; density retains its tanh above.
++           ! Gronnow et al. 2018, section 2.
++           velFrac = 0.0
++           if (radius <= sim_rvScale*sim_rCloud) velFrac = 1.0
+ 
+            rho = sim_rhoAmbient + (sim_rhoCloud - sim_rhoAmbient) * cloudFrac
+            vx  = sim_windVel * (1.0 - velFrac)
+
+--- /mnt/c/Users/kaanb/CloudCrushing/audit_20260907/before/home/kaan/codes/enzo/enzo-dev/src/enzo/Grid_CloudWindInitializeGrid.C	2026-08-25 15:31:41.000000000 +0300
++++ /mnt/c/Users/kaanb/CloudCrushing/audit_20260907/source/home/kaan/codes/enzo/enzo-dev/src/enzo/Grid_CloudWindInitializeGrid.C	2026-09-07 12:36:38.447475800 +0300
+@@ -8,7 +8,7 @@
+ /  PURPOSE: set the initial state
+ /      f    = 0.5*(1 - tanh((r - R)/w))
+ /      rho  = rho_amb * (1 + (chi-1)*f)
+-/      fv   = 0.5*(1 - tanh((r - RvScale*R)/w))   [RvScale default 1.3]
++/      fv   = 1 for r <= RvScale*R, otherwise 0   [RvScale default 1.3]
+ /      vx   = v_wind * (1 - fv)
+ /      P    = P_amb  (uniform)
+ /      tracer (Metal_Density) = f * rho
+@@ -90,10 +90,8 @@
+ 	     (z - CloudCenter[2])*(z - CloudCenter[2]);
+ 
+ 	f   = 0.5*(1.0 - tanh((sqrt(r2) - CloudRadius)/SmoothWidth));
+-	/* the velocity edge sits OUTSIDE the density edge (RvScale = 1.3 by
+-	   default, Gronnow et al. 2018) so that dense and fast gas never
+-	   share a cell; CloudWindRvScale = 1.0 recovers the old behaviour */
+-	fv  = 0.5*(1.0 - tanh((sqrt(r2) - RvScale*CloudRadius)/SmoothWidth));
++	/* Sharp velocity boundary (Gronnow et al. 2018, section 2). */
++	fv  = (sqrt(r2) <= RvScale*CloudRadius) ? 1.0 : 0.0;
+ 	rho = AmbientDensity*(1.0 + (Chi - 1.0)*f);
+ 	vx  = WindVelocity*(1.0 - fv);
+ 
+
+--- /mnt/c/Users/kaanb/CloudCrushing/audit_20260907/before/home/kaan/codes/athenapp/src/pgen/cloud_wind.cpp	2026-09-06 17:34:15.000000000 +0300
++++ /mnt/c/Users/kaanb/CloudCrushing/audit_20260907/source/home/kaan/codes/athenapp/src/pgen/cloud_wind.cpp	2026-09-07 12:36:38.443477300 +0300
+@@ -9,8 +9,8 @@
+ //!
+ //!  A uniform Mach-M wind (rho=1, P=1, vx = Mach*c_s flowing +x1) streams past a
+ //!  static spherical cloud of overdensity drat (chi) in exact pressure equilibrium.
+-//!  Cloud radius fixed at 1.0, centered at the origin. Density and velocity are
+-//!  smoothed across the cloud edge with the tanh profile used by FLASH:
++//!  Cloud radius fixed at 1.0, centered at the origin. Density uses a tanh
++//!  edge; velocity has a sharp boundary at rv_scale times the cloud radius:
+ //!     f  = 0.5*(1 - tanh((r - 1.0)/0.1))
+ //!     rho = 1 + (chi - 1)*f
+ //!     f_v = 1 inside r < rv_scale*1.0, 0 outside (SHARP top-hat,
+@@ -81,9 +81,9 @@
+   Real mach = pin->GetReal("problem","Mach");
+   Real drat = pin->GetReal("problem","drat");
+   // Velocity transition radius in units of the cloud radius.  The adopted
+-  // convention (Gronnow et al. 2018) fades the wind velocity to zero OUTSIDE
+-  // the density edge, at 1.3 R, so that dense and fast gas never share a cell.
+-  // Set rv_scale = 1.0 to recover the old "fade at the cloud edge" behaviour.
++  // prescription sets zero velocity through rv_scale*R and constant wind
++  // speed outside (Gronnow et al. 2018, section 2). rv_scale moves this
++  // boundary; it does not restore the historical tanh velocity law.
+   Real rvs  = pin->GetOrAddReal("problem","rv_scale",1.3);
+ 
+   if (MAGNETIC_FIELDS_ENABLED) {
+@@ -114,8 +114,7 @@
+         // Bland-Hawthorn (2018) sec. 2: "The velocity and metallicity
+         // follow sharp top-hat profiles, with boundaries at r = 1.3 r_c".
+         // The density keeps its tanh; only the velocity is a step.
+-        // This matches AthenaPK's shipped cloud pgen, which cites the
+-        // same paper and has always used the step.
++        // The constant outer value is velocity, not momentum density.
+         Real fv = (diag > rvs*rad) ? 0.0 : 1.0;
+         Real vx = ul*(1.0 - fv);
+ 
+
+--- /mnt/c/Users/kaanb/CloudCrushing/audit_20260907/before/home/kaan/codes/athenapk/src/pgen/cloud.cpp	2026-08-23 13:07:44.000000000 +0300
++++ /mnt/c/Users/kaanb/CloudCrushing/audit_20260907/source/home/kaan/codes/athenapk/src/pgen/cloud.cpp	2026-09-07 12:36:38.444478600 +0300
+@@ -160,6 +160,7 @@
+   }
+ 
+   auto steepness = pin->GetOrAddReal("problem/cloud", "cloud_steepness", 10);
++  const auto rv_scale = pin->GetOrAddReal("problem/cloud", "rv_scale", 1.3);
+ 
+   // initialize conserved variables
+   auto &mbd = pmb->meshblock_data.Get();
+@@ -183,8 +184,9 @@
+         Real mom;
+         // Factor 1.3 as used in Grønnow, Tepper-García, & Bland-Hawthorn 2018,
+         // i.e., outside the cloud boundary region (for steepness 10)
+-        if (rad > 1.3 * r_cloud) {
+-          mom = mom_wind;
++        if (rad > rv_scale * r_cloud) {
++          // Ensure constant velocity even within the outer density tail.
++          mom = rho * (mom_wind / rho_wind);
+         } else {
+           mom = 0.0;
+         }
+
+--- /mnt/c/Users/kaanb/CloudCrushing/audit_20260907/before/home/kaan/codes/arepo/runs/make_ic_cloud.py	2026-08-26 03:40:25.000000000 +0300
++++ /mnt/c/Users/kaanb/CloudCrushing/audit_20260907/source/home/kaan/codes/arepo/runs/make_ic_cloud.py	2026-09-07 13:18:03.781262200 +0300
+@@ -1,40 +1,23 @@
+-"""Create AREPO HDF5 initial conditions for the 2D/3D cloud-crushing test.
++"""AREPO cloud-wind initial-condition generator.
+ 
+-Cloud-wind matched setup (identical physics across codes):
+-  ambient/wind: rho=1, P=1, vx = 2.582 (Mach 2, cs=1.291), gamma=5/3
+-  cloud: overdensity chi, static, P=1, radius 1.0 (circle in 2D, sphere in 3D)
+-  density edge:  f   = 0.5*(1 - tanh((r - 1.0)/0.1));  rho = 1 + (chi-1)*f
+-  velocity edge: f_v = 0.5*(1 - tanh((r - RV*1.0)/0.1)); vx = 2.582*(1 - f_v)
+-
+-RV (--rv-scale) defaults to 1.3: the velocity transition is deliberately placed
+-OUTSIDE the dense edge so that no cell is simultaneously dense and fast.  Cells
+-that are both dense and fast produce catastrophic cancellation between kinetic
+-and total energy and poison the early evolution.  This matches the convention in
+-gasoline/ics/make_gasoline_cloudwind.py (RV_SCALE = 1.3) and in the Athena++
+-problem generator CloudCrushing/A8/cloud_wind.c.
+-
+-  NOTE ON REPRODUCIBILITY: the archived 2D ICs in runs/AREPO2D_chi10 and
+-  runs/AREPO2D_chi100 were written by the earlier version of this script, which
+-  used the co-located form vx = 2.582*(1 - f).  Those IC.hdf5 files are
+-  untouched.  To regenerate them bit-for-bit, pass --rv-scale 1.0.
+-
+-Periodic long-box variant (Braspenning+2023 style), as appropriate for a
+-moving-mesh code: box 20 x 10 (x 10 in 3D), code coords x in [0,20],
+-y in [0,10], z in [0,10], i.e. x in [-3,17] and y,z in [-5,5] in cloud radii.
+-Cloud centered 3 units from the left edge at (3, 5) / (3, 5, 5).
+-AREPO compile-time: BoxSize=10 with LONG_X=2.0 gives the 20 x 10 (x 10) box.
+-The streamwise x axis stays periodic (the wind supply must not be cut off);
+-the transverse faces are outflow via REFLECTIVE_Y=2 (and REFLECTIVE_Z=2 in 3D).
+-
+-Header structure copied from examples/gresho_2d/create.py (Rainer Weinberger).
+-
+-Usage: python make_ic_cloud.py <output_dir> [chi] [ny] [--ndim {2,3}] [--rv-scale RV]
+-  chi: cloud overdensity (default 10)
+-  ny : mesh-generating points across the y extent (10 units).
+-       nx = 2*ny, and in 3D nz = ny.
+-       2D default 64 (128x64 = 8192 cells, smoke test); production 256+.
+-       3D: ny=100 gives 200x100x100 = 2.0e6 cells (dx = 0.1, 10 cells per
+-       cloud radius); ny=128 gives 256x128x128 = 4.2e6 cells (dx = 0.078).
++Density: rho = rho_wind * [1 + (chi-1)/2 * (1-tanh((r/R-1)/0.1))].
++Velocity: zero for r <= rv_scale*R; constant wind speed outside.
++rv_scale defaults to 1.3. This is a sharp VELOCITY boundary, not a tanh.
++Reference: Gronnow et al. (2018), section 2, https://arxiv.org/pdf/1805.03903 .
++The paper supports this boundary prescription, not the former tanh velocity law.
++Changing rv_scale moves the sharp boundary and cannot reproduce old tanh ICs.
++
++This is a custom initializer for AREPO; AREPO evolves its own equations.
++It does not establish identical boundary conditions or effective resolution
++across codes. Equal-volume sampling matches initial lattice spacing only.
++SPH and moving-mesh densities can differ from mass divided by lattice volume.
++Use each run's parameter file and compile flags to establish boundary conditions.
++
++Historical sources are preserved in CloudCrushing/audit_20260907/before/.
++Existing IC files and completed simulation outputs have not been rewritten.
++The writer refuses to overwrite an existing IC file.
++Output format: Gadget-style HDF5 initial conditions.
++Run this script with --help for its own supported arguments.
+ """
+ import argparse
+ import numpy as np
+@@ -48,7 +31,7 @@
+                help='2 (default, unchanged legacy behaviour) or 3')
+ p.add_argument('--rv-scale', type=float, default=1.3, dest='rv_scale',
+                help='velocity transition radius in units of R_cloud '
+-                    '(default 1.3; use 1.0 to reproduce the legacy 2D ICs)')
++                    '(default 1.3; changes the sharp boundary, not historical tanh ICs)')
+ p.add_argument('--seed', type=int, default=42)
+ p.add_argument('--v-wind', type=float, default=2.582, dest='v_wind',
+                help='wind velocity (default 2.582, the legacy hardcoded value, '
+@@ -121,7 +104,7 @@
+ 
+ # tanh cloud profile: density edge at R_cloud, velocity edge pushed out to RV*R_cloud
+ f = 0.5 * (1.0 - np.tanh((r - R_cloud) / dr_edge))
+-f_v = 0.5 * (1.0 - np.tanh((r - args.rv_scale * R_cloud) / dr_edge))
++f_v = (r <= args.rv_scale * R_cloud).astype(float)
+ rho = rho_wind + (chi - 1.0) * f
+ vx = v_wind * (1.0 - f_v)
+ 
+@@ -132,7 +115,7 @@
+ Tracer = f.astype(FloatType).reshape(N, 1)   # passive scalar: cloud fraction
+ 
+ # write IC file; header modeled on examples/gresho_2d/create.py
+-with h5py.File(outdir + '/IC.hdf5', 'w') as IC:
++with h5py.File(outdir + '/IC.hdf5', 'x') as IC:
+     header = IC.create_group("Header")
+     part0 = IC.create_group("PartType0")
+ 
+
+--- /mnt/c/Users/kaanb/CloudCrushing/audit_20260907/before/home/kaan/CloudCrushing/A8/cloud_wind.c	2026-08-23 22:12:31.000000000 +0300
++++ /mnt/c/Users/kaanb/CloudCrushing/audit_20260907/source/home/kaan/CloudCrushing/A8/cloud_wind.c	2026-09-07 12:36:38.444478600 +0300
+@@ -5,8 +5,8 @@
+  *   a uniform Mach-M wind (problem/Mach, in units of the ambient sound speed)
+  *   flows in +x1 past a static spherical cloud of overdensity drat in exact
+  *   pressure equilibrium. Cloud radius fixed at 1.0, centered at the origin.
+- *   Density and velocity are smoothed across the cloud edge with the same
+- *   tanh profile FLASH uses (width = 0.1*rad).
++ *   Density uses a tanh edge of width 0.1*rad. Velocity is zero through
++ *   rv_scale*rad and constant outside (default rv_scale=1.3).
+  *   Suggested domain: x1 in [-3,17], x2 in [-5,5] (x3 in [-5,5] for 3D),
+  *   giving 20x10(x10) cloud radii with the cloud 3 radii from the inflow,
+  *   mirroring the FLASH CloudCrush box.
+@@ -43,7 +43,7 @@
+   int i=0,j=0,k=0;
+   int is,ie,js,je,ks,ke;
+   Real x1,x2,x3,diag,rad,edge;
+-  Real Mach,drat,f,d,vx;
++  Real Mach,drat,f,d,vx,rv_scale;
+   Real dr,pr;
+ 
+ /* Read input parameters */
+@@ -52,6 +52,7 @@
+   edge = 0.1*rad;              /* tanh smoothing width, matches FLASH */
+   Mach = par_getd("problem","Mach");
+   drat = par_getd("problem","drat");
++  rv_scale = par_getd_def("problem","rv_scale",1.3);
+ 
+ /* Ambient (wind) state: rho=1, p=1 so c_s=sqrt(Gamma)~1.291 as in FLASH */
+ 
+@@ -82,10 +83,8 @@
+ 
+         f  = 0.5*(1.0 - tanh((diag - rad)/edge));
+         d  = dr*(1.0 + (drat - 1.0)*f);
+-        /* velocity transition sits OUTSIDE the dense edge (1.3*rad, as in
+-         * Grete & Gronke's AthenaPK cloud): dense+fast cells would suffer
+-         * catastrophic total-energy cancellation at high drat */
+-        vx = ul*(1.0 - 0.5*(1.0 - tanh((diag - 1.3*rad)/edge)));
++        /* Sharp velocity boundary, Gronnow et al. 2018, section 2. */
++        vx = (diag > rv_scale*rad) ? ul : 0.0;
+ 
+         pGrid->U[k][j][i].d  = d;
+         pGrid->U[k][j][i].M1 = d*vx;
+
+--- /mnt/c/Users/kaanb/CloudCrushing/audit_20260907/before/home/kaan/CloudCrushing/FLASH4.8/source/Simulation/SimulationMain/CloudCrush/Simulation_initBlock.F90	2026-08-25 15:33:08.000000000 +0300
++++ /mnt/c/Users/kaanb/CloudCrushing/audit_20260907/source/home/kaan/CloudCrushing/FLASH4.8/source/Simulation/SimulationMain/CloudCrush/Simulation_initBlock.F90	2026-09-07 13:11:22.745344700 +0300
+@@ -12,16 +12,16 @@
+ !!  for a dense cold cloud (radius sim_rCloud, density sim_rhoCloud)
+ !!  initially at rest, centered at (sim_xctr, sim_yctr, sim_zctr).
+ !!  Pressure is uniform, so the cloud is in pressure equilibrium until
+-!!  the wind hits it.  Density and velocity are smoothed with tanh profiles
+-!!  of the same width sim_smoothWidth*sim_rCloud, but at DIFFERENT radii:
+-!!  the velocity transition sits at sim_rvScale*sim_rCloud (default 1.3),
+-!!  deliberately outside the density edge at sim_rCloud.  This is the
+-!!  published convention (Gronnow et al. 2018) and keeps dense and fast gas
+-!!  out of the same cell, avoiding the energy cancellation that crashes
+-!!  high-chi runs.  sim_rvScale = 1.0 recovers the old matched-edge form.
++!!  the wind hits it. Density alone has a tanh edge of width
++!!  sim_smoothWidth*sim_rCloud. Velocity is a sharp step at
++!!  sim_rvScale*sim_rCloud (default 1.3), as specified for velocity in
++!!  Gronnow et al. (2018), section 2, arXiv:1805.03903.
++!!  This does not guarantee stability or exclude dense, moving gas in
++!!  the density tail at high chi. rvScale=1 moves the sharp boundary;
++!!  it does not reproduce the historical tanh velocity prescription.
+ !!
+ !!  Density fraction:  f_rho(r) = 0.5*(1 - tanh((r - r_cl)/delta))
+-!!  Velocity fraction: f_v(r)   = 0.5*(1 - tanh((r - rvScale*r_cl)/delta))
++!!  Velocity fraction: f_v(r)   = 1 for r <= rvScale*r_cl, otherwise 0
+ !!  Density:           rho(r) = rho_wind + (rho_cloud - rho_wind)*f_rho(r)
+ !!  Velocity:          vx(r)  = v_wind * (1 - f_v(r))
+ !!
+@@ -90,9 +90,10 @@
+            ! density edge: 1 deep inside the cloud, 0 far outside
+            cloudFrac = 0.5 * (1.0 - tanh((radius - sim_rCloud)/delta))
+ 
+-           ! velocity edge, deliberately outside the density edge so that no
+-           ! cell holds both dense and fast gas
+-           velFrac   = 0.5 * (1.0 - tanh((radius - sim_rvScale*sim_rCloud)/delta))
++           ! Sharp velocity boundary; density retains its tanh above.
++           ! Gronnow et al. 2018, section 2.
++           velFrac = 0.0
++           if (radius <= sim_rvScale*sim_rCloud) velFrac = 1.0
+ 
+            rho = sim_rhoAmbient + (sim_rhoCloud - sim_rhoAmbient) * cloudFrac
+            vx  = sim_windVel * (1.0 - velFrac)

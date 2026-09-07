@@ -1,0 +1,33 @@
+{
+  "chi": 100,
+  "returncode": 0,
+  "snapshots": [
+    "/home/kaan/ic_audit_20260907/ramses_rect_tests/chi100/output_00002/info_00002.txt",
+    "/home/kaan/ic_audit_20260907/ramses_rect_tests/chi100/output_00001/info_00001.txt"
+  ],
+  "time": 0.0193645294481693,
+  "domain": [
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      1.0,
+      1.0,
+      1.0
+    ]
+  ],
+  "cells": 32768,
+  "units": {
+    "length_unit": "10.0 cm",
+    "velocity_unit": "1.0 cm/s",
+    "density_unit": "1.0 g/cm**3",
+    "time_unit": "1.0 s"
+  },
+  "boxlen": 10.0,
+  "coordinate_range": [
+    0.015625,
+    0.984375
+  ]
+}

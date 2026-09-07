@@ -1,0 +1,24 @@
+ Grid_init: resolution based on runtime params:
+  lrefine          dx              dy              dz
+      2             0.312           0.312           0.312
+ MaterialProperties initialized
+ Source terms initialized
+  iteration, no. not moved =            0           0
+ refined: total leaf blocks =           16
+ refined: total blocks =           18
+ INFO: Grid_fillGuardCells is ignoring masking.
+  Finished with Grid_initDomain, no restart
+ Ready to call Hydro_init
+ Hydro initialized
+ Gravity initialized
+ Initial dt verified
+ arrays freed
+ *** Wrote checkpoint file to cloudwind_hdf5_chk_0000 ****
+ *** Wrote plotfile to cloudwind_hdf5_plt_cnt_0000 ****
+ Initial plotfile written
+ Driver init all done
+       n          t         dt  (         x,          y,          z) |  dt_hydro 
+       1 1.0000E-10 2.0000E-10  ( -2.84    ,  -4.84    ,  -4.84    ) |  3.227E-02
+       2 3.0000E-10 4.0000E-10  ( -2.84    ,  -4.84    ,  -4.84    ) |  3.227E-02
+ *** Wrote checkpoint file to cloudwind_hdf5_chk_0001 ****
+ *** Wrote plotfile to cloudwind_forced_hdf5_plt_cnt_0000 ****

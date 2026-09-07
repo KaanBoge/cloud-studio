@@ -83,6 +83,8 @@
   <h1>3D viewer</h1>
   <p class="sub">Drag to turn &middot; scroll to zoom &middot; right-drag to pan
     &middot; <a class="back" href="index.html">back to studio</a></p>
+  <p style="font-size:12px;color:#ffcf90">Historical results: matching levels do not certify matching physics.
+    <a class="back" href="verification.html">Verification report</a></p>
   <div class="lbl">Overdensity</div>
   <div class="chips" id="chiChips">
     <button data-chi="all" class="on">all</button><button data-chi="10">&chi; = 10</button>
@@ -125,7 +127,7 @@
 <div class="card" id="chartcard">
   <div class="lbl">Surviving dense mass</div>
   <canvas id="chart" width="640" height="300"></canvas>
-  <div id="chartnote">fraction of total mass still at cloud density, vs t/t_cc</div>
+  <div id="chartnote">M_dense(t) / M_dense(0); only corrected native-data diagnostics are shown.</div>
 </div>
 
 <div class="card" id="bar">
@@ -639,28 +641,42 @@ let diagA = null, diagB = null;
 async function loadDiag(id, slot) {
   let d = null;
   try {
-    const r = await fetch("data/diag_" + id + ".json", { cache: "no-store" });
-    if (r.ok) d = await r.json();
+    const r = await fetch("data/diag_v2_" + id + ".json", { cache: "no-store" });
+    if (r.ok) {
+      const candidate = await r.json();
+      if (validDiagnostics(candidate)) d = candidate;
+    }
   } catch (e) {}
   if (slot === 0) diagA = d; else diagB = d;
   drawChart();
 }
+function validDiagnostics(d) {
+  if (!d || d.schema_version !== 2 || !Array.isArray(d.series) || d.series.length < 2) return false;
+  return Math.abs(d.series[0].t_over_tcc) < 1e-10 &&
+    Math.abs(d.series[0].dense_mass_over_initial_dense_mass - 1) < 1e-10 &&
+    d.series.every((r,i) => Number.isFinite(r.t_over_tcc) &&
+      Number.isFinite(r.dense_mass_over_initial_dense_mass) && r.dense_mass_over_initial_dense_mass >= 0 &&
+      (i === 0 || r.t_over_tcc > d.series[i-1].t_over_tcc));
+}
 function drawChart() {
   const cv = document.getElementById("chart"), ctx = cv.getContext("2d");
   const W = cv.width, H = cv.height;
+  const values = [diagA,diagB].filter(Boolean).flatMap(d => d.series);
+  const xmax = Math.max(5,...values.map(r => r.t_over_tcc));
+  const ymax = Math.max(1,...values.map(r => r.dense_mass_over_initial_dense_mass));
   ctx.clearRect(0, 0, W, H);
   ctx.strokeStyle = "rgba(255,255,255,.15)"; ctx.lineWidth = 1;
   ctx.strokeRect(40, 8, W - 52, H - 42);
   ctx.fillStyle = "#98a2bb"; ctx.font = "20px sans-serif";
-  ctx.fillText("0", 24, H - 30); ctx.fillText("1", 24, 24);
-  ctx.fillText("0", 38, H - 12); ctx.fillText("5 t_cc", W - 70, H - 12);
-  const X = t => 40 + (W - 52) * Math.min(Math.max(t / 5, 0), 1);
-  const Y = v => 8 + (H - 50) * (1 - Math.min(Math.max(v, 0), 1));
+  ctx.fillText("0", 24, H - 30); ctx.fillText(ymax.toFixed(2), 1, 24);
+  ctx.fillText("0", 38, H - 12); ctx.fillText(xmax.toFixed(1)+" t_cc", W - 95, H - 12);
+  const X = t => 40 + (W - 52) * Math.min(Math.max(t / xmax, 0), 1);
+  const Y = v => 8 + (H - 50) * (1 - v / ymax);
   function line(d, color, dash) {
     if (!d || !d.series || !d.series.length) return;
     ctx.strokeStyle = color; ctx.lineWidth = 3; ctx.setLineDash(dash ? [8, 6] : []);
     ctx.beginPath();
-    d.series.forEach((r, i) => { const x = X(r.t), y = Y(r.mass_frac); i ? ctx.lineTo(x, y) : ctx.moveTo(x, y); });
+    d.series.forEach((r, i) => { const x = X(r.t_over_tcc), y = Y(r.dense_mass_over_initial_dense_mass); i ? ctx.lineTo(x, y) : ctx.moveTo(x, y); });
     ctx.stroke(); ctx.setLineDash([]);
   }
   line(diagA, "#6ea8ff", false);
@@ -671,7 +687,7 @@ function drawChart() {
     ctx.beginPath(); ctx.moveTo(X(t), 8); ctx.lineTo(X(t), H - 34); ctx.stroke();
   }
   const note = document.getElementById("chartnote");
-  if (!diagA && !diagB) note.textContent = "no measured series for this run yet";
+  if (!diagA && !diagB) note.textContent = "Historical mass curves withheld: corrected native-data analysis is not available for this run. The 3D frames remain accessible.";
   else note.innerHTML = (diagA ? "<span class='sw' style='background:#6ea8ff'></span>" + (A.id||"") + " " : "")
                       + (diagB ? "&nbsp;<span class='sw' style='background:#ffb46e'></span>" + (B && B.id || "") : "");
 }

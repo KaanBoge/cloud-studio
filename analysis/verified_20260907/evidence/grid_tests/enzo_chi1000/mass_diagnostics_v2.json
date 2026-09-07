@@ -1,0 +1,89 @@
+{
+  "schema_version": 2,
+  "kind": "enzo",
+  "parameters": {
+    "source": "/home/kaan/ic_audit_20260907/grid_tests/enzo_chi1000/CloudWind.enzo",
+    "parameter_sha256": "78537181cc9087f7f2b9d3e0dad12ea4d196bb800712c0564d7afd53b79e04bd",
+    "assumptions": [],
+    "gamma": 1.6666666666666667,
+    "r_cloud": 1.0,
+    "rho_wind": 1.0,
+    "p_wind": 1.0,
+    "v_wind": 2.581988897471611,
+    "chi": 1000.0,
+    "rv_scale": 1.3,
+    "tmax": 0.001,
+    "output_dt": 0.001,
+    "mach": 2.0,
+    "kind": "enzo",
+    "t_cc": 12.24744871391589
+  },
+  "comparison_group": "IC-audit-short-tests-not-science-production",
+  "initial_grid": {
+    "finest_equivalent_dimensions": [
+      64,
+      32,
+      32
+    ],
+    "leaf_cells": 65536,
+    "uniform": true,
+    "domain_width_over_R": [
+      20.0,
+      10.0,
+      10.0
+    ]
+  },
+  "selection": "rho > rho_cloud_initial/3",
+  "normalization": "M_dense(t) / M_dense(0); denominator is fixed",
+  "warning": "Density-selected gas includes ambient material if it becomes dense. This is not tracer mass or a radiative cold-temperature selection.",
+  "series": [
+    {
+      "dense_mass": 4091.955013006821,
+      "total_mass_in_box": 6291.114039061075,
+      "dense_centroid_code": 0.0071020827554373256,
+      "density_max": 999.9998213090236,
+      "time_code": 0.0,
+      "t_over_tcc": 0.0,
+      "grid": {
+        "finest_equivalent_dimensions": [
+          64,
+          32,
+          32
+        ],
+        "leaf_cells": 65536,
+        "uniform": true,
+        "domain_width_over_R": [
+          20.0,
+          10.0,
+          10.0
+        ]
+      },
+      "snapshot": "/home/kaan/ic_audit_20260907/grid_tests/enzo_chi1000/DD0000/CW_0000",
+      "dense_mass_over_initial_dense_mass": 1.0
+    },
+    {
+      "dense_mass": 4091.961406474742,
+      "total_mass_in_box": 6291.114039061075,
+      "dense_centroid_code": 0.007100023622144753,
+      "density_max": 999.9998213090236,
+      "time_code": 0.001,
+      "t_over_tcc": 8.164965809277261e-05,
+      "grid": {
+        "finest_equivalent_dimensions": [
+          64,
+          32,
+          32
+        ],
+        "leaf_cells": 65536,
+        "uniform": true,
+        "domain_width_over_R": [
+          20.0,
+          10.0,
+          10.0
+        ]
+      },
+      "snapshot": "/home/kaan/ic_audit_20260907/grid_tests/enzo_chi1000/DD0001/CW_0001",
+      "dense_mass_over_initial_dense_mass": 1.0000015624482432
+    }
+  ]
+}

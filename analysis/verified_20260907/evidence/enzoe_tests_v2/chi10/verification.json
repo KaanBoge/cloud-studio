@@ -1,0 +1,13 @@
+{
+  "code": "enzoe",
+  "chi": 10,
+  "passed": true,
+  "cells": 65536,
+  "errors": {
+    "density_relative": 6.661338147750933e-16,
+    "velocity_over_vwind": 0.0,
+    "transverse_velocity": 0.0,
+    "pressure_from_total_energy": 4.440892098500626e-16
+  },
+  "scope": "native t=0 3D fields; pressure recovered from conserved energy"
+}

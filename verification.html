@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cloud Studio verification, 7 September 2026</title>
+<style>body{max-width:850px;margin:40px auto;padding:0 22px;font:17px/1.6 system-ui;background:#0a0d16;color:#e8ecf6}a{color:#90bdff}h1{font-size:28px}h2{font-size:21px}.notice{padding:18px;border:1px solid #ad874c;background:#241f18}code{font-size:.9em}</style>
+<h1>Verification report · 7 September 2026</h1>
+<p class="notice">The historical simulations are not yet a validated matched-code comparison.
+The fixes below do not retroactively correct existing simulations. Published meshes and MP4s are visualizations, not complete raw-data backups.</p>
+<h2>Verified and corrected</h2>
+<p>Eight native grid codes passed 24 initial-output tests: Athena++, AthenaPK, Athena 4.2,
+FLASH 4.8, Flash-X, Enzo, Enzo-E and RAMSES, each at χ = 10, 100 and 1000 on a
+64 × 32 × 32 grid. Tests checked density, velocity, pressure, domain and cell count.
+The four particle-code IC generators passed 12 separate input-field tests; their evolved solver results were not validated here.</p>
+<p>The corrected prescription has zero velocity inside 1.3 cloud radii and constant wind velocity outside,
+with the existing tanh density edge. <a href="https://arxiv.org/pdf/1805.03903">Grønnow et al. (2018), section 2</a>
+specifies a sharp velocity boundary, not a tanh velocity law. This is not an exact reproduction of its entire setup or of Braspenning et al.</p>
+<p>Analysis now reads physical parameters from input files, handles FLASH's radius and AthenaPK's units,
+and normalizes dense mass to its fixed initial value. The rectangular RAMSES reader now includes all native cells.
+Historical mass curves are withheld from the viewer until corrected native-data diagnostics exist.</p>
+<p>The destructive Athena++ rerun path was replaced, and the raw-data cleanup daemon was disabled.
+The new runner preserves raw outputs and uses distinct versioned run IDs.</p>
+<h2>Not yet established</h2>
+<p>Equal boundary conditions, passive tracers and effective particle resolution across every code;
+complete corrected production runs at every level; complete measured frame cadence for all historical runs;
+validated cooling and Galilean-frame variants. These remain necessary before drawing a matched-code scientific conclusion.</p>
+<p><a href="https://github.com/KaanBoge/cloud-studio/tree/main/analysis/verified_20260907">Corrected scripts and test evidence</a>
+ · <a href="https://github.com/KaanBoge/cloud-studio/blob/main/analysis/README.md">Methods, formats, directory layout and limitations</a>
+ · <a href="viewer.html">3D viewer</a> · <a href="index.html">Studio</a></p>
+</html>

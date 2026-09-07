@@ -1,0 +1,23 @@
+ Grid_init: resolution based on runtime params:
+  lrefine          dx              dy              dz
+      2             0.031           0.031           0.031
+ MaterialProperties initialized
+ Cosmology initialized
+ Source terms initialized
+  iteration, no. not moved =            0           0
+ refined: total leaf blocks =           16
+ refined: total blocks =           18
+  Finished with Grid_initDomain, no restart
+ Ready to call Hydro_init
+ Hydro initialized
+ Gravity initialized
+ Initial dt verified
+ *** Wrote checkpoint file to cloudcrush_hdf5_chk_0000 ****
+ *** Wrote plotfile to cloudcrush_hdf5_plt_cnt_0000 ****
+ Initial plotfile written
+ Driver init all done
+       n          t         dt  (         x,          y,          z) |  dt_hydro  dt_Diff  
+       1 1.0000E-10 2.0000E-10  ( 1.562E-02,  1.562E-02,  1.562E-02) |  3.631E-03 3.906E+26
+       2 3.0000E-10 4.0000E-10  ( 1.562E-02,  1.562E-02,  1.562E-02) |  3.631E-03 3.906E+26
+ *** Wrote checkpoint file to cloudcrush_hdf5_chk_0001 ****
+ *** Wrote plotfile to cloudcrush_forced_hdf5_plt_cnt_0000 ****

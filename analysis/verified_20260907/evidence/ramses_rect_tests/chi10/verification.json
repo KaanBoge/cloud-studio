@@ -1,0 +1,37 @@
+{
+  "code": "ramses",
+  "chi": 10,
+  "passed": true,
+  "cells": 65536,
+  "errors": {
+    "density": 6.661338147750933e-16,
+    "velocity": 0.0,
+    "transverse_velocity": 0.0,
+    "pressure": 7.771561172376096e-16
+  },
+  "bounds": [
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      20.0,
+      10.0,
+      10.0
+    ]
+  ],
+  "metadata": {
+    "time": 0.0,
+    "boxlen": 20.0,
+    "domain_width": [
+      20.0,
+      10.0,
+      10.0
+    ],
+    "gamma": 1.6666666666666667,
+    "nvar": 6,
+    "ncpu": 1
+  },
+  "reader": "native rectangular six-face layout; all CPU shards included"
+}

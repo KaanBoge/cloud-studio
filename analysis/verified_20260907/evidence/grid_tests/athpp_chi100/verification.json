@@ -1,0 +1,46 @@
+{
+  "kind": "athpp",
+  "chi": 100,
+  "solver_returncode": 0,
+  "binary_sha256": "b8bdcbadc51986cb761a0d741001e6804d212dc7f57d0bcaf8e80e0dd6e88bb0",
+  "passed": true,
+  "snapshot": "/home/kaan/ic_audit_20260907/grid_tests/athpp_chi100/CloudWind.out2.00000.athdf",
+  "parameters": {
+    "source": "/home/kaan/ic_audit_20260907/grid_tests/athpp_chi100/athinput",
+    "parameter_sha256": "525f93886fbb094bff694cb7d47b7fe0d9c4ba674bd33e10b8c224cf304c33ef",
+    "assumptions": [
+      "custom cloud_wind pgen fixes R=1, rho_wind=1 and P_wind=1"
+    ],
+    "gamma": 1.6666666666666667,
+    "r_cloud": 1.0,
+    "rho_wind": 1.0,
+    "p_wind": 1.0,
+    "v_wind": 2.581988897471611,
+    "chi": 100.0,
+    "rv_scale": 1.3,
+    "tmax": 0.001,
+    "output_dt": 0.001,
+    "mach": 2.0,
+    "kind": "athena",
+    "t_cc": 3.872983346207417
+  },
+  "time_code": 0.0,
+  "cells": 65536,
+  "native_dimensions": [
+    64,
+    32,
+    32
+  ],
+  "uniform_grid": true,
+  "domain_width_over_R": [
+    20.0,
+    10.0,
+    10.0
+  ],
+  "errors": {
+    "density_relative_max": 5.551115123125783e-15,
+    "velocity_error_over_vwind_max": 1.7199501139797033e-16,
+    "pressure_relative_max": 4.440892098500626e-16
+  },
+  "scope": "t=0 density, velocity, pressure, dimensions and domain; no claim of full-run validation"
+}

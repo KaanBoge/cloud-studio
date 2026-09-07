@@ -1,4 +1,7 @@
 #!/bin/bash
+printf '%s\n' 'Historical queue disabled: binaries, ICs, boundaries and raw-data retention need revalidation. See analysis/README.md and verified_20260907/run_corrected_athpp.py.' >&2
+exit 2
+# Historical body below is preserved for provenance, not executed.
 # Level-5 Lagrangian runs, ONE AT A TIME.
 # Each run.sh launches mpirun -np 8 and its header says it needs an otherwise
 # idle machine. Four at once put 32 ranks and four ~300 MB ICs on a 27 GB box

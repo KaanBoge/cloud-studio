@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "snapshot": "/home/kaan/ic_audit_20260907/grid_tests/flashx_chi1000/cloudwind_hdf5_chk_0000",
+  "parameters": {
+    "source": "/home/kaan/ic_audit_20260907/grid_tests/flashx_chi1000/flash.par",
+    "parameter_sha256": "05cc8f60bc93eecb5bc2b2460c5696f1f592d4cfc42d8fefdee212896b61c84b",
+    "assumptions": [],
+    "gamma": 1.6666666666666667,
+    "r_cloud": 1.0,
+    "rho_wind": 1.0,
+    "p_wind": 1.0,
+    "v_wind": 2.581988897471611,
+    "chi": 1000.0,
+    "rv_scale": 1.3,
+    "tmax": 0.001,
+    "output_dt": 0.001,
+    "mach": 2.0,
+    "kind": "flash",
+    "t_cc": 12.24744871391589
+  },
+  "time_code": 0.0,
+  "cells": 65536,
+  "native_dimensions": [
+    64,
+    32,
+    32
+  ],
+  "uniform_grid": true,
+  "domain_width_over_R": [
+    20.0,
+    10.0,
+    10.0
+  ],
+  "errors": {
+    "density_relative_max": 5.551115123125783e-14,
+    "velocity_error_over_vwind_max": 0.0,
+    "pressure_relative_max": 4.440892098500626e-16
+  },
+  "scope": "t=0 density, velocity, pressure, dimensions and domain; no claim of full-run validation"
+}

@@ -1,0 +1,1757 @@
+{
+  "date": "2026-09-07",
+  "grid_initial_snapshot_checks": [
+    {
+      "code": "athpp",
+      "chi": 10,
+      "passed": true,
+      "snapshot": "/home/kaan/ic_audit_20260907/grid_tests/athpp_chi10/CloudWind.out2.00000.athdf",
+      "parameters": {
+        "source": "/home/kaan/ic_audit_20260907/grid_tests/athpp_chi10/athinput",
+        "parameter_sha256": "d4234632cbbedf760dfde89d3c64c094d5dd07e31fc0ed86f4723518e4daf191",
+        "assumptions": [
+          "custom cloud_wind pgen fixes R=1, rho_wind=1 and P_wind=1"
+        ],
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1.0,
+        "rho_wind": 1.0,
+        "p_wind": 1.0,
+        "v_wind": 2.581988897471611,
+        "chi": 10.0,
+        "rv_scale": 1.3,
+        "tmax": 0.001,
+        "output_dt": 0.001,
+        "mach": 2.0,
+        "kind": "athena",
+        "t_cc": 1.2247448713915892
+      },
+      "time_code": 0.0,
+      "cells": 65536,
+      "native_dimensions": [
+        64,
+        32,
+        32
+      ],
+      "uniform_grid": true,
+      "domain_width_over_R": [
+        20.0,
+        10.0,
+        10.0
+      ],
+      "errors": {
+        "density_relative_max": 6.661338147750933e-16,
+        "velocity_error_over_vwind_max": 1.7199501139797033e-16,
+        "pressure_relative_max": 6.661338147750939e-16
+      },
+      "scope": "t=0 density, velocity, pressure, dimensions and domain; no claim of full-run validation"
+    },
+    {
+      "code": "athpp",
+      "chi": 100,
+      "passed": true,
+      "snapshot": "/home/kaan/ic_audit_20260907/grid_tests/athpp_chi100/CloudWind.out2.00000.athdf",
+      "parameters": {
+        "source": "/home/kaan/ic_audit_20260907/grid_tests/athpp_chi100/athinput",
+        "parameter_sha256": "525f93886fbb094bff694cb7d47b7fe0d9c4ba674bd33e10b8c224cf304c33ef",
+        "assumptions": [
+          "custom cloud_wind pgen fixes R=1, rho_wind=1 and P_wind=1"
+        ],
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1.0,
+        "rho_wind": 1.0,
+        "p_wind": 1.0,
+        "v_wind": 2.581988897471611,
+        "chi": 100.0,
+        "rv_scale": 1.3,
+        "tmax": 0.001,
+        "output_dt": 0.001,
+        "mach": 2.0,
+        "kind": "athena",
+        "t_cc": 3.872983346207417
+      },
+      "time_code": 0.0,
+      "cells": 65536,
+      "native_dimensions": [
+        64,
+        32,
+        32
+      ],
+      "uniform_grid": true,
+      "domain_width_over_R": [
+        20.0,
+        10.0,
+        10.0
+      ],
+      "errors": {
+        "density_relative_max": 5.551115123125783e-15,
+        "velocity_error_over_vwind_max": 1.7199501139797033e-16,
+        "pressure_relative_max": 4.440892098500626e-16
+      },
+      "scope": "t=0 density, velocity, pressure, dimensions and domain; no claim of full-run validation"
+    },
+    {
+      "code": "athpp",
+      "chi": 1000,
+      "passed": true,
+      "snapshot": "/home/kaan/ic_audit_20260907/grid_tests/athpp_chi1000/CloudWind.out2.00000.athdf",
+      "parameters": {
+        "source": "/home/kaan/ic_audit_20260907/grid_tests/athpp_chi1000/athinput",
+        "parameter_sha256": "772dc06ce11a5aa1aeffd10fb9d48c1170ce20b76554c53dc88a85676892be62",
+        "assumptions": [
+          "custom cloud_wind pgen fixes R=1, rho_wind=1 and P_wind=1"
+        ],
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1.0,
+        "rho_wind": 1.0,
+        "p_wind": 1.0,
+        "v_wind": 2.581988897471611,
+        "chi": 1000.0,
+        "rv_scale": 1.3,
+        "tmax": 0.001,
+        "output_dt": 0.001,
+        "mach": 2.0,
+        "kind": "athena",
+        "t_cc": 12.24744871391589
+      },
+      "time_code": 0.0,
+      "cells": 65536,
+      "native_dimensions": [
+        64,
+        32,
+        32
+      ],
+      "uniform_grid": true,
+      "domain_width_over_R": [
+        20.0,
+        10.0,
+        10.0
+      ],
+      "errors": {
+        "density_relative_max": 5.551115123125783e-14,
+        "velocity_error_over_vwind_max": 1.7199501139797033e-16,
+        "pressure_relative_max": 1.3322676295501878e-15
+      },
+      "scope": "t=0 density, velocity, pressure, dimensions and domain; no claim of full-run validation"
+    },
+    {
+      "code": "apk",
+      "chi": 10,
+      "passed": true,
+      "snapshot": "/home/kaan/ic_audit_20260907/grid_tests/apk_chi10/parthenon.prim.00000.phdf",
+      "parameters": {
+        "source": "/home/kaan/ic_audit_20260907/grid_tests/apk_chi10/athinput",
+        "parameter_sha256": "5bdbe62d54ce86afe464248f95687419ca76fbc22688d0f8284025448f4abfac",
+        "assumptions": [
+          "AthenaPK checkout units.hpp constants; fully ionized H/He mu from hydro.cpp"
+        ],
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1.0,
+        "rho_wind": 1.0,
+        "p_wind": 1.0,
+        "v_wind": 2.581988897471611,
+        "chi": 10.0,
+        "rv_scale": 1.3,
+        "tmax": 0.001,
+        "output_dt": 0.001,
+        "mach": 2.0,
+        "kind": "apk",
+        "time_input_in_tcc": false,
+        "t_cc": 1.2247448713915892
+      },
+      "time_code": 0.0,
+      "cells": 65536,
+      "native_dimensions": [
+        32,
+        64,
+        32
+      ],
+      "uniform_grid": true,
+      "domain_width_over_R": [
+        10.0,
+        20.0,
+        10.0
+      ],
+      "errors": {
+        "density_relative_max": 6.661338147750933e-16,
+        "velocity_error_over_vwind_max": 1.7199501139797033e-16,
+        "pressure_relative_max": 4.440892098500626e-16
+      },
+      "scope": "t=0 density, velocity, pressure, dimensions and domain; no claim of full-run validation"
+    },
+    {
+      "code": "apk",
+      "chi": 100,
+      "passed": true,
+      "snapshot": "/home/kaan/ic_audit_20260907/grid_tests/apk_chi100/parthenon.prim.00000.phdf",
+      "parameters": {
+        "source": "/home/kaan/ic_audit_20260907/grid_tests/apk_chi100/athinput",
+        "parameter_sha256": "81da8c365c2919d619a64208380e39bde51da5e1e56dbb6c96a8d9b569bdbb1f",
+        "assumptions": [
+          "AthenaPK checkout units.hpp constants; fully ionized H/He mu from hydro.cpp"
+        ],
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1.0,
+        "rho_wind": 1.0,
+        "p_wind": 1.0,
+        "v_wind": 2.581988897471611,
+        "chi": 100.0,
+        "rv_scale": 1.3,
+        "tmax": 0.001,
+        "output_dt": 0.001,
+        "mach": 2.0,
+        "kind": "apk",
+        "time_input_in_tcc": false,
+        "t_cc": 3.872983346207417
+      },
+      "time_code": 0.0,
+      "cells": 65536,
+      "native_dimensions": [
+        32,
+        64,
+        32
+      ],
+      "uniform_grid": true,
+      "domain_width_over_R": [
+        10.0,
+        20.0,
+        10.0
+      ],
+      "errors": {
+        "density_relative_max": 5.551115123125783e-15,
+        "velocity_error_over_vwind_max": 1.7199501139797033e-16,
+        "pressure_relative_max": 4.440892098500626e-16
+      },
+      "scope": "t=0 density, velocity, pressure, dimensions and domain; no claim of full-run validation"
+    },
+    {
+      "code": "apk",
+      "chi": 1000,
+      "passed": true,
+      "snapshot": "/home/kaan/ic_audit_20260907/grid_tests/apk_chi1000/parthenon.prim.00000.phdf",
+      "parameters": {
+        "source": "/home/kaan/ic_audit_20260907/grid_tests/apk_chi1000/athinput",
+        "parameter_sha256": "5c36771dda4bc95a6bc46d5f05d2d04966b792074728d72dadb2346ef4030cfd",
+        "assumptions": [
+          "AthenaPK checkout units.hpp constants; fully ionized H/He mu from hydro.cpp"
+        ],
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1.0,
+        "rho_wind": 1.0,
+        "p_wind": 1.0,
+        "v_wind": 2.581988897471611,
+        "chi": 1000.0,
+        "rv_scale": 1.3,
+        "tmax": 0.001,
+        "output_dt": 0.001,
+        "mach": 2.0,
+        "kind": "apk",
+        "time_input_in_tcc": false,
+        "t_cc": 12.24744871391589
+      },
+      "time_code": 0.0,
+      "cells": 65536,
+      "native_dimensions": [
+        32,
+        64,
+        32
+      ],
+      "uniform_grid": true,
+      "domain_width_over_R": [
+        10.0,
+        20.0,
+        10.0
+      ],
+      "errors": {
+        "density_relative_max": 5.551115123125783e-14,
+        "velocity_error_over_vwind_max": 1.7199501139797033e-16,
+        "pressure_relative_max": 1.3322676295501878e-15
+      },
+      "scope": "t=0 density, velocity, pressure, dimensions and domain; no claim of full-run validation"
+    },
+    {
+      "code": "flash",
+      "chi": 10,
+      "passed": true,
+      "snapshot": "/home/kaan/ic_audit_20260907/grid_tests/flash_chi10/cloudcrush_hdf5_chk_0000",
+      "parameters": {
+        "source": "/home/kaan/ic_audit_20260907/grid_tests/flash_chi10/flash.par",
+        "parameter_sha256": "77daebef8adf4f1e4defd508a3afb81a784cb4dd7e9e67dfd8841b85e3c6b5f0",
+        "assumptions": [],
+        "gamma": 1.6666666666666667,
+        "r_cloud": 0.1,
+        "rho_wind": 1.0,
+        "p_wind": 1.0,
+        "v_wind": 2.581988897471611,
+        "chi": 10.0,
+        "rv_scale": 1.3,
+        "tmax": 0.001,
+        "output_dt": 0.001,
+        "mach": 2.0,
+        "kind": "flash",
+        "t_cc": 0.12247448713915893
+      },
+      "time_code": 0.0,
+      "cells": 65536,
+      "native_dimensions": [
+        64,
+        32,
+        32
+      ],
+      "uniform_grid": true,
+      "domain_width_over_R": [
+        20.0,
+        10.0,
+        10.0
+      ],
+      "errors": {
+        "density_relative_max": 1.0833487040179995e-15,
+        "velocity_error_over_vwind_max": 0.0,
+        "pressure_relative_max": 4.440892098500626e-16
+      },
+      "scope": "t=0 density, velocity, pressure, dimensions and domain; no claim of full-run validation"
+    },
+    {
+      "code": "flash",
+      "chi": 100,
+      "passed": true,
+      "snapshot": "/home/kaan/ic_audit_20260907/grid_tests/flash_chi100/cloudcrush_hdf5_chk_0000",
+      "parameters": {
+        "source": "/home/kaan/ic_audit_20260907/grid_tests/flash_chi100/flash.par",
+        "parameter_sha256": "3cf06269549e12cbf4373ef299d7a16d911b9fa941dad7bd9002644c2cf1f7d9",
+        "assumptions": [],
+        "gamma": 1.6666666666666667,
+        "r_cloud": 0.1,
+        "rho_wind": 1.0,
+        "p_wind": 1.0,
+        "v_wind": 2.581988897471611,
+        "chi": 100.0,
+        "rv_scale": 1.3,
+        "tmax": 0.001,
+        "output_dt": 0.001,
+        "mach": 2.0,
+        "kind": "flash",
+        "t_cc": 0.3872983346207417
+      },
+      "time_code": 0.0,
+      "cells": 65536,
+      "native_dimensions": [
+        64,
+        32,
+        32
+      ],
+      "uniform_grid": true,
+      "domain_width_over_R": [
+        20.0,
+        10.0,
+        10.0
+      ],
+      "errors": {
+        "density_relative_max": 5.551115123125783e-15,
+        "velocity_error_over_vwind_max": 0.0,
+        "pressure_relative_max": 4.440892098500626e-16
+      },
+      "scope": "t=0 density, velocity, pressure, dimensions and domain; no claim of full-run validation"
+    },
+    {
+      "code": "flash",
+      "chi": 1000,
+      "passed": true,
+      "snapshot": "/home/kaan/ic_audit_20260907/grid_tests/flash_chi1000/cloudcrush_hdf5_chk_0000",
+      "parameters": {
+        "source": "/home/kaan/ic_audit_20260907/grid_tests/flash_chi1000/flash.par",
+        "parameter_sha256": "b8a92bf15a25fc1f09a514eca07cfde992b9fa210e3f78064f24758f12bb9c60",
+        "assumptions": [],
+        "gamma": 1.6666666666666667,
+        "r_cloud": 0.1,
+        "rho_wind": 1.0,
+        "p_wind": 1.0,
+        "v_wind": 2.581988897471611,
+        "chi": 1000.0,
+        "rv_scale": 1.3,
+        "tmax": 0.001,
+        "output_dt": 0.001,
+        "mach": 2.0,
+        "kind": "flash",
+        "t_cc": 1.2247448713915892
+      },
+      "time_code": 0.0,
+      "cells": 65536,
+      "native_dimensions": [
+        64,
+        32,
+        32
+      ],
+      "uniform_grid": true,
+      "domain_width_over_R": [
+        20.0,
+        10.0,
+        10.0
+      ],
+      "errors": {
+        "density_relative_max": 5.551115123125783e-14,
+        "velocity_error_over_vwind_max": 0.0,
+        "pressure_relative_max": 4.440892098500626e-16
+      },
+      "scope": "t=0 density, velocity, pressure, dimensions and domain; no claim of full-run validation"
+    },
+    {
+      "code": "flashx",
+      "chi": 10,
+      "passed": true,
+      "snapshot": "/home/kaan/ic_audit_20260907/grid_tests/flashx_chi10/cloudwind_hdf5_chk_0000",
+      "parameters": {
+        "source": "/home/kaan/ic_audit_20260907/grid_tests/flashx_chi10/flash.par",
+        "parameter_sha256": "fa4839f31cdf98e7f9e6ad631b47157e01175c4370f7a1e192cb0599f2127e75",
+        "assumptions": [],
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1.0,
+        "rho_wind": 1.0,
+        "p_wind": 1.0,
+        "v_wind": 2.581988897471611,
+        "chi": 10.0,
+        "rv_scale": 1.3,
+        "tmax": 0.001,
+        "output_dt": 0.001,
+        "mach": 2.0,
+        "kind": "flash",
+        "t_cc": 1.2247448713915892
+      },
+      "time_code": 0.0,
+      "cells": 65536,
+      "native_dimensions": [
+        64,
+        32,
+        32
+      ],
+      "uniform_grid": true,
+      "domain_width_over_R": [
+        20.0,
+        10.0,
+        10.0
+      ],
+      "errors": {
+        "density_relative_max": 6.661338147750933e-16,
+        "velocity_error_over_vwind_max": 0.0,
+        "pressure_relative_max": 4.440892098500626e-16
+      },
+      "scope": "t=0 density, velocity, pressure, dimensions and domain; no claim of full-run validation"
+    },
+    {
+      "code": "flashx",
+      "chi": 100,
+      "passed": true,
+      "snapshot": "/home/kaan/ic_audit_20260907/grid_tests/flashx_chi100/cloudwind_hdf5_chk_0000",
+      "parameters": {
+        "source": "/home/kaan/ic_audit_20260907/grid_tests/flashx_chi100/flash.par",
+        "parameter_sha256": "44ca6dd91f927bf3c79eeafee32a4fcba1c5aaa1d35c5b5cc36cd7193cd8cdca",
+        "assumptions": [],
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1.0,
+        "rho_wind": 1.0,
+        "p_wind": 1.0,
+        "v_wind": 2.581988897471611,
+        "chi": 100.0,
+        "rv_scale": 1.3,
+        "tmax": 0.001,
+        "output_dt": 0.001,
+        "mach": 2.0,
+        "kind": "flash",
+        "t_cc": 3.872983346207417
+      },
+      "time_code": 0.0,
+      "cells": 65536,
+      "native_dimensions": [
+        64,
+        32,
+        32
+      ],
+      "uniform_grid": true,
+      "domain_width_over_R": [
+        20.0,
+        10.0,
+        10.0
+      ],
+      "errors": {
+        "density_relative_max": 5.551115123125783e-15,
+        "velocity_error_over_vwind_max": 0.0,
+        "pressure_relative_max": 4.440892098500626e-16
+      },
+      "scope": "t=0 density, velocity, pressure, dimensions and domain; no claim of full-run validation"
+    },
+    {
+      "code": "flashx",
+      "chi": 1000,
+      "passed": true,
+      "snapshot": "/home/kaan/ic_audit_20260907/grid_tests/flashx_chi1000/cloudwind_hdf5_chk_0000",
+      "parameters": {
+        "source": "/home/kaan/ic_audit_20260907/grid_tests/flashx_chi1000/flash.par",
+        "parameter_sha256": "05cc8f60bc93eecb5bc2b2460c5696f1f592d4cfc42d8fefdee212896b61c84b",
+        "assumptions": [],
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1.0,
+        "rho_wind": 1.0,
+        "p_wind": 1.0,
+        "v_wind": 2.581988897471611,
+        "chi": 1000.0,
+        "rv_scale": 1.3,
+        "tmax": 0.001,
+        "output_dt": 0.001,
+        "mach": 2.0,
+        "kind": "flash",
+        "t_cc": 12.24744871391589
+      },
+      "time_code": 0.0,
+      "cells": 65536,
+      "native_dimensions": [
+        64,
+        32,
+        32
+      ],
+      "uniform_grid": true,
+      "domain_width_over_R": [
+        20.0,
+        10.0,
+        10.0
+      ],
+      "errors": {
+        "density_relative_max": 5.551115123125783e-14,
+        "velocity_error_over_vwind_max": 0.0,
+        "pressure_relative_max": 4.440892098500626e-16
+      },
+      "scope": "t=0 density, velocity, pressure, dimensions and domain; no claim of full-run validation"
+    },
+    {
+      "code": "enzo",
+      "chi": 10,
+      "passed": true,
+      "snapshot": "/home/kaan/ic_audit_20260907/grid_tests/enzo_chi10/DD0000/CW_0000",
+      "parameters": {
+        "source": "/home/kaan/ic_audit_20260907/grid_tests/enzo_chi10/CloudWind.enzo",
+        "parameter_sha256": "db561989afd55aef2fb0cbef5d715e29acfac5a3baba1e6c32d6831018ef9e16",
+        "assumptions": [],
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1.0,
+        "rho_wind": 1.0,
+        "p_wind": 1.0,
+        "v_wind": 2.581988897471611,
+        "chi": 10.0,
+        "rv_scale": 1.3,
+        "tmax": 0.001,
+        "output_dt": 0.001,
+        "mach": 2.0,
+        "kind": "enzo",
+        "t_cc": 1.2247448713915892
+      },
+      "time_code": 0.0,
+      "cells": 65536,
+      "native_dimensions": [
+        64,
+        32,
+        32
+      ],
+      "uniform_grid": true,
+      "domain_width_over_R": [
+        20.0,
+        10.0,
+        10.0
+      ],
+      "errors": {
+        "density_relative_max": 6.661338147750933e-16,
+        "velocity_error_over_vwind_max": 0.0,
+        "pressure_relative_max": 5.000000000476845e-06
+      },
+      "scope": "t=0 density, velocity, pressure, dimensions and domain; no claim of full-run validation"
+    },
+    {
+      "code": "enzo",
+      "chi": 100,
+      "passed": true,
+      "snapshot": "/home/kaan/ic_audit_20260907/grid_tests/enzo_chi100/DD0000/CW_0000",
+      "parameters": {
+        "source": "/home/kaan/ic_audit_20260907/grid_tests/enzo_chi100/CloudWind.enzo",
+        "parameter_sha256": "a51cece948d9a16841dbedf0edbb4dc62e5d36d592889ae13e1be16cfc5dcb5b",
+        "assumptions": [],
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1.0,
+        "rho_wind": 1.0,
+        "p_wind": 1.0,
+        "v_wind": 2.581988897471611,
+        "chi": 100.0,
+        "rv_scale": 1.3,
+        "tmax": 0.001,
+        "output_dt": 0.001,
+        "mach": 2.0,
+        "kind": "enzo",
+        "t_cc": 3.872983346207417
+      },
+      "time_code": 0.0,
+      "cells": 65536,
+      "native_dimensions": [
+        64,
+        32,
+        32
+      ],
+      "uniform_grid": true,
+      "domain_width_over_R": [
+        20.0,
+        10.0,
+        10.0
+      ],
+      "errors": {
+        "density_relative_max": 5.551115123125783e-15,
+        "velocity_error_over_vwind_max": 0.0,
+        "pressure_relative_max": 5.000000000476845e-06
+      },
+      "scope": "t=0 density, velocity, pressure, dimensions and domain; no claim of full-run validation"
+    },
+    {
+      "code": "enzo",
+      "chi": 1000,
+      "passed": true,
+      "snapshot": "/home/kaan/ic_audit_20260907/grid_tests/enzo_chi1000/DD0000/CW_0000",
+      "parameters": {
+        "source": "/home/kaan/ic_audit_20260907/grid_tests/enzo_chi1000/CloudWind.enzo",
+        "parameter_sha256": "78537181cc9087f7f2b9d3e0dad12ea4d196bb800712c0564d7afd53b79e04bd",
+        "assumptions": [],
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1.0,
+        "rho_wind": 1.0,
+        "p_wind": 1.0,
+        "v_wind": 2.581988897471611,
+        "chi": 1000.0,
+        "rv_scale": 1.3,
+        "tmax": 0.001,
+        "output_dt": 0.001,
+        "mach": 2.0,
+        "kind": "enzo",
+        "t_cc": 12.24744871391589
+      },
+      "time_code": 0.0,
+      "cells": 65536,
+      "native_dimensions": [
+        64,
+        32,
+        32
+      ],
+      "uniform_grid": true,
+      "domain_width_over_R": [
+        20.0,
+        10.0,
+        10.0
+      ],
+      "errors": {
+        "density_relative_max": 5.551115123125783e-14,
+        "velocity_error_over_vwind_max": 0.0,
+        "pressure_relative_max": 5.000000000476845e-06
+      },
+      "scope": "t=0 density, velocity, pressure, dimensions and domain; no claim of full-run validation"
+    },
+    {
+      "code": "athw",
+      "chi": 10,
+      "passed": true,
+      "snapshot": "/home/kaan/ic_audit_20260907/grid_tests/athw_chi10/id0/Cloud.0000.vtk",
+      "parameters": {
+        "source": "/home/kaan/ic_audit_20260907/grid_tests/athw_chi10/athinput",
+        "parameter_sha256": "18d0c19bcccf840df455ee23b99585fc4f771b04b35b0c6c87b53ef93267e449",
+        "assumptions": [
+          "custom cloud_wind pgen fixes R=1, rho_wind=1 and P_wind=1"
+        ],
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1.0,
+        "rho_wind": 1.0,
+        "p_wind": 1.0,
+        "v_wind": 2.581988897471611,
+        "chi": 10.0,
+        "rv_scale": 1.3,
+        "tmax": 0.001,
+        "output_dt": 0.001,
+        "mach": 2.0,
+        "kind": "athena",
+        "t_cc": 1.2247448713915892
+      },
+      "time_code": 0.0,
+      "cells": 65536,
+      "native_dimensions": [
+        64,
+        32,
+        32
+      ],
+      "uniform_grid": true,
+      "domain_width_over_R": [
+        20.0,
+        10.0,
+        10.0
+      ],
+      "errors": {
+        "density_relative_max": 5.8428379027513116e-08,
+        "velocity_error_over_vwind_max": 3.3299403944719575e-08,
+        "pressure_relative_max": 0.0
+      },
+      "scope": "t=0 density, velocity, pressure, dimensions and domain; no claim of full-run validation"
+    },
+    {
+      "code": "athw",
+      "chi": 100,
+      "passed": true,
+      "snapshot": "/home/kaan/ic_audit_20260907/grid_tests/athw_chi100/id0/Cloud.0000.vtk",
+      "parameters": {
+        "source": "/home/kaan/ic_audit_20260907/grid_tests/athw_chi100/athinput",
+        "parameter_sha256": "8eebe35a55c4b49b6cb35559da3f74d0d797158523f444725fb0c3e8d4493c66",
+        "assumptions": [
+          "custom cloud_wind pgen fixes R=1, rho_wind=1 and P_wind=1"
+        ],
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1.0,
+        "rho_wind": 1.0,
+        "p_wind": 1.0,
+        "v_wind": 2.581988897471611,
+        "chi": 100.0,
+        "rv_scale": 1.3,
+        "tmax": 0.001,
+        "output_dt": 0.001,
+        "mach": 2.0,
+        "kind": "athena",
+        "t_cc": 3.872983346207417
+      },
+      "time_code": 0.0,
+      "cells": 65536,
+      "native_dimensions": [
+        64,
+        32,
+        32
+      ],
+      "uniform_grid": true,
+      "domain_width_over_R": [
+        20.0,
+        10.0,
+        10.0
+      ],
+      "errors": {
+        "density_relative_max": 5.924160213757242e-08,
+        "velocity_error_over_vwind_max": 3.3299403944719575e-08,
+        "pressure_relative_max": 0.0
+      },
+      "scope": "t=0 density, velocity, pressure, dimensions and domain; no claim of full-run validation"
+    },
+    {
+      "code": "athw",
+      "chi": 1000,
+      "passed": true,
+      "snapshot": "/home/kaan/ic_audit_20260907/grid_tests/athw_chi1000/id0/Cloud.0000.vtk",
+      "parameters": {
+        "source": "/home/kaan/ic_audit_20260907/grid_tests/athw_chi1000/athinput",
+        "parameter_sha256": "714a311ea3c625469ce3d026aef5436032f450b9baec1cc264bb2e184bcc76ac",
+        "assumptions": [
+          "custom cloud_wind pgen fixes R=1, rho_wind=1 and P_wind=1"
+        ],
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1.0,
+        "rho_wind": 1.0,
+        "p_wind": 1.0,
+        "v_wind": 2.581988897471611,
+        "chi": 1000.0,
+        "rv_scale": 1.3,
+        "tmax": 0.001,
+        "output_dt": 0.001,
+        "mach": 2.0,
+        "kind": "athena",
+        "t_cc": 12.24744871391589
+      },
+      "time_code": 0.0,
+      "cells": 65536,
+      "native_dimensions": [
+        64,
+        32,
+        32
+      ],
+      "uniform_grid": true,
+      "domain_width_over_R": [
+        20.0,
+        10.0,
+        10.0
+      ],
+      "errors": {
+        "density_relative_max": 5.898491302823682e-08,
+        "velocity_error_over_vwind_max": 3.3299403944719575e-08,
+        "pressure_relative_max": 0.0
+      },
+      "scope": "t=0 density, velocity, pressure, dimensions and domain; no claim of full-run validation"
+    },
+    {
+      "code": "enzoe",
+      "chi": 10,
+      "passed": true,
+      "cells": 65536,
+      "errors": {
+        "density_relative": 6.661338147750933e-16,
+        "velocity_over_vwind": 0.0,
+        "transverse_velocity": 0.0,
+        "pressure_from_total_energy": 4.440892098500626e-16
+      },
+      "scope": "native t=0 3D fields; pressure recovered from conserved energy"
+    },
+    {
+      "code": "enzoe",
+      "chi": 100,
+      "passed": true,
+      "cells": 65536,
+      "errors": {
+        "density_relative": 5.551115123125783e-15,
+        "velocity_over_vwind": 0.0,
+        "transverse_velocity": 0.0,
+        "pressure_from_total_energy": 4.440892098500626e-16
+      },
+      "scope": "native t=0 3D fields; pressure recovered from conserved energy"
+    },
+    {
+      "code": "enzoe",
+      "chi": 1000,
+      "passed": true,
+      "cells": 65536,
+      "errors": {
+        "density_relative": 5.551115123125783e-14,
+        "velocity_over_vwind": 0.0,
+        "transverse_velocity": 0.0,
+        "pressure_from_total_energy": 6.661338147750939e-16
+      },
+      "scope": "native t=0 3D fields; pressure recovered from conserved energy"
+    },
+    {
+      "code": "ramses",
+      "chi": 10,
+      "passed": true,
+      "cells": 65536,
+      "errors": {
+        "density": 6.661338147750933e-16,
+        "velocity": 0.0,
+        "transverse_velocity": 0.0,
+        "pressure": 7.771561172376096e-16
+      },
+      "bounds": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          20.0,
+          10.0,
+          10.0
+        ]
+      ],
+      "metadata": {
+        "time": 0.0,
+        "boxlen": 20.0,
+        "domain_width": [
+          20.0,
+          10.0,
+          10.0
+        ],
+        "gamma": 1.6666666666666667,
+        "nvar": 6,
+        "ncpu": 1
+      },
+      "reader": "native rectangular six-face layout; all CPU shards included"
+    },
+    {
+      "code": "ramses",
+      "chi": 100,
+      "passed": true,
+      "cells": 65536,
+      "errors": {
+        "density": 5.551115123125783e-15,
+        "velocity": 0.0,
+        "transverse_velocity": 0.0,
+        "pressure": 7.771561172376096e-16
+      },
+      "bounds": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          20.0,
+          10.0,
+          10.0
+        ]
+      ],
+      "metadata": {
+        "time": 0.0,
+        "boxlen": 20.0,
+        "domain_width": [
+          20.0,
+          10.0,
+          10.0
+        ],
+        "gamma": 1.6666666666666667,
+        "nvar": 6,
+        "ncpu": 1
+      },
+      "reader": "native rectangular six-face layout; all CPU shards included"
+    },
+    {
+      "code": "ramses",
+      "chi": 1000,
+      "passed": true,
+      "cells": 65536,
+      "errors": {
+        "density": 5.551115123125783e-14,
+        "velocity": 0.0,
+        "transverse_velocity": 0.0,
+        "pressure": 1.1102230246251565e-15
+      },
+      "bounds": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          20.0,
+          10.0,
+          10.0
+        ]
+      ],
+      "metadata": {
+        "time": 0.0,
+        "boxlen": 20.0,
+        "domain_width": [
+          20.0,
+          10.0,
+          10.0
+        ],
+        "gamma": 1.6666666666666667,
+        "nvar": 6,
+        "ncpu": 1
+      },
+      "reader": "native rectangular six-face layout; all CPU shards included"
+    }
+  ],
+  "particle_input_checks": [
+    {
+      "code": "arepo",
+      "chi": 10,
+      "elements": 65536,
+      "file": "/home/kaan/ic_audit_20260907/particle_tests/arepo_chi10/IC.hdf5",
+      "errors": {
+        "velocity_over_vwind": 0.0,
+        "lattice_density_relative": 2.1558760148240661e-16,
+        "pressure_from_lattice_density": 2.220446049250313e-16
+      },
+      "passed": true,
+      "scope": "generated IC fields, equal-volume initial lattice only"
+    },
+    {
+      "code": "arepo",
+      "chi": 100,
+      "elements": 65536,
+      "file": "/home/kaan/ic_audit_20260907/particle_tests/arepo_chi100/IC.hdf5",
+      "errors": {
+        "velocity_over_vwind": 0.0,
+        "lattice_density_relative": 2.007171312219002e-16,
+        "pressure_from_lattice_density": 2.220446049250313e-16
+      },
+      "passed": true,
+      "scope": "generated IC fields, equal-volume initial lattice only"
+    },
+    {
+      "code": "arepo",
+      "chi": 1000,
+      "elements": 65536,
+      "file": "/home/kaan/ic_audit_20260907/particle_tests/arepo_chi1000/IC.hdf5",
+      "errors": {
+        "velocity_over_vwind": 0.0,
+        "lattice_density_relative": 2.1355077259456785e-16,
+        "pressure_from_lattice_density": 2.220446049250313e-16
+      },
+      "passed": true,
+      "scope": "generated IC fields, equal-volume initial lattice only"
+    },
+    {
+      "code": "gizmo",
+      "chi": 10,
+      "elements": 65536,
+      "file": "/home/kaan/ic_audit_20260907/particle_tests/gizmo_chi10/IC.hdf5",
+      "errors": {
+        "velocity_over_vwind": 0.0,
+        "lattice_density_relative": 8.489468303461768e-08,
+        "pressure_from_lattice_density": 1.1920928955078125e-07
+      },
+      "passed": true,
+      "scope": "generated IC fields, equal-volume initial lattice only"
+    },
+    {
+      "code": "gizmo",
+      "chi": 100,
+      "elements": 65536,
+      "file": "/home/kaan/ic_audit_20260907/particle_tests/gizmo_chi100/IC.hdf5",
+      "errors": {
+        "velocity_over_vwind": 0.0,
+        "lattice_density_relative": 8.820707890419943e-08,
+        "pressure_from_lattice_density": 1.1920928955078125e-07
+      },
+      "passed": true,
+      "scope": "generated IC fields, equal-volume initial lattice only"
+    },
+    {
+      "code": "gizmo",
+      "chi": 1000,
+      "elements": 65536,
+      "file": "/home/kaan/ic_audit_20260907/particle_tests/gizmo_chi1000/IC.hdf5",
+      "errors": {
+        "velocity_over_vwind": 0.0,
+        "lattice_density_relative": 9.613348171289839e-08,
+        "pressure_from_lattice_density": 1.1920928955078125e-07
+      },
+      "passed": true,
+      "scope": "generated IC fields, equal-volume initial lattice only"
+    },
+    {
+      "code": "gadget4",
+      "chi": 10,
+      "elements": 65536,
+      "file": "/home/kaan/ic_audit_20260907/particle_tests/gadget4_chi10/IC.hdf5",
+      "errors": {
+        "velocity_over_vwind": 0.0,
+        "lattice_density_relative": 1.9513491060112577e-16,
+        "pressure_from_lattice_density": 2.220446049250313e-16
+      },
+      "passed": true,
+      "scope": "generated IC fields, equal-volume initial lattice only"
+    },
+    {
+      "code": "gadget4",
+      "chi": 100,
+      "elements": 65536,
+      "file": "/home/kaan/ic_audit_20260907/particle_tests/gadget4_chi100/IC.hdf5",
+      "errors": {
+        "velocity_over_vwind": 0.0,
+        "lattice_density_relative": 1.4843173564410896e-16,
+        "pressure_from_lattice_density": 2.220446049250313e-16
+      },
+      "passed": true,
+      "scope": "generated IC fields, equal-volume initial lattice only"
+    },
+    {
+      "code": "gadget4",
+      "chi": 1000,
+      "elements": 65536,
+      "file": "/home/kaan/ic_audit_20260907/particle_tests/gadget4_chi1000/IC.hdf5",
+      "errors": {
+        "velocity_over_vwind": 0.0,
+        "lattice_density_relative": 2.0491241944908308e-16,
+        "pressure_from_lattice_density": 2.220446049250313e-16
+      },
+      "passed": true,
+      "scope": "generated IC fields, equal-volume initial lattice only"
+    },
+    {
+      "code": "gasoline",
+      "chi": 10,
+      "elements": 65536,
+      "file": "/home/kaan/ic_audit_20260907/particle_tests/gasoline_chi10/IC.std",
+      "errors": {
+        "velocity_over_vwind": 3.3299403944719575e-08,
+        "lattice_density_relative": 4.987313081971103e-08,
+        "pressure_from_lattice_density": 8.646107763077282e-08
+      },
+      "passed": true,
+      "scope": "generated IC fields, equal-volume initial lattice only"
+    },
+    {
+      "code": "gasoline",
+      "chi": 100,
+      "elements": 65536,
+      "file": "/home/kaan/ic_audit_20260907/particle_tests/gasoline_chi100/IC.std",
+      "errors": {
+        "velocity_over_vwind": 3.3299403944719575e-08,
+        "lattice_density_relative": 4.7503697492692145e-08,
+        "pressure_from_lattice_density": 6.777893080123221e-08
+      },
+      "passed": true,
+      "scope": "generated IC fields, equal-volume initial lattice only"
+    },
+    {
+      "code": "gasoline",
+      "chi": 1000,
+      "elements": 65536,
+      "file": "/home/kaan/ic_audit_20260907/particle_tests/gasoline_chi1000/IC.std",
+      "errors": {
+        "velocity_over_vwind": 3.3299403944719575e-08,
+        "lattice_density_relative": 5.907643713921447e-08,
+        "pressure_from_lattice_density": 9.421067070913836e-08
+      },
+      "passed": true,
+      "scope": "generated IC fields, equal-volume initial lattice only"
+    }
+  ],
+  "pinned_native_binaries": [
+    {
+      "name": "apk",
+      "sha256": "d8d6ffe5b427216a58bda705ae0692c3cc12c3b7f072bd1a845fe11224a4af0f",
+      "bytes": 258119368,
+      "path": "/home/kaan/ic_audit_20260907/bin/apk"
+    },
+    {
+      "name": "athpp",
+      "sha256": "b8bdcbadc51986cb761a0d741001e6804d212dc7f57d0bcaf8e80e0dd6e88bb0",
+      "bytes": 3896000,
+      "path": "/home/kaan/ic_audit_20260907/bin/athpp"
+    },
+    {
+      "name": "athw",
+      "sha256": "d0b07b82ab540bb2a62a5e67e297dcbcfa8dcad80860ce51b313cbb25251efa9",
+      "bytes": 283216,
+      "path": "/home/kaan/ic_audit_20260907/bin/athw"
+    },
+    {
+      "name": "enzo",
+      "sha256": "3c01769484e06fa2ab3d55f46ccf0051a960c596edd3ba513a67984c261db84f",
+      "bytes": 5497888,
+      "path": "/home/kaan/ic_audit_20260907/bin/enzo"
+    },
+    {
+      "name": "flash",
+      "sha256": "80471ee74948d54eee58840aa83cd996e711ff3b60e362b39c14eda4857f2486",
+      "bytes": 2223288,
+      "path": "/home/kaan/ic_audit_20260907/bin/flash"
+    },
+    {
+      "name": "flashx",
+      "sha256": "6c8afa8e981cd2946975fc97870d84a6efc982231dc0d30891664add60b9c009",
+      "bytes": 2179208,
+      "path": "/home/kaan/ic_audit_20260907/bin/flashx"
+    },
+    {
+      "name": "ramses",
+      "sha256": "fbd33def0caae538b70c68b46a007d9cfd972304c1b055ec2b1872c828057db3",
+      "bytes": 1882264,
+      "path": "/home/kaan/ic_audit_20260907/bin/ramses"
+    },
+    {
+      "name": "ramses_rect",
+      "sha256": "a9dc487e0ad975e89457ec4ec8cbcc1c8abecaae6ec1370085d06fd5da7d74dc",
+      "bytes": 2009240,
+      "path": "/home/kaan/ic_audit_20260907/bin/ramses_rect"
+    }
+  ],
+  "source_inventory": [
+    {
+      "path": "/home/kaan/CloudCrushing/A8/cloud_wind.c",
+      "sha256": "207c2972f807df5a35acc89048cc28cffccdb8db844a09809b7ac421b92c9103",
+      "staged_sha256": "207c2972f807df5a35acc89048cc28cffccdb8db844a09809b7ac421b92c9103",
+      "staged_equals_active": true
+    },
+    {
+      "path": "/home/kaan/CloudCrushing/FLASH4.8/source/Simulation/SimulationMain/CloudCrush/Simulation_initBlock.F90",
+      "sha256": "acabec8a04d6016be9dd6c5207d82e5c8761183f9f118a012ba511c100611d2f",
+      "staged_sha256": "acabec8a04d6016be9dd6c5207d82e5c8761183f9f118a012ba511c100611d2f",
+      "staged_equals_active": true
+    },
+    {
+      "path": "/home/kaan/check_ic.py",
+      "sha256": "01220c0d3eae1e3d173ef7cc466fbe2bfab8f9ca34854c38a015083a1134fefd",
+      "staged_sha256": "0bb5c9baa2cb60d93422afff2757f3efecfcfd1c79c3f2cae792e17cb420783d",
+      "staged_equals_active": false
+    },
+    {
+      "path": "/home/kaan/codes/arepo/runs/make_ic_cloud.py",
+      "sha256": "bbbe5d8e78a0db96e261af93c1cffd6c03f16d53c075fa48361d7e0714bcdd09",
+      "staged_sha256": "bbbe5d8e78a0db96e261af93c1cffd6c03f16d53c075fa48361d7e0714bcdd09",
+      "staged_equals_active": true
+    },
+    {
+      "path": "/home/kaan/codes/athenapk/src/pgen/cloud.cpp",
+      "sha256": "393ea01454cd57e81aaf68a1c2cc2f7916b9e0b35e21a4533584f060e70d2b8a",
+      "staged_sha256": "393ea01454cd57e81aaf68a1c2cc2f7916b9e0b35e21a4533584f060e70d2b8a",
+      "staged_equals_active": true
+    },
+    {
+      "path": "/home/kaan/codes/athenapp/src/pgen/cloud_wind.cpp",
+      "sha256": "de58d1663316f93207cce756da1e38a4271f7209dca8b0c01949b370d6fda1de",
+      "staged_sha256": "de58d1663316f93207cce756da1e38a4271f7209dca8b0c01949b370d6fda1de",
+      "staged_equals_active": true
+    },
+    {
+      "path": "/home/kaan/codes/athenapp/src/pgen/cloud_wind_gal.cpp",
+      "sha256": "fbe2a818316ae12d2a1b64f0d45868fed07e742670dc939b7b45636e23897492",
+      "staged_sha256": "fbe2a818316ae12d2a1b64f0d45868fed07e742670dc939b7b45636e23897492",
+      "staged_equals_active": true
+    },
+    {
+      "path": "/home/kaan/codes/enzo/enzo-dev/src/enzo/Grid_CloudWindInitializeGrid.C",
+      "sha256": "e3bb40749425c0f0afe5da861283c3edc5aff6e5eda5483cc2ed17c2f8c76f8b",
+      "staged_sha256": "e3bb40749425c0f0afe5da861283c3edc5aff6e5eda5483cc2ed17c2f8c76f8b",
+      "staged_equals_active": true
+    },
+    {
+      "path": "/home/kaan/codes/flashx/source/Simulation/SimulationMain/CloudWind/Simulation_initBlock.F90",
+      "sha256": "de4d48556a71637ccc00657eefecf09b01a0a604775825c594e49a52b25e7c5d",
+      "staged_sha256": "de4d48556a71637ccc00657eefecf09b01a0a604775825c594e49a52b25e7c5d",
+      "staged_equals_active": true
+    },
+    {
+      "path": "/home/kaan/codes/gadget4/ics/make_g4_cloudwind.py",
+      "sha256": "db8ba52b0d2bca3c6c5a7fe99e43b7d379f2f48772b27dbaf3ce96721666ac6d",
+      "staged_sha256": "db8ba52b0d2bca3c6c5a7fe99e43b7d379f2f48772b27dbaf3ce96721666ac6d",
+      "staged_equals_active": true
+    },
+    {
+      "path": "/home/kaan/codes/gasoline/ics/make_gasoline_cloudwind.py",
+      "sha256": "50ec1d99b406e5e31f538f884056f4f970d7804a56b8d7cce4bfac0efe4ac02b",
+      "staged_sha256": "50ec1d99b406e5e31f538f884056f4f970d7804a56b8d7cce4bfac0efe4ac02b",
+      "staged_equals_active": true
+    },
+    {
+      "path": "/home/kaan/codes/gasoline/ics/make_gasoline_cloudwind_3d.py",
+      "sha256": "911843f744f737d75865bad1b4292cfba79fc2ee3d0796f5a6d516fe7406fc48",
+      "staged_sha256": "911843f744f737d75865bad1b4292cfba79fc2ee3d0796f5a6d516fe7406fc48",
+      "staged_equals_active": true
+    },
+    {
+      "path": "/home/kaan/codes/gizmo/scripts/make_cloudwind_ic.py",
+      "sha256": "77206f4786b1ded804de004c6c261273bd85f1f048d61c3c5335cd1eeeae5cdd",
+      "staged_sha256": "77206f4786b1ded804de004c6c261273bd85f1f048d61c3c5335cd1eeeae5cdd",
+      "staged_equals_active": true
+    },
+    {
+      "path": "/home/kaan/codes/ramses/patch/cloudwind/condinit.f90",
+      "sha256": "27a6f76a9633520d091da94487b6b80f8953ed9106a754bd86ceec82ba490a65",
+      "staged_sha256": "27a6f76a9633520d091da94487b6b80f8953ed9106a754bd86ceec82ba490a65",
+      "staged_equals_active": true
+    },
+    {
+      "path": "/home/kaan/codes/ramses/patch/cloudwind_l6/condinit.f90",
+      "sha256": "27a6f76a9633520d091da94487b6b80f8953ed9106a754bd86ceec82ba490a65",
+      "staged_sha256": "27a6f76a9633520d091da94487b6b80f8953ed9106a754bd86ceec82ba490a65",
+      "staged_equals_active": true
+    },
+    {
+      "path": "/home/kaan/diagnostics.py",
+      "sha256": "3f0031864a4417be8712866b570b2bc47fa12e0361f922cc0471109f66789fe7",
+      "staged_sha256": "2bc35896e5a471f6b409f06e0444ecbd410d3dce78d7266d422af3d643688d27",
+      "staged_equals_active": false
+    },
+    {
+      "path": "/home/kaan/redo_athpp.sh",
+      "sha256": "cccd3a4c05a1bf6ee9ca8b86a2437fe85a76398016b4b9159631e579d43386f1",
+      "staged_sha256": "11de2cb5b4249e940299834e139933397212d91e9e62171c78af839c78e34ed8",
+      "staged_equals_active": false
+    },
+    {
+      "path": "/home/kaan/run_params.py",
+      "sha256": "0fee43d86ae146713a14f780fd813b870340af5fe10b8db0bef6c93e9112ebee",
+      "staged_sha256": "2b6e34d61ae401aca2938325032d70a3457165b359493ee98b1e1fa8f14e3f5c",
+      "staged_equals_active": false
+    }
+  ],
+  "evidence_files": [
+    {
+      "file": "evidence/grid_tests/apk_chi100/mass_diagnostics_v2.json",
+      "sha256": "b354803d537ab614fcf6ba9218614e66755ff0c3750e4a34f359aac812141438"
+    },
+    {
+      "file": "evidence/grid_tests/apk_chi100/verification.json",
+      "sha256": "f717c8feb1c14f6ef1bf007837e5d78c9092745918c5a4abb1ee1f094298e42e"
+    },
+    {
+      "file": "evidence/grid_tests/apk_chi100/verification_final.json",
+      "sha256": "b7999d2ddc2cefa4b1001df75d414af18d6365349667297d72c04b14bf63071f"
+    },
+    {
+      "file": "evidence/grid_tests/apk_chi100/athinput",
+      "sha256": "81da8c365c2919d619a64208380e39bde51da5e1e56dbb6c96a8d9b569bdbb1f"
+    },
+    {
+      "file": "evidence/grid_tests/apk_chi100/run.log",
+      "sha256": "caccd35d203f1b854ec8da7ff506392f60940f3a33e9bc74ae5b07829c58b884"
+    },
+    {
+      "file": "evidence/grid_tests/flash_chi100/mass_diagnostics_v2.json",
+      "sha256": "4dccddd51e532e6a99ecc97dc8a0b077657a6d3f8e20b711baeabf3a617ba34c"
+    },
+    {
+      "file": "evidence/grid_tests/flash_chi100/flash.par",
+      "sha256": "3cf06269549e12cbf4373ef299d7a16d911b9fa941dad7bd9002644c2cf1f7d9"
+    },
+    {
+      "file": "evidence/grid_tests/flash_chi100/verification.json",
+      "sha256": "cf3fc51b3e2fbbd62bbd158144d6f32ebef16fe26e493a039f64cb140d9e9c70"
+    },
+    {
+      "file": "evidence/grid_tests/flash_chi100/verification_final.json",
+      "sha256": "25aedc1f8bae9b67590292058a56d0e8c7666521a07e4be9f1d13d97b4e6b147"
+    },
+    {
+      "file": "evidence/grid_tests/flash_chi100/run.log",
+      "sha256": "3132fdb2f37490114d55e53ce6d09c9d5db3dea4c2c64e9221ead87b3592a254"
+    },
+    {
+      "file": "evidence/grid_tests/flash_chi1000/mass_diagnostics_v2.json",
+      "sha256": "840c835129ee8ae37a43c356603493ebb7d743c2b52ba0d162394861d26da20f"
+    },
+    {
+      "file": "evidence/grid_tests/flash_chi1000/flash.par",
+      "sha256": "b8a92bf15a25fc1f09a514eca07cfde992b9fa210e3f78064f24758f12bb9c60"
+    },
+    {
+      "file": "evidence/grid_tests/flash_chi1000/verification.json",
+      "sha256": "7cbe1d24f6cb1996fe94b90b76b7c3358f5a995313b06db02310d3b4b76202c2"
+    },
+    {
+      "file": "evidence/grid_tests/flash_chi1000/verification_final.json",
+      "sha256": "92a4293585cafd76c98c3bb29ed15c7519b2c250f96417a54bef88a26e786572"
+    },
+    {
+      "file": "evidence/grid_tests/flash_chi1000/run.log",
+      "sha256": "3132fdb2f37490114d55e53ce6d09c9d5db3dea4c2c64e9221ead87b3592a254"
+    },
+    {
+      "file": "evidence/grid_tests/flashx_chi100/mass_diagnostics_v2.json",
+      "sha256": "edf0a08e4918c5be3b401ed8f8d05261c0a23dc753411a5bc3fc6c51d160949c"
+    },
+    {
+      "file": "evidence/grid_tests/flashx_chi100/flash.par",
+      "sha256": "44ca6dd91f927bf3c79eeafee32a4fcba1c5aaa1d35c5b5cc36cd7193cd8cdca"
+    },
+    {
+      "file": "evidence/grid_tests/flashx_chi100/verification.json",
+      "sha256": "d4aea62267cfa8fa8a0b819434ff4a6e172744b51634e66dd966caa02eff7b47"
+    },
+    {
+      "file": "evidence/grid_tests/flashx_chi100/verification_final.json",
+      "sha256": "fd47bd8274e30690d3a472bae61e23783500d88b88a256616c5e9b009f3e3c82"
+    },
+    {
+      "file": "evidence/grid_tests/flashx_chi100/run.log",
+      "sha256": "3ef600a31c0e01bb7b4bf26f342916219234e2cf5dfac6dcf720557ce0b0ace1"
+    },
+    {
+      "file": "evidence/grid_tests/flashx_chi10/mass_diagnostics_v2.json",
+      "sha256": "aebb795292b83767462442d454501b82f9a75d3515731f9db8e36aba7b258a1b"
+    },
+    {
+      "file": "evidence/grid_tests/flashx_chi10/flash.par",
+      "sha256": "fa4839f31cdf98e7f9e6ad631b47157e01175c4370f7a1e192cb0599f2127e75"
+    },
+    {
+      "file": "evidence/grid_tests/flashx_chi10/verification.json",
+      "sha256": "2ecc1523816f16be1a4a10f33961b48a5aa57dca575b6d48ae50e988754b1e2f"
+    },
+    {
+      "file": "evidence/grid_tests/flashx_chi10/verification_final.json",
+      "sha256": "e2b728c06bc686c1bf723d11ac299535dcec97a87a859c2b8773b49af925cbc2"
+    },
+    {
+      "file": "evidence/grid_tests/flashx_chi10/run.log",
+      "sha256": "3ef600a31c0e01bb7b4bf26f342916219234e2cf5dfac6dcf720557ce0b0ace1"
+    },
+    {
+      "file": "evidence/grid_tests/enzo_chi1000/mass_diagnostics_v2.json",
+      "sha256": "1e81b3ec44f696f4f48002f9271b8d034cf2e1dde78dbd10576fbdd44b43aa41"
+    },
+    {
+      "file": "evidence/grid_tests/enzo_chi1000/verification.json",
+      "sha256": "1748d1b592c1b21fb62e60d1911d45bcae75feae1bd47b60a03bcd24c0a5efe8"
+    },
+    {
+      "file": "evidence/grid_tests/enzo_chi1000/CloudWind.enzo",
+      "sha256": "78537181cc9087f7f2b9d3e0dad12ea4d196bb800712c0564d7afd53b79e04bd"
+    },
+    {
+      "file": "evidence/grid_tests/enzo_chi1000/verification_final.json",
+      "sha256": "1363b2801f9c490fbcb7afbce799e4ed054a0542a8b73179e527081773d6c707"
+    },
+    {
+      "file": "evidence/grid_tests/enzo_chi1000/run.log",
+      "sha256": "f014bbb849fe39397c7c9d8abc116e3a00407afdace8b3c10cbf9ec1619aaccf"
+    },
+    {
+      "file": "evidence/grid_tests/flashx_chi1000/mass_diagnostics_v2.json",
+      "sha256": "61a32ee552a2b82047662fb4271169a47cb317dd52d709302f1849baca40d849"
+    },
+    {
+      "file": "evidence/grid_tests/flashx_chi1000/flash.par",
+      "sha256": "05cc8f60bc93eecb5bc2b2460c5696f1f592d4cfc42d8fefdee212896b61c84b"
+    },
+    {
+      "file": "evidence/grid_tests/flashx_chi1000/verification.json",
+      "sha256": "65ef8ebe6e7de7fb0ac58ca3af5fa07c0c0bba41bae30e637090f02c9e3bb986"
+    },
+    {
+      "file": "evidence/grid_tests/flashx_chi1000/verification_final.json",
+      "sha256": "7f12df1f647969df3041d250b8edbf9896dd54afa645cd3fd0108ac94c686bfa"
+    },
+    {
+      "file": "evidence/grid_tests/flashx_chi1000/run.log",
+      "sha256": "3ef600a31c0e01bb7b4bf26f342916219234e2cf5dfac6dcf720557ce0b0ace1"
+    },
+    {
+      "file": "evidence/grid_tests/enzo_chi10/mass_diagnostics_v2.json",
+      "sha256": "c9af4c1dfa96725d4169266db1ec8a88ff8bbc69c2df0d2d3927245680a48b80"
+    },
+    {
+      "file": "evidence/grid_tests/enzo_chi10/verification.json",
+      "sha256": "9f3de2041518f5934e5c046b41cc10d8230b3a939d0c159154ed80236fa34e12"
+    },
+    {
+      "file": "evidence/grid_tests/enzo_chi10/CloudWind.enzo",
+      "sha256": "db561989afd55aef2fb0cbef5d715e29acfac5a3baba1e6c32d6831018ef9e16"
+    },
+    {
+      "file": "evidence/grid_tests/enzo_chi10/verification_final.json",
+      "sha256": "70335580eb00d250b6434c5acb11cae397e0c813b837d5855a96fe3497580444"
+    },
+    {
+      "file": "evidence/grid_tests/enzo_chi10/run.log",
+      "sha256": "1a95a5dff25c63d3c00cfd1d73a3740fc49fcec7fb09a01669821ddd6f14b02e"
+    },
+    {
+      "file": "evidence/grid_tests/enzo_chi100/mass_diagnostics_v2.json",
+      "sha256": "4202231e3794441270ecae1e71f2577a6457437e33bf1ead71e68e9bcf1e0268"
+    },
+    {
+      "file": "evidence/grid_tests/enzo_chi100/verification.json",
+      "sha256": "d0a0bde2ec2bcf237fd3b839e10ef7d7d3b0ba6984b15cd03802de95f19b99f8"
+    },
+    {
+      "file": "evidence/grid_tests/enzo_chi100/CloudWind.enzo",
+      "sha256": "a51cece948d9a16841dbedf0edbb4dc62e5d36d592889ae13e1be16cfc5dcb5b"
+    },
+    {
+      "file": "evidence/grid_tests/enzo_chi100/verification_final.json",
+      "sha256": "90ba62274ce39a5a5562a6ff116882c0b536f678657a3dc796c5dc9f4fb59166"
+    },
+    {
+      "file": "evidence/grid_tests/enzo_chi100/run.log",
+      "sha256": "c0584dddba6dd3f00250afe09e417ee09cd5a75bbd4df088e9226764d9edbea1"
+    },
+    {
+      "file": "evidence/grid_tests/athw_chi10/mass_diagnostics_v2.json",
+      "sha256": "b1b43b5fc7616cdd040b27ced678cb91f84fcd8bc229c5b263b4582b5711c66c"
+    },
+    {
+      "file": "evidence/grid_tests/athw_chi10/verification.json",
+      "sha256": "a42fd50411958eaa372f71701d6fc711c234edd3a067efeede0def9583080a17"
+    },
+    {
+      "file": "evidence/grid_tests/athw_chi10/verification_final.json",
+      "sha256": "12865980af6c0950b0fd69deb07d52da1e5f2743b122b64a0b99b773b129a78b"
+    },
+    {
+      "file": "evidence/grid_tests/athw_chi10/athinput",
+      "sha256": "18d0c19bcccf840df455ee23b99585fc4f771b04b35b0c6c87b53ef93267e449"
+    },
+    {
+      "file": "evidence/grid_tests/athw_chi10/run.log",
+      "sha256": "c776e2bc41e25464d9acda4e79f2801a12301f7a3339955ef43aaa29f5c33e6b"
+    },
+    {
+      "file": "evidence/grid_tests/athw_chi10/verification_reader_corrected.json",
+      "sha256": "c85825b1b55dc731b979062d49e60bfc34b58898b1f15a9f5f875b353ba4519a"
+    },
+    {
+      "file": "evidence/grid_tests/athpp_chi100/mass_diagnostics_v2.json",
+      "sha256": "97f1cb47eb763a7bbed8580935afe252d31fcd45589bfedcbc9e36fc48d8bf9b"
+    },
+    {
+      "file": "evidence/grid_tests/athpp_chi100/verification.json",
+      "sha256": "ded409024f2b511cca7ec9ca54eece210803e96aad98d7725d5f7b316af22c80"
+    },
+    {
+      "file": "evidence/grid_tests/athpp_chi100/verification_final.json",
+      "sha256": "4973628e38ee83c522b545a7c15e7f930bc851a131ca7b903eda254d6c2f2cc4"
+    },
+    {
+      "file": "evidence/grid_tests/athpp_chi100/athinput",
+      "sha256": "525f93886fbb094bff694cb7d47b7fe0d9c4ba674bd33e10b8c224cf304c33ef"
+    },
+    {
+      "file": "evidence/grid_tests/athpp_chi100/run.log",
+      "sha256": "27d0f315d300b34007cf0ada01b86cb467bea38790dd6ba4f16005622988ead2"
+    },
+    {
+      "file": "evidence/grid_tests/athpp_chi10/mass_diagnostics_v2.json",
+      "sha256": "283129fce1c1b294d5eb4530190602f6a6d68daf76783546d67d59bbf8ab0365"
+    },
+    {
+      "file": "evidence/grid_tests/athpp_chi10/verification.json",
+      "sha256": "8a4e10985f01d9dd341cba75ad83e98a7f103f192224c084b5b76c28cbd26553"
+    },
+    {
+      "file": "evidence/grid_tests/athpp_chi10/verification_final.json",
+      "sha256": "d578c4d82c52d741201958e4c28f18a11ed72875e759b4b87378cc6f32388ac5"
+    },
+    {
+      "file": "evidence/grid_tests/athpp_chi10/athinput",
+      "sha256": "d4234632cbbedf760dfde89d3c64c094d5dd07e31fc0ed86f4723518e4daf191"
+    },
+    {
+      "file": "evidence/grid_tests/athpp_chi10/run.log",
+      "sha256": "ee1b633c6ec4c7acb4d222b79ed85b66e0bfa5d502dc0a472170a64690e91bcc"
+    },
+    {
+      "file": "evidence/grid_tests/athw_chi100/mass_diagnostics_v2.json",
+      "sha256": "b106e1629b77317873ec26c929485283c42e1adccafe590c97c5db2c5b12d291"
+    },
+    {
+      "file": "evidence/grid_tests/athw_chi100/verification.json",
+      "sha256": "9894483d3199c0863334f81b98a68a227552e5a00cd308b7f7ab4ed39bd681be"
+    },
+    {
+      "file": "evidence/grid_tests/athw_chi100/verification_final.json",
+      "sha256": "2f69d7a6cc93a1d515d50c6d98c0e989fd940ab10355ecda01cafd84a0ad5ac4"
+    },
+    {
+      "file": "evidence/grid_tests/athw_chi100/athinput",
+      "sha256": "8eebe35a55c4b49b6cb35559da3f74d0d797158523f444725fb0c3e8d4493c66"
+    },
+    {
+      "file": "evidence/grid_tests/athw_chi100/run.log",
+      "sha256": "ba8aba64918f6de887911962ce3ee1dcc8187b7cc4b38507836b5874bcb2afb4"
+    },
+    {
+      "file": "evidence/grid_tests/athw_chi100/verification_reader_corrected.json",
+      "sha256": "529c90ccfa557e9572d5a3b75e33abd901ba68ac1815756019bac03d0abe6f2e"
+    },
+    {
+      "file": "evidence/grid_tests/athw_chi1000/mass_diagnostics_v2.json",
+      "sha256": "f07e0005f0096fd8d78a8e45bf8a38c034c766ada97445f46b89f9eca614701b"
+    },
+    {
+      "file": "evidence/grid_tests/athw_chi1000/verification.json",
+      "sha256": "6338e4d554fd033bf1b53cf8ced522702dfb98c8989d7f57d590a560dec1768c"
+    },
+    {
+      "file": "evidence/grid_tests/athw_chi1000/verification_final.json",
+      "sha256": "58df5a571179cd3cb6c13b1effb44cf2f17029437f8673929f0f3cad5f5428b4"
+    },
+    {
+      "file": "evidence/grid_tests/athw_chi1000/athinput",
+      "sha256": "714a311ea3c625469ce3d026aef5436032f450b9baec1cc264bb2e184bcc76ac"
+    },
+    {
+      "file": "evidence/grid_tests/athw_chi1000/run.log",
+      "sha256": "bfd92e00b6b8d1e8908ec1e6146b3ab2adb6e4b7d05f2fa2b96fdc9ad935f05d"
+    },
+    {
+      "file": "evidence/grid_tests/athw_chi1000/verification_reader_corrected.json",
+      "sha256": "840616abd2bfce4d1c7a52d13b5aaa6e6f9f454e630e5abc1631c7521d8efab2"
+    },
+    {
+      "file": "evidence/grid_tests/flash_chi10/mass_diagnostics_v2.json",
+      "sha256": "b0928f297dcfe1f85bdc11c8728104e78b4c344dc67001a3d86f5b1dd0ef1c2f"
+    },
+    {
+      "file": "evidence/grid_tests/flash_chi10/flash.par",
+      "sha256": "77daebef8adf4f1e4defd508a3afb81a784cb4dd7e9e67dfd8841b85e3c6b5f0"
+    },
+    {
+      "file": "evidence/grid_tests/flash_chi10/verification.json",
+      "sha256": "2ec6e6a5eb163deecde02b67eb6415154ccfaf42e82d02e35430bbdfea32ea1a"
+    },
+    {
+      "file": "evidence/grid_tests/flash_chi10/verification_final.json",
+      "sha256": "f9a016d485d970e93bca939bcf53154c01dba1f6bbff6e602911e186677ea64c"
+    },
+    {
+      "file": "evidence/grid_tests/flash_chi10/run.log",
+      "sha256": "3132fdb2f37490114d55e53ce6d09c9d5db3dea4c2c64e9221ead87b3592a254"
+    },
+    {
+      "file": "evidence/grid_tests/apk_chi10/mass_diagnostics_v2.json",
+      "sha256": "7cf79e3e87f2aa7eb67b15d002e36e09abdce5096022c518a07f8da09a8a21ba"
+    },
+    {
+      "file": "evidence/grid_tests/apk_chi10/verification.json",
+      "sha256": "2dabfb5ead58eaa504c49480bf9305060a3804f68d88b358ffc568048a8ed99c"
+    },
+    {
+      "file": "evidence/grid_tests/apk_chi10/verification_final.json",
+      "sha256": "2a1dc7b1de4d634c28b5be105c84281fe8b812eca5846c2e916a082396ea199b"
+    },
+    {
+      "file": "evidence/grid_tests/apk_chi10/athinput",
+      "sha256": "5bdbe62d54ce86afe464248f95687419ca76fbc22688d0f8284025448f4abfac"
+    },
+    {
+      "file": "evidence/grid_tests/apk_chi10/run.log",
+      "sha256": "4f659b50fc2350fbb6dcad498bed158a0a1b9a1761debf456d3187f6cdda7ce7"
+    },
+    {
+      "file": "evidence/grid_tests/athpp_chi1000/mass_diagnostics_v2.json",
+      "sha256": "ff07337909b29f9153ad10bc15da041de0c6a52b35b12923f0995a7ca3301ce5"
+    },
+    {
+      "file": "evidence/grid_tests/athpp_chi1000/verification.json",
+      "sha256": "5e7da6531444f0542e150870528a43cd59c7576d1fd5eef6a5a2c153b5673eec"
+    },
+    {
+      "file": "evidence/grid_tests/athpp_chi1000/verification_final.json",
+      "sha256": "21f498407ef99629df0ab50275f79168bfa87d7a11ec25c87abc4279b7374835"
+    },
+    {
+      "file": "evidence/grid_tests/athpp_chi1000/athinput",
+      "sha256": "772dc06ce11a5aa1aeffd10fb9d48c1170ce20b76554c53dc88a85676892be62"
+    },
+    {
+      "file": "evidence/grid_tests/athpp_chi1000/run.log",
+      "sha256": "bc29d2a9b5abc0869f472fa0ee686df2700e5c458bd6523ebe034dfce345e885"
+    },
+    {
+      "file": "evidence/grid_tests/apk_chi1000/mass_diagnostics_v2.json",
+      "sha256": "22c69c778b4bc74b1cfa2b430f3136afdb1a56eb7837ed513d88153afc9cb724"
+    },
+    {
+      "file": "evidence/grid_tests/apk_chi1000/verification.json",
+      "sha256": "1d8327bb52735e5005c196fba83889165ea50634ec916ee5d132a4a93a72eca3"
+    },
+    {
+      "file": "evidence/grid_tests/apk_chi1000/verification_final.json",
+      "sha256": "9cf2d90385d8327e6ac85cee5084d1128b053589d0f32f8cd46fe03a31f28101"
+    },
+    {
+      "file": "evidence/grid_tests/apk_chi1000/athinput",
+      "sha256": "5c36771dda4bc95a6bc46d5f05d2d04966b792074728d72dadb2346ef4030cfd"
+    },
+    {
+      "file": "evidence/grid_tests/apk_chi1000/run.log",
+      "sha256": "47f82f40da574816ed22e982ca0df297a426ce334e5a989219e6ab0fb2a42905"
+    },
+    {
+      "file": "evidence/enzoe_tests_v2/results.json",
+      "sha256": "61225107309099e9bcbc3cabb6560c70721538be0138f02606216da78287c441"
+    },
+    {
+      "file": "evidence/enzoe_tests_v2/chi100/verification.json",
+      "sha256": "05d207d150a203ad2712127ef18a89c9b70b48245ebc25c9c0370b19b80eca2b"
+    },
+    {
+      "file": "evidence/enzoe_tests_v2/chi100/run.log",
+      "sha256": "5677ea8e9ab30558abeee58938bdea6637e11ae72704c5476a9fcce812620638"
+    },
+    {
+      "file": "evidence/enzoe_tests_v2/chi100/cloud.in",
+      "sha256": "1703b1f5dfdf1fa354cc42d5d05f84f9dcae8b88785febecc4800622c3487fbb"
+    },
+    {
+      "file": "evidence/enzoe_tests_v2/chi1000/verification.json",
+      "sha256": "357fabe30d9c94b7e18b4daa1c673443e14fb24d5da56314338f2e5b68643555"
+    },
+    {
+      "file": "evidence/enzoe_tests_v2/chi1000/run.log",
+      "sha256": "812e86a8899d9d4c2b367e2999ec1aead825b67911df0e9c14c35f3c025b1fb3"
+    },
+    {
+      "file": "evidence/enzoe_tests_v2/chi1000/cloud.in",
+      "sha256": "abf222b2c4904f93753e731a3f417dcec1188d9a3251e2dcdfccb2037af46d3a"
+    },
+    {
+      "file": "evidence/enzoe_tests_v2/chi10/verification.json",
+      "sha256": "ed504708320006b413f66caae229a290b94296ba1a4c552ffc396b68699c1bff"
+    },
+    {
+      "file": "evidence/enzoe_tests_v2/chi10/run.log",
+      "sha256": "ed2e3f984236ab826d213961d1511202b4b7247a6733f140384b100b4fa5e38d"
+    },
+    {
+      "file": "evidence/enzoe_tests_v2/chi10/cloud.in",
+      "sha256": "af284c997eb359650482399f60afe644d130fc94b35c4d0bdeefe2ea5181f466"
+    },
+    {
+      "file": "evidence/ramses_rect_tests/chi100/mass_diagnostics_v2.json",
+      "sha256": "41f69815c4b2afca57df7af100694f482dc15d8124c49421d279ddb8458c787a"
+    },
+    {
+      "file": "evidence/ramses_rect_tests/chi100/verification.json",
+      "sha256": "e3ac2cfae938c5212fe791d926256568126e0369c598805220d1efaccace4505"
+    },
+    {
+      "file": "evidence/ramses_rect_tests/chi100/run.nml",
+      "sha256": "172e8a803f93400205d526d8b82a91c5f97412c8e01416b6e60005d92f6c579e"
+    },
+    {
+      "file": "evidence/ramses_rect_tests/chi100/inspection.json",
+      "sha256": "c6e7f5ca3ae7b471882ad5d0686202269742c36c0311433854193aadfa939787"
+    },
+    {
+      "file": "evidence/ramses_rect_tests/chi100/run.log",
+      "sha256": "a16aa7265307f2920b41e58920b8c50d39e297383de5b8c1f1f8a6f84bbf55cb"
+    },
+    {
+      "file": "evidence/ramses_rect_tests/chi1000/mass_diagnostics_v2.json",
+      "sha256": "891860bfa204b8aeb45f15c20e17b2da4736408a26bbd1781b220984b0dd1729"
+    },
+    {
+      "file": "evidence/ramses_rect_tests/chi1000/verification.json",
+      "sha256": "af7204248344f0857710cd5471927f9d6454d748668b86d2e6aa4159e271d091"
+    },
+    {
+      "file": "evidence/ramses_rect_tests/chi1000/run.nml",
+      "sha256": "8114a648bde786e8de89699936b5e25adfd0fa5b1eda04c5a88bdcaf8613b48b"
+    },
+    {
+      "file": "evidence/ramses_rect_tests/chi1000/inspection.json",
+      "sha256": "ab857ca286d44d7b2d6b873aee5f3dbdfda54dd59e17cd4c8b7c846f3b9be1f1"
+    },
+    {
+      "file": "evidence/ramses_rect_tests/chi1000/run.log",
+      "sha256": "d6009c19a80eb6f6d6d7c333589345fd6428be08523427903c60bdd26e7ee3ae"
+    },
+    {
+      "file": "evidence/ramses_rect_tests/chi10/mass_diagnostics_v2.json",
+      "sha256": "a20c40abc2a29e93bf265c03ab622e206e2384b379a1816baee0bb185b73f8cb"
+    },
+    {
+      "file": "evidence/ramses_rect_tests/chi10/verification.json",
+      "sha256": "7c768a4fb36fe983094b68cc4e2dcb7db78dfb607cebfbec7eb986d5a8ae68f5"
+    },
+    {
+      "file": "evidence/ramses_rect_tests/chi10/run.nml",
+      "sha256": "405352782bb2291fcacefddab0ef99c114e000857e0abe8a46ff45177e2b5f1a"
+    },
+    {
+      "file": "evidence/ramses_rect_tests/chi10/inspection.json",
+      "sha256": "782b403ffec97a91f327f85d4e8ba99c189d7ab984ae31ca99d510413aa0e7b2"
+    },
+    {
+      "file": "evidence/ramses_rect_tests/chi10/run.log",
+      "sha256": "708266f24d3b1f8450aa77f0ecacb1bf8534e88b9fb403549967f95602fb5125"
+    },
+    {
+      "file": "evidence/negative_controls/results.json",
+      "sha256": "5420a3fe55e29961f42d6dabba497e12e6353a1c35f07dbad9c8771809957529"
+    },
+    {
+      "file": "evidence/negative_controls/athpp/athinput",
+      "sha256": "772dc06ce11a5aa1aeffd10fb9d48c1170ce20b76554c53dc88a85676892be62"
+    },
+    {
+      "file": "evidence/negative_controls/athpp/run.log",
+      "sha256": "2656a977fb3f38a86ee75ed61564e7153d953d29efe190614e19086c8fa719b6"
+    },
+    {
+      "file": "evidence/negative_controls/apk/athinput",
+      "sha256": "5c36771dda4bc95a6bc46d5f05d2d04966b792074728d72dadb2346ef4030cfd"
+    },
+    {
+      "file": "evidence/negative_controls/apk/run.log",
+      "sha256": "f305c274e343cf2a4d72762ff139032853ded598399e4e915a79359b63495e91"
+    }
+  ],
+  "short_native_mass_analysis_checks": 21,
+  "python_unit_tests": 10,
+  "important_scope": "Initial-condition verification, not full production validation. Particle tests are input fields only.",
+  "remaining": [
+    "particle boundary conditions differ",
+    "tracers differ",
+    "SPH effective resolution is not initial lattice spacing",
+    "historical corrected production reruns are not complete",
+    "historical frame cadence not universally validated",
+    "radiative cooling and Galilean variants are unvalidated",
+    "native data previously deleted are not recovered"
+  ],
+  "data_retention": "No native output deleted in this audit; old redo and sweep deletion paths retired"
+}

@@ -1,0 +1,76 @@
+&RUN_PARAMS
+hydro=.true.
+nrestart=0
+ncontrol=10
+nremap=10
+nsubcycle=30*1
+verbose=.false.
+/
+
+&AMR_PARAMS
+nx=2
+ny=1
+nz=1
+levelmin = 5
+levelmax = 5
+ngridmax = 100000
+nexpand=1
+boxlen=20.0
+/
+
+&INIT_PARAMS
+condinit_kind='cloudwind'
+/
+
+&CLOUDWIND_PARAMS
+chi = 1000
+r_cloud=1.0
+edge=0.1
+rho_wind=1.0
+p_wind=1.0
+v_wind = 2.581988897471611
+x_cloud=3.0
+y_cloud = 5
+z_cloud = 5
+rv_scale=1.3
+/
+
+&BOUNDARY_PARAMS
+nboundary=6
+ibound_min=-1,+1,-1,-1,-1,-1
+ibound_max=-1,+1,+1,+1,+1,+1
+jbound_min= 0, 0,-1,+1,-1,-1
+jbound_max= 0, 0,-1,+1,+1,+1
+kbound_min= 0, 0, 0, 0,-1,+1
+kbound_max= 0, 0, 0, 0,-1,+1
+bound_type= 3, 2, 2, 2, 2, 2
+d_bound=1.0
+u_bound = 2.581988897471611
+v_bound=0.0
+w_bound=0.0
+p_bound=1.0
+/
+
+&HYDRO_PARAMS
+gamma=1.6666666666666667
+courant_factor = 0.4
+slope_type=1
+scheme='muscl'
+riemann='hllc'
+smallr=1.0d-10
+smallc=1.0d-10
+/
+
+! Inert while levelmin = levelmax (RAMSES only refines if levelmin < levelmax).
+! Kept so an AMR variant can be made by lowering levelmin alone.
+&REFINE_PARAMS
+err_grad_d=0.1
+err_grad_p=0.1
+interpol_type=1
+interpol_var=0
+/
+
+&OUTPUT_PARAMS
+tend = 0.001
+delta_tout = 0.001
+/

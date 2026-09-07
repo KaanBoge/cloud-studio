@@ -1,0 +1,107 @@
+# CloudWind 3D LEVEL 6, matched multi-code setup, chi=10
+# Grid: uniform 512 x 256 x 256 = 3.3554e7 cells, 25.6 cells per R_cloud
+#
+# BUILD (must be the level-6 object dir, NOT object_3d):
+#   ./setup CloudWind -auto -3d +pm4dev +parallelIO \
+#           -nxb=32 -nyb=32 -nzb=32 -maxblocks=256 -objdir=object_3d_l6 -site=Axstarl
+#
+# WHY nxb=32 RATHER THAN A BIGGER MAXBLOCKS.
+#   The PARAMESH tree for a uniform mesh is fixed by nxb. With the level-5 build
+#   (nxb=16) level 6 is lrefine 5 and the tree is 2+16+128+1024+8192 = 9362
+#   blocks, i.e. 1171 per rank on 8 ranks -- the level-5 build's MAXBLOCKS=400
+#   aborts with "Too many blocks!" (verified 2026-08-26).
+#   With nxb=32 the SAME 512x256x256 mesh is lrefine 4 and the tree is only
+#   2+16+128+1024 = 1170 blocks, 146.3 per rank. That is the identical tree the
+#   level-5 build already carries today, so MAXBLOCKS=256 has 75% headroom.
+#   Cells, cell size and physics are unchanged -- on a uniform mesh every
+#   neighbour is same-level, so guard-cell fills are exact copies and no
+#   interpolation is ever invoked. Only the decomposition differs.
+#   Bonus: guard-cell blow-up falls from (24/16)^3 = 3.375x to (40/32)^3 = 1.953x.
+#
+# MEMORY (measured, not estimated): PARAMESH commits MAXBLOCKS worth of arrays
+#   per rank regardless of occupancy. A 1-rank, 2-block run of this binary has
+#   RSS 1.48 GiB, so 8 ranks = 11.8 GiB. (The level-5 nxb=16 binary measures
+#   0.508 GiB/rank; both work out to ~98 bytes per padded cell.)
+#
+# RUNTIME: chi=10 estimated ~16-22 h on 8 ranks.
+#   Cycle counts scale as 1 : 3.285 : 10.554 for chi = 10 : 100 : 1000
+#   (measured from the completed CW2D_*_512 Enzo runs, which share this dx).
+#   chi=1000 would be ~230 h and is NOT prepared -- it is out of budget.
+#
+# LAUNCH:  mpirun -np 8 ./flashx
+#
+
+sim_pAmbient    = 1.0
+sim_rhoAmbient  = 1.0
+sim_windVel = 2.581988897471611
+sim_rhoCloud = 100
+sim_rCloud      = 1.0
+sim_smoothWidth = 0.1
+sim_rvScale = 1.3
+sim_xctr        = 0.0
+sim_yctr        = 0.0
+sim_zctr        = 0.0
+gamma = 1.6666666666666667
+
+geometry = "cartesian"
+xmin =  -3.0
+xmax =  17.0
+ymin =  -5.0
+ymax =   5.0
+zmin =  -5.0
+zmax =   5.0
+
+# --- uniform grid, PARAMESH ---------------------------------------------
+# root grid 2x1x1 blocks of 16^3 = 32x16x16 cells at lrefine 1;
+# lrefine_min = lrefine_max = 4 forces a fully uniform level-4 mesh:
+#   32*2^3 = 256 , 16*2^3 = 128 , 16*2^3 = 128
+# dx = dy = dz = 20/256 = 0.078125 (cubic cells), 12.8 cells per R_cloud
+Nblockx = 2
+Nblocky = 1
+Nblockz = 1
+lrefine_min = 2
+lrefine_max = 2
+refine_var_1 = "dens"
+refine_var_2 = "pres"
+
+xl_boundary_type = "user"      # fixed wind inflow (Grid_bcApplyToRegionSpecialized)
+xr_boundary_type = "outflow"
+yl_boundary_type = "outflow"
+yr_boundary_type = "outflow"
+zl_boundary_type = "outflow"
+zr_boundary_type = "outflow"
+
+cfl     = 0.4
+basenm  = "cloudwind_"
+restart = .false.
+checkpointFileIntervalTime = 0.001
+checkpointFileIntervalStep = 0
+checkpointFileNumber       = 0
+plotfileIntervalTime = 0.001
+plotfileIntervalStep = 0
+plotfileNumber       = 0
+nend = 2
+tmax = 0.001
+run_comment = "IC verification only, sharp velocity at 1.3 R"
+log_file    = "cloudwind.log"
+eintSwitch  = 1.e-4
+
+plot_var_1 = "dens"
+plot_var_2 = "pres"
+plot_var_3 = "velx"
+plot_var_4 = "vely"
+plot_var_5 = "velz"
+
+# Hydro (unsplit solver)
+order           = 3
+slopeLimiter    = "mc"
+LimitedSlopeBeta= 1.
+charLimiting    = .true.
+use_avisc       = .true.
+cvisc           = 0.1
+use_flattening  = .true.
+use_steepening  = .false.
+use_upwindTVD   = .false.
+RiemannSolver   = "HLLC"
+entropy         = .false.
+shockDetect     = .true.

@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "snapshot": "/home/kaan/ic_audit_20260907/grid_tests/apk_chi100/parthenon.prim.00000.phdf",
+  "parameters": {
+    "source": "/home/kaan/ic_audit_20260907/grid_tests/apk_chi100/athinput",
+    "parameter_sha256": "81da8c365c2919d619a64208380e39bde51da5e1e56dbb6c96a8d9b569bdbb1f",
+    "assumptions": [
+      "AthenaPK checkout units.hpp constants; fully ionized H/He mu from hydro.cpp"
+    ],
+    "gamma": 1.6666666666666667,
+    "r_cloud": 1.0,
+    "rho_wind": 1.0,
+    "p_wind": 1.0,
+    "v_wind": 2.581988897471611,
+    "chi": 100.0,
+    "rv_scale": 1.3,
+    "tmax": 0.001,
+    "output_dt": 0.001,
+    "mach": 2.0,
+    "kind": "apk",
+    "time_input_in_tcc": false,
+    "t_cc": 3.872983346207417
+  },
+  "time_code": 0.0,
+  "cells": 65536,
+  "native_dimensions": [
+    32,
+    64,
+    32
+  ],
+  "uniform_grid": true,
+  "domain_width_over_R": [
+    10.0,
+    20.0,
+    10.0
+  ],
+  "errors": {
+    "density_relative_max": 5.551115123125783e-15,
+    "velocity_error_over_vwind_max": 1.7199501139797033e-16,
+    "pressure_relative_max": 4.440892098500626e-16
+  },
+  "scope": "t=0 density, velocity, pressure, dimensions and domain; no claim of full-run validation"
+}

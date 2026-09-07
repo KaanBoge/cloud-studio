@@ -1,0 +1,158 @@
+[
+  {
+    "code": "arepo",
+    "chi": 10,
+    "elements": 65536,
+    "file": "/home/kaan/ic_audit_20260907/particle_tests/arepo_chi10/IC.hdf5",
+    "errors": {
+      "velocity_over_vwind": 0.0,
+      "lattice_density_relative": 2.1558760148240661e-16,
+      "pressure_from_lattice_density": 2.220446049250313e-16
+    },
+    "passed": true,
+    "scope": "generated IC fields, equal-volume initial lattice only"
+  },
+  {
+    "code": "arepo",
+    "chi": 100,
+    "elements": 65536,
+    "file": "/home/kaan/ic_audit_20260907/particle_tests/arepo_chi100/IC.hdf5",
+    "errors": {
+      "velocity_over_vwind": 0.0,
+      "lattice_density_relative": 2.007171312219002e-16,
+      "pressure_from_lattice_density": 2.220446049250313e-16
+    },
+    "passed": true,
+    "scope": "generated IC fields, equal-volume initial lattice only"
+  },
+  {
+    "code": "arepo",
+    "chi": 1000,
+    "elements": 65536,
+    "file": "/home/kaan/ic_audit_20260907/particle_tests/arepo_chi1000/IC.hdf5",
+    "errors": {
+      "velocity_over_vwind": 0.0,
+      "lattice_density_relative": 2.1355077259456785e-16,
+      "pressure_from_lattice_density": 2.220446049250313e-16
+    },
+    "passed": true,
+    "scope": "generated IC fields, equal-volume initial lattice only"
+  },
+  {
+    "code": "gizmo",
+    "chi": 10,
+    "elements": 65536,
+    "file": "/home/kaan/ic_audit_20260907/particle_tests/gizmo_chi10/IC.hdf5",
+    "errors": {
+      "velocity_over_vwind": 0.0,
+      "lattice_density_relative": 8.489468303461768e-08,
+      "pressure_from_lattice_density": 1.1920928955078125e-07
+    },
+    "passed": true,
+    "scope": "generated IC fields, equal-volume initial lattice only"
+  },
+  {
+    "code": "gizmo",
+    "chi": 100,
+    "elements": 65536,
+    "file": "/home/kaan/ic_audit_20260907/particle_tests/gizmo_chi100/IC.hdf5",
+    "errors": {
+      "velocity_over_vwind": 0.0,
+      "lattice_density_relative": 8.820707890419943e-08,
+      "pressure_from_lattice_density": 1.1920928955078125e-07
+    },
+    "passed": true,
+    "scope": "generated IC fields, equal-volume initial lattice only"
+  },
+  {
+    "code": "gizmo",
+    "chi": 1000,
+    "elements": 65536,
+    "file": "/home/kaan/ic_audit_20260907/particle_tests/gizmo_chi1000/IC.hdf5",
+    "errors": {
+      "velocity_over_vwind": 0.0,
+      "lattice_density_relative": 9.613348171289839e-08,
+      "pressure_from_lattice_density": 1.1920928955078125e-07
+    },
+    "passed": true,
+    "scope": "generated IC fields, equal-volume initial lattice only"
+  },
+  {
+    "code": "gadget4",
+    "chi": 10,
+    "elements": 65536,
+    "file": "/home/kaan/ic_audit_20260907/particle_tests/gadget4_chi10/IC.hdf5",
+    "errors": {
+      "velocity_over_vwind": 0.0,
+      "lattice_density_relative": 1.9513491060112577e-16,
+      "pressure_from_lattice_density": 2.220446049250313e-16
+    },
+    "passed": true,
+    "scope": "generated IC fields, equal-volume initial lattice only"
+  },
+  {
+    "code": "gadget4",
+    "chi": 100,
+    "elements": 65536,
+    "file": "/home/kaan/ic_audit_20260907/particle_tests/gadget4_chi100/IC.hdf5",
+    "errors": {
+      "velocity_over_vwind": 0.0,
+      "lattice_density_relative": 1.4843173564410896e-16,
+      "pressure_from_lattice_density": 2.220446049250313e-16
+    },
+    "passed": true,
+    "scope": "generated IC fields, equal-volume initial lattice only"
+  },
+  {
+    "code": "gadget4",
+    "chi": 1000,
+    "elements": 65536,
+    "file": "/home/kaan/ic_audit_20260907/particle_tests/gadget4_chi1000/IC.hdf5",
+    "errors": {
+      "velocity_over_vwind": 0.0,
+      "lattice_density_relative": 2.0491241944908308e-16,
+      "pressure_from_lattice_density": 2.220446049250313e-16
+    },
+    "passed": true,
+    "scope": "generated IC fields, equal-volume initial lattice only"
+  },
+  {
+    "code": "gasoline",
+    "chi": 10,
+    "elements": 65536,
+    "file": "/home/kaan/ic_audit_20260907/particle_tests/gasoline_chi10/IC.std",
+    "errors": {
+      "velocity_over_vwind": 3.3299403944719575e-08,
+      "lattice_density_relative": 4.987313081971103e-08,
+      "pressure_from_lattice_density": 8.646107763077282e-08
+    },
+    "passed": true,
+    "scope": "generated IC fields, equal-volume initial lattice only"
+  },
+  {
+    "code": "gasoline",
+    "chi": 100,
+    "elements": 65536,
+    "file": "/home/kaan/ic_audit_20260907/particle_tests/gasoline_chi100/IC.std",
+    "errors": {
+      "velocity_over_vwind": 3.3299403944719575e-08,
+      "lattice_density_relative": 4.7503697492692145e-08,
+      "pressure_from_lattice_density": 6.777893080123221e-08
+    },
+    "passed": true,
+    "scope": "generated IC fields, equal-volume initial lattice only"
+  },
+  {
+    "code": "gasoline",
+    "chi": 1000,
+    "elements": 65536,
+    "file": "/home/kaan/ic_audit_20260907/particle_tests/gasoline_chi1000/IC.std",
+    "errors": {
+      "velocity_over_vwind": 3.3299403944719575e-08,
+      "lattice_density_relative": 5.907643713921447e-08,
+      "pressure_from_lattice_density": 9.421067070913836e-08
+    },
+    "passed": true,
+    "scope": "generated IC fields, equal-volume initial lattice only"
+  }
+]

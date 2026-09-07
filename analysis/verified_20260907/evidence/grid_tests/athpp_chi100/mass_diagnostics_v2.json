@@ -1,0 +1,91 @@
+{
+  "schema_version": 2,
+  "kind": "athpp",
+  "parameters": {
+    "source": "/home/kaan/ic_audit_20260907/grid_tests/athpp_chi100/athinput",
+    "parameter_sha256": "525f93886fbb094bff694cb7d47b7fe0d9c4ba674bd33e10b8c224cf304c33ef",
+    "assumptions": [
+      "custom cloud_wind pgen fixes R=1, rho_wind=1 and P_wind=1"
+    ],
+    "gamma": 1.6666666666666667,
+    "r_cloud": 1.0,
+    "rho_wind": 1.0,
+    "p_wind": 1.0,
+    "v_wind": 2.581988897471611,
+    "chi": 100.0,
+    "rv_scale": 1.3,
+    "tmax": 0.001,
+    "output_dt": 0.001,
+    "mach": 2.0,
+    "kind": "athena",
+    "t_cc": 3.872983346207417
+  },
+  "comparison_group": "IC-audit-short-tests-not-science-production",
+  "initial_grid": {
+    "finest_equivalent_dimensions": [
+      64,
+      32,
+      32
+    ],
+    "leaf_cells": 65536,
+    "uniform": true,
+    "domain_width_over_R": [
+      20.0,
+      10.0,
+      10.0
+    ]
+  },
+  "selection": "rho > rho_cloud_initial/3",
+  "normalization": "M_dense(t) / M_dense(0); denominator is fixed",
+  "warning": "Density-selected gas includes ambient material if it becomes dense. This is not tracer mass or a radiative cold-temperature selection.",
+  "series": [
+    {
+      "dense_mass": 409.9079855231985,
+      "total_mass_in_box": 2425.2455354024487,
+      "dense_centroid_code": 0.007193546496604591,
+      "density_max": 99.99998229188522,
+      "time_code": 0.0,
+      "t_over_tcc": 0.0,
+      "grid": {
+        "finest_equivalent_dimensions": [
+          64,
+          32,
+          32
+        ],
+        "leaf_cells": 65536,
+        "uniform": true,
+        "domain_width_over_R": [
+          20.0,
+          10.0,
+          10.0
+        ]
+      },
+      "snapshot": "/home/kaan/ic_audit_20260907/grid_tests/athpp_chi100/CloudWind.out2.00000.athdf",
+      "dense_mass_over_initial_dense_mass": 1.0
+    },
+    {
+      "dense_mass": 409.9063984211947,
+      "total_mass_in_box": 2425.2455354024487,
+      "dense_centroid_code": 0.007186815497775891,
+      "density_max": 99.99998229188522,
+      "time_code": 0.001,
+      "t_over_tcc": 0.0002581988897471611,
+      "grid": {
+        "finest_equivalent_dimensions": [
+          64,
+          32,
+          32
+        ],
+        "leaf_cells": 65536,
+        "uniform": true,
+        "domain_width_over_R": [
+          20.0,
+          10.0,
+          10.0
+        ]
+      },
+      "snapshot": "/home/kaan/ic_audit_20260907/grid_tests/athpp_chi100/CloudWind.out2.00001.athdf",
+      "dense_mass_over_initial_dense_mass": 0.999996128150561
+    }
+  ]
+}

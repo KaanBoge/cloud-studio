@@ -1,0 +1,123 @@
+Simulation started on Mon Sep  7 12:48:46 2026
+
+Added out1
+Added out2
+# --------------------- PAR_DUMP -----------------------
+
+<comment>
+problem = shock cloud interaction (2D, single uniform grid, HIGH RESOLUTION MPI)  
+author  = M.-S. Shin, G. Snyder, & J.M. Stone                                     
+config  = --with-problem=shk_cloud --with-gas=hydro --with-nscalars=1 --enable-mpi
+note1   = high-resolution rerun of the 600x300 serial run at 1800x900             
+note2   = MPI domain decomposition 4x2 = 8 ranks (NGrid_x1=4, NGrid_x2=2)         
+
+<job>
+problem_id  = Cloud # problem ID: basename of output filenames
+maxout      = 2     # Output blocks number from 1 -> maxout
+num_domains = 1     # number of Domains in Mesh
+
+<time>
+cour_no = 0.4   # The Courant, Friedrichs, & Lewy (CFL) Number
+nlim    = 2    
+tlim    = 0.001
+
+<output1>
+out_fmt = hst                   # History data dump
+dt      = 0.001                
+time    = 0.000000000000000e+00 # Default Value
+num     = 0                     # Default Value
+level   = -1                    # Default Value
+domain  = -1                    # Default Value
+id      = out1                  # Default Value
+out     = cons                  # Default Value
+
+<output2>
+out_fmt = vtk                   # VTK data dump (all primitive variables)
+out     = prim                 
+dt      = 0.001                
+time    = 0.000000000000000e+00 # Default Value
+num     = 0                     # Default Value
+level   = -1                    # Default Value
+domain  = -1                    # Default Value
+id      = out2                  # Default Value
+
+<domain1>
+level         = 0    # refinement level this Domain (root=0)
+Nx1           = 64  
+x1min         = -3.0 # minimum value of X
+x1max         = 17.0
+bc_ix1        = 2    # inner-I (X1) flag; overridden by user postshock-inflow BC
+bc_ox1        = 2    # outflow on outer-I (X1)
+Nx2           = 32  
+x2min         = -5.0
+x2max         = 5.0 
+bc_ix2        = 2    # outflow
+bc_ox2        = 2    # outflow
+Nx3           = 32  
+x3min         = -5.0
+x3max         = 5.0 
+bc_ix3        = 2    # boundary condition flag for inner-K (X3)
+bc_ox3        = 2    # boundary condition flag for outer-K (X3)
+NGrid_x1      = 1   
+NGrid_x2      = 1   
+NGrid_x3      = 1   
+AutoWithNProc = 0    # Default Value
+
+<problem>
+iso_csound = 1.0               
+gamma      = 1.6666666666666667
+Mach       = 2                 
+drat       = 100               
+iprob      = 1                  # selects problem type
+rv_scale   = 1.3               
+
+<configure>
+problem            = shk_cloud # Name of the problem file
+gas                = hydro     # Hydrodynamic gas
+eq_state           = adiabatic # Equation of state
+nscalars           = 1         # Number of passive scalars
+self-gravity       = OFF       # Self-gravity algorithm
+resistivity        = OFF       # resistivity algorithm
+viscosity          = OFF       # viscosity algorithm
+thermal conduction = OFF       # conduction algorithm
+particles          = none      # no particles
+coord              = Cartesian # coordinate system
+special relativity = no        # Special relativistic?
+order              = 3         # Order of accuracy
+flux               = hllc      # Flux function
+integrator         = ctu       # Unsplit integrator
+precision          = double    # Type of Real variables
+write_ghost        = no        # Ghost cells included in output?
+mpi                = yes       # Is code MPI parallel enabled?
+H-correction       = no        # H-correction enabled?
+FFT                = no        # FFT enabled?
+ShearingBox        = no        # Shearing box enabled?
+FARGO              = no        # FARGO enabled?
+SMR                = no        # SMR enabled?
+
+<log>
+file_open = 0 # Default Value
+iflush    = 1 # Default Value
+out_level = 0 # Default Value
+err_level = 0 # Default Value
+
+# --------------------- PAR_DUMP -------------------------
+
+Setup complete, entering main loop...
+
+cycle=0 time=0.000000e+00 next dt=1.000000e-03
+cycle=1 time=1.000000e-03 next dt=2.000000e-03 last dt=1.000000e-03
+
+terminating on time limit
+  tlim= 1.000000e-03   nlim= 2
+  time= 1.000000e-03  cycle= 1
+
+zone-cycles/cpu-second = 1.092267e+06
+
+elapsed wall time = 6.467900e-02 sec.
+
+zone-cycles/wall-second = 1.013250e+06
+
+total zone-cycles/wall-second = 1.013250e+06
+
+Simulation terminated on Mon Sep  7 12:48:46 2026

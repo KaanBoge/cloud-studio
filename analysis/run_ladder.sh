@@ -1,4 +1,7 @@
 #!/bin/bash
+printf '%s\n' 'Historical queue disabled: binaries, ICs, boundaries and raw-data retention need revalidation. See analysis/README.md and verified_20260907/run_corrected_athpp.py.' >&2
+exit 2
+# Historical body below is preserved for provenance, not executed.
 # THE BALANCED LADDER: levels 1 through 4, every chi, for the codes whose inputs
 # are already verified against the matched spec. Levels 1-4 are cheap enough that
 # a complete, gap-free matrix is genuinely achievable, which is the point: a

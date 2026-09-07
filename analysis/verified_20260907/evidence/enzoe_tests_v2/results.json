@@ -1,0 +1,26 @@
+[
+  {
+    "chi": 10,
+    "solver_returncode": 0,
+    "outputs": [
+      "/home/kaan/ic_audit_20260907/enzoe_tests_v2/chi10/ic-000-p00.h5",
+      "/home/kaan/ic_audit_20260907/enzoe_tests_v2/chi10/ic-001-p00.h5"
+    ]
+  },
+  {
+    "chi": 100,
+    "solver_returncode": 0,
+    "outputs": [
+      "/home/kaan/ic_audit_20260907/enzoe_tests_v2/chi100/ic-000-p00.h5",
+      "/home/kaan/ic_audit_20260907/enzoe_tests_v2/chi100/ic-001-p00.h5"
+    ]
+  },
+  {
+    "chi": 1000,
+    "solver_returncode": 0,
+    "outputs": [
+      "/home/kaan/ic_audit_20260907/enzoe_tests_v2/chi1000/ic-000-p00.h5",
+      "/home/kaan/ic_audit_20260907/enzoe_tests_v2/chi1000/ic-001-p00.h5"
+    ]
+  }
+]

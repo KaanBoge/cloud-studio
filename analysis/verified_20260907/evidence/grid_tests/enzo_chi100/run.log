@@ -1,0 +1,39 @@
+MPI_Init: NumberOfProcessors = 1
+warning: the following parameter line was not interpreted:
+CloudWindAmbientDensity    = 1.0
+warning: the following parameter line was not interpreted:
+CloudWindAmbientPressure   = 1.0
+warning: the following parameter line was not interpreted:
+CloudWindVelocity = 2.581988897471611
+warning: the following parameter line was not interpreted:
+CloudWindChi = 100
+warning: the following parameter line was not interpreted:
+CloudWindCloudRadius       = 1.0
+warning: the following parameter line was not interpreted:
+CloudWindSmoothWidth       = 0.1
+warning: the following parameter line was not interpreted:
+CloudWindRvScale           = 1.3      // velocity edge at 1.3 R (Gronnow+2018)
+warning: the following parameter line was not interpreted:
+CloudWindCenter            = 0.0 0.0 0.0
+warning: the following parameter line was not interpreted:
+CloudWindUseTracer         = 1
+Global Dir set to .
+CloudWind warning: the following parameter line was not interpreted:
+# PROBLEM DEFINITION FILE: CloudWind (cloud crushing), 3D, chi=10
+
+CloudWind warning: the following parameter line was not interpreted:
+#   velocity   : transition at CloudWindRvScale * R = 1.3 R  (NOT the density edge)
+
+CloudWind warning: the following parameter line was not interpreted:
+ProblemType                = 15       // CloudWind
+
+Successfully read in parameter file CloudWind.enzo.
+INITIALIZATION TIME =   4.57724600e-03
+Continuation Flag = 1
+TopGrid dt = 1.000000e-03     time = 0    cycle = 0
+Stopping on top grid time limit.
+Continuation Flag = 1
+Time     =  0.001000   CycleNumber =      1    Wallclock   =  0.047919
+StopTime =  0.001000   StopCycle   =      2
+enzo.C:926 Exiting.
+Successful run, exiting.
