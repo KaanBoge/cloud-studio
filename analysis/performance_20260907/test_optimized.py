@@ -20,7 +20,7 @@ class LauncherTests(unittest.TestCase):
                     profile=profiles[f'{code}_L{level}']
                     for chi in (10,100,1000):
                         r.check_proof(profile,chi)
-                        text=r.input_for(code,level,chi,profile['block'])
+                        text=r.input_for(code,level,chi,profile['block'],profile.get('hdf5_compression_level'))
                         f=Path(tmp)/'athinput';f.write_text(text)
                         p=r.parse_file(f)
                         self.assertAlmostEqual(p['chi'],chi)
@@ -38,6 +38,22 @@ class LauncherTests(unittest.TestCase):
         profiles=json.loads((r.HERE/'optimized_profiles.json').read_text())
         self.assertIn('--use-hwthread-cpus',r.mpi_command(profiles['athpp_L6']))
         self.assertNotIn('--use-hwthread-cpus',r.mpi_command(profiles['apk_L6']))
+
+    def test_nondivisible_blocks_rejected(self):
+        with self.assertRaises(ValueError):r.input_for('athpp',5,100,[128,48,32])
+
+    def test_compression_changes_only_snapshot_encoding(self):
+        original=r.input_for('apk',6,100,128)
+        changed=r.input_for('apk',6,100,128,1)
+        normalized=lambda text:[line.strip() for line in text.splitlines() if line.strip()]
+        self.assertEqual(normalized(original.split('<parthenon/output1>')[0]),normalized(changed.split('<parthenon/output1>')[0]))
+        self.assertEqual(normalized(original.split('<parthenon/output2>')[1]),normalized(changed.split('<parthenon/output2>')[1]))
+        self.assertIn('hdf5_compression_level = 1',changed.split('<parthenon/output1>')[1].split('<parthenon/output2>')[0])
+
+    def test_unverified_output_profile_rejected(self):
+        p=json.loads((r.HERE/'optimized_profiles.json').read_text())['apk_L6']
+        p['hdf5_compression_level']=1;p.pop('io_regression',None)
+        with self.assertRaises(ValueError):r.check_proof(p,100)
 
     def test_modified_binary_is_rejected(self):
         p=json.loads((r.HERE/'optimized_profiles.json').read_text())['athpp_L5']

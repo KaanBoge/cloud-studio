@@ -2,67 +2,36 @@
   "athpp_L5": {
     "code": "athpp",
     "level": 5,
-    "binary": "/home/kaan/performance_20260907b/bin/athpp_lto",
-    "binary_sha256": "0d76e997548212db14f2b8046b1e452cb273c5c9fc1d13ec124b5d947387f203",
+    "binary": "/home/kaan/performance_20260907/bin/athpp_native",
+    "binary_sha256": "05e45d1d945c7ea4c0ea3077dd8bcc887100afa8f999dd8153694eabac4ba902",
     "ranks": 16,
-    "block": [
-      128,
-      64,
-      32
-    ],
-    "benchmark_case": "lto128",
+    "block": 64,
+    "benchmark_case": "native64_r16",
     "regression": {
-      "time_code": 0.6,
+      "baseline": "base32_r8",
+      "candidate": "native64_r16",
+      "time_code": 0.25,
       "dimensions": [
         256,
         128,
         128
       ],
-      "max_scaled_field_errors": {
+      "all_native_cells_compared": 4194304,
+      "max_field_difference_scaled": {
         "rho": 0.0,
         "press": 0.0,
         "vel1": 0.0,
         "vel2": 0.0,
         "vel3": 0.0,
-        "r0": 0.0
+        "r0": 4.235164736271502e-22
       },
-      "passed": true,
       "tolerance": 1e-10,
-      "baseline": "current",
-      "candidate": "lto128",
-      "baseline_binary_sha256": "05e45d1d945c7ea4c0ea3077dd8bcc887100afa8f999dd8153694eabac4ba902",
-      "candidate_binary_sha256": "0d76e997548212db14f2b8046b1e452cb273c5c9fc1d13ec124b5d947387f203",
-      "scope": "short native-field regression, not full-run convergence proof"
+      "passed": true,
+      "scope": "short-run field agreement; not a guarantee of bitwise identity over a full turbulent evolution"
     },
     "measured_native_output_bytes_per_cell": 48.013816833496094,
-    "ic_proof_root": "/home/kaan/performance_20260907b/ic_tests",
-    "production_validation": "pending; short tests are not a completed replacement run",
-    "directory_prefix": "OPTLTO",
-    "second_round_timing": {
-      "baseline_cases": [
-        "current",
-        "current_repeat2",
-        "current_repeat3"
-      ],
-      "candidate_cases": [
-        "lto128",
-        "best_repeat2",
-        "best_repeat3"
-      ],
-      "baseline_seconds": [
-        17.971709159,
-        17.890165661000026,
-        17.387351840999997
-      ],
-      "candidate_seconds": [
-        17.096676962999993,
-        16.772960017999992,
-        16.608355146999997
-      ],
-      "baseline_median": 17.890165661000026,
-      "candidate_median": 16.772960017999992,
-      "reduction_percent": 6.244803229718022
-    }
+    "ic_proof_root": "/home/kaan/performance_20260907/ic_tests",
+    "production_validation": "pending; short tests are not a completed replacement run"
   },
   "athpp_L6": {
     "code": "athpp",
@@ -164,62 +133,6 @@
     },
     "measured_native_output_bytes_per_cell": 1.766786128282547,
     "ic_proof_root": "/home/kaan/ic_audit_20260907/grid_tests",
-    "production_validation": "pending; short tests are not a completed replacement run",
-    "hdf5_compression_level": 1,
-    "directory_prefix": "OPTIO1",
-    "io_regression": {
-      "time_code": 0.32,
-      "all_numeric_datasets": [
-        "Blocks/derefinement_count",
-        "Blocks/loc.level-gid-lid-cnghost-gflag",
-        "Blocks/loc.lx123",
-        "Blocks/xmin",
-        "Levels",
-        "Locations/x",
-        "Locations/y",
-        "Locations/z",
-        "LogicalLocations",
-        "VolumeLocations/x",
-        "VolumeLocations/y",
-        "VolumeLocations/z",
-        "prim"
-      ],
-      "decoded_fields_exactly_equal": true,
-      "passed": true,
-      "note": "All numeric datasets compared without thinning; compression changes container bytes only.",
-      "baseline": "gpu_io_c5",
-      "candidate": "gpu_io_c1",
-      "baseline_binary_sha256": "d8d6ffe5b427216a58bda705ae0692c3cc12c3b7f072bd1a845fe11224a4af0f",
-      "candidate_binary_sha256": "d8d6ffe5b427216a58bda705ae0692c3cc12c3b7f072bd1a845fe11224a4af0f",
-      "scope": "short native-field regression, not full-run convergence proof"
-    },
-    "io_scope": "Prim snapshots only; restart settings unchanged",
-    "io_timing": {
-      "baseline_cases": [
-        "gpu_io_c5",
-        "gpu_c5_repeat2",
-        "gpu_c5_repeat3"
-      ],
-      "candidate_cases": [
-        "gpu_io_c1",
-        "gpu_c1_repeat2",
-        "gpu_c1_repeat3"
-      ],
-      "baseline_seconds": [
-        37.73715212399998,
-        37.884089502,
-        37.484024319
-      ],
-      "candidate_seconds": [
-        33.12813601900001,
-        33.07597072699999,
-        33.072785528
-      ],
-      "baseline_median": 37.73715212399998,
-      "candidate_median": 33.07597072699999,
-      "reduction_percent": 12.351704181820278,
-      "container_size_ratio_c1_over_c5": 1.1092593716316705,
-      "container_size_ratio_c0_over_c5": 22.62014437608431
-    }
+    "production_validation": "pending; short tests are not a completed replacement run"
   }
 }

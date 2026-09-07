@@ -1,0 +1,134 @@
+[
+  {
+    "passed": true,
+    "snapshot": "/home/kaan/performance_20260907b/ic_tests/athpp_chi10/cloud_sharp13_20260907_L5_chi10.out2.00000.athdf",
+    "parameters": {
+      "source": "/home/kaan/performance_20260907b/ic_tests/athpp_chi10/athinput",
+      "parameter_sha256": "437836fa1eb2dbd06f4cae26d953e8b3685c8ce1be73ee4d53f31b47cba329c1",
+      "assumptions": [
+        "custom cloud_wind pgen fixes R=1, rho_wind=1 and P_wind=1"
+      ],
+      "gamma": 1.6666666666666667,
+      "r_cloud": 1.0,
+      "rho_wind": 1.0,
+      "p_wind": 1.0,
+      "v_wind": 2.581988897471611,
+      "chi": 10.0,
+      "rv_scale": 1.3,
+      "tmax": 0.001,
+      "output_dt": 0.001,
+      "mach": 2.0,
+      "kind": "athena",
+      "t_cc": 1.2247448713915892
+    },
+    "time_code": 0.0,
+    "cells": 4194304,
+    "native_dimensions": [
+      256,
+      128,
+      128
+    ],
+    "uniform_grid": true,
+    "domain_width_over_R": [
+      20.0,
+      10.0,
+      10.0
+    ],
+    "errors": {
+      "density_relative_max": 6.661338147750933e-16,
+      "velocity_error_over_vwind_max": 1.7199501139797033e-16,
+      "pressure_relative_max": 7.771561172376096e-16
+    },
+    "scope": "t=0 density, velocity, pressure, dimensions and domain; no claim of full-run validation",
+    "binary_sha256": "0d76e997548212db14f2b8046b1e452cb273c5c9fc1d13ec124b5d947387f203",
+    "solver_returncode": 0
+  },
+  {
+    "passed": true,
+    "snapshot": "/home/kaan/performance_20260907b/ic_tests/athpp_chi100/cloud_sharp13_20260907_L5_chi100.out2.00000.athdf",
+    "parameters": {
+      "source": "/home/kaan/performance_20260907b/ic_tests/athpp_chi100/athinput",
+      "parameter_sha256": "8b7a3148619b2e06abdcd6d560fdabd8357d2cbfac1d5d1c4c07e1b11d87aec1",
+      "assumptions": [
+        "custom cloud_wind pgen fixes R=1, rho_wind=1 and P_wind=1"
+      ],
+      "gamma": 1.6666666666666667,
+      "r_cloud": 1.0,
+      "rho_wind": 1.0,
+      "p_wind": 1.0,
+      "v_wind": 2.581988897471611,
+      "chi": 100.0,
+      "rv_scale": 1.3,
+      "tmax": 0.001,
+      "output_dt": 0.001,
+      "mach": 2.0,
+      "kind": "athena",
+      "t_cc": 3.872983346207417
+    },
+    "time_code": 0.0,
+    "cells": 4194304,
+    "native_dimensions": [
+      256,
+      128,
+      128
+    ],
+    "uniform_grid": true,
+    "domain_width_over_R": [
+      20.0,
+      10.0,
+      10.0
+    ],
+    "errors": {
+      "density_relative_max": 5.551115123125783e-15,
+      "velocity_error_over_vwind_max": 1.7199501139797033e-16,
+      "pressure_relative_max": 7.771561172376096e-16
+    },
+    "scope": "t=0 density, velocity, pressure, dimensions and domain; no claim of full-run validation",
+    "binary_sha256": "0d76e997548212db14f2b8046b1e452cb273c5c9fc1d13ec124b5d947387f203",
+    "solver_returncode": 0
+  },
+  {
+    "passed": true,
+    "snapshot": "/home/kaan/performance_20260907b/ic_tests/athpp_chi1000/cloud_sharp13_20260907_L5_chi1000.out2.00000.athdf",
+    "parameters": {
+      "source": "/home/kaan/performance_20260907b/ic_tests/athpp_chi1000/athinput",
+      "parameter_sha256": "bd69dfdf0017329c88dc01a37d22bf9816a781efe96729bd0b78edc303956d27",
+      "assumptions": [
+        "custom cloud_wind pgen fixes R=1, rho_wind=1 and P_wind=1"
+      ],
+      "gamma": 1.6666666666666667,
+      "r_cloud": 1.0,
+      "rho_wind": 1.0,
+      "p_wind": 1.0,
+      "v_wind": 2.581988897471611,
+      "chi": 1000.0,
+      "rv_scale": 1.3,
+      "tmax": 0.001,
+      "output_dt": 0.001,
+      "mach": 2.0,
+      "kind": "athena",
+      "t_cc": 12.24744871391589
+    },
+    "time_code": 0.0,
+    "cells": 4194304,
+    "native_dimensions": [
+      256,
+      128,
+      128
+    ],
+    "uniform_grid": true,
+    "domain_width_over_R": [
+      20.0,
+      10.0,
+      10.0
+    ],
+    "errors": {
+      "density_relative_max": 5.551115123125783e-14,
+      "velocity_error_over_vwind_max": 1.7199501139797033e-16,
+      "pressure_relative_max": 2.220446049250313e-15
+    },
+    "scope": "t=0 density, velocity, pressure, dimensions and domain; no claim of full-run validation",
+    "binary_sha256": "0d76e997548212db14f2b8046b1e452cb273c5c9fc1d13ec124b5d947387f203",
+    "solver_returncode": 0
+  }
+]

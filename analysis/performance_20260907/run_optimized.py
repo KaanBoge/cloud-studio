@@ -45,20 +45,29 @@ def set_sections(text,changes):
         out+=f'\n<{name}>\n'+''.join(f'{k} = {v}\n' for k,v in changes[name].items())
     return out
 
-def input_for(code,level,chi,block):
+def input_for(code,level,chi,block,apk_compression=None):
+    shape=[block]*3 if isinstance(block,int) else list(block)
+    nx=8*2**level
+    dims=[nx,nx//2,nx//2] if code=='athpp' else [nx//2,nx,nx//2]
+    if len(shape)!=3 or any(not isinstance(b,int) or b<=0 or d%b for b,d in zip(shape,dims)):
+        raise ValueError('Block shape must divide each native grid dimension exactly')
     if code=='athpp':
-        return set_sections(make_input(level,chi),{'meshblock':{f'nx{i}':block for i in (1,2,3)}})
+        return set_sections(make_input(level,chi),{'meshblock':{f'nx{i+1}':shape[i] for i in range(3)}})
     # Pinned, IC-verified native template. Remove obsolete historical comments.
     template=Path('/home/kaan/ic_audit_20260907/grid_tests/apk_chi100/athinput').read_text()
     template=template[template.index('<job>'):]
     template='\n'.join(line.split('#',1)[0].rstrip() for line in template.splitlines())
     nx=8*2**level;tcc=math.sqrt(chi)/(2*math.sqrt(5/3))
     text=set_sections(template,{'parthenon/mesh':{'nx1':nx//2,'nx2':nx,'nx3':nx//2},
-        'parthenon/meshblock':{f'nx{i}':block for i in (1,2,3)},
+        'parthenon/meshblock':{f'nx{i+1}':shape[i] for i in range(3)},
         'parthenon/time':{'tlim':repr(5*tcc),'nlim':-1},
         'problem/cloud':{'rho_cloud_cgs':chi,'v_wind_cgs':repr(2*math.sqrt(5/3)),'rv_scale':1.3},
         'parthenon/output0':{'dt':repr(tcc/20)},'parthenon/output1':{'dt':repr(tcc/20)},
         'parthenon/output2':{'file_type':'rst','dt':repr(tcc),'id':'restart'}})
+    if apk_compression is not None:
+        # Lossless prim-file encoding only; checkpoint compression is unchanged.
+        if apk_compression!=1:raise ValueError('Only the separately tested compression profile is enabled')
+        text=set_sections(text,{'parthenon/output1':{'hdf5_compression_level':1}})
     return '# Corrected custom 3D IC; density tanh, sharp velocity at 1.3 R.\n# Wind along +x2; native axes must be reordered for comparison. Sharp tracer differs from Athena++.\n'+text
 
 def mpi_command(profile):
@@ -73,6 +82,10 @@ def check_proof(profile,chi):
     if not proof['passed'] or proof['binary_sha256']!=profile['binary_sha256']:
         raise ValueError('Binary lacks matching successful native IC proof')
     if not profile['regression']['passed']:raise ValueError('Field regression failed')
+    if profile.get('hdf5_compression_level') is not None:
+        io=profile.get('io_regression',{})
+        if not io.get('passed') or not io.get('decoded_fields_exactly_equal') or io.get('candidate_binary_sha256')!=profile['binary_sha256']:
+            raise ValueError('Lossless output profile lacks matching exact-field proof')
 
 def budgets(profile):
     nx=8*2**profile['level'];n=nx*(nx//2)**2
@@ -124,8 +137,10 @@ def main():
     a=p.parse_args()
     profile=json.loads((HERE/'optimized_profiles.json').read_text())[f'{a.code}_L{a.level}']
     check_proof(profile,a.chi)
-    target=ROOTS[a.code]/f'OPT_{IC_VERSION}_L{a.level}_chi{a.chi}'
-    text=input_for(a.code,a.level,a.chi,profile['block'])
+    prefix=profile.get('directory_prefix','OPT')
+    if prefix not in ('OPT','OPTIO1','OPTLTO'):raise ValueError('Unrecognized run-directory version')
+    target=ROOTS[a.code]/f'{prefix}_{IC_VERSION}_L{a.level}_chi{a.chi}'
+    text=input_for(a.code,a.level,a.chi,profile['block'],profile.get('hdf5_compression_level'))
     disk,ram=budgets(profile)
     # Lock spans both prepare and execute. CPU/GPU performance profiles were
     # measured separately: don't oversubscribe them by launching simultaneously.

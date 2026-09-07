@@ -25,6 +25,12 @@ Larger GPU blocks also reduced sampled level-6 GPU memory use from roughly 15.3 
 Full-field test comparisons passed, including the native tracers. These are short tests,
 not full production timings or new completed comparison runs.
 <a href="https://github.com/KaanBoge/cloud-studio/tree/main/analysis/performance_20260907">Measured evidence, optimized launch scripts and reuse guidance</a>.</p>
+<p><strong>Second performance pass:</strong> The current profiles now use a separately
+validated LTO build at CPU level 5 (6.2% less time in repeated tests) and faster lossless
+snapshot encoding at GPU level 6 (12.4% less time in repeated output-including tests).
+Decoded GPU fields matched exactly. The CPU level-6 candidate was slower and was rejected;
+its previous settings remain. These improvements are not universal or full-run accuracy claims.
+<a href="https://github.com/KaanBoge/cloud-studio/tree/main/analysis/performance_20260907b">Second-pass evidence and decisions</a>.</p>
 <h2>Not yet established</h2>
 <p>Equal boundary conditions, passive tracers and effective particle resolution across every code;
 complete corrected production runs at every level; complete measured frame cadence for all historical runs;

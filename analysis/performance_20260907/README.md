@@ -1,5 +1,11 @@
 # Faster corrected 3D runs on Kaan's simulation PC
 
+**Current profile update:** [the second performance pass](../performance_20260907b/README.md)
+adds LTO/128x64x32 work blocks for CPU L5 (6.2% additional measured time reduction)
+and lossless snapshot compression level 1 for GPU L6 (12.4% in the output-including
+test). CPU L6 retains the first-pass profile. The measurements below describe the
+first pass, not a cumulative or full-run speedup guarantee.
+
 The new settings reduced measured runtime without lowering the grid resolution,
 output precision, reconstruction order or physics. These are **short tests**, not
 completed replacement production runs or a promise of the same speedup for days of
@@ -89,7 +95,9 @@ After preparation, the explicit launch command for that same untouched directory
 /home/kaan/venv/bin/python /mnt/c/Users/kaanb/CloudCrushing/performance_20260907/run_optimized.py --code athpp --level 5 --chi 10 --resume-prepared --run
 ```
 
-Use `apk` for AthenaPK. New directories are `OPT_sharp13_20260907_L{level}_chi{chi}`
+Use `apk` for AthenaPK. Directories use `OPT_` for unchanged first-pass profiles,
+`OPTLTO_` for the new CPU L5 profile, or `OPTIO1_` for the new GPU L6 profile,
+followed by `sharp13_20260907_L{level}_chi{chi}`
 under the corresponding native solver's `runs` directory. They contain `athinput`
 and `provenance.json` before launch. A launched run adds `run.log`, native `.athdf`
 or `.phdf` snapshots and restart files. Inputs print the physical parameters read

@@ -1,0 +1,313 @@
+[
+  {
+    "time_code": 0.6,
+    "dimensions": [
+      256,
+      128,
+      128
+    ],
+    "max_scaled_field_errors": {
+      "rho": 0.0,
+      "press": 0.0,
+      "vel1": 0.0,
+      "vel2": 0.0,
+      "vel3": 0.0,
+      "r0": 0.0
+    },
+    "passed": true,
+    "tolerance": 1e-10,
+    "baseline": "current",
+    "candidate": "wide128",
+    "baseline_binary_sha256": "05e45d1d945c7ea4c0ea3077dd8bcc887100afa8f999dd8153694eabac4ba902",
+    "candidate_binary_sha256": "05e45d1d945c7ea4c0ea3077dd8bcc887100afa8f999dd8153694eabac4ba902",
+    "scope": "short native-field regression, not full-run convergence proof"
+  },
+  {
+    "time_code": 0.6,
+    "dimensions": [
+      256,
+      128,
+      128
+    ],
+    "max_scaled_field_errors": {
+      "rho": 0.0,
+      "press": 0.0,
+      "vel1": 0.0,
+      "vel2": 0.0,
+      "vel3": 0.0,
+      "r0": 0.0
+    },
+    "passed": true,
+    "tolerance": 1e-10,
+    "baseline": "current",
+    "candidate": "wide256",
+    "baseline_binary_sha256": "05e45d1d945c7ea4c0ea3077dd8bcc887100afa8f999dd8153694eabac4ba902",
+    "candidate_binary_sha256": "05e45d1d945c7ea4c0ea3077dd8bcc887100afa8f999dd8153694eabac4ba902",
+    "scope": "short native-field regression, not full-run convergence proof"
+  },
+  {
+    "time_code": 0.6,
+    "dimensions": [
+      256,
+      128,
+      128
+    ],
+    "max_scaled_field_errors": {
+      "rho": 0.0,
+      "press": 0.0,
+      "vel1": 0.0,
+      "vel2": 0.0,
+      "vel3": 0.0,
+      "r0": 3.048046386251096e-24
+    },
+    "passed": true,
+    "tolerance": 1e-10,
+    "baseline": "current",
+    "candidate": "small128",
+    "baseline_binary_sha256": "05e45d1d945c7ea4c0ea3077dd8bcc887100afa8f999dd8153694eabac4ba902",
+    "candidate_binary_sha256": "05e45d1d945c7ea4c0ea3077dd8bcc887100afa8f999dd8153694eabac4ba902",
+    "scope": "short native-field regression, not full-run convergence proof"
+  },
+  {
+    "time_code": 0.6,
+    "dimensions": [
+      256,
+      128,
+      128
+    ],
+    "max_scaled_field_errors": {
+      "rho": 0.0,
+      "press": 0.0,
+      "vel1": 0.0,
+      "vel2": 0.0,
+      "vel3": 0.0,
+      "r0": 2.168404344971009e-19
+    },
+    "passed": true,
+    "tolerance": 1e-10,
+    "baseline": "current",
+    "candidate": "small64",
+    "baseline_binary_sha256": "05e45d1d945c7ea4c0ea3077dd8bcc887100afa8f999dd8153694eabac4ba902",
+    "candidate_binary_sha256": "05e45d1d945c7ea4c0ea3077dd8bcc887100afa8f999dd8153694eabac4ba902",
+    "scope": "short native-field regression, not full-run convergence proof"
+  },
+  {
+    "time_code": 0.6,
+    "dimensions": [
+      256,
+      128,
+      128
+    ],
+    "max_scaled_field_errors": {
+      "rho": 0.0,
+      "press": 0.0,
+      "vel1": 0.0,
+      "vel2": 0.0,
+      "vel3": 0.0,
+      "r0": 0.0
+    },
+    "passed": true,
+    "tolerance": 1e-10,
+    "baseline": "current",
+    "candidate": "lto64",
+    "baseline_binary_sha256": "05e45d1d945c7ea4c0ea3077dd8bcc887100afa8f999dd8153694eabac4ba902",
+    "candidate_binary_sha256": "0d76e997548212db14f2b8046b1e452cb273c5c9fc1d13ec124b5d947387f203",
+    "scope": "short native-field regression, not full-run convergence proof"
+  },
+  {
+    "time_code": 0.6,
+    "dimensions": [
+      256,
+      128,
+      128
+    ],
+    "max_scaled_field_errors": {
+      "rho": 0.0,
+      "press": 0.0,
+      "vel1": 0.0,
+      "vel2": 0.0,
+      "vel3": 0.0,
+      "r0": 0.0
+    },
+    "passed": true,
+    "tolerance": 1e-10,
+    "baseline": "current",
+    "candidate": "lto128",
+    "baseline_binary_sha256": "05e45d1d945c7ea4c0ea3077dd8bcc887100afa8f999dd8153694eabac4ba902",
+    "candidate_binary_sha256": "0d76e997548212db14f2b8046b1e452cb273c5c9fc1d13ec124b5d947387f203",
+    "scope": "short native-field regression, not full-run convergence proof"
+  },
+  {
+    "time_code": 0.6,
+    "dimensions": [
+      256,
+      128,
+      128
+    ],
+    "max_scaled_field_errors": {
+      "rho": 0.0,
+      "press": 0.0,
+      "vel1": 0.0,
+      "vel2": 0.0,
+      "vel3": 0.0,
+      "r0": 0.0
+    },
+    "passed": true,
+    "tolerance": 1e-10,
+    "baseline": "current",
+    "candidate": "best_repeat2",
+    "baseline_binary_sha256": "05e45d1d945c7ea4c0ea3077dd8bcc887100afa8f999dd8153694eabac4ba902",
+    "candidate_binary_sha256": "0d76e997548212db14f2b8046b1e452cb273c5c9fc1d13ec124b5d947387f203",
+    "scope": "short native-field regression, not full-run convergence proof"
+  },
+  {
+    "time_code": 0.6,
+    "dimensions": [
+      256,
+      128,
+      128
+    ],
+    "max_scaled_field_errors": {
+      "rho": 0.0,
+      "press": 0.0,
+      "vel1": 0.0,
+      "vel2": 0.0,
+      "vel3": 0.0,
+      "r0": 0.0
+    },
+    "passed": true,
+    "tolerance": 1e-10,
+    "baseline": "current",
+    "candidate": "best_repeat3",
+    "baseline_binary_sha256": "05e45d1d945c7ea4c0ea3077dd8bcc887100afa8f999dd8153694eabac4ba902",
+    "candidate_binary_sha256": "0d76e997548212db14f2b8046b1e452cb273c5c9fc1d13ec124b5d947387f203",
+    "scope": "short native-field regression, not full-run convergence proof"
+  },
+  {
+    "time_code": 0.24,
+    "dimensions": [
+      512,
+      256,
+      256
+    ],
+    "max_scaled_field_errors": {
+      "rho": 0.0,
+      "press": 0.0,
+      "vel1": 0.0,
+      "vel2": 0.0,
+      "vel3": 0.0,
+      "r0": 1.2693940390495857e-23
+    },
+    "passed": true,
+    "tolerance": 1e-10,
+    "baseline": "L6_current",
+    "candidate": "L6_candidate",
+    "baseline_binary_sha256": "05e45d1d945c7ea4c0ea3077dd8bcc887100afa8f999dd8153694eabac4ba902",
+    "candidate_binary_sha256": "0d76e997548212db14f2b8046b1e452cb273c5c9fc1d13ec124b5d947387f203",
+    "scope": "short native-field regression, not full-run convergence proof"
+  },
+  {
+    "time_code": 0.32,
+    "all_numeric_datasets": [
+      "Blocks/derefinement_count",
+      "Blocks/loc.level-gid-lid-cnghost-gflag",
+      "Blocks/loc.lx123",
+      "Blocks/xmin",
+      "Levels",
+      "Locations/x",
+      "Locations/y",
+      "Locations/z",
+      "LogicalLocations",
+      "VolumeLocations/x",
+      "VolumeLocations/y",
+      "VolumeLocations/z",
+      "prim"
+    ],
+    "decoded_fields_exactly_equal": true,
+    "passed": true,
+    "note": "All numeric datasets compared without thinning; compression changes container bytes only.",
+    "baseline": "gpu_io_c5",
+    "candidate": "gpu_io_c1",
+    "baseline_binary_sha256": "d8d6ffe5b427216a58bda705ae0692c3cc12c3b7f072bd1a845fe11224a4af0f",
+    "candidate_binary_sha256": "d8d6ffe5b427216a58bda705ae0692c3cc12c3b7f072bd1a845fe11224a4af0f",
+    "scope": "short native-field regression, not full-run convergence proof"
+  },
+  {
+    "time_code": 0.32,
+    "all_numeric_datasets": [
+      "Blocks/derefinement_count",
+      "Blocks/loc.level-gid-lid-cnghost-gflag",
+      "Blocks/loc.lx123",
+      "Blocks/xmin",
+      "Levels",
+      "Locations/x",
+      "Locations/y",
+      "Locations/z",
+      "LogicalLocations",
+      "VolumeLocations/x",
+      "VolumeLocations/y",
+      "VolumeLocations/z",
+      "prim"
+    ],
+    "decoded_fields_exactly_equal": true,
+    "passed": true,
+    "note": "All numeric datasets compared without thinning; compression changes container bytes only.",
+    "baseline": "gpu_io_c5",
+    "candidate": "gpu_io_c0",
+    "baseline_binary_sha256": "d8d6ffe5b427216a58bda705ae0692c3cc12c3b7f072bd1a845fe11224a4af0f",
+    "candidate_binary_sha256": "d8d6ffe5b427216a58bda705ae0692c3cc12c3b7f072bd1a845fe11224a4af0f",
+    "scope": "short native-field regression, not full-run convergence proof"
+  },
+  {
+    "time_code": 0.32,
+    "all_numeric_datasets": [
+      "Blocks/derefinement_count",
+      "Blocks/loc.level-gid-lid-cnghost-gflag",
+      "Blocks/loc.lx123",
+      "Blocks/xmin",
+      "Levels",
+      "Locations/x",
+      "Locations/y",
+      "Locations/z",
+      "LogicalLocations",
+      "VolumeLocations/x",
+      "VolumeLocations/y",
+      "VolumeLocations/z",
+      "prim"
+    ],
+    "decoded_fields_exactly_equal": true,
+    "passed": true,
+    "note": "All numeric datasets compared without thinning; compression changes container bytes only.",
+    "baseline": "gpu_c5_repeat2",
+    "candidate": "gpu_c1_repeat2",
+    "baseline_binary_sha256": "d8d6ffe5b427216a58bda705ae0692c3cc12c3b7f072bd1a845fe11224a4af0f",
+    "candidate_binary_sha256": "d8d6ffe5b427216a58bda705ae0692c3cc12c3b7f072bd1a845fe11224a4af0f",
+    "scope": "short native-field regression, not full-run convergence proof"
+  },
+  {
+    "time_code": 0.32,
+    "all_numeric_datasets": [
+      "Blocks/derefinement_count",
+      "Blocks/loc.level-gid-lid-cnghost-gflag",
+      "Blocks/loc.lx123",
+      "Blocks/xmin",
+      "Levels",
+      "Locations/x",
+      "Locations/y",
+      "Locations/z",
+      "LogicalLocations",
+      "VolumeLocations/x",
+      "VolumeLocations/y",
+      "VolumeLocations/z",
+      "prim"
+    ],
+    "decoded_fields_exactly_equal": true,
+    "passed": true,
+    "note": "All numeric datasets compared without thinning; compression changes container bytes only.",
+    "baseline": "gpu_c5_repeat3",
+    "candidate": "gpu_c1_repeat3",
+    "baseline_binary_sha256": "d8d6ffe5b427216a58bda705ae0692c3cc12c3b7f072bd1a845fe11224a4af0f",
+    "candidate_binary_sha256": "d8d6ffe5b427216a58bda705ae0692c3cc12c3b7f072bd1a845fe11224a4af0f",
+    "scope": "short native-field regression, not full-run convergence proof"
+  }
+]
