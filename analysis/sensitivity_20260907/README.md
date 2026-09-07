@@ -2,9 +2,9 @@
 
 ## Update: 8 September 2026
 
-Twenty-two full controls are now validated and analyzed: the eight pilot runs below, six
+Twenty-six full controls are now validated and analyzed: the eight pilot runs below, six
 native Athena 4.2 runs at L3/L4/L5, four Enzo runs at L3/L4, and four Enzo-E runs
-at L3/L4. Each Athena 4.2 run has 101 distinct native
+at L3/L4, plus four RAMSES L3/L4 controls. Each Athena 4.2 run has 101 distinct native
 snapshots through 5 t_cc. Its initial density, tracer, coordinates and volumes
 match exactly within each pair at native VTK precision. Only velocity changes.
 
@@ -26,6 +26,12 @@ eight Charm++ worker threads. Peak curve differences are 8.21% and 6.35% of
 initial dense mass. Its L5 pair is storage-held. Its existing recipe has no passive tracer, so
 tracer retention is unavailable and no all-material-retained claim is made.
 See [Enzo-E scope](enzoe/README.md).
+
+RAMSES L3/L4 is complete with 101 actual native times per case. Peak mass-curve
+separation is 7.47% at L3 and 4.18% at L4; final tracer retention is about
+84.1-84.3% and 92.1-92.2%. Its eight CPU workers were fully busy during L4,
+which took about 2m48s per solver run. All 404 native outputs remain saved.
+L5 is storage-held. See [RAMSES results and native-code checks](ramses/README.md).
 
 The first Enzo full
 attempt exposed an output-setting error: dtRestartDump is a wall-clock exit
@@ -109,7 +115,7 @@ Windows scripts/results: `C:/Users/kaanb/CloudCrushing/sensitivity_20260907`.
 
 The Athena++/AthenaPK and Enzo level-5 continuations remain storage-held.
 Athena 4.2 L3/L4/L5 and Enzo-E L3/L4 are complete. Enzo-E L5 is storage-held too.
-The other eight solver variants
+RAMSES L3/L4 is complete; its L5 continuation is storage-held. The other seven solver variants
 (including separate GIZMO MFM/MFV) still need paired launchers and native
 historical-law checks. A 15-minute task follow-up is enabled to inspect progress and
 advance safe pending work. The old blanket replacement queue remains inactive.

@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "canonical_ic_bitwise_comparison": {
+    "coordinates": true,
+    "density": false,
+    "velocity": true,
+    "tracer": false
+  },
+  "pressure_max_difference": 1.2212453270876722e-15,
+  "density_max_relative_difference": 5.551115123125783e-15,
+  "tracer_max_difference": 2.220446049250313e-16,
+  "canonical_cross_build_tolerance": 1e-13,
+  "within_new_pair_requires_exact_density_tracer": true,
+  "native_invalid_mode_rejected": true,
+  "invalid_mode_returncode": 2,
+  "negative_control_directory": "/home/kaan/sensitivity_20260907/ramses/invalid_mode"
+}

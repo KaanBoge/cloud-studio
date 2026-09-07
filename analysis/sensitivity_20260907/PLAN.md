@@ -40,7 +40,7 @@ deleted or thinned, and the live viewer is not relabeled with these experiments.
 
 The remaining code families/variants need historical-source and native-IC checks
 before their paired launchers are enabled: FLASH 4.8, Flash-X,
-RAMSES, Arepo, GIZMO MFM, GIZMO MFV, Gadget-4, Gasoline. Particle sampling
+Arepo, GIZMO MFM, GIZMO MFV, Gadget-4, Gasoline. Particle sampling
 and random seeds must be identical within a pair. This is pending work, not an
 already runnable all-code queue.
 
@@ -60,8 +60,14 @@ report that limitation instead of claiming that material retention was measured.
 
 Enzo-E L3/L4 is now complete as well: 404 native snapshots, per-block versus
 assembled-grid mass checks, unchanged paired initial fields, no tracer diagnostic.
-Its L5 pair is also storage-held. Next safe code families remain FLASH 4.8,
-Flash-X, RAMSES, Arepo, GIZMO MFM/MFV, Gadget-4 and Gasoline; no runnable queue
+Its L5 pair is also storage-held. RAMSES now has four completed L3/L4 controls
+with 101 actual times each, exact paired initial density/tracer/grid and
+pressure agreement to roundoff. All 404 outputs pass checks; its extra
+unsorted-record aggregation agrees within 8.9e-15 but shares the native decoder.
+Native timestep-crossing times are preserved. L5 is held by the 172.49 GiB
+whole-pair retention budget plus reserve. There are now 26 analyzed controls.
+Next safe code families remain FLASH 4.8,
+Flash-X, Arepo, GIZMO MFM/MFV, Gadget-4 and Gasoline; no runnable queue
 for those is claimed before native historical-law and initial-field checks.
 
 ## Validation and analysis

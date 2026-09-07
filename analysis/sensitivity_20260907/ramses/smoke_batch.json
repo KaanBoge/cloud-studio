@@ -1,0 +1,228 @@
+{
+  "status": "complete_native_checks",
+  "finished": [
+    {
+      "status": "complete_native_checks",
+      "level": 3,
+      "mode": 0,
+      "directory": "/home/kaan/sensitivity_20260907/ramses/smokes/L3_chi100_sharp13",
+      "parameters": {
+        "source": "/home/kaan/sensitivity_20260907/ramses/smokes/L3_chi100_sharp13/run.nml",
+        "parameter_sha256": "62ba2be0a25b5f5a743b6a89839d7207b63820fbf567f7d29ea78de42fdfefba",
+        "assumptions": [],
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1.0,
+        "rho_wind": 1.0,
+        "p_wind": 1.0,
+        "v_wind": 2.581988897471611,
+        "chi": 100.0,
+        "rv_scale": 1.3,
+        "tmax": 0.001,
+        "output_dt": 0.001,
+        "mach": 2.0,
+        "kind": "ramses",
+        "t_cc": 3.872983346207417,
+        "edge": 0.1,
+        "x_cloud": 3.0,
+        "y_cloud": 5.0,
+        "z_cloud": 5.0,
+        "levelmin": 5.0,
+        "levelmax": 5.0,
+        "velocity_ic": 0.0,
+        "boxlen": 20.0,
+        "nx": 2.0,
+        "ny": 1.0,
+        "nz": 1.0,
+        "courant_factor": 0.4,
+        "dimensions": [
+          64,
+          32,
+          32
+        ]
+      },
+      "command": [
+        "mpirun",
+        "--bind-to",
+        "core",
+        "-np",
+        "8",
+        "/home/kaan/sensitivity_20260907/ramses/ramses_pair3d",
+        "run.nml"
+      ],
+      "binary_sha256": "52b822af90d1aa32899c7f860cf60e9826281d182f7ee91e8d83d41ad98922d7",
+      "parameter_sha256": "62ba2be0a25b5f5a743b6a89839d7207b63820fbf567f7d29ea78de42fdfefba",
+      "storage_preflight": {
+        "path": "/home/kaan/sensitivity_20260907/ramses",
+        "filesystem_free_bytes": 93157244928,
+        "filesystem_total_bytes": 1081101176832,
+        "windows_backing_volume": {
+          "distribution": "Ubuntu",
+          "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+          "drive": "C:",
+          "free_bytes": 37386473472,
+          "total_bytes": 1999283154944
+        },
+        "policy": "Conservative growth budget; allocated but reusable VHDX blocks are not credited.",
+        "effective_free_bytes": 37386473472
+      },
+      "reserved_output_gib": 1.0,
+      "started_unix": 1788820915.34256,
+      "returncode": 0,
+      "wall_seconds": 0.46541595458984375,
+      "peak_child_rss_gib": 0.0,
+      "timeout": false,
+      "unique_snapshots": 2,
+      "target_snapshots": 101,
+      "series": [
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/ramses/smokes/L3_chi100_sharp13/output_00001",
+          "time_code": 0.0,
+          "t_over_tcc": 0.0,
+          "cells": 65536,
+          "dense_mass": 409.9079855231984,
+          "tracer_mass": 368.73014495626177,
+          "total_mass": 2425.245535402449,
+          "output_bytes": 10774800,
+          "initial_checks": {
+            "density_relative": 5.551115123125783e-15,
+            "velocity_over_wind": 0.0,
+            "pressure_absolute": 7.771561172376096e-16,
+            "tracer_concentration": 1.1102230246251565e-16
+          },
+          "dense_mass_over_initial": 1.0,
+          "tracer_mass_over_initial": 1.0
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/ramses/smokes/L3_chi100_sharp13/output_00002",
+          "time_code": 0.01936452944816933,
+          "t_over_tcc": 0.0049999000039935276,
+          "cells": 65536,
+          "dense_mass": 409.87056036716956,
+          "tracer_mass": 368.73014495626165,
+          "total_mass": 2425.245535402449,
+          "output_bytes": 10775145,
+          "dense_mass_over_initial": 0.999908698641279,
+          "tracer_mass_over_initial": 0.9999999999999997
+        }
+      ],
+      "native_precision": "All six native primitive fields float64, NPRE=8; all AMR/restart metadata retained"
+    },
+    {
+      "status": "complete_native_checks",
+      "level": 3,
+      "mode": 1,
+      "directory": "/home/kaan/sensitivity_20260907/ramses/smokes/L3_chi100_tanh13",
+      "parameters": {
+        "source": "/home/kaan/sensitivity_20260907/ramses/smokes/L3_chi100_tanh13/run.nml",
+        "parameter_sha256": "602b27ba9c59c94ac041db8f9c1adbc49a6722c51aee1b22ce26295f9d7fac22",
+        "assumptions": [],
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1.0,
+        "rho_wind": 1.0,
+        "p_wind": 1.0,
+        "v_wind": 2.581988897471611,
+        "chi": 100.0,
+        "rv_scale": 1.3,
+        "tmax": 0.001,
+        "output_dt": 0.001,
+        "mach": 2.0,
+        "kind": "ramses",
+        "t_cc": 3.872983346207417,
+        "edge": 0.1,
+        "x_cloud": 3.0,
+        "y_cloud": 5.0,
+        "z_cloud": 5.0,
+        "levelmin": 5.0,
+        "levelmax": 5.0,
+        "velocity_ic": 1.0,
+        "boxlen": 20.0,
+        "nx": 2.0,
+        "ny": 1.0,
+        "nz": 1.0,
+        "courant_factor": 0.4,
+        "dimensions": [
+          64,
+          32,
+          32
+        ]
+      },
+      "command": [
+        "mpirun",
+        "--bind-to",
+        "core",
+        "-np",
+        "8",
+        "/home/kaan/sensitivity_20260907/ramses/ramses_pair3d",
+        "run.nml"
+      ],
+      "binary_sha256": "52b822af90d1aa32899c7f860cf60e9826281d182f7ee91e8d83d41ad98922d7",
+      "parameter_sha256": "602b27ba9c59c94ac041db8f9c1adbc49a6722c51aee1b22ce26295f9d7fac22",
+      "storage_preflight": {
+        "path": "/home/kaan/sensitivity_20260907/ramses",
+        "filesystem_free_bytes": 93135552512,
+        "filesystem_total_bytes": 1081101176832,
+        "windows_backing_volume": {
+          "distribution": "Ubuntu",
+          "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+          "drive": "C:",
+          "free_bytes": 37386489856,
+          "total_bytes": 1999283154944
+        },
+        "policy": "Conservative growth budget; allocated but reusable VHDX blocks are not credited.",
+        "effective_free_bytes": 37386489856
+      },
+      "reserved_output_gib": 1.0,
+      "started_unix": 1788820916.1491938,
+      "returncode": 0,
+      "wall_seconds": 0.4153022766113281,
+      "peak_child_rss_gib": 0.0,
+      "timeout": false,
+      "unique_snapshots": 2,
+      "target_snapshots": 101,
+      "series": [
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/ramses/smokes/L3_chi100_tanh13/output_00001",
+          "time_code": 0.0,
+          "t_over_tcc": 0.0,
+          "cells": 65536,
+          "dense_mass": 409.9079855231984,
+          "tracer_mass": 368.73014495626177,
+          "total_mass": 2425.245535402449,
+          "output_bytes": 10774800,
+          "initial_checks": {
+            "density_relative": 5.551115123125783e-15,
+            "velocity_over_wind": 1.7199501139797033e-16,
+            "pressure_absolute": 7.771561172376096e-16,
+            "tracer_concentration": 1.1102230246251565e-16
+          },
+          "dense_mass_over_initial": 1.0,
+          "tracer_mass_over_initial": 1.0
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/ramses/smokes/L3_chi100_tanh13/output_00002",
+          "time_code": 0.01936452944816933,
+          "t_over_tcc": 0.0049999000039935276,
+          "cells": 65536,
+          "dense_mass": 409.86528324644496,
+          "tracer_mass": 368.7301449562613,
+          "total_mass": 2425.245535402449,
+          "output_bytes": 10775145,
+          "dense_mass_over_initial": 0.9998958247258859,
+          "tracer_mass_over_initial": 0.9999999999999988
+        }
+      ],
+      "native_precision": "All six native primitive fields float64, NPRE=8; all AMR/restart metadata retained"
+    }
+  ],
+  "pairs": [
+    {
+      "level": 3,
+      "checks": {
+        "initial_density_tracer_coordinates_volumes_exact": true,
+        "pressure_max_difference": 8.881784197001252e-16,
+        "velocity_max_difference": 1.2888610317485876
+      }
+    }
+  ],
+  "pid": 28
+}
