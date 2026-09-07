@@ -2,8 +2,9 @@
 
 ## Update: 8 September 2026
 
-Eighteen full controls are now validated: the eight pilot runs below, six
-native Athena 4.2 runs at L3/L4/L5, and four Enzo runs at L3/L4. Each Athena 4.2 run has 101 distinct native
+Twenty-two full controls are now validated and analyzed: the eight pilot runs below, six
+native Athena 4.2 runs at L3/L4/L5, four Enzo runs at L3/L4, and four Enzo-E runs
+at L3/L4. Each Athena 4.2 run has 101 distinct native
 snapshots through 5 t_cc. Its initial density, tracer, coordinates and volumes
 match exactly within each pair at native VTK precision. Only velocity changes.
 
@@ -20,8 +21,9 @@ and 3.24% at L4; final tracer retention is about 85.9% and 92.7-93.2% respective
 The L5 pair is storage-held: 69.8 GiB plus a 10 GiB safety reserve is needed,
 against about 35.1 GiB free on the backing drive. See [Enzo results](enzo/README.md).
 
-Enzo-E is now the next native paired queue, after initial-field checks with
-eight Charm++ worker threads. Its existing recipe has no passive tracer, so
+Enzo-E has also completed L3/L4 with 101 actual native times per case, using
+eight Charm++ worker threads. Peak curve differences are 8.21% and 6.35% of
+initial dense mass. Its L5 pair is storage-held. Its existing recipe has no passive tracer, so
 tracer retention is unavailable and no all-material-retained claim is made.
 See [Enzo-E scope](enzoe/README.md).
 
@@ -106,7 +108,7 @@ Windows scripts/results: `C:/Users/kaanb/CloudCrushing/sensitivity_20260907`.
 ## Still pending
 
 The Athena++/AthenaPK and Enzo level-5 continuations remain storage-held.
-Athena 4.2 L3/L4/L5 is complete. Enzo-E is the next paired native-code queue.
+Athena 4.2 L3/L4/L5 and Enzo-E L3/L4 are complete. Enzo-E L5 is storage-held too.
 The other eight solver variants
 (including separate GIZMO MFM/MFV) still need paired launchers and native
 historical-law checks. A 15-minute task follow-up is enabled to inspect progress and

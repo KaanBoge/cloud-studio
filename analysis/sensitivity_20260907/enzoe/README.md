@@ -1,5 +1,24 @@
 # Enzo-E native velocity sensitivity tests
 
+## Completed L3/L4 results
+
+All four controls are now complete, with 101 actual native times each. A second
+per-block mass sum agrees with the assembled full-grid calculation for all 404
+snapshots to less than 5e-16 scaled difference. Initial density and internal
+energy agree exactly; initial recovered pressure differs by at most 6.7e-16.
+Results: [report](report.json), [mass plot](mass_evolution.png).
+
+| Level | Sharp / historical wall time | Sampled peak solver RSS | Peak mass-curve difference / initial dense mass |
+| --- | --- | ---: | ---: |
+| 3 | 19.7s / 19.7s | 0.085 GiB | 8.21% |
+| 4 | 195.0s / 195.1s | 0.161 GiB | 6.35% |
+
+Eight native worker threads were used. No tracer retention was inferred.
+These are coarse within-code sensitivity results, not proof of convergence or
+permission to universally reuse old runs. The worker ended with L5 storage-held:
+74.72 GiB plus 10 GiB safety reserve was required, versus 34.92 GiB available.
+The records below are now completed worker records; no Enzo-E solver is active.
+
 The paired queue was launched 8 September 2026 at 01:05 local time. Inspect
 `worker_windows.json`, `worker_windows.log`, `worker_windows.err.log`, actual
 processes and native `batch.json` for current status. Native root:

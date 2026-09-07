@@ -58,6 +58,12 @@ spherically in the audited 3D setup. Density, method, grid layout and boundaries
 remain identical within this pair. The existing Enzo-E recipe has no tracer:
 report that limitation instead of claiming that material retention was measured.
 
+Enzo-E L3/L4 is now complete as well: 404 native snapshots, per-block versus
+assembled-grid mass checks, unchanged paired initial fields, no tracer diagnostic.
+Its L5 pair is also storage-held. Next safe code families remain FLASH 4.8,
+Flash-X, RAMSES, Arepo, GIZMO MFM/MFV, Gadget-4 and Gasoline; no runnable queue
+for those is claimed before native historical-law and initial-field checks.
+
 ## Validation and analysis
 
 Unit tests reject wrong velocity modes, extra parameter differences and incorrect
