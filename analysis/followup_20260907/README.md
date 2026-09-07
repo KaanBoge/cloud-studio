@@ -116,8 +116,9 @@ and constant wind outside. [Gronnow et al. (2018), section 2](https://arxiv.org/
 specifies a **sharp** velocity boundary at 1.3R; its smooth profile is for number
 density, with variable molecular weight. Our fixed-molecular-weight mass-density
 edge is a custom setup, not an exact reproduction of that paper or Braspenning.
-Ryan should confirm whether to retain this custom smooth-density setup or use a
-sharp cloud density boundary before spending storage on the replacement campaign.
+The user has now requested retaining the existing conditions, including this
+density profile. No alternative density boundary is being introduced. The physical
+scale and cooling configuration still need validation for radiative runs.
 
 ## What is not complete
 
@@ -175,9 +176,20 @@ a portable replacement for the native code checkouts.
 
 ## Before a paper-ready comparison
 
-Agree on the density IC and radiative physical scale with Ryan; decide the common
-domain/boundaries/tracer and demonstrate tracking retention. Allocate storage for
+Retain the existing density IC and establish the radiative physical scale;
+verify the common domain/boundaries/tracer and demonstrate tracking retention. Allocate storage for
 native output retention. Only then launch one pinned corrected baseline per code,
 validate it, and expand to the matched ladder. Reuse compatible raw results where
 proven; don't mix incompatible historical simulations or call a prepared input a
 finished run.
+
+## Extended tracking validation
+
+See [test plan](TRACKING_TEST_PLAN.md) and [extended results](TRACKING_RESULTS.md)
+for the next validation pass using the existing conditions. Tests and reports are
+separate from production results. No cooling simulation was started by these tests.
+
+The affected historical cooling-labelled cases need new simulations from t=0
+after the cooling configuration is physically specified and independently tested.
+Turning cooling on only at a late restart would change the experiment. Earlier
+files remain nonradiative historical evidence, not radiative comparison results.

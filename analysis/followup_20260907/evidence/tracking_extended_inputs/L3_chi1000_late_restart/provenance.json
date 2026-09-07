@@ -1,0 +1,40 @@
+{
+  "command": [
+    "timeout",
+    "--signal=TERM",
+    "--kill-after=10s",
+    "900",
+    "mpirun",
+    "--bind-to",
+    "core",
+    "-np",
+    "2",
+    "/home/kaan/followup_20260907/bin/athpp_tracking",
+    "-i",
+    "athinput",
+    "-r",
+    "/home/kaan/followup_20260907/tracking_tests_v2/fulltime_chi1000_shift1/cloud_sharp13_20260907_L3_chi1000.00002.rst"
+  ],
+  "binary_sha256": "3885d83e2238eae01382b88add7a168f713ef72f46420c44219ad23bc7bd7655",
+  "input_sha256": "16fc5ed03489d0f17d33667118340121a34f7fab8a8c467e8a8b7a557ffd7e09",
+  "restart_file": "/home/kaan/followup_20260907/tracking_tests_v2/fulltime_chi1000_shift1/cloud_sharp13_20260907_L3_chi1000.00002.rst",
+  "restart_sha256": "ae403e87679bf32e0218482705ce8c235cfe4dd90c5cdd513ad7006f5112c2be",
+  "source_input": "/home/kaan/followup_20260907/tracking_tests_v2/fulltime_chi1000_shift1/athinput",
+  "storage_preflight": {
+    "path": "/home/kaan/followup_20260907",
+    "filesystem_free_bytes": 176413523968,
+    "filesystem_total_bytes": 1081101176832,
+    "windows_backing_volume": {
+      "distribution": "Ubuntu",
+      "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+      "drive": "C:",
+      "free_bytes": 38067060736,
+      "total_bytes": 1999283154944
+    },
+    "policy": "Conservative growth budget; allocated but reusable VHDX blocks are not credited.",
+    "effective_free_bytes": 38067060736
+  },
+  "scope": "validation only; same existing IC and box; raw output retained",
+  "returncode": 0,
+  "solver_wall_seconds": 12.001575103000008
+}

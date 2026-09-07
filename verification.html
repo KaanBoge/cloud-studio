@@ -32,6 +32,12 @@ Decoded GPU fields matched exactly. The CPU level-6 candidate was slower and was
 its previous settings remain. These improvements are not universal or full-run accuracy claims.
 <a href="https://github.com/KaanBoge/cloud-studio/tree/main/analysis/performance_20260907b">Second-pass evidence and decisions</a>.</p>
 <h2>Not yet established</h2>
+<p><strong>Extended tracking tests:</strong> With the existing conditions unchanged,
+late restarts at all three chi values, MPI rank-count checks and per-step frame
+displacement checks pass. Three higher-resolution L4 tests each reached 5 t_cc
+with 101 native snapshots. However, chi=100 and chi=1000 retain only 98.4% and
+95.4% of their initial tracer mass. Material retention is still not fully validated.
+<a href="https://github.com/KaanBoge/cloud-studio/blob/main/analysis/followup_20260907/TRACKING_RESULTS.md">Measured results, scope and retained-data locations</a>.</p>
 <p><strong>Follow-up repairs and native tests:</strong> Analysis now rechecks physical
 metadata against native inputs, rather than trusting a shared group label. The
 launchers also check Windows backing-volume space, and two additional destructive

@@ -1,0 +1,38 @@
+{
+  "command": [
+    "timeout",
+    "--signal=TERM",
+    "--kill-after=10s",
+    "900",
+    "mpirun",
+    "--bind-to",
+    "core",
+    "-np",
+    "8",
+    "/home/kaan/followup_20260907/bin/athpp_tracking",
+    "-i",
+    "athinput"
+  ],
+  "binary_sha256": "3885d83e2238eae01382b88add7a168f713ef72f46420c44219ad23bc7bd7655",
+  "input_sha256": "c9afdffd040ac26810ede7f61b37c80b48280237323f94c8d7fe666e0b8738fe",
+  "restart_file": null,
+  "restart_sha256": null,
+  "source_input": null,
+  "storage_preflight": {
+    "path": "/home/kaan/followup_20260907",
+    "filesystem_free_bytes": 176144007168,
+    "filesystem_total_bytes": 1081101176832,
+    "windows_backing_volume": {
+      "distribution": "Ubuntu",
+      "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+      "drive": "C:",
+      "free_bytes": 38057238528,
+      "total_bytes": 1999283154944
+    },
+    "policy": "Conservative growth budget; allocated but reusable VHDX blocks are not credited.",
+    "effective_free_bytes": 38057238528
+  },
+  "scope": "validation only; same existing IC and box; raw output retained",
+  "returncode": 0,
+  "solver_wall_seconds": 18.003208440999998
+}

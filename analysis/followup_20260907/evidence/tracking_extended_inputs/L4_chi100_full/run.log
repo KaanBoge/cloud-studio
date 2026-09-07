@@ -1,0 +1,31 @@
+No data_format specified in output block 'output2', using default
+No data_format specified in output block 'output2', using default
+No data_format specified in output block 'output2', using default
+No data_format specified in output block 'output2', using default
+No data_format specified in output block 'output2', using default
+No data_format specified in output block 'output2', using default
+No data_format specified in output block 'output2', using default
+No data_format specified in output block 'output2', using default
+
+Setup complete, entering main loop...
+
+cycle=0 time=0.0000000000000000e+00 dt=1.6137430609197572e-02
+cycle=100 time=1.5283743218313504e+00 dt=1.5393606875415307e-02
+cycle=200 time=3.0912395642316595e+00 dt=1.5899651940332927e-02
+cycle=300 time=4.7004189646275032e+00 dt=1.6255858627287050e-02
+cycle=400 time=6.3412462989859613e+00 dt=1.6563637858182489e-02
+cycle=500 time=8.0101223919948019e+00 dt=1.6788519045636108e-02
+cycle=600 time=9.6976275110970285e+00 dt=1.6985392308061700e-02
+cycle=700 time=1.1410275954359514e+01 dt=1.7326186170377657e-02
+cycle=800 time=1.3164031327615694e+01 dt=1.7769698113993412e-02
+cycle=900 time=1.4967238974562957e+01 dt=1.8318352153517979e-02
+cycle=1000 time=1.6816124201321145e+01 dt=1.8614736190954408e-02
+cycle=1100 time=1.8689502934759339e+01 dt=1.8844836648730337e-02
+
+Terminating on time limit
+time=1.9364916731037084e+01 cycle=1136
+tlim=1.9364916731037084e+01 nlim=-1
+
+zone-cycles = 595591168
+cpu time used  = 5.5016244000000000e+01
+zone-cycles/cpu_second = 1.0825732996240165e+07
