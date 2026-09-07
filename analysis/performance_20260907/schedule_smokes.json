@@ -1,0 +1,30 @@
+[
+  {
+    "code": "athpp",
+    "returncode": 0,
+    "native_outputs": [
+      "/home/kaan/performance_20260907/schedule_smokes/athpp/cloud_sharp13_20260907_L5_chi100.out2.00000.athdf",
+      "/home/kaan/performance_20260907/schedule_smokes/athpp/cloud_sharp13_20260907_L5_chi100.out2.00001.athdf"
+    ],
+    "restart_files": [
+      "/home/kaan/performance_20260907/schedule_smokes/athpp/cloud_sharp13_20260907_L5_chi100.00000.rst",
+      "/home/kaan/performance_20260907/schedule_smokes/athpp/cloud_sharp13_20260907_L5_chi100.final.rst"
+    ],
+    "passed": true,
+    "scope": "short output/restart write smoke, not a completed production run or checkpoint-read test"
+  },
+  {
+    "code": "apk",
+    "returncode": 0,
+    "native_outputs": [
+      "/home/kaan/performance_20260907/schedule_smokes/apk/parthenon.prim.00000.phdf",
+      "/home/kaan/performance_20260907/schedule_smokes/apk/parthenon.prim.final.phdf"
+    ],
+    "restart_files": [
+      "/home/kaan/performance_20260907/schedule_smokes/apk/parthenon.restart.00000.rhdf",
+      "/home/kaan/performance_20260907/schedule_smokes/apk/parthenon.restart.final.rhdf"
+    ],
+    "passed": true,
+    "scope": "short output/restart write smoke, not a completed production run or checkpoint-read test"
+  }
+]

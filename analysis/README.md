@@ -5,6 +5,12 @@ comparison.** The corrected scripts are in `verified_20260907/`. Previous
 analysis entry points are retained under `legacy_before_20260907/` for provenance,
 not recommended for execution. See [the verification report](../verification.html).
 
+The [performance report and guarded launch profiles](performance_20260907/README.md)
+document measured CPU/GPU optimizations, full-field checks, and which historical
+results need new evolution rather than replotting. Twelve optimized L5/L6 inputs
+are prepared, not completed. No historical run is reclassified as corrected by
+those changes, and no native data was deleted to make room.
+
 ## What was verified
 
 The actual 3D initial output of Athena++, AthenaPK, Athena 4.2, FLASH 4.8,

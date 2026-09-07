@@ -1,0 +1,92 @@
+[
+  {
+    "directory": "/home/kaan/codes/athenapp/runs/ATHPP3D_chi100_256",
+    "assessment": "incompatible_with_corrected_sharp_velocity",
+    "time": 0.0,
+    "snapshot": "/home/kaan/codes/athenapp/runs/ATHPP3D_chi100_256/CloudWind.out2.00000.athdf",
+    "sampled_cells": 26,
+    "errors": {
+      "sharp_velocity": 0.9969621345276678,
+      "tanh_velocity": 0.9006837177258097,
+      "tanh_velocity_at_density_edge": 1.7199501139797033e-16,
+      "constant_momentum_exterior": 0.9969621345276678
+    },
+    "identified_sampled_law": "tanh_velocity_at_density_edge"
+  },
+  {
+    "directory": "/home/kaan/codes/athenapp/runs/ATHPP3D_chi10_256",
+    "assessment": "incompatible_with_corrected_sharp_velocity",
+    "time": 0.0,
+    "snapshot": "/home/kaan/codes/athenapp/runs/ATHPP3D_chi10_256/CloudWind.out2.00000.athdf",
+    "sampled_cells": 26,
+    "errors": {
+      "sharp_velocity": 0.9969621345276678,
+      "tanh_velocity": 0.9006837177258097,
+      "tanh_velocity_at_density_edge": 1.7199501139797033e-16,
+      "constant_momentum_exterior": 0.9969621345276678
+    },
+    "identified_sampled_law": "tanh_velocity_at_density_edge"
+  },
+  {
+    "directory": "/home/kaan/codes/athenapk/runs/M3D_L3_chi10",
+    "assessment": "incompatible_with_corrected_sharp_velocity",
+    "time": 0.0,
+    "snapshot": "/home/kaan/codes/athenapk/runs/M3D_L3_chi10/parthenon.prim.00000.phdf",
+    "sampled_cells": 7,
+    "errors": {
+      "sharp_velocity": 0.0022200515125783277,
+      "tanh_velocity": 0.08849133295329788,
+      "tanh_velocity_at_density_edge": 0.8914776263411991,
+      "constant_momentum_exterior": 1.7199501139797033e-16
+    },
+    "identified_sampled_law": "constant_momentum_exterior"
+  },
+  {
+    "directory": "/home/kaan/codes/athenapk/runs/M3D_L3_chi100",
+    "assessment": "incompatible_with_corrected_sharp_velocity",
+    "time": 0.0,
+    "snapshot": "/home/kaan/codes/athenapk/runs/M3D_L3_chi100/parthenon.prim.00000.phdf",
+    "sampled_cells": 7,
+    "errors": {
+      "sharp_velocity": 0.023890192067997962,
+      "tanh_velocity": 0.06682119239787825,
+      "tanh_velocity_at_density_edge": 0.8914776263411991,
+      "constant_momentum_exterior": 0.0
+    },
+    "identified_sampled_law": "constant_momentum_exterior"
+  },
+  {
+    "directory": "/home/kaan/codes/athenapk/runs/M3D_L3_chi1000",
+    "assessment": "incompatible_with_corrected_sharp_velocity",
+    "time": 0.0,
+    "snapshot": "/home/kaan/codes/athenapk/runs/M3D_L3_chi1000/parthenon.prim.00000.phdf",
+    "sampled_cells": 7,
+    "errors": {
+      "sharp_velocity": 0.19805866871869318,
+      "tanh_velocity": 0.10734728425281699,
+      "tanh_velocity_at_density_edge": 0.8914776263411991,
+      "constant_momentum_exterior": 1.7199501139797033e-16
+    },
+    "identified_sampled_law": "constant_momentum_exterior"
+  },
+  {
+    "directory": "/home/kaan/codes/enzo/runs/CW3D_chi10_256",
+    "assessment": "not_classified",
+    "reason": "Preserved output is not initial: time=6.1237241"
+  },
+  {
+    "directory": "/home/kaan/CloudCrushing/A8/M3D_ATHW_L5_chi10",
+    "assessment": "not_classified",
+    "reason": "Preserved output is not initial: time=6.1237"
+  },
+  {
+    "directory": "/home/kaan/CloudCrushing/A8/M3D_FLASH48_L5_chi10",
+    "assessment": "not_classified",
+    "reason": "Preserved output is not initial: time=0.6128579279518462"
+  },
+  {
+    "directory": "/home/kaan/codes/flashx/runs/prod3d_chi10",
+    "assessment": "not_classified",
+    "reason": "Preserved output is not initial: time=6.127176732841869"
+  }
+]

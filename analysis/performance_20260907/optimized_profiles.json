@@ -1,0 +1,138 @@
+{
+  "athpp_L5": {
+    "code": "athpp",
+    "level": 5,
+    "binary": "/home/kaan/performance_20260907/bin/athpp_native",
+    "binary_sha256": "05e45d1d945c7ea4c0ea3077dd8bcc887100afa8f999dd8153694eabac4ba902",
+    "ranks": 16,
+    "block": 64,
+    "benchmark_case": "native64_r16",
+    "regression": {
+      "baseline": "base32_r8",
+      "candidate": "native64_r16",
+      "time_code": 0.25,
+      "dimensions": [
+        256,
+        128,
+        128
+      ],
+      "all_native_cells_compared": 4194304,
+      "max_field_difference_scaled": {
+        "rho": 0.0,
+        "press": 0.0,
+        "vel1": 0.0,
+        "vel2": 0.0,
+        "vel3": 0.0,
+        "r0": 4.235164736271502e-22
+      },
+      "tolerance": 1e-10,
+      "passed": true,
+      "scope": "short-run field agreement; not a guarantee of bitwise identity over a full turbulent evolution"
+    },
+    "measured_native_output_bytes_per_cell": 48.013816833496094,
+    "ic_proof_root": "/home/kaan/performance_20260907/ic_tests",
+    "production_validation": "pending; short tests are not a completed replacement run"
+  },
+  "athpp_L6": {
+    "code": "athpp",
+    "level": 6,
+    "binary": "/home/kaan/performance_20260907/bin/athpp_native",
+    "binary_sha256": "05e45d1d945c7ea4c0ea3077dd8bcc887100afa8f999dd8153694eabac4ba902",
+    "ranks": 16,
+    "block": 64,
+    "benchmark_case": "L6_cpu_native",
+    "regression": {
+      "baseline": "L6_cpu_base",
+      "candidate": "L6_cpu_native",
+      "time_code": 0.08,
+      "dimensions": [
+        512,
+        256,
+        256
+      ],
+      "all_native_cells_compared": 33554432,
+      "max_field_difference_scaled": {
+        "rho": 0.0,
+        "press": 0.0,
+        "vel1": 0.0,
+        "vel2": 0.0,
+        "vel3": 0.0,
+        "r0": 5.52812482299012e-24
+      },
+      "tolerance": 1e-10,
+      "passed": true,
+      "scope": "short-run field agreement; not a guarantee of bitwise identity over a full turbulent evolution"
+    },
+    "measured_native_output_bytes_per_cell": 48.012152671813965,
+    "ic_proof_root": "/home/kaan/performance_20260907/ic_tests",
+    "production_validation": "pending; short tests are not a completed replacement run"
+  },
+  "apk_L5": {
+    "code": "apk",
+    "level": 5,
+    "binary": "/home/kaan/ic_audit_20260907/bin/apk",
+    "binary_sha256": "d8d6ffe5b427216a58bda705ae0692c3cc12c3b7f072bd1a845fe11224a4af0f",
+    "ranks": 1,
+    "block": 64,
+    "benchmark_case": "apk_block64",
+    "regression": {
+      "baseline": "apk_block32",
+      "candidate": "apk_block64",
+      "time_code": 0.25,
+      "dimensions": [
+        256,
+        128,
+        128
+      ],
+      "all_native_cells_compared": 4194304,
+      "max_field_difference_scaled": {
+        "density": 0.0,
+        "velocity_x": 0.0,
+        "velocity_y": 0.0,
+        "velocity_z": 0.0,
+        "pressure": 0.0,
+        "prim_scalar_0": 0.0
+      },
+      "tolerance": 1e-10,
+      "passed": true,
+      "scope": "short-run field agreement; not a guarantee of bitwise identity over a full turbulent evolution"
+    },
+    "measured_native_output_bytes_per_cell": 3.5502030849456787,
+    "ic_proof_root": "/home/kaan/ic_audit_20260907/grid_tests",
+    "production_validation": "pending; short tests are not a completed replacement run"
+  },
+  "apk_L6": {
+    "code": "apk",
+    "level": 6,
+    "binary": "/home/kaan/ic_audit_20260907/bin/apk",
+    "binary_sha256": "d8d6ffe5b427216a58bda705ae0692c3cc12c3b7f072bd1a845fe11224a4af0f",
+    "ranks": 1,
+    "block": 128,
+    "benchmark_case": "L6_apk_block128_clean",
+    "regression": {
+      "baseline": "L6_apk_block64_retry",
+      "candidate": "L6_apk_block128_clean",
+      "time_code": 0.08,
+      "dimensions": [
+        512,
+        256,
+        256
+      ],
+      "all_native_cells_compared": 33554432,
+      "max_field_difference_scaled": {
+        "density": 0.0,
+        "velocity_x": 0.0,
+        "velocity_y": 0.0,
+        "velocity_z": 0.0,
+        "pressure": 0.0,
+        "prim_scalar_0": 0.0
+      },
+      "tolerance": 1e-10,
+      "passed": true,
+      "scope": "short-run field agreement; not a guarantee of bitwise identity over a full turbulent evolution"
+    },
+    "measured_native_output_bytes_per_cell": 1.766786128282547,
+    "ic_proof_root": "/home/kaan/ic_audit_20260907/grid_tests",
+    "production_validation": "pending; short tests are not a completed replacement run"
+  }
+}

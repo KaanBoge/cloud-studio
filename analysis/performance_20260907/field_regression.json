@@ -1,0 +1,200 @@
+[
+  {
+    "baseline": "base32_r8",
+    "candidate": "native32_r8",
+    "time_code": 0.25,
+    "dimensions": [
+      256,
+      128,
+      128
+    ],
+    "all_native_cells_compared": 4194304,
+    "max_field_difference_scaled": {
+      "rho": 0.0,
+      "press": 0.0,
+      "vel1": 0.0,
+      "vel2": 0.0,
+      "vel3": 0.0,
+      "r0": 0.0
+    },
+    "tolerance": 1e-10,
+    "passed": true,
+    "scope": "short-run field agreement; not a guarantee of bitwise identity over a full turbulent evolution"
+  },
+  {
+    "baseline": "base32_r8",
+    "candidate": "native64_r8_retry",
+    "time_code": 0.25,
+    "dimensions": [
+      256,
+      128,
+      128
+    ],
+    "all_native_cells_compared": 4194304,
+    "max_field_difference_scaled": {
+      "rho": 0.0,
+      "press": 0.0,
+      "vel1": 0.0,
+      "vel2": 0.0,
+      "vel3": 0.0,
+      "r0": 2.117582368135751e-22
+    },
+    "tolerance": 1e-10,
+    "passed": true,
+    "scope": "short-run field agreement; not a guarantee of bitwise identity over a full turbulent evolution"
+  },
+  {
+    "baseline": "base32_r8",
+    "candidate": "native32_r16",
+    "time_code": 0.25,
+    "dimensions": [
+      256,
+      128,
+      128
+    ],
+    "all_native_cells_compared": 4194304,
+    "max_field_difference_scaled": {
+      "rho": 0.0,
+      "press": 0.0,
+      "vel1": 0.0,
+      "vel2": 0.0,
+      "vel3": 0.0,
+      "r0": 4.235164736271502e-22
+    },
+    "tolerance": 1e-10,
+    "passed": true,
+    "scope": "short-run field agreement; not a guarantee of bitwise identity over a full turbulent evolution"
+  },
+  {
+    "baseline": "base32_r8",
+    "candidate": "native64_r16",
+    "time_code": 0.25,
+    "dimensions": [
+      256,
+      128,
+      128
+    ],
+    "all_native_cells_compared": 4194304,
+    "max_field_difference_scaled": {
+      "rho": 0.0,
+      "press": 0.0,
+      "vel1": 0.0,
+      "vel2": 0.0,
+      "vel3": 0.0,
+      "r0": 4.235164736271502e-22
+    },
+    "tolerance": 1e-10,
+    "passed": true,
+    "scope": "short-run field agreement; not a guarantee of bitwise identity over a full turbulent evolution"
+  },
+  {
+    "baseline": "base32_r8",
+    "candidate": "native32_r4",
+    "time_code": 0.25,
+    "dimensions": [
+      256,
+      128,
+      128
+    ],
+    "all_native_cells_compared": 4194304,
+    "max_field_difference_scaled": {
+      "rho": 0.0,
+      "press": 0.0,
+      "vel1": 0.0,
+      "vel2": 0.0,
+      "vel3": 0.0,
+      "r0": 2.117582368135751e-22
+    },
+    "tolerance": 1e-10,
+    "passed": true,
+    "scope": "short-run field agreement; not a guarantee of bitwise identity over a full turbulent evolution"
+  },
+  {
+    "baseline": "apk_block32",
+    "candidate": "apk_block64",
+    "time_code": 0.25,
+    "dimensions": [
+      256,
+      128,
+      128
+    ],
+    "all_native_cells_compared": 4194304,
+    "max_field_difference_scaled": {
+      "density": 0.0,
+      "velocity_x": 0.0,
+      "velocity_y": 0.0,
+      "velocity_z": 0.0,
+      "pressure": 0.0,
+      "prim_scalar_0": 0.0
+    },
+    "tolerance": 1e-10,
+    "passed": true,
+    "scope": "short-run field agreement; not a guarantee of bitwise identity over a full turbulent evolution"
+  },
+  {
+    "baseline": "L6_cpu_base",
+    "candidate": "L6_cpu_native",
+    "time_code": 0.08,
+    "dimensions": [
+      512,
+      256,
+      256
+    ],
+    "all_native_cells_compared": 33554432,
+    "max_field_difference_scaled": {
+      "rho": 0.0,
+      "press": 0.0,
+      "vel1": 0.0,
+      "vel2": 0.0,
+      "vel3": 0.0,
+      "r0": 5.52812482299012e-24
+    },
+    "tolerance": 1e-10,
+    "passed": true,
+    "scope": "short-run field agreement; not a guarantee of bitwise identity over a full turbulent evolution"
+  },
+  {
+    "baseline": "apk_block64",
+    "candidate": "apk_block128_clean",
+    "time_code": 0.25,
+    "dimensions": [
+      256,
+      128,
+      128
+    ],
+    "all_native_cells_compared": 4194304,
+    "max_field_difference_scaled": {
+      "density": 0.0,
+      "velocity_x": 0.0,
+      "velocity_y": 0.0,
+      "velocity_z": 0.0,
+      "pressure": 0.0,
+      "prim_scalar_0": 0.0
+    },
+    "tolerance": 1e-10,
+    "passed": true,
+    "scope": "short-run field agreement; not a guarantee of bitwise identity over a full turbulent evolution"
+  },
+  {
+    "baseline": "L6_apk_block64_retry",
+    "candidate": "L6_apk_block128_clean",
+    "time_code": 0.08,
+    "dimensions": [
+      512,
+      256,
+      256
+    ],
+    "all_native_cells_compared": 33554432,
+    "max_field_difference_scaled": {
+      "density": 0.0,
+      "velocity_x": 0.0,
+      "velocity_y": 0.0,
+      "velocity_z": 0.0,
+      "pressure": 0.0,
+      "prim_scalar_0": 0.0
+    },
+    "tolerance": 1e-10,
+    "passed": true,
+    "scope": "short-run field agreement; not a guarantee of bitwise identity over a full turbulent evolution"
+  }
+]

@@ -1,0 +1,1440 @@
+{
+  "scope": "Short, early-time chi=100 Mach-2 3D tests on this PC. Not full-run timing or convergence proof.",
+  "cpu_L5": {
+    "baseline_cases": [
+      "base32_r8",
+      "base32_r8_repeat2",
+      "base32_r8_repeat3"
+    ],
+    "candidate_cases": [
+      "native64_r16",
+      "best_repeat2",
+      "best_repeat3"
+    ],
+    "baseline_seconds": [
+      9.294225149999995,
+      9.044456886999996,
+      8.793926083999992
+    ],
+    "candidate_seconds": [
+      7.636828154,
+      7.656346436000007,
+      7.6807354210000085
+    ],
+    "median_baseline": 9.044456886999996,
+    "median_candidate": 7.656346436000007,
+    "time_reduction_percent": 15.347637435202799,
+    "speedup": 1.1813019385425296
+  },
+  "cpu_L6": {
+    "baseline_cases": [
+      "L6_cpu_base"
+    ],
+    "candidate_cases": [
+      "L6_cpu_native"
+    ],
+    "baseline_seconds": [
+      47.029251441
+    ],
+    "candidate_seconds": [
+      38.398570397
+    ],
+    "median_baseline": 47.029251441,
+    "median_candidate": 38.398570397,
+    "time_reduction_percent": 18.35172957159975,
+    "speedup": 1.224765686710938
+  },
+  "gpu_L5": {
+    "baseline_cases": [
+      "apk_block32",
+      "apk_block32_repeat2",
+      "apk_block32_repeat3"
+    ],
+    "candidate_cases": [
+      "apk_block64",
+      "apk_block64_repeat2",
+      "apk_block64_repeat3"
+    ],
+    "baseline_seconds": [
+      5.010138712000014,
+      5.261448851999999,
+      5.010049375000001
+    ],
+    "candidate_seconds": [
+      3.507563578999992,
+      3.5074631609999996,
+      3.507088246000002
+    ],
+    "median_baseline": 5.010138712000014,
+    "median_candidate": 3.5074631609999996,
+    "time_reduction_percent": 29.992693563571148,
+    "speedup": 1.4284223331861288
+  },
+  "gpu_L6": {
+    "baseline_cases": [
+      "L6_apk_block64_retry"
+    ],
+    "candidate_cases": [
+      "L6_apk_block128_clean"
+    ],
+    "baseline_seconds": [
+      20.941279228999996
+    ],
+    "candidate_seconds": [
+      20.31566526499998
+    ],
+    "median_baseline": 20.941279228999996,
+    "median_candidate": 20.31566526499998,
+    "time_reduction_percent": 2.987467752846973,
+    "speedup": 1.0307946580059986
+  },
+  "field_regression": [
+    {
+      "baseline": "base32_r8",
+      "candidate": "native32_r8",
+      "time_code": 0.25,
+      "dimensions": [
+        256,
+        128,
+        128
+      ],
+      "all_native_cells_compared": 4194304,
+      "max_field_difference_scaled": {
+        "rho": 0.0,
+        "press": 0.0,
+        "vel1": 0.0,
+        "vel2": 0.0,
+        "vel3": 0.0,
+        "r0": 0.0
+      },
+      "tolerance": 1e-10,
+      "passed": true,
+      "scope": "short-run field agreement; not a guarantee of bitwise identity over a full turbulent evolution"
+    },
+    {
+      "baseline": "base32_r8",
+      "candidate": "native64_r8_retry",
+      "time_code": 0.25,
+      "dimensions": [
+        256,
+        128,
+        128
+      ],
+      "all_native_cells_compared": 4194304,
+      "max_field_difference_scaled": {
+        "rho": 0.0,
+        "press": 0.0,
+        "vel1": 0.0,
+        "vel2": 0.0,
+        "vel3": 0.0,
+        "r0": 2.117582368135751e-22
+      },
+      "tolerance": 1e-10,
+      "passed": true,
+      "scope": "short-run field agreement; not a guarantee of bitwise identity over a full turbulent evolution"
+    },
+    {
+      "baseline": "base32_r8",
+      "candidate": "native32_r16",
+      "time_code": 0.25,
+      "dimensions": [
+        256,
+        128,
+        128
+      ],
+      "all_native_cells_compared": 4194304,
+      "max_field_difference_scaled": {
+        "rho": 0.0,
+        "press": 0.0,
+        "vel1": 0.0,
+        "vel2": 0.0,
+        "vel3": 0.0,
+        "r0": 4.235164736271502e-22
+      },
+      "tolerance": 1e-10,
+      "passed": true,
+      "scope": "short-run field agreement; not a guarantee of bitwise identity over a full turbulent evolution"
+    },
+    {
+      "baseline": "base32_r8",
+      "candidate": "native64_r16",
+      "time_code": 0.25,
+      "dimensions": [
+        256,
+        128,
+        128
+      ],
+      "all_native_cells_compared": 4194304,
+      "max_field_difference_scaled": {
+        "rho": 0.0,
+        "press": 0.0,
+        "vel1": 0.0,
+        "vel2": 0.0,
+        "vel3": 0.0,
+        "r0": 4.235164736271502e-22
+      },
+      "tolerance": 1e-10,
+      "passed": true,
+      "scope": "short-run field agreement; not a guarantee of bitwise identity over a full turbulent evolution"
+    },
+    {
+      "baseline": "base32_r8",
+      "candidate": "native32_r4",
+      "time_code": 0.25,
+      "dimensions": [
+        256,
+        128,
+        128
+      ],
+      "all_native_cells_compared": 4194304,
+      "max_field_difference_scaled": {
+        "rho": 0.0,
+        "press": 0.0,
+        "vel1": 0.0,
+        "vel2": 0.0,
+        "vel3": 0.0,
+        "r0": 2.117582368135751e-22
+      },
+      "tolerance": 1e-10,
+      "passed": true,
+      "scope": "short-run field agreement; not a guarantee of bitwise identity over a full turbulent evolution"
+    },
+    {
+      "baseline": "apk_block32",
+      "candidate": "apk_block64",
+      "time_code": 0.25,
+      "dimensions": [
+        256,
+        128,
+        128
+      ],
+      "all_native_cells_compared": 4194304,
+      "max_field_difference_scaled": {
+        "density": 0.0,
+        "velocity_x": 0.0,
+        "velocity_y": 0.0,
+        "velocity_z": 0.0,
+        "pressure": 0.0,
+        "prim_scalar_0": 0.0
+      },
+      "tolerance": 1e-10,
+      "passed": true,
+      "scope": "short-run field agreement; not a guarantee of bitwise identity over a full turbulent evolution"
+    },
+    {
+      "baseline": "L6_cpu_base",
+      "candidate": "L6_cpu_native",
+      "time_code": 0.08,
+      "dimensions": [
+        512,
+        256,
+        256
+      ],
+      "all_native_cells_compared": 33554432,
+      "max_field_difference_scaled": {
+        "rho": 0.0,
+        "press": 0.0,
+        "vel1": 0.0,
+        "vel2": 0.0,
+        "vel3": 0.0,
+        "r0": 5.52812482299012e-24
+      },
+      "tolerance": 1e-10,
+      "passed": true,
+      "scope": "short-run field agreement; not a guarantee of bitwise identity over a full turbulent evolution"
+    },
+    {
+      "baseline": "apk_block64",
+      "candidate": "apk_block128_clean",
+      "time_code": 0.25,
+      "dimensions": [
+        256,
+        128,
+        128
+      ],
+      "all_native_cells_compared": 4194304,
+      "max_field_difference_scaled": {
+        "density": 0.0,
+        "velocity_x": 0.0,
+        "velocity_y": 0.0,
+        "velocity_z": 0.0,
+        "pressure": 0.0,
+        "prim_scalar_0": 0.0
+      },
+      "tolerance": 1e-10,
+      "passed": true,
+      "scope": "short-run field agreement; not a guarantee of bitwise identity over a full turbulent evolution"
+    },
+    {
+      "baseline": "L6_apk_block64_retry",
+      "candidate": "L6_apk_block128_clean",
+      "time_code": 0.08,
+      "dimensions": [
+        512,
+        256,
+        256
+      ],
+      "all_native_cells_compared": 33554432,
+      "max_field_difference_scaled": {
+        "density": 0.0,
+        "velocity_x": 0.0,
+        "velocity_y": 0.0,
+        "velocity_z": 0.0,
+        "pressure": 0.0,
+        "prim_scalar_0": 0.0
+      },
+      "tolerance": 1e-10,
+      "passed": true,
+      "scope": "short-run field agreement; not a guarantee of bitwise identity over a full turbulent evolution"
+    }
+  ],
+  "excluded_or_failed": {
+    "benchmarks_and_benchmarks_v2": "Cycle-limited/missing final output or interrupted attempts; not field/timing evidence.",
+    "native64_r8": "MPI PMIx listener initialization failure. Independent retry succeeded.",
+    "L6_apk_block32": "Initialization stalled; terminated after 300 seconds; no native output.",
+    "L6_apk_block32_retry": "Initialization stalled near VRAM capacity; terminated after 120 seconds. Another probe overlapped its final ~35 seconds; no output was produced before overlap either.",
+    "apk_block128": "Accidental overlap with the stalled block32 probe; timing excluded. Clean replacement retained.",
+    "L6_apk_block128": "Stopped when overlap detected; excluded. Clean replacement retained."
+  },
+  "all_result_records": {
+    "L6_cpu_base": {
+      "name": "L6_cpu_base",
+      "kind": "athpp",
+      "binary": "/home/kaan/ic_audit_20260907/bin/athpp",
+      "binary_sha256": "b8bdcbadc51986cb761a0d741001e6804d212dc7f57d0bcaf8e80e0dd6e88bb0",
+      "ranks": 8,
+      "block": 32,
+      "target_time_code": 0.08,
+      "cycle_cap": 100000,
+      "dimensions_streamwise": [
+        512,
+        256,
+        256
+      ],
+      "chi": 100,
+      "returncode": 0,
+      "wall_seconds_with_initialization_and_output": 47.029251441,
+      "peak_summed_child_rss_gib": 17.99292755126953,
+      "native_outputs": [
+        "/home/kaan/performance_20260907/benchmarks_v3/L6_cpu_base/cloud_sharp13_20260907_L6_chi100.out2.00000.athdf",
+        "/home/kaan/performance_20260907/benchmarks_v3/L6_cpu_base/cloud_sharp13_20260907_L6_chi100.out2.00001.athdf"
+      ],
+      "solver_metrics": {
+        "0": "zone-cycles = 704643072",
+        "1": "zone-cycles/cpu_second = 1.6034753465374922e+07"
+      },
+      "scope": "short benchmark; not science production; two outputs intended"
+    },
+    "base32_r8": {
+      "name": "base32_r8",
+      "kind": "athpp",
+      "binary": "/home/kaan/ic_audit_20260907/bin/athpp",
+      "binary_sha256": "b8bdcbadc51986cb761a0d741001e6804d212dc7f57d0bcaf8e80e0dd6e88bb0",
+      "ranks": 8,
+      "block": 32,
+      "target_time_code": 0.25,
+      "cycle_cap": 100000,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "chi": 100,
+      "returncode": 0,
+      "wall_seconds_with_initialization_and_output": 9.294225149999995,
+      "peak_summed_child_rss_gib": 2.480358123779297,
+      "native_outputs": [
+        "/home/kaan/performance_20260907/benchmarks_v3/base32_r8/cloud_sharp13_20260907_L5_chi100.out2.00000.athdf",
+        "/home/kaan/performance_20260907/benchmarks_v3/base32_r8/cloud_sharp13_20260907_L5_chi100.out2.00001.athdf"
+      ],
+      "solver_metrics": {
+        "0": "zone-cycles = 138412032",
+        "1": "zone-cycles/cpu_second = 1.6374335885567540e+07"
+      },
+      "scope": "short benchmark; not science production; two outputs intended"
+    },
+    "base32_r8_repeat2": {
+      "name": "base32_r8_repeat2",
+      "kind": "athpp",
+      "binary": "/home/kaan/ic_audit_20260907/bin/athpp",
+      "binary_sha256": "b8bdcbadc51986cb761a0d741001e6804d212dc7f57d0bcaf8e80e0dd6e88bb0",
+      "ranks": 8,
+      "block": 32,
+      "target_time_code": 0.25,
+      "cycle_cap": 100000,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "chi": 100,
+      "returncode": 0,
+      "wall_seconds_with_initialization_and_output": 9.044456886999996,
+      "peak_summed_child_rss_gib": 2.4864273071289062,
+      "native_outputs": [
+        "/home/kaan/performance_20260907/benchmarks_v3/base32_r8_repeat2/cloud_sharp13_20260907_L5_chi100.out2.00000.athdf",
+        "/home/kaan/performance_20260907/benchmarks_v3/base32_r8_repeat2/cloud_sharp13_20260907_L5_chi100.out2.00001.athdf"
+      ],
+      "solver_metrics": {
+        "0": "zone-cycles = 138412032",
+        "1": "zone-cycles/cpu_second = 1.6409441627181917e+07"
+      },
+      "scope": "short benchmark; not science production; two outputs intended"
+    },
+    "L6_apk_block64_retry": {
+      "name": "L6_apk_block64_retry",
+      "kind": "apk",
+      "binary": "/home/kaan/ic_audit_20260907/bin/apk",
+      "binary_sha256": "d8d6ffe5b427216a58bda705ae0692c3cc12c3b7f072bd1a845fe11224a4af0f",
+      "ranks": 1,
+      "block": 64,
+      "target_time_code": 0.08,
+      "cycle_cap": 100000,
+      "dimensions_streamwise": [
+        512,
+        256,
+        256
+      ],
+      "chi": 100,
+      "returncode": 0,
+      "wall_seconds_with_initialization_and_output": 20.941279228999996,
+      "peak_summed_child_rss_gib": 2.2656478881835938,
+      "native_outputs": [
+        "/home/kaan/performance_20260907/benchmarks_v3/L6_apk_block64_retry/parthenon.prim.00000.phdf",
+        "/home/kaan/performance_20260907/benchmarks_v3/L6_apk_block64_retry/parthenon.prim.final.phdf"
+      ],
+      "timed_out": false,
+      "gpu_samples_device_wide": [
+        {
+          "elapsed": 0.0011513780000029783,
+          "device_total_used_mib_and_util_percent": "413, 27"
+        },
+        {
+          "elapsed": 2.082825358000001,
+          "device_total_used_mib_and_util_percent": "11523, 29"
+        },
+        {
+          "elapsed": 4.122762309000002,
+          "device_total_used_mib_and_util_percent": "11523, 5"
+        },
+        {
+          "elapsed": 6.1605591260000025,
+          "device_total_used_mib_and_util_percent": "11521, 5"
+        },
+        {
+          "elapsed": 8.198350897000005,
+          "device_total_used_mib_and_util_percent": "15618, 79"
+        },
+        {
+          "elapsed": 10.234562224999998,
+          "device_total_used_mib_and_util_percent": "15618, 96"
+        },
+        {
+          "elapsed": 12.268201948000005,
+          "device_total_used_mib_and_util_percent": "15618, 100"
+        },
+        {
+          "elapsed": 14.30276799,
+          "device_total_used_mib_and_util_percent": "15618, 98"
+        },
+        {
+          "elapsed": 16.337179467999995,
+          "device_total_used_mib_and_util_percent": "15619, 5"
+        },
+        {
+          "elapsed": 18.373437668,
+          "device_total_used_mib_and_util_percent": "15617, 10"
+        },
+        {
+          "elapsed": 20.408933264000005,
+          "device_total_used_mib_and_util_percent": "15618, 16"
+        }
+      ],
+      "solver_metrics": {
+        "0": "cycle=0 time=0.0000000000000000e+00 dt=4.0343576522993930e-03 zone-cycles/wsec_step=0.00e+00 wsec_total=5.20e+00 wsec_step=7.02e+00",
+        "1": "walltime used = 1.86e+01",
+        "2": "zone-cycles/wallsecond = 3.79e+07"
+      },
+      "scope": "short benchmark; not science production; two outputs intended"
+    },
+    "native32_r16": {
+      "name": "native32_r16",
+      "kind": "athpp",
+      "binary": "/home/kaan/performance_20260907/bin/athpp_native",
+      "binary_sha256": "05e45d1d945c7ea4c0ea3077dd8bcc887100afa8f999dd8153694eabac4ba902",
+      "ranks": 16,
+      "block": 32,
+      "target_time_code": 0.25,
+      "cycle_cap": 100000,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "chi": 100,
+      "returncode": 0,
+      "wall_seconds_with_initialization_and_output": 8.16185881300001,
+      "peak_summed_child_rss_gib": 2.8687210083007812,
+      "native_outputs": [
+        "/home/kaan/performance_20260907/benchmarks_v3/native32_r16/cloud_sharp13_20260907_L5_chi100.out2.00000.athdf",
+        "/home/kaan/performance_20260907/benchmarks_v3/native32_r16/cloud_sharp13_20260907_L5_chi100.out2.00001.athdf"
+      ],
+      "solver_metrics": {
+        "0": "zone-cycles = 138412032",
+        "1": "zone-cycles/cpu_second = 1.8784584516767856e+07"
+      },
+      "scope": "short benchmark; not science production; two outputs intended"
+    },
+    "native32_r4": {
+      "name": "native32_r4",
+      "kind": "athpp",
+      "binary": "/home/kaan/performance_20260907/bin/athpp_native",
+      "binary_sha256": "05e45d1d945c7ea4c0ea3077dd8bcc887100afa8f999dd8153694eabac4ba902",
+      "ranks": 4,
+      "block": 32,
+      "target_time_code": 0.25,
+      "cycle_cap": 100000,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "chi": 100,
+      "returncode": 0,
+      "wall_seconds_with_initialization_and_output": 11.289786243999998,
+      "peak_summed_child_rss_gib": 2.356426239013672,
+      "native_outputs": [
+        "/home/kaan/performance_20260907/benchmarks_v3/native32_r4/cloud_sharp13_20260907_L5_chi100.out2.00000.athdf",
+        "/home/kaan/performance_20260907/benchmarks_v3/native32_r4/cloud_sharp13_20260907_L5_chi100.out2.00001.athdf"
+      ],
+      "solver_metrics": {
+        "0": "zone-cycles = 138412032",
+        "1": "zone-cycles/cpu_second = 1.2958104491474656e+07"
+      },
+      "scope": "short benchmark; not science production; two outputs intended"
+    },
+    "L6_apk_block128_clean": {
+      "name": "L6_apk_block128_clean",
+      "kind": "apk",
+      "binary": "/home/kaan/ic_audit_20260907/bin/apk",
+      "binary_sha256": "d8d6ffe5b427216a58bda705ae0692c3cc12c3b7f072bd1a845fe11224a4af0f",
+      "ranks": 1,
+      "block": 128,
+      "target_time_code": 0.08,
+      "cycle_cap": 100000,
+      "dimensions_streamwise": [
+        512,
+        256,
+        256
+      ],
+      "chi": 100,
+      "returncode": 0,
+      "wall_seconds_with_initialization_and_output": 20.31566526499998,
+      "peak_summed_child_rss_gib": 2.091693878173828,
+      "native_outputs": [
+        "/home/kaan/performance_20260907/benchmarks_v3/L6_apk_block128_clean/parthenon.prim.00000.phdf",
+        "/home/kaan/performance_20260907/benchmarks_v3/L6_apk_block128_clean/parthenon.prim.final.phdf"
+      ],
+      "timed_out": false,
+      "gpu_samples_device_wide": [
+        {
+          "elapsed": 0.0006286930000101165,
+          "device_total_used_mib_and_util_percent": "152, 5"
+        },
+        {
+          "elapsed": 2.050057258999999,
+          "device_total_used_mib_and_util_percent": "9484, 5"
+        },
+        {
+          "elapsed": 4.089207955000006,
+          "device_total_used_mib_and_util_percent": "9489, 5"
+        },
+        {
+          "elapsed": 6.1277395799999965,
+          "device_total_used_mib_and_util_percent": "9484, 5"
+        },
+        {
+          "elapsed": 8.16813478100002,
+          "device_total_used_mib_and_util_percent": "13073, 88"
+        },
+        {
+          "elapsed": 10.371763374000011,
+          "device_total_used_mib_and_util_percent": "13067, 100"
+        },
+        {
+          "elapsed": 12.411420391000007,
+          "device_total_used_mib_and_util_percent": "13073, 100"
+        },
+        {
+          "elapsed": 14.447192247000004,
+          "device_total_used_mib_and_util_percent": "13068, 36"
+        },
+        {
+          "elapsed": 16.486270077,
+          "device_total_used_mib_and_util_percent": "13073, 6"
+        },
+        {
+          "elapsed": 18.52541185300001,
+          "device_total_used_mib_and_util_percent": "13069, 9"
+        }
+      ],
+      "solver_metrics": {
+        "0": "cycle=0 time=0.0000000000000000e+00 dt=4.0343576522993930e-03 zone-cycles/wsec_step=0.00e+00 wsec_total=6.00e+00 wsec_step=7.73e+00",
+        "1": "walltime used = 1.84e+01",
+        "2": "zone-cycles/wallsecond = 3.84e+07"
+      },
+      "scope": "short benchmark; not science production; two outputs intended"
+    },
+    "apk_block64_repeat2": {
+      "name": "apk_block64_repeat2",
+      "kind": "apk",
+      "binary": "/home/kaan/ic_audit_20260907/bin/apk",
+      "binary_sha256": "d8d6ffe5b427216a58bda705ae0692c3cc12c3b7f072bd1a845fe11224a4af0f",
+      "ranks": 1,
+      "block": 64,
+      "target_time_code": 0.25,
+      "cycle_cap": 100000,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "chi": 100,
+      "returncode": 0,
+      "wall_seconds_with_initialization_and_output": 3.5074631609999996,
+      "peak_summed_child_rss_gib": 0.53070068359375,
+      "native_outputs": [
+        "/home/kaan/performance_20260907/benchmarks_v3/apk_block64_repeat2/parthenon.prim.00000.phdf",
+        "/home/kaan/performance_20260907/benchmarks_v3/apk_block64_repeat2/parthenon.prim.final.phdf"
+      ],
+      "solver_metrics": {
+        "0": "cycle=0 time=0.0000000000000000e+00 dt=8.0687153045987860e-03 zone-cycles/wsec_step=0.00e+00 wsec_total=6.54e-01 wsec_step=1.05e+00",
+        "1": "walltime used = 2.84e+00",
+        "2": "zone-cycles/wallsecond = 4.87e+07"
+      },
+      "scope": "short benchmark; not science production; two outputs intended"
+    },
+    "apk_block128_clean": {
+      "name": "apk_block128_clean",
+      "kind": "apk",
+      "binary": "/home/kaan/ic_audit_20260907/bin/apk",
+      "binary_sha256": "d8d6ffe5b427216a58bda705ae0692c3cc12c3b7f072bd1a845fe11224a4af0f",
+      "ranks": 1,
+      "block": 128,
+      "target_time_code": 0.25,
+      "cycle_cap": 100000,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "chi": 100,
+      "returncode": 0,
+      "wall_seconds_with_initialization_and_output": 3.597427001,
+      "peak_summed_child_rss_gib": 0.49615478515625,
+      "native_outputs": [
+        "/home/kaan/performance_20260907/benchmarks_v3/apk_block128_clean/parthenon.prim.00000.phdf",
+        "/home/kaan/performance_20260907/benchmarks_v3/apk_block128_clean/parthenon.prim.final.phdf"
+      ],
+      "timed_out": false,
+      "gpu_samples_device_wide": [
+        {
+          "elapsed": 0.001177535000010721,
+          "device_total_used_mib_and_util_percent": "152, 27"
+        },
+        {
+          "elapsed": 2.063285028999985,
+          "device_total_used_mib_and_util_percent": "1961, 100"
+        }
+      ],
+      "solver_metrics": {
+        "0": "cycle=0 time=0.0000000000000000e+00 dt=8.0687153045987860e-03 zone-cycles/wsec_step=0.00e+00 wsec_total=7.66e-01 wsec_step=1.24e+00",
+        "1": "walltime used = 2.87e+00",
+        "2": "zone-cycles/wallsecond = 4.83e+07"
+      },
+      "scope": "short benchmark; not science production; two outputs intended"
+    },
+    "L6_cpu_native": {
+      "name": "L6_cpu_native",
+      "kind": "athpp",
+      "binary": "/home/kaan/performance_20260907/bin/athpp_native",
+      "binary_sha256": "05e45d1d945c7ea4c0ea3077dd8bcc887100afa8f999dd8153694eabac4ba902",
+      "ranks": 16,
+      "block": 64,
+      "target_time_code": 0.08,
+      "cycle_cap": 100000,
+      "dimensions_streamwise": [
+        512,
+        256,
+        256
+      ],
+      "chi": 100,
+      "returncode": 0,
+      "wall_seconds_with_initialization_and_output": 38.398570397,
+      "peak_summed_child_rss_gib": 15.059005737304688,
+      "native_outputs": [
+        "/home/kaan/performance_20260907/benchmarks_v3/L6_cpu_native/cloud_sharp13_20260907_L6_chi100.out2.00000.athdf",
+        "/home/kaan/performance_20260907/benchmarks_v3/L6_cpu_native/cloud_sharp13_20260907_L6_chi100.out2.00001.athdf"
+      ],
+      "solver_metrics": {
+        "0": "zone-cycles = 704643072",
+        "1": "zone-cycles/cpu_second = 1.9656225430348366e+07"
+      },
+      "scope": "short benchmark; not science production; two outputs intended"
+    },
+    "native64_r16": {
+      "name": "native64_r16",
+      "kind": "athpp",
+      "binary": "/home/kaan/performance_20260907/bin/athpp_native",
+      "binary_sha256": "05e45d1d945c7ea4c0ea3077dd8bcc887100afa8f999dd8153694eabac4ba902",
+      "ranks": 16,
+      "block": 64,
+      "target_time_code": 0.25,
+      "cycle_cap": 100000,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "chi": 100,
+      "returncode": 0,
+      "wall_seconds_with_initialization_and_output": 7.636828154,
+      "peak_summed_child_rss_gib": 2.4122657775878906,
+      "native_outputs": [
+        "/home/kaan/performance_20260907/benchmarks_v3/native64_r16/cloud_sharp13_20260907_L5_chi100.out2.00000.athdf",
+        "/home/kaan/performance_20260907/benchmarks_v3/native64_r16/cloud_sharp13_20260907_L5_chi100.out2.00001.athdf"
+      ],
+      "solver_metrics": {
+        "0": "zone-cycles = 138412032",
+        "1": "zone-cycles/cpu_second = 2.0017477904230770e+07"
+      },
+      "scope": "short benchmark; not science production; two outputs intended"
+    },
+    "native64_r8_retry": {
+      "name": "native64_r8_retry",
+      "kind": "athpp",
+      "binary": "/home/kaan/performance_20260907/bin/athpp_native",
+      "binary_sha256": "05e45d1d945c7ea4c0ea3077dd8bcc887100afa8f999dd8153694eabac4ba902",
+      "ranks": 8,
+      "block": 64,
+      "target_time_code": 0.25,
+      "cycle_cap": 100000,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "chi": 100,
+      "returncode": 0,
+      "wall_seconds_with_initialization_and_output": 8.298186226999988,
+      "peak_summed_child_rss_gib": 2.0905494689941406,
+      "native_outputs": [
+        "/home/kaan/performance_20260907/benchmarks_v3/native64_r8_retry/cloud_sharp13_20260907_L5_chi100.out2.00000.athdf",
+        "/home/kaan/performance_20260907/benchmarks_v3/native64_r8_retry/cloud_sharp13_20260907_L5_chi100.out2.00001.athdf"
+      ],
+      "solver_metrics": {
+        "0": "zone-cycles = 138412032",
+        "1": "zone-cycles/cpu_second = 1.8313380055737168e+07"
+      },
+      "scope": "short benchmark; not science production; two outputs intended"
+    },
+    "apk_block64": {
+      "name": "apk_block64",
+      "kind": "apk",
+      "binary": "/home/kaan/ic_audit_20260907/bin/apk",
+      "binary_sha256": "d8d6ffe5b427216a58bda705ae0692c3cc12c3b7f072bd1a845fe11224a4af0f",
+      "ranks": 1,
+      "block": 64,
+      "target_time_code": 0.25,
+      "cycle_cap": 100000,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "chi": 100,
+      "returncode": 0,
+      "wall_seconds_with_initialization_and_output": 3.507563578999992,
+      "peak_summed_child_rss_gib": 0.5306930541992188,
+      "native_outputs": [
+        "/home/kaan/performance_20260907/benchmarks_v3/apk_block64/parthenon.prim.00000.phdf",
+        "/home/kaan/performance_20260907/benchmarks_v3/apk_block64/parthenon.prim.final.phdf"
+      ],
+      "solver_metrics": {
+        "0": "cycle=0 time=0.0000000000000000e+00 dt=8.0687153045987860e-03 zone-cycles/wsec_step=0.00e+00 wsec_total=6.15e-01 wsec_step=1.02e+00",
+        "1": "walltime used = 2.83e+00",
+        "2": "zone-cycles/wallsecond = 4.90e+07"
+      },
+      "scope": "short benchmark; not science production; two outputs intended"
+    },
+    "best_repeat3": {
+      "name": "best_repeat3",
+      "kind": "athpp",
+      "binary": "/home/kaan/performance_20260907/bin/athpp_native",
+      "binary_sha256": "05e45d1d945c7ea4c0ea3077dd8bcc887100afa8f999dd8153694eabac4ba902",
+      "ranks": 16,
+      "block": 64,
+      "target_time_code": 0.25,
+      "cycle_cap": 100000,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "chi": 100,
+      "returncode": 0,
+      "wall_seconds_with_initialization_and_output": 7.6807354210000085,
+      "peak_summed_child_rss_gib": 2.4035797119140625,
+      "native_outputs": [
+        "/home/kaan/performance_20260907/benchmarks_v3/best_repeat3/cloud_sharp13_20260907_L5_chi100.out2.00000.athdf",
+        "/home/kaan/performance_20260907/benchmarks_v3/best_repeat3/cloud_sharp13_20260907_L5_chi100.out2.00001.athdf"
+      ],
+      "solver_metrics": {
+        "0": "zone-cycles = 138412032",
+        "1": "zone-cycles/cpu_second = 1.9986638995856889e+07"
+      },
+      "scope": "short benchmark; not science production; two outputs intended"
+    },
+    "native32_r8": {
+      "name": "native32_r8",
+      "kind": "athpp",
+      "binary": "/home/kaan/performance_20260907/bin/athpp_native",
+      "binary_sha256": "05e45d1d945c7ea4c0ea3077dd8bcc887100afa8f999dd8153694eabac4ba902",
+      "ranks": 8,
+      "block": 32,
+      "target_time_code": 0.25,
+      "cycle_cap": 100000,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "chi": 100,
+      "returncode": 0,
+      "wall_seconds_with_initialization_and_output": 9.048897009999997,
+      "peak_summed_child_rss_gib": 2.5082855224609375,
+      "native_outputs": [
+        "/home/kaan/performance_20260907/benchmarks_v3/native32_r8/cloud_sharp13_20260907_L5_chi100.out2.00000.athdf",
+        "/home/kaan/performance_20260907/benchmarks_v3/native32_r8/cloud_sharp13_20260907_L5_chi100.out2.00001.athdf"
+      ],
+      "solver_metrics": {
+        "0": "zone-cycles = 138412032",
+        "1": "zone-cycles/cpu_second = 1.6784753880379006e+07"
+      },
+      "scope": "short benchmark; not science production; two outputs intended"
+    },
+    "native64_r8": {
+      "name": "native64_r8",
+      "kind": "athpp",
+      "binary": "/home/kaan/performance_20260907/bin/athpp_native",
+      "binary_sha256": "05e45d1d945c7ea4c0ea3077dd8bcc887100afa8f999dd8153694eabac4ba902",
+      "ranks": 8,
+      "block": 64,
+      "target_time_code": 0.25,
+      "cycle_cap": 100000,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "chi": 100,
+      "returncode": 213,
+      "wall_seconds_with_initialization_and_output": 0.26030007899999674,
+      "peak_summed_child_rss_gib": 0.0,
+      "native_outputs": [],
+      "solver_metrics": {},
+      "scope": "short benchmark; not science production; two outputs intended"
+    },
+    "apk_block32_repeat2": {
+      "name": "apk_block32_repeat2",
+      "kind": "apk",
+      "binary": "/home/kaan/ic_audit_20260907/bin/apk",
+      "binary_sha256": "d8d6ffe5b427216a58bda705ae0692c3cc12c3b7f072bd1a845fe11224a4af0f",
+      "ranks": 1,
+      "block": 32,
+      "target_time_code": 0.25,
+      "cycle_cap": 100000,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "chi": 100,
+      "returncode": 0,
+      "wall_seconds_with_initialization_and_output": 5.261448851999999,
+      "peak_summed_child_rss_gib": 0.600799560546875,
+      "native_outputs": [
+        "/home/kaan/performance_20260907/benchmarks_v3/apk_block32_repeat2/parthenon.prim.00000.phdf",
+        "/home/kaan/performance_20260907/benchmarks_v3/apk_block32_repeat2/parthenon.prim.final.phdf"
+      ],
+      "solver_metrics": {
+        "0": "cycle=0 time=0.0000000000000000e+00 dt=8.0687153045987860e-03 zone-cycles/wsec_step=0.00e+00 wsec_total=7.15e-01 wsec_step=1.65e+00",
+        "1": "walltime used = 3.94e+00",
+        "2": "zone-cycles/wallsecond = 3.51e+07"
+      },
+      "scope": "short benchmark; not science production; two outputs intended"
+    },
+    "apk_block32": {
+      "name": "apk_block32",
+      "kind": "apk",
+      "binary": "/home/kaan/ic_audit_20260907/bin/apk",
+      "binary_sha256": "d8d6ffe5b427216a58bda705ae0692c3cc12c3b7f072bd1a845fe11224a4af0f",
+      "ranks": 1,
+      "block": 32,
+      "target_time_code": 0.25,
+      "cycle_cap": 100000,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "chi": 100,
+      "returncode": 0,
+      "wall_seconds_with_initialization_and_output": 5.010138712000014,
+      "peak_summed_child_rss_gib": 0.60052490234375,
+      "native_outputs": [
+        "/home/kaan/performance_20260907/benchmarks_v3/apk_block32/parthenon.prim.00000.phdf",
+        "/home/kaan/performance_20260907/benchmarks_v3/apk_block32/parthenon.prim.final.phdf"
+      ],
+      "solver_metrics": {
+        "0": "cycle=0 time=0.0000000000000000e+00 dt=8.0687153045987860e-03 zone-cycles/wsec_step=0.00e+00 wsec_total=6.69e-01 wsec_step=1.50e+00",
+        "1": "walltime used = 3.82e+00",
+        "2": "zone-cycles/wallsecond = 3.63e+07"
+      },
+      "scope": "short benchmark; not science production; two outputs intended"
+    },
+    "base32_r8_repeat3": {
+      "name": "base32_r8_repeat3",
+      "kind": "athpp",
+      "binary": "/home/kaan/ic_audit_20260907/bin/athpp",
+      "binary_sha256": "b8bdcbadc51986cb761a0d741001e6804d212dc7f57d0bcaf8e80e0dd6e88bb0",
+      "ranks": 8,
+      "block": 32,
+      "target_time_code": 0.25,
+      "cycle_cap": 100000,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "chi": 100,
+      "returncode": 0,
+      "wall_seconds_with_initialization_and_output": 8.793926083999992,
+      "peak_summed_child_rss_gib": 2.3288307189941406,
+      "native_outputs": [
+        "/home/kaan/performance_20260907/benchmarks_v3/base32_r8_repeat3/cloud_sharp13_20260907_L5_chi100.out2.00000.athdf",
+        "/home/kaan/performance_20260907/benchmarks_v3/base32_r8_repeat3/cloud_sharp13_20260907_L5_chi100.out2.00001.athdf"
+      ],
+      "solver_metrics": {
+        "0": "zone-cycles = 138412032",
+        "1": "zone-cycles/cpu_second = 1.6743471309398623e+07"
+      },
+      "scope": "short benchmark; not science production; two outputs intended"
+    },
+    "apk_block128": {
+      "name": "apk_block128",
+      "kind": "apk",
+      "binary": "/home/kaan/ic_audit_20260907/bin/apk",
+      "binary_sha256": "d8d6ffe5b427216a58bda705ae0692c3cc12c3b7f072bd1a845fe11224a4af0f",
+      "ranks": 1,
+      "block": 128,
+      "target_time_code": 0.25,
+      "cycle_cap": 100000,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "chi": 100,
+      "returncode": 0,
+      "wall_seconds_with_initialization_and_output": 16.164851706999997,
+      "peak_summed_child_rss_gib": 0.4938774108886719,
+      "native_outputs": [
+        "/home/kaan/performance_20260907/benchmarks_v3/apk_block128/parthenon.prim.00000.phdf",
+        "/home/kaan/performance_20260907/benchmarks_v3/apk_block128/parthenon.prim.final.phdf"
+      ],
+      "timed_out": false,
+      "gpu_samples_device_wide": [
+        {
+          "elapsed": 0.0006030919999773232,
+          "device_total_used_mib_and_util_percent": "16016, 100"
+        },
+        {
+          "elapsed": 2.0432755610000015,
+          "device_total_used_mib_and_util_percent": "16020, 81"
+        },
+        {
+          "elapsed": 4.139900271999977,
+          "device_total_used_mib_and_util_percent": "16034, 0"
+        },
+        {
+          "elapsed": 6.166764026999999,
+          "device_total_used_mib_and_util_percent": "16014, 85"
+        },
+        {
+          "elapsed": 8.37849408599999,
+          "device_total_used_mib_and_util_percent": "16025, 100"
+        },
+        {
+          "elapsed": 10.407698974999988,
+          "device_total_used_mib_and_util_percent": "16040, 100"
+        },
+        {
+          "elapsed": 12.444860995999989,
+          "device_total_used_mib_and_util_percent": "16017, 88"
+        },
+        {
+          "elapsed": 14.628941263000002,
+          "device_total_used_mib_and_util_percent": "16036, 100"
+        }
+      ],
+      "solver_metrics": {
+        "0": "cycle=0 time=0.0000000000000000e+00 dt=8.0687153045987860e-03 zone-cycles/wsec_step=0.00e+00 wsec_total=7.51e-01 wsec_step=4.37e+00",
+        "1": "walltime used = 1.04e+01",
+        "2": "zone-cycles/wallsecond = 1.33e+07"
+      },
+      "scope": "short benchmark; not science production; two outputs intended"
+    },
+    "best_repeat2": {
+      "name": "best_repeat2",
+      "kind": "athpp",
+      "binary": "/home/kaan/performance_20260907/bin/athpp_native",
+      "binary_sha256": "05e45d1d945c7ea4c0ea3077dd8bcc887100afa8f999dd8153694eabac4ba902",
+      "ranks": 16,
+      "block": 64,
+      "target_time_code": 0.25,
+      "cycle_cap": 100000,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "chi": 100,
+      "returncode": 0,
+      "wall_seconds_with_initialization_and_output": 7.656346436000007,
+      "peak_summed_child_rss_gib": 2.412872314453125,
+      "native_outputs": [
+        "/home/kaan/performance_20260907/benchmarks_v3/best_repeat2/cloud_sharp13_20260907_L5_chi100.out2.00000.athdf",
+        "/home/kaan/performance_20260907/benchmarks_v3/best_repeat2/cloud_sharp13_20260907_L5_chi100.out2.00001.athdf"
+      ],
+      "solver_metrics": {
+        "0": "zone-cycles = 138412032",
+        "1": "zone-cycles/cpu_second = 1.9882618284471691e+07"
+      },
+      "scope": "short benchmark; not science production; two outputs intended"
+    },
+    "apk_block16": {
+      "name": "apk_block16",
+      "kind": "apk",
+      "binary": "/home/kaan/ic_audit_20260907/bin/apk",
+      "binary_sha256": "d8d6ffe5b427216a58bda705ae0692c3cc12c3b7f072bd1a845fe11224a4af0f",
+      "ranks": 1,
+      "block": 16,
+      "target_time_code": 0.25,
+      "cycle_cap": 100000,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "chi": 100,
+      "returncode": 0,
+      "wall_seconds_with_initialization_and_output": 10.772347038999982,
+      "peak_summed_child_rss_gib": 0.9586410522460938,
+      "native_outputs": [
+        "/home/kaan/performance_20260907/benchmarks_v3/apk_block16/parthenon.prim.00000.phdf",
+        "/home/kaan/performance_20260907/benchmarks_v3/apk_block16/parthenon.prim.final.phdf"
+      ],
+      "solver_metrics": {
+        "0": "cycle=0 time=0.0000000000000000e+00 dt=8.0687153045987860e-03 zone-cycles/wsec_step=0.00e+00 wsec_total=8.41e-01 wsec_step=3.55e+00",
+        "1": "walltime used = 7.30e+00",
+        "2": "zone-cycles/wallsecond = 1.89e+07"
+      },
+      "scope": "short benchmark; not science production; two outputs intended"
+    },
+    "apk_block64_repeat3": {
+      "name": "apk_block64_repeat3",
+      "kind": "apk",
+      "binary": "/home/kaan/ic_audit_20260907/bin/apk",
+      "binary_sha256": "d8d6ffe5b427216a58bda705ae0692c3cc12c3b7f072bd1a845fe11224a4af0f",
+      "ranks": 1,
+      "block": 64,
+      "target_time_code": 0.25,
+      "cycle_cap": 100000,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "chi": 100,
+      "returncode": 0,
+      "wall_seconds_with_initialization_and_output": 3.507088246000002,
+      "peak_summed_child_rss_gib": 0.5306129455566406,
+      "native_outputs": [
+        "/home/kaan/performance_20260907/benchmarks_v3/apk_block64_repeat3/parthenon.prim.00000.phdf",
+        "/home/kaan/performance_20260907/benchmarks_v3/apk_block64_repeat3/parthenon.prim.final.phdf"
+      ],
+      "solver_metrics": {
+        "0": "cycle=0 time=0.0000000000000000e+00 dt=8.0687153045987860e-03 zone-cycles/wsec_step=0.00e+00 wsec_total=6.53e-01 wsec_step=1.08e+00",
+        "1": "walltime used = 2.89e+00",
+        "2": "zone-cycles/wallsecond = 4.79e+07"
+      },
+      "scope": "short benchmark; not science production; two outputs intended"
+    },
+    "L6_apk_block32_retry": {
+      "name": "L6_apk_block32_retry",
+      "kind": "apk",
+      "binary": "/home/kaan/ic_audit_20260907/bin/apk",
+      "binary_sha256": "d8d6ffe5b427216a58bda705ae0692c3cc12c3b7f072bd1a845fe11224a4af0f",
+      "ranks": 1,
+      "block": 32,
+      "target_time_code": 0.08,
+      "cycle_cap": 100000,
+      "dimensions_streamwise": [
+        512,
+        256,
+        256
+      ],
+      "chi": 100,
+      "returncode": 1,
+      "wall_seconds_with_initialization_and_output": 123.683930871,
+      "peak_summed_child_rss_gib": 0.2543373107910156,
+      "native_outputs": [],
+      "timed_out": true,
+      "gpu_samples_device_wide": [
+        {
+          "elapsed": 0.0005511210000008759,
+          "device_total_used_mib_and_util_percent": "411, 19"
+        },
+        {
+          "elapsed": 2.0509825379999995,
+          "device_total_used_mib_and_util_percent": "16016, 51"
+        },
+        {
+          "elapsed": 4.100943067000003,
+          "device_total_used_mib_and_util_percent": "16014, 100"
+        },
+        {
+          "elapsed": 6.137042821999998,
+          "device_total_used_mib_and_util_percent": "16014, 100"
+        },
+        {
+          "elapsed": 8.171880471999998,
+          "device_total_used_mib_and_util_percent": "16014, 100"
+        },
+        {
+          "elapsed": 10.207587830999998,
+          "device_total_used_mib_and_util_percent": "16014, 100"
+        },
+        {
+          "elapsed": 12.24179848,
+          "device_total_used_mib_and_util_percent": "16015, 100"
+        },
+        {
+          "elapsed": 14.275754503000002,
+          "device_total_used_mib_and_util_percent": "16015, 100"
+        },
+        {
+          "elapsed": 16.310668945000003,
+          "device_total_used_mib_and_util_percent": "16015, 100"
+        },
+        {
+          "elapsed": 18.346861657000005,
+          "device_total_used_mib_and_util_percent": "16020, 100"
+        },
+        {
+          "elapsed": 20.389579135999995,
+          "device_total_used_mib_and_util_percent": "16020, 100"
+        },
+        {
+          "elapsed": 22.424539245999995,
+          "device_total_used_mib_and_util_percent": "16019, 100"
+        },
+        {
+          "elapsed": 24.467217833000007,
+          "device_total_used_mib_and_util_percent": "16019, 100"
+        },
+        {
+          "elapsed": 26.504238005000005,
+          "device_total_used_mib_and_util_percent": "16013, 100"
+        },
+        {
+          "elapsed": 28.540241084,
+          "device_total_used_mib_and_util_percent": "16021, 100"
+        },
+        {
+          "elapsed": 30.579447767000005,
+          "device_total_used_mib_and_util_percent": "16016, 100"
+        },
+        {
+          "elapsed": 32.615969594999996,
+          "device_total_used_mib_and_util_percent": "16014, 100"
+        },
+        {
+          "elapsed": 34.651663541999994,
+          "device_total_used_mib_and_util_percent": "16010, 100"
+        },
+        {
+          "elapsed": 36.688356504,
+          "device_total_used_mib_and_util_percent": "16014, 100"
+        },
+        {
+          "elapsed": 38.724545926000005,
+          "device_total_used_mib_and_util_percent": "16013, 100"
+        },
+        {
+          "elapsed": 40.762272261999996,
+          "device_total_used_mib_and_util_percent": "16013, 100"
+        },
+        {
+          "elapsed": 42.800358057,
+          "device_total_used_mib_and_util_percent": "16009, 100"
+        },
+        {
+          "elapsed": 44.843834060000006,
+          "device_total_used_mib_and_util_percent": "16013, 100"
+        },
+        {
+          "elapsed": 46.887799842999996,
+          "device_total_used_mib_and_util_percent": "16009, 100"
+        },
+        {
+          "elapsed": 48.923322412000005,
+          "device_total_used_mib_and_util_percent": "16013, 100"
+        },
+        {
+          "elapsed": 50.961119594999985,
+          "device_total_used_mib_and_util_percent": "16007, 100"
+        },
+        {
+          "elapsed": 52.99660049900001,
+          "device_total_used_mib_and_util_percent": "16013, 100"
+        },
+        {
+          "elapsed": 55.03379154699999,
+          "device_total_used_mib_and_util_percent": "16013, 100"
+        },
+        {
+          "elapsed": 57.073877495000005,
+          "device_total_used_mib_and_util_percent": "16013, 100"
+        },
+        {
+          "elapsed": 59.11207067699999,
+          "device_total_used_mib_and_util_percent": "16009, 100"
+        },
+        {
+          "elapsed": 61.148693622999986,
+          "device_total_used_mib_and_util_percent": "16013, 100"
+        },
+        {
+          "elapsed": 63.18536605099999,
+          "device_total_used_mib_and_util_percent": "16009, 100"
+        },
+        {
+          "elapsed": 65.22205145000001,
+          "device_total_used_mib_and_util_percent": "16013, 100"
+        },
+        {
+          "elapsed": 67.25874378699999,
+          "device_total_used_mib_and_util_percent": "16009, 100"
+        },
+        {
+          "elapsed": 69.295424663,
+          "device_total_used_mib_and_util_percent": "16013, 100"
+        },
+        {
+          "elapsed": 71.333216252,
+          "device_total_used_mib_and_util_percent": "16009, 100"
+        },
+        {
+          "elapsed": 73.373633063,
+          "device_total_used_mib_and_util_percent": "16013, 100"
+        },
+        {
+          "elapsed": 75.41468940600001,
+          "device_total_used_mib_and_util_percent": "16007, 100"
+        },
+        {
+          "elapsed": 77.45102815300001,
+          "device_total_used_mib_and_util_percent": "16013, 100"
+        },
+        {
+          "elapsed": 79.48732319000001,
+          "device_total_used_mib_and_util_percent": "16009, 100"
+        },
+        {
+          "elapsed": 81.525796757,
+          "device_total_used_mib_and_util_percent": "16013, 100"
+        },
+        {
+          "elapsed": 83.56737592900001,
+          "device_total_used_mib_and_util_percent": "16015, 100"
+        },
+        {
+          "elapsed": 85.606127432,
+          "device_total_used_mib_and_util_percent": "16015, 100"
+        },
+        {
+          "elapsed": 87.64516538000001,
+          "device_total_used_mib_and_util_percent": "16007, 100"
+        },
+        {
+          "elapsed": 89.682521399,
+          "device_total_used_mib_and_util_percent": "16016, 100"
+        },
+        {
+          "elapsed": 91.72293073200001,
+          "device_total_used_mib_and_util_percent": "16000, 67"
+        },
+        {
+          "elapsed": 93.84137304699999,
+          "device_total_used_mib_and_util_percent": "16034, 0"
+        },
+        {
+          "elapsed": 95.87811645400001,
+          "device_total_used_mib_and_util_percent": "15964, 94"
+        },
+        {
+          "elapsed": 98.09224369399999,
+          "device_total_used_mib_and_util_percent": "16025, 100"
+        },
+        {
+          "elapsed": 100.13035785400001,
+          "device_total_used_mib_and_util_percent": "16040, 100"
+        },
+        {
+          "elapsed": 102.17073896,
+          "device_total_used_mib_and_util_percent": "16017, 88"
+        },
+        {
+          "elapsed": 104.37832223699999,
+          "device_total_used_mib_and_util_percent": "16036, 100"
+        },
+        {
+          "elapsed": 106.407999005,
+          "device_total_used_mib_and_util_percent": "15725, 100"
+        },
+        {
+          "elapsed": 108.449133595,
+          "device_total_used_mib_and_util_percent": "16009, 68"
+        },
+        {
+          "elapsed": 110.658028514,
+          "device_total_used_mib_and_util_percent": "16019, 77"
+        },
+        {
+          "elapsed": 112.703900398,
+          "device_total_used_mib_and_util_percent": "16047, 50"
+        },
+        {
+          "elapsed": 114.72120559300001,
+          "device_total_used_mib_and_util_percent": "16003, 98"
+        },
+        {
+          "elapsed": 116.756699612,
+          "device_total_used_mib_and_util_percent": "16046, 84"
+        },
+        {
+          "elapsed": 123.13762187399999,
+          "device_total_used_mib_and_util_percent": "16019, 83"
+        }
+      ],
+      "solver_metrics": {},
+      "scope": "short benchmark; not science production; two outputs intended"
+    },
+    "apk_block32_repeat3": {
+      "name": "apk_block32_repeat3",
+      "kind": "apk",
+      "binary": "/home/kaan/ic_audit_20260907/bin/apk",
+      "binary_sha256": "d8d6ffe5b427216a58bda705ae0692c3cc12c3b7f072bd1a845fe11224a4af0f",
+      "ranks": 1,
+      "block": 32,
+      "target_time_code": 0.25,
+      "cycle_cap": 100000,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "chi": 100,
+      "returncode": 0,
+      "wall_seconds_with_initialization_and_output": 5.010049375000001,
+      "peak_summed_child_rss_gib": 0.6007614135742188,
+      "native_outputs": [
+        "/home/kaan/performance_20260907/benchmarks_v3/apk_block32_repeat3/parthenon.prim.00000.phdf",
+        "/home/kaan/performance_20260907/benchmarks_v3/apk_block32_repeat3/parthenon.prim.final.phdf"
+      ],
+      "solver_metrics": {
+        "0": "cycle=0 time=0.0000000000000000e+00 dt=8.0687153045987860e-03 zone-cycles/wsec_step=0.00e+00 wsec_total=6.70e-01 wsec_step=1.39e+00",
+        "1": "walltime used = 3.84e+00",
+        "2": "zone-cycles/wallsecond = 3.61e+07"
+      },
+      "scope": "short benchmark; not science production; two outputs intended"
+    },
+    "L6_apk_block128": {
+      "name": "L6_apk_block128",
+      "kind": "apk",
+      "binary": "/home/kaan/ic_audit_20260907/bin/apk",
+      "binary_sha256": "d8d6ffe5b427216a58bda705ae0692c3cc12c3b7f072bd1a845fe11224a4af0f",
+      "ranks": 1,
+      "block": 128,
+      "target_time_code": 0.08,
+      "cycle_cap": 100000,
+      "dimensions_streamwise": [
+        512,
+        256,
+        256
+      ],
+      "chi": 100,
+      "returncode": 1,
+      "wall_seconds_with_initialization_and_output": 21.412905791000014,
+      "peak_summed_child_rss_gib": 0.23179244995117188,
+      "native_outputs": [],
+      "timed_out": false,
+      "gpu_samples_device_wide": [
+        {
+          "elapsed": 0.0007093689999919661,
+          "device_total_used_mib_and_util_percent": "15706, 99"
+        },
+        {
+          "elapsed": 2.063085717000007,
+          "device_total_used_mib_and_util_percent": "16031, 70"
+        },
+        {
+          "elapsed": 4.214008385,
+          "device_total_used_mib_and_util_percent": "16029, 83"
+        },
+        {
+          "elapsed": 6.347130206000003,
+          "device_total_used_mib_and_util_percent": "16013, 82"
+        },
+        {
+          "elapsed": 8.521361866000007,
+          "device_total_used_mib_and_util_percent": "16003, 98"
+        },
+        {
+          "elapsed": 10.559753435000005,
+          "device_total_used_mib_and_util_percent": "16036, 83"
+        },
+        {
+          "elapsed": 12.624845120000003,
+          "device_total_used_mib_and_util_percent": "16047, 41"
+        },
+        {
+          "elapsed": 14.675027001000018,
+          "device_total_used_mib_and_util_percent": "16012, 48"
+        },
+        {
+          "elapsed": 17.091099514000007,
+          "device_total_used_mib_and_util_percent": "16004, 100"
+        },
+        {
+          "elapsed": 19.126061144999994,
+          "device_total_used_mib_and_util_percent": "126, 5"
+        }
+      ],
+      "solver_metrics": {},
+      "scope": "short benchmark; not science production; two outputs intended"
+    }
+  }
+}
