@@ -1,0 +1,274 @@
+{
+  "status": "stopped_needs_review",
+  "finished": [
+    {
+      "status": "complete_native_checks",
+      "level": 3,
+      "mode": 0,
+      "directory": "/home/kaan/sensitivity_20260907/flash/smokes/L3_chi100_sharp13",
+      "parameters": {
+        "source": "/home/kaan/sensitivity_20260907/flash/smokes/L3_chi100_sharp13/flash.par",
+        "parameter_sha256": "6e3569f144c214adca8aeb7a786be6db5a920975dca4e0c4b9e2965febc54e8a",
+        "assumptions": [],
+        "gamma": 1.6666666666666667,
+        "r_cloud": 0.1,
+        "rho_wind": 1.0,
+        "p_wind": 1.0,
+        "v_wind": 2.581988897471611,
+        "chi": 100.0,
+        "rv_scale": 1.3,
+        "tmax": 0.001,
+        "output_dt": 0.001,
+        "mach": 2.0,
+        "kind": "flash",
+        "t_cc": 0.3872983346207417,
+        "sim_xctr": 0.3,
+        "sim_yctr": 0.5,
+        "sim_zctr": 0.5,
+        "sim_smoothwidth": 0.1,
+        "sim_velocityic": 0.0,
+        "lrefine_min": 2.0,
+        "lrefine_max": 2.0,
+        "cfl": 0.45,
+        "dimensions": [
+          64,
+          32,
+          32
+        ]
+      },
+      "command": [
+        "mpirun",
+        "--bind-to",
+        "core",
+        "-np",
+        "8",
+        "/home/kaan/sensitivity_20260907/flash/flash4_pair"
+      ],
+      "binary_sha256": "009ef9442480ce64a62168b1d5592a09e01181e1103b42b3db7dcc80209ec88e",
+      "input_sha256": "6e3569f144c214adca8aeb7a786be6db5a920975dca4e0c4b9e2965febc54e8a",
+      "launcher_sha256": "4ec6e52f114f34f98fc71b69e3f4f0ec3f366440c3e895d4f03f999d0db17925",
+      "started_unix": 1788822333.8492284,
+      "storage_preflight": {
+        "path": "/home/kaan/sensitivity_20260907/flash",
+        "filesystem_free_bytes": 79012962304,
+        "filesystem_total_bytes": 1081101176832,
+        "windows_backing_volume": {
+          "distribution": "Ubuntu",
+          "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+          "drive": "C:",
+          "free_bytes": 38368301056,
+          "total_bytes": 1999283154944
+        },
+        "policy": "Conservative growth budget; allocated but reusable VHDX blocks are not credited.",
+        "effective_free_bytes": 38368301056
+      },
+      "reserved_output_gib": 1.0,
+      "returncode": 0,
+      "timeout": false,
+      "wall_seconds": 2.927208185195923,
+      "peak_child_rss_gib": 13.412212371826172,
+      "unique_snapshots": 2,
+      "target_snapshots": 101,
+      "series": [
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/flash/smokes/L3_chi100_sharp13/cloudcrush_hdf5_chk_0000",
+          "time_code": 0.0,
+          "t_over_tcc": 0.0,
+          "cells": 65536,
+          "dense_mass": 0.4099079855231985,
+          "total_mass": 2.425245535402449,
+          "tracer_mass": null,
+          "bytes": 7738156,
+          "initial_checks": {
+            "density_relative": 5.551115123125783e-15,
+            "velocity_over_wind": 0.0,
+            "pressure_absolute": 4.440892098500626e-16
+          },
+          "dense_mass_over_initial": 1.0
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/flash/smokes/L3_chi100_sharp13/cloudcrush_hdf5_chk_0001",
+          "time_code": 0.0016777215000000002,
+          "t_over_tcc": 0.004331858286049419,
+          "cells": 65536,
+          "dense_mass": 0.4095889065425239,
+          "total_mass": 2.425245535402449,
+          "tracer_mass": null,
+          "bytes": 7738156,
+          "dense_mass_over_initial": 0.9992215838872537
+        }
+      ],
+      "plot_outputs": [
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/flash/smokes/L3_chi100_sharp13/cloudcrush_forced_hdf5_plt_cnt_0000",
+          "time_code": 0.0016777215000000002,
+          "t_over_tcc": 0.004331858286049419,
+          "cells": 65536,
+          "dense_mass": 0.4095889045856893,
+          "total_mass": 2.4252455335008563,
+          "tracer_mass": null,
+          "bytes": 1834956
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/flash/smokes/L3_chi100_sharp13/cloudcrush_hdf5_plt_cnt_0000",
+          "time_code": 0.0,
+          "t_over_tcc": 0.0,
+          "cells": 65536,
+          "dense_mass": 0.40990798361599445,
+          "total_mass": 2.425245533551788,
+          "tracer_mass": null,
+          "bytes": 1834956
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/flash/smokes/L3_chi100_sharp13/cloudcrush_hdf5_plt_cnt_0001",
+          "time_code": 0.0016777215000000002,
+          "t_over_tcc": 0.004331858286049419,
+          "cells": 65536,
+          "dense_mass": 0.4095889045856893,
+          "total_mass": 2.4252455335008563,
+          "tracer_mass": null,
+          "bytes": 1834956
+        }
+      ],
+      "exact_duplicate_checkpoints_retained": [],
+      "tracer_retention_available": false,
+      "native_precision": "13 full-state float64 checkpoint fields plus all original six-field float32 plotfiles"
+    },
+    {
+      "status": "complete_native_checks",
+      "level": 3,
+      "mode": 1,
+      "directory": "/home/kaan/sensitivity_20260907/flash/smokes/L3_chi100_tanh13",
+      "parameters": {
+        "source": "/home/kaan/sensitivity_20260907/flash/smokes/L3_chi100_tanh13/flash.par",
+        "parameter_sha256": "ee50bcf34469a1502d927d26e598296c2cbccf4ce6aca15d1e27bc5ff167bef5",
+        "assumptions": [],
+        "gamma": 1.6666666666666667,
+        "r_cloud": 0.1,
+        "rho_wind": 1.0,
+        "p_wind": 1.0,
+        "v_wind": 2.581988897471611,
+        "chi": 100.0,
+        "rv_scale": 1.3,
+        "tmax": 0.001,
+        "output_dt": 0.001,
+        "mach": 2.0,
+        "kind": "flash",
+        "t_cc": 0.3872983346207417,
+        "sim_xctr": 0.3,
+        "sim_yctr": 0.5,
+        "sim_zctr": 0.5,
+        "sim_smoothwidth": 0.1,
+        "sim_velocityic": 1.0,
+        "lrefine_min": 2.0,
+        "lrefine_max": 2.0,
+        "cfl": 0.45,
+        "dimensions": [
+          64,
+          32,
+          32
+        ]
+      },
+      "command": [
+        "mpirun",
+        "--bind-to",
+        "core",
+        "-np",
+        "8",
+        "/home/kaan/sensitivity_20260907/flash/flash4_pair"
+      ],
+      "binary_sha256": "009ef9442480ce64a62168b1d5592a09e01181e1103b42b3db7dcc80209ec88e",
+      "input_sha256": "ee50bcf34469a1502d927d26e598296c2cbccf4ce6aca15d1e27bc5ff167bef5",
+      "launcher_sha256": "4ec6e52f114f34f98fc71b69e3f4f0ec3f366440c3e895d4f03f999d0db17925",
+      "started_unix": 1788822337.102735,
+      "storage_preflight": {
+        "path": "/home/kaan/sensitivity_20260907/flash",
+        "filesystem_free_bytes": 78991867904,
+        "filesystem_total_bytes": 1081101176832,
+        "windows_backing_volume": {
+          "distribution": "Ubuntu",
+          "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+          "drive": "C:",
+          "free_bytes": 38368251904,
+          "total_bytes": 1999283154944
+        },
+        "policy": "Conservative growth budget; allocated but reusable VHDX blocks are not credited.",
+        "effective_free_bytes": 38368251904
+      },
+      "reserved_output_gib": 1.0,
+      "returncode": 0,
+      "timeout": false,
+      "wall_seconds": 2.5443921089172363,
+      "peak_child_rss_gib": 13.41373062133789,
+      "unique_snapshots": 2,
+      "target_snapshots": 101,
+      "series": [
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/flash/smokes/L3_chi100_tanh13/cloudcrush_hdf5_chk_0000",
+          "time_code": 0.0,
+          "t_over_tcc": 0.0,
+          "cells": 65536,
+          "dense_mass": 0.4099079855231985,
+          "total_mass": 2.425245535402449,
+          "tracer_mass": null,
+          "bytes": 7738156,
+          "initial_checks": {
+            "density_relative": 5.551115123125783e-15,
+            "velocity_over_wind": 1.7199501139797033e-16,
+            "pressure_absolute": 4.440892098500626e-16
+          },
+          "dense_mass_over_initial": 1.0
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/flash/smokes/L3_chi100_tanh13/cloudcrush_hdf5_chk_0001",
+          "time_code": 0.0016777215000000002,
+          "t_over_tcc": 0.004331858286049419,
+          "cells": 65536,
+          "dense_mass": 0.4095585001431855,
+          "total_mass": 2.425245535402449,
+          "tracer_mass": null,
+          "bytes": 7738156,
+          "dense_mass_over_initial": 0.9991474052900752
+        }
+      ],
+      "plot_outputs": [
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/flash/smokes/L3_chi100_tanh13/cloudcrush_forced_hdf5_plt_cnt_0000",
+          "time_code": 0.0016777215000000002,
+          "t_over_tcc": 0.004331858286049419,
+          "cells": 65536,
+          "dense_mass": 0.4095584978349507,
+          "total_mass": 2.425245533042471,
+          "tracer_mass": null,
+          "bytes": 1834956
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/flash/smokes/L3_chi100_tanh13/cloudcrush_hdf5_plt_cnt_0000",
+          "time_code": 0.0,
+          "t_over_tcc": 0.0,
+          "cells": 65536,
+          "dense_mass": 0.40990798361599445,
+          "total_mass": 2.425245533551788,
+          "tracer_mass": null,
+          "bytes": 1834956
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/flash/smokes/L3_chi100_tanh13/cloudcrush_hdf5_plt_cnt_0001",
+          "time_code": 0.0016777215000000002,
+          "t_over_tcc": 0.004331858286049419,
+          "cells": 65536,
+          "dense_mass": 0.4095584978349507,
+          "total_mass": 2.425245533042471,
+          "tracer_mass": null,
+          "bytes": 1834956
+        }
+      ],
+      "exact_duplicate_checkpoints_retained": [],
+      "tracer_retention_available": false,
+      "native_precision": "13 full-state float64 checkpoint fields plus all original six-field float32 plotfiles"
+    }
+  ],
+  "pairs": [],
+  "pid": 14,
+  "error": "Other initial field changed temp"
+}

@@ -39,7 +39,7 @@ native outputs through 5 t_cc plus unchanged restart settings. No raw file is
 deleted or thinned, and the live viewer is not relabeled with these experiments.
 
 The remaining code families/variants need historical-source and native-IC checks
-before their paired launchers are enabled: FLASH 4.8, Flash-X,
+before their paired launchers are enabled: Flash-X,
 Arepo, GIZMO MFM, GIZMO MFV, Gadget-4, Gasoline. Particle sampling
 and random seeds must be identical within a pair. This is pending work, not an
 already runnable all-code queue.
@@ -66,7 +66,16 @@ pressure agreement to roundoff. All 404 outputs pass checks; its extra
 unsorted-record aggregation agrees within 8.9e-15 but shares the native decoder.
 Native timestep-crossing times are preserved. L5 is held by the 172.49 GiB
 whole-pair retention budget plus reserve. There are now 26 analyzed controls.
-Next safe code families remain FLASH 4.8,
+FLASH 4.8 now has an isolated paired launcher: L3 controls have 101 full-state
+times each, L4 is running, and its full analysis is pending. Its native setup
+has no tracer, so retention is unavailable. The unchanged native plotfiles are
+supplemented with full-state double-precision checkpoints at every plot time;
+the old rolling-two-checkpoint policy is replaced with a 10000-file span.
+This explicit retention-policy change applies to both controls, preserves all
+native fields and avoids overwriting states. Other within-pair settings stay
+identical except velocity and its consistent energy. L5 needs 153.31 GiB per
+full retained pair plus reserve and is guarded, not promised runnable.
+Next safe code families remain
 Flash-X, Arepo, GIZMO MFM/MFV, Gadget-4 and Gasoline; no runnable queue
 for those is claimed before native historical-law and initial-field checks.
 
