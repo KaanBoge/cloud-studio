@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "snapshot": "/home/kaan/sensitivity_20260907/runs/athpp_L4_chi100_sharp13/sensitivity_L4_chi100.out2.00000.athdf",
+      "direct_dense_mass": 398.4896893072199,
+      "yt_dense_mass": 398.4896893072199,
+      "relative_error": 0.0
+    },
+    {
+      "snapshot": "/home/kaan/sensitivity_20260907/runs/athpp_L4_chi100_sharp13/sensitivity_L4_chi100.out2.00100.athdf",
+      "direct_dense_mass": 8.693185539140046,
+      "yt_dense_mass": 8.693185539140044,
+      "relative_error": 2.0433899994454425e-16
+    },
+    {
+      "snapshot": "/home/kaan/sensitivity_20260907/runs/athpp_L4_chi100_historical_tanh13/sensitivity_L4_chi100.out2.00000.athdf",
+      "direct_dense_mass": 398.4896893072199,
+      "yt_dense_mass": 398.4896893072199,
+      "relative_error": 0.0
+    },
+    {
+      "snapshot": "/home/kaan/sensitivity_20260907/runs/athpp_L4_chi100_historical_tanh13/sensitivity_L4_chi100.out2.00100.athdf",
+      "direct_dense_mass": 1.017854499846198,
+      "yt_dense_mass": 1.017854499846198,
+      "relative_error": 0.0
+    },
+    {
+      "snapshot": "/home/kaan/sensitivity_20260907/runs/apk_L4_chi100_sharp13/parthenon.prim.00000.phdf",
+      "direct_dense_mass": 398.4896893072199,
+      "yt_dense_mass": 398.4896893072199,
+      "relative_error": 0.0
+    },
+    {
+      "snapshot": "/home/kaan/sensitivity_20260907/runs/apk_L4_chi100_sharp13/parthenon.prim.final.phdf",
+      "direct_dense_mass": 8.69318553914012,
+      "yt_dense_mass": 8.69318553914012,
+      "relative_error": 0.0
+    },
+    {
+      "snapshot": "/home/kaan/sensitivity_20260907/runs/apk_L4_chi100_historical_momentum13/parthenon.prim.00000.phdf",
+      "direct_dense_mass": 398.4896893072199,
+      "yt_dense_mass": 398.4896893072199,
+      "relative_error": 0.0
+    },
+    {
+      "snapshot": "/home/kaan/sensitivity_20260907/runs/apk_L4_chi100_historical_momentum13/parthenon.prim.final.phdf",
+      "direct_dense_mass": 8.583622925241926,
+      "yt_dense_mass": 8.583622925241924,
+      "relative_error": 2.0694721271789615e-16
+    }
+  ],
+  "scope": "Additional independent native yt sums at nonzero final dense masses, L4."
+}

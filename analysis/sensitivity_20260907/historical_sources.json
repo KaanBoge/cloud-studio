@@ -1,0 +1,66 @@
+{
+  "athpp_historical_tanh": {
+    "path": "/home/kaan/codes/athenapp/src/pgen/cloud_wind.cpp.tanh_backup",
+    "sha256": "cfab305282b3de0c266bd5ce80503e95ccb621cd5aef182ee9c82d435911ccf0",
+    "velocity_lines": [
+      {
+        "line": 112,
+        "text": "        Real fv = 0.5*(1.0 - std::tanh((diag - rvs*rad)/edge));"
+      },
+      {
+        "line": 113,
+        "text": "        Real vx = ul*(1.0 - fv);"
+      }
+    ]
+  },
+  "apk_historical_momentum": {
+    "path": "/mnt/c/Users/kaanb/CloudCrushing/audit_20260907/before/home/kaan/codes/athenapk/src/pgen/cloud.cpp",
+    "sha256": "9c9ca58634a91ec994a6930106a263601f03f0839835064ced7c0110f2e6c505",
+    "velocity_lines": [
+      {
+        "line": 186,
+        "text": "        if (rad > 1.3 * r_cloud) {"
+      },
+      {
+        "line": 187,
+        "text": "          mom = mom_wind;"
+      },
+      {
+        "line": 189,
+        "text": "          mom = 0.0;"
+      }
+    ]
+  },
+  "athpp_production_source": {
+    "path": "/home/kaan/codes/athenapp/src/pgen/cloud_wind.cpp",
+    "sha256": "de58d1663316f93207cce756da1e38a4271f7209dca8b0c01949b370d6fda1de",
+    "velocity_lines": [
+      {
+        "line": 118,
+        "text": "        Real fv = (diag > rvs*rad) ? 0.0 : 1.0;"
+      },
+      {
+        "line": 119,
+        "text": "        Real vx = ul*(1.0 - fv);"
+      }
+    ]
+  },
+  "apk_production_source": {
+    "path": "/home/kaan/codes/athenapk/src/pgen/cloud.cpp",
+    "sha256": "393ea01454cd57e81aaf68a1c2cc2f7916b9e0b35e21a4533584f060e70d2b8a",
+    "velocity_lines": [
+      {
+        "line": 187,
+        "text": "        if (rad > rv_scale * r_cloud) {"
+      },
+      {
+        "line": 189,
+        "text": "          mom = rho * (mom_wind / rho_wind);"
+      },
+      {
+        "line": 191,
+        "text": "          mom = 0.0;"
+      }
+    ]
+  }
+}

@@ -1,0 +1,4087 @@
+{
+  "status": "complete_native_checks",
+  "plan": [
+    [
+      "athpp",
+      3,
+      "sharp13"
+    ],
+    [
+      "athpp",
+      3,
+      "historical_tanh13"
+    ],
+    [
+      "athpp",
+      4,
+      "sharp13"
+    ],
+    [
+      "athpp",
+      4,
+      "historical_tanh13"
+    ],
+    [
+      "apk",
+      3,
+      "sharp13"
+    ],
+    [
+      "apk",
+      3,
+      "historical_momentum13"
+    ],
+    [
+      "apk",
+      4,
+      "sharp13"
+    ],
+    [
+      "apk",
+      4,
+      "historical_momentum13"
+    ]
+  ],
+  "finished": [
+    {
+      "status": "complete_native_checks",
+      "code": "athpp",
+      "level": 3,
+      "chi": 100,
+      "mach": 2,
+      "velocity_ic": "sharp13",
+      "directory": "/home/kaan/sensitivity_20260907/runs/athpp_L3_chi100_sharp13",
+      "binary_sha256": "fcf5d0c6d283c933424d2c38dcd3ac4b720d888660d51bad510ec937f71b1a18",
+      "parameter_sha256": "ac5835a27995a373ac009d0a4ff27ff7011c03014e286142463fdcaba17e8f58",
+      "command": [
+        "mpirun",
+        "--use-hwthread-cpus",
+        "--bind-to",
+        "hwthread",
+        "--map-by",
+        "hwthread",
+        "-np",
+        "16",
+        "/home/kaan/sensitivity_20260907/bin/athpp_pair",
+        "-i",
+        "athinput"
+      ],
+      "parameters": {
+        "source": "/home/kaan/sensitivity_20260907/runs/athpp_L3_chi100_sharp13/athinput",
+        "parameter_sha256": "ac5835a27995a373ac009d0a4ff27ff7011c03014e286142463fdcaba17e8f58",
+        "assumptions": [
+          "custom cloud_wind pgen fixes R=1, rho_wind=1 and P_wind=1"
+        ],
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1.0,
+        "rho_wind": 1.0,
+        "p_wind": 1.0,
+        "v_wind": 2.581988897471611,
+        "chi": 100.0,
+        "rv_scale": 1.3,
+        "tmax": 19.364916731037084,
+        "output_dt": 0.19364916731037085,
+        "mach": 2.0,
+        "kind": "athena",
+        "t_cc": 3.872983346207417
+      },
+      "storage_preflight": {
+        "path": "/home/kaan/sensitivity_20260907",
+        "filesystem_free_bytes": 148772831232,
+        "filesystem_total_bytes": 1081101176832,
+        "windows_backing_volume": {
+          "distribution": "Ubuntu",
+          "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+          "drive": "C:",
+          "free_bytes": 38009208832,
+          "total_bytes": 1999283154944
+        },
+        "policy": "Conservative growth budget; allocated but reusable VHDX blocks are not credited.",
+        "effective_free_bytes": 38009208832
+      },
+      "started_unix": 1788811259.4434438,
+      "returncode": 0,
+      "timed_out": false,
+      "wall_seconds": 3.4742000102996826,
+      "peak_child_rss_gib": 0.6286964416503906,
+      "cadence": {
+        "complete_outputs": true,
+        "unique_snapshots": 101,
+        "native_time_rows": [
+          [
+            0.0,
+            "sensitivity_L3_chi100.out2.00000.athdf"
+          ],
+          [
+            0.058004936537220476,
+            "sensitivity_L3_chi100.out2.00001.athdf"
+          ],
+          [
+            0.10650354583072297,
+            "sensitivity_L3_chi100.out2.00002.athdf"
+          ],
+          [
+            0.1538831475306652,
+            "sensitivity_L3_chi100.out2.00003.athdf"
+          ],
+          [
+            0.20079102935108736,
+            "sensitivity_L3_chi100.out2.00004.athdf"
+          ],
+          [
+            0.25534948811420183,
+            "sensitivity_L3_chi100.out2.00005.athdf"
+          ],
+          [
+            0.3020248646081117,
+            "sensitivity_L3_chi100.out2.00006.athdf"
+          ],
+          [
+            0.3568792612969107,
+            "sensitivity_L3_chi100.out2.00007.athdf"
+          ],
+          [
+            0.40409632168774023,
+            "sensitivity_L3_chi100.out2.00008.athdf"
+          ],
+          [
+            0.45146324996324233,
+            "sensitivity_L3_chi100.out2.00009.athdf"
+          ],
+          [
+            0.5067155269109651,
+            "sensitivity_L3_chi100.out2.00010.athdf"
+          ],
+          [
+            0.5541220196639042,
+            "sensitivity_L3_chi100.out2.00011.athdf"
+          ],
+          [
+            0.601620209670902,
+            "sensitivity_L3_chi100.out2.00012.athdf"
+          ],
+          [
+            0.6571934253921559,
+            "sensitivity_L3_chi100.out2.00013.athdf"
+          ],
+          [
+            0.7049883483689842,
+            "sensitivity_L3_chi100.out2.00014.athdf"
+          ],
+          [
+            0.752923129065993,
+            "sensitivity_L3_chi100.out2.00015.athdf"
+          ],
+          [
+            0.8008974360058746,
+            "sensitivity_L3_chi100.out2.00016.athdf"
+          ],
+          [
+            0.8569058433466438,
+            "sensitivity_L3_chi100.out2.00017.athdf"
+          ],
+          [
+            0.9049957801345178,
+            "sensitivity_L3_chi100.out2.00018.athdf"
+          ],
+          [
+            0.9531777429834405,
+            "sensitivity_L3_chi100.out2.00019.athdf"
+          ],
+          [
+            1.001411943984219,
+            "sensitivity_L3_chi100.out2.00020.athdf"
+          ],
+          [
+            1.0578168332580666,
+            "sensitivity_L3_chi100.out2.00021.athdf"
+          ],
+          [
+            1.106232953846371,
+            "sensitivity_L3_chi100.out2.00022.athdf"
+          ],
+          [
+            1.1546919388500922,
+            "sensitivity_L3_chi100.out2.00023.athdf"
+          ],
+          [
+            1.2031842850222856,
+            "sensitivity_L3_chi100.out2.00024.athdf"
+          ],
+          [
+            1.2517127969698207,
+            "sensitivity_L3_chi100.out2.00025.athdf"
+          ],
+          [
+            1.3002721717717178,
+            "sensitivity_L3_chi100.out2.00026.athdf"
+          ],
+          [
+            1.3569524445661465,
+            "sensitivity_L3_chi100.out2.00027.athdf"
+          ],
+          [
+            1.4055577661872152,
+            "sensitivity_L3_chi100.out2.00028.athdf"
+          ],
+          [
+            1.4541833440389418,
+            "sensitivity_L3_chi100.out2.00029.athdf"
+          ],
+          [
+            1.5028223409583916,
+            "sensitivity_L3_chi100.out2.00030.athdf"
+          ],
+          [
+            1.5514746852550738,
+            "sensitivity_L3_chi100.out2.00031.athdf"
+          ],
+          [
+            1.6001393247607847,
+            "sensitivity_L3_chi100.out2.00032.athdf"
+          ],
+          [
+            1.6569286423898333,
+            "sensitivity_L3_chi100.out2.00033.athdf"
+          ],
+          [
+            1.7056172531552471,
+            "sensitivity_L3_chi100.out2.00034.athdf"
+          ],
+          [
+            1.7543157142889978,
+            "sensitivity_L3_chi100.out2.00035.athdf"
+          ],
+          [
+            1.8030352452279832,
+            "sensitivity_L3_chi100.out2.00036.athdf"
+          ],
+          [
+            1.8517686504632047,
+            "sensitivity_L3_chi100.out2.00037.athdf"
+          ],
+          [
+            1.9004920252270177,
+            "sensitivity_L3_chi100.out2.00038.athdf"
+          ],
+          [
+            1.9573264442752114,
+            "sensitivity_L3_chi100.out2.00039.athdf"
+          ],
+          [
+            2.006050592060895,
+            "sensitivity_L3_chi100.out2.00040.athdf"
+          ],
+          [
+            2.0547992538367463,
+            "sensitivity_L3_chi100.out2.00041.athdf"
+          ],
+          [
+            2.1035958147917704,
+            "sensitivity_L3_chi100.out2.00042.athdf"
+          ],
+          [
+            2.152420150530058,
+            "sensitivity_L3_chi100.out2.00043.athdf"
+          ],
+          [
+            2.201274127928466,
+            "sensitivity_L3_chi100.out2.00044.athdf"
+          ],
+          [
+            2.250147601792773,
+            "sensitivity_L3_chi100.out2.00045.athdf"
+          ],
+          [
+            2.3071844742578578,
+            "sensitivity_L3_chi100.out2.00046.athdf"
+          ],
+          [
+            2.356084709456902,
+            "sensitivity_L3_chi100.out2.00047.athdf"
+          ],
+          [
+            2.4049917227571207,
+            "sensitivity_L3_chi100.out2.00048.athdf"
+          ],
+          [
+            2.453878736646602,
+            "sensitivity_L3_chi100.out2.00049.athdf"
+          ],
+          [
+            2.502732556199792,
+            "sensitivity_L3_chi100.out2.00050.athdf"
+          ],
+          [
+            2.55157761169155,
+            "sensitivity_L3_chi100.out2.00051.athdf"
+          ],
+          [
+            2.6004217693136193,
+            "sensitivity_L3_chi100.out2.00052.athdf"
+          ],
+          [
+            2.6574012372081923,
+            "sensitivity_L3_chi100.out2.00053.athdf"
+          ],
+          [
+            2.7062388742669814,
+            "sensitivity_L3_chi100.out2.00054.athdf"
+          ],
+          [
+            2.7550865503727984,
+            "sensitivity_L3_chi100.out2.00055.athdf"
+          ],
+          [
+            2.803938958656577,
+            "sensitivity_L3_chi100.out2.00056.athdf"
+          ],
+          [
+            2.852795292796146,
+            "sensitivity_L3_chi100.out2.00057.athdf"
+          ],
+          [
+            2.9016571530693667,
+            "sensitivity_L3_chi100.out2.00058.athdf"
+          ],
+          [
+            2.950523128827345,
+            "sensitivity_L3_chi100.out2.00059.athdf"
+          ],
+          [
+            3.0075434365900096,
+            "sensitivity_L3_chi100.out2.00060.athdf"
+          ],
+          [
+            3.056435063096512,
+            "sensitivity_L3_chi100.out2.00061.athdf"
+          ],
+          [
+            3.1053291214375425,
+            "sensitivity_L3_chi100.out2.00062.athdf"
+          ],
+          [
+            3.154245045427896,
+            "sensitivity_L3_chi100.out2.00063.athdf"
+          ],
+          [
+            3.203166034385732,
+            "sensitivity_L3_chi100.out2.00064.athdf"
+          ],
+          [
+            3.252086461336742,
+            "sensitivity_L3_chi100.out2.00065.athdf"
+          ],
+          [
+            3.301009350706234,
+            "sensitivity_L3_chi100.out2.00066.athdf"
+          ],
+          [
+            3.3580909958247664,
+            "sensitivity_L3_chi100.out2.00067.athdf"
+          ],
+          [
+            3.4070205499129056,
+            "sensitivity_L3_chi100.out2.00068.athdf"
+          ],
+          [
+            3.4559494704880045,
+            "sensitivity_L3_chi100.out2.00069.athdf"
+          ],
+          [
+            3.5048785582728663,
+            "sensitivity_L3_chi100.out2.00070.athdf"
+          ],
+          [
+            3.5538104479807946,
+            "sensitivity_L3_chi100.out2.00071.athdf"
+          ],
+          [
+            3.6027453143454595,
+            "sensitivity_L3_chi100.out2.00072.athdf"
+          ],
+          [
+            3.6516838521069985,
+            "sensitivity_L3_chi100.out2.00073.athdf"
+          ],
+          [
+            3.700630223433729,
+            "sensitivity_L3_chi100.out2.00074.athdf"
+          ],
+          [
+            3.7577476861824897,
+            "sensitivity_L3_chi100.out2.00075.athdf"
+          ],
+          [
+            3.8067162749548924,
+            "sensitivity_L3_chi100.out2.00076.athdf"
+          ],
+          [
+            3.8556930542477623,
+            "sensitivity_L3_chi100.out2.00077.athdf"
+          ],
+          [
+            3.9046765593213038,
+            "sensitivity_L3_chi100.out2.00078.athdf"
+          ],
+          [
+            3.9536679697222477,
+            "sensitivity_L3_chi100.out2.00079.athdf"
+          ],
+          [
+            4.0026690907535425,
+            "sensitivity_L3_chi100.out2.00080.athdf"
+          ],
+          [
+            4.051676327191238,
+            "sensitivity_L3_chi100.out2.00081.athdf"
+          ],
+          [
+            4.1006640221013315,
+            "sensitivity_L3_chi100.out2.00082.athdf"
+          ],
+          [
+            4.157772991651449,
+            "sensitivity_L3_chi100.out2.00083.athdf"
+          ],
+          [
+            4.206695113864205,
+            "sensitivity_L3_chi100.out2.00084.athdf"
+          ],
+          [
+            4.255589501864418,
+            "sensitivity_L3_chi100.out2.00085.athdf"
+          ],
+          [
+            4.304456319574885,
+            "sensitivity_L3_chi100.out2.00086.athdf"
+          ],
+          [
+            4.353298226084307,
+            "sensitivity_L3_chi100.out2.00087.athdf"
+          ],
+          [
+            4.402118335373098,
+            "sensitivity_L3_chi100.out2.00088.athdf"
+          ],
+          [
+            4.450914181796704,
+            "sensitivity_L3_chi100.out2.00089.athdf"
+          ],
+          [
+            4.50780760739139,
+            "sensitivity_L3_chi100.out2.00090.athdf"
+          ],
+          [
+            4.556540200305355,
+            "sensitivity_L3_chi100.out2.00091.athdf"
+          ],
+          [
+            4.6052379031676,
+            "sensitivity_L3_chi100.out2.00092.athdf"
+          ],
+          [
+            4.653906811633359,
+            "sensitivity_L3_chi100.out2.00093.athdf"
+          ],
+          [
+            4.702550632249104,
+            "sensitivity_L3_chi100.out2.00094.athdf"
+          ],
+          [
+            4.751160311660328,
+            "sensitivity_L3_chi100.out2.00095.athdf"
+          ],
+          [
+            4.807832701210572,
+            "sensitivity_L3_chi100.out2.00096.athdf"
+          ],
+          [
+            4.856359997211156,
+            "sensitivity_L3_chi100.out2.00097.athdf"
+          ],
+          [
+            4.904864115995469,
+            "sensitivity_L3_chi100.out2.00098.athdf"
+          ],
+          [
+            4.953334263112364,
+            "sensitivity_L3_chi100.out2.00099.athdf"
+          ],
+          [
+            5.0,
+            "sensitivity_L3_chi100.out2.00100.athdf"
+          ]
+        ],
+        "duplicate_time_files_retained": [],
+        "exact_nominal_times": false,
+        "max_time_offset_tcc": 0.008090995824766356,
+        "finite_positive_fields": true,
+        "comparison_status": "Provisional. Actual times differ; BC/tracer matching and retention need review."
+      },
+      "initial_check": {
+        "passed": true,
+        "errors": {
+          "density_relative": 5.551115123125783e-15,
+          "pressure_relative": 4.440892098500626e-16,
+          "velocity_over_wind": 1.7199501139797033e-16,
+          "tracer_absolute": 1.1102230246251565e-16
+        },
+        "dimensions": [
+          64,
+          32,
+          32
+        ],
+        "edges": [
+          [
+            -3.0,
+            17.0
+          ],
+          [
+            -5.0,
+            5.0
+          ],
+          [
+            -5.0,
+            5.0
+          ]
+        ],
+        "velocity_ic": "sharp13"
+      }
+    },
+    {
+      "status": "complete_native_checks",
+      "code": "athpp",
+      "level": 3,
+      "chi": 100,
+      "mach": 2,
+      "velocity_ic": "historical_tanh13",
+      "directory": "/home/kaan/sensitivity_20260907/runs/athpp_L3_chi100_historical_tanh13",
+      "binary_sha256": "fcf5d0c6d283c933424d2c38dcd3ac4b720d888660d51bad510ec937f71b1a18",
+      "parameter_sha256": "0dd49fba8130ade7b5cae7e17fdf9bf6b2194f6fde3c5bef4ed17705d6cb15f6",
+      "command": [
+        "mpirun",
+        "--use-hwthread-cpus",
+        "--bind-to",
+        "hwthread",
+        "--map-by",
+        "hwthread",
+        "-np",
+        "16",
+        "/home/kaan/sensitivity_20260907/bin/athpp_pair",
+        "-i",
+        "athinput"
+      ],
+      "parameters": {
+        "source": "/home/kaan/sensitivity_20260907/runs/athpp_L3_chi100_historical_tanh13/athinput",
+        "parameter_sha256": "0dd49fba8130ade7b5cae7e17fdf9bf6b2194f6fde3c5bef4ed17705d6cb15f6",
+        "assumptions": [
+          "custom cloud_wind pgen fixes R=1, rho_wind=1 and P_wind=1"
+        ],
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1.0,
+        "rho_wind": 1.0,
+        "p_wind": 1.0,
+        "v_wind": 2.581988897471611,
+        "chi": 100.0,
+        "rv_scale": 1.3,
+        "tmax": 19.364916731037084,
+        "output_dt": 0.19364916731037085,
+        "mach": 2.0,
+        "kind": "athena",
+        "t_cc": 3.872983346207417
+      },
+      "storage_preflight": {
+        "path": "/home/kaan/sensitivity_20260907",
+        "filesystem_free_bytes": 148410257408,
+        "filesystem_total_bytes": 1081101176832,
+        "windows_backing_volume": {
+          "distribution": "Ubuntu",
+          "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+          "drive": "C:",
+          "free_bytes": 38009221120,
+          "total_bytes": 1999283154944
+        },
+        "policy": "Conservative growth budget; allocated but reusable VHDX blocks are not credited.",
+        "effective_free_bytes": 38009221120
+      },
+      "started_unix": 1788811263.230043,
+      "returncode": 0,
+      "timed_out": false,
+      "wall_seconds": 2.920490264892578,
+      "peak_child_rss_gib": 0.6315879821777344,
+      "cadence": {
+        "complete_outputs": true,
+        "unique_snapshots": 101,
+        "native_time_rows": [
+          [
+            0.0,
+            "sensitivity_L3_chi100.out2.00000.athdf"
+          ],
+          [
+            0.05798145560299902,
+            "sensitivity_L3_chi100.out2.00001.athdf"
+          ],
+          [
+            0.10702438026163247,
+            "sensitivity_L3_chi100.out2.00002.athdf"
+          ],
+          [
+            0.15501789602104163,
+            "sensitivity_L3_chi100.out2.00003.athdf"
+          ],
+          [
+            0.20234389117955479,
+            "sensitivity_L3_chi100.out2.00004.athdf"
+          ],
+          [
+            0.25729768212684406,
+            "sensitivity_L3_chi100.out2.00005.athdf"
+          ],
+          [
+            0.304482625243251,
+            "sensitivity_L3_chi100.out2.00006.athdf"
+          ],
+          [
+            0.3517646062125843,
+            "sensitivity_L3_chi100.out2.00007.athdf"
+          ],
+          [
+            0.407100956003242,
+            "sensitivity_L3_chi100.out2.00008.athdf"
+          ],
+          [
+            0.4546559811613098,
+            "sensitivity_L3_chi100.out2.00009.athdf"
+          ],
+          [
+            0.5022953989844391,
+            "sensitivity_L3_chi100.out2.00010.athdf"
+          ],
+          [
+            0.5578698443014032,
+            "sensitivity_L3_chi100.out2.00011.athdf"
+          ],
+          [
+            0.605570995518222,
+            "sensitivity_L3_chi100.out2.00012.athdf"
+          ],
+          [
+            0.6533541859191068,
+            "sensitivity_L3_chi100.out2.00013.athdf"
+          ],
+          [
+            0.7012024264998569,
+            "sensitivity_L3_chi100.out2.00014.athdf"
+          ],
+          [
+            0.7571590545191329,
+            "sensitivity_L3_chi100.out2.00015.athdf"
+          ],
+          [
+            0.8052155472810442,
+            "sensitivity_L3_chi100.out2.00016.athdf"
+          ],
+          [
+            0.8532948351095114,
+            "sensitivity_L3_chi100.out2.00017.athdf"
+          ],
+          [
+            0.9013929698723959,
+            "sensitivity_L3_chi100.out2.00018.athdf"
+          ],
+          [
+            0.9576094192071242,
+            "sensitivity_L3_chi100.out2.00019.athdf"
+          ],
+          [
+            1.005866220577464,
+            "sensitivity_L3_chi100.out2.00020.athdf"
+          ],
+          [
+            1.0542133673318994,
+            "sensitivity_L3_chi100.out2.00021.athdf"
+          ],
+          [
+            1.1026304748695126,
+            "sensitivity_L3_chi100.out2.00022.athdf"
+          ],
+          [
+            1.1511278369824505,
+            "sensitivity_L3_chi100.out2.00023.athdf"
+          ],
+          [
+            1.2077406803125403,
+            "sensitivity_L3_chi100.out2.00024.athdf"
+          ],
+          [
+            1.256265691775403,
+            "sensitivity_L3_chi100.out2.00025.athdf"
+          ],
+          [
+            1.3047883697492813,
+            "sensitivity_L3_chi100.out2.00026.athdf"
+          ],
+          [
+            1.3533129363214353,
+            "sensitivity_L3_chi100.out2.00027.athdf"
+          ],
+          [
+            1.4018445646213322,
+            "sensitivity_L3_chi100.out2.00028.athdf"
+          ],
+          [
+            1.4503950826191292,
+            "sensitivity_L3_chi100.out2.00029.athdf"
+          ],
+          [
+            1.5070520571193098,
+            "sensitivity_L3_chi100.out2.00030.athdf"
+          ],
+          [
+            1.5556091743553608,
+            "sensitivity_L3_chi100.out2.00031.athdf"
+          ],
+          [
+            1.6041639816455917,
+            "sensitivity_L3_chi100.out2.00032.athdf"
+          ],
+          [
+            1.6527432247784315,
+            "sensitivity_L3_chi100.out2.00033.athdf"
+          ],
+          [
+            1.70136675724946,
+            "sensitivity_L3_chi100.out2.00034.athdf"
+          ],
+          [
+            1.7500253072821887,
+            "sensitivity_L3_chi100.out2.00035.athdf"
+          ],
+          [
+            1.8068317755958707,
+            "sensitivity_L3_chi100.out2.00036.athdf"
+          ],
+          [
+            1.8555256086817464,
+            "sensitivity_L3_chi100.out2.00037.athdf"
+          ],
+          [
+            1.904211049904459,
+            "sensitivity_L3_chi100.out2.00038.athdf"
+          ],
+          [
+            1.9528945041745518,
+            "sensitivity_L3_chi100.out2.00039.athdf"
+          ],
+          [
+            2.001570361635857,
+            "sensitivity_L3_chi100.out2.00040.athdf"
+          ],
+          [
+            2.050261161744036,
+            "sensitivity_L3_chi100.out2.00041.athdf"
+          ],
+          [
+            2.1071385855384213,
+            "sensitivity_L3_chi100.out2.00042.athdf"
+          ],
+          [
+            2.1559335407158295,
+            "sensitivity_L3_chi100.out2.00043.athdf"
+          ],
+          [
+            2.204768671454528,
+            "sensitivity_L3_chi100.out2.00044.athdf"
+          ],
+          [
+            2.253633993796056,
+            "sensitivity_L3_chi100.out2.00045.athdf"
+          ],
+          [
+            2.302515321316673,
+            "sensitivity_L3_chi100.out2.00046.athdf"
+          ],
+          [
+            2.3514065755310902,
+            "sensitivity_L3_chi100.out2.00047.athdf"
+          ],
+          [
+            2.400299702841954,
+            "sensitivity_L3_chi100.out2.00048.athdf"
+          ],
+          [
+            2.4572975583707932,
+            "sensitivity_L3_chi100.out2.00049.athdf"
+          ],
+          [
+            2.506105107208073,
+            "sensitivity_L3_chi100.out2.00050.athdf"
+          ],
+          [
+            2.5548988146676392,
+            "sensitivity_L3_chi100.out2.00051.athdf"
+          ],
+          [
+            2.6037011551134372,
+            "sensitivity_L3_chi100.out2.00052.athdf"
+          ],
+          [
+            2.6525134782844484,
+            "sensitivity_L3_chi100.out2.00053.athdf"
+          ],
+          [
+            2.701317052337707,
+            "sensitivity_L3_chi100.out2.00054.athdf"
+          ],
+          [
+            2.7501300138562264,
+            "sensitivity_L3_chi100.out2.00055.athdf"
+          ],
+          [
+            2.80706340342082,
+            "sensitivity_L3_chi100.out2.00056.athdf"
+          ],
+          [
+            2.855869685539573,
+            "sensitivity_L3_chi100.out2.00057.athdf"
+          ],
+          [
+            2.9046983321443354,
+            "sensitivity_L3_chi100.out2.00058.athdf"
+          ],
+          [
+            2.953525780473401,
+            "sensitivity_L3_chi100.out2.00059.athdf"
+          ],
+          [
+            3.0023495036986803,
+            "sensitivity_L3_chi100.out2.00060.athdf"
+          ],
+          [
+            3.0511899396179705,
+            "sensitivity_L3_chi100.out2.00061.athdf"
+          ],
+          [
+            3.100061214094952,
+            "sensitivity_L3_chi100.out2.00062.athdf"
+          ],
+          [
+            3.1570900607724544,
+            "sensitivity_L3_chi100.out2.00063.athdf"
+          ],
+          [
+            3.2059615667687753,
+            "sensitivity_L3_chi100.out2.00064.athdf"
+          ],
+          [
+            3.254840705909427,
+            "sensitivity_L3_chi100.out2.00065.athdf"
+          ],
+          [
+            3.3037548002806743,
+            "sensitivity_L3_chi100.out2.00066.athdf"
+          ],
+          [
+            3.352672803170474,
+            "sensitivity_L3_chi100.out2.00067.athdf"
+          ],
+          [
+            3.401588994574668,
+            "sensitivity_L3_chi100.out2.00068.athdf"
+          ],
+          [
+            3.4505030634345557,
+            "sensitivity_L3_chi100.out2.00069.athdf"
+          ],
+          [
+            3.5075726229179973,
+            "sensitivity_L3_chi100.out2.00070.athdf"
+          ],
+          [
+            3.556493958056026,
+            "sensitivity_L3_chi100.out2.00071.athdf"
+          ],
+          [
+            3.6054178501462726,
+            "sensitivity_L3_chi100.out2.00072.athdf"
+          ],
+          [
+            3.6543464581320295,
+            "sensitivity_L3_chi100.out2.00073.athdf"
+          ],
+          [
+            3.703283509053249,
+            "sensitivity_L3_chi100.out2.00074.athdf"
+          ],
+          [
+            3.7522292137577447,
+            "sensitivity_L3_chi100.out2.00075.athdf"
+          ],
+          [
+            3.8011822298394358,
+            "sensitivity_L3_chi100.out2.00076.athdf"
+          ],
+          [
+            3.850141621342577,
+            "sensitivity_L3_chi100.out2.00077.athdf"
+          ],
+          [
+            3.907269658290794,
+            "sensitivity_L3_chi100.out2.00078.athdf"
+          ],
+          [
+            3.956248367683101,
+            "sensitivity_L3_chi100.out2.00079.athdf"
+          ],
+          [
+            4.005241205008365,
+            "sensitivity_L3_chi100.out2.00080.athdf"
+          ],
+          [
+            4.054245600420813,
+            "sensitivity_L3_chi100.out2.00081.athdf"
+          ],
+          [
+            4.103256823952595,
+            "sensitivity_L3_chi100.out2.00082.athdf"
+          ],
+          [
+            4.152253147527027,
+            "sensitivity_L3_chi100.out2.00083.athdf"
+          ],
+          [
+            4.2012226569704225,
+            "sensitivity_L3_chi100.out2.00084.athdf"
+          ],
+          [
+            4.250165816246454,
+            "sensitivity_L3_chi100.out2.00085.athdf"
+          ],
+          [
+            4.307226824588406,
+            "sensitivity_L3_chi100.out2.00086.athdf"
+          ],
+          [
+            4.356106797132228,
+            "sensitivity_L3_chi100.out2.00087.athdf"
+          ],
+          [
+            4.404963342919733,
+            "sensitivity_L3_chi100.out2.00088.athdf"
+          ],
+          [
+            4.453787227403868,
+            "sensitivity_L3_chi100.out2.00089.athdf"
+          ],
+          [
+            4.502585596984933,
+            "sensitivity_L3_chi100.out2.00090.athdf"
+          ],
+          [
+            4.551365111652815,
+            "sensitivity_L3_chi100.out2.00091.athdf"
+          ],
+          [
+            4.600123352513189,
+            "sensitivity_L3_chi100.out2.00092.athdf"
+          ],
+          [
+            4.656981322159907,
+            "sensitivity_L3_chi100.out2.00093.athdf"
+          ],
+          [
+            4.705688400213652,
+            "sensitivity_L3_chi100.out2.00094.athdf"
+          ],
+          [
+            4.754371456763611,
+            "sensitivity_L3_chi100.out2.00095.athdf"
+          ],
+          [
+            4.803024356756764,
+            "sensitivity_L3_chi100.out2.00096.athdf"
+          ],
+          [
+            4.8516519921192955,
+            "sensitivity_L3_chi100.out2.00097.athdf"
+          ],
+          [
+            4.900262881565582,
+            "sensitivity_L3_chi100.out2.00098.athdf"
+          ],
+          [
+            4.956937776749221,
+            "sensitivity_L3_chi100.out2.00099.athdf"
+          ],
+          [
+            5.0,
+            "sensitivity_L3_chi100.out2.00100.athdf"
+          ]
+        ],
+        "duplicate_time_files_retained": [],
+        "exact_nominal_times": false,
+        "max_time_offset_tcc": 0.007981455602999017,
+        "finite_positive_fields": true,
+        "comparison_status": "Provisional. Actual times differ; BC/tracer matching and retention need review."
+      },
+      "initial_check": {
+        "passed": true,
+        "errors": {
+          "density_relative": 5.551115123125783e-15,
+          "pressure_relative": 4.440892098500626e-16,
+          "velocity_over_wind": 1.7199501139797033e-16,
+          "tracer_absolute": 1.1102230246251565e-16
+        },
+        "dimensions": [
+          64,
+          32,
+          32
+        ],
+        "edges": [
+          [
+            -3.0,
+            17.0
+          ],
+          [
+            -5.0,
+            5.0
+          ],
+          [
+            -5.0,
+            5.0
+          ]
+        ],
+        "velocity_ic": "historical_tanh13"
+      }
+    },
+    {
+      "status": "complete_native_checks",
+      "code": "athpp",
+      "level": 4,
+      "chi": 100,
+      "mach": 2,
+      "velocity_ic": "sharp13",
+      "directory": "/home/kaan/sensitivity_20260907/runs/athpp_L4_chi100_sharp13",
+      "binary_sha256": "fcf5d0c6d283c933424d2c38dcd3ac4b720d888660d51bad510ec937f71b1a18",
+      "parameter_sha256": "99f0460fca3521254e6b7406da27cabf202c691f196a66de2d653e2676ed72b4",
+      "command": [
+        "mpirun",
+        "--use-hwthread-cpus",
+        "--bind-to",
+        "hwthread",
+        "--map-by",
+        "hwthread",
+        "-np",
+        "16",
+        "/home/kaan/sensitivity_20260907/bin/athpp_pair",
+        "-i",
+        "athinput"
+      ],
+      "parameters": {
+        "source": "/home/kaan/sensitivity_20260907/runs/athpp_L4_chi100_sharp13/athinput",
+        "parameter_sha256": "99f0460fca3521254e6b7406da27cabf202c691f196a66de2d653e2676ed72b4",
+        "assumptions": [
+          "custom cloud_wind pgen fixes R=1, rho_wind=1 and P_wind=1"
+        ],
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1.0,
+        "rho_wind": 1.0,
+        "p_wind": 1.0,
+        "v_wind": 2.581988897471611,
+        "chi": 100.0,
+        "rv_scale": 1.3,
+        "tmax": 19.364916731037084,
+        "output_dt": 0.19364916731037085,
+        "mach": 2.0,
+        "kind": "athena",
+        "t_cc": 3.872983346207417
+      },
+      "storage_preflight": {
+        "path": "/home/kaan/sensitivity_20260907",
+        "filesystem_free_bytes": 148047687680,
+        "filesystem_total_bytes": 1081101176832,
+        "windows_backing_volume": {
+          "distribution": "Ubuntu",
+          "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+          "drive": "C:",
+          "free_bytes": 38009221120,
+          "total_bytes": 1999283154944
+        },
+        "policy": "Conservative growth budget; allocated but reusable VHDX blocks are not credited.",
+        "effective_free_bytes": 38009221120
+      },
+      "started_unix": 1788811266.456177,
+      "returncode": 0,
+      "timed_out": false,
+      "wall_seconds": 36.68284797668457,
+      "peak_child_rss_gib": 0.8987846374511719,
+      "cadence": {
+        "complete_outputs": true,
+        "unique_snapshots": 101,
+        "native_time_rows": [
+          [
+            0.0,
+            "sensitivity_L4_chi100.out2.00000.athdf"
+          ],
+          [
+            0.05341772942981775,
+            "sensitivity_L4_chi100.out2.00001.athdf"
+          ],
+          [
+            0.10073261831930176,
+            "sensitivity_L4_chi100.out2.00002.athdf"
+          ],
+          [
+            0.15101548067106624,
+            "sensitivity_L4_chi100.out2.00003.athdf"
+          ],
+          [
+            0.20114361800201064,
+            "sensitivity_L4_chi100.out2.00004.athdf"
+          ],
+          [
+            0.2516335963416252,
+            "sensitivity_L4_chi100.out2.00005.athdf"
+          ],
+          [
+            0.3024714250583886,
+            "sensitivity_L4_chi100.out2.00006.athdf"
+          ],
+          [
+            0.3534906068529267,
+            "sensitivity_L4_chi100.out2.00007.athdf"
+          ],
+          [
+            0.4006929635090998,
+            "sensitivity_L4_chi100.out2.00008.athdf"
+          ],
+          [
+            0.4518621941191284,
+            "sensitivity_L4_chi100.out2.00009.athdf"
+          ],
+          [
+            0.5031671549843957,
+            "sensitivity_L4_chi100.out2.00010.athdf"
+          ],
+          [
+            0.5506967702690885,
+            "sensitivity_L4_chi100.out2.00011.athdf"
+          ],
+          [
+            0.6023525830173377,
+            "sensitivity_L4_chi100.out2.00012.athdf"
+          ],
+          [
+            0.6501811849784234,
+            "sensitivity_L4_chi100.out2.00013.athdf"
+          ],
+          [
+            0.702131278635415,
+            "sensitivity_L4_chi100.out2.00014.athdf"
+          ],
+          [
+            0.7502057002932625,
+            "sensitivity_L4_chi100.out2.00015.athdf"
+          ],
+          [
+            0.8024467158510139,
+            "sensitivity_L4_chi100.out2.00016.athdf"
+          ],
+          [
+            0.8508183278748896,
+            "sensitivity_L4_chi100.out2.00017.athdf"
+          ],
+          [
+            0.9033183016607729,
+            "sensitivity_L4_chi100.out2.00018.athdf"
+          ],
+          [
+            0.9518235011474027,
+            "sensitivity_L4_chi100.out2.00019.athdf"
+          ],
+          [
+            1.0003630073964862,
+            "sensitivity_L4_chi100.out2.00020.athdf"
+          ],
+          [
+            1.0530049337831993,
+            "sensitivity_L4_chi100.out2.00021.athdf"
+          ],
+          [
+            1.1016546261509557,
+            "sensitivity_L4_chi100.out2.00022.athdf"
+          ],
+          [
+            1.1503526144616163,
+            "sensitivity_L4_chi100.out2.00023.athdf"
+          ],
+          [
+            1.2031580753090994,
+            "sensitivity_L4_chi100.out2.00024.athdf"
+          ],
+          [
+            1.2519423590211973,
+            "sensitivity_L4_chi100.out2.00025.athdf"
+          ],
+          [
+            1.3007602431759566,
+            "sensitivity_L4_chi100.out2.00026.athdf"
+          ],
+          [
+            1.35368097319136,
+            "sensitivity_L4_chi100.out2.00027.athdf"
+          ],
+          [
+            1.4025634912505733,
+            "sensitivity_L4_chi100.out2.00028.athdf"
+          ],
+          [
+            1.4514715222428152,
+            "sensitivity_L4_chi100.out2.00029.athdf"
+          ],
+          [
+            1.500405599928239,
+            "sensitivity_L4_chi100.out2.00030.athdf"
+          ],
+          [
+            1.5534417468550756,
+            "sensitivity_L4_chi100.out2.00031.athdf"
+          ],
+          [
+            1.6024287356263005,
+            "sensitivity_L4_chi100.out2.00032.athdf"
+          ],
+          [
+            1.651446770685655,
+            "sensitivity_L4_chi100.out2.00033.athdf"
+          ],
+          [
+            1.7004853175408912,
+            "sensitivity_L4_chi100.out2.00034.athdf"
+          ],
+          [
+            1.753634775297481,
+            "sensitivity_L4_chi100.out2.00035.athdf"
+          ],
+          [
+            1.8027010452992296,
+            "sensitivity_L4_chi100.out2.00036.athdf"
+          ],
+          [
+            1.851774979964294,
+            "sensitivity_L4_chi100.out2.00037.athdf"
+          ],
+          [
+            1.9008677261689002,
+            "sensitivity_L4_chi100.out2.00038.athdf"
+          ],
+          [
+            1.954043597390196,
+            "sensitivity_L4_chi100.out2.00039.athdf"
+          ],
+          [
+            2.00311835315,
+            "sensitivity_L4_chi100.out2.00040.athdf"
+          ],
+          [
+            2.0521783422997237,
+            "sensitivity_L4_chi100.out2.00041.athdf"
+          ],
+          [
+            2.101229662798813,
+            "sensitivity_L4_chi100.out2.00042.athdf"
+          ],
+          [
+            2.1502547929939513,
+            "sensitivity_L4_chi100.out2.00043.athdf"
+          ],
+          [
+            2.2033265259304535,
+            "sensitivity_L4_chi100.out2.00044.athdf"
+          ],
+          [
+            2.2522853821245397,
+            "sensitivity_L4_chi100.out2.00045.athdf"
+          ],
+          [
+            2.3012073421002692,
+            "sensitivity_L4_chi100.out2.00046.athdf"
+          ],
+          [
+            2.3501082490228673,
+            "sensitivity_L4_chi100.out2.00047.athdf"
+          ],
+          [
+            2.4030372352015505,
+            "sensitivity_L4_chi100.out2.00048.athdf"
+          ],
+          [
+            2.4518533840007692,
+            "sensitivity_L4_chi100.out2.00049.athdf"
+          ],
+          [
+            2.5006256203342803,
+            "sensitivity_L4_chi100.out2.00050.athdf"
+          ],
+          [
+            2.553439573064681,
+            "sensitivity_L4_chi100.out2.00051.athdf"
+          ],
+          [
+            2.6021946187498206,
+            "sensitivity_L4_chi100.out2.00052.athdf"
+          ],
+          [
+            2.650941099410681,
+            "sensitivity_L4_chi100.out2.00053.athdf"
+          ],
+          [
+            2.703752268455714,
+            "sensitivity_L4_chi100.out2.00054.athdf"
+          ],
+          [
+            2.7525037805503807,
+            "sensitivity_L4_chi100.out2.00055.athdf"
+          ],
+          [
+            2.8012624682926894,
+            "sensitivity_L4_chi100.out2.00056.athdf"
+          ],
+          [
+            2.8500082907694826,
+            "sensitivity_L4_chi100.out2.00057.athdf"
+          ],
+          [
+            2.902804419304948,
+            "sensitivity_L4_chi100.out2.00058.athdf"
+          ],
+          [
+            2.9515446131218344,
+            "sensitivity_L4_chi100.out2.00059.athdf"
+          ],
+          [
+            3.0002730858913544,
+            "sensitivity_L4_chi100.out2.00060.athdf"
+          ],
+          [
+            3.053063269364593,
+            "sensitivity_L4_chi100.out2.00061.athdf"
+          ],
+          [
+            3.10177329619559,
+            "sensitivity_L4_chi100.out2.00062.athdf"
+          ],
+          [
+            3.1504763456102616,
+            "sensitivity_L4_chi100.out2.00063.athdf"
+          ],
+          [
+            3.2032590262903646,
+            "sensitivity_L4_chi100.out2.00064.athdf"
+          ],
+          [
+            3.2519750915595025,
+            "sensitivity_L4_chi100.out2.00065.athdf"
+          ],
+          [
+            3.300667818288759,
+            "sensitivity_L4_chi100.out2.00066.athdf"
+          ],
+          [
+            3.3534115598485705,
+            "sensitivity_L4_chi100.out2.00067.athdf"
+          ],
+          [
+            3.4020947976517824,
+            "sensitivity_L4_chi100.out2.00068.athdf"
+          ],
+          [
+            3.4507779539078083,
+            "sensitivity_L4_chi100.out2.00069.athdf"
+          ],
+          [
+            3.50354679503104,
+            "sensitivity_L4_chi100.out2.00070.athdf"
+          ],
+          [
+            3.552242033506709,
+            "sensitivity_L4_chi100.out2.00071.athdf"
+          ],
+          [
+            3.600944466691271,
+            "sensitivity_L4_chi100.out2.00072.athdf"
+          ],
+          [
+            3.6536894031104055,
+            "sensitivity_L4_chi100.out2.00073.athdf"
+          ],
+          [
+            3.7023327232874883,
+            "sensitivity_L4_chi100.out2.00074.athdf"
+          ],
+          [
+            3.750896199905465,
+            "sensitivity_L4_chi100.out2.00075.athdf"
+          ],
+          [
+            3.8034185295314176,
+            "sensitivity_L4_chi100.out2.00076.athdf"
+          ],
+          [
+            3.8517921820154934,
+            "sensitivity_L4_chi100.out2.00077.athdf"
+          ],
+          [
+            3.9001148618177717,
+            "sensitivity_L4_chi100.out2.00078.athdf"
+          ],
+          [
+            3.9524258772003567,
+            "sensitivity_L4_chi100.out2.00079.athdf"
+          ],
+          [
+            4.000669310950621,
+            "sensitivity_L4_chi100.out2.00080.athdf"
+          ],
+          [
+            4.052908334151309,
+            "sensitivity_L4_chi100.out2.00081.athdf"
+          ],
+          [
+            4.101105090947975,
+            "sensitivity_L4_chi100.out2.00082.athdf"
+          ],
+          [
+            4.153277150136824,
+            "sensitivity_L4_chi100.out2.00083.athdf"
+          ],
+          [
+            4.201365666078612,
+            "sensitivity_L4_chi100.out2.00084.athdf"
+          ],
+          [
+            4.253392697814007,
+            "sensitivity_L4_chi100.out2.00085.athdf"
+          ],
+          [
+            4.301363910526738,
+            "sensitivity_L4_chi100.out2.00086.athdf"
+          ],
+          [
+            4.353309399765933,
+            "sensitivity_L4_chi100.out2.00087.athdf"
+          ],
+          [
+            4.401266584359368,
+            "sensitivity_L4_chi100.out2.00088.athdf"
+          ],
+          [
+            4.4532218394093945,
+            "sensitivity_L4_chi100.out2.00089.athdf"
+          ],
+          [
+            4.5011267476129255,
+            "sensitivity_L4_chi100.out2.00090.athdf"
+          ],
+          [
+            4.552981223377145,
+            "sensitivity_L4_chi100.out2.00091.athdf"
+          ],
+          [
+            4.600832357200652,
+            "sensitivity_L4_chi100.out2.00092.athdf"
+          ],
+          [
+            4.652681130466137,
+            "sensitivity_L4_chi100.out2.00093.athdf"
+          ],
+          [
+            4.70053792021796,
+            "sensitivity_L4_chi100.out2.00094.athdf"
+          ],
+          [
+            4.752283699394586,
+            "sensitivity_L4_chi100.out2.00095.athdf"
+          ],
+          [
+            4.803945128925546,
+            "sensitivity_L4_chi100.out2.00096.athdf"
+          ],
+          [
+            4.8515791251737195,
+            "sensitivity_L4_chi100.out2.00097.athdf"
+          ],
+          [
+            4.903103813686955,
+            "sensitivity_L4_chi100.out2.00098.athdf"
+          ],
+          [
+            4.950500120357586,
+            "sensitivity_L4_chi100.out2.00099.athdf"
+          ],
+          [
+            5.0,
+            "sensitivity_L4_chi100.out2.00100.athdf"
+          ]
+        ],
+        "duplicate_time_files_retained": [],
+        "exact_nominal_times": false,
+        "max_time_offset_tcc": 0.0040435973901957745,
+        "finite_positive_fields": true,
+        "comparison_status": "Provisional. Actual times differ; BC/tracer matching and retention need review."
+      },
+      "initial_check": {
+        "passed": true,
+        "errors": {
+          "density_relative": 5.551115123125783e-15,
+          "pressure_relative": 6.661338147750939e-16,
+          "velocity_over_wind": 1.7199501139797033e-16,
+          "tracer_absolute": 2.220446049250313e-16
+        },
+        "dimensions": [
+          128,
+          64,
+          64
+        ],
+        "edges": [
+          [
+            -3.0,
+            17.0
+          ],
+          [
+            -5.0,
+            5.0
+          ],
+          [
+            -5.0,
+            5.0
+          ]
+        ],
+        "velocity_ic": "sharp13"
+      }
+    },
+    {
+      "status": "complete_native_checks",
+      "code": "athpp",
+      "level": 4,
+      "chi": 100,
+      "mach": 2,
+      "velocity_ic": "historical_tanh13",
+      "directory": "/home/kaan/sensitivity_20260907/runs/athpp_L4_chi100_historical_tanh13",
+      "binary_sha256": "fcf5d0c6d283c933424d2c38dcd3ac4b720d888660d51bad510ec937f71b1a18",
+      "parameter_sha256": "3963407712dcc14887ee2a33a9f8130cff185a3a86b7e061a3c5d73c06ff74a0",
+      "command": [
+        "mpirun",
+        "--use-hwthread-cpus",
+        "--bind-to",
+        "hwthread",
+        "--map-by",
+        "hwthread",
+        "-np",
+        "16",
+        "/home/kaan/sensitivity_20260907/bin/athpp_pair",
+        "-i",
+        "athinput"
+      ],
+      "parameters": {
+        "source": "/home/kaan/sensitivity_20260907/runs/athpp_L4_chi100_historical_tanh13/athinput",
+        "parameter_sha256": "3963407712dcc14887ee2a33a9f8130cff185a3a86b7e061a3c5d73c06ff74a0",
+        "assumptions": [
+          "custom cloud_wind pgen fixes R=1, rho_wind=1 and P_wind=1"
+        ],
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1.0,
+        "rho_wind": 1.0,
+        "p_wind": 1.0,
+        "v_wind": 2.581988897471611,
+        "chi": 100.0,
+        "rv_scale": 1.3,
+        "tmax": 19.364916731037084,
+        "output_dt": 0.19364916731037085,
+        "mach": 2.0,
+        "kind": "athena",
+        "t_cc": 3.872983346207417
+      },
+      "storage_preflight": {
+        "path": "/home/kaan/sensitivity_20260907",
+        "filesystem_free_bytes": 145281724416,
+        "filesystem_total_bytes": 1081101176832,
+        "windows_backing_volume": {
+          "distribution": "Ubuntu",
+          "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+          "drive": "C:",
+          "free_bytes": 37992427520,
+          "total_bytes": 1999283154944
+        },
+        "policy": "Conservative growth budget; allocated but reusable VHDX blocks are not credited.",
+        "effective_free_bytes": 37992427520
+      },
+      "started_unix": 1788811303.621749,
+      "returncode": 0,
+      "timed_out": false,
+      "wall_seconds": 36.206416606903076,
+      "peak_child_rss_gib": 0.8978080749511719,
+      "cadence": {
+        "complete_outputs": true,
+        "unique_snapshots": 101,
+        "native_time_rows": [
+          [
+            0.0,
+            "sensitivity_L4_chi100.out2.00000.athdf"
+          ],
+          [
+            0.05391359798055663,
+            "sensitivity_L4_chi100.out2.00001.athdf"
+          ],
+          [
+            0.10247363706902549,
+            "sensitivity_L4_chi100.out2.00002.athdf"
+          ],
+          [
+            0.15001708701705693,
+            "sensitivity_L4_chi100.out2.00003.athdf"
+          ],
+          [
+            0.20102481583078022,
+            "sensitivity_L4_chi100.out2.00004.athdf"
+          ],
+          [
+            0.2520681147955271,
+            "sensitivity_L4_chi100.out2.00005.athdf"
+          ],
+          [
+            0.30322096332212833,
+            "sensitivity_L4_chi100.out2.00006.athdf"
+          ],
+          [
+            0.3505659929720376,
+            "sensitivity_L4_chi100.out2.00007.athdf"
+          ],
+          [
+            0.40187541184814474,
+            "sensitivity_L4_chi100.out2.00008.athdf"
+          ],
+          [
+            0.453246255903449,
+            "sensitivity_L4_chi100.out2.00009.athdf"
+          ],
+          [
+            0.500737365337865,
+            "sensitivity_L4_chi100.out2.00010.athdf"
+          ],
+          [
+            0.5523317478353201,
+            "sensitivity_L4_chi100.out2.00011.athdf"
+          ],
+          [
+            0.6000796718862562,
+            "sensitivity_L4_chi100.out2.00012.athdf"
+          ],
+          [
+            0.6519205792547215,
+            "sensitivity_L4_chi100.out2.00013.athdf"
+          ],
+          [
+            0.7038720805517733,
+            "sensitivity_L4_chi100.out2.00014.athdf"
+          ],
+          [
+            0.7519222537065987,
+            "sensitivity_L4_chi100.out2.00015.athdf"
+          ],
+          [
+            0.8000803997486742,
+            "sensitivity_L4_chi100.out2.00016.athdf"
+          ],
+          [
+            0.8523586395883437,
+            "sensitivity_L4_chi100.out2.00017.athdf"
+          ],
+          [
+            0.9007322241977813,
+            "sensitivity_L4_chi100.out2.00018.athdf"
+          ],
+          [
+            0.9532427335752933,
+            "sensitivity_L4_chi100.out2.00019.athdf"
+          ],
+          [
+            1.001769286663658,
+            "sensitivity_L4_chi100.out2.00020.athdf"
+          ],
+          [
+            1.0503541932574947,
+            "sensitivity_L4_chi100.out2.00021.athdf"
+          ],
+          [
+            1.1030671599238098,
+            "sensitivity_L4_chi100.out2.00022.athdf"
+          ],
+          [
+            1.1517918555462932,
+            "sensitivity_L4_chi100.out2.00023.athdf"
+          ],
+          [
+            1.200543459655365,
+            "sensitivity_L4_chi100.out2.00024.athdf"
+          ],
+          [
+            1.253376323078152,
+            "sensitivity_L4_chi100.out2.00025.athdf"
+          ],
+          [
+            1.3021796134266916,
+            "sensitivity_L4_chi100.out2.00026.athdf"
+          ],
+          [
+            1.3510266632356471,
+            "sensitivity_L4_chi100.out2.00027.athdf"
+          ],
+          [
+            1.4040032666526778,
+            "sensitivity_L4_chi100.out2.00028.athdf"
+          ],
+          [
+            1.4529472084617274,
+            "sensitivity_L4_chi100.out2.00029.athdf"
+          ],
+          [
+            1.5019096543531605,
+            "sensitivity_L4_chi100.out2.00030.athdf"
+          ],
+          [
+            1.5509000748916764,
+            "sensitivity_L4_chi100.out2.00031.athdf"
+          ],
+          [
+            1.6039926826891175,
+            "sensitivity_L4_chi100.out2.00032.athdf"
+          ],
+          [
+            1.6530189942851277,
+            "sensitivity_L4_chi100.out2.00033.athdf"
+          ],
+          [
+            1.7020653544961155,
+            "sensitivity_L4_chi100.out2.00034.athdf"
+          ],
+          [
+            1.7511308993362051,
+            "sensitivity_L4_chi100.out2.00035.athdf"
+          ],
+          [
+            1.8001899903723535,
+            "sensitivity_L4_chi100.out2.00036.athdf"
+          ],
+          [
+            1.8533558016666183,
+            "sensitivity_L4_chi100.out2.00037.athdf"
+          ],
+          [
+            1.9024204500594826,
+            "sensitivity_L4_chi100.out2.00038.athdf"
+          ],
+          [
+            1.9514735330204613,
+            "sensitivity_L4_chi100.out2.00039.athdf"
+          ],
+          [
+            2.000517927521038,
+            "sensitivity_L4_chi100.out2.00040.athdf"
+          ],
+          [
+            2.0536249338776797,
+            "sensitivity_L4_chi100.out2.00041.athdf"
+          ],
+          [
+            2.1026370633978866,
+            "sensitivity_L4_chi100.out2.00042.athdf"
+          ],
+          [
+            2.1516150661682962,
+            "sensitivity_L4_chi100.out2.00043.athdf"
+          ],
+          [
+            2.200559233008279,
+            "sensitivity_L4_chi100.out2.00044.athdf"
+          ],
+          [
+            2.2535494890470207,
+            "sensitivity_L4_chi100.out2.00045.athdf"
+          ],
+          [
+            2.3024341429734476,
+            "sensitivity_L4_chi100.out2.00046.athdf"
+          ],
+          [
+            2.351303650530706,
+            "sensitivity_L4_chi100.out2.00047.athdf"
+          ],
+          [
+            2.4001479060736983,
+            "sensitivity_L4_chi100.out2.00048.athdf"
+          ],
+          [
+            2.453022542044972,
+            "sensitivity_L4_chi100.out2.00049.athdf"
+          ],
+          [
+            2.5017950893933953,
+            "sensitivity_L4_chi100.out2.00050.athdf"
+          ],
+          [
+            2.550540550361996,
+            "sensitivity_L4_chi100.out2.00051.athdf"
+          ],
+          [
+            2.603320010437476,
+            "sensitivity_L4_chi100.out2.00052.athdf"
+          ],
+          [
+            2.6520160871699145,
+            "sensitivity_L4_chi100.out2.00053.athdf"
+          ],
+          [
+            2.700690992599185,
+            "sensitivity_L4_chi100.out2.00054.athdf"
+          ],
+          [
+            2.753421265712605,
+            "sensitivity_L4_chi100.out2.00055.athdf"
+          ],
+          [
+            2.8020881390698524,
+            "sensitivity_L4_chi100.out2.00056.athdf"
+          ],
+          [
+            2.850737771936962,
+            "sensitivity_L4_chi100.out2.00057.athdf"
+          ],
+          [
+            2.9034545948740256,
+            "sensitivity_L4_chi100.out2.00058.athdf"
+          ],
+          [
+            2.9521104890008996,
+            "sensitivity_L4_chi100.out2.00059.athdf"
+          ],
+          [
+            3.00075457596086,
+            "sensitivity_L4_chi100.out2.00060.athdf"
+          ],
+          [
+            3.053455819337456,
+            "sensitivity_L4_chi100.out2.00061.athdf"
+          ],
+          [
+            3.1021037506856963,
+            "sensitivity_L4_chi100.out2.00062.athdf"
+          ],
+          [
+            3.150771665698813,
+            "sensitivity_L4_chi100.out2.00063.athdf"
+          ],
+          [
+            3.2035208722241553,
+            "sensitivity_L4_chi100.out2.00064.athdf"
+          ],
+          [
+            3.2521997434168055,
+            "sensitivity_L4_chi100.out2.00065.athdf"
+          ],
+          [
+            3.300868055512646,
+            "sensitivity_L4_chi100.out2.00066.athdf"
+          ],
+          [
+            3.353554892041249,
+            "sensitivity_L4_chi100.out2.00067.athdf"
+          ],
+          [
+            3.402150516928153,
+            "sensitivity_L4_chi100.out2.00068.athdf"
+          ],
+          [
+            3.4507530958798562,
+            "sensitivity_L4_chi100.out2.00069.athdf"
+          ],
+          [
+            3.5034171073416824,
+            "sensitivity_L4_chi100.out2.00070.athdf"
+          ],
+          [
+            3.5520559232443984,
+            "sensitivity_L4_chi100.out2.00071.athdf"
+          ],
+          [
+            3.600734096493968,
+            "sensitivity_L4_chi100.out2.00072.athdf"
+          ],
+          [
+            3.6534453570500864,
+            "sensitivity_L4_chi100.out2.00073.athdf"
+          ],
+          [
+            3.702039697056604,
+            "sensitivity_L4_chi100.out2.00074.athdf"
+          ],
+          [
+            3.7505309275762646,
+            "sensitivity_L4_chi100.out2.00075.athdf"
+          ],
+          [
+            3.802994440845462,
+            "sensitivity_L4_chi100.out2.00076.athdf"
+          ],
+          [
+            3.851358979190223,
+            "sensitivity_L4_chi100.out2.00077.athdf"
+          ],
+          [
+            3.9037008363725856,
+            "sensitivity_L4_chi100.out2.00078.athdf"
+          ],
+          [
+            3.9519723489920757,
+            "sensitivity_L4_chi100.out2.00079.athdf"
+          ],
+          [
+            4.000189533338109,
+            "sensitivity_L4_chi100.out2.00080.athdf"
+          ],
+          [
+            4.052359522272253,
+            "sensitivity_L4_chi100.out2.00081.athdf"
+          ],
+          [
+            4.100459815511298,
+            "sensitivity_L4_chi100.out2.00082.athdf"
+          ],
+          [
+            4.152509823157213,
+            "sensitivity_L4_chi100.out2.00083.athdf"
+          ],
+          [
+            4.200534886583104,
+            "sensitivity_L4_chi100.out2.00084.athdf"
+          ],
+          [
+            4.252552909846087,
+            "sensitivity_L4_chi100.out2.00085.athdf"
+          ],
+          [
+            4.300561602787032,
+            "sensitivity_L4_chi100.out2.00086.athdf"
+          ],
+          [
+            4.352541337982778,
+            "sensitivity_L4_chi100.out2.00087.athdf"
+          ],
+          [
+            4.4004919520396495,
+            "sensitivity_L4_chi100.out2.00088.athdf"
+          ],
+          [
+            4.452442407373491,
+            "sensitivity_L4_chi100.out2.00089.athdf"
+          ],
+          [
+            4.5004094961224075,
+            "sensitivity_L4_chi100.out2.00090.athdf"
+          ],
+          [
+            4.552382227097278,
+            "sensitivity_L4_chi100.out2.00091.athdf"
+          ],
+          [
+            4.600291548657545,
+            "sensitivity_L4_chi100.out2.00092.athdf"
+          ],
+          [
+            4.652108140035506,
+            "sensitivity_L4_chi100.out2.00093.athdf"
+          ],
+          [
+            4.703872872433607,
+            "sensitivity_L4_chi100.out2.00094.athdf"
+          ],
+          [
+            4.751559058608238,
+            "sensitivity_L4_chi100.out2.00095.athdf"
+          ],
+          [
+            4.803015949462201,
+            "sensitivity_L4_chi100.out2.00096.athdf"
+          ],
+          [
+            4.850290727152931,
+            "sensitivity_L4_chi100.out2.00097.athdf"
+          ],
+          [
+            4.901222783126948,
+            "sensitivity_L4_chi100.out2.00098.athdf"
+          ],
+          [
+            4.95188963472069,
+            "sensitivity_L4_chi100.out2.00099.athdf"
+          ],
+          [
+            5.0,
+            "sensitivity_L4_chi100.out2.00100.athdf"
+          ]
+        ],
+        "duplicate_time_files_retained": [],
+        "exact_nominal_times": false,
+        "max_time_offset_tcc": 0.004003266652677695,
+        "finite_positive_fields": true,
+        "comparison_status": "Provisional. Actual times differ; BC/tracer matching and retention need review."
+      },
+      "initial_check": {
+        "passed": true,
+        "errors": {
+          "density_relative": 5.551115123125783e-15,
+          "pressure_relative": 7.771561172376096e-16,
+          "velocity_over_wind": 3.4399002279594067e-16,
+          "tracer_absolute": 2.220446049250313e-16
+        },
+        "dimensions": [
+          128,
+          64,
+          64
+        ],
+        "edges": [
+          [
+            -3.0,
+            17.0
+          ],
+          [
+            -5.0,
+            5.0
+          ],
+          [
+            -5.0,
+            5.0
+          ]
+        ],
+        "velocity_ic": "historical_tanh13"
+      }
+    },
+    {
+      "status": "complete_native_checks",
+      "code": "apk",
+      "level": 3,
+      "chi": 100,
+      "mach": 2,
+      "velocity_ic": "sharp13",
+      "directory": "/home/kaan/sensitivity_20260907/runs/apk_L3_chi100_sharp13",
+      "binary_sha256": "0e899bc9f0b691a45d986ce62e1e3c24f7d7c9ac8ec8b3b786d017d08427eea2",
+      "parameter_sha256": "6c8e542f40e27258dc7ec016ad048b4d6b9164bdd109975797a6425003d67730",
+      "command": [
+        "mpirun",
+        "--bind-to",
+        "core",
+        "-np",
+        "1",
+        "/home/kaan/sensitivity_20260907/bin/apk_pair",
+        "-i",
+        "athinput"
+      ],
+      "parameters": {
+        "source": "/home/kaan/sensitivity_20260907/runs/apk_L3_chi100_sharp13/athinput",
+        "parameter_sha256": "6c8e542f40e27258dc7ec016ad048b4d6b9164bdd109975797a6425003d67730",
+        "assumptions": [
+          "AthenaPK checkout units.hpp constants; fully ionized H/He mu from hydro.cpp"
+        ],
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1.0,
+        "rho_wind": 1.0,
+        "p_wind": 1.0,
+        "v_wind": 2.581988897471611,
+        "chi": 100.0,
+        "rv_scale": 1.3,
+        "tmax": 19.364916731037084,
+        "output_dt": 0.19364916731037085,
+        "mach": 2.0,
+        "kind": "apk",
+        "time_input_in_tcc": false,
+        "t_cc": 3.872983346207417
+      },
+      "storage_preflight": {
+        "path": "/home/kaan/sensitivity_20260907",
+        "filesystem_free_bytes": 142515757056,
+        "filesystem_total_bytes": 1081101176832,
+        "windows_backing_volume": {
+          "distribution": "Ubuntu",
+          "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+          "drive": "C:",
+          "free_bytes": 37992427520,
+          "total_bytes": 1999283154944
+        },
+        "policy": "Conservative growth budget; allocated but reusable VHDX blocks are not credited.",
+        "effective_free_bytes": 37992427520
+      },
+      "started_unix": 1788811340.493893,
+      "returncode": 0,
+      "timed_out": false,
+      "wall_seconds": 6.9674060344696045,
+      "peak_child_rss_gib": 0.27507781982421875,
+      "cadence": {
+        "complete_outputs": true,
+        "unique_snapshots": 101,
+        "native_time_rows": [
+          [
+            0.0,
+            "parthenon.prim.00000.phdf"
+          ],
+          [
+            0.05800493653722046,
+            "parthenon.prim.00001.phdf"
+          ],
+          [
+            0.10650354583072294,
+            "parthenon.prim.00002.phdf"
+          ],
+          [
+            0.15388314753066518,
+            "parthenon.prim.00003.phdf"
+          ],
+          [
+            0.20079102935108734,
+            "parthenon.prim.00004.phdf"
+          ],
+          [
+            0.25534948811420183,
+            "parthenon.prim.00005.phdf"
+          ],
+          [
+            0.3020248646081117,
+            "parthenon.prim.00006.phdf"
+          ],
+          [
+            0.3568792612969108,
+            "parthenon.prim.00007.phdf"
+          ],
+          [
+            0.4040963216877403,
+            "parthenon.prim.00008.phdf"
+          ],
+          [
+            0.4514632499632424,
+            "parthenon.prim.00009.phdf"
+          ],
+          [
+            0.5067155269109652,
+            "parthenon.prim.00010.phdf"
+          ],
+          [
+            0.5541220196639042,
+            "parthenon.prim.00011.phdf"
+          ],
+          [
+            0.601620209670902,
+            "parthenon.prim.00012.phdf"
+          ],
+          [
+            0.6571934253921559,
+            "parthenon.prim.00013.phdf"
+          ],
+          [
+            0.7049883483689842,
+            "parthenon.prim.00014.phdf"
+          ],
+          [
+            0.752923129065993,
+            "parthenon.prim.00015.phdf"
+          ],
+          [
+            0.8008974360058746,
+            "parthenon.prim.00016.phdf"
+          ],
+          [
+            0.8569058433466438,
+            "parthenon.prim.00017.phdf"
+          ],
+          [
+            0.9049957801345178,
+            "parthenon.prim.00018.phdf"
+          ],
+          [
+            0.9531777429834405,
+            "parthenon.prim.00019.phdf"
+          ],
+          [
+            1.001411943984219,
+            "parthenon.prim.00020.phdf"
+          ],
+          [
+            1.0578168332580666,
+            "parthenon.prim.00021.phdf"
+          ],
+          [
+            1.106232953846371,
+            "parthenon.prim.00022.phdf"
+          ],
+          [
+            1.1546919388500922,
+            "parthenon.prim.00023.phdf"
+          ],
+          [
+            1.2031842850222856,
+            "parthenon.prim.00024.phdf"
+          ],
+          [
+            1.2517127969698207,
+            "parthenon.prim.00025.phdf"
+          ],
+          [
+            1.3002721717717176,
+            "parthenon.prim.00026.phdf"
+          ],
+          [
+            1.3569524445661463,
+            "parthenon.prim.00027.phdf"
+          ],
+          [
+            1.4055577661872145,
+            "parthenon.prim.00028.phdf"
+          ],
+          [
+            1.4541833440389413,
+            "parthenon.prim.00029.phdf"
+          ],
+          [
+            1.5028223409583912,
+            "parthenon.prim.00030.phdf"
+          ],
+          [
+            1.5514746852550734,
+            "parthenon.prim.00031.phdf"
+          ],
+          [
+            1.6001393247607842,
+            "parthenon.prim.00032.phdf"
+          ],
+          [
+            1.6569286423898326,
+            "parthenon.prim.00033.phdf"
+          ],
+          [
+            1.7056172531552467,
+            "parthenon.prim.00034.phdf"
+          ],
+          [
+            1.7543157142889974,
+            "parthenon.prim.00035.phdf"
+          ],
+          [
+            1.8030352452279828,
+            "parthenon.prim.00036.phdf"
+          ],
+          [
+            1.851768650463204,
+            "parthenon.prim.00037.phdf"
+          ],
+          [
+            1.9004920252270172,
+            "parthenon.prim.00038.phdf"
+          ],
+          [
+            1.957326444275211,
+            "parthenon.prim.00039.phdf"
+          ],
+          [
+            2.0060505920608946,
+            "parthenon.prim.00040.phdf"
+          ],
+          [
+            2.054799253836746,
+            "parthenon.prim.00041.phdf"
+          ],
+          [
+            2.10359581479177,
+            "parthenon.prim.00042.phdf"
+          ],
+          [
+            2.1524201505300575,
+            "parthenon.prim.00043.phdf"
+          ],
+          [
+            2.2012741279284658,
+            "parthenon.prim.00044.phdf"
+          ],
+          [
+            2.2501476017927726,
+            "parthenon.prim.00045.phdf"
+          ],
+          [
+            2.3071844742578573,
+            "parthenon.prim.00046.phdf"
+          ],
+          [
+            2.3560847094569017,
+            "parthenon.prim.00047.phdf"
+          ],
+          [
+            2.4049917227571203,
+            "parthenon.prim.00048.phdf"
+          ],
+          [
+            2.453878736646601,
+            "parthenon.prim.00049.phdf"
+          ],
+          [
+            2.502732556199791,
+            "parthenon.prim.00050.phdf"
+          ],
+          [
+            2.551577611691549,
+            "parthenon.prim.00051.phdf"
+          ],
+          [
+            2.6004217693136185,
+            "parthenon.prim.00052.phdf"
+          ],
+          [
+            2.6574012372081914,
+            "parthenon.prim.00053.phdf"
+          ],
+          [
+            2.70623887426698,
+            "parthenon.prim.00054.phdf"
+          ],
+          [
+            2.7550865503727966,
+            "parthenon.prim.00055.phdf"
+          ],
+          [
+            2.8039389586565755,
+            "parthenon.prim.00056.phdf"
+          ],
+          [
+            2.8527952927961446,
+            "parthenon.prim.00057.phdf"
+          ],
+          [
+            2.9016571530693653,
+            "parthenon.prim.00058.phdf"
+          ],
+          [
+            2.9505231288273435,
+            "parthenon.prim.00059.phdf"
+          ],
+          [
+            3.0075434365900082,
+            "parthenon.prim.00060.phdf"
+          ],
+          [
+            3.0564350630965107,
+            "parthenon.prim.00061.phdf"
+          ],
+          [
+            3.105329121437541,
+            "parthenon.prim.00062.phdf"
+          ],
+          [
+            3.1542450454278943,
+            "parthenon.prim.00063.phdf"
+          ],
+          [
+            3.20316603438573,
+            "parthenon.prim.00064.phdf"
+          ],
+          [
+            3.2520864613367397,
+            "parthenon.prim.00065.phdf"
+          ],
+          [
+            3.301009350706232,
+            "parthenon.prim.00066.phdf"
+          ],
+          [
+            3.3580909958247647,
+            "parthenon.prim.00067.phdf"
+          ],
+          [
+            3.4070205499129034,
+            "parthenon.prim.00068.phdf"
+          ],
+          [
+            3.4559494704880023,
+            "parthenon.prim.00069.phdf"
+          ],
+          [
+            3.504878558272864,
+            "parthenon.prim.00070.phdf"
+          ],
+          [
+            3.5538104479807924,
+            "parthenon.prim.00071.phdf"
+          ],
+          [
+            3.602745314345457,
+            "parthenon.prim.00072.phdf"
+          ],
+          [
+            3.6516838521069963,
+            "parthenon.prim.00073.phdf"
+          ],
+          [
+            3.700630223433727,
+            "parthenon.prim.00074.phdf"
+          ],
+          [
+            3.7577476861824874,
+            "parthenon.prim.00075.phdf"
+          ],
+          [
+            3.80671627495489,
+            "parthenon.prim.00076.phdf"
+          ],
+          [
+            3.8556930542477597,
+            "parthenon.prim.00077.phdf"
+          ],
+          [
+            3.9046765593213015,
+            "parthenon.prim.00078.phdf"
+          ],
+          [
+            3.9536679697222454,
+            "parthenon.prim.00079.phdf"
+          ],
+          [
+            4.00266909075354,
+            "parthenon.prim.00080.phdf"
+          ],
+          [
+            4.0516763271912355,
+            "parthenon.prim.00081.phdf"
+          ],
+          [
+            4.100664022101329,
+            "parthenon.prim.00082.phdf"
+          ],
+          [
+            4.157772991651447,
+            "parthenon.prim.00083.phdf"
+          ],
+          [
+            4.206695113864202,
+            "parthenon.prim.00084.phdf"
+          ],
+          [
+            4.255589501864415,
+            "parthenon.prim.00085.phdf"
+          ],
+          [
+            4.304456319574882,
+            "parthenon.prim.00086.phdf"
+          ],
+          [
+            4.353298226084305,
+            "parthenon.prim.00087.phdf"
+          ],
+          [
+            4.402118335373095,
+            "parthenon.prim.00088.phdf"
+          ],
+          [
+            4.450914181796701,
+            "parthenon.prim.00089.phdf"
+          ],
+          [
+            4.5078076073913875,
+            "parthenon.prim.00090.phdf"
+          ],
+          [
+            4.556540200305351,
+            "parthenon.prim.00091.phdf"
+          ],
+          [
+            4.605237903167597,
+            "parthenon.prim.00092.phdf"
+          ],
+          [
+            4.653906811633356,
+            "parthenon.prim.00093.phdf"
+          ],
+          [
+            4.7025506322491015,
+            "parthenon.prim.00094.phdf"
+          ],
+          [
+            4.751160311660326,
+            "parthenon.prim.00095.phdf"
+          ],
+          [
+            4.807832701210569,
+            "parthenon.prim.00096.phdf"
+          ],
+          [
+            4.856359997211153,
+            "parthenon.prim.00097.phdf"
+          ],
+          [
+            4.9048641159954665,
+            "parthenon.prim.00098.phdf"
+          ],
+          [
+            4.953334263112361,
+            "parthenon.prim.00099.phdf"
+          ],
+          [
+            5.0,
+            "parthenon.prim.final.phdf"
+          ]
+        ],
+        "duplicate_time_files_retained": [],
+        "exact_nominal_times": false,
+        "max_time_offset_tcc": 0.00809099582476458,
+        "finite_positive_fields": true,
+        "comparison_status": "Provisional. Actual times differ; BC/tracer matching and retention need review."
+      },
+      "initial_check": {
+        "passed": true,
+        "errors": {
+          "density_relative": 5.551115123125783e-15,
+          "pressure_relative": 4.440892098500626e-16,
+          "velocity_over_wind": 1.7199501139797033e-16,
+          "tracer_absolute": 1.1102230246251565e-16
+        },
+        "dimensions": [
+          32,
+          64,
+          32
+        ],
+        "edges": [
+          [
+            -5.0,
+            5.0
+          ],
+          [
+            -3.0,
+            17.0
+          ],
+          [
+            -5.0,
+            5.0
+          ]
+        ],
+        "velocity_ic": "sharp13"
+      }
+    },
+    {
+      "status": "complete_native_checks",
+      "code": "apk",
+      "level": 3,
+      "chi": 100,
+      "mach": 2,
+      "velocity_ic": "historical_momentum13",
+      "directory": "/home/kaan/sensitivity_20260907/runs/apk_L3_chi100_historical_momentum13",
+      "binary_sha256": "0e899bc9f0b691a45d986ce62e1e3c24f7d7c9ac8ec8b3b786d017d08427eea2",
+      "parameter_sha256": "3c2cf9497c9a4a68eb0eb38a2b73236469be8573fb8ab17202522108ca7499a4",
+      "command": [
+        "mpirun",
+        "--bind-to",
+        "core",
+        "-np",
+        "1",
+        "/home/kaan/sensitivity_20260907/bin/apk_pair",
+        "-i",
+        "athinput"
+      ],
+      "parameters": {
+        "source": "/home/kaan/sensitivity_20260907/runs/apk_L3_chi100_historical_momentum13/athinput",
+        "parameter_sha256": "3c2cf9497c9a4a68eb0eb38a2b73236469be8573fb8ab17202522108ca7499a4",
+        "assumptions": [
+          "AthenaPK checkout units.hpp constants; fully ionized H/He mu from hydro.cpp"
+        ],
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1.0,
+        "rho_wind": 1.0,
+        "p_wind": 1.0,
+        "v_wind": 2.581988897471611,
+        "chi": 100.0,
+        "rv_scale": 1.3,
+        "tmax": 19.364916731037084,
+        "output_dt": 0.19364916731037085,
+        "mach": 2.0,
+        "kind": "apk",
+        "time_input_in_tcc": false,
+        "t_cc": 3.872983346207417
+      },
+      "storage_preflight": {
+        "path": "/home/kaan/sensitivity_20260907",
+        "filesystem_free_bytes": 142275579904,
+        "filesystem_total_bytes": 1081101176832,
+        "windows_backing_volume": {
+          "distribution": "Ubuntu",
+          "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+          "drive": "C:",
+          "free_bytes": 37992439808,
+          "total_bytes": 1999283154944
+        },
+        "policy": "Conservative growth budget; allocated but reusable VHDX blocks are not credited.",
+        "effective_free_bytes": 37992439808
+      },
+      "started_unix": 1788811348.710979,
+      "returncode": 0,
+      "timed_out": false,
+      "wall_seconds": 7.16767430305481,
+      "peak_child_rss_gib": 0.2756309509277344,
+      "cadence": {
+        "complete_outputs": true,
+        "unique_snapshots": 101,
+        "native_time_rows": [
+          [
+            0.0,
+            "parthenon.prim.00000.phdf"
+          ],
+          [
+            0.058097153570401766,
+            "parthenon.prim.00001.phdf"
+          ],
+          [
+            0.10669243819777323,
+            "parthenon.prim.00002.phdf"
+          ],
+          [
+            0.15416725584125307,
+            "parthenon.prim.00003.phdf"
+          ],
+          [
+            0.20118020963326286,
+            "parthenon.prim.00004.phdf"
+          ],
+          [
+            0.2558115916885348,
+            "parthenon.prim.00005.phdf"
+          ],
+          [
+            0.3025544170849247,
+            "parthenon.prim.00006.phdf"
+          ],
+          [
+            0.35742277527873473,
+            "parthenon.prim.00007.phdf"
+          ],
+          [
+            0.4046687373506586,
+            "parthenon.prim.00008.phdf"
+          ],
+          [
+            0.4520766840183528,
+            "parthenon.prim.00009.phdf"
+          ],
+          [
+            0.5073675351206003,
+            "parthenon.prim.00010.phdf"
+          ],
+          [
+            0.554805917518272,
+            "parthenon.prim.00011.phdf"
+          ],
+          [
+            0.602326222405018,
+            "parthenon.prim.00012.phdf"
+          ],
+          [
+            0.6579101976605084,
+            "parthenon.prim.00013.phdf"
+          ],
+          [
+            0.7057056037046546,
+            "parthenon.prim.00014.phdf"
+          ],
+          [
+            0.753647956916203,
+            "parthenon.prim.00015.phdf"
+          ],
+          [
+            0.8016339246572861,
+            "parthenon.prim.00016.phdf"
+          ],
+          [
+            0.8576492821039062,
+            "parthenon.prim.00017.phdf"
+          ],
+          [
+            0.9057415956360444,
+            "parthenon.prim.00018.phdf"
+          ],
+          [
+            0.9539261506018164,
+            "parthenon.prim.00019.phdf"
+          ],
+          [
+            1.0021620639493805,
+            "parthenon.prim.00020.phdf"
+          ],
+          [
+            1.0505068123431942,
+            "parthenon.prim.00021.phdf"
+          ],
+          [
+            1.1069861289991594,
+            "parthenon.prim.00022.phdf"
+          ],
+          [
+            1.1554525858961275,
+            "parthenon.prim.00023.phdf"
+          ],
+          [
+            1.203949782245455,
+            "parthenon.prim.00024.phdf"
+          ],
+          [
+            1.2524800548259778,
+            "parthenon.prim.00025.phdf"
+          ],
+          [
+            1.301037395159794,
+            "parthenon.prim.00026.phdf"
+          ],
+          [
+            1.3577092051069684,
+            "parthenon.prim.00027.phdf"
+          ],
+          [
+            1.406305193640423,
+            "parthenon.prim.00028.phdf"
+          ],
+          [
+            1.4549195278743594,
+            "parthenon.prim.00029.phdf"
+          ],
+          [
+            1.5035481447754935,
+            "parthenon.prim.00030.phdf"
+          ],
+          [
+            1.5521882266927394,
+            "parthenon.prim.00031.phdf"
+          ],
+          [
+            1.600838875342838,
+            "parthenon.prim.00032.phdf"
+          ],
+          [
+            1.6576139115551474,
+            "parthenon.prim.00033.phdf"
+          ],
+          [
+            1.7062915085373263,
+            "parthenon.prim.00034.phdf"
+          ],
+          [
+            1.7549816581712185,
+            "parthenon.prim.00035.phdf"
+          ],
+          [
+            1.8036940528203886,
+            "parthenon.prim.00036.phdf"
+          ],
+          [
+            1.8524146827709018,
+            "parthenon.prim.00037.phdf"
+          ],
+          [
+            1.9011249919862157,
+            "parthenon.prim.00038.phdf"
+          ],
+          [
+            1.9579451344031449,
+            "parthenon.prim.00039.phdf"
+          ],
+          [
+            2.0066568520587205,
+            "parthenon.prim.00040.phdf"
+          ],
+          [
+            2.055386313711176,
+            "parthenon.prim.00041.phdf"
+          ],
+          [
+            2.104165682405231,
+            "parthenon.prim.00042.phdf"
+          ],
+          [
+            2.152975010819479,
+            "parthenon.prim.00043.phdf"
+          ],
+          [
+            2.2018200498888,
+            "parthenon.prim.00044.phdf"
+          ],
+          [
+            2.2506866020128413,
+            "parthenon.prim.00045.phdf"
+          ],
+          [
+            2.30771579549797,
+            "parthenon.prim.00046.phdf"
+          ],
+          [
+            2.356610753974037,
+            "parthenon.prim.00047.phdf"
+          ],
+          [
+            2.405513144795819,
+            "parthenon.prim.00048.phdf"
+          ],
+          [
+            2.454407120094004,
+            "parthenon.prim.00049.phdf"
+          ],
+          [
+            2.50326652001028,
+            "parthenon.prim.00050.phdf"
+          ],
+          [
+            2.552107401218947,
+            "parthenon.prim.00051.phdf"
+          ],
+          [
+            2.6009537358812054,
+            "parthenon.prim.00052.phdf"
+          ],
+          [
+            2.6579221434929607,
+            "parthenon.prim.00053.phdf"
+          ],
+          [
+            2.706744682798961,
+            "parthenon.prim.00054.phdf"
+          ],
+          [
+            2.7555857924067935,
+            "parthenon.prim.00055.phdf"
+          ],
+          [
+            2.8044424205247482,
+            "parthenon.prim.00056.phdf"
+          ],
+          [
+            2.8533065871564873,
+            "parthenon.prim.00057.phdf"
+          ],
+          [
+            2.9021638318289393,
+            "parthenon.prim.00058.phdf"
+          ],
+          [
+            2.9510175656177497,
+            "parthenon.prim.00059.phdf"
+          ],
+          [
+            3.0080335192761183,
+            "parthenon.prim.00060.phdf"
+          ],
+          [
+            3.056917601274326,
+            "parthenon.prim.00061.phdf"
+          ],
+          [
+            3.105824295698772,
+            "parthenon.prim.00062.phdf"
+          ],
+          [
+            3.1547475855515734,
+            "parthenon.prim.00063.phdf"
+          ],
+          [
+            3.203669223490529,
+            "parthenon.prim.00064.phdf"
+          ],
+          [
+            3.252589172652095,
+            "parthenon.prim.00065.phdf"
+          ],
+          [
+            3.301511255706619,
+            "parthenon.prim.00066.phdf"
+          ],
+          [
+            3.3504373062817643,
+            "parthenon.prim.00067.phdf"
+          ],
+          [
+            3.4075206059494985,
+            "parthenon.prim.00068.phdf"
+          ],
+          [
+            3.456448007772875,
+            "parthenon.prim.00069.phdf"
+          ],
+          [
+            3.5053757212377543,
+            "parthenon.prim.00070.phdf"
+          ],
+          [
+            3.5543067621369806,
+            "parthenon.prim.00071.phdf"
+          ],
+          [
+            3.603240962311085,
+            "parthenon.prim.00072.phdf"
+          ],
+          [
+            3.6521787589495838,
+            "parthenon.prim.00073.phdf"
+          ],
+          [
+            3.7011242763800243,
+            "parthenon.prim.00074.phdf"
+          ],
+          [
+            3.750080394494783,
+            "parthenon.prim.00075.phdf"
+          ],
+          [
+            3.8072089198986117,
+            "parthenon.prim.00076.phdf"
+          ],
+          [
+            3.8561855253729935,
+            "parthenon.prim.00077.phdf"
+          ],
+          [
+            3.9051687575316283,
+            "parthenon.prim.00078.phdf"
+          ],
+          [
+            3.954159899239,
+            "parthenon.prim.00079.phdf"
+          ],
+          [
+            4.003161420788411,
+            "parthenon.prim.00080.phdf"
+          ],
+          [
+            4.05217128142387,
+            "parthenon.prim.00081.phdf"
+          ],
+          [
+            4.101175497833831,
+            "parthenon.prim.00082.phdf"
+          ],
+          [
+            4.150156070708416,
+            "parthenon.prim.00083.phdf"
+          ],
+          [
+            4.207274189648495,
+            "parthenon.prim.00084.phdf"
+          ],
+          [
+            4.256206740261316,
+            "parthenon.prim.00085.phdf"
+          ],
+          [
+            4.305111899793048,
+            "parthenon.prim.00086.phdf"
+          ],
+          [
+            4.353988966625023,
+            "parthenon.prim.00087.phdf"
+          ],
+          [
+            4.402840747927414,
+            "parthenon.prim.00088.phdf"
+          ],
+          [
+            4.45166630562246,
+            "parthenon.prim.00089.phdf"
+          ],
+          [
+            4.50046470096441,
+            "parthenon.prim.00090.phdf"
+          ],
+          [
+            4.557365461312148,
+            "parthenon.prim.00091.phdf"
+          ],
+          [
+            4.606100763158119,
+            "parthenon.prim.00092.phdf"
+          ],
+          [
+            4.65480561113786,
+            "parthenon.prim.00093.phdf"
+          ],
+          [
+            4.703489598643996,
+            "parthenon.prim.00094.phdf"
+          ],
+          [
+            4.752141920223242,
+            "parthenon.prim.00095.phdf"
+          ],
+          [
+            4.8007551620179205,
+            "parthenon.prim.00096.phdf"
+          ],
+          [
+            4.857437760926988,
+            "parthenon.prim.00097.phdf"
+          ],
+          [
+            4.9059876241447204,
+            "parthenon.prim.00098.phdf"
+          ],
+          [
+            4.954511423472132,
+            "parthenon.prim.00099.phdf"
+          ],
+          [
+            5.0,
+            "parthenon.prim.final.phdf"
+          ]
+        ],
+        "duplicate_time_files_retained": [],
+        "exact_nominal_times": false,
+        "max_time_offset_tcc": 0.008097153570401763,
+        "finite_positive_fields": true,
+        "comparison_status": "Provisional. Actual times differ; BC/tracer matching and retention need review."
+      },
+      "initial_check": {
+        "passed": true,
+        "errors": {
+          "density_relative": 5.551115123125783e-15,
+          "pressure_relative": 4.440892098500626e-16,
+          "velocity_over_wind": 5.675835376133021e-15,
+          "tracer_absolute": 1.1102230246251565e-16
+        },
+        "dimensions": [
+          32,
+          64,
+          32
+        ],
+        "edges": [
+          [
+            -5.0,
+            5.0
+          ],
+          [
+            -3.0,
+            17.0
+          ],
+          [
+            -5.0,
+            5.0
+          ]
+        ],
+        "velocity_ic": "historical_momentum13"
+      }
+    },
+    {
+      "status": "complete_native_checks",
+      "code": "apk",
+      "level": 4,
+      "chi": 100,
+      "mach": 2,
+      "velocity_ic": "sharp13",
+      "directory": "/home/kaan/sensitivity_20260907/runs/apk_L4_chi100_sharp13",
+      "binary_sha256": "0e899bc9f0b691a45d986ce62e1e3c24f7d7c9ac8ec8b3b786d017d08427eea2",
+      "parameter_sha256": "f1de9125f35152bf72b26408b524fdb75c056a36b25ea48ee57b96d01be0bec6",
+      "command": [
+        "mpirun",
+        "--bind-to",
+        "core",
+        "-np",
+        "1",
+        "/home/kaan/sensitivity_20260907/bin/apk_pair",
+        "-i",
+        "athinput"
+      ],
+      "parameters": {
+        "source": "/home/kaan/sensitivity_20260907/runs/apk_L4_chi100_sharp13/athinput",
+        "parameter_sha256": "f1de9125f35152bf72b26408b524fdb75c056a36b25ea48ee57b96d01be0bec6",
+        "assumptions": [
+          "AthenaPK checkout units.hpp constants; fully ionized H/He mu from hydro.cpp"
+        ],
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1.0,
+        "rho_wind": 1.0,
+        "p_wind": 1.0,
+        "v_wind": 2.581988897471611,
+        "chi": 100.0,
+        "rv_scale": 1.3,
+        "tmax": 19.364916731037084,
+        "output_dt": 0.19364916731037085,
+        "mach": 2.0,
+        "kind": "apk",
+        "time_input_in_tcc": false,
+        "t_cc": 3.872983346207417
+      },
+      "storage_preflight": {
+        "path": "/home/kaan/sensitivity_20260907",
+        "filesystem_free_bytes": 142034944000,
+        "filesystem_total_bytes": 1081101176832,
+        "windows_backing_volume": {
+          "distribution": "Ubuntu",
+          "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+          "drive": "C:",
+          "free_bytes": 37992439808,
+          "total_bytes": 1999283154944
+        },
+        "policy": "Conservative growth budget; allocated but reusable VHDX blocks are not credited.",
+        "effective_free_bytes": 37992439808
+      },
+      "started_unix": 1788811357.092523,
+      "returncode": 0,
+      "timed_out": false,
+      "wall_seconds": 62.18179655075073,
+      "peak_child_rss_gib": 0.30698394775390625,
+      "cadence": {
+        "complete_outputs": true,
+        "unique_snapshots": 101,
+        "native_time_rows": [
+          [
+            0.0,
+            "parthenon.prim.00000.phdf"
+          ],
+          [
+            0.05341772942981775,
+            "parthenon.prim.00001.phdf"
+          ],
+          [
+            0.10073261831930175,
+            "parthenon.prim.00002.phdf"
+          ],
+          [
+            0.1510154806710662,
+            "parthenon.prim.00003.phdf"
+          ],
+          [
+            0.2011436180020106,
+            "parthenon.prim.00004.phdf"
+          ],
+          [
+            0.25163359634162513,
+            "parthenon.prim.00005.phdf"
+          ],
+          [
+            0.30247142505838853,
+            "parthenon.prim.00006.phdf"
+          ],
+          [
+            0.3534906068529266,
+            "parthenon.prim.00007.phdf"
+          ],
+          [
+            0.4006929635090996,
+            "parthenon.prim.00008.phdf"
+          ],
+          [
+            0.45186219411912826,
+            "parthenon.prim.00009.phdf"
+          ],
+          [
+            0.5031671549843956,
+            "parthenon.prim.00010.phdf"
+          ],
+          [
+            0.5506967702690884,
+            "parthenon.prim.00011.phdf"
+          ],
+          [
+            0.6023525830173376,
+            "parthenon.prim.00012.phdf"
+          ],
+          [
+            0.6501811849784233,
+            "parthenon.prim.00013.phdf"
+          ],
+          [
+            0.7021312786354149,
+            "parthenon.prim.00014.phdf"
+          ],
+          [
+            0.7502057002932624,
+            "parthenon.prim.00015.phdf"
+          ],
+          [
+            0.8024467158510137,
+            "parthenon.prim.00016.phdf"
+          ],
+          [
+            0.8508183278748894,
+            "parthenon.prim.00017.phdf"
+          ],
+          [
+            0.9033183016607726,
+            "parthenon.prim.00018.phdf"
+          ],
+          [
+            0.9518235011474024,
+            "parthenon.prim.00019.phdf"
+          ],
+          [
+            1.000363007396486,
+            "parthenon.prim.00020.phdf"
+          ],
+          [
+            1.053004933783199,
+            "parthenon.prim.00021.phdf"
+          ],
+          [
+            1.1016546261509554,
+            "parthenon.prim.00022.phdf"
+          ],
+          [
+            1.150352614461616,
+            "parthenon.prim.00023.phdf"
+          ],
+          [
+            1.2031580753090991,
+            "parthenon.prim.00024.phdf"
+          ],
+          [
+            1.251942359021197,
+            "parthenon.prim.00025.phdf"
+          ],
+          [
+            1.3007602431759564,
+            "parthenon.prim.00026.phdf"
+          ],
+          [
+            1.3536809731913597,
+            "parthenon.prim.00027.phdf"
+          ],
+          [
+            1.4025634912505731,
+            "parthenon.prim.00028.phdf"
+          ],
+          [
+            1.451471522242815,
+            "parthenon.prim.00029.phdf"
+          ],
+          [
+            1.5004055999282389,
+            "parthenon.prim.00030.phdf"
+          ],
+          [
+            1.5534417468550754,
+            "parthenon.prim.00031.phdf"
+          ],
+          [
+            1.6024287356263003,
+            "parthenon.prim.00032.phdf"
+          ],
+          [
+            1.6514467706856548,
+            "parthenon.prim.00033.phdf"
+          ],
+          [
+            1.700485317540891,
+            "parthenon.prim.00034.phdf"
+          ],
+          [
+            1.7536347752974808,
+            "parthenon.prim.00035.phdf"
+          ],
+          [
+            1.8027010452992294,
+            "parthenon.prim.00036.phdf"
+          ],
+          [
+            1.8517749799642937,
+            "parthenon.prim.00037.phdf"
+          ],
+          [
+            1.9008677261689,
+            "parthenon.prim.00038.phdf"
+          ],
+          [
+            1.9540435973901957,
+            "parthenon.prim.00039.phdf"
+          ],
+          [
+            2.0031183531499996,
+            "parthenon.prim.00040.phdf"
+          ],
+          [
+            2.0521783422997233,
+            "parthenon.prim.00041.phdf"
+          ],
+          [
+            2.1012296627988127,
+            "parthenon.prim.00042.phdf"
+          ],
+          [
+            2.150254792993951,
+            "parthenon.prim.00043.phdf"
+          ],
+          [
+            2.203326525930453,
+            "parthenon.prim.00044.phdf"
+          ],
+          [
+            2.252285382124539,
+            "parthenon.prim.00045.phdf"
+          ],
+          [
+            2.301207342100269,
+            "parthenon.prim.00046.phdf"
+          ],
+          [
+            2.350108249022867,
+            "parthenon.prim.00047.phdf"
+          ],
+          [
+            2.40303723520155,
+            "parthenon.prim.00048.phdf"
+          ],
+          [
+            2.451853384000769,
+            "parthenon.prim.00049.phdf"
+          ],
+          [
+            2.50062562033428,
+            "parthenon.prim.00050.phdf"
+          ],
+          [
+            2.5534395730646806,
+            "parthenon.prim.00051.phdf"
+          ],
+          [
+            2.60219461874982,
+            "parthenon.prim.00052.phdf"
+          ],
+          [
+            2.6509410994106806,
+            "parthenon.prim.00053.phdf"
+          ],
+          [
+            2.7037522684557134,
+            "parthenon.prim.00054.phdf"
+          ],
+          [
+            2.7525037805503803,
+            "parthenon.prim.00055.phdf"
+          ],
+          [
+            2.801262468292689,
+            "parthenon.prim.00056.phdf"
+          ],
+          [
+            2.850008290769482,
+            "parthenon.prim.00057.phdf"
+          ],
+          [
+            2.9028044193049474,
+            "parthenon.prim.00058.phdf"
+          ],
+          [
+            2.951544613121834,
+            "parthenon.prim.00059.phdf"
+          ],
+          [
+            3.000273085891354,
+            "parthenon.prim.00060.phdf"
+          ],
+          [
+            3.0530632693645923,
+            "parthenon.prim.00061.phdf"
+          ],
+          [
+            3.101773296195589,
+            "parthenon.prim.00062.phdf"
+          ],
+          [
+            3.1504763456102607,
+            "parthenon.prim.00063.phdf"
+          ],
+          [
+            3.2032590262903637,
+            "parthenon.prim.00064.phdf"
+          ],
+          [
+            3.2519750915595016,
+            "parthenon.prim.00065.phdf"
+          ],
+          [
+            3.300667818288758,
+            "parthenon.prim.00066.phdf"
+          ],
+          [
+            3.353411559848569,
+            "parthenon.prim.00067.phdf"
+          ],
+          [
+            3.402094797651781,
+            "parthenon.prim.00068.phdf"
+          ],
+          [
+            3.450777953907807,
+            "parthenon.prim.00069.phdf"
+          ],
+          [
+            3.5035467950310384,
+            "parthenon.prim.00070.phdf"
+          ],
+          [
+            3.5522420335067078,
+            "parthenon.prim.00071.phdf"
+          ],
+          [
+            3.6009444666912698,
+            "parthenon.prim.00072.phdf"
+          ],
+          [
+            3.653689403110404,
+            "parthenon.prim.00073.phdf"
+          ],
+          [
+            3.702332723287487,
+            "parthenon.prim.00074.phdf"
+          ],
+          [
+            3.7508961999054637,
+            "parthenon.prim.00075.phdf"
+          ],
+          [
+            3.8034185295314162,
+            "parthenon.prim.00076.phdf"
+          ],
+          [
+            3.851792182015492,
+            "parthenon.prim.00077.phdf"
+          ],
+          [
+            3.9001148618177703,
+            "parthenon.prim.00078.phdf"
+          ],
+          [
+            3.9524258772003553,
+            "parthenon.prim.00079.phdf"
+          ],
+          [
+            4.00066931095062,
+            "parthenon.prim.00080.phdf"
+          ],
+          [
+            4.052908334151308,
+            "parthenon.prim.00081.phdf"
+          ],
+          [
+            4.101105090947973,
+            "parthenon.prim.00082.phdf"
+          ],
+          [
+            4.153277150136821,
+            "parthenon.prim.00083.phdf"
+          ],
+          [
+            4.201365666078609,
+            "parthenon.prim.00084.phdf"
+          ],
+          [
+            4.2533926978140055,
+            "parthenon.prim.00085.phdf"
+          ],
+          [
+            4.301363910526736,
+            "parthenon.prim.00086.phdf"
+          ],
+          [
+            4.353309399765931,
+            "parthenon.prim.00087.phdf"
+          ],
+          [
+            4.401266584359366,
+            "parthenon.prim.00088.phdf"
+          ],
+          [
+            4.453221839409393,
+            "parthenon.prim.00089.phdf"
+          ],
+          [
+            4.501126747612924,
+            "parthenon.prim.00090.phdf"
+          ],
+          [
+            4.5529812233771425,
+            "parthenon.prim.00091.phdf"
+          ],
+          [
+            4.60083235720065,
+            "parthenon.prim.00092.phdf"
+          ],
+          [
+            4.652681130466135,
+            "parthenon.prim.00093.phdf"
+          ],
+          [
+            4.7005379202179585,
+            "parthenon.prim.00094.phdf"
+          ],
+          [
+            4.752283699394584,
+            "parthenon.prim.00095.phdf"
+          ],
+          [
+            4.803945128925545,
+            "parthenon.prim.00096.phdf"
+          ],
+          [
+            4.851579125173718,
+            "parthenon.prim.00097.phdf"
+          ],
+          [
+            4.903103813686952,
+            "parthenon.prim.00098.phdf"
+          ],
+          [
+            4.950500120357584,
+            "parthenon.prim.00099.phdf"
+          ],
+          [
+            5.0,
+            "parthenon.prim.final.phdf"
+          ]
+        ],
+        "duplicate_time_files_retained": [],
+        "exact_nominal_times": false,
+        "max_time_offset_tcc": 0.004043597390195552,
+        "finite_positive_fields": true,
+        "comparison_status": "Provisional. Actual times differ; BC/tracer matching and retention need review."
+      },
+      "initial_check": {
+        "passed": true,
+        "errors": {
+          "density_relative": 5.551115123125783e-15,
+          "pressure_relative": 6.661338147750939e-16,
+          "velocity_over_wind": 1.7199501139797033e-16,
+          "tracer_absolute": 1.1102230246251565e-16
+        },
+        "dimensions": [
+          64,
+          128,
+          64
+        ],
+        "edges": [
+          [
+            -5.0,
+            5.0
+          ],
+          [
+            -3.0,
+            17.0
+          ],
+          [
+            -5.0,
+            5.0
+          ]
+        ],
+        "velocity_ic": "sharp13"
+      }
+    },
+    {
+      "status": "complete_native_checks",
+      "code": "apk",
+      "level": 4,
+      "chi": 100,
+      "mach": 2,
+      "velocity_ic": "historical_momentum13",
+      "directory": "/home/kaan/sensitivity_20260907/runs/apk_L4_chi100_historical_momentum13",
+      "binary_sha256": "0e899bc9f0b691a45d986ce62e1e3c24f7d7c9ac8ec8b3b786d017d08427eea2",
+      "parameter_sha256": "4080ffc997fc5cccb14d110740b7d5d566b8a98a20d712e9b9c5c5c7faef2b31",
+      "command": [
+        "mpirun",
+        "--bind-to",
+        "core",
+        "-np",
+        "1",
+        "/home/kaan/sensitivity_20260907/bin/apk_pair",
+        "-i",
+        "athinput"
+      ],
+      "parameters": {
+        "source": "/home/kaan/sensitivity_20260907/runs/apk_L4_chi100_historical_momentum13/athinput",
+        "parameter_sha256": "4080ffc997fc5cccb14d110740b7d5d566b8a98a20d712e9b9c5c5c7faef2b31",
+        "assumptions": [
+          "AthenaPK checkout units.hpp constants; fully ionized H/He mu from hydro.cpp"
+        ],
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1.0,
+        "rho_wind": 1.0,
+        "p_wind": 1.0,
+        "v_wind": 2.581988897471611,
+        "chi": 100.0,
+        "rv_scale": 1.3,
+        "tmax": 19.364916731037084,
+        "output_dt": 0.19364916731037085,
+        "mach": 2.0,
+        "kind": "apk",
+        "time_input_in_tcc": false,
+        "t_cc": 3.872983346207417
+      },
+      "storage_preflight": {
+        "path": "/home/kaan/sensitivity_20260907",
+        "filesystem_free_bytes": 140073312256,
+        "filesystem_total_bytes": 1081101176832,
+        "windows_backing_volume": {
+          "distribution": "Ubuntu",
+          "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+          "drive": "C:",
+          "free_bytes": 37992300544,
+          "total_bytes": 1999283154944
+        },
+        "policy": "Conservative growth budget; allocated but reusable VHDX blocks are not credited.",
+        "effective_free_bytes": 37992300544
+      },
+      "started_unix": 1788811425.9243011,
+      "returncode": 0,
+      "timed_out": false,
+      "wall_seconds": 62.18185019493103,
+      "peak_child_rss_gib": 0.3070640563964844,
+      "cadence": {
+        "complete_outputs": true,
+        "unique_snapshots": 101,
+        "native_time_rows": [
+          [
+            0.0,
+            "parthenon.prim.00000.phdf"
+          ],
+          [
+            0.05359598710211608,
+            "parthenon.prim.00001.phdf"
+          ],
+          [
+            0.10119430014047265,
+            "parthenon.prim.00002.phdf"
+          ],
+          [
+            0.15165177602448496,
+            "parthenon.prim.00003.phdf"
+          ],
+          [
+            0.20197730310580697,
+            "parthenon.prim.00004.phdf"
+          ],
+          [
+            0.2525260315497515,
+            "parthenon.prim.00005.phdf"
+          ],
+          [
+            0.3033551880377542,
+            "parthenon.prim.00006.phdf"
+          ],
+          [
+            0.35042600213407027,
+            "parthenon.prim.00007.phdf"
+          ],
+          [
+            0.4015646609229908,
+            "parthenon.prim.00008.phdf"
+          ],
+          [
+            0.45273320733473055,
+            "parthenon.prim.00009.phdf"
+          ],
+          [
+            0.5000825014117793,
+            "parthenon.prim.00010.phdf"
+          ],
+          [
+            0.5515575689506317,
+            "parthenon.prim.00011.phdf"
+          ],
+          [
+            0.6032069327546545,
+            "parthenon.prim.00012.phdf"
+          ],
+          [
+            0.6510288023430711,
+            "parthenon.prim.00013.phdf"
+          ],
+          [
+            0.7029739885854449,
+            "parthenon.prim.00014.phdf"
+          ],
+          [
+            0.7510470471753303,
+            "parthenon.prim.00015.phdf"
+          ],
+          [
+            0.8032880838524055,
+            "parthenon.prim.00016.phdf"
+          ],
+          [
+            0.8516680435366064,
+            "parthenon.prim.00017.phdf"
+          ],
+          [
+            0.9001365006242064,
+            "parthenon.prim.00018.phdf"
+          ],
+          [
+            0.9526846251501123,
+            "parthenon.prim.00019.phdf"
+          ],
+          [
+            1.001224904484544,
+            "parthenon.prim.00020.phdf"
+          ],
+          [
+            1.053866929036243,
+            "parthenon.prim.00021.phdf"
+          ],
+          [
+            1.1025162441342666,
+            "parthenon.prim.00022.phdf"
+          ],
+          [
+            1.1512143131247965,
+            "parthenon.prim.00023.phdf"
+          ],
+          [
+            1.2040213205728194,
+            "parthenon.prim.00024.phdf"
+          ],
+          [
+            1.2528028025353453,
+            "parthenon.prim.00025.phdf"
+          ],
+          [
+            1.3016174322544845,
+            "parthenon.prim.00026.phdf"
+          ],
+          [
+            1.350465095214255,
+            "parthenon.prim.00027.phdf"
+          ],
+          [
+            1.4034240944579097,
+            "parthenon.prim.00028.phdf"
+          ],
+          [
+            1.4523385946093699,
+            "parthenon.prim.00029.phdf"
+          ],
+          [
+            1.5012820646966083,
+            "parthenon.prim.00030.phdf"
+          ],
+          [
+            1.5502466184801404,
+            "parthenon.prim.00031.phdf"
+          ],
+          [
+            1.6033203359859642,
+            "parthenon.prim.00032.phdf"
+          ],
+          [
+            1.652344469623415,
+            "parthenon.prim.00033.phdf"
+          ],
+          [
+            1.7013912130777091,
+            "parthenon.prim.00034.phdf"
+          ],
+          [
+            1.7504563764907601,
+            "parthenon.prim.00035.phdf"
+          ],
+          [
+            1.8036115922315372,
+            "parthenon.prim.00036.phdf"
+          ],
+          [
+            1.8526863000858638,
+            "parthenon.prim.00037.phdf"
+          ],
+          [
+            1.9017777136092906,
+            "parthenon.prim.00038.phdf"
+          ],
+          [
+            1.950857331550958,
+            "parthenon.prim.00039.phdf"
+          ],
+          [
+            2.0040185158369503,
+            "parthenon.prim.00040.phdf"
+          ],
+          [
+            2.0530730094706344,
+            "parthenon.prim.00041.phdf"
+          ],
+          [
+            2.102119634317382,
+            "parthenon.prim.00042.phdf"
+          ],
+          [
+            2.1511406159349016,
+            "parthenon.prim.00043.phdf"
+          ],
+          [
+            2.200128143342962,
+            "parthenon.prim.00044.phdf"
+          ],
+          [
+            2.253167399279495,
+            "parthenon.prim.00045.phdf"
+          ],
+          [
+            2.3020892988989816,
+            "parthenon.prim.00046.phdf"
+          ],
+          [
+            2.3509903413761113,
+            "parthenon.prim.00047.phdf"
+          ],
+          [
+            2.4039215051764367,
+            "parthenon.prim.00048.phdf"
+          ],
+          [
+            2.4527370045763424,
+            "parthenon.prim.00049.phdf"
+          ],
+          [
+            2.5015064163588767,
+            "parthenon.prim.00050.phdf"
+          ],
+          [
+            2.5502525012558555,
+            "parthenon.prim.00051.phdf"
+          ],
+          [
+            2.6030605715886557,
+            "parthenon.prim.00052.phdf"
+          ],
+          [
+            2.651793785124075,
+            "parthenon.prim.00053.phdf"
+          ],
+          [
+            2.7005283098573756,
+            "parthenon.prim.00054.phdf"
+          ],
+          [
+            2.7533295957102917,
+            "parthenon.prim.00055.phdf"
+          ],
+          [
+            2.8020784106205254,
+            "parthenon.prim.00056.phdf"
+          ],
+          [
+            2.850816287042315,
+            "parthenon.prim.00057.phdf"
+          ],
+          [
+            2.9036047972138164,
+            "parthenon.prim.00058.phdf"
+          ],
+          [
+            2.9523405769974347,
+            "parthenon.prim.00059.phdf"
+          ],
+          [
+            3.0010641891634466,
+            "parthenon.prim.00060.phdf"
+          ],
+          [
+            3.053849131815596,
+            "parthenon.prim.00061.phdf"
+          ],
+          [
+            3.1025528821025965,
+            "parthenon.prim.00062.phdf"
+          ],
+          [
+            3.1512523955526865,
+            "parthenon.prim.00063.phdf"
+          ],
+          [
+            3.2040329565033865,
+            "parthenon.prim.00064.phdf"
+          ],
+          [
+            3.252748271118327,
+            "parthenon.prim.00065.phdf"
+          ],
+          [
+            3.3014442391841246,
+            "parthenon.prim.00066.phdf"
+          ],
+          [
+            3.350136994594163,
+            "parthenon.prim.00067.phdf"
+          ],
+          [
+            3.4028817457958955,
+            "parthenon.prim.00068.phdf"
+          ],
+          [
+            3.451562485620396,
+            "parthenon.prim.00069.phdf"
+          ],
+          [
+            3.5002637556463156,
+            "parthenon.prim.00070.phdf"
+          ],
+          [
+            3.553006928117191,
+            "parthenon.prim.00071.phdf"
+          ],
+          [
+            3.601705471534324,
+            "parthenon.prim.00072.phdf"
+          ],
+          [
+            3.650401833983956,
+            "parthenon.prim.00073.phdf"
+          ],
+          [
+            3.7031222870774223,
+            "parthenon.prim.00074.phdf"
+          ],
+          [
+            3.7517051240770103,
+            "parthenon.prim.00075.phdf"
+          ],
+          [
+            3.800204478895334,
+            "parthenon.prim.00076.phdf"
+          ],
+          [
+            3.852621687689538,
+            "parthenon.prim.00077.phdf"
+          ],
+          [
+            3.900947751633478,
+            "parthenon.prim.00078.phdf"
+          ],
+          [
+            3.953259678458384,
+            "parthenon.prim.00079.phdf"
+          ],
+          [
+            4.001503902464956,
+            "parthenon.prim.00080.phdf"
+          ],
+          [
+            4.053744596378211,
+            "parthenon.prim.00081.phdf"
+          ],
+          [
+            4.101944130768814,
+            "parthenon.prim.00082.phdf"
+          ],
+          [
+            4.150107661888037,
+            "parthenon.prim.00083.phdf"
+          ],
+          [
+            4.202208589577251,
+            "parthenon.prim.00084.phdf"
+          ],
+          [
+            4.250235863858806,
+            "parthenon.prim.00085.phdf"
+          ],
+          [
+            4.302203148559719,
+            "parthenon.prim.00086.phdf"
+          ],
+          [
+            4.350150157349954,
+            "parthenon.prim.00087.phdf"
+          ],
+          [
+            4.40209955912831,
+            "parthenon.prim.00088.phdf"
+          ],
+          [
+            4.45005388957692,
+            "parthenon.prim.00089.phdf"
+          ],
+          [
+            4.501942783600308,
+            "parthenon.prim.00090.phdf"
+          ],
+          [
+            4.553787983430561,
+            "parthenon.prim.00091.phdf"
+          ],
+          [
+            4.6016367639777505,
+            "parthenon.prim.00092.phdf"
+          ],
+          [
+            4.65348891220098,
+            "parthenon.prim.00093.phdf"
+          ],
+          [
+            4.701344154842898,
+            "parthenon.prim.00094.phdf"
+          ],
+          [
+            4.753087761910668,
+            "parthenon.prim.00095.phdf"
+          ],
+          [
+            4.800780609373364,
+            "parthenon.prim.00096.phdf"
+          ],
+          [
+            4.852400222180568,
+            "parthenon.prim.00097.phdf"
+          ],
+          [
+            4.903943082024462,
+            "parthenon.prim.00098.phdf"
+          ],
+          [
+            4.951365940357329,
+            "parthenon.prim.00099.phdf"
+          ],
+          [
+            5.0,
+            "parthenon.prim.final.phdf"
+          ]
+        ],
+        "duplicate_time_files_retained": [],
+        "exact_nominal_times": false,
+        "max_time_offset_tcc": 0.004032956503386309,
+        "finite_positive_fields": true,
+        "comparison_status": "Provisional. Actual times differ; BC/tracer matching and retention need review."
+      },
+      "initial_check": {
+        "passed": true,
+        "errors": {
+          "density_relative": 5.551115123125783e-15,
+          "pressure_relative": 4.440892098500626e-16,
+          "velocity_over_wind": 5.675835376133021e-15,
+          "tracer_absolute": 1.1102230246251565e-16
+        },
+        "dimensions": [
+          64,
+          128,
+          64
+        ],
+        "edges": [
+          [
+            -5.0,
+            5.0
+          ],
+          [
+            -3.0,
+            17.0
+          ],
+          [
+            -5.0,
+            5.0
+          ]
+        ],
+        "velocity_ic": "historical_momentum13"
+      }
+    }
+  ]
+}

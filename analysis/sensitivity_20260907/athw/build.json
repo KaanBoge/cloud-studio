@@ -1,0 +1,18 @@
+{
+  "binary": "/home/kaan/sensitivity_20260907/athw/build/bin/athena",
+  "binary_sha256": "f50538d95d644f80d3dc4bbf12b737aa69a84e6afb27f6f2cf420d3a6120caef",
+  "command": [
+    "nice",
+    "-n",
+    "19",
+    "make",
+    "-j2",
+    "all"
+  ],
+  "source": "/mnt/c/Users/kaanb/CloudCrushing/sensitivity_20260907/athw/cloud_wind.c",
+  "source_sha256": "f06a9f512226b8bb5dc623ac413ada43ffb1571b6da9895b005d7862f1dbf3f9",
+  "built_unix": 1788811942.47837,
+  "historical_source": "/mnt/c/Users/kaanb/CloudCrushing/audit_20260907/before/home/kaan/CloudCrushing/A8/cloud_wind.c",
+  "scope": "Both IC laws use the same native Athena 4.2 binary; no production source edits.",
+  "historical_source_sha256": "9c3561a7aabda77a6e6eb54a75ee9983987d1ce2205ab76d559565e16f0d18ea"
+}
