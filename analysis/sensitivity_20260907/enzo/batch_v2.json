@@ -1,0 +1,4366 @@
+{
+  "status": "held_storage",
+  "pid": 10,
+  "finished": [
+    {
+      "status": "complete_native_checks",
+      "level": 3,
+      "mode": 0,
+      "directory": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13",
+      "parameters": {
+        "source": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/CloudWind.enzo",
+        "parameter_sha256": "5bb99ab3938d7a40f08fd72a975a98447807a2c27227b4039c578037f6ffb4a1",
+        "assumptions": [],
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1.0,
+        "rho_wind": 1.0,
+        "p_wind": 1.0,
+        "v_wind": 2.581988897471611,
+        "chi": 100.0,
+        "rv_scale": 1.3,
+        "tmax": 19.364916731037084,
+        "output_dt": 0.19364916731037085,
+        "mach": 2.0,
+        "kind": "enzo",
+        "t_cc": 3.872983346207417
+      },
+      "command": [
+        "mpirun",
+        "--bind-to",
+        "core",
+        "-np",
+        "8",
+        "/home/kaan/sensitivity_20260907/enzo/enzo_pair",
+        "CloudWind.enzo"
+      ],
+      "binary_sha256": "28d482af94828aba1de2b097068b66c9ec80b88b53bd6405e0ff96fbecf57900",
+      "parameter_sha256": "5bb99ab3938d7a40f08fd72a975a98447807a2c27227b4039c578037f6ffb4a1",
+      "storage_preflight": {
+        "path": "/home/kaan/sensitivity_20260907/enzo",
+        "filesystem_free_bytes": 111995994112,
+        "filesystem_total_bytes": 1081101176832,
+        "windows_backing_volume": {
+          "distribution": "Ubuntu",
+          "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+          "drive": "C:",
+          "free_bytes": 37676830720,
+          "total_bytes": 1999283154944
+        },
+        "policy": "Conservative growth budget; allocated but reusable VHDX blocks are not credited.",
+        "effective_free_bytes": 37676830720
+      },
+      "reserved_output_gib": 1.529687499627471,
+      "started_unix": 1788816893.370495,
+      "returncode": 0,
+      "wall_seconds": 17.875917673110962,
+      "peak_child_rss_gib": 0.3852729797363281,
+      "unique_snapshots": 102,
+      "target_snapshots": 101,
+      "series": [
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0000/CW_0000",
+          "time_code": 0.0,
+          "t_over_tcc": 0.0,
+          "cells": 65536,
+          "dense_mass": 409.9079855231985,
+          "tracer_mass": 368.73014495626165,
+          "initial_checks": {
+            "density_relative": 5.551115123125783e-15,
+            "velocity_over_wind": 0.0,
+            "pressure_absolute": 4.440892098500626e-16,
+            "tracer_over_initial_cloud_density": 2.1316282072803005e-16
+          },
+          "dense_mass_over_initial": 1.0,
+          "tracer_mass_over_initial": 1.0
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0001/CW_0001",
+          "time_code": 0.19364771296706,
+          "t_over_tcc": 0.049999624490171826,
+          "cells": 65536,
+          "dense_mass": 411.1091932504343,
+          "tracer_mass": 368.73132605455777,
+          "dense_mass_over_initial": 1.002930432608437,
+          "tracer_mass_over_initial": 1.0000032031509012
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0002/CW_0002",
+          "time_code": 0.38729643409051,
+          "t_over_tcc": 0.09999950928520425,
+          "cells": 65536,
+          "dense_mass": 408.3159099087212,
+          "tracer_mass": 368.73228862123733,
+          "dense_mass_over_initial": 0.9961160170801621,
+          "tracer_mass_over_initial": 1.0000058136417784
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0003/CW_0003",
+          "time_code": 0.58094623730025,
+          "t_over_tcc": 0.14999967347371534,
+          "cells": 65536,
+          "dense_mass": 403.50871171053757,
+          "tracer_mass": 368.73298138607544,
+          "dense_mass_over_initial": 0.9843885114741227,
+          "tracer_mass_over_initial": 1.0000076924272467
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0004/CW_0004",
+          "time_code": 0.77459520810047,
+          "t_over_tcc": 0.19999962273501257,
+          "cells": 65536,
+          "dense_mass": 404.96384455528596,
+          "tracer_mass": 368.7336494449758,
+          "dense_mass_over_initial": 0.9879384126620467,
+          "tracer_mass_over_initial": 1.0000095042099544
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0005/CW_0005",
+          "time_code": 0.96824527254886,
+          "t_over_tcc": 0.24999985437505307,
+          "cells": 65536,
+          "dense_mass": 405.7568466372621,
+          "tracer_mass": 368.73383778043717,
+          "dense_mass_over_initial": 0.9898729982519419,
+          "tracer_mass_over_initial": 1.0000100149776905
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0006/CW_0006",
+          "time_code": 1.1618944028993,
+          "t_over_tcc": 0.29999984483203995,
+          "cells": 65536,
+          "dense_mass": 404.40646003814265,
+          "tracer_mass": 368.7337512484078,
+          "dense_mass_over_initial": 0.9865786330607007,
+          "tracer_mass_over_initial": 1.0000097803019241
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0007/CW_0007",
+          "time_code": 1.3555431575016,
+          "t_over_tcc": 0.34999973827127423,
+          "cells": 65536,
+          "dense_mass": 398.5484329490574,
+          "tracer_mass": 368.73366849180906,
+          "dense_mass_over_initial": 0.9722875548285747,
+          "tracer_mass_over_initial": 1.0000095558651647
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0008/CW_0008",
+          "time_code": 1.5491919857179,
+          "t_over_tcc": 0.39999965071756166,
+          "cells": 65536,
+          "dense_mass": 396.6885287257945,
+          "tracer_mass": 368.7332895154966,
+          "dense_mass_over_initial": 0.9677501847627318,
+          "tracer_mass_over_initial": 1.0000085280774518
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0009/CW_0009",
+          "time_code": 1.7428411873791,
+          "t_over_tcc": 0.44999965958690763,
+          "cells": 65536,
+          "dense_mass": 393.9657425223502,
+          "tracer_mass": 368.7329409245706,
+          "dense_mass_over_initial": 0.9611077520714804,
+          "tracer_mass_over_initial": 1.0000075826952235
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0010/CW_0010",
+          "time_code": 1.9364903030064,
+          "t_over_tcc": 0.4999996462423961,
+          "cells": 65536,
+          "dense_mass": 392.57893537291875,
+          "tracer_mass": 368.73280469725273,
+          "dense_mass_over_initial": 0.957724536329388,
+          "tracer_mass_over_initial": 1.0000072132453164
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0011/CW_0011",
+          "time_code": 2.1301394234899,
+          "t_over_tcc": 0.54999963415175,
+          "cells": 65536,
+          "dense_mass": 390.6300246494301,
+          "tracer_mass": 368.73299691058963,
+          "dense_mass_over_initial": 0.9529700285073432,
+          "tracer_mass_over_initial": 1.0000077345298912
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0012/CW_0012",
+          "time_code": 2.3237886198233,
+          "t_over_tcc": 0.599999641645464,
+          "cells": 65536,
+          "dense_mass": 398.51073134283195,
+          "tracer_mass": 368.73277543466475,
+          "dense_mass_over_initial": 0.9721955790497243,
+          "tracer_mass_over_initial": 1.0000071338848724
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0013/CW_0013",
+          "time_code": 2.5174377942908,
+          "t_over_tcc": 0.6499996434934268,
+          "cells": 65536,
+          "dense_mass": 392.61102135240844,
+          "tracer_mass": 368.73244834660517,
+          "dense_mass_over_initial": 0.9578028123830948,
+          "tracer_mass_over_initial": 1.0000062468186424
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0014/CW_0014",
+          "time_code": 2.7110867255887,
+          "t_over_tcc": 0.6999995825552688,
+          "cells": 65536,
+          "dense_mass": 390.57167448081645,
+          "tracer_mass": 368.7321934249967,
+          "dense_mass_over_initial": 0.9528276790760699,
+          "tracer_mass_over_initial": 1.0000055554685807
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0015/CW_0015",
+          "time_code": 2.9047356874077,
+          "t_over_tcc": 0.749999529497625,
+          "cells": 65536,
+          "dense_mass": 383.4019174016444,
+          "tracer_mass": 368.7319784870506,
+          "dense_mass_over_initial": 0.9353365412295586,
+          "tracer_mass_over_initial": 1.0000049725546283
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0016/CW_0016",
+          "time_code": 3.098384814331,
+          "t_over_tcc": 0.7999995190697282,
+          "cells": 65536,
+          "dense_mass": 381.84900437519656,
+          "tracer_mass": 368.73180050009904,
+          "dense_mass_over_initial": 0.9315480982587153,
+          "tracer_mass_over_initial": 1.000004489852159
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0017/CW_0017",
+          "time_code": 3.2920339594312,
+          "t_over_tcc": 0.8499995133350866,
+          "cells": 65536,
+          "dense_mass": 379.5879429283979,
+          "tracer_mass": 368.7316303661427,
+          "dense_mass_over_initial": 0.9260320763058552,
+          "tracer_mass_over_initial": 1.0000040284470944
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0018/CW_0018",
+          "time_code": 3.4856846504997,
+          "t_over_tcc": 0.8999999067677439,
+          "cells": 65536,
+          "dense_mass": 376.81147954626914,
+          "tracer_mass": 368.7314282541838,
+          "dense_mass_over_initial": 0.9192586942782156,
+          "tracer_mass_over_initial": 1.0000034803173532
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0019/CW_0019",
+          "time_code": 3.6793337220976,
+          "t_over_tcc": 0.9499998820548902,
+          "cells": 65536,
+          "dense_mass": 375.3603607170529,
+          "tracer_mass": 368.73124925162705,
+          "dense_mass_over_initial": 0.9157185855697598,
+          "tracer_mass_over_initial": 1.0000029948605518
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0020/CW_0020",
+          "time_code": 3.8729828306931,
+          "t_over_tcc": 0.9999998668947757,
+          "cells": 65536,
+          "dense_mass": 373.0086104151398,
+          "tracer_mass": 368.7311124438987,
+          "dense_mass_over_initial": 0.909981321634998,
+          "tracer_mass_over_initial": 1.0000026238365654
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0021/CW_0021",
+          "time_code": 4.0666320047514,
+          "t_over_tcc": 1.0499998686370837,
+          "cells": 65536,
+          "dense_mass": 366.91753461430176,
+          "tracer_mass": 368.7309920380899,
+          "dense_mass_over_initial": 0.895121704316093,
+          "tracer_mass_over_initial": 1.0000022972947555
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0022/CW_0022",
+          "time_code": 4.2602812428125,
+          "t_over_tcc": 1.0999998869048433,
+          "cells": 65536,
+          "dense_mass": 364.7009156481821,
+          "tracer_mass": 368.73089005171573,
+          "dense_mass_over_initial": 0.8897141029899309,
+          "tracer_mass_over_initial": 1.000002020706645
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0023/CW_0023",
+          "time_code": 4.4539305021328,
+          "t_over_tcc": 1.1499999106617047,
+          "cells": 65536,
+          "dense_mass": 362.11280432987036,
+          "tracer_mass": 368.73078839504547,
+          "dense_mass_over_initial": 0.8834002193630766,
+          "tracer_mass_over_initial": 1.0000017450126946
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0024/CW_0024",
+          "time_code": 4.6475780846799,
+          "t_over_tcc": 1.1999995014775877,
+          "cells": 65536,
+          "dense_mass": 354.5214280156048,
+          "tracer_mass": 368.73070269045775,
+          "dense_mass_over_initial": 0.8648805110812873,
+          "tracer_mass_over_initial": 1.0000015125809585
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0025/CW_0025",
+          "time_code": 4.8412273430636,
+          "t_over_tcc": 1.2499995249926201,
+          "cells": 65536,
+          "dense_mass": 353.79056234648834,
+          "tracer_mass": 368.73061118259074,
+          "dense_mass_over_initial": 0.8630975117377063,
+          "tracer_mass_over_initial": 1.0000012644106686
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0026/CW_0026",
+          "time_code": 5.0348764408629,
+          "t_over_tcc": 1.2999995070449388,
+          "cells": 65536,
+          "dense_mass": 359.3760394281591,
+          "tracer_mass": 368.73074968634836,
+          "dense_mass_over_initial": 0.8767236846324392,
+          "tracer_mass_over_initial": 1.0000016400343041
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0027/CW_0027",
+          "time_code": 5.22852713001,
+          "t_over_tcc": 1.3499998999814926,
+          "cells": 65536,
+          "dense_mass": 355.40625965758744,
+          "tracer_mass": 368.7314999299592,
+          "dense_mass_over_initial": 0.8670391214846763,
+          "tracer_mass_over_initial": 1.000003674702804
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0028/CW_0028",
+          "time_code": 5.4221762623178,
+          "t_over_tcc": 1.3999998909438678,
+          "cells": 65536,
+          "dense_mass": 349.6925569858727,
+          "tracer_mass": 368.73196852694673,
+          "dense_mass_over_initial": 0.8531001330445711,
+          "tracer_mass_over_initial": 1.000004945542723
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0029/CW_0029",
+          "time_code": 5.6158253904933,
+          "t_over_tcc": 1.4499998808392875,
+          "cells": 65536,
+          "dense_mass": 346.4089292018888,
+          "tracer_mass": 368.7319160459112,
+          "dense_mass_over_initial": 0.8450894869972813,
+          "tracer_mass_over_initial": 1.0000048032136069
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0030/CW_0030",
+          "time_code": 5.8094745913641,
+          "t_over_tcc": 1.499999889504553,
+          "cells": 65536,
+          "dense_mass": 341.5510612650877,
+          "tracer_mass": 368.7316864753247,
+          "dense_mass_over_initial": 0.8332383689211096,
+          "tracer_mass_over_initial": 1.0000041806157813
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0031/CW_0031",
+          "time_code": 6.0031223103506,
+          "t_over_tcc": 1.5499995155489377,
+          "cells": 65536,
+          "dense_mass": 334.5018400713644,
+          "tracer_mass": 368.73150202937813,
+          "dense_mass_over_initial": 0.8160412870327786,
+          "tracer_mass_over_initial": 1.0000036803964498
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0032/CW_0032",
+          "time_code": 6.1967729386599,
+          "t_over_tcc": 1.5999998927772392,
+          "cells": 65536,
+          "dense_mass": 326.71754247274396,
+          "tracer_mass": 368.7313205840551,
+          "dense_mass_over_initial": 0.797050933408209,
+          "tracer_mass_over_initial": 1.0000031883148408
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0033/CW_0033",
+          "time_code": 6.3904221835299,
+          "t_over_tcc": 1.6499999128030491,
+          "cells": 65536,
+          "dense_mass": 319.44652968752126,
+          "tracer_mass": 368.7310640416331,
+          "dense_mass_over_initial": 0.7793127749872597,
+          "tracer_mass_over_initial": 1.000002492569116
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0034/CW_0034",
+          "time_code": 6.5840713320656,
+          "t_over_tcc": 1.69999990795545,
+          "cells": 65536,
+          "dense_mass": 325.9323707156341,
+          "tracer_mass": 368.730628250226,
+          "dense_mass_over_initial": 0.7951354504587668,
+          "tracer_mass_over_initial": 1.0000013106982735
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0035/CW_0035",
+          "time_code": 6.7777204852921,
+          "t_over_tcc": 1.7499999043190104,
+          "cells": 65536,
+          "dense_mass": 333.4524479086368,
+          "tracer_mass": 368.7300182624205,
+          "dense_mass_over_initial": 0.8134812194083624,
+          "tracer_mass_over_initial": 0.999999656404981
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0036/CW_0036",
+          "time_code": 6.9713696107343,
+          "t_over_tcc": 1.799999893508695,
+          "cells": 65536,
+          "dense_mass": 330.83864694579256,
+          "tracer_mass": 368.7292167537169,
+          "dense_mass_over_initial": 0.8071046640467778,
+          "tracer_mass_over_initial": 0.999997482705015
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0037/CW_0037",
+          "time_code": 7.1650187261753,
+          "t_over_tcc": 1.849999880116081,
+          "cells": 65536,
+          "dense_mass": 326.0642769015752,
+          "tracer_mass": 368.7280646952613,
+          "dense_mass_over_initial": 0.7954572450824378,
+          "tracer_mass_over_initial": 0.9999943583104641
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0038/CW_0038",
+          "time_code": 7.3586678294454,
+          "t_over_tcc": 1.8999998635809543,
+          "cells": 65536,
+          "dense_mass": 325.29082454338857,
+          "tracer_mass": 368.7256883268833,
+          "dense_mass_over_initial": 0.7935703524492058,
+          "tracer_mass_over_initial": 0.9999879135746309
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0039/CW_0039",
+          "time_code": 7.5523170254703,
+          "t_over_tcc": 1.9499998709950137,
+          "cells": 65536,
+          "dense_mass": 323.9442177810688,
+          "tracer_mass": 368.7191457346416,
+          "dense_mass_over_initial": 0.7902852084415793,
+          "tracer_mass_over_initial": 0.999970169996214
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0040/CW_0040",
+          "time_code": 7.7459663078278,
+          "t_over_tcc": 1.9999999007000548,
+          "cells": 65536,
+          "dense_mass": 314.2984118821952,
+          "tracer_mass": 368.7027746269703,
+          "dense_mass_over_initial": 0.7667535714900281,
+          "tracer_mass_over_initial": 0.9999257713814135
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0041/CW_0041",
+          "time_code": 7.9396154269214,
+          "t_over_tcc": 2.049999888250538,
+          "cells": 65536,
+          "dense_mass": 307.9888460393228,
+          "tracer_mass": 368.67162656509385,
+          "dense_mass_over_initial": 0.7513609320057816,
+          "tracer_mass_over_initial": 0.9998412975126437
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0042/CW_0042",
+          "time_code": 8.1332643812174,
+          "t_over_tcc": 2.0999998332504637,
+          "cells": 65536,
+          "dense_mass": 307.89600649830754,
+          "tracer_mass": 368.62255997282455,
+          "dense_mass_over_initial": 0.7511344432710066,
+          "tracer_mass_over_initial": 0.9997082284025086
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0043/CW_0043",
+          "time_code": 8.3269135446454,
+          "t_over_tcc": 2.14999983224804,
+          "cells": 65536,
+          "dense_mass": 305.877811697299,
+          "tracer_mass": 368.5518199861008,
+          "dense_mass_over_initial": 0.7462109119608455,
+          "tracer_mass_over_initial": 0.9995163808204994
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0044/CW_0044",
+          "time_code": 8.5205626667917,
+          "t_over_tcc": 2.199999820586727,
+          "cells": 65536,
+          "dense_mass": 314.1541549484087,
+          "tracer_mass": 368.4545570750994,
+          "dense_mass_over_initial": 0.7664016463290622,
+          "tracer_mass_over_initial": 0.9992526027911416
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0045/CW_0045",
+          "time_code": 8.7142117842204,
+          "t_over_tcc": 2.249999807707335,
+          "cells": 65536,
+          "dense_mass": 310.69355807626687,
+          "tracer_mass": 368.32014820880556,
+          "dense_mass_over_initial": 0.7579592714684583,
+          "tracer_mass_over_initial": 0.9988880845434953
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0046/CW_0046",
+          "time_code": 8.9078610329593,
+          "t_over_tcc": 2.299999828732091,
+          "cells": 65536,
+          "dense_mass": 307.777037541282,
+          "tracer_mass": 368.13185829840324,
+          "dense_mass_over_initial": 0.7508442099473653,
+          "tracer_mass_over_initial": 0.998377440342098
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0047/CW_0047",
+          "time_code": 9.1015102189129,
+          "t_over_tcc": 2.349999833545752,
+          "cells": 65536,
+          "dense_mass": 306.38259541554055,
+          "tracer_mass": 367.87582625877485,
+          "dense_mass_over_initial": 0.747442368131667,
+          "tracer_mass_over_initial": 0.9976830787795011
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0048/CW_0048",
+          "time_code": 9.2951593741322,
+          "t_over_tcc": 2.3999998304238512,
+          "cells": 65536,
+          "dense_mass": 296.95787969454545,
+          "tracer_mass": 367.54893947761923,
+          "dense_mass_over_initial": 0.7244500965637795,
+          "tracer_mass_over_initial": 0.9967965584186708
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0049/CW_0049",
+          "time_code": 9.4888085034435,
+          "t_over_tcc": 2.4499998206125335,
+          "cells": 65536,
+          "dense_mass": 286.00119708578643,
+          "tracer_mass": 367.1666055071092,
+          "dense_mass_over_initial": 0.6977204816362388,
+          "tracer_mass_over_initial": 0.9957596647018433
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0050/CW_0050",
+          "time_code": 9.68245760908,
+          "t_over_tcc": 2.499999804688408,
+          "cells": 65536,
+          "dense_mass": 290.2324001484619,
+          "tracer_mass": 366.74260782711696,
+          "dense_mass_over_initial": 0.7080428056994669,
+          "tracer_mass_over_initial": 0.994609778570232
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0051/CW_0051",
+          "time_code": 9.8761067603417,
+          "t_over_tcc": 2.549999800544659,
+          "cells": 65536,
+          "dense_mass": 283.71689843265574,
+          "tracer_mass": 366.2841267145014,
+          "dense_mass_over_initial": 0.6921477708479504,
+          "tracer_mass_over_initial": 0.9933663730095883
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0052/CW_0052",
+          "time_code": 10.069755976653,
+          "t_over_tcc": 2.5999998131966446,
+          "cells": 65536,
+          "dense_mass": 291.4425122586281,
+          "tracer_mass": 365.79479410987244,
+          "dense_mass_over_initial": 0.7109949611902208,
+          "tracer_mass_over_initial": 0.9920392978807376
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0053/CW_0053",
+          "time_code": 10.263405231366,
+          "t_over_tcc": 2.6499998357639067,
+          "cells": 65536,
+          "dense_mass": 283.53065093452244,
+          "tracer_mass": 365.28037188408126,
+          "dense_mass_over_initial": 0.6916934066864531,
+          "tracer_mass_over_initial": 0.9906441794375407
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0054/CW_0054",
+          "time_code": 10.457054468871,
+          "t_over_tcc": 2.6999998538880816,
+          "cells": 65536,
+          "dense_mass": 274.4395806656391,
+          "tracer_mass": 364.74959495956807,
+          "dense_mass_over_initial": 0.6695150871856029,
+          "tracer_mass_over_initial": 0.9892047068807848
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0055/CW_0055",
+          "time_code": 10.650703603063,
+          "t_over_tcc": 2.7499998453369554,
+          "cells": 65536,
+          "dense_mass": 271.9340342914867,
+          "tracer_mass": 364.20810692611707,
+          "dense_mass_over_initial": 0.6634026266758268,
+          "tracer_mass_over_initial": 0.9877361856848428
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0056/CW_0056",
+          "time_code": 10.844352791251,
+          "t_over_tcc": 2.7999998507275357,
+          "cells": 65536,
+          "dense_mass": 266.87624965786995,
+          "tracer_mass": 363.6582943265892,
+          "dense_mass_over_initial": 0.6510637974452592,
+          "tracer_mass_over_initial": 0.9862450881788521
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0057/CW_0057",
+          "time_code": 11.038002090823,
+          "t_over_tcc": 2.8499998848773416,
+          "cells": 65536,
+          "dense_mass": 273.09147959051165,
+          "tracer_mass": 363.09070891893015,
+          "dense_mass_over_initial": 0.6662262976944523,
+          "tracer_mass_over_initial": 0.98470579063179
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0058/CW_0058",
+          "time_code": 11.231651132666,
+          "t_over_tcc": 2.899999852481806,
+          "cells": 65536,
+          "dense_mass": 262.49974486501554,
+          "tracer_mass": 362.4972356476191,
+          "dense_mass_over_initial": 0.6403869993651528,
+          "tracer_mass_over_initial": 0.9830962849284214
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0059/CW_0059",
+          "time_code": 11.425300329492,
+          "t_over_tcc": 2.9499998601027086,
+          "cells": 65536,
+          "dense_mass": 257.8753183019559,
+          "tracer_mass": 361.867425206929,
+          "dense_mass_over_initial": 0.6291053783029108,
+          "tracer_mass_over_initial": 0.9813882324425992
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0060/CW_0060",
+          "time_code": 11.618949452193,
+          "t_over_tcc": 2.9999998485846184,
+          "cells": 65536,
+          "dense_mass": 250.57414163442803,
+          "tracer_mass": 361.19726345923834,
+          "dense_mass_over_initial": 0.6112936329225207,
+          "tracer_mass_over_initial": 0.9795707467912155
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0061/CW_0061",
+          "time_code": 11.812598648123,
+          "t_over_tcc": 3.049999855974175,
+          "cells": 65536,
+          "dense_mass": 247.64180330498215,
+          "tracer_mass": 360.4870653899329,
+          "dense_mass_over_initial": 0.604139982754659,
+          "tracer_mass_over_initial": 0.9776446822179224
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0062/CW_0062",
+          "time_code": 12.006247700485,
+          "t_over_tcc": 3.099999826294633,
+          "cells": 65536,
+          "dense_mass": 244.6275586855329,
+          "tracer_mass": 359.7450270404485,
+          "dense_mass_over_initial": 0.5967865163038849,
+          "tracer_mass_over_initial": 0.9756322664726017
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0063/CW_0063",
+          "time_code": 12.199896954115,
+          "t_over_tcc": 3.1499998485822656,
+          "cells": 65536,
+          "dense_mass": 236.34629449191422,
+          "tracer_mass": 358.96446538791315,
+          "dense_mass_over_initial": 0.5765837769426386,
+          "tracer_mass_over_initial": 0.9735153751275017
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0064/CW_0064",
+          "time_code": 12.393545964903,
+          "t_over_tcc": 3.1999998081683634,
+          "cells": 65536,
+          "dense_mass": 226.5315174735718,
+          "tracer_mass": 358.14473824331105,
+          "dense_mass_over_initial": 0.5526399227973845,
+          "tracer_mass_over_initial": 0.971292266559312
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0065/CW_0065",
+          "time_code": 12.587195195025,
+          "t_over_tcc": 3.249999824386256,
+          "cells": 65536,
+          "dense_mass": 228.22680109123095,
+          "tracer_mass": 357.28609067240353,
+          "dense_mass_over_initial": 0.5567756890608676,
+          "tracer_mass_over_initial": 0.968963605388934
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0066/CW_0066",
+          "time_code": 12.780844262661,
+          "t_over_tcc": 3.2999997986504446,
+          "cells": 65536,
+          "dense_mass": 220.352791400252,
+          "tracer_mass": 356.3996036616457,
+          "dense_mass_over_initial": 0.5375664763373614,
+          "tracer_mass_over_initial": 0.9665594433672392
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0067/CW_0067",
+          "time_code": 12.974493349154,
+          "t_over_tcc": 3.349999777783489,
+          "cells": 65536,
+          "dense_mass": 214.38254716957385,
+          "tracer_mass": 355.5090272010086,
+          "dense_mass_over_initial": 0.5230016363207469,
+          "tracer_mass_over_initial": 0.9641441907148077
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0068/CW_0068",
+          "time_code": 13.168142560883,
+          "t_over_tcc": 3.3999997892523295,
+          "cells": 65536,
+          "dense_mass": 207.01939345744,
+          "tracer_mass": 354.6265565649193,
+          "dense_mass_over_initial": 0.5050386934843548,
+          "tracer_mass_over_initial": 0.961750921143116
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0069/CW_0069",
+          "time_code": 13.361791687846,
+          "t_over_tcc": 3.4499997788346835,
+          "cells": 65536,
+          "dense_mass": 209.89969699892887,
+          "tracer_mass": 353.7597712444004,
+          "dense_mass_over_initial": 0.5120654010460837,
+          "tracer_mass_over_initial": 0.9594001903108924
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0070/CW_0070",
+          "time_code": 13.555440804953,
+          "t_over_tcc": 3.4999997658722286,
+          "cells": 65536,
+          "dense_mass": 205.15707251942132,
+          "tracer_mass": 352.8978101626055,
+          "dense_mass_over_initial": 0.5004954276691216,
+          "tracer_mass_over_initial": 0.9570625428644187
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0071/CW_0071",
+          "time_code": 13.749090024497,
+          "t_over_tcc": 3.549999779358894,
+          "cells": 65536,
+          "dense_mass": 186.7874075837841,
+          "tracer_mass": 352.01172423600343,
+          "dense_mass_over_initial": 0.4556813094172155,
+          "tracer_mass_over_initial": 0.9546594685871389
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0072/CW_0072",
+          "time_code": 13.942739176609,
+          "t_over_tcc": 3.5999997754346915,
+          "cells": 65536,
+          "dense_mass": 184.66556741222752,
+          "tracer_mass": 351.08797918307823,
+          "dense_mass_over_initial": 0.45050492777427603,
+          "tracer_mass_over_initial": 0.9521542623663815
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0073/CW_0073",
+          "time_code": 14.136388234973,
+          "t_over_tcc": 3.649999747304859,
+          "cells": 65536,
+          "dense_mass": 186.97766939132282,
+          "tracer_mass": 350.1290227038583,
+          "dense_mass_over_initial": 0.45614546677510615,
+          "tracer_mass_over_initial": 0.9495535623901599
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0074/CW_0074",
+          "time_code": 14.330037430278,
+          "t_over_tcc": 3.6999997545330414,
+          "cells": 65536,
+          "dense_mass": 171.31225990630057,
+          "tracer_mass": 349.13300786657254,
+          "dense_mass_over_initial": 0.4179285741107019,
+          "tracer_mass_over_initial": 0.9468523597602423
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0075/CW_0075",
+          "time_code": 14.52368666311,
+          "t_over_tcc": 3.7499997714506534,
+          "cells": 65536,
+          "dense_mass": 160.13946881935072,
+          "tracer_mass": 348.1114933762909,
+          "dense_mass_over_initial": 0.39067174701403257,
+          "tracer_mass_over_initial": 0.9440820018053677
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0076/CW_0076",
+          "time_code": 14.717335743032,
+          "t_over_tcc": 3.799999748887073,
+          "cells": 65536,
+          "dense_mass": 156.09482648750378,
+          "tracer_mass": 347.0729827293844,
+          "dense_mass_over_initial": 0.3808045512659809,
+          "tracer_mass_over_initial": 0.9412655500964094
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0077/CW_0077",
+          "time_code": 14.91098483291,
+          "t_over_tcc": 3.8499997288941206,
+          "cells": 65536,
+          "dense_mass": 144.77480267767945,
+          "tracer_mass": 346.0219815906689,
+          "dense_mass_over_initial": 0.35318853935692845,
+          "tracer_mass_over_initial": 0.9384152240433545
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0078/CW_0078",
+          "time_code": 15.104634139696,
+          "t_over_tcc": 3.8999997649065734,
+          "cells": 65536,
+          "dense_mass": 133.58306429753125,
+          "tracer_mass": 344.9560912028067,
+          "dense_mass_over_initial": 0.32588548897633324,
+          "tracer_mass_over_initial": 0.9355245181912778
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0079/CW_0079",
+          "time_code": 15.298283215347,
+          "t_over_tcc": 3.9499997412402257,
+          "cells": 65536,
+          "dense_mass": 120.15247057943736,
+          "tracer_mass": 343.87104494370584,
+          "dense_mass_over_initial": 0.2931205900418776,
+          "tracer_mass_over_initial": 0.9325818614165529
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0080/CW_0080",
+          "time_code": 15.491932282785,
+          "t_over_tcc": 3.9999997154532902,
+          "cells": 65536,
+          "dense_mass": 108.96287116590726,
+          "tracer_mass": 342.76804593535843,
+          "dense_mass_over_initial": 0.2658227578241229,
+          "tracer_mass_over_initial": 0.9295905165985743
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0081/CW_0081",
+          "time_code": 15.685581546642,
+          "t_over_tcc": 4.049999740381523,
+          "cells": 65536,
+          "dense_mass": 101.02316271402866,
+          "tracer_mass": 341.648615331078,
+          "dense_mass_over_initial": 0.24645326825015298,
+          "tracer_mass_over_initial": 0.9265546091209982
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0082/CW_0082",
+          "time_code": 15.879230651606,
+          "t_over_tcc": 4.099999724283759,
+          "cells": 65536,
+          "dense_mass": 88.27031737917704,
+          "tracer_mass": 340.51677896447273,
+          "dense_mass_over_initial": 0.21534178522165298,
+          "tracer_mass_over_initial": 0.9234850570865706
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0083/CW_0083",
+          "time_code": 16.072879802322,
+          "t_over_tcc": 4.14999971999911,
+          "cells": 65536,
+          "dense_mass": 86.38411161773341,
+          "tracer_mass": 339.36796143010207,
+          "dense_mass_over_initial": 0.2107402506625345,
+          "tracer_mass_over_initial": 0.9203694519480026
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0084/CW_0084",
+          "time_code": 16.266528985636,
+          "t_over_tcc": 4.199999724131231,
+          "cells": 65536,
+          "dense_mass": 73.1194860016076,
+          "tracer_mass": 338.1915559890095,
+          "dense_mass_over_initial": 0.17838024284469434,
+          "tracer_mass_over_initial": 0.9171790281185862
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0085/CW_0085",
+          "time_code": 16.460178188381,
+          "t_over_tcc": 4.249999733280412,
+          "cells": 65536,
+          "dense_mass": 62.53608588709976,
+          "tracer_mass": 336.9811472283293,
+          "dense_mass_over_initial": 0.15256127739809688,
+          "tracer_mass_over_initial": 0.9138963869316994
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0086/CW_0086",
+          "time_code": 16.653827393068,
+          "t_over_tcc": 4.299999742931016,
+          "cells": 65536,
+          "dense_mass": 61.71652257106269,
+          "tracer_mass": 335.7384221171257,
+          "dense_mass_over_initial": 0.15056189376815612,
+          "tracer_mass_over_initial": 0.9105261034650438
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0087/CW_0087",
+          "time_code": 16.847476445156,
+          "t_over_tcc": 4.349999713180728,
+          "cells": 65536,
+          "dense_mass": 52.15378069315477,
+          "tracer_mass": 334.4763777804597,
+          "dense_mass_over_initial": 0.12723289746743213,
+          "tracer_mass_over_initial": 0.907103426057381
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0088/CW_0088",
+          "time_code": 17.0411256939,
+          "t_over_tcc": 4.3999997342068005,
+          "cells": 65536,
+          "dense_mass": 46.69849232511075,
+          "tracer_mass": 333.20440761599735,
+          "dense_mass_over_initial": 0.1139243292991858,
+          "tracer_mass_over_initial": 0.9036538297011807
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0089/CW_0089",
+          "time_code": 17.234774963162,
+          "t_over_tcc": 4.449999760530598,
+          "cells": 65536,
+          "dense_mass": 43.671950297235604,
+          "tracer_mass": 331.92530436704817,
+          "dense_mass_over_initial": 0.10654086243646507,
+          "tracer_mass_over_initial": 0.9001848883454342
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0090/CW_0090",
+          "time_code": 17.428423947393,
+          "t_over_tcc": 4.499999713259708,
+          "cells": 65536,
+          "dense_mass": 39.98439419202784,
+          "tracer_mass": 330.6398325432831,
+          "dense_mass_over_initial": 0.09754480421012669,
+          "tracer_mass_over_initial": 0.8966986753483451
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0091/CW_0091",
+          "time_code": 17.62207308517,
+          "t_over_tcc": 4.5499997056342245,
+          "cells": 65536,
+          "dense_mass": 35.789110361433046,
+          "tracer_mass": 329.3467926297628,
+          "dense_mass_over_initial": 0.08731010769588333,
+          "tracer_mass_over_initial": 0.8931919376128836
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0092/CW_0092",
+          "time_code": 17.815722244528,
+          "t_over_tcc": 4.599999703580931,
+          "cells": 65536,
+          "dense_mass": 29.999045214929172,
+          "tracer_mass": 328.0411496784539,
+          "dense_mass_over_initial": 0.07318482750863949,
+          "tracer_mass_over_initial": 0.8896510203074548
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0093/CW_0093",
+          "time_code": 18.009371468768,
+          "t_over_tcc": 4.649999718280098,
+          "cells": 65536,
+          "dense_mass": 34.03026395078845,
+          "tracer_mass": 326.7166625204466,
+          "dense_mass_over_initial": 0.0830192754292232,
+          "tracer_mass_over_initial": 0.8860589973168627
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0094/CW_0094",
+          "time_code": 18.203020671831,
+          "t_over_tcc": 4.699999727511386,
+          "cells": 65536,
+          "dense_mass": 23.202015562804778,
+          "tracer_mass": 325.365080997516,
+          "dense_mass_over_initial": 0.05660298501672316,
+          "tracer_mass_over_initial": 0.8823934941259289
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0095/CW_0095",
+          "time_code": 18.39666973928,
+          "t_over_tcc": 4.749999701727292,
+          "cells": 65536,
+          "dense_mass": 27.075136234021194,
+          "tracer_mass": 323.9855317525383,
+          "dense_mass_over_initial": 0.06605174134254307,
+          "tracer_mass_over_initial": 0.8786521421810226
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0096/CW_0096",
+          "time_code": 18.590318981105,
+          "t_over_tcc": 4.799999720966887,
+          "cells": 65536,
+          "dense_mass": 22.293949305109617,
+          "tracer_mass": 322.57740722013364,
+          "dense_mass_over_initial": 0.05438769209790841,
+          "tracer_mass_over_initial": 0.8748332937584948
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0097/CW_0097",
+          "time_code": 18.783968255531,
+          "t_over_tcc": 4.849999748624023,
+          "cells": 65536,
+          "dense_mass": 19.83654307887874,
+          "tracer_mass": 321.1464243829699,
+          "dense_mass_over_initial": 0.04839267293990325,
+          "tracer_mass_over_initial": 0.8709524533749848
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0098/CW_0098",
+          "time_code": 18.977617294613,
+          "t_over_tcc": 4.8999997155156,
+          "cells": 65536,
+          "dense_mass": 12.07229408649966,
+          "tracer_mass": 319.67772070213425,
+          "dense_mass_over_initial": 0.029451229331604316,
+          "tracer_mass_over_initial": 0.8669693136699037
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0099/CW_0099",
+          "time_code": 19.171266402252,
+          "t_over_tcc": 4.949999700108519,
+          "cells": 65536,
+          "dense_mass": 8.518888841686003,
+          "tracer_mass": 318.15253960044527,
+          "dense_mass_over_initial": 0.020782441773640154,
+          "tracer_mass_over_initial": 0.862833006610252
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0100/CW_0100",
+          "time_code": 19.364915604763,
+          "t_over_tcc": 4.999999709197281,
+          "cells": 65536,
+          "dense_mass": 4.202573245097328,
+          "tracer_mass": 316.5728881172653,
+          "dense_mass_over_initial": 0.01025247956497663,
+          "tracer_mass_over_initial": 0.8585489753077193
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_sharp13/DD0101/CW_0101",
+          "time_code": 19.364916731037,
+          "t_over_tcc": 4.999999999999978,
+          "cells": 65536,
+          "dense_mass": 4.202572215038314,
+          "tracer_mass": 316.57287880271997,
+          "dense_mass_over_initial": 0.01025247705207361,
+          "tracer_mass_over_initial": 0.8585489500465754
+        }
+      ],
+      "exact_duplicate_time_outputs_retained": [],
+      "native_output_precision": "Six native HDF5 float64 fields; unchanged compute and restart precision"
+    },
+    {
+      "status": "complete_native_checks",
+      "level": 3,
+      "mode": 1,
+      "directory": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13",
+      "parameters": {
+        "source": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/CloudWind.enzo",
+        "parameter_sha256": "5f273be2f7c36358b3641d854c7dea789f183ec3b628e1236787885c77b4c872",
+        "assumptions": [],
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1.0,
+        "rho_wind": 1.0,
+        "p_wind": 1.0,
+        "v_wind": 2.581988897471611,
+        "chi": 100.0,
+        "rv_scale": 1.3,
+        "tmax": 19.364916731037084,
+        "output_dt": 0.19364916731037085,
+        "mach": 2.0,
+        "kind": "enzo",
+        "t_cc": 3.872983346207417
+      },
+      "command": [
+        "mpirun",
+        "--bind-to",
+        "core",
+        "-np",
+        "8",
+        "/home/kaan/sensitivity_20260907/enzo/enzo_pair",
+        "CloudWind.enzo"
+      ],
+      "binary_sha256": "28d482af94828aba1de2b097068b66c9ec80b88b53bd6405e0ff96fbecf57900",
+      "parameter_sha256": "5f273be2f7c36358b3641d854c7dea789f183ec3b628e1236787885c77b4c872",
+      "storage_preflight": {
+        "path": "/home/kaan/sensitivity_20260907/enzo",
+        "filesystem_free_bytes": 111623630848,
+        "filesystem_total_bytes": 1081101176832,
+        "windows_backing_volume": {
+          "distribution": "Ubuntu",
+          "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+          "drive": "C:",
+          "free_bytes": 37665964032,
+          "total_bytes": 1999283154944
+        },
+        "policy": "Conservative growth budget; allocated but reusable VHDX blocks are not credited.",
+        "effective_free_bytes": 37665964032
+      },
+      "reserved_output_gib": 1.529687499627471,
+      "started_unix": 1788816936.7627478,
+      "returncode": 0,
+      "wall_seconds": 17.822439908981323,
+      "peak_child_rss_gib": 0.3872833251953125,
+      "unique_snapshots": 102,
+      "target_snapshots": 101,
+      "series": [
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0000/CW_0000",
+          "time_code": 0.0,
+          "t_over_tcc": 0.0,
+          "cells": 65536,
+          "dense_mass": 409.9079855231985,
+          "tracer_mass": 368.73014495626165,
+          "initial_checks": {
+            "density_relative": 5.551115123125783e-15,
+            "velocity_over_wind": 1.7199501139797033e-16,
+            "pressure_absolute": 4.440892098500626e-16,
+            "tracer_over_initial_cloud_density": 2.1316282072803005e-16
+          },
+          "dense_mass_over_initial": 1.0,
+          "tracer_mass_over_initial": 1.0
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0001/CW_0001",
+          "time_code": 0.19364850991024,
+          "t_over_tcc": 0.049999830260016094,
+          "cells": 65536,
+          "dense_mass": 410.67919849950124,
+          "tracer_mass": 368.72912505190203,
+          "dense_mass_over_initial": 1.0018814295001313,
+          "tracer_mass_over_initial": 0.9999972340087363
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0002/CW_0002",
+          "time_code": 0.38729760363131,
+          "t_over_tcc": 0.09999981125934032,
+          "cells": 65536,
+          "dense_mass": 404.9945644074043,
+          "tracer_mass": 368.72351703699707,
+          "dense_mass_over_initial": 0.988013355949817,
+          "tracer_mass_over_initial": 0.9999820250138068
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0003/CW_0003",
+          "time_code": 0.5809456720036,
+          "t_over_tcc": 0.14999952751474796,
+          "cells": 65536,
+          "dense_mass": 405.4688806665346,
+          "tracer_mass": 368.7242180345993,
+          "dense_mass_over_initial": 0.9891704845637542,
+          "tracer_mass_over_initial": 0.9999839261266175
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0004/CW_0004",
+          "time_code": 0.7745957779852,
+          "t_over_tcc": 0.19999976987861715,
+          "cells": 65536,
+          "dense_mass": 404.457069087862,
+          "tracer_mass": 368.72543598688793,
+          "dense_mass_over_initial": 0.986702097475903,
+          "tracer_mass_over_initial": 0.9999872292259309
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0005/CW_0005",
+          "time_code": 0.96824433448519,
+          "t_over_tcc": 0.24999961216805497,
+          "cells": 65536,
+          "dense_mass": 405.0565566426834,
+          "tracer_mass": 368.7257691043955,
+          "dense_mass_over_initial": 0.9881645904645581,
+          "tracer_mass_over_initial": 0.9999881326440867
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0006/CW_0006",
+          "time_code": 1.1618930966701,
+          "t_over_tcc": 0.29999950756511073,
+          "cells": 65536,
+          "dense_mass": 403.09281967617454,
+          "tracer_mass": 368.7256890242014,
+          "dense_mass_over_initial": 0.9833739129567696,
+          "tracer_mass_over_initial": 0.9999879154657649
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0007/CW_0007",
+          "time_code": 1.3555435583165,
+          "t_over_tcc": 0.3499998417612365,
+          "cells": 65536,
+          "dense_mass": 403.0641154499525,
+          "tracer_mass": 368.7255894846321,
+          "dense_mass_over_initial": 0.9833038869332819,
+          "tracer_mass_over_initial": 0.9999876455134145
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0008/CW_0008",
+          "time_code": 1.5491921500928,
+          "t_over_tcc": 0.3999996931589784,
+          "cells": 65536,
+          "dense_mass": 401.38130859339765,
+          "tracer_mass": 368.725363853758,
+          "dense_mass_over_initial": 0.9791985586254985,
+          "tracer_mass_over_initial": 0.9999870336001299
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0009/CW_0009",
+          "time_code": 1.7428412664296,
+          "t_over_tcc": 0.44999967999765894,
+          "cells": 65536,
+          "dense_mass": 393.2452846763339,
+          "tracer_mass": 368.7252338881026,
+          "dense_mass_over_initial": 0.9593501433605968,
+          "tracer_mass_over_initial": 0.9999866811319166
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0010/CW_0010",
+          "time_code": 1.9364903417484,
+          "t_over_tcc": 0.4999996562455375,
+          "cells": 65536,
+          "dense_mass": 391.0745208735932,
+          "tracer_mass": 368.7251909728467,
+          "dense_mass_over_initial": 0.9540544090021408,
+          "tracer_mass_over_initial": 0.9999865647452948
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0011/CW_0011",
+          "time_code": 2.1301393463951,
+          "t_over_tcc": 0.5499996142459582,
+          "cells": 65536,
+          "dense_mass": 399.17003471135115,
+          "tracer_mass": 368.7249691793575,
+          "dense_mass_over_initial": 0.9738039970162045,
+          "tracer_mass_over_initial": 0.9999859632390382
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0012/CW_0012",
+          "time_code": 2.3237885483691,
+          "t_over_tcc": 0.5999996231960688,
+          "cells": 65536,
+          "dense_mass": 395.3937937911048,
+          "tracer_mass": 368.72416718893794,
+          "dense_mass_over_initial": 0.9645915858078051,
+          "tracer_mass_over_initial": 0.9999837882326534
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0013/CW_0013",
+          "time_code": 2.5174376707687,
+          "t_over_tcc": 0.6499996116001576,
+          "cells": 65536,
+          "dense_mass": 392.49827570620823,
+          "tracer_mass": 368.7236056456516,
+          "dense_mass_over_initial": 0.9575277612736214,
+          "tracer_mass_over_initial": 0.9999822653214024
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0014/CW_0014",
+          "time_code": 2.7110867714527,
+          "t_over_tcc": 0.6999995943973026,
+          "cells": 65536,
+          "dense_mass": 388.37496937955757,
+          "tracer_mass": 368.7233621312106,
+          "dense_mass_over_initial": 0.9474686590548935,
+          "tracer_mass_over_initial": 0.9999816049076978
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0015/CW_0015",
+          "time_code": 2.9047357703665,
+          "t_over_tcc": 0.749999550917495,
+          "cells": 65536,
+          "dense_mass": 383.80231403391497,
+          "tracer_mass": 368.72312754609385,
+          "dense_mass_over_initial": 0.9363133375995036,
+          "tracer_mass_over_initial": 0.9999809687104139
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0016/CW_0016",
+          "time_code": 3.0983848024602,
+          "t_over_tcc": 0.7999995160047008,
+          "cells": 65536,
+          "dense_mass": 376.1734447698848,
+          "tracer_mass": 368.722895612932,
+          "dense_mass_over_initial": 0.917702162571301,
+          "tracer_mass_over_initial": 0.9999803397052592
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0017/CW_0017",
+          "time_code": 3.2920354893695,
+          "t_over_tcc": 0.8499999083634571,
+          "cells": 65536,
+          "dense_mass": 376.30803074613857,
+          "tracer_mass": 368.72260079477644,
+          "dense_mass_over_initial": 0.9180304947360964,
+          "tracer_mass_over_initial": 0.9999795401553455
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0018/CW_0018",
+          "time_code": 3.4856846077734,
+          "t_over_tcc": 0.8999998957358607,
+          "cells": 65536,
+          "dense_mass": 371.52288398452345,
+          "tracer_mass": 368.7222874329806,
+          "dense_mass_over_initial": 0.9063567851948992,
+          "tracer_mass_over_initial": 0.999978690314886
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0019/CW_0019",
+          "time_code": 3.6793337544759,
+          "t_over_tcc": 0.9499998904149313,
+          "cells": 65536,
+          "dense_mass": 370.03400113283635,
+          "tracer_mass": 368.72202389364384,
+          "dense_mass_over_initial": 0.9027245484386752,
+          "tracer_mass_over_initial": 0.9999779755934552
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0020/CW_0020",
+          "time_code": 3.8729829484387,
+          "t_over_tcc": 0.9999998972965589,
+          "cells": 65536,
+          "dense_mass": 367.6071681616288,
+          "tracer_mass": 368.72178502153736,
+          "dense_mass_over_initial": 0.8968041149342877,
+          "tracer_mass_over_initial": 0.9999773277698104
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0021/CW_0021",
+          "time_code": 4.0666320715337,
+          "t_over_tcc": 1.0499998858801993,
+          "cells": 65536,
+          "dense_mass": 363.2904814365534,
+          "tracer_mass": 368.7215850755111,
+          "dense_mass_over_initial": 0.8862732473309994,
+          "tracer_mass_over_initial": 0.9999767855141012
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0022/CW_0022",
+          "time_code": 4.2602811618133,
+          "t_over_tcc": 1.0999998659909396,
+          "cells": 65536,
+          "dense_mass": 358.9650115985887,
+          "tracer_mass": 368.7214238564492,
+          "dense_mass_over_initial": 0.8757209526923777,
+          "tracer_mass_over_initial": 0.9999763482863233
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0023/CW_0023",
+          "time_code": 4.4539303072897,
+          "t_over_tcc": 1.1499998603534327,
+          "cells": 65536,
+          "dense_mass": 361.32729019641505,
+          "tracer_mass": 368.7212493914227,
+          "dense_mass_over_initial": 0.8814839011619254,
+          "tracer_mass_over_initial": 0.9999758751353514
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0024/CW_0024",
+          "time_code": 4.6475795080249,
+          "t_over_tcc": 1.1999998689836864,
+          "cells": 65536,
+          "dense_mass": 358.6474478989269,
+          "tracer_mass": 368.72107306477227,
+          "dense_mass_over_initial": 0.8749462332165995,
+          "tracer_mass_over_initial": 0.9999753969356358
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0025/CW_0025",
+          "time_code": 4.8412272788146,
+          "t_over_tcc": 1.2499995084035997,
+          "cells": 65536,
+          "dense_mass": 361.124014880096,
+          "tracer_mass": 368.720902618739,
+          "dense_mass_over_initial": 0.8809879964137913,
+          "tracer_mass_over_initial": 0.9999749346842153
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0026/CW_0026",
+          "time_code": 5.0348764874637,
+          "t_over_tcc": 1.2999995190772138,
+          "cells": 65536,
+          "dense_mass": 359.76775307442426,
+          "tracer_mass": 368.7207371509452,
+          "dense_mass_over_initial": 0.8776792982337823,
+          "tracer_mass_over_initial": 0.9999744859338322
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0027/CW_0027",
+          "time_code": 5.2285271915699,
+          "t_over_tcc": 1.3499999158761906,
+          "cells": 65536,
+          "dense_mass": 357.9364699307903,
+          "tracer_mass": 368.72058435827523,
+          "dense_mass_over_initial": 0.8732117513493357,
+          "tracer_mass_over_initial": 0.9999740715585173
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0028/CW_0028",
+          "time_code": 5.422176325326,
+          "t_over_tcc": 1.399999907212515,
+          "cells": 65536,
+          "dense_mass": 354.9035271897672,
+          "tracer_mass": 368.7204175577413,
+          "dense_mass_over_initial": 0.8658126694867272,
+          "tracer_mass_over_initial": 0.9999736191937291
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0029/CW_0029",
+          "time_code": 5.6158253966635,
+          "t_over_tcc": 1.4499998824324265,
+          "cells": 65536,
+          "dense_mass": 348.7242865668983,
+          "tracer_mass": 368.72022281780306,
+          "dense_mass_over_initial": 0.8507379677460869,
+          "tracer_mass_over_initial": 0.9999730910569848
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0030/CW_0030",
+          "time_code": 5.8094731395094,
+          "t_over_tcc": 1.4999995146372815,
+          "cells": 65536,
+          "dense_mass": 352.71290167055963,
+          "tracer_mass": 368.72006244491797,
+          "dense_mass_over_initial": 0.8604684810430415,
+          "tracer_mass_over_initial": 0.9999726561240474
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0031/CW_0031",
+          "time_code": 6.0031238685464,
+          "t_over_tcc": 1.5499999178733632,
+          "cells": 65536,
+          "dense_mass": 348.4582193303048,
+          "tracer_mass": 368.71998176492167,
+          "dense_mass_over_initial": 0.8500888775941743,
+          "tracer_mass_over_initial": 0.9999724373190557
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0032/CW_0032",
+          "time_code": 6.196772999246,
+          "t_over_tcc": 1.5999999084205028,
+          "cells": 65536,
+          "dense_mass": 336.356929109063,
+          "tracer_mass": 368.7212756517767,
+          "dense_mass_over_initial": 0.8205669101072613,
+          "tracer_mass_over_initial": 0.9999759463537053
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0033/CW_0033",
+          "time_code": 6.3904221747222,
+          "t_over_tcc": 1.649999910528911,
+          "cells": 65536,
+          "dense_mass": 334.988118800341,
+          "tracer_mass": 368.7250312796231,
+          "dense_mass_over_initial": 0.8172275989519179,
+          "tracer_mass_over_initial": 0.9999861316556065
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0034/CW_0034",
+          "time_code": 6.5840712707295,
+          "t_over_tcc": 1.699999892118537,
+          "cells": 65536,
+          "dense_mass": 338.52117700369206,
+          "tracer_mass": 368.7261847597022,
+          "dense_mass_over_initial": 0.8258467484394341,
+          "tracer_mass_over_initial": 0.9999892599056149
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0035/CW_0035",
+          "time_code": 6.7777203911868,
+          "t_over_tcc": 1.7499998800211263,
+          "cells": 65536,
+          "dense_mass": 338.003953434501,
+          "tracer_mass": 368.72674564860415,
+          "dense_mass_over_initial": 0.824584944357889,
+          "tracer_mass_over_initial": 0.9999907810421687
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0036/CW_0036",
+          "time_code": 6.971369678532,
+          "t_over_tcc": 1.7999999110139857,
+          "cells": 65536,
+          "dense_mass": 332.41836873241294,
+          "tracer_mass": 368.72936767445157,
+          "dense_mass_over_initial": 0.8109585089154111,
+          "tracer_mass_over_initial": 0.9999978920036219
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0037/CW_0037",
+          "time_code": 7.1650188037241,
+          "t_over_tcc": 1.849999900139095,
+          "cells": 65536,
+          "dense_mass": 325.5505464828312,
+          "tracer_mass": 368.7308952453178,
+          "dense_mass_over_initial": 0.7942039627925396,
+          "tracer_mass_over_initial": 1.000002034791748
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0038/CW_0038",
+          "time_code": 7.3586677786765,
+          "t_over_tcc": 1.8999998504724807,
+          "cells": 65536,
+          "dense_mass": 318.0444977711653,
+          "tracer_mass": 368.7284496079461,
+          "dense_mass_over_initial": 0.7758924173317082,
+          "tracer_mass_over_initial": 0.9999954021976811
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0039/CW_0039",
+          "time_code": 7.5523169678192,
+          "t_over_tcc": 1.9499998561095637,
+          "cells": 65536,
+          "dense_mass": 312.385671859426,
+          "tracer_mass": 368.7185288750381,
+          "dense_mass_over_initial": 0.7620873046927912,
+          "tracer_mass_over_initial": 0.9999684970665337
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0040/CW_0040",
+          "time_code": 7.7459661012181,
+          "t_over_tcc": 1.9999998473536595,
+          "cells": 65536,
+          "dense_mass": 308.43429012458597,
+          "tracer_mass": 368.693875181082,
+          "dense_mass_over_initial": 0.7524476248758768,
+          "tracer_mass_over_initial": 0.9999016359913183
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0041/CW_0041",
+          "time_code": 7.939615188206,
+          "t_over_tcc": 2.0499998266144868,
+          "cells": 65536,
+          "dense_mass": 306.57909600528757,
+          "tracer_mass": 368.6471762293335,
+          "dense_mass_over_initial": 0.7479217454472765,
+          "tracer_mass_over_initial": 0.9997749879469768
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0042/CW_0042",
+          "time_code": 8.1332645862461,
+          "t_over_tcc": 2.0999998861886464,
+          "cells": 65536,
+          "dense_mass": 305.0605451318587,
+          "tracer_mass": 368.57293990091847,
+          "dense_mass_over_initial": 0.7442171314191048,
+          "tracer_mass_over_initial": 0.9995736582498244
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0043/CW_0043",
+          "time_code": 8.3269123205154,
+          "t_over_tcc": 2.149999516179033,
+          "cells": 65536,
+          "dense_mass": 308.01517946747106,
+          "tracer_mass": 368.4657971019661,
+          "dense_mass_over_initial": 0.7514251742969256,
+          "tracer_mass_over_initial": 0.9992830858612687
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0044/CW_0044",
+          "time_code": 8.5205629030239,
+          "t_over_tcc": 2.199999881581619,
+          "cells": 65536,
+          "dense_mass": 313.20635282439514,
+          "tracer_mass": 368.3251007802105,
+          "dense_mass_over_initial": 0.7640894149076524,
+          "tracer_mass_over_initial": 0.9989015159688146
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0045/CW_0045",
+          "time_code": 8.714211778554,
+          "t_over_tcc": 2.249999806244277,
+          "cells": 65536,
+          "dense_mass": 313.9939689220769,
+          "tracer_mass": 368.1447360262997,
+          "dense_mass_over_initial": 0.7660108610016493,
+          "tracer_mass_over_initial": 0.9984123648745036
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0046/CW_0046",
+          "time_code": 8.9078609370371,
+          "t_over_tcc": 2.2999998039650853,
+          "cells": 65536,
+          "dense_mass": 306.72775123050644,
+          "tracer_mass": 367.9119795870394,
+          "dense_mass_over_initial": 0.748284400556396,
+          "tracer_mass_over_initial": 0.9977811269829341
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0047/CW_0047",
+          "time_code": 9.101510048376,
+          "t_over_tcc": 2.349999789513314,
+          "cells": 65536,
+          "dense_mass": 299.0027164620104,
+          "tracer_mass": 367.61473471358545,
+          "dense_mass_over_initial": 0.729438622866469,
+          "tracer_mass_over_initial": 0.9969749957850381
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0048/CW_0048",
+          "time_code": 9.2951592365627,
+          "t_over_tcc": 2.3999997949035587,
+          "cells": 65536,
+          "dense_mass": 293.70606123430235,
+          "tracer_mass": 367.26257964258303,
+          "dense_mass_over_initial": 0.7165170516486077,
+          "tracer_mass_over_initial": 0.996019947558525
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0049/CW_0049",
+          "time_code": 9.4888084043062,
+          "t_over_tcc": 2.4499997950153922,
+          "cells": 65536,
+          "dense_mass": 293.3739180794224,
+          "tracer_mass": 366.8734779289392,
+          "dense_mass_over_initial": 0.7157067645436713,
+          "tracer_mass_over_initial": 0.9949646996517123
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0050/CW_0050",
+          "time_code": 9.6824575124103,
+          "t_over_tcc": 2.499999779728399,
+          "cells": 65536,
+          "dense_mass": 300.46637993301806,
+          "tracer_mass": 366.45643403711495,
+          "dense_mass_over_initial": 0.7330093351304408,
+          "tracer_mass_over_initial": 0.9938336722661598
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0051/CW_0051",
+          "time_code": 9.8761067286832,
+          "t_over_tcc": 2.5499997923704694,
+          "cells": 65536,
+          "dense_mass": 296.2949146965045,
+          "tracer_mass": 366.0124759603972,
+          "dense_mass_over_initial": 0.7228327457888373,
+          "tracer_mass_over_initial": 0.9926296533303866
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0052/CW_0052",
+          "time_code": 10.069755974089,
+          "t_over_tcc": 2.5999998125346226,
+          "cells": 65536,
+          "dense_mass": 294.9520037281422,
+          "tracer_mass": 365.5352321037654,
+          "dense_mass_over_initial": 0.7195566179362699,
+          "tracer_mass_over_initial": 0.9913353630122234
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0053/CW_0053",
+          "time_code": 10.263405199466,
+          "t_over_tcc": 2.649999827527362,
+          "cells": 65536,
+          "dense_mass": 284.41196517686046,
+          "tracer_mass": 365.0289153181464,
+          "dense_mass_over_initial": 0.6938434361405345,
+          "tracer_mass_over_initial": 0.9899622266073356
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0054/CW_0054",
+          "time_code": 10.457054313052,
+          "t_over_tcc": 2.699999813655789,
+          "cells": 65536,
+          "dense_mass": 291.01680496647487,
+          "tracer_mass": 364.4925396872694,
+          "dense_mass_over_initial": 0.7099564176458449,
+          "tracer_mass_over_initial": 0.988507570300511
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0055/CW_0055",
+          "time_code": 10.650703394086,
+          "t_over_tcc": 2.7499997913793255,
+          "cells": 65536,
+          "dense_mass": 285.4208226366819,
+          "tracer_mass": 363.9218205037016,
+          "dense_mass_over_initial": 0.6963046164430693,
+          "tracer_mass_over_initial": 0.9869597739204903
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0056/CW_0056",
+          "time_code": 10.844352539138,
+          "t_over_tcc": 2.7999997856322394,
+          "cells": 65536,
+          "dense_mass": 285.0229472012582,
+          "tracer_mass": 363.3125641724927,
+          "dense_mass_over_initial": 0.6953339707140873,
+          "tracer_mass_over_initial": 0.9853074643940176
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0057/CW_0057",
+          "time_code": 11.038001696735,
+          "t_over_tcc": 2.8499997831242574,
+          "cells": 65536,
+          "dense_mass": 271.0768046353878,
+          "tracer_mass": 362.66698017113754,
+          "dense_mass_over_initial": 0.6613113533013775,
+          "tracer_mass_over_initial": 0.9835566338471098
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0058/CW_0058",
+          "time_code": 11.23165101234,
+          "t_over_tcc": 2.899999821413766,
+          "cells": 65536,
+          "dense_mass": 273.54322222684226,
+          "tracer_mass": 361.9961950299343,
+          "dense_mass_over_initial": 0.6673283563326952,
+          "tracer_mass_over_initial": 0.9817374575460162
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0059/CW_0059",
+          "time_code": 11.425300212455,
+          "t_over_tcc": 2.9499998298838848,
+          "cells": 65536,
+          "dense_mass": 272.3714386826558,
+          "tracer_mass": 361.30898565974064,
+          "dense_mass_over_initial": 0.6644697061341859,
+          "tracer_mass_over_initial": 0.9798737385645502
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0060/CW_0060",
+          "time_code": 11.618949417903,
+          "t_over_tcc": 2.9999998397309784,
+          "cells": 65536,
+          "dense_mass": 267.33193407308954,
+          "tracer_mass": 360.61245912674286,
+          "dense_mass_over_initial": 0.6521754723364863,
+          "tracer_mass_over_initial": 0.9779847513403557
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0061/CW_0061",
+          "time_code": 11.812598391262,
+          "t_over_tcc": 3.04999978965295,
+          "cells": 65536,
+          "dense_mass": 262.48271001024773,
+          "tracer_mass": 359.90887451941603,
+          "dense_mass_over_initial": 0.6403454416122681,
+          "tracer_mass_over_initial": 0.9760766225449454
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0062/CW_0062",
+          "time_code": 12.006247455745,
+          "t_over_tcc": 3.0999997631030367,
+          "cells": 65536,
+          "dense_mass": 261.9122773513758,
+          "tracer_mass": 359.1920934103281,
+          "dense_mass_over_initial": 0.6389538301311113,
+          "tracer_mass_over_initial": 0.974132704699083
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0063/CW_0063",
+          "time_code": 12.19989667883,
+          "t_over_tcc": 3.149999777503984,
+          "cells": 65536,
+          "dense_mass": 264.3115445039755,
+          "tracer_mass": 358.44796354307755,
+          "dense_mass_over_initial": 0.644807014839229,
+          "tracer_mass_over_initial": 0.97211461673576
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0064/CW_0064",
+          "time_code": 12.393545993075,
+          "t_over_tcc": 3.199999815442342,
+          "cells": 65536,
+          "dense_mass": 257.80871512256874,
+          "tracer_mass": 357.6694747203301,
+          "dense_mass_over_initial": 0.6289428950585259,
+          "tracer_mass_over_initial": 0.9700033469266702
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0065/CW_0065",
+          "time_code": 12.587195108781,
+          "t_over_tcc": 3.249999802118151,
+          "cells": 65536,
+          "dense_mass": 249.06605943398972,
+          "tracer_mass": 356.8681427534883,
+          "dense_mass_over_initial": 0.6076145579747286,
+          "tracer_mass_over_initial": 0.9678301262724793
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0066/CW_0066",
+          "time_code": 12.780844183477,
+          "t_over_tcc": 3.2999997782052235,
+          "cells": 65536,
+          "dense_mass": 248.67657539665194,
+          "tracer_mass": 356.05661205142025,
+          "dense_mass_over_initial": 0.606664383664656,
+          "tracer_mass_over_initial": 0.9656292465419535
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0067/CW_0067",
+          "time_code": 12.974493278309,
+          "t_over_tcc": 3.3499997594913884,
+          "cells": 65536,
+          "dense_mass": 251.08607201174001,
+          "tracer_mass": 355.2370022702967,
+          "dense_mass_over_initial": 0.6125425238819359,
+          "tracer_mass_over_initial": 0.9634064562647422
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0068/CW_0068",
+          "time_code": 13.168142471363,
+          "t_over_tcc": 3.399999766138365,
+          "cells": 65536,
+          "dense_mass": 243.98971809343823,
+          "tracer_mass": 354.404838684543,
+          "dense_mass_over_initial": 0.5952304583235054,
+          "tracer_mass_over_initial": 0.9611496199384026
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0069/CW_0069",
+          "time_code": 13.361791729171,
+          "t_over_tcc": 3.4499997895047523,
+          "cells": 65536,
+          "dense_mass": 237.185649761315,
+          "tracer_mass": 353.55615010340483,
+          "dense_mass_over_initial": 0.5786314444657035,
+          "tracer_mass_over_initial": 0.958847967652179
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0070/CW_0070",
+          "time_code": 13.55544092201,
+          "t_over_tcc": 3.499999796096216,
+          "cells": 65536,
+          "dense_mass": 238.18562668642096,
+          "tracer_mass": 352.6856308298975,
+          "dense_mass_over_initial": 0.581070960065356,
+          "tracer_mass_over_initial": 0.9564871103004954
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0071/CW_0071",
+          "time_code": 13.749090006311,
+          "t_over_tcc": 3.5499997746632888,
+          "cells": 65536,
+          "dense_mass": 240.28151988841117,
+          "tracer_mass": 351.7846552500195,
+          "dense_mass_over_initial": 0.5861840422106454,
+          "tracer_mass_over_initial": 0.9540436551281909
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0072/CW_0072",
+          "time_code": 13.942739125534,
+          "t_over_tcc": 3.599999762247183,
+          "cells": 65536,
+          "dense_mass": 233.39646456749665,
+          "tracer_mass": 350.8378676061348,
+          "dense_mass_over_initial": 0.5693874547713288,
+          "tracer_mass_over_initial": 0.9514759571603532
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0073/CW_0073",
+          "time_code": 14.13638836445,
+          "t_over_tcc": 3.6499997807356768,
+          "cells": 65536,
+          "dense_mass": 221.5715136024239,
+          "tracer_mass": 349.84402945279686,
+          "dense_mass_over_initial": 0.5405396367665645,
+          "tracer_mass_over_initial": 0.9487806577200109
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0074/CW_0074",
+          "time_code": 14.330037445484,
+          "t_over_tcc": 3.6999997584592137,
+          "cells": 65536,
+          "dense_mass": 226.19894470974833,
+          "tracer_mass": 348.80708146614415,
+          "dense_mass_over_initial": 0.5518285876305445,
+          "tracer_mass_over_initial": 0.9459684439619637
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0075/CW_0075",
+          "time_code": 14.523686578445,
+          "t_over_tcc": 3.7499997495902444,
+          "cells": 65536,
+          "dense_mass": 225.3532782335776,
+          "tracer_mass": 347.7385241859158,
+          "dense_mass_over_initial": 0.549765523464836,
+          "tracer_mass_over_initial": 0.9430705054699668
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0076/CW_0076",
+          "time_code": 14.717335745053,
+          "t_over_tcc": 3.799999749408893,
+          "cells": 65536,
+          "dense_mass": 213.86621764578211,
+          "tracer_mass": 346.6588849840879,
+          "dense_mass_over_initial": 0.5217420133272288,
+          "tracer_mass_over_initial": 0.9401425126909766
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0077/CW_0077",
+          "time_code": 14.910984913043,
+          "t_over_tcc": 3.8499997495843723,
+          "cells": 65536,
+          "dense_mass": 203.98191064884008,
+          "tracer_mass": 345.58241723322186,
+          "dense_mass_over_initial": 0.4976285358004958,
+          "tracer_mass_over_initial": 0.9372231209200822
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0078/CW_0078",
+          "time_code": 15.10463406387,
+          "t_over_tcc": 3.899999745328384,
+          "cells": 65536,
+          "dense_mass": 205.83709139849094,
+          "tracer_mass": 344.52073752150875,
+          "dense_mass_over_initial": 0.5021543826128797,
+          "tracer_mass_over_initial": 0.9343438344656507
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0079/CW_0079",
+          "time_code": 15.298283212178,
+          "t_over_tcc": 3.949999740421993,
+          "cells": 65536,
+          "dense_mass": 199.85887833814888,
+          "tracer_mass": 343.46565721178405,
+          "dense_mass_over_initial": 0.4875701020634008,
+          "tracer_mass_over_initial": 0.931482445658262
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0080/CW_0080",
+          "time_code": 15.491932539512,
+          "t_over_tcc": 3.9999997817399167,
+          "cells": 65536,
+          "dense_mass": 187.23454023063928,
+          "tracer_mass": 342.4020860471346,
+          "dense_mass_over_initial": 0.45677212165470943,
+          "tracer_mass_over_initial": 0.928598029563734
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0081/CW_0081",
+          "time_code": 15.685581615222,
+          "t_over_tcc": 4.049999758088803,
+          "cells": 65536,
+          "dense_mass": 185.8836346080729,
+          "tracer_mass": 341.3227016926511,
+          "dense_mass_over_initial": 0.45347649026845543,
+          "tracer_mass_over_initial": 0.9256707279334008
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0082/CW_0082",
+          "time_code": 15.879230676364,
+          "t_over_tcc": 4.099999730676247,
+          "cells": 65536,
+          "dense_mass": 176.49749099773362,
+          "tracer_mass": 340.22721817504123,
+          "dense_mass_over_initial": 0.43057831813755887,
+          "tracer_mass_over_initial": 0.9226997652047098
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0083/CW_0083",
+          "time_code": 16.072879952828,
+          "t_over_tcc": 4.149999758859593,
+          "cells": 65536,
+          "dense_mass": 170.53900218508173,
+          "tracer_mass": 339.09785067838817,
+          "dense_mass_over_initial": 0.4160421563083459,
+          "tracer_mass_over_initial": 0.9196369087713497
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0084/CW_0084",
+          "time_code": 16.266529028568,
+          "t_over_tcc": 4.199999735216225,
+          "cells": 65536,
+          "dense_mass": 168.857538446943,
+          "tracer_mass": 337.9372496006994,
+          "dense_mass_over_initial": 0.4119401046344988,
+          "tracer_mass_over_initial": 0.9164893465403678
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0085/CW_0085",
+          "time_code": 16.460178189472,
+          "t_over_tcc": 4.249999733562107,
+          "cells": 65536,
+          "dense_mass": 149.7985267265487,
+          "tracer_mass": 336.7721725241453,
+          "dense_mass_over_initial": 0.36544427534230345,
+          "tracer_mass_over_initial": 0.9133296453537663
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0086/CW_0086",
+          "time_code": 16.653827345512,
+          "t_over_tcc": 4.299999730652109,
+          "cells": 65536,
+          "dense_mass": 144.95572280039505,
+          "tracer_mass": 335.58990360213033,
+          "dense_mass_over_initial": 0.3536299070030959,
+          "tracer_mass_over_initial": 0.9101233197029162
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0087/CW_0087",
+          "time_code": 16.847476456273,
+          "t_over_tcc": 4.3499997160511255,
+          "cells": 65536,
+          "dense_mass": 143.8800254118951,
+          "tracer_mass": 334.3896037349624,
+          "dense_mass_over_initial": 0.3510056658892592,
+          "tracer_mass_over_initial": 0.9068680939406983
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0088/CW_0088",
+          "time_code": 17.041125591846,
+          "t_over_tcc": 4.399999707856571,
+          "cells": 65536,
+          "dense_mass": 127.95967210435789,
+          "tracer_mass": 333.16604448661184,
+          "dense_mass_over_initial": 0.312166819441277,
+          "tracer_mass_over_initial": 0.9035497884940533
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0089/CW_0089",
+          "time_code": 17.234774784503,
+          "t_over_tcc": 4.449999714401042,
+          "cells": 65536,
+          "dense_mass": 128.79842009612702,
+          "tracer_mass": 331.9123418380035,
+          "dense_mass_over_initial": 0.31421300546690073,
+          "tracer_mass_over_initial": 0.9001497338314299
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0090/CW_0090",
+          "time_code": 17.428423955636,
+          "t_over_tcc": 4.499999715388041,
+          "cells": 65536,
+          "dense_mass": 111.05426518109655,
+          "tracer_mass": 330.6170177932287,
+          "dense_mass_over_initial": 0.2709248638797536,
+          "tracer_mass_over_initial": 0.8966368015081764
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0091/CW_0091",
+          "time_code": 17.622073156829,
+          "t_over_tcc": 4.549999724136498,
+          "cells": 65536,
+          "dense_mass": 109.71309257379494,
+          "tracer_mass": 329.2741415508932,
+          "dense_mass_over_initial": 0.267652976883969,
+          "tracer_mass_over_initial": 0.892994907129037
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0092/CW_0092",
+          "time_code": 17.815722408848,
+          "t_over_tcc": 4.599999746008172,
+          "cells": 65536,
+          "dense_mass": 94.38037885654562,
+          "tracer_mass": 327.8937016948565,
+          "dense_mass_over_initial": 0.2302477194633824,
+          "tracer_mass_over_initial": 0.889251139837647
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0093/CW_0093",
+          "time_code": 18.009371451255,
+          "t_over_tcc": 4.649999713758261,
+          "cells": 65536,
+          "dense_mass": 79.78299488610098,
+          "tracer_mass": 326.50107285898576,
+          "dense_mass_over_initial": 0.19463635182483097,
+          "tracer_mass_over_initial": 0.8854743159057824
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0094/CW_0094",
+          "time_code": 18.20302062512,
+          "t_over_tcc": 4.699999715450659,
+          "cells": 65536,
+          "dense_mass": 77.61047765588516,
+          "tracer_mass": 325.1150976327622,
+          "dense_mass_over_initial": 0.1893363398539911,
+          "tracer_mass_over_initial": 0.8817155366326964
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0095/CW_0095",
+          "time_code": 18.396669665167,
+          "t_over_tcc": 4.7499996825913975,
+          "cells": 65536,
+          "dense_mass": 65.82923196254681,
+          "tracer_mass": 323.7422695998497,
+          "dense_mass_over_initial": 0.16059514400170488,
+          "tracer_mass_over_initial": 0.8779924126850318
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0096/CW_0096",
+          "time_code": 18.590318763049,
+          "t_over_tcc": 4.79999966466507,
+          "cells": 65536,
+          "dense_mass": 63.55635956168963,
+          "tracer_mass": 322.38066324802884,
+          "dense_mass_over_initial": 0.15505030837729972,
+          "tracer_mass_over_initial": 0.8742997220535611
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0097/CW_0097",
+          "time_code": 18.783967896654,
+          "t_over_tcc": 4.849999655962381,
+          "cells": 65536,
+          "dense_mass": 51.03457130663998,
+          "tracer_mass": 321.02291073608495,
+          "dense_mass_over_initial": 0.12450250570625128,
+          "tracer_mass_over_initial": 0.8706174830760428
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0098/CW_0098",
+          "time_code": 18.977617006935,
+          "t_over_tcc": 4.89999964123746,
+          "cells": 65536,
+          "dense_mass": 51.4174335288745,
+          "tracer_mass": 319.65045748659423,
+          "dense_mass_over_initial": 0.12543652562232058,
+          "tracer_mass_over_initial": 0.8668953755449281
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0099/CW_0099",
+          "time_code": 19.171266194014,
+          "t_over_tcc": 4.9499996463416975,
+          "cells": 65536,
+          "dense_mass": 50.25421580307083,
+          "tracer_mass": 318.2453161808778,
+          "dense_mass_over_initial": 0.12259877235357428,
+          "tracer_mass_over_initial": 0.8630846176643022
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0100/CW_0100",
+          "time_code": 19.364915418055,
+          "t_over_tcc": 4.999999660989483,
+          "cells": 65536,
+          "dense_mass": 43.48504962044895,
+          "tracer_mass": 316.7997393575215,
+          "dense_mass_over_initial": 0.10608490479868424,
+          "tracer_mass_over_initial": 0.8591641982379822
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L3_chi100_tanh13/DD0101/CW_0101",
+          "time_code": 19.364916731037,
+          "t_over_tcc": 4.999999999999978,
+          "cells": 65536,
+          "dense_mass": 43.48505142104213,
+          "tracer_mass": 316.79972946288007,
+          "dense_mass_over_initial": 0.10608490919136075,
+          "tracer_mass_over_initial": 0.8591641714036115
+        }
+      ],
+      "exact_duplicate_time_outputs_retained": [],
+      "native_output_precision": "Six native HDF5 float64 fields; unchanged compute and restart precision"
+    },
+    {
+      "status": "complete_native_checks",
+      "level": 4,
+      "mode": 0,
+      "directory": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13",
+      "parameters": {
+        "source": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/CloudWind.enzo",
+        "parameter_sha256": "2b1cafcf19dd329c1f607d56cd65126310c152730c36f2a2db35e796798c09ea",
+        "assumptions": [],
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1.0,
+        "rho_wind": 1.0,
+        "p_wind": 1.0,
+        "v_wind": 2.581988897471611,
+        "chi": 100.0,
+        "rv_scale": 1.3,
+        "tmax": 19.364916731037084,
+        "output_dt": 0.19364916731037085,
+        "mach": 2.0,
+        "kind": "enzo",
+        "t_cc": 3.872983346207417
+      },
+      "command": [
+        "mpirun",
+        "--bind-to",
+        "core",
+        "-np",
+        "8",
+        "/home/kaan/sensitivity_20260907/enzo/enzo_pair",
+        "CloudWind.enzo"
+      ],
+      "binary_sha256": "28d482af94828aba1de2b097068b66c9ec80b88b53bd6405e0ff96fbecf57900",
+      "parameter_sha256": "2b1cafcf19dd329c1f607d56cd65126310c152730c36f2a2db35e796798c09ea",
+      "storage_preflight": {
+        "path": "/home/kaan/sensitivity_20260907/enzo",
+        "filesystem_free_bytes": 111251316736,
+        "filesystem_total_bytes": 1081101176832,
+        "windows_backing_volume": {
+          "distribution": "Ubuntu",
+          "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+          "drive": "C:",
+          "free_bytes": 37666025472,
+          "total_bytes": 1999283154944
+        },
+        "policy": "Conservative growth budget; allocated but reusable VHDX blocks are not credited.",
+        "effective_free_bytes": 37666025472
+      },
+      "reserved_output_gib": 5.2374999998137355,
+      "started_unix": 1788816980.7974653,
+      "returncode": 0,
+      "wall_seconds": 185.70586848258972,
+      "peak_child_rss_gib": 0.5518722534179688,
+      "unique_snapshots": 102,
+      "target_snapshots": 101,
+      "series": [
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0000/CW_0000",
+          "time_code": 0.0,
+          "t_over_tcc": 0.0,
+          "cells": 524288,
+          "dense_mass": 398.4896893072199,
+          "tracer_mass": 366.4919661022047,
+          "initial_checks": {
+            "density_relative": 5.551115123125783e-15,
+            "velocity_over_wind": 0.0,
+            "pressure_absolute": 4.440892098500626e-16,
+            "tracer_over_initial_cloud_density": 2.842170943040401e-16
+          },
+          "dense_mass_over_initial": 1.0,
+          "tracer_mass_over_initial": 1.0
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0001/CW_0001",
+          "time_code": 0.19364729365816,
+          "t_over_tcc": 0.049999516225079386,
+          "cells": 524288,
+          "dense_mass": 400.43926653398137,
+          "tracer_mass": 366.4919550053577,
+          "dense_mass_over_initial": 1.004892415736404,
+          "tracer_mass_over_initial": 0.9999999697214454
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0002/CW_0002",
+          "time_code": 0.38729671546312,
+          "t_over_tcc": 0.09999958193529974,
+          "cells": 524288,
+          "dense_mass": 404.0570963991534,
+          "tracer_mass": 366.49186495817776,
+          "dense_mass_over_initial": 1.0139712701264931,
+          "tracer_mass_over_initial": 0.999999724021162
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0003/CW_0003",
+          "time_code": 0.5809458964533,
+          "t_over_tcc": 0.14999958546741127,
+          "cells": 524288,
+          "dense_mass": 404.7169515005273,
+          "tracer_mass": 366.49188507538224,
+          "dense_mass_over_initial": 1.0156271601509528,
+          "tracer_mass_over_initial": 0.9999997789124184
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0004/CW_0004",
+          "time_code": 0.77459542155307,
+          "t_over_tcc": 0.1999996778482369,
+          "cells": 524288,
+          "dense_mass": 404.35382479515084,
+          "tracer_mass": 366.49193301333736,
+          "dense_mass_over_initial": 1.0147159026827666,
+          "tracer_mass_over_initial": 0.9999999097146175
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0005/CW_0005",
+          "time_code": 0.96824449106375,
+          "t_over_tcc": 0.2499996525964653,
+          "cells": 524288,
+          "dense_mass": 401.35938774651925,
+          "tracer_mass": 366.48793129111715,
+          "dense_mass_over_initial": 1.007201437116951,
+          "tracer_mass_over_initial": 0.9999889907243249
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0006/CW_0006",
+          "time_code": 1.1618934308088,
+          "t_over_tcc": 0.29999959383935215,
+          "cells": 524288,
+          "dense_mass": 396.9291287610779,
+          "tracer_mass": 366.48665340217707,
+          "dense_mass_over_initial": 0.9960838119830526,
+          "tracer_mass_over_initial": 0.9999855039113569
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0007/CW_0007",
+          "time_code": 1.3555425284725,
+          "t_over_tcc": 0.34999957585665903,
+          "cells": 524288,
+          "dense_mass": 394.2087834884347,
+          "tracer_mass": 366.4768090649158,
+          "dense_mass_over_initial": 0.9892571729365754,
+          "tracer_mass_over_initial": 0.9999586429207438
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0008/CW_0008",
+          "time_code": 1.5491915287077,
+          "t_over_tcc": 0.39999953271803546,
+          "cells": 524288,
+          "dense_mass": 392.7469794049315,
+          "tracer_mass": 366.47674936932776,
+          "dense_mass_over_initial": 0.9855888118152512,
+          "tracer_mass_over_initial": 0.9999584800369875
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0009/CW_0009",
+          "time_code": 1.7428413132066,
+          "t_over_tcc": 0.44999969207542845,
+          "cells": 524288,
+          "dense_mass": 390.338016715872,
+          "tracer_mass": 366.472288774475,
+          "dense_mass_over_initial": 0.9795435796456372,
+          "tracer_mass_over_initial": 0.9999463089793237
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0010/CW_0010",
+          "time_code": 1.9364904054147,
+          "t_over_tcc": 0.4999996726841055,
+          "cells": 524288,
+          "dense_mass": 388.5876272862669,
+          "tracer_mass": 366.464621499747,
+          "dense_mass_over_initial": 0.9751510207499524,
+          "tracer_mass_over_initial": 0.9999253882622626
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0011/CW_0011",
+          "time_code": 2.1301393582649,
+          "t_over_tcc": 0.5499996173107276,
+          "cells": 524288,
+          "dense_mass": 387.5596655796506,
+          "tracer_mass": 366.46454922855173,
+          "dense_mass_over_initial": 0.9725713763220039,
+          "tracer_mass_over_initial": 0.999925191065047
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0012/CW_0012",
+          "time_code": 2.3237884837881,
+          "t_over_tcc": 0.5999996065213263,
+          "cells": 524288,
+          "dense_mass": 386.55984793567046,
+          "tracer_mass": 366.46275782717845,
+          "dense_mass_over_initial": 0.9700623587217786,
+          "tracer_mass_over_initial": 0.9999203030960354
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0013/CW_0013",
+          "time_code": 2.5174377329135,
+          "t_over_tcc": 0.6499996276458759,
+          "cells": 524288,
+          "dense_mass": 384.50450516576996,
+          "tracer_mass": 366.46270041770447,
+          "dense_mass_over_initial": 0.964904526975934,
+          "tracer_mass_over_initial": 0.9999201464501078
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0014/CW_0014",
+          "time_code": 2.7110869040291,
+          "t_over_tcc": 0.6999996286283819,
+          "cells": 524288,
+          "dense_mass": 382.8805096464681,
+          "tracer_mass": 366.4626453995413,
+          "dense_mass_over_initial": 0.9608291504658788,
+          "tracer_mass_over_initial": 0.9999199963290459
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0015/CW_0015",
+          "time_code": 2.9047360556612,
+          "t_over_tcc": 0.7499996245802698,
+          "cells": 524288,
+          "dense_mass": 380.18711968726217,
+          "tracer_mass": 366.4626169378667,
+          "dense_mass_over_initial": 0.9540701551104697,
+          "tracer_mass_over_initial": 0.9999199186692954
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0016/CW_0016",
+          "time_code": 3.0983852031099,
+          "t_over_tcc": 0.7999996194520085,
+          "cells": 524288,
+          "dense_mass": 379.7823265081679,
+          "tracer_mass": 366.46256693991165,
+          "dense_mass_over_initial": 0.9530543366590613,
+          "tracer_mass_over_initial": 0.9999197822462367
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0017/CW_0017",
+          "time_code": 3.2920341611497,
+          "t_over_tcc": 0.8499995654185794,
+          "cells": 524288,
+          "dense_mass": 376.7290109670829,
+          "tracer_mass": 366.462539299153,
+          "dense_mass_over_initial": 0.9453921169755527,
+          "tracer_mass_over_initial": 0.9999197068264152
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0018/CW_0018",
+          "time_code": 3.485683399335,
+          "t_over_tcc": 0.8999995837184075,
+          "cells": 524288,
+          "dense_mass": 373.23913047574206,
+          "tracer_mass": 366.4625370654637,
+          "dense_mass_over_initial": 0.9366343483682694,
+          "tracer_mass_over_initial": 0.9999197007316314
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0019/CW_0019",
+          "time_code": 3.6793324595314,
+          "t_over_tcc": 0.9499995560616991,
+          "cells": 524288,
+          "dense_mass": 372.1115072326533,
+          "tracer_mass": 366.4625119173959,
+          "dense_mass_over_initial": 0.9338046057843418,
+          "tracer_mass_over_initial": 0.9999196321132983
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0020/CW_0020",
+          "time_code": 3.8729816049986,
+          "t_over_tcc": 0.9999995504218167,
+          "cells": 524288,
+          "dense_mass": 370.8521070734562,
+          "tracer_mass": 366.4624832721986,
+          "dense_mass_over_initial": 0.9306441722951174,
+          "tracer_mass_over_initial": 0.9999195539527929
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0021/CW_0021",
+          "time_code": 4.0666307898922,
+          "t_over_tcc": 1.0499995549617869,
+          "cells": 524288,
+          "dense_mass": 368.341449340442,
+          "tracer_mass": 366.46245122858153,
+          "dense_mass_over_initial": 0.9243437389328917,
+          "tracer_mass_over_initial": 0.9999194665194518
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0022/CW_0022",
+          "time_code": 4.2602800101412,
+          "t_over_tcc": 1.099999568630482,
+          "cells": 524288,
+          "dense_mass": 366.303372583214,
+          "tracer_mass": 366.4624224837628,
+          "dense_mass_over_initial": 0.9192292358179649,
+          "tracer_mass_over_initial": 0.9999193880871221
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0023/CW_0023",
+          "time_code": 4.4539291815364,
+          "t_over_tcc": 1.1499995696851804,
+          "cells": 524288,
+          "dense_mass": 364.3762724075798,
+          "tracer_mass": 366.4623934677679,
+          "dense_mass_over_initial": 0.9143932256843413,
+          "tracer_mass_over_initial": 0.9999193089148685
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0024/CW_0024",
+          "time_code": 4.6475782455263,
+          "t_over_tcc": 1.1999995430079495,
+          "cells": 524288,
+          "dense_mass": 362.6257209485034,
+          "tracer_mass": 366.46241160251935,
+          "dense_mass_over_initial": 0.9100002601797137,
+          "tracer_mass_over_initial": 0.9999193583968575
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0025/CW_0025",
+          "time_code": 4.8412273392494,
+          "t_over_tcc": 1.2499995240077981,
+          "cells": 524288,
+          "dense_mass": 361.09010481784514,
+          "tracer_mass": 366.4624137883043,
+          "dense_mass_over_initial": 0.9061466695552538,
+          "tracer_mass_over_initial": 0.9999193643609308
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0026/CW_0026",
+          "time_code": 5.0348765487235,
+          "t_over_tcc": 1.299999534894426,
+          "cells": 524288,
+          "dense_mass": 360.21149315333525,
+          "tracer_mass": 366.46245394939706,
+          "dense_mass_over_initial": 0.9039418153567992,
+          "tracer_mass_over_initial": 0.999919473943395
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0027/CW_0027",
+          "time_code": 5.2285257436572,
+          "t_over_tcc": 1.349999542026739,
+          "cells": 524288,
+          "dense_mass": 357.5388037894131,
+          "tracer_mass": 366.46246317378626,
+          "dense_mass_over_initial": 0.8972347676322554,
+          "tracer_mass_over_initial": 0.9999194991128122
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0028/CW_0028",
+          "time_code": 5.4221748778533,
+          "t_over_tcc": 1.399999533476671,
+          "cells": 524288,
+          "dense_mass": 357.4610070644304,
+          "tracer_mass": 366.4624611449912,
+          "dense_mass_over_initial": 0.897039538678859,
+          "tracer_mass_over_initial": 0.9999194935770973
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0029/CW_0029",
+          "time_code": 5.6158240997844,
+          "t_over_tcc": 1.4499995475796827,
+          "cells": 524288,
+          "dense_mass": 356.56555297037664,
+          "tracer_mass": 366.4624597395398,
+          "dense_mass_over_initial": 0.8947924188208508,
+          "tracer_mass_over_initial": 0.9999194897422208
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0030/CW_0030",
+          "time_code": 5.8094732140433,
+          "t_over_tcc": 1.4999995338818517,
+          "cells": 524288,
+          "dense_mass": 354.7398271914851,
+          "tracer_mass": 366.462462827197,
+          "dense_mass_over_initial": 0.8902108052236067,
+          "tracer_mass_over_initial": 0.9999194981671181
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0031/CW_0031",
+          "time_code": 6.0031223128866,
+          "t_over_tcc": 1.5499995162037299,
+          "cells": 524288,
+          "dense_mass": 358.49519889047104,
+          "tracer_mass": 366.4624598687849,
+          "dense_mass_over_initial": 0.8996348174371089,
+          "tracer_mass_over_initial": 0.9999194900948755
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0032/CW_0032",
+          "time_code": 6.1967715162132,
+          "t_over_tcc": 1.5999995255030806,
+          "cells": 524288,
+          "dense_mass": 361.43107830838693,
+          "tracer_mass": 366.46244794104217,
+          "dense_mass_over_initial": 0.9070023340798103,
+          "tracer_mass_over_initial": 0.9999194575491615
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0033/CW_0033",
+          "time_code": 6.3904207583416,
+          "t_over_tcc": 1.6499995448210125,
+          "cells": 524288,
+          "dense_mass": 360.1200411843011,
+          "tracer_mass": 366.46242904788704,
+          "dense_mass_over_initial": 0.903712318906858,
+          "tracer_mass_over_initial": 0.9999194059978128
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0034/CW_0034",
+          "time_code": 6.5840699170017,
+          "t_over_tcc": 1.699999542587522,
+          "cells": 524288,
+          "dense_mass": 358.0597506967596,
+          "tracer_mass": 366.46240153833463,
+          "dense_mass_over_initial": 0.898542070986207,
+          "tracer_mass_over_initial": 0.999919330935997
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0035/CW_0035",
+          "time_code": 6.7777190575018,
+          "t_over_tcc": 1.74999953566514,
+          "cells": 524288,
+          "dense_mass": 357.03397567748686,
+          "tracer_mass": 366.46234454956925,
+          "dense_mass_over_initial": 0.8959679139959571,
+          "tracer_mass_over_initial": 0.9999191754380036
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0036/CW_0036",
+          "time_code": 6.9713682078487,
+          "t_over_tcc": 1.7999995312851906,
+          "cells": 524288,
+          "dense_mass": 356.95193038915295,
+          "tracer_mass": 366.4622820289753,
+          "dense_mass_over_initial": 0.895762023378118,
+          "tracer_mass_over_initial": 0.9999190048460133
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0037/CW_0037",
+          "time_code": 7.1650172873325,
+          "t_over_tcc": 1.8499995086084675,
+          "cells": 524288,
+          "dense_mass": 357.588995678463,
+          "tracer_mass": 366.4622380040337,
+          "dense_mass_over_initial": 0.8973607229339776,
+          "tracer_mass_over_initial": 0.9999188847207562
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0038/CW_0038",
+          "time_code": 7.3586665459971,
+          "t_over_tcc": 1.8999995321960281,
+          "cells": 524288,
+          "dense_mass": 358.5062597559504,
+          "tracer_mass": 366.4621944401778,
+          "dense_mass_over_initial": 0.8996625744049205,
+          "tracer_mass_over_initial": 0.9999187658536052
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0039/CW_0039",
+          "time_code": 7.5523157318095,
+          "t_over_tcc": 1.9499995369732315,
+          "cells": 524288,
+          "dense_mass": 358.79785990780664,
+          "tracer_mass": 366.46195637405197,
+          "dense_mass_over_initial": 0.9003943377596091,
+          "tracer_mass_over_initial": 0.9999181162728562
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0040/CW_0040",
+          "time_code": 7.7459649260512,
+          "t_over_tcc": 1.9999995439268707,
+          "cells": 524288,
+          "dense_mass": 356.96471244614736,
+          "tracer_mass": 366.4611096581231,
+          "dense_mass_over_initial": 0.8957940996333824,
+          "tracer_mass_over_initial": 0.9999158059468268
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0041/CW_0041",
+          "time_code": 7.9396141306632,
+          "t_over_tcc": 2.04999955355811,
+          "cells": 524288,
+          "dense_mass": 353.7100404802229,
+          "tracer_mass": 366.45825065212057,
+          "dense_mass_over_initial": 0.8876265809917263,
+          "tracer_mass_over_initial": 0.9999080049408922
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0042/CW_0042",
+          "time_code": 8.1332632841139,
+          "t_over_tcc": 2.0999995499795583,
+          "cells": 524288,
+          "dense_mass": 354.03548920028055,
+          "tracer_mass": 366.4512680165554,
+          "dense_mass_over_initial": 0.8884432864894858,
+          "tracer_mass_over_initial": 0.9998889523116096
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0043/CW_0043",
+          "time_code": 8.3269123356954,
+          "t_over_tcc": 2.1499995200984925,
+          "cells": 524288,
+          "dense_mass": 354.97935696578463,
+          "tracer_mass": 366.4377722715947,
+          "dense_mass_over_initial": 0.8908118992562176,
+          "tracer_mass_over_initial": 0.9998521281893671
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0044/CW_0044",
+          "time_code": 8.5205614698629,
+          "t_over_tcc": 2.19999951154104,
+          "cells": 524288,
+          "dense_mass": 351.8267862275369,
+          "tracer_mass": 366.415735104802,
+          "dense_mass_over_initial": 0.8829006011151577,
+          "tracer_mass_over_initial": 0.9997919981760762
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0045/CW_0045",
+          "time_code": 8.7142106898579,
+          "t_over_tcc": 2.249999525144153,
+          "cells": 524288,
+          "dense_mass": 350.4882074871977,
+          "tracer_mass": 366.3843859375685,
+          "dense_mass_over_initial": 0.87954147093875,
+          "tracer_mass_over_initial": 0.9997064596919262
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0046/CW_0046",
+          "time_code": 8.9078599128491,
+          "t_over_tcc": 2.299999539520881,
+          "cells": 524288,
+          "dense_mass": 344.14603782018014,
+          "tracer_mass": 366.34152633791683,
+          "dense_mass_over_initial": 0.8636259533301426,
+          "tracer_mass_over_initial": 0.999589514155282
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0047/CW_0047",
+          "time_code": 9.1015090948467,
+          "t_over_tcc": 2.3499995433131073,
+          "cells": 524288,
+          "dense_mass": 339.72189553148075,
+          "tracer_mass": 366.28423341039127,
+          "dense_mass_over_initial": 0.852523677895135,
+          "tracer_mass_over_initial": 0.9994331862331861
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0048/CW_0048",
+          "time_code": 9.2951582048103,
+          "t_over_tcc": 2.3999995285062345,
+          "cells": 524288,
+          "dense_mass": 343.7188633932166,
+          "tracer_mass": 366.2150739015416,
+          "dense_mass_over_initial": 0.8625539696918554,
+          "tracer_mass_over_initial": 0.9992444794803882
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0049/CW_0049",
+          "time_code": 9.4888076076816,
+          "t_over_tcc": 2.4499995893278053,
+          "cells": 524288,
+          "dense_mass": 339.9890459410443,
+          "tracer_mass": 366.1350474778717,
+          "dense_mass_over_initial": 0.8531940852274501,
+          "tracer_mass_over_initial": 0.9990261215596921
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0050/CW_0050",
+          "time_code": 9.6824567459481,
+          "t_over_tcc": 2.49999958182871,
+          "cells": 524288,
+          "dense_mass": 334.7543638379876,
+          "tracer_mass": 366.0440078854614,
+          "dense_mass_over_initial": 0.8400577802149986,
+          "tracer_mass_over_initial": 0.9987777134066333
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0051/CW_0051",
+          "time_code": 9.8761059489168,
+          "t_over_tcc": 2.5499995910356508,
+          "cells": 524288,
+          "dense_mass": 329.8975815453175,
+          "tracer_mass": 365.94172172109694,
+          "dense_mass_over_initial": 0.8278698054116512,
+          "tracer_mass_over_initial": 0.998498618163558
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0052/CW_0052",
+          "time_code": 10.069755132973,
+          "t_over_tcc": 2.5999995953594053,
+          "cells": 524288,
+          "dense_mass": 327.90309831662233,
+          "tracer_mass": 365.8233286375816,
+          "dense_mass_over_initial": 0.8228646991762487,
+          "tracer_mass_over_initial": 0.9981755740194408
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0053/CW_0053",
+          "time_code": 10.263404175524,
+          "t_over_tcc": 2.6499995631466744,
+          "cells": 524288,
+          "dense_mass": 327.7560005410829,
+          "tracer_mass": 365.6873850140194,
+          "dense_mass_over_initial": 0.8224955609538893,
+          "tracer_mass_over_initial": 0.9978046419496113
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0054/CW_0054",
+          "time_code": 10.457053316225,
+          "t_over_tcc": 2.6999995562761643,
+          "cells": 524288,
+          "dense_mass": 321.73511212238697,
+          "tracer_mass": 365.5264686530196,
+          "dense_mass_over_initial": 0.8073862906759974,
+          "tracer_mass_over_initial": 0.9973655699483578
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0055/CW_0055",
+          "time_code": 10.650702464713,
+          "t_over_tcc": 2.749999551416249,
+          "cells": 524288,
+          "dense_mass": 317.195005886003,
+          "tracer_mass": 365.33984222809204,
+          "dense_mass_over_initial": 0.7959930065880778,
+          "tracer_mass_over_initial": 0.996856346166695
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0056/CW_0056",
+          "time_code": 10.844351574532,
+          "t_over_tcc": 2.799999536572041,
+          "cells": 524288,
+          "dense_mass": 318.564310493584,
+          "tracer_mass": 365.1379322556331,
+          "dense_mass_over_initial": 0.7994292425668846,
+          "tracer_mass_over_initial": 0.996305420113373
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0057/CW_0057",
+          "time_code": 11.038000816681,
+          "t_over_tcc": 2.849999555895292,
+          "cells": 524288,
+          "dense_mass": 313.41949156732153,
+          "tracer_mass": 364.9218469805962,
+          "dense_mass_over_initial": 0.7865184469696214,
+          "tracer_mass_over_initial": 0.9957158157153965
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0058/CW_0058",
+          "time_code": 11.231649965847,
+          "t_over_tcc": 2.8999995512104353,
+          "cells": 524288,
+          "dense_mass": 310.23016405821,
+          "tracer_mass": 364.6973426676485,
+          "dense_mass_over_initial": 0.77851490862298,
+          "tracer_mass_over_initial": 0.9951032393598072
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0059/CW_0059",
+          "time_code": 11.425299055903,
+          "t_over_tcc": 2.9499995312634426,
+          "cells": 524288,
+          "dense_mass": 310.34087056083274,
+          "tracer_mass": 364.4552691156361,
+          "dense_mass_over_initial": 0.7787927238477985,
+          "tracer_mass_over_initial": 0.9944427240568744
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0060/CW_0060",
+          "time_code": 11.618948348073,
+          "t_over_tcc": 2.99999956350206,
+          "cells": 524288,
+          "dense_mass": 305.5572898820338,
+          "tracer_mass": 364.20000980959304,
+          "dense_mass_over_initial": 0.7667884466803885,
+          "tracer_mass_over_initial": 0.9937462304645104
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0061/CW_0061",
+          "time_code": 11.812597433839,
+          "t_over_tcc": 3.0499995424473942,
+          "cells": 524288,
+          "dense_mass": 304.0484481227312,
+          "tracer_mass": 363.94042626574696,
+          "dense_mass_over_initial": 0.7630020456773269,
+          "tracer_mass_over_initial": 0.9930379378746159
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0062/CW_0062",
+          "time_code": 12.006246591671,
+          "t_over_tcc": 3.0999995400000895,
+          "cells": 524288,
+          "dense_mass": 302.58484334880757,
+          "tracer_mass": 363.68569986393425,
+          "dense_mass_over_initial": 0.7593291657680169,
+          "tracer_mass_over_initial": 0.992342898350225
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0063/CW_0063",
+          "time_code": 12.199895747231,
+          "t_over_tcc": 3.1499995369661566,
+          "cells": 524288,
+          "dense_mass": 297.8797836069807,
+          "tracer_mass": 363.42399438798367,
+          "dense_mass_over_initial": 0.7475219349460435,
+          "tracer_mass_over_initial": 0.9916288159141654
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0064/CW_0064",
+          "time_code": 12.393544929201,
+          "t_over_tcc": 3.1999995407512567,
+          "cells": 524288,
+          "dense_mass": 297.3555462980021,
+          "tracer_mass": 363.12990040554087,
+          "dense_mass_over_initial": 0.7462063744107382,
+          "tracer_mass_over_initial": 0.9908263590811531
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0065/CW_0065",
+          "time_code": 12.587194222885,
+          "t_over_tcc": 3.249999573380787,
+          "cells": 524288,
+          "dense_mass": 291.97115049814124,
+          "tracer_mass": 362.8070565246493,
+          "dense_mass_over_initial": 0.7326943665863408,
+          "tracer_mass_over_initial": 0.9899454560580251
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0066/CW_0066",
+          "time_code": 12.780843375575,
+          "t_over_tcc": 3.299999569605824,
+          "cells": 524288,
+          "dense_mass": 286.07970800792475,
+          "tracer_mass": 362.48384090435087,
+          "dense_mass_over_initial": 0.717909937658057,
+          "tracer_mass_over_initial": 0.9890635387168731
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0067/CW_0067",
+          "time_code": 12.974492594698,
+          "t_over_tcc": 3.3499995829837874,
+          "cells": 524288,
+          "dense_mass": 282.75913194157516,
+          "tracer_mass": 362.14633417212275,
+          "dense_mass_over_initial": 0.7095770343096104,
+          "tracer_mass_over_initial": 0.9881426270368228
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0068/CW_0068",
+          "time_code": 13.16814162604,
+          "t_over_tcc": 3.399999547876905,
+          "cells": 524288,
+          "dense_mass": 279.5756139664601,
+          "tracer_mass": 361.7837147933049,
+          "dense_mass_over_initial": 0.7015880748445621,
+          "tracer_mass_over_initial": 0.9871531936730455
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0069/CW_0069",
+          "time_code": 13.361790915663,
+          "t_over_tcc": 3.44999957945789,
+          "cells": 524288,
+          "dense_mass": 273.64075907995107,
+          "tracer_mass": 361.4116632743523,
+          "dense_mass_over_initial": 0.6866947035836222,
+          "tracer_mass_over_initial": 0.9861380240285114
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0070/CW_0070",
+          "time_code": 13.555440025075,
+          "t_over_tcc": 3.499999564508595,
+          "cells": 524288,
+          "dense_mass": 268.8046369842121,
+          "tracer_mass": 361.0163059101322,
+          "dense_mass_over_initial": 0.6745585750324753,
+          "tracer_mass_over_initial": 0.9850592626891431
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0071/CW_0071",
+          "time_code": 13.749089133198,
+          "t_over_tcc": 3.5499995492264813,
+          "cells": 524288,
+          "dense_mass": 265.26241637110536,
+          "tracer_mass": 360.59038373088765,
+          "dense_mass_over_initial": 0.6656694601867063,
+          "tracer_mass_over_initial": 0.9838971030277066
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0072/CW_0072",
+          "time_code": 13.942738232495,
+          "t_over_tcc": 3.5999995316655045,
+          "cells": 524288,
+          "dense_mass": 261.215253050176,
+          "tracer_mass": 360.1451138604912,
+          "dense_mass_over_initial": 0.6555132041290767,
+          "tracer_mass_over_initial": 0.9826821517829848
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0073/CW_0073",
+          "time_code": 14.136387387263,
+          "t_over_tcc": 3.6499995284270783,
+          "cells": 524288,
+          "dense_mass": 255.73641027891816,
+          "tracer_mass": 359.70773887758713,
+          "dense_mass_over_initial": 0.6417641839705304,
+          "tracer_mass_over_initial": 0.9814887423133155
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0074/CW_0074",
+          "time_code": 14.330036479522,
+          "t_over_tcc": 3.6999995090488977,
+          "cells": 524288,
+          "dense_mass": 245.03772808837152,
+          "tracer_mass": 359.3007842174629,
+          "dense_mass_over_initial": 0.6149161061466186,
+          "tracer_mass_over_initial": 0.98037833690811
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0075/CW_0075",
+          "time_code": 14.523685707756,
+          "t_over_tcc": 3.749999524779311,
+          "cells": 524288,
+          "dense_mass": 239.60679272658552,
+          "tracer_mass": 358.9061057204399,
+          "dense_mass_over_initial": 0.6012873084449071,
+          "tracer_mass_over_initial": 0.9793014279072919
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0076/CW_0076",
+          "time_code": 14.717334820573,
+          "t_over_tcc": 3.7999995107091835,
+          "cells": 524288,
+          "dense_mass": 232.01419002504127,
+          "tracer_mass": 358.48726158828936,
+          "dense_mass_over_initial": 0.5822338601242137,
+          "tracer_mass_over_initial": 0.9781585812124377
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0077/CW_0077",
+          "time_code": 14.910984011189,
+          "t_over_tcc": 3.849999516726671,
+          "cells": 524288,
+          "dense_mass": 225.86872910373378,
+          "tracer_mass": 358.00300555100256,
+          "dense_mass_over_initial": 0.5668119782381568,
+          "tracer_mass_over_initial": 0.9768372533742397
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0078/CW_0078",
+          "time_code": 15.104633129321,
+          "t_over_tcc": 3.89999950402887,
+          "cells": 524288,
+          "dense_mass": 217.70212349281755,
+          "tracer_mass": 357.4414803232234,
+          "dense_mass_over_initial": 0.5463180838412554,
+          "tracer_mass_over_initial": 0.9753050909267208
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0079/CW_0079",
+          "time_code": 15.298282978954,
+          "t_over_tcc": 3.949999680203815,
+          "cells": 524288,
+          "dense_mass": 212.012355854469,
+          "tracer_mass": 356.8022403982387,
+          "dense_mass_over_initial": 0.5320397529558558,
+          "tracer_mass_over_initial": 0.9735608782723937
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0080/CW_0080",
+          "time_code": 15.491932169859,
+          "t_over_tcc": 3.9999996862959226,
+          "cells": 524288,
+          "dense_mass": 205.70682065643734,
+          "tracer_mass": 356.1118181195783,
+          "dense_mass_over_initial": 0.5162161686392981,
+          "tracer_mass_over_initial": 0.9716770108414009
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0081/CW_0081",
+          "time_code": 15.685580644946,
+          "t_over_tcc": 4.049999507564617,
+          "cells": 524288,
+          "dense_mass": 202.0265803416035,
+          "tracer_mass": 355.45197124920924,
+          "dense_mass_over_initial": 0.50698069677243,
+          "tracer_mass_over_initial": 0.9698765706369763
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0082/CW_0082",
+          "time_code": 15.879229811657,
+          "t_over_tcc": 4.099999507409859,
+          "cells": 524288,
+          "dense_mass": 198.21297107876453,
+          "tracer_mass": 354.8536967445053,
+          "dense_mass_over_initial": 0.4974105388356739,
+          "tracer_mass_over_initial": 0.9682441351130361
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0083/CW_0083",
+          "time_code": 16.072879109526,
+          "t_over_tcc": 4.149999541119953,
+          "cells": 524288,
+          "dense_mass": 196.00699971694655,
+          "tracer_mass": 354.3134920848537,
+          "dense_mass_over_initial": 0.4918747083712694,
+          "tracer_mass_over_initial": 0.9667701473872016
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0084/CW_0084",
+          "time_code": 16.266528168574,
+          "t_over_tcc": 4.199999513166729,
+          "cells": 524288,
+          "dense_mass": 190.26662572018637,
+          "tracer_mass": 353.77457938429643,
+          "dense_mass_over_initial": 0.47746938208355566,
+          "tracer_mass_over_initial": 0.9652996848657749
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0085/CW_0085",
+          "time_code": 16.460177333447,
+          "t_over_tcc": 4.249999512537403,
+          "cells": 524288,
+          "dense_mass": 185.5942858956904,
+          "tracer_mass": 353.2056739583666,
+          "dense_mass_over_initial": 0.46574426108326356,
+          "tracer_mass_over_initial": 0.9637473850105274
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0086/CW_0086",
+          "time_code": 16.653827245229,
+          "t_over_tcc": 4.29999970475915,
+          "cells": 524288,
+          "dense_mass": 182.10849752721526,
+          "tracer_mass": 352.61727808861366,
+          "dense_mass_over_initial": 0.4569967615569013,
+          "tracer_mass_over_initial": 0.9621419040609426
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0087/CW_0087",
+          "time_code": 16.847476279917,
+          "t_over_tcc": 4.349999670516202,
+          "cells": 524288,
+          "dense_mass": 176.36865363561475,
+          "tracer_mass": 352.00276169741403,
+          "dense_mass_over_initial": 0.44259276555494875,
+          "tracer_mass_over_initial": 0.9604651513677382
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0088/CW_0088",
+          "time_code": 17.041125516902,
+          "t_over_tcc": 4.399999688506114,
+          "cells": 524288,
+          "dense_mass": 169.3915556157079,
+          "tracer_mass": 351.34630117860405,
+          "dense_mass_over_initial": 0.4250839109794724,
+          "tracer_mass_over_initial": 0.9586739510699753
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0089/CW_0089",
+          "time_code": 17.234774691634,
+          "t_over_tcc": 4.44999969042237,
+          "cells": 524288,
+          "dense_mass": 163.89787507589358,
+          "tracer_mass": 350.6522582511486,
+          "dense_mass_over_initial": 0.41129765580844113,
+          "tracer_mass_over_initial": 0.9567802044352623
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0090/CW_0090",
+          "time_code": 17.428423809339,
+          "t_over_tcc": 4.499999677614318,
+          "cells": 524288,
+          "dense_mass": 155.8079300485206,
+          "tracer_mass": 349.96471250097306,
+          "dense_mass_over_initial": 0.39099613924614945,
+          "tracer_mass_over_initial": 0.9549041858215723
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0091/CW_0091",
+          "time_code": 17.6220729286,
+          "t_over_tcc": 4.549999665208024,
+          "cells": 524288,
+          "dense_mass": 151.0997143479474,
+          "tracer_mass": 349.26865928054264,
+          "dense_mass_over_initial": 0.3791809886239126,
+          "tracer_mass_over_initial": 0.9530049539561832
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0092/CW_0092",
+          "time_code": 17.815722002077,
+          "t_over_tcc": 4.599999640980352,
+          "cells": 524288,
+          "dense_mass": 146.82067949939736,
+          "tracer_mass": 348.55050597328477,
+          "dense_mass_over_initial": 0.3684428567139271,
+          "tracer_mass_over_initial": 0.9510454203956097
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0093/CW_0093",
+          "time_code": 18.009371203176,
+          "t_over_tcc": 4.649999649704538,
+          "cells": 524288,
+          "dense_mass": 140.55125918220415,
+          "tracer_mass": 347.7963329136706,
+          "dense_mass_over_initial": 0.35270990179583955,
+          "tracer_mass_over_initial": 0.948987604319489
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0094/CW_0094",
+          "time_code": 18.203020402366,
+          "t_over_tcc": 4.699999657935823,
+          "cells": 524288,
+          "dense_mass": 134.97608452168913,
+          "tracer_mass": 346.9944446650233,
+          "dense_mass_over_initial": 0.3387191391484859,
+          "tracer_mass_over_initial": 0.9467995938777439
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0095/CW_0095",
+          "time_code": 18.396669553305,
+          "t_over_tcc": 4.749999653708754,
+          "cells": 524288,
+          "dense_mass": 132.2861169289398,
+          "tracer_mass": 346.1707639864729,
+          "dense_mass_over_initial": 0.331968732136887,
+          "tracer_mass_over_initial": 0.9445521212051213
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0096/CW_0096",
+          "time_code": 18.590318655544,
+          "t_over_tcc": 4.799999636907398,
+          "cells": 524288,
+          "dense_mass": 126.26130979186314,
+          "tracer_mass": 345.3312129355583,
+          "dense_mass_over_initial": 0.31684962793233185,
+          "tracer_mass_over_initial": 0.9422613450665785
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0097/CW_0097",
+          "time_code": 18.783967889235,
+          "t_over_tcc": 4.849999654046803,
+          "cells": 524288,
+          "dense_mass": 121.4448923638941,
+          "tracer_mass": 344.4834725288454,
+          "dense_mass_over_initial": 0.3047629477566353,
+          "tracer_mass_over_initial": 0.9399482236747813
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0098/CW_0098",
+          "time_code": 18.977617118301,
+          "t_over_tcc": 4.899999669992038,
+          "cells": 524288,
+          "dense_mass": 118.48268631691326,
+          "tracer_mass": 343.61855367946254,
+          "dense_mass_over_initial": 0.2973293650907182,
+          "tracer_mass_over_initial": 0.9375882296520427
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0099/CW_0099",
+          "time_code": 19.171266273238,
+          "t_over_tcc": 4.949999666797247,
+          "cells": 524288,
+          "dense_mass": 114.58491074212606,
+          "tracer_mass": 342.7020594113151,
+          "dense_mass_over_initial": 0.2875479938799259,
+          "tracer_mass_over_initial": 0.9350875083459395
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0100/CW_0100",
+          "time_code": 19.364915393298,
+          "t_over_tcc": 4.999999654597253,
+          "cells": 524288,
+          "dense_mass": 112.34492532375124,
+          "tracer_mass": 341.6854526422859,
+          "dense_mass_over_initial": 0.2819268059835237,
+          "tracer_mass_over_initial": 0.9323136227957561
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0101/CW_0101",
+          "time_code": 19.364916731037,
+          "t_over_tcc": 4.999999999999978,
+          "cells": 524288,
+          "dense_mass": 112.34490198649232,
+          "tracer_mass": 341.6854452363496,
+          "dense_mass_over_initial": 0.2819267474192508,
+          "tracer_mass_over_initial": 0.93231360258812
+        }
+      ],
+      "exact_duplicate_time_outputs_retained": [],
+      "native_output_precision": "Six native HDF5 float64 fields; unchanged compute and restart precision"
+    },
+    {
+      "status": "complete_native_checks",
+      "level": 4,
+      "mode": 1,
+      "directory": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13",
+      "parameters": {
+        "source": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/CloudWind.enzo",
+        "parameter_sha256": "d2cdbc9af2766de0e9d4e6ef098b068144c09b122a99bcf5b283f9cea1f6dc58",
+        "assumptions": [],
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1.0,
+        "rho_wind": 1.0,
+        "p_wind": 1.0,
+        "v_wind": 2.581988897471611,
+        "chi": 100.0,
+        "rv_scale": 1.3,
+        "tmax": 19.364916731037084,
+        "output_dt": 0.19364916731037085,
+        "mach": 2.0,
+        "kind": "enzo",
+        "t_cc": 3.872983346207417
+      },
+      "command": [
+        "mpirun",
+        "--bind-to",
+        "core",
+        "-np",
+        "8",
+        "/home/kaan/sensitivity_20260907/enzo/enzo_pair",
+        "CloudWind.enzo"
+      ],
+      "binary_sha256": "28d482af94828aba1de2b097068b66c9ec80b88b53bd6405e0ff96fbecf57900",
+      "parameter_sha256": "d2cdbc9af2766de0e9d4e6ef098b068144c09b122a99bcf5b283f9cea1f6dc58",
+      "storage_preflight": {
+        "path": "/home/kaan/sensitivity_20260907/enzo",
+        "filesystem_free_bytes": 108534812672,
+        "filesystem_total_bytes": 1081101176832,
+        "windows_backing_volume": {
+          "distribution": "Ubuntu",
+          "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+          "drive": "C:",
+          "free_bytes": 37661487104,
+          "total_bytes": 1999283154944
+        },
+        "policy": "Conservative growth budget; allocated but reusable VHDX blocks are not credited.",
+        "effective_free_bytes": 37661487104
+      },
+      "reserved_output_gib": 5.2374999998137355,
+      "started_unix": 1788817195.3679364,
+      "returncode": 0,
+      "wall_seconds": 181.90599370002747,
+      "peak_child_rss_gib": 0.5275650024414062,
+      "unique_snapshots": 102,
+      "target_snapshots": 101,
+      "series": [
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0000/CW_0000",
+          "time_code": 0.0,
+          "t_over_tcc": 0.0,
+          "cells": 524288,
+          "dense_mass": 398.4896893072199,
+          "tracer_mass": 366.4919661022047,
+          "initial_checks": {
+            "density_relative": 5.551115123125783e-15,
+            "velocity_over_wind": 1.7199501139797033e-16,
+            "pressure_absolute": 4.440892098500626e-16,
+            "tracer_over_initial_cloud_density": 2.842170943040401e-16
+          },
+          "dense_mass_over_initial": 1.0,
+          "tracer_mass_over_initial": 1.0
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0001/CW_0001",
+          "time_code": 0.19364749998767,
+          "t_over_tcc": 0.049999569499129794,
+          "cells": 524288,
+          "dense_mass": 400.2161788613115,
+          "tracer_mass": 366.4919587889805,
+          "dense_mass_over_initial": 1.004332582750367,
+          "tracer_mass_over_initial": 0.9999999800453356
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0002/CW_0002",
+          "time_code": 0.38729683444088,
+          "t_over_tcc": 0.09999961265522528,
+          "cells": 524288,
+          "dense_mass": 403.3039073460759,
+          "tracer_mass": 366.4919028213028,
+          "dense_mass_over_initial": 1.0120811608632223,
+          "tracer_mass_over_initial": 0.9999998273334542
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0003/CW_0003",
+          "time_code": 0.58094557827068,
+          "t_over_tcc": 0.14999950331301207,
+          "cells": 524288,
+          "dense_mass": 404.7905263537907,
+          "tracer_mass": 366.4919061572852,
+          "dense_mass_over_initial": 1.0158117944218956,
+          "tracer_mass_over_initial": 0.9999998364359248
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0004/CW_0004",
+          "time_code": 0.77459548029395,
+          "t_over_tcc": 0.1999996930150669,
+          "cells": 524288,
+          "dense_mass": 402.9965180018137,
+          "tracer_mass": 366.49195830007375,
+          "dense_mass_over_initial": 1.0113097749214766,
+          "tracer_mass_over_initial": 0.999999978711318
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0005/CW_0005",
+          "time_code": 0.96824448270038,
+          "t_over_tcc": 0.24999965043705247,
+          "cells": 524288,
+          "dense_mass": 399.58083315081245,
+          "tracer_mass": 366.48930267648075,
+          "dense_mass_over_initial": 1.0027381984349193,
+          "tracer_mass_over_initial": 0.9999927326490884
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0006/CW_0006",
+          "time_code": 1.1618934236096,
+          "t_over_tcc": 0.29999959198052667,
+          "cells": 524288,
+          "dense_mass": 396.61479406928345,
+          "tracer_mass": 366.4885530271626,
+          "dense_mass_over_initial": 0.9952949968637934,
+          "tracer_mass_over_initial": 0.9999906871763701
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0007/CW_0007",
+          "time_code": 1.3555424309863,
+          "t_over_tcc": 0.34999955068583044,
+          "cells": 524288,
+          "dense_mass": 393.2057348439814,
+          "tracer_mass": 366.4798058622948,
+          "dense_mass_over_initial": 0.986740047220733,
+          "tracer_mass_over_initial": 0.9999668199004764
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0008/CW_0008",
+          "time_code": 1.5491914205843,
+          "t_over_tcc": 0.3999995048006936,
+          "cells": 524288,
+          "dense_mass": 392.19479602540935,
+          "tracer_mass": 366.4797176149212,
+          "dense_mass_over_initial": 0.9842031213084727,
+          "tracer_mass_over_initial": 0.9999665791110954
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0009/CW_0009",
+          "time_code": 1.7428412791827,
+          "t_over_tcc": 0.44999968329049517,
+          "cells": 524288,
+          "dense_mass": 390.4457805134543,
+          "tracer_mass": 366.47620039637945,
+          "dense_mass_over_initial": 0.9798140102250824,
+          "tracer_mass_over_initial": 0.999956982124348
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0010/CW_0010",
+          "time_code": 1.9364903876634,
+          "t_over_tcc": 0.49999966810073954,
+          "cells": 524288,
+          "dense_mass": 389.0141674145219,
+          "tracer_mass": 366.47141322873665,
+          "dense_mass_over_initial": 0.9762214126313498,
+          "tracer_mass_over_initial": 0.9999439199890611
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0011/CW_0011",
+          "time_code": 2.1301393979035,
+          "t_over_tcc": 0.54999962754537,
+          "cells": 524288,
+          "dense_mass": 386.3798048702138,
+          "tracer_mass": 366.4713743819429,
+          "dense_mass_over_initial": 0.9696105451108175,
+          "tracer_mass_over_initial": 0.9999438139927573
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0012/CW_0012",
+          "time_code": 2.3237884996779,
+          "t_over_tcc": 0.599999610624055,
+          "cells": 524288,
+          "dense_mass": 386.21508372655876,
+          "tracer_mass": 366.4713935859709,
+          "dense_mass_over_initial": 0.9691971814829118,
+          "tracer_mass_over_initial": 0.9999438663923452
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0013/CW_0013",
+          "time_code": 2.5174376002543,
+          "t_over_tcc": 0.649999593393418,
+          "cells": 524288,
+          "dense_mass": 382.0705688617492,
+          "tracer_mass": 366.4713325345914,
+          "dense_mass_over_initial": 0.9587966241384674,
+          "tracer_mass_over_initial": 0.9999436998092135
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0014/CW_0014",
+          "time_code": 2.7110867991434,
+          "t_over_tcc": 0.6999996015470106,
+          "cells": 524288,
+          "dense_mass": 380.5235649118914,
+          "tracer_mass": 366.4712976149145,
+          "dense_mass_over_initial": 0.9549144560639377,
+          "tracer_mass_over_initial": 0.9999436045283338
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0015/CW_0015",
+          "time_code": 2.9047359690016,
+          "t_over_tcc": 0.7499996022048573,
+          "cells": 524288,
+          "dense_mass": 378.73119238051163,
+          "tracer_mass": 366.4712697495066,
+          "dense_mass_over_initial": 0.9504165416147687,
+          "tracer_mass_over_initial": 0.9999435284955405
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0016/CW_0016",
+          "time_code": 3.0983851473103,
+          "t_over_tcc": 0.7999996050446136,
+          "cells": 524288,
+          "dense_mass": 377.29644990753445,
+          "tracer_mass": 366.471215751356,
+          "dense_mass_over_initial": 0.9468160909344223,
+          "tracer_mass_over_initial": 0.9999433811576571
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0017/CW_0017",
+          "time_code": 3.2920341692944,
+          "t_over_tcc": 0.8499995675215319,
+          "cells": 524288,
+          "dense_mass": 374.99002554407105,
+          "tracer_mass": 366.471184545785,
+          "dense_mass_over_initial": 0.9410281761518011,
+          "tracer_mass_over_initial": 0.9999432960109856
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0018/CW_0018",
+          "time_code": 3.4856833896162,
+          "t_over_tcc": 0.8999995812090241,
+          "cells": 524288,
+          "dense_mass": 372.30021166939684,
+          "tracer_mass": 366.4711856291135,
+          "dense_mass_over_initial": 0.9342781548919024,
+          "tracer_mass_over_initial": 0.9999432989669264
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0019/CW_0019",
+          "time_code": 3.679332481052,
+          "t_over_tcc": 0.9499995616182941,
+          "cells": 524288,
+          "dense_mass": 370.60156248799194,
+          "tracer_mass": 366.47110436515277,
+          "dense_mass_over_initial": 0.9300154368668563,
+          "tracer_mass_over_initial": 0.9999430772322957
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0020/CW_0020",
+          "time_code": 3.8729815696463,
+          "t_over_tcc": 0.999999541293892,
+          "cells": 524288,
+          "dense_mass": 368.13764860304263,
+          "tracer_mass": 366.47109400901303,
+          "dense_mass_over_initial": 0.9238323060329497,
+          "tracer_mass_over_initial": 0.9999430489748148
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0021/CW_0021",
+          "time_code": 4.0666307788697,
+          "t_over_tcc": 1.0499995521157897,
+          "cells": 524288,
+          "dense_mass": 365.30382669676237,
+          "tracer_mass": 366.4715276519105,
+          "dense_mass_over_initial": 0.9167209001865226,
+          "tracer_mass_over_initial": 0.9999442322010178
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0022/CW_0022",
+          "time_code": 4.260280092238,
+          "t_over_tcc": 1.0999995898277848,
+          "cells": 524288,
+          "dense_mass": 364.02249930488966,
+          "tracer_mass": 366.47149282536196,
+          "dense_mass_over_initial": 0.9135054408502966,
+          "tracer_mass_over_initial": 0.9999441371742457
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0023/CW_0023",
+          "time_code": 4.4539293169771,
+          "t_over_tcc": 1.149999604655819,
+          "cells": 524288,
+          "dense_mass": 361.51559101781504,
+          "tracer_mass": 366.47147379070066,
+          "dense_mass_over_initial": 0.9072144166297379,
+          "tracer_mass_over_initial": 0.9999440852367871
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0024/CW_0024",
+          "time_code": 4.6475783212567,
+          "t_over_tcc": 1.1999995625614548,
+          "cells": 524288,
+          "dense_mass": 359.6764322872889,
+          "tracer_mass": 366.47147254727133,
+          "dense_mass_over_initial": 0.9025990933732603,
+          "tracer_mass_over_initial": 0.9999440818439997
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0025/CW_0025",
+          "time_code": 4.8412274441476,
+          "t_over_tcc": 1.249999551092397,
+          "cells": 524288,
+          "dense_mass": 358.5183277915551,
+          "tracer_mass": 366.4714629610873,
+          "dense_mass_over_initial": 0.8996928588412022,
+          "tracer_mass_over_initial": 0.999944055687399
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0026/CW_0026",
+          "time_code": 5.0348766064319,
+          "t_over_tcc": 1.2999995497946708,
+          "cells": 524288,
+          "dense_mass": 357.18869109327136,
+          "tracer_mass": 366.4714830905466,
+          "dense_mass_over_initial": 0.8963561684977321,
+          "tracer_mass_over_initial": 0.9999441106120935
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0027/CW_0027",
+          "time_code": 5.2285256970502,
+          "t_over_tcc": 1.3499995299928633,
+          "cells": 524288,
+          "dense_mass": 355.2073749481495,
+          "tracer_mass": 366.47148229926466,
+          "dense_mass_over_initial": 0.891384104732252,
+          "tracer_mass_over_initial": 0.9999441084530232
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0028/CW_0028",
+          "time_code": 5.4221749631304,
+          "t_over_tcc": 1.3999995554951237,
+          "cells": 524288,
+          "dense_mass": 353.1560065540727,
+          "tracer_mass": 366.47147331393757,
+          "dense_mass_over_initial": 0.8862362465840447,
+          "tracer_mass_over_initial": 0.9999440839359043
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0029/CW_0029",
+          "time_code": 5.6158241853391,
+          "t_over_tcc": 1.4499995696698114,
+          "cells": 524288,
+          "dense_mass": 349.23799662592296,
+          "tracer_mass": 366.47147215578264,
+          "dense_mass_over_initial": 0.876404097764934,
+          "tracer_mass_over_initial": 0.9999440807757943
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0030/CW_0030",
+          "time_code": 5.8094733089492,
+          "t_over_tcc": 1.4999995583864498,
+          "cells": 524288,
+          "dense_mass": 345.6854080088535,
+          "tracer_mass": 366.47147454800336,
+          "dense_mass_over_initial": 0.867488964670159,
+          "tracer_mass_over_initial": 0.9999440873031427
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0031/CW_0031",
+          "time_code": 6.0031225751191,
+          "t_over_tcc": 1.5499995839118705,
+          "cells": 524288,
+          "dense_mass": 349.0634048139499,
+          "tracer_mass": 366.47148298534415,
+          "dense_mass_over_initial": 0.8759659639394978,
+          "tracer_mass_over_initial": 0.999944110325041
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0032/CW_0032",
+          "time_code": 6.1967716782674,
+          "t_over_tcc": 1.599999567345295,
+          "cells": 524288,
+          "dense_mass": 351.11114476210855,
+          "tracer_mass": 366.47148711370056,
+          "dense_mass_over_initial": 0.8811047165925933,
+          "tracer_mass_over_initial": 0.9999441215895619
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0033/CW_0033",
+          "time_code": 6.3904208246764,
+          "t_over_tcc": 1.649999561948584,
+          "cells": 524288,
+          "dense_mass": 353.41050429800333,
+          "tracer_mass": 366.47149953630577,
+          "dense_mass_over_initial": 0.8868749023655106,
+          "tracer_mass_over_initial": 0.9999441554855443
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0034/CW_0034",
+          "time_code": 6.5840699796762,
+          "t_over_tcc": 1.6999995587700085,
+          "cells": 524288,
+          "dense_mass": 352.61438231784035,
+          "tracer_mass": 366.4715010572118,
+          "dense_mass_over_initial": 0.8848770539856766,
+          "tracer_mass_over_initial": 0.999944159635447
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0035/CW_0035",
+          "time_code": 6.7777191222927,
+          "t_over_tcc": 1.7499995523940783,
+          "cells": 524288,
+          "dense_mass": 352.73838251302163,
+          "tracer_mass": 366.47153608734305,
+          "dense_mass_over_initial": 0.8851882294025284,
+          "tracer_mass_over_initial": 0.9999442552177094
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0036/CW_0036",
+          "time_code": 6.971368268212,
+          "t_over_tcc": 1.7999995468709278,
+          "cells": 524288,
+          "dense_mass": 350.83830338914163,
+          "tracer_mass": 366.4715525612941,
+          "dense_mass_over_initial": 0.88042002792865,
+          "tracer_mass_over_initial": 0.9999443001680837
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0037/CW_0037",
+          "time_code": 7.1650173699595,
+          "t_over_tcc": 1.8499995299426673,
+          "cells": 524288,
+          "dense_mass": 348.391830962252,
+          "tracer_mass": 366.471549118593,
+          "dense_mass_over_initial": 0.8742806660015124,
+          "tracer_mass_over_initial": 0.9999442907744232
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0038/CW_0038",
+          "time_code": 7.3586664917727,
+          "t_over_tcc": 1.8999995181953484,
+          "cells": 524288,
+          "dense_mass": 348.02856383087146,
+          "tracer_mass": 366.471457507337,
+          "dense_mass_over_initial": 0.8733690561377488,
+          "tracer_mass_over_initial": 0.9999440408064444
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0039/CW_0039",
+          "time_code": 7.5523157264311,
+          "t_over_tcc": 1.9499995355845348,
+          "cells": 524288,
+          "dense_mass": 346.69895566251813,
+          "tracer_mass": 366.47095185110794,
+          "dense_mass_over_initial": 0.8700324373894323,
+          "tracer_mass_over_initial": 0.9999426610866257
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0040/CW_0040",
+          "time_code": 7.7459649395177,
+          "t_over_tcc": 1.999999547403906,
+          "cells": 524288,
+          "dense_mass": 346.7367501473327,
+          "tracer_mass": 366.4691193199905,
+          "dense_mass_over_initial": 0.8701272817124568,
+          "tracer_mass_over_initial": 0.9999376608921141
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0041/CW_0041",
+          "time_code": 7.939614070439,
+          "t_over_tcc": 2.0499995380082887,
+          "cells": 524288,
+          "dense_mass": 342.7771584701479,
+          "tracer_mass": 366.4639945000369,
+          "dense_mass_over_initial": 0.8601907845246158,
+          "tracer_mass_over_initial": 0.9999236774479253
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0042/CW_0042",
+          "time_code": 8.1332632095431,
+          "t_over_tcc": 2.099999530725461,
+          "cells": 524288,
+          "dense_mass": 341.7155126027634,
+          "tracer_mass": 366.4531131192628,
+          "dense_mass_over_initial": 0.8575266105299757,
+          "tracer_mass_over_initial": 0.9998939868086193
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0043/CW_0043",
+          "time_code": 8.326912303187,
+          "t_over_tcc": 2.1499995117048596,
+          "cells": 524288,
+          "dense_mass": 343.92119069421085,
+          "tracer_mass": 366.43431104169343,
+          "dense_mass_over_initial": 0.8630617050396531,
+          "tracer_mass_over_initial": 0.9998426839716995
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0044/CW_0044",
+          "time_code": 8.5205615850126,
+          "t_over_tcc": 2.199999541272565,
+          "cells": 524288,
+          "dense_mass": 343.8838741108044,
+          "tracer_mass": 366.4049777171714,
+          "dense_mass_over_initial": 0.8629680599983691,
+          "tracer_mass_over_initial": 0.9997626458610854
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0045/CW_0045",
+          "time_code": 8.7142107657004,
+          "t_over_tcc": 2.2499995447266024,
+          "cells": 524288,
+          "dense_mass": 342.1527448574883,
+          "tracer_mass": 366.36467976678233,
+          "dense_mass_over_initial": 0.8586238340377784,
+          "tracer_mass_over_initial": 0.9996526899708714
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0046/CW_0046",
+          "time_code": 8.9078599074518,
+          "t_over_tcc": 2.2999995381273037,
+          "cells": 524288,
+          "dense_mass": 338.055540348352,
+          "tracer_mass": 366.31288689889846,
+          "dense_mass_over_initial": 0.8483420008584575,
+          "tracer_mass_over_initial": 0.9995113693617603
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0047/CW_0047",
+          "time_code": 9.10150905284,
+          "t_over_tcc": 2.3499995324670238,
+          "cells": 524288,
+          "dense_mass": 336.1537734280814,
+          "tracer_mass": 366.2504969004754,
+          "dense_mass_over_initial": 0.8435695639013637,
+          "tracer_mass_over_initial": 0.9993411337107948
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0048/CW_0048",
+          "time_code": 9.2951582446495,
+          "t_over_tcc": 2.3999995387926716,
+          "cells": 524288,
+          "dense_mass": 337.31852983034406,
+          "tracer_mass": 366.1774529143262,
+          "dense_mass_over_initial": 0.8464924912280094,
+          "tracer_mass_over_initial": 0.9991418278790024
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0049/CW_0049",
+          "time_code": 9.4888073216281,
+          "t_over_tcc": 2.4499995154691088,
+          "cells": 524288,
+          "dense_mass": 334.20547237271023,
+          "tracer_mass": 366.09247534455454,
+          "dense_mass_over_initial": 0.8386803506854374,
+          "tracer_mass_over_initial": 0.9989099603958611
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0050/CW_0050",
+          "time_code": 9.6824565148417,
+          "t_over_tcc": 2.499999522157294,
+          "cells": 524288,
+          "dense_mass": 331.2419515411499,
+          "tracer_mass": 365.9947881563175,
+          "dense_mass_over_initial": 0.8312434686002009,
+          "tracer_mass_over_initial": 0.9986434137938278
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0051/CW_0051",
+          "time_code": 9.8761057031563,
+          "t_over_tcc": 2.5499995275805625,
+          "cells": 524288,
+          "dense_mass": 326.9822875744783,
+          "tracer_mass": 365.8814592753345,
+          "dense_mass_over_initial": 0.820553947438243,
+          "tracer_mass_over_initial": 0.9983341876948542
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0052/CW_0052",
+          "time_code": 10.069754833724,
+          "t_over_tcc": 2.5999995180936457,
+          "cells": 524288,
+          "dense_mass": 329.0261727452694,
+          "tracer_mass": 365.7485434084263,
+          "dense_mass_over_initial": 0.825683026623063,
+          "tracer_mass_over_initial": 0.997971517079392
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0053/CW_0053",
+          "time_code": 10.263404014678,
+          "t_over_tcc": 2.649999521616416,
+          "cells": 524288,
+          "dense_mass": 324.13650512159614,
+          "tracer_mass": 365.6006137097942,
+          "dense_mass_over_initial": 0.8134125268965231,
+          "tracer_mass_over_initial": 0.997567880131479
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0054/CW_0054",
+          "time_code": 10.45705314546,
+          "t_over_tcc": 2.699999512184831,
+          "cells": 524288,
+          "dense_mass": 319.14707886289705,
+          "tracer_mass": 365.4447079470607,
+          "dense_mass_over_initial": 0.8008916853475905,
+          "tracer_mass_over_initial": 0.9971424799122283
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0055/CW_0055",
+          "time_code": 10.650702399554,
+          "t_over_tcc": 2.7499995345922676,
+          "cells": 524288,
+          "dense_mass": 317.63719291206064,
+          "tracer_mass": 365.2825083281035,
+          "dense_mass_over_initial": 0.7971026639717517,
+          "tracer_mass_over_initial": 0.9966999064482525
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0056/CW_0056",
+          "time_code": 10.844351663825,
+          "t_over_tcc": 2.7999995596273943,
+          "cells": 524288,
+          "dense_mass": 315.68465625518377,
+          "tracer_mass": 365.10773581830733,
+          "dense_mass_over_initial": 0.7922028216188131,
+          "tracer_mass_over_initial": 0.9962230269366632
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0057/CW_0057",
+          "time_code": 11.038000911058,
+          "t_over_tcc": 2.849999580263329,
+          "cells": 524288,
+          "dense_mass": 312.16648528872537,
+          "tracer_mass": 364.9160482047051,
+          "dense_mass_over_initial": 0.7833740587653129,
+          "tracer_mass_over_initial": 0.995699993333387
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0058/CW_0058",
+          "time_code": 11.231649938689,
+          "t_over_tcc": 2.8999995441982698,
+          "cells": 524288,
+          "dense_mass": 311.5634811313339,
+          "tracer_mass": 364.7003442660062,
+          "dense_mass_over_initial": 0.7818608347759047,
+          "tracer_mass_over_initial": 0.9951114294393595
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0059/CW_0059",
+          "time_code": 11.425299127729,
+          "t_over_tcc": 2.9499995498088363,
+          "cells": 524288,
+          "dense_mass": 306.2131548630118,
+          "tracer_mass": 364.4704868617125,
+          "dense_mass_over_initial": 0.7684343235965975,
+          "tracer_mass_over_initial": 0.9944842467844754
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0060/CW_0060",
+          "time_code": 11.618948216203,
+          "t_over_tcc": 2.9999995294533726,
+          "cells": 524288,
+          "dense_mass": 306.19522193140426,
+          "tracer_mass": 364.2174197311098,
+          "dense_mass_over_initial": 0.7683893213491397,
+          "tracer_mass_over_initial": 0.9937937347023302
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0061/CW_0061",
+          "time_code": 11.812597352575,
+          "t_over_tcc": 3.0499995214651197,
+          "cells": 524288,
+          "dense_mass": 301.4004208075741,
+          "tracer_mass": 363.93488113978685,
+          "dense_mass_over_initial": 0.7563568867529875,
+          "tracer_mass_over_initial": 0.9930228075949017
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0062/CW_0062",
+          "time_code": 12.006246528443,
+          "t_over_tcc": 3.0999995236746902,
+          "cells": 524288,
+          "dense_mass": 298.4348546494489,
+          "tracer_mass": 363.63263238104764,
+          "dense_mass_over_initial": 0.7489148719714234,
+          "tracer_mass_over_initial": 0.9921980998613223
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0063/CW_0063",
+          "time_code": 12.199895763174,
+          "t_over_tcc": 3.1499995410826216,
+          "cells": 524288,
+          "dense_mass": 295.668864887229,
+          "tracer_mass": 363.304269819853,
+          "dense_mass_over_initial": 0.741973689209509,
+          "tracer_mass_over_initial": 0.9913021387173799
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0064/CW_0064",
+          "time_code": 12.393544943049,
+          "t_over_tcc": 3.199999544326795,
+          "cells": 524288,
+          "dense_mass": 291.62708911764366,
+          "tracer_mass": 362.9786854051019,
+          "dense_mass_over_initial": 0.7318309530784638,
+          "tracer_mass_over_initial": 0.990413757948181
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0065/CW_0065",
+          "time_code": 12.587194048648,
+          "t_over_tcc": 3.2499995283929874,
+          "cells": 524288,
+          "dense_mass": 286.5468063606607,
+          "tracer_mass": 362.6685225172692,
+          "dense_mass_over_initial": 0.719082109398681,
+          "tracer_mass_over_initial": 0.98956745593744
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0066/CW_0066",
+          "time_code": 12.780843260242,
+          "t_over_tcc": 3.2999995398269713,
+          "cells": 524288,
+          "dense_mass": 284.6079246050782,
+          "tracer_mass": 362.35317038940457,
+          "dense_mass_over_initial": 0.7142165336821467,
+          "tracer_mass_over_initial": 0.9887069947076387
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0067/CW_0067",
+          "time_code": 12.974492430495,
+          "t_over_tcc": 3.349999540586755,
+          "cells": 524288,
+          "dense_mass": 281.80288794110663,
+          "tracer_mass": 362.012524714173,
+          "dense_mass_over_initial": 0.7071773636879414,
+          "tracer_mass_over_initial": 0.9877775181931752
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0068/CW_0068",
+          "time_code": 13.168141659382,
+          "t_over_tcc": 3.3999995564857723,
+          "cells": 524288,
+          "dense_mass": 271.72350714005137,
+          "tracer_mass": 361.63552572024753,
+          "dense_mass_over_initial": 0.6818834073535167,
+          "tracer_mass_over_initial": 0.986748849003138
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0069/CW_0069",
+          "time_code": 13.361790788692,
+          "t_over_tcc": 3.4499995466741185,
+          "cells": 524288,
+          "dense_mass": 268.22388472528604,
+          "tracer_mass": 361.2172042026518,
+          "dense_mass_over_initial": 0.6731011916308227,
+          "tracer_mass_over_initial": 0.9856074283001285
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0070/CW_0070",
+          "time_code": 13.555439936331,
+          "t_over_tcc": 3.4999995415949927,
+          "cells": 524288,
+          "dense_mass": 264.474714033402,
+          "tracer_mass": 360.76547681583963,
+          "dense_mass_over_initial": 0.6636927406909702,
+          "tracer_mass_over_initial": 0.9843748572519374
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0071/CW_0071",
+          "time_code": 13.749089175969,
+          "t_over_tcc": 3.549999560269906,
+          "cells": 524288,
+          "dense_mass": 257.7388826129955,
+          "tracer_mass": 360.3077021629607,
+          "dense_mass_over_initial": 0.6467893386679044,
+          "tracer_mass_over_initial": 0.9831257857982094
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0072/CW_0072",
+          "time_code": 13.942738208561,
+          "t_over_tcc": 3.599999525485772,
+          "cells": 524288,
+          "dense_mass": 252.33294679885316,
+          "tracer_mass": 359.8540433741753,
+          "dense_mass_over_initial": 0.6332232767114693,
+          "tracer_mass_over_initial": 0.9818879447791818
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0073/CW_0073",
+          "time_code": 14.136387398218,
+          "t_over_tcc": 3.6499995312556472,
+          "cells": 524288,
+          "dense_mass": 243.6561297890777,
+          "tracer_mass": 359.40689006629304,
+          "dense_mass_over_initial": 0.6114490194531191,
+          "tracer_mass_over_initial": 0.9806678544382176
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0074/CW_0074",
+          "time_code": 14.330036536591,
+          "t_over_tcc": 3.6999995237840504,
+          "cells": 524288,
+          "dense_mass": 235.5173618691972,
+          "tracer_mass": 358.9423845295434,
+          "dense_mass_over_initial": 0.591024983052002,
+          "tracer_mass_over_initial": 0.979400417278026
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0075/CW_0075",
+          "time_code": 14.523685698116,
+          "t_over_tcc": 3.7499995222902736,
+          "cells": 524288,
+          "dense_mass": 229.8453225239992,
+          "tracer_mass": 358.4427870753602,
+          "dense_mass_over_initial": 0.5767911408789236,
+          "tracer_mass_over_initial": 0.9780372292673946
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0076/CW_0076",
+          "time_code": 14.717334811039,
+          "t_over_tcc": 3.7999995082475153,
+          "cells": 524288,
+          "dense_mass": 220.37804992488583,
+          "tracer_mass": 357.904574507826,
+          "dense_mass_over_initial": 0.5530332549080912,
+          "tracer_mass_over_initial": 0.9765686771098717
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0077/CW_0077",
+          "time_code": 14.910984107654,
+          "t_over_tcc": 3.8499995416338266,
+          "cells": 524288,
+          "dense_mass": 212.97423112791432,
+          "tracer_mass": 357.3524030288144,
+          "dense_mass_over_initial": 0.5344535551175066,
+          "tracer_mass_over_initial": 0.9750620370465597
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0078/CW_0078",
+          "time_code": 15.104633255496,
+          "t_over_tcc": 3.899999536607115,
+          "cells": 524288,
+          "dense_mass": 209.7752788779543,
+          "tracer_mass": 356.80277616119946,
+          "dense_mass_over_initial": 0.5264258637222249,
+          "tracer_mass_over_initial": 0.9735623401406208
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0079/CW_0079",
+          "time_code": 15.298282403564,
+          "t_over_tcc": 3.949999531638756,
+          "cells": 524288,
+          "dense_mass": 205.03547528600672,
+          "tracer_mass": 356.23298826102024,
+          "dense_mass_over_initial": 0.5145314440693908,
+          "tracer_mass_over_initial": 0.9720076323901641
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0080/CW_0080",
+          "time_code": 15.491931467099,
+          "t_over_tcc": 3.999999504844071,
+          "cells": 524288,
+          "dense_mass": 201.10370352208793,
+          "tracer_mass": 355.6322371941254,
+          "dense_mass_over_initial": 0.5046647602644616,
+          "tracer_mass_over_initial": 0.9703684393860607
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0081/CW_0081",
+          "time_code": 15.68558135717,
+          "t_over_tcc": 4.049999691460062,
+          "cells": 524288,
+          "dense_mass": 197.05932917593697,
+          "tracer_mass": 355.00157786282244,
+          "dense_mass_over_initial": 0.4945155030699225,
+          "tracer_mass_over_initial": 0.9686476395060243
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0082/CW_0082",
+          "time_code": 15.879230484174,
+          "t_over_tcc": 4.099999681053003,
+          "cells": 524288,
+          "dense_mass": 189.46678995627832,
+          "tracer_mass": 354.33899455195194,
+          "dense_mass_over_initial": 0.47546221405544786,
+          "tracer_mass_over_initial": 0.9668397327245541
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0083/CW_0083",
+          "time_code": 16.072879515192,
+          "t_over_tcc": 4.149999645862463,
+          "cells": 524288,
+          "dense_mass": 188.7313855857331,
+          "tracer_mass": 353.61181917774815,
+          "dense_mass_over_initial": 0.47361673501225426,
+          "tracer_mass_over_initial": 0.9648555817977614
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0084/CW_0084",
+          "time_code": 16.266528623526,
+          "t_over_tcc": 4.19999963063483,
+          "cells": 524288,
+          "dense_mass": 184.98608203882736,
+          "tracer_mass": 352.85223997698813,
+          "dense_mass_over_initial": 0.46421798857688973,
+          "tracer_mass_over_initial": 0.9627830146721066
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0085/CW_0085",
+          "time_code": 16.460177752111,
+          "t_over_tcc": 4.2499996206359825,
+          "cells": 524288,
+          "dense_mass": 182.80285817329315,
+          "tracer_mass": 352.11941307800174,
+          "dense_mass_over_initial": 0.4587392423906841,
+          "tracer_mass_over_initial": 0.9607834431486697
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0086/CW_0086",
+          "time_code": 16.653826927377,
+          "t_over_tcc": 4.299999622690117,
+          "cells": 524288,
+          "dense_mass": 178.46293938676854,
+          "tracer_mass": 351.4283321614997,
+          "dense_mass_over_initial": 0.4478483237471688,
+          "tracer_mass_over_initial": 0.9588977785763956
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0087/CW_0087",
+          "time_code": 16.847476057899,
+          "t_over_tcc": 4.349999613191401,
+          "cells": 524288,
+          "dense_mass": 171.64929195139052,
+          "tracer_mass": 350.7256738727112,
+          "dense_mass_over_initial": 0.43074964436295776,
+          "tracer_mass_over_initial": 0.9569805243013247
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0088/CW_0088",
+          "time_code": 17.041125293428,
+          "t_over_tcc": 4.399999630805374,
+          "cells": 524288,
+          "dense_mass": 161.77571636011038,
+          "tracer_mass": 349.985131312159,
+          "dense_mass_over_initial": 0.4059721511022275,
+          "tracer_mass_over_initial": 0.9549599000338186
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0089/CW_0089",
+          "time_code": 17.234774394593,
+          "t_over_tcc": 4.449999613726713,
+          "cells": 524288,
+          "dense_mass": 155.18587348679048,
+          "tracer_mass": 349.23244191352757,
+          "dense_mass_over_initial": 0.38943510372020756,
+          "tracer_mass_over_initial": 0.9529061322346588
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0090/CW_0090",
+          "time_code": 17.428423532843,
+          "t_over_tcc": 4.499999606223358,
+          "cells": 524288,
+          "dense_mass": 149.79699859605648,
+          "tracer_mass": 348.4768234872327,
+          "dense_mass_over_initial": 0.3759118557282642,
+          "tracer_mass_over_initial": 0.9508443723703672
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0091/CW_0091",
+          "time_code": 17.622072669344,
+          "t_over_tcc": 4.549999598268412,
+          "cells": 524288,
+          "dense_mass": 144.1575924026758,
+          "tracer_mass": 347.6921066370967,
+          "dense_mass_over_initial": 0.3617599056409611,
+          "tracer_mass_over_initial": 0.9487032153390635
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0092/CW_0092",
+          "time_code": 17.815721886589,
+          "t_over_tcc": 4.599999611161478,
+          "cells": 524288,
+          "dense_mass": 137.81328571974245,
+          "tracer_mass": 346.85219143241693,
+          "dense_mass_over_initial": 0.3458390252438723,
+          "tracer_mass_over_initial": 0.9464114455804722
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0093/CW_0093",
+          "time_code": 18.00937104081,
+          "t_over_tcc": 4.649999607781817,
+          "cells": 524288,
+          "dense_mass": 132.27318210165967,
+          "tracer_mass": 345.9828099348686,
+          "dense_mass_over_initial": 0.3319362725083766,
+          "tracer_mass_over_initial": 0.9440392748974568
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0094/CW_0094",
+          "time_code": 18.203020260338,
+          "t_over_tcc": 4.699999621264351,
+          "cells": 524288,
+          "dense_mass": 128.92231430348156,
+          "tracer_mass": 345.1252265551202,
+          "dense_mass_over_initial": 0.3235273528095918,
+          "tracer_mass_over_initial": 0.9416992962374354
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0095/CW_0095",
+          "time_code": 18.396669549233,
+          "t_over_tcc": 4.749999652657367,
+          "cells": 524288,
+          "dense_mass": 124.03866107067128,
+          "tracer_mass": 344.26660883861604,
+          "dense_mass_over_initial": 0.3112719460478746,
+          "tracer_mass_over_initial": 0.939356495314305
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0096/CW_0096",
+          "time_code": 18.590318677317,
+          "t_over_tcc": 4.799999642529162,
+          "cells": 524288,
+          "dense_mass": 119.89710490901463,
+          "tracer_mass": 343.39257971407824,
+          "dense_mass_over_initial": 0.3008788134956703,
+          "tracer_mass_over_initial": 0.9369716432428299
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0097/CW_0097",
+          "time_code": 18.783967803113,
+          "t_over_tcc": 4.849999631810197,
+          "cells": 524288,
+          "dense_mass": 114.82060205434222,
+          "tracer_mass": 342.48144778471607,
+          "dense_mass_over_initial": 0.2881394553870628,
+          "tracer_mass_over_initial": 0.9344855534683324
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0098/CW_0098",
+          "time_code": 18.977616977125,
+          "t_over_tcc": 4.899999633540551,
+          "cells": 524288,
+          "dense_mass": 109.05178547419926,
+          "tracer_mass": 341.5394247550476,
+          "dense_mass_over_initial": 0.2736627531412102,
+          "tracer_mass_over_initial": 0.9319151750786305
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0099/CW_0099",
+          "time_code": 19.171266115749,
+          "t_over_tcc": 4.949999626133762,
+          "cells": 524288,
+          "dense_mass": 105.71016309567625,
+          "tracer_mass": 340.5974402682464,
+          "dense_mass_over_initial": 0.26527703459393115,
+          "tracer_mass_over_initial": 0.9293449018559468
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0100/CW_0100",
+          "time_code": 19.364915251516,
+          "t_over_tcc": 4.999999617989298,
+          "cells": 524288,
+          "dense_mass": 103.97981905557639,
+          "tracer_mass": 339.6534794295201,
+          "dense_mass_over_initial": 0.26093477910644763,
+          "tracer_mass_over_initial": 0.9267692360132116
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0101/CW_0101",
+          "time_code": 19.364916731037,
+          "t_over_tcc": 4.999999999999978,
+          "cells": 524288,
+          "dense_mass": 103.97981319479602,
+          "tracer_mass": 339.6534722059204,
+          "dense_mass_over_initial": 0.26093476439896457,
+          "tracer_mass_over_initial": 0.9267692163030943
+        }
+      ],
+      "exact_duplicate_time_outputs_retained": [],
+      "native_output_precision": "Six native HDF5 float64 fields; unchanged compute and restart precision"
+    }
+  ],
+  "pairs": [
+    {
+      "level": 3,
+      "checks": {
+        "density_tracer_coordinates_volumes_exact": true,
+        "pressure_max_difference": 6.661338147750939e-16,
+        "velocity_max_difference": 1.2888610317485876
+      }
+    },
+    {
+      "level": 4,
+      "checks": {
+        "density_tracer_coordinates_volumes_exact": true,
+        "pressure_max_difference": 6.661338147750939e-16,
+        "velocity_max_difference": 1.2706911480748766
+      }
+    }
+  ],
+  "held_level": 5,
+  "reason": "Insufficient raw-retention space: need 69.80 GiB plus 10.00 GiB safety reserve; effective free 35.07 GiB; Windows C: 35.07 GiB free. Nothing launched or deleted."
+}

@@ -1,0 +1,11 @@
+{
+  "binary": "/home/kaan/sensitivity_20260907/enzoe/enzo-e",
+  "binary_sha256": "afd3a40b69370381daab4b6f45ce87decb7e7a59eb939cab21b60b998021b4eb",
+  "native_binary": "/home/kaan/codes/enzoe/enzo-e/build/bin/enzo-e",
+  "native_binary_sha256": "afd3a40b69370381daab4b6f45ce87decb7e7a59eb939cab21b60b998021b4eb",
+  "historical_input": "/home/kaan/codes/enzoe/runs/ENZOE2D_chi10_512/cloud_wind_chi10.in",
+  "historical_sha256": "17d207d46e862295c6ac40b4ee80e219d2e38e83813638704c1fb5f6f8a1822c",
+  "audited_3d_input": "/mnt/c/Users/kaanb/CloudCrushing/audit_20260907/evidence/enzoe_tests_v2/chi100/cloud.in",
+  "audited_input_sha256": "1703b1f5dfdf1fa354cc42d5d05f84f9dcae8b88785febecc4800622c3487fbb",
+  "scope": "Pinned unchanged native Enzo-E executable; runtime expressions only. Historical 2D radial velocity law extended spherically in the audited 3D setup. No passive tracer."
+}

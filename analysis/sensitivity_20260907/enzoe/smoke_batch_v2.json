@@ -1,0 +1,232 @@
+{
+  "status": "complete_native_checks",
+  "finished": [
+    {
+      "status": "complete_native_checks",
+      "level": 3,
+      "mode": 0,
+      "directory": "/home/kaan/sensitivity_20260907/enzoe/smokes_v2/L3_chi100_sharp13",
+      "parameters": {
+        "dimensions": [
+          64,
+          32,
+          32
+        ],
+        "gamma": 1.6666666666666667,
+        "v_wind": 2.581988897471611,
+        "t_cc": 3.872983346207417,
+        "tmax": 0.001,
+        "output_dt": 0.001,
+        "chi": 100,
+        "r_cloud": 1.0,
+        "rho_wind": 1.0,
+        "p_wind": 1.0,
+        "mach": 2.0,
+        "assumptions": [
+          "Chi, R, ambient density and pressure encoded directly in runtime expressions, not named native parameters; all are independently checked in native initial fields.",
+          "No passive tracer in this native historical recipe."
+        ]
+      },
+      "command": [
+        "/home/kaan/sensitivity_20260907/enzoe/enzo-e",
+        "cloud.in",
+        "+p8"
+      ],
+      "binary_sha256": "afd3a40b69370381daab4b6f45ce87decb7e7a59eb939cab21b60b998021b4eb",
+      "input_sha256": "5b41bd2ab07217bacc919186c7213aff5492ffe8b44da5386c9fed3b405f1cd2",
+      "storage_preflight": {
+        "path": "/home/kaan/sensitivity_20260907/enzoe",
+        "filesystem_free_bytes": 105796288512,
+        "filesystem_total_bytes": 1081101176832,
+        "windows_backing_volume": {
+          "distribution": "Ubuntu",
+          "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+          "drive": "C:",
+          "free_bytes": 37517295616,
+          "total_bytes": 1999283154944
+        },
+        "policy": "Conservative growth budget; allocated but reusable VHDX blocks are not credited.",
+        "effective_free_bytes": 37517295616
+      },
+      "started_unix": 1788818704.312767,
+      "returncode": 0,
+      "wall_seconds": 0.11502671241760254,
+      "peak_solver_rss_gib": 0.00018310546875,
+      "unique_snapshots": 2,
+      "series": [
+        {
+          "files": [
+            "/home/kaan/sensitivity_20260907/enzoe/smokes_v2/L3_chi100_sharp13/ic-000-p00.h5",
+            "/home/kaan/sensitivity_20260907/enzoe/smokes_v2/L3_chi100_sharp13/ic-000-p01.h5",
+            "/home/kaan/sensitivity_20260907/enzoe/smokes_v2/L3_chi100_sharp13/ic-000-p02.h5",
+            "/home/kaan/sensitivity_20260907/enzoe/smokes_v2/L3_chi100_sharp13/ic-000-p03.h5",
+            "/home/kaan/sensitivity_20260907/enzoe/smokes_v2/L3_chi100_sharp13/ic-000-p04.h5",
+            "/home/kaan/sensitivity_20260907/enzoe/smokes_v2/L3_chi100_sharp13/ic-000-p05.h5",
+            "/home/kaan/sensitivity_20260907/enzoe/smokes_v2/L3_chi100_sharp13/ic-000-p06.h5",
+            "/home/kaan/sensitivity_20260907/enzoe/smokes_v2/L3_chi100_sharp13/ic-000-p07.h5"
+          ],
+          "time_code": 0.0,
+          "t_over_tcc": 0.0,
+          "cells": 65536,
+          "dense_mass": 409.90798552319853,
+          "total_mass": 2425.2455354024487,
+          "native_dtypes": [
+            "float64"
+          ],
+          "tracer_mass": null,
+          "minimum_recovered_pressure": 0.9999999999999997,
+          "initial_checks": {
+            "rho": 5.551115123125783e-15,
+            "velocity": 0.0,
+            "transverse_velocity": 0.0,
+            "pressure": 4.440892098500626e-16
+          },
+          "dense_mass_over_initial": 1.0
+        },
+        {
+          "files": [
+            "/home/kaan/sensitivity_20260907/enzoe/smokes_v2/L3_chi100_sharp13/ic-001-p00.h5",
+            "/home/kaan/sensitivity_20260907/enzoe/smokes_v2/L3_chi100_sharp13/ic-001-p01.h5",
+            "/home/kaan/sensitivity_20260907/enzoe/smokes_v2/L3_chi100_sharp13/ic-001-p02.h5",
+            "/home/kaan/sensitivity_20260907/enzoe/smokes_v2/L3_chi100_sharp13/ic-001-p03.h5",
+            "/home/kaan/sensitivity_20260907/enzoe/smokes_v2/L3_chi100_sharp13/ic-001-p04.h5",
+            "/home/kaan/sensitivity_20260907/enzoe/smokes_v2/L3_chi100_sharp13/ic-001-p05.h5",
+            "/home/kaan/sensitivity_20260907/enzoe/smokes_v2/L3_chi100_sharp13/ic-001-p06.h5",
+            "/home/kaan/sensitivity_20260907/enzoe/smokes_v2/L3_chi100_sharp13/ic-001-p07.h5"
+          ],
+          "time_code": 0.001,
+          "t_over_tcc": 0.0002581988897471611,
+          "cells": 65536,
+          "dense_mass": 409.8905180550233,
+          "total_mass": 2425.2455354024487,
+          "native_dtypes": [
+            "float64"
+          ],
+          "tracer_mass": null,
+          "minimum_recovered_pressure": 0.9929709122162326,
+          "dense_mass_over_initial": 0.9999573868556062
+        }
+      ],
+      "tracer_retention_available": false
+    },
+    {
+      "status": "complete_native_checks",
+      "level": 3,
+      "mode": 1,
+      "directory": "/home/kaan/sensitivity_20260907/enzoe/smokes_v2/L3_chi100_tanh13",
+      "parameters": {
+        "dimensions": [
+          64,
+          32,
+          32
+        ],
+        "gamma": 1.6666666666666667,
+        "v_wind": 2.581988897471611,
+        "t_cc": 3.872983346207417,
+        "tmax": 0.001,
+        "output_dt": 0.001,
+        "chi": 100,
+        "r_cloud": 1.0,
+        "rho_wind": 1.0,
+        "p_wind": 1.0,
+        "mach": 2.0,
+        "assumptions": [
+          "Chi, R, ambient density and pressure encoded directly in runtime expressions, not named native parameters; all are independently checked in native initial fields.",
+          "No passive tracer in this native historical recipe."
+        ]
+      },
+      "command": [
+        "/home/kaan/sensitivity_20260907/enzoe/enzo-e",
+        "cloud.in",
+        "+p8"
+      ],
+      "binary_sha256": "afd3a40b69370381daab4b6f45ce87decb7e7a59eb939cab21b60b998021b4eb",
+      "input_sha256": "ec9376753a696d5165b10cebc3e082af4966057e71d511484cfc96574dc5806f",
+      "storage_preflight": {
+        "path": "/home/kaan/sensitivity_20260907/enzoe",
+        "filesystem_free_bytes": 105775308800,
+        "filesystem_total_bytes": 1081101176832,
+        "windows_backing_volume": {
+          "distribution": "Ubuntu",
+          "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+          "drive": "C:",
+          "free_bytes": 37517246464,
+          "total_bytes": 1999283154944
+        },
+        "policy": "Conservative growth budget; allocated but reusable VHDX blocks are not credited.",
+        "effective_free_bytes": 37517246464
+      },
+      "started_unix": 1788818704.748597,
+      "returncode": 0,
+      "wall_seconds": 0.11482357978820801,
+      "peak_solver_rss_gib": 7.2479248046875e-05,
+      "unique_snapshots": 2,
+      "series": [
+        {
+          "files": [
+            "/home/kaan/sensitivity_20260907/enzoe/smokes_v2/L3_chi100_tanh13/ic-000-p00.h5",
+            "/home/kaan/sensitivity_20260907/enzoe/smokes_v2/L3_chi100_tanh13/ic-000-p01.h5",
+            "/home/kaan/sensitivity_20260907/enzoe/smokes_v2/L3_chi100_tanh13/ic-000-p02.h5",
+            "/home/kaan/sensitivity_20260907/enzoe/smokes_v2/L3_chi100_tanh13/ic-000-p03.h5",
+            "/home/kaan/sensitivity_20260907/enzoe/smokes_v2/L3_chi100_tanh13/ic-000-p04.h5",
+            "/home/kaan/sensitivity_20260907/enzoe/smokes_v2/L3_chi100_tanh13/ic-000-p05.h5",
+            "/home/kaan/sensitivity_20260907/enzoe/smokes_v2/L3_chi100_tanh13/ic-000-p06.h5",
+            "/home/kaan/sensitivity_20260907/enzoe/smokes_v2/L3_chi100_tanh13/ic-000-p07.h5"
+          ],
+          "time_code": 0.0,
+          "t_over_tcc": 0.0,
+          "cells": 65536,
+          "dense_mass": 409.90798552319853,
+          "total_mass": 2425.2455354024487,
+          "native_dtypes": [
+            "float64"
+          ],
+          "tracer_mass": null,
+          "minimum_recovered_pressure": 0.9999999999999997,
+          "initial_checks": {
+            "rho": 5.551115123125783e-15,
+            "velocity": 1.7199501139797033e-16,
+            "transverse_velocity": 0.0,
+            "pressure": 4.440892098500626e-16
+          },
+          "dense_mass_over_initial": 1.0
+        },
+        {
+          "files": [
+            "/home/kaan/sensitivity_20260907/enzoe/smokes_v2/L3_chi100_tanh13/ic-001-p00.h5",
+            "/home/kaan/sensitivity_20260907/enzoe/smokes_v2/L3_chi100_tanh13/ic-001-p01.h5",
+            "/home/kaan/sensitivity_20260907/enzoe/smokes_v2/L3_chi100_tanh13/ic-001-p02.h5",
+            "/home/kaan/sensitivity_20260907/enzoe/smokes_v2/L3_chi100_tanh13/ic-001-p03.h5",
+            "/home/kaan/sensitivity_20260907/enzoe/smokes_v2/L3_chi100_tanh13/ic-001-p04.h5",
+            "/home/kaan/sensitivity_20260907/enzoe/smokes_v2/L3_chi100_tanh13/ic-001-p05.h5",
+            "/home/kaan/sensitivity_20260907/enzoe/smokes_v2/L3_chi100_tanh13/ic-001-p06.h5",
+            "/home/kaan/sensitivity_20260907/enzoe/smokes_v2/L3_chi100_tanh13/ic-001-p07.h5"
+          ],
+          "time_code": 0.001,
+          "t_over_tcc": 0.0002581988897471611,
+          "cells": 65536,
+          "dense_mass": 409.88803608942493,
+          "total_mass": 2425.2455354024487,
+          "native_dtypes": [
+            "float64"
+          ],
+          "tracer_mass": null,
+          "minimum_recovered_pressure": 0.9891732117490484,
+          "dense_mass_over_initial": 0.9999513319220943
+        }
+      ],
+      "tracer_retention_available": false
+    }
+  ],
+  "pairs": [
+    {
+      "level": 3,
+      "checks": {
+        "initial_density_internal_energy_transverse_velocities_exact": true,
+        "full_grid_coverage": true,
+        "tracer": "Absent in both native inputs; retention cannot be certified."
+      }
+    }
+  ],
+  "pid": 29
+}

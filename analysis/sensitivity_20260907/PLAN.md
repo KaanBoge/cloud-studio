@@ -40,7 +40,7 @@ deleted or thinned, and the live viewer is not relabeled with these experiments.
 
 The remaining code families/variants need historical-source and native-IC checks
 before their paired launchers are enabled: FLASH 4.8, Flash-X,
-Enzo-E, RAMSES, Arepo, GIZMO MFM, GIZMO MFV, Gadget-4, Gasoline. Particle sampling
+RAMSES, Arepo, GIZMO MFM, GIZMO MFV, Gadget-4, Gasoline. Particle sampling
 and random seeds must be identical within a pair. This is pending work, not an
 already runnable all-code queue.
 
@@ -49,6 +49,14 @@ Enzo's isolated native build and paired initial-condition tests pass, and its
 v2 launcher advances L3/L4 then checks whether the entire L5 pair fits storage.
 Enzo's first attempt stopped on a mistakenly set wall-clock restart trigger;
 that attempt is retained separately and is not counted as a full control.
+
+Enzo L3/L4 is now complete with all 102 actual native times per case, and all
+408 outputs were independently cross-checked with direct HDF5 sums. L5 is held
+by the whole-pair raw-retention budget. Enzo-E's paired 3D IC checks now pass;
+its historical radial law is sourced from the existing 2D input and extended
+spherically in the audited 3D setup. Density, method, grid layout and boundaries
+remain identical within this pair. The existing Enzo-E recipe has no tracer:
+report that limitation instead of claiming that material retention was measured.
 
 ## Validation and analysis
 

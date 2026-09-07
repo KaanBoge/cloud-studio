@@ -3,8 +3,9 @@
 The [velocity-prescription sensitivity study](sensitivity_20260907/README.md)
 now tests historical versus corrected initial velocities within each native code
 at fixed chi=100 and Mach=2, following Ryan's request to measure impact before
-deciding which old runs need replacing. Fourteen full controls are validated so
-far, including Athena 4.2 L3/L4/L5. This is distinct from the historical viewer.
+deciding which old runs need replacing. Eighteen full controls are validated so
+far, including Athena 4.2 L3/L4/L5 and Enzo L3/L4. Enzo-E is the next paired
+native-code queue. These experiments are distinct from the historical viewer.
 
 Updated 7 September 2026. **Historical runs are not yet a validated matched-code
 comparison.** The corrected scripts are in `verified_20260907/`. Previous

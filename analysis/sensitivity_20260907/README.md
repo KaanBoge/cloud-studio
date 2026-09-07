@@ -2,8 +2,8 @@
 
 ## Update: 8 September 2026
 
-Fourteen full controls are now validated: the eight pilot runs below, plus six
-native Athena 4.2 runs at L3/L4/L5. Each Athena 4.2 run has 101 distinct native
+Eighteen full controls are now validated: the eight pilot runs below, six
+native Athena 4.2 runs at L3/L4/L5, and four Enzo runs at L3/L4. Each Athena 4.2 run has 101 distinct native
 snapshots through 5 t_cc. Its initial density, tracer, coordinates and volumes
 match exactly within each pair at native VTK precision. Only velocity changes.
 
@@ -13,13 +13,25 @@ toward zero effect. At t=5, L5 retains about 97.4-97.5% of initial tracer mass;
 these are not all-material-retained terminal images. See
 [the Athena 4.2 results](athw/README.md) and [mass/retention plot](athw/mass_and_retention.png).
 
-Enzo has a new isolated paired launcher with native IC checks. The first full
+Enzo's four completed controls each have 102 actual native times, including an
+extra terminal dump. Independent HDF5 sums agree with yt within 9.4e-16 scaled
+mass difference for all 408 snapshots. Peak curve differences are 23.36% at L3
+and 3.24% at L4; final tracer retention is about 85.9% and 92.7-93.2% respectively.
+The L5 pair is storage-held: 69.8 GiB plus a 10 GiB safety reserve is needed,
+against about 35.1 GiB free on the backing drive. See [Enzo results](enzo/README.md).
+
+Enzo-E is now the next native paired queue, after initial-field checks with
+eight Charm++ worker threads. Its existing recipe has no passive tracer, so
+tracer retention is unavailable and no all-material-retained claim is made.
+See [Enzo-E scope](enzoe/README.md).
+
+The first Enzo full
 attempt exposed an output-setting error: dtRestartDump is a wall-clock exit
 trigger, not a physical-time snapshot interval. Its 21 saved outputs remain
 intact. The v2 queue restores the native disabled setting and starts fresh
 under different directory names. See [Enzo status and safeguards](enzo/README.md).
 
-Analysis scripts, figures and diagnostic records are being packaged for GitHub;
+Analysis scripts, figures and diagnostic records are published on GitHub;
 these experiments are not relabeled as production runs in the 3D viewer.
 
 ## Original two-code pilot
@@ -30,7 +42,7 @@ Eight genuine 3D runs are complete: Athena++ and AthenaPK, levels 3 and 4,
 historical and corrected velocity prescriptions, fixed chi = 100 and Mach = 2.
 Every run produced 101 distinct native output times from t=0 through 5 t_cc.
 All native fields, restart files, logs, inputs and source/build evidence are retained.
-The complete WSL study occupies about 11 GiB. No historical data was deleted.
+The original two-code WSL pilot occupies about 11 GiB. No historical data was deleted.
 
 ## Findings
 
@@ -93,10 +105,9 @@ Windows scripts/results: `C:/Users/kaanb/CloudCrushing/sensitivity_20260907`.
 
 ## Still pending
 
-The Athena++/AthenaPK level-5 continuation remains storage-held. Athena 4.2 has
-now been added as a separate native queue; see `athw/README.md`. Its L3/L4 pairs
-are complete and its smaller native VTK output budget permits the L5 pair.
-Enzo is now the next paired native-code queue. The other nine solver variants
+The Athena++/AthenaPK and Enzo level-5 continuations remain storage-held.
+Athena 4.2 L3/L4/L5 is complete. Enzo-E is the next paired native-code queue.
+The other eight solver variants
 (including separate GIZMO MFM/MFV) still need paired launchers and native
 historical-law checks. A 15-minute task follow-up is enabled to inspect progress and
 advance safe pending work. The old blanket replacement queue remains inactive.

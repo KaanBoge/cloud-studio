@@ -1,5 +1,33 @@
 # Enzo velocity-prescription sensitivity continuation
 
+## Completed results, 8 September 2026
+
+Both L3 and L4 pairs are complete with **102 actual native snapshots each**.
+All 408 snapshots pass native field/time checks; separate direct HDF5 dense
+and tracer mass sums agree with yt to less than 9.4e-16 scaled difference.
+Initial density, tracer, coordinates and volumes are exactly equal within
+each pair; pressure differs by at most 6.7e-16. Two analysis tests passed.
+Results: [report](report.json), [mass and retention plot](mass_and_retention.png).
+
+| Level | Sharp / historical wall time | Peak solver-child RSS | Peak mass-curve difference / initial dense mass |
+| --- | --- | ---: | ---: |
+| 3 | 17.9s / 17.8s | 0.39 GiB | 23.36% |
+| 4 | 185.7s / 181.9s | 0.55 GiB | 3.24% |
+
+Eight CPU MPI ranks were used. L3 final tracer fractions are 0.85855/0.85916;
+L4 fractions are 0.93231/0.92677 (sharp/historical). This loss rules out calling
+t=5 an all-material-retained comparison. Density-selected mass is normalized
+by its fixed initial value; native time series are plotted unchanged. Only the
+scalar curve-separation metric uses interpolation to 0:0.05:5 t_cc.
+
+The worker has ended with L5 storage-held, not failed. The entire L5 pair needs
+69.8 GiB plus 10 GiB safety reserve; only about 35.1 GiB was available. No native
+fields were reduced or deleted. These coarse tests do not establish convergence
+or a universal decision to reuse historical runs. The active continuation is
+now Enzo-E; these Enzo worker records are completed records.
+
+## Native-code provenance
+
 This is a native Enzo experiment, not FLASH output under another label.
 The isolated executable `enzo_pair` is SHA256
 `28d482af94828aba1de2b097068b66c9ec80b88b53bd6405e0ff96fbecf57900`.
