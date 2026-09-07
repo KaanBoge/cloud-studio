@@ -1,0 +1,78 @@
+######################################
+###### Cloud in wind problem generator
+#### Input parameters
+## Cloud radius: 3.2e-22 kpc
+## Cloud density: 10 g/cm^3
+## Wind density: 1 g/cm^3
+## Wind temperature: 6.1e-09 K
+## Wind velocity: 2.6e-05 km/s
+#### Derived parameters
+## Cloud temperature (from pressure equ.): 6.1e-10 K
+## Cloud to wind density ratio: 10
+## Cloud to wind temperature ratio: 0.1
+## Uniform pressure (code units): 1
+## Wind sonic Mach: 2
+## Cloud crushing time: 3.9e-14 Myr
+######################################
+Starting up hydro driver
+### PARTHENON WARNING
+  Message:     The following input parameters are set but unused:
+comment/problem
+cooling/cfl
+cooling/d_e_tol
+cooling/d_log_temp_tol
+cooling/integrator
+cooling/lambda_units_cgs
+cooling/max_iter
+cooling/table_filename
+
+
+  File:        /home/kaan/codes/athenapk/external/parthenon/src/parameter_input.cpp
+  Line number: 687
+# Variables in use:
+# Package: parthenon::resolved_state
+# ---------------------------------------------------
+# Variables:
+# Name	Metadata flags
+# ---------------------------------------------------
+prim                      Cell,Provides,Real,Derived,Hydro,parthenon::resolved_state
+cons                      Cell,Provides,Real,Independent,FillGhost,WithFluxes,Hydro,parthenon::resolved_state
+bnd_flux::cons            Face,Provides,Real,Derived,OneCopy,Flux,CellMemAligned,parthenon::resolved_state
+# ---------------------------------------------------
+# Sparse Variables:
+# Name	sparse id	Metadata flags
+# ---------------------------------------------------
+# ---------------------------------------------------
+# Swarms:
+# Swarm	Value	metadata
+# ---------------------------------------------------
+
+
+Setup complete, executing driver...
+
+cycle=0 time=0.0000000000000000e+00 dt=4.0343576527906546e-03 zone-cycles/wsec_step=0.00e+00 wsec_total=1.14e+01 wsec_step=2.84e+02
+cycle=100 time=3.8056086904753633e-01 dt=3.6854200495531897e-03 zone-cycles/wsec_step=2.81e+06 wsec_total=1.20e+03 wsec_step=1.19e+03
+cycle=200 time=7.4720834953297588e-01 dt=3.6897641190446031e-03 zone-cycles/wsec_step=2.83e+06 wsec_total=2.39e+03 wsec_step=1.19e+03
+cycle=300 time=1.1204138486996449e+00 dt=3.7623833000066907e-03 zone-cycles/wsec_step=2.85e+06 wsec_total=3.57e+03 wsec_step=1.18e+03
+cycle=400 time=1.4970419119742775e+00 dt=3.7804838560281961e-03 zone-cycles/wsec_step=2.82e+06 wsec_total=4.76e+03 wsec_step=1.19e+03
+cycle=500 time=1.8765971888447892e+00 dt=3.8117103075539002e-03 zone-cycles/wsec_step=2.73e+06 wsec_total=5.98e+03 wsec_step=1.23e+03
+cycle=600 time=2.2572308145196427e+00 dt=3.7761600427271046e-03 zone-cycles/wsec_step=2.80e+06 wsec_total=7.18e+03 wsec_step=1.20e+03
+cycle=700 time=2.6352878801035349e+00 dt=3.7694031759729534e-03 zone-cycles/wsec_step=2.79e+06 wsec_total=8.38e+03 wsec_step=1.20e+03
+cycle=800 time=3.0119672163766342e+00 dt=3.7689768361167716e-03 zone-cycles/wsec_step=2.75e+06 wsec_total=9.60e+03 wsec_step=1.22e+03
+cycle=900 time=3.3902946387036224e+00 dt=3.8071265017058094e-03 zone-cycles/wsec_step=2.67e+06 wsec_total=1.09e+04 wsec_step=1.26e+03
+cycle=1000 time=3.7727168830213498e+00 dt=3.8277849250340067e-03 zone-cycles/wsec_step=2.78e+06 wsec_total=1.21e+04 wsec_step=1.21e+03
+cycle=1100 time=4.1540111745836343e+00 dt=3.8217487440663153e-03 zone-cycles/wsec_step=2.76e+06 wsec_total=1.33e+04 wsec_step=1.22e+03
+cycle=1200 time=4.5351786806882686e+00 dt=3.7936573611266006e-03 zone-cycles/wsec_step=2.77e+06 wsec_total=1.45e+04 wsec_step=1.21e+03
+cycle=1300 time=4.9130839023340442e+00 dt=3.7656003990150129e-03 zone-cycles/wsec_step=2.65e+06 wsec_total=1.58e+04 wsec_step=1.26e+03
+cycle=1400 time=5.2884751015217715e+00 dt=3.7455395839554270e-03 zone-cycles/wsec_step=2.77e+06 wsec_total=1.70e+04 wsec_step=1.21e+03
+cycle=1500 time=5.6622579765281715e+00 dt=3.7260204763864789e-03 zone-cycles/wsec_step=2.77e+06 wsec_total=1.82e+04 wsec_step=1.21e+03
+### PARTHENON WARNING
+  Message:     
+A given task collection took longer than the current max number of
+	300 seconds to complete and terminated.
+	If this long duration is intended, change the timeout by updating
+	the parameter parthenon/mesh/task_collection_timeout_in_seconds
+	to a larger value. You may also wish to run on more resources.
+  File:        /home/kaan/codes/athenapk/external/parthenon/src/tasks/thread_pool.hpp
+  Line number: 44
+Step failed to complete all tasks.

@@ -1,0 +1,247 @@
+make: Entering directory '/home/kaan/codes/athenapp'
+mkdir -p obj_tracking20260907/
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/globals.cpp -o obj_tracking20260907/globals.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/main.cpp -o obj_tracking20260907/main.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/parameter_input.cpp -o obj_tracking20260907/parameter_input.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/bvals/bvals.cpp -o obj_tracking20260907/bvals.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/bvals/bvals_base.cpp -o obj_tracking20260907/bvals_base.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/bvals/bvals_refine.cpp -o obj_tracking20260907/bvals_refine.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/bvals/bvals_refine_postmg.cpp -o obj_tracking20260907/bvals_refine_postmg.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/bvals/bvals_var.cpp -o obj_tracking20260907/bvals_var.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/bvals/cc/bvals_cc.cpp -o obj_tracking20260907/bvals_cc.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/bvals/cc/bvals_shear_cc.cpp -o obj_tracking20260907/bvals_shear_cc.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/bvals/cc/bvals_shear_flux.cpp -o obj_tracking20260907/bvals_shear_flux.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/bvals/cc/flux_correction_cc.cpp -o obj_tracking20260907/flux_correction_cc.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/bvals/cc/outflow_cc.cpp -o obj_tracking20260907/outflow_cc.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/bvals/cc/polarwedge_cc.cpp -o obj_tracking20260907/polarwedge_cc.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/bvals/cc/reflect_cc.cpp -o obj_tracking20260907/reflect_cc.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/bvals/cc/hydro/bvals_hydro.cpp -o obj_tracking20260907/bvals_hydro.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/bvals/cc/hydro/bvals_shear_hydro.cpp -o obj_tracking20260907/bvals_shear_hydro.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/bvals/cc/hydro/flux_correction_hydro.cpp -o obj_tracking20260907/flux_correction_hydro.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/bvals/cc/hydro/reflect_hydro.cpp -o obj_tracking20260907/reflect_hydro.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/bvals/cc/mg/bvals_mg.cpp -o obj_tracking20260907/bvals_mg.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/bvals/cc/mg/bvals_mg_gravity.cpp -o obj_tracking20260907/bvals_mg_gravity.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/bvals/cc/nr_radiation/bvals_rad.cpp -o obj_tracking20260907/bvals_rad.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/bvals/cc/nr_radiation/bvals_shear_rad.cpp -o obj_tracking20260907/bvals_shear_rad.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/bvals/cc/nr_radiation/bvals_shear_rad_flux.cpp -o obj_tracking20260907/bvals_shear_rad_flux.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/bvals/cc/nr_radiation/flux_correction_radiation.cpp -o obj_tracking20260907/flux_correction_radiation.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/bvals/cc/nr_radiation/outflow_rad.cpp -o obj_tracking20260907/outflow_rad.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/bvals/cc/nr_radiation/polarwedge_rad.cpp -o obj_tracking20260907/polarwedge_rad.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/bvals/cc/nr_radiation/reflect_rad.cpp -o obj_tracking20260907/reflect_rad.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/bvals/cc/nr_radiation/rotate_rad.cpp -o obj_tracking20260907/rotate_rad.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/bvals/cc/nr_radiation/vacuum_rad.cpp -o obj_tracking20260907/vacuum_rad.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/bvals/fc/bvals_fc.cpp -o obj_tracking20260907/bvals_fc.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/bvals/fc/bvals_shear_emf.cpp -o obj_tracking20260907/bvals_shear_emf.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/bvals/fc/bvals_shear_fc.cpp -o obj_tracking20260907/bvals_shear_fc.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/bvals/fc/flux_correction_fc.cpp -o obj_tracking20260907/flux_correction_fc.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/bvals/fc/outflow_fc.cpp -o obj_tracking20260907/outflow_fc.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/bvals/fc/polarwedge_fc.cpp -o obj_tracking20260907/polarwedge_fc.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/bvals/fc/reflect_fc.cpp -o obj_tracking20260907/reflect_fc.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/bvals/orbital/bvals_orbital.cpp -o obj_tracking20260907/bvals_orbital.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/bvals/sixray/bvals_sixray.cpp -o obj_tracking20260907/bvals_sixray.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/bvals/utils/boundary_flag.cpp -o obj_tracking20260907/boundary_flag.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/bvals/utils/check_polar.cpp -o obj_tracking20260907/check_polar.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/coordinates/coordinates.cpp -o obj_tracking20260907/coordinates.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/coordinates/cartesian.cpp -o obj_tracking20260907/cartesian.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/eos/general/noop.cpp -o obj_tracking20260907/noop.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/eos/adiabatic_hydro.cpp -o obj_tracking20260907/adiabatic_hydro.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/eos/eos_high_order.cpp -o obj_tracking20260907/eos_high_order.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/eos/eos_scalars.cpp -o obj_tracking20260907/eos_scalars.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/chemistry/network_wrapper.cpp -o obj_tracking20260907/network_wrapper.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/chemistry/utils/chemistry_utils.cpp -o obj_tracking20260907/chemistry_utils.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/chemistry/utils/kida_reaction.cpp -o obj_tracking20260907/kida_reaction.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/chemistry/utils/kida_species.cpp -o obj_tracking20260907/kida_species.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/chemistry/utils/shielding.cpp -o obj_tracking20260907/shielding.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/chemistry/utils/thermo.cpp -o obj_tracking20260907/thermo.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/chemistry/network/none.cpp -o obj_tracking20260907/none.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/chemistry/forward_euler.cpp -o obj_tracking20260907/forward_euler.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/chem_rad/chem_rad.cpp -o obj_tracking20260907/chem_rad.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/chem_rad/integrators/const.cpp -o obj_tracking20260907/const.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/fft/athena_fft.cpp -o obj_tracking20260907/athena_fft.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/fft/fft_driver.cpp -o obj_tracking20260907/fft_driver.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/fft/turbulence.cpp -o obj_tracking20260907/turbulence.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/field/calculate_corner_e.cpp -o obj_tracking20260907/calculate_corner_e.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/field/ct.cpp -o obj_tracking20260907/ct.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/field/field.cpp -o obj_tracking20260907/field.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/field/field_diffusion/diffusivity.cpp -o obj_tracking20260907/diffusivity.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/field/field_diffusion/field_diffusion.cpp -o obj_tracking20260907/field_diffusion.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/gravity/fft_gravity.cpp -o obj_tracking20260907/fft_gravity.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/gravity/gravity.cpp -o obj_tracking20260907/gravity.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/gravity/mg_gravity.cpp -o obj_tracking20260907/mg_gravity.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/hydro/add_flux_divergence.cpp -o obj_tracking20260907/add_flux_divergence.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/hydro/calculate_fluxes.cpp -o obj_tracking20260907/calculate_fluxes.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/hydro/calculate_velocity_differences.cpp -o obj_tracking20260907/calculate_velocity_differences.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/hydro/hydro.cpp -o obj_tracking20260907/hydro.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/hydro/new_blockdt.cpp -o obj_tracking20260907/new_blockdt.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/hydro/srcterms/constant_acc.cpp -o obj_tracking20260907/constant_acc.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/hydro/srcterms/hydro_srcterms.cpp -o obj_tracking20260907/hydro_srcterms.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/hydro/srcterms/orbital_advection_srcterms.cpp -o obj_tracking20260907/orbital_advection_srcterms.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/hydro/srcterms/pointmass.cpp -o obj_tracking20260907/pointmass.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/hydro/srcterms/rotating_system_srcterms.cpp -o obj_tracking20260907/rotating_system_srcterms.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/hydro/srcterms/self_gravity.cpp -o obj_tracking20260907/self_gravity.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/hydro/srcterms/shearing_box.cpp -o obj_tracking20260907/shearing_box.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/hydro/hydro_diffusion/conduction.cpp -o obj_tracking20260907/conduction.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/hydro/hydro_diffusion/hydro_diffusion.cpp -o obj_tracking20260907/hydro_diffusion.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/hydro/hydro_diffusion/viscosity.cpp -o obj_tracking20260907/viscosity.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/nr_radiation/angulargrid.cpp -o obj_tracking20260907/angulargrid.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/nr_radiation/frequencygrid.cpp -o obj_tracking20260907/frequencygrid.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/nr_radiation/get_moments.cpp -o obj_tracking20260907/get_moments.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/nr_radiation/radiation.cpp -o obj_tracking20260907/radiation.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/nr_radiation/integrators/frame_transform.cpp -o obj_tracking20260907/frame_transform.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/nr_radiation/integrators/multi_group.cpp -o obj_tracking20260907/multi_group.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/nr_radiation/integrators/rad_integrators.cpp -o obj_tracking20260907/rad_integrators.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/nr_radiation/integrators/rad_source.cpp -o obj_tracking20260907/rad_source.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/nr_radiation/integrators/rad_transport.cpp -o obj_tracking20260907/rad_transport.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/nr_radiation/integrators/srcterms/absorption_scattering.cpp -o obj_tracking20260907/absorption_scattering.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/nr_radiation/integrators/srcterms/compton.cpp -o obj_tracking20260907/compton.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/nr_radiation/integrators/srcterms/multigroup_abs_sca.cpp -o obj_tracking20260907/multigroup_abs_sca.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/nr_radiation/implicit/implicit_angular_flux.cpp -o obj_tracking20260907/implicit_angular_flux.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/nr_radiation/implicit/implicit_first_order.cpp -o obj_tracking20260907/implicit_first_order.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/nr_radiation/implicit/rad_iteration.cpp -o obj_tracking20260907/rad_iteration.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/nr_radiation/implicit/radiation_implicit.cpp -o obj_tracking20260907/radiation_implicit.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/cr/cr.cpp -o obj_tracking20260907/cr.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/cr/integrators/cr_flux.cpp -o obj_tracking20260907/cr_flux.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/cr/integrators/cr_integrators.cpp -o obj_tracking20260907/cr_integrators.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/cr/integrators/cr_source.cpp -o obj_tracking20260907/cr_source.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/cr/integrators/cr_transport.cpp -o obj_tracking20260907/cr_transport.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/crdiffusion/crdiffusion.cpp -o obj_tracking20260907/crdiffusion.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/crdiffusion/mg_crdiffusion.cpp -o obj_tracking20260907/mg_crdiffusion.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/hydro/rsolvers/hydro/hllc.cpp -o obj_tracking20260907/hllc.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/inputs/ascii_table_reader.cpp -o obj_tracking20260907/ascii_table_reader.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/inputs/hdf5_reader.cpp -o obj_tracking20260907/hdf5_reader.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/mesh/amr_loadbalance.cpp -o obj_tracking20260907/amr_loadbalance.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/mesh/mesh.cpp -o obj_tracking20260907/mesh.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/mesh/mesh_refinement.cpp -o obj_tracking20260907/mesh_refinement.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/mesh/meshblock.cpp -o obj_tracking20260907/meshblock.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/mesh/meshblock_tree.cpp -o obj_tracking20260907/meshblock_tree.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/mesh/weighted_ave.cpp -o obj_tracking20260907/weighted_ave.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/multigrid/mgbval_multipole.cpp -o obj_tracking20260907/mgbval_multipole.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/multigrid/mgbval_periodic.cpp -o obj_tracking20260907/mgbval_periodic.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/multigrid/mgbval_zerofixed.cpp -o obj_tracking20260907/mgbval_zerofixed.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/multigrid/mgbval_zerograd.cpp -o obj_tracking20260907/mgbval_zerograd.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/multigrid/multigrid.cpp -o obj_tracking20260907/multigrid.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/multigrid/multigrid_driver.cpp -o obj_tracking20260907/multigrid_driver.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/orbital_advection/calculate_orbital_advection.cpp -o obj_tracking20260907/calculate_orbital_advection.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/orbital_advection/default_orbital_velocity.cpp -o obj_tracking20260907/default_orbital_velocity.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/orbital_advection/orbital_advection.cpp -o obj_tracking20260907/orbital_advection.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/orbital_advection/orbital_remapping.cpp -o obj_tracking20260907/orbital_remapping.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/orbital_advection/orbital_system_conversion.cpp -o obj_tracking20260907/orbital_system_conversion.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/orbital_advection/set_orbital_advection.cpp -o obj_tracking20260907/set_orbital_advection.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/outputs/athena_hdf5.cpp -o obj_tracking20260907/athena_hdf5.o
+src/outputs/athena_hdf5.cpp: In instantiation of ‘void ATHDF5Output<T>::WriteOutputFile(Mesh*, ParameterInput*, bool) [with h5out_t = _Float16]’:
+src/outputs/athena_hdf5.cpp:973:16:   required from here
+  973 | template class ATHDF5Output<fp16_t>;
+      |                ^~~~~~~~~~~~~~~~~~~~
+src/outputs/athena_hdf5.cpp:362:33: warning: ISO C++ does not allow converting to ‘ATHDF5Output<_Float16>::mesh_t’ {aka ‘_Float16’} from ‘double’ with greater conversion rank [-Wnarrowing]
+  362 |           x1f_mesh[nba*(nx1+1)] = pmb->pcoord->x1f(pmb->is);
+      |           ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/outputs/athena_hdf5.cpp:363:35: warning: ISO C++ does not allow converting to ‘ATHDF5Output<_Float16>::mesh_t’ {aka ‘_Float16’} from ‘double’ with greater conversion rank [-Wnarrowing]
+  363 |           x1f_mesh[nba*(nx1+1)+1] = pmb->pcoord->x1f(pmb->ie+1);
+      |           ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/outputs/athena_hdf5.cpp:365:31: warning: ISO C++ does not allow converting to ‘ATHDF5Output<_Float16>::mesh_t’ {aka ‘_Float16’} from ‘double’ with greater conversion rank [-Wnarrowing]
+  365 |             x1v_mesh[nba*nx1] = pmb->pcoord->x1f((pmb->is + pmb->ie + 1) / 2);
+      |             ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/outputs/athena_hdf5.cpp:367:31: warning: ISO C++ does not allow converting to ‘ATHDF5Output<_Float16>::mesh_t’ {aka ‘_Float16’} from ‘double’ with greater conversion rank [-Wnarrowing]
+  367 |             x1v_mesh[nba*nx1] = pmb->pcoord->x1v((pmb->is + pmb->ie) / 2);
+      |             ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/outputs/athena_hdf5.cpp:383:33: warning: ISO C++ does not allow converting to ‘ATHDF5Output<_Float16>::mesh_t’ {aka ‘_Float16’} from ‘double’ with greater conversion rank [-Wnarrowing]
+  383 |           x2f_mesh[nba*(nx2+1)] = pmb->pcoord->x2f(pmb->js);
+      |           ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/outputs/athena_hdf5.cpp:384:35: warning: ISO C++ does not allow converting to ‘ATHDF5Output<_Float16>::mesh_t’ {aka ‘_Float16’} from ‘double’ with greater conversion rank [-Wnarrowing]
+  384 |           x2f_mesh[nba*(nx2+1)+1] = pmb->pcoord->x2f(pmb->je+1);
+      |           ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/outputs/athena_hdf5.cpp:386:31: warning: ISO C++ does not allow converting to ‘ATHDF5Output<_Float16>::mesh_t’ {aka ‘_Float16’} from ‘double’ with greater conversion rank [-Wnarrowing]
+  386 |             x2v_mesh[nba*nx2] = pmb->pcoord->x2f((pmb->js + pmb->je + 1) / 2);
+      |             ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/outputs/athena_hdf5.cpp:388:31: warning: ISO C++ does not allow converting to ‘ATHDF5Output<_Float16>::mesh_t’ {aka ‘_Float16’} from ‘double’ with greater conversion rank [-Wnarrowing]
+  388 |             x2v_mesh[nba*nx2] = pmb->pcoord->x2v((pmb->js + pmb->je) / 2);
+      |             ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/outputs/athena_hdf5.cpp:404:33: warning: ISO C++ does not allow converting to ‘ATHDF5Output<_Float16>::mesh_t’ {aka ‘_Float16’} from ‘double’ with greater conversion rank [-Wnarrowing]
+  404 |           x3f_mesh[nba*(nx3+1)] = pmb->pcoord->x3f(pmb->ks);
+      |           ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/outputs/athena_hdf5.cpp:405:35: warning: ISO C++ does not allow converting to ‘ATHDF5Output<_Float16>::mesh_t’ {aka ‘_Float16’} from ‘double’ with greater conversion rank [-Wnarrowing]
+  405 |           x3f_mesh[nba*(nx3+1)+1] = pmb->pcoord->x3f(pmb->ke+1);
+      |           ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/outputs/athena_hdf5.cpp:407:31: warning: ISO C++ does not allow converting to ‘ATHDF5Output<_Float16>::mesh_t’ {aka ‘_Float16’} from ‘double’ with greater conversion rank [-Wnarrowing]
+  407 |             x3v_mesh[nba*nx3] = pmb->pcoord->x3f((pmb->ks + pmb->ke + 1) / 2);
+      |             ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/outputs/athena_hdf5.cpp:409:31: warning: ISO C++ does not allow converting to ‘ATHDF5Output<_Float16>::mesh_t’ {aka ‘_Float16’} from ‘double’ with greater conversion rank [-Wnarrowing]
+  409 |             x3v_mesh[nba*nx3] = pmb->pcoord->x3v((pmb->ks + pmb->ke) / 2);
+      |             ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/outputs/formatted_table.cpp -o obj_tracking20260907/formatted_table.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/outputs/history.cpp -o obj_tracking20260907/history.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/outputs/io_wrapper.cpp -o obj_tracking20260907/io_wrapper.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/outputs/outputs.cpp -o obj_tracking20260907/outputs.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/outputs/restart.cpp -o obj_tracking20260907/restart.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/outputs/vtk.cpp -o obj_tracking20260907/vtk.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/pgen/default_pgen.cpp -o obj_tracking20260907/default_pgen.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/pgen/cloud_wind_tracking.cpp -o obj_tracking20260907/cloud_wind_tracking.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/reconstruct/characteristic.cpp -o obj_tracking20260907/characteristic.o
+In file included from src/pgen/../athena.hpp:19,
+                 from src/pgen/cloud_wind_tracking.cpp:40:
+src/pgen/cloud_wind_tracking.cpp: In member function ‘void Mesh::UserWorkInLoop()’:
+src/pgen/../defs.hpp:156:52: error: request for member ‘str’ in ‘"Nonfinite frame velocity"’, which is of non-class type ‘const char [25]’
+  156 | #define ATHENA_ERROR(x) throw std::runtime_error(x.str().c_str())
+      |                                                    ^~~
+src/pgen/cloud_wind_tracking.cpp:226:27: note: in expansion of macro ‘ATHENA_ERROR’
+  226 |   if (!std::isfinite(dv)) ATHENA_ERROR("Nonfinite frame velocity");
+      |                           ^~~~~~~~~~~~
+src/pgen/../defs.hpp:156:52: error: request for member ‘str’ in ‘"Tracking would reverse wind inflow; buffer scheme required"’, which is of non-class type ‘const char [59]’
+  156 | #define ATHENA_ERROR(x) throw std::runtime_error(x.str().c_str())
+      |                                                    ^~~
+src/pgen/cloud_wind_tracking.cpp:230:23: note: in expansion of macro ‘ATHENA_ERROR’
+  230 |   if (boost+dv >= ul) ATHENA_ERROR("Tracking would reverse wind inflow; buffer scheme required");
+      |                       ^~~~~~~~~~~~
+make: *** [Makefile:121: obj_tracking20260907/cloud_wind_tracking.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: Leaving directory '/home/kaan/codes/athenapp'
+make: Entering directory '/home/kaan/codes/athenapp'
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/pgen/cloud_wind_tracking.cpp -o obj_tracking20260907/cloud_wind_tracking.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/reconstruct/dc.cpp -o obj_tracking20260907/dc.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/reconstruct/dc_simple.cpp -o obj_tracking20260907/dc_simple.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/reconstruct/plm.cpp -o obj_tracking20260907/plm.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/reconstruct/plm_simple.cpp -o obj_tracking20260907/plm_simple.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/reconstruct/ppm.cpp -o obj_tracking20260907/ppm.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/reconstruct/ppm_fast.cpp -o obj_tracking20260907/ppm_fast.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/reconstruct/ppm_simple.cpp -o obj_tracking20260907/ppm_simple.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/reconstruct/ppm_simple_fast.cpp -o obj_tracking20260907/ppm_simple_fast.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/reconstruct/reconstruction.cpp -o obj_tracking20260907/reconstruction.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/reconstruct/weno.cpp -o obj_tracking20260907/weno.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/scalars/add_scalar_flux_divergence.cpp -o obj_tracking20260907/add_scalar_flux_divergence.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/scalars/calculate_scalar_fluxes.cpp -o obj_tracking20260907/calculate_scalar_fluxes.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/scalars/scalar_diffusion.cpp -o obj_tracking20260907/scalar_diffusion.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/scalars/scalars.cpp -o obj_tracking20260907/scalars.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/task_list/chem_rad_task_list.cpp -o obj_tracking20260907/chem_rad_task_list.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/task_list/crdiffusion_task_list.cpp -o obj_tracking20260907/crdiffusion_task_list.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/task_list/grav_task_list.cpp -o obj_tracking20260907/grav_task_list.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/task_list/im_rad_compt_task_list.cpp -o obj_tracking20260907/im_rad_compt_task_list.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/task_list/im_rad_task_list.cpp -o obj_tracking20260907/im_rad_task_list.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/task_list/im_radhydro_task_list.cpp -o obj_tracking20260907/im_radhydro_task_list.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/task_list/im_radit_task_list.cpp -o obj_tracking20260907/im_radit_task_list.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/task_list/mg_task_list.cpp -o obj_tracking20260907/mg_task_list.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/task_list/sts_task_list.cpp -o obj_tracking20260907/sts_task_list.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/task_list/task_id.cpp -o obj_tracking20260907/task_id.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/task_list/task_list.cpp -o obj_tracking20260907/task_list.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/task_list/time_integrator.cpp -o obj_tracking20260907/time_integrator.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/utils/buffer_utils.cpp -o obj_tracking20260907/buffer_utils.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/utils/change_rundir.cpp -o obj_tracking20260907/change_rundir.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/utils/eos_table_class.cpp -o obj_tracking20260907/eos_table_class.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/utils/fourth_polynomial_root.cpp -o obj_tracking20260907/fourth_polynomial_root.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/utils/gauleg.cpp -o obj_tracking20260907/gauleg.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/utils/gl_quadrature.cpp -o obj_tracking20260907/gl_quadrature.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/utils/interp.cpp -o obj_tracking20260907/interp.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/utils/interp_table.cpp -o obj_tracking20260907/interp_table.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/utils/matrix_mult.cpp -o obj_tracking20260907/matrix_mult.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/utils/permutation.cpp -o obj_tracking20260907/permutation.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/utils/ran2.cpp -o obj_tracking20260907/ran2.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/utils/rotate_vectors.cpp -o obj_tracking20260907/rotate_vectors.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/utils/show_config.cpp -o obj_tracking20260907/show_config.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/utils/signal_handler.cpp -o obj_tracking20260907/signal_handler.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/utils/string_utils.cpp -o obj_tracking20260907/string_utils.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/units/units.cpp -o obj_tracking20260907/units.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -o /home/kaan/followup_20260907/bin/athpp_tracking obj_tracking20260907/globals.o obj_tracking20260907/main.o obj_tracking20260907/parameter_input.o obj_tracking20260907/bvals.o obj_tracking20260907/bvals_base.o obj_tracking20260907/bvals_refine.o obj_tracking20260907/bvals_refine_postmg.o obj_tracking20260907/bvals_var.o obj_tracking20260907/bvals_cc.o obj_tracking20260907/bvals_shear_cc.o obj_tracking20260907/bvals_shear_flux.o obj_tracking20260907/flux_correction_cc.o obj_tracking20260907/outflow_cc.o obj_tracking20260907/polarwedge_cc.o obj_tracking20260907/reflect_cc.o obj_tracking20260907/bvals_hydro.o obj_tracking20260907/bvals_shear_hydro.o obj_tracking20260907/flux_correction_hydro.o obj_tracking20260907/reflect_hydro.o obj_tracking20260907/bvals_mg.o obj_tracking20260907/bvals_mg_gravity.o obj_tracking20260907/bvals_rad.o obj_tracking20260907/bvals_shear_rad.o obj_tracking20260907/bvals_shear_rad_flux.o obj_tracking20260907/flux_correction_radiation.o obj_tracking20260907/outflow_rad.o obj_tracking20260907/polarwedge_rad.o obj_tracking20260907/reflect_rad.o obj_tracking20260907/rotate_rad.o obj_tracking20260907/vacuum_rad.o obj_tracking20260907/bvals_fc.o obj_tracking20260907/bvals_shear_emf.o obj_tracking20260907/bvals_shear_fc.o obj_tracking20260907/flux_correction_fc.o obj_tracking20260907/outflow_fc.o obj_tracking20260907/polarwedge_fc.o obj_tracking20260907/reflect_fc.o obj_tracking20260907/bvals_orbital.o obj_tracking20260907/bvals_sixray.o obj_tracking20260907/boundary_flag.o obj_tracking20260907/check_polar.o obj_tracking20260907/coordinates.o obj_tracking20260907/cartesian.o obj_tracking20260907/noop.o obj_tracking20260907/adiabatic_hydro.o obj_tracking20260907/eos_high_order.o obj_tracking20260907/eos_scalars.o obj_tracking20260907/network_wrapper.o obj_tracking20260907/chemistry_utils.o obj_tracking20260907/kida_reaction.o obj_tracking20260907/kida_species.o obj_tracking20260907/shielding.o obj_tracking20260907/thermo.o obj_tracking20260907/none.o obj_tracking20260907/forward_euler.o obj_tracking20260907/chem_rad.o obj_tracking20260907/const.o obj_tracking20260907/athena_fft.o obj_tracking20260907/fft_driver.o obj_tracking20260907/turbulence.o obj_tracking20260907/calculate_corner_e.o obj_tracking20260907/ct.o obj_tracking20260907/field.o obj_tracking20260907/diffusivity.o obj_tracking20260907/field_diffusion.o obj_tracking20260907/fft_gravity.o obj_tracking20260907/gravity.o obj_tracking20260907/mg_gravity.o obj_tracking20260907/add_flux_divergence.o obj_tracking20260907/calculate_fluxes.o obj_tracking20260907/calculate_velocity_differences.o obj_tracking20260907/hydro.o obj_tracking20260907/new_blockdt.o obj_tracking20260907/constant_acc.o obj_tracking20260907/hydro_srcterms.o obj_tracking20260907/orbital_advection_srcterms.o obj_tracking20260907/pointmass.o obj_tracking20260907/rotating_system_srcterms.o obj_tracking20260907/self_gravity.o obj_tracking20260907/shearing_box.o obj_tracking20260907/conduction.o obj_tracking20260907/hydro_diffusion.o obj_tracking20260907/viscosity.o obj_tracking20260907/angulargrid.o obj_tracking20260907/frequencygrid.o obj_tracking20260907/get_moments.o obj_tracking20260907/radiation.o obj_tracking20260907/frame_transform.o obj_tracking20260907/multi_group.o obj_tracking20260907/rad_integrators.o obj_tracking20260907/rad_source.o obj_tracking20260907/rad_transport.o obj_tracking20260907/absorption_scattering.o obj_tracking20260907/compton.o obj_tracking20260907/multigroup_abs_sca.o obj_tracking20260907/implicit_angular_flux.o obj_tracking20260907/implicit_first_order.o obj_tracking20260907/rad_iteration.o obj_tracking20260907/radiation_implicit.o obj_tracking20260907/cr.o obj_tracking20260907/cr_flux.o obj_tracking20260907/cr_integrators.o obj_tracking20260907/cr_source.o obj_tracking20260907/cr_transport.o obj_tracking20260907/crdiffusion.o obj_tracking20260907/mg_crdiffusion.o obj_tracking20260907/hllc.o obj_tracking20260907/ascii_table_reader.o obj_tracking20260907/hdf5_reader.o obj_tracking20260907/amr_loadbalance.o obj_tracking20260907/mesh.o obj_tracking20260907/mesh_refinement.o obj_tracking20260907/meshblock.o obj_tracking20260907/meshblock_tree.o obj_tracking20260907/weighted_ave.o obj_tracking20260907/mgbval_multipole.o obj_tracking20260907/mgbval_periodic.o obj_tracking20260907/mgbval_zerofixed.o obj_tracking20260907/mgbval_zerograd.o obj_tracking20260907/multigrid.o obj_tracking20260907/multigrid_driver.o obj_tracking20260907/calculate_orbital_advection.o obj_tracking20260907/default_orbital_velocity.o obj_tracking20260907/orbital_advection.o obj_tracking20260907/orbital_remapping.o obj_tracking20260907/orbital_system_conversion.o obj_tracking20260907/set_orbital_advection.o obj_tracking20260907/athena_hdf5.o obj_tracking20260907/formatted_table.o obj_tracking20260907/history.o obj_tracking20260907/io_wrapper.o obj_tracking20260907/outputs.o obj_tracking20260907/restart.o obj_tracking20260907/vtk.o obj_tracking20260907/default_pgen.o obj_tracking20260907/cloud_wind_tracking.o obj_tracking20260907/characteristic.o obj_tracking20260907/dc.o obj_tracking20260907/dc_simple.o obj_tracking20260907/plm.o obj_tracking20260907/plm_simple.o obj_tracking20260907/ppm.o obj_tracking20260907/ppm_fast.o obj_tracking20260907/ppm_simple.o obj_tracking20260907/ppm_simple_fast.o obj_tracking20260907/reconstruction.o obj_tracking20260907/weno.o obj_tracking20260907/add_scalar_flux_divergence.o obj_tracking20260907/calculate_scalar_fluxes.o obj_tracking20260907/scalar_diffusion.o obj_tracking20260907/scalars.o obj_tracking20260907/chem_rad_task_list.o obj_tracking20260907/crdiffusion_task_list.o obj_tracking20260907/grav_task_list.o obj_tracking20260907/im_rad_compt_task_list.o obj_tracking20260907/im_rad_task_list.o obj_tracking20260907/im_radhydro_task_list.o obj_tracking20260907/im_radit_task_list.o obj_tracking20260907/mg_task_list.o obj_tracking20260907/sts_task_list.o obj_tracking20260907/task_id.o obj_tracking20260907/task_list.o obj_tracking20260907/time_integrator.o obj_tracking20260907/buffer_utils.o obj_tracking20260907/change_rundir.o obj_tracking20260907/eos_table_class.o obj_tracking20260907/fourth_polynomial_root.o obj_tracking20260907/gauleg.o obj_tracking20260907/gl_quadrature.o obj_tracking20260907/interp.o obj_tracking20260907/interp_table.o obj_tracking20260907/matrix_mult.o obj_tracking20260907/permutation.o obj_tracking20260907/ran2.o obj_tracking20260907/rotate_vectors.o obj_tracking20260907/show_config.o obj_tracking20260907/signal_handler.o obj_tracking20260907/string_utils.o obj_tracking20260907/units.o -L/usr/lib/x86_64-linux-gnu/hdf5/openmpi -lhdf5
+make: Leaving directory '/home/kaan/codes/athenapp'
+make: Entering directory '/home/kaan/codes/athenapp'
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -c src/pgen/cloud_wind_tracking.cpp -o obj_tracking20260907/cloud_wind_tracking.o
+mpicxx  -O3 -std=c++11 -I/usr/include/hdf5/openmpi -o /home/kaan/followup_20260907/bin/athpp_tracking obj_tracking20260907/globals.o obj_tracking20260907/main.o obj_tracking20260907/parameter_input.o obj_tracking20260907/bvals.o obj_tracking20260907/bvals_base.o obj_tracking20260907/bvals_refine.o obj_tracking20260907/bvals_refine_postmg.o obj_tracking20260907/bvals_var.o obj_tracking20260907/bvals_cc.o obj_tracking20260907/bvals_shear_cc.o obj_tracking20260907/bvals_shear_flux.o obj_tracking20260907/flux_correction_cc.o obj_tracking20260907/outflow_cc.o obj_tracking20260907/polarwedge_cc.o obj_tracking20260907/reflect_cc.o obj_tracking20260907/bvals_hydro.o obj_tracking20260907/bvals_shear_hydro.o obj_tracking20260907/flux_correction_hydro.o obj_tracking20260907/reflect_hydro.o obj_tracking20260907/bvals_mg.o obj_tracking20260907/bvals_mg_gravity.o obj_tracking20260907/bvals_rad.o obj_tracking20260907/bvals_shear_rad.o obj_tracking20260907/bvals_shear_rad_flux.o obj_tracking20260907/flux_correction_radiation.o obj_tracking20260907/outflow_rad.o obj_tracking20260907/polarwedge_rad.o obj_tracking20260907/reflect_rad.o obj_tracking20260907/rotate_rad.o obj_tracking20260907/vacuum_rad.o obj_tracking20260907/bvals_fc.o obj_tracking20260907/bvals_shear_emf.o obj_tracking20260907/bvals_shear_fc.o obj_tracking20260907/flux_correction_fc.o obj_tracking20260907/outflow_fc.o obj_tracking20260907/polarwedge_fc.o obj_tracking20260907/reflect_fc.o obj_tracking20260907/bvals_orbital.o obj_tracking20260907/bvals_sixray.o obj_tracking20260907/boundary_flag.o obj_tracking20260907/check_polar.o obj_tracking20260907/coordinates.o obj_tracking20260907/cartesian.o obj_tracking20260907/noop.o obj_tracking20260907/adiabatic_hydro.o obj_tracking20260907/eos_high_order.o obj_tracking20260907/eos_scalars.o obj_tracking20260907/network_wrapper.o obj_tracking20260907/chemistry_utils.o obj_tracking20260907/kida_reaction.o obj_tracking20260907/kida_species.o obj_tracking20260907/shielding.o obj_tracking20260907/thermo.o obj_tracking20260907/none.o obj_tracking20260907/forward_euler.o obj_tracking20260907/chem_rad.o obj_tracking20260907/const.o obj_tracking20260907/athena_fft.o obj_tracking20260907/fft_driver.o obj_tracking20260907/turbulence.o obj_tracking20260907/calculate_corner_e.o obj_tracking20260907/ct.o obj_tracking20260907/field.o obj_tracking20260907/diffusivity.o obj_tracking20260907/field_diffusion.o obj_tracking20260907/fft_gravity.o obj_tracking20260907/gravity.o obj_tracking20260907/mg_gravity.o obj_tracking20260907/add_flux_divergence.o obj_tracking20260907/calculate_fluxes.o obj_tracking20260907/calculate_velocity_differences.o obj_tracking20260907/hydro.o obj_tracking20260907/new_blockdt.o obj_tracking20260907/constant_acc.o obj_tracking20260907/hydro_srcterms.o obj_tracking20260907/orbital_advection_srcterms.o obj_tracking20260907/pointmass.o obj_tracking20260907/rotating_system_srcterms.o obj_tracking20260907/self_gravity.o obj_tracking20260907/shearing_box.o obj_tracking20260907/conduction.o obj_tracking20260907/hydro_diffusion.o obj_tracking20260907/viscosity.o obj_tracking20260907/angulargrid.o obj_tracking20260907/frequencygrid.o obj_tracking20260907/get_moments.o obj_tracking20260907/radiation.o obj_tracking20260907/frame_transform.o obj_tracking20260907/multi_group.o obj_tracking20260907/rad_integrators.o obj_tracking20260907/rad_source.o obj_tracking20260907/rad_transport.o obj_tracking20260907/absorption_scattering.o obj_tracking20260907/compton.o obj_tracking20260907/multigroup_abs_sca.o obj_tracking20260907/implicit_angular_flux.o obj_tracking20260907/implicit_first_order.o obj_tracking20260907/rad_iteration.o obj_tracking20260907/radiation_implicit.o obj_tracking20260907/cr.o obj_tracking20260907/cr_flux.o obj_tracking20260907/cr_integrators.o obj_tracking20260907/cr_source.o obj_tracking20260907/cr_transport.o obj_tracking20260907/crdiffusion.o obj_tracking20260907/mg_crdiffusion.o obj_tracking20260907/hllc.o obj_tracking20260907/ascii_table_reader.o obj_tracking20260907/hdf5_reader.o obj_tracking20260907/amr_loadbalance.o obj_tracking20260907/mesh.o obj_tracking20260907/mesh_refinement.o obj_tracking20260907/meshblock.o obj_tracking20260907/meshblock_tree.o obj_tracking20260907/weighted_ave.o obj_tracking20260907/mgbval_multipole.o obj_tracking20260907/mgbval_periodic.o obj_tracking20260907/mgbval_zerofixed.o obj_tracking20260907/mgbval_zerograd.o obj_tracking20260907/multigrid.o obj_tracking20260907/multigrid_driver.o obj_tracking20260907/calculate_orbital_advection.o obj_tracking20260907/default_orbital_velocity.o obj_tracking20260907/orbital_advection.o obj_tracking20260907/orbital_remapping.o obj_tracking20260907/orbital_system_conversion.o obj_tracking20260907/set_orbital_advection.o obj_tracking20260907/athena_hdf5.o obj_tracking20260907/formatted_table.o obj_tracking20260907/history.o obj_tracking20260907/io_wrapper.o obj_tracking20260907/outputs.o obj_tracking20260907/restart.o obj_tracking20260907/vtk.o obj_tracking20260907/default_pgen.o obj_tracking20260907/cloud_wind_tracking.o obj_tracking20260907/characteristic.o obj_tracking20260907/dc.o obj_tracking20260907/dc_simple.o obj_tracking20260907/plm.o obj_tracking20260907/plm_simple.o obj_tracking20260907/ppm.o obj_tracking20260907/ppm_fast.o obj_tracking20260907/ppm_simple.o obj_tracking20260907/ppm_simple_fast.o obj_tracking20260907/reconstruction.o obj_tracking20260907/weno.o obj_tracking20260907/add_scalar_flux_divergence.o obj_tracking20260907/calculate_scalar_fluxes.o obj_tracking20260907/scalar_diffusion.o obj_tracking20260907/scalars.o obj_tracking20260907/chem_rad_task_list.o obj_tracking20260907/crdiffusion_task_list.o obj_tracking20260907/grav_task_list.o obj_tracking20260907/im_rad_compt_task_list.o obj_tracking20260907/im_rad_task_list.o obj_tracking20260907/im_radhydro_task_list.o obj_tracking20260907/im_radit_task_list.o obj_tracking20260907/mg_task_list.o obj_tracking20260907/sts_task_list.o obj_tracking20260907/task_id.o obj_tracking20260907/task_list.o obj_tracking20260907/time_integrator.o obj_tracking20260907/buffer_utils.o obj_tracking20260907/change_rundir.o obj_tracking20260907/eos_table_class.o obj_tracking20260907/fourth_polynomial_root.o obj_tracking20260907/gauleg.o obj_tracking20260907/gl_quadrature.o obj_tracking20260907/interp.o obj_tracking20260907/interp_table.o obj_tracking20260907/matrix_mult.o obj_tracking20260907/permutation.o obj_tracking20260907/ran2.o obj_tracking20260907/rotate_vectors.o obj_tracking20260907/show_config.o obj_tracking20260907/signal_handler.o obj_tracking20260907/string_utils.o obj_tracking20260907/units.o -L/usr/lib/x86_64-linux-gnu/hdf5/openmpi -lhdf5
+make: Leaving directory '/home/kaan/codes/athenapp'

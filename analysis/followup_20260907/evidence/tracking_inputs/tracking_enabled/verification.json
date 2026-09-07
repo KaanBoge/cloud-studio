@@ -1,0 +1,163 @@
+{
+  "command": [
+    "mpirun",
+    "--bind-to",
+    "core",
+    "-np",
+    "2",
+    "/home/kaan/followup_20260907/bin/athpp_tracking",
+    "-i",
+    "athinput"
+  ],
+  "binary_sha256": "3885d83e2238eae01382b88add7a168f713ef72f46420c44219ad23bc7bd7655",
+  "parameter_sha256": "fb723e802dca12e2ee49379bebf1201e95d3dbccdb7a43546a9f3150269cc9d4",
+  "restart": null,
+  "scope": "native experimental validation, not production",
+  "expected_t_end": 0.4,
+  "returncode": 0,
+  "wall_seconds": 0.46464061737060547,
+  "native_outputs": 14,
+  "initial_fields": {
+    "passed": true,
+    "snapshot": "/home/kaan/followup_20260907/tracking_tests_v2/tracking_enabled/cloud_sharp13_20260907_L3_chi10.out2.00000.athdf",
+    "parameters": {
+      "source": "/home/kaan/followup_20260907/tracking_tests_v2/tracking_enabled/athinput",
+      "parameter_sha256": "fb723e802dca12e2ee49379bebf1201e95d3dbccdb7a43546a9f3150269cc9d4",
+      "assumptions": [
+        "custom cloud_wind pgen fixes R=1, rho_wind=1 and P_wind=1"
+      ],
+      "gamma": 1.6666666666666667,
+      "r_cloud": 1.0,
+      "rho_wind": 1.0,
+      "p_wind": 1.0,
+      "v_wind": 2.581988897471611,
+      "chi": 10.0,
+      "rv_scale": 1.3,
+      "tmax": 0.4,
+      "output_dt": 0.004,
+      "mach": 2.0,
+      "kind": "athena",
+      "t_cc": 1.2247448713915892
+    },
+    "time_code": 0.0,
+    "cells": 65536,
+    "native_dimensions": [
+      64,
+      32,
+      32
+    ],
+    "uniform_grid": true,
+    "domain_width_over_R": [
+      20.0,
+      10.0,
+      10.0
+    ],
+    "errors": {
+      "density_relative_max": 6.661338147750933e-16,
+      "velocity_error_over_vwind_max": 1.7199501139797033e-16,
+      "pressure_relative_max": 6.661338147750939e-16
+    },
+    "scope": "t=0 density, velocity, pressure, dimensions and domain; no claim of full-run validation"
+  },
+  "snapshots": [
+    {
+      "file": "cloud_sharp13_20260907_L3_chi10.out2.00000.athdf",
+      "t_code": 0.0,
+      "t_over_tcc": 0.0,
+      "dense_velocity_in_frame": 0.0,
+      "min_pressure": 0.9999999999999996
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi10.out2.00001.athdf",
+      "t_code": 0.032274861218395144,
+      "t_over_tcc": 0.026352313834736494,
+      "dense_velocity_in_frame": 1.0550693360323368e-18,
+      "min_pressure": 0.8514337433316889
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi10.out2.00002.athdf",
+      "t_code": 0.06457569327220733,
+      "t_over_tcc": 0.05272583276779484,
+      "dense_velocity_in_frame": -5.9941729805489235e-18,
+      "min_pressure": 0.7017736291911538
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi10.out2.00003.athdf",
+      "t_code": 0.09689275746270574,
+      "t_over_tcc": 0.07911260518495865,
+      "dense_velocity_in_frame": 4.039927903865692e-18,
+      "min_pressure": 0.5621366185958956
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi10.out2.00004.athdf",
+      "t_code": 0.12922760409005468,
+      "t_over_tcc": 0.10551389690101146,
+      "dense_velocity_in_frame": -2.255672240089756e-18,
+      "min_pressure": 0.44850334735480485
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi10.out2.00005.athdf",
+      "t_code": 0.1615571338303309,
+      "t_over_tcc": 0.13191084739694822,
+      "dense_velocity_in_frame": 3.21186905769243e-19,
+      "min_pressure": 0.36752482527745617
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi10.out2.00006.athdf",
+      "t_code": 0.19384972004075657,
+      "t_over_tcc": 0.15827763362707462,
+      "dense_velocity_in_frame": 7.601865066464004e-18,
+      "min_pressure": 0.31401431061235924
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi10.out2.00007.athdf",
+      "t_code": 0.22609899899596797,
+      "t_over_tcc": 0.18460905963138918,
+      "dense_velocity_in_frame": -8.930662351437602e-18,
+      "min_pressure": 0.27997248096814087
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi10.out2.00008.athdf",
+      "t_code": 0.2583135471688387,
+      "t_over_tcc": 0.21091212807066967,
+      "dense_velocity_in_frame": -9.85349480708861e-18,
+      "min_pressure": 0.2476968318958478
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi10.out2.00009.athdf",
+      "t_code": 0.2905168471815853,
+      "t_over_tcc": 0.23720601242566708,
+      "dense_velocity_in_frame": 2.197957875560821e-18,
+      "min_pressure": 0.21962148929900652
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi10.out2.00010.athdf",
+      "t_code": 0.3225861826593853,
+      "t_over_tcc": 0.263390515195915,
+      "dense_velocity_in_frame": -2.369233347947945e-18,
+      "min_pressure": 0.19786203419080825
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi10.out2.00011.athdf",
+      "t_code": 0.35452265137667116,
+      "t_over_tcc": 0.28946653271048417,
+      "dense_velocity_in_frame": -3.938787575768136e-18,
+      "min_pressure": 0.18049982859141628
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi10.out2.00012.athdf",
+      "t_code": 0.3863639403986867,
+      "t_over_tcc": 0.3154648363292914,
+      "dense_velocity_in_frame": 7.371191068855015e-18,
+      "min_pressure": 0.16654190389575604
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi10.out2.00013.athdf",
+      "t_code": 0.4,
+      "t_over_tcc": 0.3265986323710904,
+      "dense_velocity_in_frame": 1.2807726791008476e-18,
+      "min_pressure": 0.1616128628767402
+    }
+  ],
+  "maximum_dense_velocity_after_boost": 9.85349480708861e-18
+}

@@ -21,6 +21,7 @@ HERE=Path(__file__).resolve().parent
 sys.path.insert(0,'/home/kaan/verified_20260907')
 from run_corrected_athpp import make_input
 from run_params import parse_file
+from storage_guard import storage_snapshot, require_storage
 
 IC_VERSION='sharp13_20260907'
 WORK=Path('/home/kaan/performance_20260907')
@@ -164,10 +165,14 @@ def main():
                reserved_disk_gib=disk/GIB,reserved_ram_gib=ram/GIB,
                raw_retention='All native output/restarts retained. Meshes and MP4s are not raw archives.')
             (target/'provenance.json').write_text(json.dumps(record,indent=2))
+        storage=storage_snapshot(target)
+        record['storage_preflight']=storage
+        (target/'provenance.json').write_text(json.dumps(record,indent=2))
         print(json.dumps({'directory':str(target),'run_requested':a.run,'profile':profile,
            'physical_parameters':record['physical_parameters'],'reserved_disk_gib':disk/GIB,
-           'free_disk_gib':shutil.disk_usage(target).free/GIB},indent=2),flush=True)
+           'storage_preflight':storage},indent=2),flush=True)
         if not a.run:return
+        require_storage(storage,disk)
         available=int(next(s.split()[1] for s in Path('/proc/meminfo').read_text().splitlines() if s.startswith('MemAvailable:')))*1024
         if shutil.disk_usage(target).free<disk or available<ram:
             raise RuntimeError('Insufficient free RAM or raw-retention disk budget; remains prepared, nothing deleted')

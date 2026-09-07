@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "native_sequences_checked": 18,
+  "figures": [
+    "initial_audit_3d.png",
+    "short_audit_mass.png"
+  ],
+  "scope": "Retained short IC audit outputs, not late-time production figures"
+}

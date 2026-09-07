@@ -17,7 +17,7 @@
   .pane+.pane{border-left:1px solid var(--line)}
   .ptitle{position:absolute;top:10px;left:50%;transform:translateX(-50%);
     font-size:13px;color:var(--mut);background:var(--panel);border:1px solid var(--line);
-    border-radius:8px;padding:4px 12px;white-space:nowrap;pointer-events:none}
+    border-radius:8px;padding:4px 12px;max-width:85%;text-align:center;pointer-events:none}
   .ptitle b{color:var(--fg);font-weight:600}
 
   .card{position:fixed;background:var(--panel);border:1px solid var(--line);
@@ -85,6 +85,8 @@
     &middot; <a class="back" href="index.html">back to studio</a></p>
   <p style="font-size:12px;color:#ffcf90">Historical results: matching levels do not certify matching physics.
     <a class="back" href="verification.html">Verification report</a></p>
+  <p style="font-size:12px;color:#ffcf90">Historical “apkcool” runs did not enable cooling.
+    Legacy tracking runs are not validated replacements. Saved data remain available for inspection.</p>
   <div class="lbl">Overdensity</div>
   <div class="chips" id="chiChips">
     <button data-chi="all" class="on">all</button><button data-chi="10">&chi; = 10</button>
@@ -171,7 +173,9 @@ const CODE_OF = { apk: "AthenaPK (GPU)", apk3d: "AthenaPK (GPU)", athpp: "Athena
   flash: "FLASH 4.8", flashx: "Flash-X", enzo: "Enzo", arepo: "Arepo",
   gzmfm: "GIZMO MFM", gzmfv: "GIZMO MFV", g4: "Gadget-4", gas: "Gasoline" };
 function meta(id) {
-  const pre = (id.match(/^([a-z0-9]+?)(?:3d)?_/) || [, ""])[1];
+  const tag = id.split('_')[0];
+  const machTag = tag.match(/M(05|15|45|5)$/);
+  const pre = tag.replace(/M(05|15|45|5)$/, '').replace(/(?:cool|gal)$/, '');
   const chi = +((id.match(/chi(\d+)/) || [, 0])[1]);
   // magnetized runs are their own physics, never merged with hydro entries
   const mhd = id.match(/_mhd_b(\d+)_/);
@@ -183,6 +187,9 @@ function meta(id) {
     if (Math.abs(L - Math.round(L)) < 0.02) lvl = Math.round(L);
   }
   let code = CODE_OF[pre] || pre;
+  if (machTag) code += " M=" + ({'05':'0.5','15':'1.5','45':'4.5','5':'5'}[machTag[1]]);
+  if (/cool$/.test(tag)) code += " · cooling NOT enabled";
+  if (/gal$/.test(tag)) code += " · legacy tracking (unvalidated)";
   if (mhd) code += " MHD β=" + mhd[1];
   return { code, chi, lvl };
 }
@@ -259,10 +266,11 @@ function makePane(cv) {
 }
 
 function clearPane(p) {
+  p.loadToken=(p.loadToken||0)+1;
   p.root.traverse(o => { if (o.geometry) o.geometry.dispose(); if (o.material) o.material.dispose(); });
   p.scene.remove(p.root);
   p.root = new THREE.Group(); p.scene.add(p.root);
-  p.frames = []; p.times = []; p.tris = 0;
+  p.frames = []; p.times = []; p.tris = 0;p.cur=0;p.curTarget=0;p.frameError=false;
   if (p.dense) {
     p.dense.cache.forEach(g => g.traverse(o => {
       if (o.geometry) o.geometry.dispose(); if (o.material) o.material.dispose();
@@ -320,6 +328,10 @@ async function denseFetch(p, i) {
       mesh.castShadow = opaque; mesh.userData.shell = s;
       grp.add(mesh);
     }
+    if (p.dense !== d) {
+      grp.traverse(x=>{if(x.geometry)x.geometry.dispose();if(x.material)x.material.dispose();});
+      throw new Error('Obsolete run request');
+    }
     d.pending.delete(i);
     d.cache.set(i, grp);
     d.order.push(i);
@@ -335,47 +347,61 @@ async function denseFetch(p, i) {
     }
     return grp;
   })();
-  d.pending.set(i, job);
-  return job;
+  const guarded=job.catch(e=>{d.pending.delete(i);throw e;});
+  d.pending.set(i, guarded);
+  return guarded;
 }
 async function denseShow(p, i) {
   const d = p.dense;
   i = Math.max(0, Math.min(d.index.frames.length - 1, i));
   const token = ++d.token;
   let grp;
-  try { grp = await denseFetch(p, i); } catch (e) { return; }
-  if (token !== d.token) return;                     // a newer scrub superseded us
+  try { grp = await denseFetch(p, i); } catch (e) {
+    if(p.dense===d && token===d.token){p.frameError=true;stop();updateDisplayedTimes();}
+    return;
+  }
+  if (p.dense !== d || token !== d.token) return; // obsolete run or newer scrub
   if (d.shown && d.shown.parent) p.root.remove(d.shown);
   p.root.add(grp);
   grp.children.forEach(m => { if (shellOn.length) m.visible = shellOn[m.userData.shell] !== false; });
-  d.shown = grp; p.cur = i;
-  p.tris = (d.index.tris && d.index.tris[i]) || p.tris;
+  d.shown = grp; p.cur = i;p.frameError=false;
+  p.tris = (d.index.tris && d.index.tris[i]) ?? 0;
+  updateDisplayedTimes();
   updateHud();
   // prefetch neighbours so scrubbing stays fluid
   if (i + 1 < d.index.frames.length) denseFetch(p, i + 1).catch(() => {});
   if (i > 0) denseFetch(p, i - 1).catch(() => {});
 }
 
+function normalizeFrameIndex(index) {
+  if (!Array.isArray(index.frames) || !Array.isArray(index.times) ||
+      index.frames.length !== index.times.length || !index.frames.length ||
+      index.times.some(t => typeof t !== 'number' || !Number.isFinite(t) || t < 0)) {
+    throw new Error('Invalid native frame timing metadata');
+  }
+  const rows=index.frames.map((f,j)=>[index.times[j],f,(index.tris||[])[j]]);
+  rows.sort((a,b)=>a[0]-b[0]);
+  const unique=[];
+  for (const row of rows) {
+    if (!unique.length || row[0] !== unique[unique.length-1][0]) unique.push(row);
+  }
+  index.times=unique.map(r=>r[0]);index.frames=unique.map(r=>r[1]);index.tris=unique.map(r=>r[2]);
+}
+
 async function loadRun(p, id, titleEl) {
   msg.textContent = "loading " + id + "…"; msg.style.display = "grid";
   clearPane(p); p.id = id;
+  const loadToken=p.loadToken;p.titleEl=titleEl;
   // dense first: every frame the run produced, streamed on demand
   if (typeof DENSE_RUNS !== "undefined" && DENSE_RUNS[id]) {
     try {
       const r = await fetch(DENSE_BASE + id + "/index.json", { cache: "no-cache" });
       if (r.ok) {
         const index = await r.json();
-        // belt and braces: never trust frame order from the network. Sort by
-        // time, drop untimed frames and anything past 5 t_cc, so a bad index
-        // can never make a run "restart" mid-scrub.
-        {
-          const rows = index.frames.map((f, j) => [index.times[j], f,
-              (index.tris || [])[j]]).filter(r2 => r2[0] !== null && r2[0] !== undefined && r2[0] <= 5.05);
-          rows.sort((a2, b2) => a2[0] - b2[0]);
-          index.times = rows.map(r2 => r2[0]);
-          index.frames = rows.map(r2 => r2[1]);
-          index.tris = rows.map(r2 => r2[2]);
-        }
+        if(p.loadToken!==loadToken)return;
+        // Keep every distinct measured time, including t > 5. Reject missing
+        // timing metadata rather than inventing evenly spaced frame times.
+        normalizeFrameIndex(index);
         p.dense = { tag: id, base: DENSE_BASE, index, cache: new Map(),
                     pending: new Map(), order: [], token: 0, shown: null };
         p.times = index.times || [];
@@ -385,6 +411,7 @@ async function loadRun(p, id, titleEl) {
           " &middot; level " + mt.lvl + " &middot; " + index.frames.length + " frames";
         buildShellTogglesDense();
         await denseShow(p, 0);
+        if(p.loadToken!==loadToken)return;
         setFrameAll(0);
         loadDiag(id, p === A ? 0 : 1);
         msg.style.display = "none";
@@ -394,12 +421,16 @@ async function loadRun(p, id, titleEl) {
   }
   let seq = null;
   try { if (!VOLHQ_DATA[id]) await loadScript("data/volhq_" + id + ".js"); } catch (e) {}
+  if(p.loadToken!==loadToken)return;
   seq = VOLHQ_DATA[id];
   if (!seq) {
     try { if (!VOLSEQ_DATA[id]) await loadScript("data/vol_seq_" + id + ".js"); } catch (e) {}
+    if(p.loadToken!==loadToken)return;
     seq = VOLSEQ_DATA[id];
   }
   if (!seq || !seq.frames || !seq.frames.length) { msg.textContent = "no 3D data for " + id; return; }
+  try { normalizeFrameIndex(seq); }
+  catch (e) { msg.textContent = "Invalid saved timestamps for " + id + "; data need review."; return; }
   p.times = seq.times || [];
   let tri = 0;
   seq.frames.forEach((surfs, fi) => {
@@ -460,6 +491,7 @@ function setFrame(p, i) {
   p.frames[p.cur].children.forEach(m => {
     if (shellOn.length) m.visible = shellOn[m.userData.shell] !== false;
   });
+  updateDisplayedTimes();
 }
 function buildShellTogglesDense() {
   const host = document.getElementById("shells"); host.innerHTML = "";
@@ -479,6 +511,19 @@ function buildShellTogglesDense() {
     host.appendChild(l);
   });
 }
+function updateDisplayedTimes() {
+  for(const p of [A,B]) {
+    if(!p || !p.titleEl || !p.times.length)continue;
+    let label=p.titleEl.querySelector('.frameTime');
+    if(!label){label=document.createElement('span');label.className='frameTime';p.titleEl.appendChild(label);}
+    const shown=!p.dense || p.dense.shown;
+    const t=shown?p.times[p.cur]:null;
+    const status=p.frameError?' (frame unavailable)':(p.cur!==p.curTarget||!shown)?' (loading…)':'';
+    const text=t!==null?'t = '+t+' t_cc'+status:'loading frame…';
+    label.textContent=' · '+text;
+    if(p===A)document.getElementById('tlab').textContent=text;
+  }
+}
 function setFrameAll(i) {
   const nA = A.frames.length;
   const ni = Math.max(0, Math.min(nA - 1, i));
@@ -486,7 +531,7 @@ function setFrameAll(i) {
   setFrame(A, ni);
   if (B && B.frames.length) {
     // sync the panes by TIME, not slider fraction: two runs with different
-    // frame counts must still show the same physical moment side by side
+    // frame counts select the nearest measured time, not an identical time.
     const tA = parseFloat(A.times[ni]);
     let bi = -1;
     if (isFinite(tA) && B.times && B.times.length === B.frames.length) {
@@ -496,17 +541,11 @@ function setFrameAll(i) {
         if (isFinite(d) && d < best) { best = d; bi = k; }
       }
     }
-    if (bi < 0) {                         // no usable times: fall back to fraction
-      const frac = nA > 1 ? ni / (nA - 1) : 0;
-      bi = Math.round(frac * (B.frames.length - 1));
-    }
-    setFrame(B, bi);
+    if (bi >= 0) {B.curTarget=bi;setFrame(B, bi);}
   }
   const sl = document.getElementById("slider");
   sl.max = Math.max(nA - 1, 0); sl.value = ni;
-  const t = A.times[ni];
-  document.getElementById("tlab").textContent =
-    (t !== undefined && t !== null && t !== "") ? "t = " + t + " t_cc" : (ni + 1) + " / " + nA;
+  updateDisplayedTimes();
   drawChart();
 }
 function buildShellToggles() {
@@ -563,7 +602,7 @@ function renderGroups(host, list) {
       .forEach(id => {
         const m = meta(id);
         const b = document.createElement("button");
-        const fr = isDense(id) ? DENSE_RUNS[id] + "f" : "17f";
+        const fr = isDense(id) ? DENSE_RUNS[id] + "f" : "count on load";
         b.innerHTML = "<span>&chi; = " + m.chi + "</span><span class='m'>level " + m.lvl +
                       " &middot; " + fr + "</span>";
         b.dataset.id = id;
@@ -588,7 +627,7 @@ function buildList() {
   if (legacy.length) {
     hdr.style.display = "block";
     hdr.innerHTML = (legacyOpen ? "&#9662;" : "&#9656;") + " legacy runs (" + legacy.length +
-                    ") &middot; 17 frames";
+                    ") &middot; counts checked on load";
     lhost.style.display = legacyOpen ? "block" : "none";
     if (legacyOpen) renderGroups(lhost, legacy);
     hdr.onclick = () => {

@@ -109,15 +109,17 @@ prevents two of these high-resource production jobs from competing on this PC;
 it cannot lock unrelated software or historical queue scripts.
 
 Twelve production inputs (two codes, two levels, three chi values) have been
-prepared without launching them. Ten launcher tests and two native output/restart
+prepared without launching them. Thirteen launcher tests and two native output/restart
 write smoke tests pass. The smoke tests do not establish checkpoint-read recovery.
 
 Disk/RAM/VRAM are checked before execution. Disk reservation includes all 101
 double-precision snapshots, possible extra terminal output, retained checkpoints
 and headroom. It uses uncompressed sizes, not the unusually good compression of
-nearly uniform initial fields. Both L6 profiles reserve about 236 GiB against about
-183 GiB currently free; they therefore refuse a full launch under this conservative
-budget. L5 reserves about 38 GiB. Nothing is deleted to force a run to fit.
+nearly uniform initial fields. Both L6 profiles reserve about 236 GiB.
+The follow-up audit checks both guest space and the actual Windows backing volume,
+which had only about 35.6 GiB free, plus a 10 GiB safety reserve requirement.
+L5 reserves about 38 GiB. Both large launches therefore refuse under this
+conservative growth budget. Nothing is deleted to force a run to fit.
 Using 100% of RAM or filling the SSD is not a speed optimization.
 
 101 is a target until measured native times are checked. A successful solver exit

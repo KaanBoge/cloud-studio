@@ -1,0 +1,167 @@
+{
+  "scope": "retained historical cooling-labelled inputs and logs",
+  "runs": [
+    {
+      "run_dir": "/home/kaan/codes/athenapk/runs/FL_apkcool_L6_chi10",
+      "parameter_sha256": "82212d0f09ae7fd5e04c4c70d5e66934653b8a11086975670fa6b255317696e6",
+      "saved_enable_cooling": "none",
+      "wind_temperature_kelvin": "6.061408316891257e-09",
+      "table": "/home/kaan/codes/athenapk/inputs/cooling_tables/schure.cooling_1.0Z",
+      "native_log": "/home/kaan/codes/athenapk/runs/FL_apkcool_L6_chi10/run.out",
+      "log_sha256": "6b536e139bbec551d75009141990a96e3af2df3ea86b244081c191dd65b0837a",
+      "native_log_confirms_unused_cooling": true,
+      "status": "cooling_not_enabled",
+      "issues": [
+        "tabular cooling is not enabled by the saved input",
+        "native run log explicitly reports cooling integrator and table unused",
+        "Schure table is not the requested Sutherland and Dopita table",
+        "wind temperature below 1 K is not a valid setup for this plasma cooling study"
+      ],
+      "caveat": "Saved inputs alone cannot exclude a runtime CLI override; the retained log is separate evidence."
+    },
+    {
+      "run_dir": "/home/kaan/codes/athenapk/runs/FL_apkcool_L6_chi100",
+      "parameter_sha256": "a68628bfe847a198aa32ba7137ccb86eed57548cc3db108f2056ef983f2d1643",
+      "saved_enable_cooling": "none",
+      "wind_temperature_kelvin": "6.061408316891257e-09",
+      "table": "/home/kaan/codes/athenapk/inputs/cooling_tables/schure.cooling_1.0Z",
+      "native_log": "/home/kaan/codes/athenapk/runs/FL_apkcool_L6_chi100/run.out",
+      "log_sha256": "ae51cac3a06a866ced8ace44a940e49d5ae64460e129a9680a8c85487d504e6f",
+      "native_log_confirms_unused_cooling": true,
+      "status": "cooling_not_enabled",
+      "issues": [
+        "tabular cooling is not enabled by the saved input",
+        "native run log explicitly reports cooling integrator and table unused",
+        "Schure table is not the requested Sutherland and Dopita table",
+        "wind temperature below 1 K is not a valid setup for this plasma cooling study"
+      ],
+      "caveat": "Saved inputs alone cannot exclude a runtime CLI override; the retained log is separate evidence."
+    },
+    {
+      "run_dir": "/home/kaan/codes/athenapk/runs/FL_apkcool_L6_chi1000",
+      "parameter_sha256": "55d2b36203ad3741275060b637c4d604b31fb47b5bc3afd7857509bcdf92e067",
+      "saved_enable_cooling": "none",
+      "wind_temperature_kelvin": "6.061408316891257e-09",
+      "table": "/home/kaan/codes/athenapk/inputs/cooling_tables/schure.cooling_1.0Z",
+      "native_log": "/home/kaan/codes/athenapk/runs/FL_apkcool_L6_chi1000/run.out",
+      "log_sha256": "e72c96b201b56f3969be64c846d384204491aada4ca4f035727b264e771f2e57",
+      "native_log_confirms_unused_cooling": true,
+      "status": "cooling_not_enabled",
+      "issues": [
+        "tabular cooling is not enabled by the saved input",
+        "native run log explicitly reports cooling integrator and table unused",
+        "Schure table is not the requested Sutherland and Dopita table",
+        "wind temperature below 1 K is not a valid setup for this plasma cooling study"
+      ],
+      "caveat": "Saved inputs alone cannot exclude a runtime CLI override; the retained log is separate evidence."
+    },
+    {
+      "run_dir": "/home/kaan/codes/athenapk/runs/GPU_apkcool_L5_chi1000",
+      "parameter_sha256": "97356dd24fe22da5d5f41517c517d504c15cb00079d1d6f32949b6a8565a1be7",
+      "saved_enable_cooling": "none",
+      "wind_temperature_kelvin": "6.061408316891257e-09",
+      "table": "/home/kaan/codes/athenapk/inputs/cooling_tables/schure.cooling_1.0Z",
+      "native_log": "/home/kaan/codes/athenapk/runs/GPU_apkcool_L5_chi1000/run.out",
+      "log_sha256": "33e01ac79135eb1de89390dce91ffad27748c9a5b64a3382f2f98b8d5cc65027",
+      "native_log_confirms_unused_cooling": true,
+      "status": "cooling_not_enabled",
+      "issues": [
+        "tabular cooling is not enabled by the saved input",
+        "native run log explicitly reports cooling integrator and table unused",
+        "Schure table is not the requested Sutherland and Dopita table",
+        "wind temperature below 1 K is not a valid setup for this plasma cooling study"
+      ],
+      "caveat": "Saved inputs alone cannot exclude a runtime CLI override; the retained log is separate evidence."
+    },
+    {
+      "run_dir": "/home/kaan/codes/athenapk/runs/WK_apkcool_L4_chi10",
+      "parameter_sha256": "ae0bd32bc1fc98d16f34406bce38c82bd86892fca7957a6005ac481397f796f8",
+      "saved_enable_cooling": "none",
+      "wind_temperature_kelvin": "6.061408316891257e-09",
+      "table": "/home/kaan/codes/athenapk/inputs/cooling_tables/schure.cooling_1.0Z",
+      "native_log": "/home/kaan/codes/athenapk/runs/WK_apkcool_L4_chi10/run.out",
+      "log_sha256": "bb0f98a1bc44ad91a46808324ba5a9e3e6e92b9a439fea82144c0124c371678e",
+      "native_log_confirms_unused_cooling": true,
+      "status": "cooling_not_enabled",
+      "issues": [
+        "tabular cooling is not enabled by the saved input",
+        "native run log explicitly reports cooling integrator and table unused",
+        "Schure table is not the requested Sutherland and Dopita table",
+        "wind temperature below 1 K is not a valid setup for this plasma cooling study"
+      ],
+      "caveat": "Saved inputs alone cannot exclude a runtime CLI override; the retained log is separate evidence."
+    },
+    {
+      "run_dir": "/home/kaan/codes/athenapk/runs/WK_apkcool_L4_chi100",
+      "parameter_sha256": "5c6823579e4a2e734ab59992534afd5072aad0865808ed1a9bcd8251560c790f",
+      "saved_enable_cooling": "none",
+      "wind_temperature_kelvin": "6.061408316891257e-09",
+      "table": "/home/kaan/codes/athenapk/inputs/cooling_tables/schure.cooling_1.0Z",
+      "native_log": "/home/kaan/codes/athenapk/runs/WK_apkcool_L4_chi100/run.out",
+      "log_sha256": "3f6b1c9b12462a7f25417d3fa28d6083d186abf93c334318b00be76d9be71055",
+      "native_log_confirms_unused_cooling": true,
+      "status": "cooling_not_enabled",
+      "issues": [
+        "tabular cooling is not enabled by the saved input",
+        "native run log explicitly reports cooling integrator and table unused",
+        "Schure table is not the requested Sutherland and Dopita table",
+        "wind temperature below 1 K is not a valid setup for this plasma cooling study"
+      ],
+      "caveat": "Saved inputs alone cannot exclude a runtime CLI override; the retained log is separate evidence."
+    },
+    {
+      "run_dir": "/home/kaan/codes/athenapk/runs/WK_apkcool_L4_chi1000",
+      "parameter_sha256": "dce4306b490c9287fa4c22fe7b190e194fe9e9c321a0cf297178cc72332086cc",
+      "saved_enable_cooling": "none",
+      "wind_temperature_kelvin": "6.061408316891257e-09",
+      "table": "/home/kaan/codes/athenapk/inputs/cooling_tables/schure.cooling_1.0Z",
+      "native_log": "/home/kaan/codes/athenapk/runs/WK_apkcool_L4_chi1000/run.out",
+      "log_sha256": "488cab2a386ade420444937c17bd4704689e8a36cf48ced8f2d643fa607511ed",
+      "native_log_confirms_unused_cooling": true,
+      "status": "cooling_not_enabled",
+      "issues": [
+        "tabular cooling is not enabled by the saved input",
+        "native run log explicitly reports cooling integrator and table unused",
+        "Schure table is not the requested Sutherland and Dopita table",
+        "wind temperature below 1 K is not a valid setup for this plasma cooling study"
+      ],
+      "caveat": "Saved inputs alone cannot exclude a runtime CLI override; the retained log is separate evidence."
+    },
+    {
+      "run_dir": "/home/kaan/codes/athenapk/runs/WK_apkcool_L5_chi10",
+      "parameter_sha256": "f28abe0eeb722c9b44c28ccc2de5171b0a27afce91425b78a55ddd7274f7d2e7",
+      "saved_enable_cooling": "none",
+      "wind_temperature_kelvin": "6.061408316891257e-09",
+      "table": "/home/kaan/codes/athenapk/inputs/cooling_tables/schure.cooling_1.0Z",
+      "native_log": "/home/kaan/codes/athenapk/runs/WK_apkcool_L5_chi10/run.out",
+      "log_sha256": "a18430f9f6396e42149b2c3111c14c4efe66eff72ae497285797b8e6b84570c5",
+      "native_log_confirms_unused_cooling": true,
+      "status": "cooling_not_enabled",
+      "issues": [
+        "tabular cooling is not enabled by the saved input",
+        "native run log explicitly reports cooling integrator and table unused",
+        "Schure table is not the requested Sutherland and Dopita table",
+        "wind temperature below 1 K is not a valid setup for this plasma cooling study"
+      ],
+      "caveat": "Saved inputs alone cannot exclude a runtime CLI override; the retained log is separate evidence."
+    },
+    {
+      "run_dir": "/home/kaan/codes/athenapk/runs/WK_apkcool_L5_chi100",
+      "parameter_sha256": "0b95b59e9986ea73ae4330a80f6473a3c6d2c52e0b11d34e7f12977be81be636",
+      "saved_enable_cooling": "none",
+      "wind_temperature_kelvin": "6.061408316891257e-09",
+      "table": "/home/kaan/codes/athenapk/inputs/cooling_tables/schure.cooling_1.0Z",
+      "native_log": "/home/kaan/codes/athenapk/runs/WK_apkcool_L5_chi100/run.out",
+      "log_sha256": "b87bd81556248dc42b1cddcb951e5dcbbac95f83fc17906989f6752c7a617e7a",
+      "native_log_confirms_unused_cooling": true,
+      "status": "cooling_not_enabled",
+      "issues": [
+        "tabular cooling is not enabled by the saved input",
+        "native run log explicitly reports cooling integrator and table unused",
+        "Schure table is not the requested Sutherland and Dopita table",
+        "wind temperature below 1 K is not a valid setup for this plasma cooling study"
+      ],
+      "caveat": "Saved inputs alone cannot exclude a runtime CLI override; the retained log is separate evidence."
+    }
+  ]
+}

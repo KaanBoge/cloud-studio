@@ -11,6 +11,7 @@ from pathlib import Path
 import numpy as np
 import yt
 from run_params import parse_file
+from comparison_checks import KIND_ALIASES
 
 
 def summarize(rho, volume, coordinate, rho_cloud_initial):
@@ -56,6 +57,8 @@ def main():
     parameters=parse_file(args.params)
     if not parameters or any(parameters.get(k) is None for k in ('chi','rho_wind','t_cc')):
         raise ValueError('Missing physical parameters; refusing guessed normalization')
+    if parameters.get('kind') != KIND_ALIASES[args.kind]:
+        raise ValueError('Code label does not match the parameter-file format')
     print(json.dumps(parameters,indent=2,allow_nan=False))
     target=Path(args.out)
     if target.exists():
@@ -83,7 +86,9 @@ def main():
             spans=ds.domain_width.to_value('code_length')
         row=summarize(rho,volume,coordinate,parameters['chi']*parameters['rho_wind'])
         dims=np.rint(spans/widths.min(axis=0)).astype(int).tolist()
-        if args.kind=='apk': dims=[dims[1],dims[0],dims[2]]
+        if args.kind=='apk':
+            dims=[dims[1],dims[0],dims[2]]
+            spans=spans[[1,0,2]]
         current={'finest_equivalent_dimensions':dims,'leaf_cells':len(rho),
                  'uniform':bool(np.allclose(widths,widths[0],rtol=1e-6)),
                  'domain_width_over_R':(spans/parameters['r_cloud']).tolist()}

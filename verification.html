@@ -32,6 +32,30 @@ Decoded GPU fields matched exactly. The CPU level-6 candidate was slower and was
 its previous settings remain. These improvements are not universal or full-run accuracy claims.
 <a href="https://github.com/KaanBoge/cloud-studio/tree/main/analysis/performance_20260907b">Second-pass evidence and decisions</a>.</p>
 <h2>Not yet established</h2>
+<p><strong>Follow-up repairs and native tests:</strong> Analysis now rechecks physical
+metadata against native inputs, rather than trusting a shared group label. The
+launchers also check Windows backing-volume space, and two additional destructive
+legacy queues were retired. 42 Python tests and two viewer JavaScript checks pass.
+<a href="https://github.com/KaanBoge/cloud-studio/tree/main/analysis/followup_20260907">Full report, scripts, logs and test evidence</a>.</p>
+<p><strong>Cooling correction:</strong> All nine retained cooling-labelled inputs
+omitted the cooling enable switch, and their native logs report the cooling
+parameters unused. These are not radiative results. Their physical temperature
+units and Schure table also do not implement the requested Sutherland-Dopita setup.
+The viewer labels them explicitly; the old cooling generator now refuses to write
+another such input. Physical cooling parameters still need to be agreed and tested.</p>
+<p><strong>Tracking prototype:</strong> A separate Athena++ executable passed
+tracking-off and restart tests. Six level-3 integration tests reached 5 t_cc with
+101 native outputs each. Nevertheless, the tracked chi=1000 test retained only
+88.9% of initial tracer mass in the box. The full tracer/buffer scheme and a
+material-retaining comparison are not complete; the prototype is not in production.</p>
+<p>Windows C: had about 35.6 GiB free at this check. Large replacement launches
+are blocked by conservative raw-data retention budgets. No native output was
+deleted in this follow-up. The viewer now preserves later measured times beyond
+t=5 and labels Mach variants separately; this cannot restore previously deleted
+native fields or frames that were never exported. Time labels now follow the
+displayed mesh while downloads are pending, and comparison panes show their own
+measured times. An isolated browser test verified the loading behavior and a real
+streamed final frame without JavaScript errors.</p>
 <p>Equal boundary conditions, passive tracers and effective particle resolution across every code;
 complete corrected production runs at every level; complete measured frame cadence for all historical runs;
 validated cooling and Galilean-frame variants. These remain necessary before drawing a matched-code scientific conclusion.</p>

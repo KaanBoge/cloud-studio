@@ -12,17 +12,17 @@ import math
 from pathlib import Path
 import numpy as np
 from run_params import parse_file
+from comparison_checks import require_common_physics, verified_parameters
 
 
 def select_panels(plan,time,tolerance):
-    chosen=[]
+    chosen=[];diagnostics=[]
     for entry in plan['panels']:
         d=json.loads(Path(entry['diagnostics']).read_text())
         if d.get('schema_version')!=2 or not d.get('comparison_group'):
             raise ValueError('Schema-2 diagnostics and a reviewed comparison group are required')
-        p=parse_file(d['parameters']['source'])
-        if not p or p['parameter_sha256']!=d['parameters']['parameter_sha256']:
-            raise ValueError('Parameter file changed after diagnostics; recompute')
+        p=verified_parameters(d)
+        diagnostics.append(d)
         rows=d['series']
         times=np.array([r['t_over_tcc'] for r in rows])
         if not len(times) or not np.all(np.isfinite(times)) or np.any(np.diff(times)<=0):
@@ -38,6 +38,7 @@ def select_panels(plan,time,tolerance):
         chosen.append({'kind':d['kind'],'parameters':p,'row':row,'center_code':center.tolist(),
                        'group':d['comparison_group']})
     if not chosen: raise ValueError('No panels')
+    require_common_physics(diagnostics)
     if len({p['group'] for p in chosen})!=1:
         raise ValueError('Mixed comparison groups')
     if len({tuple(p['row']['grid']['finest_equivalent_dimensions']) for p in chosen})!=1:

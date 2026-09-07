@@ -1,0 +1,1078 @@
+{
+  "command": [
+    "timeout",
+    "--signal=TERM",
+    "--kill-after=5s",
+    "240",
+    "mpirun",
+    "--bind-to",
+    "core",
+    "-np",
+    "2",
+    "/home/kaan/followup_20260907/bin/athpp_tracking",
+    "-i",
+    "athinput"
+  ],
+  "binary_sha256": "3885d83e2238eae01382b88add7a168f713ef72f46420c44219ad23bc7bd7655",
+  "parameter_sha256": "42816825d560838afba09f5b39c92dff49aa19b17b9ad02b3faaf1bb345aae64",
+  "restart": null,
+  "scope": "native experimental validation, not production",
+  "expected_t_end": 61.23724356957945,
+  "returncode": 0,
+  "wall_seconds": 23.257946491241455,
+  "native_outputs": 101,
+  "initial_fields": {
+    "passed": true,
+    "snapshot": "/home/kaan/followup_20260907/tracking_tests_v2/fulltime_chi1000_shift0/cloud_sharp13_20260907_L3_chi1000.out2.00000.athdf",
+    "parameters": {
+      "source": "/home/kaan/followup_20260907/tracking_tests_v2/fulltime_chi1000_shift0/athinput",
+      "parameter_sha256": "42816825d560838afba09f5b39c92dff49aa19b17b9ad02b3faaf1bb345aae64",
+      "assumptions": [
+        "custom cloud_wind pgen fixes R=1, rho_wind=1 and P_wind=1"
+      ],
+      "gamma": 1.6666666666666667,
+      "r_cloud": 1.0,
+      "rho_wind": 1.0,
+      "p_wind": 1.0,
+      "v_wind": 2.581988897471611,
+      "chi": 1000.0,
+      "rv_scale": 1.3,
+      "tmax": 61.23724356957945,
+      "output_dt": 0.6123724356957945,
+      "mach": 2.0,
+      "kind": "athena",
+      "t_cc": 12.24744871391589
+    },
+    "time_code": 0.0,
+    "cells": 65536,
+    "native_dimensions": [
+      64,
+      32,
+      32
+    ],
+    "uniform_grid": true,
+    "domain_width_over_R": [
+      20.0,
+      10.0,
+      10.0
+    ],
+    "errors": {
+      "density_relative_max": 5.551115123125783e-14,
+      "velocity_error_over_vwind_max": 1.7199501139797033e-16,
+      "pressure_relative_max": 1.3322676295501878e-15
+    },
+    "scope": "t=0 density, velocity, pressure, dimensions and domain; no claim of full-run validation"
+  },
+  "snapshots": [
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00000.athdf",
+      "t_code": 0.0,
+      "t_over_tcc": 0.0,
+      "dense_velocity_in_frame": 0.0,
+      "min_pressure": 0.9999999999999996,
+      "tracer_mass_in_box": 3681.7731950267344,
+      "dense_mass_in_box": 4091.955013006821,
+      "dense_centroid_x": 0.007102082755437336
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00001.athdf",
+      "t_code": 0.6211710992589171,
+      "t_over_tcc": 0.0507184078716023,
+      "dense_velocity_in_frame": 0.0018272903902635932,
+      "min_pressure": 0.16400983979878056,
+      "tracer_mass_in_box": 3681.7845920631353,
+      "dense_mass_in_box": 4017.251021653962,
+      "dense_centroid_x": -0.013837333479593214
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00002.athdf",
+      "t_code": 1.2515643285113212,
+      "t_over_tcc": 0.1021897995040599,
+      "dense_velocity_in_frame": 0.0031755600298560595,
+      "min_pressure": 0.15772378570595338,
+      "tracer_mass_in_box": 3681.7857611600834,
+      "dense_mass_in_box": 3942.6158145808945,
+      "dense_centroid_x": -0.003408110347207508
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00003.athdf",
+      "t_code": 1.8579968277464705,
+      "t_over_tcc": 0.15170480572295542,
+      "dense_velocity_in_frame": 0.005018356995439234,
+      "min_pressure": 0.12544955449012313,
+      "tracer_mass_in_box": 3681.7857888493872,
+      "dense_mass_in_box": 3942.5886155765006,
+      "dense_centroid_x": -0.006032200721305018
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00004.athdf",
+      "t_code": 2.468008597764231,
+      "t_over_tcc": 0.20151205817747264,
+      "dense_velocity_in_frame": 0.006820602908511072,
+      "min_pressure": 0.11113159313196776,
+      "tracer_mass_in_box": 3681.785855663591,
+      "dense_mass_in_box": 3932.6750393535362,
+      "dense_centroid_x": -0.007274829606587037
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00005.athdf",
+      "t_code": 3.0834709098437227,
+      "t_over_tcc": 0.2517643455277504,
+      "dense_velocity_in_frame": 0.008015249918073591,
+      "min_pressure": 0.11963289598110378,
+      "tracer_mass_in_box": 3681.786042622346,
+      "dense_mass_in_box": 3877.3706874198474,
+      "dense_centroid_x": 0.0022259948684219305
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00006.athdf",
+      "t_code": 3.7026906253553378,
+      "t_over_tcc": 0.3023234235835777,
+      "dense_velocity_in_frame": 0.00993863556116522,
+      "min_pressure": 0.13905535253845444,
+      "tracer_mass_in_box": 3681.7902817795507,
+      "dense_mass_in_box": 3864.030494195493,
+      "dense_centroid_x": 0.0008980849462083418
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00007.athdf",
+      "t_code": 4.295371102621721,
+      "t_over_tcc": 0.35071558191063923,
+      "dense_velocity_in_frame": 0.011807358387507419,
+      "min_pressure": 0.16648167001413114,
+      "tracer_mass_in_box": 3681.796869002708,
+      "dense_mass_in_box": 3843.7519359027574,
+      "dense_centroid_x": 0.0009970925771676552
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00008.athdf",
+      "t_code": 4.922879426852085,
+      "t_over_tcc": 0.40195142203441714,
+      "dense_velocity_in_frame": 0.012721482309468108,
+      "min_pressure": 0.19765122484131128,
+      "tracer_mass_in_box": 3681.7982944438104,
+      "dense_mass_in_box": 3735.998399289599,
+      "dense_centroid_x": 0.010050942388820419
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00009.athdf",
+      "t_code": 5.5212668710175254,
+      "t_over_tcc": 0.4508095522575334,
+      "dense_velocity_in_frame": 0.014020412663687058,
+      "min_pressure": 0.2031205464404165,
+      "tracer_mass_in_box": 3681.7986929431045,
+      "dense_mass_in_box": 3668.960385131994,
+      "dense_centroid_x": 0.02001464901635298
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00010.athdf",
+      "t_code": 6.152434937303782,
+      "t_over_tcc": 0.5023442090688827,
+      "dense_velocity_in_frame": 0.016059189846642737,
+      "min_pressure": 0.21716736739416087,
+      "tracer_mass_in_box": 3681.798954382304,
+      "dense_mass_in_box": 3639.2751858089996,
+      "dense_centroid_x": 0.0235961389047916
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00011.athdf",
+      "t_code": 6.753173342269241,
+      "t_over_tcc": 0.55139429443751,
+      "dense_velocity_in_frame": 0.018007341480681994,
+      "min_pressure": 0.22016018782545912,
+      "tracer_mass_in_box": 3681.798162849639,
+      "dense_mass_in_box": 3604.852405946246,
+      "dense_centroid_x": 0.028580211057051046
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00012.athdf",
+      "t_code": 7.35439440091862,
+      "t_over_tcc": 0.6004837883144065,
+      "dense_velocity_in_frame": 0.01996044730243019,
+      "min_pressure": 0.21656254296785094,
+      "tracer_mass_in_box": 3681.7964652658216,
+      "dense_mass_in_box": 3565.5409906419927,
+      "dense_centroid_x": 0.03494462530606406
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00013.athdf",
+      "t_code": 7.987018068225975,
+      "t_over_tcc": 0.652137294451448,
+      "dense_velocity_in_frame": 0.022043064035644915,
+      "min_pressure": 0.21665389079440447,
+      "tracer_mass_in_box": 3681.7934715693796,
+      "dense_mass_in_box": 3520.4489792398685,
+      "dense_centroid_x": 0.042996343162869516
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00014.athdf",
+      "t_code": 8.588052909793364,
+      "t_over_tcc": 0.701211583767269,
+      "dense_velocity_in_frame": 0.023098535692106206,
+      "min_pressure": 0.2205160256971856,
+      "tracer_mass_in_box": 3681.7826300515153,
+      "dense_mass_in_box": 3489.6288986236596,
+      "dense_centroid_x": 0.07952941342367877
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00015.athdf",
+      "t_code": 9.188823832791153,
+      "t_over_tcc": 0.750264324222118,
+      "dense_velocity_in_frame": 0.025017973044155192,
+      "min_pressure": 0.22681831370436678,
+      "tracer_mass_in_box": 3681.7495505330253,
+      "dense_mass_in_box": 3543.0585133237437,
+      "dense_centroid_x": 0.10691745813474385
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00016.athdf",
+      "t_code": 9.821082077484466,
+      "t_over_tcc": 0.8018879937276635,
+      "dense_velocity_in_frame": 0.02580205261745114,
+      "min_pressure": 0.2354054644145135,
+      "tracer_mass_in_box": 3681.6873714031713,
+      "dense_mass_in_box": 3439.8910924018383,
+      "dense_centroid_x": 0.1271862066733875
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00017.athdf",
+      "t_code": 10.421387885183702,
+      "t_over_tcc": 0.8509027576774117,
+      "dense_velocity_in_frame": 0.027880955398797227,
+      "min_pressure": 0.24553286132246754,
+      "tracer_mass_in_box": 3681.597184210084,
+      "dense_mass_in_box": 3416.074978101557,
+      "dense_centroid_x": 0.1379254700546759
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00018.athdf",
+      "t_code": 11.052924368959495,
+      "t_over_tcc": 0.9024674956508172,
+      "dense_velocity_in_frame": 0.029765026125228706,
+      "min_pressure": 0.25635156739393905,
+      "tracer_mass_in_box": 3681.4547953780607,
+      "dense_mass_in_box": 3351.6672174419564,
+      "dense_centroid_x": 0.15930240162454157
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00019.athdf",
+      "t_code": 11.652893900947188,
+      "t_over_tcc": 0.9514548028036931,
+      "dense_velocity_in_frame": 0.031760689100023234,
+      "min_pressure": 0.258914713926096,
+      "tracer_mass_in_box": 3681.2639184669674,
+      "dense_mass_in_box": 3368.7929174193214,
+      "dense_centroid_x": 0.18044565906539123
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00020.athdf",
+      "t_code": 12.25294476261019,
+      "t_over_tcc": 1.0004487504967507,
+      "dense_velocity_in_frame": 0.03387724784920641,
+      "min_pressure": 0.2642028354256282,
+      "tracer_mass_in_box": 3681.009015856059,
+      "dense_mass_in_box": 3341.4917194712243,
+      "dense_centroid_x": 0.1944905344879455
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00021.athdf",
+      "t_code": 12.884915956594114,
+      "t_over_tcc": 1.0520489824100194,
+      "dense_velocity_in_frame": 0.03611264416920002,
+      "min_pressure": 0.26752208958475593,
+      "tracer_mass_in_box": 3680.660815068499,
+      "dense_mass_in_box": 3307.838073541622,
+      "dense_centroid_x": 0.21092041811286433
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00022.athdf",
+      "t_code": 13.485889293587727,
+      "t_over_tcc": 1.1011182498984207,
+      "dense_velocity_in_frame": 0.03775223493411361,
+      "min_pressure": 0.27336894555170155,
+      "tracer_mass_in_box": 3680.247963241942,
+      "dense_mass_in_box": 3230.8588770763586,
+      "dense_centroid_x": 0.2352980809438385
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00023.athdf",
+      "t_code": 14.087539887515693,
+      "t_over_tcc": 1.1502428151839525,
+      "dense_velocity_in_frame": 0.03993814853243643,
+      "min_pressure": 0.288926642891949,
+      "tracer_mass_in_box": 3679.7537919887595,
+      "dense_mass_in_box": 3196.7229374378194,
+      "dense_centroid_x": 0.2530611767962191
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00024.athdf",
+      "t_code": 14.721529973781736,
+      "t_over_tcc": 1.2020078889617825,
+      "dense_velocity_in_frame": 0.041804571790201105,
+      "min_pressure": 0.3190409818829019,
+      "tracer_mass_in_box": 3679.138950946742,
+      "dense_mass_in_box": 3238.024130761137,
+      "dense_centroid_x": 0.2895023098508027
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00025.athdf",
+      "t_code": 15.324365508698913,
+      "t_over_tcc": 1.2512292042739435,
+      "dense_velocity_in_frame": 0.04217360421475821,
+      "min_pressure": 0.3652821359843636,
+      "tracer_mass_in_box": 3678.4546739464954,
+      "dense_mass_in_box": 3206.370063444167,
+      "dense_centroid_x": 0.3347450108632172
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00026.athdf",
+      "t_code": 15.92770845414163,
+      "t_over_tcc": 1.3004919494820277,
+      "dense_velocity_in_frame": 0.04356990073701628,
+      "min_pressure": 0.4167740876047011,
+      "tracer_mass_in_box": 3677.6641819000806,
+      "dense_mass_in_box": 3115.1161371361086,
+      "dense_centroid_x": 0.3726253052398623
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00027.athdf",
+      "t_code": 16.563283963704055,
+      "t_over_tcc": 1.3523864725299395,
+      "dense_velocity_in_frame": 0.045924565374389,
+      "min_pressure": 0.4246269072083318,
+      "tracer_mass_in_box": 3676.7087242475795,
+      "dense_mass_in_box": 3097.6286695477947,
+      "dense_centroid_x": 0.39513929572989315
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00028.athdf",
+      "t_code": 17.167515828390638,
+      "t_over_tcc": 1.4017217976903573,
+      "dense_velocity_in_frame": 0.04652817687331934,
+      "min_pressure": 0.4285279549047697,
+      "tracer_mass_in_box": 3675.6749803230427,
+      "dense_mass_in_box": 2954.9310745940084,
+      "dense_centroid_x": 0.4399162413733214
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00029.athdf",
+      "t_code": 17.772126424475932,
+      "t_over_tcc": 1.451088046139989,
+      "dense_velocity_in_frame": 0.04887897397008446,
+      "min_pressure": 0.425821781829114,
+      "tracer_mass_in_box": 3674.5076713803596,
+      "dense_mass_in_box": 2945.6810456015774,
+      "dense_centroid_x": 0.4598145951637094
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00030.athdf",
+      "t_code": 18.376976759220753,
+      "t_over_tcc": 1.5004738691692028,
+      "dense_velocity_in_frame": 0.05127584870697278,
+      "min_pressure": 0.42276167877689935,
+      "tracer_mass_in_box": 3673.1996817511813,
+      "dense_mass_in_box": 2924.213315024126,
+      "dense_centroid_x": 0.48086494952034436
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00031.athdf",
+      "t_code": 19.01402936338541,
+      "t_over_tcc": 1.5524889964863575,
+      "dense_velocity_in_frame": 0.053839490040862345,
+      "min_pressure": 0.4216987337601258,
+      "tracer_mass_in_box": 3671.6641888575978,
+      "dense_mass_in_box": 2887.2295701702237,
+      "dense_centroid_x": 0.503968879884807
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00032.athdf",
+      "t_code": 19.619437637687355,
+      "t_over_tcc": 1.6019203750896467,
+      "dense_velocity_in_frame": 0.05584214953110049,
+      "min_pressure": 0.42234371806652404,
+      "tracer_mass_in_box": 3670.04626341291,
+      "dense_mass_in_box": 2798.2706413042147,
+      "dense_centroid_x": 0.534298758378442
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00033.athdf",
+      "t_code": 20.224888284271646,
+      "t_over_tcc": 1.6513552133753022,
+      "dense_velocity_in_frame": 0.059070244791395644,
+      "min_pressure": 0.42294084906439366,
+      "tracer_mass_in_box": 3668.267717775401,
+      "dense_mass_in_box": 2784.7895452581015,
+      "dense_centroid_x": 0.5608732351677864
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00034.athdf",
+      "t_code": 20.830396081042,
+      "t_over_tcc": 1.7007947179541096,
+      "dense_velocity_in_frame": 0.06029432670237617,
+      "min_pressure": 0.42317493969466213,
+      "tracer_mass_in_box": 3666.3260806280864,
+      "dense_mass_in_box": 2634.3968205846077,
+      "dense_centroid_x": 0.5913447009342895
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00035.athdf",
+      "t_code": 21.435903606441236,
+      "t_over_tcc": 1.7502342003755582,
+      "dense_velocity_in_frame": 0.06137260255522779,
+      "min_pressure": 0.42297452549815906,
+      "tracer_mass_in_box": 3664.220148200632,
+      "dense_mass_in_box": 2587.8742414545577,
+      "dense_centroid_x": 0.6476991101964842
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00036.athdf",
+      "t_code": 22.07330214510256,
+      "t_over_tcc": 1.802277573126088,
+      "dense_velocity_in_frame": 0.0602978773987663,
+      "min_pressure": 0.42196576485283815,
+      "tracer_mass_in_box": 3661.8221107720847,
+      "dense_mass_in_box": 2752.1227292676945,
+      "dense_centroid_x": 0.7407843975354822
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00037.athdf",
+      "t_code": 22.6788506008569,
+      "t_over_tcc": 1.8517203974970364,
+      "dense_velocity_in_frame": 0.06286044952820191,
+      "min_pressure": 0.4213010476604031,
+      "tracer_mass_in_box": 3659.367092752545,
+      "dense_mass_in_box": 2712.287877757519,
+      "dense_centroid_x": 0.7756289733209666
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00038.athdf",
+      "t_code": 23.28426210933638,
+      "t_over_tcc": 1.9011520401698159,
+      "dense_velocity_in_frame": 0.06588566438691688,
+      "min_pressure": 0.4213701313469842,
+      "tracer_mass_in_box": 3656.7425117767934,
+      "dense_mass_in_box": 2697.89469255579,
+      "dense_centroid_x": 0.7997652890557111
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00039.athdf",
+      "t_code": 23.88972464115236,
+      "t_over_tcc": 1.9505878488805748,
+      "dense_velocity_in_frame": 0.06899658257136233,
+      "min_pressure": 0.4218648799758593,
+      "tracer_mass_in_box": 3653.9449182963076,
+      "dense_mass_in_box": 2664.5888325407486,
+      "dense_centroid_x": 0.8253305513193118
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00040.athdf",
+      "t_code": 24.495380648506796,
+      "t_over_tcc": 2.000039454802898,
+      "dense_velocity_in_frame": 0.07158927826939497,
+      "min_pressure": 0.42147515919405054,
+      "tracer_mass_in_box": 3650.9681384697906,
+      "dense_mass_in_box": 2581.596596717209,
+      "dense_centroid_x": 0.8589076143610317
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00041.athdf",
+      "t_code": 25.132543874539728,
+      "t_over_tcc": 2.0520636143577753,
+      "dense_velocity_in_frame": 0.07218872196265701,
+      "min_pressure": 0.4195940319979725,
+      "tracer_mass_in_box": 3647.638646192674,
+      "dense_mass_in_box": 2366.8533946299876,
+      "dense_centroid_x": 0.9142267408209063
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00042.athdf",
+      "t_code": 25.738031451092375,
+      "t_over_tcc": 2.1015014679627204,
+      "dense_velocity_in_frame": 0.07576139359009493,
+      "min_pressure": 0.41778462427839874,
+      "tracer_mass_in_box": 3644.277594828094,
+      "dense_mass_in_box": 2365.922376390188,
+      "dense_centroid_x": 0.9456405135996672
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00043.athdf",
+      "t_code": 26.343714996900964,
+      "t_over_tcc": 2.1509553223904097,
+      "dense_velocity_in_frame": 0.07618484751117283,
+      "min_pressure": 0.4169218193707534,
+      "tracer_mass_in_box": 3640.7111341468,
+      "dense_mass_in_box": 2163.1781548715903,
+      "dense_centroid_x": 0.990177741935836
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00044.athdf",
+      "t_code": 26.949170103788326,
+      "t_over_tcc": 2.2003905248582862,
+      "dense_velocity_in_frame": 0.07954703902189872,
+      "min_pressure": 0.4168785560950773,
+      "tracer_mass_in_box": 3636.932297656314,
+      "dense_mass_in_box": 2192.1977052516318,
+      "dense_centroid_x": 1.0271844425255572
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00045.athdf",
+      "t_code": 27.586173434806277,
+      "t_over_tcc": 2.2524016290398587,
+      "dense_velocity_in_frame": 0.0815127644708842,
+      "min_pressure": 0.4171922072247603,
+      "tracer_mass_in_box": 3632.723995489219,
+      "dense_mass_in_box": 2389.6889801984935,
+      "dense_centroid_x": 1.1045355288605612
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00046.athdf",
+      "t_code": 28.191249242278207,
+      "t_over_tcc": 2.3018058618401502,
+      "dense_velocity_in_frame": 0.08470654621663666,
+      "min_pressure": 0.4180375530104502,
+      "tracer_mass_in_box": 3628.518577209067,
+      "dense_mass_in_box": 2321.3676784940676,
+      "dense_centroid_x": 1.1441592323035188
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00047.athdf",
+      "t_code": 28.796435394949665,
+      "t_over_tcc": 2.3512191042882553,
+      "dense_velocity_in_frame": 0.08761195005813778,
+      "min_pressure": 0.4180294191236904,
+      "tracer_mass_in_box": 3624.1149695184317,
+      "dense_mass_in_box": 2211.2968056888335,
+      "dense_centroid_x": 1.191410316113675
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00048.athdf",
+      "t_code": 29.401988721030108,
+      "t_over_tcc": 2.4006623263196647,
+      "dense_velocity_in_frame": 0.08992288560946729,
+      "min_pressure": 0.4177068048066084,
+      "tracer_mass_in_box": 3619.506681690172,
+      "dense_mass_in_box": 2048.397812736307,
+      "dense_centroid_x": 1.2405070062877437
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00049.athdf",
+      "t_code": 30.00769570298359,
+      "t_over_tcc": 2.4501180943005716,
+      "dense_velocity_in_frame": 0.09199081167656604,
+      "min_pressure": 0.41780454742011514,
+      "tracer_mass_in_box": 3614.692057869834,
+      "dense_mass_in_box": 1919.4820635668627,
+      "dense_centroid_x": 1.2927362389330836
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00050.athdf",
+      "t_code": 30.645315833059197,
+      "t_over_tcc": 2.5021795599143144,
+      "dense_velocity_in_frame": 0.09752214308717999,
+      "min_pressure": 0.41879835928095815,
+      "tracer_mass_in_box": 3609.399306634792,
+      "dense_mass_in_box": 1850.800615490192,
+      "dense_centroid_x": 1.31675556547609
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00051.athdf",
+      "t_code": 31.25099012496326,
+      "t_over_tcc": 2.551632658763863,
+      "dense_velocity_in_frame": 0.09848142188468356,
+      "min_pressure": 0.4210823217027758,
+      "tracer_mass_in_box": 3604.1535971192775,
+      "dense_mass_in_box": 2063.291266784624,
+      "dense_centroid_x": 1.435950080007894
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00052.athdf",
+      "t_code": 31.856518045139545,
+      "t_over_tcc": 2.6010738064118843,
+      "dense_velocity_in_frame": 0.10221288907607821,
+      "min_pressure": 0.4249449096965304,
+      "tracer_mass_in_box": 3598.678251264212,
+      "dense_mass_in_box": 1957.0455674046902,
+      "dense_centroid_x": 1.4942289313141126
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00053.athdf",
+      "t_code": 32.46211971607369,
+      "t_over_tcc": 2.650520975784069,
+      "dense_velocity_in_frame": 0.1053700961025347,
+      "min_pressure": 0.4283389226193155,
+      "tracer_mass_in_box": 3592.961742581716,
+      "dense_mass_in_box": 1799.406693212698,
+      "dense_centroid_x": 1.5507676392488097
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00054.athdf",
+      "t_code": 33.09948733856791,
+      "t_over_tcc": 2.7025618242401257,
+      "dense_velocity_in_frame": 0.10833909078571596,
+      "min_pressure": 0.4321396102410198,
+      "tracer_mass_in_box": 3586.689857745323,
+      "dense_mass_in_box": 1627.8646302617933,
+      "dense_centroid_x": 1.5971797820140479
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00055.athdf",
+      "t_code": 33.70501721492255,
+      "t_over_tcc": 2.752003131609441,
+      "dense_velocity_in_frame": 0.11307216506442495,
+      "min_pressure": 0.4356598106604071,
+      "tracer_mass_in_box": 3580.4833040963163,
+      "dense_mass_in_box": 1591.5390524706586,
+      "dense_centroid_x": 1.6357928212707373
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00056.athdf",
+      "t_code": 34.310503244538936,
+      "t_over_tcc": 2.801440858907569,
+      "dense_velocity_in_frame": 0.11388658799889671,
+      "min_pressure": 0.4396216596930785,
+      "tracer_mass_in_box": 3574.030178957113,
+      "dense_mass_in_box": 1731.0301801673113,
+      "dense_centroid_x": 1.7926081028558258
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00057.athdf",
+      "t_code": 34.91527639593241,
+      "t_over_tcc": 2.850820379942535,
+      "dense_velocity_in_frame": 0.11850734388612497,
+      "min_pressure": 0.44459470768351156,
+      "tracer_mass_in_box": 3567.3374477954458,
+      "dense_mass_in_box": 1674.5995845414388,
+      "dense_centroid_x": 1.8373710889406853
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00058.athdf",
+      "t_code": 35.51996898931022,
+      "t_over_tcc": 2.9001933234430655,
+      "dense_velocity_in_frame": 0.1209698390811885,
+      "min_pressure": 0.448935509158629,
+      "tracer_mass_in_box": 3560.3824881493147,
+      "dense_mass_in_box": 1465.163200295688,
+      "dense_centroid_x": 1.9019459266780014
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00059.athdf",
+      "t_code": 36.1559926645065,
+      "t_over_tcc": 2.95212443906175,
+      "dense_velocity_in_frame": 0.1260624709329971,
+      "min_pressure": 0.4539580729812267,
+      "tracer_mass_in_box": 3552.7744741775787,
+      "dense_mass_in_box": 1361.3383137735611,
+      "dense_centroid_x": 1.9298921392586843
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00060.athdf",
+      "t_code": 36.760179613758,
+      "t_over_tcc": 3.0014560968922503,
+      "dense_velocity_in_frame": 0.12838612737480182,
+      "min_pressure": 0.4579397011269693,
+      "tracer_mass_in_box": 3545.273341782787,
+      "dense_mass_in_box": 1331.0006641406987,
+      "dense_centroid_x": 2.0811229966200164
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00061.athdf",
+      "t_code": 37.364579803907425,
+      "t_over_tcc": 3.0508051657691575,
+      "dense_velocity_in_frame": 0.13231991593115647,
+      "min_pressure": 0.46195922781047477,
+      "tracer_mass_in_box": 3537.50588906277,
+      "dense_mass_in_box": 1478.9972265625186,
+      "dense_centroid_x": 2.1519992363359046
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00062.athdf",
+      "t_code": 37.96912937508457,
+      "t_over_tcc": 3.100166431555904,
+      "dense_velocity_in_frame": 0.13569553529707618,
+      "min_pressure": 0.4664196211487009,
+      "tracer_mass_in_box": 3529.481505109237,
+      "dense_mass_in_box": 1279.021630626146,
+      "dense_centroid_x": 2.2198556311617446
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00063.athdf",
+      "t_code": 38.60569735839717,
+      "t_over_tcc": 3.1521419897461835,
+      "dense_velocity_in_frame": 0.14041948415846953,
+      "min_pressure": 0.4696086217464009,
+      "tracer_mass_in_box": 3520.769288053309,
+      "dense_mass_in_box": 1054.4350399314233,
+      "dense_centroid_x": 2.295568731743869
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00064.athdf",
+      "t_code": 39.210235709437626,
+      "t_over_tcc": 3.201502339412605,
+      "dense_velocity_in_frame": 0.14580391318115138,
+      "min_pressure": 0.4726338262511801,
+      "tracer_mass_in_box": 3512.243802279478,
+      "dense_mass_in_box": 1135.7189446553898,
+      "dense_centroid_x": 2.3926631535001595
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00065.athdf",
+      "t_code": 39.81452252020101,
+      "t_over_tcc": 3.2508421509014074,
+      "dense_velocity_in_frame": 0.1470481462242899,
+      "min_pressure": 0.4696594468578511,
+      "tracer_mass_in_box": 3503.459745133465,
+      "dense_mass_in_box": 1150.7134628212498,
+      "dense_centroid_x": 2.5237516459402816
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00066.athdf",
+      "t_code": 40.41873905879229,
+      "t_over_tcc": 3.300176224691384,
+      "dense_velocity_in_frame": 0.15477345824974237,
+      "min_pressure": 0.465697114495385,
+      "tracer_mass_in_box": 3494.407038718242,
+      "dense_mass_in_box": 1074.6887582381,
+      "dense_centroid_x": 2.5531991190493035
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00067.athdf",
+      "t_code": 41.055175574355836,
+      "t_over_tcc": 3.3521410485849032,
+      "dense_velocity_in_frame": 0.1611014529719437,
+      "min_pressure": 0.46277894627924643,
+      "tracer_mass_in_box": 3484.561475760011,
+      "dense_mass_in_box": 882.0597407126663,
+      "dense_centroid_x": 2.6349378746302405
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00068.athdf",
+      "t_code": 41.65939541916668,
+      "t_over_tcc": 3.4014753923265766,
+      "dense_velocity_in_frame": 0.1637531971402983,
+      "min_pressure": 0.4599501218494689,
+      "tracer_mass_in_box": 3474.9112137463353,
+      "dense_mass_in_box": 922.1313813605932,
+      "dense_centroid_x": 2.803620730394851
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00069.athdf",
+      "t_code": 42.26340422810897,
+      "t_over_tcc": 3.450792505061737,
+      "dense_velocity_in_frame": 0.1666726127505687,
+      "min_pressure": 0.4563104301618051,
+      "tracer_mass_in_box": 3464.9653569002885,
+      "dense_mass_in_box": 789.4160144003184,
+      "dense_centroid_x": 2.9302677718630705
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00070.athdf",
+      "t_code": 42.86744993507686,
+      "t_over_tcc": 3.500112630508073,
+      "dense_velocity_in_frame": 0.17686617381646955,
+      "min_pressure": 0.45229027764788643,
+      "tracer_mass_in_box": 3454.7309720076714,
+      "dense_mass_in_box": 804.7061734366824,
+      "dense_centroid_x": 2.9485509941763963
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00071.athdf",
+      "t_code": 43.50312828098316,
+      "t_over_tcc": 3.5520155501083015,
+      "dense_velocity_in_frame": 0.17859968855568453,
+      "min_pressure": 0.44953604641956824,
+      "tracer_mass_in_box": 3443.643537127924,
+      "dense_mass_in_box": 600.3367905827376,
+      "dense_centroid_x": 3.157835930696965
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00072.athdf",
+      "t_code": 44.106426909398806,
+      "t_over_tcc": 3.601274676846278,
+      "dense_velocity_in_frame": 0.18494075341422478,
+      "min_pressure": 0.4469796521365779,
+      "tracer_mass_in_box": 3432.8138150829523,
+      "dense_mass_in_box": 725.1281087335838,
+      "dense_centroid_x": 3.2457188531933543
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00073.athdf",
+      "t_code": 44.70963438454253,
+      "t_over_tcc": 3.6505263609507677,
+      "dense_velocity_in_frame": 0.19399601507191694,
+      "min_pressure": 0.44429991521019097,
+      "tracer_mass_in_box": 3421.6714267444145,
+      "dense_mass_in_box": 492.6104960735873,
+      "dense_centroid_x": 3.3232171046068792
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00074.athdf",
+      "t_code": 45.34476634843638,
+      "t_over_tcc": 3.7023846686464914,
+      "dense_velocity_in_frame": 0.200974269531598,
+      "min_pressure": 0.4421999287619017,
+      "tracer_mass_in_box": 3409.5681566869243,
+      "dense_mass_in_box": 397.9547681127593,
+      "dense_centroid_x": 3.438432623072177
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00075.athdf",
+      "t_code": 45.94763607913119,
+      "t_over_tcc": 3.7516087760322048,
+      "dense_velocity_in_frame": 0.20569702216498392,
+      "min_pressure": 0.4390286619323087,
+      "tracer_mass_in_box": 3397.739324683013,
+      "dense_mass_in_box": 381.3525265750247,
+      "dense_centroid_x": 3.6131723798392708
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00076.athdf",
+      "t_code": 46.550359231591436,
+      "t_over_tcc": 3.8008209153551817,
+      "dense_velocity_in_frame": 0.20886801743794559,
+      "min_pressure": 0.436264652843863,
+      "tracer_mass_in_box": 3385.598391504424,
+      "dense_mass_in_box": 213.9438823889635,
+      "dense_centroid_x": 3.71875
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00077.athdf",
+      "t_code": 47.15319793001062,
+      "t_over_tcc": 3.8500424889662,
+      "dense_velocity_in_frame": 0.22237144159972658,
+      "min_pressure": 0.4322273569063405,
+      "tracer_mass_in_box": 3373.1148862079285,
+      "dense_mass_in_box": 43.70807504427815,
+      "dense_centroid_x": 3.71875
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00078.athdf",
+      "t_code": 47.7875281648296,
+      "t_over_tcc": 3.9018353357570783,
+      "dense_velocity_in_frame": 0.2195604867516861,
+      "min_pressure": 0.4277421973111578,
+      "tracer_mass_in_box": 3359.585567187804,
+      "dense_mass_in_box": 41.79705719747324,
+      "dense_centroid_x": 4.03125
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00079.athdf",
+      "t_code": 48.39000017126004,
+      "t_over_tcc": 3.9510269690925903,
+      "dense_velocity_in_frame": null,
+      "min_pressure": 0.421851027706042,
+      "tracer_mass_in_box": 3346.378614636098,
+      "dense_mass_in_box": 0.0,
+      "dense_centroid_x": null
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00080.athdf",
+      "t_code": 48.99249389927837,
+      "t_over_tcc": 4.000220375988327,
+      "dense_velocity_in_frame": null,
+      "min_pressure": 0.4172184524199788,
+      "tracer_mass_in_box": 3332.795697125931,
+      "dense_mass_in_box": 0.0,
+      "dense_centroid_x": null
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00081.athdf",
+      "t_code": 49.62647429890404,
+      "t_over_tcc": 4.051984658855282,
+      "dense_velocity_in_frame": null,
+      "min_pressure": 0.40999851295967493,
+      "tracer_mass_in_box": 3318.0681268878016,
+      "dense_mass_in_box": 0.0,
+      "dense_centroid_x": null
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00082.athdf",
+      "t_code": 50.22843425468641,
+      "t_over_tcc": 4.101134483430453,
+      "dense_velocity_in_frame": null,
+      "min_pressure": 0.40488913593263554,
+      "tracer_mass_in_box": 3303.683839745308,
+      "dense_mass_in_box": 0.0,
+      "dense_centroid_x": null
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00083.athdf",
+      "t_code": 50.830165232180484,
+      "t_over_tcc": 4.150265612006674,
+      "dense_velocity_in_frame": null,
+      "min_pressure": 0.39732767605828234,
+      "tracer_mass_in_box": 3288.886739385189,
+      "dense_mass_in_box": 0.0,
+      "dense_centroid_x": null
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00084.athdf",
+      "t_code": 51.46336217954826,
+      "t_over_tcc": 4.2019659262646405,
+      "dense_velocity_in_frame": null,
+      "min_pressure": 0.39156316932170004,
+      "tracer_mass_in_box": 3272.851038222084,
+      "dense_mass_in_box": 0.0,
+      "dense_centroid_x": null
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00085.athdf",
+      "t_code": 52.06474433800308,
+      "t_over_tcc": 4.25106857388557,
+      "dense_velocity_in_frame": null,
+      "min_pressure": 0.38352575717346854,
+      "tracer_mass_in_box": 3257.1704547601335,
+      "dense_mass_in_box": 0.0,
+      "dense_centroid_x": null
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00086.athdf",
+      "t_code": 52.66590542856578,
+      "t_over_tcc": 4.3001531713886925,
+      "dense_velocity_in_frame": null,
+      "min_pressure": 0.37774135886556326,
+      "tracer_mass_in_box": 3241.030538392116,
+      "dense_mass_in_box": 0.0,
+      "dense_centroid_x": null
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00087.athdf",
+      "t_code": 53.298199528199724,
+      "t_over_tcc": 4.351779768437882,
+      "dense_velocity_in_frame": null,
+      "min_pressure": 0.3689606634715999,
+      "tracer_mass_in_box": 3223.5480899667396,
+      "dense_mass_in_box": 0.0,
+      "dense_centroid_x": null
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00088.athdf",
+      "t_code": 53.89891334578252,
+      "t_over_tcc": 4.400827846255121,
+      "dense_velocity_in_frame": null,
+      "min_pressure": 0.3628266355474628,
+      "tracer_mass_in_box": 3206.4368503589917,
+      "dense_mass_in_box": 0.0,
+      "dense_centroid_x": null
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00089.athdf",
+      "t_code": 54.53066181556996,
+      "t_over_tcc": 4.452409892813898,
+      "dense_velocity_in_frame": null,
+      "min_pressure": 0.35327550065352403,
+      "tracer_mass_in_box": 3187.8911775243564,
+      "dense_mass_in_box": 0.0,
+      "dense_centroid_x": null
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00090.athdf",
+      "t_code": 55.13068703058058,
+      "t_over_tcc": 4.501401746466557,
+      "dense_velocity_in_frame": null,
+      "min_pressure": 0.34314452613111673,
+      "tracer_mass_in_box": 3169.7264637293474,
+      "dense_mass_in_box": 0.0,
+      "dense_centroid_x": null
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00091.athdf",
+      "t_code": 55.73045097004839,
+      "t_over_tcc": 4.550372267060478,
+      "dense_velocity_in_frame": null,
+      "min_pressure": 0.33289520358979324,
+      "tracer_mass_in_box": 3151.013922872541,
+      "dense_mass_in_box": 0.0,
+      "dense_centroid_x": null
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00092.athdf",
+      "t_code": 56.361431648498396,
+      "t_over_tcc": 4.601891623719067,
+      "dense_velocity_in_frame": null,
+      "min_pressure": 0.3207259602422639,
+      "tracer_mass_in_box": 3130.688868972519,
+      "dense_mass_in_box": 0.0,
+      "dense_centroid_x": null
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00093.athdf",
+      "t_code": 56.959936159669695,
+      "t_over_tcc": 4.650759312423186,
+      "dense_velocity_in_frame": null,
+      "min_pressure": 0.309690940767197,
+      "tracer_mass_in_box": 3110.779364177223,
+      "dense_mass_in_box": 0.0,
+      "dense_centroid_x": null
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00094.athdf",
+      "t_code": 57.589460746853376,
+      "t_over_tcc": 4.702159779727727,
+      "dense_velocity_in_frame": null,
+      "min_pressure": 0.2976685520927453,
+      "tracer_mass_in_box": 3089.1459297013453,
+      "dense_mass_in_box": 0.0,
+      "dense_centroid_x": null
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00095.athdf",
+      "t_code": 58.18665260605529,
+      "t_over_tcc": 4.7509202908473505,
+      "dense_velocity_in_frame": null,
+      "min_pressure": 0.28408030221067343,
+      "tracer_mass_in_box": 3067.942370046417,
+      "dense_mass_in_box": 0.0,
+      "dense_centroid_x": null
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00096.athdf",
+      "t_code": 58.814584441849426,
+      "t_over_tcc": 4.802190710545509,
+      "dense_velocity_in_frame": null,
+      "min_pressure": 0.26937587365872184,
+      "tracer_mass_in_box": 3044.9178069494615,
+      "dense_mass_in_box": 0.0,
+      "dense_centroid_x": null
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00097.athdf",
+      "t_code": 59.41042768746875,
+      "t_over_tcc": 4.850841107827214,
+      "dense_velocity_in_frame": null,
+      "min_pressure": 0.25398973297177213,
+      "tracer_mass_in_box": 3022.347129361365,
+      "dense_mass_in_box": 0.0,
+      "dense_centroid_x": null
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00098.athdf",
+      "t_code": 60.037265776752996,
+      "t_over_tcc": 4.9020222234968,
+      "dense_velocity_in_frame": null,
+      "min_pressure": 0.23666725725878857,
+      "tracer_mass_in_box": 2997.795077520066,
+      "dense_mass_in_box": 0.0,
+      "dense_centroid_x": null
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00099.athdf",
+      "t_code": 60.63245431723459,
+      "t_over_tcc": 4.9506191643278585,
+      "dense_velocity_in_frame": null,
+      "min_pressure": 0.21959440740384667,
+      "tracer_mass_in_box": 2973.6327422879936,
+      "dense_mass_in_box": 0.0,
+      "dense_centroid_x": null
+    },
+    {
+      "file": "cloud_sharp13_20260907_L3_chi1000.out2.00100.athdf",
+      "t_code": 61.23724356957945,
+      "t_over_tcc": 5.0,
+      "dense_velocity_in_frame": null,
+      "min_pressure": 0.20205744048128266,
+      "tracer_mass_in_box": 2948.1380206084877,
+      "dense_mass_in_box": 0.0,
+      "dense_centroid_x": null
+    }
+  ]
+}

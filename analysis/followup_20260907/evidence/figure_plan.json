@@ -1,0 +1,20 @@
+{
+  "panels": [
+    {
+      "diagnostics": "/home/kaan/ic_audit_20260907/grid_tests/athpp_chi10/mass_diagnostics_v2.json",
+      "center_code": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "diagnostics": "/home/kaan/ic_audit_20260907/grid_tests/apk_chi10/mass_diagnostics_v2.json",
+      "center_code": [
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

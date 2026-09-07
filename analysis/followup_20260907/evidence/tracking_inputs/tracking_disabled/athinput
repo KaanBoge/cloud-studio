@@ -1,0 +1,59 @@
+# New non-radiative 3D run; density tanh, sharp velocity at 1.3 R.
+# Custom pgen constants: R=1, rho_w=1, P_w=1. All time values are code time.
+# Version: sharp13_20260907; historical inputs/outputs are not changed.
+<job>
+
+problem_id = cloud_sharp13_20260907_L3_chi10
+<time>
+
+cfl_number = 0.4
+nlim = -1
+tlim = 0.4
+integrator = vl2
+xorder = 2
+ncycle_out = 10
+<mesh>
+
+nx1 = 64
+nx2 = 32
+nx3 = 32
+x1min = -3
+x1max = 17
+x2min = -5
+x2max = 5
+x3min = -5
+x3max = 5
+ix1_bc = user
+ox1_bc = outflow
+ix2_bc = outflow
+ox2_bc = outflow
+ix3_bc = outflow
+ox3_bc = outflow
+refinement = none
+<meshblock>
+nx1 = 16
+nx2 = 16
+nx3 = 16
+<hydro>
+
+gamma = 1.6666666666666667
+<problem>
+
+Mach = 2
+drat = 10
+rv_scale = 1.3
+
+galilean_shift = false
+<output1>
+
+file_type = hst
+dt = 0.004
+<output2>
+
+file_type = hdf5
+variable = prim
+dt = 0.004
+<output3>
+
+file_type = rst
+dt = 0.1

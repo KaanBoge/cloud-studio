@@ -5,11 +5,10 @@ comparison.** The corrected scripts are in `verified_20260907/`. Previous
 analysis entry points are retained under `legacy_before_20260907/` for provenance,
 not recommended for execution. See [the verification report](../verification.html).
 
-The [performance report and guarded launch profiles](performance_20260907/README.md)
-document measured CPU/GPU optimizations, full-field checks, and which historical
-results need new evolution rather than replotting. Twelve optimized L5/L6 inputs
-are prepared, not completed. No historical run is reclassified as corrected by
-those changes, and no native data was deleted to make room.
+The [follow-up report](followup_20260907/README.md) adds stricter figure checks,
+Windows-backed storage guards, native restart/tracking tests and a correction:
+the historical `apkcool` runs did not enable cooling. It includes the remaining
+scientific and storage blockers; this is still not a completed production comparison.
 
 ## What was verified
 

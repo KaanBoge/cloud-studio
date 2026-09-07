@@ -1,0 +1,87 @@
+######################################
+###### Cloud in wind problem generator
+#### Input parameters
+## Cloud radius: 3.2e-22 kpc
+## Cloud density: 1e+03 g/cm^3
+## Wind density: 1 g/cm^3
+## Wind temperature: 6.1e-09 K
+## Wind velocity: 2.6e-05 km/s
+#### Derived parameters
+## Cloud temperature (from pressure equ.): 6.1e-12 K
+## Cloud to wind density ratio: 1e+03
+## Cloud to wind temperature ratio: 0.001
+## Uniform pressure (code units): 1
+## Wind sonic Mach: 2
+## Cloud crushing time: 3.9e-13 Myr
+######################################
+Starting up hydro driver
+### PARTHENON WARNING
+  Message:     The following input parameters are set but unused:
+comment/problem
+cooling/cfl
+cooling/d_e_tol
+cooling/d_log_temp_tol
+cooling/integrator
+cooling/lambda_units_cgs
+cooling/max_iter
+cooling/table_filename
+
+
+  File:        /home/kaan/codes/athenapk/external/parthenon/src/parameter_input.cpp
+  Line number: 687
+# Variables in use:
+# Package: parthenon::resolved_state
+# ---------------------------------------------------
+# Variables:
+# Name	Metadata flags
+# ---------------------------------------------------
+prim                      Cell,Provides,Real,Derived,Hydro,parthenon::resolved_state
+cons                      Cell,Provides,Real,Independent,FillGhost,WithFluxes,Hydro,parthenon::resolved_state
+bnd_flux::cons            Face,Provides,Real,Derived,OneCopy,Flux,CellMemAligned,parthenon::resolved_state
+# ---------------------------------------------------
+# Sparse Variables:
+# Name	sparse id	Metadata flags
+# ---------------------------------------------------
+# ---------------------------------------------------
+# Swarms:
+# Swarm	Value	metadata
+# ---------------------------------------------------
+
+
+Setup complete, executing driver...
+
+cycle=0 time=0.0000000000000000e+00 dt=4.0343576527906546e-03 zone-cycles/wsec_step=0.00e+00 wsec_total=9.40e+00 wsec_step=2.13e+01
+cycle=100 time=3.9533063233024540e-01 dt=3.8189459319472466e-03 zone-cycles/wsec_step=3.30e+06 wsec_total=1.03e+03 wsec_step=1.02e+03
+cycle=200 time=7.7289874570814920e-01 dt=3.7604518955675556e-03 zone-cycles/wsec_step=3.33e+06 wsec_total=2.03e+03 wsec_step=1.01e+03
+cycle=300 time=1.1496502487587208e+00 dt=3.7760525939842145e-03 zone-cycles/wsec_step=3.33e+06 wsec_total=3.04e+03 wsec_step=1.01e+03
+cycle=400 time=1.5287660903237767e+00 dt=3.7986960067460615e-03 zone-cycles/wsec_step=3.33e+06 wsec_total=4.05e+03 wsec_step=1.01e+03
+cycle=500 time=1.9090157576741511e+00 dt=3.8097691206177495e-03 zone-cycles/wsec_step=3.33e+06 wsec_total=5.06e+03 wsec_step=1.01e+03
+cycle=600 time=2.2912871160911390e+00 dt=3.8392538694447791e-03 zone-cycles/wsec_step=3.32e+06 wsec_total=6.07e+03 wsec_step=1.01e+03
+cycle=700 time=2.6770428243242304e+00 dt=3.8761242907721740e-03 zone-cycles/wsec_step=3.32e+06 wsec_total=7.08e+03 wsec_step=1.01e+03
+cycle=800 time=3.0663022645741580e+00 dt=3.9069722797802761e-03 zone-cycles/wsec_step=3.21e+06 wsec_total=8.12e+03 wsec_step=1.05e+03
+cycle=900 time=3.4575518543539023e+00 dt=3.9181177476247759e-03 zone-cycles/wsec_step=3.32e+06 wsec_total=9.14e+03 wsec_step=1.01e+03
+cycle=1000 time=3.8494261642114402e+00 dt=3.9178515150265041e-03 zone-cycles/wsec_step=3.31e+06 wsec_total=1.01e+04 wsec_step=1.01e+03
+cycle=1100 time=4.2419797018384218e+00 dt=3.9353099350743510e-03 zone-cycles/wsec_step=3.31e+06 wsec_total=1.12e+04 wsec_step=1.01e+03
+cycle=1200 time=4.6361913133071910e+00 dt=3.9466712101202464e-03 zone-cycles/wsec_step=3.31e+06 wsec_total=1.22e+04 wsec_step=1.01e+03
+cycle=1300 time=5.0317686150589740e+00 dt=3.9578459095414003e-03 zone-cycles/wsec_step=3.31e+06 wsec_total=1.32e+04 wsec_step=1.01e+03
+cycle=1400 time=5.4276339799534714e+00 dt=3.9594431436335304e-03 zone-cycles/wsec_step=3.31e+06 wsec_total=1.42e+04 wsec_step=1.01e+03
+cycle=1500 time=5.8236399595980775e+00 dt=3.9606024377213970e-03 zone-cycles/wsec_step=3.31e+06 wsec_total=1.52e+04 wsec_step=1.01e+03
+cycle=1600 time=6.2197794084380842e+00 dt=3.9622113487921239e-03 zone-cycles/wsec_step=3.14e+06 wsec_total=1.63e+04 wsec_step=1.07e+03
+cycle=1700 time=6.6160557929909398e+00 dt=3.9632542996541958e-03 zone-cycles/wsec_step=3.31e+06 wsec_total=1.73e+04 wsec_step=1.01e+03
+cycle=1800 time=7.0123435058850303e+00 dt=3.9577084252220224e-03 zone-cycles/wsec_step=3.31e+06 wsec_total=1.83e+04 wsec_step=1.01e+03
+cycle=1900 time=7.4070011384807950e+00 dt=3.9423600393507291e-03 zone-cycles/wsec_step=3.31e+06 wsec_total=1.93e+04 wsec_step=1.01e+03
+cycle=2000 time=7.8011158282851865e+00 dt=3.9389370741498087e-03 zone-cycles/wsec_step=3.31e+06 wsec_total=2.03e+04 wsec_step=1.01e+03
+cycle=2100 time=8.1949209198793351e+00 dt=3.9382818827884015e-03 zone-cycles/wsec_step=3.31e+06 wsec_total=2.13e+04 wsec_step=1.01e+03
+cycle=2200 time=8.5877612900096825e+00 dt=3.9200698822916347e-03 zone-cycles/wsec_step=3.31e+06 wsec_total=2.24e+04 wsec_step=1.01e+03
+cycle=2300 time=8.9790090745755258e+00 dt=3.9049986534268446e-03 zone-cycles/wsec_step=3.31e+06 wsec_total=2.34e+04 wsec_step=1.01e+03
+cycle=2400 time=9.3688529682868396e+00 dt=3.8956898466119302e-03 zone-cycles/wsec_step=3.15e+06 wsec_total=2.44e+04 wsec_step=1.06e+03
+### PARTHENON WARNING
+  Message:     
+A given task collection took longer than the current max number of
+	300 seconds to complete and terminated.
+	If this long duration is intended, change the timeout by updating
+	the parameter parthenon/mesh/task_collection_timeout_in_seconds
+	to a larger value. You may also wish to run on more resources.
+  File:        /home/kaan/codes/athenapk/external/parthenon/src/tasks/thread_pool.hpp
+  Line number: 44
+Step failed to complete all tasks.

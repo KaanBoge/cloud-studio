@@ -1,0 +1,922 @@
+{
+  "scope": "Short 3D tests at L3, not production or full FG22 tracking",
+  "runs": [
+    {
+      "command": [
+        "mpirun",
+        "--bind-to",
+        "core",
+        "-np",
+        "2",
+        "/home/kaan/ic_audit_20260907/bin/athpp",
+        "-i",
+        "athinput"
+      ],
+      "binary_sha256": "b8bdcbadc51986cb761a0d741001e6804d212dc7f57d0bcaf8e80e0dd6e88bb0",
+      "parameter_sha256": "c3ef37600f6cef7f2570b3da0dda0048672e863570c23cc4017e1c8497b2becc",
+      "restart": null,
+      "scope": "native experimental validation, not production",
+      "expected_t_end": 0.4,
+      "returncode": 0,
+      "wall_seconds": 0.5150210857391357,
+      "native_outputs": 14,
+      "initial_fields": {
+        "passed": true,
+        "snapshot": "/home/kaan/followup_20260907/tracking_tests_v2/baseline_no_shift/cloud_sharp13_20260907_L3_chi10.out2.00000.athdf",
+        "parameters": {
+          "source": "/home/kaan/followup_20260907/tracking_tests_v2/baseline_no_shift/athinput",
+          "parameter_sha256": "c3ef37600f6cef7f2570b3da0dda0048672e863570c23cc4017e1c8497b2becc",
+          "assumptions": [
+            "custom cloud_wind pgen fixes R=1, rho_wind=1 and P_wind=1"
+          ],
+          "gamma": 1.6666666666666667,
+          "r_cloud": 1.0,
+          "rho_wind": 1.0,
+          "p_wind": 1.0,
+          "v_wind": 2.581988897471611,
+          "chi": 10.0,
+          "rv_scale": 1.3,
+          "tmax": 0.4,
+          "output_dt": 0.004,
+          "mach": 2.0,
+          "kind": "athena",
+          "t_cc": 1.2247448713915892
+        },
+        "time_code": 0.0,
+        "cells": 65536,
+        "native_dimensions": [
+          64,
+          32,
+          32
+        ],
+        "uniform_grid": true,
+        "domain_width_over_R": [
+          20.0,
+          10.0,
+          10.0
+        ],
+        "errors": {
+          "density_relative_max": 6.661338147750933e-16,
+          "velocity_error_over_vwind_max": 1.7199501139797033e-16,
+          "pressure_relative_max": 6.661338147750939e-16
+        },
+        "scope": "t=0 density, velocity, pressure, dimensions and domain; no claim of full-run validation"
+      },
+      "snapshots": [
+        {
+          "file": "cloud_sharp13_20260907_L3_chi10.out2.00000.athdf",
+          "t_code": 0.0,
+          "t_over_tcc": 0.0,
+          "dense_velocity_in_frame": 0.0,
+          "min_pressure": 0.9999999999999996
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi10.out2.00001.athdf",
+          "t_code": 0.032274861218395144,
+          "t_over_tcc": 0.026352313834736494,
+          "dense_velocity_in_frame": 0.003113994490597743,
+          "min_pressure": 0.8514337433316889
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi10.out2.00002.athdf",
+          "t_code": 0.06454972243679027,
+          "t_over_tcc": 0.05270462766947298,
+          "dense_velocity_in_frame": 0.007829022279918134,
+          "min_pressure": 0.7018584417434669
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi10.out2.00003.athdf",
+          "t_code": 0.09680155362399698,
+          "t_over_tcc": 0.07903813756248546,
+          "dense_velocity_in_frame": 0.01414805252591625,
+          "min_pressure": 0.5623938572394835
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi10.out2.00004.athdf",
+          "t_code": 0.12901871292711126,
+          "t_over_tcc": 0.10534333798068214,
+          "dense_velocity_in_frame": 0.021900837573588863,
+          "min_pressure": 0.44900538356331143
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi10.out2.00005.athdf",
+          "t_code": 0.1611668314398551,
+          "t_over_tcc": 0.13159216682959682,
+          "dense_velocity_in_frame": 0.03089447662478027,
+          "min_pressure": 0.36830060684539206
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi10.out2.00006.athdf",
+          "t_code": 0.19320568367814425,
+          "t_over_tcc": 0.15775178013900854,
+          "dense_velocity_in_frame": 0.04088771434975815,
+          "min_pressure": 0.3150801721588555
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi10.out2.00007.athdf",
+          "t_code": 0.2251225120556481,
+          "t_over_tcc": 0.18381176138329744,
+          "dense_velocity_in_frame": 0.051653298746905114,
+          "min_pressure": 0.28129557523497023
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi10.out2.00008.athdf",
+          "t_code": 0.25692149905434797,
+          "t_over_tcc": 0.20977552554470108,
+          "dense_velocity_in_frame": 0.06294264808649627,
+          "min_pressure": 0.24798520322347384
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi10.out2.00009.athdf",
+          "t_code": 0.28862122971047255,
+          "t_over_tcc": 0.23565824724175663,
+          "dense_velocity_in_frame": 0.07452654684697928,
+          "min_pressure": 0.21985100768583335
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi10.out2.00010.athdf",
+          "t_code": 0.32009836382817236,
+          "t_over_tcc": 0.261359219626262,
+          "dense_velocity_in_frame": 0.08627375402933173,
+          "min_pressure": 0.1980396622184278
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi10.out2.00011.athdf",
+          "t_code": 0.3513599573841196,
+          "t_over_tcc": 0.2868842038790452,
+          "dense_velocity_in_frame": 0.09799756219307132,
+          "min_pressure": 0.18063046755869436
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi10.out2.00012.athdf",
+          "t_code": 0.38244749317215476,
+          "t_over_tcc": 0.3122670705594442,
+          "dense_velocity_in_frame": 0.1095490625046608,
+          "min_pressure": 0.16659259349654193
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi10.out2.00013.athdf",
+          "t_code": 0.4,
+          "t_over_tcc": 0.3265986323710904,
+          "dense_velocity_in_frame": 0.11609250728513155,
+          "min_pressure": 0.16002692320476622
+        }
+      ]
+    },
+    {
+      "command": [
+        "mpirun",
+        "--bind-to",
+        "core",
+        "-np",
+        "2",
+        "/home/kaan/followup_20260907/bin/athpp_tracking",
+        "-i",
+        "athinput"
+      ],
+      "binary_sha256": "3885d83e2238eae01382b88add7a168f713ef72f46420c44219ad23bc7bd7655",
+      "parameter_sha256": "c3ef37600f6cef7f2570b3da0dda0048672e863570c23cc4017e1c8497b2becc",
+      "restart": null,
+      "scope": "native experimental validation, not production",
+      "expected_t_end": 0.4,
+      "returncode": 0,
+      "wall_seconds": 0.4645247459411621,
+      "native_outputs": 14,
+      "initial_fields": {
+        "passed": true,
+        "snapshot": "/home/kaan/followup_20260907/tracking_tests_v2/tracking_disabled/cloud_sharp13_20260907_L3_chi10.out2.00000.athdf",
+        "parameters": {
+          "source": "/home/kaan/followup_20260907/tracking_tests_v2/tracking_disabled/athinput",
+          "parameter_sha256": "c3ef37600f6cef7f2570b3da0dda0048672e863570c23cc4017e1c8497b2becc",
+          "assumptions": [
+            "custom cloud_wind pgen fixes R=1, rho_wind=1 and P_wind=1"
+          ],
+          "gamma": 1.6666666666666667,
+          "r_cloud": 1.0,
+          "rho_wind": 1.0,
+          "p_wind": 1.0,
+          "v_wind": 2.581988897471611,
+          "chi": 10.0,
+          "rv_scale": 1.3,
+          "tmax": 0.4,
+          "output_dt": 0.004,
+          "mach": 2.0,
+          "kind": "athena",
+          "t_cc": 1.2247448713915892
+        },
+        "time_code": 0.0,
+        "cells": 65536,
+        "native_dimensions": [
+          64,
+          32,
+          32
+        ],
+        "uniform_grid": true,
+        "domain_width_over_R": [
+          20.0,
+          10.0,
+          10.0
+        ],
+        "errors": {
+          "density_relative_max": 6.661338147750933e-16,
+          "velocity_error_over_vwind_max": 1.7199501139797033e-16,
+          "pressure_relative_max": 6.661338147750939e-16
+        },
+        "scope": "t=0 density, velocity, pressure, dimensions and domain; no claim of full-run validation"
+      },
+      "snapshots": [
+        {
+          "file": "cloud_sharp13_20260907_L3_chi10.out2.00000.athdf",
+          "t_code": 0.0,
+          "t_over_tcc": 0.0,
+          "dense_velocity_in_frame": 0.0,
+          "min_pressure": 0.9999999999999996
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi10.out2.00001.athdf",
+          "t_code": 0.032274861218395144,
+          "t_over_tcc": 0.026352313834736494,
+          "dense_velocity_in_frame": 0.003113994490597743,
+          "min_pressure": 0.8514337433316889
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi10.out2.00002.athdf",
+          "t_code": 0.06454972243679027,
+          "t_over_tcc": 0.05270462766947298,
+          "dense_velocity_in_frame": 0.007829022279918134,
+          "min_pressure": 0.7018584417434669
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi10.out2.00003.athdf",
+          "t_code": 0.09680155362399698,
+          "t_over_tcc": 0.07903813756248546,
+          "dense_velocity_in_frame": 0.01414805252591625,
+          "min_pressure": 0.5623938572394835
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi10.out2.00004.athdf",
+          "t_code": 0.12901871292711126,
+          "t_over_tcc": 0.10534333798068214,
+          "dense_velocity_in_frame": 0.021900837573588863,
+          "min_pressure": 0.44900538356331143
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi10.out2.00005.athdf",
+          "t_code": 0.1611668314398551,
+          "t_over_tcc": 0.13159216682959682,
+          "dense_velocity_in_frame": 0.03089447662478027,
+          "min_pressure": 0.36830060684539206
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi10.out2.00006.athdf",
+          "t_code": 0.19320568367814425,
+          "t_over_tcc": 0.15775178013900854,
+          "dense_velocity_in_frame": 0.04088771434975815,
+          "min_pressure": 0.3150801721588555
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi10.out2.00007.athdf",
+          "t_code": 0.2251225120556481,
+          "t_over_tcc": 0.18381176138329744,
+          "dense_velocity_in_frame": 0.051653298746905114,
+          "min_pressure": 0.28129557523497023
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi10.out2.00008.athdf",
+          "t_code": 0.25692149905434797,
+          "t_over_tcc": 0.20977552554470108,
+          "dense_velocity_in_frame": 0.06294264808649627,
+          "min_pressure": 0.24798520322347384
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi10.out2.00009.athdf",
+          "t_code": 0.28862122971047255,
+          "t_over_tcc": 0.23565824724175663,
+          "dense_velocity_in_frame": 0.07452654684697928,
+          "min_pressure": 0.21985100768583335
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi10.out2.00010.athdf",
+          "t_code": 0.32009836382817236,
+          "t_over_tcc": 0.261359219626262,
+          "dense_velocity_in_frame": 0.08627375402933173,
+          "min_pressure": 0.1980396622184278
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi10.out2.00011.athdf",
+          "t_code": 0.3513599573841196,
+          "t_over_tcc": 0.2868842038790452,
+          "dense_velocity_in_frame": 0.09799756219307132,
+          "min_pressure": 0.18063046755869436
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi10.out2.00012.athdf",
+          "t_code": 0.38244749317215476,
+          "t_over_tcc": 0.3122670705594442,
+          "dense_velocity_in_frame": 0.1095490625046608,
+          "min_pressure": 0.16659259349654193
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi10.out2.00013.athdf",
+          "t_code": 0.4,
+          "t_over_tcc": 0.3265986323710904,
+          "dense_velocity_in_frame": 0.11609250728513155,
+          "min_pressure": 0.16002692320476622
+        }
+      ]
+    },
+    {
+      "command": [
+        "mpirun",
+        "--bind-to",
+        "core",
+        "-np",
+        "2",
+        "/home/kaan/followup_20260907/bin/athpp_tracking",
+        "-i",
+        "athinput"
+      ],
+      "binary_sha256": "3885d83e2238eae01382b88add7a168f713ef72f46420c44219ad23bc7bd7655",
+      "parameter_sha256": "fb723e802dca12e2ee49379bebf1201e95d3dbccdb7a43546a9f3150269cc9d4",
+      "restart": null,
+      "scope": "native experimental validation, not production",
+      "expected_t_end": 0.4,
+      "returncode": 0,
+      "wall_seconds": 0.46464061737060547,
+      "native_outputs": 14,
+      "initial_fields": {
+        "passed": true,
+        "snapshot": "/home/kaan/followup_20260907/tracking_tests_v2/tracking_enabled/cloud_sharp13_20260907_L3_chi10.out2.00000.athdf",
+        "parameters": {
+          "source": "/home/kaan/followup_20260907/tracking_tests_v2/tracking_enabled/athinput",
+          "parameter_sha256": "fb723e802dca12e2ee49379bebf1201e95d3dbccdb7a43546a9f3150269cc9d4",
+          "assumptions": [
+            "custom cloud_wind pgen fixes R=1, rho_wind=1 and P_wind=1"
+          ],
+          "gamma": 1.6666666666666667,
+          "r_cloud": 1.0,
+          "rho_wind": 1.0,
+          "p_wind": 1.0,
+          "v_wind": 2.581988897471611,
+          "chi": 10.0,
+          "rv_scale": 1.3,
+          "tmax": 0.4,
+          "output_dt": 0.004,
+          "mach": 2.0,
+          "kind": "athena",
+          "t_cc": 1.2247448713915892
+        },
+        "time_code": 0.0,
+        "cells": 65536,
+        "native_dimensions": [
+          64,
+          32,
+          32
+        ],
+        "uniform_grid": true,
+        "domain_width_over_R": [
+          20.0,
+          10.0,
+          10.0
+        ],
+        "errors": {
+          "density_relative_max": 6.661338147750933e-16,
+          "velocity_error_over_vwind_max": 1.7199501139797033e-16,
+          "pressure_relative_max": 6.661338147750939e-16
+        },
+        "scope": "t=0 density, velocity, pressure, dimensions and domain; no claim of full-run validation"
+      },
+      "snapshots": [
+        {
+          "file": "cloud_sharp13_20260907_L3_chi10.out2.00000.athdf",
+          "t_code": 0.0,
+          "t_over_tcc": 0.0,
+          "dense_velocity_in_frame": 0.0,
+          "min_pressure": 0.9999999999999996
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi10.out2.00001.athdf",
+          "t_code": 0.032274861218395144,
+          "t_over_tcc": 0.026352313834736494,
+          "dense_velocity_in_frame": 1.0550693360323368e-18,
+          "min_pressure": 0.8514337433316889
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi10.out2.00002.athdf",
+          "t_code": 0.06457569327220733,
+          "t_over_tcc": 0.05272583276779484,
+          "dense_velocity_in_frame": -5.9941729805489235e-18,
+          "min_pressure": 0.7017736291911538
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi10.out2.00003.athdf",
+          "t_code": 0.09689275746270574,
+          "t_over_tcc": 0.07911260518495865,
+          "dense_velocity_in_frame": 4.039927903865692e-18,
+          "min_pressure": 0.5621366185958956
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi10.out2.00004.athdf",
+          "t_code": 0.12922760409005468,
+          "t_over_tcc": 0.10551389690101146,
+          "dense_velocity_in_frame": -2.255672240089756e-18,
+          "min_pressure": 0.44850334735480485
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi10.out2.00005.athdf",
+          "t_code": 0.1615571338303309,
+          "t_over_tcc": 0.13191084739694822,
+          "dense_velocity_in_frame": 3.21186905769243e-19,
+          "min_pressure": 0.36752482527745617
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi10.out2.00006.athdf",
+          "t_code": 0.19384972004075657,
+          "t_over_tcc": 0.15827763362707462,
+          "dense_velocity_in_frame": 7.601865066464004e-18,
+          "min_pressure": 0.31401431061235924
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi10.out2.00007.athdf",
+          "t_code": 0.22609899899596797,
+          "t_over_tcc": 0.18460905963138918,
+          "dense_velocity_in_frame": -8.930662351437602e-18,
+          "min_pressure": 0.27997248096814087
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi10.out2.00008.athdf",
+          "t_code": 0.2583135471688387,
+          "t_over_tcc": 0.21091212807066967,
+          "dense_velocity_in_frame": -9.85349480708861e-18,
+          "min_pressure": 0.2476968318958478
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi10.out2.00009.athdf",
+          "t_code": 0.2905168471815853,
+          "t_over_tcc": 0.23720601242566708,
+          "dense_velocity_in_frame": 2.197957875560821e-18,
+          "min_pressure": 0.21962148929900652
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi10.out2.00010.athdf",
+          "t_code": 0.3225861826593853,
+          "t_over_tcc": 0.263390515195915,
+          "dense_velocity_in_frame": -2.369233347947945e-18,
+          "min_pressure": 0.19786203419080825
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi10.out2.00011.athdf",
+          "t_code": 0.35452265137667116,
+          "t_over_tcc": 0.28946653271048417,
+          "dense_velocity_in_frame": -3.938787575768136e-18,
+          "min_pressure": 0.18049982859141628
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi10.out2.00012.athdf",
+          "t_code": 0.3863639403986867,
+          "t_over_tcc": 0.3154648363292914,
+          "dense_velocity_in_frame": 7.371191068855015e-18,
+          "min_pressure": 0.16654190389575604
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi10.out2.00013.athdf",
+          "t_code": 0.4,
+          "t_over_tcc": 0.3265986323710904,
+          "dense_velocity_in_frame": 1.2807726791008476e-18,
+          "min_pressure": 0.1616128628767402
+        }
+      ],
+      "maximum_dense_velocity_after_boost": 9.85349480708861e-18
+    },
+    {
+      "command": [
+        "mpirun",
+        "--bind-to",
+        "core",
+        "-np",
+        "2",
+        "/home/kaan/followup_20260907/bin/athpp_tracking",
+        "-i",
+        "athinput",
+        "-r",
+        "/home/kaan/followup_20260907/tracking_tests_v2/tracking_enabled/cloud_sharp13_20260907_L3_chi10.00001.rst"
+      ],
+      "binary_sha256": "3885d83e2238eae01382b88add7a168f713ef72f46420c44219ad23bc7bd7655",
+      "parameter_sha256": "fb723e802dca12e2ee49379bebf1201e95d3dbccdb7a43546a9f3150269cc9d4",
+      "restart": "/home/kaan/followup_20260907/tracking_tests_v2/tracking_enabled/cloud_sharp13_20260907_L3_chi10.00001.rst",
+      "scope": "native experimental validation, not production",
+      "expected_t_end": 0.4,
+      "returncode": 0,
+      "wall_seconds": 0.4147059917449951,
+      "native_outputs": 9,
+      "snapshots": [
+        {
+          "file": "cloud_sharp13_20260907_L3_chi10.out2.00005.athdf",
+          "t_code": 0.1615571338303309,
+          "t_over_tcc": 0.13191084739694822,
+          "dense_velocity_in_frame": 3.21186905769243e-19,
+          "min_pressure": 0.36752482527745617
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi10.out2.00006.athdf",
+          "t_code": 0.19384972004075654,
+          "t_over_tcc": 0.1582776336270746,
+          "dense_velocity_in_frame": 1.1042709254442448e-17,
+          "min_pressure": 0.3140143106123592
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi10.out2.00007.athdf",
+          "t_code": 0.22609899899596791,
+          "t_over_tcc": 0.18460905963138916,
+          "dense_velocity_in_frame": -2.2326655878594006e-18,
+          "min_pressure": 0.2799724809681408
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi10.out2.00008.athdf",
+          "t_code": 0.25831354716883864,
+          "t_over_tcc": 0.2109121280706696,
+          "dense_velocity_in_frame": -1.1601695498668847e-17,
+          "min_pressure": 0.24769683189584782
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi10.out2.00009.athdf",
+          "t_code": 0.29051684718158527,
+          "t_over_tcc": 0.23720601242566702,
+          "dense_velocity_in_frame": 4.5741285518427894e-18,
+          "min_pressure": 0.21962148929900652
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi10.out2.00010.athdf",
+          "t_code": 0.32258618265938527,
+          "t_over_tcc": 0.26339051519591494,
+          "dense_velocity_in_frame": 3.869747801648311e-18,
+          "min_pressure": 0.19786203419080825
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi10.out2.00011.athdf",
+          "t_code": 0.3545226513766711,
+          "t_over_tcc": 0.2894665327104841,
+          "dense_velocity_in_frame": -6.617163127290468e-18,
+          "min_pressure": 0.18049982859141628
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi10.out2.00012.athdf",
+          "t_code": 0.38636394039868666,
+          "t_over_tcc": 0.31546483632929134,
+          "dense_velocity_in_frame": 5.768758227799576e-18,
+          "min_pressure": 0.16654190389575602
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi10.out2.00013.athdf",
+          "t_code": 0.4,
+          "t_over_tcc": 0.3265986323710904,
+          "dense_velocity_in_frame": 6.403863395504237e-19,
+          "min_pressure": 0.16161286287674012
+        }
+      ]
+    },
+    {
+      "command": [
+        "mpirun",
+        "--bind-to",
+        "core",
+        "-np",
+        "2",
+        "/home/kaan/followup_20260907/bin/athpp_tracking",
+        "-i",
+        "athinput"
+      ],
+      "binary_sha256": "3885d83e2238eae01382b88add7a168f713ef72f46420c44219ad23bc7bd7655",
+      "parameter_sha256": "22f8354a4f46ad4806961fb9b7336a8ad95981d94274d6d8e0d7c916fb71aec9",
+      "restart": null,
+      "scope": "native experimental validation, not production",
+      "expected_t_end": 0.4,
+      "returncode": 0,
+      "wall_seconds": 0.4646308422088623,
+      "native_outputs": 14,
+      "initial_fields": {
+        "passed": true,
+        "snapshot": "/home/kaan/followup_20260907/tracking_tests_v2/tracking_chi100/cloud_sharp13_20260907_L3_chi100.out2.00000.athdf",
+        "parameters": {
+          "source": "/home/kaan/followup_20260907/tracking_tests_v2/tracking_chi100/athinput",
+          "parameter_sha256": "22f8354a4f46ad4806961fb9b7336a8ad95981d94274d6d8e0d7c916fb71aec9",
+          "assumptions": [
+            "custom cloud_wind pgen fixes R=1, rho_wind=1 and P_wind=1"
+          ],
+          "gamma": 1.6666666666666667,
+          "r_cloud": 1.0,
+          "rho_wind": 1.0,
+          "p_wind": 1.0,
+          "v_wind": 2.581988897471611,
+          "chi": 100.0,
+          "rv_scale": 1.3,
+          "tmax": 0.4,
+          "output_dt": 0.004,
+          "mach": 2.0,
+          "kind": "athena",
+          "t_cc": 3.872983346207417
+        },
+        "time_code": 0.0,
+        "cells": 65536,
+        "native_dimensions": [
+          64,
+          32,
+          32
+        ],
+        "uniform_grid": true,
+        "domain_width_over_R": [
+          20.0,
+          10.0,
+          10.0
+        ],
+        "errors": {
+          "density_relative_max": 5.551115123125783e-15,
+          "velocity_error_over_vwind_max": 1.7199501139797033e-16,
+          "pressure_relative_max": 4.440892098500626e-16
+        },
+        "scope": "t=0 density, velocity, pressure, dimensions and domain; no claim of full-run validation"
+      },
+      "snapshots": [
+        {
+          "file": "cloud_sharp13_20260907_L3_chi100.out2.00000.athdf",
+          "t_code": 0.0,
+          "t_over_tcc": 0.0,
+          "dense_velocity_in_frame": 0.0,
+          "min_pressure": 0.9999999999999996
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi100.out2.00001.athdf",
+          "t_code": 0.032274861218395144,
+          "t_over_tcc": 0.008333333333333333,
+          "dense_velocity_in_frame": -8.265599628542455e-20,
+          "min_pressure": 0.85158214760753
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi100.out2.00002.athdf",
+          "t_code": 0.06429187654636329,
+          "t_over_tcc": 0.016600091144032547,
+          "dense_velocity_in_frame": -3.470777522903742e-19,
+          "min_pressure": 0.7065890190694065
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi100.out2.00003.athdf",
+          "t_code": 0.0964755435317907,
+          "t_over_tcc": 0.02490987822766227,
+          "dense_velocity_in_frame": 6.608586816931829e-20,
+          "min_pressure": 0.5701409297422773
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi100.out2.00004.athdf",
+          "t_code": 0.1286840363060015,
+          "t_over_tcc": 0.03322607530239296,
+          "dense_velocity_in_frame": -3.302839655213103e-19,
+          "min_pressure": 0.4611803995184532
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi100.out2.00005.athdf",
+          "t_code": 0.1608170960637033,
+          "t_over_tcc": 0.04152279565601075,
+          "dense_velocity_in_frame": -3.4663445050355686e-19,
+          "min_pressure": 0.38056300551611516
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi100.out2.00006.athdf",
+          "t_code": 0.19284272854253304,
+          "t_over_tcc": 0.04979177840549521,
+          "dense_velocity_in_frame": -3.299700209085053e-20,
+          "min_pressure": 0.32343677317848135
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi100.out2.00007.athdf",
+          "t_code": 0.2247482267789013,
+          "t_over_tcc": 0.058029742626955504,
+          "dense_velocity_in_frame": 1.18733371439749e-18,
+          "min_pressure": 0.28618255544126947
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi100.out2.00008.athdf",
+          "t_code": 0.2565168506978775,
+          "t_over_tcc": 0.06623236605163026,
+          "dense_velocity_in_frame": 6.593336073291859e-19,
+          "min_pressure": 0.2601370838971712
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi100.out2.00009.athdf",
+          "t_code": 0.28816479918771415,
+          "t_over_tcc": 0.07440383121448142,
+          "dense_velocity_in_frame": 1.4499388149789982e-18,
+          "min_pressure": 0.23093827242628134
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi100.out2.00010.athdf",
+          "t_code": 0.31968892465580295,
+          "t_over_tcc": 0.08254332541059216,
+          "dense_velocity_in_frame": -5.040228673520649e-19,
+          "min_pressure": 0.20780538836754497
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi100.out2.00011.athdf",
+          "t_code": 0.3509710149485651,
+          "t_over_tcc": 0.09062032639315379,
+          "dense_velocity_in_frame": 0.0,
+          "min_pressure": 0.18911903327581286
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi100.out2.00012.athdf",
+          "t_code": 0.38203802476932086,
+          "t_over_tcc": 0.09864179383663708,
+          "dense_velocity_in_frame": 8.0574206849874335e-19,
+          "min_pressure": 0.17368601461097613
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi100.out2.00013.athdf",
+          "t_code": 0.4,
+          "t_over_tcc": 0.10327955589886445,
+          "dense_velocity_in_frame": -6.041814063028483e-19,
+          "min_pressure": 0.16610049538720453
+        }
+      ],
+      "maximum_dense_velocity_after_boost": 1.4499388149789982e-18
+    },
+    {
+      "command": [
+        "mpirun",
+        "--bind-to",
+        "core",
+        "-np",
+        "2",
+        "/home/kaan/followup_20260907/bin/athpp_tracking",
+        "-i",
+        "athinput"
+      ],
+      "binary_sha256": "3885d83e2238eae01382b88add7a168f713ef72f46420c44219ad23bc7bd7655",
+      "parameter_sha256": "4aa075ae113c07adbedb2a7db3929dec0a587cc790a1c09ec9085ad3efec4871",
+      "restart": null,
+      "scope": "native experimental validation, not production",
+      "expected_t_end": 0.4,
+      "returncode": 0,
+      "wall_seconds": 0.4644925594329834,
+      "native_outputs": 14,
+      "initial_fields": {
+        "passed": true,
+        "snapshot": "/home/kaan/followup_20260907/tracking_tests_v2/tracking_chi1000/cloud_sharp13_20260907_L3_chi1000.out2.00000.athdf",
+        "parameters": {
+          "source": "/home/kaan/followup_20260907/tracking_tests_v2/tracking_chi1000/athinput",
+          "parameter_sha256": "4aa075ae113c07adbedb2a7db3929dec0a587cc790a1c09ec9085ad3efec4871",
+          "assumptions": [
+            "custom cloud_wind pgen fixes R=1, rho_wind=1 and P_wind=1"
+          ],
+          "gamma": 1.6666666666666667,
+          "r_cloud": 1.0,
+          "rho_wind": 1.0,
+          "p_wind": 1.0,
+          "v_wind": 2.581988897471611,
+          "chi": 1000.0,
+          "rv_scale": 1.3,
+          "tmax": 0.4,
+          "output_dt": 0.004,
+          "mach": 2.0,
+          "kind": "athena",
+          "t_cc": 12.24744871391589
+        },
+        "time_code": 0.0,
+        "cells": 65536,
+        "native_dimensions": [
+          64,
+          32,
+          32
+        ],
+        "uniform_grid": true,
+        "domain_width_over_R": [
+          20.0,
+          10.0,
+          10.0
+        ],
+        "errors": {
+          "density_relative_max": 5.551115123125783e-14,
+          "velocity_error_over_vwind_max": 1.7199501139797033e-16,
+          "pressure_relative_max": 1.3322676295501878e-15
+        },
+        "scope": "t=0 density, velocity, pressure, dimensions and domain; no claim of full-run validation"
+      },
+      "snapshots": [
+        {
+          "file": "cloud_sharp13_20260907_L3_chi1000.out2.00000.athdf",
+          "t_code": 0.0,
+          "t_over_tcc": 0.0,
+          "dense_velocity_in_frame": 0.0,
+          "min_pressure": 0.9999999999999996
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi1000.out2.00001.athdf",
+          "t_code": 0.032274861218395144,
+          "t_over_tcc": 0.0026352313834736496,
+          "dense_velocity_in_frame": -4.3057770905563246e-20,
+          "min_pressure": 0.5092709993145751
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi1000.out2.00002.athdf",
+          "t_code": 0.06293572543997654,
+          "t_over_tcc": 0.005138680463994695,
+          "dense_velocity_in_frame": -6.624078123196521e-21,
+          "min_pressure": 0.6558944460172013
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi1000.out2.00003.athdf",
+          "t_code": 0.09323700632481047,
+          "t_over_tcc": 0.007612769688014451,
+          "dense_velocity_in_frame": 3.974177182331325e-20,
+          "min_pressure": 0.606223104686783
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi1000.out2.00004.athdf",
+          "t_code": 0.12386323657129365,
+          "t_over_tcc": 0.010113390916310335,
+          "dense_velocity_in_frame": 1.5232986822520407e-19,
+          "min_pressure": 0.524771939945118
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi1000.out2.00005.athdf",
+          "t_code": 0.15524584623249965,
+          "t_over_tcc": 0.012675770265206747,
+          "dense_velocity_in_frame": 9.933532973332106e-20,
+          "min_pressure": 0.4592332492372322
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi1000.out2.00006.athdf",
+          "t_code": 0.1869740199713612,
+          "t_over_tcc": 0.015266364802892878,
+          "dense_velocity_in_frame": 1.3243253062311083e-20,
+          "min_pressure": 0.404955518178477
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi1000.out2.00007.athdf",
+          "t_code": 0.21852154349682934,
+          "t_over_tcc": 0.017842209312421052,
+          "dense_velocity_in_frame": 3.310441458415072e-20,
+          "min_pressure": 0.35763558234506065
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi1000.out2.00008.athdf",
+          "t_code": 0.2500193434872447,
+          "t_over_tcc": 0.020413993912313,
+          "dense_velocity_in_frame": 3.310064513728257e-20,
+          "min_pressure": 0.3221680322728894
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi1000.out2.00009.athdf",
+          "t_code": 0.2815008088358276,
+          "t_over_tcc": 0.022984444794284267,
+          "dense_velocity_in_frame": -1.9858131920780414e-20,
+          "min_pressure": 0.29654190999595126
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi1000.out2.00010.athdf",
+          "t_code": 0.31288815674964876,
+          "t_over_tcc": 0.025547211019886662,
+          "dense_velocity_in_frame": -1.3237270627770984e-19,
+          "min_pressure": 0.27834728078793425
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi1000.out2.00011.athdf",
+          "t_code": 0.3442425488337908,
+          "t_over_tcc": 0.028107286413263596,
+          "dense_velocity_in_frame": -1.5221184979327674e-19,
+          "min_pressure": 0.2656825185315803
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi1000.out2.00012.athdf",
+          "t_code": 0.37543876424192707,
+          "t_over_tcc": 0.030654446735126406,
+          "dense_velocity_in_frame": 7.278916354523826e-20,
+          "min_pressure": 0.2572134792720067
+        },
+        {
+          "file": "cloud_sharp13_20260907_L3_chi1000.out2.00013.athdf",
+          "t_code": 0.4,
+          "t_over_tcc": 0.032659863237109045,
+          "dense_velocity_in_frame": -7.27831322804953e-20,
+          "min_pressure": 0.24690668327391302
+        }
+      ],
+      "maximum_dense_velocity_after_boost": 1.5232986822520407e-19
+    }
+  ],
+  "disabled_matches_baseline": {
+    "rho": 0.0,
+    "press": 0.0,
+    "vel1": 0.0,
+    "vel2": 0.0,
+    "vel3": 0.0,
+    "r0": 0.0
+  },
+  "restart_matches_uninterrupted": {
+    "rho": 3.1298189240854185e-16,
+    "press": 1.0660288340961357e-15,
+    "vel1": 1.5599204995980066e-15,
+    "vel2": 2.5532707052149453e-15,
+    "vel3": 2.2689674846008284e-15,
+    "r0": 3.3306690738754696e-16
+  },
+  "passed": true
+}

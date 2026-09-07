@@ -1,0 +1,68 @@
+{
+  "scope": "regressions and preflight only; no production launch",
+  "suites": [
+    {
+      "test": "test_storage_guard.py",
+      "returncode": 0,
+      "log": "test_guest_can_be_the_bottleneck (test_storage_guard.StorageTests.test_guest_can_be_the_bottleneck) ... ok\ntest_guest_free_does_not_override_full_host (test_storage_guard.StorageTests.test_guest_free_does_not_override_full_host) ... ok\ntest_host_lookup_missing_fails_closed (test_storage_guard.StorageTests.test_host_lookup_missing_fails_closed) ... ok\ntest_negative_budget_rejected (test_storage_guard.StorageTests.test_negative_budget_rejected) ... ok\ntest_safety_reserve_is_required (test_storage_guard.StorageTests.test_safety_reserve_is_required) ... ok\ntest_small_test_with_reserve_fits (test_storage_guard.StorageTests.test_small_test_with_reserve_fits) ... ok\ntest_wrong_distribution_fails_closed (test_storage_guard.StorageTests.test_wrong_distribution_fails_closed) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.001s\n\nOK\n"
+    },
+    {
+      "test": "test_comparison_checks.py",
+      "returncode": 0,
+      "log": "test_changed_native_input_caught (test_comparison_checks.ComparisonTests.test_changed_native_input_caught) ... ok\ntest_changed_time_scale_caught (test_comparison_checks.ComparisonTests.test_changed_time_scale_caught) ... ok\ntest_edited_intermediate_metadata_caught (test_comparison_checks.ComparisonTests.test_edited_intermediate_metadata_caught) ... ok\ntest_figure2_negative_mass_rejected (test_comparison_checks.ComparisonTests.test_figure2_negative_mass_rejected) ... ok\ntest_matching_group_name_cannot_hide_different_mach (test_comparison_checks.ComparisonTests.test_matching_group_name_cannot_hide_different_mach) ... ok\ntest_missing_units_not_accepted (test_comparison_checks.ComparisonTests.test_missing_units_not_accepted) ... ok\ntest_same_physics_across_chi_and_resolution_allowed (test_comparison_checks.ComparisonTests.test_same_physics_across_chi_and_resolution_allowed) ... ok\ntest_variant_cannot_enter_fixed_frame_nonradiative_group (test_comparison_checks.ComparisonTests.test_variant_cannot_enter_fixed_frame_nonradiative_group) ... ok\ntest_wrong_code_label_caught (test_comparison_checks.ComparisonTests.test_wrong_code_label_caught) ... ok\ntest_wrong_domain_caught (test_comparison_checks.ComparisonTests.test_wrong_domain_caught) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.011s\n\nOK\n"
+    },
+    {
+      "test": "test_cooling_guard.py",
+      "returncode": 0,
+      "log": "test_generator_refuses_before_overwriting_output (test_cooling_guard.CoolingTests.test_generator_refuses_before_overwriting_output) ... ok\ntest_retained_log_is_independent_evidence (test_cooling_guard.CoolingTests.test_retained_log_is_independent_evidence) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.086s\n\nOK\n"
+    },
+    {
+      "test": "test_analysis.py",
+      "returncode": 0,
+      "log": "test_apk_units_and_density_ratio (test_analysis.AnalysisTests.test_apk_units_and_density_ratio) ... ok\ntest_flash_radius_and_fortran_exponent (test_analysis.AnalysisTests.test_flash_radius_and_fortran_exponent) ... ok\ntest_mass_loss_does_not_change_denominator (test_analysis.AnalysisTests.test_mass_loss_does_not_change_denominator) ... ok\ntest_missing_radius_not_assumed (test_analysis.AnalysisTests.test_missing_radius_not_assumed) ... ok\ntest_rejects_duplicate_time (test_analysis.AnalysisTests.test_rejects_duplicate_time) ... ok\ntest_rejects_missing_initial_snapshot (test_analysis.AnalysisTests.test_rejects_missing_initial_snapshot) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.003s\n\nOK\n"
+    },
+    {
+      "test": "test_additional.py",
+      "returncode": 0,
+      "log": "test_apk_pressure_from_parameters (test_additional.AdditionalTests.test_apk_pressure_from_parameters) ... ok\ntest_every_ladder_input (test_additional.AdditionalTests.test_every_ladder_input) ... ok\ntest_missing_apk_radius_serializes_as_null (test_additional.AdditionalTests.test_missing_apk_radius_serializes_as_null) ... ok\ntest_no_legacy_fraction_plot (test_additional.AdditionalTests.test_no_legacy_fraction_plot) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.007s\n\nOK\n"
+    },
+    {
+      "test": "test_optimized.py",
+      "returncode": 0,
+      "log": "test_all_twelve_input_combinations (test_optimized.LauncherTests.test_all_twelve_input_combinations) ... ok\ntest_changed_input_prevents_reexecution (test_optimized.LauncherTests.test_changed_input_prevents_reexecution) ... ok\ntest_compression_changes_only_snapshot_encoding (test_optimized.LauncherTests.test_compression_changes_only_snapshot_encoding) ... ok\ntest_disk_budget_does_not_assume_early_time_compression (test_optimized.LauncherTests.test_disk_budget_does_not_assume_early_time_compression) ... ok\ntest_duplicate_terminal_retained_not_counted_as_new_time (test_optimized.LauncherTests.test_duplicate_terminal_retained_not_counted_as_new_time) ... ok\ntest_exact_101_times (test_optimized.LauncherTests.test_exact_101_times) ... ok\ntest_existing_output_prevents_reexecution (test_optimized.LauncherTests.test_existing_output_prevents_reexecution) ... ok\ntest_missing_and_beyond_end_frames_do_not_pass (test_optimized.LauncherTests.test_missing_and_beyond_end_frames_do_not_pass) ... ok\ntest_modified_binary_is_rejected (test_optimized.LauncherTests.test_modified_binary_is_rejected) ... ok\ntest_mpi_uses_all_sixteen_threads_only_for_cpu (test_optimized.LauncherTests.test_mpi_uses_all_sixteen_threads_only_for_cpu) ... ok\ntest_nondivisible_blocks_rejected (test_optimized.LauncherTests.test_nondivisible_blocks_rejected) ... ok\ntest_prepared_can_be_reopened (test_optimized.LauncherTests.test_prepared_can_be_reopened) ... ok\ntest_unverified_output_profile_rejected (test_optimized.LauncherTests.test_unverified_output_profile_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 13 tests in 1.793s\n\nOK\n"
+    }
+  ],
+  "week_queue.sh": {
+    "returncode": 78,
+    "message": "STOP: this legacy queue deletes native data, uses stale inputs/binaries, and lacks a verified retention/comparison plan.\nDo not restart it. Use the reviewed, non-destructive runners after physical and storage preflight.\n"
+  },
+  "gal_queue.sh": {
+    "returncode": 78,
+    "message": "STOP: this legacy queue deletes native data, uses stale inputs/binaries, and lacks a verified retention/comparison plan.\nDo not restart it. Use the reviewed, non-destructive runners after physical and storage preflight.\n"
+  },
+  "storage": {
+    "path": "/home/kaan",
+    "filesystem_free_bytes": 176760819712,
+    "filesystem_total_bytes": 1081101176832,
+    "windows_backing_volume": {
+      "distribution": "Ubuntu",
+      "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+      "drive": "C:",
+      "free_bytes": 38184312832,
+      "total_bytes": 1999283154944
+    },
+    "policy": "Conservative growth budget; allocated but reusable VHDX blocks are not credited.",
+    "effective_free_bytes": 38184312832
+  },
+  "large_run_preflight": {
+    "5": {
+      "required_gib": 38.247812499292195,
+      "status": "Insufficient raw-retention space: need 38.25 GiB plus 10.00 GiB safety reserve; effective free 35.56 GiB; Windows C: 35.56 GiB free. Nothing launched or deleted."
+    },
+    "6": {
+      "required_gib": 235.9824999999255,
+      "status": "Insufficient raw-retention space: need 235.98 GiB plus 10.00 GiB safety reserve; effective free 35.56 GiB; Windows C: 35.56 GiB free. Nothing launched or deleted."
+    }
+  },
+  "passed": true
+}

@@ -1,0 +1,15 @@
+No data_format specified in output block 'output2', using default
+No data_format specified in output block 'output2', using default
+
+Setup complete, entering main loop...
+
+cycle=0 time=0.0000000000000000e+00 dt=3.2274861218395144e-02
+cycle=10 time=3.1288815674964876e-01 dt=3.1354392084142015e-02
+
+Terminating on time limit
+time=4.0000000000000002e-01 cycle=13
+tlim=4.0000000000000002e-01 nlim=-1
+
+zone-cycles = 851968
+cpu time used  = 1.6726199999999999e-01
+zone-cycles/cpu_second = 5.0936136121773031e+06

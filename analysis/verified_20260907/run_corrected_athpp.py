@@ -13,6 +13,7 @@ from pathlib import Path
 import shutil
 import subprocess
 import time
+from storage_guard import storage_snapshot, require_storage
 
 ROOT=Path('/home/kaan/codes/athenapp/runs')
 BIN=Path('/home/kaan/ic_audit_20260907/bin/athpp')
@@ -88,6 +89,8 @@ def main():
     nx=8*2**args.level; n=nx*(nx//2)**2
     needed_disk=n*120*101 + 5*1024**3  # conservative raw-output/restart allowance
     needed_ram=n*512 + 2*1024**3
+    storage=storage_snapshot(ROOT)
+    if args.run: require_storage(storage,needed_disk)
     available=int(next(s.split()[1] for s in Path('/proc/meminfo').read_text().splitlines() if s.startswith('MemAvailable:')))*1024
     if args.run and (shutil.disk_usage(ROOT).free<needed_disk or available<needed_ram):
         raise RuntimeError('Insufficient measured free space/memory for conservative retention budget; nothing was deleted')
@@ -101,6 +104,7 @@ def main():
             'dimensions':[nx,nx//2,nx//2],'binary':str(BIN),'binary_sha256':binary_sha,
             'parameter_sha256':hashlib.sha256(param.read_bytes()).hexdigest(),
             'ranks':ranks,'target_snapshots':101,'production_validation':'pending',
+            'storage_preflight':storage,
             'raw_retention':'all outputs retained; visualization is not an archive'}
     (target/'provenance.json').write_text(json.dumps(record,indent=2))
     print(f'Prepared {target}; run={args.run}',flush=True)

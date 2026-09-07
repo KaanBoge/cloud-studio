@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "scope": "local production-bundle browser smoke using real streamed historical frame",
+  "initial_title": "AthenaPK (GPU) · cooling NOT enabled · χ = 10 · level 4 · 21 frames · t = 0 t_cc",
+  "time_label": "t = 5 t_cc",
+  "errors": []
+}

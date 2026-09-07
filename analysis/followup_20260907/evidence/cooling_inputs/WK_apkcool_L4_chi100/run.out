@@ -1,0 +1,72 @@
+######################################
+###### Cloud in wind problem generator
+#### Input parameters
+## Cloud radius: 3.2e-22 kpc
+## Cloud density: 1e+02 g/cm^3
+## Wind density: 1 g/cm^3
+## Wind temperature: 6.1e-09 K
+## Wind velocity: 2.6e-05 km/s
+#### Derived parameters
+## Cloud temperature (from pressure equ.): 6.1e-11 K
+## Cloud to wind density ratio: 1e+02
+## Cloud to wind temperature ratio: 0.01
+## Uniform pressure (code units): 1
+## Wind sonic Mach: 2
+## Cloud crushing time: 1.2e-13 Myr
+######################################
+Starting up hydro driver
+### PARTHENON WARNING
+  Message:     The following input parameters are set but unused:
+comment/problem
+cooling/cfl
+cooling/d_e_tol
+cooling/d_log_temp_tol
+cooling/integrator
+cooling/lambda_units_cgs
+cooling/max_iter
+cooling/table_filename
+
+
+  File:        /home/kaan/codes/athenapk/external/parthenon/src/parameter_input.cpp
+  Line number: 687
+# Variables in use:
+# Package: parthenon::resolved_state
+# ---------------------------------------------------
+# Variables:
+# Name	Metadata flags
+# ---------------------------------------------------
+prim                      Cell,Provides,Real,Derived,Hydro,parthenon::resolved_state
+cons                      Cell,Provides,Real,Independent,FillGhost,WithFluxes,Hydro,parthenon::resolved_state
+bnd_flux::cons            Face,Provides,Real,Derived,OneCopy,Flux,CellMemAligned,parthenon::resolved_state
+# ---------------------------------------------------
+# Sparse Variables:
+# Name	sparse id	Metadata flags
+# ---------------------------------------------------
+# ---------------------------------------------------
+# Swarms:
+# Swarm	Value	metadata
+# ---------------------------------------------------
+
+
+Setup complete, executing driver...
+
+cycle=0 time=0.0000000000000000e+00 dt=1.6137430611162618e-02 zone-cycles/wsec_step=0.00e+00 wsec_total=9.30e-02 wsec_step=4.62e-01
+cycle=100 time=1.5247591348895324e+00 dt=1.5250974688160134e-02 zone-cycles/wsec_step=3.83e+07 wsec_total=1.46e+00 wsec_step=1.37e+00
+cycle=200 time=3.0643672116421175e+00 dt=1.5579580637578118e-02 zone-cycles/wsec_step=2.71e+07 wsec_total=3.40e+00 wsec_step=1.94e+00
+cycle=300 time=4.6316783604814287e+00 dt=1.5737737145776611e-02 zone-cycles/wsec_step=3.27e+07 wsec_total=5.00e+00 wsec_step=1.60e+00
+cycle=400 time=6.2096329606082392e+00 dt=1.5817776961856597e-02 zone-cycles/wsec_step=2.12e+07 wsec_total=7.47e+00 wsec_step=2.47e+00
+cycle=500 time=7.7931973645261134e+00 dt=1.5833031211239773e-02 zone-cycles/wsec_step=1.88e+07 wsec_total=1.03e+01 wsec_step=2.79e+00
+cycle=600 time=9.3733880668346270e+00 dt=1.5757360261112168e-02 zone-cycles/wsec_step=2.20e+07 wsec_total=1.26e+01 wsec_step=2.38e+00
+cycle=700 time=1.0946791761013026e+01 dt=1.5729786419798872e-02 zone-cycles/wsec_step=1.81e+07 wsec_total=1.55e+01 wsec_step=2.89e+00
+cycle=800 time=1.2519237439210530e+01 dt=1.5721844640166276e-02 zone-cycles/wsec_step=2.26e+07 wsec_total=1.78e+01 wsec_step=2.32e+00
+cycle=900 time=1.4090802829131082e+01 dt=1.5714917539746871e-02 zone-cycles/wsec_step=1.85e+07 wsec_total=2.07e+01 wsec_step=2.84e+00
+cycle=1000 time=1.5653405737873829e+01 dt=1.5560802561087245e-02 zone-cycles/wsec_step=1.85e+07 wsec_total=2.35e+01 wsec_step=2.83e+00
+cycle=1100 time=1.7204038413306534e+01 dt=1.5474467043700830e-02 zone-cycles/wsec_step=2.23e+07 wsec_total=2.59e+01 wsec_step=2.35e+00
+cycle=1200 time=1.8747144859793067e+01 dt=1.5373670983317947e-02 zone-cycles/wsec_step=1.87e+07 wsec_total=2.87e+01 wsec_step=2.80e+00
+
+Driver completed.
+time=1.94e+01 cycle=1241
+tlim=1.94e+01 nlim=-1
+
+walltime used = 2.98e+01
+zone-cycles/wallsecond = 2.18e+07
