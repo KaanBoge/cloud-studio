@@ -1,11 +1,35 @@
 # FLASH 4.8 native velocity sensitivity controls
 
-## Status at launch, 8 September 2026
+## Completed results, 8 September 2026
+
+All four L3/L4 controls are complete and analyzed, with 101 distinct full-state
+times each. Every native field and time passed checks. Independent yt mass
+sums agree with the direct native reader within 5.6e-16 relative difference for
+all 404 checkpoints. Seven launcher and two analysis tests pass. See
+[the report](report.json), [mass curves](mass_evolution.png) and [QA review](VALIDATION.md).
+
+| Level | Sharp / historical solver wall time | Peak sampled solver-child RSS | Peak curve separation / initial dense mass |
+| --- | --- | ---: | ---: |
+| 3 | 36.8s / 36.8s | 13.41 GiB | 10.37% |
+| 4 | 484.3s / 478.7s | 13.49 GiB | 6.17% |
+
+Eight MPI workers were observed fully busy during L4. Timings exclude the
+subsequent validation/analysis. Initial density, grid and unchanged auxiliary
+fields are exact within each pair; recovered thermodynamic fields differ by
+at most 7.1e-16 relatively. At L3 both final dense masses are zero despite
+earlier curve separation. L4 final sharp/historical fractions are 0.04027/0.05484.
+These are sensitivity differences, not accuracy errors or convergence proof.
+
+All native checkpoint and plot data (about 17 GiB) remain saved. Actual final
+times span 5.00162-5.00390 t_cc and are not relabeled. No tracer is present;
+no all-material-retained claim can be made. L5 was held without launching:
+153.31 GiB plus 10 GiB reserve was required, versus 35.67 GiB available.
+
+## Completed worker records
 
 The guarded L3/L4 queue started at 02:09 local time using eight native MPI ranks.
-Both L3 controls have completed their native checks, with 101 distinct full-state
-times each and about 36.8 seconds of solver wall time per run. L4 is continuing.
-Full four-control analysis is pending; these are not production viewer entries.
+Both L3/L4 pairs and their four-control analysis are now complete. No FLASH
+worker remains active. These experiments are not production viewer entries.
 Read actual processes, Windows `worker_windows.*` and native
 `/home/kaan/sensitivity_20260907/flash/batch.json` / `current.json` for live status.
 The Windows-owned launcher PID was 28680; do not use a saved PID without checking.
@@ -54,7 +78,7 @@ The native HDF5 reader checks all leaf cells, full grid coverage without overlap
 cell coordinates/widths, every saved field's precision and finiteness, positive
 density/pressure, the native runtime-mode echo and every actual timestamp.
 Independent yt sums agree exactly for all four smoke checkpoints. Full-run yt
-cross-checks and mass-curve analysis will follow after L3/L4 finishes.
+cross-checks and mass-curve analysis also passed for all 404 completed states.
 
 ## Data retention and an explicit output-policy change
 

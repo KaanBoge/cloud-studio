@@ -2,9 +2,9 @@
 
 ## Update: 8 September 2026
 
-Twenty-six full controls are now validated and analyzed: the eight pilot runs below, six
+Thirty full controls are now validated and analyzed: the eight pilot runs below, six
 native Athena 4.2 runs at L3/L4/L5, four Enzo runs at L3/L4, and four Enzo-E runs
-at L3/L4, plus four RAMSES L3/L4 controls. Each Athena 4.2 run has 101 distinct native
+at L3/L4, plus four RAMSES and four FLASH 4.8 L3/L4 controls. Each Athena 4.2 run has 101 distinct native
 snapshots through 5 t_cc. Its initial density, tracer, coordinates and volumes
 match exactly within each pair at native VTK precision. Only velocity changes.
 
@@ -33,10 +33,12 @@ separation is 7.47% at L3 and 4.18% at L4; final tracer retention is about
 which took about 2m48s per solver run. All 404 native outputs remain saved.
 L5 is storage-held. See [RAMSES results and native-code checks](ramses/README.md).
 
-FLASH 4.8's isolated paired queue is now running. Both L3 controls have 101
-distinct full-state snapshots and pass native checks; L4 is continuing and
-the four-control mass analysis is pending. These are not included in the 26
-analyzed controls above yet. See [FLASH setup and live-status paths](flash/README.md).
+FLASH 4.8 L3/L4 is now complete, with 101 distinct full-state times in each of
+four controls. All 404 native mass sums agree independently with yt within
+5.6e-16 relative difference. Peak mass-curve separation is 10.37% at L3 and
+6.17% at L4. L4 solver runs took 8m04s and 7m59s on eight CPU ranks, peaking
+at 13.49 GiB solver-child RSS. There is no native tracer, so retention is
+unavailable. L5 is storage-held. See [FLASH results](flash/README.md).
 
 The first Enzo full
 attempt exposed an output-setting error: dtRestartDump is a wall-clock exit
@@ -120,10 +122,12 @@ Windows scripts/results: `C:/Users/kaanb/CloudCrushing/sensitivity_20260907`.
 
 The Athena++/AthenaPK and Enzo level-5 continuations remain storage-held.
 Athena 4.2 L3/L4/L5 and Enzo-E L3/L4 are complete. Enzo-E L5 is storage-held too.
-RAMSES L3/L4 is complete; its L5 continuation is storage-held. FLASH 4.8 L3/L4
-is underway, with L5 guarded by storage. The other six solver variants
-(including separate GIZMO MFM/MFV) still need paired launchers and native
-historical-law checks. A 15-minute task follow-up is enabled to inspect progress and
+RAMSES and FLASH 4.8 L3/L4 are complete; their L5 continuations are storage-held.
+Flash-X's native paired initial-condition checks pass and its L3/L4 queue is
+running; these are not yet counted as analyzed controls. See [Flash-X setup](flashx/README.md).
+The other five solver variants (including separate
+GIZMO MFM/MFV) still need paired launchers and native historical-law checks.
+A 15-minute task follow-up is enabled to inspect progress and
 advance safe pending work. The old blanket replacement queue remains inactive.
 Cooling, tracking and paper-ready retention checks remain separate work.
 

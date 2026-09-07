@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "independent_reader": "yt FLASH frontend",
+  "checks": [
+    {
+      "snapshot": "/home/kaan/sensitivity_20260907/flashx/smokes/L3_chi100_sharp13/cloudwind_hdf5_chk_0000",
+      "relative_mass_error": 1.8750569550517804e-16
+    },
+    {
+      "snapshot": "/home/kaan/sensitivity_20260907/flashx/smokes/L3_chi100_sharp13/cloudwind_hdf5_chk_0001",
+      "relative_mass_error": 0.0
+    },
+    {
+      "snapshot": "/home/kaan/sensitivity_20260907/flashx/smokes/L3_chi100_tanh13/cloudwind_hdf5_chk_0000",
+      "relative_mass_error": 1.8750569550517804e-16
+    },
+    {
+      "snapshot": "/home/kaan/sensitivity_20260907/flashx/smokes/L3_chi100_tanh13/cloudwind_hdf5_chk_0001",
+      "relative_mass_error": 0.0
+    }
+  ]
+}
