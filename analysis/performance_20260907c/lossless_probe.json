@@ -1,0 +1,24 @@
+{
+  "source": "/home/kaan/codes/athenapp/runs/RESTART_sharp13_20260907_L4_chi100/cloud_sharp13_20260907_L4_chi100.out2.00100.athdf",
+  "destination": "/home/kaan/performance_20260907c/late_l4_lossless.athdf",
+  "source_bytes": 25199200,
+  "compressed_bytes": 12740951,
+  "encoding_seconds": 0.3926268070000001,
+  "size_reduction_percent": 49.43906552588972,
+  "time_tcc": 5.0,
+  "checked_datasets": [
+    "Levels",
+    "LogicalLocations",
+    "prim",
+    "x1f",
+    "x1v",
+    "x2f",
+    "x2v",
+    "x3f",
+    "x3v"
+  ],
+  "all_attributes_identical": true,
+  "decoded_bytes_identical": true,
+  "original_retained": true,
+  "scope": "One late L4 Athena++ file only. Not a promised L5/L6 or cross-code ratio."
+}

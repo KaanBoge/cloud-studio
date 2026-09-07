@@ -1,5 +1,10 @@
 # Faster corrected 3D runs on Kaan's simulation PC
 
+**Latest:** [the third performance pass](../performance_20260907c/README.md)
+enables lossless snapshot compression 1 for GPU L5 after a 10.7% short-test
+runtime reduction with exact decoded-field agreement. An 8-rank CPU candidate
+was slower and was rejected. Raw data is retained and storage guards remain.
+
 **Current profile update:** [the second performance pass](../performance_20260907b/README.md)
 adds LTO/128x64x32 work blocks for CPU L5 (6.2% additional measured time reduction)
 and lossless snapshot compression level 1 for GPU L6 (12.4% in the output-including

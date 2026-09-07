@@ -1,0 +1,3606 @@
+{
+  "scope": "Requested Mach-2 nonradiative baseline, not a declaration that every old run must be repeated.",
+  "memory_sources": [
+    "C:/Users/kaanb/.claude/projects/C--/memory/cloud-crushing-mentorship.md",
+    "C:/Users/kaanb/.claude/projects/C--/memory/cloud-crushing-3d-ceiling.md"
+  ],
+  "memory_caveat": "August notes are historical and contain superseded IC, resolution-limit and deletion claims. Current September audit takes precedence.",
+  "code_families": 12,
+  "solver_variants": 13,
+  "target_cells": 234,
+  "counts": {
+    "needs_native_run_and_reuse_audit": 210,
+    "completed_basic_native_checks": 12,
+    "queued_storage_hold": 12
+  },
+  "baseline": [
+    {
+      "code": "athpp",
+      "name": "Athena++",
+      "level": 1,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        16,
+        8,
+        8
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "athpp",
+      "name": "Athena++",
+      "level": 1,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        16,
+        8,
+        8
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "athpp",
+      "name": "Athena++",
+      "level": 1,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        16,
+        8,
+        8
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "athpp",
+      "name": "Athena++",
+      "level": 2,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        32,
+        16,
+        16
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "athpp",
+      "name": "Athena++",
+      "level": 2,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        32,
+        16,
+        16
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "athpp",
+      "name": "Athena++",
+      "level": 2,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        32,
+        16,
+        16
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "athpp",
+      "name": "Athena++",
+      "level": 3,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        64,
+        32,
+        32
+      ],
+      "target_native_times": 101,
+      "status": "completed_basic_native_checks",
+      "directory": "/home/kaan/codes/athenapp/runs/RESTART_sharp13_20260907_L3_chi10",
+      "native_snapshots": 101,
+      "publication": "not yet published",
+      "comparison_validation": "BC/tracer matching, common time and retention still need review"
+    },
+    {
+      "code": "athpp",
+      "name": "Athena++",
+      "level": 3,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        64,
+        32,
+        32
+      ],
+      "target_native_times": 101,
+      "status": "completed_basic_native_checks",
+      "directory": "/home/kaan/codes/athenapp/runs/RESTART_sharp13_20260907_L3_chi100",
+      "native_snapshots": 101,
+      "publication": "not yet published",
+      "comparison_validation": "BC/tracer matching, common time and retention still need review"
+    },
+    {
+      "code": "athpp",
+      "name": "Athena++",
+      "level": 3,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        64,
+        32,
+        32
+      ],
+      "target_native_times": 101,
+      "status": "completed_basic_native_checks",
+      "directory": "/home/kaan/codes/athenapp/runs/RESTART_sharp13_20260907_L3_chi1000",
+      "native_snapshots": 101,
+      "publication": "not yet published",
+      "comparison_validation": "BC/tracer matching, common time and retention still need review"
+    },
+    {
+      "code": "athpp",
+      "name": "Athena++",
+      "level": 4,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        128,
+        64,
+        64
+      ],
+      "target_native_times": 101,
+      "status": "completed_basic_native_checks",
+      "directory": "/home/kaan/codes/athenapp/runs/RESTART_sharp13_20260907_L4_chi10",
+      "native_snapshots": 101,
+      "publication": "not yet published",
+      "comparison_validation": "BC/tracer matching, common time and retention still need review"
+    },
+    {
+      "code": "athpp",
+      "name": "Athena++",
+      "level": 4,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        128,
+        64,
+        64
+      ],
+      "target_native_times": 101,
+      "status": "completed_basic_native_checks",
+      "directory": "/home/kaan/codes/athenapp/runs/RESTART_sharp13_20260907_L4_chi100",
+      "native_snapshots": 101,
+      "publication": "not yet published",
+      "comparison_validation": "BC/tracer matching, common time and retention still need review"
+    },
+    {
+      "code": "athpp",
+      "name": "Athena++",
+      "level": 4,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        128,
+        64,
+        64
+      ],
+      "target_native_times": 101,
+      "status": "completed_basic_native_checks",
+      "directory": "/home/kaan/codes/athenapp/runs/RESTART_sharp13_20260907_L4_chi1000",
+      "native_snapshots": 101,
+      "publication": "not yet published",
+      "comparison_validation": "BC/tracer matching, common time and retention still need review"
+    },
+    {
+      "code": "athpp",
+      "name": "Athena++",
+      "level": 5,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "target_native_times": 101,
+      "status": "queued_storage_hold",
+      "directory": "/home/kaan/codes/athenapp/runs/OPTLTO_sharp13_20260907_L5_chi10",
+      "required_free_gib": 48.247812499292195
+    },
+    {
+      "code": "athpp",
+      "name": "Athena++",
+      "level": 5,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "target_native_times": 101,
+      "status": "queued_storage_hold",
+      "directory": "/home/kaan/codes/athenapp/runs/OPTLTO_sharp13_20260907_L5_chi100",
+      "required_free_gib": 48.247812499292195
+    },
+    {
+      "code": "athpp",
+      "name": "Athena++",
+      "level": 5,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "target_native_times": 101,
+      "status": "queued_storage_hold",
+      "directory": "/home/kaan/codes/athenapp/runs/OPTLTO_sharp13_20260907_L5_chi1000",
+      "required_free_gib": 48.247812499292195
+    },
+    {
+      "code": "athpp",
+      "name": "Athena++",
+      "level": 6,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        512,
+        256,
+        256
+      ],
+      "target_native_times": 101,
+      "status": "queued_storage_hold",
+      "directory": "/home/kaan/codes/athenapp/runs/OPT_sharp13_20260907_L6_chi10",
+      "required_free_gib": 245.9824999999255
+    },
+    {
+      "code": "athpp",
+      "name": "Athena++",
+      "level": 6,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        512,
+        256,
+        256
+      ],
+      "target_native_times": 101,
+      "status": "queued_storage_hold",
+      "directory": "/home/kaan/codes/athenapp/runs/OPT_sharp13_20260907_L6_chi100",
+      "required_free_gib": 245.9824999999255
+    },
+    {
+      "code": "athpp",
+      "name": "Athena++",
+      "level": 6,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        512,
+        256,
+        256
+      ],
+      "target_native_times": 101,
+      "status": "queued_storage_hold",
+      "directory": "/home/kaan/codes/athenapp/runs/OPT_sharp13_20260907_L6_chi1000",
+      "required_free_gib": 245.9824999999255
+    },
+    {
+      "code": "apk",
+      "name": "AthenaPK",
+      "level": 1,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        16,
+        8,
+        8
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "apk",
+      "name": "AthenaPK",
+      "level": 1,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        16,
+        8,
+        8
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "apk",
+      "name": "AthenaPK",
+      "level": 1,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        16,
+        8,
+        8
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "apk",
+      "name": "AthenaPK",
+      "level": 2,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        32,
+        16,
+        16
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "apk",
+      "name": "AthenaPK",
+      "level": 2,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        32,
+        16,
+        16
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "apk",
+      "name": "AthenaPK",
+      "level": 2,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        32,
+        16,
+        16
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "apk",
+      "name": "AthenaPK",
+      "level": 3,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        64,
+        32,
+        32
+      ],
+      "target_native_times": 101,
+      "status": "completed_basic_native_checks",
+      "directory": "/home/kaan/codes/athenapk/runs/RESTART_sharp13_20260907_L3_chi10",
+      "native_snapshots": 101,
+      "publication": "not yet published",
+      "comparison_validation": "BC/tracer matching, common time and retention still need review"
+    },
+    {
+      "code": "apk",
+      "name": "AthenaPK",
+      "level": 3,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        64,
+        32,
+        32
+      ],
+      "target_native_times": 101,
+      "status": "completed_basic_native_checks",
+      "directory": "/home/kaan/codes/athenapk/runs/RESTART_sharp13_20260907_L3_chi100",
+      "native_snapshots": 101,
+      "publication": "not yet published",
+      "comparison_validation": "BC/tracer matching, common time and retention still need review"
+    },
+    {
+      "code": "apk",
+      "name": "AthenaPK",
+      "level": 3,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        64,
+        32,
+        32
+      ],
+      "target_native_times": 101,
+      "status": "completed_basic_native_checks",
+      "directory": "/home/kaan/codes/athenapk/runs/RESTART_sharp13_20260907_L3_chi1000",
+      "native_snapshots": 101,
+      "publication": "not yet published",
+      "comparison_validation": "BC/tracer matching, common time and retention still need review"
+    },
+    {
+      "code": "apk",
+      "name": "AthenaPK",
+      "level": 4,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        128,
+        64,
+        64
+      ],
+      "target_native_times": 101,
+      "status": "completed_basic_native_checks",
+      "directory": "/home/kaan/codes/athenapk/runs/RESTART_sharp13_20260907_L4_chi10",
+      "native_snapshots": 101,
+      "publication": "not yet published",
+      "comparison_validation": "BC/tracer matching, common time and retention still need review"
+    },
+    {
+      "code": "apk",
+      "name": "AthenaPK",
+      "level": 4,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        128,
+        64,
+        64
+      ],
+      "target_native_times": 101,
+      "status": "completed_basic_native_checks",
+      "directory": "/home/kaan/codes/athenapk/runs/RESTART_sharp13_20260907_L4_chi100",
+      "native_snapshots": 101,
+      "publication": "not yet published",
+      "comparison_validation": "BC/tracer matching, common time and retention still need review"
+    },
+    {
+      "code": "apk",
+      "name": "AthenaPK",
+      "level": 4,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        128,
+        64,
+        64
+      ],
+      "target_native_times": 101,
+      "status": "completed_basic_native_checks",
+      "directory": "/home/kaan/codes/athenapk/runs/RESTART_sharp13_20260907_L4_chi1000",
+      "native_snapshots": 101,
+      "publication": "not yet published",
+      "comparison_validation": "BC/tracer matching, common time and retention still need review"
+    },
+    {
+      "code": "apk",
+      "name": "AthenaPK",
+      "level": 5,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "target_native_times": 101,
+      "status": "queued_storage_hold",
+      "directory": "/home/kaan/codes/athenapk/runs/OPTIO1_sharp13_20260907_L5_chi10",
+      "required_free_gib": 48.247812499292195
+    },
+    {
+      "code": "apk",
+      "name": "AthenaPK",
+      "level": 5,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "target_native_times": 101,
+      "status": "queued_storage_hold",
+      "directory": "/home/kaan/codes/athenapk/runs/OPTIO1_sharp13_20260907_L5_chi100",
+      "required_free_gib": 48.247812499292195
+    },
+    {
+      "code": "apk",
+      "name": "AthenaPK",
+      "level": 5,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "target_native_times": 101,
+      "status": "queued_storage_hold",
+      "directory": "/home/kaan/codes/athenapk/runs/OPTIO1_sharp13_20260907_L5_chi1000",
+      "required_free_gib": 48.247812499292195
+    },
+    {
+      "code": "apk",
+      "name": "AthenaPK",
+      "level": 6,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        512,
+        256,
+        256
+      ],
+      "target_native_times": 101,
+      "status": "queued_storage_hold",
+      "directory": "/home/kaan/codes/athenapk/runs/OPTIO1_sharp13_20260907_L6_chi10",
+      "required_free_gib": 245.9824999999255
+    },
+    {
+      "code": "apk",
+      "name": "AthenaPK",
+      "level": 6,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        512,
+        256,
+        256
+      ],
+      "target_native_times": 101,
+      "status": "queued_storage_hold",
+      "directory": "/home/kaan/codes/athenapk/runs/OPTIO1_sharp13_20260907_L6_chi100",
+      "required_free_gib": 245.9824999999255
+    },
+    {
+      "code": "apk",
+      "name": "AthenaPK",
+      "level": 6,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        512,
+        256,
+        256
+      ],
+      "target_native_times": 101,
+      "status": "queued_storage_hold",
+      "directory": "/home/kaan/codes/athenapk/runs/OPTIO1_sharp13_20260907_L6_chi1000",
+      "required_free_gib": 245.9824999999255
+    },
+    {
+      "code": "athw",
+      "name": "Athena 4.2",
+      "level": 1,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        16,
+        8,
+        8
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "athw",
+      "name": "Athena 4.2",
+      "level": 1,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        16,
+        8,
+        8
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "athw",
+      "name": "Athena 4.2",
+      "level": 1,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        16,
+        8,
+        8
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "athw",
+      "name": "Athena 4.2",
+      "level": 2,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        32,
+        16,
+        16
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "athw",
+      "name": "Athena 4.2",
+      "level": 2,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        32,
+        16,
+        16
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "athw",
+      "name": "Athena 4.2",
+      "level": 2,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        32,
+        16,
+        16
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "athw",
+      "name": "Athena 4.2",
+      "level": 3,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        64,
+        32,
+        32
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "athw",
+      "name": "Athena 4.2",
+      "level": 3,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        64,
+        32,
+        32
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "athw",
+      "name": "Athena 4.2",
+      "level": 3,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        64,
+        32,
+        32
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "athw",
+      "name": "Athena 4.2",
+      "level": 4,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        128,
+        64,
+        64
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "athw",
+      "name": "Athena 4.2",
+      "level": 4,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        128,
+        64,
+        64
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "athw",
+      "name": "Athena 4.2",
+      "level": 4,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        128,
+        64,
+        64
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "athw",
+      "name": "Athena 4.2",
+      "level": 5,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "athw",
+      "name": "Athena 4.2",
+      "level": 5,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "athw",
+      "name": "Athena 4.2",
+      "level": 5,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "athw",
+      "name": "Athena 4.2",
+      "level": 6,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        512,
+        256,
+        256
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "athw",
+      "name": "Athena 4.2",
+      "level": 6,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        512,
+        256,
+        256
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "athw",
+      "name": "Athena 4.2",
+      "level": 6,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        512,
+        256,
+        256
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "enzo",
+      "name": "Enzo",
+      "level": 1,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        16,
+        8,
+        8
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "enzo",
+      "name": "Enzo",
+      "level": 1,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        16,
+        8,
+        8
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "enzo",
+      "name": "Enzo",
+      "level": 1,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        16,
+        8,
+        8
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "enzo",
+      "name": "Enzo",
+      "level": 2,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        32,
+        16,
+        16
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "enzo",
+      "name": "Enzo",
+      "level": 2,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        32,
+        16,
+        16
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "enzo",
+      "name": "Enzo",
+      "level": 2,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        32,
+        16,
+        16
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "enzo",
+      "name": "Enzo",
+      "level": 3,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        64,
+        32,
+        32
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "enzo",
+      "name": "Enzo",
+      "level": 3,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        64,
+        32,
+        32
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "enzo",
+      "name": "Enzo",
+      "level": 3,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        64,
+        32,
+        32
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "enzo",
+      "name": "Enzo",
+      "level": 4,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        128,
+        64,
+        64
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "enzo",
+      "name": "Enzo",
+      "level": 4,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        128,
+        64,
+        64
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "enzo",
+      "name": "Enzo",
+      "level": 4,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        128,
+        64,
+        64
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "enzo",
+      "name": "Enzo",
+      "level": 5,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "enzo",
+      "name": "Enzo",
+      "level": 5,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "enzo",
+      "name": "Enzo",
+      "level": 5,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "enzo",
+      "name": "Enzo",
+      "level": 6,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        512,
+        256,
+        256
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "enzo",
+      "name": "Enzo",
+      "level": 6,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        512,
+        256,
+        256
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "enzo",
+      "name": "Enzo",
+      "level": 6,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        512,
+        256,
+        256
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "enzoe",
+      "name": "Enzo-E",
+      "level": 1,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        16,
+        8,
+        8
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "enzoe",
+      "name": "Enzo-E",
+      "level": 1,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        16,
+        8,
+        8
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "enzoe",
+      "name": "Enzo-E",
+      "level": 1,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        16,
+        8,
+        8
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "enzoe",
+      "name": "Enzo-E",
+      "level": 2,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        32,
+        16,
+        16
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "enzoe",
+      "name": "Enzo-E",
+      "level": 2,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        32,
+        16,
+        16
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "enzoe",
+      "name": "Enzo-E",
+      "level": 2,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        32,
+        16,
+        16
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "enzoe",
+      "name": "Enzo-E",
+      "level": 3,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        64,
+        32,
+        32
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "enzoe",
+      "name": "Enzo-E",
+      "level": 3,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        64,
+        32,
+        32
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "enzoe",
+      "name": "Enzo-E",
+      "level": 3,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        64,
+        32,
+        32
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "enzoe",
+      "name": "Enzo-E",
+      "level": 4,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        128,
+        64,
+        64
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "enzoe",
+      "name": "Enzo-E",
+      "level": 4,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        128,
+        64,
+        64
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "enzoe",
+      "name": "Enzo-E",
+      "level": 4,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        128,
+        64,
+        64
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "enzoe",
+      "name": "Enzo-E",
+      "level": 5,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "enzoe",
+      "name": "Enzo-E",
+      "level": 5,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "enzoe",
+      "name": "Enzo-E",
+      "level": 5,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "enzoe",
+      "name": "Enzo-E",
+      "level": 6,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        512,
+        256,
+        256
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "enzoe",
+      "name": "Enzo-E",
+      "level": 6,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        512,
+        256,
+        256
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "enzoe",
+      "name": "Enzo-E",
+      "level": 6,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        512,
+        256,
+        256
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "flash",
+      "name": "FLASH 4.8",
+      "level": 1,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        16,
+        8,
+        8
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "flash",
+      "name": "FLASH 4.8",
+      "level": 1,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        16,
+        8,
+        8
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "flash",
+      "name": "FLASH 4.8",
+      "level": 1,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        16,
+        8,
+        8
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "flash",
+      "name": "FLASH 4.8",
+      "level": 2,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        32,
+        16,
+        16
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "flash",
+      "name": "FLASH 4.8",
+      "level": 2,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        32,
+        16,
+        16
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "flash",
+      "name": "FLASH 4.8",
+      "level": 2,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        32,
+        16,
+        16
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "flash",
+      "name": "FLASH 4.8",
+      "level": 3,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        64,
+        32,
+        32
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "flash",
+      "name": "FLASH 4.8",
+      "level": 3,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        64,
+        32,
+        32
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "flash",
+      "name": "FLASH 4.8",
+      "level": 3,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        64,
+        32,
+        32
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "flash",
+      "name": "FLASH 4.8",
+      "level": 4,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        128,
+        64,
+        64
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "flash",
+      "name": "FLASH 4.8",
+      "level": 4,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        128,
+        64,
+        64
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "flash",
+      "name": "FLASH 4.8",
+      "level": 4,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        128,
+        64,
+        64
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "flash",
+      "name": "FLASH 4.8",
+      "level": 5,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "flash",
+      "name": "FLASH 4.8",
+      "level": 5,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "flash",
+      "name": "FLASH 4.8",
+      "level": 5,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "flash",
+      "name": "FLASH 4.8",
+      "level": 6,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        512,
+        256,
+        256
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "flash",
+      "name": "FLASH 4.8",
+      "level": 6,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        512,
+        256,
+        256
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "flash",
+      "name": "FLASH 4.8",
+      "level": 6,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        512,
+        256,
+        256
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "flashx",
+      "name": "Flash-X",
+      "level": 1,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        16,
+        8,
+        8
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "flashx",
+      "name": "Flash-X",
+      "level": 1,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        16,
+        8,
+        8
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "flashx",
+      "name": "Flash-X",
+      "level": 1,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        16,
+        8,
+        8
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "flashx",
+      "name": "Flash-X",
+      "level": 2,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        32,
+        16,
+        16
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "flashx",
+      "name": "Flash-X",
+      "level": 2,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        32,
+        16,
+        16
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "flashx",
+      "name": "Flash-X",
+      "level": 2,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        32,
+        16,
+        16
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "flashx",
+      "name": "Flash-X",
+      "level": 3,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        64,
+        32,
+        32
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "flashx",
+      "name": "Flash-X",
+      "level": 3,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        64,
+        32,
+        32
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "flashx",
+      "name": "Flash-X",
+      "level": 3,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        64,
+        32,
+        32
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "flashx",
+      "name": "Flash-X",
+      "level": 4,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        128,
+        64,
+        64
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "flashx",
+      "name": "Flash-X",
+      "level": 4,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        128,
+        64,
+        64
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "flashx",
+      "name": "Flash-X",
+      "level": 4,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        128,
+        64,
+        64
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "flashx",
+      "name": "Flash-X",
+      "level": 5,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "flashx",
+      "name": "Flash-X",
+      "level": 5,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "flashx",
+      "name": "Flash-X",
+      "level": 5,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "flashx",
+      "name": "Flash-X",
+      "level": 6,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        512,
+        256,
+        256
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "flashx",
+      "name": "Flash-X",
+      "level": 6,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        512,
+        256,
+        256
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "flashx",
+      "name": "Flash-X",
+      "level": 6,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        512,
+        256,
+        256
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "ramses",
+      "name": "RAMSES",
+      "level": 1,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        16,
+        8,
+        8
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "ramses",
+      "name": "RAMSES",
+      "level": 1,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        16,
+        8,
+        8
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "ramses",
+      "name": "RAMSES",
+      "level": 1,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        16,
+        8,
+        8
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "ramses",
+      "name": "RAMSES",
+      "level": 2,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        32,
+        16,
+        16
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "ramses",
+      "name": "RAMSES",
+      "level": 2,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        32,
+        16,
+        16
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "ramses",
+      "name": "RAMSES",
+      "level": 2,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        32,
+        16,
+        16
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "ramses",
+      "name": "RAMSES",
+      "level": 3,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        64,
+        32,
+        32
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "ramses",
+      "name": "RAMSES",
+      "level": 3,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        64,
+        32,
+        32
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "ramses",
+      "name": "RAMSES",
+      "level": 3,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        64,
+        32,
+        32
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "ramses",
+      "name": "RAMSES",
+      "level": 4,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        128,
+        64,
+        64
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "ramses",
+      "name": "RAMSES",
+      "level": 4,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        128,
+        64,
+        64
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "ramses",
+      "name": "RAMSES",
+      "level": 4,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        128,
+        64,
+        64
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "ramses",
+      "name": "RAMSES",
+      "level": 5,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "ramses",
+      "name": "RAMSES",
+      "level": 5,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "ramses",
+      "name": "RAMSES",
+      "level": 5,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "ramses",
+      "name": "RAMSES",
+      "level": 6,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        512,
+        256,
+        256
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "ramses",
+      "name": "RAMSES",
+      "level": 6,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        512,
+        256,
+        256
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "ramses",
+      "name": "RAMSES",
+      "level": 6,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        512,
+        256,
+        256
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer"
+    },
+    {
+      "code": "arepo",
+      "name": "Arepo",
+      "level": 1,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        16,
+        8,
+        8
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "arepo",
+      "name": "Arepo",
+      "level": 1,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        16,
+        8,
+        8
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "arepo",
+      "name": "Arepo",
+      "level": 1,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        16,
+        8,
+        8
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "arepo",
+      "name": "Arepo",
+      "level": 2,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        32,
+        16,
+        16
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "arepo",
+      "name": "Arepo",
+      "level": 2,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        32,
+        16,
+        16
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "arepo",
+      "name": "Arepo",
+      "level": 2,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        32,
+        16,
+        16
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "arepo",
+      "name": "Arepo",
+      "level": 3,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        64,
+        32,
+        32
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "arepo",
+      "name": "Arepo",
+      "level": 3,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        64,
+        32,
+        32
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "arepo",
+      "name": "Arepo",
+      "level": 3,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        64,
+        32,
+        32
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "arepo",
+      "name": "Arepo",
+      "level": 4,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        128,
+        64,
+        64
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "arepo",
+      "name": "Arepo",
+      "level": 4,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        128,
+        64,
+        64
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "arepo",
+      "name": "Arepo",
+      "level": 4,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        128,
+        64,
+        64
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "arepo",
+      "name": "Arepo",
+      "level": 5,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "arepo",
+      "name": "Arepo",
+      "level": 5,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "arepo",
+      "name": "Arepo",
+      "level": 5,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "arepo",
+      "name": "Arepo",
+      "level": 6,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        512,
+        256,
+        256
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "arepo",
+      "name": "Arepo",
+      "level": 6,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        512,
+        256,
+        256
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "arepo",
+      "name": "Arepo",
+      "level": 6,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        512,
+        256,
+        256
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "gzmfm",
+      "name": "GIZMO MFM",
+      "level": 1,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        16,
+        8,
+        8
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "gzmfm",
+      "name": "GIZMO MFM",
+      "level": 1,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        16,
+        8,
+        8
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "gzmfm",
+      "name": "GIZMO MFM",
+      "level": 1,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        16,
+        8,
+        8
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "gzmfm",
+      "name": "GIZMO MFM",
+      "level": 2,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        32,
+        16,
+        16
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "gzmfm",
+      "name": "GIZMO MFM",
+      "level": 2,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        32,
+        16,
+        16
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "gzmfm",
+      "name": "GIZMO MFM",
+      "level": 2,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        32,
+        16,
+        16
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "gzmfm",
+      "name": "GIZMO MFM",
+      "level": 3,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        64,
+        32,
+        32
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "gzmfm",
+      "name": "GIZMO MFM",
+      "level": 3,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        64,
+        32,
+        32
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "gzmfm",
+      "name": "GIZMO MFM",
+      "level": 3,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        64,
+        32,
+        32
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "gzmfm",
+      "name": "GIZMO MFM",
+      "level": 4,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        128,
+        64,
+        64
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "gzmfm",
+      "name": "GIZMO MFM",
+      "level": 4,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        128,
+        64,
+        64
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "gzmfm",
+      "name": "GIZMO MFM",
+      "level": 4,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        128,
+        64,
+        64
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "gzmfm",
+      "name": "GIZMO MFM",
+      "level": 5,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "gzmfm",
+      "name": "GIZMO MFM",
+      "level": 5,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "gzmfm",
+      "name": "GIZMO MFM",
+      "level": 5,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "gzmfm",
+      "name": "GIZMO MFM",
+      "level": 6,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        512,
+        256,
+        256
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "gzmfm",
+      "name": "GIZMO MFM",
+      "level": 6,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        512,
+        256,
+        256
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "gzmfm",
+      "name": "GIZMO MFM",
+      "level": 6,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        512,
+        256,
+        256
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "gzmfv",
+      "name": "GIZMO MFV",
+      "level": 1,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        16,
+        8,
+        8
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "gzmfv",
+      "name": "GIZMO MFV",
+      "level": 1,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        16,
+        8,
+        8
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "gzmfv",
+      "name": "GIZMO MFV",
+      "level": 1,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        16,
+        8,
+        8
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "gzmfv",
+      "name": "GIZMO MFV",
+      "level": 2,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        32,
+        16,
+        16
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "gzmfv",
+      "name": "GIZMO MFV",
+      "level": 2,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        32,
+        16,
+        16
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "gzmfv",
+      "name": "GIZMO MFV",
+      "level": 2,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        32,
+        16,
+        16
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "gzmfv",
+      "name": "GIZMO MFV",
+      "level": 3,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        64,
+        32,
+        32
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "gzmfv",
+      "name": "GIZMO MFV",
+      "level": 3,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        64,
+        32,
+        32
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "gzmfv",
+      "name": "GIZMO MFV",
+      "level": 3,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        64,
+        32,
+        32
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "gzmfv",
+      "name": "GIZMO MFV",
+      "level": 4,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        128,
+        64,
+        64
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "gzmfv",
+      "name": "GIZMO MFV",
+      "level": 4,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        128,
+        64,
+        64
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "gzmfv",
+      "name": "GIZMO MFV",
+      "level": 4,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        128,
+        64,
+        64
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "gzmfv",
+      "name": "GIZMO MFV",
+      "level": 5,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "gzmfv",
+      "name": "GIZMO MFV",
+      "level": 5,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "gzmfv",
+      "name": "GIZMO MFV",
+      "level": 5,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "gzmfv",
+      "name": "GIZMO MFV",
+      "level": 6,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        512,
+        256,
+        256
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "gzmfv",
+      "name": "GIZMO MFV",
+      "level": 6,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        512,
+        256,
+        256
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "gzmfv",
+      "name": "GIZMO MFV",
+      "level": 6,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        512,
+        256,
+        256
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "gadget4",
+      "name": "Gadget-4",
+      "level": 1,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        16,
+        8,
+        8
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "gadget4",
+      "name": "Gadget-4",
+      "level": 1,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        16,
+        8,
+        8
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "gadget4",
+      "name": "Gadget-4",
+      "level": 1,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        16,
+        8,
+        8
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "gadget4",
+      "name": "Gadget-4",
+      "level": 2,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        32,
+        16,
+        16
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "gadget4",
+      "name": "Gadget-4",
+      "level": 2,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        32,
+        16,
+        16
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "gadget4",
+      "name": "Gadget-4",
+      "level": 2,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        32,
+        16,
+        16
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "gadget4",
+      "name": "Gadget-4",
+      "level": 3,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        64,
+        32,
+        32
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "gadget4",
+      "name": "Gadget-4",
+      "level": 3,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        64,
+        32,
+        32
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "gadget4",
+      "name": "Gadget-4",
+      "level": 3,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        64,
+        32,
+        32
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "gadget4",
+      "name": "Gadget-4",
+      "level": 4,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        128,
+        64,
+        64
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "gadget4",
+      "name": "Gadget-4",
+      "level": 4,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        128,
+        64,
+        64
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "gadget4",
+      "name": "Gadget-4",
+      "level": 4,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        128,
+        64,
+        64
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "gadget4",
+      "name": "Gadget-4",
+      "level": 5,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "gadget4",
+      "name": "Gadget-4",
+      "level": 5,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "gadget4",
+      "name": "Gadget-4",
+      "level": 5,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "gadget4",
+      "name": "Gadget-4",
+      "level": 6,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        512,
+        256,
+        256
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "gadget4",
+      "name": "Gadget-4",
+      "level": 6,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        512,
+        256,
+        256
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "gadget4",
+      "name": "Gadget-4",
+      "level": 6,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        512,
+        256,
+        256
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "gas",
+      "name": "Gasoline",
+      "level": 1,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        16,
+        8,
+        8
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "gas",
+      "name": "Gasoline",
+      "level": 1,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        16,
+        8,
+        8
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "gas",
+      "name": "Gasoline",
+      "level": 1,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        16,
+        8,
+        8
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "gas",
+      "name": "Gasoline",
+      "level": 2,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        32,
+        16,
+        16
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "gas",
+      "name": "Gasoline",
+      "level": 2,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        32,
+        16,
+        16
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "gas",
+      "name": "Gasoline",
+      "level": 2,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        32,
+        16,
+        16
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Coarse cloud/edge resolution and native output-cadence validation"
+    },
+    {
+      "code": "gas",
+      "name": "Gasoline",
+      "level": 3,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        64,
+        32,
+        32
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "gas",
+      "name": "Gasoline",
+      "level": 3,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        64,
+        32,
+        32
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "gas",
+      "name": "Gasoline",
+      "level": 3,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        64,
+        32,
+        32
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "gas",
+      "name": "Gasoline",
+      "level": 4,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        128,
+        64,
+        64
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "gas",
+      "name": "Gasoline",
+      "level": 4,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        128,
+        64,
+        64
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "gas",
+      "name": "Gasoline",
+      "level": 4,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        128,
+        64,
+        64
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "gas",
+      "name": "Gasoline",
+      "level": 5,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "gas",
+      "name": "Gasoline",
+      "level": 5,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "gas",
+      "name": "Gasoline",
+      "level": 5,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "gas",
+      "name": "Gasoline",
+      "level": 6,
+      "chi": 10,
+      "mach": 2,
+      "dimensions_streamwise": [
+        512,
+        256,
+        256
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "gas",
+      "name": "Gasoline",
+      "level": 6,
+      "chi": 100,
+      "mach": 2,
+      "dimensions_streamwise": [
+        512,
+        256,
+        256
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    },
+    {
+      "code": "gas",
+      "name": "Gasoline",
+      "level": 6,
+      "chi": 1000,
+      "mach": 2,
+      "dimensions_streamwise": [
+        512,
+        256,
+        256
+      ],
+      "target_native_times": 101,
+      "status": "needs_native_run_and_reuse_audit",
+      "prerequisite": "Validate native particle density/resolution, tracer and boundary implementation; IC generation alone is insufficient"
+    }
+  ],
+  "further_work": [
+    {
+      "task": "Mach 0.5, 1.5 and 5 subsets",
+      "status": "historical outputs require corrected-IC/reuse audit; not enabled by this queue"
+    },
+    {
+      "task": "Figure 1 common late time in 2D slices and genuine 3D, plus terrain visualization",
+      "status": "needs all-material retention and matched-time checks; 2D visualization is not a new 2D simulation"
+    },
+    {
+      "task": "Figure 2 mass evolution with overplotted resolutions",
+      "status": "use retained native cells, initial mass denominator, measured time; new L3/L4 raw series now available"
+    },
+    {
+      "task": "Galilean tracking",
+      "status": "restart/coordinate checks passed, retention failed at chi100/1000; not ready for matched production"
+    },
+    {
+      "task": "Radiative cooling",
+      "status": "old cooling-labelled runs had cooling disabled; physical scale, cooling table/integrator tests required before reruns from t=0"
+    },
+    {
+      "task": "MHD",
+      "status": "separate research extension; transverse-boundary instability requires validation"
+    },
+    {
+      "task": "Publish all measured native times",
+      "status": "12 new corrected runs are local only; validate exports before adding, never replace raw data with visualization"
+    }
+  ]
+}

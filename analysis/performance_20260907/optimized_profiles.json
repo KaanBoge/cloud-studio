@@ -130,7 +130,24 @@
     },
     "measured_native_output_bytes_per_cell": 3.5502030849456787,
     "ic_proof_root": "/home/kaan/ic_audit_20260907/grid_tests",
-    "production_validation": "pending; short tests are not a completed replacement run"
+    "production_validation": "pending; short tests are not a completed replacement run",
+    "directory_prefix": "OPTIO1",
+    "hdf5_compression_level": 1,
+    "io_scope": "Prim snapshots only; restart settings unchanged",
+    "io_regression": {
+      "passed": true,
+      "decoded_fields_exactly_equal": true,
+      "candidate_binary_sha256": "d8d6ffe5b427216a58bda705ae0692c3cc12c3b7f072bd1a845fe11224a4af0f",
+      "evidence": "/home/kaan/performance_20260907c/report.json",
+      "scope": "Three independent same-time L5 chi100 comparisons of all numeric datasets; short tests, not full-run convergence."
+    },
+    "io_timing": {
+      "baseline_median_seconds": 5.636284942000003,
+      "candidate_median_seconds": 5.033583884999999,
+      "reduction_percent": 10.69323256723319,
+      "container_size_ratio": 1.059104597618586,
+      "repeats_per_configuration": 3
+    }
   },
   "apk_L6": {
     "code": "apk",
