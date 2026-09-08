@@ -2,9 +2,9 @@
 
 ## Update: 8 September 2026
 
-Thirty full controls are now validated and analyzed: the eight pilot runs below, six
+Thirty-four full controls are now validated and analyzed: the eight pilot runs below, six
 native Athena 4.2 runs at L3/L4/L5, four Enzo runs at L3/L4, and four Enzo-E runs
-at L3/L4, plus four RAMSES and four FLASH 4.8 L3/L4 controls. Each Athena 4.2 run has 101 distinct native
+at L3/L4, plus four each for RAMSES, FLASH 4.8 and Flash-X at L3/L4. Each Athena 4.2 run has 101 distinct native
 snapshots through 5 t_cc. Its initial density, tracer, coordinates and volumes
 match exactly within each pair at native VTK precision. Only velocity changes.
 
@@ -39,6 +39,13 @@ four controls. All 404 native mass sums agree independently with yt within
 6.17% at L4. L4 solver runs took 8m04s and 7m59s on eight CPU ranks, peaking
 at 13.49 GiB solver-child RSS. There is no native tracer, so retention is
 unavailable. L5 is storage-held. See [FLASH results](flash/README.md).
+
+Flash-X L3/L4 is complete too, with 101 actual times per control and all 404
+checkpoint mass sums independently checked with yt (relative discrepancy
+below 4.1e-16). Peak curve separation is 10.13% at L3 and 6.54% at L4.
+L4 took 7m21s and 7m15s on eight busy CPU workers, with peak solver-child
+RSS 11.47 GiB. Native raw is retained. L5 is storage-held and no tracer
+retention is available. See [Flash-X results](flashx/README.md).
 
 The first Enzo full
 attempt exposed an output-setting error: dtRestartDump is a wall-clock exit
@@ -123,10 +130,13 @@ Windows scripts/results: `C:/Users/kaanb/CloudCrushing/sensitivity_20260907`.
 The Athena++/AthenaPK and Enzo level-5 continuations remain storage-held.
 Athena 4.2 L3/L4/L5 and Enzo-E L3/L4 are complete. Enzo-E L5 is storage-held too.
 RAMSES and FLASH 4.8 L3/L4 are complete; their L5 continuations are storage-held.
-Flash-X's native paired initial-condition checks pass and its L3/L4 queue is
-running; these are not yet counted as analyzed controls. See [Flash-X setup](flashx/README.md).
-The other five solver variants (including separate
-GIZMO MFM/MFV) still need paired launchers and native historical-law checks.
+Flash-X L3/L4 is complete and L5 storage-held. Arepo's native paired checks pass
+and its L3/L4 queue is running; it is not yet counted as a completed full control.
+Its original jittered lattice gives native pressure deviations up to 14.45%
+in both controls, and its streamwise boundary is periodic. These limitations
+are preserved and documented for the within-code experiment, not claimed as
+a matched cross-code setup. See [Arepo setup and caveats](arepo/README.md). GIZMO
+MFM/MFV, Gadget-4 and Gasoline still need paired launchers and native historical-law checks.
 A 15-minute task follow-up is enabled to inspect progress and
 advance safe pending work. The old blanket replacement queue remains inactive.
 Cooling, tracking and paper-ready retention checks remain separate work.

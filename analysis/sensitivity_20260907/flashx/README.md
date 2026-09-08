@@ -1,10 +1,34 @@
 # Flash-X native velocity sensitivity controls
 
-## Queue started 8 September 2026
+## Completed results, 8 September 2026
+
+All four L3/L4 controls are now complete and analyzed, with 101 distinct native
+times each. Every saved field/time passed checks. Independent yt sums agree
+with all 404 native checkpoint mass sums within 4.1e-16 relative discrepancy.
+Seven launcher tests and two analysis tests pass. See [report](report.json),
+[mass curves](mass_evolution.png) and [QA review](VALIDATION.md).
+
+| Level | Sharp / historical solver wall time | Peak sampled solver-child RSS | Peak curve separation / initial dense mass |
+| --- | --- | ---: | ---: |
+| 3 | 34.6s / 34.2s | 11.34 GiB | 10.13% |
+| 4 | 440.5s / 435.2s | 11.47 GiB | 6.54% |
+
+Eight MPI workers were observed at 99.9% CPU each during L4. Timings exclude
+subsequent validation/analysis. Native density/grid/auxiliary fields match
+exactly within each initial pair; thermodynamic recovery differences remain
+below 6.9e-16. Actual terminal times span 5.00005-5.00294 t_cc, not relabeled.
+Final dense fractions are zero for both L3 cases and 0.03488/0.05886 at L4.
+These are sensitivity differences, not accuracy errors or convergence proof.
+
+All native raw (about 14 GiB) is retained. There is no tracer, so material
+retention is unknown. The worker ended with L5 storage-held: 129.79 GiB plus
+10 GiB reserve was needed, versus 35.58 GiB available. No raw was thinned.
+
+## Completed worker records
 
 The Windows-owned L3/L4 queue started at 02:47 local time using eight MPI
 ranks. L5 follows only if its entire retained pair fits the storage budget.
-No full Flash-X analysis is claimed yet. Check actual processes and native
+L3/L4 full analysis is complete and no Flash-X worker remains active. Check native
 `/home/kaan/sensitivity_20260907/flashx/batch.json` and `current.json`, not a
 stale saved PID. Windows launcher/logs are `worker_windows.json/log/err.log`;
 the launch PID was 4064. Do not relaunch or edit the loaded worker while active.

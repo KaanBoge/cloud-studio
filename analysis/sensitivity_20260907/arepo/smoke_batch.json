@@ -1,0 +1,7 @@
+{
+  "status": "stopped_needs_review",
+  "finished": [],
+  "pairs": [],
+  "pid": 18,
+  "error": "Native solver failed/timed out; outputs retained"
+}

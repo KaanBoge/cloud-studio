@@ -65,7 +65,7 @@ with 101 actual times each, exact paired initial density/tracer/grid and
 pressure agreement to roundoff. All 404 outputs pass checks; its extra
 unsorted-record aggregation agrees within 8.9e-15 but shares the native decoder.
 Native timestep-crossing times are preserved. L5 is held by the 172.49 GiB
-whole-pair retention budget plus reserve. There are now 30 analyzed controls.
+whole-pair retention budget plus reserve. There are now 34 analyzed controls.
 FLASH 4.8's four L3/L4 controls are complete with 101 full-state times each;
 all 404 checkpoint mass sums pass independent yt checks. Its native setup
 has no tracer, so retention is unavailable. The unchanged native plotfiles are
@@ -80,8 +80,16 @@ invalid-mode and independent yt smoke checks. Its L3/L4 queue started at
 02:47 local time on 8 September with eight MPI ranks. Native eleven-field
 float64 checkpoints are retained at every comparison time, alongside all
 original five-field float32 plotfiles. No tracer is available. Its L5 pair
-needs 129.79 GiB plus reserve and is guarded. Full Flash-X analysis is pending.
-Next safe code families remain Arepo, GIZMO MFM/MFV, Gadget-4 and Gasoline;
+needs 129.79 GiB plus reserve and is guarded. All four Flash-X L3/L4 controls
+and their 404 actual times now pass independent yt mass checks. Full analysis
+is complete and L5 storage-held.
+Arepo's native L3/L4 paired queue started at 03:30 local on 8 September after
+native and independent initial/evolved checks. Nonvelocity IC fields and native
+initial density/geometry are exact within pairs, but original Voronoi pressure
+perturbations (up to 14.45% at L3) and periodic x boundaries remain. This is
+within-Arepo sensitivity, not certification of a matched grid-code baseline.
+The L5 pair needs 124.02 GiB plus reserve and remains separately guarded.
+Next safe code families remain GIZMO MFM/MFV, Gadget-4 and Gasoline;
 no runnable queue for those is claimed before native historical-law and
 initial-field checks and identical within-pair particle sampling are verified.
 

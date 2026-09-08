@@ -1,0 +1,97 @@
+%%%% AREPO3D level 3 chi=100: 3D cloud-crushing, cloud-wind matched setup
+%% periodic long box 20x10x10 (BoxSize=10, LONG_X=2 at compile time)
+%% transverse y,z faces are OUTFLOW (REFLECTIVE_Y=2, REFLECTIVE_Z=2); x stays periodic
+%% resolution 64x32x32 = 65536 cells, dx = 0.312500 = R_cloud/3.2
+%% v_wind = 2*sqrt(5/3) = 2.5819889 (Mach 2) ; t_cc = sqrt(chi)*R/v_wind = 3.872983
+%% t_end = 5*t_cc = 19.364917 ; 101 snapshots, interval = t_end/100 = 0.193649
+
+InitCondFile                          ./IC
+ICFormat                              3
+
+OutputDir                             ./output/
+SnapshotFileBase                      snap
+SnapFormat                            3
+NumFilesPerSnapshot                   1
+NumFilesWrittenInParallel             1
+
+ResubmitOn                            0
+ResubmitCommand                       my-scriptfile
+OutputListFilename                    ol
+OutputListOn                          0
+
+CoolingOn                             0
+StarformationOn                       0
+
+Omega0                                0.0
+OmegaBaryon                           0.0
+OmegaLambda                           0.0
+HubbleParam                           1.0
+
+BoxSize                               10.0
+PeriodicBoundariesOn                  1
+ComovingIntegrationOn                 0
+
+MaxMemSize                            512
+TimeOfFirstSnapshot                   0.0
+CpuTimeBetRestartFile                 9000
+TimeLimitCPU                          2500000
+
+TimeBetStatistics                     0.19364917
+TimeBegin                             0.0
+TimeMax                               19.36491673
+TimeBetSnapshot                       0.19364917
+
+UnitVelocity_in_cm_per_s              1.0
+UnitLength_in_cm                      1.0
+UnitMass_in_g                         1.0
+GravityConstantInternal               0.0
+
+ErrTolIntAccuracy                     0.1
+ErrTolTheta                           0.1
+ErrTolForceAcc                        0.1
+
+MaxSizeTimestep                       0.05
+MinSizeTimestep                       1e-9
+CourantFac                            0.3
+
+LimitUBelowThisDensity                0.0
+LimitUBelowCertainDensityToThisValue  0.0
+DesNumNgb                             64
+MaxNumNgbDeviation                    2
+
+MultipleDomains                       4
+TopNodeFactor                         4
+ActivePartFracForNewDomainDecomp      0.5
+
+TypeOfTimestepCriterion               0
+TypeOfOpeningCriterion                1
+GasSoftFactor                         0.01
+
+SofteningComovingType0                0.312500
+SofteningComovingType1                0.312500
+SofteningComovingType2                0.312500
+SofteningComovingType3                0.312500
+SofteningComovingType4                0.312500
+SofteningComovingType5                0.312500
+
+SofteningMaxPhysType0                 0.312500
+SofteningMaxPhysType1                 0.312500
+SofteningMaxPhysType2                 0.312500
+SofteningMaxPhysType3                 0.312500
+SofteningMaxPhysType4                 0.312500
+SofteningMaxPhysType5                 0.312500
+
+SofteningTypeOfPartType0              0
+SofteningTypeOfPartType1              0
+SofteningTypeOfPartType2              0
+SofteningTypeOfPartType3              0
+SofteningTypeOfPartType4              0
+SofteningTypeOfPartType5              0
+
+InitGasTemp                           0.0
+MinGasTemp                            0.0
+MinEgySpec                            0.0
+MinimumDensityOnStartUp               0.0
+
+CellShapingSpeed                      0.5
+CellMaxAngleFactor                    2.25

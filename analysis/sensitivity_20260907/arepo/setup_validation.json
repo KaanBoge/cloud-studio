@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "launcher_sha256": "f6806defd0ff6dc139232a9a0baf385e6ba8ebe7c297147cf386941a89912356",
+  "checks": [
+    {
+      "directory": "/home/kaan/sensitivity_20260907/arepo/smokes_v2/L3_chi100_sharp13",
+      "unique_times": 2,
+      "initial": {
+        "native_density_vs_lattice_max_relative": 0.14450823963276305,
+        "native_pressure_vs_uniform_max_absolute": 0.14450823963276305,
+        "native_volume_sum": 2000.0000000000023,
+        "scope": "Native Voronoi values, not mass/lattice-volume; differences from analytic fields are reported, not erased."
+      }
+    },
+    {
+      "directory": "/home/kaan/sensitivity_20260907/arepo/smokes_v2/L3_chi100_tanh13",
+      "unique_times": 2,
+      "initial": {
+        "native_density_vs_lattice_max_relative": 0.14450823963276305,
+        "native_pressure_vs_uniform_max_absolute": 0.14450823963276305,
+        "native_volume_sum": 2000.0000000000023,
+        "scope": "Native Voronoi values, not mass/lattice-volume; differences from analytic fields are reported, not erased."
+      }
+    }
+  ],
+  "pair": {
+    "ic_nonvelocity_fields_exact": true,
+    "native_initial_geometry_mass_density_exact": true,
+    "recovery_relative_errors": {
+      "InternalEnergy": 1.7763568394072686e-15,
+      "PassiveScalars": 0.0,
+      "pressure": 1.9634333029111186e-15
+    },
+    "velocity_difference": 1.2908458294945213
+  },
+  "caveat": "Original jittered equal-volume IC gives nonuniform native Voronoi density/pressure. Same within pair, not a uniform-pressure or matched-all-code claim.",
+  "failed_attempt_preserved": "smokes/ and smoke_batch.json: TimeMax .001 shorter than native MaxSizeTimestep .05; v2 extends smoke to .1 only."
+}

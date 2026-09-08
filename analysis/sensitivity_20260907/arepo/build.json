@@ -1,0 +1,47 @@
+{
+  "binary": "/home/kaan/sensitivity_20260907/arepo/Arepo_pair",
+  "binary_sha256": "b643af182ec2c84c4f4c18c057df64c9be98b85928246d9296a4908e0aeb5bff",
+  "compiled_anything": false,
+  "source_files_unchanged": {
+    "/home/kaan/codes/arepo/Arepo_3d": "b643af182ec2c84c4f4c18c057df64c9be98b85928246d9296a4908e0aeb5bff",
+    "/home/kaan/codes/arepo/runs/make_ic_cloud.py": "bbbe5d8e78a0db96e261af93c1cffd6c03f16d53c075fa48361d7e0714bcdd09",
+    "/mnt/c/Users/kaanb/CloudCrushing/audit_20260907/before/home/kaan/codes/arepo/runs/make_ic_cloud.py": "4da7f9d2bf1b588c6d13809c6d84faa982bd35a378160ea2a8eab9f62c43a1fa",
+    "/home/kaan/codes/arepo/Config.sh": "6c12d89d88d2555dd87418e000253c800bae15bcbb4ec5e6497c6c28e2668e54",
+    "/home/kaan/codes/arepo/src/main/allvars.h": "f9b768e611fd39eb2947f40c5bec14dc5fa8cb446055e2ea09b359bae89c16ff",
+    "/home/kaan/codes/arepo/src/init/init.c": "60af42ec1e8eaa0ac8414f99910bf5480ce71935a0f53f31d33b22a70bce430e",
+    "/home/kaan/codes/arepo/src/io/io_fields.c": "9574219335e6ce61028b21eb8151733c24dac3f3f2fc4e6c7808789123683473",
+    "/mnt/c/Users/kaanb/CloudCrushing/sensitivity_20260907/arepo/experiment.json": "567a56a6037222e9d0cdd85954b9fe2c36106f0741eb7bdc427ad261f17d1516",
+    "/home/kaan/codes/arepo/runs/AREPO3D_L3_chi100/param.txt": "3e32c45221582f213296fa69a56469e36e707a7cd146b7aeee2c3b058bf24535",
+    "/home/kaan/codes/arepo/runs/AREPO3D_L4_chi100/param.txt": "32387a07e3df999a5fdac9bf081ae64ddbc9543674d385eb48a7fb9f0e28343d",
+    "/home/kaan/codes/arepo/runs/AREPO3D_L5_chi100/param.txt": "6f71097acc9670bcd1728d41c3facfb5b3543ff202f9eb4b85cf922f30dcb655"
+  },
+  "pinned_files": {
+    "Arepo_pair": "b643af182ec2c84c4f4c18c057df64c9be98b85928246d9296a4908e0aeb5bff",
+    "generator_sharp.py": "bbbe5d8e78a0db96e261af93c1cffd6c03f16d53c075fa48361d7e0714bcdd09",
+    "generator_historical.py": "4da7f9d2bf1b588c6d13809c6d84faa982bd35a378160ea2a8eab9f62c43a1fa",
+    "Config.sh": "6c12d89d88d2555dd87418e000253c800bae15bcbb4ec5e6497c6c28e2668e54",
+    "allvars.h": "f9b768e611fd39eb2947f40c5bec14dc5fa8cb446055e2ea09b359bae89c16ff",
+    "native_init.c": "60af42ec1e8eaa0ac8414f99910bf5480ce71935a0f53f31d33b22a70bce430e",
+    "native_io_fields.c": "9574219335e6ce61028b21eb8151733c24dac3f3f2fc4e6c7808789123683473",
+    "experiment.json": "567a56a6037222e9d0cdd85954b9fe2c36106f0741eb7bdc427ad261f17d1516",
+    "param_L3.txt": "3e32c45221582f213296fa69a56469e36e707a7cd146b7aeee2c3b058bf24535",
+    "param_L4.txt": "32387a07e3df999a5fdac9bf081ae64ddbc9543674d385eb48a7fb9f0e28343d",
+    "param_L5.txt": "6f71097acc9670bcd1728d41c3facfb5b3543ff202f9eb4b85cf922f30dcb655"
+  },
+  "expected_config": [
+    "DOUBLEPRECISION=1",
+    "HAVE_HDF5",
+    "INPUT_IN_DOUBLEPRECISION",
+    "LONG_X=2.0",
+    "OUTPUT_CENTER_OF_MASS",
+    "OUTPUT_IN_DOUBLEPRECISION",
+    "PASSIVE_SCALARS=1",
+    "REFLECTIVE_Y=2",
+    "REFLECTIVE_Z=2",
+    "REGULARIZE_MESH_CM_DRIFT",
+    "REGULARIZE_MESH_CM_DRIFT_USE_SOUNDSPEED",
+    "REGULARIZE_MESH_FACE_ANGLE",
+    "TREE_BASED_TIMESTEPS"
+  ],
+  "scope": "Native Arepo_3d executable; only input velocity changes. Generated IC and native Voronoi states require separate verification."
+}
