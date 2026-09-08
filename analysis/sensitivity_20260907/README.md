@@ -70,6 +70,13 @@ appears at t=3.95 t_cc in each. They are retained as failure evidence and
 excluded from the 44 validated controls. No floor or output was changed.
 See [GIZMO results and failure audit](gizmo/README.md).
 
+The later [MFV terminal restart diagnosis](gizmo/MFV_RESTART_DIAGNOSIS.md)
+confirms that final exported zeros came from tiny positive double-precision
+energies: ordinary float32 underflow in three particles and native FTZ in one.
+The underlying thermal collapse is still unvalidated, so neither MFV attempt
+is promoted. All202 raw snapshots and16 restart hashes were rechecked; no rerun
+or data deletion was needed.
+
 The first Enzo full
 attempt exposed an output-setting error: dtRestartDump is a wall-clock exit
 trigger, not a physical-time snapshot interval. Its 21 saved outputs remain

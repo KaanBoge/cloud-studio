@@ -1,7 +1,7 @@
 # Native GIZMO sensitivity: MFM L3/L4 complete, MFV L3 needs review
 
 Updated 8 September 2026. The four full **MFM L3/L4** controls are validated and
-analyzed, raising the study total to **42 accepted controls**. Each has 101
+analyzed. The current study total, including Gadget-4 L3, is **44 accepted controls**. Each has 101
 distinct native snapshots through 5 t_cc. The two **MFV L3** attempts also
 reached 101 snapshots, but both failed positive-energy checks and are excluded
 from that total. Both accepted MFM pairs have finished; their runners must
@@ -82,6 +82,14 @@ See [the original MFM L3 series](mfm_l3_report.json)
 and [the dated L3 pre-delivery validation](VALIDATION.md).
 
 ## MFV failure evidence: preserved, not certified
+
+The [terminal restart diagnosis](MFV_RESTART_DIAGNOSIS.md) now explains the
+final exported zeros: internal double-precision energies are positive but tiny;
+three underflow float32 and one is flushed from a float32 subnormal to zero by
+the exact executable's FTZ setting. Independent readers checked all131072 final
+particles,202 original snapshot hashes and16 restart hashes. Why the non-radiative
+thermal energy became so small is still unvalidated. This is not a new accepted
+pair, repaired output or reason to start larger MFV runs.
 
 In both laws, the first zero `InternalEnergy` occurs at native snapshot079,
 t=3.95 t_cc: particle ID109 in sharp and ID99 in historical. There are 15 and
@@ -215,7 +223,8 @@ MFM L4 and the combined L3/L4 analysis are complete, as documented above.
 Native output is retained under `full_mfm_l4_v1`; the new immutable analysis
 is `analysis_mfm_l3_l4_v1`. Neither runner nor analyzer may overwrite these
 completed directories. MFV requires further diagnosis before larger runs.
-Gadget-4 and Gasoline remain unprepared. L5 is not launched here. Native
+Gadget-4 L3 is now complete; its L4 pair is storage-held. Gasoline's full pair
+awaits output-observation review. L5 is not launched here. Native
 MaxSizeTimestep, precision, CFL and other production numerics must stay at their
 original settings; the tiny diagnostic timestep caps are never production inputs.
 L5 parameter copies are provenance, not evidence of an enabled or validated L5 queue.

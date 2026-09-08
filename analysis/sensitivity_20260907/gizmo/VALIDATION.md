@@ -4,7 +4,10 @@
 
 This is the retained earlier L3-only assessment. L4 has since completed its
 own per-level checks and full pair; see [the combined L3/L4 assessment](MFM_LEVELS_VALIDATION.md).
-The current accepted study total is 42, while the 40 below records this earlier assessment.
+The current accepted study total is44, while the40 below records this earlier assessment.
+The later [MFV terminal restart diagnosis](MFV_RESTART_DIAGNOSIS.md) explains
+the final export zeros without accepting the thermal evolution or altering this
+earlier failed assessment. All raw states and original diagnostic JSONs remain.
 
 ## Methodology and calculation checks
 

@@ -1,0 +1,3972 @@
+{
+  "status": "independent_read_only_review_pass_mfv_still_not_certified",
+  "created_utc": "2026-09-08T08:40:08.216568+00:00",
+  "script_sha256": "9a4ec491de098fef5c1d4e50272decf0853df13aedcb0269b9ff3bac8fce35f6",
+  "diagnosis_sha256": "88fbb20c30aeab70b9f7dd60638c05a0abcf1afd876ee091a2ebf0ab5e7956b3",
+  "method": "struct.unpack, independent of NumPy structured restart decoder; ABI offsets from exact binary DWARF; all original 202 raw-state hashes and 16 restart hashes rechecked.",
+  "cases": [
+    {
+      "law": "sharp13",
+      "independently_checked_final_particles": 65536,
+      "checked_native_snapshots": [
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_000.hdf5",
+          "sha256": "8b9fe781dee63ab42622ca7b5d628946bbfa361292744ab6194ea798c0a9f73b",
+          "time_code": 0.0
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_001.hdf5",
+          "sha256": "e80f837ea87d20221db1950f47402b45e8582ec5e67d48126c1f3de9cce55205",
+          "time_code": 0.19364916731037085
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_002.hdf5",
+          "sha256": "73c4dcb0389abdf27c2d2d542ae635a30d0d86617299c5a14a5d667392396971",
+          "time_code": 0.3872983346207417
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_003.hdf5",
+          "sha256": "5b5c64c302b278567f78aae110f6d75cc8dbdbdeda1f359ea389cac48659d8a5",
+          "time_code": 0.5809475019311126
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_004.hdf5",
+          "sha256": "f9c920e4b6803d3244d6b6e7e000a865eac11c14d9c7d1676f25613ca989707c",
+          "time_code": 0.7745966692414834
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_005.hdf5",
+          "sha256": "6ae124c59e35e1aaa5c4f82866104be421485384a6d2b4ba60e359be0474281d",
+          "time_code": 0.9682458365518543
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_006.hdf5",
+          "sha256": "3a725b8d125700f8777c1c1980f91c5d418c61d978114087eec1f0b457ce10bc",
+          "time_code": 1.161895003862225
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_007.hdf5",
+          "sha256": "4da8ada5d9293b158f6033fdda3f6ce40558f65fe79d21fb6de458061aedd1d1",
+          "time_code": 1.355544171172596
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_008.hdf5",
+          "sha256": "2d8a0a401ff4b4d14fa50dec0bce31c2ebffe24b5309abe962736636406131e9",
+          "time_code": 1.5491933384829668
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_009.hdf5",
+          "sha256": "c4b66a4f6f806942c5363108fab14a02485c6e003cd86b234f90b7d2d2719b10",
+          "time_code": 1.7428425057933374
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_010.hdf5",
+          "sha256": "a827318439a0c9c4fbfb5375018113b6ced7fc666ef40d46e4e9308e20f3ac9a",
+          "time_code": 1.9364916731037085
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_011.hdf5",
+          "sha256": "603464cea6213ad5175c115b45e9cee1e85cb38746da04c8d984dc7d853734f4",
+          "time_code": 2.1301408404140796
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_012.hdf5",
+          "sha256": "c820e2eb516f2e2d3e929f61c8c3a82359700a5870c05ce55a43bab4a6a15301",
+          "time_code": 2.32379000772445
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_013.hdf5",
+          "sha256": "8ccd794f49c24204ca39cdc490f5f2b9cc47548990fefe7df12e557ce1c9ffe0",
+          "time_code": 2.517439175034821
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_014.hdf5",
+          "sha256": "70a793001770e536eb1c286731a4323a374aea66d61d3f44255d71b7207f616b",
+          "time_code": 2.7110883423451915
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_015.hdf5",
+          "sha256": "79d3e053ca7d299899fb40092b4a2ab85fd1772d1de6b5bced7e591197ef1574",
+          "time_code": 2.904737509655562
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_016.hdf5",
+          "sha256": "a269eb2ca7188bec99f1c053d089acb1cf78361cd1e2eafe9aaec772dc9034d1",
+          "time_code": 3.0983866769659323
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_017.hdf5",
+          "sha256": "fc428a14459aca6762575f4b60730ab8d242c251156d6f655d71167f41626799",
+          "time_code": 3.2920358442763034
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_018.hdf5",
+          "sha256": "df9166682832976525a834d4363878c01a16a8f807f65ad19df376f68e0a8110",
+          "time_code": 3.485685011586674
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_019.hdf5",
+          "sha256": "2c480db140e55aed5a51944b44adb3ebd716d298b18cc5b5f540234676ec5d4f",
+          "time_code": 3.6793341788970446
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_020.hdf5",
+          "sha256": "7fc674d7b31b791c148753c67c45ebec4db86ec6a19a5961a1dd43666fc3973a",
+          "time_code": 3.8729833462074152
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_021.hdf5",
+          "sha256": "561994bfa458d60527005999485dac7df782947e822bc6e70d8af1056cdaecbb",
+          "time_code": 4.066632513517786
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_022.hdf5",
+          "sha256": "5ff9531b9e996d9b38bd5132883c171fea2daa8a9dd418a4c7b76c17bed6a939",
+          "time_code": 4.2602816808281565
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_023.hdf5",
+          "sha256": "1548fc3b5b3fe587fbc05b960ae753a57d8cf028ed65699ef020817d95ded858",
+          "time_code": 4.453930848138527
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_024.hdf5",
+          "sha256": "f0d3c1a25e67421ad3c8c2276c5ee237ad13d5b71dcd287fd3b52a7cc11f3950",
+          "time_code": 4.647580015448898
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_025.hdf5",
+          "sha256": "5f0ecbc206fee01b4aaca376e5af6dbafd9cd58c276473c447af5d58094047be",
+          "time_code": 4.841229182759268
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_026.hdf5",
+          "sha256": "efa7c464189bd32e176d37d6e2ddd2461c31b3144ef8f3270ebfd036ed3c3d6b",
+          "time_code": 5.034878350069639
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_027.hdf5",
+          "sha256": "5cc02f9fd6a27787f43c5f2ace7160fb4fb9e89ca5b1981504b16350b6b70f10",
+          "time_code": 5.22852751738001
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_028.hdf5",
+          "sha256": "4c0a989127dc9580997bd9827fdf3371aa140dc0880d642afdd584eb965481ed",
+          "time_code": 5.422176684690379
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_029.hdf5",
+          "sha256": "26dc4518388f3b94ba2de8864702bfb55839f7eb21046ccc15cd3da7eddf42a3",
+          "time_code": 5.615825852000751
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_030.hdf5",
+          "sha256": "50407c13b72c37c3f922268e004d29d919ed207b95698f3b7bd4ae236f2ca9d7",
+          "time_code": 5.8094750193111215
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_031.hdf5",
+          "sha256": "fa5d75e146f842e440530c9aaa0c2db5e1c2178fce9977a492cd76f7ef80acaa",
+          "time_code": 6.003124186621492
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_032.hdf5",
+          "sha256": "26732512292c88e25c20fa25ff89cecc551cddd3a5d207e097090688247e86bb",
+          "time_code": 6.196773353931863
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_033.hdf5",
+          "sha256": "301033a1236a01b1775a8167dfcf1aa562ad3ed1993ffa20cb425df7a42a07d1",
+          "time_code": 6.390422521242233
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_034.hdf5",
+          "sha256": "c8743d4d561667214e343fdbd5a5724f853ca5af30929af7a6ed13f2ab3a72b4",
+          "time_code": 6.584071688552604
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_035.hdf5",
+          "sha256": "19c976bd2dac490987f155e4de851c4187c0505ff0f509b4254ee5a384380327",
+          "time_code": 6.777720855862975
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_036.hdf5",
+          "sha256": "ca3a24317e4494416fc47fa9a49cbced604cf92802c10bc2b5ca980b5f40f510",
+          "time_code": 6.971370023173346
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_037.hdf5",
+          "sha256": "7511e93c9e60479d970133f61f17e5b0418ea12ae9bfebc9184ee0cff93b3b11",
+          "time_code": 7.165019190483716
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_038.hdf5",
+          "sha256": "7524bfea1949b531561d81bb4ddaef3b3918aedf5dc1bb360fb490e55bcd3c0d",
+          "time_code": 7.358668357794087
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_039.hdf5",
+          "sha256": "7a573a52ee40c6bf8449e1582596a4b677e176f2acdec117617641cc81e3a789",
+          "time_code": 7.552317525104456
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_040.hdf5",
+          "sha256": "349097854570f5519cafd76f98e0a4c07c7bc6b376c3adb0f2cdf5cf6d4361fc",
+          "time_code": 7.745966692414828
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_041.hdf5",
+          "sha256": "aaead5e36856f276c0fe1f1cea9f8d8085b237af1d80cd5a84e7da0009a356f6",
+          "time_code": 7.9396158597251985
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_042.hdf5",
+          "sha256": "b867b46b149f1844926010692968b3cde23526033786d756dc7653265dfcf9ce",
+          "time_code": 8.13326502703557
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_043.hdf5",
+          "sha256": "d6e12779998ee95a017abeafcab9786a468ea70bf78530499b630553776ef724",
+          "time_code": 8.32691419434594
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_044.hdf5",
+          "sha256": "da8d7297bd5a0547f3b5b7b9785e392e53b77f1f6e3afc6539e2f727a3d95e9c",
+          "time_code": 8.520563361656311
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_045.hdf5",
+          "sha256": "d8ccac49ebc95de76ff85df8044079441ca0457bb8cab4b5b13e9de7a02ca483",
+          "time_code": 8.714212528966682
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_046.hdf5",
+          "sha256": "403623a7b1b3b19a5af744ba67256607621f106eca38f3e36d943f8d5b5cf4a0",
+          "time_code": 8.907861696277052
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_047.hdf5",
+          "sha256": "bb573b9511898d87ccdbdf4778ba8082152a59f686dbce393cbd575ea17dbbe4",
+          "time_code": 9.101510863587423
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_048.hdf5",
+          "sha256": "45d952297c2870c62545d2783f8ec271e19df538b0e057e9c212d3f596086b11",
+          "time_code": 9.295160030897794
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_049.hdf5",
+          "sha256": "daa5f837713b49002138a5ff38cb8b8ed1c8c8e6b764b4e77e31e7ff50b916ba",
+          "time_code": 9.488809198208164
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_050.hdf5",
+          "sha256": "ac773857289a953c5038d13bdf970d498075f82190453ae2e217a0ddd9e5a689",
+          "time_code": 9.682458365518535
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_051.hdf5",
+          "sha256": "408d5414c31b3363118e0ec3ae3a5516a729e1fa89d96a0017f738d5926a7a84",
+          "time_code": 9.876107532828904
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_052.hdf5",
+          "sha256": "7383b8cc304dcc977193b3f5db5a6a53dabb8f89b8b18ba8a243472a6666942e",
+          "time_code": 10.069756700139276
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_053.hdf5",
+          "sha256": "feee2b590542c23e9a5e2b5dfd61efae7e082624723b038aabfda014ef8a0023",
+          "time_code": 10.263405867449647
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_054.hdf5",
+          "sha256": "e2323e2d3e296e1332e4a680e31bbe3172ffa9984ea50db8db43f43b142a7c8c",
+          "time_code": 10.457055034760018
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_055.hdf5",
+          "sha256": "34f1763c9e6cea5465761142c0b4c66e0d935a5bf32b6fb433023c3f31911160",
+          "time_code": 10.650704202070388
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_056.hdf5",
+          "sha256": "dbd427ea1e16acfbb6a611bdecb77638508ae968336addad2a8a9b9aa71f37e2",
+          "time_code": 10.844353369380759
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_057.hdf5",
+          "sha256": "e42d8ab335a297a9894dae500cd482b58cb48ee947e6f537a423b60813fe278c",
+          "time_code": 11.038002536691128
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_058.hdf5",
+          "sha256": "0b83648cdcb7a0f6f60407d2373bdd4ec39b57f9d1dce76dbad6426920038762",
+          "time_code": 11.2316517040015
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_059.hdf5",
+          "sha256": "b53c5be0b504994855ea45314137cb4f2541aee6081ae1e4c5b84bd82ad5bdc9",
+          "time_code": 11.42530087131187
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_060.hdf5",
+          "sha256": "f4d5c14f6499ff50039b72dfc017d5abbe9ed42db1923e320723a25181ada23a",
+          "time_code": 11.618950038622241
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_061.hdf5",
+          "sha256": "6fd0493bd614611240a1b87412107a3d1770a5798f203b79dcb94962fd4bbeaa",
+          "time_code": 11.812599205932612
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_062.hdf5",
+          "sha256": "44417b9a0b3ff7d8a42a90c9f6a976c14fe5e2057d7c70f82edfb3dddfca4781",
+          "time_code": 12.00624837324298
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_063.hdf5",
+          "sha256": "9eb637ba849ad63b7c8ab31300b7c687d0ac9d6c751752dce418e065f08684c0",
+          "time_code": 12.199897540553353
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_064.hdf5",
+          "sha256": "1435f83ca8309d57b612e9aba2724e6c200762e8e5c5118bda9ea9678ee92693",
+          "time_code": 12.393546707863724
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_065.hdf5",
+          "sha256": "0db4644e9fd7b59e40b1335830a311f800f7c374fc0df9bd0a3450ed84f9cab9",
+          "time_code": 12.587195875174094
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_066.hdf5",
+          "sha256": "448e4a8456012faf57a9cc1a96d505476440c0c30f9b966dd89ac1e0b2e7b3a9",
+          "time_code": 12.780845042484465
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_067.hdf5",
+          "sha256": "ad793376b140e4bcd8e0413169369d88ec047fab65a1577947db21cfe6574e59",
+          "time_code": 12.974494209794836
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_068.hdf5",
+          "sha256": "3a50a35037feb84aa3b4d0898519e2aa52fc687cef8a466a68475decfd91384e",
+          "time_code": 13.168143377105205
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_069.hdf5",
+          "sha256": "21df0784fde1b5986ac9d8f2950724cf06a1bea03185f8564fbf8fb2b6222fce",
+          "time_code": 13.361792544415577
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_070.hdf5",
+          "sha256": "b5343a42dd0854cd7b5658df312c1b3344e5454a48a5728be86368c64e482d58",
+          "time_code": 13.555441711725948
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_071.hdf5",
+          "sha256": "20be81bc214a0752d17e53ce97520ebe91263ecd8789f501aca6c9531ed42305",
+          "time_code": 13.749090879036318
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_072.hdf5",
+          "sha256": "526e60a62300b58c2bd24468e67ecb77911c4b9820064fe9dead84526bbf0f4c",
+          "time_code": 13.942740046346689
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_073.hdf5",
+          "sha256": "f3bab0d9529c33a7fb4f954ed4f9eeb6bb41eb2cfd28a23f4697b1b55ef15788",
+          "time_code": 14.136389213657058
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_074.hdf5",
+          "sha256": "0d4cff4ff66e99d88b200a2a1854f166400f102b796c530829efd7867174f375",
+          "time_code": 14.33003838096743
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_075.hdf5",
+          "sha256": "ea36ff23969b1289f8063792ca1492dc8f3b472bae1f5f16f6a613fcda0f4080",
+          "time_code": 14.5236875482778
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_076.hdf5",
+          "sha256": "1084c227dac4e5bcd2377f02ab3d99b26b27a182beac7830b81e5f506c144d3e",
+          "time_code": 14.717336715588171
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_077.hdf5",
+          "sha256": "0ca5e39797eb95ffa6e772bf3d6d0d047108ff7ed6be1cdec109293fe6b19424",
+          "time_code": 14.910985882898542
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_078.hdf5",
+          "sha256": "37e4aa27b652bf51d74a9a7c694c8d2bc16eb3715960b5aeaafb4d1f0c88ddeb",
+          "time_code": 15.104635050208913
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_079.hdf5",
+          "sha256": "4efc9ae1b7e9a77d42de70a7d88fbbd07f70d99a88512ed983c083e73c33a15d",
+          "time_code": 15.298284217519281
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_080.hdf5",
+          "sha256": "725a510f21322278696a41dc8dbaf2f329e8bf3bc3a231e052927b024626da8a",
+          "time_code": 15.491933384829654
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_081.hdf5",
+          "sha256": "17607684fc7477297c80572885ad08d803f68bbb5caf570054893a240787c632",
+          "time_code": 15.685582552140025
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_082.hdf5",
+          "sha256": "40f003e3039b46c89cc9d8628e6285771f3fb9f1bf70b6ee1fdf252c85e9c7bb",
+          "time_code": 15.879231719450395
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_083.hdf5",
+          "sha256": "8397619ac40a5db7df303d349b195d19ecc39ab5c1dde58593b965856fc0e54b",
+          "time_code": 16.072880886760768
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_084.hdf5",
+          "sha256": "b08bac58fe1add9540e6a6c6a98c6ce6a53effaed26570e1361c8ecf72857510",
+          "time_code": 16.26653005407114
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_085.hdf5",
+          "sha256": "0e798aaafdf67105db6398c54944ee7d4161fe30428382fadc09ba790d8a550c",
+          "time_code": 16.460179221381512
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_086.hdf5",
+          "sha256": "6fc33d1630534c8e3c2825c90fddac0435c42e53ff5b7f540232f2eb4e3b76b7",
+          "time_code": 16.653828388691885
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_087.hdf5",
+          "sha256": "fd3a1257176d5c411b5ba7bd9c29ebd5ca8272eaab49593fb72fe0c9b1d0f6c2",
+          "time_code": 16.847477556002257
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_088.hdf5",
+          "sha256": "888714c6660f63943898ffc0e3cd571e052efabcb88fa01abc7339006d059162",
+          "time_code": 17.04112672331263
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_089.hdf5",
+          "sha256": "f966c0e966787f1d23a8bd48888869eb60fdecd92d803370088e2632fa41014d",
+          "time_code": 17.234775890623002
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_090.hdf5",
+          "sha256": "f29aae6f2dda87dd52390d2c0daf419a9f083490a6a7a7e3ca22137cef148d40",
+          "time_code": 17.428425057933374
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_091.hdf5",
+          "sha256": "744addf0b9c527c64bf698236112e154c1dd4c022fbdfa40a985923499b89c01",
+          "time_code": 17.622074225243747
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_092.hdf5",
+          "sha256": "8c37b4eb2486e965da32a94881f009aa2cb4620038818387d13783719ef48a44",
+          "time_code": 17.81572339255412
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_093.hdf5",
+          "sha256": "afdb6ed712fe6b99d98f993b8545b1fe7156387daad5ef692b1ed29a1fe142cd",
+          "time_code": 18.00937255986449
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_094.hdf5",
+          "sha256": "efda3ad80c2d7fd8058e8d43d6f6251e8e3f9bf6134926e8ec4277d22aaef6fb",
+          "time_code": 18.203021727174864
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_095.hdf5",
+          "sha256": "bf77e582aa89267b359673dac02d8d8395c1a9f76e081afe2bf5175aeb0e413d",
+          "time_code": 18.396670894485236
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_096.hdf5",
+          "sha256": "215bdb1bc43dee79ec914d07db8623bf551bf834c9e795318f7abe54e36dcdd8",
+          "time_code": 18.59032006179561
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_097.hdf5",
+          "sha256": "be7962b07fbaafb026585cbe55f0a49006afd2b1e09884bee01ba392d2338ccf",
+          "time_code": 18.78396922910598
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_098.hdf5",
+          "sha256": "0f80f7fd41a70251bac9bccc7bf7a163bdd22f47d97850d5f5c98ed2b382eda5",
+          "time_code": 18.977618396416354
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_099.hdf5",
+          "sha256": "8425e26947404c0361c7eeb052511cc5db7ef916a273d2cebd28e685e57c076e",
+          "time_code": 19.171267563726726
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_100.hdf5",
+          "sha256": "d5ff5113ed39822a4382fe442587bf53aa99e244cae39f133255b53ae82b8dd6",
+          "time_code": 19.364916731037084
+        }
+      ],
+      "checked_restarts": [
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/restartfiles/restart.0",
+          "sha256": "825365768f41695f55acf32f1ebfe8eadcc693850ebb9b7b686e3430d7d52dcd"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/restartfiles/restart.1",
+          "sha256": "382382d55647d7bb92493cf511709bc6f1fee6e8f613910db7d25c66d3074f7c"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/restartfiles/restart.2",
+          "sha256": "f592cb246c4b0d32341c1689745fb32a0372dc1538aa372d589513d68de2f290"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/restartfiles/restart.3",
+          "sha256": "547ca0cc5f7362140f3ec46a3a48ed1317429df41103da317de9615831b819bb"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/restartfiles/restart.4",
+          "sha256": "2d1d18d1ab81ab5c1adbab3d76afb627992fa208606a90ebe72a9e124bb4ce60"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/restartfiles/restart.5",
+          "sha256": "75e601622ef29bb7c55c74ec6e05b3cb9e2de1948fb1ced7f73a59851b0436c4"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/restartfiles/restart.6",
+          "sha256": "4beaf95aa1c1035cdbc35ff7f1404521148f2636c62ddc38f774ee0cb4c9a3ca"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/restartfiles/restart.7",
+          "sha256": "3b00230ca703757edcc073ac730a5f18d259d4ae40ca84dcd52f53f9c4e14095"
+        }
+      ],
+      "affected_internal_state": [
+        {
+          "id": 109,
+          "Density": 236.61342896228734,
+          "Pressure": 2.410293001601755e-41,
+          "InternalEnergy": 1.52799421328655e-43,
+          "InternalEnergyPred": 1.52799421328655e-43
+        }
+      ],
+      "terminal_zero_id_histories": {
+        "109": [
+          {
+            "time_code": 0.0,
+            "t_over_tcc": 0.0,
+            "density": 99.89126586914062,
+            "internal_energy": 0.015002655796706676,
+            "mass": 3.051217555999756
+          },
+          {
+            "time_code": 0.19364916731037085,
+            "t_over_tcc": 0.05,
+            "density": 99.88890075683594,
+            "internal_energy": 0.015005061402916908,
+            "mass": 3.0512447357177734
+          },
+          {
+            "time_code": 0.3872983346207417,
+            "t_over_tcc": 0.1,
+            "density": 99.90936279296875,
+            "internal_energy": 0.015024656429886818,
+            "mass": 3.0513916015625
+          },
+          {
+            "time_code": 0.5809475019311126,
+            "t_over_tcc": 0.15,
+            "density": 99.88782501220703,
+            "internal_energy": 0.015055789612233639,
+            "mass": 3.0515851974487305
+          },
+          {
+            "time_code": 0.7745966692414834,
+            "t_over_tcc": 0.2,
+            "density": 99.78189086914062,
+            "internal_energy": 0.015079304575920105,
+            "mass": 3.0517311096191406
+          },
+          {
+            "time_code": 0.9682458365518543,
+            "t_over_tcc": 0.25,
+            "density": 99.56263732910156,
+            "internal_energy": 0.015092704445123672,
+            "mass": 3.051903247833252
+          },
+          {
+            "time_code": 1.161895003862225,
+            "t_over_tcc": 0.3,
+            "density": 99.20797729492188,
+            "internal_energy": 0.015096786431968212,
+            "mass": 3.0523757934570312
+          },
+          {
+            "time_code": 1.355544171172596,
+            "t_over_tcc": 0.35,
+            "density": 98.69781494140625,
+            "internal_energy": 0.015089823864400387,
+            "mass": 3.053321361541748
+          },
+          {
+            "time_code": 1.5491933384829668,
+            "t_over_tcc": 0.4,
+            "density": 97.96057891845703,
+            "internal_energy": 0.015044652856886387,
+            "mass": 3.052673578262329
+          },
+          {
+            "time_code": 1.7428425057933374,
+            "t_over_tcc": 0.44999999999999996,
+            "density": 97.15619659423828,
+            "internal_energy": 0.014979293569922447,
+            "mass": 3.05143141746521
+          },
+          {
+            "time_code": 1.9364916731037085,
+            "t_over_tcc": 0.5,
+            "density": 96.2725830078125,
+            "internal_energy": 0.014912846498191357,
+            "mass": 3.0518763065338135
+          },
+          {
+            "time_code": 2.1301408404140796,
+            "t_over_tcc": 0.55,
+            "density": 95.36766052246094,
+            "internal_energy": 0.014849011786282063,
+            "mass": 3.052457571029663
+          },
+          {
+            "time_code": 2.32379000772445,
+            "t_over_tcc": 0.6,
+            "density": 94.49515533447266,
+            "internal_energy": 0.014803177677094936,
+            "mass": 3.053077220916748
+          },
+          {
+            "time_code": 2.517439175034821,
+            "t_over_tcc": 0.6499999999999999,
+            "density": 93.69857025146484,
+            "internal_energy": 0.014786355197429657,
+            "mass": 3.054246664047241
+          },
+          {
+            "time_code": 2.7110883423451915,
+            "t_over_tcc": 0.6999999999999998,
+            "density": 92.96395874023438,
+            "internal_energy": 0.014805227518081665,
+            "mass": 3.055570363998413
+          },
+          {
+            "time_code": 2.904737509655562,
+            "t_over_tcc": 0.7499999999999998,
+            "density": 92.30171966552734,
+            "internal_energy": 0.014847330749034882,
+            "mass": 3.0573816299438477
+          },
+          {
+            "time_code": 3.0983866769659323,
+            "t_over_tcc": 0.7999999999999997,
+            "density": 91.74295806884766,
+            "internal_energy": 0.014924520626664162,
+            "mass": 3.059731960296631
+          },
+          {
+            "time_code": 3.2920358442763034,
+            "t_over_tcc": 0.8499999999999998,
+            "density": 91.2194595336914,
+            "internal_energy": 0.015032588504254818,
+            "mass": 3.05163311958313
+          },
+          {
+            "time_code": 3.485685011586674,
+            "t_over_tcc": 0.8999999999999997,
+            "density": 90.7298355102539,
+            "internal_energy": 0.015183036215603352,
+            "mass": 3.053001642227173
+          },
+          {
+            "time_code": 3.6793341788970446,
+            "t_over_tcc": 0.9499999999999996,
+            "density": 90.30976104736328,
+            "internal_energy": 0.015379516407847404,
+            "mass": 3.0547239780426025
+          },
+          {
+            "time_code": 3.8729833462074152,
+            "t_over_tcc": 0.9999999999999996,
+            "density": 89.89139556884766,
+            "internal_energy": 0.01563083939254284,
+            "mass": 3.0567824840545654
+          },
+          {
+            "time_code": 4.066632513517786,
+            "t_over_tcc": 1.0499999999999994,
+            "density": 89.4489517211914,
+            "internal_energy": 0.01593076065182686,
+            "mass": 3.0586752891540527
+          },
+          {
+            "time_code": 4.2602816808281565,
+            "t_over_tcc": 1.0999999999999994,
+            "density": 88.92628479003906,
+            "internal_energy": 0.01624257117509842,
+            "mass": 3.0609054565429688
+          },
+          {
+            "time_code": 4.453930848138527,
+            "t_over_tcc": 1.1499999999999995,
+            "density": 88.46659851074219,
+            "internal_energy": 0.016576135531067848,
+            "mass": 3.0635690689086914
+          },
+          {
+            "time_code": 4.647580015448898,
+            "t_over_tcc": 1.1999999999999993,
+            "density": 87.70413208007812,
+            "internal_energy": 0.01686323806643486,
+            "mass": 3.0633955001831055
+          },
+          {
+            "time_code": 4.841229182759268,
+            "t_over_tcc": 1.2499999999999993,
+            "density": 86.78568267822266,
+            "internal_energy": 0.017145663499832153,
+            "mass": 3.0660715103149414
+          },
+          {
+            "time_code": 5.034878350069639,
+            "t_over_tcc": 1.2999999999999992,
+            "density": 85.66117095947266,
+            "internal_energy": 0.017378458753228188,
+            "mass": 3.052825927734375
+          },
+          {
+            "time_code": 5.22852751738001,
+            "t_over_tcc": 1.3499999999999992,
+            "density": 84.4818344116211,
+            "internal_energy": 0.017572661861777306,
+            "mass": 3.054361343383789
+          },
+          {
+            "time_code": 5.422176684690379,
+            "t_over_tcc": 1.3999999999999988,
+            "density": 83.20365142822266,
+            "internal_energy": 0.017752431333065033,
+            "mass": 3.055436134338379
+          },
+          {
+            "time_code": 5.615825852000751,
+            "t_over_tcc": 1.449999999999999,
+            "density": 81.91218566894531,
+            "internal_energy": 0.017902502790093422,
+            "mass": 3.055846691131592
+          },
+          {
+            "time_code": 5.8094750193111215,
+            "t_over_tcc": 1.499999999999999,
+            "density": 80.6944808959961,
+            "internal_energy": 0.018044793978333473,
+            "mass": 3.056610345840454
+          },
+          {
+            "time_code": 6.003124186621492,
+            "t_over_tcc": 1.549999999999999,
+            "density": 79.53807830810547,
+            "internal_energy": 0.0181602630764246,
+            "mass": 3.0565168857574463
+          },
+          {
+            "time_code": 6.196773353931863,
+            "t_over_tcc": 1.5999999999999988,
+            "density": 78.80204010009766,
+            "internal_energy": 0.018280820921063423,
+            "mass": 3.0559332370758057
+          },
+          {
+            "time_code": 6.390422521242233,
+            "t_over_tcc": 1.6499999999999988,
+            "density": 78.37826538085938,
+            "internal_energy": 0.01841813139617443,
+            "mass": 3.054070234298706
+          },
+          {
+            "time_code": 6.584071688552604,
+            "t_over_tcc": 1.6999999999999988,
+            "density": 77.87618255615234,
+            "internal_energy": 0.01855400949716568,
+            "mass": 3.051328182220459
+          },
+          {
+            "time_code": 6.777720855862975,
+            "t_over_tcc": 1.7499999999999987,
+            "density": 77.42449951171875,
+            "internal_energy": 0.018694188445806503,
+            "mass": 3.051537036895752
+          },
+          {
+            "time_code": 6.971370023173346,
+            "t_over_tcc": 1.799999999999999,
+            "density": 77.11015319824219,
+            "internal_energy": 0.01885984092950821,
+            "mass": 3.051210403442383
+          },
+          {
+            "time_code": 7.165019190483716,
+            "t_over_tcc": 1.8499999999999985,
+            "density": 77.22647857666016,
+            "internal_energy": 0.019052550196647644,
+            "mass": 3.049785852432251
+          },
+          {
+            "time_code": 7.358668357794087,
+            "t_over_tcc": 1.8999999999999986,
+            "density": 78.44129943847656,
+            "internal_energy": 0.019234679639339447,
+            "mass": 3.0480406284332275
+          },
+          {
+            "time_code": 7.552317525104456,
+            "t_over_tcc": 1.9499999999999982,
+            "density": 80.84093475341797,
+            "internal_energy": 0.019388429820537567,
+            "mass": 3.043092966079712
+          },
+          {
+            "time_code": 7.745966692414828,
+            "t_over_tcc": 1.9999999999999984,
+            "density": 83.96556091308594,
+            "internal_energy": 0.019490834325551987,
+            "mass": 3.0389456748962402
+          },
+          {
+            "time_code": 7.9396158597251985,
+            "t_over_tcc": 2.0499999999999985,
+            "density": 86.72393035888672,
+            "internal_energy": 0.01952226832509041,
+            "mass": 3.029398202896118
+          },
+          {
+            "time_code": 8.13326502703557,
+            "t_over_tcc": 2.0999999999999983,
+            "density": 89.4266128540039,
+            "internal_energy": 0.019632728770375252,
+            "mass": 3.0503182411193848
+          },
+          {
+            "time_code": 8.32691419434594,
+            "t_over_tcc": 2.1499999999999986,
+            "density": 93.71671295166016,
+            "internal_energy": 0.019741887226700783,
+            "mass": 3.046781063079834
+          },
+          {
+            "time_code": 8.520563361656311,
+            "t_over_tcc": 2.1999999999999984,
+            "density": 99.23844146728516,
+            "internal_energy": 0.019759472459554672,
+            "mass": 3.0418813228607178
+          },
+          {
+            "time_code": 8.714212528966682,
+            "t_over_tcc": 2.2499999999999982,
+            "density": 108.44681549072266,
+            "internal_energy": 0.019580265507102013,
+            "mass": 3.031954050064087
+          },
+          {
+            "time_code": 8.907861696277052,
+            "t_over_tcc": 2.2999999999999985,
+            "density": 115.52583312988281,
+            "internal_energy": 0.019160659983754158,
+            "mass": 3.0501630306243896
+          },
+          {
+            "time_code": 9.101510863587423,
+            "t_over_tcc": 2.3499999999999983,
+            "density": 116.0568618774414,
+            "internal_energy": 0.018870804458856583,
+            "mass": 3.0192325115203857
+          },
+          {
+            "time_code": 9.295160030897794,
+            "t_over_tcc": 2.399999999999998,
+            "density": 118.90185546875,
+            "internal_energy": 0.018755463883280754,
+            "mass": 3.01176381111145
+          },
+          {
+            "time_code": 9.488809198208164,
+            "t_over_tcc": 2.449999999999998,
+            "density": 130.57798767089844,
+            "internal_energy": 0.018430717289447784,
+            "mass": 3.0101990699768066
+          },
+          {
+            "time_code": 9.682458365518535,
+            "t_over_tcc": 2.4999999999999982,
+            "density": 144.82937622070312,
+            "internal_energy": 0.017744341865181923,
+            "mass": 2.9954233169555664
+          },
+          {
+            "time_code": 9.876107532828904,
+            "t_over_tcc": 2.5499999999999976,
+            "density": 151.26893615722656,
+            "internal_energy": 0.01739424280822277,
+            "mass": 3.044121503829956
+          },
+          {
+            "time_code": 10.069756700139276,
+            "t_over_tcc": 2.599999999999998,
+            "density": 163.95726013183594,
+            "internal_energy": 0.016829948872327805,
+            "mass": 3.035672187805176
+          },
+          {
+            "time_code": 10.263405867449647,
+            "t_over_tcc": 2.6499999999999977,
+            "density": 180.09539794921875,
+            "internal_energy": 0.01645093597471714,
+            "mass": 3.023444652557373
+          },
+          {
+            "time_code": 10.457055034760018,
+            "t_over_tcc": 2.699999999999998,
+            "density": 192.5164337158203,
+            "internal_energy": 0.01602061651647091,
+            "mass": 3.020843505859375
+          },
+          {
+            "time_code": 10.650704202070388,
+            "t_over_tcc": 2.749999999999998,
+            "density": 194.67054748535156,
+            "internal_energy": 0.016068842262029648,
+            "mass": 3.04508376121521
+          },
+          {
+            "time_code": 10.844353369380759,
+            "t_over_tcc": 2.7999999999999976,
+            "density": 197.43716430664062,
+            "internal_energy": 0.016237866133451462,
+            "mass": 3.0368387699127197
+          },
+          {
+            "time_code": 11.038002536691128,
+            "t_over_tcc": 2.849999999999997,
+            "density": 201.14048767089844,
+            "internal_energy": 0.016241904348134995,
+            "mass": 3.0443320274353027
+          },
+          {
+            "time_code": 11.2316517040015,
+            "t_over_tcc": 2.8999999999999977,
+            "density": 201.67677307128906,
+            "internal_energy": 0.01602671481668949,
+            "mass": 3.0193190574645996
+          },
+          {
+            "time_code": 11.42530087131187,
+            "t_over_tcc": 2.9499999999999975,
+            "density": 198.13995361328125,
+            "internal_energy": 0.01563200354576111,
+            "mass": 3.044469118118286
+          },
+          {
+            "time_code": 11.618950038622241,
+            "t_over_tcc": 2.9999999999999973,
+            "density": 200.82354736328125,
+            "internal_energy": 0.014590447768568993,
+            "mass": 3.036513090133667
+          },
+          {
+            "time_code": 11.812599205932612,
+            "t_over_tcc": 3.0499999999999976,
+            "density": 213.76882934570312,
+            "internal_energy": 0.012672413140535355,
+            "mass": 3.0455241203308105
+          },
+          {
+            "time_code": 12.00624837324298,
+            "t_over_tcc": 3.099999999999997,
+            "density": 221.292236328125,
+            "internal_energy": 0.011048444546759129,
+            "mass": 3.0180561542510986
+          },
+          {
+            "time_code": 12.199897540553353,
+            "t_over_tcc": 3.1499999999999972,
+            "density": 222.61572265625,
+            "internal_energy": 0.009262004867196083,
+            "mass": 3.0469651222229004
+          },
+          {
+            "time_code": 12.393546707863724,
+            "t_over_tcc": 3.199999999999997,
+            "density": 212.31451416015625,
+            "internal_energy": 0.007829354144632816,
+            "mass": 3.0361950397491455
+          },
+          {
+            "time_code": 12.587195875174094,
+            "t_over_tcc": 3.2499999999999973,
+            "density": 195.19786071777344,
+            "internal_energy": 0.007097926456481218,
+            "mass": 3.023228645324707
+          },
+          {
+            "time_code": 12.780845042484465,
+            "t_over_tcc": 3.299999999999997,
+            "density": 205.5134735107422,
+            "internal_energy": 0.006257567089051008,
+            "mass": 3.0136945247650146
+          },
+          {
+            "time_code": 12.974494209794836,
+            "t_over_tcc": 3.349999999999997,
+            "density": 238.91275024414062,
+            "internal_energy": 0.004465098027139902,
+            "mass": 3.046614170074463
+          },
+          {
+            "time_code": 13.168143377105205,
+            "t_over_tcc": 3.3999999999999964,
+            "density": 251.0030975341797,
+            "internal_energy": 0.00377540267072618,
+            "mass": 3.0415966510772705
+          },
+          {
+            "time_code": 13.361792544415577,
+            "t_over_tcc": 3.449999999999997,
+            "density": 221.64854431152344,
+            "internal_energy": 0.0028188854921609163,
+            "mass": 3.049008369445801
+          },
+          {
+            "time_code": 13.555441711725948,
+            "t_over_tcc": 3.499999999999997,
+            "density": 190.19935607910156,
+            "internal_energy": 0.0021001335699111223,
+            "mass": 3.0152504444122314
+          },
+          {
+            "time_code": 13.749090879036318,
+            "t_over_tcc": 3.5499999999999967,
+            "density": 185.2196502685547,
+            "internal_energy": 0.0015956723364070058,
+            "mass": 3.0496928691864014
+          },
+          {
+            "time_code": 13.942740046346689,
+            "t_over_tcc": 3.599999999999997,
+            "density": 202.45973205566406,
+            "internal_energy": 0.001153468736447394,
+            "mass": 3.0392613410949707
+          },
+          {
+            "time_code": 14.136389213657058,
+            "t_over_tcc": 3.6499999999999964,
+            "density": 217.521728515625,
+            "internal_energy": 0.0006691034650430083,
+            "mass": 3.0501835346221924
+          },
+          {
+            "time_code": 14.33003838096743,
+            "t_over_tcc": 3.6999999999999966,
+            "density": 218.5512237548828,
+            "internal_energy": 3.356463371129159e-11,
+            "mass": 3.0167219638824463
+          },
+          {
+            "time_code": 14.5236875482778,
+            "t_over_tcc": 3.7499999999999964,
+            "density": 203.62567138671875,
+            "internal_energy": 4.7744290299078784e-08,
+            "mass": 3.019871473312378
+          },
+          {
+            "time_code": 14.717336715588171,
+            "t_over_tcc": 3.7999999999999967,
+            "density": 174.94837951660156,
+            "internal_energy": 1.1116333841131717e-17,
+            "mass": 3.037095308303833
+          },
+          {
+            "time_code": 14.910985882898542,
+            "t_over_tcc": 3.8499999999999965,
+            "density": 178.16575622558594,
+            "internal_energy": 4.141157061283185e-26,
+            "mass": 3.0304951667785645
+          },
+          {
+            "time_code": 15.104635050208913,
+            "t_over_tcc": 3.8999999999999964,
+            "density": 193.72125244140625,
+            "internal_energy": 2.410470660125828e-36,
+            "mass": 3.0381546020507812
+          },
+          {
+            "time_code": 15.298284217519281,
+            "t_over_tcc": 3.9499999999999957,
+            "density": 197.86683654785156,
+            "internal_energy": 0.0,
+            "mass": 3.019848585128784
+          },
+          {
+            "time_code": 15.491933384829654,
+            "t_over_tcc": 3.9999999999999964,
+            "density": 232.34536743164062,
+            "internal_energy": 0.0,
+            "mass": 3.0366249084472656
+          },
+          {
+            "time_code": 15.685582552140025,
+            "t_over_tcc": 4.049999999999996,
+            "density": 275.1432189941406,
+            "internal_energy": 0.0,
+            "mass": 3.014636516571045
+          },
+          {
+            "time_code": 15.879231719450395,
+            "t_over_tcc": 4.099999999999996,
+            "density": 296.79534912109375,
+            "internal_energy": 0.0,
+            "mass": 3.034503936767578
+          },
+          {
+            "time_code": 16.072880886760768,
+            "t_over_tcc": 4.149999999999997,
+            "density": 251.35220336914062,
+            "internal_energy": 0.0,
+            "mass": 3.0186524391174316
+          },
+          {
+            "time_code": 16.26653005407114,
+            "t_over_tcc": 4.199999999999997,
+            "density": 225.7871551513672,
+            "internal_energy": 2.7472939109429717e-05,
+            "mass": 3.042012929916382
+          },
+          {
+            "time_code": 16.460179221381512,
+            "t_over_tcc": 4.249999999999997,
+            "density": 225.93673706054688,
+            "internal_energy": 0.0003672201419249177,
+            "mass": 3.027291774749756
+          },
+          {
+            "time_code": 16.653828388691885,
+            "t_over_tcc": 4.299999999999998,
+            "density": 222.6125946044922,
+            "internal_energy": 1.621600063117512e-07,
+            "mass": 3.0419249534606934
+          },
+          {
+            "time_code": 16.847477556002257,
+            "t_over_tcc": 4.349999999999998,
+            "density": 215.64111328125,
+            "internal_energy": 3.0204654915584475e-16,
+            "mass": 2.9934699535369873
+          },
+          {
+            "time_code": 17.04112672331263,
+            "t_over_tcc": 4.399999999999999,
+            "density": 219.66598510742188,
+            "internal_energy": 3.5162846226692753e-26,
+            "mass": 3.044036626815796
+          },
+          {
+            "time_code": 17.234775890623002,
+            "t_over_tcc": 4.449999999999999,
+            "density": 224.7183380126953,
+            "internal_energy": 3.274795247865166e-35,
+            "mass": 3.0268332958221436
+          },
+          {
+            "time_code": 17.428425057933374,
+            "t_over_tcc": 4.499999999999999,
+            "density": 238.37657165527344,
+            "internal_energy": 0.0,
+            "mass": 3.0127615928649902
+          },
+          {
+            "time_code": 17.622074225243747,
+            "t_over_tcc": 4.55,
+            "density": 281.7864990234375,
+            "internal_energy": 0.0,
+            "mass": 3.029752016067505
+          },
+          {
+            "time_code": 17.81572339255412,
+            "t_over_tcc": 4.6000000000000005,
+            "density": 291.7578430175781,
+            "internal_energy": 0.0,
+            "mass": 3.046072483062744
+          },
+          {
+            "time_code": 18.00937255986449,
+            "t_over_tcc": 4.65,
+            "density": 303.5331115722656,
+            "internal_energy": 0.0,
+            "mass": 3.023529052734375
+          },
+          {
+            "time_code": 18.203021727174864,
+            "t_over_tcc": 4.700000000000001,
+            "density": 281.1195373535156,
+            "internal_energy": 0.0,
+            "mass": 3.047168016433716
+          },
+          {
+            "time_code": 18.396670894485236,
+            "t_over_tcc": 4.750000000000002,
+            "density": 259.1726989746094,
+            "internal_energy": 4.457990144146606e-05,
+            "mass": 3.0282888412475586
+          },
+          {
+            "time_code": 18.59032006179561,
+            "t_over_tcc": 4.800000000000002,
+            "density": 249.68826293945312,
+            "internal_energy": 8.866955613484606e-05,
+            "mass": 3.048738718032837
+          },
+          {
+            "time_code": 18.78396922910598,
+            "t_over_tcc": 4.850000000000002,
+            "density": 280.068115234375,
+            "internal_energy": 2.4212035303647177e-14,
+            "mass": 3.030944347381592
+          },
+          {
+            "time_code": 18.977618396416354,
+            "t_over_tcc": 4.900000000000003,
+            "density": 259.49615478515625,
+            "internal_energy": 2.20207178278062e-26,
+            "mass": 3.049593687057495
+          },
+          {
+            "time_code": 19.171267563726726,
+            "t_over_tcc": 4.950000000000003,
+            "density": 226.49827575683594,
+            "internal_energy": 1.2817744763920898e-36,
+            "mass": 3.030759334564209
+          },
+          {
+            "time_code": 19.364916731037084,
+            "t_over_tcc": 5.0,
+            "density": 236.61343383789062,
+            "internal_energy": 0.0,
+            "mass": 3.051217555999756
+          }
+        ]
+      }
+    },
+    {
+      "law": "tanh13",
+      "independently_checked_final_particles": 65536,
+      "checked_native_snapshots": [
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_000.hdf5",
+          "sha256": "0722e124a64cfbc723fbe39cf7a5cbda0327fb522090bb62b8a8fb4c6a324390",
+          "time_code": 0.0
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_001.hdf5",
+          "sha256": "66a2866882c3bfd039df2634f6fbcb950a431f47945a5a79d4abdb06099dcfc3",
+          "time_code": 0.19364916731037085
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_002.hdf5",
+          "sha256": "facab3eac0dee2a4443e63a06355df0b9571ebd72ddfe0182a702b8a54bcc949",
+          "time_code": 0.3872983346207417
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_003.hdf5",
+          "sha256": "859b9cc94553fccd6ebe9039edee3a48f85f72cc7cf1ffbcc17619740de200d4",
+          "time_code": 0.5809475019311126
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_004.hdf5",
+          "sha256": "4f151c75a644ce2cfdf8fd7d53a52107aa641d216093b48a870323962b7ed205",
+          "time_code": 0.7745966692414834
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_005.hdf5",
+          "sha256": "2ef8c50d90037df4c62c9ccb8f435d9fe0781a314171dde41e16c428b60e3865",
+          "time_code": 0.9682458365518543
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_006.hdf5",
+          "sha256": "2321cecb09a43443b7701c3b1327f35e1120e7518d23619bc27cf0436ed0f3b5",
+          "time_code": 1.161895003862225
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_007.hdf5",
+          "sha256": "41e2e0706610262555dff5fe540543bc3ece94e52e78f0b7c32138e625d816a7",
+          "time_code": 1.355544171172596
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_008.hdf5",
+          "sha256": "704e207271e23b974cdeb12f800d7187c90937d6fa56dafcaa628c921d29d68a",
+          "time_code": 1.5491933384829668
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_009.hdf5",
+          "sha256": "4526a48db3dcea5dfb8c60caad717a36bf217a90858477ef129e628f33c0b83e",
+          "time_code": 1.7428425057933374
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_010.hdf5",
+          "sha256": "48c13e504d43b96d3296ba4a9fd750aa9ed53383b9e4361747d0d54246358d1f",
+          "time_code": 1.9364916731037085
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_011.hdf5",
+          "sha256": "ca1a8156f43c1468d87be616cf0158fe72966aecb4a5c3e4a4054594aae53068",
+          "time_code": 2.1301408404140796
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_012.hdf5",
+          "sha256": "c3d5bff8315170c30644ca7805dd29c0ade93dd3b106eeada70c69bcf14aca24",
+          "time_code": 2.32379000772445
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_013.hdf5",
+          "sha256": "e8077ce9ac1eb378d1b82ab772a4c6fabc8699199fa91ee11592f83cdd764593",
+          "time_code": 2.517439175034821
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_014.hdf5",
+          "sha256": "84342a15456dc88166cfbce11dd70391459c01384133bafbaad6615266349361",
+          "time_code": 2.7110883423451915
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_015.hdf5",
+          "sha256": "ba93843e0d80501e295c90056ebc6581c1e35a61e5893ed14fbc329949cc30d5",
+          "time_code": 2.904737509655562
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_016.hdf5",
+          "sha256": "4236893a62640638fce18d468f144585c4bca60e7a58de8f2be321bc5bb88ab3",
+          "time_code": 3.0983866769659323
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_017.hdf5",
+          "sha256": "e31b5efbb3c39e6fedd461a8c3b3edd00a808a8d5fba70d881d813be1e91f76c",
+          "time_code": 3.2920358442763034
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_018.hdf5",
+          "sha256": "54032243310079644f6c29887276dc168a2333de42c4f083ca4ab11f845c7ebc",
+          "time_code": 3.485685011586674
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_019.hdf5",
+          "sha256": "e45c13041bf79ad6a4aa85c90da9a1d9962d8ac33b18386e16deeeaccfcd236c",
+          "time_code": 3.6793341788970446
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_020.hdf5",
+          "sha256": "7b2a5e9bd8a83c25c516c2036ebff9297cda18a638fa6780cacd5b0092dc75c7",
+          "time_code": 3.8729833462074152
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_021.hdf5",
+          "sha256": "ae6eae2f01a21d1a29279e1bd02fe45d80385cda70e733fbb444486888a11941",
+          "time_code": 4.066632513517786
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_022.hdf5",
+          "sha256": "4f6acaa4aefe841ba97686c2e77fcac8abe350c261baae0a34b2c102099f2923",
+          "time_code": 4.2602816808281565
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_023.hdf5",
+          "sha256": "28c7704aab2ffca134d9b29b0a7715c8f8f463557ec14936112d456ee8423eb7",
+          "time_code": 4.453930848138527
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_024.hdf5",
+          "sha256": "80277bd300ed9e300f0b4cac63c118c6348966c0790bc24e98216bc35cd630a8",
+          "time_code": 4.647580015448898
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_025.hdf5",
+          "sha256": "5b896bd84ccc81b556de095e73ebdfb168b4d834ea0c808f27f1e6be875e87f4",
+          "time_code": 4.841229182759268
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_026.hdf5",
+          "sha256": "6f6ea369a937a46472ede1dad06c0a40ee21ea45f75afc684c7d3685c77413ac",
+          "time_code": 5.034878350069639
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_027.hdf5",
+          "sha256": "95482ecf962a98b8e0939e2e7fa913eb265de06ab841f949c6c605b4fb7cb556",
+          "time_code": 5.22852751738001
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_028.hdf5",
+          "sha256": "f73aa8f8bb7d77f271674133bd9e6c035951f4589790e549b79da5715c6804d1",
+          "time_code": 5.422176684690379
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_029.hdf5",
+          "sha256": "54c5cfeb249082dda4b0f5051fdf9f757157d755bab814c57e41b7780b5eca01",
+          "time_code": 5.615825852000751
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_030.hdf5",
+          "sha256": "83ff7102e666b128e0338f45d30d84918722186fb3e94ba600160f9b272906b7",
+          "time_code": 5.8094750193111215
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_031.hdf5",
+          "sha256": "618ae6d22030de1cd29daf42bb691d762a569fa79b630be19ec8da96a5c35c84",
+          "time_code": 6.003124186621492
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_032.hdf5",
+          "sha256": "86d316c1e882be56a9d33e863a2c5811e1cf0c4ac8ef95a98630587604e7596a",
+          "time_code": 6.196773353931863
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_033.hdf5",
+          "sha256": "9553c32910de0e918cc82c26e3459c2bc100ba99ba707e010631736b671e607e",
+          "time_code": 6.390422521242233
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_034.hdf5",
+          "sha256": "14c2f23263e7ab03d677e9c14eb1e3c8b7975d3cc5b076a0f3ab0762ca0d5cf9",
+          "time_code": 6.584071688552604
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_035.hdf5",
+          "sha256": "3b912b0a3fa939b30953b2068f6c82d7d7257f98d91df910eb7a4bd7e5461ff6",
+          "time_code": 6.777720855862975
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_036.hdf5",
+          "sha256": "eab2a12fc2287ce2cd64b21011dfa2e658503535204cea86140f19c9e68028d7",
+          "time_code": 6.971370023173346
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_037.hdf5",
+          "sha256": "c3be57ac90b534ed668d2e3d2bab2739df8a12f4431d9b1f95591cf32316a96b",
+          "time_code": 7.165019190483716
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_038.hdf5",
+          "sha256": "1f06ec7dea046b157cd3eca7efc713d4404a9b2ea01eaee93726c38cb2a036cb",
+          "time_code": 7.358668357794087
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_039.hdf5",
+          "sha256": "54aac7f90edaf9e63d782ff312764ddf37296343c65792e5b4b0e7a8d19330f1",
+          "time_code": 7.552317525104456
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_040.hdf5",
+          "sha256": "089eaa00045de1e273e48d6e0d6ad05f775758437f6ddb391a4afa4ce5250777",
+          "time_code": 7.745966692414828
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_041.hdf5",
+          "sha256": "8e3c28b69df1f5fb722d34e51c04f5ac9614c6654762e224e7d2559dc4345989",
+          "time_code": 7.9396158597251985
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_042.hdf5",
+          "sha256": "caefd4a9a3c359cd0fda01dbcd5701438085d2ca9e7a10eeb10973599c733649",
+          "time_code": 8.13326502703557
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_043.hdf5",
+          "sha256": "0fda97e9d36088043cfc1646e96ae8c67c7fd3f51e2023e7c5018b4df96db9df",
+          "time_code": 8.32691419434594
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_044.hdf5",
+          "sha256": "c7f7dc2dc4b72158546b79acc7d2b0d3d4d18c963b71c416552e8eeb34415c02",
+          "time_code": 8.520563361656311
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_045.hdf5",
+          "sha256": "c4edd7f2d6d91cda8c9dcf1fd468dd5b2114eda792f06e4285b4be2a320be8c3",
+          "time_code": 8.714212528966682
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_046.hdf5",
+          "sha256": "695d4a073b276f5d31e70f87465940e567e661154d25d7a8a073afbf9bba8931",
+          "time_code": 8.907861696277052
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_047.hdf5",
+          "sha256": "77d21428bba3b1aec871dfe0366e5823c6a9e4e6e197c2cfbab3c24cdbf3d8bb",
+          "time_code": 9.101510863587423
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_048.hdf5",
+          "sha256": "78466c7ee0c5e99a2877693fd734eaf109f82314e5e00d02b3af3822a2a58f67",
+          "time_code": 9.295160030897794
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_049.hdf5",
+          "sha256": "82fd5915d9133ee0431da22a1d91444536cac1a6e9fe6b62d731f8745cabc683",
+          "time_code": 9.488809198208164
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_050.hdf5",
+          "sha256": "b58eca4e8a62ea64e35489a384cb3a4330ece1f0a6cc0a88ffa9c8c4bb9cca1d",
+          "time_code": 9.682458365518535
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_051.hdf5",
+          "sha256": "bd385a1ae7fbd74a03bd1f3c0f6e767851f26d977a6f61167bc395deaacd4ed0",
+          "time_code": 9.876107532828904
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_052.hdf5",
+          "sha256": "6f810204a37af9c5eb785932798fa983eaca008d32676301c0f89e5f53831023",
+          "time_code": 10.069756700139276
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_053.hdf5",
+          "sha256": "8f60b85e6c59d4850a6ffb4f5a2ab46e19e58bd3b7f62ad224eafc170b667c08",
+          "time_code": 10.263405867449647
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_054.hdf5",
+          "sha256": "94ba5027026078e25814995ee319fca1a56cf8c8d40d8bb1761e560ee6b5044d",
+          "time_code": 10.457055034760018
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_055.hdf5",
+          "sha256": "9caa682c4fc453b74ed4b9814d2a5f15442a0c3d8892afbb5dfe6f3703db3742",
+          "time_code": 10.650704202070388
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_056.hdf5",
+          "sha256": "7a1ae04dce21230bbc5d00d0198df5d7a0a6846f6fb2d2c2bbe9c87693306c08",
+          "time_code": 10.844353369380759
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_057.hdf5",
+          "sha256": "c49da07cd777e776729eb65fb4073443c7be5ac9937241b6e515989abc1e440d",
+          "time_code": 11.038002536691128
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_058.hdf5",
+          "sha256": "9fd52c2f0542622afcc7beea159cee3b5c3dfaf86da272a89b8a41be2319c643",
+          "time_code": 11.2316517040015
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_059.hdf5",
+          "sha256": "079b69fde99d25a4a781d661d3030bbb4de25a3a539718fd6e9449ecfad5f909",
+          "time_code": 11.42530087131187
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_060.hdf5",
+          "sha256": "6bc15fef4e68a9a6970dbfbae3eb93c01819718e900930469833da5018090474",
+          "time_code": 11.618950038622241
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_061.hdf5",
+          "sha256": "6e1845eff93204318c44b385d5a38aa9f274b6a9e0bf69403b2a89f4b5a221d0",
+          "time_code": 11.812599205932612
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_062.hdf5",
+          "sha256": "adff400ad55782ccf0fa2c34c61193a6fb97be1c266a8a017ef1a6eff5614499",
+          "time_code": 12.00624837324298
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_063.hdf5",
+          "sha256": "356b0d3e0c62b318b1d0f6bc0916a0b7c4683bee38174f9f89abd8053c19778d",
+          "time_code": 12.199897540553353
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_064.hdf5",
+          "sha256": "99a28bab203ada22294bf35300befb365b1b3c50dd789004c8966b3cf95c05ad",
+          "time_code": 12.393546707863724
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_065.hdf5",
+          "sha256": "1ea7c43b6ac222febb9c51b5f2d54b1614e415817f130b5f581e5ee2695609e9",
+          "time_code": 12.587195875174094
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_066.hdf5",
+          "sha256": "d8dc01b97f14f46b15d56a3b325327716cd138fb752ebc46c18ae94b0930fdb4",
+          "time_code": 12.780845042484465
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_067.hdf5",
+          "sha256": "824112ee5c1a42fd59c891c8d0f3d2536fccf11194d5f69323fb0940c7241f5f",
+          "time_code": 12.974494209794836
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_068.hdf5",
+          "sha256": "afd74b94a0127b76160198e82e9586975ea8ca286f0d099b849d2aa273a509ae",
+          "time_code": 13.168143377105205
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_069.hdf5",
+          "sha256": "a0716bc45d29e6ca83c512c318d8dfac75c837637dc442dea959764061578a3d",
+          "time_code": 13.361792544415577
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_070.hdf5",
+          "sha256": "008673b5f818e0ad2fe32b108fc0daf854115dc6772a4991463749baf93593ae",
+          "time_code": 13.555441711725948
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_071.hdf5",
+          "sha256": "b1fee00b37b00328595c0bac54b503f89d0c69d77d9da7d16b086234dc080b48",
+          "time_code": 13.749090879036318
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_072.hdf5",
+          "sha256": "4f418663332ec3502f18a7f0b2503f770aff24b36c7dc3170221c96eb6163a9e",
+          "time_code": 13.942740046346689
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_073.hdf5",
+          "sha256": "4fc5865f112a4f83a63fb27b81f1f75f06470e89e1385f7abc2c917330bc00ae",
+          "time_code": 14.136389213657058
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_074.hdf5",
+          "sha256": "ff5fc88374ed0519e17da65af70eddc07c96e6da64ccec111d86db0fceab6802",
+          "time_code": 14.33003838096743
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_075.hdf5",
+          "sha256": "6423f3a3d5c96637c0688d22f5b31a62d596a8b06baa245678fb62fb5fab4948",
+          "time_code": 14.5236875482778
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_076.hdf5",
+          "sha256": "c778ef27d2fe660be12d09c447f54393800ba5b8bb909120582afd7bdddb3cec",
+          "time_code": 14.717336715588171
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_077.hdf5",
+          "sha256": "e62746adaae2e67390ac8e8334c03ee178f711171a2ab95bbfb10e41febe1c50",
+          "time_code": 14.910985882898542
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_078.hdf5",
+          "sha256": "a3f4b9637674bfb63110ef9ee7a89cc0ad3595a92bbb5667a7db60b4e6d7458a",
+          "time_code": 15.104635050208913
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_079.hdf5",
+          "sha256": "08ef5221c1287c421b8a6d5f632fbad015bfeb1c6ccb7fcd8ec4f791a56c2507",
+          "time_code": 15.298284217519281
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_080.hdf5",
+          "sha256": "e17af9a37e14164ebe1147723cbb18b3470a1cb321a035a1c4ca96f1b4b100d6",
+          "time_code": 15.491933384829654
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_081.hdf5",
+          "sha256": "1b8af148ce0f6f7757c15e0ebd4af58675fc53438424dc7ad93ce72ab7ee3286",
+          "time_code": 15.685582552140025
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_082.hdf5",
+          "sha256": "4d6548364cb79a11d174124476a5848839f74ad34fff2614b1d10eec173589ce",
+          "time_code": 15.879231719450395
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_083.hdf5",
+          "sha256": "ad39464f861597b12dc03d4a7faf2aef28232d870f0bf2e7e6e716a3b830873f",
+          "time_code": 16.072880886760768
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_084.hdf5",
+          "sha256": "5e82959798b25a21718618c7ef399ea17cdb8d435b0865070571844cfde9db52",
+          "time_code": 16.26653005407114
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_085.hdf5",
+          "sha256": "d41852e34f12bc1359b016050d2c1e36429e00b281faabe921cc5c1665f9876d",
+          "time_code": 16.460179221381512
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_086.hdf5",
+          "sha256": "3cd755384f1130e98240b5e6a8ecc733f08da7f05263bc6419d360b358afecbc",
+          "time_code": 16.653828388691885
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_087.hdf5",
+          "sha256": "f4310816da99de91e22504e25f10244c654b9ad573e5fe372f70cbaaab70cbf2",
+          "time_code": 16.847477556002257
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_088.hdf5",
+          "sha256": "5af248c4917625780b15fb4857dd1f6831eee0c667d9a904d0bdabf84d78063b",
+          "time_code": 17.04112672331263
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_089.hdf5",
+          "sha256": "6959cb943626e31ad05c04432c499a39d946265280bb8ae5f5fd510c6adfdc1d",
+          "time_code": 17.234775890623002
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_090.hdf5",
+          "sha256": "cd8badb7f66f3f1ec032f04c01b8a9953beb12700df5eb2e900a5d10eee217ac",
+          "time_code": 17.428425057933374
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_091.hdf5",
+          "sha256": "516a1b6a496b9795a8845f4b8e489d85cad21dfb0060a392c6d15a5cd8ae44c5",
+          "time_code": 17.622074225243747
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_092.hdf5",
+          "sha256": "a5bb05622854aeb9aaef4d7dc2ec160dcdc30415841bf39d301abbd2e3673568",
+          "time_code": 17.81572339255412
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_093.hdf5",
+          "sha256": "b5818413ab15bf9df83c14e5927e8cca4fd93ec5cecdf9446bf0af0ba3bdb0fd",
+          "time_code": 18.00937255986449
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_094.hdf5",
+          "sha256": "b025851cd9b1029786e6aac5f4007a44a080e77538fe82892bc73fbd9ccf3a34",
+          "time_code": 18.203021727174864
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_095.hdf5",
+          "sha256": "9c0a7b8404317aff64d3e7f2805898ae59f3ff0093fa7e886833bc35a6b84149",
+          "time_code": 18.396670894485236
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_096.hdf5",
+          "sha256": "dbbb848945cc5d0a2a1743ef298a1829c946cb609ece33c401648848fb8f7f31",
+          "time_code": 18.59032006179561
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_097.hdf5",
+          "sha256": "e8635c729538fb1fa9043c58b3a8b9cb5f3b8a5d1e72f785d15a9cdcd92ba935",
+          "time_code": 18.78396922910598
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_098.hdf5",
+          "sha256": "8c99bd401c3e49f750f73a04d2d257a9bb0c73c92ebe1e1f931dc2dacf7b4972",
+          "time_code": 18.977618396416354
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_099.hdf5",
+          "sha256": "cc7f585d7cc391eaf9c8947783463033522c0e4b2ae127d5b59f4f0386781f32",
+          "time_code": 19.171267563726726
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_100.hdf5",
+          "sha256": "ff23f75f5cb5ca558ad3c82b426288564d68884c405658479cd652db960644ba",
+          "time_code": 19.364916731037084
+        }
+      ],
+      "checked_restarts": [
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/restartfiles/restart.0",
+          "sha256": "c8f402991c196c75aca95f55d44270f041156bce265b50563ae685ce67ad656f"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/restartfiles/restart.1",
+          "sha256": "0050344fbfeee6cd4f965f74f75a785d37c5f46b1a2130519577e95f8a0f0955"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/restartfiles/restart.2",
+          "sha256": "6c97c9f9d157b91a70752223f539f2ff9e577d61c7b1eac345e36ca62f4ed734"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/restartfiles/restart.3",
+          "sha256": "563048e916fd4e3f106ed05f82453839c73751dd9e9bad232c2912f2c1dcd88c"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/restartfiles/restart.4",
+          "sha256": "783ec0cf325e9a0e693aa10fe35656bfbfe2736acb1ac9b953277c1f7ca3695a"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/restartfiles/restart.5",
+          "sha256": "15859dee15687c7af802ef78e0c9fc677079d1f9122f436ebca0c60affd9101b"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/restartfiles/restart.6",
+          "sha256": "dd3779bae3a4ba5607bab10bc12fa30efa7736f68d5f7ce0a8630ea6c752e3ec"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/restartfiles/restart.7",
+          "sha256": "8f9480cc47a873009a2782fda54daa1919bcf5af037b6160df72dc2a642d6a43"
+        }
+      ],
+      "affected_internal_state": [
+        {
+          "id": 96,
+          "Density": 287.9001784623503,
+          "Pressure": 8.390636717813804e-139,
+          "InternalEnergy": 4.37163851163316e-141,
+          "InternalEnergyPred": 4.37163851163316e-141
+        },
+        {
+          "id": 99,
+          "Density": 301.6975115653422,
+          "Pressure": 5.0243785333353e-76,
+          "InternalEnergy": 2.498054346189284e-78,
+          "InternalEnergyPred": 2.498054346189284e-78
+        },
+        {
+          "id": 102,
+          "Density": 262.54791382294917,
+          "Pressure": 2.887656000291494e-46,
+          "InternalEnergy": 1.649788009116768e-48,
+          "InternalEnergyPred": 1.649788009116768e-48
+        }
+      ],
+      "terminal_zero_id_histories": {
+        "96": [
+          {
+            "time_code": 0.0,
+            "t_over_tcc": 0.0,
+            "density": 99.89126586914062,
+            "internal_energy": 0.015002655796706676,
+            "mass": 3.051217555999756
+          },
+          {
+            "time_code": 0.19364916731037085,
+            "t_over_tcc": 0.05,
+            "density": 99.82647705078125,
+            "internal_energy": 0.015004669316112995,
+            "mass": 3.0512354373931885
+          },
+          {
+            "time_code": 0.3872983346207417,
+            "t_over_tcc": 0.1,
+            "density": 99.7067642211914,
+            "internal_energy": 0.01500780787318945,
+            "mass": 3.0512852668762207
+          },
+          {
+            "time_code": 0.5809475019311126,
+            "t_over_tcc": 0.15,
+            "density": 99.53941345214844,
+            "internal_energy": 0.015014625154435635,
+            "mass": 3.0515847206115723
+          },
+          {
+            "time_code": 0.7745966692414834,
+            "t_over_tcc": 0.2,
+            "density": 99.2900619506836,
+            "internal_energy": 0.015023456886410713,
+            "mass": 3.0518946647644043
+          },
+          {
+            "time_code": 0.9682458365518543,
+            "t_over_tcc": 0.25,
+            "density": 98.9402084350586,
+            "internal_energy": 0.015028081834316254,
+            "mass": 3.0521209239959717
+          },
+          {
+            "time_code": 1.161895003862225,
+            "t_over_tcc": 0.3,
+            "density": 98.47000122070312,
+            "internal_energy": 0.015021436847746372,
+            "mass": 3.05279278755188
+          },
+          {
+            "time_code": 1.355544171172596,
+            "t_over_tcc": 0.35,
+            "density": 97.85721588134766,
+            "internal_energy": 0.015007640235126019,
+            "mass": 3.0531630516052246
+          },
+          {
+            "time_code": 1.5491933384829668,
+            "t_over_tcc": 0.4,
+            "density": 97.07726287841797,
+            "internal_energy": 0.014975123107433319,
+            "mass": 3.054283857345581
+          },
+          {
+            "time_code": 1.7428425057933374,
+            "t_over_tcc": 0.44999999999999996,
+            "density": 96.16313171386719,
+            "internal_energy": 0.014920827001333237,
+            "mass": 3.051522731781006
+          },
+          {
+            "time_code": 1.9364916731037085,
+            "t_over_tcc": 0.5,
+            "density": 95.11347198486328,
+            "internal_energy": 0.014854715205729008,
+            "mass": 3.0520474910736084
+          },
+          {
+            "time_code": 2.1301408404140796,
+            "t_over_tcc": 0.55,
+            "density": 94.02998352050781,
+            "internal_energy": 0.014788704924285412,
+            "mass": 3.052577495574951
+          },
+          {
+            "time_code": 2.32379000772445,
+            "t_over_tcc": 0.6,
+            "density": 92.94914245605469,
+            "internal_energy": 0.014719901606440544,
+            "mass": 3.0530319213867188
+          },
+          {
+            "time_code": 2.517439175034821,
+            "t_over_tcc": 0.6499999999999999,
+            "density": 91.84928894042969,
+            "internal_energy": 0.01464135106652975,
+            "mass": 3.0537235736846924
+          },
+          {
+            "time_code": 2.7110883423451915,
+            "t_over_tcc": 0.6999999999999998,
+            "density": 90.85054016113281,
+            "internal_energy": 0.014577205292880535,
+            "mass": 3.0549681186676025
+          },
+          {
+            "time_code": 2.904737509655562,
+            "t_over_tcc": 0.7499999999999998,
+            "density": 89.94682312011719,
+            "internal_energy": 0.014543258585035801,
+            "mass": 3.056467056274414
+          },
+          {
+            "time_code": 3.0983866769659323,
+            "t_over_tcc": 0.7999999999999997,
+            "density": 89.16712951660156,
+            "internal_energy": 0.01455326471477747,
+            "mass": 3.0590834617614746
+          },
+          {
+            "time_code": 3.2920358442763034,
+            "t_over_tcc": 0.8499999999999998,
+            "density": 88.427490234375,
+            "internal_energy": 0.014623248018324375,
+            "mass": 3.0516507625579834
+          },
+          {
+            "time_code": 3.485685011586674,
+            "t_over_tcc": 0.8999999999999997,
+            "density": 87.70724487304688,
+            "internal_energy": 0.014756822027266026,
+            "mass": 3.053124189376831
+          },
+          {
+            "time_code": 3.6793341788970446,
+            "t_over_tcc": 0.9499999999999996,
+            "density": 87.05534362792969,
+            "internal_energy": 0.014946775510907173,
+            "mass": 3.054795503616333
+          },
+          {
+            "time_code": 3.8729833462074152,
+            "t_over_tcc": 0.9999999999999996,
+            "density": 86.36377716064453,
+            "internal_energy": 0.01518833264708519,
+            "mass": 3.05665922164917
+          },
+          {
+            "time_code": 4.066632513517786,
+            "t_over_tcc": 1.0499999999999994,
+            "density": 85.6648941040039,
+            "internal_energy": 0.015485310927033424,
+            "mass": 3.0589566230773926
+          },
+          {
+            "time_code": 4.2602816808281565,
+            "t_over_tcc": 1.0999999999999994,
+            "density": 84.84185028076172,
+            "internal_energy": 0.015825314447283745,
+            "mass": 3.0612106323242188
+          },
+          {
+            "time_code": 4.453930848138527,
+            "t_over_tcc": 1.1499999999999995,
+            "density": 83.90287780761719,
+            "internal_energy": 0.01617240346968174,
+            "mass": 3.063493251800537
+          },
+          {
+            "time_code": 4.647580015448898,
+            "t_over_tcc": 1.1999999999999993,
+            "density": 82.98118591308594,
+            "internal_energy": 0.016529221087694168,
+            "mass": 3.065086841583252
+          },
+          {
+            "time_code": 4.841229182759268,
+            "t_over_tcc": 1.2499999999999993,
+            "density": 81.9105224609375,
+            "internal_energy": 0.016872059553861618,
+            "mass": 3.066051483154297
+          },
+          {
+            "time_code": 5.034878350069639,
+            "t_over_tcc": 1.2999999999999992,
+            "density": 80.62134552001953,
+            "internal_energy": 0.017191534861922264,
+            "mass": 3.0530788898468018
+          },
+          {
+            "time_code": 5.22852751738001,
+            "t_over_tcc": 1.3499999999999992,
+            "density": 79.29769897460938,
+            "internal_energy": 0.017472464591264725,
+            "mass": 3.054711103439331
+          },
+          {
+            "time_code": 5.422176684690379,
+            "t_over_tcc": 1.3999999999999988,
+            "density": 78.16885375976562,
+            "internal_energy": 0.01774994283914566,
+            "mass": 3.056452751159668
+          },
+          {
+            "time_code": 5.615825852000751,
+            "t_over_tcc": 1.449999999999999,
+            "density": 77.27900695800781,
+            "internal_energy": 0.01798960752785206,
+            "mass": 3.0569863319396973
+          },
+          {
+            "time_code": 5.8094750193111215,
+            "t_over_tcc": 1.499999999999999,
+            "density": 76.59779357910156,
+            "internal_energy": 0.018179787322878838,
+            "mass": 3.0556302070617676
+          },
+          {
+            "time_code": 6.003124186621492,
+            "t_over_tcc": 1.549999999999999,
+            "density": 76.220458984375,
+            "internal_energy": 0.018283216282725334,
+            "mass": 3.0540521144866943
+          },
+          {
+            "time_code": 6.196773353931863,
+            "t_over_tcc": 1.5999999999999988,
+            "density": 76.35606384277344,
+            "internal_energy": 0.01836393214762211,
+            "mass": 3.05441951751709
+          },
+          {
+            "time_code": 6.390422521242233,
+            "t_over_tcc": 1.6499999999999988,
+            "density": 76.98030853271484,
+            "internal_energy": 0.018485592678189278,
+            "mass": 3.054616689682007
+          },
+          {
+            "time_code": 6.584071688552604,
+            "t_over_tcc": 1.6999999999999988,
+            "density": 77.84336853027344,
+            "internal_energy": 0.018601415678858757,
+            "mass": 3.0511839389801025
+          },
+          {
+            "time_code": 6.777720855862975,
+            "t_over_tcc": 1.7499999999999987,
+            "density": 79.65846252441406,
+            "internal_energy": 0.01873299665749073,
+            "mass": 3.0505449771881104
+          },
+          {
+            "time_code": 6.971370023173346,
+            "t_over_tcc": 1.799999999999999,
+            "density": 82.48920440673828,
+            "internal_energy": 0.018861081451177597,
+            "mass": 3.048454999923706
+          },
+          {
+            "time_code": 7.165019190483716,
+            "t_over_tcc": 1.8499999999999985,
+            "density": 86.31675720214844,
+            "internal_energy": 0.019020717591047287,
+            "mass": 3.04726505279541
+          },
+          {
+            "time_code": 7.358668357794087,
+            "t_over_tcc": 1.8999999999999986,
+            "density": 90.42720031738281,
+            "internal_energy": 0.01923689804971218,
+            "mass": 3.0417277812957764
+          },
+          {
+            "time_code": 7.552317525104456,
+            "t_over_tcc": 1.9499999999999982,
+            "density": 94.09906768798828,
+            "internal_energy": 0.019388092681765556,
+            "mass": 3.0359091758728027
+          },
+          {
+            "time_code": 7.745966692414828,
+            "t_over_tcc": 1.9999999999999984,
+            "density": 97.4568099975586,
+            "internal_energy": 0.01951824687421322,
+            "mass": 3.0319020748138428
+          },
+          {
+            "time_code": 7.9396158597251985,
+            "t_over_tcc": 2.0499999999999985,
+            "density": 101.06047058105469,
+            "internal_energy": 0.019705412909388542,
+            "mass": 3.0290932655334473
+          },
+          {
+            "time_code": 8.13326502703557,
+            "t_over_tcc": 2.0999999999999983,
+            "density": 104.2681655883789,
+            "internal_energy": 0.01982841081917286,
+            "mass": 3.0500426292419434
+          },
+          {
+            "time_code": 8.32691419434594,
+            "t_over_tcc": 2.1499999999999986,
+            "density": 109.4784927368164,
+            "internal_energy": 0.019922366365790367,
+            "mass": 3.0455682277679443
+          },
+          {
+            "time_code": 8.520563361656311,
+            "t_over_tcc": 2.1999999999999984,
+            "density": 118.1704330444336,
+            "internal_energy": 0.01984541304409504,
+            "mass": 3.039229393005371
+          },
+          {
+            "time_code": 8.714212528966682,
+            "t_over_tcc": 2.2499999999999982,
+            "density": 128.1373291015625,
+            "internal_energy": 0.0197459664195776,
+            "mass": 3.0282998085021973
+          },
+          {
+            "time_code": 8.907861696277052,
+            "t_over_tcc": 2.2999999999999985,
+            "density": 140.4480743408203,
+            "internal_energy": 0.019469399005174637,
+            "mass": 3.049837112426758
+          },
+          {
+            "time_code": 9.101510863587423,
+            "t_over_tcc": 2.3499999999999983,
+            "density": 151.8419952392578,
+            "internal_energy": 0.019230620935559273,
+            "mass": 3.044114828109741
+          },
+          {
+            "time_code": 9.295160030897794,
+            "t_over_tcc": 2.399999999999998,
+            "density": 169.09442138671875,
+            "internal_energy": 0.01930789090692997,
+            "mass": 3.0110833644866943
+          },
+          {
+            "time_code": 9.488809198208164,
+            "t_over_tcc": 2.449999999999998,
+            "density": 180.5677032470703,
+            "internal_energy": 0.01922418549656868,
+            "mass": 3.023733615875244
+          },
+          {
+            "time_code": 9.682458365518535,
+            "t_over_tcc": 2.4999999999999982,
+            "density": 186.6923828125,
+            "internal_energy": 0.01896580681204796,
+            "mass": 3.0169830322265625
+          },
+          {
+            "time_code": 9.876107532828904,
+            "t_over_tcc": 2.5499999999999976,
+            "density": 191.31784057617188,
+            "internal_energy": 0.018389767035841942,
+            "mass": 3.0413851737976074
+          },
+          {
+            "time_code": 10.069756700139276,
+            "t_over_tcc": 2.599999999999998,
+            "density": 197.94577026367188,
+            "internal_energy": 0.017416125163435936,
+            "mass": 3.0322353839874268
+          },
+          {
+            "time_code": 10.263405867449647,
+            "t_over_tcc": 2.6499999999999977,
+            "density": 205.25320434570312,
+            "internal_energy": 0.016497520729899406,
+            "mass": 3.0247092247009277
+          },
+          {
+            "time_code": 10.457055034760018,
+            "t_over_tcc": 2.699999999999998,
+            "density": 207.3400115966797,
+            "internal_energy": 0.01600869558751583,
+            "mass": 3.015964984893799
+          },
+          {
+            "time_code": 10.650704202070388,
+            "t_over_tcc": 2.749999999999998,
+            "density": 218.17239379882812,
+            "internal_energy": 0.015567935071885586,
+            "mass": 3.043158769607544
+          },
+          {
+            "time_code": 10.844353369380759,
+            "t_over_tcc": 2.7999999999999976,
+            "density": 233.7332763671875,
+            "internal_energy": 0.01538290735334158,
+            "mass": 3.0324716567993164
+          },
+          {
+            "time_code": 11.038002536691128,
+            "t_over_tcc": 2.849999999999997,
+            "density": 255.208251953125,
+            "internal_energy": 0.015010588802397251,
+            "mass": 3.023726224899292
+          },
+          {
+            "time_code": 11.2316517040015,
+            "t_over_tcc": 2.8999999999999977,
+            "density": 276.1419372558594,
+            "internal_energy": 0.01454073190689087,
+            "mass": 3.007277011871338
+          },
+          {
+            "time_code": 11.42530087131187,
+            "t_over_tcc": 2.9499999999999975,
+            "density": 299.6796569824219,
+            "internal_energy": 0.013509592972695827,
+            "mass": 3.043290138244629
+          },
+          {
+            "time_code": 11.618950038622241,
+            "t_over_tcc": 2.9999999999999973,
+            "density": 306.3160400390625,
+            "internal_energy": 0.012718753889203072,
+            "mass": 3.0334763526916504
+          },
+          {
+            "time_code": 11.812599205932612,
+            "t_over_tcc": 3.0499999999999976,
+            "density": 313.3111572265625,
+            "internal_energy": 0.012341545894742012,
+            "mass": 3.024144411087036
+          },
+          {
+            "time_code": 12.00624837324298,
+            "t_over_tcc": 3.099999999999997,
+            "density": 326.2452392578125,
+            "internal_energy": 0.01180927362293005,
+            "mass": 3.0116095542907715
+          },
+          {
+            "time_code": 12.199897540553353,
+            "t_over_tcc": 3.1499999999999972,
+            "density": 344.3274230957031,
+            "internal_energy": 0.011367433704435825,
+            "mass": 3.0461442470550537
+          },
+          {
+            "time_code": 12.393546707863724,
+            "t_over_tcc": 3.199999999999997,
+            "density": 365.04296875,
+            "internal_energy": 0.011044343002140522,
+            "mass": 3.0343804359436035
+          },
+          {
+            "time_code": 12.587195875174094,
+            "t_over_tcc": 3.2499999999999973,
+            "density": 389.88177490234375,
+            "internal_energy": 0.01010883878916502,
+            "mass": 3.0226852893829346
+          },
+          {
+            "time_code": 12.780845042484465,
+            "t_over_tcc": 3.299999999999997,
+            "density": 398.6834411621094,
+            "internal_energy": 0.009366294369101524,
+            "mass": 3.035749912261963
+          },
+          {
+            "time_code": 12.974494209794836,
+            "t_over_tcc": 3.349999999999997,
+            "density": 391.46966552734375,
+            "internal_energy": 0.008816100656986237,
+            "mass": 3.0473270416259766
+          },
+          {
+            "time_code": 13.168143377105205,
+            "t_over_tcc": 3.3999999999999964,
+            "density": 366.6073913574219,
+            "internal_energy": 0.008353514596819878,
+            "mass": 3.0336856842041016
+          },
+          {
+            "time_code": 13.361792544415577,
+            "t_over_tcc": 3.449999999999997,
+            "density": 354.46337890625,
+            "internal_energy": 0.007652615197002888,
+            "mass": 3.0481481552124023
+          },
+          {
+            "time_code": 13.555441711725948,
+            "t_over_tcc": 3.499999999999997,
+            "density": 358.1711730957031,
+            "internal_energy": 0.007058640010654926,
+            "mass": 3.0383448600769043
+          },
+          {
+            "time_code": 13.749090879036318,
+            "t_over_tcc": 3.5499999999999967,
+            "density": 369.8566589355469,
+            "internal_energy": 0.006152941379696131,
+            "mass": 3.049164056777954
+          },
+          {
+            "time_code": 13.942740046346689,
+            "t_over_tcc": 3.599999999999997,
+            "density": 377.1199035644531,
+            "internal_energy": 0.005013696849346161,
+            "mass": 3.0372085571289062
+          },
+          {
+            "time_code": 14.136389213657058,
+            "t_over_tcc": 3.6499999999999964,
+            "density": 374.3711242675781,
+            "internal_energy": 0.004241259768605232,
+            "mass": 3.0230886936187744
+          },
+          {
+            "time_code": 14.33003838096743,
+            "t_over_tcc": 3.6999999999999966,
+            "density": 395.2627258300781,
+            "internal_energy": 0.0035220750141888857,
+            "mass": 3.0352463722229004
+          },
+          {
+            "time_code": 14.5236875482778,
+            "t_over_tcc": 3.7499999999999964,
+            "density": 431.5000305175781,
+            "internal_energy": 0.0022647418081760406,
+            "mass": 3.020219564437866
+          },
+          {
+            "time_code": 14.717336715588171,
+            "t_over_tcc": 3.7999999999999967,
+            "density": 403.240966796875,
+            "internal_energy": 0.0016380642773583531,
+            "mass": 3.0382840633392334
+          },
+          {
+            "time_code": 14.910985882898542,
+            "t_over_tcc": 3.8499999999999965,
+            "density": 355.7477111816406,
+            "internal_energy": 0.0010068955598399043,
+            "mass": 3.0218963623046875
+          },
+          {
+            "time_code": 15.104635050208913,
+            "t_over_tcc": 3.8999999999999964,
+            "density": 319.1965026855469,
+            "internal_energy": 0.00034080783370882273,
+            "mass": 3.039181709289551
+          },
+          {
+            "time_code": 15.298284217519281,
+            "t_over_tcc": 3.9499999999999957,
+            "density": 291.4472961425781,
+            "internal_energy": 6.061532786816315e-08,
+            "mass": 3.027053117752075
+          },
+          {
+            "time_code": 15.491933384829654,
+            "t_over_tcc": 3.9999999999999964,
+            "density": 276.0227355957031,
+            "internal_energy": 1.0976007615681738e-05,
+            "mass": 3.0401086807250977
+          },
+          {
+            "time_code": 15.685582552140025,
+            "t_over_tcc": 4.049999999999996,
+            "density": 283.4024963378906,
+            "internal_energy": 0.00023694864648859948,
+            "mass": 3.0272839069366455
+          },
+          {
+            "time_code": 15.879231719450395,
+            "t_over_tcc": 4.099999999999996,
+            "density": 335.5989074707031,
+            "internal_energy": 7.233898031699937e-06,
+            "mass": 3.041323184967041
+          },
+          {
+            "time_code": 16.072880886760768,
+            "t_over_tcc": 4.149999999999997,
+            "density": 344.09033203125,
+            "internal_energy": 6.579191932996707e-18,
+            "mass": 3.0212819576263428
+          },
+          {
+            "time_code": 16.26653005407114,
+            "t_over_tcc": 4.199999999999997,
+            "density": 335.8880310058594,
+            "internal_energy": 1.4959350512519237e-30,
+            "mass": 3.0393011569976807
+          },
+          {
+            "time_code": 16.460179221381512,
+            "t_over_tcc": 4.249999999999997,
+            "density": 316.5535888671875,
+            "internal_energy": 0.0,
+            "mass": 3.0219860076904297
+          },
+          {
+            "time_code": 16.653828388691885,
+            "t_over_tcc": 4.299999999999998,
+            "density": 272.8359069824219,
+            "internal_energy": 0.0,
+            "mass": 3.0425589084625244
+          },
+          {
+            "time_code": 16.847477556002257,
+            "t_over_tcc": 4.349999999999998,
+            "density": 258.50433349609375,
+            "internal_energy": 0.00032225478207692504,
+            "mass": 2.999115467071533
+          },
+          {
+            "time_code": 17.04112672331263,
+            "t_over_tcc": 4.399999999999999,
+            "density": 291.788330078125,
+            "internal_energy": 6.206008151821152e-09,
+            "mass": 3.039764642715454
+          },
+          {
+            "time_code": 17.234775890623002,
+            "t_over_tcc": 4.449999999999999,
+            "density": 325.7183837890625,
+            "internal_energy": 9.030930453185504e-20,
+            "mass": 3.01430344581604
+          },
+          {
+            "time_code": 17.428425057933374,
+            "t_over_tcc": 4.499999999999999,
+            "density": 343.3960876464844,
+            "internal_energy": 2.0533958498130014e-32,
+            "mass": 3.0425119400024414
+          },
+          {
+            "time_code": 17.622074225243747,
+            "t_over_tcc": 4.55,
+            "density": 363.0147705078125,
+            "internal_energy": 0.0,
+            "mass": 3.031039237976074
+          },
+          {
+            "time_code": 17.81572339255412,
+            "t_over_tcc": 4.6000000000000005,
+            "density": 319.3905334472656,
+            "internal_energy": 0.0,
+            "mass": 3.0448994636535645
+          },
+          {
+            "time_code": 18.00937255986449,
+            "t_over_tcc": 4.65,
+            "density": 276.77520751953125,
+            "internal_energy": 0.0,
+            "mass": 3.0313186645507812
+          },
+          {
+            "time_code": 18.203021727174864,
+            "t_over_tcc": 4.700000000000001,
+            "density": 253.1995849609375,
+            "internal_energy": 0.0,
+            "mass": 3.010469675064087
+          },
+          {
+            "time_code": 18.396670894485236,
+            "t_over_tcc": 4.750000000000002,
+            "density": 241.7249298095703,
+            "internal_energy": 0.0,
+            "mass": 2.995617628097534
+          },
+          {
+            "time_code": 18.59032006179561,
+            "t_over_tcc": 4.800000000000002,
+            "density": 243.0030059814453,
+            "internal_energy": 0.0,
+            "mass": 3.0493345260620117
+          },
+          {
+            "time_code": 18.78396922910598,
+            "t_over_tcc": 4.850000000000002,
+            "density": 247.69439697265625,
+            "internal_energy": 0.0,
+            "mass": 3.0329089164733887
+          },
+          {
+            "time_code": 18.977618396416354,
+            "t_over_tcc": 4.900000000000003,
+            "density": 231.71408081054688,
+            "internal_energy": 0.0,
+            "mass": 3.016984224319458
+          },
+          {
+            "time_code": 19.171267563726726,
+            "t_over_tcc": 4.950000000000003,
+            "density": 246.82456970214844,
+            "internal_energy": 0.0,
+            "mass": 3.032935380935669
+          },
+          {
+            "time_code": 19.364916731037084,
+            "t_over_tcc": 5.0,
+            "density": 287.9001770019531,
+            "internal_energy": 0.0,
+            "mass": 3.051217555999756
+          }
+        ],
+        "99": [
+          {
+            "time_code": 0.0,
+            "t_over_tcc": 0.0,
+            "density": 99.89126586914062,
+            "internal_energy": 0.015002655796706676,
+            "mass": 3.051217555999756
+          },
+          {
+            "time_code": 0.19364916731037085,
+            "t_over_tcc": 0.05,
+            "density": 99.82647705078125,
+            "internal_energy": 0.015004669316112995,
+            "mass": 3.0512354373931885
+          },
+          {
+            "time_code": 0.3872983346207417,
+            "t_over_tcc": 0.1,
+            "density": 99.7067642211914,
+            "internal_energy": 0.01500780787318945,
+            "mass": 3.0512852668762207
+          },
+          {
+            "time_code": 0.5809475019311126,
+            "t_over_tcc": 0.15,
+            "density": 99.53941345214844,
+            "internal_energy": 0.015014625154435635,
+            "mass": 3.0515847206115723
+          },
+          {
+            "time_code": 0.7745966692414834,
+            "t_over_tcc": 0.2,
+            "density": 99.2900619506836,
+            "internal_energy": 0.015023456886410713,
+            "mass": 3.0518946647644043
+          },
+          {
+            "time_code": 0.9682458365518543,
+            "t_over_tcc": 0.25,
+            "density": 98.9402084350586,
+            "internal_energy": 0.015028081834316254,
+            "mass": 3.0521209239959717
+          },
+          {
+            "time_code": 1.161895003862225,
+            "t_over_tcc": 0.3,
+            "density": 98.47000122070312,
+            "internal_energy": 0.015021436847746372,
+            "mass": 3.05279278755188
+          },
+          {
+            "time_code": 1.355544171172596,
+            "t_over_tcc": 0.35,
+            "density": 97.85722351074219,
+            "internal_energy": 0.015007647685706615,
+            "mass": 3.053163528442383
+          },
+          {
+            "time_code": 1.5491933384829668,
+            "t_over_tcc": 0.4,
+            "density": 97.07735443115234,
+            "internal_energy": 0.014975261874496937,
+            "mass": 3.054292917251587
+          },
+          {
+            "time_code": 1.7428425057933374,
+            "t_over_tcc": 0.44999999999999996,
+            "density": 96.16136932373047,
+            "internal_energy": 0.014920677989721298,
+            "mass": 3.0515215396881104
+          },
+          {
+            "time_code": 1.9364916731037085,
+            "t_over_tcc": 0.5,
+            "density": 95.11202239990234,
+            "internal_energy": 0.014854473061859608,
+            "mass": 3.052051305770874
+          },
+          {
+            "time_code": 2.1301408404140796,
+            "t_over_tcc": 0.55,
+            "density": 94.01887512207031,
+            "internal_energy": 0.014788857661187649,
+            "mass": 3.0525548458099365
+          },
+          {
+            "time_code": 2.32379000772445,
+            "t_over_tcc": 0.6,
+            "density": 92.90975952148438,
+            "internal_energy": 0.014713380485773087,
+            "mass": 3.0528759956359863
+          },
+          {
+            "time_code": 2.517439175034821,
+            "t_over_tcc": 0.6499999999999999,
+            "density": 91.79902648925781,
+            "internal_energy": 0.014627636410295963,
+            "mass": 3.053677558898926
+          },
+          {
+            "time_code": 2.7110883423451915,
+            "t_over_tcc": 0.6999999999999998,
+            "density": 90.72264099121094,
+            "internal_energy": 0.014546649530529976,
+            "mass": 3.054745674133301
+          },
+          {
+            "time_code": 2.904737509655562,
+            "t_over_tcc": 0.7499999999999998,
+            "density": 89.74854278564453,
+            "internal_energy": 0.014498621225357056,
+            "mass": 3.056232452392578
+          },
+          {
+            "time_code": 3.0983866769659323,
+            "t_over_tcc": 0.7999999999999997,
+            "density": 88.89418029785156,
+            "internal_energy": 0.014488492161035538,
+            "mass": 3.058349609375
+          },
+          {
+            "time_code": 3.2920358442763034,
+            "t_over_tcc": 0.8499999999999998,
+            "density": 88.15802001953125,
+            "internal_energy": 0.01452579628676176,
+            "mass": 3.0515871047973633
+          },
+          {
+            "time_code": 3.485685011586674,
+            "t_over_tcc": 0.8999999999999997,
+            "density": 87.52812194824219,
+            "internal_energy": 0.014641585759818554,
+            "mass": 3.0531399250030518
+          },
+          {
+            "time_code": 3.6793341788970446,
+            "t_over_tcc": 0.9499999999999996,
+            "density": 86.93517303466797,
+            "internal_energy": 0.014845255762338638,
+            "mass": 3.0549557209014893
+          },
+          {
+            "time_code": 3.8729833462074152,
+            "t_over_tcc": 0.9999999999999996,
+            "density": 86.33680725097656,
+            "internal_energy": 0.015101856552064419,
+            "mass": 3.0571160316467285
+          },
+          {
+            "time_code": 4.066632513517786,
+            "t_over_tcc": 1.0499999999999994,
+            "density": 85.67351531982422,
+            "internal_energy": 0.015419098548591137,
+            "mass": 3.0593204498291016
+          },
+          {
+            "time_code": 4.2602816808281565,
+            "t_over_tcc": 1.0999999999999994,
+            "density": 84.88416290283203,
+            "internal_energy": 0.01579628884792328,
+            "mass": 3.0616016387939453
+          },
+          {
+            "time_code": 4.453930848138527,
+            "t_over_tcc": 1.1499999999999995,
+            "density": 83.84402465820312,
+            "internal_energy": 0.016175108030438423,
+            "mass": 3.0635733604431152
+          },
+          {
+            "time_code": 4.647580015448898,
+            "t_over_tcc": 1.1999999999999993,
+            "density": 82.63674926757812,
+            "internal_energy": 0.016558289527893066,
+            "mass": 3.0669896602630615
+          },
+          {
+            "time_code": 4.841229182759268,
+            "t_over_tcc": 1.2499999999999993,
+            "density": 81.35653686523438,
+            "internal_energy": 0.016937920823693275,
+            "mass": 3.070128917694092
+          },
+          {
+            "time_code": 5.034878350069639,
+            "t_over_tcc": 1.2999999999999992,
+            "density": 80.00386047363281,
+            "internal_energy": 0.017322150990366936,
+            "mass": 3.053576946258545
+          },
+          {
+            "time_code": 5.22852751738001,
+            "t_over_tcc": 1.3499999999999992,
+            "density": 78.74613952636719,
+            "internal_energy": 0.017660006880760193,
+            "mass": 3.0557169914245605
+          },
+          {
+            "time_code": 5.422176684690379,
+            "t_over_tcc": 1.3999999999999988,
+            "density": 77.57048797607422,
+            "internal_energy": 0.017931504175066948,
+            "mass": 3.057140827178955
+          },
+          {
+            "time_code": 5.615825852000751,
+            "t_over_tcc": 1.449999999999999,
+            "density": 76.68758392333984,
+            "internal_energy": 0.01813213899731636,
+            "mass": 3.058104991912842
+          },
+          {
+            "time_code": 5.8094750193111215,
+            "t_over_tcc": 1.499999999999999,
+            "density": 76.30225372314453,
+            "internal_energy": 0.018375728279352188,
+            "mass": 3.062608003616333
+          },
+          {
+            "time_code": 6.003124186621492,
+            "t_over_tcc": 1.549999999999999,
+            "density": 76.30306243896484,
+            "internal_energy": 0.01867625303566456,
+            "mass": 3.0617117881774902
+          },
+          {
+            "time_code": 6.196773353931863,
+            "t_over_tcc": 1.5999999999999988,
+            "density": 76.7618179321289,
+            "internal_energy": 0.018935557454824448,
+            "mass": 3.0609793663024902
+          },
+          {
+            "time_code": 6.390422521242233,
+            "t_over_tcc": 1.6499999999999988,
+            "density": 77.70582580566406,
+            "internal_energy": 0.01914510875940323,
+            "mass": 3.0584189891815186
+          },
+          {
+            "time_code": 6.584071688552604,
+            "t_over_tcc": 1.6999999999999988,
+            "density": 78.68378448486328,
+            "internal_energy": 0.019311431795358658,
+            "mass": 3.051424503326416
+          },
+          {
+            "time_code": 6.777720855862975,
+            "t_over_tcc": 1.7499999999999987,
+            "density": 79.53123474121094,
+            "internal_energy": 0.01943393051624298,
+            "mass": 3.0514297485351562
+          },
+          {
+            "time_code": 6.971370023173346,
+            "t_over_tcc": 1.799999999999999,
+            "density": 80.33163452148438,
+            "internal_energy": 0.019574785605072975,
+            "mass": 3.0507924556732178
+          },
+          {
+            "time_code": 7.165019190483716,
+            "t_over_tcc": 1.8499999999999985,
+            "density": 81.3309097290039,
+            "internal_energy": 0.019709868356585503,
+            "mass": 3.048474073410034
+          },
+          {
+            "time_code": 7.358668357794087,
+            "t_over_tcc": 1.8999999999999986,
+            "density": 83.2362289428711,
+            "internal_energy": 0.019892817363142967,
+            "mass": 3.0464375019073486
+          },
+          {
+            "time_code": 7.552317525104456,
+            "t_over_tcc": 1.9499999999999982,
+            "density": 85.42708587646484,
+            "internal_energy": 0.02002614177763462,
+            "mass": 3.0407378673553467
+          },
+          {
+            "time_code": 7.745966692414828,
+            "t_over_tcc": 1.9999999999999984,
+            "density": 87.37525177001953,
+            "internal_energy": 0.020149199292063713,
+            "mass": 3.0351920127868652
+          },
+          {
+            "time_code": 7.9396158597251985,
+            "t_over_tcc": 2.0499999999999985,
+            "density": 89.24181365966797,
+            "internal_energy": 0.020231157541275024,
+            "mass": 3.0334408283233643
+          },
+          {
+            "time_code": 8.13326502703557,
+            "t_over_tcc": 2.0999999999999983,
+            "density": 90.96691131591797,
+            "internal_energy": 0.020298011600971222,
+            "mass": 3.050299644470215
+          },
+          {
+            "time_code": 8.32691419434594,
+            "t_over_tcc": 2.1499999999999986,
+            "density": 94.97669982910156,
+            "internal_energy": 0.020307015627622604,
+            "mass": 3.0466508865356445
+          },
+          {
+            "time_code": 8.520563361656311,
+            "t_over_tcc": 2.1999999999999984,
+            "density": 99.8268814086914,
+            "internal_energy": 0.02032764069736004,
+            "mass": 3.043576240539551
+          },
+          {
+            "time_code": 8.714212528966682,
+            "t_over_tcc": 2.2499999999999982,
+            "density": 107.25056457519531,
+            "internal_energy": 0.02036198601126671,
+            "mass": 3.038335084915161
+          },
+          {
+            "time_code": 8.907861696277052,
+            "t_over_tcc": 2.2999999999999985,
+            "density": 116.09247589111328,
+            "internal_energy": 0.020145634189248085,
+            "mass": 3.050642728805542
+          },
+          {
+            "time_code": 9.101510863587423,
+            "t_over_tcc": 2.3499999999999983,
+            "density": 122.87340545654297,
+            "internal_energy": 0.019992023706436157,
+            "mass": 3.047379732131958
+          },
+          {
+            "time_code": 9.295160030897794,
+            "t_over_tcc": 2.399999999999998,
+            "density": 125.62816619873047,
+            "internal_energy": 0.019846949726343155,
+            "mass": 3.041884422302246
+          },
+          {
+            "time_code": 9.488809198208164,
+            "t_over_tcc": 2.449999999999998,
+            "density": 125.11614227294922,
+            "internal_energy": 0.019209109246730804,
+            "mass": 3.0172693729400635
+          },
+          {
+            "time_code": 9.682458365518535,
+            "t_over_tcc": 2.4999999999999982,
+            "density": 125.11038208007812,
+            "internal_energy": 0.019149359315633774,
+            "mass": 3.035130500793457
+          },
+          {
+            "time_code": 9.876107532828904,
+            "t_over_tcc": 2.5499999999999976,
+            "density": 134.9001922607422,
+            "internal_energy": 0.018758682534098625,
+            "mass": 3.0469250679016113
+          },
+          {
+            "time_code": 10.069756700139276,
+            "t_over_tcc": 2.599999999999998,
+            "density": 148.5086212158203,
+            "internal_energy": 0.018392745405435562,
+            "mass": 3.0402474403381348
+          },
+          {
+            "time_code": 10.263405867449647,
+            "t_over_tcc": 2.6499999999999977,
+            "density": 159.61651611328125,
+            "internal_energy": 0.018221326172351837,
+            "mass": 3.0352280139923096
+          },
+          {
+            "time_code": 10.457055034760018,
+            "t_over_tcc": 2.699999999999998,
+            "density": 167.2611541748047,
+            "internal_energy": 0.017567256465554237,
+            "mass": 3.025038003921509
+          },
+          {
+            "time_code": 10.650704202070388,
+            "t_over_tcc": 2.749999999999998,
+            "density": 176.4208984375,
+            "internal_energy": 0.017471712082624435,
+            "mass": 3.045583724975586
+          },
+          {
+            "time_code": 10.844353369380759,
+            "t_over_tcc": 2.7999999999999976,
+            "density": 182.26260375976562,
+            "internal_energy": 0.016922229900956154,
+            "mass": 3.0396716594696045
+          },
+          {
+            "time_code": 11.038002536691128,
+            "t_over_tcc": 2.849999999999997,
+            "density": 181.55978393554688,
+            "internal_energy": 0.015094016678631306,
+            "mass": 3.032963514328003
+          },
+          {
+            "time_code": 11.2316517040015,
+            "t_over_tcc": 2.8999999999999977,
+            "density": 189.6022186279297,
+            "internal_energy": 0.01388610154390335,
+            "mass": 3.028798818588257
+          },
+          {
+            "time_code": 11.42530087131187,
+            "t_over_tcc": 2.9499999999999975,
+            "density": 201.79139709472656,
+            "internal_energy": 0.012810291722416878,
+            "mass": 3.0464110374450684
+          },
+          {
+            "time_code": 11.618950038622241,
+            "t_over_tcc": 2.9999999999999973,
+            "density": 201.19664001464844,
+            "internal_energy": 0.012191278859972954,
+            "mass": 3.038841724395752
+          },
+          {
+            "time_code": 11.812599205932612,
+            "t_over_tcc": 3.0499999999999976,
+            "density": 215.1949462890625,
+            "internal_energy": 0.011027245782315731,
+            "mass": 3.0304598808288574
+          },
+          {
+            "time_code": 12.00624837324298,
+            "t_over_tcc": 3.099999999999997,
+            "density": 225.35287475585938,
+            "internal_energy": 0.010035651735961437,
+            "mass": 3.0197882652282715
+          },
+          {
+            "time_code": 12.199897540553353,
+            "t_over_tcc": 3.1499999999999972,
+            "density": 219.86997985839844,
+            "internal_energy": 0.009324413724243641,
+            "mass": 3.046820640563965
+          },
+          {
+            "time_code": 12.393546707863724,
+            "t_over_tcc": 3.199999999999997,
+            "density": 215.278564453125,
+            "internal_energy": 0.008830497972667217,
+            "mass": 3.037792444229126
+          },
+          {
+            "time_code": 12.587195875174094,
+            "t_over_tcc": 3.2499999999999973,
+            "density": 222.6552734375,
+            "internal_energy": 0.008300816640257835,
+            "mass": 3.0251073837280273
+          },
+          {
+            "time_code": 12.780845042484465,
+            "t_over_tcc": 3.299999999999997,
+            "density": 232.03871154785156,
+            "internal_energy": 0.007967058569192886,
+            "mass": 3.0170977115631104
+          },
+          {
+            "time_code": 12.974494209794836,
+            "t_over_tcc": 3.349999999999997,
+            "density": 242.83782958984375,
+            "internal_energy": 0.007942800410091877,
+            "mass": 3.0478835105895996
+          },
+          {
+            "time_code": 13.168143377105205,
+            "t_over_tcc": 3.3999999999999964,
+            "density": 242.89581298828125,
+            "internal_energy": 0.007336657959967852,
+            "mass": 3.0375356674194336
+          },
+          {
+            "time_code": 13.361792544415577,
+            "t_over_tcc": 3.449999999999997,
+            "density": 223.0019989013672,
+            "internal_energy": 0.007064026780426502,
+            "mass": 3.026937484741211
+          },
+          {
+            "time_code": 13.555441711725948,
+            "t_over_tcc": 3.499999999999997,
+            "density": 223.13433837890625,
+            "internal_energy": 0.00711827352643013,
+            "mass": 3.0385797023773193
+          },
+          {
+            "time_code": 13.749090879036318,
+            "t_over_tcc": 3.5499999999999967,
+            "density": 251.79559326171875,
+            "internal_energy": 0.0063475752249360085,
+            "mass": 3.049081325531006
+          },
+          {
+            "time_code": 13.942740046346689,
+            "t_over_tcc": 3.599999999999997,
+            "density": 275.09625244140625,
+            "internal_energy": 0.004810502752661705,
+            "mass": 3.036280632019043
+          },
+          {
+            "time_code": 14.136389213657058,
+            "t_over_tcc": 3.6499999999999964,
+            "density": 260.6492004394531,
+            "internal_energy": 0.00346603081561625,
+            "mass": 3.0500705242156982
+          },
+          {
+            "time_code": 14.33003838096743,
+            "t_over_tcc": 3.6999999999999966,
+            "density": 247.39683532714844,
+            "internal_energy": 0.0028220503591001034,
+            "mass": 3.0393807888031006
+          },
+          {
+            "time_code": 14.5236875482778,
+            "t_over_tcc": 3.7499999999999964,
+            "density": 263.3890380859375,
+            "internal_energy": 0.0007744652102701366,
+            "mass": 3.018293857574463
+          },
+          {
+            "time_code": 14.717336715588171,
+            "t_over_tcc": 3.7999999999999967,
+            "density": 227.58120727539062,
+            "internal_energy": 3.078187982286096e-10,
+            "mass": 3.035874128341675
+          },
+          {
+            "time_code": 14.910985882898542,
+            "t_over_tcc": 3.8499999999999965,
+            "density": 212.3390350341797,
+            "internal_energy": 1.7917412230081948e-20,
+            "mass": 3.023641586303711
+          },
+          {
+            "time_code": 15.104635050208913,
+            "t_over_tcc": 3.8999999999999964,
+            "density": 214.59388732910156,
+            "internal_energy": 1.6686890488566783e-29,
+            "mass": 3.0390236377716064
+          },
+          {
+            "time_code": 15.298284217519281,
+            "t_over_tcc": 3.9499999999999957,
+            "density": 217.33367919921875,
+            "internal_energy": 0.0,
+            "mass": 2.9920146465301514
+          },
+          {
+            "time_code": 15.491933384829654,
+            "t_over_tcc": 3.9999999999999964,
+            "density": 244.5839385986328,
+            "internal_energy": 0.0,
+            "mass": 3.0366318225860596
+          },
+          {
+            "time_code": 15.685582552140025,
+            "t_over_tcc": 4.049999999999996,
+            "density": 252.21897888183594,
+            "internal_energy": 0.0,
+            "mass": 3.020202398300171
+          },
+          {
+            "time_code": 15.879231719450395,
+            "t_over_tcc": 4.099999999999996,
+            "density": 252.11517333984375,
+            "internal_energy": 0.0,
+            "mass": 3.0415167808532715
+          },
+          {
+            "time_code": 16.072880886760768,
+            "t_over_tcc": 4.149999999999997,
+            "density": 208.98226928710938,
+            "internal_energy": 2.65783273789566e-06,
+            "mass": 2.997307538986206
+          },
+          {
+            "time_code": 16.26653005407114,
+            "t_over_tcc": 4.199999999999997,
+            "density": 174.38392639160156,
+            "internal_energy": 1.2673534097173977e-12,
+            "mass": 3.0427472591400146
+          },
+          {
+            "time_code": 16.460179221381512,
+            "t_over_tcc": 4.249999999999997,
+            "density": 171.33624267578125,
+            "internal_energy": 6.53887991575175e-06,
+            "mass": 3.032043218612671
+          },
+          {
+            "time_code": 16.653828388691885,
+            "t_over_tcc": 4.299999999999998,
+            "density": 164.88763427734375,
+            "internal_energy": 0.00010250343621009961,
+            "mass": 3.0210487842559814
+          },
+          {
+            "time_code": 16.847477556002257,
+            "t_over_tcc": 4.349999999999998,
+            "density": 170.11561584472656,
+            "internal_energy": 5.725063756401028e-10,
+            "mass": 3.002565383911133
+          },
+          {
+            "time_code": 17.04112672331263,
+            "t_over_tcc": 4.399999999999999,
+            "density": 200.0431365966797,
+            "internal_energy": 1.7062019575837337e-17,
+            "mass": 3.0440597534179688
+          },
+          {
+            "time_code": 17.234775890623002,
+            "t_over_tcc": 4.449999999999999,
+            "density": 230.91061401367188,
+            "internal_energy": 2.5424390399213637e-25,
+            "mass": 3.0358712673187256
+          },
+          {
+            "time_code": 17.428425057933374,
+            "t_over_tcc": 4.499999999999999,
+            "density": 212.6261749267578,
+            "internal_energy": 1.894264697969976e-33,
+            "mass": 3.011993885040283
+          },
+          {
+            "time_code": 17.622074225243747,
+            "t_over_tcc": 4.55,
+            "density": 187.43051147460938,
+            "internal_energy": 0.0,
+            "mass": 3.0071072578430176
+          },
+          {
+            "time_code": 17.81572339255412,
+            "t_over_tcc": 4.6000000000000005,
+            "density": 200.52552795410156,
+            "internal_energy": 0.00041933945612981915,
+            "mass": 3.047818183898926
+          },
+          {
+            "time_code": 18.00937255986449,
+            "t_over_tcc": 4.65,
+            "density": 217.38050842285156,
+            "internal_energy": 0.0005419909721240401,
+            "mass": 3.0314371585845947
+          },
+          {
+            "time_code": 18.203021727174864,
+            "t_over_tcc": 4.700000000000001,
+            "density": 229.16062927246094,
+            "internal_energy": 1.3792750053198688e-07,
+            "mass": 3.047450304031372
+          },
+          {
+            "time_code": 18.396670894485236,
+            "t_over_tcc": 4.750000000000002,
+            "density": 252.2162322998047,
+            "internal_energy": 8.028437181607988e-18,
+            "mass": 3.028672456741333
+          },
+          {
+            "time_code": 18.59032006179561,
+            "t_over_tcc": 4.800000000000002,
+            "density": 279.04547119140625,
+            "internal_energy": 7.301821080189245e-30,
+            "mass": 3.04811692237854
+          },
+          {
+            "time_code": 18.78396922910598,
+            "t_over_tcc": 4.850000000000002,
+            "density": 278.2400817871094,
+            "internal_energy": 0.0,
+            "mass": 3.0313313007354736
+          },
+          {
+            "time_code": 18.977618396416354,
+            "t_over_tcc": 4.900000000000003,
+            "density": 247.7003936767578,
+            "internal_energy": 0.0,
+            "mass": 3.049576997756958
+          },
+          {
+            "time_code": 19.171267563726726,
+            "t_over_tcc": 4.950000000000003,
+            "density": 242.46290588378906,
+            "internal_energy": 0.0,
+            "mass": 3.033155679702759
+          },
+          {
+            "time_code": 19.364916731037084,
+            "t_over_tcc": 5.0,
+            "density": 301.697509765625,
+            "internal_energy": 0.0,
+            "mass": 3.051217555999756
+          }
+        ],
+        "102": [
+          {
+            "time_code": 0.0,
+            "t_over_tcc": 0.0,
+            "density": 99.89126586914062,
+            "internal_energy": 0.015002655796706676,
+            "mass": 3.051217555999756
+          },
+          {
+            "time_code": 0.19364916731037085,
+            "t_over_tcc": 0.05,
+            "density": 99.82647705078125,
+            "internal_energy": 0.015004669316112995,
+            "mass": 3.0512354373931885
+          },
+          {
+            "time_code": 0.3872983346207417,
+            "t_over_tcc": 0.1,
+            "density": 99.7067642211914,
+            "internal_energy": 0.01500780787318945,
+            "mass": 3.0512852668762207
+          },
+          {
+            "time_code": 0.5809475019311126,
+            "t_over_tcc": 0.15,
+            "density": 99.53941345214844,
+            "internal_energy": 0.015014625154435635,
+            "mass": 3.0515847206115723
+          },
+          {
+            "time_code": 0.7745966692414834,
+            "t_over_tcc": 0.2,
+            "density": 99.2900619506836,
+            "internal_energy": 0.015023456886410713,
+            "mass": 3.0518946647644043
+          },
+          {
+            "time_code": 0.9682458365518543,
+            "t_over_tcc": 0.25,
+            "density": 98.9402084350586,
+            "internal_energy": 0.015028081834316254,
+            "mass": 3.0521209239959717
+          },
+          {
+            "time_code": 1.161895003862225,
+            "t_over_tcc": 0.3,
+            "density": 98.47000122070312,
+            "internal_energy": 0.015021436847746372,
+            "mass": 3.05279278755188
+          },
+          {
+            "time_code": 1.355544171172596,
+            "t_over_tcc": 0.35,
+            "density": 97.85721588134766,
+            "internal_energy": 0.015007641166448593,
+            "mass": 3.0531632900238037
+          },
+          {
+            "time_code": 1.5491933384829668,
+            "t_over_tcc": 0.4,
+            "density": 97.0772476196289,
+            "internal_energy": 0.014975124970078468,
+            "mass": 3.0542843341827393
+          },
+          {
+            "time_code": 1.7428425057933374,
+            "t_over_tcc": 0.44999999999999996,
+            "density": 96.16307830810547,
+            "internal_energy": 0.01492083165794611,
+            "mass": 3.051522731781006
+          },
+          {
+            "time_code": 1.9364916731037085,
+            "t_over_tcc": 0.5,
+            "density": 95.11334228515625,
+            "internal_energy": 0.01485471148043871,
+            "mass": 3.0520527362823486
+          },
+          {
+            "time_code": 2.1301408404140796,
+            "t_over_tcc": 0.55,
+            "density": 94.03142547607422,
+            "internal_energy": 0.014788985252380371,
+            "mass": 3.052589178085327
+          },
+          {
+            "time_code": 2.32379000772445,
+            "t_over_tcc": 0.6,
+            "density": 92.9480972290039,
+            "internal_energy": 0.014721304178237915,
+            "mass": 3.0530521869659424
+          },
+          {
+            "time_code": 2.517439175034821,
+            "t_over_tcc": 0.6499999999999999,
+            "density": 91.84627532958984,
+            "internal_energy": 0.014643041417002678,
+            "mass": 3.0537731647491455
+          },
+          {
+            "time_code": 2.7110883423451915,
+            "t_over_tcc": 0.6999999999999998,
+            "density": 90.84111022949219,
+            "internal_energy": 0.014579431153833866,
+            "mass": 3.054979085922241
+          },
+          {
+            "time_code": 2.904737509655562,
+            "t_over_tcc": 0.7499999999999998,
+            "density": 89.93146514892578,
+            "internal_energy": 0.014544942416250706,
+            "mass": 3.0565340518951416
+          },
+          {
+            "time_code": 3.0983866769659323,
+            "t_over_tcc": 0.7999999999999997,
+            "density": 89.10157775878906,
+            "internal_energy": 0.01455174945294857,
+            "mass": 3.0590410232543945
+          },
+          {
+            "time_code": 3.2920358442763034,
+            "t_over_tcc": 0.8499999999999998,
+            "density": 88.31977844238281,
+            "internal_energy": 0.01462287362664938,
+            "mass": 3.051670551300049
+          },
+          {
+            "time_code": 3.485685011586674,
+            "t_over_tcc": 0.8999999999999997,
+            "density": 87.50032806396484,
+            "internal_energy": 0.014751545153558254,
+            "mass": 3.053015947341919
+          },
+          {
+            "time_code": 3.6793341788970446,
+            "t_over_tcc": 0.9499999999999996,
+            "density": 86.81173706054688,
+            "internal_energy": 0.014936297200620174,
+            "mass": 3.054696798324585
+          },
+          {
+            "time_code": 3.8729833462074152,
+            "t_over_tcc": 0.9999999999999996,
+            "density": 86.14521026611328,
+            "internal_energy": 0.015182716771960258,
+            "mass": 3.056666374206543
+          },
+          {
+            "time_code": 4.066632513517786,
+            "t_over_tcc": 1.0499999999999994,
+            "density": 85.43888854980469,
+            "internal_energy": 0.015496935695409775,
+            "mass": 3.058800220489502
+          },
+          {
+            "time_code": 4.2602816808281565,
+            "t_over_tcc": 1.0999999999999994,
+            "density": 84.63137817382812,
+            "internal_energy": 0.01583860255777836,
+            "mass": 3.061368703842163
+          },
+          {
+            "time_code": 4.453930848138527,
+            "t_over_tcc": 1.1499999999999995,
+            "density": 83.66763305664062,
+            "internal_energy": 0.01620456390082836,
+            "mass": 3.0643234252929688
+          },
+          {
+            "time_code": 4.647580015448898,
+            "t_over_tcc": 1.1999999999999993,
+            "density": 82.64240264892578,
+            "internal_energy": 0.016605906188488007,
+            "mass": 3.066964864730835
+          },
+          {
+            "time_code": 4.841229182759268,
+            "t_over_tcc": 1.2499999999999993,
+            "density": 81.55450439453125,
+            "internal_energy": 0.016983339563012123,
+            "mass": 3.0678012371063232
+          },
+          {
+            "time_code": 5.034878350069639,
+            "t_over_tcc": 1.2999999999999992,
+            "density": 80.2950668334961,
+            "internal_energy": 0.017303388565778732,
+            "mass": 3.0530662536621094
+          },
+          {
+            "time_code": 5.22852751738001,
+            "t_over_tcc": 1.3499999999999992,
+            "density": 78.96520233154297,
+            "internal_energy": 0.017582271248102188,
+            "mass": 3.0544252395629883
+          },
+          {
+            "time_code": 5.422176684690379,
+            "t_over_tcc": 1.3999999999999988,
+            "density": 77.73766326904297,
+            "internal_energy": 0.01780441403388977,
+            "mass": 3.055269718170166
+          },
+          {
+            "time_code": 5.615825852000751,
+            "t_over_tcc": 1.449999999999999,
+            "density": 76.87649536132812,
+            "internal_energy": 0.01800757832825184,
+            "mass": 3.056790351867676
+          },
+          {
+            "time_code": 5.8094750193111215,
+            "t_over_tcc": 1.499999999999999,
+            "density": 76.25505828857422,
+            "internal_energy": 0.018194906413555145,
+            "mass": 3.056684732437134
+          },
+          {
+            "time_code": 6.003124186621492,
+            "t_over_tcc": 1.549999999999999,
+            "density": 75.84114837646484,
+            "internal_energy": 0.018332693725824356,
+            "mass": 3.0552778244018555
+          },
+          {
+            "time_code": 6.196773353931863,
+            "t_over_tcc": 1.5999999999999988,
+            "density": 76.09613800048828,
+            "internal_energy": 0.018453828990459442,
+            "mass": 3.0562987327575684
+          },
+          {
+            "time_code": 6.390422521242233,
+            "t_over_tcc": 1.6499999999999988,
+            "density": 76.62451934814453,
+            "internal_energy": 0.018631672486662865,
+            "mass": 3.0579164028167725
+          },
+          {
+            "time_code": 6.584071688552604,
+            "t_over_tcc": 1.6999999999999988,
+            "density": 77.12818908691406,
+            "internal_energy": 0.0187724307179451,
+            "mass": 3.0515103340148926
+          },
+          {
+            "time_code": 6.777720855862975,
+            "t_over_tcc": 1.7499999999999987,
+            "density": 78.49541473388672,
+            "internal_energy": 0.01894519478082657,
+            "mass": 3.051255941390991
+          },
+          {
+            "time_code": 6.971370023173346,
+            "t_over_tcc": 1.799999999999999,
+            "density": 80.77790832519531,
+            "internal_energy": 0.01915477029979229,
+            "mass": 3.049872636795044
+          },
+          {
+            "time_code": 7.165019190483716,
+            "t_over_tcc": 1.8499999999999985,
+            "density": 84.17235565185547,
+            "internal_energy": 0.01946813426911831,
+            "mass": 3.0480780601501465
+          },
+          {
+            "time_code": 7.358668357794087,
+            "t_over_tcc": 1.8999999999999986,
+            "density": 87.53483581542969,
+            "internal_energy": 0.019742341712117195,
+            "mass": 3.045003652572632
+          },
+          {
+            "time_code": 7.552317525104456,
+            "t_over_tcc": 1.9499999999999982,
+            "density": 90.4837417602539,
+            "internal_energy": 0.01991821452975273,
+            "mass": 3.039489984512329
+          },
+          {
+            "time_code": 7.745966692414828,
+            "t_over_tcc": 1.9999999999999984,
+            "density": 92.36439514160156,
+            "internal_energy": 0.01998501643538475,
+            "mass": 3.0353264808654785
+          },
+          {
+            "time_code": 7.9396158597251985,
+            "t_over_tcc": 2.0499999999999985,
+            "density": 93.91629028320312,
+            "internal_energy": 0.020054394379258156,
+            "mass": 3.030927896499634
+          },
+          {
+            "time_code": 8.13326502703557,
+            "t_over_tcc": 2.0999999999999983,
+            "density": 95.32129669189453,
+            "internal_energy": 0.02008100040256977,
+            "mass": 3.0501718521118164
+          },
+          {
+            "time_code": 8.32691419434594,
+            "t_over_tcc": 2.1499999999999986,
+            "density": 96.7235336303711,
+            "internal_energy": 0.020070752128958702,
+            "mass": 3.046809434890747
+          },
+          {
+            "time_code": 8.520563361656311,
+            "t_over_tcc": 2.1999999999999984,
+            "density": 98.21233367919922,
+            "internal_energy": 0.020208343863487244,
+            "mass": 3.042938709259033
+          },
+          {
+            "time_code": 8.714212528966682,
+            "t_over_tcc": 2.2499999999999982,
+            "density": 104.1514663696289,
+            "internal_energy": 0.02037060633301735,
+            "mass": 3.0396947860717773
+          },
+          {
+            "time_code": 8.907861696277052,
+            "t_over_tcc": 2.2999999999999985,
+            "density": 112.77843475341797,
+            "internal_energy": 0.020395299419760704,
+            "mass": 3.0283684730529785
+          },
+          {
+            "time_code": 9.101510863587423,
+            "t_over_tcc": 2.3499999999999983,
+            "density": 125.5382308959961,
+            "internal_energy": 0.020106609910726547,
+            "mass": 3.0217037200927734
+          },
+          {
+            "time_code": 9.295160030897794,
+            "t_over_tcc": 2.399999999999998,
+            "density": 134.58131408691406,
+            "internal_energy": 0.01976299285888672,
+            "mass": 3.0388946533203125
+          },
+          {
+            "time_code": 9.488809198208164,
+            "t_over_tcc": 2.449999999999998,
+            "density": 145.49693298339844,
+            "internal_energy": 0.019466333091259003,
+            "mass": 3.0333917140960693
+          },
+          {
+            "time_code": 9.682458365518535,
+            "t_over_tcc": 2.4999999999999982,
+            "density": 149.13890075683594,
+            "internal_energy": 0.019195931032299995,
+            "mass": 3.0039260387420654
+          },
+          {
+            "time_code": 9.876107532828904,
+            "t_over_tcc": 2.5499999999999976,
+            "density": 143.55882263183594,
+            "internal_energy": 0.01933909021317959,
+            "mass": 3.0453710556030273
+          },
+          {
+            "time_code": 10.069756700139276,
+            "t_over_tcc": 2.599999999999998,
+            "density": 146.3000030517578,
+            "internal_energy": 0.01934315636754036,
+            "mass": 3.040409564971924
+          },
+          {
+            "time_code": 10.263405867449647,
+            "t_over_tcc": 2.6499999999999977,
+            "density": 160.36587524414062,
+            "internal_energy": 0.01953480765223503,
+            "mass": 3.030872106552124
+          },
+          {
+            "time_code": 10.457055034760018,
+            "t_over_tcc": 2.699999999999998,
+            "density": 176.85252380371094,
+            "internal_energy": 0.01935967616736889,
+            "mass": 3.0299158096313477
+          },
+          {
+            "time_code": 10.650704202070388,
+            "t_over_tcc": 2.749999999999998,
+            "density": 187.2953338623047,
+            "internal_energy": 0.019039807841181755,
+            "mass": 3.045166254043579
+          },
+          {
+            "time_code": 10.844353369380759,
+            "t_over_tcc": 2.7999999999999976,
+            "density": 188.3030242919922,
+            "internal_energy": 0.017977500334382057,
+            "mass": 3.034942388534546
+          },
+          {
+            "time_code": 11.038002536691128,
+            "t_over_tcc": 2.849999999999997,
+            "density": 188.14752197265625,
+            "internal_energy": 0.017443280667066574,
+            "mass": 3.030686378479004
+          },
+          {
+            "time_code": 11.2316517040015,
+            "t_over_tcc": 2.8999999999999977,
+            "density": 194.70523071289062,
+            "internal_energy": 0.017039736732840538,
+            "mass": 3.021650791168213
+          },
+          {
+            "time_code": 11.42530087131187,
+            "t_over_tcc": 2.9499999999999975,
+            "density": 205.06480407714844,
+            "internal_energy": 0.016617681831121445,
+            "mass": 3.046339988708496
+          },
+          {
+            "time_code": 11.618950038622241,
+            "t_over_tcc": 2.9999999999999973,
+            "density": 213.0276641845703,
+            "internal_energy": 0.016134968027472496,
+            "mass": 3.0392138957977295
+          },
+          {
+            "time_code": 11.812599205932612,
+            "t_over_tcc": 3.0499999999999976,
+            "density": 210.20452880859375,
+            "internal_energy": 0.015195389278233051,
+            "mass": 3.0285584926605225
+          },
+          {
+            "time_code": 12.00624837324298,
+            "t_over_tcc": 3.099999999999997,
+            "density": 207.69000244140625,
+            "internal_energy": 0.014102889224886894,
+            "mass": 3.0195751190185547
+          },
+          {
+            "time_code": 12.199897540553353,
+            "t_over_tcc": 3.1499999999999972,
+            "density": 215.9537353515625,
+            "internal_energy": 0.013599778525531292,
+            "mass": 3.0477020740509033
+          },
+          {
+            "time_code": 12.393546707863724,
+            "t_over_tcc": 3.199999999999997,
+            "density": 222.30343627929688,
+            "internal_energy": 0.013206105679273605,
+            "mass": 3.0416295528411865
+          },
+          {
+            "time_code": 12.587195875174094,
+            "t_over_tcc": 3.2499999999999973,
+            "density": 225.39248657226562,
+            "internal_energy": 0.013020332902669907,
+            "mass": 3.033717393875122
+          },
+          {
+            "time_code": 12.780845042484465,
+            "t_over_tcc": 3.299999999999997,
+            "density": 224.70286560058594,
+            "internal_energy": 0.012455878779292107,
+            "mass": 3.0229146480560303
+          },
+          {
+            "time_code": 12.974494209794836,
+            "t_over_tcc": 3.349999999999997,
+            "density": 221.45152282714844,
+            "internal_energy": 0.012052090838551521,
+            "mass": 3.0484912395477295
+          },
+          {
+            "time_code": 13.168143377105205,
+            "t_over_tcc": 3.3999999999999964,
+            "density": 227.43948364257812,
+            "internal_energy": 0.011550815775990486,
+            "mass": 3.0390970706939697
+          },
+          {
+            "time_code": 13.361792544415577,
+            "t_over_tcc": 3.449999999999997,
+            "density": 238.28733825683594,
+            "internal_energy": 0.011045549996197224,
+            "mass": 3.0298333168029785
+          },
+          {
+            "time_code": 13.555441711725948,
+            "t_over_tcc": 3.499999999999997,
+            "density": 251.8502197265625,
+            "internal_energy": 0.01058142725378275,
+            "mass": 3.028869867324829
+          },
+          {
+            "time_code": 13.749090879036318,
+            "t_over_tcc": 3.5499999999999967,
+            "density": 253.03260803222656,
+            "internal_energy": 0.009819050319492817,
+            "mass": 3.0504109859466553
+          },
+          {
+            "time_code": 13.942740046346689,
+            "t_over_tcc": 3.599999999999997,
+            "density": 255.23443603515625,
+            "internal_energy": 0.00895280484110117,
+            "mass": 3.043391466140747
+          },
+          {
+            "time_code": 14.136389213657058,
+            "t_over_tcc": 3.6499999999999964,
+            "density": 237.90533447265625,
+            "internal_energy": 0.008109849877655506,
+            "mass": 3.0295450687408447
+          },
+          {
+            "time_code": 14.33003838096743,
+            "t_over_tcc": 3.6999999999999966,
+            "density": 235.43556213378906,
+            "internal_energy": 0.0068957023322582245,
+            "mass": 3.023202657699585
+          },
+          {
+            "time_code": 14.5236875482778,
+            "t_over_tcc": 3.7499999999999964,
+            "density": 251.17515563964844,
+            "internal_energy": 0.005754787940531969,
+            "mass": 3.00374436378479
+          },
+          {
+            "time_code": 14.717336715588171,
+            "t_over_tcc": 3.7999999999999967,
+            "density": 255.54315185546875,
+            "internal_energy": 0.004377725068479776,
+            "mass": 3.040762186050415
+          },
+          {
+            "time_code": 14.910985882898542,
+            "t_over_tcc": 3.8499999999999965,
+            "density": 265.7265625,
+            "internal_energy": 0.0026527864392846823,
+            "mass": 3.0308938026428223
+          },
+          {
+            "time_code": 15.104635050208913,
+            "t_over_tcc": 3.8999999999999964,
+            "density": 264.7579040527344,
+            "internal_energy": 0.0020225518383085728,
+            "mass": 3.042278289794922
+          },
+          {
+            "time_code": 15.298284217519281,
+            "t_over_tcc": 3.9499999999999957,
+            "density": 279.116455078125,
+            "internal_energy": 0.0013276643585413694,
+            "mass": 3.031475067138672
+          },
+          {
+            "time_code": 15.491933384829654,
+            "t_over_tcc": 3.9999999999999964,
+            "density": 265.53582763671875,
+            "internal_energy": 0.0009135277359746397,
+            "mass": 3.0412545204162598
+          },
+          {
+            "time_code": 15.685582552140025,
+            "t_over_tcc": 4.049999999999996,
+            "density": 246.8224639892578,
+            "internal_energy": 0.0010043486254289746,
+            "mass": 3.0309112071990967
+          },
+          {
+            "time_code": 15.879231719450395,
+            "t_over_tcc": 4.099999999999996,
+            "density": 250.2865753173828,
+            "internal_energy": 0.0011271937983110547,
+            "mass": 3.0188379287719727
+          },
+          {
+            "time_code": 16.072880886760768,
+            "t_over_tcc": 4.149999999999997,
+            "density": 292.5206604003906,
+            "internal_energy": 0.0011046600993722677,
+            "mass": 3.0070383548736572
+          },
+          {
+            "time_code": 16.26653005407114,
+            "t_over_tcc": 4.199999999999997,
+            "density": 312.310302734375,
+            "internal_energy": 0.0007849981775507331,
+            "mass": 3.0450892448425293
+          },
+          {
+            "time_code": 16.460179221381512,
+            "t_over_tcc": 4.249999999999997,
+            "density": 277.5078430175781,
+            "internal_energy": 0.0005952041246928275,
+            "mass": 3.034770965576172
+          },
+          {
+            "time_code": 16.653828388691885,
+            "t_over_tcc": 4.299999999999998,
+            "density": 252.08485412597656,
+            "internal_energy": 0.0007778159924782813,
+            "mass": 3.023557424545288
+          },
+          {
+            "time_code": 16.847477556002257,
+            "t_over_tcc": 4.349999999999998,
+            "density": 261.64483642578125,
+            "internal_energy": 0.0009275987977162004,
+            "mass": 3.0098915100097656
+          },
+          {
+            "time_code": 17.04112672331263,
+            "t_over_tcc": 4.399999999999999,
+            "density": 296.23272705078125,
+            "internal_energy": 0.00028693274362012744,
+            "mass": 3.0436387062072754
+          },
+          {
+            "time_code": 17.234775890623002,
+            "t_over_tcc": 4.449999999999999,
+            "density": 398.7529602050781,
+            "internal_energy": 0.0006193208391778171,
+            "mass": 3.0038790702819824
+          },
+          {
+            "time_code": 17.428425057933374,
+            "t_over_tcc": 4.499999999999999,
+            "density": 419.7598571777344,
+            "internal_energy": 0.0019348065834492445,
+            "mass": 3.0431153774261475
+          },
+          {
+            "time_code": 17.622074225243747,
+            "t_over_tcc": 4.55,
+            "density": 367.1764221191406,
+            "internal_energy": 0.0007187520968727767,
+            "mass": 3.007155656814575
+          },
+          {
+            "time_code": 17.81572339255412,
+            "t_over_tcc": 4.6000000000000005,
+            "density": 337.4368896484375,
+            "internal_energy": 0.0002658472512848675,
+            "mass": 3.047389030456543
+          },
+          {
+            "time_code": 18.00937255986449,
+            "t_over_tcc": 4.65,
+            "density": 307.91900634765625,
+            "internal_energy": 1.337071564577741e-10,
+            "mass": 3.033313035964966
+          },
+          {
+            "time_code": 18.203021727174864,
+            "t_over_tcc": 4.700000000000001,
+            "density": 276.60882568359375,
+            "internal_energy": 6.1838368310418446e-06,
+            "mass": 3.0202715396881104
+          },
+          {
+            "time_code": 18.396670894485236,
+            "t_over_tcc": 4.750000000000002,
+            "density": 257.6818542480469,
+            "internal_energy": 8.771777575133921e-12,
+            "mass": 3.005906343460083
+          },
+          {
+            "time_code": 18.59032006179561,
+            "t_over_tcc": 4.800000000000002,
+            "density": 246.5721893310547,
+            "internal_energy": 4.182709491316758e-18,
+            "mass": 3.049211025238037
+          },
+          {
+            "time_code": 18.78396922910598,
+            "t_over_tcc": 4.850000000000002,
+            "density": 250.6091766357422,
+            "internal_energy": 6.232722835714754e-26,
+            "mass": 3.0341598987579346
+          },
+          {
+            "time_code": 18.977618396416354,
+            "t_over_tcc": 4.900000000000003,
+            "density": 261.78411865234375,
+            "internal_energy": 2.9023377391112754e-35,
+            "mass": 3.0222043991088867
+          },
+          {
+            "time_code": 19.171267563726726,
+            "t_over_tcc": 4.950000000000003,
+            "density": 259.64178466796875,
+            "internal_energy": 0.0,
+            "mass": 3.000732421875
+          },
+          {
+            "time_code": 19.364916731037084,
+            "t_over_tcc": 5.0,
+            "density": 262.54791259765625,
+            "internal_energy": 0.0,
+            "mass": 3.051217555999756
+          }
+        ]
+      }
+    }
+  ],
+  "limits": "This checks the final restart serialization, not the physical correctness of vanishing thermal energy, not intermediate conserved state, and not full restart executability. MFV remains excluded from accepted scientific controls. No new simulation or deletion."
+}

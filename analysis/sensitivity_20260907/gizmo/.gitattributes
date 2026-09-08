@@ -1,0 +1,10 @@
+mfv_restart_diagnosis_v1.json -text
+mfv_restart_review_v1.json -text
+diagnose_mfv_restart.py -text
+review_mfv_restart.py -text
+test_mfv_restart.py -text
+MFV_RESTART_DIAGNOSIS.md -text
+README.md -text
+VALIDATION.md -text
+stage_mfv_publication.ps1 -text
+verify_mfv_publication.ps1 -text

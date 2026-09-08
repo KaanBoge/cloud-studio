@@ -1,0 +1,578 @@
+{
+  "status": "diagnostic_only_mfv_not_certified",
+  "script_sha256": "df5a3f097c7f4c6cdd04d80036316f99e202f9d7c9c46f5ab131763d71a89e94",
+  "binary_sha256": "b7634f844d98ceef246d66e2243827f0c5774c9997b92bd8ffeedfdf940eed91",
+  "audit_sha256": "cd92d0fad6eabeb22c0f93d27926e89d25c6095b31f2cd57b403063888ccb2cc",
+  "readelf_info_sha256": "f64a435736ca22d2dfb238ff4f7c65d0ef28506f1ab149f14fe841c132ab585b",
+  "compiled_layouts": {
+    "global_data_all_processes": {
+      "itemsize": 15864,
+      "matching_definitions": 32,
+      "die_offsets": [
+        "0x289",
+        "0x1a22",
+        "0x2b0b",
+        "0x50eb",
+        "0x7e2a",
+        "0xb06b",
+        "0x16956",
+        "0x17f27",
+        "0x192c5",
+        "0x21884",
+        "0x24b8c",
+        "0x269c4",
+        "0x2c248",
+        "0x338d3",
+        "0x3477e",
+        "0x35908",
+        "0x38d81",
+        "0x3b2f4",
+        "0x3d08d",
+        "0x3e524",
+        "0x445ce",
+        "0x4659d",
+        "0x4843e",
+        "0x4ce00",
+        "0x4f059",
+        "0x513f6",
+        "0x5267f",
+        "0x585df",
+        "0x5c919",
+        "0x60093",
+        "0x6124b",
+        "0x62bb1"
+      ],
+      "fields": {
+        "Time": {
+          "offset": 408,
+          "dtype": "float64",
+          "bytes": 8
+        },
+        "TimeMax": {
+          "offset": 432,
+          "dtype": "float64",
+          "bytes": 8
+        },
+        "TotNumPart": {
+          "offset": 0,
+          "dtype": "int64",
+          "bytes": 8
+        },
+        "TotN_gas": {
+          "offset": 8,
+          "dtype": "int64",
+          "bytes": 8
+        },
+        "MinEgySpec": {
+          "offset": 128,
+          "dtype": "float64",
+          "bytes": 8
+        },
+        "cf_a3inv": {
+          "offset": 184,
+          "dtype": "float64",
+          "bytes": 8
+        },
+        "BoxSize": {
+          "offset": 312,
+          "dtype": "float64",
+          "bytes": 8
+        },
+        "ComovingIntegrationOn": {
+          "offset": 320,
+          "dtype": "int32",
+          "bytes": 4
+        }
+      }
+    },
+    "particle_data": {
+      "itemsize": 288,
+      "matching_definitions": 24,
+      "die_offsets": [
+        "0x3134",
+        "0x5714",
+        "0x8453",
+        "0xb6b7",
+        "0x16f7f",
+        "0x1854c",
+        "0x198f0",
+        "0x21eaf",
+        "0x251b4",
+        "0x27010",
+        "0x2c893",
+        "0x34da3",
+        "0x35f33",
+        "0x393cd",
+        "0x3d6b6",
+        "0x44bf2",
+        "0x48a8c",
+        "0x4d42b",
+        "0x4f680",
+        "0x52d12",
+        "0x58c2b",
+        "0x5cf65",
+        "0x606b8",
+        "0x61870"
+      ],
+      "fields": {
+        "Type": {
+          "offset": 0,
+          "dtype": "int16",
+          "bytes": 2
+        },
+        "ID": {
+          "offset": 4,
+          "dtype": "uint32",
+          "bytes": 4
+        },
+        "ID_child_number": {
+          "offset": 8,
+          "dtype": "uint32",
+          "bytes": 4
+        },
+        "ID_generation": {
+          "offset": 12,
+          "dtype": "int32",
+          "bytes": 4
+        },
+        "Pos": {
+          "offset": 32,
+          "dtype": "('<f8', (3,))",
+          "bytes": 24
+        },
+        "Mass": {
+          "offset": 56,
+          "dtype": "float64",
+          "bytes": 8
+        },
+        "Vel": {
+          "offset": 64,
+          "dtype": "('<f8', (3,))",
+          "bytes": 24
+        }
+      }
+    },
+    "gas_cell_data": {
+      "itemsize": 384,
+      "matching_definitions": 20,
+      "die_offsets": [
+        "0x32b3",
+        "0x5894",
+        "0x85d3",
+        "0xb847",
+        "0x170fe",
+        "0x186cb",
+        "0x2533f",
+        "0x271a0",
+        "0x2ca29",
+        "0x34f22",
+        "0x3955e",
+        "0x3d835",
+        "0x41d8d",
+        "0x44d71",
+        "0x52ea7",
+        "0x58dbc",
+        "0x5d0f6",
+        "0x60837",
+        "0x619ef",
+        "0x6322e"
+      ],
+      "fields": {
+        "Density": {
+          "offset": 0,
+          "dtype": "float64",
+          "bytes": 8
+        },
+        "MassTrue": {
+          "offset": 8,
+          "dtype": "float64",
+          "bytes": 8
+        },
+        "ParticleVel": {
+          "offset": 56,
+          "dtype": "('<f8', (3,))",
+          "bytes": 24
+        },
+        "Pressure": {
+          "offset": 80,
+          "dtype": "float64",
+          "bytes": 8
+        },
+        "InternalEnergy": {
+          "offset": 88,
+          "dtype": "float64",
+          "bytes": 8
+        },
+        "InternalEnergyPred": {
+          "offset": 96,
+          "dtype": "float64",
+          "bytes": 8
+        },
+        "DtInternalEnergy": {
+          "offset": 104,
+          "dtype": "float64",
+          "bytes": 8
+        }
+      }
+    }
+  },
+  "native_ftz_daz_evidence": {
+    "disassembly": "\n/home/kaan/sensitivity_20260907/gizmo/GIZMO_mfv_pair:     file format elf64-x86-64\n\n\nDisassembly of section .init:\n\nDisassembly of section .plt:\n\nDisassembly of section .plt.got:\n\nDisassembly of section .plt.sec:\n\nDisassembly of section .text:\n\n0000000000004040 <set_fast_math>:\n    4040:\tf3 0f 1e fa          \tendbr64\n    4044:\t55                   \tpush   %rbp\n    4045:\t48 89 e5             \tmov    %rsp,%rbp\n    4048:\t0f ae 5d fc          \tstmxcsr -0x4(%rbp)\n    404c:\t8b 45 fc             \tmov    -0x4(%rbp),%eax\n    404f:\t0d 40 80 00 00       \tor     $0x8040,%eax\n    4054:\t89 45 f8             \tmov    %eax,-0x8(%rbp)\n    4057:\t0f ae 55 f8          \tldmxcsr -0x8(%rbp)\n    405b:\t5d                   \tpop    %rbp\n    405c:\tc3                   \tret\n\nDisassembly of section .fini:\n",
+    "init_array": "\nHex dump of section '.init_array':\n  0x00061980 40410000 00000000 40400000 00000000 @A......@@......\n\n",
+    "relative_relocation": [
+      "000000061988  000000000008 R_X86_64_RELATIVE                    4040"
+    ],
+    "interpretation": "Constructor at 0x4040 ORs MXCSR with 0x8040 (FTZ and DAZ). Its .init_array entry has the matching relative relocation."
+  },
+  "current_source_hashes": {
+    "restart.c": "cf65001a42039722d062c25a15345114de6ab268de2fd772f1bd9a683b86d1d9",
+    "allvars.h": "0514cb0c9ffb94bdae1dcbbc5671b6899d71988cfc78d764d24e20d6062041bf",
+    "io.c": "835892c84cb27ef94f95fb8a37b85bd74347a98da5b1555adf9e2d780aca3994",
+    "predict.c": "3e4392f3bc856de6881b2af8ffcd6721985249fafde16b29b0e1669a64b75a7d",
+    "kicks.c": "e71c939b547e8ef02918f7213bf71505c9a69c909fda8db050960dd78b76c4aa",
+    "run.c": "ed2fd6c642411bd61db8d763e8a328e134d285e9acdddae110cb87b2b45d25dd",
+    "GIZMO_config.h": "b44bce767230b9af6e702c04d7f482653b70ad5c5acb77b75c316797448e7aaf"
+  },
+  "source_caveat": "Current source is explanatory evidence; exact ABI comes from the pinned executable DWARF and native-field equality.",
+  "smallest_positive_float32": 1.401298464324817e-45,
+  "smallest_normal_float32": 1.1754943508222875e-38,
+  "cases": [
+    {
+      "law": "sharp13",
+      "time_code": 19.364916731037084,
+      "t_over_tcc": 5.0,
+      "input_hashes": {
+        "params.txt": "3af6f94f62c2b7b7187e24fb4b4087f6f57a2aec5497a72102bba8c33b49c9b2",
+        "ics.hdf5": "ae510c5a853ace97e3c55c6b234efb3e5cf6f64a1dbd512e5ee7be8d0e1b52e5"
+      },
+      "snapshot": {
+        "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_100.hdf5",
+        "sha256": "d5ff5113ed39822a4382fe442587bf53aa99e244cae39f133255b53ae82b8dd6"
+      },
+      "restarts": [
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/restartfiles/restart.0",
+          "sha256": "825365768f41695f55acf32f1ebfe8eadcc693850ebb9b7b686e3430d7d52dcd",
+          "bytes": 6285108,
+          "parsed_prefix_bytes": 5522240,
+          "unparsed_tail_bytes": 762868,
+          "particles": 8194
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/restartfiles/restart.1",
+          "sha256": "382382d55647d7bb92493cf511709bc6f1fee6e8f613910db7d25c66d3074f7c",
+          "bytes": 6352228,
+          "parsed_prefix_bytes": 5515520,
+          "unparsed_tail_bytes": 836708,
+          "particles": 8184
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/restartfiles/restart.2",
+          "sha256": "f592cb246c4b0d32341c1689745fb32a0372dc1538aa372d589513d68de2f290",
+          "bytes": 6298724,
+          "parsed_prefix_bytes": 5520896,
+          "unparsed_tail_bytes": 777828,
+          "particles": 8192
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/restartfiles/restart.3",
+          "sha256": "547ca0cc5f7362140f3ec46a3a48ed1317429df41103da317de9615831b819bb",
+          "bytes": 6357996,
+          "parsed_prefix_bytes": 5524256,
+          "unparsed_tail_bytes": 833740,
+          "particles": 8197
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/restartfiles/restart.4",
+          "sha256": "2d1d18d1ab81ab5c1adbab3d76afb627992fa208606a90ebe72a9e124bb4ce60",
+          "bytes": 6327820,
+          "parsed_prefix_bytes": 5521568,
+          "unparsed_tail_bytes": 806252,
+          "particles": 8193
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/restartfiles/restart.5",
+          "sha256": "75e601622ef29bb7c55c74ec6e05b3cb9e2de1948fb1ced7f73a59851b0436c4",
+          "bytes": 6308340,
+          "parsed_prefix_bytes": 5522240,
+          "unparsed_tail_bytes": 786100,
+          "particles": 8194
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/restartfiles/restart.6",
+          "sha256": "4beaf95aa1c1035cdbc35ff7f1404521148f2636c62ddc38f774ee0cb4c9a3ca",
+          "bytes": 6317540,
+          "parsed_prefix_bytes": 5520896,
+          "unparsed_tail_bytes": 796644,
+          "particles": 8192
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/restartfiles/restart.7",
+          "sha256": "3b00230ca703757edcc073ac730a5f18d259d4ae40ca84dcd52f53f9c4e14095",
+          "bytes": 6330004,
+          "parsed_prefix_bytes": 5519552,
+          "unparsed_tail_bytes": 810452,
+          "particles": 8190
+        }
+      ],
+      "all_header": {
+        "Time": 19.364916731037084,
+        "TimeMax": 19.364916731037084,
+        "TotNumPart": 65536,
+        "TotN_gas": 65536,
+        "MinEgySpec": 0.0,
+        "cf_a3inv": 1.0,
+        "BoxSize": 10.0,
+        "ComovingIntegrationOn": 0
+      },
+      "serialized_fields_exact": {
+        "ParticleIDs": true,
+        "ParticleChildIDsNumber": true,
+        "ParticleIDGenerationNumber": true,
+        "Coordinates": true,
+        "Masses": true,
+        "Velocities": true,
+        "Density": true,
+        "ParticleVelocities": true,
+        "InternalEnergy": false
+      },
+      "classification": {
+        "native_nonpositive": 0,
+        "exported_zero": 1,
+        "positive_underflows": 0,
+        "serialization_exact": false,
+        "flushed_subnormals": 1,
+        "flush_to_zero_serialization_exact": true
+      },
+      "gas_statistics": {
+        "Density": {
+          "min": 0.44197129373227423,
+          "max": 1710.835961569636,
+          "nonpositive": 0
+        },
+        "MassTrue": {
+          "min": 0.030517578125,
+          "max": 3.051757335662842,
+          "nonpositive": 0
+        },
+        "ParticleVel": {
+          "min": -0.7839213060411848,
+          "max": 2.9008773400422743,
+          "nonpositive": 66289
+        },
+        "Pressure": {
+          "min": 2.410293001601755e-41,
+          "max": 11.656603748772147,
+          "nonpositive": 0
+        },
+        "InternalEnergy": {
+          "min": 1.52799421328655e-43,
+          "max": 2.8637158125577913,
+          "nonpositive": 0
+        },
+        "InternalEnergyPred": {
+          "min": 1.52799421328655e-43,
+          "max": 2.8637158125577913,
+          "nonpositive": 0
+        },
+        "DtInternalEnergy": {
+          "min": -10.671977246676466,
+          "max": 6.404886767464681,
+          "nonpositive": 40889
+        }
+      },
+      "affected_particles": [
+        {
+          "id": 109,
+          "exported_energy": 0.0,
+          "predicted_energy": 1.52799421328655e-43,
+          "conserved_energy": 1.52799421328655e-43,
+          "pressure": 2.410293001601755e-41,
+          "density": 236.61342896228734,
+          "mass": 3.051217555999756,
+          "energy_derivative": -0.007065293391544323
+        }
+      ],
+      "limitation": "Only final snapshot100 has contemporaneous retained restart proof. SmoothingLength is not decoded; RNG/tree tail is not parsed. No restart-executability certification."
+    },
+    {
+      "law": "tanh13",
+      "time_code": 19.364916731037084,
+      "t_over_tcc": 5.0,
+      "input_hashes": {
+        "params.txt": "3af6f94f62c2b7b7187e24fb4b4087f6f57a2aec5497a72102bba8c33b49c9b2",
+        "ics.hdf5": "b85251c1ecae2dab665cec6525f06543104b11dc0a2c2763159ecfa5670bc4f0"
+      },
+      "snapshot": {
+        "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_100.hdf5",
+        "sha256": "ff23f75f5cb5ca558ad3c82b426288564d68884c405658479cd652db960644ba"
+      },
+      "restarts": [
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/restartfiles/restart.0",
+          "sha256": "c8f402991c196c75aca95f55d44270f041156bce265b50563ae685ce67ad656f",
+          "bytes": 6317096,
+          "parsed_prefix_bytes": 5489312,
+          "unparsed_tail_bytes": 827784,
+          "particles": 8145
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/restartfiles/restart.1",
+          "sha256": "0050344fbfeee6cd4f965f74f75a785d37c5f46b1a2130519577e95f8a0f0955",
+          "bytes": 6328856,
+          "parsed_prefix_bytes": 5525600,
+          "unparsed_tail_bytes": 803256,
+          "particles": 8199
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/restartfiles/restart.2",
+          "sha256": "6c97c9f9d157b91a70752223f539f2ff9e577d61c7b1eac345e36ca62f4ed734",
+          "bytes": 6329344,
+          "parsed_prefix_bytes": 5526272,
+          "unparsed_tail_bytes": 803072,
+          "particles": 8200
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/restartfiles/restart.3",
+          "sha256": "563048e916fd4e3f106ed05f82453839c73751dd9e9bad232c2912f2c1dcd88c",
+          "bytes": 6321296,
+          "parsed_prefix_bytes": 5527616,
+          "unparsed_tail_bytes": 793680,
+          "particles": 8202
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/restartfiles/restart.4",
+          "sha256": "783ec0cf325e9a0e693aa10fe35656bfbfe2736acb1ac9b953277c1f7ca3695a",
+          "bytes": 6301192,
+          "parsed_prefix_bytes": 5524256,
+          "unparsed_tail_bytes": 776936,
+          "particles": 8197
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/restartfiles/restart.5",
+          "sha256": "15859dee15687c7af802ef78e0c9fc677079d1f9122f436ebca0c60affd9101b",
+          "bytes": 6349664,
+          "parsed_prefix_bytes": 5523584,
+          "unparsed_tail_bytes": 826080,
+          "particles": 8196
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/restartfiles/restart.6",
+          "sha256": "dd3779bae3a4ba5607bab10bc12fa30efa7736f68d5f7ce0a8630ea6c752e3ec",
+          "bytes": 6343136,
+          "parsed_prefix_bytes": 5523584,
+          "unparsed_tail_bytes": 819552,
+          "particles": 8196
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/restartfiles/restart.7",
+          "sha256": "8f9480cc47a873009a2782fda54daa1919bcf5af037b6160df72dc2a642d6a43",
+          "bytes": 6338664,
+          "parsed_prefix_bytes": 5526944,
+          "unparsed_tail_bytes": 811720,
+          "particles": 8201
+        }
+      ],
+      "all_header": {
+        "Time": 19.364916731037084,
+        "TimeMax": 19.364916731037084,
+        "TotNumPart": 65536,
+        "TotN_gas": 65536,
+        "MinEgySpec": 0.0,
+        "cf_a3inv": 1.0,
+        "BoxSize": 10.0,
+        "ComovingIntegrationOn": 0
+      },
+      "serialized_fields_exact": {
+        "ParticleIDs": true,
+        "ParticleChildIDsNumber": true,
+        "ParticleIDGenerationNumber": true,
+        "Coordinates": true,
+        "Masses": true,
+        "Velocities": true,
+        "Density": true,
+        "ParticleVelocities": true,
+        "InternalEnergy": true
+      },
+      "classification": {
+        "native_nonpositive": 0,
+        "exported_zero": 3,
+        "positive_underflows": 3,
+        "serialization_exact": true,
+        "flushed_subnormals": 0,
+        "flush_to_zero_serialization_exact": true
+      },
+      "gas_statistics": {
+        "Density": {
+          "min": 0.39182258389883234,
+          "max": 2344.728995344006,
+          "nonpositive": 0
+        },
+        "MassTrue": {
+          "min": 0.030517578125,
+          "max": 3.051757335662842,
+          "nonpositive": 0
+        },
+        "ParticleVel": {
+          "min": -0.712995090524772,
+          "max": 2.885782987268344,
+          "nonpositive": 66441
+        },
+        "Pressure": {
+          "min": 8.390636717813804e-139,
+          "max": 10.869360644744656,
+          "nonpositive": 0
+        },
+        "InternalEnergy": {
+          "min": 4.37163851163316e-141,
+          "max": 2.917861082826095,
+          "nonpositive": 0
+        },
+        "InternalEnergyPred": {
+          "min": 4.37163851163316e-141,
+          "max": 2.917861082826095,
+          "nonpositive": 0
+        },
+        "DtInternalEnergy": {
+          "min": -9.787325825629216,
+          "max": 5.66603976696188,
+          "nonpositive": 42386
+        }
+      },
+      "affected_particles": [
+        {
+          "id": 96,
+          "exported_energy": 0.0,
+          "predicted_energy": 4.37163851163316e-141,
+          "conserved_energy": 4.37163851163316e-141,
+          "pressure": 8.390636717813804e-139,
+          "density": 287.9001784623503,
+          "mass": 3.051217555999756,
+          "energy_derivative": -0.018393211215337307
+        },
+        {
+          "id": 99,
+          "exported_energy": 0.0,
+          "predicted_energy": 2.498054346189284e-78,
+          "conserved_energy": 2.498054346189284e-78,
+          "pressure": 5.0243785333353e-76,
+          "density": 301.6975115653422,
+          "mass": 3.051217555999756,
+          "energy_derivative": -0.027470317347863652
+        },
+        {
+          "id": 102,
+          "exported_energy": 0.0,
+          "predicted_energy": 1.649788009116768e-48,
+          "conserved_energy": 1.649788009116768e-48,
+          "pressure": 2.887656000291494e-46,
+          "density": 262.54791382294917,
+          "mass": 3.051217555999756,
+          "energy_derivative": -0.0072665959073992216
+        }
+      ],
+      "limitation": "Only final snapshot100 has contemporaneous retained restart proof. SmoothingLength is not decoded; RNG/tree tail is not parsed. No restart-executability certification."
+    }
+  ],
+  "decision": "No rerun or larger MFV control authorized by this diagnostic; export underflow, if confirmed, does not establish physically valid thermal evolution. No raw snapshot is repaired, replaced, retimed or promoted."
+}

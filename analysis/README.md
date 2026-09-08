@@ -11,6 +11,10 @@ not a matched uniform-pressure grid baseline. GIZMO MFV's two full L3 attempts f
 checks and are published as failure evidence, not accepted controls. See
 [GIZMO results](sensitivity_20260907/gizmo/README.md). Larger pairs remain
 separately guarded. These experiments are distinct from the historical viewer.
+The [MFV terminal restart diagnosis](sensitivity_20260907/gizmo/MFV_RESTART_DIAGNOSIS.md)
+explains final exported zeros as tiny positive internal energies lost in float32
+output, including native flush-to-zero. Their physical evolution is still
+unvalidated; no failed control was promoted and no raw data was deleted.
 Gadget-4 L4's native short validation now passes, but its full pair is held
 for storage. The [L4 evidence](sensitivity_20260907/gadget4/L4_VALIDATION.md)
 does not increase the accepted full-control count.

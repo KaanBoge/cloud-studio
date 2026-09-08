@@ -139,6 +139,16 @@ controls. The original stopped ledger and separate historical diagnostic
 control remain intact; neither is a runnable continuation queue. Do not
 change floors or filter invalid states to turn a failure into a completion.
 
+Read-only MFV restart diagnosis now explains the terminal export zeros: all
+internal conserved/predicted energies remain positive; three final particle
+values underflow float32 and one is flushed from a subnormal to zero by native
+FTZ. Exact executable DWARF and independent decoders verify the terminal state.
+This does not validate the extreme thermal-energy decline or diagnose every
+earlier zero from a contemporaneous restart. Further native energy/limiter
+review is required before an isolated instrumentation test or larger MFV pair.
+No floor, native field, build, acceptance gate or raw file changed. See
+[the evidence and limitations](gizmo/MFV_RESTART_DIAGNOSIS.md).
+
 MFM L4 subsequently passed its own two short evolved controls and four tiny
 velocity-timing diagnostics: all16 native outputs independently checked, with
 unchanged nonvelocity initial fields. Nine L4 unit tests pass. Its measured
