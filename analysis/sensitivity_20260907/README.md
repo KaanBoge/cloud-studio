@@ -2,6 +2,13 @@
 
 ## Update: 8 September 2026
 
+At15:50UTC, the missing repaired MFV L4 full pair started after
+[six new L4 diagnostics passed](gizmo/MFV_L4_PREPARATION_RESULTS.md),
+covering16 native states. Sharp runs first; historical follows automatically
+after the first passes its checks. Eight bound CPU workers were observed
+busy. All raw remains saved directly on C:. These are not yet accepted full
+controls, so the total below remains48 while the pair runs.
+
 The [Gadget-4 L3/L4 comparison](gadget4/analysis_levels_v1/README.md) is now
 complete: both new L4 controls passed all 101 native states through 5 t_cc.
 Peak paired mass separation is 6.954% at L3 and 4.232% at L4, not a
@@ -11,7 +18,7 @@ was written directly to C:; no old data was moved or deleted.
 
 The accepted total is now **48 controls and 4,852 native analysis states**.
 Six L3/L4 controls remain: four Gasoline (scientific validation held) and
-two repaired MFV L4 (own-level validation and storage review still needed).
+two repaired MFV L4 (now in the guarded full-pair queue after own-level validation).
 Higher levels are additional work. The old blanket replacement queue is inactive.
 
 The earlier immutable [consolidated resolution summary](resolution_summary_v1/README.md)

@@ -4,6 +4,30 @@ Ryan requested a few resolutions per code at fixed chi and Mach before deciding
 whether affected historical runs need replacing. This study preserves all old
 and new raw data. It does not authorize a blanket replacement campaign.
 
+## Active: repaired MFV L4 full pair
+
+8 September15:50UTC: six new L4 diagnostics passed with16 native states,
+48 retained terminal restart files, independent readers, exact paired
+initial fields,60-bit timing and conserved mass checks. See
+[preparation results](gizmo/MFV_L4_PREPARATION_RESULTS.md).
+The separately frozen full pair now runs sharp then historical on eight
+bound CPU workers. All original per-level numerics remain unchanged;
+tiny timing caps apply only to the completed diagnostics.
+
+Runner: `/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/l4_full_runner_v1/mfv_l4_full.py`.
+Plan SHA256: `2b77bb64257e2826dfe241ca6fb31eedcd5b868d73eeb4761cf96ac079430d7c`.
+Raw/ledger: `C:/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1`.
+The Windows-owned hidden launcher keeps the sequential pair independent of
+chat turns. Do not relaunch preparation, full workers, frozen tests or
+completed diagnostics. Check actual processes and ledger before next work.
+
+Full-pair retention budget12.92883GiB passed after staging, with separate
+host/guest10GiB reserves and1GiB ancillary allowance. No raw data was moved
+or deleted. Keep the accepted count48 until both full runs and new analysis
+pass. After completion, reuse accepted repaired L3 scalar curves for a
+new immutable L3/L4 analysis; do not rerun its raw analysis. The four
+Gasoline controls remain scientifically held; higher levels are separate.
+
 ## Completed: Gadget-4 L4 pair and L3/L4 comparison
 
 8 September: both missing L4 sharp/historical controls completed with
@@ -27,7 +51,8 @@ L3/L4 controls remain: two repaired MFV L4 and four Gasoline. No Gadget-4
 solver remains active after this pair. Before new native work, check live
 processes and both shared locks; saved PIDs are not activity evidence.
 
-Next safe scope: assess repaired MFV L4 with its own IC, timing, repair and
+The next-scope note below preceded the now-completed MFV preparation above:
+assess repaired MFV L4 with its own IC, timing, repair and
 conservation validation before a full pair. Direct C: storage requires a
 separately reviewed mapping/budget for MFV; do not blindly reuse Gadget's
 runner or charge its payload only to guest space. Refresh host and guest

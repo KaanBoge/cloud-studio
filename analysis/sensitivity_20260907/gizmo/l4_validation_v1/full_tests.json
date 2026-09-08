@@ -1,0 +1,5 @@
+{
+  "returncode": 0,
+  "stdout": "",
+  "stderr": "test_diagnostic_cap_cannot_leak (test_mfv_l4_full.FullTests.test_diagnostic_cap_cannot_leak) ... ok\ntest_different_full_parameters (test_mfv_l4_full.FullTests.test_different_full_parameters) ... ok\ntest_full_conservation_rejects_loss (test_mfv_l4_full.FullTests.test_full_conservation_rejects_loss) ... ok\ntest_full_step_envelope (test_mfv_l4_full.FullTests.test_full_step_envelope) ... ok\ntest_identical_full_parameters (test_mfv_l4_full.FullTests.test_identical_full_parameters) ... ok\ntest_unfinished_preparation_rejected (test_mfv_l4_full.FullTests.test_unfinished_preparation_rejected) ... ok\ntest_wrong_preparation_scope (test_mfv_l4_full.FullTests.test_wrong_preparation_scope) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.000s\n\nOK\n"
+}

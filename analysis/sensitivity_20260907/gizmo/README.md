@@ -1,7 +1,15 @@
 # Native GIZMO sensitivity: MFM L3/L4 and repaired MFV L3 complete
 
+## Active: repaired MFV L4 full pair
+
+The [six new L4 diagnostics passed](MFV_L4_PREPARATION_RESULTS.md), covering
+16 actual native states. The guarded full sharp/historical pair launched
+at15:50UTC on8September with eight bound CPU workers and unchanged numerical
+settings. The second follows the first automatically after native checks.
+The full pair is not yet accepted or analyzed. All raw remains retained.
+
 Updated 8 September 2026. The four full **MFM L3/L4** controls are validated and
-analyzed. The current study total, including Gadget-4 L3 and the repaired MFV L3 pair, is **46 accepted controls**. Each has 101
+analyzed. The current study total, including Gadget-4 L3/L4 and the repaired MFV L3 pair, is **48 accepted controls**. Each GIZMO control has 101
 distinct native snapshots through 5 t_cc. The two **MFV L3** attempts also
 reached 101 snapshots, but both failed positive-energy checks and are excluded
 from that total. Both accepted MFM pairs have finished; their runners must

@@ -1,5 +1,11 @@
 # Cloud-crushing analysis: verification status
 
+[Repaired MFV L4 preparation](sensitivity_20260907/gizmo/MFV_L4_PREPARATION_RESULTS.md)
+now passes on16 short native states. Its full sharp/historical pair launched
+at15:50UTC on8September; it is running, not yet included in the48 accepted
+controls. The historical case follows the sharp case automatically after
+native validation. All raw is retained; no new production viewer entries.
+
 The new [Gadget-4 L3/L4 comparison](sensitivity_20260907/gadget4/analysis_levels_v1/README.md)
 adds two complete L4 controls, each with 101 native states through 5 t_cc.
 Peak mass-curve separation is 6.954% at L3 and 4.232% at L4. The study now

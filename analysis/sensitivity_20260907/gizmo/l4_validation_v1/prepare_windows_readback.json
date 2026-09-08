@@ -1,0 +1,14 @@
+{
+  "status": "windows_readback_passed",
+  "plan_sha256": "579f85c2ca74cf7e44a8529b77d3d8f80e45e6760ccc18fa9aad9bae7c15e096",
+  "hashes": {
+    "inputs/timing_half.txt": "1ade4ee5d0e12c21dc568234514c75f593a218ae24ad2e19cad4da5b07b8cbf3",
+    "inputs/timing_full.txt": "450c5b79f18cf4d75ab721e07975473a494c13325a608726678c6d99f97ed3e2",
+    "inputs/full.txt": "6b15d547b65245fc33d413a3da5f1b6f80729efb54c0f5e0df82d93104b4901a",
+    "inputs/tanh13.hdf5": "e02c59a5d95eb6ca44bfecee912cbe81826b56a4cff7411077c150ee9ea1ae17",
+    "inputs/smoke.txt": "45ddc99a14ff101f126cf87198103b2d4d8b800253188e3e1d684fc07978949b",
+    "inputs/sharp13.hdf5": "304d5eb3ac868a866c85ad9503f1f206ef37fafaea6c4ba27f466fe14aad4114"
+  },
+  "checked_at_utc": "2026-09-08T15:44:01.4621555Z",
+  "scope": "Two L4 ICs and four native parameter templates checked. No full solver controls authorized."
+}
