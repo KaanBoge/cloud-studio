@@ -37,6 +37,10 @@ adds81 independently checked states and verified checkpoint retention, not
 full controls. Its dense masses agree exactly through1 t_cc, but the
 predeclared field-equivalence check failed, including untouched-binary repeats.
 Full Gasoline controls remain held for review; no native data was deleted.
+The [read-only checkpoint investigation](sensitivity_20260907/gasoline/DIVERGENCE_REVIEW.md)
+confirms differences already present in native double precision, including
+untouched-binary repeats. Exact selected-field export checks rule out a TIPSY
+conversion discrepancy for those fields, but do not yet establish the cause.
 
 Updated 7 September 2026. **Historical runs are not yet a validated matched-code
 comparison.** The corrected scripts are in `verified_20260907/`. Previous

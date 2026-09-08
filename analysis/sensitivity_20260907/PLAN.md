@@ -17,6 +17,14 @@ The dated preparation steps below remain as history. No higher MFV runner
 is enabled by this result; eight L3/L4 controls remain unlaunched and larger
 levels remain additional guarded work.
 
+The [Gasoline read-only divergence review](gasoline/DIVERGENCE_REVIEW.md) now
+locates the first saved differences and verifies all eight selected checkpoint
+prefixes against their same-step TIPSY exports. Differences already exist in
+native doubles, including original-binary repeats. The actual density callback
+is gather-only; symmetric force/energy cache accumulation is a candidate for
+further tracing, not a proven cause. No new solver was run or tolerance changed.
+Gasoline remains scientifically held and the accepted total stays46.
+
 ## Fixed pilot design
 
 Chi = 100, Mach = 2, gamma = 5/3, cloud radius = 1, ambient density = pressure = 1,

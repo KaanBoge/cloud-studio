@@ -1,7 +1,12 @@
 # Gasoline native velocity-control preparation
 
-8 September 2026. **No full Gasoline controls are accepted; the study remains
-at 44.** Four longer diagnostic runs have now completed on the historical
+8 September 2026. **No full Gasoline controls are accepted; the study now has
+46 accepted controls from other codes.** The [read-only divergence review](DIVERGENCE_REVIEW.md)
+finds differences already present in double-precision checkpoints, including
+untouched-executable repeats. All selected checkpoint fields reproduce their
+TIPSY exports exactly. The cause and output-observation acceptance remain under
+review; no additional simulation or changed tolerance was used.
+Four longer diagnostic runs have now completed on the historical
 two-worker count, producing81 actual native states through approximately
 1 t_cc. All independent mass checks pass, but the predeclared field-equivalence
 test fails in six of120 comparisons, including untouched-binary repeats.
@@ -46,7 +51,7 @@ The stored TIPSY `temp` field is converted using the native input's dGasConst,
 gamma and mean molecular weight; it must not be assumed to be Kelvin.
 SPH reconstructed pressure and boundary mismatches must be reported rather
 than concealed to claim a matched grid-code baseline. These controls remain
-separate from production viewer entries and do not add to the current 44.
+separate from production viewer entries and do not add to the current46.
 
 The untouched original binary, rebuilt hook-off and hook-on tests agree exactly
 in native density, mass, positions, energy, softening, metals and potential at

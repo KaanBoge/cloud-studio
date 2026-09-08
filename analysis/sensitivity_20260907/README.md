@@ -221,6 +221,10 @@ longer-test checkpoints are retained and valid. Its full L3 pair fits the
 measured storage budget but remains scientifically held, not launched.
 Native initial pressure peaks at6.29 times nominal in both laws; this is not
 a matched grid baseline. See [the full evidence](gasoline/LONGER_VALIDATION.md).
+The [new read-only checkpoint review](gasoline/DIVERGENCE_REVIEW.md) confirms
+differences inside the native double-precision states, including untouched
+binary repeats, with exact selected-field export roundtrips. It narrows the
+source investigation but does not clear the failed field-equivalence gate.
 A 15-minute task follow-up is enabled to inspect progress and
 advance safe pending work. The old blanket replacement queue remains inactive.
 Cooling, tracking and paper-ready retention checks remain separate work.
