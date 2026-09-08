@@ -1,0 +1,2819 @@
+{
+  "status": "needs_review",
+  "failures": [
+    "Terminal check: Restart endpoint/clock mismatch"
+  ],
+  "outputs": [
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_000.hdf5",
+      "sha256": "abeae8547a59ff3de175a2109bbc567b7fbe45db27ea3ef99de64bfa84151865",
+      "time_code": 0.0,
+      "errors": [],
+      "total_mass": 2425.245532028377,
+      "dense_mass": 409.90798234939575,
+      "energy_quantiles": [
+        0.015000002458691597,
+        0.01525782234966755,
+        1.4998300433158875,
+        1.5
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.015002655796706676,
+        "99": 0.015002655796706676,
+        "102": 0.015002655796706676,
+        "109": 0.015002655796706676
+      },
+      "time_tcc": 0.0,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_001.hdf5",
+      "sha256": "bc6bd3db2ea3f3e3bcfdda28e1561f7ac5ce19331b0f48252982cd9d9103b577",
+      "time_code": 0.19364916731037085,
+      "errors": [],
+      "total_mass": 2425.1154024954885,
+      "dense_mass": 397.51870012283325,
+      "energy_quantiles": [
+        0.01499664131551981,
+        0.01532372459769249,
+        1.4871050894260407,
+        1.5
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.01500430703163147,
+        "99": 0.01500430703163147,
+        "102": 0.01500430703163147,
+        "109": 0.01500430703163147
+      },
+      "time_tcc": 0.05,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_002.hdf5",
+      "sha256": "fd79807be3af4a99eabd2e91b82fe3e1ec94360e13664b4fd9f004c5ff8e4a27",
+      "time_code": 0.3872983346207417,
+      "errors": [],
+      "total_mass": 2425.1499400287867,
+      "dense_mass": 395.52389669418335,
+      "energy_quantiles": [
+        0.014995518140494823,
+        0.01582207903265953,
+        1.4116579294204712,
+        1.5
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.015007865615189075,
+        "99": 0.015007865615189075,
+        "102": 0.015007865615189075,
+        "109": 0.015007865615189075
+      },
+      "time_tcc": 0.1,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_003.hdf5",
+      "sha256": "4c2a25c2feadc546af18562e35719479753dd864c9935163e2f407e91ff2f463",
+      "time_code": 0.5809475019311126,
+      "errors": [],
+      "total_mass": 2425.1935235913843,
+      "dense_mass": 394.6214919090271,
+      "energy_quantiles": [
+        0.014995023608207703,
+        0.016707388684153557,
+        1.324080228805542,
+        1.5
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.015021045692265034,
+        "99": 0.015021045692265034,
+        "102": 0.015021045692265034,
+        "109": 0.015021045692265034
+      },
+      "time_tcc": 0.15,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_004.hdf5",
+      "sha256": "1e6462ccaace484424fba56e569bf3e96a1da72269014662483d57bedc9aec79",
+      "time_code": 0.7745966692414834,
+      "errors": [],
+      "total_mass": 2425.238837122917,
+      "dense_mass": 394.2182698249817,
+      "energy_quantiles": [
+        0.014967624098062515,
+        0.0170282069593668,
+        1.276687377691269,
+        1.5
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.015051070600748062,
+        "99": 0.015051070600748062,
+        "102": 0.015051070600748062,
+        "109": 0.015051070600748062
+      },
+      "time_tcc": 0.2,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_005.hdf5",
+      "sha256": "680e03ddcd518b5734134f09218710c41a9f776188f00157964331cca03d0b54",
+      "time_code": 0.9682458365518543,
+      "errors": [],
+      "total_mass": 2425.271436613053,
+      "dense_mass": 394.0639683008194,
+      "energy_quantiles": [
+        0.014850192703306675,
+        0.018650449812412262,
+        1.2733919620513916,
+        1.5
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.015084479935467243,
+        "99": 0.015084479935467243,
+        "102": 0.015084479935467243,
+        "109": 0.015084479935467243
+      },
+      "time_tcc": 0.25,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_006.hdf5",
+      "sha256": "ad190b6c841a62b7fb1b9a2f493116dd27c0c91b761f01a5bcb1355a4c1a6eac",
+      "time_code": 1.161895003862225,
+      "errors": [],
+      "total_mass": 2425.232244869694,
+      "dense_mass": 394.0762394666672,
+      "energy_quantiles": [
+        0.014694093726575375,
+        0.020619116723537445,
+        1.2540596723556519,
+        1.5
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.015112894587218761,
+        "99": 0.015112894587218761,
+        "102": 0.015112894587218761,
+        "109": 0.015112894587218761
+      },
+      "time_tcc": 0.3,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_007.hdf5",
+      "sha256": "73bbd16916f4b41270cdd5ce3f54d996f3f95a9d908ee3b7f9cb409331d47dba",
+      "time_code": 1.355544171172596,
+      "errors": [],
+      "total_mass": 2425.2441937383264,
+      "dense_mass": 381.28465700149536,
+      "energy_quantiles": [
+        0.014507039450109005,
+        0.021881185472011566,
+        1.2400052547454834,
+        1.5
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.015124591067433357,
+        "99": 0.015124591067433357,
+        "102": 0.015124591067433357,
+        "109": 0.015124591067433357
+      },
+      "time_tcc": 0.35,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_008.hdf5",
+      "sha256": "445141a7f53cdae8969192ac2d7d22d96c87cd0b998299222d9d61d59bfc0f25",
+      "time_code": 1.5491933384829668,
+      "errors": [],
+      "total_mass": 2425.2281370889395,
+      "dense_mass": 380.21304363012314,
+      "energy_quantiles": [
+        0.01428893581032753,
+        0.023028039699420334,
+        1.199773907661438,
+        1.5
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.015108215622603893,
+        "99": 0.015108219347894192,
+        "102": 0.01510821282863617,
+        "109": 0.015108211897313595
+      },
+      "time_tcc": 0.4,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_009.hdf5",
+      "sha256": "3c979f86b5a969f7803e59defb5be5180edc96230d5c1fe217f869542af15427",
+      "time_code": 1.7428425057933374,
+      "errors": [],
+      "total_mass": 2425.2599447108805,
+      "dense_mass": 379.21722692251205,
+      "energy_quantiles": [
+        0.014031268656253815,
+        0.02419642182998359,
+        1.1686920523643494,
+        1.5
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.015083810314536095,
+        "99": 0.015083804726600647,
+        "102": 0.015083804726600647,
+        "109": 0.01508382149040699
+      },
+      "time_tcc": 0.44999999999999996,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_010.hdf5",
+      "sha256": "ec7637dbe5fd2e46f0ddfea87b174dd59cf65770e8fbd60a0e78639bfe802cb4",
+      "time_code": 1.9364916731037085,
+      "errors": [],
+      "total_mass": 2425.240745138377,
+      "dense_mass": 378.1452993750572,
+      "energy_quantiles": [
+        0.013731877319514751,
+        0.025567734045907856,
+        1.1517807245254517,
+        1.5
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.015091930516064167,
+        "99": 0.015091957524418831,
+        "102": 0.015091805718839169,
+        "109": 0.015091859735548496
+      },
+      "time_tcc": 0.5,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_011.hdf5",
+      "sha256": "90bf8b1fcf2c1d92ae241f6123ef19ef092391f14729d65db8f5d3480fff25fe",
+      "time_code": 2.1301408404140796,
+      "errors": [],
+      "total_mass": 2425.2253706008196,
+      "dense_mass": 377.03926903009415,
+      "energy_quantiles": [
+        0.013019335456192493,
+        0.026536085372790695,
+        1.14298015832901,
+        1.5
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.015127946622669697,
+        "99": 0.01512792706489563,
+        "102": 0.01512740645557642,
+        "109": 0.015128065831959248
+      },
+      "time_tcc": 0.55,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_012.hdf5",
+      "sha256": "fe5169ceadc617861e94f08af5f32be4cca131fc89c184c4f05813d6046b3f69",
+      "time_code": 2.32379000772445,
+      "errors": [],
+      "total_mass": 2425.1840683966875,
+      "dense_mass": 362.5600514411926,
+      "energy_quantiles": [
+        0.012353719212114811,
+        0.026879609301686286,
+        1.1344623208045959,
+        1.5
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.01517912745475769,
+        "99": 0.015179513953626156,
+        "102": 0.015178048051893711,
+        "109": 0.015180869959294796
+      },
+      "time_tcc": 0.6,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_013.hdf5",
+      "sha256": "a9a50b7e5ea3920541c4525fb5cce90fc0d12721597d65b22d9546c6862cc7aa",
+      "time_code": 2.517439175034821,
+      "errors": [],
+      "total_mass": 2425.177302699536,
+      "dense_mass": 361.4681125283241,
+      "energy_quantiles": [
+        0.011825486086308956,
+        0.0271669633500278,
+        1.1270913898944854,
+        1.5
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.015280813910067081,
+        "99": 0.015280211344361305,
+        "102": 0.01527711097151041,
+        "109": 0.015284387394785881
+      },
+      "time_tcc": 0.6499999999999999,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_014.hdf5",
+      "sha256": "66a348c57c761931d29c760d44dc33133296478804dc7c7aad28484dd9cbbdfe",
+      "time_code": 2.7110883423451915,
+      "errors": [],
+      "total_mass": 2425.214148249477,
+      "dense_mass": 360.4745120406151,
+      "energy_quantiles": [
+        0.011425263248383999,
+        0.027679099906235932,
+        1.1064226984977723,
+        1.5
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.015462175011634827,
+        "99": 0.015462507493793964,
+        "102": 0.015456341207027435,
+        "109": 0.01546499878168106
+      },
+      "time_tcc": 0.6999999999999998,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_015.hdf5",
+      "sha256": "ae3e85c5b7f4255324e3a048682e70615bbb4ac5ebcde660ed0941038b9037e0",
+      "time_code": 2.904737509655562,
+      "errors": [],
+      "total_mass": 2425.213639220223,
+      "dense_mass": 359.58927088975906,
+      "energy_quantiles": [
+        0.011136106215417385,
+        0.02849994500167668,
+        1.099854475259781,
+        1.5000001192092896
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.015760906040668488,
+        "99": 0.015761012211441994,
+        "102": 0.015752136707305908,
+        "109": 0.015762116760015488
+      },
+      "time_tcc": 0.7499999999999998,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_016.hdf5",
+      "sha256": "60ae667b540176364e6a22d9afb0b7cddb1f7a0c170b79585be78c56b6fa56a6",
+      "time_code": 3.0983866769659323,
+      "errors": [],
+      "total_mass": 2425.1693833786994,
+      "dense_mass": 358.7247835993767,
+      "energy_quantiles": [
+        0.010830402374267578,
+        0.029248151555657388,
+        1.1024152398109437,
+        1.500000238418579
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.016193164512515068,
+        "99": 0.016200818121433258,
+        "102": 0.01618407480418682,
+        "109": 0.016200309619307518
+      },
+      "time_tcc": 0.7999999999999997,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_017.hdf5",
+      "sha256": "b6a3aca9bd79ead80b8cdd39d12160c2a59c6ac6c0ba318783b89390dffbf73e",
+      "time_code": 3.2920358442763034,
+      "errors": [],
+      "total_mass": 2425.2446026261896,
+      "dense_mass": 357.78727823495865,
+      "energy_quantiles": [
+        0.010597827844321728,
+        0.029781647911295294,
+        1.0850846469402313,
+        1.500001072883606
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.016777412965893745,
+        "99": 0.01680302806198597,
+        "102": 0.01678217388689518,
+        "109": 0.016816096380352974
+      },
+      "time_tcc": 0.8499999999999998,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_018.hdf5",
+      "sha256": "d4ac3a56e4c767fa96879ea690b7021a40f4cb7084f920da6996e6cbd2934d33",
+      "time_code": 3.485685011586674,
+      "errors": [],
+      "total_mass": 2425.2395400758833,
+      "dense_mass": 356.5516209602356,
+      "energy_quantiles": [
+        0.010500805452466011,
+        0.02984404125250876,
+        1.0719027757644655,
+        1.5000157356262207
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.017483526840806007,
+        "99": 0.0175161249935627,
+        "102": 0.017499687150120735,
+        "109": 0.01754145696759224
+      },
+      "time_tcc": 0.8999999999999997,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_019.hdf5",
+      "sha256": "1dbc65787b118de50df71c3b02cfc92a7fb3211456c808eb5a593582da0bedd2",
+      "time_code": 3.6793341788970446,
+      "errors": [],
+      "total_mass": 2425.2275584805757,
+      "dense_mass": 355.1878727078438,
+      "energy_quantiles": [
+        0.010618346743285656,
+        0.030180991208180786,
+        1.0605916559696198,
+        1.5000866651535034
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.018241453915834427,
+        "99": 0.018267737701535225,
+        "102": 0.018257690593600273,
+        "109": 0.01830492913722992
+      },
+      "time_tcc": 0.9499999999999996,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_020.hdf5",
+      "sha256": "55b0d1cd4ea93ce528ab22642da7005bca84c7a768e3fdc926729764ccc34436",
+      "time_code": 3.8729833462074152,
+      "errors": [],
+      "total_mass": 2425.205250520259,
+      "dense_mass": 353.78818368911743,
+      "energy_quantiles": [
+        0.010931254364550114,
+        0.030304649956524373,
+        1.0287052929401397,
+        1.5001720190048218
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.01899617910385132,
+        "99": 0.018985876813530922,
+        "102": 0.01900402270257473,
+        "109": 0.019036192446947098
+      },
+      "time_tcc": 0.9999999999999996,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_021.hdf5",
+      "sha256": "d4d98a7ac1a997115c55bf80cb21c7ad40c575437150bac9e27a6221716213a5",
+      "time_code": 4.066632513517786,
+      "errors": [],
+      "total_mass": 2425.237496452406,
+      "dense_mass": 352.34676861763,
+      "energy_quantiles": [
+        0.011277914978563786,
+        0.03026640435680747,
+        1.022997635602951,
+        1.5008810758590698
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.019661739468574524,
+        "99": 0.01960575021803379,
+        "102": 0.01965436153113842,
+        "109": 0.019673025235533714
+      },
+      "time_tcc": 1.0499999999999994,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_022.hdf5",
+      "sha256": "b9f7e5020285b2459cb482bec94b95e501d6a0a5fa49fa3d7b23c0e2a0c7c7e1",
+      "time_code": 4.2602816808281565,
+      "errors": [],
+      "total_mass": 2425.223332706839,
+      "dense_mass": 344.22950953245163,
+      "energy_quantiles": [
+        0.01174709852784872,
+        0.030105309458449483,
+        0.9923203438520432,
+        1.5028308033943176
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.02015727572143078,
+        "99": 0.020095165818929672,
+        "102": 0.020151570439338684,
+        "109": 0.020183797925710678
+      },
+      "time_tcc": 1.0999999999999994,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_023.hdf5",
+      "sha256": "d64c614afe3dceb51d2f7f2b38d6b6ac565a19d806c8f1221379379f75347270",
+      "time_code": 4.453930848138527,
+      "errors": [],
+      "total_mass": 2425.17648547329,
+      "dense_mass": 342.88199150562286,
+      "energy_quantiles": [
+        0.012386438436806202,
+        0.02977490256540477,
+        0.9669554054737091,
+        1.504640281200409
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.02050170861184597,
+        "99": 0.020435314625501633,
+        "102": 0.020510412752628326,
+        "109": 0.020559053868055344
+      },
+      "time_tcc": 1.1499999999999995,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_024.hdf5",
+      "sha256": "cd575f312df6c2866ee83d7b9099e89b6578101c0bd82ae3c3e02be30bdf1f20",
+      "time_code": 4.647580015448898,
+      "errors": [],
+      "total_mass": 2425.13346907869,
+      "dense_mass": 341.4643368124962,
+      "energy_quantiles": [
+        0.013113223016262054,
+        0.029424264561384916,
+        0.952308064699173,
+        1.5051679611206055
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.020691286772489548,
+        "99": 0.020631883293390274,
+        "102": 0.020718665793538094,
+        "109": 0.02078530564904213
+      },
+      "time_tcc": 1.1999999999999993,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_025.hdf5",
+      "sha256": "2526b5045d044b236d474c495c786fd3571fbf59741420abcffaa996aa12fcb3",
+      "time_code": 4.841229182759268,
+      "errors": [],
+      "total_mass": 2425.1406066417694,
+      "dense_mass": 338.52621054649353,
+      "energy_quantiles": [
+        0.013995391316711903,
+        0.029216486550867556,
+        0.9289881736040115,
+        1.5040905475616455
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.02073681354522705,
+        "99": 0.02071748487651348,
+        "102": 0.020790614187717438,
+        "109": 0.02088942751288414
+      },
+      "time_tcc": 1.2499999999999993,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_026.hdf5",
+      "sha256": "eeef9283f3cb7a5eddd3ba7b6394cbead2a78cacba3259d14ed0ada1c10c63df",
+      "time_code": 5.034878350069639,
+      "errors": [],
+      "total_mass": 2425.1936190184206,
+      "dense_mass": 334.62403574585915,
+      "energy_quantiles": [
+        0.014440489001572132,
+        0.02911199756897986,
+        0.9238542407751084,
+        1.5025970339775085
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.020691921934485435,
+        "99": 0.02069684863090515,
+        "102": 0.02075694128870964,
+        "109": 0.020882997661828995
+      },
+      "time_tcc": 1.2999999999999992,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_027.hdf5",
+      "sha256": "4552184679ce69f5533e1f7da08931c5ac2058190482aa741f4276fe62530285",
+      "time_code": 5.22852751738001,
+      "errors": [],
+      "total_mass": 2425.1731755398214,
+      "dense_mass": 326.0854607820511,
+      "energy_quantiles": [
+        0.01470497902482748,
+        0.029021249935030937,
+        0.9170116752386094,
+        1.5017907619476318
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.02058836817741394,
+        "99": 0.0205671563744545,
+        "102": 0.020637907087802887,
+        "109": 0.020783672109246254
+      },
+      "time_tcc": 1.3499999999999992,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_028.hdf5",
+      "sha256": "d66d7f0dcc62b796a0f2eb39c0701a0d575f52aee6c1c92fa3265aa70aca7a7c",
+      "time_code": 5.422176684690379,
+      "errors": [],
+      "total_mass": 2425.126482596621,
+      "dense_mass": 323.33233511447906,
+      "energy_quantiles": [
+        0.014893039129674435,
+        0.02886813216842711,
+        0.9142109423875808,
+        1.5028579831123352
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.020424040034413338,
+        "99": 0.020342541858553886,
+        "102": 0.020438851788640022,
+        "109": 0.020606225356459618
+      },
+      "time_tcc": 1.3999999999999988,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_029.hdf5",
+      "sha256": "db20ec412e1d5ce55dc2629bea227845a4defea0e7ec9d02633c2067d441a46e",
+      "time_code": 5.615825852000751,
+      "errors": [],
+      "total_mass": 2425.073469663039,
+      "dense_mass": 321.6544759571552,
+      "energy_quantiles": [
+        0.01500912569463253,
+        0.028693663887679577,
+        0.9017902255058289,
+        1.5027617812156677
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.02020665816962719,
+        "99": 0.020069977268576622,
+        "102": 0.020197711884975433,
+        "109": 0.020382143557071686
+      },
+      "time_tcc": 1.449999999999999,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_030.hdf5",
+      "sha256": "00e33a8dc852dd54c7eadc2611696b24f0087f791576149093abdbb7d76673a8",
+      "time_code": 5.8094750193111215,
+      "errors": [],
+      "total_mass": 2425.154770039022,
+      "dense_mass": 319.74070370197296,
+      "energy_quantiles": [
+        0.015060695819556713,
+        0.028569899564608932,
+        0.9001096934080124,
+        1.5041128396987915
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.0199956726282835,
+        "99": 0.019792333245277405,
+        "102": 0.01995786838233471,
+        "109": 0.020139625295996666
+      },
+      "time_tcc": 1.499999999999999,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_031.hdf5",
+      "sha256": "4e247badde89e2dd8fe729cc79241b4f028b909b9764cd3fbc004d1513ecdca4",
+      "time_code": 6.003124186621492,
+      "errors": [],
+      "total_mass": 2425.1196448244154,
+      "dense_mass": 318.34714633226395,
+      "energy_quantiles": [
+        0.0150569723919034,
+        0.028554703509435057,
+        0.8941464304924012,
+        1.5068759322166443
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.019809352234005928,
+        "99": 0.019577398896217346,
+        "102": 0.019736584275960922,
+        "109": 0.019888292998075485
+      },
+      "time_tcc": 1.549999999999999,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_032.hdf5",
+      "sha256": "dda381c4adeeb800c060b71bf243926aac385c2850225c65c642cd74f7c579ca",
+      "time_code": 6.196773353931863,
+      "errors": [],
+      "total_mass": 2425.1139565594494,
+      "dense_mass": 317.1098532676697,
+      "energy_quantiles": [
+        0.015035273507237434,
+        0.028689528023824094,
+        0.8850016504526138,
+        1.5113267302513123
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.019657021388411522,
+        "99": 0.01944022625684738,
+        "102": 0.01953883096575737,
+        "109": 0.019658127799630165
+      },
+      "time_tcc": 1.5999999999999988,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_033.hdf5",
+      "sha256": "83a8585987cd516e02e92f8ac7d7bdad68cea29c4c00ec13555dbf060fc6253d",
+      "time_code": 6.390422521242233,
+      "errors": [],
+      "total_mass": 2425.100303567946,
+      "dense_mass": 313.6252225637436,
+      "energy_quantiles": [
+        0.015004913322627544,
+        0.02881965252570808,
+        0.8726065516471863,
+        1.515983760356903
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.019548656418919563,
+        "99": 0.01936367340385914,
+        "102": 0.019390417262911797,
+        "109": 0.0194984320551157
+      },
+      "time_tcc": 1.6499999999999988,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_034.hdf5",
+      "sha256": "272673a3a31aba884e6f5ddd26a48285201204c473923ee03c61cc0bfe041a0b",
+      "time_code": 6.584071688552604,
+      "errors": [],
+      "total_mass": 2425.170025942847,
+      "dense_mass": 302.1075282692909,
+      "energy_quantiles": [
+        0.014969558455049992,
+        0.029093699073418973,
+        0.8594858050346375,
+        1.5170586705207825
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.019499031826853752,
+        "99": 0.019361628219485283,
+        "102": 0.01929008960723877,
+        "109": 0.019404882565140724
+      },
+      "time_tcc": 1.6999999999999988,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_035.hdf5",
+      "sha256": "f21479c62f578f96d0507b2eed856b153835e50eb101dcc985a4ed98031196a9",
+      "time_code": 6.777720855862975,
+      "errors": [],
+      "total_mass": 2425.1285190172493,
+      "dense_mass": 294.7531920671463,
+      "energy_quantiles": [
+        0.014943699352443218,
+        0.02948540875688195,
+        0.854915264248848,
+        1.5194846987724304
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.019500022754073143,
+        "99": 0.019467249512672424,
+        "102": 0.01927499659359455,
+        "109": 0.019406763836741447
+      },
+      "time_tcc": 1.7499999999999987,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_036.hdf5",
+      "sha256": "740a9e76a13cd062310d09b99210e9e67d6b0743b92962e10de04357dd6bfd43",
+      "time_code": 6.971370023173346,
+      "errors": [],
+      "total_mass": 2425.091353368014,
+      "dense_mass": 292.75241208076477,
+      "energy_quantiles": [
+        0.014936757273972034,
+        0.030293420311063527,
+        0.847544577717781,
+        1.525796890258789
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.0195925310254097,
+        "99": 0.01967579871416092,
+        "102": 0.019421221688389778,
+        "109": 0.01958414353430271
+      },
+      "time_tcc": 1.799999999999999,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_037.hdf5",
+      "sha256": "a96d06c205958234d9c37032166f32522638f13989f0be572137dc7c313a8351",
+      "time_code": 7.165019190483716,
+      "errors": [],
+      "total_mass": 2425.093147289008,
+      "dense_mass": 290.757977604866,
+      "energy_quantiles": [
+        0.014953150413930416,
+        0.03100308031775057,
+        0.8378427863121033,
+        1.5353851318359375
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.019839681684970856,
+        "99": 0.019987832754850388,
+        "102": 0.01980823650956154,
+        "109": 0.01992856152355671
+      },
+      "time_tcc": 1.8499999999999985,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_038.hdf5",
+      "sha256": "5193a14c9ba56a27cf51935e72d179dc650bd56acf2ff46721e7dbe44dec273c",
+      "time_code": 7.358668357794087,
+      "errors": [],
+      "total_mass": 2425.16725596413,
+      "dense_mass": 289.3764069080353,
+      "energy_quantiles": [
+        0.014982514083385468,
+        0.03230025216937065,
+        0.8267742246389389,
+        1.5428336262702942
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.02029000036418438,
+        "99": 0.020408449694514275,
+        "102": 0.020368777215480804,
+        "109": 0.02046101540327072
+      },
+      "time_tcc": 1.8999999999999986,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_039.hdf5",
+      "sha256": "37e2de6c523a8e7fd4f4cf0b6d1ed6c0cc8a787932dea1e457625d9cf7f4a119",
+      "time_code": 7.552317525104456,
+      "errors": [],
+      "total_mass": 2425.1398103442043,
+      "dense_mass": 291.20617830753326,
+      "energy_quantiles": [
+        0.015046242624521255,
+        0.03302778549492359,
+        0.8129279255867005,
+        1.547687590122223
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.020925438031554222,
+        "99": 0.020951269194483757,
+        "102": 0.021055638790130615,
+        "109": 0.02115798555314541
+      },
+      "time_tcc": 1.9499999999999982,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_040.hdf5",
+      "sha256": "3b370a0b8a31ba722badc3f3f10be3fdfbdd6d579531b4b29980a10e1e018c5b",
+      "time_code": 7.745966692414828,
+      "errors": [],
+      "total_mass": 2425.1415218636394,
+      "dense_mass": 288.6593247652054,
+      "energy_quantiles": [
+        0.015163545496761799,
+        0.034036642424762245,
+        0.8135755896568299,
+        1.5499855875968933
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.021707087755203247,
+        "99": 0.021537242457270622,
+        "102": 0.02184012345969677,
+        "109": 0.02196909859776497
+      },
+      "time_tcc": 1.9999999999999984,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_041.hdf5",
+      "sha256": "3f0a51c7a22314107fab54cee0bdbd201199e6d6a7ce2b059c00074504b0dc21",
+      "time_code": 7.9396158597251985,
+      "errors": [],
+      "total_mass": 2425.0951288621873,
+      "dense_mass": 289.310209274292,
+      "energy_quantiles": [
+        0.015338362194597721,
+        0.03431122595444321,
+        0.8072088181972504,
+        1.5533291101455688
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.022525571286678314,
+        "99": 0.02239474281668663,
+        "102": 0.022614363580942154,
+        "109": 0.02273179590702057
+      },
+      "time_tcc": 2.0499999999999985,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_042.hdf5",
+      "sha256": "33c5b2512efb3ebd73da710613a948d55b3fc72f22a668b5778824b8a77a4c28",
+      "time_code": 8.13326502703557,
+      "errors": [],
+      "total_mass": 2425.1808596048504,
+      "dense_mass": 286.7137151360512,
+      "energy_quantiles": [
+        0.015581506304442883,
+        0.03526742184534669,
+        0.8020255029201507,
+        1.5573468208312988
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.023273510858416557,
+        "99": 0.023321710526943207,
+        "102": 0.02329004369676113,
+        "109": 0.023311160504817963
+      },
+      "time_tcc": 2.0999999999999983,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_043.hdf5",
+      "sha256": "7209fd2833f02f6d9019ac60cb1fe09a15184d95ac75015ab6002583bc353418",
+      "time_code": 8.32691419434594,
+      "errors": [],
+      "total_mass": 2425.1281640306115,
+      "dense_mass": 283.82617795467377,
+      "energy_quantiles": [
+        0.01584094576537609,
+        0.036740684881806374,
+        0.7926183968782425,
+        1.5596523880958557
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.02401372231543064,
+        "99": 0.024037307128310204,
+        "102": 0.024003837257623672,
+        "109": 0.023735985159873962
+      },
+      "time_tcc": 2.1499999999999986,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_044.hdf5",
+      "sha256": "6868e923dd4ff78b3cd6f7abfc57fb0872dd22288616cea719ff08b7bdbcdebc",
+      "time_code": 8.520563361656311,
+      "errors": [],
+      "total_mass": 2425.084270743653,
+      "dense_mass": 277.34454572200775,
+      "energy_quantiles": [
+        0.016165344044566154,
+        0.03900774765759706,
+        0.7906071215867997,
+        1.5592002272605896
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.024829594418406487,
+        "99": 0.024604497477412224,
+        "102": 0.02500256896018982,
+        "109": 0.024107685312628746
+      },
+      "time_tcc": 2.1999999999999984,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_045.hdf5",
+      "sha256": "9206fa5e52ad0b1e07089ea11e0779aac8da14e5627767295666acf08d1607c0",
+      "time_code": 8.714212528966682,
+      "errors": [],
+      "total_mass": 2425.072566619143,
+      "dense_mass": 277.47258055210114,
+      "energy_quantiles": [
+        0.016588877886533737,
+        0.04028162682428956,
+        0.7855427235364915,
+        1.559703528881073
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.025423934683203697,
+        "99": 0.02509266510605812,
+        "102": 0.026012174785137177,
+        "109": 0.024569867178797722
+      },
+      "time_tcc": 2.2499999999999982,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_046.hdf5",
+      "sha256": "afd329bf3d33d44dc76a31556e5c4ba73b6e79ea22d49268007d5af8fa461b77",
+      "time_code": 8.907861696277052,
+      "errors": [],
+      "total_mass": 2425.127721387893,
+      "dense_mass": 272.3300139307976,
+      "energy_quantiles": [
+        0.017148159444332123,
+        0.04211614694446325,
+        0.7811429262161255,
+        1.5614479184150696
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.025887396186590195,
+        "99": 0.02552432380616665,
+        "102": 0.02703099139034748,
+        "109": 0.025107696652412415
+      },
+      "time_tcc": 2.2999999999999985,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_047.hdf5",
+      "sha256": "0021af65bb5a2663d6cdccd19dfaa1cb850e7cd4cfd167ce1ff418010bb61f83",
+      "time_code": 9.101510863587423,
+      "errors": [],
+      "total_mass": 2425.0877982601523,
+      "dense_mass": 270.0989453792572,
+      "energy_quantiles": [
+        0.01785646378993988,
+        0.04318608885630965,
+        0.7753784030675889,
+        1.5658254027366638
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.026303542777895927,
+        "99": 0.025883955880999565,
+        "102": 0.027858519926667213,
+        "109": 0.025559110566973686
+      },
+      "time_tcc": 2.3499999999999983,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_048.hdf5",
+      "sha256": "bc715aeb61a5c0f2d6fcafc080272e1e9ea7e4fd3562ab7e99d9a8f6d23e52f7",
+      "time_code": 9.295160030897794,
+      "errors": [],
+      "total_mass": 2425.056737564504,
+      "dense_mass": 266.7321245074272,
+      "energy_quantiles": [
+        0.01870102435350418,
+        0.04592861205339432,
+        0.7643329083919526,
+        1.5687379837036133
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.026722311973571777,
+        "99": 0.02629709243774414,
+        "102": 0.02838652953505516,
+        "109": 0.025982609018683434
+      },
+      "time_tcc": 2.399999999999998,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_049.hdf5",
+      "sha256": "6ec3d76e2174d1e1f5b0dd37efee8c4791ca6bed47cac6134614d28339b01ffc",
+      "time_code": 9.488809198208164,
+      "errors": [],
+      "total_mass": 2425.01371855475,
+      "dense_mass": 261.896186709404,
+      "energy_quantiles": [
+        0.019697193056344986,
+        0.04785194693133235,
+        0.7545723736286164,
+        1.57145494222641
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.027138249948620796,
+        "99": 0.026739556342363358,
+        "102": 0.02866014838218689,
+        "109": 0.026358218863606453
+      },
+      "time_tcc": 2.449999999999998,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_050.hdf5",
+      "sha256": "ae17175d463d12473b1111378cbf2421d7ba8ff2e0aaf194fb07052cde17a5b6",
+      "time_code": 9.682458365518535,
+      "errors": [],
+      "total_mass": 2424.9783788584173,
+      "dense_mass": 259.3716663122177,
+      "energy_quantiles": [
+        0.020767848938703537,
+        0.04750993102788925,
+        0.7433707028627395,
+        1.5769050121307373
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.02751711755990982,
+        "99": 0.027121445164084435,
+        "102": 0.02888024039566517,
+        "109": 0.02684476412832737
+      },
+      "time_tcc": 2.4999999999999982,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_051.hdf5",
+      "sha256": "85bd18d3aeb676ff598b29331b8f1de553f49acab46b5188a76cdc4f245a6a70",
+      "time_code": 9.876107532828904,
+      "errors": [],
+      "total_mass": 2425.093366181478,
+      "dense_mass": 256.79123616218567,
+      "energy_quantiles": [
+        0.02187650464475155,
+        0.04722186738625169,
+        0.7329515993595124,
+        1.5787287950515747
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.02786223404109478,
+        "99": 0.027534207329154015,
+        "102": 0.029226502403616905,
+        "109": 0.02731839008629322
+      },
+      "time_tcc": 2.5499999999999976,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_052.hdf5",
+      "sha256": "b1ca93c1bc77e71e1117acc92be00853b1db11dc6f9560a621425d49628cd562",
+      "time_code": 10.069756700139276,
+      "errors": [],
+      "total_mass": 2425.081258483231,
+      "dense_mass": 254.11138832569122,
+      "energy_quantiles": [
+        0.02284739352762699,
+        0.04671337597072124,
+        0.7175423502922058,
+        1.5749754309654236
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.028207121416926384,
+        "99": 0.027842381969094276,
+        "102": 0.02951677329838276,
+        "109": 0.02762843295931816
+      },
+      "time_tcc": 2.599999999999998,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_053.hdf5",
+      "sha256": "f4dea3424c5b1b9582951826de8a71731960045c5d488c91813ffcc8318f173f",
+      "time_code": 10.263405867449647,
+      "errors": [],
+      "total_mass": 2425.03590750508,
+      "dense_mass": 251.36669492721558,
+      "energy_quantiles": [
+        0.022651581093668938,
+        0.046663751080632206,
+        0.7025702685117722,
+        1.573434293270111
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.02847999334335327,
+        "99": 0.0279184952378273,
+        "102": 0.029787182807922363,
+        "109": 0.027575166895985603
+      },
+      "time_tcc": 2.6499999999999977,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_054.hdf5",
+      "sha256": "3295de66e89a81c3333c955ffb10e5b9e65f488392eda5115f2386a372cbc44e",
+      "time_code": 10.457055034760018,
+      "errors": [],
+      "total_mass": 2425.0022389367223,
+      "dense_mass": 247.54042702913284,
+      "energy_quantiles": [
+        0.02198658511042595,
+        0.045998906102031466,
+        0.6922346085309983,
+        1.5749651193618774
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.028638146817684174,
+        "99": 0.0277892854064703,
+        "102": 0.030056780204176903,
+        "109": 0.027356283739209175
+      },
+      "time_tcc": 2.699999999999998,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_055.hdf5",
+      "sha256": "fdb6dd97dc287fb8e7e8ad6e7a974a17a85475771bf21fcc518fb430c3eaa071",
+      "time_code": 10.650704202070388,
+      "errors": [],
+      "total_mass": 2425.0555285532027,
+      "dense_mass": 244.8920196890831,
+      "energy_quantiles": [
+        0.02119768224656582,
+        0.04627383064478635,
+        0.6898743063211441,
+        1.5763667821884155
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.028590498492121696,
+        "99": 0.027467582374811172,
+        "102": 0.030194280669093132,
+        "109": 0.02706052176654339
+      },
+      "time_tcc": 2.749999999999998,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_056.hdf5",
+      "sha256": "f85c086123765f36104c5a82ee530fc1a5c63a337d931dde6b3c7381a9e70d6f",
+      "time_code": 10.844353369380759,
+      "errors": [],
+      "total_mass": 2425.0243118666112,
+      "dense_mass": 241.25831371545792,
+      "energy_quantiles": [
+        0.020467212423682213,
+        0.047519593872129916,
+        0.6857749044895172,
+        1.57763671875
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.028440434485673904,
+        "99": 0.027012640610337257,
+        "102": 0.030109049752354622,
+        "109": 0.02668624371290207
+      },
+      "time_tcc": 2.7999999999999976,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_057.hdf5",
+      "sha256": "0306e134a84f40cac5c32e3480ea983e16e1749fbb4df56146030bd631ee3de6",
+      "time_code": 11.038002536691128,
+      "errors": [],
+      "total_mass": 2425.0207590721548,
+      "dense_mass": 231.76911211013794,
+      "energy_quantiles": [
+        0.01978783681988716,
+        0.04793595664203167,
+        0.6713417768478394,
+        1.580261766910553
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.028222857043147087,
+        "99": 0.026472121477127075,
+        "102": 0.029782066121697426,
+        "109": 0.026282526552677155
+      },
+      "time_tcc": 2.849999999999997,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_058.hdf5",
+      "sha256": "4695f3c2dbb52b645d614c96c572794dc216ecf7f1fc9bd5233cea5f4653b3c1",
+      "time_code": 11.2316517040015,
+      "errors": [],
+      "total_mass": 2425.0083853304386,
+      "dense_mass": 229.05666476488113,
+      "energy_quantiles": [
+        0.019309155642986298,
+        0.04699244674295187,
+        0.6709730952978135,
+        1.5820817947387695
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.027886763215065002,
+        "99": 0.025893867015838623,
+        "102": 0.029272034764289856,
+        "109": 0.025900492444634438
+      },
+      "time_tcc": 2.8999999999999977,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_059.hdf5",
+      "sha256": "4b381d00f838b44bbdea2e610b4d7fbc8d9bb85df278825e2e3c39f6c7926153",
+      "time_code": 11.42530087131187,
+      "errors": [],
+      "total_mass": 2425.1153729334474,
+      "dense_mass": 220.06320893764496,
+      "energy_quantiles": [
+        0.019246341660618782,
+        0.04757642554119229,
+        0.672925141453743,
+        1.5849093198776245
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.027501286938786507,
+        "99": 0.025304989889264107,
+        "102": 0.028682662174105644,
+        "109": 0.02552730217576027
+      },
+      "time_tcc": 2.9499999999999975,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_060.hdf5",
+      "sha256": "eac2fe87b9d8d8cd5f29c62e4420e8fe7a952480e572e2891d5cb1c2eb788098",
+      "time_code": 11.618950038622241,
+      "errors": [],
+      "total_mass": 2425.1105975788087,
+      "dense_mass": 213.172576546669,
+      "energy_quantiles": [
+        0.018888866528868675,
+        0.048878759052604435,
+        0.6704505860805512,
+        1.5855539441108704
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.02708359807729721,
+        "99": 0.024748027324676514,
+        "102": 0.02810615487396717,
+        "109": 0.025082265958189964
+      },
+      "time_tcc": 2.9999999999999973,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_061.hdf5",
+      "sha256": "8114e34dfe1da975cf034bc7984a63785d283f01d3b9afcfe81b5879eebb1b17",
+      "time_code": 11.812599205932612,
+      "errors": [],
+      "total_mass": 2425.084321727976,
+      "dense_mass": 209.65687483549118,
+      "energy_quantiles": [
+        0.01893017441034317,
+        0.05074283266440033,
+        0.6732321709394455,
+        1.5885995626449585
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.02665153704583645,
+        "99": 0.024124875664711,
+        "102": 0.027551285922527313,
+        "109": 0.02454451471567154
+      },
+      "time_tcc": 3.0499999999999976,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_062.hdf5",
+      "sha256": "f0e34c54b6bae372140d9bbc6e375721f832920136f036051dcbacffc0619dd1",
+      "time_code": 12.00624837324298,
+      "errors": [],
+      "total_mass": 2425.0794644672424,
+      "dense_mass": 206.1961317062378,
+      "energy_quantiles": [
+        0.01931130886077881,
+        0.050473859831690775,
+        0.6800353676080704,
+        1.5910802483558655
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.026174625381827354,
+        "99": 0.023414501920342445,
+        "102": 0.026979409158229828,
+        "109": 0.02390226721763611
+      },
+      "time_tcc": 3.099999999999997,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_063.hdf5",
+      "sha256": "b7559fcf6907a184c0d4c76ea47e36d3459438fe8430cc749565f3643dc2f46c",
+      "time_code": 12.199897540553353,
+      "errors": [],
+      "total_mass": 2425.0909980461,
+      "dense_mass": 204.52521741390228,
+      "energy_quantiles": [
+        0.019432587549090385,
+        0.05143441930413246,
+        0.6822045922279358,
+        1.5909575819969177
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.025679241865873337,
+        "99": 0.022725453600287437,
+        "102": 0.02640588767826557,
+        "109": 0.023249434307217598
+      },
+      "time_tcc": 3.1499999999999972,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_064.hdf5",
+      "sha256": "efe68ed715b78da4efd3d48c8a025822df587f8e890f83a6afa1eff60b635351",
+      "time_code": 12.393546707863724,
+      "errors": [],
+      "total_mass": 2425.084938555956,
+      "dense_mass": 201.66220891475677,
+      "energy_quantiles": [
+        0.019192222505807877,
+        0.05278817983344197,
+        0.6869910776615142,
+        1.5925363302230835
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.025158749893307686,
+        "99": 0.022155189886689186,
+        "102": 0.025876542553305626,
+        "109": 0.022776536643505096
+      },
+      "time_tcc": 3.199999999999997,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_065.hdf5",
+      "sha256": "1ddb905ed05f6f090a1c41b668f74adc8326fb69042a6cfd5ac9f15aff17ad0e",
+      "time_code": 12.587195875174094,
+      "errors": [],
+      "total_mass": 2425.05044724606,
+      "dense_mass": 199.10199213027954,
+      "energy_quantiles": [
+        0.018825864419341087,
+        0.0540852023102343,
+        0.6956927359104157,
+        1.5904556512832642
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.0246353168040514,
+        "99": 0.021627280861139297,
+        "102": 0.025419780984520912,
+        "109": 0.02242867648601532
+      },
+      "time_tcc": 3.2499999999999973,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_066.hdf5",
+      "sha256": "4e188816b8d4e3af8c18ba786dbba4ed5e28f4ccd0e1bab21e77dd052d1804c9",
+      "time_code": 12.780845042484465,
+      "errors": [],
+      "total_mass": 2425.019804812968,
+      "dense_mass": 193.200164437294,
+      "energy_quantiles": [
+        0.018834060057997704,
+        0.056865594834089275,
+        0.7015716642141342,
+        1.5927117466926575
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.024192003533244133,
+        "99": 0.021191414445638657,
+        "102": 0.024995509535074234,
+        "109": 0.022160304710268974
+      },
+      "time_tcc": 3.299999999999997,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_067.hdf5",
+      "sha256": "9232f6a143e6fdd6211acc7057fffc205395db19f236073fd6a6f9093f7bb4af",
+      "time_code": 12.974494209794836,
+      "errors": [],
+      "total_mass": 2425.1204413622618,
+      "dense_mass": 189.16897189617157,
+      "energy_quantiles": [
+        0.018876297399401665,
+        0.05865838391706347,
+        0.7080697029829025,
+        1.5988420248031616
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.023804087191820145,
+        "99": 0.02074115350842476,
+        "102": 0.024635421112179756,
+        "109": 0.021954458206892014
+      },
+      "time_tcc": 3.349999999999997,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_068.hdf5",
+      "sha256": "994dedb318751c6f0401664f29a2ab6e21729d257dd37f91957dce4178e23bdc",
+      "time_code": 13.168143377105205,
+      "errors": [],
+      "total_mass": 2425.111783830449,
+      "dense_mass": 187.86545252799988,
+      "energy_quantiles": [
+        0.01884034462273121,
+        0.06081580018624663,
+        0.7100396573543548,
+        1.6064780354499817
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.023439323529601097,
+        "99": 0.02033984288573265,
+        "102": 0.024321256205439568,
+        "109": 0.021797167137265205
+      },
+      "time_tcc": 3.3999999999999964,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_069.hdf5",
+      "sha256": "517fffdd11693f9e26aa97074f17b0a7d064ce7aca7c46a6e0bc5e18ae80d187",
+      "time_code": 13.361792544415577,
+      "errors": [],
+      "total_mass": 2425.0920337364078,
+      "dense_mass": 186.52800297737122,
+      "energy_quantiles": [
+        0.01846683956682682,
+        0.060901439525187014,
+        0.7067420601844787,
+        1.6121359467506409
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.02308310754597187,
+        "99": 0.02000398188829422,
+        "102": 0.024057894945144653,
+        "109": 0.02167622745037079
+      },
+      "time_tcc": 3.449999999999997,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_070.hdf5",
+      "sha256": "1be1f0f7c220885a62cfaf7d1dedb204b63e4e23a50fb97067682e2d8247d1a5",
+      "time_code": 13.555441711725948,
+      "errors": [],
+      "total_mass": 2425.088723363355,
+      "dense_mass": 185.1883420944214,
+      "energy_quantiles": [
+        0.017910776659846306,
+        0.06179007906466722,
+        0.7119301974773407,
+        1.6164916157722473
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.02271413244307041,
+        "99": 0.019736401736736298,
+        "102": 0.023848796263337135,
+        "109": 0.021590085700154305
+      },
+      "time_tcc": 3.499999999999997,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_071.hdf5",
+      "sha256": "476b5d9ea896ba46fd1574fe37563248ee114d4bf24bc2c668ca5d4e2656ace3",
+      "time_code": 13.749090879036318,
+      "errors": [],
+      "total_mass": 2425.1126363240182,
+      "dense_mass": 181.76610457897186,
+      "energy_quantiles": [
+        0.017812496051192284,
+        0.06111584097146988,
+        0.7110703527927399,
+        1.6160093545913696
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.022424982860684395,
+        "99": 0.019443972036242485,
+        "102": 0.023675018921494484,
+        "109": 0.02147509902715683
+      },
+      "time_tcc": 3.5499999999999967,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_072.hdf5",
+      "sha256": "2b510f6fb50a0a55b259a640bd11204a002f1ffcf4b7fa08d8f04c1d9cf8735d",
+      "time_code": 13.942740046346689,
+      "errors": [],
+      "total_mass": 2425.0808695033193,
+      "dense_mass": 178.51488626003265,
+      "energy_quantiles": [
+        0.018089408054947853,
+        0.06216675754636526,
+        0.7134226053953171,
+        1.6145113110542297
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.022228240966796875,
+        "99": 0.019305922091007233,
+        "102": 0.02351531758904457,
+        "109": 0.021295705810189247
+      },
+      "time_tcc": 3.599999999999997,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_073.hdf5",
+      "sha256": "167b6df448a3b6863873b271e9f323e09f449c27353de3ac7cc43e7b1c5c2697",
+      "time_code": 14.136389213657058,
+      "errors": [],
+      "total_mass": 2425.057808458805,
+      "dense_mass": 177.2850625514984,
+      "energy_quantiles": [
+        0.018230607733130455,
+        0.06525872282683849,
+        0.7162665575742722,
+        1.612831473350525
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.0220896378159523,
+        "99": 0.019251754507422447,
+        "102": 0.023374393582344055,
+        "109": 0.02106250822544098
+      },
+      "time_tcc": 3.6499999999999964,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_074.hdf5",
+      "sha256": "bc1fe1411270f125e782aec4f20ff4a106bb27528934e47db1d0cdcd89f93e1f",
+      "time_code": 14.33003838096743,
+      "errors": [],
+      "total_mass": 2425.0361190270633,
+      "dense_mass": 176.07014846801758,
+      "energy_quantiles": [
+        0.01845010556280613,
+        0.06755466978996992,
+        0.7140342950820923,
+        1.6138927936553955
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.02197909541428089,
+        "99": 0.019389985129237175,
+        "102": 0.02327708713710308,
+        "109": 0.020780207589268684
+      },
+      "time_tcc": 3.6999999999999966,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_075.hdf5",
+      "sha256": "89160c652824fbc8b5b4cd7b11dfb6f419d3abb76102fefe6247194826079a6b",
+      "time_code": 14.5236875482778,
+      "errors": [],
+      "total_mass": 2425.002242265269,
+      "dense_mass": 173.64215779304504,
+      "energy_quantiles": [
+        0.018488530069589615,
+        0.06875280499458312,
+        0.7100850015878677,
+        1.6175540089607239
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.021958664059638977,
+        "99": 0.019608044996857643,
+        "102": 0.023274803534150124,
+        "109": 0.020554373040795326
+      },
+      "time_tcc": 3.7499999999999964,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_076.hdf5",
+      "sha256": "22d95a1929b37eeb357786dab43ab5f7ef364ca812103037ca1fc238809f0baa",
+      "time_code": 14.717336715588171,
+      "errors": [],
+      "total_mass": 2425.1323238965124,
+      "dense_mass": 171.32935905456543,
+      "energy_quantiles": [
+        0.018333841115236282,
+        0.07166006218641995,
+        0.7097543507814408,
+        1.6183444261550903
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.021996792405843735,
+        "99": 0.019894594326615334,
+        "102": 0.023341700434684753,
+        "109": 0.02055473066866398
+      },
+      "time_tcc": 3.7999999999999967,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_077.hdf5",
+      "sha256": "79bcf5b2d0fd154ea9039c841b2d6322eaaf4bc4c50831d3f7faa49470291bb7",
+      "time_code": 14.910985882898542,
+      "errors": [],
+      "total_mass": 2425.108218336478,
+      "dense_mass": 168.29800808429718,
+      "energy_quantiles": [
+        0.0182636771351099,
+        0.07560013644397258,
+        0.7094389289617539,
+        1.618735134601593
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.022049929946660995,
+        "99": 0.020296407863497734,
+        "102": 0.023442402482032776,
+        "109": 0.020622149109840393
+      },
+      "time_tcc": 3.8499999999999965,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_078.hdf5",
+      "sha256": "eebc6cdbdcf6581d85340ed6e9b280f58b38b3bb26bc911b2fbf956de12b6dfd",
+      "time_code": 15.104635050208913,
+      "errors": [],
+      "total_mass": 2425.077807525173,
+      "dense_mass": 165.68595457077026,
+      "energy_quantiles": [
+        0.018200408667325974,
+        0.08000192672014235,
+        0.7140823394060135,
+        1.618708312511444
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.02208523638546467,
+        "99": 0.02090073749423027,
+        "102": 0.023637380450963974,
+        "109": 0.020604746416211128
+      },
+      "time_tcc": 3.8999999999999964,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_079.hdf5",
+      "sha256": "f40800d968a6217ca1f735029a5fa47509d2d7f957eadb90e9afb187ca2af95d",
+      "time_code": 15.298284217519281,
+      "errors": [],
+      "total_mass": 2425.049679800868,
+      "dense_mass": 164.80570209026337,
+      "energy_quantiles": [
+        0.018113307654857635,
+        0.08303074292838572,
+        0.7104024857282639,
+        1.6176493167877197
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.022150659933686256,
+        "99": 0.021645111963152885,
+        "102": 0.0239139162003994,
+        "109": 0.020546894520521164
+      },
+      "time_tcc": 3.9499999999999957,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_080.hdf5",
+      "sha256": "d0e4a48dfb42ceff8ee87b54af7b467c06602de447df7bae4148c29c5ffdfa50",
+      "time_code": 15.491933384829654,
+      "errors": [],
+      "total_mass": 2425.06625495106,
+      "dense_mass": 159.4795469045639,
+      "energy_quantiles": [
+        0.018143249675631523,
+        0.0874031339585781,
+        0.7083204448223114,
+        1.6178817749023438
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.022346653044223785,
+        "99": 0.022135592997074127,
+        "102": 0.02424888126552105,
+        "109": 0.02054515853524208
+      },
+      "time_tcc": 3.9999999999999964,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_081.hdf5",
+      "sha256": "714260641cdaabcd1918252931a345f01a3687beb59079a2de3df21888468681",
+      "time_code": 15.685582552140025,
+      "errors": [],
+      "total_mass": 2425.0394937843084,
+      "dense_mass": 154.11674070358276,
+      "energy_quantiles": [
+        0.018302934244275093,
+        0.09463320665061471,
+        0.7071684867143632,
+        1.6167694330215454
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.02269992232322693,
+        "99": 0.02260170690715313,
+        "102": 0.024625379592180252,
+        "109": 0.020584125071763992
+      },
+      "time_tcc": 4.049999999999996,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_082.hdf5",
+      "sha256": "f37b32f963867f6e538e394bf9499be6632712d0dd1ca94f4009b2fd8697cf40",
+      "time_code": 15.879231719450395,
+      "errors": [],
+      "total_mass": 2425.0020285826176,
+      "dense_mass": 152.74681150913239,
+      "energy_quantiles": [
+        0.018229641020298004,
+        0.10011843618005514,
+        0.7085926175117493,
+        1.6137744188308716
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.023196427151560783,
+        "99": 0.023419927805662155,
+        "102": 0.025055939331650734,
+        "109": 0.020818069577217102
+      },
+      "time_tcc": 4.099999999999996,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_083.hdf5",
+      "sha256": "f837d01413204c31dea07b96aa597909cf532785a559bc2ca8056a89127f96bf",
+      "time_code": 16.072880886760768,
+      "errors": [],
+      "total_mass": 2424.9852888435125,
+      "dense_mass": 151.4401078224182,
+      "energy_quantiles": [
+        0.017759516835212708,
+        0.10238477643579244,
+        0.7135025084018708,
+        1.6118314266204834
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.0236956849694252,
+        "99": 0.02408064343035221,
+        "102": 0.025575032457709312,
+        "109": 0.021170975640416145
+      },
+      "time_tcc": 4.149999999999997,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_084.hdf5",
+      "sha256": "5fbd0604dd0050951e1b264fc81361b67f6936d485d2d79ad811d8f449b45853",
+      "time_code": 16.26653005407114,
+      "errors": [],
+      "total_mass": 2425.1204882971942,
+      "dense_mass": 150.3401882648468,
+      "energy_quantiles": [
+        0.017534835264086723,
+        0.10290352035313845,
+        0.7092262893915177,
+        1.6117766499519348
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.024296186864376068,
+        "99": 0.024535659700632095,
+        "102": 0.02617909200489521,
+        "109": 0.0212441086769104
+      },
+      "time_tcc": 4.199999999999997,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_085.hdf5",
+      "sha256": "80decf7e538aad7d6646e6986aaa6a09b5aead0d41ce8ab30945d3ad3ace584c",
+      "time_code": 16.460179221381512,
+      "errors": [],
+      "total_mass": 2425.107056858018,
+      "dense_mass": 149.12877523899078,
+      "energy_quantiles": [
+        0.01766122505068779,
+        0.10223572514951229,
+        0.7100623846054077,
+        1.6141554117202759
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.024820266291499138,
+        "99": 0.024948814883828163,
+        "102": 0.02674129419028759,
+        "109": 0.021021822467446327
+      },
+      "time_tcc": 4.249999999999997,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_086.hdf5",
+      "sha256": "be4d4ea536be1596471975497c8bdbb0f9c44c3dd07e82363c37daccb3a8363b",
+      "time_code": 16.653828388691885,
+      "errors": [],
+      "total_mass": 2425.081171395257,
+      "dense_mass": 146.31298458576202,
+      "energy_quantiles": [
+        0.01782061718404293,
+        0.1009930608049035,
+        0.7109167814254761,
+        1.6158583760261536
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.025098612532019615,
+        "99": 0.025516759604215622,
+        "102": 0.027229489758610725,
+        "109": 0.020770443603396416
+      },
+      "time_tcc": 4.299999999999998,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_087.hdf5",
+      "sha256": "9391d9b850a60df129b1ed5e1dc19da3617e27ffe17c0858f8539270966adad1",
+      "time_code": 16.847477556002257,
+      "errors": [],
+      "total_mass": 2425.082390917465,
+      "dense_mass": 142.21861064434052,
+      "energy_quantiles": [
+        0.017767127603292465,
+        0.10095943752676248,
+        0.7080092698335647,
+        1.6151716709136963
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.02514573559165001,
+        "99": 0.026421962305903435,
+        "102": 0.027561694383621216,
+        "109": 0.02072564698755741
+      },
+      "time_tcc": 4.349999999999998,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_088.hdf5",
+      "sha256": "5c1d1148c99df0a03a8f26121ad1f9373e80fe230a4ddab62b7d7e5ff6339808",
+      "time_code": 17.04112672331263,
+      "errors": [],
+      "total_mass": 2425.112703865394,
+      "dense_mass": 138.42419469356537,
+      "energy_quantiles": [
+        0.01763502135872841,
+        0.10247709039598703,
+        0.6937271416187286,
+        1.6131254434585571
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.025098800659179688,
+        "99": 0.027383076027035713,
+        "102": 0.02767285145819187,
+        "109": 0.020828302949666977
+      },
+      "time_tcc": 4.399999999999999,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_089.hdf5",
+      "sha256": "e6631c3488a9670cdb299ae97a7563555cb07185349147496295d06ba5e0d9e2",
+      "time_code": 17.234775890623002,
+      "errors": [],
+      "total_mass": 2425.1054237317294,
+      "dense_mass": 137.15004754066467,
+      "energy_quantiles": [
+        0.017716117203235626,
+        0.10189650140702725,
+        0.6855617105960846,
+        1.6145516633987427
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.024990608915686607,
+        "99": 0.028106659650802612,
+        "102": 0.027756797149777412,
+        "109": 0.021016309037804604
+      },
+      "time_tcc": 4.449999999999999,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_090.hdf5",
+      "sha256": "b5da7428cbc13f077316feea3576368bd34215389660bff0d9a76b15446f03ac",
+      "time_code": 17.428425057933374,
+      "errors": [],
+      "total_mass": 2425.0905546583235,
+      "dense_mass": 135.83407592773438,
+      "energy_quantiles": [
+        0.017891384661197662,
+        0.10200604874640702,
+        0.6861441195011139,
+        1.6172227263450623
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.024895040318369865,
+        "99": 0.028567802160978317,
+        "102": 0.027842961251735687,
+        "109": 0.021378664299845695
+      },
+      "time_tcc": 4.499999999999999,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_091.hdf5",
+      "sha256": "90394c26a8e4dde59da796bd62899ae0223b67026ffe87bdb72c40fdc11fcc55",
+      "time_code": 17.622074225243747,
+      "errors": [],
+      "total_mass": 2425.071964420378,
+      "dense_mass": 131.6269290447235,
+      "energy_quantiles": [
+        0.01804138533771038,
+        0.1033998503535986,
+        0.6804928749799729,
+        1.6203845143318176
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.02461242862045765,
+        "99": 0.0287889763712883,
+        "102": 0.027926906943321228,
+        "109": 0.021654101088643074
+      },
+      "time_tcc": 4.55,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_092.hdf5",
+      "sha256": "474abb99c4b5b44b25dda96c09ae20271a4655ec665a45033b1011708a72c2ba",
+      "time_code": 17.81572339255412,
+      "errors": [],
+      "total_mass": 2425.1174285896122,
+      "dense_mass": 130.0854847431183,
+      "energy_quantiles": [
+        0.018613625317811966,
+        0.10848934408277273,
+        0.6734115511178971,
+        1.6230692267417908
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.02439676597714424,
+        "99": 0.02950751595199108,
+        "102": 0.02796264924108982,
+        "109": 0.021800599992275238
+      },
+      "time_tcc": 4.6000000000000005,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_093.hdf5",
+      "sha256": "91407e40171bec72479e7eddc725f3085aa8da49762747bbff0565c0b380b4bc",
+      "time_code": 18.00937255986449,
+      "errors": [],
+      "total_mass": 2425.0967745631933,
+      "dense_mass": 127.01785278320312,
+      "energy_quantiles": [
+        0.019358931109309196,
+        0.1080462097749114,
+        0.6726835519075394,
+        1.6256428956985474
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.024232881143689156,
+        "99": 0.030504878610372543,
+        "102": 0.02782629244029522,
+        "109": 0.021469054743647575
+      },
+      "time_tcc": 4.65,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_094.hdf5",
+      "sha256": "2e5b4ad4389168f8ce4d5b0f341bc269476e57d4fded6efed522b08a709f7f7b",
+      "time_code": 18.203021727174864,
+      "errors": [],
+      "total_mass": 2425.07523961924,
+      "dense_mass": 125.23455393314362,
+      "energy_quantiles": [
+        0.020464273169636726,
+        0.1091485359147191,
+        0.6707627236843109,
+        1.6281219720840454
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.02413247711956501,
+        "99": 0.03134515881538391,
+        "102": 0.02755124680697918,
+        "109": 0.021553661674261093
+      },
+      "time_tcc": 4.700000000000001,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_095.hdf5",
+      "sha256": "671d755b1b0de521a860d8cf9ed042b4fdbadb173301726043c6307edc344ee7",
+      "time_code": 18.396670894485236,
+      "errors": [],
+      "total_mass": 2425.0764281712472,
+      "dense_mass": 123.50030648708344,
+      "energy_quantiles": [
+        0.02161288820207119,
+        0.11117481961846351,
+        0.6697713226079941,
+        1.6309159398078918
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.024112999439239502,
+        "99": 0.031848445534706116,
+        "102": 0.027592122554779053,
+        "109": 0.02224193513393402
+      },
+      "time_tcc": 4.750000000000002,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_096.hdf5",
+      "sha256": "0d70e241760a0ae79f303a567a10ce41f8dbb1dc212e2f81c7eb82909434d7e6",
+      "time_code": 18.59032006179561,
+      "errors": [],
+      "total_mass": 2425.0795846749097,
+      "dense_mass": 123.18277513980865,
+      "energy_quantiles": [
+        0.023121412843465805,
+        0.11531905330717564,
+        0.6691104024648666,
+        1.6329278945922852
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.024068208411335945,
+        "99": 0.03288682922720909,
+        "102": 0.028167398646473885,
+        "109": 0.023121412843465805
+      },
+      "time_tcc": 4.800000000000002,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_097.hdf5",
+      "sha256": "8aaff782273e0c0f9746650b735b004b1ebd1bfd113573213c6dfa8d9642a4fa",
+      "time_code": 18.78396922910598,
+      "errors": [],
+      "total_mass": 2425.090263195336,
+      "dense_mass": 121.66451025009155,
+      "energy_quantiles": [
+        0.023969106376171112,
+        0.11909333750605583,
+        0.667394545674324,
+        1.6367114782333374
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.023969106376171112,
+        "99": 0.03431907296180725,
+        "102": 0.028951629996299744,
+        "109": 0.02421640418469906
+      },
+      "time_tcc": 4.850000000000002,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_098.hdf5",
+      "sha256": "92461ec13649574a2a7a5da037cb7d87d2328f9a0a3db50ad9cf3ab87bce9015",
+      "time_code": 18.977618396416354,
+      "errors": [],
+      "total_mass": 2425.060452707112,
+      "dense_mass": 121.95581805706024,
+      "energy_quantiles": [
+        0.023737527430057526,
+        0.1250465142726898,
+        0.6653264284133911,
+        1.6414751410484314
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.023737527430057526,
+        "99": 0.03531387448310852,
+        "102": 0.029811307787895203,
+        "109": 0.025316661223769188
+      },
+      "time_tcc": 4.900000000000003,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_099.hdf5",
+      "sha256": "4ebd14e90076c4418a35b3f66d1ebb0d36d61d489a03b07de3b45fc46677b9a3",
+      "time_code": 19.171267563726726,
+      "errors": [],
+      "total_mass": 2425.036774817854,
+      "dense_mass": 120.42910838127136,
+      "energy_quantiles": [
+        0.023669276386499405,
+        0.12530683185905217,
+        0.6609248876571655,
+        1.644477903842926
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.023669276386499405,
+        "99": 0.036970678716897964,
+        "102": 0.030561788007616997,
+        "109": 0.026972977444529533
+      },
+      "time_tcc": 4.950000000000003,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1/output/snapshot_100.hdf5",
+      "sha256": "32ed0f8f35233815ee93cca81d00f49d9ac67cc883237c7ee927a7fd967061b5",
+      "time_code": 19.364916731037084,
+      "errors": [],
+      "total_mass": 2425.1325295232236,
+      "dense_mass": 117.93483674526215,
+      "energy_quantiles": [
+        0.023743292316794395,
+        0.12555515345185994,
+        0.6548336863517762,
+        1.6467410922050476
+      ],
+      "nonpositive_energy": 0,
+      "nonfinite_energy": 0,
+      "tracked_ids_energy": {
+        "96": 0.023743292316794395,
+        "99": 0.03905445709824562,
+        "102": 0.03116690181195736,
+        "109": 0.028695009648799896
+      },
+      "time_tcc": 5.0,
+      "independent_relative_errors": [
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "checks": {
+    "cadence": {
+      "expected_count": 101,
+      "actual_count": 101,
+      "tick_code": 3.6069968214327626e-08,
+      "tolerance_code": 7.213997082765754e-08
+    },
+    "initial_nonvelocity_exact": {
+      "Coordinates": true,
+      "Density": true,
+      "InternalEnergy": true,
+      "Masses": true,
+      "ParticleChildIDsNumber": true,
+      "ParticleIDGenerationNumber": true,
+      "ParticleIDs": true,
+      "SmoothingLength": true
+    }
+  },
+  "resources": {
+    "status": "native_finished_pending_checks",
+    "returncode": 0,
+    "stop_reason": null,
+    "observed_wall_seconds": 126.991526203,
+    "peak_child_rss_bytes": 582569984,
+    "median_busy_cpu_workers": 8.000469158684108,
+    "resource_samples": 239,
+    "plan_sha256": "52c8ecbea186266d336652bcd0ad4d465de3b2a0a8a19b13880f126e027998ce"
+  },
+  "plan_sha256": "52c8ecbea186266d336652bcd0ad4d465de3b2a0a8a19b13880f126e027998ce",
+  "script_sha256": "40782c2b16e09d92a0ba1c1f6bfc4c8019ae86426e784cbbc663fb6503c3112e",
+  "physics": {
+    "code": "GIZMO",
+    "variants": [
+      "mfm",
+      "mfv"
+    ],
+    "chi": 100,
+    "mach": 2,
+    "gamma": 1.6666666666666667,
+    "r_cloud": 1,
+    "rho_wind": 1,
+    "p_wind": 1,
+    "density_width": 0.1,
+    "rv_scale": 1.3,
+    "seed": 42,
+    "center": [
+      3,
+      5,
+      5
+    ],
+    "domain_left": [
+      0,
+      0,
+      0
+    ],
+    "domain_right": [
+      20,
+      10,
+      10
+    ],
+    "mass_mode": "volume",
+    "ranks": 8,
+    "t_end_over_tcc": 5,
+    "output_dt_over_tcc": 0.05,
+    "scope": "Within each native GIZMO variant, actual historical tanh versus sharp velocity. Regular equal-volume initial lattice, variable masses, original float32 IC/output precision and fully periodic native boundary recipe. Native kernel-derived density/pressure must be checked separately. No passive material tracer is assumed; particle-ID mass in MFV is not a material-retention diagnostic.",
+    "v_wind": 2.581988897471611,
+    "t_cc": 3.872983346207417
+  },
+  "actual_schedule": {
+    "begin_code": 0,
+    "end_code": 19.364916731037084,
+    "interval_code": 0.19364916731037085,
+    "tcc_code": 3.872983346207417,
+    "end_tcc": 5.0,
+    "interval_tcc": 0.05
+  },
+  "accepted_full_controls": 44,
+  "completed_full_controls_added": 0,
+  "limitations": [
+    "One repaired historical L3 diagnostic, not the sharp/historical pair or finer convergence.",
+    "Velocity and snapshot/restart fields can be staggered in native integration stage.",
+    "Mass allowance is a prospective engineering gate, not a physical accuracy bound.",
+    "All actual fields/times retained; no cooling, tracking or cross-code baseline certification."
+  ]
+}

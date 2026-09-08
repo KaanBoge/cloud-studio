@@ -96,6 +96,14 @@ short outputs exactly. This does not reach the late thermal failure; full MFV
 controls remain excluded. Canonical source, original binaries, floors and old
 datasets remain unchanged.
 
+The [longer repaired historical diagnostic](MFV_ONSET_VALIDATION.md) now reaches
+5 t_cc with101 positive/finite native states, including all22 at/after the
+old failure onset. Total conserved-plus-pending mass accounting passes.
+It took2m07s on eight busy CPU workers, peaking at0.543GiB child RSS. Two
+custom audit/report errors were corrected in separate retained review files;
+the simulation was not rerun. The sharp case still needs validation on the
+same repaired binary before a pair can be accepted; the total remains44.
+
 The [terminal restart diagnosis](MFV_RESTART_DIAGNOSIS.md) now explains the
 final exported zeros: internal double-precision energies are positive but tiny;
 three underflow float32 and one is flushed from a float32 subnormal to zero by

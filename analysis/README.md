@@ -20,6 +20,9 @@ identifies an uninitialized mass-flux timestep and documents a prospective
 isolated repair test. The [isolated builds and nine synthetic tests](sensitivity_20260907/gizmo/MFV_REPAIR_BUILD_VALIDATION.md)
 now pass. The [four-state short native test](sensitivity_20260907/gizmo/MFV_SHORT_VALIDATION.md)
 also passes, but does not yet establish resolution of the late thermal failure.
+The [101-frame repaired historical diagnostic](sensitivity_20260907/gizmo/MFV_ONSET_VALIDATION.md)
+now reaches5 t_cc without the old stored-energy failure. It is not yet a
+validated sharp/historical pair; all raw data and failed audits are retained.
 Gadget-4 L4's native short validation now passes, but its full pair is held
 for storage. The [L4 evidence](sensitivity_20260907/gadget4/L4_VALIDATION.md)
 does not increase the accepted full-control count.

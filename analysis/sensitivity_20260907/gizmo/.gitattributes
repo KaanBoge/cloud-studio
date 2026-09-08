@@ -32,3 +32,17 @@ mfv_short_plan.json -text
 mfv_short_batch.json -text
 mfv_short_validation.json -text
 publish_mfv_short.ps1 -text
+MFV_ONSET_VALIDATION.md -text
+MFV_ONSET_PLAN.md -text
+MFV_ONSET_CLOCK_REVIEW.md -text
+mfv_onset.py -text
+test_mfv_onset.py -text
+review_mfv_onset.py -text
+test_mfv_onset_clock.py -text
+review_mfv_onset_v2.py -text
+test_mfv_onset_clock_v2.py -text
+onset_plan.json -text
+onset_native_result.json -text
+onset_initial_validation.json -text
+onset_clock_review.json -text
+publish_mfv_onset.ps1 -text

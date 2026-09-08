@@ -1,5 +1,8 @@
 # Short native MFV repair test passed
 
+Later update: the [101-frame late-onset diagnostic](MFV_ONSET_VALIDATION.md)
+now passes. The short-test assessment below remains the preceding stage.
+
 8 September 2026. **The repaired native solver now integrates particle mass in
 the short test, while conserving the total mass ledger to rounding precision.**
 This does not yet establish that the late thermal failure is resolved.

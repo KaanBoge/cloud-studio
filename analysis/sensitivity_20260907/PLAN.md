@@ -163,6 +163,16 @@ reference arrays exactly reproducing the retained original and repaired mass
 accounting preserved. A later-onset extension remains separately planned, not
 launched. See [short validation](gizmo/MFV_SHORT_VALIDATION.md).
 
+The separately frozen later-onset historical diagnostic has now completed
+through5 t_cc. All101 native states and terminal conserved-plus-pending mass
+checks pass. The first checker used the wrong clock width; a source-derived
+60-bit audit corrected it without a native rerun. A subsequent report-scalar
+serialization error was corrected separately with a regression test. All
+failed checks remain saved. Next: sharp-IC and within-pair initial validation
+on the same repaired binary, then a guarded paired continuation that can
+reuse the completed historical case if its recipe is identical. No new full
+pair is accepted yet. See [the longer evidence](gizmo/MFV_ONSET_VALIDATION.md).
+
 MFM L4 subsequently passed its own two short evolved controls and four tiny
 velocity-timing diagnostics: all16 native outputs independently checked, with
 unchanged nonvelocity initial fields. Nine L4 unit tests pass. Its measured

@@ -87,6 +87,12 @@ actual diagnostic outputs. Conserved mass responds while total mass accounting
 is preserved to rounding precision. This is not a full control or validation
 of the later thermal evolution; original data and canonical files are unchanged.
 
+The [longer repaired MFV diagnostic](gizmo/MFV_ONSET_VALIDATION.md) now passes
+through5 t_cc with101 native states and no repeat of the old stored-energy
+failure in this historical-law L3 case. It took2m07s using eight busy CPU
+workers. All raw data is retained. Sharp-law validation on the same repaired
+binary remains before accepting a pair; the full-control total stays44.
+
 The first Enzo full
 attempt exposed an output-setting error: dtRestartDump is a wall-clock exit
 trigger, not a physical-time snapshot interval. Its 21 saved outputs remain

@@ -1,0 +1,10 @@
+{
+  "status": "native_finished_pending_checks",
+  "returncode": 0,
+  "stop_reason": null,
+  "observed_wall_seconds": 126.991526203,
+  "peak_child_rss_bytes": 582569984,
+  "median_busy_cpu_workers": 8.000469158684108,
+  "resource_samples": 239,
+  "plan_sha256": "52c8ecbea186266d336652bcd0ad4d465de3b2a0a8a19b13880f126e027998ce"
+}
