@@ -2,10 +2,11 @@
 
 ## Update: 8 September 2026
 
-Forty-two full controls are now validated and analyzed: the eight pilot runs below, six
+Forty-four full controls are now validated and analyzed: the eight pilot runs below, six
 native Athena 4.2 runs at L3/L4/L5, four Enzo runs at L3/L4, and four Enzo-E runs
 at L3/L4, plus four each for RAMSES, FLASH 4.8, Flash-X and Arepo at L3/L4,
-and four GIZMO MFM controls at L3/L4. Each Athena 4.2 run has 101 distinct native
+four GIZMO MFM controls at L3/L4, and two Gadget-4 controls at L3.
+Each Athena 4.2 run has 101 distinct native
 snapshots through 5 t_cc. Its initial density, tracer, coordinates and volumes
 match exactly within each pair at native VTK precision. Only velocity changes.
 
@@ -66,7 +67,7 @@ CPU workers, peaking at 1.636 GiB solver-child RSS. These two coarse levels
 do not establish convergence or a universal historical-reuse decision. Both MFV L3
 controls also reached 101 outputs, but zero stored internal energy first
 appears at t=3.95 t_cc in each. They are retained as failure evidence and
-excluded from the 42 validated controls. No floor or output was changed.
+excluded from the 44 validated controls. No floor or output was changed.
 See [GIZMO results and failure audit](gizmo/README.md).
 
 The first Enzo full
@@ -165,11 +166,20 @@ A separate timestep-scaling test explains native t=0 velocity staggering;
 those velocities must not be interpreted as simultaneous with the header time.
 MFM L4 passed its own per-level native/timing tests and all 202 full-state
 checks. Its completed L3/L4 overlay uses every native time and six tested
-analysis checks; the study total is now 42. Its whole-pair launch budget was
+analysis checks; the study total is now 44 including Gadget-4 L3. Its whole-pair launch budget was
 10.25 GiB plus 10 GiB reserve on both filesystems. MFV requires diagnosis,
 not silent floor changes or blanket retries.
 See [GIZMO validation and remaining work](gizmo/README.md).
-Gadget-4 and Gasoline remain unprepared.
+Gadget-4 L3 is complete and analyzed, with 101 native times per case and all
+202 states independently checked. Peak dense-mass separation is 6.95% of
+fixed initial dense mass; solver times were 75.22/75.73 seconds on eight
+busy CPU workers, peaking at 0.407 GiB solver-child RSS.
+Its original SPH initialization produces pressure peaks 3.9003 times nominal,
+identical in both laws, so it is not a uniform-pressure grid-code baseline.
+Its native scheduler rounds requested output times both early and late;
+every saved time is retained and verified against that exact native rule.
+See [Gadget-4 results and native-code caveats](gadget4/README.md).
+Gasoline remains unprepared.
 A 15-minute task follow-up is enabled to inspect progress and
 advance safe pending work. The old blanket replacement queue remains inactive.
 Cooling, tracking and paper-ready retention checks remain separate work.

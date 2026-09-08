@@ -1,0 +1,19 @@
+{
+  "code": "Gadget-4 SPH",
+  "chi": 100,
+  "mach": 2,
+  "gamma": 1.6666666666666667,
+  "rho_wind": 1,
+  "p_wind": 1,
+  "r_cloud": 1,
+  "density_width": 0.1,
+  "rv_scale": 1.3,
+  "center": [3, 5, 5],
+  "box": [20, 10, 10],
+  "boundary": "fully periodic",
+  "sampling": "regular cell-centered equal-volume lattice with variable masses",
+  "cloud_id_start": 1000000000,
+  "ranks": 8,
+  "native_variant": "Gadget4_3d_mixed_hfix; existing mean-mass and periodic-box smoothing-length seed patch retained in both laws",
+  "scope": "Within-code velocity sensitivity, not a matched grid inflow/outflow comparison. No cooling, magnetic field, gravity or frame tracking."
+}

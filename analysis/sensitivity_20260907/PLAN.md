@@ -39,7 +39,8 @@ native outputs through 5 t_cc plus unchanged restart settings. No raw file is
 deleted or thinned, and the live viewer is not relabeled with these experiments.
 
 The remaining unprepared code families need historical-source and native-IC checks
-before their paired launchers are enabled: Gadget-4 and Gasoline. GIZMO's L3
+before their paired launchers are enabled: Gasoline. Gadget-4 L3 is now
+complete and independently checked; L4 still needs its own native checks. GIZMO's L3
 setup and separate MFM L4 checks are validated; MFV's later L3 energy failure
 remains a separate blocker. Particle sampling
 and random seeds must be identical within a pair. This is pending work, not an
@@ -66,7 +67,7 @@ with 101 actual times each, exact paired initial density/tracer/grid and
 pressure agreement to roundoff. All 404 outputs pass checks; its extra
 unsorted-record aggregation agrees within 8.9e-15 but shares the native decoder.
 Native timestep-crossing times are preserved. L5 is held by the 172.49 GiB
-whole-pair retention budget plus reserve. There are now 42 analyzed controls.
+whole-pair retention budget plus reserve. There are now 44 analyzed controls.
 FLASH 4.8's four L3/L4 controls are complete with 101 full-state times each;
 all 404 checkpoint mass sums pass independent yt checks. Its native setup
 has no tracer, so retention is unavailable. The unchanged native plotfiles are
@@ -93,8 +94,14 @@ All four Arepo L3/L4 controls and their 404 native times are now complete and
 analyzed, with independent yt mass-sum agreement within 6.2e-16. Peak curve
 separation is 2.81% at L3 and 2.70% at L4. The full native files remain saved.
 The L5 pair needs 124.02 GiB plus reserve and remains separately guarded.
-Next safe work is completion/analysis of GIZMO MFM L4, plus preparation of Gadget-4 and
-Gasoline. No higher-level queue is claimed before per-level initial-field,
+GIZMO MFM L4 is complete and analyzed. Gadget-4's native L3 preparation and
+independent checks now pass, and its full L3 pair is complete and analyzed,
+with 101 native times per case and 6.95% peak curve separation. Its SPH
+initial pressure peaks at 3.9003 times nominal, identically
+within the pair: this is not a uniform-pressure grid-code baseline. The existing
+native smoothing-length patch is retained, not introduced as another change.
+See [Gadget-4 scope and validation](gadget4/README.md). Gasoline remains unprepared.
+No higher-level queue is claimed before per-level initial-field,
 timing and identical within-pair particle sampling checks are verified.
 Four GIZMO L3 smokes now pass independent mass checks. Eight small native tests
 confirmed that their t=0 velocities are staggered after the first half-step
@@ -128,7 +135,7 @@ times each, all 202 states independently checked. The new L3/L4 analysis
 rechecked all 404 native mass sums and hashes, retains fixed per-level initial
 denominators, and overlays actual native times. Peak separation is 3.979% at
 L3 and 0.955% at L4. Six analysis tests pass. These two controls are included
-in the 42 accepted total; MFV failures remain excluded. No native outputs
+in the 44 accepted total; MFV failures remain excluded. No native outputs
 were deleted, retimed, substituted or changed.
 
 ## Validation and analysis

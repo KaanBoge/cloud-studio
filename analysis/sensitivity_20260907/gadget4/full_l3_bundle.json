@@ -1,0 +1,54 @@
+{
+  "status": "tested_for_full_L3_pair",
+  "files": {
+    "test_full_l3.py": "0e07feea2c1aaa9d5f8f3879da7a83e6a60e263cdd8487e8d402609e216d001e",
+    "verify_gadget.py": "ba0ec9324039140804647e436b9142759afd64acc45a0a3f02257e7aa7edf198",
+    "test_verify_gadget.py": "b95f2a4f01e28e688205c8dd5f3c2d67761448f2d49a67a5488ec9d785591f84",
+    "run_full_l3.py": "fcc3d0cd81436da96ff6d969eed8988cc44b06a726acd618b675b09a745c022b"
+  },
+  "tests": [
+    {
+      "script": "test_gadget_controls.py",
+      "sha256": "ac7cacabf893ccb9e4fce2f7f30541eaa99b95677e94dd5e59dfc7a7cb3a1d44",
+      "returncode": 0,
+      "output": ".......\n----------------------------------------------------------------------\nRan 7 tests in 0.030s\n\nOK\n"
+    },
+    {
+      "script": "test_verify_gadget.py",
+      "sha256": "b95f2a4f01e28e688205c8dd5f3c2d67761448f2d49a67a5488ec9d785591f84",
+      "returncode": 0,
+      "output": "....\n----------------------------------------------------------------------\nRan 4 tests in 0.000s\n\nOK\n"
+    },
+    {
+      "script": "test_full_l3.py",
+      "sha256": "0e07feea2c1aaa9d5f8f3879da7a83e6a60e263cdd8487e8d402609e216d001e",
+      "returncode": 0,
+      "output": ".......\n----------------------------------------------------------------------\nRan 7 tests in 0.001s\n\nOK\n"
+    }
+  ],
+  "native_build_sha256": "61fb3bb2ea56f6fa96347ace74d795987e4bdff7cb3abc98ceda5cecc93bf041",
+  "verification_sha256": "7216ae49f6d4a584dda65cc94050725573b5f94329caf8fdd7797e5cb894dde7",
+  "budget": {
+    "native_snapshot_bytes": 3159560,
+    "eight_rank_restart_bytes": 14453866,
+    "ic_bytes": 4724840,
+    "per_case_bytes": 774139361,
+    "pair_bytes": 1548278722,
+    "formula": "104 snapshots + 3 measured restart sets + IC +256MiB logs, then20% overall margin. Separate10GiB reserve on guest and Windows backing volume."
+  },
+  "capacity_at_freeze": {
+    "path": "/home/kaan/sensitivity_20260907/gadget4",
+    "filesystem_free_bytes": 18982264832,
+    "filesystem_total_bytes": 1081101176832,
+    "windows_backing_volume": {
+      "distribution": "Ubuntu",
+      "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+      "drive": "C:",
+      "free_bytes": 37422706688,
+      "total_bytes": 1999283154944
+    },
+    "policy": "Conservative growth budget; allocated but reusable VHDX blocks are not credited.",
+    "effective_free_bytes": 18982264832
+  },
+  "caveat": "Within existing Gadget-4 SPH initialization only: pressure peaks3.90x nominal in both laws. Not a uniform-pressure grid-code baseline. No smoothing-length patch or numerical setting changed."
+}

@@ -1,0 +1,61 @@
+{
+  "status": "pinned_not_evolved_validated",
+  "compiled_anything": false,
+  "original_hsml_patch_retained": true,
+  "native_git_commit": "2046797b578a3be27433a23a9ba912715a829626",
+  "source_files_unchanged": {
+    "/home/kaan/codes/gadget4/Gadget4_3d_mixed_hfix": "5ab857aba8cf4213fbce701ae8eaa6c449f5de43c0b9ab61722e962d88dca8d3",
+    "/home/kaan/codes/gadget4/Config_3d_mixed.sh": "b7647709518b7eea5de63372b4eb81cd879c9e0c32134f0a7062a8e44658a257",
+    "/home/kaan/codes/gadget4/ics/make_g4_cloudwind.py": "db8ba52b0d2bca3c6c5a7fe99e43b7d379f2f48772b27dbaf3ce96721666ac6d",
+    "/mnt/c/Users/kaanb/CloudCrushing/audit_20260907/before/home/kaan/codes/gadget4/ics/make_g4_cloudwind.py": "1765360efb2ccbad22ee72ceb505512d40ab09eb53b2dbba12fca8c681caea77",
+    "/mnt/c/Users/kaanb/CloudCrushing/sensitivity_20260907/gadget4/experiment.json": "2927619117202ecea7d44acbd1648b73a6f1e8fb592bd20f57319acc125d9e29",
+    "/mnt/c/Users/kaanb/CloudCrushing/sensitivity_20260907/gadget4/gadget_controls.py": "fc3d8e79f2ed0f1c8aafbaea57d4c01286f96a8a891261330428c26e9b37de58",
+    "/mnt/c/Users/kaanb/CloudCrushing/sensitivity_20260907/gadget4/test_gadget_controls.py": "ac7cacabf893ccb9e4fce2f7f30541eaa99b95677e94dd5e59dfc7a7cb3a1d44",
+    "/home/kaan/codes/gadget4/src/main/init.cc": "2efc1a7e295c044ffe59a70ddf04ed20dd6bc802e338364fe2a2eec63a8b1057",
+    "/home/kaan/codes/gadget4/src/main/init.cc.orig_prehsmlclamp": "81f19bea466ca0fdd5d04e0f83af491a490eca29e1bbcd4e8f86c28f954f1080",
+    "/home/kaan/codes/gadget4/src/main/run.cc": "a3caa32050bdc7cd73b130318c70a1acbfb6fed08b7c11d5ae7f2a50db32b49a",
+    "/home/kaan/codes/gadget4/src/io/snap_io.cc": "a2efbc54ace0d7fc702f0a425748d6ab1a7c3f3f957b004881cfcc65664287fc",
+    "/home/kaan/codes/gadget4/src/io/snap_io.h": "3ba24675c70bddb7d06d4c4e0b91fd3a845debef20a94931374d26ec62611a36",
+    "/home/kaan/codes/gadget4/src/data/constants.h": "20305d808f2ffad188297385ecddadc74a5867690aab93605a219e98abe7921c",
+    "/home/kaan/codes/gadget4/build_hfix/gadgetconfig.h": "d6df1f4a9ba9c89d232b7ff4b1fd5b5531dd165150b0e3f95e264638cecaec5c",
+    "/home/kaan/codes/gadget4/build_hfix/compiler-command-line-args.h": "af856fa235d0de646002456704cf98eb3bd3919ffae0bec347775f75237ac228",
+    "/home/kaan/codes/gadget4/build_hfix/version.cc": "ae1952e3daa6989575b45b13a4b01e12b3b606b58e8ba5e529bff60c7ed1f86a",
+    "/home/kaan/codes/gadget4/runs/G4_3D_L3_chi100/smoke.log": "f3feedf78acabe78538e12683c6a04a20da5b62c5ce2e55b25379f834675bfd6",
+    "/home/kaan/codes/gadget4/runs/G4_3D_L3_chi100/param.txt": "d8cbe52a487721f1d002f85250df6d83254200365d89c6dc0856a2517112ab4b",
+    "/home/kaan/codes/gadget4/runs/G4_3D_L4_chi100/param.txt": "7d4fae2eedbeae4c3217edbff5b6c24f30306843c1c46127740b4f6e18420851"
+  },
+  "pinned_files": {
+    "Gadget4_pair": "5ab857aba8cf4213fbce701ae8eaa6c449f5de43c0b9ab61722e962d88dca8d3",
+    "Config.sh": "b7647709518b7eea5de63372b4eb81cd879c9e0c32134f0a7062a8e44658a257",
+    "generator_sharp.py": "db8ba52b0d2bca3c6c5a7fe99e43b7d379f2f48772b27dbaf3ce96721666ac6d",
+    "generator_historical.py": "1765360efb2ccbad22ee72ceb505512d40ab09eb53b2dbba12fca8c681caea77",
+    "experiment.json": "2927619117202ecea7d44acbd1648b73a6f1e8fb592bd20f57319acc125d9e29",
+    "gadget_controls.py": "fc3d8e79f2ed0f1c8aafbaea57d4c01286f96a8a891261330428c26e9b37de58",
+    "test_gadget_controls.py": "ac7cacabf893ccb9e4fce2f7f30541eaa99b95677e94dd5e59dfc7a7cb3a1d44",
+    "native_init.cc": "2efc1a7e295c044ffe59a70ddf04ed20dd6bc802e338364fe2a2eec63a8b1057",
+    "native_init_original.cc": "81f19bea466ca0fdd5d04e0f83af491a490eca29e1bbcd4e8f86c28f954f1080",
+    "native_run.cc": "a3caa32050bdc7cd73b130318c70a1acbfb6fed08b7c11d5ae7f2a50db32b49a",
+    "native_snap_io.cc": "a2efbc54ace0d7fc702f0a425748d6ab1a7c3f3f957b004881cfcc65664287fc",
+    "native_snap_io.h": "3ba24675c70bddb7d06d4c4e0b91fd3a845debef20a94931374d26ec62611a36",
+    "native_constants.h": "20305d808f2ffad188297385ecddadc74a5867690aab93605a219e98abe7921c",
+    "native_config.h": "d6df1f4a9ba9c89d232b7ff4b1fd5b5531dd165150b0e3f95e264638cecaec5c",
+    "native_compiler.h": "af856fa235d0de646002456704cf98eb3bd3919ffae0bec347775f75237ac228",
+    "native_version.cc": "ae1952e3daa6989575b45b13a4b01e12b3b606b58e8ba5e529bff60c7ed1f86a",
+    "historical_smoke.log": "f3feedf78acabe78538e12683c6a04a20da5b62c5ce2e55b25379f834675bfd6",
+    "params_L3.txt": "d8cbe52a487721f1d002f85250df6d83254200365d89c6dc0856a2517112ab4b",
+    "params_L4.txt": "7d4fae2eedbeae4c3217edbff5b6c24f30306843c1c46127740b4f6e18420851"
+  },
+  "expected_config": [
+    "PERIODIC",
+    "NTYPES=2",
+    "LONG_Y_BITS=1",
+    "LONG_Z_BITS=1",
+    "DOUBLEPRECISION=2",
+    "POSITIONS_IN_32BIT",
+    "OUTPUT_PRESSURE"
+  ],
+  "tests": {
+    "returncode": 0,
+    "output": ".......\n----------------------------------------------------------------------\nRan 7 tests in 0.025s\n\nOK\n"
+  }
+}

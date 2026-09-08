@@ -1,0 +1,528 @@
+{
+  "status": "passed_exact_native_schedule",
+  "checks": {
+    "native_snapshots": 101,
+    "distinct_header_times": 101,
+    "scheduled_count": 101,
+    "integer_timebase": 536870912,
+    "integer_time_unit_code": 3.6069968214327626e-08,
+    "native_output_block_code": 0.037822102990306805,
+    "exact_scheduler_max_absolute_error": 0.0,
+    "roundoff_bound": 3.4399002279594065e-14,
+    "policy": "Native run.cc rounds each requested time to nearest power-of-two MaxSizeTimestep block, possibly early or late. All native headers unchanged. Exact extra/repeated states require review, never silent filtering."
+  },
+  "native_run_source_sha256": "a3caa32050bdc7cd73b130318c70a1acbfb6fed08b7c11d5ae7f2a50db32b49a",
+  "native_constants_sha256": "20305d808f2ffad188297385ecddadc74a5867690aab93605a219e98abe7921c",
+  "native_config_sha256": "d6df1f4a9ba9c89d232b7ff4b1fd5b5531dd165150b0e3f95e264638cecaec5c",
+  "corrected_checker_sha256": "16366499d38f2d5690b86d5df01a5d797493f87651d2e19d687d1e9a65075669",
+  "rows": [
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_000.hdf5",
+      "time_code": 0.0,
+      "sha256": "9fba71073cc75883d15dc26027784e9939adb1436765937ce06599ff631aef38"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_001.hdf5",
+      "time_code": 0.18911051495153403,
+      "sha256": "f0cc1d9a2012ac1c08f2a2ac4ba2e9d045d76b395f424ff98991833792d27ac4"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_002.hdf5",
+      "time_code": 0.37822102990306805,
+      "sha256": "fd5bdaf53b3c00714a110a385a38d3a126a7541b1a9e85a41d04b3af2468514c"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_003.hdf5",
+      "time_code": 0.5673315448546021,
+      "sha256": "dc4c2b9ea6812a516e0836debbea10179e5bd4347424edaea993fc6e7426d287"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_004.hdf5",
+      "time_code": 0.7564420598061361,
+      "sha256": "d11832b32a64e0790ade138c4ae2c1efb2d5b84cfe375685b63fa2341914d6af"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_005.hdf5",
+      "time_code": 0.9833746777479769,
+      "sha256": "9f0c21ad03ea62e9636fc7d43ecbdf8289630f5e678447f9509503df59263f4f"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_006.hdf5",
+      "time_code": 1.172485192699511,
+      "sha256": "72b91eb7204ffd7ed95f8101e1c607ea5ce9ace5cf488cf33b22a7777b6d7174"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_007.hdf5",
+      "time_code": 1.361595707651045,
+      "sha256": "6dc5e01729f41493e793d912c55953fbafa9f2cba398aba8542cb4326d675f23"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_008.hdf5",
+      "time_code": 1.550706222602579,
+      "sha256": "756f4387074d534aa52c2d1048ecb56766d21160cb17d32469ff26dc3d238f38"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_009.hdf5",
+      "time_code": 1.7398167375541131,
+      "sha256": "a4b7f5a39ef25b3a92be8554dc2191fb6816f666af2fd1bce99409f34b177f66"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_010.hdf5",
+      "time_code": 1.9289272525056471,
+      "sha256": "2ddbe04277befd2abb8d8c237b2caa431de205baa9508af22b671cec6ce25199"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_011.hdf5",
+      "time_code": 2.118037767457181,
+      "sha256": "7b425252905a250a8ede0805ff361ccfddcfbc15a6c1ef894b39063c6f46f5e8"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_012.hdf5",
+      "time_code": 2.3071482824087153,
+      "sha256": "97509fcf2f711a0469825d4fabe56ffc2361436aba2bbf69e4840616233ea48f"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_013.hdf5",
+      "time_code": 2.5340809003505558,
+      "sha256": "fa170c78b76223c4f072d1cee2e1e76b0fbe7cae307a85b54e52afc5653c9556"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_014.hdf5",
+      "time_code": 2.72319141530209,
+      "sha256": "a2e81c89374c5f5921582add831fe7008a4da4db0814b078e0a479827cc0c59d"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_015.hdf5",
+      "time_code": 2.912301930253624,
+      "sha256": "c49525533398bf4f880694b31ec2c63df369659d3bb2152965679ef551b0b659"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_016.hdf5",
+      "time_code": 3.101412445205158,
+      "sha256": "6bff9c2032659b708bd7dee74284de1610737b57f4069d2d3dd57fc0b16f044b"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_017.hdf5",
+      "time_code": 3.290522960156692,
+      "sha256": "080510d1755f052e576c361bc5c631043f12ec2afd6640d3a2e65088799534a6"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_018.hdf5",
+      "time_code": 3.4796334751082263,
+      "sha256": "afbe7b879864c4f817fd7b77682e5b3446d7e151bbbe07f09f0ceaf8ce9bb33e"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_019.hdf5",
+      "time_code": 3.66874399005976,
+      "sha256": "1b52c67ab6c3be9d949101800af5f5bab98be703a20460d664032dea175e0e8a"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_020.hdf5",
+      "time_code": 3.8578545050112942,
+      "sha256": "442408f64e6480ad1236149c23a5fc46dbdb2abd2eb9fd25d74d2697ae8fe03b"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_021.hdf5",
+      "time_code": 4.084787122953135,
+      "sha256": "b4266ec396dece8b0ead40ff09bad4052277b20e37fac90092b379e0e7d47ef0"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_022.hdf5",
+      "time_code": 4.273897637904669,
+      "sha256": "cc25d9159dd78f1f61e3c40e16f02569b777f2bd25400a7fd7cf40a78d65f496"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_023.hdf5",
+      "time_code": 4.463008152856203,
+      "sha256": "065d15b6fe5bfd369c89e342dc55c96cd23cfd7956a215f36c4167627a30d9e4"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_024.hdf5",
+      "time_code": 4.652118667807737,
+      "sha256": "42298767e39c182e55eb94dbde757409b82497578e9089a1bb793a5a15f01f06"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_025.hdf5",
+      "time_code": 4.841229182759271,
+      "sha256": "49d1484557f5a87a25f513ead3ad49f1f690519a11aacbf97305841ebbaa2033"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_026.hdf5",
+      "time_code": 5.030339697710805,
+      "sha256": "6615c7c8f2f199d78ab100ee1d1cdf80b6e6f726eea95cfe3a1fb1e0a01d16c9"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_027.hdf5",
+      "time_code": 5.219450212662339,
+      "sha256": "0f001cd00bc62e91297c63825e37bc60693a2e69b4a0e9b02d8d01e07a36b182"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_028.hdf5",
+      "time_code": 5.408560727613873,
+      "sha256": "0a1e868be268cda0a5cb08be4501175e8754141eefe28019efdae56964ca24fb"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_029.hdf5",
+      "time_code": 5.597671242565407,
+      "sha256": "f531bbae2388316563d90f05f0692f4d90c3d79e3ca2ac44c682180e1da6bdb2"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_030.hdf5",
+      "time_code": 5.824603860507248,
+      "sha256": "6d22f0c57c3c8469ae494e3156bfeec93c4a954f57562f7d3a07520d14fad2db"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_031.hdf5",
+      "time_code": 6.013714375458782,
+      "sha256": "821c7680f7bae4b008808e7332c6f91a4b8b1f9a40709fdc8aa52b7697c14732"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_032.hdf5",
+      "time_code": 6.202824890410316,
+      "sha256": "73cb5db62e3c7e2061871da1effe8477b551689434600d793c8f83b852ed5479"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_033.hdf5",
+      "time_code": 6.39193540536185,
+      "sha256": "a7b99641ef1f6149a9e87aef4e90d102d93df4c84b72b06bf0bbc4e431ed6bd9"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_034.hdf5",
+      "time_code": 6.581045920313384,
+      "sha256": "c64b28d7917362aba35f48554c5c8473e49dd8cd2368604dcd2531a2e7ce857e"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_035.hdf5",
+      "time_code": 6.770156435264918,
+      "sha256": "0bc5919d24d7c0c77efbf9ce256f16539bd5e7a920802019e52aeaa949e7000c"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_036.hdf5",
+      "time_code": 6.959266950216453,
+      "sha256": "b8f0570e6820828f3ccead16d8fa95e9022cee67c7e0aa5eebbe112dd59f7097"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_037.hdf5",
+      "time_code": 7.148377465167986,
+      "sha256": "0ef570548b235b8ba18bc2b882fca376e677a7b0b981540b11190751033d6595"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_038.hdf5",
+      "time_code": 7.375310083109827,
+      "sha256": "a424e5d1ad3c6d2b2228497d67894d9b3c98dcb87f5217b4b0497aefad71467c"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_039.hdf5",
+      "time_code": 7.564420598061361,
+      "sha256": "8cad1bcc184ddfd092089ead7b84c02cc92bdd26de03c5756c71d74a3fe07d33"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_040.hdf5",
+      "time_code": 7.753531113012895,
+      "sha256": "52075db10ff9aefc90d65e902e3c438c78531ae11963151d48723ce84790a6e6"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_041.hdf5",
+      "time_code": 7.942641627964429,
+      "sha256": "9151677b203fa59663f2e0bb1f2e8915ed24c7b3f1acb2e55516cc09ac893636"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_042.hdf5",
+      "time_code": 8.131752142915962,
+      "sha256": "a020e1261858e76547d871d228c2f578de863e9252908155a2337fe9341ca2b1"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_043.hdf5",
+      "time_code": 8.320862657867497,
+      "sha256": "a4947086dc4ecda5648ca7c04784e340e427ef223717748971fad69db3ed8f30"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_044.hdf5",
+      "time_code": 8.50997317281903,
+      "sha256": "4854a6ec86fe4a520810a1b8e67bb5ae531915eb02dbabe048f85ee58767cb82"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_045.hdf5",
+      "time_code": 8.699083687770566,
+      "sha256": "eeec2389df6ef7494b0541341c90800b50a2a819220dd9e6e31bc9fc82d4ecfb"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_046.hdf5",
+      "time_code": 8.926016305712405,
+      "sha256": "7d75812804e37de2df6c4b961576d7e063387f625c1b1feb24282e075078afcb"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_047.hdf5",
+      "time_code": 9.11512682066394,
+      "sha256": "d56ce2b3a04a4913af9fd07a3171c340e75a3312c9f3bc177b46cb468dc58e94"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_048.hdf5",
+      "time_code": 9.304237335615474,
+      "sha256": "c84ebcc4784c606f46a1a3821c3454072fbd740d834b338d01dbeccab6c1f390"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_049.hdf5",
+      "time_code": 9.493347850567009,
+      "sha256": "22f763460f3230ee99a25580db895886ed98f0f66d636d23058219c0fa693152"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_050.hdf5",
+      "time_code": 9.682458365518542,
+      "sha256": "8c1639bb3d64e7dec9cc53ab2d1b71a4749b458a9f26bdc805648c181faa8572"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_051.hdf5",
+      "time_code": 9.871568880470075,
+      "sha256": "a23a7041e333cc0e6b652f0241c3adaff5918470f528c4a85d554dd182e209ae"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_052.hdf5",
+      "time_code": 10.06067939542161,
+      "sha256": "92ac179841c9fdf8589e8cb5873009a1878d7b11aaf43ce3be4967eb74f52c5f"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_053.hdf5",
+      "time_code": 10.249789910373144,
+      "sha256": "ac46afc8eb83bd449f2e617a34b0ba395bcaaaf97fff030867d8bcc78d9ffcf9"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_054.hdf5",
+      "time_code": 10.438900425324679,
+      "sha256": "9738d6b22ba51262b201a63b15668e58d672620e419bc4fc30a7c6c9bd43212f"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_055.hdf5",
+      "time_code": 10.665833043266518,
+      "sha256": "de401a0dc41bd160057fd8609ba35655a44eaa2890e84a637f3b8133425a6c59"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_056.hdf5",
+      "time_code": 10.854943558218054,
+      "sha256": "179f72c3edb4479cd286b02872892544d99eef069ff45aa085a6e3768daef39f"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_057.hdf5",
+      "time_code": 11.044054073169587,
+      "sha256": "369d5c87fb80c60fed45c2682868019f14f5e9e49683ada46d8803cf96cdd888"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_058.hdf5",
+      "time_code": 11.233164588121122,
+      "sha256": "23442bf1d499e0bd848bfa47df703afd443d96af1e6e4736b46c1eb7371435f8"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_059.hdf5",
+      "time_code": 11.422275103072655,
+      "sha256": "77bf341f3dcc76880bd1d2e9f92ee8b5891f2e55ba2a751dafaa7a68f28cdd48"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_060.hdf5",
+      "time_code": 11.611385618024189,
+      "sha256": "05ebed3a03a0ba0f0215f83175a339e72d141a7931c60f8342c8f6426701b510"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_061.hdf5",
+      "time_code": 11.800496132975724,
+      "sha256": "ca4125a429c83c988cf4bb1c6d66929c806b2d6614378f4b8c449b8adccf5f65"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_062.hdf5",
+      "time_code": 11.989606647927257,
+      "sha256": "e94b8c77ee622e9c43ba550312ec5e14e26ca298040ef4aaae03c4bc72940d43"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_063.hdf5",
+      "time_code": 12.216539265869098,
+      "sha256": "e0336ada3e48cce098e6e21f182478a35dc5572ae644bfdb2e59b7c2c2590426"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_064.hdf5",
+      "time_code": 12.405649780820632,
+      "sha256": "d55cfa3e5bb14abd042b52b30608cfc579e6488199dfbe737e3f46267f8c7042"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_065.hdf5",
+      "time_code": 12.594760295772167,
+      "sha256": "68c62461ea646244eed75147da0a9bce17cae325a9491c869d2da9c55929f856"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_066.hdf5",
+      "time_code": 12.7838708107237,
+      "sha256": "aaa5f9e53434ceff230612d31d1e87e0a137cbe3e7c70936c7a5b46281af7f90"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_067.hdf5",
+      "time_code": 12.972981325675233,
+      "sha256": "699a965e09e95a8cf4ff9a4c6321fa3ced4fd20793321efde6c99528a4351041"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_068.hdf5",
+      "time_code": 13.162091840626768,
+      "sha256": "28052faf9e77a870f5bb925059a9ee6ad4bebe8956d4de1fe7bcfb78119e31a1"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_069.hdf5",
+      "time_code": 13.351202355578302,
+      "sha256": "baa3c6324f70910d512b65236f4ef39dfe7720e0ddab679fa787b05235c0da52"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_070.hdf5",
+      "time_code": 13.540312870529837,
+      "sha256": "070754b360ff8af35dfc0dc93af8c06c126018d7325d410d497b1426412f6d60"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_071.hdf5",
+      "time_code": 13.767245488471676,
+      "sha256": "2f0ec747c988b236f893b61449d205c07d4d2844cacbe720d16a0983f5794066"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_072.hdf5",
+      "time_code": 13.956356003423211,
+      "sha256": "5579e9f1d7abf3f86648b6591bf8674117ff3013af321db7b496c2067fa8cb3c"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_073.hdf5",
+      "time_code": 14.145466518374745,
+      "sha256": "aa69ba8f8b60a7a66a2d45705f2c7daddac81b706dada3c8f8fbc1a2b2ea286a"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_074.hdf5",
+      "time_code": 14.33457703332628,
+      "sha256": "76de0f3a132ce30bee876075448438bd1388430ac3490c3af48df8d981aa5733"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_075.hdf5",
+      "time_code": 14.523687548277813,
+      "sha256": "efd23eb2ca8bdb207645478689bc17dd89b8fe5655ddf0f64f0148ca5eec557d"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_076.hdf5",
+      "time_code": 14.712798063229346,
+      "sha256": "d2641a24d6dc391b59321a2b1158153054d5fd5384bfe49ef9468c69a6a34da6"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_077.hdf5",
+      "time_code": 14.901908578180882,
+      "sha256": "2176c9ac6f2a42b2b7f872560f3d9966625bd7d91ee3eec9b6fd809aa570c210"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_078.hdf5",
+      "time_code": 15.091019093132415,
+      "sha256": "a7f0d6c828b0cf0cbd1c8641b8e8935ea4909339ac41b84b0e2aacdf2bde7906"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_079.hdf5",
+      "time_code": 15.28012960808395,
+      "sha256": "c2443e5ba421162488db25ec17cab0a93f53e01c1c925c631fdb33b31443642d"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_080.hdf5",
+      "time_code": 15.50706222602579,
+      "sha256": "121fee37b4a1e49be0fd37070f2c689afc5d9716b8604d283a6917e403d193b6"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_081.hdf5",
+      "time_code": 15.696172740977325,
+      "sha256": "22e7f39433e2c6ecfe108437a0a687b82209f434683cf2f79e44b378f7fabece"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_082.hdf5",
+      "time_code": 15.885283255928858,
+      "sha256": "f5a3c6416de145001881dd9e0d7bb144f5613fdb1d4589ed84f58effbeeb60ca"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_083.hdf5",
+      "time_code": 16.07439377088039,
+      "sha256": "b29caa1d9c99a63e76cc37c4d6dc568ce330c3a888736673584645cec7e9e032"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_084.hdf5",
+      "time_code": 16.263504285831925,
+      "sha256": "7152457ba1c3b3462a6a96c969968c47f3dadb9413625a9eb57b791449951dbc"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_085.hdf5",
+      "time_code": 16.45261480078346,
+      "sha256": "042bec85f1b5430aa24e4bf0e1507244c62ca52ae4ca378b33a96dad9073c7af"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_086.hdf5",
+      "time_code": 16.641725315734995,
+      "sha256": "14e72837ba56903e1bb69d70a4549fadb6eda5bbd0219f9da4114fc0b8923ccb"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_087.hdf5",
+      "time_code": 16.830835830686528,
+      "sha256": "e5ea7facd3a31ebfab07318c0c2b720897de2f204f956a1ae3021a1c8a7cec55"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_088.hdf5",
+      "time_code": 17.05776844862837,
+      "sha256": "5fc179b2e25ad3f312fd774a62ab14d045183f3fca847b6021cd2bca6a34ac0e"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_089.hdf5",
+      "time_code": 17.246878963579903,
+      "sha256": "ae646c9cf4e161a65a684b6bee11f53467647521a987a2d99af35cfe2631dcf0"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_090.hdf5",
+      "time_code": 17.435989478531436,
+      "sha256": "40120effc444faf6327b12753df71184992748613d55377c851faa66fedae910"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_091.hdf5",
+      "time_code": 17.625099993482973,
+      "sha256": "cc6a0f1e14d9a1819d8370edfd62dddaa4d14ba68f5a8a0df01242ccfff1e6db"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_092.hdf5",
+      "time_code": 17.814210508434506,
+      "sha256": "2ea1b28e0392e1d8ab9d823b07f99b610c74bfd4c8009bc6cf87c502401d80c7"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_093.hdf5",
+      "time_code": 18.00332102338604,
+      "sha256": "3abbfe4f948eefe341a07bd1bbbbb3284c951f75b66029855afa84dd67354eca"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_094.hdf5",
+      "time_code": 18.192431538337573,
+      "sha256": "58214991764d3fceb10e9d957880584a729adf9b5669c6fa9bc1b8e6e0c53a36"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_095.hdf5",
+      "time_code": 18.381542053289106,
+      "sha256": "40ff6ebaa8741345046804b88320902e79a0955e9a1446a79614e5603364f8b0"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_096.hdf5",
+      "time_code": 18.608474671230947,
+      "sha256": "8ad8e3a28d4ce9f5865f794fe126ebab5d18282697bcc2b932b5790d6b140d7d"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_097.hdf5",
+      "time_code": 18.79758518618248,
+      "sha256": "a12e3fb5c2cbeac0be0758c0f5fb1db53047d57f74e9646ff33f5ce478a837ad"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_098.hdf5",
+      "time_code": 18.986695701134018,
+      "sha256": "95d5d154281df35719874bd01c3fa02f81067b48e17ddd098c58786b3e03cc76"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_099.hdf5",
+      "time_code": 19.17580621608555,
+      "sha256": "9e686ef20f47ac9601887dee5ca8b7925789e83b334dbb84ed1eb42997c64974"
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13/output/snapshot_100.hdf5",
+      "time_code": 19.364916731037084,
+      "sha256": "fa9f6c9c39e635881b3f81eecd79fa9a992539afd2e6297994264ff99e293c36"
+    }
+  ],
+  "earliest_offset_code": -0.018154609435347524,
+  "latest_offset_code": 0.018154609435347524,
+  "cause": "Original custom validator incorrectly required late-only snapshots. Native run.cc explicitly rounds to nearest available power-of-two time block, possibly early or late. Reconstructed schedule matches every header; no native field/time/run changed."
+}

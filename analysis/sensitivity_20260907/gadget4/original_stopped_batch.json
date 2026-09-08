@@ -1,0 +1,14 @@
+{
+  "status": "stopped_needs_review",
+  "budget": {
+    "native_snapshot_bytes": 3159560,
+    "eight_rank_restart_bytes": 14453866,
+    "ic_bytes": 4724840,
+    "per_case_bytes": 774139361,
+    "pair_bytes": 1548278722,
+    "formula": "104 snapshots + 3 measured restart sets + IC +256MiB logs, then20% overall margin. Separate10GiB reserve on guest and Windows backing volume."
+  },
+  "finished": [],
+  "active_directory": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13",
+  "error": "Missing scheduled output within native synchronization bound"
+}
