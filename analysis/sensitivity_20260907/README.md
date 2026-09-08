@@ -2,10 +2,15 @@
 
 ## Update: 8 September 2026
 
-Forty-four full controls are now validated and analyzed: the eight pilot runs below, six
+Forty-six full controls are now validated and analyzed: the eight pilot runs below, six
 native Athena 4.2 runs at L3/L4/L5, four Enzo runs at L3/L4, and four Enzo-E runs
 at L3/L4, plus four each for RAMSES, FLASH 4.8, Flash-X and Arepo at L3/L4,
-four GIZMO MFM controls at L3/L4, and two Gadget-4 controls at L3.
+four GIZMO MFM controls at L3/L4, two Gadget-4 controls at L3, and the two
+repaired GIZMO MFV controls at L3. The missing sharp MFV case took2m16s on
+eight CPU workers; the existing repaired historical diagnostic was reused.
+Each has101 native frames. Peak paired dense-mass separation is6.438% of
+initial dense mass at this one coarse level, not a convergence result.
+See [the repaired MFV pair](gizmo/MFV_REPAIRED_PAIR_VALIDATION.md).
 Each Athena 4.2 run has 101 distinct native
 snapshots through 5 t_cc. Its initial density, tracer, coordinates and volumes
 match exactly within each pair at native VTK precision. Only velocity changes.
@@ -67,7 +72,7 @@ CPU workers, peaking at 1.636 GiB solver-child RSS. These two coarse levels
 do not establish convergence or a universal historical-reuse decision. Both MFV L3
 controls also reached 101 outputs, but zero stored internal energy first
 appears at t=3.95 t_cc in each. They are retained as failure evidence and
-excluded from the 44 validated controls. No floor or output was changed.
+excluded from the 46 validated controls. No floor or output was changed.
 See [GIZMO results and failure audit](gizmo/README.md).
 
 The later [MFV terminal restart diagnosis](gizmo/MFV_RESTART_DIAGNOSIS.md)
@@ -90,8 +95,8 @@ of the later thermal evolution; original data and canonical files are unchanged.
 The [longer repaired MFV diagnostic](gizmo/MFV_ONSET_VALIDATION.md) now passes
 through5 t_cc with101 native states and no repeat of the old stored-energy
 failure in this historical-law L3 case. It took2m07s using eight busy CPU
-workers. All raw data is retained. Sharp-law validation on the same repaired
-binary remains before accepting a pair; the full-control total stays44.
+workers. All raw data is retained. The sharp law has since passed on the same
+repaired binary, completing the paired result linked above; the total is46.
 
 The first Enzo full
 attempt exposed an output-setting error: dtRestartDump is a wall-clock exit
@@ -189,7 +194,8 @@ A separate timestep-scaling test explains native t=0 velocity staggering;
 those velocities must not be interpreted as simultaneous with the header time.
 MFM L4 passed its own per-level native/timing tests and all 202 full-state
 checks. Its completed L3/L4 overlay uses every native time and six tested
-analysis checks; the study total is now 44 including Gadget-4 L3. Its whole-pair launch budget was
+analysis checks; that stage brought the total to44 including Gadget-4 L3.
+The repaired MFV L3 pair now brings it to46. Its whole-pair launch budget was
 10.25 GiB plus 10 GiB reserve on both filesystems. MFV requires diagnosis,
 not silent floor changes or blanket retries.
 See [GIZMO validation and remaining work](gizmo/README.md).
@@ -205,7 +211,7 @@ See [Gadget-4 results and native-code caveats](gadget4/README.md).
 Gadget-4 L4 has now passed its own four-state native/independent validation.
 Its full pair is storage-held: 7.30 GiB plus the 10 GiB reserve is required,
 against 16.66 GiB free in WSL at 09:39 local on 8 September. Neither full L4
-control has started, and the total remains 44. No native data was deleted.
+control has started. That storage check did not add accepted controls. No native data was deleted.
 See [the per-level validation and storage measurements](gadget4/L4_VALIDATION.md).
 Gasoline now has95 independently checked diagnostic outputs: the earlier14
 plus81 from four120-step tests on its historical two-worker count. Dense mass

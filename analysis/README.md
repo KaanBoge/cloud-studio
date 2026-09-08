@@ -3,9 +3,10 @@
 The [velocity-prescription sensitivity study](sensitivity_20260907/README.md)
 now tests historical versus corrected initial velocities within each native code
 at fixed chi=100 and Mach=2, following Ryan's request to measure impact before
-deciding which old runs need replacing. Forty-four full controls are validated
+deciding which old runs need replacing. Forty-six full controls are validated
 and analyzed, including Athena 4.2 L3/L4/L5, Enzo/Enzo-E/RAMSES/FLASH 4.8/Flash-X/Arepo L3/L4,
-GIZMO MFM L3/L4 and Gadget-4 L3. [Gadget-4's result](sensitivity_20260907/gadget4/README.md)
+GIZMO MFM L3/L4, Gadget-4 L3 and the repaired GIZMO MFV L3 pair.
+[Gadget-4's result](sensitivity_20260907/gadget4/README.md)
 retains the original SPH pressure deviations and periodic boundaries, and is
 not a matched uniform-pressure grid baseline. GIZMO MFV's two full L3 attempts failed positive-energy
 checks and are published as failure evidence, not accepted controls. See
@@ -21,8 +22,12 @@ isolated repair test. The [isolated builds and nine synthetic tests](sensitivity
 now pass. The [four-state short native test](sensitivity_20260907/gizmo/MFV_SHORT_VALIDATION.md)
 also passes, but does not yet establish resolution of the late thermal failure.
 The [101-frame repaired historical diagnostic](sensitivity_20260907/gizmo/MFV_ONSET_VALIDATION.md)
-now reaches5 t_cc without the old stored-energy failure. It is not yet a
-validated sharp/historical pair; all raw data and failed audits are retained.
+reaches5 t_cc without the old stored-energy failure. The missing sharp case
+has now passed on the same repaired executable, completing the
+[101-frame-per-law pair](sensitivity_20260907/gizmo/MFV_REPAIRED_PAIR_VALIDATION.md).
+Peak dense-mass separation is6.438% of initial dense mass at this one coarse
+level, not convergence. The historical diagnostic was reused, not rerun;
+all native raw and failed attempts remain retained.
 Gadget-4 L4's native short validation now passes, but its full pair is held
 for storage. The [L4 evidence](sensitivity_20260907/gadget4/L4_VALIDATION.md)
 does not increase the accepted full-control count.

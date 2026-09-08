@@ -1,0 +1,8 @@
+{
+  "status": "rendered_pending_visual_review",
+  "report_sha256": "db45f9d985a4e8eb87b63f0247d1d5f61572acfaab5dad6f9272dfe36b0a017d",
+  "script_sha256": "3e57b95b0a5f2fc22396d4b358b27e575acb46b0df2ae9b32ca2e5b54dcd9c71",
+  "plot_sha256": "d429608e070f7c0dcc7fe527469acc036330563467de4648dd2c4453efea693c",
+  "native_frames": 202,
+  "scope": "Two mass curves at native times, not a3Dviewer export."
+}

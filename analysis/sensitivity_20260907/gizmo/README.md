@@ -1,11 +1,22 @@
-# Native GIZMO sensitivity: MFM L3/L4 complete, MFV L3 needs review
+# Native GIZMO sensitivity: MFM L3/L4 and repaired MFV L3 complete
 
 Updated 8 September 2026. The four full **MFM L3/L4** controls are validated and
-analyzed. The current study total, including Gadget-4 L3, is **44 accepted controls**. Each has 101
+analyzed. The current study total, including Gadget-4 L3 and the repaired MFV L3 pair, is **46 accepted controls**. Each has 101
 distinct native snapshots through 5 t_cc. The two **MFV L3** attempts also
 reached 101 snapshots, but both failed positive-energy checks and are excluded
 from that total. Both accepted MFM pairs have finished; their runners must
 not be relaunched into the existing directories.
+
+## Repaired MFV L3 pair now validated
+
+The missing sharp control completed in2m16s on eight CPU workers, with101
+native frames through5 t_cc and0.542GiB peak solver-child RSS. Its historical
+counterpart was reused after exact recipe and raw-hash verification, not rerun.
+Both use the same isolated repaired executable. All202 native states and
+terminal mass-accounting checks pass; original failed cases remain excluded.
+Peak dense-mass separation is6.438% of the fixed initial dense mass. This
+is one coarse resolution, not convergence or a universal reuse decision.
+See [the new paired result and complete provenance](MFV_REPAIRED_PAIR_VALIDATION.md).
 
 ## Level 4: full pair and resolution overlay complete
 
@@ -101,8 +112,8 @@ The [longer repaired historical diagnostic](MFV_ONSET_VALIDATION.md) now reaches
 old failure onset. Total conserved-plus-pending mass accounting passes.
 It took2m07s on eight busy CPU workers, peaking at0.543GiB child RSS. Two
 custom audit/report errors were corrected in separate retained review files;
-the simulation was not rerun. The sharp case still needs validation on the
-same repaired binary before a pair can be accepted; the total remains44.
+the simulation was not rerun. This historical case has now been reused in
+the repaired pair above; the total is46, with original failed cases excluded.
 
 The [terminal restart diagnosis](MFV_RESTART_DIAGNOSIS.md) now explains the
 final exported zeros: internal double-precision energies are positive but tiny;
@@ -145,7 +156,8 @@ All IC arrays except velocity are exactly equal within each pair. Metadata
 not represented by the native parameter file is explicitly hashed in
 `experiment.json`; it is not inferred from filenames or positional arguments.
 Native per-level parameter templates, config flags and source/binary hashes
-are in `build.json`. Historical comments are provenance, not an endorsement
+are in `build.json`. This paragraph describes the original pinned MFM/MFV
+attempts; the later isolated MFV repair is documented above. Historical comments are provenance, not an endorsement
 of their scientific claims. The native MFM/MFV executables are byte-identical
 copies of GIZMO_MFM_3D_PER/GIZMO_MFV_3D_PER. No solver code was modified or rebuilt.
 

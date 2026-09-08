@@ -1,0 +1,1292 @@
+{
+  "status": "passed_sharp_preparation_not_full_pair",
+  "cases": [
+    {
+      "kind": "short",
+      "outputs": [
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/sharp_prepare_native_v1/short/output/snapshot_000.hdf5",
+          "sha256": "9327d1a6c206da595bc9ab00039a76663fc26018626fbe1dee4dc9a1663e0a54",
+          "time_code": 0.0,
+          "errors": [],
+          "total_mass": 2425.245532028377,
+          "dense_mass": 409.90798234939575,
+          "energy_quantiles": [
+            0.015000002458691597,
+            0.01525782234966755,
+            1.4998300433158875,
+            1.5
+          ],
+          "nonpositive_energy": 0,
+          "nonfinite_energy": 0,
+          "tracked_ids_energy": {
+            "96": 0.015002655796706676,
+            "99": 0.015002655796706676,
+            "102": 0.015002655796706676,
+            "109": 0.015002655796706676
+          },
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/sharp_prepare_native_v1/short/output/snapshot_001.hdf5",
+          "sha256": "e5f459046e9e6f168270679019acf8426ef440534c490925907efb1013b6b392",
+          "time_code": 0.1,
+          "errors": [],
+          "total_mass": 2425.0123014971614,
+          "dense_mass": 399.44399547576904,
+          "energy_quantiles": [
+            0.014999793842434883,
+            0.015264756046235561,
+            1.4995568990707397,
+            1.5
+          ],
+          "nonpositive_energy": 0,
+          "nonfinite_energy": 0,
+          "tracked_ids_energy": {
+            "96": 0.015002286992967129,
+            "99": 0.015002286992967129,
+            "102": 0.015002286992967129,
+            "109": 0.015002286992967129
+          },
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "cadence": {
+        "bits": 60,
+        "actual_count": 2,
+        "expected_count": 2,
+        "tick_code": 8.673617379884036e-20,
+        "tolerance_code": 1.7780915628762273e-16,
+        "maximum_offset": 0.0
+      },
+      "initial_exact": {
+        "historical_short": {
+          "Coordinates": true,
+          "Density": true,
+          "InternalEnergy": true,
+          "Masses": true,
+          "ParticleChildIDsNumber": true,
+          "ParticleIDGenerationNumber": true,
+          "ParticleIDs": true,
+          "SmoothingLength": true
+        },
+        "historical_full": {
+          "Coordinates": true,
+          "Density": true,
+          "InternalEnergy": true,
+          "Masses": true,
+          "ParticleChildIDsNumber": true,
+          "ParticleIDGenerationNumber": true,
+          "ParticleIDs": true,
+          "SmoothingLength": true
+        },
+        "original_sharp": {
+          "Coordinates": true,
+          "Density": true,
+          "InternalEnergy": true,
+          "Masses": true,
+          "ParticleChildIDsNumber": true,
+          "ParticleIDGenerationNumber": true,
+          "ParticleIDs": true,
+          "SmoothingLength": true
+        }
+      },
+      "terminal": {
+        "clock": 1152921504606846976,
+        "mass_account": {
+          "initial": 2425.245532028377,
+          "conserved": 2425.172215806193,
+          "pending": 0.07331622218403576,
+          "combined": 2425.245532028377,
+          "residual": -1.4534556013745443e-14,
+          "allowance": 1.2423326162925506e-05,
+          "passes": true,
+          "changed_particles": 22267,
+          "max_absolute_change": 0.12004897988738739,
+          "response_threshold": 2.16840400615783e-14,
+          "response_detected": true,
+          "steps": 10,
+          "criterion": "Prospective roundoff-scaled smoke gate; not an arbitrary-flux error theorem."
+        },
+        "files": [
+          {
+            "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/sharp_prepare_native_v1/short/output/restartfiles/restart.0",
+            "sha256": "6c71fb28661d0837b30b8e3e1fd2ee9b188eb8f64f2c3572dc32576f85ee137a",
+            "bytes": 6101872,
+            "prefix_bytes": 5510816
+          },
+          {
+            "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/sharp_prepare_native_v1/short/output/restartfiles/restart.1",
+            "sha256": "d7e4b5ef825720c4cd6dfa8890a0cfc657ca4858685371641188422ec9295e43",
+            "bytes": 6101872,
+            "prefix_bytes": 5510816
+          },
+          {
+            "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/sharp_prepare_native_v1/short/output/restartfiles/restart.2",
+            "sha256": "156afe410add444fa06aa7eeac243f8873d885b40f3d46c49a1b5c18751330ce",
+            "bytes": 6114952,
+            "prefix_bytes": 5520896
+          },
+          {
+            "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/sharp_prepare_native_v1/short/output/restartfiles/restart.3",
+            "sha256": "06fbd60b567ede81f5504917bf7cf4fa23b585846c0cc126233d3d0d3535dd4a",
+            "bytes": 6114952,
+            "prefix_bytes": 5520896
+          },
+          {
+            "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/sharp_prepare_native_v1/short/output/restartfiles/restart.4",
+            "sha256": "33c34033dba727b94b19834c8ce9eef1fe5d9c0a8b8ef5750f38ed33d6a308cb",
+            "bytes": 6124768,
+            "prefix_bytes": 5530976
+          },
+          {
+            "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/sharp_prepare_native_v1/short/output/restartfiles/restart.5",
+            "sha256": "0606300655838b0986e2c4c1b57126217c14a7826e32dc93ad8a9b40e62c86ff",
+            "bytes": 6124768,
+            "prefix_bytes": 5530976
+          },
+          {
+            "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/sharp_prepare_native_v1/short/output/restartfiles/restart.6",
+            "sha256": "4a3697e40844e5b73d99bac05c78fedda6c51858a2a328d122fb7a69e487a93a",
+            "bytes": 6111688,
+            "prefix_bytes": 5520896
+          },
+          {
+            "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/sharp_prepare_native_v1/short/output/restartfiles/restart.7",
+            "sha256": "a93c4b30f3c221effe871bdd7d7a44c4c9bd95a35504e684809b743b48deb8a7",
+            "bytes": 6111688,
+            "prefix_bytes": 5520896
+          }
+        ],
+        "abi": {
+          "global_data_all_processes": {
+            "itemsize": 15864,
+            "matching_definitions": 32,
+            "die_offsets": [
+              "0x289",
+              "0x1a22",
+              "0x2b0b",
+              "0x50eb",
+              "0x7e2a",
+              "0xb06b",
+              "0x16956",
+              "0x17f27",
+              "0x192c5",
+              "0x21884",
+              "0x24b8c",
+              "0x269c4",
+              "0x2c248",
+              "0x338d3",
+              "0x3477e",
+              "0x35908",
+              "0x38d81",
+              "0x3b2f4",
+              "0x3d08d",
+              "0x3e524",
+              "0x445ce",
+              "0x4659d",
+              "0x4843e",
+              "0x4ce00",
+              "0x4f059",
+              "0x513f6",
+              "0x5267f",
+              "0x585e7",
+              "0x5c921",
+              "0x6009b",
+              "0x61253",
+              "0x62bb9"
+            ],
+            "fields": {
+              "Time": {
+                "offset": 408,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "TimeMax": {
+                "offset": 432,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "TotNumPart": {
+                "offset": 0,
+                "dtype": "int64",
+                "bytes": 8
+              },
+              "TotN_gas": {
+                "offset": 8,
+                "dtype": "int64",
+                "bytes": 8
+              },
+              "MinEgySpec": {
+                "offset": 128,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "NumCurrentTiStep": {
+                "offset": 400,
+                "dtype": "int64",
+                "bytes": 8
+              },
+              "cf_hubble_a": {
+                "offset": 216,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "BoxSize": {
+                "offset": 312,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "TimeBegin": {
+                "offset": 416,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "Timebase_interval": {
+                "offset": 440,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "ComovingIntegrationOn": {
+                "offset": 320,
+                "dtype": "int32",
+                "bytes": 4
+              },
+              "Ti_Current": {
+                "offset": 448,
+                "dtype": "int64",
+                "bytes": 8
+              }
+            }
+          },
+          "particle_data": {
+            "itemsize": 288,
+            "matching_definitions": 24,
+            "die_offsets": [
+              "0x3134",
+              "0x5714",
+              "0x8453",
+              "0xb6b7",
+              "0x16f7f",
+              "0x1854c",
+              "0x198f0",
+              "0x21eaf",
+              "0x251b4",
+              "0x27010",
+              "0x2c893",
+              "0x34da3",
+              "0x35f33",
+              "0x393cd",
+              "0x3d6b6",
+              "0x44bf2",
+              "0x48a8c",
+              "0x4d42b",
+              "0x4f680",
+              "0x52d12",
+              "0x58c33",
+              "0x5cf6d",
+              "0x606c0",
+              "0x61878"
+            ],
+            "fields": {
+              "Type": {
+                "offset": 0,
+                "dtype": "int16",
+                "bytes": 2
+              },
+              "ID": {
+                "offset": 4,
+                "dtype": "uint32",
+                "bytes": 4
+              },
+              "Mass": {
+                "offset": 56,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "Pos": {
+                "offset": 32,
+                "dtype": "('<f8', (3,))",
+                "bytes": 24
+              },
+              "Vel": {
+                "offset": 64,
+                "dtype": "('<f8', (3,))",
+                "bytes": 24
+              }
+            }
+          },
+          "gas_cell_data": {
+            "itemsize": 384,
+            "matching_definitions": 20,
+            "die_offsets": [
+              "0x32b3",
+              "0x5894",
+              "0x85d3",
+              "0xb847",
+              "0x170fe",
+              "0x186cb",
+              "0x2533f",
+              "0x271a0",
+              "0x2ca29",
+              "0x34f22",
+              "0x3955e",
+              "0x3d835",
+              "0x41d8d",
+              "0x44d71",
+              "0x52ea7",
+              "0x58dc4",
+              "0x5d0fe",
+              "0x6083f",
+              "0x619f7",
+              "0x63236"
+            ],
+            "fields": {
+              "MassTrue": {
+                "offset": 8,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "dMass": {
+                "offset": 16,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "DtMass": {
+                "offset": 24,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "Density": {
+                "offset": 0,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "Pressure": {
+                "offset": 80,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "InternalEnergy": {
+                "offset": 88,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "InternalEnergyPred": {
+                "offset": 96,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "DtInternalEnergy": {
+                "offset": 104,
+                "dtype": "float64",
+                "bytes": 8
+              }
+            }
+          }
+        },
+        "minima": {
+          "Pressure": 0.6610090645788734,
+          "InternalEnergy": 0.014999544939965432,
+          "InternalEnergyPred": 0.014999544939965432
+        }
+      },
+      "resources": {
+        "status": "native_finished_pending_checks",
+        "returncode": 0,
+        "failure": null,
+        "wall_seconds": 1.3588651260000013,
+        "peak_child_rss_bytes": 553025536,
+        "median_busy_cpu_workers": 7.9567667205766925,
+        "resource_samples": 10
+      }
+    },
+    {
+      "kind": "timing_full",
+      "outputs": [
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/sharp_prepare_native_v1/timing_full/output/snapshot_000.hdf5",
+          "sha256": "0d552f4bdc8e3711f53179c089bee76fb2c70228817dbf0b1f8eb8833896db8b",
+          "time_code": 0.0,
+          "errors": [],
+          "total_mass": 2425.245532028377,
+          "dense_mass": 409.90798234939575,
+          "energy_quantiles": [
+            0.015000002458691597,
+            0.01525782234966755,
+            1.4998300433158875,
+            1.5
+          ],
+          "nonpositive_energy": 0,
+          "nonfinite_energy": 0,
+          "tracked_ids_energy": {
+            "96": 0.015002655796706676,
+            "99": 0.015002655796706676,
+            "102": 0.015002655796706676,
+            "109": 0.015002655796706676
+          },
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/sharp_prepare_native_v1/timing_full/output/snapshot_001.hdf5",
+          "sha256": "5589b10ddf99553e660d5c0b5b23ef02c41d4b830f0cd13e613c1f88b33e0b07",
+          "time_code": 3.9999999999999996e-05,
+          "errors": [],
+          "total_mass": 2425.245317555964,
+          "dense_mass": 409.90698194503784,
+          "energy_quantiles": [
+            0.015000002458691597,
+            0.01525782234966755,
+            1.4998371720314025,
+            1.5
+          ],
+          "nonpositive_energy": 0,
+          "nonfinite_energy": 0,
+          "tracked_ids_energy": {
+            "96": 0.015002655796706676,
+            "99": 0.015002655796706676,
+            "102": 0.015002655796706676,
+            "109": 0.015002655796706676
+          },
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/sharp_prepare_native_v1/timing_full/output/snapshot_002.hdf5",
+          "sha256": "70a50e5a7a5d689dac2a91c4269f536922214448ac27aae55e6f292eb5103caf",
+          "time_code": 4e-05,
+          "errors": [],
+          "total_mass": 2425.245460897684,
+          "dense_mass": 409.907021522522,
+          "energy_quantiles": [
+            0.015000002458691597,
+            0.01525782234966755,
+            1.4998371720314025,
+            1.5
+          ],
+          "nonpositive_energy": 0,
+          "nonfinite_energy": 0,
+          "tracked_ids_energy": {
+            "96": 0.015002655796706676,
+            "99": 0.015002655796706676,
+            "102": 0.015002655796706676,
+            "109": 0.015002655796706676
+          },
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "cadence": {
+        "bits": 60,
+        "actual_count": 3,
+        "expected_count": 2,
+        "tick_code": 3.4694469519536145e-23,
+        "tolerance_code": 7.112366251504909e-20,
+        "maximum_offset": 6.776263578034403e-21
+      },
+      "initial_exact": {
+        "historical_short": {
+          "Coordinates": true,
+          "Density": true,
+          "InternalEnergy": true,
+          "Masses": true,
+          "ParticleChildIDsNumber": true,
+          "ParticleIDGenerationNumber": true,
+          "ParticleIDs": true,
+          "SmoothingLength": true
+        },
+        "historical_full": {
+          "Coordinates": true,
+          "Density": true,
+          "InternalEnergy": true,
+          "Masses": true,
+          "ParticleChildIDsNumber": true,
+          "ParticleIDGenerationNumber": true,
+          "ParticleIDs": true,
+          "SmoothingLength": true
+        },
+        "original_sharp": {
+          "Coordinates": true,
+          "Density": true,
+          "InternalEnergy": true,
+          "Masses": true,
+          "ParticleChildIDsNumber": true,
+          "ParticleIDGenerationNumber": true,
+          "ParticleIDs": true,
+          "SmoothingLength": true
+        }
+      },
+      "terminal": {
+        "clock": 1152921504606846976,
+        "mass_account": {
+          "initial": 2425.245532028377,
+          "conserved": 2425.2454597942888,
+          "pending": 7.223408809693413e-05,
+          "combined": 2425.245532028377,
+          "residual": 8.070648512875853e-15,
+          "allowance": 5.646715206028697e-06,
+          "passes": true,
+          "changed_particles": 4716,
+          "max_absolute_change": 0.00011762306081219975,
+          "response_threshold": 2.16840400615783e-14,
+          "response_detected": true,
+          "steps": 4,
+          "criterion": "Prospective roundoff-scaled smoke gate; not an arbitrary-flux error theorem."
+        },
+        "files": [
+          {
+            "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/sharp_prepare_native_v1/timing_full/output/restartfiles/restart.0",
+            "sha256": "73a693aaa48b66bdf31d76c0862b5a1fbc80b255f39fd50c9f3444433efb6f18",
+            "bytes": 6111688,
+            "prefix_bytes": 5520896
+          },
+          {
+            "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/sharp_prepare_native_v1/timing_full/output/restartfiles/restart.1",
+            "sha256": "e59313a7f78168896e4e1d8999142df070b9aa419dbf472f169b2309eaa9df8a",
+            "bytes": 6111688,
+            "prefix_bytes": 5520896
+          },
+          {
+            "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/sharp_prepare_native_v1/timing_full/output/restartfiles/restart.2",
+            "sha256": "55862f7deb4bcfa5dba1664d9ccaeed20440f3e24d98884cd1cd5fccb3598f3b",
+            "bytes": 6111688,
+            "prefix_bytes": 5520896
+          },
+          {
+            "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/sharp_prepare_native_v1/timing_full/output/restartfiles/restart.3",
+            "sha256": "01f827f38b6710748eb0696b4e179e041702f5e24b47281f466d8265cae23dd7",
+            "bytes": 6111688,
+            "prefix_bytes": 5520896
+          },
+          {
+            "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/sharp_prepare_native_v1/timing_full/output/restartfiles/restart.4",
+            "sha256": "f042fca2da9d8a8d5778579a1927966021df71b57df311bd3526c255c9099185",
+            "bytes": 6111688,
+            "prefix_bytes": 5520896
+          },
+          {
+            "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/sharp_prepare_native_v1/timing_full/output/restartfiles/restart.5",
+            "sha256": "dafd7a3ec79390c686a30c8dd1fb5094bc15939dec6f705410d84739b301ec3d",
+            "bytes": 6111688,
+            "prefix_bytes": 5520896
+          },
+          {
+            "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/sharp_prepare_native_v1/timing_full/output/restartfiles/restart.6",
+            "sha256": "9bf4c3e8ec3efbbd1bbe8c80c7d043e3c7ac5c7f7d223bfeb357a98232c78adc",
+            "bytes": 6111688,
+            "prefix_bytes": 5520896
+          },
+          {
+            "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/sharp_prepare_native_v1/timing_full/output/restartfiles/restart.7",
+            "sha256": "be465a991cca5332de920350f1715c18683a2eb994c417d0e3f150ce907c54e2",
+            "bytes": 6111688,
+            "prefix_bytes": 5520896
+          }
+        ],
+        "abi": {
+          "global_data_all_processes": {
+            "itemsize": 15864,
+            "matching_definitions": 32,
+            "die_offsets": [
+              "0x289",
+              "0x1a22",
+              "0x2b0b",
+              "0x50eb",
+              "0x7e2a",
+              "0xb06b",
+              "0x16956",
+              "0x17f27",
+              "0x192c5",
+              "0x21884",
+              "0x24b8c",
+              "0x269c4",
+              "0x2c248",
+              "0x338d3",
+              "0x3477e",
+              "0x35908",
+              "0x38d81",
+              "0x3b2f4",
+              "0x3d08d",
+              "0x3e524",
+              "0x445ce",
+              "0x4659d",
+              "0x4843e",
+              "0x4ce00",
+              "0x4f059",
+              "0x513f6",
+              "0x5267f",
+              "0x585e7",
+              "0x5c921",
+              "0x6009b",
+              "0x61253",
+              "0x62bb9"
+            ],
+            "fields": {
+              "Time": {
+                "offset": 408,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "TimeMax": {
+                "offset": 432,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "TotNumPart": {
+                "offset": 0,
+                "dtype": "int64",
+                "bytes": 8
+              },
+              "TotN_gas": {
+                "offset": 8,
+                "dtype": "int64",
+                "bytes": 8
+              },
+              "MinEgySpec": {
+                "offset": 128,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "NumCurrentTiStep": {
+                "offset": 400,
+                "dtype": "int64",
+                "bytes": 8
+              },
+              "cf_hubble_a": {
+                "offset": 216,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "BoxSize": {
+                "offset": 312,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "TimeBegin": {
+                "offset": 416,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "Timebase_interval": {
+                "offset": 440,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "ComovingIntegrationOn": {
+                "offset": 320,
+                "dtype": "int32",
+                "bytes": 4
+              },
+              "Ti_Current": {
+                "offset": 448,
+                "dtype": "int64",
+                "bytes": 8
+              }
+            }
+          },
+          "particle_data": {
+            "itemsize": 288,
+            "matching_definitions": 24,
+            "die_offsets": [
+              "0x3134",
+              "0x5714",
+              "0x8453",
+              "0xb6b7",
+              "0x16f7f",
+              "0x1854c",
+              "0x198f0",
+              "0x21eaf",
+              "0x251b4",
+              "0x27010",
+              "0x2c893",
+              "0x34da3",
+              "0x35f33",
+              "0x393cd",
+              "0x3d6b6",
+              "0x44bf2",
+              "0x48a8c",
+              "0x4d42b",
+              "0x4f680",
+              "0x52d12",
+              "0x58c33",
+              "0x5cf6d",
+              "0x606c0",
+              "0x61878"
+            ],
+            "fields": {
+              "Type": {
+                "offset": 0,
+                "dtype": "int16",
+                "bytes": 2
+              },
+              "ID": {
+                "offset": 4,
+                "dtype": "uint32",
+                "bytes": 4
+              },
+              "Mass": {
+                "offset": 56,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "Pos": {
+                "offset": 32,
+                "dtype": "('<f8', (3,))",
+                "bytes": 24
+              },
+              "Vel": {
+                "offset": 64,
+                "dtype": "('<f8', (3,))",
+                "bytes": 24
+              }
+            }
+          },
+          "gas_cell_data": {
+            "itemsize": 384,
+            "matching_definitions": 20,
+            "die_offsets": [
+              "0x32b3",
+              "0x5894",
+              "0x85d3",
+              "0xb847",
+              "0x170fe",
+              "0x186cb",
+              "0x2533f",
+              "0x271a0",
+              "0x2ca29",
+              "0x34f22",
+              "0x3955e",
+              "0x3d835",
+              "0x41d8d",
+              "0x44d71",
+              "0x52ea7",
+              "0x58dc4",
+              "0x5d0fe",
+              "0x6083f",
+              "0x619f7",
+              "0x63236"
+            ],
+            "fields": {
+              "MassTrue": {
+                "offset": 8,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "dMass": {
+                "offset": 16,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "DtMass": {
+                "offset": 24,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "Density": {
+                "offset": 0,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "Pressure": {
+                "offset": 80,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "InternalEnergy": {
+                "offset": 88,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "InternalEnergyPred": {
+                "offset": 96,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "DtInternalEnergy": {
+                "offset": 104,
+                "dtype": "float64",
+                "bytes": 8
+              }
+            }
+          }
+        },
+        "minima": {
+          "Pressure": 0.9989146714130784,
+          "InternalEnergy": 0.015000002458688794,
+          "InternalEnergyPred": 0.015000002458688794
+        }
+      },
+      "resources": {
+        "status": "native_finished_pending_checks",
+        "returncode": 0,
+        "failure": null,
+        "wall_seconds": 1.1688446180000014,
+        "peak_child_rss_bytes": 550248448,
+        "median_busy_cpu_workers": 7.959708609704229,
+        "resource_samples": 8
+      }
+    },
+    {
+      "kind": "timing_half",
+      "outputs": [
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/sharp_prepare_native_v1/timing_half/output/snapshot_000.hdf5",
+          "sha256": "1e2efe6632ea0bced8363d2cb7c9f9a339b24248a796a44401e0dccf54c5ebbb",
+          "time_code": 0.0,
+          "errors": [],
+          "total_mass": 2425.245532028377,
+          "dense_mass": 409.90798234939575,
+          "energy_quantiles": [
+            0.015000002458691597,
+            0.01525782234966755,
+            1.4998300433158875,
+            1.5
+          ],
+          "nonpositive_energy": 0,
+          "nonfinite_energy": 0,
+          "tracked_ids_energy": {
+            "96": 0.015002655796706676,
+            "99": 0.015002655796706676,
+            "102": 0.015002655796706676,
+            "109": 0.015002655796706676
+          },
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/sharp_prepare_native_v1/timing_half/output/snapshot_001.hdf5",
+          "sha256": "10e01ead8d80f91c6abc80da769389747384bb0f2f0b9ab00ebcd23caad4a0cd",
+          "time_code": 3.9999999999999996e-05,
+          "errors": [],
+          "total_mass": 2425.245425105095,
+          "dense_mass": 409.90694427490234,
+          "energy_quantiles": [
+            0.015000002458691597,
+            0.01525782234966755,
+            1.4998371720314025,
+            1.5
+          ],
+          "nonpositive_energy": 0,
+          "nonfinite_energy": 0,
+          "tracked_ids_energy": {
+            "96": 0.015002655796706676,
+            "99": 0.015002655796706676,
+            "102": 0.015002655796706676,
+            "109": 0.015002655796706676
+          },
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/sharp_prepare_native_v1/timing_half/output/snapshot_002.hdf5",
+          "sha256": "212148068f7f5383dd17e4041b407e077c5e3eb5216997ffc7940ec57bc01be0",
+          "time_code": 4e-05,
+          "errors": [],
+          "total_mass": 2425.245496481657,
+          "dense_mass": 409.90696382522583,
+          "energy_quantiles": [
+            0.015000002458691597,
+            0.01525782234966755,
+            1.4998371720314025,
+            1.5
+          ],
+          "nonpositive_energy": 0,
+          "nonfinite_energy": 0,
+          "tracked_ids_energy": {
+            "96": 0.015002655796706676,
+            "99": 0.015002655796706676,
+            "102": 0.015002655796706676,
+            "109": 0.015002655796706676
+          },
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "cadence": {
+        "bits": 60,
+        "actual_count": 3,
+        "expected_count": 2,
+        "tick_code": 3.4694469519536145e-23,
+        "tolerance_code": 7.112366251504909e-20,
+        "maximum_offset": 6.776263578034403e-21
+      },
+      "initial_exact": {
+        "historical_short": {
+          "Coordinates": true,
+          "Density": true,
+          "InternalEnergy": true,
+          "Masses": true,
+          "ParticleChildIDsNumber": true,
+          "ParticleIDGenerationNumber": true,
+          "ParticleIDs": true,
+          "SmoothingLength": true
+        },
+        "historical_full": {
+          "Coordinates": true,
+          "Density": true,
+          "InternalEnergy": true,
+          "Masses": true,
+          "ParticleChildIDsNumber": true,
+          "ParticleIDGenerationNumber": true,
+          "ParticleIDs": true,
+          "SmoothingLength": true
+        },
+        "original_sharp": {
+          "Coordinates": true,
+          "Density": true,
+          "InternalEnergy": true,
+          "Masses": true,
+          "ParticleChildIDsNumber": true,
+          "ParticleIDGenerationNumber": true,
+          "ParticleIDs": true,
+          "SmoothingLength": true
+        }
+      },
+      "terminal": {
+        "clock": 1152921504606846976,
+        "mass_account": {
+          "initial": 2425.245532028377,
+          "conserved": 2425.2454959119923,
+          "pending": 3.611638454600735e-05,
+          "combined": 2425.245532028377,
+          "residual": -1.1277197458776545e-14,
+          "allowance": 1.0164087004966084e-05,
+          "passes": true,
+          "changed_particles": 4432,
+          "max_absolute_change": 0.0001241566676966066,
+          "response_threshold": 2.16840400615783e-14,
+          "response_detected": true,
+          "steps": 8,
+          "criterion": "Prospective roundoff-scaled smoke gate; not an arbitrary-flux error theorem."
+        },
+        "files": [
+          {
+            "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/sharp_prepare_native_v1/timing_half/output/restartfiles/restart.0",
+            "sha256": "181935c1be6337acfc326180ca84d27680e99b29232b9f9ae56484eb298aee4d",
+            "bytes": 6111688,
+            "prefix_bytes": 5520896
+          },
+          {
+            "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/sharp_prepare_native_v1/timing_half/output/restartfiles/restart.1",
+            "sha256": "c5b9296c280c5d62be565596b63c07b9af7810fb9ab572befd00a48bc3153042",
+            "bytes": 6111688,
+            "prefix_bytes": 5520896
+          },
+          {
+            "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/sharp_prepare_native_v1/timing_half/output/restartfiles/restart.2",
+            "sha256": "2ff603ef8af2d81ac1aae7ee65eb83ac23e63003638d6671be73f5be2d49e4a4",
+            "bytes": 6111688,
+            "prefix_bytes": 5520896
+          },
+          {
+            "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/sharp_prepare_native_v1/timing_half/output/restartfiles/restart.3",
+            "sha256": "e72ebc2c6b89a2b25c1764c1a7c0d8e704a278e0261b7bb2a01f752e9207ec7b",
+            "bytes": 6111688,
+            "prefix_bytes": 5520896
+          },
+          {
+            "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/sharp_prepare_native_v1/timing_half/output/restartfiles/restart.4",
+            "sha256": "0792677d7e1bdd77d2f6c987c5b3d4cef9d609d2635413fd5b78d5e56d64bafe",
+            "bytes": 6111688,
+            "prefix_bytes": 5520896
+          },
+          {
+            "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/sharp_prepare_native_v1/timing_half/output/restartfiles/restart.5",
+            "sha256": "ae6dd85ae388d2d48a7e80675c7a89e4970c6c9ac669e60f3dc85aae29df001e",
+            "bytes": 6111688,
+            "prefix_bytes": 5520896
+          },
+          {
+            "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/sharp_prepare_native_v1/timing_half/output/restartfiles/restart.6",
+            "sha256": "4782a7d3f2b25fd0b593716116e23538f5c1492237ca2771354bc5c002ba8d76",
+            "bytes": 6111688,
+            "prefix_bytes": 5520896
+          },
+          {
+            "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/sharp_prepare_native_v1/timing_half/output/restartfiles/restart.7",
+            "sha256": "4a4ee51065d9c577f3eeb2d3ab493d99af449f6dd09f51b2005eb85daed79c82",
+            "bytes": 6111688,
+            "prefix_bytes": 5520896
+          }
+        ],
+        "abi": {
+          "global_data_all_processes": {
+            "itemsize": 15864,
+            "matching_definitions": 32,
+            "die_offsets": [
+              "0x289",
+              "0x1a22",
+              "0x2b0b",
+              "0x50eb",
+              "0x7e2a",
+              "0xb06b",
+              "0x16956",
+              "0x17f27",
+              "0x192c5",
+              "0x21884",
+              "0x24b8c",
+              "0x269c4",
+              "0x2c248",
+              "0x338d3",
+              "0x3477e",
+              "0x35908",
+              "0x38d81",
+              "0x3b2f4",
+              "0x3d08d",
+              "0x3e524",
+              "0x445ce",
+              "0x4659d",
+              "0x4843e",
+              "0x4ce00",
+              "0x4f059",
+              "0x513f6",
+              "0x5267f",
+              "0x585e7",
+              "0x5c921",
+              "0x6009b",
+              "0x61253",
+              "0x62bb9"
+            ],
+            "fields": {
+              "Time": {
+                "offset": 408,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "TimeMax": {
+                "offset": 432,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "TotNumPart": {
+                "offset": 0,
+                "dtype": "int64",
+                "bytes": 8
+              },
+              "TotN_gas": {
+                "offset": 8,
+                "dtype": "int64",
+                "bytes": 8
+              },
+              "MinEgySpec": {
+                "offset": 128,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "NumCurrentTiStep": {
+                "offset": 400,
+                "dtype": "int64",
+                "bytes": 8
+              },
+              "cf_hubble_a": {
+                "offset": 216,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "BoxSize": {
+                "offset": 312,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "TimeBegin": {
+                "offset": 416,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "Timebase_interval": {
+                "offset": 440,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "ComovingIntegrationOn": {
+                "offset": 320,
+                "dtype": "int32",
+                "bytes": 4
+              },
+              "Ti_Current": {
+                "offset": 448,
+                "dtype": "int64",
+                "bytes": 8
+              }
+            }
+          },
+          "particle_data": {
+            "itemsize": 288,
+            "matching_definitions": 24,
+            "die_offsets": [
+              "0x3134",
+              "0x5714",
+              "0x8453",
+              "0xb6b7",
+              "0x16f7f",
+              "0x1854c",
+              "0x198f0",
+              "0x21eaf",
+              "0x251b4",
+              "0x27010",
+              "0x2c893",
+              "0x34da3",
+              "0x35f33",
+              "0x393cd",
+              "0x3d6b6",
+              "0x44bf2",
+              "0x48a8c",
+              "0x4d42b",
+              "0x4f680",
+              "0x52d12",
+              "0x58c33",
+              "0x5cf6d",
+              "0x606c0",
+              "0x61878"
+            ],
+            "fields": {
+              "Type": {
+                "offset": 0,
+                "dtype": "int16",
+                "bytes": 2
+              },
+              "ID": {
+                "offset": 4,
+                "dtype": "uint32",
+                "bytes": 4
+              },
+              "Mass": {
+                "offset": 56,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "Pos": {
+                "offset": 32,
+                "dtype": "('<f8', (3,))",
+                "bytes": 24
+              },
+              "Vel": {
+                "offset": 64,
+                "dtype": "('<f8', (3,))",
+                "bytes": 24
+              }
+            }
+          },
+          "gas_cell_data": {
+            "itemsize": 384,
+            "matching_definitions": 20,
+            "die_offsets": [
+              "0x32b3",
+              "0x5894",
+              "0x85d3",
+              "0xb847",
+              "0x170fe",
+              "0x186cb",
+              "0x2533f",
+              "0x271a0",
+              "0x2ca29",
+              "0x34f22",
+              "0x3955e",
+              "0x3d835",
+              "0x41d8d",
+              "0x44d71",
+              "0x52ea7",
+              "0x58dc4",
+              "0x5d0fe",
+              "0x6083f",
+              "0x619f7",
+              "0x63236"
+            ],
+            "fields": {
+              "MassTrue": {
+                "offset": 8,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "dMass": {
+                "offset": 16,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "DtMass": {
+                "offset": 24,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "Density": {
+                "offset": 0,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "Pressure": {
+                "offset": 80,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "InternalEnergy": {
+                "offset": 88,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "InternalEnergyPred": {
+                "offset": 96,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "DtInternalEnergy": {
+                "offset": 104,
+                "dtype": "float64",
+                "bytes": 8
+              }
+            }
+          }
+        },
+        "minima": {
+          "Pressure": 0.9989167588223418,
+          "InternalEnergy": 0.015000002458688695,
+          "InternalEnergyPred": 0.015000002458688695
+        }
+      },
+      "resources": {
+        "status": "native_finished_pending_checks",
+        "returncode": 0,
+        "failure": null,
+        "wall_seconds": 1.5578426850000007,
+        "peak_child_rss_bytes": 550629376,
+        "median_busy_cpu_workers": 7.91795864707833,
+        "resource_samples": 12
+      }
+    }
+  ],
+  "timing": {
+    "norm_ratio": 0.5001355540638672,
+    "zero_step_max_error": 2.384185791015625e-07,
+    "float32_bound": 1.2311882073845482e-06
+  },
+  "historical_raw_hashes_rechecked": 109,
+  "historical_recipe_reusable": true,
+  "plan_sha256": "74c54e9db5785752e3193e3130e5d2a3ae94474262ce6121b24e6564adbbe6e8",
+  "script_sha256": "3ce8cd73e44688357bb2580e3e43b4297968b30f2ff75ed524c26b05b513c5b8",
+  "accepted_full_controls": 44,
+  "completed_full_controls_added": 0,
+  "limitations": [
+    "Three sharp diagnostics only, not a completed full pair.",
+    "Native velocities remain half-kick staggered.",
+    "Original periodic boundaries and nonuniform native pressure retained; no cross-code certification.",
+    "Engineering mass gate does not establish physical accuracy."
+  ]
+}

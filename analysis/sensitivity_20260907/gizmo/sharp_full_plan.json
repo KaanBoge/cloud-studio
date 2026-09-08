@@ -1,0 +1,71 @@
+{
+  "status": "frozen_missing_sharp_only",
+  "files": {
+    "mfv_sharp_full.py": "9fffc947f892ae4b61a63f8b318f42a6d6e945587c4e6e2674ee69297c975ef4",
+    "test_mfv_sharp_full.py": "076d02b04995f275f98df71e0f39770d34ef02b33aaf8350bbf9fdbae32f12fc",
+    "MFV_SHARP_FULL_PLAN.md": "13c91213534a38bba261608a496410db84449a0e9b2b34e9d8b335675b0959dd"
+  },
+  "prep_plan_sha256": "74c54e9db5785752e3193e3130e5d2a3ae94474262ce6121b24e6564adbbe6e8",
+  "prep_validation_sha256": "41933e9cee047882a0008fe9505e7790151daa7abcef3c619fc03a4699ba97da",
+  "historical_review_sha256": "53d8f951fabe54ec48795a626be1a55d27a48e25192d5021dd705f7ce95cfb5f",
+  "physics": {
+    "code": "GIZMO",
+    "variants": [
+      "mfm",
+      "mfv"
+    ],
+    "chi": 100,
+    "mach": 2,
+    "gamma": 1.6666666666666667,
+    "r_cloud": 1,
+    "rho_wind": 1,
+    "p_wind": 1,
+    "density_width": 0.1,
+    "rv_scale": 1.3,
+    "seed": 42,
+    "center": [
+      3,
+      5,
+      5
+    ],
+    "domain_left": [
+      0,
+      0,
+      0
+    ],
+    "domain_right": [
+      20,
+      10,
+      10
+    ],
+    "mass_mode": "volume",
+    "ranks": 8,
+    "t_end_over_tcc": 5,
+    "output_dt_over_tcc": 0.05,
+    "scope": "Within each native GIZMO variant, actual historical tanh versus sharp velocity. Regular equal-volume initial lattice, variable masses, original float32 IC/output precision and fully periodic native boundary recipe. Native kernel-derived density/pressure must be checked separately. No passive material tracer is assumed; particle-ID mass in MFV is not a material-retention diagnostic.",
+    "v_wind": 2.581988897471611,
+    "t_cc": 3.872983346207417
+  },
+  "case_bytes": 1177615670,
+  "storage": {
+    "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1",
+    "filesystem_free_bytes": 16051572736,
+    "filesystem_total_bytes": 1081101176832,
+    "windows_backing_volume": {
+      "distribution": "Ubuntu",
+      "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+      "drive": "C:",
+      "free_bytes": 38352093184,
+      "total_bytes": 1999283154944
+    },
+    "policy": "Conservative growth budget; allocated but reusable VHDX blocks are not credited.",
+    "effective_free_bytes": 16051572736
+  },
+  "binary_sha256": "4784336422c25db4714c6f56ef95337347f4be18dfd622e2b7e9acf7e1fe3d3c",
+  "ic_sha256": "ae510c5a853ace97e3c55c6b234efb3e5cf6f64a1dbd512e5ee7be8d0e1b52e5",
+  "input_sha256": "3af6f94f62c2b7b7187e24fb4b4087f6f57a2aec5497a72102bba8c33b49c9b2",
+  "wall_limit": 600,
+  "stop_grace": 30,
+  "ranks": 8,
+  "tests_sha256": "925347bed6dc07ba8fe7b825a2925d859c7c9265c1ec8c4367d1901f9b3f2e84"
+}

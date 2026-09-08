@@ -4,6 +4,19 @@ Ryan requested a few resolutions per code at fixed chi and Mach before deciding
 whether affected historical runs need replacing. This study preserves all old
 and new raw data. It does not authorize a blanket replacement campaign.
 
+## Latest completed gate: repaired MFV L3 pair
+
+8 September: sharp preparation and the missing full control now pass on the
+same isolated repaired executable as the completed historical diagnostic.
+The historical case was verified and reused, not rerun. Each has101 native
+frames through5 t_cc. All paired initial nonvelocity, independent mass,
+60-bit cadence and terminal conservation checks pass. Peak dense-mass
+separation is6.438% at this one coarse level; accepted total is46. The old
+failed MFV attempts remain excluded. See [the paired evidence](gizmo/MFV_REPAIRED_PAIR_VALIDATION.md).
+The dated preparation steps below remain as history. No higher MFV runner
+is enabled by this result; eight L3/L4 controls remain unlaunched and larger
+levels remain additional guarded work.
+
 ## Fixed pilot design
 
 Chi = 100, Mach = 2, gamma = 5/3, cloud radius = 1, ambient density = pressure = 1,
