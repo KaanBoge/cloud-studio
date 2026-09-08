@@ -2,10 +2,10 @@
 
 ## Update: 8 September 2026
 
-Forty full controls are now validated and analyzed: the eight pilot runs below, six
+Forty-two full controls are now validated and analyzed: the eight pilot runs below, six
 native Athena 4.2 runs at L3/L4/L5, four Enzo runs at L3/L4, and four Enzo-E runs
 at L3/L4, plus four each for RAMSES, FLASH 4.8, Flash-X and Arepo at L3/L4,
-and two GIZMO MFM controls at L3. Each Athena 4.2 run has 101 distinct native
+and four GIZMO MFM controls at L3/L4. Each Athena 4.2 run has 101 distinct native
 snapshots through 5 t_cc. Its initial density, tracer, coordinates and volumes
 match exactly within each pair at native VTK precision. Only velocity changes.
 
@@ -58,14 +58,15 @@ boundary allows tracer recirculation: an in-box tracer fraction of one is not
 proof that no material crossed a boundary. All raw data is retained and L5 is
 storage-held. See [Arepo results and limitations](arepo/README.md).
 
-GIZMO MFM L3 is complete with 101 distinct native times per control and all
-202 mass sums independently checked with yt. Peak mass-curve separation is
-3.98% of the fixed initial dense mass. The two solver runs took 82.4 and 82.1
-seconds on eight busy CPU workers, peaking at 0.489 GiB solver-child RSS.
-This is a single coarse resolution, not a convergence result. Both MFV L3
+GIZMO MFM L3/L4 is complete with 101 distinct native times per control and all
+404 mass sums independently checked with yt. Peak mass-curve separation is
+3.98% at L3 and 0.955% at L4, relative to fixed initial dense mass within each
+resolution pair. L3 took 82.4/82.1 seconds; L4 took 13m15s/13m11s on eight busy
+CPU workers, peaking at 1.636 GiB solver-child RSS. These two coarse levels
+do not establish convergence or a universal historical-reuse decision. Both MFV L3
 controls also reached 101 outputs, but zero stored internal energy first
 appears at t=3.95 t_cc in each. They are retained as failure evidence and
-excluded from the 40 validated controls. No floor or output was changed.
+excluded from the 42 validated controls. No floor or output was changed.
 See [GIZMO results and failure audit](gizmo/README.md).
 
 The first Enzo full
@@ -156,16 +157,16 @@ Arepo's original jittered lattice gives native pressure deviations up to 14.45%
 in both controls, and its streamwise boundary is periodic. These limitations
 are preserved and documented for the within-code experiment, not claimed as
 a matched cross-code setup. See [Arepo results and caveats](arepo/README.md).
-GIZMO MFM L3 is validated and analyzed; GIZMO MFV L3 completed the native
-solver but failed positive-energy checks in both controls. All 404 native
-outputs remain retained. The stopped L3 batch must not be relaunched.
+GIZMO MFM L3/L4 is validated and analyzed; GIZMO MFV L3 completed the native
+solver but failed positive-energy checks in both controls. All 606 native
+full-run outputs across these MFM and failed MFV cases remain retained.
+The stopped L3 batch and completed L4 pair must not be relaunched.
 A separate timestep-scaling test explains native t=0 velocity staggering;
 those velocities must not be interpreted as simultaneous with the header time.
-MFM L4 per-level native/timing tests now pass:16 actual test outputs and nine
-additional unit tests. Its separate full pair launched at07:50 local on
-8 September, sharp then historical, using eight CPU workers. This launch is
-not yet included in the40 accepted/analyzed controls. Its whole-pair budget
-is10.25GiB plus10GiB reserve on both filesystems. MFV requires diagnosis,
+MFM L4 passed its own per-level native/timing tests and all 202 full-state
+checks. Its completed L3/L4 overlay uses every native time and six tested
+analysis checks; the study total is now 42. Its whole-pair launch budget was
+10.25 GiB plus 10 GiB reserve on both filesystems. MFV requires diagnosis,
 not silent floor changes or blanket retries.
 See [GIZMO validation and remaining work](gizmo/README.md).
 Gadget-4 and Gasoline remain unprepared.

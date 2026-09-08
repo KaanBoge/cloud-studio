@@ -2,6 +2,10 @@
 
 8 September 2026. **Share MFM with caveats; MFV needs review.**
 
+This is the retained earlier L3-only assessment. L4 has since completed its
+own per-level checks and full pair; see [the combined L3/L4 assessment](MFM_LEVELS_VALIDATION.md).
+The current accepted study total is 42, while the 40 below records this earlier assessment.
+
 ## Methodology and calculation checks
 
 The question is within-code sensitivity to the historical versus sharp
@@ -52,7 +56,8 @@ See [mfv_pair_audit.json](mfv_pair_audit.json) for all 202 native states.
 
 ## Scope, retention and deployment
 
-L3 has only 3.2 initial elements per R. L4 requires new per-level checks.
+L3 has only 3.2 initial elements per R. At the time of this L3 assessment,
+L4 still required new per-level checks; their completed evidence is linked above.
 There is no passive material tracer; periodic in-box material is not a
 no-boundary-crossing diagnostic. Native kernel density/pressure deviations
 and the documented velocity staggering remain limitations.

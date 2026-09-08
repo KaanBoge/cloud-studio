@@ -1,17 +1,33 @@
-# Native GIZMO sensitivity: MFM L3 complete, MFV L3 needs review
+# Native GIZMO sensitivity: MFM L3/L4 complete, MFV L3 needs review
 
-Updated 8 September 2026. The two full **MFM L3** controls are validated and
-analyzed, raising the study total to **40 accepted controls**. Each has 101
+Updated 8 September 2026. The four full **MFM L3/L4** controls are validated and
+analyzed, raising the study total to **42 accepted controls**. Each has 101
 distinct native snapshots through 5 t_cc. The two **MFV L3** attempts also
 reached 101 snapshots, but both failed positive-energy checks and are excluded
-from that total. No simulation is currently running in this L3 batch.
+from that total. Both accepted MFM pairs have finished; their runners must
+not be relaunched into the existing directories.
 
-## Level 4: validated setup, full pair launched
+## Level 4: full pair and resolution overlay complete
 
-At 07:50 local time on 8 September, the separate native MFM L4 pair started
-on eight MPI workers: sharp first, historical second. This section records
-the launch, **not completion**. The accepted/analyzed study total remains40
-until the new full outputs pass validation and analysis. MFV is not launched.
+The separate native MFM L4 pair started at 07:50 local time on 8 September
+and is complete. Sharp took 794.84 seconds (13m15s); historical took 791.16
+seconds (13m11s). Each produced 101 distinct native times through 5 t_cc,
+and all 202 full states passed native field and independent yt mass checks.
+Median sampled busy CPU was 8.000 workers in each case; peak solver-child
+RSS was 1.626/1.636 GiB. These are CPU-only solver costs, excluding analysis.
+
+The combined L3/L4 analysis freshly hash-checked and recomputed mass from all
+404 accepted native states. Peak separation is **3.979% at L3 and 0.955% at
+L4**, expressed relative to the fixed measured initial dense mass at each
+resolution. This is two coarse resolutions, not demonstrated convergence,
+a quality-error estimate or permission to reuse every historical result.
+Six analysis unit tests pass; no production numerical setting was changed.
+
+![Native MFM L3 and L4 mass evolution](mass_mfm_L3_L4.png)
+
+See [all four diagnostic series](mfm_levels_report.json),
+[combined validation and caveats](MFM_LEVELS_VALIDATION.md), and
+[the completed native L4 ledger](mfm_l4_batch.json).
 
 Two L4 short evolved controls and four separate timestep-scaling diagnostics
 passed all16 actual native snapshot checks, including independent yt mass
@@ -22,7 +38,7 @@ offset-halving ratios are0.499991/0.500309, with zero-step recovery error
 2.3842e-7 below the float32 bound1.2312e-6. This is L4 evidence, not reuse of
 the L3 arrays. Native velocities and snapshot times remain untouched.
 
-The full pair targets101 native snapshots per case through5tcc on the initial
+The full pair produced 101 native snapshots per case through 5 t_cc on the initial
 128x64x64 lattice (524288 elements,6.4 elements/R). Actual measured native
 snapshot size is33,563,880bytes; eight-rank restart-set size335,777,344bytes.
 The complete retained pair budget is10.25GiB plus a separate10GiB reserve on
@@ -36,7 +52,7 @@ and [the full L4 runner](mfm_l4_controls.py). The native live ledger is
 `status_mfm_l4.py` checks actual worker directories and readable output headers;
 progress observations are not a substitute for final full-field validation.
 
-## Full L3 findings
+## Earlier L3 findings and retained MFV failures
 
 | Native method and velocity law | Snapshots | Solver time | Peak child RSS | Outcome |
 | --- | ---: | ---: | ---: | --- |
@@ -60,9 +76,10 @@ actual time; the scalar peak uses explicitly stated interpolation onto
 
 ![Native MFM L3 mass evolution](mass_mfm_L3.png)
 
-This is **one coarse resolution**, not a resolution-overlay Figure 2 or a
-universal decision to reuse historical runs. See [the full MFM series](mfm_l3_report.json)
-and [pre-delivery validation](VALIDATION.md).
+This earlier plot is **one coarse resolution**. The new L3/L4 overlay above
+supersedes it for resolution comparison, without changing the old analysis.
+See [the original MFM L3 series](mfm_l3_report.json)
+and [the dated L3 pre-delivery validation](VALIDATION.md).
 
 ## MFV failure evidence: preserved, not certified
 
@@ -194,10 +211,10 @@ limit bounds the retained current/backup generations. Low memory or storage
 requests a native checkpoint/stop, with a bounded grace period. No native
 restart is auto-resumed. The guard was not triggered in these four short runs.
 
-MFM L4 setup/timing and retained-budget checks have now passed and its separate
-frozen full runner was launched as documented above. On completion, validate
-all full states and create an L3/L4 mass-resolution overlay under a new analysis
-directory before publication. MFV requires further diagnosis before larger runs.
+MFM L4 and the combined L3/L4 analysis are complete, as documented above.
+Native output is retained under `full_mfm_l4_v1`; the new immutable analysis
+is `analysis_mfm_l3_l4_v1`. Neither runner nor analyzer may overwrite these
+completed directories. MFV requires further diagnosis before larger runs.
 Gadget-4 and Gasoline remain unprepared. L5 is not launched here. Native
 MaxSizeTimestep, precision, CFL and other production numerics must stay at their
 original settings; the tiny diagnostic timestep caps are never production inputs.

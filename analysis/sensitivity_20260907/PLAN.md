@@ -66,7 +66,7 @@ with 101 actual times each, exact paired initial density/tracer/grid and
 pressure agreement to roundoff. All 404 outputs pass checks; its extra
 unsorted-record aggregation agrees within 8.9e-15 but shares the native decoder.
 Native timestep-crossing times are preserved. L5 is held by the 172.49 GiB
-whole-pair retention budget plus reserve. There are now 40 analyzed controls.
+whole-pair retention budget plus reserve. There are now 42 analyzed controls.
 FLASH 4.8's four L3/L4 controls are complete with 101 full-state times each;
 all 404 checkpoint mass sums pass independent yt checks. Its native setup
 has no tracer, so retention is unavailable. The unchanged native plotfiles are
@@ -123,8 +123,13 @@ guest and Windows capacity. A separate immutable L4 runner launched the full
 sharp/historical pair at07:50 local on8 September using eight ranks. Native
 per-level settings remain unchanged, including MaxMemSize1500MiB/rank,
 MaxSizeTimestep0.05 and restart interval3600seconds. Tiny diagnostic timestep
-caps do not enter production. The new full pair is not counted as accepted
-until all states pass checks and its L3/L4 analysis is complete.
+caps do not enter production. Both full controls are now complete: 101 native
+times each, all 202 states independently checked. The new L3/L4 analysis
+rechecked all 404 native mass sums and hashes, retains fixed per-level initial
+denominators, and overlays actual native times. Peak separation is 3.979% at
+L3 and 0.955% at L4. Six analysis tests pass. These two controls are included
+in the 42 accepted total; MFV failures remain excluded. No native outputs
+were deleted, retimed, substituted or changed.
 
 ## Validation and analysis
 

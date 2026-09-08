@@ -3,9 +3,9 @@
 The [velocity-prescription sensitivity study](sensitivity_20260907/README.md)
 now tests historical versus corrected initial velocities within each native code
 at fixed chi=100 and Mach=2, following Ryan's request to measure impact before
-deciding which old runs need replacing. Forty full controls are validated
+deciding which old runs need replacing. Forty-two full controls are validated
 and analyzed, including Athena 4.2 L3/L4/L5, Enzo/Enzo-E/RAMSES/FLASH 4.8/Flash-X/Arepo L3/L4,
-and GIZMO MFM L3. GIZMO MFV's two full L3 attempts failed positive-energy
+and GIZMO MFM L3/L4. GIZMO MFV's two full L3 attempts failed positive-energy
 checks and are published as failure evidence, not accepted controls. See
 [GIZMO results](sensitivity_20260907/gizmo/README.md). Larger pairs remain
 separately guarded. These experiments are distinct from the historical viewer.
