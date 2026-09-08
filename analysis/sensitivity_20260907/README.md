@@ -2,12 +2,13 @@
 
 ## Update: 8 September 2026
 
-At15:50UTC, the missing repaired MFV L4 full pair started after
-[six new L4 diagnostics passed](gizmo/MFV_L4_PREPARATION_RESULTS.md),
-covering16 native states. Sharp runs first; historical follows automatically
-after the first passes its checks. Eight bound CPU workers were observed
-busy. All raw remains saved directly on C:. These are not yet accepted full
-controls, so the total below remains48 while the pair runs.
+The [repaired MFV L3/L4 comparison](gizmo/mfv_analysis_levels_v1/README.md)
+is complete. Both new L4 runs passed all 101 native states through 5 t_cc;
+sharp took 29m33s and historical 28m58s, with eight nearly fully busy CPU
+workers and 1.688/1.684 GiB peak solver-child RAM. Peak paired mass separation
+is 6.438% at L3 and 2.072% at L4. This is not convergence or a universal
+reuse decision. All raw is retained; no native solver remains active after
+this pair. These are analysis controls, not production viewer entries.
 
 The [Gadget-4 L3/L4 comparison](gadget4/analysis_levels_v1/README.md) is now
 complete: both new L4 controls passed all 101 native states through 5 t_cc.
@@ -16,9 +17,8 @@ convergence or universal reuse decision. L4 took 12m40s / 12m34s with about
 eight busy CPU workers and 1.80 / 1.78 GiB peak solver-child RSS. New raw
 was written directly to C:; no old data was moved or deleted.
 
-The accepted total is now **48 controls and 4,852 native analysis states**.
-Six L3/L4 controls remain: four Gasoline (scientific validation held) and
-two repaired MFV L4 (now in the guarded full-pair queue after own-level validation).
+The analyzed total is now **50 controls and 5,054 native analysis states**.
+Four L3/L4 Gasoline controls remain scientifically held on failed validation.
 Higher levels are additional work. The old blanket replacement queue is inactive.
 
 The earlier immutable [consolidated resolution summary](resolution_summary_v1/README.md)
@@ -28,11 +28,11 @@ metrics were cross-checked against the existing scalar reports; no native
 experiment was repeated. It preserves each code's pressure, boundary and
 timing caveats and makes no blanket reuse or replacement decision.
 
-Forty-eight full controls are now validated and analyzed: the eight pilot runs below, six
+Fifty full controls are now validated and analyzed: the eight pilot runs below, six
 native Athena 4.2 runs at L3/L4/L5, four Enzo runs at L3/L4, and four Enzo-E runs
 at L3/L4, plus four each for RAMSES, FLASH 4.8, Flash-X and Arepo at L3/L4,
 four GIZMO MFM controls at L3/L4, four Gadget-4 controls at L3/L4, and the two
-repaired GIZMO MFV controls at L3. The missing sharp MFV case took2m16s on
+repaired GIZMO MFV controls at L3, plus the two repaired MFV L4 controls above. The missing sharp MFV L3 case took2m16s on
 eight CPU workers; the existing repaired historical diagnostic was reused.
 Each has101 native frames. Peak paired dense-mass separation is6.438% of
 initial dense mass at this one coarse level, not a convergence result.
@@ -202,7 +202,7 @@ historical-law provenance, run timings and validation evidence.
 Native simulation output: `/home/kaan/sensitivity_20260907/runs`.
 Windows scripts/results: `C:/Users/kaanb/CloudCrushing/sensitivity_20260907`.
 
-## Still pending
+## Earlier pending notes (superseded by the dated update above)
 
 The Athena++/AthenaPK and Enzo level-5 continuations remain storage-held.
 Athena 4.2 L3/L4/L5 and Enzo-E L3/L4 are complete. Enzo-E L5 is storage-held too.

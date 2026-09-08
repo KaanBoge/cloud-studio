@@ -1,0 +1,3850 @@
+{
+  "status": "passed_full_pair_pending_analysis",
+  "finished": [
+    {
+      "status": "passed_full_native_checks",
+      "law": "sharp13",
+      "physics": {
+        "code": "GIZMO",
+        "variants": [
+          "mfm",
+          "mfv"
+        ],
+        "chi": 100,
+        "mach": 2,
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1,
+        "rho_wind": 1,
+        "p_wind": 1,
+        "density_width": 0.1,
+        "rv_scale": 1.3,
+        "seed": 42,
+        "center": [
+          3,
+          5,
+          5
+        ],
+        "domain_left": [
+          0,
+          0,
+          0
+        ],
+        "domain_right": [
+          20,
+          10,
+          10
+        ],
+        "mass_mode": "volume",
+        "ranks": 8,
+        "t_end_over_tcc": 5,
+        "output_dt_over_tcc": 0.05,
+        "scope": "Within each native GIZMO variant, actual historical tanh versus sharp velocity. Regular equal-volume initial lattice, variable masses, original float32 IC/output precision and fully periodic native boundary recipe. Native kernel-derived density/pressure must be checked separately. No passive material tracer is assumed; particle-ID mass in MFV is not a material-retention diagnostic.",
+        "v_wind": 2.581988897471611,
+        "t_cc": 3.872983346207417
+      },
+      "binary_sha256": "4784336422c25db4714c6f56ef95337347f4be18dfd622e2b7e9acf7e1fe3d3c",
+      "rows": [
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_000.hdf5",
+          "sha256": "586d4994fc192e94ee158b72b75b60002e0d617f6ec75293e36882c9fe7826db",
+          "bytes": 39855336,
+          "time_code": 0.0,
+          "t_over_tcc": 0.0,
+          "elements": 524288,
+          "total_mass": 2424.8441153885797,
+          "dense_mass": 398.4896878004074,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.015000000596046448
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_001.hdf5",
+          "sha256": "43c4b66d09913d512d7c2ef5bc2011054055f7e415f3b81ce05b5b8f39f06983",
+          "bytes": 39855336,
+          "time_code": 0.19364916731037085,
+          "t_over_tcc": 0.05,
+          "elements": 524288,
+          "total_mass": 2424.828317790292,
+          "dense_mass": 402.94842091202736,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.015000000596046448
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_002.hdf5",
+          "sha256": "f6d2e09160839bacfa504329de764c0157bc8c8f07be5bfc5104e89af7100616",
+          "bytes": 39855336,
+          "time_code": 0.3872983346207417,
+          "t_over_tcc": 0.1,
+          "elements": 524288,
+          "total_mass": 2424.8475018804893,
+          "dense_mass": 403.5864904820919,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.014992223121225834
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_003.hdf5",
+          "sha256": "2d391d14fc38d63e9dc34baa5d9c6f1295b24e9cfcdedbdaab7c9604c3a1bed7",
+          "bytes": 39855336,
+          "time_code": 0.5809475019311126,
+          "t_over_tcc": 0.15,
+          "elements": 524288,
+          "total_mass": 2424.9158052019775,
+          "dense_mass": 402.2461386024952,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.014983471482992172
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_004.hdf5",
+          "sha256": "4268b072059e8022345cbe632f3f5aff9198709dc4920cb05ff995c55cf59201",
+          "bytes": 39855336,
+          "time_code": 0.7745966692414834,
+          "t_over_tcc": 0.2,
+          "elements": 524288,
+          "total_mass": 2424.938744201325,
+          "dense_mass": 398.91412560641766,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.01497617643326521
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_005.hdf5",
+          "sha256": "299aba1b17455d4d353fb3dfe764e87e1b2ac2f109bb474de185d938c2d975e8",
+          "bytes": 39855336,
+          "time_code": 0.9682458365518543,
+          "t_over_tcc": 0.25,
+          "elements": 524288,
+          "total_mass": 2424.9454736160114,
+          "dense_mass": 394.3432104662061,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.014970970340073109
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_006.hdf5",
+          "sha256": "9cd02f0a3ae14ce2f0ce643490e34e828bb893524ac49285f02022130cee06a3",
+          "bytes": 39855336,
+          "time_code": 1.161895003862225,
+          "t_over_tcc": 0.3,
+          "elements": 524288,
+          "total_mass": 2424.9159466179553,
+          "dense_mass": 391.7369707599282,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.014946529641747475
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_007.hdf5",
+          "sha256": "74c99dfff3866fa16bea77824c0247e8982467370a4af8cc61ad37aa2b20e547",
+          "bytes": 39855336,
+          "time_code": 1.355544171172596,
+          "t_over_tcc": 0.35,
+          "elements": 524288,
+          "total_mass": 2424.9001229736023,
+          "dense_mass": 389.8361381702125,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.0143823167309165
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_008.hdf5",
+          "sha256": "1ea284c33e8e7167268c49dee17ab6bdaf1eb2fc9794d5cf7b60220f3d669af5",
+          "bytes": 39855336,
+          "time_code": 1.5491933384829668,
+          "t_over_tcc": 0.4,
+          "elements": 524288,
+          "total_mass": 2424.8820549820084,
+          "dense_mass": 389.195114210248,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.013592124916613102
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_009.hdf5",
+          "sha256": "3b8eef0caa7d7a45c885e13fca8b394e0c482dbb39423b49788692d98b139ca9",
+          "bytes": 39855336,
+          "time_code": 1.7428425057933374,
+          "t_over_tcc": 0.44999999999999996,
+          "elements": 524288,
+          "total_mass": 2424.8595442615915,
+          "dense_mass": 386.07883854955435,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.012798559851944447
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_010.hdf5",
+          "sha256": "d3208bf6da55d1eb70094dddca5d90b5d049cc7d942ca6ea623cd8c9fee965c5",
+          "bytes": 39855336,
+          "time_code": 1.9364916731037085,
+          "t_over_tcc": 0.5,
+          "elements": 524288,
+          "total_mass": 2424.8383622253314,
+          "dense_mass": 384.7844500876963,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.012018818408250809
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_011.hdf5",
+          "sha256": "ede7b15f05c23af0347a534fe4681093f6e55f211ed43133fd8a4b156b0d4856",
+          "bytes": 39855336,
+          "time_code": 2.1301408404140796,
+          "t_over_tcc": 0.55,
+          "elements": 524288,
+          "total_mass": 2424.8394377757795,
+          "dense_mass": 379.6736429184675,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.011278236284852028
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_012.hdf5",
+          "sha256": "6d04fbc109db2f6643e5ccb6bf31e1f246c8e5090adff08de9dcc7d0acded29d",
+          "bytes": 39855336,
+          "time_code": 2.32379000772445,
+          "t_over_tcc": 0.6,
+          "elements": 524288,
+          "total_mass": 2424.8278103261255,
+          "dense_mass": 377.6384976506233,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.010635379701852798
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_013.hdf5",
+          "sha256": "bd7b012fe541f9c558fda71689176ec55fac00cdfa20af91e7f9741ed0182260",
+          "bytes": 39855336,
+          "time_code": 2.517439175034821,
+          "t_over_tcc": 0.6499999999999999,
+          "elements": 524288,
+          "total_mass": 2424.8168032260146,
+          "dense_mass": 372.7084129229188,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.010083859786391258
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_014.hdf5",
+          "sha256": "cc574eaaa53281e2f443c7d69bd2649aa7eda5ab08daff33c57e600e8ceb40c6",
+          "bytes": 39855336,
+          "time_code": 2.7110883423451915,
+          "t_over_tcc": 0.6999999999999998,
+          "elements": 524288,
+          "total_mass": 2424.8056063619442,
+          "dense_mass": 371.44699584692717,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.00960762519389391
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_015.hdf5",
+          "sha256": "8311c0e269f77b2ea4deb5cae680b39c44da94a6a48a1c7ab832a37d195b8b43",
+          "bytes": 39855336,
+          "time_code": 2.904737509655562,
+          "t_over_tcc": 0.7499999999999998,
+          "elements": 524288,
+          "total_mass": 2424.8159244596027,
+          "dense_mass": 369.2479667030275,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.009194076992571354
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_016.hdf5",
+          "sha256": "bcae6f728c25b02344c1b8dfe2835e0c6ac3773ce20ba3d0c3eab10640d7b4c1",
+          "bytes": 39855336,
+          "time_code": 3.0983866769659323,
+          "t_over_tcc": 0.7999999999999997,
+          "elements": 524288,
+          "total_mass": 2424.7993900936563,
+          "dense_mass": 367.17289669439197,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.008843205869197845
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_017.hdf5",
+          "sha256": "74e6d590b009328a75e948253da6018f8219a650c826c71534461a217d3c6adc",
+          "bytes": 39855336,
+          "time_code": 3.2920358442763034,
+          "t_over_tcc": 0.8499999999999998,
+          "elements": 524288,
+          "total_mass": 2424.836850737687,
+          "dense_mass": 365.5128569640219,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.008550294674932957
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_018.hdf5",
+          "sha256": "e0721a2ae12ca8ae56b7a6a3ac43aefba176b180744099ceee9f115f87029fed",
+          "bytes": 39855336,
+          "time_code": 3.485685011586674,
+          "t_over_tcc": 0.8999999999999997,
+          "elements": 524288,
+          "total_mass": 2424.812358611729,
+          "dense_mass": 364.1861639879644,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.008316095918416977
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_019.hdf5",
+          "sha256": "8a8220e66c11f401f73568c435cc7ed2a0f261b60b89dbf052de7ef3d04e0522",
+          "bytes": 39855336,
+          "time_code": 3.6793341788970446,
+          "t_over_tcc": 0.9499999999999996,
+          "elements": 524288,
+          "total_mass": 2424.815074479673,
+          "dense_mass": 362.95283972099423,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.008028233423829079
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_020.hdf5",
+          "sha256": "d440ec7f1e771e2bd1566e648af92e1978a537a280b1b23fd609303cd5fd66c8",
+          "bytes": 39855336,
+          "time_code": 3.8729833462074152,
+          "t_over_tcc": 0.9999999999999996,
+          "elements": 524288,
+          "total_mass": 2424.7921999129467,
+          "dense_mass": 359.23408760875463,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.00780542753636837
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_021.hdf5",
+          "sha256": "3d0afe106c194db3bcd102e63750d10d5cea1feab9c926a08aa0a6d3d3172b44",
+          "bytes": 39855336,
+          "time_code": 4.066632513517786,
+          "t_over_tcc": 1.0499999999999994,
+          "elements": 524288,
+          "total_mass": 2424.7909987017047,
+          "dense_mass": 357.6999929174781,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.007667919620871544
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_022.hdf5",
+          "sha256": "299adb317c9e157b8eca33366156ded439905490077105dad28d012e2cc59b98",
+          "bytes": 39855336,
+          "time_code": 4.2602816808281565,
+          "t_over_tcc": 1.0999999999999994,
+          "elements": 524288,
+          "total_mass": 2424.7745350385085,
+          "dense_mass": 355.82865430414677,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.007522068917751312
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_023.hdf5",
+          "sha256": "169fbd813f91ddc65e598189001bdc7b1c088280755585c595c4187622a4bb89",
+          "bytes": 39855336,
+          "time_code": 4.453930848138527,
+          "t_over_tcc": 1.1499999999999995,
+          "elements": 524288,
+          "total_mass": 2424.786095464602,
+          "dense_mass": 354.973405841738,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.007366672158241272
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_024.hdf5",
+          "sha256": "a264eb08a75d16367261cb5d0aa026f7230707dae25d2a7a8cd3b08143ddfb00",
+          "bytes": 39855336,
+          "time_code": 4.647580015448898,
+          "t_over_tcc": 1.1999999999999993,
+          "elements": 524288,
+          "total_mass": 2424.7718432515394,
+          "dense_mass": 353.57638527452946,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.007323628291487694
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_025.hdf5",
+          "sha256": "ccddaa9bc5677f3435cd9dbf40ff67eb8ac17789c257521893b2e3f62c233d06",
+          "bytes": 39855336,
+          "time_code": 4.841229182759268,
+          "t_over_tcc": 1.2499999999999993,
+          "elements": 524288,
+          "total_mass": 2424.7600061269477,
+          "dense_mass": 352.3877141587436,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.0075339702889323235
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_026.hdf5",
+          "sha256": "08ab5ded698f903bb54627fe1d4c25c1992a98ff04387553f7c7c0ff7429f07e",
+          "bytes": 39855336,
+          "time_code": 5.034878350069639,
+          "t_over_tcc": 1.2999999999999992,
+          "elements": 524288,
+          "total_mass": 2424.799399274867,
+          "dense_mass": 349.62028442695737,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.007992477156221867
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_027.hdf5",
+          "sha256": "dee76ad34de100731d8fbc65f23f87dfd07002fce9879d71887bd767a87fb5f7",
+          "bytes": 39855336,
+          "time_code": 5.22852751738001,
+          "t_over_tcc": 1.3499999999999992,
+          "elements": 524288,
+          "total_mass": 2424.7891079820693,
+          "dense_mass": 353.34828289970756,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.008706076070666313
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_028.hdf5",
+          "sha256": "64f4143437c95d6a5562caf3622647eee453917eea57425744893162a76265e9",
+          "bytes": 39855336,
+          "time_code": 5.422176684690379,
+          "t_over_tcc": 1.3999999999999988,
+          "elements": 524288,
+          "total_mass": 2424.7851865540724,
+          "dense_mass": 356.12621811777353,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.009741755202412605
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_029.hdf5",
+          "sha256": "02ee154d09ec498782ae534cf851e04550acb49b1ef382771e103a89e6ac16c2",
+          "bytes": 39855336,
+          "time_code": 5.615825852000751,
+          "t_over_tcc": 1.449999999999999,
+          "elements": 524288,
+          "total_mass": 2424.7588587927166,
+          "dense_mass": 353.95601320266724,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.011219585314393044
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_030.hdf5",
+          "sha256": "3cf39be659b3c6d2bfb3ca45c39094b93849720d5e8b4518fdb10a8e2d523e23",
+          "bytes": 39855336,
+          "time_code": 5.8094750193111215,
+          "t_over_tcc": 1.499999999999999,
+          "elements": 524288,
+          "total_mass": 2424.7835994414054,
+          "dense_mass": 350.3988386243582,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.01301635429263115
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_031.hdf5",
+          "sha256": "1e71553818e7ec420f2fdcea2d3ef7bd5886d04f7c3b34917290ec1b664d8d16",
+          "bytes": 39855336,
+          "time_code": 6.003124186621492,
+          "t_over_tcc": 1.549999999999999,
+          "elements": 524288,
+          "total_mass": 2424.7600455631036,
+          "dense_mass": 347.96821189299226,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.014959389343857765
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_032.hdf5",
+          "sha256": "2d0a67c1a61209f4c1d8cb2ca5d80df77525f58e01c388234b26d22855ba660a",
+          "bytes": 39855336,
+          "time_code": 6.196773353931863,
+          "t_over_tcc": 1.5999999999999988,
+          "elements": 524288,
+          "total_mass": 2424.7643371468876,
+          "dense_mass": 345.0615102723241,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.016586413607001305
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_033.hdf5",
+          "sha256": "6b8ad47aed67b5406ca5003d8ca9e7db6bc5de8456838f0913712e5424f3d076",
+          "bytes": 39855336,
+          "time_code": 6.390422521242233,
+          "t_over_tcc": 1.6499999999999988,
+          "elements": 524288,
+          "total_mass": 2424.736503062537,
+          "dense_mass": 342.245222479105,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.01621726155281067
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_034.hdf5",
+          "sha256": "dde5b8ef63fd5939bae799ae2442ad82a4f839d77d1cbda0dd2a6d101232bb44",
+          "bytes": 39855336,
+          "time_code": 6.584071688552604,
+          "t_over_tcc": 1.6999999999999988,
+          "elements": 524288,
+          "total_mass": 2424.798312921077,
+          "dense_mass": 340.5268051326275,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.015770386904478073
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_035.hdf5",
+          "sha256": "7fa54872614f48500333799e4d8c42e304a047a866d7f4e432758bb769374a06",
+          "bytes": 39855336,
+          "time_code": 6.777720855862975,
+          "t_over_tcc": 1.7499999999999987,
+          "elements": 524288,
+          "total_mass": 2424.767301163636,
+          "dense_mass": 337.5636201426387,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.015391780994832516
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_036.hdf5",
+          "sha256": "3838f4b04b6b7b64f9d9fcbd63b01a4d9c1a1ca0aaad0413321e24d4bbcdc8da",
+          "bytes": 39855336,
+          "time_code": 6.971370023173346,
+          "t_over_tcc": 1.799999999999999,
+          "elements": 524288,
+          "total_mass": 2424.777436550241,
+          "dense_mass": 335.81902868300676,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.015124589204788208
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_037.hdf5",
+          "sha256": "806ac60dde51edc696d667b25e726d80fdabd904b44fa5c27f78309613ac14cb",
+          "bytes": 39855336,
+          "time_code": 7.165019190483716,
+          "t_over_tcc": 1.8499999999999985,
+          "elements": 524288,
+          "total_mass": 2424.76145380456,
+          "dense_mass": 333.6859909668565,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.014844723045825958
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_038.hdf5",
+          "sha256": "0ff7534a252572ac39bd0f7e4c35eb481a88ac116bce55448608549d00efb2b7",
+          "bytes": 39855336,
+          "time_code": 7.358668357794087,
+          "t_over_tcc": 1.8999999999999986,
+          "elements": 524288,
+          "total_mass": 2424.789722108515,
+          "dense_mass": 331.1331257224083,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.014677305705845356
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_039.hdf5",
+          "sha256": "c98aa1c7b1404f40d56952aa49ced1f38d1a1c37dad480de5454c125db19da1c",
+          "bytes": 39855336,
+          "time_code": 7.552317525104456,
+          "t_over_tcc": 1.9499999999999982,
+          "elements": 524288,
+          "total_mass": 2424.7654178859666,
+          "dense_mass": 329.4651082865894,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.014617097564041615
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_040.hdf5",
+          "sha256": "bbe6f5c87fb36d11bd77004258e354dd8c4d7c31b78ee75e6493978b78cbaa3b",
+          "bytes": 39855336,
+          "time_code": 7.745966692414828,
+          "t_over_tcc": 1.9999999999999984,
+          "elements": 524288,
+          "total_mass": 2424.7846533982083,
+          "dense_mass": 326.5826687440276,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.01468474231660366
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_041.hdf5",
+          "sha256": "8105162ddae1f82b5db0438c9329b81d7cc73db666cf8f37f5ab96c524ca7407",
+          "bytes": 39855336,
+          "time_code": 7.9396158597251985,
+          "t_over_tcc": 2.0499999999999985,
+          "elements": 524288,
+          "total_mass": 2424.756484552985,
+          "dense_mass": 322.98482029885054,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.01491451170295477
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_042.hdf5",
+          "sha256": "2d1bae1b824b4acb13836d364e64eec457ed26359af10b24c473f487e3d82673",
+          "bytes": 39855336,
+          "time_code": 8.13326502703557,
+          "t_over_tcc": 2.0999999999999983,
+          "elements": 524288,
+          "total_mass": 2424.8215502460953,
+          "dense_mass": 320.10675647109747,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.014894283376634121
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_043.hdf5",
+          "sha256": "a700b2a4040ec9d8c0c544f3af25ca9e72bfe11b476f74dcf6b2fb865865527a",
+          "bytes": 39855336,
+          "time_code": 8.32691419434594,
+          "t_over_tcc": 2.1499999999999986,
+          "elements": 524288,
+          "total_mass": 2424.797875269549,
+          "dense_mass": 317.4254407212138,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.014898491092026234
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_044.hdf5",
+          "sha256": "a674bbac595ddf304682868fa3ab2546bf9fa0b2e419b14d352a67b94dafa43b",
+          "bytes": 39855336,
+          "time_code": 8.520563361656311,
+          "t_over_tcc": 2.1999999999999984,
+          "elements": 524288,
+          "total_mass": 2424.806901377393,
+          "dense_mass": 312.13321582227945,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.015028756111860275
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_045.hdf5",
+          "sha256": "2070457e39d0d04c0ca7df64cd2b81ba266307daebdaf800d6a259ea9bc207cd",
+          "bytes": 39855336,
+          "time_code": 8.714212528966682,
+          "t_over_tcc": 2.2499999999999982,
+          "elements": 524288,
+          "total_mass": 2424.776150793303,
+          "dense_mass": 309.0090505555272,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.015233764424920082
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_046.hdf5",
+          "sha256": "124349bbfe7fdf29c160e6727d27d3dfa43108e914e571f2390e375aec4a680a",
+          "bytes": 39855336,
+          "time_code": 8.907861696277052,
+          "t_over_tcc": 2.2999999999999985,
+          "elements": 524288,
+          "total_mass": 2424.7934351728763,
+          "dense_mass": 304.0963173657656,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.015107057057321072
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_047.hdf5",
+          "sha256": "f439945ba9a309cdc0e79ab427a10c71ce600d8f6cfdf9375f944dcf8b780c82",
+          "bytes": 39855336,
+          "time_code": 9.101510863587423,
+          "t_over_tcc": 2.3499999999999983,
+          "elements": 524288,
+          "total_mass": 2424.7694991312455,
+          "dense_mass": 300.8017093911767,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.015042455866932869
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_048.hdf5",
+          "sha256": "0110fb786f41c48d8ea3437c345efba03bb028d5ae37fa67e9b49f3fc2761515",
+          "bytes": 39855336,
+          "time_code": 9.295160030897794,
+          "t_over_tcc": 2.399999999999998,
+          "elements": 524288,
+          "total_mass": 2424.7848124990705,
+          "dense_mass": 298.75427969545126,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.015098980627954006
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_049.hdf5",
+          "sha256": "7fb6ff8c841e938bb0906e22d3a63a41c0eeee516707e446f8eff9a5a7eded6f",
+          "bytes": 39855336,
+          "time_code": 9.488809198208164,
+          "t_over_tcc": 2.449999999999998,
+          "elements": 524288,
+          "total_mass": 2424.780276533449,
+          "dense_mass": 296.36243099719286,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.01510382629930973
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_050.hdf5",
+          "sha256": "3ed86f1b012d80da87ee4bccc1d28409c0c67b376bbfee4ad2002af405f51910",
+          "bytes": 39855336,
+          "time_code": 9.682458365518535,
+          "t_over_tcc": 2.4999999999999982,
+          "elements": 524288,
+          "total_mass": 2424.7767991467845,
+          "dense_mass": 294.27392319589853,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.015262526459991932
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_051.hdf5",
+          "sha256": "63c4b2057a37f20429708ec83e51cd07e1165404005b91c59b2bdfe910ac2b85",
+          "bytes": 39855336,
+          "time_code": 9.876107532828904,
+          "t_over_tcc": 2.5499999999999976,
+          "elements": 524288,
+          "total_mass": 2424.8093844968826,
+          "dense_mass": 291.3765412643552,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.01482305396348238
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_052.hdf5",
+          "sha256": "a0c81bdca14cc3f2db16a30b2edee076ac07aba533e319432ea253b47337d4fd",
+          "bytes": 39855336,
+          "time_code": 10.069756700139276,
+          "t_over_tcc": 2.599999999999998,
+          "elements": 524288,
+          "total_mass": 2424.7828151562717,
+          "dense_mass": 288.55020704865456,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.014696125872433186
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_053.hdf5",
+          "sha256": "48fb30c9a4cbf3c9a6e7ce6a5936b4f851c018959db92022d63bec5e07615a55",
+          "bytes": 39855336,
+          "time_code": 10.263405867449647,
+          "t_over_tcc": 2.6499999999999977,
+          "elements": 524288,
+          "total_mass": 2424.7836060100235,
+          "dense_mass": 286.1572835445404,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.014978713355958462
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_054.hdf5",
+          "sha256": "c60c5330d22ab0d53c6dd1e6758733490c89601a9cf94766dd9154625421c295",
+          "bytes": 39855336,
+          "time_code": 10.457055034760018,
+          "t_over_tcc": 2.699999999999998,
+          "elements": 524288,
+          "total_mass": 2424.769727475941,
+          "dense_mass": 283.4042460769415,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.015598996542394161
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_055.hdf5",
+          "sha256": "4846b21641a2f0c0cc425b503eacb801316f5dfd99b8ff63fb93681296a16cda",
+          "bytes": 39855336,
+          "time_code": 10.650704202070388,
+          "t_over_tcc": 2.749999999999998,
+          "elements": 524288,
+          "total_mass": 2424.785179738421,
+          "dense_mass": 280.25596605986357,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.016197731718420982
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_056.hdf5",
+          "sha256": "faebd332d7185f4f61a7ac90df099246cddd6a9d41fbd2c33979091246236c30",
+          "bytes": 39855336,
+          "time_code": 10.844353369380759,
+          "t_over_tcc": 2.7999999999999976,
+          "elements": 524288,
+          "total_mass": 2424.768519501202,
+          "dense_mass": 277.96083042025566,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.016951417550444603
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_057.hdf5",
+          "sha256": "936cb299cb03ada7689f7765f04e5306d69292553d0dd7920b610f5beb816349",
+          "bytes": 39855336,
+          "time_code": 11.038002536691128,
+          "t_over_tcc": 2.849999999999997,
+          "elements": 524288,
+          "total_mass": 2424.773149719462,
+          "dense_mass": 276.0200888514519,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.01792086847126484
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_058.hdf5",
+          "sha256": "18b473aa61ced0fa1a7f1a3663f0a0a7ae2384b3dbb388e2811974206f97f6e8",
+          "bytes": 39855336,
+          "time_code": 11.2316517040015,
+          "t_over_tcc": 2.8999999999999977,
+          "elements": 524288,
+          "total_mass": 2424.723811632255,
+          "dense_mass": 273.5339553281665,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.018115339800715446
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_059.hdf5",
+          "sha256": "5880af61986174d2c909a0b760f90a64f5ebfef6a17f6cfd8622017ff5e8340c",
+          "bytes": 39855336,
+          "time_code": 11.42530087131187,
+          "t_over_tcc": 2.9499999999999975,
+          "elements": 524288,
+          "total_mass": 2424.777556572808,
+          "dense_mass": 271.3718720600009,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.018109997734427452
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_060.hdf5",
+          "sha256": "34730b69ec42b28b9042cf1c8ea8dec22009ead372bbd8920fc9a4a00ecaa77f",
+          "bytes": 39855336,
+          "time_code": 11.618950038622241,
+          "t_over_tcc": 2.9999999999999973,
+          "elements": 524288,
+          "total_mass": 2424.764789667679,
+          "dense_mass": 269.26591105014086,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.01769956573843956
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_061.hdf5",
+          "sha256": "30b50268af9dbc263f2487db75ec63424c36e8b70ed511895d8838096be04b7d",
+          "bytes": 39855336,
+          "time_code": 11.812599205932612,
+          "t_over_tcc": 3.0499999999999976,
+          "elements": 524288,
+          "total_mass": 2424.764606686542,
+          "dense_mass": 266.7875053733587,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.018061568960547447
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_062.hdf5",
+          "sha256": "e3c431ecac3b8f5857b8262bf730461d6b2abf59d38f9fa1ffba8163194b5024",
+          "bytes": 39855336,
+          "time_code": 12.00624837324298,
+          "t_over_tcc": 3.099999999999997,
+          "elements": 524288,
+          "total_mass": 2424.725208642194,
+          "dense_mass": 264.385427556932,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.017781566828489304
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_063.hdf5",
+          "sha256": "21b57addcf20c8c5044ce3aa3a4dfbb51efab89b097b7c7bada0a0ef374869dc",
+          "bytes": 39855336,
+          "time_code": 12.199897540553353,
+          "t_over_tcc": 3.1499999999999972,
+          "elements": 524288,
+          "total_mass": 2424.7292010635138,
+          "dense_mass": 262.0509240105748,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.017573999240994453
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_064.hdf5",
+          "sha256": "d8c24dc8c70cc9fcadac53c2b8b14e96a64ad9afb1ab1517faf5939ad91b7935",
+          "bytes": 39855336,
+          "time_code": 12.393546707863724,
+          "t_over_tcc": 3.199999999999997,
+          "elements": 524288,
+          "total_mass": 2424.7081168645527,
+          "dense_mass": 259.19480956345797,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.017456291243433952
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_065.hdf5",
+          "sha256": "bb731ddbda2bd9fe2f4ecb5324149cb8a25cfef5e2e571844ee151c17262d70e",
+          "bytes": 39855336,
+          "time_code": 12.587195875174094,
+          "t_over_tcc": 3.2499999999999973,
+          "elements": 524288,
+          "total_mass": 2424.7105557825416,
+          "dense_mass": 256.0875533223152,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.01721760258078575
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_066.hdf5",
+          "sha256": "8e386006aa8f442bf82d3a895002d07a76e85700bfb73f5df6160044988c94f0",
+          "bytes": 39855336,
+          "time_code": 12.780845042484465,
+          "t_over_tcc": 3.299999999999997,
+          "elements": 524288,
+          "total_mass": 2424.703642803477,
+          "dense_mass": 253.5572063177824,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.017301592975854874
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_067.hdf5",
+          "sha256": "8e6867328a165338bc356a758b5f69869d7a2a6bedf271c88ec75a85639e5e31",
+          "bytes": 39855336,
+          "time_code": 12.974494209794836,
+          "t_over_tcc": 3.349999999999997,
+          "elements": 524288,
+          "total_mass": 2424.7731413953006,
+          "dense_mass": 250.59286830574274,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.01724942959845066
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_068.hdf5",
+          "sha256": "785609d60ba24356e597a7f541ad9de5b21d0647920fdb060ee2d0657f4c2c69",
+          "bytes": 39855336,
+          "time_code": 13.168143377105205,
+          "t_over_tcc": 3.3999999999999964,
+          "elements": 524288,
+          "total_mass": 2424.7443355431315,
+          "dense_mass": 248.33617840707302,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.017254024744033813
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_069.hdf5",
+          "sha256": "fe0827b2023fb15244f15dc2a9f15001196045ca2d4ca892b117efa482a3f587",
+          "bytes": 39855336,
+          "time_code": 13.361792544415577,
+          "t_over_tcc": 3.449999999999997,
+          "elements": 524288,
+          "total_mass": 2424.7383360855747,
+          "dense_mass": 245.2042502015829,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.016912376508116722
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_070.hdf5",
+          "sha256": "2669e9463ba8a41c0265ded5ae076c27b72a93e9834b77b35405ceb94ca54021",
+          "bytes": 39855336,
+          "time_code": 13.555441711725948,
+          "t_over_tcc": 3.499999999999997,
+          "elements": 524288,
+          "total_mass": 2424.7118553360924,
+          "dense_mass": 242.55677290260792,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.016466399654746056
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_071.hdf5",
+          "sha256": "9e00f8bfd381ff7a6f681d59f3b4d2a2ffc79fb1212de880b0016ca9f04f5f7e",
+          "bytes": 39855336,
+          "time_code": 13.749090879036318,
+          "t_over_tcc": 3.5499999999999967,
+          "elements": 524288,
+          "total_mass": 2424.730260818731,
+          "dense_mass": 240.47630351036787,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.01597876474261284
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_072.hdf5",
+          "sha256": "6102dba30b794b9bae95db3aef5a945a4d3f184be6866884b62b8e70c8bcfddc",
+          "bytes": 39855336,
+          "time_code": 13.942740046346689,
+          "t_over_tcc": 3.599999999999997,
+          "elements": 524288,
+          "total_mass": 2424.697960608173,
+          "dense_mass": 237.54408930242062,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.015511317178606987
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_073.hdf5",
+          "sha256": "d9d6a18c2d6f366fc9897f6ed2aca19ac7a1be33273b0781777f7fef982211eb",
+          "bytes": 39855336,
+          "time_code": 14.136389213657058,
+          "t_over_tcc": 3.6499999999999964,
+          "elements": 524288,
+          "total_mass": 2424.7024075363297,
+          "dense_mass": 235.63391006737947,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.015095294453203678
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_074.hdf5",
+          "sha256": "ab7f8871b7bba09a3121e85556cc33311b39dc9e68208c88632a33b5e1102b67",
+          "bytes": 39855336,
+          "time_code": 14.33003838096743,
+          "t_over_tcc": 3.6999999999999966,
+          "elements": 524288,
+          "total_mass": 2424.6743647684343,
+          "dense_mass": 232.5449358522892,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.014768529683351517
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_075.hdf5",
+          "sha256": "124607c4065ac40a1b98968db16c5a1a750e1500f08b494a21175138adf087c7",
+          "bytes": 39855336,
+          "time_code": 14.5236875482778,
+          "t_over_tcc": 3.7499999999999964,
+          "elements": 524288,
+          "total_mass": 2424.653201889014,
+          "dense_mass": 230.57368002831936,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.014532631263136864
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_076.hdf5",
+          "sha256": "a5c1b4ddcac835e37dcb708105636d7b30b393b9cc9bc6188c4d6cbc47a2c2bf",
+          "bytes": 39855336,
+          "time_code": 14.717336715588171,
+          "t_over_tcc": 3.7999999999999967,
+          "elements": 524288,
+          "total_mass": 2424.7403451292776,
+          "dense_mass": 228.2598701491952,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.014408105984330177
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_077.hdf5",
+          "sha256": "6c43411299dc0378e37ed4dec62b4c724cb56ec4559e677b1701aa2f01bd431e",
+          "bytes": 39855336,
+          "time_code": 14.910985882898542,
+          "t_over_tcc": 3.8499999999999965,
+          "elements": 524288,
+          "total_mass": 2424.70882565435,
+          "dense_mass": 225.31981643289328,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.014380279928445816
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_078.hdf5",
+          "sha256": "88cb820f92d39c6f6c2f9141c5d976b37b16fab0e1aa09660e1569ca357a843d",
+          "bytes": 39855336,
+          "time_code": 15.104635050208913,
+          "t_over_tcc": 3.8999999999999964,
+          "elements": 524288,
+          "total_mass": 2424.6923327804543,
+          "dense_mass": 223.3935535401106,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.014443627558648586
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_079.hdf5",
+          "sha256": "b36b0865e3a2de38a5e36b898efe3304097b1344520be107d6b8535dcdccf613",
+          "bytes": 39855336,
+          "time_code": 15.298284217519281,
+          "t_over_tcc": 3.9499999999999957,
+          "elements": 524288,
+          "total_mass": 2424.6544512568507,
+          "dense_mass": 221.5346238911152,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.014583299867808819
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_080.hdf5",
+          "sha256": "69f84af7fd66bdf2e757b47aa99ab4cac2268b1d06ee653556f8c247a6794bf8",
+          "bytes": 39855336,
+          "time_code": 15.491933384829654,
+          "t_over_tcc": 3.9999999999999964,
+          "elements": 524288,
+          "total_mass": 2424.671269621467,
+          "dense_mass": 218.92233163118362,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.014779483899474144
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_081.hdf5",
+          "sha256": "9b44fcddfed636f2302f9149816fd73a9e55d83b0421c35bf8aa578902973657",
+          "bytes": 39855336,
+          "time_code": 15.685582552140025,
+          "t_over_tcc": 4.049999999999996,
+          "elements": 524288,
+          "total_mass": 2424.63532449794,
+          "dense_mass": 217.04987651854753,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.014741463586688042
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_082.hdf5",
+          "sha256": "970b8895333cc0c6332734a4b0f6ccd0bce15d7a281fcb1c209b6e677578c69a",
+          "bytes": 39855336,
+          "time_code": 15.879231719450395,
+          "t_over_tcc": 4.099999999999996,
+          "elements": 524288,
+          "total_mass": 2424.6173332838807,
+          "dense_mass": 215.38845437020063,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.01472889631986618
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_083.hdf5",
+          "sha256": "ebc17509bee7dc3060e6a08c5dab18bfe340d20de1dc841d9d92ff1b5a12066a",
+          "bytes": 39855336,
+          "time_code": 16.072880886760768,
+          "t_over_tcc": 4.149999999999997,
+          "elements": 524288,
+          "total_mass": 2424.582466495689,
+          "dense_mass": 213.88977847993374,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.014902213588356972
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_084.hdf5",
+          "sha256": "c0407422d8044ce79d643985d25012ade54101a51dfa83b1cd3076bd1a07a0c8",
+          "bytes": 39855336,
+          "time_code": 16.26653005407114,
+          "t_over_tcc": 4.199999999999997,
+          "elements": 524288,
+          "total_mass": 2424.7179332470987,
+          "dense_mass": 212.22633181512356,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.015279699116945267
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_085.hdf5",
+          "sha256": "63349faa331732a1f6a42d6ee45dc860f42bf455ada5806b0eb918d7220bc234",
+          "bytes": 39855336,
+          "time_code": 16.460179221381512,
+          "t_over_tcc": 4.249999999999997,
+          "elements": 524288,
+          "total_mass": 2424.685980785638,
+          "dense_mass": 208.387684173882,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.01585698127746582
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_086.hdf5",
+          "sha256": "cf7cd306877bdc0198226fb9635914b97d719f3113a71a99e7726f6a3762b984",
+          "bytes": 39855336,
+          "time_code": 16.653828388691885,
+          "t_over_tcc": 4.299999999999998,
+          "elements": 524288,
+          "total_mass": 2424.6737356483936,
+          "dense_mass": 207.1439597606659,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.016578713431954384
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_087.hdf5",
+          "sha256": "14232d5a153ebdfd3a47a11ee010b2e93952e7eadc1aaf75a83919a6e0931938",
+          "bytes": 39855336,
+          "time_code": 16.847477556002257,
+          "t_over_tcc": 4.349999999999998,
+          "elements": 524288,
+          "total_mass": 2424.642546338495,
+          "dense_mass": 203.96868903934956,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.0174170583486557
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_088.hdf5",
+          "sha256": "c9f0418a650bbb46e94a49427f89f6c7317383ace795e1b708cf3744bc033234",
+          "bytes": 39855336,
+          "time_code": 17.04112672331263,
+          "t_over_tcc": 4.399999999999999,
+          "elements": 524288,
+          "total_mass": 2424.6716384792235,
+          "dense_mass": 199.81551325321198,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.01840069331228733
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_089.hdf5",
+          "sha256": "11796822571fdf451dddb3982ccf270f654cf88279bc0e8fa0471df5e73e3a87",
+          "bytes": 39855336,
+          "time_code": 17.234775890623002,
+          "t_over_tcc": 4.449999999999999,
+          "elements": 524288,
+          "total_mass": 2424.6408776540775,
+          "dense_mass": 195.95948623120785,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.017504815012216568
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_090.hdf5",
+          "sha256": "eb11d8e94110cab0414271e787991d843e6f3bf97593310d4622db23cd70133b",
+          "bytes": 39855336,
+          "time_code": 17.428425057933374,
+          "t_over_tcc": 4.499999999999999,
+          "elements": 524288,
+          "total_mass": 2424.6420185156167,
+          "dense_mass": 191.5933807566762,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.017135832458734512
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_091.hdf5",
+          "sha256": "5bc4bc2ee723dabc7a3f35af26eb54eeb2ee3d87e06811fcf5f8181b2ab50483",
+          "bytes": 39855336,
+          "time_code": 17.622074225243747,
+          "t_over_tcc": 4.55,
+          "elements": 524288,
+          "total_mass": 2424.5989950296935,
+          "dense_mass": 188.455143943429,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.017434459179639816
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_092.hdf5",
+          "sha256": "7af0476287fae6b5ea6d22837cc96f30b02c5677ead65b77574c51c78eeb626b",
+          "bytes": 39855336,
+          "time_code": 17.81572339255412,
+          "t_over_tcc": 4.6000000000000005,
+          "elements": 524288,
+          "total_mass": 2424.735078183934,
+          "dense_mass": 185.6764111816883,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.018476814031600952
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_093.hdf5",
+          "sha256": "34943f44161160c6c18c783b62653f9f9fa08262da658adbc65a215a6bda5318",
+          "bytes": 39855336,
+          "time_code": 18.00937255986449,
+          "t_over_tcc": 4.65,
+          "elements": 524288,
+          "total_mass": 2424.6960576449055,
+          "dense_mass": 184.03796543926,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.018284551799297333
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_094.hdf5",
+          "sha256": "29384cd013d47be55769853b879abc5bac9a5363efb18331b109889531fa68fb",
+          "bytes": 39855336,
+          "time_code": 18.203021727174864,
+          "t_over_tcc": 4.700000000000001,
+          "elements": 524288,
+          "total_mass": 2424.681321298238,
+          "dense_mass": 180.5161551758647,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.018345963209867477
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_095.hdf5",
+          "sha256": "bc1f9c5963df30cb813465c33ed6ebe446173bbb6159aa25ce80fdf5e5ca369e",
+          "bytes": 39855336,
+          "time_code": 18.396670894485236,
+          "t_over_tcc": 4.750000000000002,
+          "elements": 524288,
+          "total_mass": 2424.644144896185,
+          "dense_mass": 178.21660643815994,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.01866898126900196
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_096.hdf5",
+          "sha256": "ac5f7bd1bb46e027ecbb0469094cd55ebf6725598a2adbff09ab374f9de679bb",
+          "bytes": 39855336,
+          "time_code": 18.59032006179561,
+          "t_over_tcc": 4.800000000000002,
+          "elements": 524288,
+          "total_mass": 2424.700043174438,
+          "dense_mass": 175.27287901937962,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.01920866221189499
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_097.hdf5",
+          "sha256": "479b8e0c799a6f74b410b9e713131d7f826f779418912d1d3e568b9fe447b309",
+          "bytes": 39855336,
+          "time_code": 18.78396922910598,
+          "t_over_tcc": 4.850000000000002,
+          "elements": 524288,
+          "total_mass": 2424.6651352422778,
+          "dense_mass": 172.6246281415224,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.019635485485196114
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_098.hdf5",
+          "sha256": "f4744a659c55a4a57ab94bd52446185ea5599e6745e68090768ef3b629e38fde",
+          "bytes": 39855336,
+          "time_code": 18.977618396416354,
+          "t_over_tcc": 4.900000000000003,
+          "elements": 524288,
+          "total_mass": 2424.6379899736494,
+          "dense_mass": 168.97448835521936,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.019622961059212685
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_099.hdf5",
+          "sha256": "015c15789f82f9c4d8b57558237bc37870bd2f6075ec92658213435bfa474d88",
+          "bytes": 39855336,
+          "time_code": 19.171267563726726,
+          "t_over_tcc": 4.950000000000003,
+          "elements": 524288,
+          "total_mass": 2424.6126005032565,
+          "dense_mass": 166.3676140382886,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.019741546362638474
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/snapshot_100.hdf5",
+          "sha256": "4b747b16b09f1d8601e33e3fe1501da7fb9c2ea5599be4669b860e78411ea7ec",
+          "bytes": 39855336,
+          "time_code": 19.364916731037084,
+          "t_over_tcc": 5.0,
+          "elements": 524288,
+          "total_mass": 2424.740443044342,
+          "dense_mass": 163.10243424773216,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.019679725170135498
+        }
+      ],
+      "cadence": {
+        "bits": 60,
+        "actual_count": 101,
+        "expected_count": 101,
+        "tick_code": 1.679638783183304e-17,
+        "tolerance_code": 3.443259505525773e-14,
+        "maximum_offset": 3.552713678800501e-15
+      },
+      "terminal": {
+        "files": [
+          {
+            "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/restartfiles/restart.0",
+            "bytes": 48622624,
+            "sha256": "707cc529500872b5483fabf8a9bb47a4f8d5d71486b36e7aca13c6cf1a808b2e",
+            "prefix_bytes": 43996256
+          },
+          {
+            "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/restartfiles/restart.1",
+            "bytes": 48815416,
+            "sha256": "70d92bc68a6dd6942a98d990fce9e27d059fa3dd26e0dba97cfd23abbc989ffc",
+            "prefix_bytes": 44086976
+          },
+          {
+            "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/restartfiles/restart.2",
+            "bytes": 48633248,
+            "sha256": "60606ace52ef647f73673a93cbf119f65f2e58d62a9c987b0d4dbc5e057a2920",
+            "prefix_bytes": 44082272
+          },
+          {
+            "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/restartfiles/restart.3",
+            "bytes": 48923032,
+            "sha256": "79a2f0bb2999de31d2bf807b790510ad01dd32aae45b7ae17cec4bc34e42f305",
+            "prefix_bytes": 44046656
+          },
+          {
+            "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/restartfiles/restart.4",
+            "bytes": 48717136,
+            "sha256": "8b7f77d923d6972d86408ca4e448e9185d84bf77e93ae4f1df121d0e6e7fcd8f",
+            "prefix_bytes": 44048672
+          },
+          {
+            "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/restartfiles/restart.5",
+            "bytes": 48738096,
+            "sha256": "434cc976d70c291e27e37dc77456bc079e140ba6914ab204f6c2648b64b2d9e3",
+            "prefix_bytes": 44067488
+          },
+          {
+            "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/restartfiles/restart.6",
+            "bytes": 48758872,
+            "sha256": "48fc1b6a3f5a3d1bad28ac234108ef82e19d25272c4afee50085740923852bcc",
+            "prefix_bytes": 44046656
+          },
+          {
+            "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/restartfiles/restart.7",
+            "bytes": 48777624,
+            "sha256": "7125c93a0671805154e324436d2f74dc714edd99b3bf6caed18995782e190e0f",
+            "prefix_bytes": 44073536
+          }
+        ],
+        "retained_files": [
+          {
+            "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/restartfiles/restart.0",
+            "bytes": 48622624,
+            "sha256": "707cc529500872b5483fabf8a9bb47a4f8d5d71486b36e7aca13c6cf1a808b2e"
+          },
+          {
+            "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/restartfiles/restart.1",
+            "bytes": 48815416,
+            "sha256": "70d92bc68a6dd6942a98d990fce9e27d059fa3dd26e0dba97cfd23abbc989ffc"
+          },
+          {
+            "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/restartfiles/restart.2",
+            "bytes": 48633248,
+            "sha256": "60606ace52ef647f73673a93cbf119f65f2e58d62a9c987b0d4dbc5e057a2920"
+          },
+          {
+            "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/restartfiles/restart.3",
+            "bytes": 48923032,
+            "sha256": "79a2f0bb2999de31d2bf807b790510ad01dd32aae45b7ae17cec4bc34e42f305"
+          },
+          {
+            "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/restartfiles/restart.4",
+            "bytes": 48717136,
+            "sha256": "8b7f77d923d6972d86408ca4e448e9185d84bf77e93ae4f1df121d0e6e7fcd8f"
+          },
+          {
+            "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/restartfiles/restart.5",
+            "bytes": 48738096,
+            "sha256": "434cc976d70c291e27e37dc77456bc079e140ba6914ab204f6c2648b64b2d9e3"
+          },
+          {
+            "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/restartfiles/restart.6",
+            "bytes": 48758872,
+            "sha256": "48fc1b6a3f5a3d1bad28ac234108ef82e19d25272c4afee50085740923852bcc"
+          },
+          {
+            "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/sharp13/output/restartfiles/restart.7",
+            "bytes": 48777624,
+            "sha256": "7125c93a0671805154e324436d2f74dc714edd99b3bf6caed18995782e190e0f"
+          }
+        ],
+        "abi": {
+          "global_data_all_processes": {
+            "itemsize": 15864,
+            "matching_definitions": 32,
+            "die_offsets": [
+              "0x289",
+              "0x1a22",
+              "0x2b0b",
+              "0x50eb",
+              "0x7e2a",
+              "0xb06b",
+              "0x16956",
+              "0x17f27",
+              "0x192c5",
+              "0x21884",
+              "0x24b8c",
+              "0x269c4",
+              "0x2c248",
+              "0x338d3",
+              "0x3477e",
+              "0x35908",
+              "0x38d81",
+              "0x3b2f4",
+              "0x3d08d",
+              "0x3e524",
+              "0x445ce",
+              "0x4659d",
+              "0x4843e",
+              "0x4ce00",
+              "0x4f059",
+              "0x513f6",
+              "0x5267f",
+              "0x585e7",
+              "0x5c921",
+              "0x6009b",
+              "0x61253",
+              "0x62bb9"
+            ],
+            "fields": {
+              "Time": {
+                "offset": 408,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "TimeMax": {
+                "offset": 432,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "TotNumPart": {
+                "offset": 0,
+                "dtype": "int64",
+                "bytes": 8
+              },
+              "TotN_gas": {
+                "offset": 8,
+                "dtype": "int64",
+                "bytes": 8
+              },
+              "MinEgySpec": {
+                "offset": 128,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "NumCurrentTiStep": {
+                "offset": 400,
+                "dtype": "int64",
+                "bytes": 8
+              },
+              "cf_hubble_a": {
+                "offset": 216,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "BoxSize": {
+                "offset": 312,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "TimeBegin": {
+                "offset": 416,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "Timebase_interval": {
+                "offset": 440,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "ComovingIntegrationOn": {
+                "offset": 320,
+                "dtype": "int32",
+                "bytes": 4
+              },
+              "Ti_Current": {
+                "offset": 448,
+                "dtype": "int64",
+                "bytes": 8
+              }
+            }
+          },
+          "particle_data": {
+            "itemsize": 288,
+            "matching_definitions": 24,
+            "die_offsets": [
+              "0x3134",
+              "0x5714",
+              "0x8453",
+              "0xb6b7",
+              "0x16f7f",
+              "0x1854c",
+              "0x198f0",
+              "0x21eaf",
+              "0x251b4",
+              "0x27010",
+              "0x2c893",
+              "0x34da3",
+              "0x35f33",
+              "0x393cd",
+              "0x3d6b6",
+              "0x44bf2",
+              "0x48a8c",
+              "0x4d42b",
+              "0x4f680",
+              "0x52d12",
+              "0x58c33",
+              "0x5cf6d",
+              "0x606c0",
+              "0x61878"
+            ],
+            "fields": {
+              "Type": {
+                "offset": 0,
+                "dtype": "int16",
+                "bytes": 2
+              },
+              "ID": {
+                "offset": 4,
+                "dtype": "uint32",
+                "bytes": 4
+              },
+              "Mass": {
+                "offset": 56,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "Pos": {
+                "offset": 32,
+                "dtype": "('<f8', (3,))",
+                "bytes": 24
+              },
+              "Vel": {
+                "offset": 64,
+                "dtype": "('<f8', (3,))",
+                "bytes": 24
+              }
+            }
+          },
+          "gas_cell_data": {
+            "itemsize": 384,
+            "matching_definitions": 20,
+            "die_offsets": [
+              "0x32b3",
+              "0x5894",
+              "0x85d3",
+              "0xb847",
+              "0x170fe",
+              "0x186cb",
+              "0x2533f",
+              "0x271a0",
+              "0x2ca29",
+              "0x34f22",
+              "0x3955e",
+              "0x3d835",
+              "0x41d8d",
+              "0x44d71",
+              "0x52ea7",
+              "0x58dc4",
+              "0x5d0fe",
+              "0x6083f",
+              "0x619f7",
+              "0x63236"
+            ],
+            "fields": {
+              "MassTrue": {
+                "offset": 8,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "dMass": {
+                "offset": 16,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "DtMass": {
+                "offset": 24,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "Density": {
+                "offset": 0,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "Pressure": {
+                "offset": 80,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "InternalEnergy": {
+                "offset": 88,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "InternalEnergyPred": {
+                "offset": 96,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "DtInternalEnergy": {
+                "offset": 104,
+                "dtype": "float64",
+                "bytes": 8
+              }
+            }
+          }
+        },
+        "mass_account": {
+          "initial": 2424.8441153885797,
+          "conserved": 2424.740443012846,
+          "pending": 0.10367237573384391,
+          "combined": 2424.8441153885797,
+          "residual": -1.1237748358671327e-13,
+          "allowance": 0.037062168452928146,
+          "passes": true,
+          "changed_particles": 524288,
+          "max_absolute_change": 0.36957002667068967,
+          "response_threshold": 2.710505431213761e-15,
+          "response_detected": true,
+          "steps": 4101,
+          "criterion": "Predeclared engineering accumulation gate, not a physical accuracy theorem."
+        },
+        "minima": {
+          "Density": 0.44572298681923406,
+          "Pressure": 0.41578968192008686,
+          "InternalEnergy": 0.019679724838037992,
+          "InternalEnergyPred": 0.019679724838037992
+        }
+      },
+      "resources": {
+        "status": "native_finished_pending_checks",
+        "returncode": 0,
+        "error": null,
+        "wall_seconds": 1772.8972631410002,
+        "peak_child_rss_bytes": 1812684800,
+        "median_busy_cpu_workers": 7.996611086140646
+      },
+      "input_sha256": "6b15d547b65245fc33d413a3da5f1b6f80729efb54c0f5e0df82d93104b4901a",
+      "ic_sha256": "304d5eb3ac868a866c85ad9503f1f206ef37fafaea6c4ba27f466fe14aad4114",
+      "scope": "Mass diagnostics; native velocities staggered, periodic box, not a cross-code equivalence or physical-accuracy proof."
+    },
+    {
+      "status": "passed_full_native_checks",
+      "law": "tanh13",
+      "physics": {
+        "code": "GIZMO",
+        "variants": [
+          "mfm",
+          "mfv"
+        ],
+        "chi": 100,
+        "mach": 2,
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1,
+        "rho_wind": 1,
+        "p_wind": 1,
+        "density_width": 0.1,
+        "rv_scale": 1.3,
+        "seed": 42,
+        "center": [
+          3,
+          5,
+          5
+        ],
+        "domain_left": [
+          0,
+          0,
+          0
+        ],
+        "domain_right": [
+          20,
+          10,
+          10
+        ],
+        "mass_mode": "volume",
+        "ranks": 8,
+        "t_end_over_tcc": 5,
+        "output_dt_over_tcc": 0.05,
+        "scope": "Within each native GIZMO variant, actual historical tanh versus sharp velocity. Regular equal-volume initial lattice, variable masses, original float32 IC/output precision and fully periodic native boundary recipe. Native kernel-derived density/pressure must be checked separately. No passive material tracer is assumed; particle-ID mass in MFV is not a material-retention diagnostic.",
+        "v_wind": 2.581988897471611,
+        "t_cc": 3.872983346207417
+      },
+      "binary_sha256": "4784336422c25db4714c6f56ef95337347f4be18dfd622e2b7e9acf7e1fe3d3c",
+      "rows": [
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_000.hdf5",
+          "sha256": "1da49033837574a2560e761088f14dd5bbb6680872be53386a4b742dad347fed",
+          "bytes": 39855336,
+          "time_code": 0.0,
+          "t_over_tcc": 0.0,
+          "elements": 524288,
+          "total_mass": 2424.8441153885797,
+          "dense_mass": 398.4896878004074,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.015000000596046448
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_001.hdf5",
+          "sha256": "732ef64c4b1fe3742d3f6f36e40560d0974a63888a05a55b18f0af40f806bddb",
+          "bytes": 39855336,
+          "time_code": 0.19364916731037085,
+          "t_over_tcc": 0.05,
+          "elements": 524288,
+          "total_mass": 2424.8250648323447,
+          "dense_mass": 402.75244185328484,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.015000000596046448
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_002.hdf5",
+          "sha256": "fad59ac33abe7e89d404d278ac10ffa8be4bb0b0e01470cb70a2fd014ee54445",
+          "bytes": 39855336,
+          "time_code": 0.3872983346207417,
+          "t_over_tcc": 0.1,
+          "elements": 524288,
+          "total_mass": 2424.8531869621947,
+          "dense_mass": 402.33360555768013,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.01499116700142622
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_003.hdf5",
+          "sha256": "13a9e383aae8fadc77416041ddca3e0a415a704ae7d16b5cedc912554f2e7543",
+          "bytes": 39855336,
+          "time_code": 0.5809475019311126,
+          "t_over_tcc": 0.15,
+          "elements": 524288,
+          "total_mass": 2424.916042061057,
+          "dense_mass": 402.19766050577164,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.014981935732066631
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_004.hdf5",
+          "sha256": "4b98f891426cabc18108e110443030835b68d8507442ddfd09e5df2b1f78bc99",
+          "bytes": 39855336,
+          "time_code": 0.7745966692414834,
+          "t_over_tcc": 0.2,
+          "elements": 524288,
+          "total_mass": 2424.9342379844747,
+          "dense_mass": 399.1956697925925,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.014976155944168568
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_005.hdf5",
+          "sha256": "963568f00ff1c12bd5f7290f73a67093a92bf3f01ff3df5d73ecddb0722277b5",
+          "bytes": 39855336,
+          "time_code": 0.9682458365518543,
+          "t_over_tcc": 0.25,
+          "elements": 524288,
+          "total_mass": 2424.9314741566777,
+          "dense_mass": 392.3960687443614,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.01497078686952591
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_006.hdf5",
+          "sha256": "b84b050f23ac47284ccbb05e3ed72d411bc4d9ac912c162f7f0f795cb88e7cc7",
+          "bytes": 39855336,
+          "time_code": 1.161895003862225,
+          "t_over_tcc": 0.3,
+          "elements": 524288,
+          "total_mass": 2424.908560649492,
+          "dense_mass": 391.2241219431162,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.014589170925319195
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_007.hdf5",
+          "sha256": "701268cd2cac6d1cddfbfe210b280ce014adddefa087b2784487bc977e3aa45f",
+          "bytes": 39855336,
+          "time_code": 1.355544171172596,
+          "t_over_tcc": 0.35,
+          "elements": 524288,
+          "total_mass": 2424.8964685967658,
+          "dense_mass": 389.1357038989663,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.013821035623550415
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_008.hdf5",
+          "sha256": "4f340e769063deb40206fa930133667649d8dae9d9b3502524f13e74e18896c4",
+          "bytes": 39855336,
+          "time_code": 1.5491933384829668,
+          "t_over_tcc": 0.4,
+          "elements": 524288,
+          "total_mass": 2424.879502429627,
+          "dense_mass": 386.40376014634967,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.013048605062067509
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_009.hdf5",
+          "sha256": "3fb00079da4875649dd167b5573144f94e17c59f9d0fa6d085d5dc3f782bd0bd",
+          "bytes": 39855336,
+          "time_code": 1.7428425057933374,
+          "t_over_tcc": 0.44999999999999996,
+          "elements": 524288,
+          "total_mass": 2424.8602087600157,
+          "dense_mass": 385.63301565125585,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.012317854911088943
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_010.hdf5",
+          "sha256": "79a446182675030a16e3620cb2803b9577a8c5712c1b373c59e2136cc6e53b09",
+          "bytes": 39855336,
+          "time_code": 1.9364916731037085,
+          "t_over_tcc": 0.5,
+          "elements": 524288,
+          "total_mass": 2424.836780015612,
+          "dense_mass": 380.76385045051575,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.011583314277231693
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_011.hdf5",
+          "sha256": "c2da8764d6ec6b76095f88d9b20aea3efad53b13303e0c08c26c4fc514f493fc",
+          "bytes": 39855336,
+          "time_code": 2.1301408404140796,
+          "t_over_tcc": 0.55,
+          "elements": 524288,
+          "total_mass": 2424.823220938677,
+          "dense_mass": 379.2342917956412,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.010928486473858356
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_012.hdf5",
+          "sha256": "6c81607cc96754fec653d0385f5f1221aa4eb2671cf1f15bd797a47a91215214",
+          "bytes": 39855336,
+          "time_code": 2.32379000772445,
+          "t_over_tcc": 0.6,
+          "elements": 524288,
+          "total_mass": 2424.8202261137776,
+          "dense_mass": 378.0600211620331,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.010361459106206894
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_013.hdf5",
+          "sha256": "ef001724cf1f7e2b28c96d56210eff3952aeda33e9e2f10ceed0e32bc938ccc3",
+          "bytes": 39855336,
+          "time_code": 2.517439175034821,
+          "t_over_tcc": 0.6499999999999999,
+          "elements": 524288,
+          "total_mass": 2424.829616495408,
+          "dense_mass": 372.5647275559604,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.009863924235105515
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_014.hdf5",
+          "sha256": "fa7d9b5492a960ebb975a8ce2789744be9e0fdda40fb469a3621c8a188b07527",
+          "bytes": 39855336,
+          "time_code": 2.7110883423451915,
+          "t_over_tcc": 0.6999999999999998,
+          "elements": 524288,
+          "total_mass": 2424.806951378472,
+          "dense_mass": 370.7161154486239,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.009428356774151325
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_015.hdf5",
+          "sha256": "6c387216cc4fdb07e96dbcd29292d05178df3d46e1a6b4fbf3a2f5244bf4212e",
+          "bytes": 39855336,
+          "time_code": 2.904737509655562,
+          "t_over_tcc": 0.7499999999999998,
+          "elements": 524288,
+          "total_mass": 2424.810139518697,
+          "dense_mass": 368.54532251879573,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.009052830748260021
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_016.hdf5",
+          "sha256": "c4d70f408b0f9688e8c81c9fa4cd524e168d0ba044a80097bca7c03b559ea749",
+          "bytes": 39855336,
+          "time_code": 3.0983866769659323,
+          "t_over_tcc": 0.7999999999999997,
+          "elements": 524288,
+          "total_mass": 2424.7971205012873,
+          "dense_mass": 366.41140933707356,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.008728593587875366
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_017.hdf5",
+          "sha256": "3346fa2838ad3c9aec1b6d9a159e13550121463b79014325dc8c261a14ffa504",
+          "bytes": 39855336,
+          "time_code": 3.2920358442763034,
+          "t_over_tcc": 0.8499999999999998,
+          "elements": 524288,
+          "total_mass": 2424.822814801242,
+          "dense_mass": 365.0411153845489,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.008457287214696407
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_018.hdf5",
+          "sha256": "0038f15018b42dd95d1b05cb5b98c94fdac44af9e94535a3c1af959e26e9775f",
+          "bytes": 39855336,
+          "time_code": 3.485685011586674,
+          "t_over_tcc": 0.8999999999999997,
+          "elements": 524288,
+          "total_mass": 2424.801164290635,
+          "dense_mass": 362.8288803100586,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.008184188976883888
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_019.hdf5",
+          "sha256": "b18a4467b5fa234e50fd4da2fda687d1d6e445db5e35ace7ab9d0ab7912ffcfd",
+          "bytes": 39855336,
+          "time_code": 3.6793341788970446,
+          "t_over_tcc": 0.9499999999999996,
+          "elements": 524288,
+          "total_mass": 2424.819754458498,
+          "dense_mass": 358.73348169773817,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.007920722477138042
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_020.hdf5",
+          "sha256": "0e8646057771732dd032c3532f2de2552242a548bb1d0611e77cb9cac79cd583",
+          "bytes": 39855336,
+          "time_code": 3.8729833462074152,
+          "t_over_tcc": 0.9999999999999996,
+          "elements": 524288,
+          "total_mass": 2424.803991112858,
+          "dense_mass": 355.6627844572067,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.007728872820734978
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_021.hdf5",
+          "sha256": "b2cb7f2d2241a3d415dd07509201c81be9938f4a47e5d2d02f4d06f21af3d508",
+          "bytes": 39855336,
+          "time_code": 4.066632513517786,
+          "t_over_tcc": 1.0499999999999994,
+          "elements": 524288,
+          "total_mass": 2424.80555479927,
+          "dense_mass": 354.1741936542094,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.0076047866605222225
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_022.hdf5",
+          "sha256": "bfc0d0faa30bd988720a94e1a26f297eeb1adcb388b731c3405fca45e01b35e8",
+          "bytes": 39855336,
+          "time_code": 4.2602816808281565,
+          "t_over_tcc": 1.0999999999999994,
+          "elements": 524288,
+          "total_mass": 2424.7872774859425,
+          "dense_mass": 352.3015946559608,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.00740972813218832
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_023.hdf5",
+          "sha256": "00ee6151fcbb656015ecff852a9b3692a3f11638dd74b637ca2c360d5bd6e494",
+          "bytes": 39855336,
+          "time_code": 4.453930848138527,
+          "t_over_tcc": 1.1499999999999995,
+          "elements": 524288,
+          "total_mass": 2424.7849192670546,
+          "dense_mass": 351.0588355511427,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.007291591726243496
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_024.hdf5",
+          "sha256": "49b5617d8dab305b23d01a6224124047988c5e08625a8f05ddb902e71eff061e",
+          "bytes": 39855336,
+          "time_code": 4.647580015448898,
+          "t_over_tcc": 1.1999999999999993,
+          "elements": 524288,
+          "total_mass": 2424.7723150185775,
+          "dense_mass": 349.9816564396024,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.00732076819986105
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_025.hdf5",
+          "sha256": "759154f0deb80d47b3a7b38b64b35d99aee86063a650fa5d3a717881d1bb292d",
+          "bytes": 39855336,
+          "time_code": 4.841229182759268,
+          "t_over_tcc": 1.2499999999999993,
+          "elements": 524288,
+          "total_mass": 2424.764666976873,
+          "dense_mass": 348.47182412445545,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.007585556712001562
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_026.hdf5",
+          "sha256": "b7bf2396f22d659528e354c7bc1a045055bdb19ec6bd31e531fb5d5a78aea127",
+          "bytes": 39855336,
+          "time_code": 5.034878350069639,
+          "t_over_tcc": 1.2999999999999992,
+          "elements": 524288,
+          "total_mass": 2424.8135747897904,
+          "dense_mass": 346.2234242707491,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.008095222525298595
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_027.hdf5",
+          "sha256": "89b4e779a13d7e06d7014117060733a1ba6330f759fb131e277bc63b639adc86",
+          "bytes": 39855336,
+          "time_code": 5.22852751738001,
+          "t_over_tcc": 1.3499999999999992,
+          "elements": 524288,
+          "total_mass": 2424.792305207113,
+          "dense_mass": 345.09136494994164,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.008872482925653458
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_028.hdf5",
+          "sha256": "1f16087842bf8a15c231fccb03b9f959bd4862c1be805f67abae7dff01e89832",
+          "bytes": 39855336,
+          "time_code": 5.422176684690379,
+          "t_over_tcc": 1.3999999999999988,
+          "elements": 524288,
+          "total_mass": 2424.7989046939183,
+          "dense_mass": 351.9404494613409,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.009986558929085732
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_029.hdf5",
+          "sha256": "343aedd1d1a757f4b393263471dbf67dc29871e8c20c08811d6ace665f076c8a",
+          "bytes": 39855336,
+          "time_code": 5.615825852000751,
+          "t_over_tcc": 1.449999999999999,
+          "elements": 524288,
+          "total_mass": 2424.7761525767855,
+          "dense_mass": 350.17887441813946,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.01142128650099039
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_030.hdf5",
+          "sha256": "15730516b5ec6b9aa36be54a2a093d279a6e3fc80d7e4962fe360a984c4a49c1",
+          "bytes": 39855336,
+          "time_code": 5.8094750193111215,
+          "t_over_tcc": 1.499999999999999,
+          "elements": 524288,
+          "total_mass": 2424.7891747381072,
+          "dense_mass": 350.3527231551707,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.013063190504908562
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_031.hdf5",
+          "sha256": "667a9db569eeb95fd14bde0bdffafe72d4d2129a303b8bb829b6b9c978d99b76",
+          "bytes": 39855336,
+          "time_code": 6.003124186621492,
+          "t_over_tcc": 1.549999999999999,
+          "elements": 524288,
+          "total_mass": 2424.760908706812,
+          "dense_mass": 347.50949738174677,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.014842122793197632
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_032.hdf5",
+          "sha256": "9e2bc0c002cbdff4d8d04000f9ad283fed13a12d152fb9c11bc89c48fb59aebc",
+          "bytes": 39855336,
+          "time_code": 6.196773353931863,
+          "t_over_tcc": 1.5999999999999988,
+          "elements": 524288,
+          "total_mass": 2424.767953612376,
+          "dense_mass": 344.6564262509346,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.016360273584723473
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_033.hdf5",
+          "sha256": "ade63561e843c0fce98058376453896d06626dc5051b102883b8250daf5d2027",
+          "bytes": 39855336,
+          "time_code": 6.390422521242233,
+          "t_over_tcc": 1.6499999999999988,
+          "elements": 524288,
+          "total_mass": 2424.7377700430807,
+          "dense_mass": 340.8375461176038,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.015720022842288017
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_034.hdf5",
+          "sha256": "87275888ca5e8251a82f14e1840bfb72f9a4a0ec3f54bf4df42ddbad23268461",
+          "bytes": 39855336,
+          "time_code": 6.584071688552604,
+          "t_over_tcc": 1.6999999999999988,
+          "elements": 524288,
+          "total_mass": 2424.804246087093,
+          "dense_mass": 337.79444167017937,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.01516853366047144
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_035.hdf5",
+          "sha256": "ac532bbc51fa4acec195de2552651d9e1bd9f4afaec231225075c53581f770bd",
+          "bytes": 39855336,
+          "time_code": 6.777720855862975,
+          "t_over_tcc": 1.7499999999999987,
+          "elements": 524288,
+          "total_mass": 2424.7737132424954,
+          "dense_mass": 335.83135407045484,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.01479716133326292
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_036.hdf5",
+          "sha256": "9b38612b358606a4cfe5c085addc5a676932c391cbc013e27dac975a1922e3e9",
+          "bytes": 39855336,
+          "time_code": 6.971370023173346,
+          "t_over_tcc": 1.799999999999999,
+          "elements": 524288,
+          "total_mass": 2424.7901380378753,
+          "dense_mass": 333.9294005408883,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.01452704332768917
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_037.hdf5",
+          "sha256": "8876506e713579a178d679f28d75da81f140f4c7188a5e1efb7b1c3f3ab1c47a",
+          "bytes": 39855336,
+          "time_code": 7.165019190483716,
+          "t_over_tcc": 1.8499999999999985,
+          "elements": 524288,
+          "total_mass": 2424.758399872808,
+          "dense_mass": 331.8382790200412,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.014368914067745209
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_038.hdf5",
+          "sha256": "8a7578fd46c52ac679472038255054b565c568a3ddc9ce9cd5863b1015cf89f3",
+          "bytes": 39855336,
+          "time_code": 7.358668357794087,
+          "t_over_tcc": 1.8999999999999986,
+          "elements": 524288,
+          "total_mass": 2424.7904566300567,
+          "dense_mass": 329.6550115644932,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.014402016066014767
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_039.hdf5",
+          "sha256": "84a89a2db2b7b85de358d63ecadc0e5679f7c0616d5e37f5829d683ce385c266",
+          "bytes": 39855336,
+          "time_code": 7.552317525104456,
+          "t_over_tcc": 1.9499999999999982,
+          "elements": 524288,
+          "total_mass": 2424.7795522990637,
+          "dense_mass": 328.00405994430184,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.014480565674602985
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_040.hdf5",
+          "sha256": "6d08204e98f5ed8bbe88970a1faa9ba0b2da58e5ea5a92cc9b5d2f5ced039c47",
+          "bytes": 39855336,
+          "time_code": 7.745966692414828,
+          "t_over_tcc": 1.9999999999999984,
+          "elements": 524288,
+          "total_mass": 2424.790517028887,
+          "dense_mass": 324.25644763559103,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.014553890563547611
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_041.hdf5",
+          "sha256": "82505b746da104740f3dc936733fb7c22982d5b85d33334f9666b59a0bd086d7",
+          "bytes": 39855336,
+          "time_code": 7.9396158597251985,
+          "t_over_tcc": 2.0499999999999985,
+          "elements": 524288,
+          "total_mass": 2424.762194370618,
+          "dense_mass": 321.3947069272399,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.014712482690811157
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_042.hdf5",
+          "sha256": "197f687cf98b6be4eb903af2d4def0ae9d50fdfd9777446bd3bf831283a915f6",
+          "bytes": 39855336,
+          "time_code": 8.13326502703557,
+          "t_over_tcc": 2.0999999999999983,
+          "elements": 524288,
+          "total_mass": 2424.8216923377477,
+          "dense_mass": 316.9899083636701,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.014531067572534084
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_043.hdf5",
+          "sha256": "cc8418fdc5109d1eac17cec7344743bb91308621626ca9a6f00a6a8a0dabd7b2",
+          "bytes": 39855336,
+          "time_code": 8.32691419434594,
+          "t_over_tcc": 2.1499999999999986,
+          "elements": 524288,
+          "total_mass": 2424.8037266812753,
+          "dense_mass": 313.8270637616515,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.014439861290156841
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_044.hdf5",
+          "sha256": "88b90788f1a3b6986d692f7816a06dd8c98fdba929ced381f69870440064110a",
+          "bytes": 39855336,
+          "time_code": 8.520563361656311,
+          "t_over_tcc": 2.1999999999999984,
+          "elements": 524288,
+          "total_mass": 2424.803052581614,
+          "dense_mass": 309.9602712020278,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.01441775169223547
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_045.hdf5",
+          "sha256": "72637921df0da4483aeb2c4fdf49a87bcd0edaa9f3cb072eaafc9bc25073cf25",
+          "bytes": 39855336,
+          "time_code": 8.714212528966682,
+          "t_over_tcc": 2.2499999999999982,
+          "elements": 524288,
+          "total_mass": 2424.772671289975,
+          "dense_mass": 306.72504884004593,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.014459428377449512
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_046.hdf5",
+          "sha256": "b62db2befd214e575067e5772f0c7945960d62d99c5feebf3634837ac47d62a3",
+          "bytes": 39855336,
+          "time_code": 8.907861696277052,
+          "t_over_tcc": 2.2999999999999985,
+          "elements": 524288,
+          "total_mass": 2424.787184011657,
+          "dense_mass": 303.15437272936106,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.014561484567821026
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_047.hdf5",
+          "sha256": "0d00eaa34ecc0a238138b976daf3954eb078e7261310bee9c7ed8a31bfcacf17",
+          "bytes": 39855336,
+          "time_code": 9.101510863587423,
+          "t_over_tcc": 2.3499999999999983,
+          "elements": 524288,
+          "total_mass": 2424.761337588541,
+          "dense_mass": 300.82044710963964,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.014602495357394218
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_048.hdf5",
+          "sha256": "ac6575f069d7bcf05e13df0b93db907cb0cd4bb334749143cfbba9664334af98",
+          "bytes": 39855336,
+          "time_code": 9.295160030897794,
+          "t_over_tcc": 2.399999999999998,
+          "elements": 524288,
+          "total_mass": 2424.7677421872504,
+          "dense_mass": 298.33084185421467,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.014166793785989285
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_049.hdf5",
+          "sha256": "9e1467a7b030621f45620c322c974b8c9522c98f251fb7c39bf3eae5054c7e27",
+          "bytes": 39855336,
+          "time_code": 9.488809198208164,
+          "t_over_tcc": 2.449999999999998,
+          "elements": 524288,
+          "total_mass": 2424.75417436962,
+          "dense_mass": 295.18526747077703,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.013968750834465027
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_050.hdf5",
+          "sha256": "2950b18236d1931dba1ab55537e4e99b409f7c578217483302a076f3dd8aa162",
+          "bytes": 39855336,
+          "time_code": 9.682458365518535,
+          "t_over_tcc": 2.4999999999999982,
+          "elements": 524288,
+          "total_mass": 2424.7293951478787,
+          "dense_mass": 292.72938500344753,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.014138603582978249
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_051.hdf5",
+          "sha256": "fd0fa62a2fd8d35a9c1ab0399e2b141604c866ca2a556fbfb83c38a3d2aec706",
+          "bytes": 39855336,
+          "time_code": 9.876107532828904,
+          "t_over_tcc": 2.5499999999999976,
+          "elements": 524288,
+          "total_mass": 2424.7972383168526,
+          "dense_mass": 289.88818822056055,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.014735613949596882
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_052.hdf5",
+          "sha256": "b2987f7e1d5172d010f88344098954514368030ce7c3b4ad438443de051adfca",
+          "bytes": 39855336,
+          "time_code": 10.069756700139276,
+          "t_over_tcc": 2.599999999999998,
+          "elements": 524288,
+          "total_mass": 2424.7805226955097,
+          "dense_mass": 287.3673704639077,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.015162848867475986
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_053.hdf5",
+          "sha256": "4c3ad5b94767879ec8e6fe81d6eb851647ed8b04494fe3a2ef03138b33074855",
+          "bytes": 39855336,
+          "time_code": 10.263405867449647,
+          "t_over_tcc": 2.6499999999999977,
+          "elements": 524288,
+          "total_mass": 2424.7864452428184,
+          "dense_mass": 285.7831196039915,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.015385869890451431
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_054.hdf5",
+          "sha256": "6ea6815c559e6471283758ec2bc1cca7768778a37253ffb19808560df8b3606c",
+          "bytes": 39855336,
+          "time_code": 10.457055034760018,
+          "t_over_tcc": 2.699999999999998,
+          "elements": 524288,
+          "total_mass": 2424.762451280374,
+          "dense_mass": 283.50208827108145,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.015494409017264843
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_055.hdf5",
+          "sha256": "e61295b4d4ecee37d8486bf416f9b0fe4663f536f41315def6ce0643304d3d81",
+          "bytes": 39855336,
+          "time_code": 10.650704202070388,
+          "t_over_tcc": 2.749999999999998,
+          "elements": 524288,
+          "total_mass": 2424.7802591186482,
+          "dense_mass": 280.82866856455803,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.01563071832060814
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_056.hdf5",
+          "sha256": "2dd2d908e6bdc22cb824f912fed7f2f2400a9c9143768366501d35d925f107bd",
+          "bytes": 39855336,
+          "time_code": 10.844353369380759,
+          "t_over_tcc": 2.7999999999999976,
+          "elements": 524288,
+          "total_mass": 2424.756607128307,
+          "dense_mass": 278.964868709445,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.015987476333975792
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_057.hdf5",
+          "sha256": "9290afb88dcacd23dbda8acc3ecdd07e4ade90fc8bb0c65012279a143402ccdf",
+          "bytes": 39855336,
+          "time_code": 11.038002536691128,
+          "t_over_tcc": 2.849999999999997,
+          "elements": 524288,
+          "total_mass": 2424.75685603451,
+          "dense_mass": 276.7180059328675,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.016604268923401833
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_058.hdf5",
+          "sha256": "472d236814ae117b3fc9604fca8e8b47e8d5da61a781b4815f4003ff207ada55",
+          "bytes": 39855336,
+          "time_code": 11.2316517040015,
+          "t_over_tcc": 2.8999999999999977,
+          "elements": 524288,
+          "total_mass": 2424.728209578432,
+          "dense_mass": 273.84456826001406,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.01718401350080967
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_059.hdf5",
+          "sha256": "e728d80ef10edf584dbdd93c05651cac59468731d15e9d9cd64d8e36c8b893a6",
+          "bytes": 39855336,
+          "time_code": 11.42530087131187,
+          "t_over_tcc": 2.9499999999999975,
+          "elements": 524288,
+          "total_mass": 2424.773165753344,
+          "dense_mass": 271.38614305108786,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.01833796128630638
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_060.hdf5",
+          "sha256": "fa605b7b9321bfe64e89202f9b8cc2cf7ab2a825f2572496865cd7339da5826d",
+          "bytes": 39855336,
+          "time_code": 11.618950038622241,
+          "t_over_tcc": 2.9999999999999973,
+          "elements": 524288,
+          "total_mass": 2424.756823920412,
+          "dense_mass": 268.21415907889605,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.017924968153238297
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_061.hdf5",
+          "sha256": "32337be1568a25127ba9ed6feb50343318d57c1323bf33e9064e2f1033c7edc2",
+          "bytes": 39855336,
+          "time_code": 11.812599205932612,
+          "t_over_tcc": 3.0499999999999976,
+          "elements": 524288,
+          "total_mass": 2424.746730429353,
+          "dense_mass": 265.27520533651114,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.017804771661758423
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_062.hdf5",
+          "sha256": "8fc42437dca75edcaf055113629aa3c5b3581c5923b2d2c52da0d9f0bd89fd66",
+          "bytes": 39855336,
+          "time_code": 12.00624837324298,
+          "t_over_tcc": 3.099999999999997,
+          "elements": 524288,
+          "total_mass": 2424.701404395979,
+          "dense_mass": 262.40809281915426,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.017149049788713455
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_063.hdf5",
+          "sha256": "e701976f9741749d698056180160f04be2fd67dbdf9bbbae49ddc3e73792c7b4",
+          "bytes": 39855336,
+          "time_code": 12.199897540553353,
+          "t_over_tcc": 3.1499999999999972,
+          "elements": 524288,
+          "total_mass": 2424.7240853842814,
+          "dense_mass": 261.8208237737417,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.016741979867219925
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_064.hdf5",
+          "sha256": "25cb304e6435c09b25a7bf3c1c974529b0006bd92c05e572b4b965fff4e31cd6",
+          "bytes": 39855336,
+          "time_code": 12.393546707863724,
+          "t_over_tcc": 3.199999999999997,
+          "elements": 524288,
+          "total_mass": 2424.6975616114214,
+          "dense_mass": 259.1241571828723,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.01585867442190647
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_065.hdf5",
+          "sha256": "68927fce312348e612a26326913bef8ce49f5b117133542ee61c83dd6ec6c1f3",
+          "bytes": 39855336,
+          "time_code": 12.587195875174094,
+          "t_over_tcc": 3.2499999999999973,
+          "elements": 524288,
+          "total_mass": 2424.716060018167,
+          "dense_mass": 255.73357255756855,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.014757595025002956
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_066.hdf5",
+          "sha256": "c9f21717114c22982199d4da375b51e27578d88eed3dc133f796abb6346b667a",
+          "bytes": 39855336,
+          "time_code": 12.780845042484465,
+          "t_over_tcc": 3.299999999999997,
+          "elements": 524288,
+          "total_mass": 2424.6927006386686,
+          "dense_mass": 252.95288126170635,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.01420240756124258
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_067.hdf5",
+          "sha256": "bd37bea88d27d5d3177d1d8bdfa56c4f0ee220f84ed44225c1e9a044d54de91a",
+          "bytes": 39855336,
+          "time_code": 12.974494209794836,
+          "t_over_tcc": 3.349999999999997,
+          "elements": 524288,
+          "total_mass": 2424.7793207999784,
+          "dense_mass": 249.9932920113206,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.01455495785921812
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_068.hdf5",
+          "sha256": "b0a7a87ce7a676fa94f28b4ad48fb4682852f9bbcc67ba3fb231f35d819ab12b",
+          "bytes": 39855336,
+          "time_code": 13.168143377105205,
+          "t_over_tcc": 3.3999999999999964,
+          "elements": 524288,
+          "total_mass": 2424.7519542155787,
+          "dense_mass": 247.39598657935858,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.015313218347728252
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_069.hdf5",
+          "sha256": "5cdfb5d4dec42fc9616b8700104f6e6eadfffa7991d306a281d1de45e9c270c8",
+          "bytes": 39855336,
+          "time_code": 13.361792544415577,
+          "t_over_tcc": 3.449999999999997,
+          "elements": 524288,
+          "total_mass": 2424.741424046457,
+          "dense_mass": 243.97719839960337,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.015659715980291367
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_070.hdf5",
+          "sha256": "262639c391d85249ec4be5fd9a02ff51bb56c98c81dbca532667275e995c0bb6",
+          "bytes": 39855336,
+          "time_code": 13.555441711725948,
+          "t_over_tcc": 3.499999999999997,
+          "elements": 524288,
+          "total_mass": 2424.7135124739725,
+          "dense_mass": 241.46378491073847,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.014962186105549335
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_071.hdf5",
+          "sha256": "8e4be41f2ccf36b51a00939611858361a5c0270721880a961fa33a6af06225a0",
+          "bytes": 39855336,
+          "time_code": 13.749090879036318,
+          "t_over_tcc": 3.5499999999999967,
+          "elements": 524288,
+          "total_mass": 2424.725192733342,
+          "dense_mass": 237.65629257261753,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.014023975469172001
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_072.hdf5",
+          "sha256": "91dfac186ed038339c78bcab8682e34435c3b33fcd2294a87d3408e94f1b1c58",
+          "bytes": 39855336,
+          "time_code": 13.942740046346689,
+          "t_over_tcc": 3.599999999999997,
+          "elements": 524288,
+          "total_mass": 2424.7016622107476,
+          "dense_mass": 235.10339564830065,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.012412900105118752
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_073.hdf5",
+          "sha256": "e349940d7ab9c0b9eeb2ff0998ee7c02d5a8b489fad140056169a8c1fd6a0801",
+          "bytes": 39855336,
+          "time_code": 14.136389213657058,
+          "t_over_tcc": 3.6499999999999964,
+          "elements": 524288,
+          "total_mass": 2424.698249484878,
+          "dense_mass": 233.24442410469055,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.012786710634827614
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_074.hdf5",
+          "sha256": "16b9721c6d154595a0de7d106ab3d2f4d1c53fce600c06d6b290c7f4e367cbc7",
+          "bytes": 39855336,
+          "time_code": 14.33003838096743,
+          "t_over_tcc": 3.6999999999999966,
+          "elements": 524288,
+          "total_mass": 2424.6641348400153,
+          "dense_mass": 231.11415918171406,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.013624347746372223
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_075.hdf5",
+          "sha256": "cd0519a2350244c2c7e950bd41ab1b963671e4c51943274d7a90fac7ba70055b",
+          "bytes": 39855336,
+          "time_code": 14.5236875482778,
+          "t_over_tcc": 3.7499999999999964,
+          "elements": 524288,
+          "total_mass": 2424.630147389602,
+          "dense_mass": 228.76691165566444,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.01482816506177187
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_076.hdf5",
+          "sha256": "301dba308cdcebbd41107d352603e59c338d79819618b2c4049fa0638f059edd",
+          "bytes": 39855336,
+          "time_code": 14.717336715588171,
+          "t_over_tcc": 3.7999999999999967,
+          "elements": 524288,
+          "total_mass": 2424.7319552134722,
+          "dense_mass": 225.5666129514575,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.01577821373939514
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_077.hdf5",
+          "sha256": "6a5cb5c7be0b3eae97e39d3fd37e20bda582b5565352730d9c65384f00d92ed7",
+          "bytes": 39855336,
+          "time_code": 14.910985882898542,
+          "t_over_tcc": 3.8499999999999965,
+          "elements": 524288,
+          "total_mass": 2424.7011433099397,
+          "dense_mass": 222.4408474639058,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.015527552925050259
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_078.hdf5",
+          "sha256": "5d2fb3b1be0b293bd297c63689d14bb16c9fa73f5a578fa8d02fd9eec6d8caa8",
+          "bytes": 39855336,
+          "time_code": 15.104635050208913,
+          "t_over_tcc": 3.8999999999999964,
+          "elements": 524288,
+          "total_mass": 2424.6829593146686,
+          "dense_mass": 219.9713769108057,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.01498508919030428
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_079.hdf5",
+          "sha256": "5215b837dd4aaf43b7f6566c3bd49484b9133c12647e9f558825bcbc930a4740",
+          "bytes": 39855336,
+          "time_code": 15.298284217519281,
+          "t_over_tcc": 3.9499999999999957,
+          "elements": 524288,
+          "total_mass": 2424.6464428044856,
+          "dense_mass": 219.50075276196003,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.014695843681693077
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_080.hdf5",
+          "sha256": "860e071a6d5b00fc31eb4c60d479332b8f2f5095336ef89bcc5f7334c3aab095",
+          "bytes": 39855336,
+          "time_code": 15.491933384829654,
+          "t_over_tcc": 3.9999999999999964,
+          "elements": 524288,
+          "total_mass": 2424.6765526053496,
+          "dense_mass": 217.49683476239443,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.01526804268360138
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_081.hdf5",
+          "sha256": "1b8f6561a7bcda6f58a01428a807915582a48fcf5a0e9db26530fb87216ad85e",
+          "bytes": 39855336,
+          "time_code": 15.685582552140025,
+          "t_over_tcc": 4.049999999999996,
+          "elements": 524288,
+          "total_mass": 2424.634721513139,
+          "dense_mass": 214.44427504390478,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.01527911052107811
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_082.hdf5",
+          "sha256": "726e52157426a4c4ef3ff460dd8134e7922523b6507a5d24b8ec6c16f70a2606",
+          "bytes": 39855336,
+          "time_code": 15.879231719450395,
+          "t_over_tcc": 4.099999999999996,
+          "elements": 524288,
+          "total_mass": 2424.611600601347,
+          "dense_mass": 211.26728024333715,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.0150220962241292
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_083.hdf5",
+          "sha256": "c284005ab2b78948e475eca4f570565c963870dd348fbe7e2f778851c9a749e6",
+          "bytes": 39855336,
+          "time_code": 16.072880886760768,
+          "t_over_tcc": 4.149999999999997,
+          "elements": 524288,
+          "total_mass": 2424.5713073166553,
+          "dense_mass": 208.31167902052402,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.015652889385819435
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_084.hdf5",
+          "sha256": "4f56b255855ad2e173ac41a6ff220cf2778e41b82a593c32bcadec4f6803ff36",
+          "bytes": 39855336,
+          "time_code": 16.26653005407114,
+          "t_over_tcc": 4.199999999999997,
+          "elements": 524288,
+          "total_mass": 2424.7274329441134,
+          "dense_mass": 206.64566188305616,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.01588786393404007
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_085.hdf5",
+          "sha256": "3a5fccddf77bbb82c1e492abc4e8ac02c12b780c0a9ff95980c4bf5099436975",
+          "bytes": 39855336,
+          "time_code": 16.460179221381512,
+          "t_over_tcc": 4.249999999999997,
+          "elements": 524288,
+          "total_mass": 2424.6956670158543,
+          "dense_mass": 204.4046821296215,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.016191139817237854
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_086.hdf5",
+          "sha256": "32708516e86737cfb174aa2c31ff918a2e2a2b47ae7b88b72371d8415e9d8aac",
+          "bytes": 39855336,
+          "time_code": 16.653828388691885,
+          "t_over_tcc": 4.299999999999998,
+          "elements": 524288,
+          "total_mass": 2424.674664045917,
+          "dense_mass": 202.36916426569223,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.016586817800998688
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_087.hdf5",
+          "sha256": "241da866c93e5b1e451fd203b43a311fd7e13b033f40d73e4df6621ecf55b434",
+          "bytes": 39855336,
+          "time_code": 16.847477556002257,
+          "t_over_tcc": 4.349999999999998,
+          "elements": 524288,
+          "total_mass": 2424.6379153381567,
+          "dense_mass": 198.91812951862812,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.017131952568888664
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_088.hdf5",
+          "sha256": "1509304e453065688165915787e9850b9f9cf9a676ab2da4648f8653b326acb8",
+          "bytes": 39855336,
+          "time_code": 17.04112672331263,
+          "t_over_tcc": 4.399999999999999,
+          "elements": 524288,
+          "total_mass": 2424.6700126386713,
+          "dense_mass": 197.1296030730009,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.017826907336711884
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_089.hdf5",
+          "sha256": "6fc386bf5177977cba0c67a35f5fe5f9360152eb9a2f1621b301728e046d9d79",
+          "bytes": 39855336,
+          "time_code": 17.234775890623002,
+          "t_over_tcc": 4.449999999999999,
+          "elements": 524288,
+          "total_mass": 2424.6463225246407,
+          "dense_mass": 192.8791542351246,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.018526392057538033
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_090.hdf5",
+          "sha256": "e790de1a9b6a9aae0a808cfc550205c97f214cf841696e62a7f2ebf12e7c796e",
+          "bytes": 39855336,
+          "time_code": 17.428425057933374,
+          "t_over_tcc": 4.499999999999999,
+          "elements": 524288,
+          "total_mass": 2424.6371643084567,
+          "dense_mass": 190.01593542099,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.01859709620475769
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_091.hdf5",
+          "sha256": "49d220d35f0230832054a455dc9a4d60fda145675fc32fb0ad3607ca032194b2",
+          "bytes": 39855336,
+          "time_code": 17.622074225243747,
+          "t_over_tcc": 4.55,
+          "elements": 524288,
+          "total_mass": 2424.615432670107,
+          "dense_mass": 187.5763075053692,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.018364956602454185
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_092.hdf5",
+          "sha256": "de585393419396182a200ec8d1ec1d5f7b059b3a8fb1f32557da734a3c8af847",
+          "bytes": 39855336,
+          "time_code": 17.81572339255412,
+          "t_over_tcc": 4.6000000000000005,
+          "elements": 524288,
+          "total_mass": 2424.732485305285,
+          "dense_mass": 183.44133643060923,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.01818503998219967
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_093.hdf5",
+          "sha256": "272355ab5fbb64cb050f4724f20732dce0eaa539839b125a28859cbef65203ea",
+          "bytes": 39855336,
+          "time_code": 18.00937255986449,
+          "t_over_tcc": 4.65,
+          "elements": 524288,
+          "total_mass": 2424.6976406399626,
+          "dense_mass": 180.5690860003233,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.018042907118797302
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_094.hdf5",
+          "sha256": "0e3c8bf0f01ad2d1ee0bf6b9c013588c97953269ee4536e3629634e3f08f91d2",
+          "bytes": 39855336,
+          "time_code": 18.203021727174864,
+          "t_over_tcc": 4.700000000000001,
+          "elements": 524288,
+          "total_mass": 2424.6870439117774,
+          "dense_mass": 177.70654964447021,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.017841000109910965
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_095.hdf5",
+          "sha256": "73ebae2a3bf380bf3c1b8ca37b7976b00ff9e976dbd30905f653585edcb29af7",
+          "bytes": 39855336,
+          "time_code": 18.396670894485236,
+          "t_over_tcc": 4.750000000000002,
+          "elements": 524288,
+          "total_mass": 2424.659350995673,
+          "dense_mass": 175.1888849362731,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.017627881839871407
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_096.hdf5",
+          "sha256": "c13b55199973579dec21d5bd54d367553e0924b02e444d277f59e88c94fcd29b",
+          "bytes": 39855336,
+          "time_code": 18.59032006179561,
+          "t_over_tcc": 4.800000000000002,
+          "elements": 524288,
+          "total_mass": 2424.7020550835878,
+          "dense_mass": 172.90811966359615,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.017629528418183327
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_097.hdf5",
+          "sha256": "93aaf5679c87d86319b329b95b1e91d55455066b42cdb5c5beec4325b77a306b",
+          "bytes": 39855336,
+          "time_code": 18.78396922910598,
+          "t_over_tcc": 4.850000000000002,
+          "elements": 524288,
+          "total_mass": 2424.668986693723,
+          "dense_mass": 170.09999495744705,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.017888549715280533
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_098.hdf5",
+          "sha256": "996be616d4f6d3be5caac59af6fb8373f45a62d571bc1953b6dd59a8059ae2a7",
+          "bytes": 39855336,
+          "time_code": 18.977618396416354,
+          "t_over_tcc": 4.900000000000003,
+          "elements": 524288,
+          "total_mass": 2424.6643713128287,
+          "dense_mass": 167.65518751740456,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.018162937834858894
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_099.hdf5",
+          "sha256": "22d3f88bb89ab9d61a6425083d833ad9221ffcb600acca7b2340f1c4fc61349f",
+          "bytes": 39855336,
+          "time_code": 19.171267563726726,
+          "t_over_tcc": 4.950000000000003,
+          "elements": 524288,
+          "total_mass": 2424.626269005239,
+          "dense_mass": 164.03821371495724,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.018925262615084648
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/snapshot_100.hdf5",
+          "sha256": "0285097eac9ef5833b9f31ef327732467cd955f63e98bf6ea4034a67b0721311",
+          "bytes": 39855336,
+          "time_code": 19.364916731037084,
+          "t_over_tcc": 5.0,
+          "elements": 524288,
+          "total_mass": 2424.749225536827,
+          "dense_mass": 160.87115794420242,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "min_energy": 0.019586030393838882
+        }
+      ],
+      "cadence": {
+        "bits": 60,
+        "actual_count": 101,
+        "expected_count": 101,
+        "tick_code": 1.679638783183304e-17,
+        "tolerance_code": 3.443259505525773e-14,
+        "maximum_offset": 3.552713678800501e-15
+      },
+      "terminal": {
+        "files": [
+          {
+            "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/restartfiles/restart.0",
+            "bytes": 48738696,
+            "sha256": "b703f0bb6d384586f8ce7b5f05400bf8614a770968814222046f5c8a79393203",
+            "prefix_bytes": 43932416
+          },
+          {
+            "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/restartfiles/restart.1",
+            "bytes": 48825384,
+            "sha256": "8192f094a4e6f4b7da7c11e878fbdd54ed01731eac305e86042791c3c475a1a1",
+            "prefix_bytes": 44053376
+          },
+          {
+            "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/restartfiles/restart.2",
+            "bytes": 48673848,
+            "sha256": "f540e65795340497660fa84dd0c44ea7e3fafd1cbc4246159504779dbd732dd7",
+            "prefix_bytes": 44081600
+          },
+          {
+            "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/restartfiles/restart.3",
+            "bytes": 48686024,
+            "sha256": "303b9b4cadebebd741bf8bbdb8dac14aa7c9e5b4a2f22ba1470aa03aeede39ca",
+            "prefix_bytes": 44072192
+          },
+          {
+            "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/restartfiles/restart.4",
+            "bytes": 48596280,
+            "sha256": "3bf6a9df71f42edcfac32224500ee00987d138de445cb447429a7e34afc3edbd",
+            "prefix_bytes": 44049344
+          },
+          {
+            "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/restartfiles/restart.5",
+            "bytes": 48870024,
+            "sha256": "5bad334abe96d381e199c83c2970ba97b2721b3ee31cda22c14ee5a2b405f184",
+            "prefix_bytes": 44077568
+          },
+          {
+            "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/restartfiles/restart.6",
+            "bytes": 48919680,
+            "sha256": "213ea9d3ee75c2908eed7dfa79d0bf27043ff04549917afadd5772c7875c3032",
+            "prefix_bytes": 44095712
+          },
+          {
+            "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/restartfiles/restart.7",
+            "bytes": 48692816,
+            "sha256": "6e2a30e5f6e8ec7d63d554eb54557ee25fea1a83b071642523814405fa84f3bf",
+            "prefix_bytes": 44086304
+          }
+        ],
+        "retained_files": [
+          {
+            "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/restartfiles/restart.0",
+            "bytes": 48738696,
+            "sha256": "b703f0bb6d384586f8ce7b5f05400bf8614a770968814222046f5c8a79393203"
+          },
+          {
+            "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/restartfiles/restart.1",
+            "bytes": 48825384,
+            "sha256": "8192f094a4e6f4b7da7c11e878fbdd54ed01731eac305e86042791c3c475a1a1"
+          },
+          {
+            "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/restartfiles/restart.2",
+            "bytes": 48673848,
+            "sha256": "f540e65795340497660fa84dd0c44ea7e3fafd1cbc4246159504779dbd732dd7"
+          },
+          {
+            "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/restartfiles/restart.3",
+            "bytes": 48686024,
+            "sha256": "303b9b4cadebebd741bf8bbdb8dac14aa7c9e5b4a2f22ba1470aa03aeede39ca"
+          },
+          {
+            "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/restartfiles/restart.4",
+            "bytes": 48596280,
+            "sha256": "3bf6a9df71f42edcfac32224500ee00987d138de445cb447429a7e34afc3edbd"
+          },
+          {
+            "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/restartfiles/restart.5",
+            "bytes": 48870024,
+            "sha256": "5bad334abe96d381e199c83c2970ba97b2721b3ee31cda22c14ee5a2b405f184"
+          },
+          {
+            "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/restartfiles/restart.6",
+            "bytes": 48919680,
+            "sha256": "213ea9d3ee75c2908eed7dfa79d0bf27043ff04549917afadd5772c7875c3032"
+          },
+          {
+            "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1/tanh13/output/restartfiles/restart.7",
+            "bytes": 48692816,
+            "sha256": "6e2a30e5f6e8ec7d63d554eb54557ee25fea1a83b071642523814405fa84f3bf"
+          }
+        ],
+        "abi": {
+          "global_data_all_processes": {
+            "itemsize": 15864,
+            "matching_definitions": 32,
+            "die_offsets": [
+              "0x289",
+              "0x1a22",
+              "0x2b0b",
+              "0x50eb",
+              "0x7e2a",
+              "0xb06b",
+              "0x16956",
+              "0x17f27",
+              "0x192c5",
+              "0x21884",
+              "0x24b8c",
+              "0x269c4",
+              "0x2c248",
+              "0x338d3",
+              "0x3477e",
+              "0x35908",
+              "0x38d81",
+              "0x3b2f4",
+              "0x3d08d",
+              "0x3e524",
+              "0x445ce",
+              "0x4659d",
+              "0x4843e",
+              "0x4ce00",
+              "0x4f059",
+              "0x513f6",
+              "0x5267f",
+              "0x585e7",
+              "0x5c921",
+              "0x6009b",
+              "0x61253",
+              "0x62bb9"
+            ],
+            "fields": {
+              "Time": {
+                "offset": 408,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "TimeMax": {
+                "offset": 432,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "TotNumPart": {
+                "offset": 0,
+                "dtype": "int64",
+                "bytes": 8
+              },
+              "TotN_gas": {
+                "offset": 8,
+                "dtype": "int64",
+                "bytes": 8
+              },
+              "MinEgySpec": {
+                "offset": 128,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "NumCurrentTiStep": {
+                "offset": 400,
+                "dtype": "int64",
+                "bytes": 8
+              },
+              "cf_hubble_a": {
+                "offset": 216,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "BoxSize": {
+                "offset": 312,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "TimeBegin": {
+                "offset": 416,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "Timebase_interval": {
+                "offset": 440,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "ComovingIntegrationOn": {
+                "offset": 320,
+                "dtype": "int32",
+                "bytes": 4
+              },
+              "Ti_Current": {
+                "offset": 448,
+                "dtype": "int64",
+                "bytes": 8
+              }
+            }
+          },
+          "particle_data": {
+            "itemsize": 288,
+            "matching_definitions": 24,
+            "die_offsets": [
+              "0x3134",
+              "0x5714",
+              "0x8453",
+              "0xb6b7",
+              "0x16f7f",
+              "0x1854c",
+              "0x198f0",
+              "0x21eaf",
+              "0x251b4",
+              "0x27010",
+              "0x2c893",
+              "0x34da3",
+              "0x35f33",
+              "0x393cd",
+              "0x3d6b6",
+              "0x44bf2",
+              "0x48a8c",
+              "0x4d42b",
+              "0x4f680",
+              "0x52d12",
+              "0x58c33",
+              "0x5cf6d",
+              "0x606c0",
+              "0x61878"
+            ],
+            "fields": {
+              "Type": {
+                "offset": 0,
+                "dtype": "int16",
+                "bytes": 2
+              },
+              "ID": {
+                "offset": 4,
+                "dtype": "uint32",
+                "bytes": 4
+              },
+              "Mass": {
+                "offset": 56,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "Pos": {
+                "offset": 32,
+                "dtype": "('<f8', (3,))",
+                "bytes": 24
+              },
+              "Vel": {
+                "offset": 64,
+                "dtype": "('<f8', (3,))",
+                "bytes": 24
+              }
+            }
+          },
+          "gas_cell_data": {
+            "itemsize": 384,
+            "matching_definitions": 20,
+            "die_offsets": [
+              "0x32b3",
+              "0x5894",
+              "0x85d3",
+              "0xb847",
+              "0x170fe",
+              "0x186cb",
+              "0x2533f",
+              "0x271a0",
+              "0x2ca29",
+              "0x34f22",
+              "0x3955e",
+              "0x3d835",
+              "0x41d8d",
+              "0x44d71",
+              "0x52ea7",
+              "0x58dc4",
+              "0x5d0fe",
+              "0x6083f",
+              "0x619f7",
+              "0x63236"
+            ],
+            "fields": {
+              "MassTrue": {
+                "offset": 8,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "dMass": {
+                "offset": 16,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "DtMass": {
+                "offset": 24,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "Density": {
+                "offset": 0,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "Pressure": {
+                "offset": 80,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "InternalEnergy": {
+                "offset": 88,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "InternalEnergyPred": {
+                "offset": 96,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "DtInternalEnergy": {
+                "offset": 104,
+                "dtype": "float64",
+                "bytes": 8
+              }
+            }
+          }
+        },
+        "mass_account": {
+          "initial": 2424.8441153885797,
+          "conserved": 2424.749225425872,
+          "pending": 0.09488996270766094,
+          "combined": 2424.8441153885797,
+          "residual": -4.299591831672052e-14,
+          "allowance": 0.03719794318463229,
+          "passes": true,
+          "changed_particles": 524288,
+          "max_absolute_change": 0.3693728941751586,
+          "response_threshold": 2.710505431213761e-15,
+          "response_detected": true,
+          "steps": 4116,
+          "criterion": "Predeclared engineering accumulation gate, not a physical accuracy theorem."
+        },
+        "minima": {
+          "Density": 0.48200998469026546,
+          "Pressure": 0.4214098141829511,
+          "InternalEnergy": 0.019586031088842548,
+          "InternalEnergyPred": 0.019586031088842548
+        }
+      },
+      "resources": {
+        "status": "native_finished_pending_checks",
+        "returncode": 0,
+        "error": null,
+        "wall_seconds": 1738.3883709670001,
+        "peak_child_rss_bytes": 1807773696,
+        "median_busy_cpu_workers": 7.996470763129754
+      },
+      "input_sha256": "6b15d547b65245fc33d413a3da5f1b6f80729efb54c0f5e0df82d93104b4901a",
+      "ic_sha256": "e02c59a5d95eb6ca44bfecee912cbe81826b56a4cff7411077c150ee9ea1ae17",
+      "scope": "Mass diagnostics; native velocities staggered, periodic box, not a cross-code equivalence or physical-accuracy proof."
+    }
+  ],
+  "plan_sha256": "2b77bb64257e2826dfe241ca6fb31eedcd5b868d73eeb4761cf96ac079430d7c",
+  "full_controls_added_to_analysis": 0,
+  "new_full_controls_validated": 2
+}

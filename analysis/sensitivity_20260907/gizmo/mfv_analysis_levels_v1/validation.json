@@ -1,0 +1,13 @@
+{
+  "status": "passed_report_and_new_raw_provenance_checks",
+  "unit_tests_passed": 14,
+  "new_snapshots_byte_verified": 202,
+  "new_restart_files_byte_verified": 16,
+  "new_field_reader_checks_reused": 202,
+  "old_scalar_report_reused": true,
+  "native_experiments_rerun": 0,
+  "source_pins_checked": 39,
+  "report_sha256": "9049de2e08bb01dc92332ff08006ad1fb4e041e80ebd65b22ab8aac50e44aefe",
+  "test_script_sha256": "e3335b94ed4a20e39bbd79a98f8355704b7c1e3157e19901a7461227803471a1",
+  "independent_scalar_max_absolute_difference": 2.220446049250313e-16
+}

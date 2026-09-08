@@ -1,0 +1,12 @@
+{
+  "status": "windows_readback_passed",
+  "plan_sha256": "2b77bb64257e2826dfe241ca6fb31eedcd5b868d73eeb4761cf96ac079430d7c",
+  "hashes": {
+    "tanh13/params.txt": "6b15d547b65245fc33d413a3da5f1b6f80729efb54c0f5e0df82d93104b4901a",
+    "tanh13/ics.hdf5": "e02c59a5d95eb6ca44bfecee912cbe81826b56a4cff7411077c150ee9ea1ae17",
+    "sharp13/ics.hdf5": "304d5eb3ac868a866c85ad9503f1f206ef37fafaea6c4ba27f466fe14aad4114",
+    "sharp13/params.txt": "6b15d547b65245fc33d413a3da5f1b6f80729efb54c0f5e0df82d93104b4901a"
+  },
+  "checked_at_utc": "2026-09-08T15:50:13.3878962Z",
+  "scope": "Both full L4 ICs and identical parameters independently checked before launch."
+}

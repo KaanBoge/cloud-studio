@@ -4,13 +4,25 @@ Ryan requested a few resolutions per code at fixed chi and Mach before deciding
 whether affected historical runs need replacing. This study preserves all old
 and new raw data. It does not authorize a blanket replacement campaign.
 
-## Active: repaired MFV L4 full pair
+## Complete: repaired MFV L4 pair and L3/L4 comparison
+
+Both full L4 controls now pass with 101 native states each. The
+[new immutable L3/L4 analysis](gizmo/mfv_analysis_levels_v1/README.md)
+reuses accepted L3 scalars, verifies 202 new snapshot/16 restart hashes
+and 39 frozen source/input pins, and passes 14 scalar/metadata tests.
+Peak paired mass separation is 6.438% / 2.072%; not a convergence or
+blanket-reuse decision. The study now has 50 analyzed controls and 5,054
+native states. Four Gasoline L3/L4 controls remain scientifically held;
+higher levels remain storage-held. No native solver remains active after
+this pair. Preserve all raw, completed runners and previous reports.
+
+### Completed launch history (not a runnable instruction)
 
 8 September15:50UTC: six new L4 diagnostics passed with16 native states,
 48 retained terminal restart files, independent readers, exact paired
 initial fields,60-bit timing and conserved mass checks. See
 [preparation results](gizmo/MFV_L4_PREPARATION_RESULTS.md).
-The separately frozen full pair now runs sharp then historical on eight
+The separately frozen full pair ran sharp then historical on eight
 bound CPU workers. All original per-level numerics remain unchanged;
 tiny timing caps apply only to the completed diagnostics.
 
@@ -23,9 +35,9 @@ completed diagnostics. Check actual processes and ledger before next work.
 
 Full-pair retention budget12.92883GiB passed after staging, with separate
 host/guest10GiB reserves and1GiB ancillary allowance. No raw data was moved
-or deleted. Keep the accepted count48 until both full runs and new analysis
-pass. After completion, reuse accepted repaired L3 scalar curves for a
-new immutable L3/L4 analysis; do not rerun its raw analysis. The four
+or deleted. Both full runs and the new scalar analysis now pass, adding
+two controls to the previous48. The accepted repaired L3 scalar curves
+were reused; no old raw analysis or native experiment was rerun. The four
 Gasoline controls remain scientifically held; higher levels are separate.
 
 ## Completed: Gadget-4 L4 pair and L3/L4 comparison

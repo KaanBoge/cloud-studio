@@ -1,16 +1,18 @@
 # Cloud-crushing analysis: verification status
 
-[Repaired MFV L4 preparation](sensitivity_20260907/gizmo/MFV_L4_PREPARATION_RESULTS.md)
-now passes on16 short native states. Its full sharp/historical pair launched
-at15:50UTC on8September; it is running, not yet included in the48 accepted
-controls. The historical case follows the sharp case automatically after
-native validation. All raw is retained; no new production viewer entries.
+The [repaired MFV L3/L4 comparison](sensitivity_20260907/gizmo/mfv_analysis_levels_v1/README.md)
+is complete: both new L4 controls passed101 native states through5 t_cc.
+Peak paired mass separation6.438% at L3 and2.072% at L4 is not a convergence
+or universal reuse decision. This brings the study to **50 analyzed controls
+and 5,054 native analysis states**. Four Gasoline L3/L4 controls remain
+scientifically held, with higher levels additionally storage-held.
+All raw is retained; no new production viewer entries are implied.
 
 The new [Gadget-4 L3/L4 comparison](sensitivity_20260907/gadget4/analysis_levels_v1/README.md)
 adds two complete L4 controls, each with 101 native states through 5 t_cc.
-Peak mass-curve separation is 6.954% at L3 and 4.232% at L4. The study now
-has **48 accepted controls and 4,852 native analysis states**, with six
-L3/L4 controls pending plus higher levels. All raw data remains retained.
+Peak mass-curve separation is 6.954% at L3 and 4.232% at L4. That earlier
+stage brought the study to48 controls and4,852 native states; the current
+total includes the newly completed repaired MFV pair above.
 
 The earlier [code-by-code resolution summary](sensitivity_20260907/resolution_summary_v1/README.md)
 is an immutable snapshot of the preceding 23 accepted velocity-law pairs: 46 controls and 4,650 native
@@ -21,9 +23,9 @@ cross-code accuracy ranking or a blanket historical-replacement decision.
 The [velocity-prescription sensitivity study](sensitivity_20260907/README.md)
 now tests historical versus corrected initial velocities within each native code
 at fixed chi=100 and Mach=2, following Ryan's request to measure impact before
-deciding which old runs need replacing. Forty-eight full controls are validated
+deciding which old runs need replacing. Fifty full controls are validated
 and analyzed, including Athena 4.2 L3/L4/L5, Enzo/Enzo-E/RAMSES/FLASH 4.8/Flash-X/Arepo L3/L4,
-GIZMO MFM L3/L4, Gadget-4 L3/L4 and the repaired GIZMO MFV L3 pair.
+GIZMO MFM L3/L4, Gadget-4 L3/L4 and repaired GIZMO MFV L3/L4.
 [Gadget-4's result](sensitivity_20260907/gadget4/README.md)
 retains the original SPH pressure deviations and periodic boundaries, and is
 not a matched uniform-pressure grid baseline. GIZMO MFV's two full L3 attempts failed positive-energy
