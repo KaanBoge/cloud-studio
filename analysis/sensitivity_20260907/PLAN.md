@@ -38,8 +38,11 @@ These are not full replacements of the old campaign. Each targets 101 full-field
 native outputs through 5 t_cc plus unchanged restart settings. No raw file is
 deleted or thinned, and the live viewer is not relabeled with these experiments.
 
-The remaining unprepared code families need historical-source and native-IC checks
-before their paired launchers are enabled: Gasoline. Gadget-4 L3 is now
+Gasoline's historical-source and native-IC checks are measured. Its longer
+output-observation test failed the predeclared field criterion, including
+original-binary repeats, despite identical dense masses through1 t_cc.
+Complete checkpoint retention and full L3 storage budgeting are now measured;
+the output-observation review remains before a full paired launcher. Gadget-4 L3 is now
 complete and independently checked; L4's own native checks now pass, but its
 full pair is storage-held. GIZMO's L3
 setup and separate MFM L4 checks are validated; MFV's later L3 energy failure
@@ -101,7 +104,15 @@ with 101 native times per case and 6.95% peak curve separation. Its SPH
 initial pressure peaks at 3.9003 times nominal, identically
 within the pair: this is not a uniform-pressure grid-code baseline. The existing
 native smoothing-length patch is retained, not introduced as another change.
-See [Gadget-4 scope and validation](gadget4/README.md). Gasoline remains unprepared.
+See [Gadget-4 scope and validation](gadget4/README.md). Gasoline's diagnostic
+preparation now includes95 independent output checks, exact paired initial
+nonvelocity fields and native pressure-stage diagnosis. Both the original
+bitwise and separate prospective field-equivalence tests failed; all failed
+checks and original-binary repeats remain retained. The new81-state test
+keeps exact dense membership at every compared time through1 t_cc. All eight
+checkpoints are valid and retained; the full pair's3.15 GiB storage budget
+plus reserves fits, but full controls remain scientifically held.
+See [Gasoline's longer validation audit](gasoline/LONGER_VALIDATION.md).
 Gadget-4 L4 now passes per-level IC, initial/evolved native-field, scheduler
 and independent-reader checks on four short-test outputs. Its full-pair
 budget is 7.30 GiB plus a 10 GiB reserve on both filesystems; WSL had only

@@ -184,7 +184,14 @@ Its full pair is storage-held: 7.30 GiB plus the 10 GiB reserve is required,
 against 16.66 GiB free in WSL at 09:39 local on 8 September. Neither full L4
 control has started, and the total remains 44. No native data was deleted.
 See [the per-level validation and storage measurements](gadget4/L4_VALIDATION.md).
-Gasoline remains unprepared.
+Gasoline now has95 independently checked diagnostic outputs: the earlier14
+plus81 from four120-step tests on its historical two-worker count. Dense mass
+agrees exactly across those four tests through1 t_cc, but the predeclared
+field-equivalence check failed, including untouched-binary repeats. All eight
+longer-test checkpoints are retained and valid. Its full L3 pair fits the
+measured storage budget but remains scientifically held, not launched.
+Native initial pressure peaks at6.29 times nominal in both laws; this is not
+a matched grid baseline. See [the full evidence](gasoline/LONGER_VALIDATION.md).
 A 15-minute task follow-up is enabled to inspect progress and
 advance safe pending work. The old blanket replacement queue remains inactive.
 Cooling, tracking and paper-ready retention checks remain separate work.

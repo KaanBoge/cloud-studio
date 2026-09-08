@@ -1,0 +1,270 @@
+{
+  "original_status": "prospective_comparison_failed_needs_review",
+  "original_test_passed": false,
+  "full_science_controls_completed": 0,
+  "native_output_count": 81,
+  "comparisons": 120,
+  "failed_comparisons": 6,
+  "all_dense_memberships_exact": true,
+  "max_independent_mass_discrepancy": 0.0,
+  "exact_bitwise_equivalence": false,
+  "pairs": [
+    {
+      "first": "original_a",
+      "second": "original_b",
+      "comparisons": 20,
+      "failed_states": [
+        "state.000120"
+      ],
+      "dense_membership_exact": true,
+      "required_exact_fields": true,
+      "field_maxima": {
+        "rho": {
+          "max_spacing_ratio": 2.0,
+          "max_absolute": 1.52587890625e-05,
+          "failed_states": [
+            "state.000120"
+          ]
+        },
+        "temp": {
+          "max_spacing_ratio": 1.0,
+          "max_absolute": 2.384185791015625e-07,
+          "failed_states": []
+        },
+        "vel": {
+          "max_spacing_ratio": 1.0,
+          "max_absolute": 2.384185791015625e-07,
+          "failed_states": []
+        },
+        "pos": {
+          "max_spacing_ratio": 1.0,
+          "max_absolute": 4.76837158203125e-07,
+          "failed_states": []
+        }
+      }
+    },
+    {
+      "first": "original_a",
+      "second": "retained_off",
+      "comparisons": 20,
+      "failed_states": [],
+      "dense_membership_exact": true,
+      "required_exact_fields": true,
+      "field_maxima": {
+        "rho": {
+          "max_spacing_ratio": 1.0,
+          "max_absolute": 3.814697265625e-06,
+          "failed_states": []
+        },
+        "temp": {
+          "max_spacing_ratio": 1.0,
+          "max_absolute": 2.384185791015625e-07,
+          "failed_states": []
+        },
+        "vel": {
+          "max_spacing_ratio": 1.0,
+          "max_absolute": 2.384185791015625e-07,
+          "failed_states": []
+        },
+        "pos": {
+          "max_spacing_ratio": 1.0,
+          "max_absolute": 4.76837158203125e-07,
+          "failed_states": []
+        }
+      }
+    },
+    {
+      "first": "original_a",
+      "second": "retained_on",
+      "comparisons": 20,
+      "failed_states": [],
+      "dense_membership_exact": true,
+      "required_exact_fields": true,
+      "field_maxima": {
+        "rho": {
+          "max_spacing_ratio": 1.0,
+          "max_absolute": 7.62939453125e-06,
+          "failed_states": []
+        },
+        "temp": {
+          "max_spacing_ratio": 1.0,
+          "max_absolute": 2.384185791015625e-07,
+          "failed_states": []
+        },
+        "vel": {
+          "max_spacing_ratio": 1.0,
+          "max_absolute": 2.384185791015625e-07,
+          "failed_states": []
+        },
+        "pos": {
+          "max_spacing_ratio": 1.0,
+          "max_absolute": 4.76837158203125e-07,
+          "failed_states": []
+        }
+      }
+    },
+    {
+      "first": "original_b",
+      "second": "retained_off",
+      "comparisons": 20,
+      "failed_states": [
+        "state.000108",
+        "state.000114",
+        "state.000120"
+      ],
+      "dense_membership_exact": true,
+      "required_exact_fields": true,
+      "field_maxima": {
+        "rho": {
+          "max_spacing_ratio": 2.0,
+          "max_absolute": 1.52587890625e-05,
+          "failed_states": [
+            "state.000108",
+            "state.000114",
+            "state.000120"
+          ]
+        },
+        "temp": {
+          "max_spacing_ratio": 1.0,
+          "max_absolute": 2.384185791015625e-07,
+          "failed_states": []
+        },
+        "vel": {
+          "max_spacing_ratio": 1.0,
+          "max_absolute": 2.384185791015625e-07,
+          "failed_states": []
+        },
+        "pos": {
+          "max_spacing_ratio": 1.0,
+          "max_absolute": 4.76837158203125e-07,
+          "failed_states": []
+        }
+      }
+    },
+    {
+      "first": "original_b",
+      "second": "retained_on",
+      "comparisons": 20,
+      "failed_states": [],
+      "dense_membership_exact": true,
+      "required_exact_fields": true,
+      "field_maxima": {
+        "rho": {
+          "max_spacing_ratio": 1.0,
+          "max_absolute": 1.52587890625e-05,
+          "failed_states": []
+        },
+        "temp": {
+          "max_spacing_ratio": 1.0,
+          "max_absolute": 2.384185791015625e-07,
+          "failed_states": []
+        },
+        "vel": {
+          "max_spacing_ratio": 1.0,
+          "max_absolute": 2.384185791015625e-07,
+          "failed_states": []
+        },
+        "pos": {
+          "max_spacing_ratio": 1.0,
+          "max_absolute": 4.76837158203125e-07,
+          "failed_states": []
+        }
+      }
+    },
+    {
+      "first": "retained_off",
+      "second": "retained_on",
+      "comparisons": 20,
+      "failed_states": [
+        "state.000108",
+        "state.000120"
+      ],
+      "dense_membership_exact": true,
+      "required_exact_fields": true,
+      "field_maxima": {
+        "rho": {
+          "max_spacing_ratio": 2.0,
+          "max_absolute": 7.62939453125e-06,
+          "failed_states": [
+            "state.000108",
+            "state.000120"
+          ]
+        },
+        "temp": {
+          "max_spacing_ratio": 1.0,
+          "max_absolute": 2.384185791015625e-07,
+          "failed_states": []
+        },
+        "vel": {
+          "max_spacing_ratio": 1.0,
+          "max_absolute": 2.384185791015625e-07,
+          "failed_states": []
+        },
+        "pos": {
+          "max_spacing_ratio": 1.0,
+          "max_absolute": 4.76837158203125e-07,
+          "failed_states": []
+        }
+      }
+    }
+  ],
+  "audit_sha256": "3329dc075b9873cd608aa7a0ff9533ed4215c65145cc573c92190b3a23d544ff",
+  "checker_sha256": "3d704f4d807ea7b837ff7b74e76ae792b0c83e78e7fa70ab28dad8b0d7067413",
+  "raw_states_and_all_sidecar_hashes_rechecked": 81,
+  "checkpoint_hashes_rechecked": 8,
+  "resources": [
+    {
+      "case": "original_a",
+      "solver_seconds": 48.728652903,
+      "peak_child_rss_bytes": 115765248,
+      "ranks": 2,
+      "guard": null,
+      "median_busy_workers": 1.9886817163302597
+    },
+    {
+      "case": "original_b",
+      "solver_seconds": 48.726575187,
+      "peak_child_rss_bytes": 116137984,
+      "ranks": 2,
+      "guard": null,
+      "median_busy_workers": 1.9887912125021976
+    },
+    {
+      "case": "retained_off",
+      "solver_seconds": 48.574358536000005,
+      "peak_child_rss_bytes": 115888128,
+      "ranks": 2,
+      "guard": null,
+      "median_busy_workers": 1.9889492059515517
+    },
+    {
+      "case": "retained_on",
+      "solver_seconds": 48.433265250000005,
+      "peak_child_rss_bytes": 116477952,
+      "ranks": 2,
+      "guard": null,
+      "median_busy_workers": 1.9888257427876446
+    }
+  ],
+  "full_L3_pair_storage_budget": {
+    "measured_native_state_min": 6661723,
+    "measured_native_state_max": 6680426,
+    "reader_cache_max_per_state": 909387,
+    "state_budget_bytes": 9487267,
+    "native_checkpoint_bytes": 7869465,
+    "expected_checkpoint_generations": 10,
+    "budgeted_checkpoint_generations": 12,
+    "ic_bytes": 3145760,
+    "per_case_bytes": 1690863205,
+    "pair_bytes": 3381726410,
+    "independent_reserve_bytes": 10737418240,
+    "formula": "104 states including all sidecars and reader-cache allowance, 12 checkpoints, IC, 256 MiB logs; 25% additional margin per case. Ten native checkpoints expected at steps60..600. No full runner enabled.",
+    "free_bytes_at_review": {
+      "guest": 16956719104,
+      "windows_backing_volume": 38021267456
+    },
+    "fits_current_storage_only": true
+  },
+  "decision": "No full Gasoline controls enabled. The predeclared field criterion failed, including original-binary repeats. Exact dense mass through1t_cc is a measured limited result, not full-trajectory equivalence.",
+  "source_review": "smoothfcn.c density routines accumulate neighbor contributions with floating-point additions. Summation order is a plausible source of repeat variability, not an established causal diagnosis; no solver arithmetic was changed."
+}

@@ -1,0 +1,565 @@
+{
+  "status": "short_native_mass_checks_passed_bitwise_velocity_equivalence_not_established",
+  "full_science_controls_completed": 0,
+  "native_outputs_independently_checked": 14,
+  "unchanged_original_velocity_repeat_max_absolute": 2.842170943040401e-14,
+  "same_binary_hook_off_on_velocity_max_absolute": 5.684341886080802e-14,
+  "all_compared_nonvelocity_TIPSY_fields_exact": true,
+  "hook_velocity_difference_within_measured_original_repeat_range": false,
+  "initial_states": [
+    {
+      "case": "on_tanh",
+      "path": "/home/kaan/sensitivity_20260907/gasoline/instrumentation_v1/on_tanh/state.initial",
+      "sha256": "6e659b9b4f6e07a8ffbd0dc3a57641baff6d72845821c65e5bbc0f8f6eca809b",
+      "time_code": 0.0,
+      "time_tcc": 0.0,
+      "count": 65536,
+      "mass_sums": [
+        2425.245532028377,
+        409.90798234939575,
+        368.7301419460533
+      ],
+      "pressure_min": 0.7379455995292783,
+      "pressure_max": 6.291239210232373,
+      "native_pressure_relative_difference": 5.9323336040049494e-08,
+      "pressure_comparison": "same-stage initial check",
+      "sidecars": {
+        "state.initial.HI": "7d2f0cca52d84f2b29ba8510b52f6ef078a51f983d385558f472791a4f8e894a",
+        "state.initial.HeI": "c6182f39c206d6e9857ede43f20edefa817f61b3cecb93d4ec5563f0947edf17",
+        "state.initial.HeII": "c47cb07b97aa2edcae8a06904b330ccab138edd885ce06cc2c279c050d868dd2",
+        "state.initial.SPHH": "1310a7bdf882e0a5efb468caa7786bed208149dda2a63db0c779bc7596bd60d9",
+        "state.initial.iord": "3430dc0b0f5ffab5edc676be743672bd500349b4294dcf93df3304fdd645b38a",
+        "state.initial.pres": "10bd474cd9f6560cb463ea50ae89b241fd04866af37d294016f357da741ab01d"
+      },
+      "independent": {
+        "reader": "yt TipsyDataset raw fields",
+        "mass_sums": [
+          2425.245532028377,
+          409.90798234939575,
+          368.7301419460533
+        ],
+        "relative_discrepancies": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "count": 65536
+      },
+      "initial_density_vs_analytic_relative_max": 5.29123945532202
+    },
+    {
+      "case": "on_sharp",
+      "path": "/home/kaan/sensitivity_20260907/gasoline/instrumentation_v1/on_sharp/state.initial",
+      "sha256": "ae68c669b89394202bfe2024360b94d57e361ec2a2127f13751922223eeba9fe",
+      "time_code": 0.0,
+      "time_tcc": 0.0,
+      "count": 65536,
+      "mass_sums": [
+        2425.245532028377,
+        409.90798234939575,
+        368.7301419460533
+      ],
+      "pressure_min": 0.7379455995292783,
+      "pressure_max": 6.291239210232373,
+      "native_pressure_relative_difference": 5.9323336040049494e-08,
+      "pressure_comparison": "same-stage initial check",
+      "sidecars": {
+        "state.initial.HI": "7d2f0cca52d84f2b29ba8510b52f6ef078a51f983d385558f472791a4f8e894a",
+        "state.initial.HeI": "c6182f39c206d6e9857ede43f20edefa817f61b3cecb93d4ec5563f0947edf17",
+        "state.initial.HeII": "c47cb07b97aa2edcae8a06904b330ccab138edd885ce06cc2c279c050d868dd2",
+        "state.initial.SPHH": "1310a7bdf882e0a5efb468caa7786bed208149dda2a63db0c779bc7596bd60d9",
+        "state.initial.iord": "3430dc0b0f5ffab5edc676be743672bd500349b4294dcf93df3304fdd645b38a",
+        "state.initial.pres": "10bd474cd9f6560cb463ea50ae89b241fd04866af37d294016f357da741ab01d"
+      },
+      "independent": {
+        "reader": "yt TipsyDataset raw fields",
+        "mass_sums": [
+          2425.245532028377,
+          409.90798234939575,
+          368.7301419460533
+        ],
+        "relative_discrepancies": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "count": 65536
+      },
+      "initial_density_vs_analytic_relative_max": 5.29123945532202
+    }
+  ],
+  "new_independent_states": [
+    {
+      "path": "/home/kaan/sensitivity_20260907/gasoline/repeatability_v1/original_repeat1/state.000003",
+      "sha256": "1e7df891b174d95ef82d71bf01c838030876b8ffd380867022937e26e40cc002",
+      "time_code": 0.09682458365999999,
+      "independent": {
+        "reader": "yt TipsyDataset raw fields",
+        "mass_sums": [
+          2425.245532028377,
+          409.90798234939575,
+          368.7301419460533
+        ],
+        "relative_discrepancies": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "count": 65536
+      }
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gasoline/repeatability_v1/original_repeat1/state.000006",
+      "sha256": "f75b749c8c91ffcebecdd99661f627aff983573a92abd485ab4f4b037bb82e82",
+      "time_code": 0.19364916732,
+      "independent": {
+        "reader": "yt TipsyDataset raw fields",
+        "mass_sums": [
+          2425.245532028377,
+          409.90798234939575,
+          368.7301419460533
+        ],
+        "relative_discrepancies": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "count": 65536
+      }
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gasoline/repeatability_v1/original_repeat2/state.000003",
+      "sha256": "1fcbdb7b50bf5f541efa1d867f68a2774e6f87488b7fa2b8884835078483c2b5",
+      "time_code": 0.09682458365999999,
+      "independent": {
+        "reader": "yt TipsyDataset raw fields",
+        "mass_sums": [
+          2425.245532028377,
+          409.90798234939575,
+          368.7301419460533
+        ],
+        "relative_discrepancies": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "count": 65536
+      }
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gasoline/repeatability_v1/original_repeat2/state.000006",
+      "sha256": "f4e35e99f9bde5368a44228e28f6e7828c97b110f72351b66688ec1512fbd186",
+      "time_code": 0.19364916732,
+      "independent": {
+        "reader": "yt TipsyDataset raw fields",
+        "mass_sums": [
+          2425.245532028377,
+          409.90798234939575,
+          368.7301419460533
+        ],
+        "relative_discrepancies": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "count": 65536
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "kind": "same_original_binary",
+      "first": "/home/kaan/sensitivity_20260907/gasoline/instrumentation_v1/original_tanh",
+      "second": "/home/kaan/sensitivity_20260907/gasoline/repeatability_v1/original_repeat1",
+      "snapshot": "state.000003",
+      "fields": {
+        "mass": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "pos": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "vel": {
+          "unequal_values": 104326,
+          "max_absolute": 3.552713678800501e-15,
+          "max_scaled_to_reference_peak": 1.3531637676270042e-15
+        },
+        "rho": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "temp": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "eps": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "metals": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "phi": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        }
+      }
+    },
+    {
+      "kind": "same_original_binary",
+      "first": "/home/kaan/sensitivity_20260907/gasoline/instrumentation_v1/original_tanh",
+      "second": "/home/kaan/sensitivity_20260907/gasoline/repeatability_v1/original_repeat2",
+      "snapshot": "state.000003",
+      "fields": {
+        "mass": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "pos": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "vel": {
+          "unequal_values": 101892,
+          "max_absolute": 1.4210854715202004e-14,
+          "max_scaled_to_reference_peak": 5.412655070508017e-15
+        },
+        "rho": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "temp": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "eps": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "metals": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "phi": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        }
+      }
+    },
+    {
+      "kind": "same_original_binary",
+      "first": "/home/kaan/sensitivity_20260907/gasoline/repeatability_v1/original_repeat1",
+      "second": "/home/kaan/sensitivity_20260907/gasoline/repeatability_v1/original_repeat2",
+      "snapshot": "state.000003",
+      "fields": {
+        "mass": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "pos": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "vel": {
+          "unequal_values": 102156,
+          "max_absolute": 1.4210854715202004e-14,
+          "max_scaled_to_reference_peak": 5.412655070508017e-15
+        },
+        "rho": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "temp": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "eps": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "metals": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "phi": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        }
+      }
+    },
+    {
+      "kind": "same_hook_binary_off_vs_on",
+      "first": "/home/kaan/sensitivity_20260907/gasoline/instrumentation_v1/off_tanh",
+      "second": "/home/kaan/sensitivity_20260907/gasoline/instrumentation_v1/on_tanh",
+      "snapshot": "state.000003",
+      "fields": {
+        "mass": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "pos": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "vel": {
+          "unequal_values": 25285,
+          "max_absolute": 3.552713678800501e-15,
+          "max_scaled_to_reference_peak": 1.3531637676270042e-15
+        },
+        "rho": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "temp": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "eps": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "metals": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "phi": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        }
+      }
+    },
+    {
+      "kind": "same_original_binary",
+      "first": "/home/kaan/sensitivity_20260907/gasoline/instrumentation_v1/original_tanh",
+      "second": "/home/kaan/sensitivity_20260907/gasoline/repeatability_v1/original_repeat1",
+      "snapshot": "state.000006",
+      "fields": {
+        "mass": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "pos": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "vel": {
+          "unequal_values": 106434,
+          "max_absolute": 2.842170943040401e-14,
+          "max_scaled_to_reference_peak": 1.0794219670496015e-14
+        },
+        "rho": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "temp": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "eps": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "metals": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "phi": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        }
+      }
+    },
+    {
+      "kind": "same_original_binary",
+      "first": "/home/kaan/sensitivity_20260907/gasoline/instrumentation_v1/original_tanh",
+      "second": "/home/kaan/sensitivity_20260907/gasoline/repeatability_v1/original_repeat2",
+      "snapshot": "state.000006",
+      "fields": {
+        "mass": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "pos": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "vel": {
+          "unequal_values": 106405,
+          "max_absolute": 2.842170943040401e-14,
+          "max_scaled_to_reference_peak": 1.0794219670496015e-14
+        },
+        "rho": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "temp": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "eps": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "metals": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "phi": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        }
+      }
+    },
+    {
+      "kind": "same_original_binary",
+      "first": "/home/kaan/sensitivity_20260907/gasoline/repeatability_v1/original_repeat1",
+      "second": "/home/kaan/sensitivity_20260907/gasoline/repeatability_v1/original_repeat2",
+      "snapshot": "state.000006",
+      "fields": {
+        "mass": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "pos": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "vel": {
+          "unequal_values": 106379,
+          "max_absolute": 2.842170943040401e-14,
+          "max_scaled_to_reference_peak": 1.0794219670496015e-14
+        },
+        "rho": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "temp": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "eps": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "metals": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "phi": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        }
+      }
+    },
+    {
+      "kind": "same_hook_binary_off_vs_on",
+      "first": "/home/kaan/sensitivity_20260907/gasoline/instrumentation_v1/off_tanh",
+      "second": "/home/kaan/sensitivity_20260907/gasoline/instrumentation_v1/on_tanh",
+      "snapshot": "state.000006",
+      "fields": {
+        "mass": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "pos": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "vel": {
+          "unequal_values": 105275,
+          "max_absolute": 5.684341886080802e-14,
+          "max_scaled_to_reference_peak": 2.158843934099203e-14
+        },
+        "rho": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "temp": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "eps": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "metals": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "phi": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        }
+      }
+    }
+  ],
+  "original_validation_attempts_retained": [
+    "validation_v1",
+    "validation_v2",
+    "validation_v3"
+  ],
+  "next_required": [
+    "Review complete-pair retention including every native rotating checkpoint generation.",
+    "Freeze a tested full L3 mass-study runner; preserve all native actual timestamps and sidecars.",
+    "Do not claim strict bitwise equivalence or pressure/velocity-at-header-time validation."
+  ]
+}

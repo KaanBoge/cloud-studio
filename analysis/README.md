@@ -15,6 +15,12 @@ Gadget-4 L4's native short validation now passes, but its full pair is held
 for storage. The [L4 evidence](sensitivity_20260907/gadget4/L4_VALIDATION.md)
 does not increase the accepted full-control count.
 
+[Gasoline's longer diagnostic](sensitivity_20260907/gasoline/LONGER_VALIDATION.md)
+adds81 independently checked states and verified checkpoint retention, not
+full controls. Its dense masses agree exactly through1 t_cc, but the
+predeclared field-equivalence check failed, including untouched-binary repeats.
+Full Gasoline controls remain held for review; no native data was deleted.
+
 Updated 7 September 2026. **Historical runs are not yet a validated matched-code
 comparison.** The corrected scripts are in `verified_20260907/`. Previous
 analysis entry points are retained under `legacy_before_20260907/` for provenance,
