@@ -2,9 +2,10 @@
 
 ## Update: 8 September 2026
 
-Thirty-eight full controls are now validated and analyzed: the eight pilot runs below, six
+Forty full controls are now validated and analyzed: the eight pilot runs below, six
 native Athena 4.2 runs at L3/L4/L5, four Enzo runs at L3/L4, and four Enzo-E runs
-at L3/L4, plus four each for RAMSES, FLASH 4.8, Flash-X and Arepo at L3/L4. Each Athena 4.2 run has 101 distinct native
+at L3/L4, plus four each for RAMSES, FLASH 4.8, Flash-X and Arepo at L3/L4,
+and two GIZMO MFM controls at L3. Each Athena 4.2 run has 101 distinct native
 snapshots through 5 t_cc. Its initial density, tracer, coordinates and volumes
 match exactly within each pair at native VTK precision. Only velocity changes.
 
@@ -56,6 +57,16 @@ L4 took 1h06m35s and 1h06m26s on eight CPU ranks, with peak solver-child RSS
 boundary allows tracer recirculation: an in-box tracer fraction of one is not
 proof that no material crossed a boundary. All raw data is retained and L5 is
 storage-held. See [Arepo results and limitations](arepo/README.md).
+
+GIZMO MFM L3 is complete with 101 distinct native times per control and all
+202 mass sums independently checked with yt. Peak mass-curve separation is
+3.98% of the fixed initial dense mass. The two solver runs took 82.4 and 82.1
+seconds on eight busy CPU workers, peaking at 0.489 GiB solver-child RSS.
+This is a single coarse resolution, not a convergence result. Both MFV L3
+controls also reached 101 outputs, but zero stored internal energy first
+appears at t=3.95 t_cc in each. They are retained as failure evidence and
+excluded from the 40 validated controls. No floor or output was changed.
+See [GIZMO results and failure audit](gizmo/README.md).
 
 The first Enzo full
 attempt exposed an output-setting error: dtRestartDump is a wall-clock exit
@@ -145,11 +156,14 @@ Arepo's original jittered lattice gives native pressure deviations up to 14.45%
 in both controls, and its streamwise boundary is periodic. These limitations
 are preserved and documented for the within-code experiment, not claimed as
 a matched cross-code setup. See [Arepo results and caveats](arepo/README.md).
-GIZMO MFM/MFV short native smokes and independent mass checks now pass. A
-separate timestep-scaling test explains their native t=0 velocity staggering;
+GIZMO MFM L3 is validated and analyzed; GIZMO MFV L3 completed the native
+solver but failed positive-energy checks in both controls. All 404 native
+outputs remain retained. The stopped L3 batch must not be relaunched.
+A separate timestep-scaling test explains native t=0 velocity staggering;
 those velocities must not be interpreted as simultaneous with the header time.
-Full GIZMO controls still need the production launcher, per-level and retention
-checks and are not counted as completed runs. See [GIZMO validation](gizmo/README.md).
+MFM L4 still needs per-level native/timing checks and a whole-pair retention
+budget. MFV requires diagnosis, not silent floor changes or blanket retries.
+See [GIZMO validation and remaining work](gizmo/README.md).
 Gadget-4 and Gasoline remain unprepared.
 A 15-minute task follow-up is enabled to inspect progress and
 advance safe pending work. The old blanket replacement queue remains inactive.

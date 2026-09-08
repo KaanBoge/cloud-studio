@@ -1,0 +1,88 @@
+{
+  "physics": {
+    "code": "GIZMO",
+    "variants": [
+      "mfm",
+      "mfv"
+    ],
+    "chi": 100,
+    "mach": 2,
+    "gamma": 1.6666666666666667,
+    "r_cloud": 1,
+    "rho_wind": 1,
+    "p_wind": 1,
+    "density_width": 0.1,
+    "rv_scale": 1.3,
+    "seed": 42,
+    "center": [
+      3,
+      5,
+      5
+    ],
+    "domain_left": [
+      0,
+      0,
+      0
+    ],
+    "domain_right": [
+      20,
+      10,
+      10
+    ],
+    "mass_mode": "volume",
+    "ranks": 8,
+    "t_end_over_tcc": 5,
+    "output_dt_over_tcc": 0.05,
+    "scope": "Within each native GIZMO variant, actual historical tanh versus sharp velocity. Regular equal-volume initial lattice, variable masses, original float32 IC/output precision and fully periodic native boundary recipe. Native kernel-derived density/pressure must be checked separately. No passive material tracer is assumed; particle-ID mass in MFV is not a material-retention diagnostic.",
+    "v_wind": 2.581988897471611,
+    "t_cc": 3.872983346207417
+  },
+  "storage": {
+    "path": "/home/kaan/sensitivity_20260907/gizmo",
+    "filesystem_free_bytes": 31315443712,
+    "filesystem_total_bytes": 1081101176832,
+    "windows_backing_volume": {
+      "distribution": "Ubuntu",
+      "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+      "drive": "C:",
+      "free_bytes": 37702094848,
+      "total_bytes": 1999283154944
+    },
+    "policy": "Conservative growth budget; allocated but reusable VHDX blocks are not credited.",
+    "effective_free_bytes": 31315443712
+  },
+  "budgets": {
+    "mfm": {
+      "case_bytes": 966633465,
+      "pair_bytes": 1933266930,
+      "snapshot_bytes": 4203752,
+      "measured_restart_set_bytes": 44186432,
+      "ic_bytes": 2365880,
+      "method": "104 native snapshots + two restart sets with 50% margin + IC + 256MiB logs; 15% overall margin. Separate 10GiB free-space reserve."
+    },
+    "mfv": {
+      "case_bytes": 1076975174,
+      "pair_bytes": 2153950348,
+      "snapshot_bytes": 4990184,
+      "measured_restart_set_bytes": 48906560,
+      "ic_bytes": 2365880,
+      "method": "104 native snapshots + two restart sets with 50% margin + IC + 256MiB logs; 15% overall margin. Separate 10GiB free-space reserve."
+    }
+  },
+  "planned_controls": 4,
+  "levels": [
+    3
+  ],
+  "wall_limit_seconds": 6000,
+  "stop_grace_seconds": 60,
+  "scope": "Native MFM/MFV L3 historical/sharp only; L4/L5 are not enabled.",
+  "dependencies": {
+    "run_full_l3.py": "0630c91879a81ab8c300fc35d865e68e9039deb0a8481c8c8d390e260f3fbde2",
+    "setup_gizmo.py": "33052b8d824fe18359a78d459a4d21a8dabf6f5d08e0140aabb5cd1c52dec934",
+    "smoke_gizmo.py": "e13ef0ccfba7f91f08bfa78578a5f4efa9766be8db6028b251a1b45ab10a7925",
+    "verify_gizmo.py": "fcdf4f5560912a74fa067eec5f4f9abf677e71cc53af979932f3bc088c7765b6",
+    "audit_snapshot_timing.py": "6d456af60ab166128aad5ed380ecc17a6f1d5cb180ede976b98da3f6311f5e31"
+  },
+  "verification_sha256": "c7e92e482e47b4fcf36139eac9f3c8d397c2a2108eef7398b21678f7381e5e2a",
+  "build_sha256": "a23e103cbd5df1849386578246cf635d42b3d60ae174ca4e227b1961e59c0f94"
+}

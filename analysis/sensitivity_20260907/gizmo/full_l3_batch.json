@@ -1,0 +1,3500 @@
+{
+  "status": "stopped_needs_review",
+  "pid": 75,
+  "plan": {
+    "physics": {
+      "code": "GIZMO",
+      "variants": [
+        "mfm",
+        "mfv"
+      ],
+      "chi": 100,
+      "mach": 2,
+      "gamma": 1.6666666666666667,
+      "r_cloud": 1,
+      "rho_wind": 1,
+      "p_wind": 1,
+      "density_width": 0.1,
+      "rv_scale": 1.3,
+      "seed": 42,
+      "center": [
+        3,
+        5,
+        5
+      ],
+      "domain_left": [
+        0,
+        0,
+        0
+      ],
+      "domain_right": [
+        20,
+        10,
+        10
+      ],
+      "mass_mode": "volume",
+      "ranks": 8,
+      "t_end_over_tcc": 5,
+      "output_dt_over_tcc": 0.05,
+      "scope": "Within each native GIZMO variant, actual historical tanh versus sharp velocity. Regular equal-volume initial lattice, variable masses, original float32 IC/output precision and fully periodic native boundary recipe. Native kernel-derived density/pressure must be checked separately. No passive material tracer is assumed; particle-ID mass in MFV is not a material-retention diagnostic.",
+      "v_wind": 2.581988897471611,
+      "t_cc": 3.872983346207417
+    },
+    "storage": {
+      "path": "/home/kaan/sensitivity_20260907/gizmo",
+      "filesystem_free_bytes": 31315435520,
+      "filesystem_total_bytes": 1081101176832,
+      "windows_backing_volume": {
+        "distribution": "Ubuntu",
+        "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+        "drive": "C:",
+        "free_bytes": 37702090752,
+        "total_bytes": 1999283154944
+      },
+      "policy": "Conservative growth budget; allocated but reusable VHDX blocks are not credited.",
+      "effective_free_bytes": 31315435520
+    },
+    "budgets": {
+      "mfm": {
+        "case_bytes": 966633465,
+        "pair_bytes": 1933266930,
+        "snapshot_bytes": 4203752,
+        "measured_restart_set_bytes": 44186432,
+        "ic_bytes": 2365880,
+        "method": "104 native snapshots + two restart sets with 50% margin + IC + 256MiB logs; 15% overall margin. Separate 10GiB free-space reserve."
+      },
+      "mfv": {
+        "case_bytes": 1076975174,
+        "pair_bytes": 2153950348,
+        "snapshot_bytes": 4990184,
+        "measured_restart_set_bytes": 48906560,
+        "ic_bytes": 2365880,
+        "method": "104 native snapshots + two restart sets with 50% margin + IC + 256MiB logs; 15% overall margin. Separate 10GiB free-space reserve."
+      }
+    },
+    "planned_controls": 4,
+    "levels": [
+      3
+    ],
+    "wall_limit_seconds": 6000,
+    "stop_grace_seconds": 60,
+    "scope": "Native MFM/MFV L3 historical/sharp only; L4/L5 are not enabled.",
+    "dependencies": {
+      "run_full_l3.py": "0630c91879a81ab8c300fc35d865e68e9039deb0a8481c8c8d390e260f3fbde2",
+      "setup_gizmo.py": "33052b8d824fe18359a78d459a4d21a8dabf6f5d08e0140aabb5cd1c52dec934",
+      "smoke_gizmo.py": "e13ef0ccfba7f91f08bfa78578a5f4efa9766be8db6028b251a1b45ab10a7925",
+      "verify_gizmo.py": "fcdf4f5560912a74fa067eec5f4f9abf677e71cc53af979932f3bc088c7765b6",
+      "audit_snapshot_timing.py": "6d456af60ab166128aad5ed380ecc17a6f1d5cb180ede976b98da3f6311f5e31"
+    },
+    "verification_sha256": "c7e92e482e47b4fcf36139eac9f3c8d397c2a2108eef7398b21678f7381e5e2a",
+    "build_sha256": "a23e103cbd5df1849386578246cf635d42b3d60ae174ca4e227b1961e59c0f94"
+  },
+  "finished": [
+    {
+      "status": "complete_independent_checks",
+      "variant": "mfm",
+      "mode": 0,
+      "level": 3,
+      "directory": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13",
+      "physics": {
+        "code": "GIZMO",
+        "variants": [
+          "mfm",
+          "mfv"
+        ],
+        "chi": 100,
+        "mach": 2,
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1,
+        "rho_wind": 1,
+        "p_wind": 1,
+        "density_width": 0.1,
+        "rv_scale": 1.3,
+        "seed": 42,
+        "center": [
+          3,
+          5,
+          5
+        ],
+        "domain_left": [
+          0,
+          0,
+          0
+        ],
+        "domain_right": [
+          20,
+          10,
+          10
+        ],
+        "mass_mode": "volume",
+        "ranks": 8,
+        "t_end_over_tcc": 5,
+        "output_dt_over_tcc": 0.05,
+        "scope": "Within each native GIZMO variant, actual historical tanh versus sharp velocity. Regular equal-volume initial lattice, variable masses, original float32 IC/output precision and fully periodic native boundary recipe. Native kernel-derived density/pressure must be checked separately. No passive material tracer is assumed; particle-ID mass in MFV is not a material-retention diagnostic.",
+        "v_wind": 2.581988897471611,
+        "t_cc": 3.872983346207417
+      },
+      "input_sha256": "3af6f94f62c2b7b7187e24fb4b4087f6f57a2aec5497a72102bba8c33b49c9b2",
+      "ic_sha256": "ae510c5a853ace97e3c55c6b234efb3e5cf6f64a1dbd512e5ee7be8d0e1b52e5",
+      "binary_sha256": "ad6787e8666f92e1ac5162eec1aa717277920c51c52b7b04277d0b53295c6011",
+      "launcher_sha256": "0630c91879a81ab8c300fc35d865e68e9039deb0a8481c8c8d390e260f3fbde2",
+      "budget": {
+        "case_bytes": 966633465,
+        "pair_bytes": 1933266930,
+        "snapshot_bytes": 4203752,
+        "measured_restart_set_bytes": 44186432,
+        "ic_bytes": 2365880,
+        "method": "104 native snapshots + two restart sets with 50% margin + IC + 256MiB logs; 15% overall margin. Separate 10GiB free-space reserve."
+      },
+      "storage_preflight": {
+        "path": "/home/kaan/sensitivity_20260907/gizmo",
+        "filesystem_free_bytes": 31310663680,
+        "filesystem_total_bytes": 1081101176832,
+        "windows_backing_volume": {
+          "distribution": "Ubuntu",
+          "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+          "drive": "C:",
+          "free_bytes": 37702086656,
+          "total_bytes": 1999283154944
+        },
+        "policy": "Conservative growth budget; allocated but reusable VHDX blocks are not credited.",
+        "effective_free_bytes": 31310663680
+      },
+      "command": [
+        "mpirun",
+        "--bind-to",
+        "core",
+        "-np",
+        "8",
+        "/home/kaan/sensitivity_20260907/gizmo/GIZMO_mfm_pair",
+        "params.txt"
+      ],
+      "started_unix": 1788840100.906772,
+      "mpi_pid": 80,
+      "returncode": 0,
+      "wall_seconds": 82.374628784,
+      "peak_child_rss_gib": 0.4888496398925781,
+      "stop_reason": null,
+      "series": [
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_000.hdf5",
+          "sha256": "d2b6b21d2a489ed4d3cbe6c2370d31331121d1cc179cf2f1913216ae30ae504c",
+          "time_code": 0.0,
+          "t_over_tcc": 0.0,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 409.90798234939575,
+          "dense_mass_over_initial": 1.0
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_001.hdf5",
+          "sha256": "81fae70a1f71568793566a48a3111d1a347b7188f5f9269bcc865f1f0e02667a",
+          "time_code": 0.19364916731037085,
+          "t_over_tcc": 0.05,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 401.34072256088257,
+          "dense_mass_over_initial": 0.9790995536622396
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_002.hdf5",
+          "sha256": "2ddf2e1122d1ce10bd162d4adf64510214d4063a7bcbc65dfbb7bea1cab28d8e",
+          "time_code": 0.3872983346207417,
+          "t_over_tcc": 0.1,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 401.34072256088257,
+          "dense_mass_over_initial": 0.9790995536622396
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_003.hdf5",
+          "sha256": "5bc32fe8ad4a40ce2ecd6a53f0a037faad879bc43b66f2bacf67944e410a4a1c",
+          "time_code": 0.5809475019311126,
+          "t_over_tcc": 0.15,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 401.34072256088257,
+          "dense_mass_over_initial": 0.9790995536622396
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_004.hdf5",
+          "sha256": "936f21b364ab7d4ab850ee8243f38e954842546a32942b8b734715604f7ac018",
+          "time_code": 0.7745966692414834,
+          "t_over_tcc": 0.2,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 401.34072256088257,
+          "dense_mass_over_initial": 0.9790995536622396
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_005.hdf5",
+          "sha256": "ddfce673254a0bc6c0269c8c3ce1fdbe8e5ab9d0026bc3eee17178460c572cc2",
+          "time_code": 0.9682458365518543,
+          "t_over_tcc": 0.25,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 401.34072256088257,
+          "dense_mass_over_initial": 0.9790995536622396
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_006.hdf5",
+          "sha256": "35e74aa99ea79f66368344d141d2a016b49ac86b9a235b93d6eff4482bd6c7bb",
+          "time_code": 1.161895003862225,
+          "t_over_tcc": 0.3,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 401.34072256088257,
+          "dense_mass_over_initial": 0.9790995536622396
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_007.hdf5",
+          "sha256": "9cf169d6d860ba95f02749cfcc747652674217bad09ca4960a423134a536cf32",
+          "time_code": 1.355544171172596,
+          "t_over_tcc": 0.35,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 401.34072256088257,
+          "dense_mass_over_initial": 0.9790995536622396
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_008.hdf5",
+          "sha256": "e45a646348846e11c504a13116f16893f63717d86bebd0a681798a51b61cdbfb",
+          "time_code": 1.5491933384829668,
+          "t_over_tcc": 0.4,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 401.34072256088257,
+          "dense_mass_over_initial": 0.9790995536622396
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_009.hdf5",
+          "sha256": "3909f7b8dfb6be283d423529d925ad77b3aed75b5bdc52a0a7cf08e3ee1d18dc",
+          "time_code": 1.7428425057933374,
+          "t_over_tcc": 0.44999999999999996,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 401.34072256088257,
+          "dense_mass_over_initial": 0.9790995536622396
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_010.hdf5",
+          "sha256": "c8611d771d07791684e576e75ca5c43c22e14aee6acb1eee0ddc33b81f82d5e7",
+          "time_code": 1.9364916731037085,
+          "t_over_tcc": 0.5,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 401.34072256088257,
+          "dense_mass_over_initial": 0.9790995536622396
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_011.hdf5",
+          "sha256": "74e52a8f98d692933a399b427978b47e57da5472a21b0afcd03e5f862f3b6171",
+          "time_code": 2.1301408404140796,
+          "t_over_tcc": 0.55,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 401.34072256088257,
+          "dense_mass_over_initial": 0.9790995536622396
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_012.hdf5",
+          "sha256": "8fa4caf46d33c24c7f207402792779c676607f56e054a400f23664541d7eaa3d",
+          "time_code": 2.32379000772445,
+          "t_over_tcc": 0.6,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 401.34072256088257,
+          "dense_mass_over_initial": 0.9790995536622396
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_013.hdf5",
+          "sha256": "addd8920fb1e049f87ad989e9ab03eeafcd4c6e410164fd005bbfb552410cf08",
+          "time_code": 2.517439175034821,
+          "t_over_tcc": 0.6499999999999999,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 401.34072256088257,
+          "dense_mass_over_initial": 0.9790995536622396
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_014.hdf5",
+          "sha256": "82bfb2e4ce7e1cd9b085344d12ac118924bd2bfc8011b10bf3da158557128293",
+          "time_code": 2.7110883423451915,
+          "t_over_tcc": 0.6999999999999998,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 401.34072256088257,
+          "dense_mass_over_initial": 0.9790995536622396
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_015.hdf5",
+          "sha256": "d75a5b6925b47af133f524ea8036da7cc34f9659af82361aeefa2994fca644d6",
+          "time_code": 2.904737509655562,
+          "t_over_tcc": 0.7499999999999998,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 401.34072256088257,
+          "dense_mass_over_initial": 0.9790995536622396
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_016.hdf5",
+          "sha256": "32374dc6c6ebb23ff60a00f629a77d2a5783a47f4b75b026431174326e59d847",
+          "time_code": 3.0983866769659323,
+          "t_over_tcc": 0.7999999999999997,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 388.243097782135,
+          "dense_mass_over_initial": 0.947146956145894
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_017.hdf5",
+          "sha256": "f9b4a22b5e99e84eee68280feecac1774c451ca3bfda47ceb663035be4016884",
+          "time_code": 3.2920358442763034,
+          "t_over_tcc": 0.8499999999999998,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 385.03037536144257,
+          "dense_mass_over_initial": 0.9393092887692338
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_018.hdf5",
+          "sha256": "183dba5dc3b98295408242f93b6ababb4298d033e268ff56c54de6ec2d9925f1",
+          "time_code": 3.485685011586674,
+          "t_over_tcc": 0.8999999999999997,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 380.746745467186,
+          "dense_mass_over_initial": 0.9288590656003536
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_019.hdf5",
+          "sha256": "63008e6e05955097c39b3c638339a3d41ccb996bcccea00a9a3d4c17b848b90b",
+          "time_code": 3.6793341788970446,
+          "t_over_tcc": 0.9499999999999996,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 379.6758379936218,
+          "dense_mass_over_initial": 0.9262465098081335
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_020.hdf5",
+          "sha256": "23b8de4277e12295a44ab1ba044c765ade5472d5acd7af49461da7d50b6cdad5",
+          "time_code": 3.8729833462074152,
+          "t_over_tcc": 0.9999999999999996,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 379.6758379936218,
+          "dense_mass_over_initial": 0.9262465098081335
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_021.hdf5",
+          "sha256": "290805e583b867067401ec2efc9ee808be856875b560de5c04c44a4d42820652",
+          "time_code": 4.066632513517786,
+          "t_over_tcc": 1.0499999999999994,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 379.6758379936218,
+          "dense_mass_over_initial": 0.9262465098081335
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_022.hdf5",
+          "sha256": "bd00385ffdfe24a8ccb9f2b918fdae90194377d4b772b2850b16ef60c453406b",
+          "time_code": 4.2602816808281565,
+          "t_over_tcc": 1.0999999999999994,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 379.6758379936218,
+          "dense_mass_over_initial": 0.9262465098081335
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_023.hdf5",
+          "sha256": "fcbf44810e23f54a660da8af2963bb748b15a48a704139d69f86772c866e431e",
+          "time_code": 4.453930848138527,
+          "t_over_tcc": 1.1499999999999995,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 379.6758379936218,
+          "dense_mass_over_initial": 0.9262465098081335
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_024.hdf5",
+          "sha256": "18cc5cc17dd7db9adf456b54f5efff0effb0fcbb29f060b9c3d5541ef03017e1",
+          "time_code": 4.647580015448898,
+          "t_over_tcc": 1.1999999999999993,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 379.6758379936218,
+          "dense_mass_over_initial": 0.9262465098081335
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_025.hdf5",
+          "sha256": "0c58859ba17fc784b2fcb9ed6dc0c6a21672e0567af31093ed2158e3ab6026a2",
+          "time_code": 4.841229182759268,
+          "t_over_tcc": 1.2499999999999993,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 379.6758379936218,
+          "dense_mass_over_initial": 0.9262465098081335
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_026.hdf5",
+          "sha256": "52c1d0d12e2489a86c37e029c09915a406481186b579b4ad0d169e5877d0a479",
+          "time_code": 5.034878350069639,
+          "t_over_tcc": 1.2999999999999992,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 379.6758379936218,
+          "dense_mass_over_initial": 0.9262465098081335
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_027.hdf5",
+          "sha256": "3b40b64fd3aae690b0ff80248c8d7eadaae2bdca63c699037f283993b7ac5d5e",
+          "time_code": 5.22852751738001,
+          "t_over_tcc": 1.3499999999999992,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 379.6758379936218,
+          "dense_mass_over_initial": 0.9262465098081335
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_028.hdf5",
+          "sha256": "4796f437e4f4b018601f6285b14e80b65934f7ac9200a4e9260d5d4f09e56f5b",
+          "time_code": 5.422176684690379,
+          "t_over_tcc": 1.3999999999999988,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 379.6758379936218,
+          "dense_mass_over_initial": 0.9262465098081335
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_029.hdf5",
+          "sha256": "f710ce3a1f29647faa7b6a2c0ebf3e5c34c08739010fd4a57c1c5d08ef17d95f",
+          "time_code": 5.615825852000751,
+          "t_over_tcc": 1.449999999999999,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 379.6758379936218,
+          "dense_mass_over_initial": 0.9262465098081335
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_030.hdf5",
+          "sha256": "e8fc6c20bf1d8c278aec1a436059f2b7676230da4f9fd5ded33cefef6cf362d1",
+          "time_code": 5.8094750193111215,
+          "t_over_tcc": 1.499999999999999,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 379.6758379936218,
+          "dense_mass_over_initial": 0.9262465098081335
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_031.hdf5",
+          "sha256": "13e4372a81ab84d7d2f8c7bd76c1e9b43a517558c7a310efb8f10976f38b4df6",
+          "time_code": 6.003124186621492,
+          "t_over_tcc": 1.549999999999999,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 379.6758379936218,
+          "dense_mass_over_initial": 0.9262465098081335
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_032.hdf5",
+          "sha256": "4e80ef890426b537b70400e68e46e8ceebf0f5b315ed90deb05bebc261f6565b",
+          "time_code": 6.196773353931863,
+          "t_over_tcc": 1.5999999999999988,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 379.6758379936218,
+          "dense_mass_over_initial": 0.9262465098081335
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_033.hdf5",
+          "sha256": "8a235fc308502b62e933b5b8ecfd6b5379ce017c1557a6f6cfa31060cc780f7a",
+          "time_code": 6.390422521242233,
+          "t_over_tcc": 1.6499999999999988,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 379.6758379936218,
+          "dense_mass_over_initial": 0.9262465098081335
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_034.hdf5",
+          "sha256": "d97320f15f1440496e6e4c3c31f70aa24a58e7673c42a423320cf5575ac7ce47",
+          "time_code": 6.584071688552604,
+          "t_over_tcc": 1.6999999999999988,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 379.6758379936218,
+          "dense_mass_over_initial": 0.9262465098081335
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_035.hdf5",
+          "sha256": "a068e3aef1e115e20a129addf117d1c096813a5854d632ad979543db1f403c51",
+          "time_code": 6.777720855862975,
+          "t_over_tcc": 1.7499999999999987,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 379.6758379936218,
+          "dense_mass_over_initial": 0.9262465098081335
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_036.hdf5",
+          "sha256": "2737fb4522e1ef8e40c1a2620900e5942f482ba1cfa2cad217fa01c256506f21",
+          "time_code": 6.971370023173346,
+          "t_over_tcc": 1.799999999999999,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 375.8189845085144,
+          "dense_mass_over_initial": 0.9168374383794636
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_037.hdf5",
+          "sha256": "626af72c494f8550f35d7d0858725251fff342f2b2a054d30408f6a6aeee017b",
+          "time_code": 7.165019190483716,
+          "t_over_tcc": 1.8499999999999985,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 366.17685079574585,
+          "dense_mass_over_initial": 0.893314759807789
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_038.hdf5",
+          "sha256": "d00e73a18e0509a1d185007d5dec86f7050306c2f99862a9aee4eed40ddd657a",
+          "time_code": 7.358668357794087,
+          "t_over_tcc": 1.8999999999999986,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 364.24842405319214,
+          "dense_mass_over_initial": 0.888610224093454
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_039.hdf5",
+          "sha256": "a4d59194ad57464b11d4273f548066a465ab449b1adf98486905337debf06802",
+          "time_code": 7.552317525104456,
+          "t_over_tcc": 1.9499999999999982,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 363.71155309677124,
+          "dense_mass_over_initial": 0.8873004887881208
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_040.hdf5",
+          "sha256": "be8b596f6adbe86c649b4f0f37eb5f8cca930b44dd17d50c83a0ff6ebd61c865",
+          "time_code": 7.745966692414828,
+          "t_over_tcc": 1.9999999999999984,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 359.04939317703247,
+          "dense_mass_over_initial": 0.8759268144014511
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_041.hdf5",
+          "sha256": "39577b5941aae2f3b05e7a8d49bb305278761ea10a63926ea84ee1e7fdaf7a44",
+          "time_code": 7.9396158597251985,
+          "t_over_tcc": 2.0499999999999985,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 354.65566873550415,
+          "dense_mass_over_initial": 0.865208007667448
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_042.hdf5",
+          "sha256": "440150432a7fca8027383f0cb225609f39e67aab202263aeebf0fb946b5ad506",
+          "time_code": 8.13326502703557,
+          "t_over_tcc": 2.0999999999999983,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 348.60195302963257,
+          "dense_mass_over_initial": 0.8504395328717766
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_043.hdf5",
+          "sha256": "feed7cf7651b002f3526823e291aa0dab4e159934f726421623c0559715ac419",
+          "time_code": 8.32691419434594,
+          "t_over_tcc": 2.1499999999999986,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 346.67352628707886,
+          "dense_mass_over_initial": 0.8457349971574416
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_044.hdf5",
+          "sha256": "5e83c9a055fa6b1675487238a91ed2610cec6b389cde9ad3d9498e739552890b",
+          "time_code": 8.520563361656311,
+          "t_over_tcc": 2.1999999999999984,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 348.60195302963257,
+          "dense_mass_over_initial": 0.8504395328717766
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_045.hdf5",
+          "sha256": "b5540a92133ba43687beb911fa4b0083f8820d89f813d6c77237bba6f421322c",
+          "time_code": 8.714212528966682,
+          "t_over_tcc": 2.2499999999999982,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 348.3107293844223,
+          "dense_mass_over_initial": 0.8497290718469849
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_046.hdf5",
+          "sha256": "dc7c2c00fa0ec3d949ed3b796125b9f01e6f2b2443d94c86f034e6284b705b72",
+          "time_code": 8.907861696277052,
+          "t_over_tcc": 2.2999999999999985,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 353.5135623216629,
+          "dense_mass_over_initial": 0.8624217569404062
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_047.hdf5",
+          "sha256": "d0c674acbe311cf93f2b72e92cd03305e7f0a66312a6573dda710a1f698fb79b",
+          "time_code": 9.101510863587423,
+          "t_over_tcc": 2.3499999999999983,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 354.2932461500168,
+          "dense_mass_over_initial": 0.8643238517078345
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_048.hdf5",
+          "sha256": "34175faec3fc2a971216e27a21bac0789809edaacebd3ff7a4d9bf81077823c2",
+          "time_code": 9.295160030897794,
+          "t_over_tcc": 2.399999999999998,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 363.2134133577347,
+          "dense_mass_over_initial": 0.886085241072813
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_049.hdf5",
+          "sha256": "bace20f0ad9ea960dc33a8e7b6cea7d53872c1170f7ff15c10019d4488959284",
+          "time_code": 9.488809198208164,
+          "t_over_tcc": 2.449999999999998,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 368.62963449954987,
+          "dense_mass_over_initial": 0.8992985020363394
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_050.hdf5",
+          "sha256": "a70d0502e3140c847c0db70760f4a0a8e3f94983f27d5f594fe8e2d854b2e8b1",
+          "time_code": 9.682458365518535,
+          "t_over_tcc": 2.4999999999999982,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 368.62963449954987,
+          "dense_mass_over_initial": 0.8992985020363394
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_051.hdf5",
+          "sha256": "728f994a282bdf13c958ec980ce6a5f480780b6718fb54b5f936ac7949de4137",
+          "time_code": 9.876107532828904,
+          "t_over_tcc": 2.5499999999999976,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 368.62963449954987,
+          "dense_mass_over_initial": 0.8992985020363394
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_052.hdf5",
+          "sha256": "5c88876a80ba73a21bd0ef07ab97a78e4511c8e4e03923d97805e3037f1315d0",
+          "time_code": 10.069756700139276,
+          "t_over_tcc": 2.599999999999998,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 368.3384108543396,
+          "dense_mass_over_initial": 0.8985880410115477
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_053.hdf5",
+          "sha256": "141b50a793f0c227228c94cbeab58ef3b9abeb27556c3d44f35a2770204e2592",
+          "time_code": 10.263405867449647,
+          "t_over_tcc": 2.6499999999999977,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 368.62963449954987,
+          "dense_mass_over_initial": 0.8992985020363394
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_054.hdf5",
+          "sha256": "2ae2da109a3b426beb44c696eec6e9a93c5de9054a4d7243e33f5c198dd40b5d",
+          "time_code": 10.457055034760018,
+          "t_over_tcc": 2.699999999999998,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 368.3384108543396,
+          "dense_mass_over_initial": 0.8985880410115477
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_055.hdf5",
+          "sha256": "05cf12292f1f0e3669d80afb5d4b47bac447f2a1ced4d3b93ddce5eb1c3d7ddf",
+          "time_code": 10.650704202070388,
+          "t_over_tcc": 2.749999999999998,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 370.2668375968933,
+          "dense_mass_over_initial": 0.9032925767258826
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_056.hdf5",
+          "sha256": "befb0c81c890bc19d111d68140a8fb5caf1118603a561b2ca0f91263b95bac75",
+          "time_code": 10.844353369380759,
+          "t_over_tcc": 2.7999999999999976,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 383.7658247947693,
+          "dense_mass_over_initial": 0.9362243267262272
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_057.hdf5",
+          "sha256": "3da3bab169f800382ae4352fb5739594095afeeaefa596ca9cc664275296aba5",
+          "time_code": 11.038002536691128,
+          "t_over_tcc": 2.849999999999997,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 383.7658247947693,
+          "dense_mass_over_initial": 0.9362243267262272
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_058.hdf5",
+          "sha256": "fd756a986a047d0f4f1825379c5337eeb8e81feca95ed4d8844bc5ef4272b62d",
+          "time_code": 11.2316517040015,
+          "t_over_tcc": 2.8999999999999977,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 382.69491732120514,
+          "dense_mass_over_initial": 0.9336117709340073
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_059.hdf5",
+          "sha256": "1df2f8cd25c322c49d71ec5b58c40408ce212abbabd780494bb4e885f095fd80",
+          "time_code": 11.42530087131187,
+          "t_over_tcc": 2.9499999999999975,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 377.3403799533844,
+          "dense_mass_over_initial": 0.920548991972907
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_060.hdf5",
+          "sha256": "e119ae1bca1d6a496f05a3aaf5e6ce62a2c8e740a14e7db4ee6fb8902a3dcff8",
+          "time_code": 11.618950038622241,
+          "t_over_tcc": 2.9999999999999973,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 375.1985650062561,
+          "dense_mass_over_initial": 0.9153238803884669
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_061.hdf5",
+          "sha256": "5d4b2c72bfe871ff7835fbd40817b5cf24476dc4ba431a4a4bb17e5aa612c5dc",
+          "time_code": 11.812599205932612,
+          "t_over_tcc": 3.0499999999999976,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 375.1985650062561,
+          "dense_mass_over_initial": 0.9153238803884669
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_062.hdf5",
+          "sha256": "e9caf405ca6df1d0e176f200af02396aa6429f4ea5bb81b388028d7a43252445",
+          "time_code": 12.00624837324298,
+          "t_over_tcc": 3.099999999999997,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 375.1985650062561,
+          "dense_mass_over_initial": 0.9153238803884669
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_063.hdf5",
+          "sha256": "f15bfc600d67c3a598f43a406a2e4a471bfd0887600aa60b219709542b7bcca2",
+          "time_code": 12.199897540553353,
+          "t_over_tcc": 3.1499999999999972,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 377.39542722702026,
+          "dense_mass_over_initial": 0.9206832837554684
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_064.hdf5",
+          "sha256": "92d5a8368453e72af18a0ef711211be150a6261f0943b5a974349cb9ebf7946b",
+          "time_code": 12.393546707863724,
+          "t_over_tcc": 3.199999999999997,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 379.5922894477844,
+          "dense_mass_over_initial": 0.92604268712247
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_065.hdf5",
+          "sha256": "3f8843d5f8289e961de14f385014f29aef7b8c8e6d694ea9a79e08be16e5df61",
+          "time_code": 12.587195875174094,
+          "t_over_tcc": 3.2499999999999973,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 381.7891516685486,
+          "dense_mass_over_initial": 0.9314020904894715
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_066.hdf5",
+          "sha256": "950ded3c7f3a1ba92996975a1f8c36a526c232a596c712516205f9167aff9143",
+          "time_code": 12.780845042484465,
+          "t_over_tcc": 3.299999999999997,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 388.9393974542618,
+          "dense_mass_over_initial": 0.9488456292679345
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_067.hdf5",
+          "sha256": "dea231195b5f3990422a7101c72ac4c9fb99443b1d789fdc497052f7e5c15d73",
+          "time_code": 12.974494209794836,
+          "t_over_tcc": 3.349999999999997,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 391.13625967502594,
+          "dense_mass_over_initial": 0.954205032634936
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_068.hdf5",
+          "sha256": "2855540dc8e3a0a66f8d4594cd2750b96e6f73701666b27da62a11c4219706fc",
+          "time_code": 13.168143377105205,
+          "t_over_tcc": 3.3999999999999964,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 391.13625967502594,
+          "dense_mass_over_initial": 0.954205032634936
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_069.hdf5",
+          "sha256": "23de1dea83a90444ba1217c85df9ac32f5760ef83888cae07d4157e54a4ca192",
+          "time_code": 13.361792544415577,
+          "t_over_tcc": 3.449999999999997,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 392.7734627723694,
+          "dense_mass_over_initial": 0.9581991073244792
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_070.hdf5",
+          "sha256": "aff5c74c03307bd759347f1cd64ee25918007add5eba0a9183dbdd4a6092ea3a",
+          "time_code": 13.555441711725948,
+          "t_over_tcc": 3.499999999999997,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 392.7734627723694,
+          "dense_mass_over_initial": 0.9581991073244792
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_071.hdf5",
+          "sha256": "fa064e724f85c69202c4d12fdb48cf9cea5fb36b6bc5019fd972a6d6218a781a",
+          "time_code": 13.749090879036318,
+          "t_over_tcc": 3.5499999999999967,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 389.4990565776825,
+          "dense_mass_over_initial": 0.9502109579453928
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_072.hdf5",
+          "sha256": "29cb4e88614496c1f1791ce918f8fc710dd150163cfde5adc28ebbfbeb49792c",
+          "time_code": 13.942740046346689,
+          "t_over_tcc": 3.599999999999997,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 387.86185348033905,
+          "dense_mass_over_initial": 0.9462168832558496
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_073.hdf5",
+          "sha256": "2f9ca7f687e531b29f1c4109c5f576eff1ed36927cc3eb1738cb1e2dea05857c",
+          "time_code": 14.136389213657058,
+          "t_over_tcc": 3.6499999999999964,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 387.86185348033905,
+          "dense_mass_over_initial": 0.9462168832558496
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_074.hdf5",
+          "sha256": "81430ddb0ea44583b923a24edf2ca89de934b0edf244f04dd3538ebeab04cf43",
+          "time_code": 14.33003838096743,
+          "t_over_tcc": 3.6999999999999966,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 387.86185348033905,
+          "dense_mass_over_initial": 0.9462168832558496
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_075.hdf5",
+          "sha256": "081746050b7d1be9998615dcfb5e3ea7eae7ddbaa95ea8edb915efbfefc378a3",
+          "time_code": 14.5236875482778,
+          "t_over_tcc": 3.7499999999999964,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 386.2246503829956,
+          "dense_mass_over_initial": 0.9422228085663064
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_076.hdf5",
+          "sha256": "4de228a70c738ce0d0488f95f0af449b9dc9f5bc0586425003f87067e0fa2b4f",
+          "time_code": 14.717336715588171,
+          "t_over_tcc": 3.7999999999999967,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 386.2246503829956,
+          "dense_mass_over_initial": 0.9422228085663064
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_077.hdf5",
+          "sha256": "dd98a0240e3b5498693ad0941ce3bb8cf2f97690b02167c4d9c08a15f8c181ce",
+          "time_code": 14.910985882898542,
+          "t_over_tcc": 3.8499999999999965,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 386.2246503829956,
+          "dense_mass_over_initial": 0.9422228085663064
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_078.hdf5",
+          "sha256": "2c69bca8c3b7fefd34ba9bac6df665d43149aebb66ed2f4d7f2c13c629d81bd7",
+          "time_code": 15.104635050208913,
+          "t_over_tcc": 3.8999999999999964,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 387.86185348033905,
+          "dense_mass_over_initial": 0.9462168832558496
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_079.hdf5",
+          "sha256": "928eb1d3833812773aa1551867e8d90ca01fc4ee282de89b9cea7b272017e28c",
+          "time_code": 15.298284217519281,
+          "t_over_tcc": 3.9499999999999957,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 389.4990565776825,
+          "dense_mass_over_initial": 0.9502109579453928
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_080.hdf5",
+          "sha256": "77311490587c2d4859493666c7589e21425de86c25ee429a57b6cd4056bb8c48",
+          "time_code": 15.491933384829654,
+          "t_over_tcc": 3.9999999999999964,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 391.13625967502594,
+          "dense_mass_over_initial": 0.954205032634936
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_081.hdf5",
+          "sha256": "588f4dcc7d6a5f738536dac77d25e9a6296b6812839edae647a65f7495500a3f",
+          "time_code": 15.685582552140025,
+          "t_over_tcc": 4.049999999999996,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 393.84437024593353,
+          "dense_mass_over_initial": 0.9608116631166993
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_082.hdf5",
+          "sha256": "3fc276b7c2deda712c98c5a3011136c849cd18627deea3dc68030875be5de10f",
+          "time_code": 15.879231719450395,
+          "t_over_tcc": 4.099999999999996,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 400.2698150873184,
+          "dense_mass_over_initial": 0.9764869978700196
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_083.hdf5",
+          "sha256": "abc5ae8087f9a566685c972ab3d080818f3496a5acc4b5dba25465798b867899",
+          "time_code": 16.072880886760768,
+          "t_over_tcc": 4.149999999999997,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 401.34072256088257,
+          "dense_mass_over_initial": 0.9790995536622396
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_084.hdf5",
+          "sha256": "7acc4890d0aab49c0678ce22a566313799419312065743e579972f24baeded12",
+          "time_code": 16.26653005407114,
+          "t_over_tcc": 4.199999999999997,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 401.34072256088257,
+          "dense_mass_over_initial": 0.9790995536622396
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_085.hdf5",
+          "sha256": "066d6b55ebede7c2098fadb3c70c3fb7318a7220543ba51cafd85c4d34b04328",
+          "time_code": 16.460179221381512,
+          "t_over_tcc": 4.249999999999997,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 400.2698150873184,
+          "dense_mass_over_initial": 0.9764869978700196
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_086.hdf5",
+          "sha256": "ca0c4dc5407963949c956d8ba19b44a1cdcea4e721014b131efb6bfde144fdee",
+          "time_code": 16.653828388691885,
+          "t_over_tcc": 4.299999999999998,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 396.4907970428467,
+          "dense_mass_over_initial": 0.9672678115960363
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_087.hdf5",
+          "sha256": "ea776adf0d40906a48a366fe2786db82823153f9e0f5cd0402c0eb223cbd3c7e",
+          "time_code": 16.847477556002257,
+          "t_over_tcc": 4.349999999999998,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 400.2698150873184,
+          "dense_mass_over_initial": 0.9764869978700196
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_088.hdf5",
+          "sha256": "6f5cf2bf2fd157b92244071ebca909cc116065bd7a820476ea2a7c45b7922028",
+          "time_code": 17.04112672331263,
+          "t_over_tcc": 4.399999999999999,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 401.34072256088257,
+          "dense_mass_over_initial": 0.9790995536622396
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_089.hdf5",
+          "sha256": "ea146e773bff336f223ca819c53e6c8d4c038a045b0d112385903ab6b1d505a8",
+          "time_code": 17.234775890623002,
+          "t_over_tcc": 4.449999999999999,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 398.0663163661957,
+          "dense_mass_over_initial": 0.9711114042831532
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_090.hdf5",
+          "sha256": "ffcc484668c672d65dd4665522a8cabd80468293d46c5a393d99b41e9eaebf81",
+          "time_code": 17.428425057933374,
+          "t_over_tcc": 4.499999999999999,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 396.42911326885223,
+          "dense_mass_over_initial": 0.96711732959361
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_091.hdf5",
+          "sha256": "ce03fbe43c8c087657c62ddfec4b8b90fdde7f403e6d6d6662a53d7aa59caa5c",
+          "time_code": 17.622074225243747,
+          "t_over_tcc": 4.55,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 396.42911326885223,
+          "dense_mass_over_initial": 0.96711732959361
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_092.hdf5",
+          "sha256": "37017007ef7fa3179346cb0db44e6552e1c246e37df429e703e6ad70baf388e9",
+          "time_code": 17.81572339255412,
+          "t_over_tcc": 4.6000000000000005,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 394.7919101715088,
+          "dense_mass_over_initial": 0.9631232549040668
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_093.hdf5",
+          "sha256": "c555467ed7dede4ebe73c5ea37a208f70b8da573df85e0b8c98accc1814c2d0e",
+          "time_code": 18.00937255986449,
+          "t_over_tcc": 4.65,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 394.7919101715088,
+          "dense_mass_over_initial": 0.9631232549040668
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_094.hdf5",
+          "sha256": "c604e5faee64ffe89fd0c3031a8ab5b9885dd40da3d80beabc33b187fda6f601",
+          "time_code": 18.203021727174864,
+          "t_over_tcc": 4.700000000000001,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 394.7919101715088,
+          "dense_mass_over_initial": 0.9631232549040668
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_095.hdf5",
+          "sha256": "7ee3191c0ee7141e16c3ab39a50e6cc369434c14a54e5b2fe066546cace80a46",
+          "time_code": 18.396670894485236,
+          "t_over_tcc": 4.750000000000002,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 394.7919101715088,
+          "dense_mass_over_initial": 0.9631232549040668
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_096.hdf5",
+          "sha256": "0041e230199492a345134bd7888f4ba7913c6f6736bab150ede3a4f54cb24235",
+          "time_code": 18.59032006179561,
+          "t_over_tcc": 4.800000000000002,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 394.7919101715088,
+          "dense_mass_over_initial": 0.9631232549040668
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_097.hdf5",
+          "sha256": "1e536ceb84f0fe9b83bc5342508a19bada46f158b5c87a151ae7d387afbcccb7",
+          "time_code": 18.78396922910598,
+          "t_over_tcc": 4.850000000000002,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 396.42911326885223,
+          "dense_mass_over_initial": 0.96711732959361
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_098.hdf5",
+          "sha256": "4ca5cbd79f403627cf096ca56c6a79c490bbcd09ec5024c3544f70c29f539d70",
+          "time_code": 18.977618396416354,
+          "t_over_tcc": 4.900000000000003,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 396.42911326885223,
+          "dense_mass_over_initial": 0.96711732959361
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_099.hdf5",
+          "sha256": "d3d77b847e1138d6bd67e4f5089938f8905c77361e512f27dc4f0004388a1874",
+          "time_code": 19.171267563726726,
+          "t_over_tcc": 4.950000000000003,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 396.42911326885223,
+          "dense_mass_over_initial": 0.96711732959361
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/snapshot_100.hdf5",
+          "sha256": "1f356d68365e6b6b69cea317205ebe7a2ec1b9b4c89440796554e6e782bb200f",
+          "time_code": 19.364916731037084,
+          "t_over_tcc": 5.0,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 398.0663163661957,
+          "dense_mass_over_initial": 0.9711114042831532
+        }
+      ],
+      "cadence": {
+        "native_snapshots": 101,
+        "distinct_header_times": 101,
+        "repeated_header_times": [],
+        "policy": "All files and original times retained, including extra or exactly equal terminal headers. No retiming, thinning or synthesized states."
+      },
+      "initial_checks": {
+        "native_density_vs_lattice_max_relative": 0.0009155219926687056,
+        "native_pressure_vs_uniform_max_absolute": 0.0009155574330177441,
+        "native_fields_exactly_recovered": [
+          "Coordinates",
+          "Masses",
+          "ParticleIDs",
+          "InternalEnergy"
+        ],
+        "velocity_output_timing": {
+          "report_sha256": "e7da471e9c39809947e0104021a726fe467962405a4ae885b8e0499fcd65abbf",
+          "checks": {
+            "norm_ratio": 0.49998347072352123,
+            "zero_step_extrapolation_max_error": 2.384185791015625e-07,
+            "float32_roundoff_bound": 1.2311882073845482e-06,
+            "full_step_max_delta": 9.1552734375e-05,
+            "half_step_max_delta": 4.57763671875e-05
+          },
+          "native_t0_velocity_max_offset": 0.17331409454345703,
+          "interpretation": "Native output velocity is staggered after the first half kick, not the input at header t=0. No native values are replaced. Velocity-at-header-time diagnostics are not validated by this mass study."
+        }
+      },
+      "restart_files": [
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/restartfiles/restart.1",
+          "bytes": 5764584,
+          "sha256": "bec3f0beeb8e663c52e3b9c005d85f6c0347fc5713b4551016cc50ca5eb24a0d"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/restartfiles/restart.0",
+          "bytes": 5775272,
+          "sha256": "a17a0f978550ae0b20d5387e9535329f86a6c2bb69a5f86553b63dfa285ce30c"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/restartfiles/restart.4",
+          "bytes": 5805096,
+          "sha256": "846386f8ddac27d5e67ff3e204af2f237d977cb8e16247d9343e1d1a92a82595"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/restartfiles/restart.5",
+          "bytes": 5773224,
+          "sha256": "a033a77c52900a708f98a4326aa0c2aa72e9294709bd74e036d410cbc3a04ddd"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/restartfiles/restart.2",
+          "bytes": 5761672,
+          "sha256": "b4be7f845d9e044ed035102410732c0198fda23eb5777904ce90ceb6c0f5b266"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/restartfiles/restart.7",
+          "bytes": 5766600,
+          "sha256": "5ec69d73688c6cff15edcd2ed296b2101d5b47448fe5f22da2eb6d876608b336"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/restartfiles/restart.3",
+          "bytes": 5809736,
+          "sha256": "8facd124f6d8ff46894a4593431b6937256416b906f41683175a5b11e187ec9a"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_sharp13/output/restartfiles/restart.6",
+          "bytes": 5785416,
+          "sha256": "2769d069e9d07a48831e5636824a4071cc2cfcf23a8c7985757ab727069ab73d"
+        }
+      ],
+      "independent_max_relative_mass_error": 0.0
+    },
+    {
+      "status": "complete_independent_checks",
+      "variant": "mfm",
+      "mode": 1,
+      "level": 3,
+      "directory": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13",
+      "physics": {
+        "code": "GIZMO",
+        "variants": [
+          "mfm",
+          "mfv"
+        ],
+        "chi": 100,
+        "mach": 2,
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1,
+        "rho_wind": 1,
+        "p_wind": 1,
+        "density_width": 0.1,
+        "rv_scale": 1.3,
+        "seed": 42,
+        "center": [
+          3,
+          5,
+          5
+        ],
+        "domain_left": [
+          0,
+          0,
+          0
+        ],
+        "domain_right": [
+          20,
+          10,
+          10
+        ],
+        "mass_mode": "volume",
+        "ranks": 8,
+        "t_end_over_tcc": 5,
+        "output_dt_over_tcc": 0.05,
+        "scope": "Within each native GIZMO variant, actual historical tanh versus sharp velocity. Regular equal-volume initial lattice, variable masses, original float32 IC/output precision and fully periodic native boundary recipe. Native kernel-derived density/pressure must be checked separately. No passive material tracer is assumed; particle-ID mass in MFV is not a material-retention diagnostic.",
+        "v_wind": 2.581988897471611,
+        "t_cc": 3.872983346207417
+      },
+      "input_sha256": "3af6f94f62c2b7b7187e24fb4b4087f6f57a2aec5497a72102bba8c33b49c9b2",
+      "ic_sha256": "b85251c1ecae2dab665cec6525f06543104b11dc0a2c2763159ecfa5670bc4f0",
+      "binary_sha256": "ad6787e8666f92e1ac5162eec1aa717277920c51c52b7b04277d0b53295c6011",
+      "launcher_sha256": "0630c91879a81ab8c300fc35d865e68e9039deb0a8481c8c8d390e260f3fbde2",
+      "budget": {
+        "case_bytes": 966633465,
+        "pair_bytes": 1933266930,
+        "snapshot_bytes": 4203752,
+        "measured_restart_set_bytes": 44186432,
+        "ic_bytes": 2365880,
+        "method": "104 native snapshots + two restart sets with 50% margin + IC + 256MiB logs; 15% overall margin. Separate 10GiB free-space reserve."
+      },
+      "storage_preflight": {
+        "path": "/home/kaan/sensitivity_20260907/gizmo",
+        "filesystem_free_bytes": 30838005760,
+        "filesystem_total_bytes": 1081101176832,
+        "windows_backing_volume": {
+          "distribution": "Ubuntu",
+          "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+          "drive": "C:",
+          "free_bytes": 37684531200,
+          "total_bytes": 1999283154944
+        },
+        "policy": "Conservative growth budget; allocated but reusable VHDX blocks are not credited.",
+        "effective_free_bytes": 30838005760
+      },
+      "command": [
+        "mpirun",
+        "--bind-to",
+        "core",
+        "-np",
+        "8",
+        "/home/kaan/sensitivity_20260907/gizmo/GIZMO_mfm_pair",
+        "params.txt"
+      ],
+      "started_unix": 1788840215.7874472,
+      "mpi_pid": 149,
+      "returncode": 0,
+      "wall_seconds": 82.13400906799998,
+      "peak_child_rss_gib": 0.48848724365234375,
+      "stop_reason": null,
+      "series": [
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_000.hdf5",
+          "sha256": "76dffaa4bdcc1dccb1dfadf450ba2918184760c6cce7bc4069a4d50aedc2bb69",
+          "time_code": 0.0,
+          "t_over_tcc": 0.0,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 409.90798234939575,
+          "dense_mass_over_initial": 1.0
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_001.hdf5",
+          "sha256": "80184daa3ff99d4b6c71e0791c21caa1e85a41ebdf63ebca1ee8ba5c4a662494",
+          "time_code": 0.19364916731037085,
+          "t_over_tcc": 0.05,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 401.34072256088257,
+          "dense_mass_over_initial": 0.9790995536622396
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_002.hdf5",
+          "sha256": "2e19e80afa7cda48f2ca3b5b100f390d4596ed08c711c3a42c70f8d5daa57b9e",
+          "time_code": 0.3872983346207417,
+          "t_over_tcc": 0.1,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 401.34072256088257,
+          "dense_mass_over_initial": 0.9790995536622396
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_003.hdf5",
+          "sha256": "ee8b4419fe18f3a2f7af033378134103a85d0c04dfd1887dde97a6d508112a93",
+          "time_code": 0.5809475019311126,
+          "t_over_tcc": 0.15,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 401.34072256088257,
+          "dense_mass_over_initial": 0.9790995536622396
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_004.hdf5",
+          "sha256": "ede8a31639a94cde93d717abe7e21301f4366791cb79bad9a178cb945132f22e",
+          "time_code": 0.7745966692414834,
+          "t_over_tcc": 0.2,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 401.34072256088257,
+          "dense_mass_over_initial": 0.9790995536622396
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_005.hdf5",
+          "sha256": "8ed309d9b0809d1c05f706c99b23997514dfac24dcc47cc6286319dc56607f30",
+          "time_code": 0.9682458365518543,
+          "t_over_tcc": 0.25,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 405.1642475128174,
+          "dense_mass_over_initial": 0.9884273177375333
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_006.hdf5",
+          "sha256": "585a20a23385bda6edc3da463cd4a293e93389b2283089b2174c351de33d9030",
+          "time_code": 1.161895003862225,
+          "t_over_tcc": 0.3,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 405.1642475128174,
+          "dense_mass_over_initial": 0.9884273177375333
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_007.hdf5",
+          "sha256": "63f9938d27d141d2affb12e0c3e2fea412d0109f3171acd40de02a51561276ca",
+          "time_code": 1.355544171172596,
+          "t_over_tcc": 0.35,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 405.1642475128174,
+          "dense_mass_over_initial": 0.9884273177375333
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_008.hdf5",
+          "sha256": "cdab7a6d6f553f990769fe7c9e5e0fc3fc051d257512562428f331719c78b794",
+          "time_code": 1.5491933384829668,
+          "t_over_tcc": 0.4,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 405.1642475128174,
+          "dense_mass_over_initial": 0.9884273177375333
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_009.hdf5",
+          "sha256": "76d215216349d29a6e583e71dd205872aa596ba710619b56859c238e17cfd804",
+          "time_code": 1.7428425057933374,
+          "t_over_tcc": 0.44999999999999996,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 401.34072256088257,
+          "dense_mass_over_initial": 0.9790995536622396
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_010.hdf5",
+          "sha256": "8c5fb0f54ecda2a6777f5fc7f75b6335b5f7a6881b0309f0336cc6f4bc59da62",
+          "time_code": 1.9364916731037085,
+          "t_over_tcc": 0.5,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 401.34072256088257,
+          "dense_mass_over_initial": 0.9790995536622396
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_011.hdf5",
+          "sha256": "18034134311313ab6e2d5b64a5b3c3dc7687bd1919de62e1178aa10967892419",
+          "time_code": 2.1301408404140796,
+          "t_over_tcc": 0.55,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 401.34072256088257,
+          "dense_mass_over_initial": 0.9790995536622396
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_012.hdf5",
+          "sha256": "9f10b8dbc3e6bf844f2596d20953c8f338b2b17b385b7c203c0ffd7afaf0188b",
+          "time_code": 2.32379000772445,
+          "t_over_tcc": 0.6,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 401.34072256088257,
+          "dense_mass_over_initial": 0.9790995536622396
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_013.hdf5",
+          "sha256": "c108cf4bf25fb781e4ddf0690ccaf3b772003fad1dcc9fadc3fb20e0f6a4710d",
+          "time_code": 2.517439175034821,
+          "t_over_tcc": 0.6499999999999999,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 401.34072256088257,
+          "dense_mass_over_initial": 0.9790995536622396
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_014.hdf5",
+          "sha256": "e6f9e20e21e03262e6913813d124860722e4fd651fdb7d2bc49d909c3bc0dc90",
+          "time_code": 2.7110883423451915,
+          "t_over_tcc": 0.6999999999999998,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 388.243097782135,
+          "dense_mass_over_initial": 0.947146956145894
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_015.hdf5",
+          "sha256": "c29df36854097d3188b8d9794cc3daa48cf6ec5beb08443a5478a2e549448d1a",
+          "time_code": 2.904737509655562,
+          "t_over_tcc": 0.7499999999999998,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 385.03037536144257,
+          "dense_mass_over_initial": 0.9393092887692338
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_016.hdf5",
+          "sha256": "6fb0da59129953be47700b4bb9b601575f3e3ade2d82dd37f88d779e6284859f",
+          "time_code": 3.0983866769659323,
+          "t_over_tcc": 0.7999999999999997,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 379.6758379936218,
+          "dense_mass_over_initial": 0.9262465098081335
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_017.hdf5",
+          "sha256": "1f0f5da71ad087771d28c05e96964c759443af04058a1ff255ed74efb10570dc",
+          "time_code": 3.2920358442763034,
+          "t_over_tcc": 0.8499999999999998,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 379.6758379936218,
+          "dense_mass_over_initial": 0.9262465098081335
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_018.hdf5",
+          "sha256": "398936bff5e47738e671ea8a62eaf1e4d0f45e4ece64895fb9512e729a3f73fe",
+          "time_code": 3.485685011586674,
+          "t_over_tcc": 0.8999999999999997,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 379.6758379936218,
+          "dense_mass_over_initial": 0.9262465098081335
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_019.hdf5",
+          "sha256": "13a22511c84fd5392e269ebe2b6ac3b94c19ee5a1f09fe52f185411839d3da14",
+          "time_code": 3.6793341788970446,
+          "t_over_tcc": 0.9499999999999996,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 379.6758379936218,
+          "dense_mass_over_initial": 0.9262465098081335
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_020.hdf5",
+          "sha256": "dccee9be7e81a81b4a05fa9c18002e0d447f341b76d208a7b1d643e12bc951ad",
+          "time_code": 3.8729833462074152,
+          "t_over_tcc": 0.9999999999999996,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 379.6758379936218,
+          "dense_mass_over_initial": 0.9262465098081335
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_021.hdf5",
+          "sha256": "90bc94691d620af375cc929ef098363bc19c2d7e8b29530b84e28ab4dbb56d8b",
+          "time_code": 4.066632513517786,
+          "t_over_tcc": 1.0499999999999994,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 379.6758379936218,
+          "dense_mass_over_initial": 0.9262465098081335
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_022.hdf5",
+          "sha256": "a4f4b65b2373ac3ae59a59deba7a6746c7fb312f5958f3a4120e1d4fd013512d",
+          "time_code": 4.2602816808281565,
+          "t_over_tcc": 1.0999999999999994,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 379.6758379936218,
+          "dense_mass_over_initial": 0.9262465098081335
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_023.hdf5",
+          "sha256": "f65125bebbe51263d8224843c7ca01315af22db86cdfde988df540b99fa7b52f",
+          "time_code": 4.453930848138527,
+          "t_over_tcc": 1.1499999999999995,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 379.6758379936218,
+          "dense_mass_over_initial": 0.9262465098081335
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_024.hdf5",
+          "sha256": "ea499a3ebc03b6a85332abc39aaa1ad6e4d3b941494ec0e6c09e4b05e3ef1ec7",
+          "time_code": 4.647580015448898,
+          "t_over_tcc": 1.1999999999999993,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 379.6758379936218,
+          "dense_mass_over_initial": 0.9262465098081335
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_025.hdf5",
+          "sha256": "00634e10feb938e2e05ef1a4342cf71a53d8dbcea65c9ab58092dfd99ef2e2d3",
+          "time_code": 4.841229182759268,
+          "t_over_tcc": 1.2499999999999993,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 379.6758379936218,
+          "dense_mass_over_initial": 0.9262465098081335
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_026.hdf5",
+          "sha256": "9eb2bc32e670aa8de4e7f551562f2e84a575f54c32b324bc2e1d035509436618",
+          "time_code": 5.034878350069639,
+          "t_over_tcc": 1.2999999999999992,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 379.6758379936218,
+          "dense_mass_over_initial": 0.9262465098081335
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_027.hdf5",
+          "sha256": "99c36da8417194312a036cdf20bca54cdfd0fb128eaa7f9a9edff3fc58f712dc",
+          "time_code": 5.22852751738001,
+          "t_over_tcc": 1.3499999999999992,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 379.6758379936218,
+          "dense_mass_over_initial": 0.9262465098081335
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_028.hdf5",
+          "sha256": "6f0f75e2c65437fd07e11774408b9c3f694a8aad0221be41fcaad516e0fdc222",
+          "time_code": 5.422176684690379,
+          "t_over_tcc": 1.3999999999999988,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 379.6758379936218,
+          "dense_mass_over_initial": 0.9262465098081335
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_029.hdf5",
+          "sha256": "db6392e20aa7cc65b498f89b699639bb88249cd8655227fc7ec86ba87a4613b2",
+          "time_code": 5.615825852000751,
+          "t_over_tcc": 1.449999999999999,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 379.6758379936218,
+          "dense_mass_over_initial": 0.9262465098081335
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_030.hdf5",
+          "sha256": "24d85abc36ef6ef03c73868d0bce7e49b23ed6d91845b98b63e3fa96ea8611b3",
+          "time_code": 5.8094750193111215,
+          "t_over_tcc": 1.499999999999999,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 379.6758379936218,
+          "dense_mass_over_initial": 0.9262465098081335
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_031.hdf5",
+          "sha256": "399e9e5078a1f2eafe0eaea6a96fa0f0c9059cd361cd8171b0e60bc69cc582bf",
+          "time_code": 6.003124186621492,
+          "t_over_tcc": 1.549999999999999,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 379.6758379936218,
+          "dense_mass_over_initial": 0.9262465098081335
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_032.hdf5",
+          "sha256": "7bbf10bed87b0bff766e4ced972cac531c9978cf133079043dc2c5cfde36207d",
+          "time_code": 6.196773353931863,
+          "t_over_tcc": 1.5999999999999988,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 379.6758379936218,
+          "dense_mass_over_initial": 0.9262465098081335
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_033.hdf5",
+          "sha256": "e96d0b8461e1eb2a63cd0fbf98b6314f543178948db6376e8ee8132248935bc6",
+          "time_code": 6.390422521242233,
+          "t_over_tcc": 1.6499999999999988,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 379.6758379936218,
+          "dense_mass_over_initial": 0.9262465098081335
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_034.hdf5",
+          "sha256": "c239a418c98d3ae63c40b321ecbdc906b09de5b01cd3ff7115825fb1cc847a8a",
+          "time_code": 6.584071688552604,
+          "t_over_tcc": 1.6999999999999988,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 373.8905577659607,
+          "dense_mass_over_initial": 0.9121329026651287
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_035.hdf5",
+          "sha256": "79d4ab5562a79762a9f3e5a9155155cb7cbc388de3c38e5e84af7c914912f6ae",
+          "time_code": 6.777720855862975,
+          "t_over_tcc": 1.7499999999999987,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 370.03370428085327,
+          "dense_mass_over_initial": 0.9027238312364588
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_036.hdf5",
+          "sha256": "8a1f21bf4cc89819a7f73d490ae26e71500ca4aba49e716ebf1ff33eb336aa69",
+          "time_code": 6.971370023173346,
+          "t_over_tcc": 1.799999999999999,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 366.17685079574585,
+          "dense_mass_over_initial": 0.893314759807789
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_037.hdf5",
+          "sha256": "d01ab58b9e0099990a8e7d1a0779fe90296dc21b45dc78a72de86c71652dc5bc",
+          "time_code": 7.165019190483716,
+          "t_over_tcc": 1.8499999999999985,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 359.8546996116638,
+          "dense_mass_over_initial": 0.8778914173594509
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_038.hdf5",
+          "sha256": "1061c2815ff6bc61ec7fb676e8ba8e0e4a8e10138243e40fe320fd583a6486f8",
+          "time_code": 7.358668357794087,
+          "t_over_tcc": 1.8999999999999986,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 355.4609751701355,
+          "dense_mass_over_initial": 0.8671726106254478
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_039.hdf5",
+          "sha256": "6c19fede224660d797685d8e73947cc03ad76de8dfdae45c3f3a02bf3e9b4654",
+          "time_code": 7.552317525104456,
+          "t_over_tcc": 1.9499999999999982,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 352.9956774711609,
+          "dense_mass_over_initial": 0.8611583396057797
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_040.hdf5",
+          "sha256": "214e1360b0140a79a727e8112571448375e5ed840a4a745de041eeb3190d2d43",
+          "time_code": 7.745966692414828,
+          "t_over_tcc": 1.9999999999999984,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 350.5303797721863,
+          "dense_mass_over_initial": 0.8551440685861116
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_041.hdf5",
+          "sha256": "0a4150fb1ebbbee3e3abd6f7d8b99c1336d4e3ba6d330133bf8dac4173287ffd",
+          "time_code": 7.9396158597251985,
+          "t_over_tcc": 2.0499999999999985,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 350.5303797721863,
+          "dense_mass_over_initial": 0.8551440685861116
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_042.hdf5",
+          "sha256": "8455a722bb56481bd4fce0f3d9cb04f20a024fea631516ce072f7a2811f9ef7b",
+          "time_code": 8.13326502703557,
+          "t_over_tcc": 2.0999999999999983,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 350.5303797721863,
+          "dense_mass_over_initial": 0.8551440685861116
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_043.hdf5",
+          "sha256": "f2a582cd812e7c4fb1f6de863ef700ec164d5b17ccf6244715e1e6b0da16c25c",
+          "time_code": 8.32691419434594,
+          "t_over_tcc": 2.1499999999999986,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 354.63288056850433,
+          "dense_mass_over_initial": 0.8651524142953229
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_044.hdf5",
+          "sha256": "dd1f1851c31a60a69956e138873714ec119d83d1cd892e8be7af46bcaed8af35",
+          "time_code": 8.520563361656311,
+          "t_over_tcc": 2.1999999999999984,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 356.7879685163498,
+          "dense_mass_over_initial": 0.8704099063194927
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_045.hdf5",
+          "sha256": "96bc11d1b5f6f79f7eef2104e00eab88481d4a0bdfb229011e01e251a9f245e6",
+          "time_code": 8.714212528966682,
+          "t_over_tcc": 2.2499999999999982,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 359.7711510658264,
+          "dense_mass_over_initial": 0.8776875946737873
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_046.hdf5",
+          "sha256": "cc201b1a0878ec2eacba911ad478f3985b51ddc59d1e1647e12737d72b273e8a",
+          "time_code": 8.907861696277052,
+          "t_over_tcc": 2.2999999999999985,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 363.62800455093384,
+          "dense_mass_over_initial": 0.8870966661024572
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_047.hdf5",
+          "sha256": "40292fd80caf98125b9256ef6d37f692fc309fe05a8b8fb70ff49f04ed06542c",
+          "time_code": 9.101510863587423,
+          "t_over_tcc": 2.3499999999999983,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 368.76915371418,
+          "dense_mass_over_initial": 0.8996388691934523
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_048.hdf5",
+          "sha256": "337fdc0beecf74fa3aafbb59b638ea5c3acbf4103afc518c7a4605f984112562",
+          "time_code": 9.295160030897794,
+          "t_over_tcc": 2.399999999999998,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 377.98054456710815,
+          "dense_mass_over_initial": 0.9221107195832224
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_049.hdf5",
+          "sha256": "447302577bd8f67515b96786405c6a9d0ee0f69e5bd3c497f9585d9c674bc7e4",
+          "time_code": 9.488809198208164,
+          "t_over_tcc": 2.449999999999998,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 374.12369108200073,
+          "dense_mass_over_initial": 0.9127016481545526
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_050.hdf5",
+          "sha256": "ea2c2933a8542092e558127f246ae0826744f7cef488f1d526ba264f5963c487",
+          "time_code": 9.682458365518535,
+          "t_over_tcc": 2.4999999999999982,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 376.05211782455444,
+          "dense_mass_over_initial": 0.9174061838688875
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_051.hdf5",
+          "sha256": "d04e1358563f55b0efbc0cb12f92cc717c6ba46da22930a94190bcf90b00b94d",
+          "time_code": 9.876107532828904,
+          "t_over_tcc": 2.5499999999999976,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 374.12369108200073,
+          "dense_mass_over_initial": 0.9127016481545526
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_052.hdf5",
+          "sha256": "b2f7c04bb432d23bd4573655348179c52b8c7916826995cb0520972afc45b96f",
+          "time_code": 10.069756700139276,
+          "t_over_tcc": 2.599999999999998,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 374.12369108200073,
+          "dense_mass_over_initial": 0.9127016481545526
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_053.hdf5",
+          "sha256": "34e1ce33b373188c6d5635d88c92ad231e33cd139765a58801c1ca53979c7d13",
+          "time_code": 10.263405867449647,
+          "t_over_tcc": 2.6499999999999977,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 373.0527836084366,
+          "dense_mass_over_initial": 0.9100890923623325
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_054.hdf5",
+          "sha256": "311bec50f5e6168ea1eff153eee8ece312afbabb043f75b5fbb0a661f286b27f",
+          "time_code": 10.457055034760018,
+          "t_over_tcc": 2.699999999999998,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 383.23178827762604,
+          "dense_mass_over_initial": 0.9349215062393404
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_055.hdf5",
+          "sha256": "63579baeab80dea15e47d0f5193d4831111979d4c5973381de288814f7cab1e8",
+          "time_code": 10.650704202070388,
+          "t_over_tcc": 2.749999999999998,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 384.0893075466156,
+          "dense_mass_over_initial": 0.9370134861614553
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_056.hdf5",
+          "sha256": "84b77eddf2d4978474def26c6c60c411a18836bf49b6496aeeeb146023a52463",
+          "time_code": 10.844353369380759,
+          "t_over_tcc": 2.7999999999999976,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 390.35641145706177,
+          "dense_mass_over_initial": 0.9523025368272319
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_057.hdf5",
+          "sha256": "aca1974bf7d743a9cb314182502322eafc7343a852481038ec2d7ba051bde7c6",
+          "time_code": 11.038002536691128,
+          "t_over_tcc": 2.849999999999997,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 392.6083209514618,
+          "dense_mass_over_initial": 0.9577962319767949
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_058.hdf5",
+          "sha256": "167bbd072a4e9592ea65ce22f33843f96fbe4a75cea494db1b00d181e131befd",
+          "time_code": 11.2316517040015,
+          "t_over_tcc": 2.8999999999999977,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 390.4665060043335,
+          "dense_mass_over_initial": 0.9525711203923548
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_059.hdf5",
+          "sha256": "e392b481889cd5cd9af3bbb7aa65de809517bd47a2a3be40e3fbfbc6be639a2c",
+          "time_code": 11.42530087131187,
+          "t_over_tcc": 2.9499999999999975,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 386.1828761100769,
+          "dense_mass_over_initial": 0.9421208972234746
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_060.hdf5",
+          "sha256": "4de3c999ee6aceb4ec5533cf4c0bc0c378d5a47a775c6d08945f780ad6076d81",
+          "time_code": 11.618950038622241,
+          "t_over_tcc": 2.9999999999999973,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 386.1828761100769,
+          "dense_mass_over_initial": 0.9421208972234746
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_061.hdf5",
+          "sha256": "699e2436565aa32703b0c05121897ec8adfc5ded54a65680a6bf78932d1a2128",
+          "time_code": 11.812599205932612,
+          "t_over_tcc": 3.0499999999999976,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 388.37973833084106,
+          "dense_mass_over_initial": 0.9474803005904762
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_062.hdf5",
+          "sha256": "ed06e870f99c9e3634930b0b07a9883e54fe7c41f0e6d39c4f48c29b3373a4e0",
+          "time_code": 12.00624837324298,
+          "t_over_tcc": 3.099999999999997,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 390.5766005516052,
+          "dense_mass_over_initial": 0.9528397039574776
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_063.hdf5",
+          "sha256": "b574fbf4cd1bddb060fac614c5163cb82d9c196eeb24a5de8e7c0f55aa297ba5",
+          "time_code": 12.199897540553353,
+          "t_over_tcc": 3.1499999999999972,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 390.5766005516052,
+          "dense_mass_over_initial": 0.9528397039574776
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_064.hdf5",
+          "sha256": "c05518b991feac71c59caf797099edf147e1e0f7037ea7df9d4e783c6380c0d9",
+          "time_code": 12.393546707863724,
+          "t_over_tcc": 3.199999999999997,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 390.5766005516052,
+          "dense_mass_over_initial": 0.9528397039574776
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_065.hdf5",
+          "sha256": "d0454040b678960edf174bf11eb3af12801dc2e55ccfea7d8ab436959a42b987",
+          "time_code": 12.587195875174094,
+          "t_over_tcc": 3.2499999999999973,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 390.5766005516052,
+          "dense_mass_over_initial": 0.9528397039574776
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_066.hdf5",
+          "sha256": "6d60079896f972e3c43606071eb6591455d36e322182c9bf95bd1bbfaa1b61e5",
+          "time_code": 12.780845042484465,
+          "t_over_tcc": 3.299999999999997,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 390.5766005516052,
+          "dense_mass_over_initial": 0.9528397039574776
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_067.hdf5",
+          "sha256": "98a508d988b4636575ced3dfa94010a7ec168d957a446edf820030d155cd20e8",
+          "time_code": 12.974494209794836,
+          "t_over_tcc": 3.349999999999997,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 392.7734627723694,
+          "dense_mass_over_initial": 0.9581991073244792
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_068.hdf5",
+          "sha256": "fa1a53690e0a1a0024f300b8839447d068b1742babf5d6c3dea0d9ed6d103198",
+          "time_code": 13.168143377105205,
+          "t_over_tcc": 3.3999999999999964,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 386.2246503829956,
+          "dense_mass_over_initial": 0.9422228085663064
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_069.hdf5",
+          "sha256": "bef9c26be7aa8f1e5a772e6f33d4d432b8bb4ec12e124b8e7d7e2a7bbf9b944d",
+          "time_code": 13.361792544415577,
+          "t_over_tcc": 3.449999999999997,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 382.9502441883087,
+          "dense_mass_over_initial": 0.9342346591872199
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_070.hdf5",
+          "sha256": "28949cbc242ed5c2042db4b956b601d47b84e586f03823a4c47912d832f235b8",
+          "time_code": 13.555441711725948,
+          "t_over_tcc": 3.499999999999997,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 379.6758379936218,
+          "dense_mass_over_initial": 0.9262465098081335
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_071.hdf5",
+          "sha256": "2ba5bb89ba8abb195a2d9bf80f716ab346eb7aa14247b29d8b16ca0230962c49",
+          "time_code": 13.749090879036318,
+          "t_over_tcc": 3.5499999999999967,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 379.6758379936218,
+          "dense_mass_over_initial": 0.9262465098081335
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_072.hdf5",
+          "sha256": "32bbd9a67bcb4bd0ab81f76b27357d84fa3cffe557f7bcd2b2afbfa11a47896f",
+          "time_code": 13.942740046346689,
+          "t_over_tcc": 3.599999999999997,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 381.31304109096527,
+          "dense_mass_over_initial": 0.9302405844976768
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_073.hdf5",
+          "sha256": "7f12a09c827db0c4982688bc55d1ae2f675ced09be4faf19fe1dc3a9ef375fb4",
+          "time_code": 14.136389213657058,
+          "t_over_tcc": 3.6499999999999964,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 382.9502441883087,
+          "dense_mass_over_initial": 0.9342346591872199
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_074.hdf5",
+          "sha256": "4ea4c703b58d7474b390670e9d1908136bbfa287b73e5a3902ec6ea950684133",
+          "time_code": 14.33003838096743,
+          "t_over_tcc": 3.6999999999999966,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 381.31304109096527,
+          "dense_mass_over_initial": 0.9302405844976768
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_075.hdf5",
+          "sha256": "1f0aba89d4e2640a2cb70f58bc44f4ceabac3c972319994717abe97ff1633c7b",
+          "time_code": 14.5236875482778,
+          "t_over_tcc": 3.7499999999999964,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 382.9502441883087,
+          "dense_mass_over_initial": 0.9342346591872199
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_076.hdf5",
+          "sha256": "6453d92b51d275c6e03fe2af05ee859d6e754e572fd1d490d9d1026a669e744d",
+          "time_code": 14.717336715588171,
+          "t_over_tcc": 3.7999999999999967,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 382.9502441883087,
+          "dense_mass_over_initial": 0.9342346591872199
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_077.hdf5",
+          "sha256": "52a8a6f740b0cebadfebc1ffa445ecb27dde641c936524e5dcc342cd2a338c2c",
+          "time_code": 14.910985882898542,
+          "t_over_tcc": 3.8499999999999965,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 381.31304109096527,
+          "dense_mass_over_initial": 0.9302405844976768
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_078.hdf5",
+          "sha256": "bd86c27fc49e62737d78446bfa598e191f2b8a781eaac7fa20c4e3410da842ae",
+          "time_code": 15.104635050208913,
+          "t_over_tcc": 3.8999999999999964,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 379.6758379936218,
+          "dense_mass_over_initial": 0.9262465098081335
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_079.hdf5",
+          "sha256": "a29faf80d7cc6fbdfb092fb8126968d70add72cb0bbb46bfb9cf5880ac8aec8e",
+          "time_code": 15.298284217519281,
+          "t_over_tcc": 3.9499999999999957,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 381.31304109096527,
+          "dense_mass_over_initial": 0.9302405844976768
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_080.hdf5",
+          "sha256": "23cd990970dc24a3fda13cd27bc19aedfaaa55adaab35b30ab2c01df44651c2c",
+          "time_code": 15.491933384829654,
+          "t_over_tcc": 3.9999999999999964,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 384.58744728565216,
+          "dense_mass_over_initial": 0.9382287338767632
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_081.hdf5",
+          "sha256": "9d57f06e205bd9d181d2ad344aeeaeef7af878275ce0c0a39df89c1a70803dbd",
+          "time_code": 15.685582552140025,
+          "t_over_tcc": 4.049999999999996,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 387.86185348033905,
+          "dense_mass_over_initial": 0.9462168832558496
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_082.hdf5",
+          "sha256": "ff26175c7aceaf1a054791fefd3fd8bc2d11b407949e9b6d7d453bc56a334462",
+          "time_code": 15.879231719450395,
+          "t_over_tcc": 4.099999999999996,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 401.34072256088257,
+          "dense_mass_over_initial": 0.9790995536622396
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_083.hdf5",
+          "sha256": "972ab48dc005c7bf36b7de8ec7650041e9ddba0a8f3e776a8df98c942705e397",
+          "time_code": 16.072880886760768,
+          "t_over_tcc": 4.149999999999997,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 401.34072256088257,
+          "dense_mass_over_initial": 0.9790995536622396
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_084.hdf5",
+          "sha256": "9ae7ddfe167e68564c85765b4ed52802ecd61fffdce34e0d6c253d1560bd6a57",
+          "time_code": 16.26653005407114,
+          "t_over_tcc": 4.199999999999997,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 401.34072256088257,
+          "dense_mass_over_initial": 0.9790995536622396
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_085.hdf5",
+          "sha256": "34bf9fed8892efb3dce08f652a1a460da3f04eb2ec188f6ab5e771e13228cbc3",
+          "time_code": 16.460179221381512,
+          "t_over_tcc": 4.249999999999997,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 401.34072256088257,
+          "dense_mass_over_initial": 0.9790995536622396
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_086.hdf5",
+          "sha256": "8b8184fa2655c0d8c5ced4af6d04f314bedb4222a501f7257532165a53253238",
+          "time_code": 16.653828388691885,
+          "t_over_tcc": 4.299999999999998,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 401.34072256088257,
+          "dense_mass_over_initial": 0.9790995536622396
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_087.hdf5",
+          "sha256": "be280a2235535db52ffc3bf9085c5152988e36f10232fbc73ee496292400c765",
+          "time_code": 16.847477556002257,
+          "t_over_tcc": 4.349999999999998,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 401.34072256088257,
+          "dense_mass_over_initial": 0.9790995536622396
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_088.hdf5",
+          "sha256": "3f656ddef83cd053895e39e596c7f22fdfc92c93faf0344959ba2bc3fb7a9836",
+          "time_code": 17.04112672331263,
+          "t_over_tcc": 4.399999999999999,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 401.34072256088257,
+          "dense_mass_over_initial": 0.9790995536622396
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_089.hdf5",
+          "sha256": "3d4c5c9d0f1eb0f11c427108cccb6ffe5df71c91abd42dce071f178eca3cee66",
+          "time_code": 17.234775890623002,
+          "t_over_tcc": 4.449999999999999,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 401.34072256088257,
+          "dense_mass_over_initial": 0.9790995536622396
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_090.hdf5",
+          "sha256": "e4a8027b46a5be44893d18cd399f442431493cf99b9bdeb8fc6b2bb8669336e0",
+          "time_code": 17.428425057933374,
+          "t_over_tcc": 4.499999999999999,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 401.34072256088257,
+          "dense_mass_over_initial": 0.9790995536622396
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_091.hdf5",
+          "sha256": "2c31fe88f6752843c44e3d144f25136312265abfc316f81b84703018c05a7437",
+          "time_code": 17.622074225243747,
+          "t_over_tcc": 4.55,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 401.34072256088257,
+          "dense_mass_over_initial": 0.9790995536622396
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_092.hdf5",
+          "sha256": "a580529d7f7696c1e5f89bacbe96b9c929e500dd4ca2e60c0666df7f91b04327",
+          "time_code": 17.81572339255412,
+          "t_over_tcc": 4.6000000000000005,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 401.34072256088257,
+          "dense_mass_over_initial": 0.9790995536622396
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_093.hdf5",
+          "sha256": "85cecf712d13e6f7da87e39c903d2596fc8400412df1e909a5efd8286ef9702e",
+          "time_code": 18.00937255986449,
+          "t_over_tcc": 4.65,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 401.34072256088257,
+          "dense_mass_over_initial": 0.9790995536622396
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_094.hdf5",
+          "sha256": "3aaf5d2fc81681706258d1c88f747e650a7cff0f1c68b0a1b60c77ab2b3eba21",
+          "time_code": 18.203021727174864,
+          "t_over_tcc": 4.700000000000001,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 401.34072256088257,
+          "dense_mass_over_initial": 0.9790995536622396
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_095.hdf5",
+          "sha256": "473ee57e1fe715535b742e3862dbef0d38f67d8b4aa48d902b1f96d1303fbf0a",
+          "time_code": 18.396670894485236,
+          "t_over_tcc": 4.750000000000002,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 401.34072256088257,
+          "dense_mass_over_initial": 0.9790995536622396
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_096.hdf5",
+          "sha256": "75fc9d50ed312848c5eca766ce48dcbeebe69b89672e00a1d81aab7573fc5076",
+          "time_code": 18.59032006179561,
+          "t_over_tcc": 4.800000000000002,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 401.34072256088257,
+          "dense_mass_over_initial": 0.9790995536622396
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_097.hdf5",
+          "sha256": "cd96c27ebc3194569df9d422c580d9e9e32af38099d7f5b9c0d6edab3af230e3",
+          "time_code": 18.78396922910598,
+          "t_over_tcc": 4.850000000000002,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 401.34072256088257,
+          "dense_mass_over_initial": 0.9790995536622396
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_098.hdf5",
+          "sha256": "a68dfc6515a84a6b000f2a86f7770816b890f6ccd4ab6b598a89116ff4c0f932",
+          "time_code": 18.977618396416354,
+          "t_over_tcc": 4.900000000000003,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 401.34072256088257,
+          "dense_mass_over_initial": 0.9790995536622396
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_099.hdf5",
+          "sha256": "ca0b9e76601bbb807a9eeb708c274c2cabcdda0dc09deed9d0c292615ddb6aa5",
+          "time_code": 19.171267563726726,
+          "t_over_tcc": 4.950000000000003,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 401.34072256088257,
+          "dense_mass_over_initial": 0.9790995536622396
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/snapshot_100.hdf5",
+          "sha256": "f170f2dc858ba5d43976a4063965cf05fdfad22bd5ff0f23ce5fb99961247a35",
+          "time_code": 19.364916731037084,
+          "t_over_tcc": 5.0,
+          "elements": 65536,
+          "bytes": 4203752,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2425.245532028377,
+          "dense_mass": 401.34072256088257,
+          "dense_mass_over_initial": 0.9790995536622396
+        }
+      ],
+      "cadence": {
+        "native_snapshots": 101,
+        "distinct_header_times": 101,
+        "repeated_header_times": [],
+        "policy": "All files and original times retained, including extra or exactly equal terminal headers. No retiming, thinning or synthesized states."
+      },
+      "initial_checks": {
+        "native_density_vs_lattice_max_relative": 0.0009155219926687056,
+        "native_pressure_vs_uniform_max_absolute": 0.0009155574330177441,
+        "native_fields_exactly_recovered": [
+          "Coordinates",
+          "Masses",
+          "ParticleIDs",
+          "InternalEnergy"
+        ],
+        "velocity_output_timing": {
+          "report_sha256": "e7da471e9c39809947e0104021a726fe467962405a4ae885b8e0499fcd65abbf",
+          "checks": {
+            "norm_ratio": 0.5007596730450596,
+            "zero_step_extrapolation_max_error": 2.384185791015625e-07,
+            "float32_roundoff_bound": 1.2311882073845482e-06,
+            "full_step_max_delta": 3.9577484130859375e-05,
+            "half_step_max_delta": 1.9788742065429688e-05
+          },
+          "native_t0_velocity_max_offset": 0.14942145347595215,
+          "interpretation": "Native output velocity is staggered after the first half kick, not the input at header t=0. No native values are replaced. Velocity-at-header-time diagnostics are not validated by this mass study."
+        }
+      },
+      "restart_files": [
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/restartfiles/restart.1",
+          "bytes": 5782664,
+          "sha256": "ae83cb5f5d74a1a4dc2cf2b3c55967ea931eb9b57797f1ae612b314513c42219"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/restartfiles/restart.0",
+          "bytes": 5793864,
+          "sha256": "20b87fb981399e6a382d895097f44aefb8c81d07290e7f80c38fb06547b72f43"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/restartfiles/restart.4",
+          "bytes": 5768168,
+          "sha256": "e29254a5539502b5e057e6180b37e6a8a5204598a83af86176cdf4297f138ddf"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/restartfiles/restart.5",
+          "bytes": 5800520,
+          "sha256": "013df10c2128bc4fd28a3653c433720bf2ab94dc114c1123ef815c8f7988a7b6"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/restartfiles/restart.2",
+          "bytes": 5783496,
+          "sha256": "24cca410430e1e2ea0351658dc4abb29a748347396088346ac2d8eeb4f0be9b8"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/restartfiles/restart.7",
+          "bytes": 5758952,
+          "sha256": "3e206a85ac85632730ef9f7929cfc89dd79a701b403aad9c8f12c9cc819eea4e"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/restartfiles/restart.3",
+          "bytes": 5801480,
+          "sha256": "2903f5443f558a3087867ade196c588ace63eb0d73fb0efc5a91d30d4b58da80"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfm_tanh13/output/restartfiles/restart.6",
+          "bytes": 5759368,
+          "sha256": "8cb84f6be3da4dbeca5a415da6fcfa2fe2943f5d6ebdfb681da8685dc7ef3110"
+        }
+      ],
+      "independent_max_relative_mass_error": 0.0
+    }
+  ],
+  "pairs": [
+    {
+      "variant": "mfm",
+      "level": 3,
+      "checks": {
+        "native_nonvelocity_initial_fields_exact": true,
+        "ic_nonvelocity_fields_exact": true,
+        "velocity_difference": 1.1304666996002197,
+        "native_initial_deviations": [
+          {
+            "native_density_vs_lattice_max_relative": 0.0009155219926687056,
+            "native_pressure_vs_uniform_max_absolute": 0.0009155574330177441,
+            "native_fields_exactly_recovered": [
+              "Coordinates",
+              "Masses",
+              "ParticleIDs",
+              "InternalEnergy"
+            ],
+            "velocity_output_timing": {
+              "report_sha256": "e7da471e9c39809947e0104021a726fe467962405a4ae885b8e0499fcd65abbf",
+              "checks": {
+                "norm_ratio": 0.49998347072352123,
+                "zero_step_extrapolation_max_error": 2.384185791015625e-07,
+                "float32_roundoff_bound": 1.2311882073845482e-06,
+                "full_step_max_delta": 9.1552734375e-05,
+                "half_step_max_delta": 4.57763671875e-05
+              },
+              "native_t0_velocity_max_offset": 0.17331409454345703,
+              "interpretation": "Native output velocity is staggered after the first half kick, not the input at header t=0. No native values are replaced. Velocity-at-header-time diagnostics are not validated by this mass study."
+            }
+          },
+          {
+            "native_density_vs_lattice_max_relative": 0.0009155219926687056,
+            "native_pressure_vs_uniform_max_absolute": 0.0009155574330177441,
+            "native_fields_exactly_recovered": [
+              "Coordinates",
+              "Masses",
+              "ParticleIDs",
+              "InternalEnergy"
+            ],
+            "velocity_output_timing": {
+              "report_sha256": "e7da471e9c39809947e0104021a726fe467962405a4ae885b8e0499fcd65abbf",
+              "checks": {
+                "norm_ratio": 0.5007596730450596,
+                "zero_step_extrapolation_max_error": 2.384185791015625e-07,
+                "float32_roundoff_bound": 1.2311882073845482e-06,
+                "full_step_max_delta": 3.9577484130859375e-05,
+                "half_step_max_delta": 1.9788742065429688e-05
+              },
+              "native_t0_velocity_max_offset": 0.14942145347595215,
+              "interpretation": "Native output velocity is staggered after the first half kick, not the input at header t=0. No native values are replaced. Velocity-at-header-time diagnostics are not validated by this mass study."
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "error": "Nonpositive native field"
+}

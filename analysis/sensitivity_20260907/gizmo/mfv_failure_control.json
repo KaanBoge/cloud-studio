@@ -1,0 +1,94 @@
+{
+  "status": "control_needs_review",
+  "original_batch_sha256": "82d1f2fb6c79a43944c06e0848ed5bcdd0ae579c1fbdd17795660c5c16c2c128",
+  "source_field_audit_sha256": "9fa66d0d81cbffa4e2022996a3230f55e2cdc54201026630f10255b89be064dc",
+  "script_sha256": "93a1e18feb8ac387ff9a483d3b9b3c13dfb7ebd539c82f1cf3f1cbb5c336a511",
+  "scope": "Previously prepared historical MFV case, unchanged settings, to compare native thermal-output failure. Sharp case not certified.",
+  "error": "Nonpositive native field",
+  "case": {
+    "status": "needs_review",
+    "variant": "mfv",
+    "mode": 1,
+    "level": 3,
+    "directory": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13",
+    "physics": {
+      "code": "GIZMO",
+      "variants": [
+        "mfm",
+        "mfv"
+      ],
+      "chi": 100,
+      "mach": 2,
+      "gamma": 1.6666666666666667,
+      "r_cloud": 1,
+      "rho_wind": 1,
+      "p_wind": 1,
+      "density_width": 0.1,
+      "rv_scale": 1.3,
+      "seed": 42,
+      "center": [
+        3,
+        5,
+        5
+      ],
+      "domain_left": [
+        0,
+        0,
+        0
+      ],
+      "domain_right": [
+        20,
+        10,
+        10
+      ],
+      "mass_mode": "volume",
+      "ranks": 8,
+      "t_end_over_tcc": 5,
+      "output_dt_over_tcc": 0.05,
+      "scope": "Within each native GIZMO variant, actual historical tanh versus sharp velocity. Regular equal-volume initial lattice, variable masses, original float32 IC/output precision and fully periodic native boundary recipe. Native kernel-derived density/pressure must be checked separately. No passive material tracer is assumed; particle-ID mass in MFV is not a material-retention diagnostic.",
+      "v_wind": 2.581988897471611,
+      "t_cc": 3.872983346207417
+    },
+    "input_sha256": "3af6f94f62c2b7b7187e24fb4b4087f6f57a2aec5497a72102bba8c33b49c9b2",
+    "ic_sha256": "b85251c1ecae2dab665cec6525f06543104b11dc0a2c2763159ecfa5670bc4f0",
+    "binary_sha256": "b7634f844d98ceef246d66e2243827f0c5774c9997b92bd8ffeedfdf940eed91",
+    "launcher_sha256": "0630c91879a81ab8c300fc35d865e68e9039deb0a8481c8c8d390e260f3fbde2",
+    "budget": {
+      "case_bytes": 1076975174,
+      "pair_bytes": 2153950348,
+      "snapshot_bytes": 4990184,
+      "measured_restart_set_bytes": 48906560,
+      "ic_bytes": 2365880,
+      "method": "104 native snapshots + two restart sets with 50% margin + IC + 256MiB logs; 15% overall margin. Separate 10GiB free-space reserve."
+    },
+    "storage_preflight": {
+      "path": "/home/kaan/sensitivity_20260907/gizmo",
+      "filesystem_free_bytes": 29802582016,
+      "filesystem_total_bytes": 1081101176832,
+      "windows_backing_volume": {
+        "distribution": "Ubuntu",
+        "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+        "drive": "C:",
+        "free_bytes": 37657571328,
+        "total_bytes": 1999283154944
+      },
+      "policy": "Conservative growth budget; allocated but reusable VHDX blocks are not credited.",
+      "effective_free_bytes": 29802582016
+    },
+    "command": [
+      "mpirun",
+      "--bind-to",
+      "core",
+      "-np",
+      "8",
+      "/home/kaan/sensitivity_20260907/gizmo/GIZMO_mfv_pair",
+      "params.txt"
+    ],
+    "started_unix": 1788840868.6226482,
+    "mpi_pid": 13,
+    "returncode": 0,
+    "wall_seconds": 127.95955438200001,
+    "peak_child_rss_gib": 0.5442962646484375,
+    "stop_reason": null
+  }
+}

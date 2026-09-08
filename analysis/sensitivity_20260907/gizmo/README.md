@@ -1,9 +1,60 @@
-# Native GIZMO sensitivity: validated L3 setup, full controls pending
+# Native GIZMO sensitivity: MFM L3 complete, MFV L3 needs review
 
-Updated 8 September 2026. Four short native smokes (MFM/MFV, sharp/historical
-velocity) and eight isolated timestep-scaling diagnostics have passed. They
-are **not** full 5 t_cc science controls and do not increase the study's count
-of 38 completed, analyzed controls. No full GIZMO queue has been launched.
+Updated 8 September 2026. The two full **MFM L3** controls are validated and
+analyzed, raising the study total to **40 accepted controls**. Each has 101
+distinct native snapshots through 5 t_cc. The two **MFV L3** attempts also
+reached 101 snapshots, but both failed positive-energy checks and are excluded
+from that total. No simulation is currently running in this L3 batch.
+
+## Full L3 findings
+
+| Native method and velocity law | Snapshots | Solver time | Peak child RSS | Outcome |
+| --- | ---: | ---: | ---: | --- |
+| MFM sharp | 101 | 82.37 s | 0.489 GiB | Validated for mass diagnostics |
+| MFM historical tanh | 101 | 82.13 s | 0.488 GiB | Validated for mass diagnostics |
+| MFV sharp | 101 | 128.34 s | 0.544 GiB | Zero stored energy in 15 snapshots |
+| MFV historical tanh | 101 | 127.96 s | 0.544 GiB | Zero stored energy in 16 snapshots |
+
+All four cases used eight MPI workers. Median sampled busy CPU cores were
+7.996-8.000; these are CPU simulations, not GPU runs. Solver times exclude
+the subsequent validation and publication work. RAM figures are solver-child
+RSS, not total Windows/WSL memory or an allocation target.
+
+MFM's peak absolute mass-curve separation is **3.979% of the fixed initial
+dense mass**. Final dense fractions are 0.97111 (sharp) and 0.97910 (historical).
+All 202 native mass sums were independently checked with yt, with zero reported
+relative discrepancy. Fresh pre-publication raw hashes and direct sums also
+match. Density selection is rho > rho_cloud_initial/3. The plot uses every
+actual time; the scalar peak uses explicitly stated interpolation onto
+0:0.05:5 t_cc. No 3D frame is interpolated or repeated.
+
+![Native MFM L3 mass evolution](mass_mfm_L3.png)
+
+This is **one coarse resolution**, not a resolution-overlay Figure 2 or a
+universal decision to reuse historical runs. See [the full MFM series](mfm_l3_report.json)
+and [pre-delivery validation](VALIDATION.md).
+
+## MFV failure evidence: preserved, not certified
+
+In both laws, the first zero `InternalEnergy` occurs at native snapshot079,
+t=3.95 t_cc: particle ID109 in sharp and ID99 in historical. There are 15 and
+16 affected snapshots respectively. Both native solvers exited normally;
+that is not sufficient for valid science output. All other stored fields are
+finite, and mass, density and smoothing length remain positive in this audit.
+
+The pinned native `io.c` writes `max(MinEgySpec, InternalEnergyPred)` for this
+field. Zero stored energy therefore does not, by itself, prove the conserved
+energy is zero or establish the numerical root cause. The failure occurs in
+both prescriptions, so it cannot be attributed solely to the sharp boundary.
+No floor, timestep, native field, file, or acceptance criterion was changed.
+
+The original runner stopped on the sharp-case validation error. The historical
+case was then launched explicitly from its already prepared, never-started
+directory as an unchanged failure-comparison control, not a checkpoint restart.
+See [all 202 native field audits](mfv_pair_audit.json), the
+[original stopped batch](full_l3_batch.json), and the separate
+[historical-control record](mfv_failure_control.json). Failed MFV states are
+not pooled into the MFM mass result or represented as valid viewer entries.
 
 ## Scope and provenance
 
@@ -83,7 +134,7 @@ implementation shared by compatible file formats, not a different solver.
 Float64 total and density-threshold mass sums match the direct HDF5 checks
 with zero reported discrepancy. Native hashes are unchanged by the reads.
 See [verification](verification.json) and [smoke ledger](smoke_batch.json).
-Nine tests pass, including rejection of a fixed IC error masquerading as a
+Nine setup/timing tests pass, including rejection of a fixed IC error masquerading as a
 half-step effect and a missing/incorrect scaling signal.
 
 ## Resources, retained attempts and next gate
@@ -101,9 +152,22 @@ already completed diagnostic cases were rechecked and collected without
 rerunning them. The original strict validator is retained as
 `verify_gizmo.pre_timing.py`, but is superseded by `verify_gizmo.py`.
 
-Next: build/test the full retained-pair launcher, validate per-level evolved
-initial fields (including L4), establish whole-pair disk budgets and native
-runtime/restart behavior, then launch safe fresh controls sequentially. Native
+The frozen `runner_l3_v1` full runner adds six tests (15 total, all passing).
+Its launch-time proof is [full_l3_bundle.json](full_l3_bundle.json). That proof
+describes readiness at launch, not the subsequent outcome. Current outcomes
+are the stopped batch, MFV audit and accepted MFM report linked above.
+The runner budgets both complete raw pairs, including ICs, logs and retained
+restart generations, plus 10 GiB free space on both guest and Windows drive.
+Measured budgets were 1.80 GiB per MFM pair and 2.01 GiB per MFV pair.
+The native 3600-second restart interval is unchanged; the external 6000-second
+limit bounds the retained current/backup generations. Low memory or storage
+requests a native checkpoint/stop, with a bounded grace period. No native
+restart is auto-resumed. The guard was not triggered in these four short runs.
+
+Next: validate MFM L4 native initial/evolved fields and level-specific velocity
+timing, then measure its whole-pair retained disk budget before enabling a
+separate frozen L4 runner. MFV requires further diagnosis before larger runs.
+Gadget-4 and Gasoline remain unprepared. Neither L4 nor L5 is launched here. Native
 MaxSizeTimestep, precision, CFL and other production numerics must stay at their
 original settings; the tiny diagnostic timestep caps are never production inputs.
 L5 parameter copies are provenance, not evidence of an enabled or validated L5 queue.

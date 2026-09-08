@@ -38,9 +38,9 @@ These are not full replacements of the old campaign. Each targets 101 full-field
 native outputs through 5 t_cc plus unchanged restart settings. No raw file is
 deleted or thinned, and the live viewer is not relabeled with these experiments.
 
-The remaining code families/variants need historical-source and native-IC checks
-before their paired launchers are enabled: GIZMO MFM, GIZMO MFV,
-Gadget-4, Gasoline. Particle sampling
+The remaining unprepared code families need historical-source and native-IC checks
+before their paired launchers are enabled: Gadget-4 and Gasoline. GIZMO's L3
+setup is validated, while L4 requires its own checks. Particle sampling
 and random seeds must be identical within a pair. This is pending work, not an
 already runnable all-code queue.
 
@@ -65,7 +65,7 @@ with 101 actual times each, exact paired initial density/tracer/grid and
 pressure agreement to roundoff. All 404 outputs pass checks; its extra
 unsorted-record aggregation agrees within 8.9e-15 but shares the native decoder.
 Native timestep-crossing times are preserved. L5 is held by the 172.49 GiB
-whole-pair retention budget plus reserve. There are now 38 analyzed controls.
+whole-pair retention budget plus reserve. There are now 40 analyzed controls.
 FLASH 4.8's four L3/L4 controls are complete with 101 full-state times each;
 all 404 checkpoint mass sums pass independent yt checks. Its native setup
 has no tracer, so retention is unavailable. The unchanged native plotfiles are
@@ -92,16 +92,27 @@ All four Arepo L3/L4 controls and their 404 native times are now complete and
 analyzed, with independent yt mass-sum agreement within 6.2e-16. Peak curve
 separation is 2.81% at L3 and 2.70% at L4. The full native files remain saved.
 The L5 pair needs 124.02 GiB plus reserve and remains separately guarded.
-Next safe code families remain GIZMO MFM/MFV, Gadget-4 and Gasoline;
-no runnable queue for those is claimed before native historical-law and
-initial-field checks and identical within-pair particle sampling are verified.
+Next safe work is GIZMO MFM L4 validation, plus preparation of Gadget-4 and
+Gasoline. No higher-level queue is claimed before per-level initial-field,
+timing and identical within-pair particle sampling checks are verified.
 Four GIZMO L3 smokes now pass independent mass checks. Eight small native tests
 confirmed that their t=0 velocities are staggered after the first half-step
 kick: halving the timestep halves the offset, and zero-step extrapolation
 recovers the IC to float32 precision. No native field is rewritten. The mass
 study must document this native output convention; velocity-at-header-time
-analysis remains unvalidated. Full GIZMO controls require the production
-launcher, per-level checks and retention budgets before admission.
+analysis remains unvalidated. A frozen L3-only full runner subsequently passed
+15 tests, checked whole-pair storage (1.80 GiB MFM / 2.01 GiB MFV plus the
+separate 10 GiB reserve), and launched native controls sequentially on eight
+MPI ranks. Native numerical settings and restart interval remain unchanged;
+an external 6000-second cap bounds retained restart generations. No restart
+is automatically resumed. All raw data and native actual times are preserved.
+Both MFM L3 controls completed with 101 states and independent yt mass checks;
+peak curve separation is 3.98% of initial dense mass. They add two accepted
+controls. Both MFV L3 controls reached 101 states but fail positive stored
+energy checks, first at t=3.95 t_cc. These two are NOT counted as validated
+controls. The original stopped ledger and separate historical diagnostic
+control remain intact; neither is a runnable continuation queue. Do not
+change floors or filter invalid states to turn a failure into a completion.
 
 ## Validation and analysis
 

@@ -1,0 +1,3650 @@
+{
+  "status": "audited_no_native_changes",
+  "snapshots": 101,
+  "bad_fields": [
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_079.hdf5",
+      "time": 15.298284217519281,
+      "field": "InternalEnergy",
+      "count": 1,
+      "ids": [
+        109
+      ],
+      "values": [
+        0.0
+      ],
+      "masses": [
+        3.019848585128784
+      ],
+      "density": [
+        197.86683654785156
+      ],
+      "internal_energy": [
+        0.0
+      ],
+      "positions": [
+        [
+          3.48728324058668,
+          6.375988270669385,
+          4.858114407015558
+        ]
+      ]
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_080.hdf5",
+      "time": 15.491933384829654,
+      "field": "InternalEnergy",
+      "count": 1,
+      "ids": [
+        109
+      ],
+      "values": [
+        0.0
+      ],
+      "masses": [
+        3.0366249084472656
+      ],
+      "density": [
+        232.34536743164062
+      ],
+      "internal_energy": [
+        0.0
+      ],
+      "positions": [
+        [
+          3.4651794729033543,
+          6.394965814149515,
+          4.86580038808276
+        ]
+      ]
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_081.hdf5",
+      "time": 15.685582552140025,
+      "field": "InternalEnergy",
+      "count": 1,
+      "ids": [
+        109
+      ],
+      "values": [
+        0.0
+      ],
+      "masses": [
+        3.014636516571045
+      ],
+      "density": [
+        275.1432189941406
+      ],
+      "internal_energy": [
+        0.0
+      ],
+      "positions": [
+        [
+          3.4389487656665176,
+          6.412805546057898,
+          4.875074426569879
+        ]
+      ]
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_082.hdf5",
+      "time": 15.879231719450395,
+      "field": "InternalEnergy",
+      "count": 1,
+      "ids": [
+        109
+      ],
+      "values": [
+        0.0
+      ],
+      "masses": [
+        3.034503936767578
+      ],
+      "density": [
+        296.79534912109375
+      ],
+      "internal_energy": [
+        0.0
+      ],
+      "positions": [
+        [
+          3.4084326909770213,
+          6.429073612336304,
+          4.884724099718686
+        ]
+      ]
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_083.hdf5",
+      "time": 16.072880886760768,
+      "field": "InternalEnergy",
+      "count": 1,
+      "ids": [
+        109
+      ],
+      "values": [
+        0.0
+      ],
+      "masses": [
+        3.0186524391174316
+      ],
+      "density": [
+        251.35220336914062
+      ],
+      "internal_energy": [
+        0.0
+      ],
+      "positions": [
+        [
+          3.3776695117979694,
+          6.443726162259849,
+          4.894304063823646
+        ]
+      ]
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_088.hdf5",
+      "time": 17.04112672331263,
+      "field": "InternalEnergy",
+      "count": 1,
+      "ids": [
+        105
+      ],
+      "values": [
+        0.0
+      ],
+      "masses": [
+        3.043980360031128
+      ],
+      "density": [
+        345.3354797363281
+      ],
+      "internal_energy": [
+        0.0
+      ],
+      "positions": [
+        [
+          3.64055464253179,
+          5.308053435190433,
+          6.480078358544162
+        ]
+      ]
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_089.hdf5",
+      "time": 17.234775890623002,
+      "field": "InternalEnergy",
+      "count": 2,
+      "ids": [
+        105,
+        92
+      ],
+      "values": [
+        0.0,
+        0.0
+      ],
+      "masses": [
+        3.024163007736206,
+        3.03230357170105
+      ],
+      "density": [
+        295.4822082519531,
+        330.0045471191406
+      ],
+      "internal_energy": [
+        0.0,
+        0.0
+      ],
+      "positions": [
+        [
+          3.6111341984524437,
+          5.30364228349394,
+          6.509027887245956
+        ],
+        [
+          3.197206980183813,
+          3.678194704537149,
+          5.114524877795425
+        ]
+      ]
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_090.hdf5",
+      "time": 17.428425057933374,
+      "field": "InternalEnergy",
+      "count": 3,
+      "ids": [
+        92,
+        109,
+        105
+      ],
+      "values": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "masses": [
+        3.04487943649292,
+        3.0127615928649902,
+        3.0445809364318848
+      ],
+      "density": [
+        338.1531982421875,
+        238.37657165527344,
+        211.04478454589844
+      ],
+      "internal_energy": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "positions": [
+        [
+          3.170666935749504,
+          3.6618778686318,
+          5.107774164300611
+        ],
+        [
+          3.2245020737368195,
+          6.550551191621575,
+          4.974012725816579
+        ],
+        [
+          3.581882198474158,
+          5.296828967137707,
+          6.540306307971261
+        ]
+      ]
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_091.hdf5",
+      "time": 17.622074225243747,
+      "field": "InternalEnergy",
+      "count": 3,
+      "ids": [
+        92,
+        109,
+        105
+      ],
+      "values": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "masses": [
+        3.022181510925293,
+        3.029752016067505,
+        3.0300910472869873
+      ],
+      "density": [
+        363.398681640625,
+        281.7864990234375,
+        208.8255615234375
+      ],
+      "internal_energy": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "positions": [
+        [
+          3.1420006517436976,
+          3.6463085050927315,
+          5.101425327911799
+        ],
+        [
+          3.200316822090569,
+          6.5661338307963675,
+          4.988908128387301
+        ],
+        [
+          3.5554815599672,
+          5.287700508656105,
+          6.570968473989732
+        ]
+      ]
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_092.hdf5",
+      "time": 17.81572339255412,
+      "field": "InternalEnergy",
+      "count": 2,
+      "ids": [
+        109,
+        105
+      ],
+      "values": [
+        0.0,
+        0.0
+      ],
+      "masses": [
+        3.046072483062744,
+        3.045311450958252
+      ],
+      "density": [
+        291.7578430175781,
+        240.50653076171875
+      ],
+      "internal_energy": [
+        0.0,
+        0.0
+      ],
+      "positions": [
+        [
+          3.1734239079124453,
+          6.581329528108597,
+          5.004407977297693
+        ],
+        [
+          3.5277323008485686,
+          5.277142088366369,
+          6.601558079549862
+        ]
+      ]
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_093.hdf5",
+      "time": 18.00937255986449,
+      "field": "InternalEnergy",
+      "count": 3,
+      "ids": [
+        99,
+        109,
+        105
+      ],
+      "values": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "masses": [
+        3.0250775814056396,
+        3.023529052734375,
+        3.030937671661377
+      ],
+      "density": [
+        322.1961975097656,
+        303.5331115722656,
+        244.26028442382812
+      ],
+      "internal_energy": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "positions": [
+        [
+          3.2162045149912033,
+          4.890223607895482,
+          6.396333389913989
+        ],
+        [
+          3.142145241872819,
+          6.595266910838836,
+          5.02021959275711
+        ],
+        [
+          3.497881651286622,
+          5.265271377734606,
+          6.632470508753903
+        ]
+      ]
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_094.hdf5",
+      "time": 18.203021727174864,
+      "field": "InternalEnergy",
+      "count": 2,
+      "ids": [
+        109,
+        99
+      ],
+      "values": [
+        0.0,
+        0.0
+      ],
+      "masses": [
+        3.047168016433716,
+        3.0462276935577393
+      ],
+      "density": [
+        281.1195373535156,
+        332.2933349609375
+      ],
+      "internal_energy": [
+        0.0,
+        0.0
+      ],
+      "positions": [
+        [
+          3.108808727984653,
+          6.608813747158369,
+          5.035034342935253
+        ],
+        [
+          3.19430199434045,
+          4.8869665185143125,
+          6.412919501121734
+        ]
+      ]
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_095.hdf5",
+      "time": 18.396670894485236,
+      "field": "InternalEnergy",
+      "count": 1,
+      "ids": [
+        99
+      ],
+      "values": [
+        0.0
+      ],
+      "masses": [
+        3.0294229984283447
+      ],
+      "density": [
+        322.75994873046875
+      ],
+      "internal_energy": [
+        0.0
+      ],
+      "positions": [
+        [
+          3.1717139211865986,
+          4.881157761575014,
+          6.430375495811197
+        ]
+      ]
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_096.hdf5",
+      "time": 18.59032006179561,
+      "field": "InternalEnergy",
+      "count": 1,
+      "ids": [
+        99
+      ],
+      "values": [
+        0.0
+      ],
+      "masses": [
+        3.048372268676758
+      ],
+      "density": [
+        294.40753173828125
+      ],
+      "internal_energy": [
+        0.0
+      ],
+      "positions": [
+        [
+          3.1506688888633243,
+          4.873743717247152,
+          6.449931823476804
+        ]
+      ]
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_100.hdf5",
+      "time": 19.364916731037084,
+      "field": "InternalEnergy",
+      "count": 1,
+      "ids": [
+        109
+      ],
+      "values": [
+        0.0
+      ],
+      "masses": [
+        3.051217555999756
+      ],
+      "density": [
+        236.61343383789062
+      ],
+      "internal_energy": [
+        0.0
+      ],
+      "positions": [
+        [
+          2.9138833742457355,
+          6.712560322167683,
+          5.110475150757603
+        ]
+      ]
+    }
+  ],
+  "frames": [
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_000.hdf5",
+      "time": 0.0,
+      "sha256": "8b9fe781dee63ab42622ca7b5d628946bbfa361292744ab6194ea798c0a9f73b",
+      "fields": {
+        "Masses": {
+          "min": 0.030517578125,
+          "max": 3.051757335662842,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.9990894794464111,
+          "max": 99.908935546875,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.015000002458691597,
+          "max": 1.5,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.6154024004936218,
+          "max": 0.6158556342124939,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_001.hdf5",
+      "time": 0.19364916731037085,
+      "sha256": "e80f837ea87d20221db1950f47402b45e8582ec5e67d48126c1f3de9cce55205",
+      "fields": {
+        "Masses": {
+          "min": 0.030448520556092262,
+          "max": 3.0517749786376953,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.6743884086608887,
+          "max": 102.40496063232422,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.014996604062616825,
+          "max": 2.403254508972168,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.4768778085708618,
+          "max": 0.7393875122070312,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_002.hdf5",
+      "time": 0.3872983346207417,
+      "sha256": "73c4dcb0389abdf27c2d2d542ae635a30d0d86617299c5a14a5d667392396971",
+      "fields": {
+        "Masses": {
+          "min": 0.02920706942677498,
+          "max": 3.051877498626709,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.5571298003196716,
+          "max": 122.95098114013672,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.014981129206717014,
+          "max": 2.74835205078125,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.37481585144996643,
+          "max": 0.8460844159126282,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_003.hdf5",
+      "time": 0.5809475019311126,
+      "sha256": "5b5c64c302b278567f78aae110f6d75cc8dbdbdeda1f359ea389cac48659d8a5",
+      "fields": {
+        "Masses": {
+          "min": 0.02969665452837944,
+          "max": 3.052304744720459,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.5214942693710327,
+          "max": 203.04034423828125,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.014970995485782623,
+          "max": 3.2680015563964844,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.3521108031272888,
+          "max": 0.9361903071403503,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_004.hdf5",
+      "time": 0.7745966692414834,
+      "sha256": "f9c920e4b6803d3244d6b6e7e000a865eac11c14d9c7d1676f25613ca989707c",
+      "fields": {
+        "Masses": {
+          "min": 0.02952767349779606,
+          "max": 3.0554914474487305,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.46025821566581726,
+          "max": 263.45477294921875,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.014987456612288952,
+          "max": 3.3239622116088867,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.30239027738571167,
+          "max": 0.9784911274909973,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_005.hdf5",
+      "time": 0.9682458365518543,
+      "sha256": "6ae124c59e35e1aaa5c4f82866104be421485384a6d2b4ba60e359be0474281d",
+      "fields": {
+        "Masses": {
+          "min": 0.030163809657096863,
+          "max": 3.060457468032837,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.4288421869277954,
+          "max": 316.6512756347656,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.014988022856414318,
+          "max": 3.2024457454681396,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.32294246554374695,
+          "max": 0.9652398228645325,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_006.hdf5",
+      "time": 1.161895003862225,
+      "sha256": "3a725b8d125700f8777c1c1980f91c5d418c61d978114087eec1f0b457ce10bc",
+      "fields": {
+        "Masses": {
+          "min": 0.029957346618175507,
+          "max": 3.065218210220337,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.4253346025943756,
+          "max": 360.5716857910156,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.014930753037333488,
+          "max": 3.119511127471924,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.3187766671180725,
+          "max": 0.9265033006668091,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_007.hdf5",
+      "time": 1.355544171172596,
+      "sha256": "4da8ada5d9293b158f6033fdda3f6ce40558f65fe79d21fb6de458061aedd1d1",
+      "fields": {
+        "Masses": {
+          "min": 0.02975216507911682,
+          "max": 3.0738778114318848,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.43775057792663574,
+          "max": 405.7177429199219,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.014775342307984829,
+          "max": 3.1607296466827393,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.2980004847049713,
+          "max": 0.9401636719703674,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_008.hdf5",
+      "time": 1.5491933384829668,
+      "sha256": "2d8a0a401ff4b4d14fa50dec0bce31c2ebffe24b5309abe962736636406131e9",
+      "fields": {
+        "Masses": {
+          "min": 0.02956440858542919,
+          "max": 3.0867867469787598,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.43140333890914917,
+          "max": 483.00640869140625,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.014583819545805454,
+          "max": 3.151947021484375,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.2880677282810211,
+          "max": 0.9621143937110901,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_009.hdf5",
+      "time": 1.7428425057933374,
+      "sha256": "c4b66a4f6f806942c5363108fab14a02485c6e003cd86b234f90b7d2d2719b10",
+      "fields": {
+        "Masses": {
+          "min": 0.030215688049793243,
+          "max": 3.0551671981811523,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.4348565936088562,
+          "max": 503.7791748046875,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.014268144965171814,
+          "max": 3.1899585723876953,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.2903636395931244,
+          "max": 0.9570642113685608,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_010.hdf5",
+      "time": 1.9364916731037085,
+      "sha256": "a827318439a0c9c4fbfb5375018113b6ced7fc666ef40d46e4e9308e20f3ac9a",
+      "fields": {
+        "Masses": {
+          "min": 0.02986883372068405,
+          "max": 3.0608561038970947,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.45157521963119507,
+          "max": 518.2161865234375,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.013869163580238819,
+          "max": 3.2278614044189453,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.28786128759384155,
+          "max": 0.9296724200248718,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_011.hdf5",
+      "time": 2.1301408404140796,
+      "sha256": "603464cea6213ad5175c115b45e9cee1e85cb38746da04c8d984dc7d853734f4",
+      "fields": {
+        "Masses": {
+          "min": 0.029880112037062645,
+          "max": 3.0671942234039307,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.4244942367076874,
+          "max": 490.6106872558594,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.01347466092556715,
+          "max": 3.2137258052825928,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.29211777448654175,
+          "max": 0.9054878354072571,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_012.hdf5",
+      "time": 2.32379000772445,
+      "sha256": "c820e2eb516f2e2d3e929f61c8c3a82359700a5870c05ce55a43bab4a6a15301",
+      "fields": {
+        "Masses": {
+          "min": 0.029680002480745316,
+          "max": 3.0751965045928955,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.38651129603385925,
+          "max": 539.4638671875,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.01280237641185522,
+          "max": 3.1674644947052,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.2842712700366974,
+          "max": 0.9036729335784912,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_013.hdf5",
+      "time": 2.517439175034821,
+      "sha256": "8ccd794f49c24204ca39cdc490f5f2b9cc47548990fefe7df12e557ce1c9ffe0",
+      "fields": {
+        "Masses": {
+          "min": 0.030123064294457436,
+          "max": 3.081295967102051,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.3872782289981842,
+          "max": 625.5518188476562,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.01215097215026617,
+          "max": 3.1569175720214844,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.2735162079334259,
+          "max": 0.9097842574119568,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_014.hdf5",
+      "time": 2.7110883423451915,
+      "sha256": "70a793001770e536eb1c286731a4323a374aea66d61d3f44255d71b7207f616b",
+      "fields": {
+        "Masses": {
+          "min": 0.02982194535434246,
+          "max": 3.086395502090454,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.40804940462112427,
+          "max": 607.4757690429688,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.011546910740435123,
+          "max": 3.1164116859436035,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.2657768428325653,
+          "max": 0.9358040690422058,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_015.hdf5",
+      "time": 2.904737509655562,
+      "sha256": "79d3e053ca7d299899fb40092b4a2ab85fd1772d1de6b5bced7e591197ef1574",
+      "fields": {
+        "Masses": {
+          "min": 0.029904797673225403,
+          "max": 3.0914418697357178,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.3643732964992523,
+          "max": 571.9860229492188,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.011052009649574757,
+          "max": 3.0935137271881104,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.25839293003082275,
+          "max": 0.9334226250648499,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_016.hdf5",
+      "time": 3.0983866769659323,
+      "sha256": "a269eb2ca7188bec99f1c053d089acb1cf78361cd1e2eafe9aaec772dc9034d1",
+      "fields": {
+        "Masses": {
+          "min": 0.029685864225029945,
+          "max": 3.0950918197631836,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.3537134528160095,
+          "max": 566.0868530273438,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.010653047822415829,
+          "max": 3.0698933601379395,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.2508504092693329,
+          "max": 0.9041849374771118,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_017.hdf5",
+      "time": 3.2920358442763034,
+      "sha256": "fc428a14459aca6762575f4b60730ab8d242c251156d6f655d71167f41626799",
+      "fields": {
+        "Masses": {
+          "min": 0.030378835275769234,
+          "max": 3.0534048080444336,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.38771378993988037,
+          "max": 566.341552734375,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.010353682562708855,
+          "max": 3.02657151222229,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.24468472599983215,
+          "max": 0.8945179581642151,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_018.hdf5",
+      "time": 3.485685011586674,
+      "sha256": "df9166682832976525a834d4363878c01a16a8f807f65ad19df376f68e0a8110",
+      "fields": {
+        "Masses": {
+          "min": 0.029542122036218643,
+          "max": 3.0577969551086426,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.40458396077156067,
+          "max": 603.5148315429688,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.010145602747797966,
+          "max": 3.045111656188965,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.23496827483177185,
+          "max": 0.8916199207305908,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_019.hdf5",
+      "time": 3.6793341788970446,
+      "sha256": "2c480db140e55aed5a51944b44adb3ebd716d298b18cc5b5f540234676ec5d4f",
+      "fields": {
+        "Masses": {
+          "min": 0.029975082725286484,
+          "max": 3.0606842041015625,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.4083264172077179,
+          "max": 613.9765625,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.010054522193968296,
+          "max": 3.086764335632324,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.22635073959827423,
+          "max": 0.880963921546936,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_020.hdf5",
+      "time": 3.8729833462074152,
+      "sha256": "7fc674d7b31b791c148753c67c45ebec4db86ec6a19a5961a1dd43666fc3973a",
+      "fields": {
+        "Masses": {
+          "min": 0.02964331954717636,
+          "max": 3.063149929046631,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.40445515513420105,
+          "max": 619.546142578125,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.010077543556690216,
+          "max": 3.143671989440918,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.21981003880500793,
+          "max": 0.8706162571907043,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_021.hdf5",
+      "time": 4.066632513517786,
+      "sha256": "561994bfa458d60527005999485dac7df782947e822bc6e70d8af1056cdaecbb",
+      "fields": {
+        "Masses": {
+          "min": 0.029993871226906776,
+          "max": 3.0660345554351807,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.3877332806587219,
+          "max": 688.3164672851562,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.010190497152507305,
+          "max": 3.058342695236206,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.21618609130382538,
+          "max": 0.8724038004875183,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_022.hdf5",
+      "time": 4.2602816808281565,
+      "sha256": "5ff9531b9e996d9b38bd5132883c171fea2daa8a9dd418a4c7b76c17bed6a939",
+      "fields": {
+        "Masses": {
+          "min": 0.030027087777853012,
+          "max": 3.0697131156921387,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.40594756603240967,
+          "max": 686.4369506835938,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.01006981823593378,
+          "max": 3.106130838394165,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.21027982234954834,
+          "max": 0.8709826469421387,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_023.hdf5",
+      "time": 4.453930848138527,
+      "sha256": "1548fc3b5b3fe587fbc05b960ae753a57d8cf028ed65699ef020817d95ded858",
+      "fields": {
+        "Masses": {
+          "min": 0.029937630519270897,
+          "max": 3.07187819480896,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.4000527858734131,
+          "max": 765.2413940429688,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.00993762630969286,
+          "max": 3.1546075344085693,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.20510707795619965,
+          "max": 0.8653888702392578,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_024.hdf5",
+      "time": 4.647580015448898,
+      "sha256": "f0d3c1a25e67421ad3c8c2276c5ee237ad13d5b71dcd287fd3b52a7cc11f3950",
+      "fields": {
+        "Masses": {
+          "min": 0.029685229063034058,
+          "max": 3.075897693634033,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.4059988856315613,
+          "max": 845.472412109375,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.009858176112174988,
+          "max": 3.1182973384857178,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.20628948509693146,
+          "max": 0.8554549217224121,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_025.hdf5",
+      "time": 4.841229182759268,
+      "sha256": "5f0ecbc206fee01b4aaca376e5af6dbafd9cd58c276473c447af5d58094047be",
+      "fields": {
+        "Masses": {
+          "min": 0.02936469577252865,
+          "max": 3.0765702724456787,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.4148538112640381,
+          "max": 887.8911743164062,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.009835394099354744,
+          "max": 3.0546889305114746,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.20611946284770966,
+          "max": 0.8593100905418396,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_026.hdf5",
+      "time": 5.034878350069639,
+      "sha256": "efa7c464189bd32e176d37d6e2ddd2461c31b3144ef8f3270ebfd036ed3c3d6b",
+      "fields": {
+        "Masses": {
+          "min": 0.029875289648771286,
+          "max": 3.0552380084991455,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.44494330883026123,
+          "max": 907.1135864257812,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.00986542459577322,
+          "max": 3.024071455001831,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.2022123783826828,
+          "max": 0.8509568572044373,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_027.hdf5",
+      "time": 5.22852751738001,
+      "sha256": "5cc02f9fd6a27787f43c5f2ace7160fb4fb9e89ca5b1981504b16350b6b70f10",
+      "fields": {
+        "Masses": {
+          "min": 0.029577916488051414,
+          "max": 3.0584211349487305,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.46606767177581787,
+          "max": 921.0618896484375,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.009896773844957352,
+          "max": 3.058971643447876,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.19571764767169952,
+          "max": 0.8333002328872681,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_028.hdf5",
+      "time": 5.422176684690379,
+      "sha256": "4c0a989127dc9580997bd9827fdf3371aa140dc0880d642afdd584eb965481ed",
+      "fields": {
+        "Masses": {
+          "min": 0.029739344492554665,
+          "max": 3.061814546585083,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.47909337282180786,
+          "max": 957.9076538085938,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.009363215416669846,
+          "max": 3.1107635498046875,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.18823765218257904,
+          "max": 0.8192563652992249,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_029.hdf5",
+      "time": 5.615825852000751,
+      "sha256": "26dc4518388f3b94ba2de8864702bfb55839f7eb21046ccc15cd3da7eddf42a3",
+      "fields": {
+        "Masses": {
+          "min": 0.029222965240478516,
+          "max": 3.0660855770111084,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.48169606924057007,
+          "max": 1004.1316528320312,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.009549104608595371,
+          "max": 3.102189540863037,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.18190214037895203,
+          "max": 0.812075138092041,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_030.hdf5",
+      "time": 5.8094750193111215,
+      "sha256": "50407c13b72c37c3f922268e004d29d919ed207b95698f3b7bd4ae236f2ca9d7",
+      "fields": {
+        "Masses": {
+          "min": 0.030085988342761993,
+          "max": 3.069979190826416,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.49769121408462524,
+          "max": 1047.078125,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.009674247354269028,
+          "max": 3.0301663875579834,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.1782924234867096,
+          "max": 0.7865719199180603,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_031.hdf5",
+      "time": 6.003124186621492,
+      "sha256": "fa5d75e146f842e440530c9aaa0c2db5e1c2178fce9977a492cd76f7ef80acaa",
+      "fields": {
+        "Masses": {
+          "min": 0.029739951714873314,
+          "max": 3.074643850326538,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.5387917160987854,
+          "max": 1063.9468994140625,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.010124294087290764,
+          "max": 3.0470449924468994,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.17705024778842926,
+          "max": 0.7776524424552917,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_032.hdf5",
+      "time": 6.196773353931863,
+      "sha256": "26732512292c88e25c20fa25ff89cecc551cddd3a5d207e097090688247e86bb",
+      "fields": {
+        "Masses": {
+          "min": 0.02973788045346737,
+          "max": 3.077713966369629,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.5477187037467957,
+          "max": 1075.270751953125,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.009963690303266048,
+          "max": 3.0841269493103027,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.17783400416374207,
+          "max": 0.7705438733100891,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_033.hdf5",
+      "time": 6.390422521242233,
+      "sha256": "301033a1236a01b1775a8167dfcf1aa562ad3ed1993ffa20cb425df7a42a07d1",
+      "fields": {
+        "Masses": {
+          "min": 0.029001818969845772,
+          "max": 3.0779786109924316,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.5266768932342529,
+          "max": 1100.273681640625,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.01011361088603735,
+          "max": 3.0606932640075684,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.17860062420368195,
+          "max": 0.7704976201057434,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_034.hdf5",
+      "time": 6.584071688552604,
+      "sha256": "c8743d4d561667214e343fdbd5a5724f853ca5af30929af7a6ed13f2ab3a72b4",
+      "fields": {
+        "Masses": {
+          "min": 0.030131515115499496,
+          "max": 3.0534956455230713,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.5102354288101196,
+          "max": 1123.4578857421875,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.010482878424227238,
+          "max": 3.0559792518615723,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.1784076690673828,
+          "max": 0.7746695876121521,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_035.hdf5",
+      "time": 6.777720855862975,
+      "sha256": "19c976bd2dac490987f155e4de851c4187c0505ff0f509b4254ee5a384380327",
+      "fields": {
+        "Masses": {
+          "min": 0.02970355935394764,
+          "max": 3.055743455886841,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.45535334944725037,
+          "max": 1159.440185546875,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.010787608101963997,
+          "max": 3.06907320022583,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.17832496762275696,
+          "max": 0.8045169115066528,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_036.hdf5",
+      "time": 6.971370023173346,
+      "sha256": "ca3a24317e4494416fc47fa9a49cbced604cf92802c10bc2b5ca980b5f40f510",
+      "fields": {
+        "Masses": {
+          "min": 0.029436038807034492,
+          "max": 3.057938814163208,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.44192707538604736,
+          "max": 1186.8499755859375,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.010838230140507221,
+          "max": 3.096867799758911,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.17969024181365967,
+          "max": 0.8083367347717285,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_037.hdf5",
+      "time": 7.165019190483716,
+      "sha256": "7511e93c9e60479d970133f61f17e5b0418ea12ae9bfebc9184ee0cff93b3b11",
+      "fields": {
+        "Masses": {
+          "min": 0.02922857739031315,
+          "max": 3.0612196922302246,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.4470149874687195,
+          "max": 1201.0142822265625,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.010779717937111855,
+          "max": 2.938822031021118,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.18264548480510712,
+          "max": 0.8048675656318665,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_038.hdf5",
+      "time": 7.358668357794087,
+      "sha256": "7524bfea1949b531561d81bb4ddaef3b3918aedf5dc1bb360fb490e55bcd3c0d",
+      "fields": {
+        "Masses": {
+          "min": 0.03010009415447712,
+          "max": 3.0647456645965576,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.44950199127197266,
+          "max": 1206.7257080078125,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.010826071724295616,
+          "max": 2.9471709728240967,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.1864728331565857,
+          "max": 0.8049483895301819,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_039.hdf5",
+      "time": 7.552317525104456,
+      "sha256": "7a573a52ee40c6bf8449e1582596a4b677e176f2acdec117617641cc81e3a789",
+      "fields": {
+        "Masses": {
+          "min": 0.029763678088784218,
+          "max": 3.0687344074249268,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.45216765999794006,
+          "max": 1170.229248046875,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.010915424674749374,
+          "max": 2.8603463172912598,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.1868860274553299,
+          "max": 0.8109509348869324,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_040.hdf5",
+      "time": 7.745966692414828,
+      "sha256": "349097854570f5519cafd76f98e0a4c07c7bc6b376c3adb0f2cdf5cf6d4361fc",
+      "fields": {
+        "Masses": {
+          "min": 0.02974480204284191,
+          "max": 3.0761404037475586,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.4442576766014099,
+          "max": 1208.15380859375,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.010708811692893505,
+          "max": 2.7696433067321777,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.18888208270072937,
+          "max": 0.8112881779670715,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_041.hdf5",
+      "time": 7.9396158597251985,
+      "sha256": "aaead5e36856f276c0fe1f1cea9f8d8085b237af1d80cd5a84e7da0009a356f6",
+      "fields": {
+        "Masses": {
+          "min": 0.02891039289534092,
+          "max": 3.079008102416992,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.434262752532959,
+          "max": 1210.1641845703125,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.010558187030255795,
+          "max": 2.7579941749572754,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.19201166927814484,
+          "max": 0.8171934485435486,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_042.hdf5",
+      "time": 8.13326502703557,
+      "sha256": "b867b46b149f1844926010692968b3cde23526033786d756dc7653265dfcf9ce",
+      "fields": {
+        "Masses": {
+          "min": 0.03036782704293728,
+          "max": 3.052974224090576,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.47079649567604065,
+          "max": 1175.437255859375,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.009069356136023998,
+          "max": 2.876727819442749,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.19471442699432373,
+          "max": 0.7952983975410461,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_043.hdf5",
+      "time": 8.32691419434594,
+      "sha256": "d6e12779998ee95a017abeafcab9786a468ea70bf78530499b630553776ef724",
+      "fields": {
+        "Masses": {
+          "min": 0.029964787885546684,
+          "max": 3.056607723236084,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.4922417104244232,
+          "max": 1169.4840087890625,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.006924997549504042,
+          "max": 2.7401249408721924,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.19590769708156586,
+          "max": 0.7872816324234009,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_044.hdf5",
+      "time": 8.520563361656311,
+      "sha256": "da8d7297bd5a0547f3b5b7b9785e392e53b77f1f6e3afc6539e2f727a3d95e9c",
+      "fields": {
+        "Masses": {
+          "min": 0.029732154682278633,
+          "max": 3.0604262351989746,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.4855855405330658,
+          "max": 1160.904541015625,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.006450666580349207,
+          "max": 2.787315845489502,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.19493307173252106,
+          "max": 0.78282231092453,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_045.hdf5",
+      "time": 8.714212528966682,
+      "sha256": "d8ccac49ebc95de76ff85df8044079441ca0457bb8cab4b5b13e9de7a02ca483",
+      "fields": {
+        "Masses": {
+          "min": 0.029294637963175774,
+          "max": 3.0639119148254395,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.4847266674041748,
+          "max": 1162.1075439453125,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.006364538799971342,
+          "max": 2.8552138805389404,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.19335971772670746,
+          "max": 0.7834197282791138,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_046.hdf5",
+      "time": 8.907861696277052,
+      "sha256": "403623a7b1b3b19a5af744ba67256607621f106eca38f3e36d943f8d5b5cf4a0",
+      "fields": {
+        "Masses": {
+          "min": 0.03001563437283039,
+          "max": 3.0669970512390137,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.48727431893348694,
+          "max": 1170.5086669921875,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.005995682906359434,
+          "max": 2.8083159923553467,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.19262275099754333,
+          "max": 0.7822644114494324,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_047.hdf5",
+      "time": 9.101510863587423,
+      "sha256": "bb573b9511898d87ccdbdf4778ba8082152a59f686dbce393cbd575ea17dbbe4",
+      "fields": {
+        "Masses": {
+          "min": 0.029769983142614365,
+          "max": 3.069840908050537,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.47586026787757874,
+          "max": 1174.0760498046875,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.0049693891778588295,
+          "max": 2.850647211074829,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.19288918375968933,
+          "max": 0.7878817915916443,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_048.hdf5",
+      "time": 9.295160030897794,
+      "sha256": "45d952297c2870c62545d2783f8ec271e19df538b0e057e9c212d3f596086b11",
+      "fields": {
+        "Masses": {
+          "min": 0.029614761471748352,
+          "max": 3.0725367069244385,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.45589762926101685,
+          "max": 1178.2476806640625,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.004867937881499529,
+          "max": 2.8350400924682617,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.1936293989419937,
+          "max": 0.7990990281105042,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_049.hdf5",
+      "time": 9.488809198208164,
+      "sha256": "daa5f837713b49002138a5ff38cb8b8ed1c8c8e6b764b4e77e31e7ff50b916ba",
+      "fields": {
+        "Masses": {
+          "min": 0.029538793489336967,
+          "max": 3.0759401321411133,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.4407323896884918,
+          "max": 1183.1634521484375,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.0047705648466944695,
+          "max": 3.0035316944122314,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.19519303739070892,
+          "max": 0.8080826997756958,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_050.hdf5",
+      "time": 9.682458365518535,
+      "sha256": "ac773857289a953c5038d13bdf970d498075f82190453ae2e217a0ddd9e5a689",
+      "fields": {
+        "Masses": {
+          "min": 0.02888096496462822,
+          "max": 3.079219102859497,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.43936342000961304,
+          "max": 1178.0594482421875,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.005235367454588413,
+          "max": 3.0767784118652344,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.19728371500968933,
+          "max": 0.810029149055481,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_051.hdf5",
+      "time": 9.876107532828904,
+      "sha256": "408d5414c31b3363118e0ec3ae3a5516a729e1fa89d96a0017f738d5926a7a84",
+      "fields": {
+        "Masses": {
+          "min": 0.029846319928765297,
+          "max": 3.0548717975616455,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.45710986852645874,
+          "max": 1174.19482421875,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.00261354586109519,
+          "max": 3.1399643421173096,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.19991272687911987,
+          "max": 0.7999267578125,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_052.hdf5",
+      "time": 10.069756700139276,
+      "sha256": "7383b8cc304dcc977193b3f5db5a6a53dabb8f89b8b18ba8a243472a6666942e",
+      "fields": {
+        "Masses": {
+          "min": 0.029672831296920776,
+          "max": 3.057382345199585,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.4878084659576416,
+          "max": 1180.742919921875,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.00016897913883440197,
+          "max": 3.069349527359009,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.20004098117351532,
+          "max": 0.7827655076980591,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_053.hdf5",
+      "time": 10.263405867449647,
+      "sha256": "feee2b590542c23e9a5e2b5dfd61efae7e082624723b038aabfda014ef8a0023",
+      "fields": {
+        "Masses": {
+          "min": 0.0294051431119442,
+          "max": 3.0597987174987793,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.5002140402793884,
+          "max": 1188.8707275390625,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 6.294963465422465e-13,
+          "max": 2.9272613525390625,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.19976454973220825,
+          "max": 0.7767012715339661,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_054.hdf5",
+      "time": 10.457055034760018,
+      "sha256": "e2323e2d3e296e1332e4a680e31bbe3172ffa9984ea50db8db43f43b142a7c8c",
+      "fields": {
+        "Masses": {
+          "min": 0.029199855402112007,
+          "max": 3.061323404312134,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.5000908374786377,
+          "max": 1187.013427734375,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 7.50418122461136e-20,
+          "max": 2.809661865234375,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.20009690523147583,
+          "max": 0.7760909199714661,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_055.hdf5",
+      "time": 10.650704202070388,
+      "sha256": "34f1763c9e6cea5465761142c0b4c66e0d935a5bf32b6fb433023c3f31911160",
+      "fields": {
+        "Masses": {
+          "min": 0.029179533943533897,
+          "max": 3.0619540214538574,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.49876847863197327,
+          "max": 1175.6475830078125,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 7.931204208944109e-07,
+          "max": 2.727735996246338,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.20172040164470673,
+          "max": 0.7766215801239014,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_056.hdf5",
+      "time": 10.844353369380759,
+      "sha256": "dbd427ea1e16acfbb6a611bdecb77638508ae968336addad2a8a9b9aa71f37e2",
+      "fields": {
+        "Masses": {
+          "min": 0.028977688401937485,
+          "max": 3.061528205871582,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.4950057566165924,
+          "max": 1159.4962158203125,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 7.563785752243146e-13,
+          "max": 2.6537234783172607,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.20397837460041046,
+          "max": 0.7783252000808716,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_057.hdf5",
+      "time": 11.038002536691128,
+      "sha256": "e42d8ab335a297a9894dae500cd482b58cb48ee947e6f537a423b60813fe278c",
+      "fields": {
+        "Masses": {
+          "min": 0.02820460870862007,
+          "max": 3.06268048286438,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.4933323860168457,
+          "max": 1176.74267578125,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.0002698870375752449,
+          "max": 2.595198392868042,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.20611733198165894,
+          "max": 0.7796902060508728,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_058.hdf5",
+      "time": 11.2316517040015,
+      "sha256": "0b83648cdcb7a0f6f60407d2373bdd4ec39b57f9d1dce76dbad6426920038762",
+      "fields": {
+        "Masses": {
+          "min": 0.028164567425847054,
+          "max": 3.065931558609009,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.49566948413848877,
+          "max": 1167.222900390625,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.0018372706836089492,
+          "max": 2.73870849609375,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.20709016919136047,
+          "max": 0.7784797549247742,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_059.hdf5",
+      "time": 11.42530087131187,
+      "sha256": "b53c5be0b504994855ea45314137cb4f2541aee6081ae1e4c5b84bd82ad5bdc9",
+      "fields": {
+        "Masses": {
+          "min": 0.030272454023361206,
+          "max": 3.0531928539276123,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.4994666278362274,
+          "max": 1133.0528564453125,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 1.103856266126968e-05,
+          "max": 2.8103511333465576,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.2080618441104889,
+          "max": 0.7762517333030701,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_060.hdf5",
+      "time": 11.618950038622241,
+      "sha256": "f4d5c14f6499ff50039b72dfc017d5abbe9ed42db1923e320723a25181ada23a",
+      "fields": {
+        "Masses": {
+          "min": 0.02986249327659607,
+          "max": 3.0559182167053223,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.497893750667572,
+          "max": 1115.628662109375,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 1.0527193700093918e-11,
+          "max": 2.7773289680480957,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.20624713599681854,
+          "max": 0.7771008610725403,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_061.hdf5",
+      "time": 11.812599205932612,
+      "sha256": "6fd0493bd614611240a1b87412107a3d1770a5798f203b79dcb94962fd4bbeaa",
+      "fields": {
+        "Masses": {
+          "min": 0.029679931700229645,
+          "max": 3.058223247528076,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.4968618154525757,
+          "max": 1094.2943115234375,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 5.019757127806624e-18,
+          "max": 2.721005439758301,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.20413410663604736,
+          "max": 0.7775312066078186,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_062.hdf5",
+      "time": 12.00624837324298,
+      "sha256": "44417b9a0b3ff7d8a42a90c9f6a976c14fe5e2057d7c70f82edfb3dddfca4781",
+      "fields": {
+        "Masses": {
+          "min": 0.029324332252144814,
+          "max": 3.0615313053131104,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.4982265830039978,
+          "max": 1076.345458984375,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 1.277731342952393e-07,
+          "max": 2.6673388481140137,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.20198169350624084,
+          "max": 0.7764517068862915,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_063.hdf5",
+      "time": 12.199897540553353,
+      "sha256": "9eb637ba849ad63b7c8ab31300b7c687d0ac9d6c751752dce418e065f08684c0",
+      "fields": {
+        "Masses": {
+          "min": 0.029579441994428635,
+          "max": 3.0646908283233643,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.4959242343902588,
+          "max": 1064.4610595703125,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.00014061196998227388,
+          "max": 2.7986531257629395,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.19987323880195618,
+          "max": 0.7774187326431274,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_064.hdf5",
+      "time": 12.393546707863724,
+      "sha256": "1435f83ca8309d57b612e9aba2724e6c200762e8e5c5118bda9ea9678ee92693",
+      "fields": {
+        "Masses": {
+          "min": 0.029361726716160774,
+          "max": 3.06760573387146,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.48799654841423035,
+          "max": 1049.8369140625,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 4.261821173745517e-10,
+          "max": 2.560438632965088,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.19854654371738434,
+          "max": 0.7818115949630737,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_065.hdf5",
+      "time": 12.587195875174094,
+      "sha256": "0db4644e9fd7b59e40b1335830a311f800f7c374fc0df9bd0a3450ed84f9cab9",
+      "fields": {
+        "Masses": {
+          "min": 0.028935616835951805,
+          "max": 3.0705292224884033,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.48470303416252136,
+          "max": 1032.2515869140625,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 2.032194697258719e-16,
+          "max": 2.534071445465088,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.19841237366199493,
+          "max": 0.7835743427276611,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_066.hdf5",
+      "time": 12.780845042484465,
+      "sha256": "448e4a8456012faf57a9cc1a96d505476440c0c30f9b966dd89ac1e0b2e7b3a9",
+      "fields": {
+        "Masses": {
+          "min": 0.028775610029697418,
+          "max": 3.073054552078247,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.484929621219635,
+          "max": 1015.7742919921875,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 1.938051888712615e-22,
+          "max": 2.5124125480651855,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.19848379492759705,
+          "max": 0.7833369970321655,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_067.hdf5",
+      "time": 12.974494209794836,
+      "sha256": "ad793376b140e4bcd8e0413169369d88ec047fab65a1577947db21cfe6574e59",
+      "fields": {
+        "Masses": {
+          "min": 0.03040028177201748,
+          "max": 3.052642345428467,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.4928141236305237,
+          "max": 1003.5033569335938,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 1.7232530235677251e-13,
+          "max": 2.563882350921631,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.1983775943517685,
+          "max": 0.7791277170181274,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_068.hdf5",
+      "time": 13.168143377105205,
+      "sha256": "3a50a35037feb84aa3b4d0898519e2aa52fc687cef8a466a68475decfd91384e",
+      "fields": {
+        "Masses": {
+          "min": 0.02996169775724411,
+          "max": 3.0552608966827393,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.49010956287384033,
+          "max": 993.8130493164062,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.0006377864046953619,
+          "max": 2.6042938232421875,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.1989922970533371,
+          "max": 0.7833576798439026,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_069.hdf5",
+      "time": 13.361792544415577,
+      "sha256": "21df0784fde1b5986ac9d8f2950724cf06a1bea03185f8564fbf8fb2b6222fce",
+      "fields": {
+        "Masses": {
+          "min": 0.029655635356903076,
+          "max": 3.057600736618042,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.4875147342681885,
+          "max": 1001.8342895507812,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.0022470939438790083,
+          "max": 2.623983383178711,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.19914087653160095,
+          "max": 0.7847394943237305,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_070.hdf5",
+      "time": 13.555441711725948,
+      "sha256": "b5343a42dd0854cd7b5658df312c1b3344e5454a48a5728be86368c64e482d58",
+      "fields": {
+        "Masses": {
+          "min": 0.029510514810681343,
+          "max": 3.0599730014801025,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.48775067925453186,
+          "max": 1017.7763061523438,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.0007792721153236926,
+          "max": 2.657933473587036,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.1985010802745819,
+          "max": 0.7820262908935547,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_071.hdf5",
+      "time": 13.749090879036318,
+      "sha256": "20be81bc214a0752d17e53ce97520ebe91263ecd8789f501aca6c9531ed42305",
+      "fields": {
+        "Masses": {
+          "min": 0.02978537231683731,
+          "max": 3.0613346099853516,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.49219268560409546,
+          "max": 1061.814697265625,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.0003178329498041421,
+          "max": 2.6737470626831055,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.19659438729286194,
+          "max": 0.7809300422668457,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_072.hdf5",
+      "time": 13.942740046346689,
+      "sha256": "526e60a62300b58c2bd24468e67ecb77911c4b9820064fe9dead84526bbf0f4c",
+      "fields": {
+        "Masses": {
+          "min": 0.029589420184493065,
+          "max": 3.0634140968322754,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.48418548703193665,
+          "max": 1087.5711669921875,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.0007035246817395091,
+          "max": 2.7072484493255615,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.19476348161697388,
+          "max": 0.7842388153076172,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_073.hdf5",
+      "time": 14.136389213657058,
+      "sha256": "f3bab0d9529c33a7fb4f954ed4f9eeb6bb41eb2cfd28a23f4697b1b55ef15788",
+      "fields": {
+        "Masses": {
+          "min": 0.0288554597645998,
+          "max": 3.0649049282073975,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.4757874310016632,
+          "max": 1069.2891845703125,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.0006691034650430083,
+          "max": 2.803980588912964,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.19126246869564056,
+          "max": 0.790071964263916,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_074.hdf5",
+      "time": 14.33003838096743,
+      "sha256": "0d4cff4ff66e99d88b200a2a1854f166400f102b796c530829efd7867174f375",
+      "fields": {
+        "Masses": {
+          "min": 0.029193652793765068,
+          "max": 3.0666451454162598,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.4755951762199402,
+          "max": 1057.801513671875,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 3.356463371129159e-11,
+          "max": 2.858426570892334,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.18805399537086487,
+          "max": 0.7887298464775085,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_075.hdf5",
+      "time": 14.5236875482778,
+      "sha256": "ea36ff23969b1289f8063792ca1492dc8f3b472bae1f5f16f6a613fcda0f4080",
+      "fields": {
+        "Masses": {
+          "min": 0.02891475334763527,
+          "max": 3.0687601566314697,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.46070632338523865,
+          "max": 1054.9736328125,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 4.7744290299078784e-08,
+          "max": 2.8341927528381348,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.1853145956993103,
+          "max": 0.8010746240615845,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_076.hdf5",
+      "time": 14.717336715588171,
+      "sha256": "1084c227dac4e5bcd2377f02ab3d99b26b27a182beac7830b81e5f506c144d3e",
+      "fields": {
+        "Masses": {
+          "min": 0.03009425848722458,
+          "max": 3.0537664890289307,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.4496660828590393,
+          "max": 1080.897216796875,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 1.1116333841131717e-17,
+          "max": 2.7463762760162354,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.18301066756248474,
+          "max": 0.8064648509025574,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_077.hdf5",
+      "time": 14.910985882898542,
+      "sha256": "0ca5e39797eb95ffa6e772bf3d6d0d047108ff7ed6be1cdec109293fe6b19424",
+      "fields": {
+        "Masses": {
+          "min": 0.02954094111919403,
+          "max": 3.0560128688812256,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.4740922749042511,
+          "max": 1107.7603759765625,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 4.141157061283185e-26,
+          "max": 2.802318572998047,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.1810266226530075,
+          "max": 0.7909139394760132,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_078.hdf5",
+      "time": 15.104635050208913,
+      "sha256": "37e4aa27b652bf51d74a9a7c694c8d2bc16eb3715960b5aeaafb4d1f0c88ddeb",
+      "fields": {
+        "Masses": {
+          "min": 0.02948847785592079,
+          "max": 3.058204412460327,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.4703775644302368,
+          "max": 1147.8646240234375,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 2.410470660125828e-36,
+          "max": 2.8681719303131104,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.17924396693706512,
+          "max": 0.7908252477645874,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_079.hdf5",
+      "time": 15.298284217519281,
+      "sha256": "4efc9ae1b7e9a77d42de70a7d88fbbd07f70d99a88512ed983c083e73c33a15d",
+      "fields": {
+        "Masses": {
+          "min": 0.029270756989717484,
+          "max": 3.060249090194702,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.4866306185722351,
+          "max": 1195.2401123046875,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.0,
+          "max": 2.8061347007751465,
+          "nonpositive": 1,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.1776956468820572,
+          "max": 0.7848429083824158,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_080.hdf5",
+      "time": 15.491933384829654,
+      "sha256": "725a510f21322278696a41dc8dbaf2f329e8bf3bc3a231e052927b024626da8a",
+      "fields": {
+        "Masses": {
+          "min": 0.029582012444734573,
+          "max": 3.061659097671509,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.48951253294944763,
+          "max": 1215.5826416015625,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.0,
+          "max": 2.770306348800659,
+          "nonpositive": 1,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.1760805994272232,
+          "max": 0.7850707769393921,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_081.hdf5",
+      "time": 15.685582552140025,
+      "sha256": "17607684fc7477297c80572885ad08d803f68bbb5caf570054893a240787c632",
+      "fields": {
+        "Masses": {
+          "min": 0.02921968698501587,
+          "max": 3.0628159046173096,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.4819633662700653,
+          "max": 1244.2215576171875,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.0,
+          "max": 2.7637486457824707,
+          "nonpositive": 1,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.1750267595052719,
+          "max": 0.7871036529541016,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_082.hdf5",
+      "time": 15.879231719450395,
+      "sha256": "40f003e3039b46c89cc9d8628e6285771f3fb9f1bf70b6ee1fdf252c85e9c7bb",
+      "fields": {
+        "Masses": {
+          "min": 0.029140258207917213,
+          "max": 3.064199447631836,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.48101070523262024,
+          "max": 1301.133544921875,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.0,
+          "max": 2.7360894680023193,
+          "nonpositive": 1,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.1754247546195984,
+          "max": 0.7895275950431824,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_083.hdf5",
+      "time": 16.072880886760768,
+      "sha256": "8397619ac40a5db7df303d349b195d19ecc39ab5c1dde58593b965856fc0e54b",
+      "fields": {
+        "Masses": {
+          "min": 0.028909651562571526,
+          "max": 3.0652823448181152,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.46398672461509705,
+          "max": 1347.09375,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.0,
+          "max": 2.6665773391723633,
+          "nonpositive": 1,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.17362119257450104,
+          "max": 0.7968922257423401,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_084.hdf5",
+      "time": 16.26653005407114,
+      "sha256": "b08bac58fe1add9540e6a6c6a98c6ce6a53effaed26570e1361c8ecf72857510",
+      "fields": {
+        "Masses": {
+          "min": 0.03023873083293438,
+          "max": 3.052856922149658,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.45156124234199524,
+          "max": 1363.4876708984375,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 9.377040299796136e-08,
+          "max": 2.731569528579712,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.17048528790473938,
+          "max": 0.8046929836273193,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_085.hdf5",
+      "time": 16.460179221381512,
+      "sha256": "0e798aaafdf67105db6398c54944ee7d4161fe30428382fadc09ba790d8a550c",
+      "fields": {
+        "Masses": {
+          "min": 0.02993449755012989,
+          "max": 3.05454158782959,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.4300616979598999,
+          "max": 1400.2467041015625,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 8.942642497821937e-14,
+          "max": 2.741473913192749,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.16794632375240326,
+          "max": 0.8147497177124023,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_086.hdf5",
+      "time": 16.653828388691885,
+      "sha256": "6fc33d1630534c8e3c2825c90fddac0435c42e53ff5b7f540232f2eb4e3b76b7",
+      "fields": {
+        "Masses": {
+          "min": 0.029675522819161415,
+          "max": 3.056086778640747,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.42829325795173645,
+          "max": 1428.619873046875,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 4.264184235487908e-20,
+          "max": 2.7857112884521484,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.16581988334655762,
+          "max": 0.8192806243896484,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_087.hdf5",
+      "time": 16.847477556002257,
+      "sha256": "fd3a1257176d5c411b5ba7bd9c29ebd5ca8272eaab49593fb72fe0c9b1d0f6c2",
+      "fields": {
+        "Masses": {
+          "min": 0.02921333909034729,
+          "max": 3.0580060482025146,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.4324856102466583,
+          "max": 1476.4051513671875,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 1.9413767630030863e-31,
+          "max": 2.9303066730499268,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.16355440020561218,
+          "max": 0.8167967796325684,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_088.hdf5",
+      "time": 17.04112672331263,
+      "sha256": "888714c6660f63943898ffc0e3cd571e052efabcb88fa01abc7339006d059162",
+      "fields": {
+        "Masses": {
+          "min": 0.02931389771401882,
+          "max": 3.0594229698181152,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.412934809923172,
+          "max": 1518.9693603515625,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.0,
+          "max": 3.0338640213012695,
+          "nonpositive": 1,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.1613416224718094,
+          "max": 0.8315707445144653,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_089.hdf5",
+      "time": 17.234775890623002,
+      "sha256": "f966c0e966787f1d23a8bd48888869eb60fdecd92d803370088e2632fa41014d",
+      "fields": {
+        "Masses": {
+          "min": 0.029396535828709602,
+          "max": 3.060034990310669,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.4221211373806,
+          "max": 1599.8311767578125,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.0,
+          "max": 3.0661330223083496,
+          "nonpositive": 2,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.15932388603687286,
+          "max": 0.8226642608642578,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_090.hdf5",
+      "time": 17.428425057933374,
+      "sha256": "f29aae6f2dda87dd52390d2c0daf419a9f083490a6a7a7e3ca22137cef148d40",
+      "fields": {
+        "Masses": {
+          "min": 0.028777675703167915,
+          "max": 3.0594496726989746,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.4228486716747284,
+          "max": 1580.83056640625,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.0,
+          "max": 3.0729174613952637,
+          "nonpositive": 3,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.15720650553703308,
+          "max": 0.8216126561164856,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_091.hdf5",
+      "time": 17.622074225243747,
+      "sha256": "744addf0b9c527c64bf698236112e154c1dd4c022fbdfa40a985923499b89c01",
+      "fields": {
+        "Masses": {
+          "min": 0.029014786705374718,
+          "max": 3.0600173473358154,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.41799744963645935,
+          "max": 1589.3104248046875,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.0,
+          "max": 3.0899882316589355,
+          "nonpositive": 3,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.15554043650627136,
+          "max": 0.8250564932823181,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_092.hdf5",
+      "time": 17.81572339255412,
+      "sha256": "8c37b4eb2486e965da32a94881f009aa2cb4620038818387d13783719ef48a44",
+      "fields": {
+        "Masses": {
+          "min": 0.03037547692656517,
+          "max": 3.0520198345184326,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.448757529258728,
+          "max": 1580.8238525390625,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.0,
+          "max": 2.9267210960388184,
+          "nonpositive": 2,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.15480627119541168,
+          "max": 0.8047066926956177,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_093.hdf5",
+      "time": 18.00937255986449,
+      "sha256": "afdb6ed712fe6b99d98f993b8545b1fe7156387daad5ef692b1ed29a1fe142cd",
+      "fields": {
+        "Masses": {
+          "min": 0.02994583174586296,
+          "max": 3.0525450706481934,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.4411464035511017,
+          "max": 1599.9853515625,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.0,
+          "max": 2.8222005367279053,
+          "nonpositive": 3,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.15507207810878754,
+          "max": 0.8124224543571472,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_094.hdf5",
+      "time": 18.203021727174864,
+      "sha256": "efda3ad80c2d7fd8058e8d43d6f6251e8e3f9bf6134926e8ec4277d22aaef6fb",
+      "fields": {
+        "Masses": {
+          "min": 0.02975320816040039,
+          "max": 3.053853750228882,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.43144112825393677,
+          "max": 1622.49609375,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.0,
+          "max": 2.824282646179199,
+          "nonpositive": 2,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.15610015392303467,
+          "max": 0.8167374730110168,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_095.hdf5",
+      "time": 18.396670894485236,
+      "sha256": "bf77e582aa89267b359673dac02d8d8395c1a9f76e081afe2bf5175aeb0e413d",
+      "fields": {
+        "Masses": {
+          "min": 0.029153965413570404,
+          "max": 3.0549256801605225,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.4118896722793579,
+          "max": 1647.9840087890625,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.0,
+          "max": 2.918776750564575,
+          "nonpositive": 1,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.15738581120967865,
+          "max": 0.8296477198600769,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_096.hdf5",
+      "time": 18.59032006179561,
+      "sha256": "215bdb1bc43dee79ec914d07db8623bf551bf834c9e795318f7abe54e36dcdd8",
+      "fields": {
+        "Masses": {
+          "min": 0.029627753421664238,
+          "max": 3.056147336959839,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.4319053590297699,
+          "max": 1671.3531494140625,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.0,
+          "max": 3.151202917098999,
+          "nonpositive": 1,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.15910539031028748,
+          "max": 0.8138185143470764,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_097.hdf5",
+      "time": 18.78396922910598,
+      "sha256": "be7962b07fbaafb026585cbe55f0a49006afd2b1e09884bee01ba392d2338ccf",
+      "fields": {
+        "Masses": {
+          "min": 0.02939434163272381,
+          "max": 3.056985378265381,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.4127891957759857,
+          "max": 1685.9658203125,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 9.351652518488086e-37,
+          "max": 2.9208221435546875,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.16024421155452728,
+          "max": 0.8273370265960693,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_098.hdf5",
+      "time": 18.977618396416354,
+      "sha256": "0f80f7fd41a70251bac9bccc7bf7a163bdd22f47d97850d5f5c98ed2b382eda5",
+      "fields": {
+        "Masses": {
+          "min": 0.02929803356528282,
+          "max": 3.057609796524048,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.4133307933807373,
+          "max": 1694.236083984375,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 1.3677441397300964e-26,
+          "max": 2.9522087574005127,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.15854954719543457,
+          "max": 0.8265221118927002,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_099.hdf5",
+      "time": 19.171267563726726,
+      "sha256": "8425e26947404c0361c7eeb052511cc5db7ef916a273d2cebd28e685e57c076e",
+      "fields": {
+        "Masses": {
+          "min": 0.029121750965714455,
+          "max": 3.058976173400879,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.4369877576828003,
+          "max": 1701.451416015625,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 1.2817744763920898e-36,
+          "max": 2.737910747528076,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.15674053132534027,
+          "max": 0.8133155107498169,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "file": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_100.hdf5",
+      "time": 19.364916731037084,
+      "sha256": "d5ff5113ed39822a4382fe442587bf53aa99e244cae39f133255b53ae82b8dd6",
+      "fields": {
+        "Masses": {
+          "min": 0.030517578125,
+          "max": 3.051757335662842,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "Density": {
+          "min": 0.4419713020324707,
+          "max": 1710.8359375,
+          "nonpositive": 0,
+          "nonfinite": 0
+        },
+        "InternalEnergy": {
+          "min": 0.0,
+          "max": 2.863715887069702,
+          "nonpositive": 1,
+          "nonfinite": 0
+        },
+        "SmoothingLength": {
+          "min": 0.15477082133293152,
+          "max": 0.8111940026283264,
+          "nonpositive": 0,
+          "nonfinite": 0
+        }
+      }
+    }
+  ],
+  "script_sha256": "ed34bab4beeb231663329a2af36f37f2b9991b6c787d5f5600102a3c27496141"
+}

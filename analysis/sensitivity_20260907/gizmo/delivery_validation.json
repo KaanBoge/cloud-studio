@@ -1,0 +1,31 @@
+{
+  "status": "share_mfm_with_caveats_mfv_not_certified",
+  "mfm_accepted_controls": 2,
+  "mfm_native_states_rechecked": 202,
+  "mfm_report_sha256": "65875b8ab7954967db7a6f8d2a58f0682cd257e30c7dff970cdeb067ca2ea313",
+  "mfm_plot_sha256": "2a796108307e2262045f0d6f35ad60c7069f5c5d452e5b0fc0c6b5782b12eeb9",
+  "batch_sha256": "82d1f2fb6c79a43944c06e0848ed5bcdd0ae579c1fbdd17795660c5c16c2c128",
+  "mfv_audit_sha256": "cd92d0fad6eabeb22c0f93d27926e89d25c6095b31f2cd57b403063888ccb2cc",
+  "mfv_failed_controls": 2,
+  "mfv_native_states_audited": 202,
+  "largest_direct_mass_recheck_relative_difference": 0.0,
+  "peak_curve_difference_over_initial_mass": 0.039790264893005745,
+  "resources": [
+    {
+      "mode": 0,
+      "samples": 41,
+      "median_busy_cpu_cores": 7.99571699424557,
+      "peak_sampled_child_rss_gib": 0.4888496398925781,
+      "resources_sha256": "94b72e3d393e2d3a47d14abf4abd8a75ee8bc5e7536204f49f07a438172b0f4c"
+    },
+    {
+      "mode": 1,
+      "samples": 41,
+      "median_busy_cpu_cores": 7.999518697814267,
+      "peak_sampled_child_rss_gib": 0.48848724365234375,
+      "resources_sha256": "11bba87316df667cea7eb4dd209069fb1bc9f36f5f2ac82dc37c2d8fe53f222a"
+    }
+  ],
+  "script_sha256": "bc82eb087bf9f20fcabebd317aaec5fc13bc9bce568c48967ececcc6f4dd83bd",
+  "method": "Fresh direct native sums and raw-file hashes; existing per-state independent yt evidence verified in the immutable batch. Scalar peak recomputed with fixed initial denominator. This is not a new solver run or a rerun of the completed analyzer."
+}
