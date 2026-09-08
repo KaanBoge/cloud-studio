@@ -1,0 +1,18 @@
+{
+  "verified_date_local": "2026-09-08",
+  "commit": "ee21d5d6745743c72230d7f073535f871adc8a06",
+  "remote_main_matches": true,
+  "pages_workflow_id": 34168207099,
+  "pages_conclusion": "success",
+  "report_url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/ramses/report.json",
+  "live_code": "RAMSES",
+  "live_status": "share_with_caveats",
+  "live_frames_per_variant": [101, 101, 101, 101],
+  "plot_url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/ramses/mass_and_retention.png",
+  "plot_http_status": 200,
+  "scope": "Validated scripts and analyses only; not native raw data or production viewer entries.",
+  "native_raw_retained": true,
+  "worker_ended": true,
+  "next_level_status": "L5 held_storage",
+  "next_code_to_prepare": "FLASH 4.8"
+}

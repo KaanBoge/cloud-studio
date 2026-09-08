@@ -1,0 +1,158 @@
+{
+  "status": "verified_live",
+  "verified_at_utc": "2026-09-08T11:09:35.4213799Z",
+  "commit": "1a105f1e860298f4380d053d390c1a119ecdc5a0",
+  "previous_commit": "2958c63601910de541cb6ebc33a04cd600c90179",
+  "pages_workflow_id": 34219039882,
+  "files_verified": 20,
+  "checks": [
+    {
+      "path": "analysis/README.md",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/README.md?v=1a105f1e860298f4380d053d390c1a119ecdc5a0",
+      "bytes": 12488,
+      "sha256": "33b020b028fc859d3da983182725c040f552d7f68466f5f3c1e7cb3926f67177"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/PLAN.md",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/PLAN.md?v=1a105f1e860298f4380d053d390c1a119ecdc5a0",
+      "bytes": 15457,
+      "sha256": "7fbcfc0f19c5bd8b9de8a4c331af43f1b683681e061a941213424ab54be19c2c"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/README.md",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/README.md?v=1a105f1e860298f4380d053d390c1a119ecdc5a0",
+      "bytes": 14351,
+      "sha256": "70e820e43c05ec61230f0f8e8eca7decc1bbdc7fc25316ca648ad5e221432fd1"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/.gitattributes",
+      "surface": "repository_config",
+      "url": "https://raw.githubusercontent.com/KaanBoge/cloud-studio/1a105f1e860298f4380d053d390c1a119ecdc5a0/analysis/sensitivity_20260907/gizmo/.gitattributes",
+      "bytes": 1878,
+      "sha256": "e3d9c37603692cbe650c745f01ab139e89b77498392ae7d7c930fcecca1563a2"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/MFV_REPAIRED_PAIR_VALIDATION.md",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/MFV_REPAIRED_PAIR_VALIDATION.md?v=1a105f1e860298f4380d053d390c1a119ecdc5a0",
+      "bytes": 6824,
+      "sha256": "c197b4f2448b58d405b27fb866e01a7942ec1df245d00dcc5e6e1e7f09fca577"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/MFV_SHARP_FULL_PLAN.md",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/MFV_SHARP_FULL_PLAN.md?v=1a105f1e860298f4380d053d390c1a119ecdc5a0",
+      "bytes": 2761,
+      "sha256": "13c91213534a38bba261608a496410db84449a0e9b2b34e9d8b335675b0959dd"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/MFV_SHARP_PREPARATION_PLAN.md",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/MFV_SHARP_PREPARATION_PLAN.md?v=1a105f1e860298f4380d053d390c1a119ecdc5a0",
+      "bytes": 4323,
+      "sha256": "e96a80cdf59e0e6baf23a0db4328516777aa2395f81d18d16a79d7e86a83db96"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/README.md",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/README.md?v=1a105f1e860298f4380d053d390c1a119ecdc5a0",
+      "bytes": 16705,
+      "sha256": "84eef28222705159f7985e8a29763eb0159e6937ae06f3001dab1214cd677a13"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/mass_mfv_repaired_L3.png",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/mass_mfv_repaired_L3.png?v=1a105f1e860298f4380d053d390c1a119ecdc5a0",
+      "bytes": 105660,
+      "sha256": "d429608e070f7c0dcc7fe527469acc036330563467de4648dd2c4453efea693c"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/mfv_repaired_pair.json",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/mfv_repaired_pair.json?v=1a105f1e860298f4380d053d390c1a119ecdc5a0",
+      "bytes": 194332,
+      "sha256": "db45f9d985a4e8eb87b63f0247d1d5f61572acfaab5dad6f9272dfe36b0a017d"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/mfv_repaired_plot.json",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/mfv_repaired_plot.json?v=1a105f1e860298f4380d053d390c1a119ecdc5a0",
+      "bytes": 400,
+      "sha256": "afbd789f20eb01950ed81b892bded81fa2eea8e8ae41f97c019dd5ec728ef713"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/mfv_sharp_full.py",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/mfv_sharp_full.py?v=1a105f1e860298f4380d053d390c1a119ecdc5a0",
+      "bytes": 8089,
+      "sha256": "9fffc947f892ae4b61a63f8b318f42a6d6e945587c4e6e2674ee69297c975ef4"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/mfv_sharp_prepare.py",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/mfv_sharp_prepare.py?v=1a105f1e860298f4380d053d390c1a119ecdc5a0",
+      "bytes": 20325,
+      "sha256": "3ce8cd73e44688357bb2580e3e43b4297968b30f2ff75ed524c26b05b513c5b8"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/plot_mfv_repaired_pair.py",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/plot_mfv_repaired_pair.py?v=1a105f1e860298f4380d053d390c1a119ecdc5a0",
+      "bytes": 3066,
+      "sha256": "3e57b95b0a5f2fc22396d4b358b27e575acb46b0df2ae9b32ca2e5b54dcd9c71"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/publish_mfv_repaired_pair.ps1",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/publish_mfv_repaired_pair.ps1?v=1a105f1e860298f4380d053d390c1a119ecdc5a0",
+      "bytes": 6931,
+      "sha256": "c5b897cdbe53c9fdfc5984b28bf86582758fb73ba674f37cb872a5bb0644fc7c"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/sharp_full_plan.json",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/sharp_full_plan.json?v=1a105f1e860298f4380d053d390c1a119ecdc5a0",
+      "bytes": 2636,
+      "sha256": "a4ef923f8a202224f73d79535eba42bcd3d73e6cfb7e9b9254364d62d30b0155"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/sharp_full_result.json",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/sharp_full_result.json?v=1a105f1e860298f4380d053d390c1a119ecdc5a0",
+      "bytes": 231,
+      "sha256": "871c7d1428e4db7abb8065d938fdb434fda07d028cbe161bdd326382b8163d5e"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/sharp_prepare_plan.json",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/sharp_prepare_plan.json?v=1a105f1e860298f4380d053d390c1a119ecdc5a0",
+      "bytes": 3359,
+      "sha256": "74c54e9db5785752e3193e3130e5d2a3ae94474262ce6121b24e6564adbbe6e8"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/sharp_prepare_validation.json",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/sharp_prepare_validation.json?v=1a105f1e860298f4380d053d390c1a119ecdc5a0",
+      "bytes": 41488,
+      "sha256": "41933e9cee047882a0008fe9505e7790151daa7abcef3c619fc03a4699ba97da"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/test_mfv_sharp_full.py",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/test_mfv_sharp_full.py?v=1a105f1e860298f4380d053d390c1a119ecdc5a0",
+      "bytes": 1416,
+      "sha256": "076d02b04995f275f98df71e0f39770d34ef02b33aaf8350bbf9fdbae32f12fc"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/test_mfv_sharp_prepare.py",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/test_mfv_sharp_prepare.py?v=1a105f1e860298f4380d053d390c1a119ecdc5a0",
+      "bytes": 2488,
+      "sha256": "f585f20dc31657fb2540395eb56c45cc1a93ba8ad099773ad4b6d85144d4f9ce"
+    }
+  ],
+  "scope": "Repaired MFV L3 pair validated;101 native frames per law. Historical diagnostic reused, missing sharp case newly run. Accepted total46. Native raw retained; no new production3Dviewer entries."
+}

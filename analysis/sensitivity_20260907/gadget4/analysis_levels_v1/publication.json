@@ -1,0 +1,125 @@
+{
+  "status": "verified_live",
+  "verified_at_utc": "2026-09-08T15:31:33.4496771Z",
+  "commit": "92a9d6352ad84e2cd70f0729854d678d29e9b15d",
+  "previous_commit": "584d80e1bd55b9ac8143311729d71e189341347b",
+  "pages_workflow_id": 34245055807,
+  "files_verified": 19,
+  "checks": [
+    {
+      "path": "analysis/README.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/README.md?v=92a9d6352ad84e2cd70f0729854d678d29e9b15d",
+      "bytes": 14454,
+      "sha256": "449ba1cb62345bed2cd2303975d0a0f60e7011f098496e4772cc14443523cce6"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/PLAN.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/PLAN.md?v=92a9d6352ad84e2cd70f0729854d678d29e9b15d",
+      "bytes": 19593,
+      "sha256": "d41ea074de4d0ecf527de2b9085ba00d34b13da122794be916b77b85eab01b68"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/README.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/README.md?v=92a9d6352ad84e2cd70f0729854d678d29e9b15d",
+      "bytes": 16630,
+      "sha256": "cbf72ae0a0eefe64a4a065dac6981cb2d0d79678a8a0bc3c2f35e02a12f93cb7"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gadget4/L4_DIRECT_STORAGE_PLAN.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gadget4/L4_DIRECT_STORAGE_PLAN.md?v=92a9d6352ad84e2cd70f0729854d678d29e9b15d",
+      "bytes": 4444,
+      "sha256": "12714dbadbe78122ff466b751e7c02fa9f56b4d5d84375591a11b6f8be4f7e20"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gadget4/README.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gadget4/README.md?v=92a9d6352ad84e2cd70f0729854d678d29e9b15d",
+      "bytes": 9730,
+      "sha256": "3fb4cc6f192b6b4937c4ae83ae76fe4eb8fdd089a28f0619d6bb00e4e2629660"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gadget4/analysis_levels_v1/README.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gadget4/analysis_levels_v1/README.md?v=92a9d6352ad84e2cd70f0729854d678d29e9b15d",
+      "bytes": 5883,
+      "sha256": "b0ee26e1eabd6ae4498df03566254a1f34eac417d3cd37468028a5f0e1fcb8d8"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gadget4/analysis_levels_v1/full_l4_batch.json",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gadget4/analysis_levels_v1/full_l4_batch.json?v=92a9d6352ad84e2cd70f0729854d678d29e9b15d",
+      "bytes": 238962,
+      "sha256": "eff1b8eb655ea6756b225ce1078267dd735c05513335cae343d32cd34585aa51"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gadget4/analysis_levels_v1/full_l4_plan.json",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gadget4/analysis_levels_v1/full_l4_plan.json?v=92a9d6352ad84e2cd70f0729854d678d29e9b15d",
+      "bytes": 8490,
+      "sha256": "a66c291cdaf6858a0c69560a47ed137f5d026e85851af205134b5cb0d67bdba4"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gadget4/analysis_levels_v1/mass_L3_L4.png",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gadget4/analysis_levels_v1/mass_L3_L4.png?v=92a9d6352ad84e2cd70f0729854d678d29e9b15d",
+      "bytes": 267584,
+      "sha256": "5543bdf4da87fc3df24af908dcaace707c4b7e1bdd4bdec3504a50bd7710028c"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gadget4/analysis_levels_v1/report.json",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gadget4/analysis_levels_v1/report.json?v=92a9d6352ad84e2cd70f0729854d678d29e9b15d",
+      "bytes": 509729,
+      "sha256": "6051130072ab4c50fc3712de6b449bb1951649d709288e3d55524172046bdfe3"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gadget4/analysis_levels_v1/validation.json",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gadget4/analysis_levels_v1/validation.json?v=92a9d6352ad84e2cd70f0729854d678d29e9b15d",
+      "bytes": 557,
+      "sha256": "0dcfbd5c6bba064dfd10f23cd37e43875aadfc10f9abc47648a9ec30ba5d4e86"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gadget4/analysis_levels_v1/windows_readback.json",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gadget4/analysis_levels_v1/windows_readback.json?v=92a9d6352ad84e2cd70f0729854d678d29e9b15d",
+      "bytes": 704,
+      "sha256": "87ffe93cd946430f144ff43a100d30783c4964a598a581a97e364f964ebee3c2"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gadget4/analyze_levels_v1.py",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gadget4/analyze_levels_v1.py?v=92a9d6352ad84e2cd70f0729854d678d29e9b15d",
+      "bytes": 12600,
+      "sha256": "ed27c09000845f322a87a31154f9e4b19769d649abe3e2fbdc2ed3602b4301fd"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gadget4/launch_l4_direct_storage.ps1",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gadget4/launch_l4_direct_storage.ps1?v=92a9d6352ad84e2cd70f0729854d678d29e9b15d",
+      "bytes": 3671,
+      "sha256": "f40ffbdfca3dbcc80326c1d8d10be5af0a35723533052a9b5bc73a00a9ae7db7"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gadget4/prepare_l4_direct_storage.py",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gadget4/prepare_l4_direct_storage.py?v=92a9d6352ad84e2cd70f0729854d678d29e9b15d",
+      "bytes": 5748,
+      "sha256": "31ae56732c188446ab803c29c4508391475511a122831a170c7d26372c22df11"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gadget4/publish_levels_v1.ps1",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gadget4/publish_levels_v1.ps1?v=92a9d6352ad84e2cd70f0729854d678d29e9b15d",
+      "bytes": 7324,
+      "sha256": "bc0d03533d61e83587240f5ca77e7d0842319c333bff79fca0e1603810342f08"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gadget4/run_l4_direct_storage.py",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gadget4/run_l4_direct_storage.py?v=92a9d6352ad84e2cd70f0729854d678d29e9b15d",
+      "bytes": 13030,
+      "sha256": "19949877defff0868f31d78d7db635c93f8fce83f2d7128a283eab6a41996329"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gadget4/test_l4_direct_storage.py",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gadget4/test_l4_direct_storage.py?v=92a9d6352ad84e2cd70f0729854d678d29e9b15d",
+      "bytes": 4102,
+      "sha256": "ee2923581c60ab87a7ddaf37d94efe7ccb8db7ed96611cee7295f166ce134fc5"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gadget4/test_levels_v1.py",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gadget4/test_levels_v1.py?v=92a9d6352ad84e2cd70f0729854d678d29e9b15d",
+      "bytes": 1856,
+      "sha256": "4d01447db7b6f3613015adc6749b720ea10d9f11802e1d88832faeefa56a86d3"
+    }
+  ],
+  "scope": "Gadget-4 L3/L4 comparison: four accepted controls,404 native states,two new L4 controls. Study total48controls/4852states. No old rerun,raw deletion or new production viewer entry."
+}

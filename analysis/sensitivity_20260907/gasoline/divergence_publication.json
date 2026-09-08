@@ -1,0 +1,71 @@
+{
+  "status": "verified_live",
+  "verified_at_utc": "2026-09-08T11:43:27.8280890Z",
+  "commit": "fab87c1f0f152feaf6533f93b9a74ebd02e495db",
+  "previous_commit": "1a105f1e860298f4380d053d390c1a119ecdc5a0",
+  "pages_workflow_id": 34222001924,
+  "files_verified": 10,
+  "checks": [
+    {
+      "path": "analysis/README.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/README.md?v=fab87c1f0f152feaf6533f93b9a74ebd02e495db",
+      "bytes": 12811,
+      "sha256": "e8b037ea236ffe8af9a25bb0b33bf6799c9547126abd3ae15dccb683379e017f"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/PLAN.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/PLAN.md?v=fab87c1f0f152feaf6533f93b9a74ebd02e495db",
+      "bytes": 15998,
+      "sha256": "ebb2fcbb0a4ae11df5c06a98b84d7ec7a6949354b39b3e6bacaefe95632ad30e"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/README.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/README.md?v=fab87c1f0f152feaf6533f93b9a74ebd02e495db",
+      "bytes": 14655,
+      "sha256": "fa69240435e91a0a393bcf307da81e01d2ae45629a64d63d1989a8abf10ed1cf"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/DIVERGENCE_REVIEW.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/DIVERGENCE_REVIEW.md?v=fab87c1f0f152feaf6533f93b9a74ebd02e495db",
+      "bytes": 6494,
+      "sha256": "72cef586e754fd1c585ac7a45b29d5673e43724a10acb3aa09269dc55cec98bd"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/DIVERGENCE_REVIEW_PLAN.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/DIVERGENCE_REVIEW_PLAN.md?v=fab87c1f0f152feaf6533f93b9a74ebd02e495db",
+      "bytes": 2998,
+      "sha256": "055f3fab4a901a28652e96b5b63b60eff7660539cc2cb76e36e65cae56339fd3"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/README.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/README.md?v=fab87c1f0f152feaf6533f93b9a74ebd02e495db",
+      "bytes": 4379,
+      "sha256": "34676518ada61bdd7dd6fbc32dd33745076b3ed089c5167e1d83fe07c9e580d8"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/divergence_review.json",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/divergence_review.json?v=fab87c1f0f152feaf6533f93b9a74ebd02e495db",
+      "bytes": 678467,
+      "sha256": "96ee1e31635feae95674bd4777a0d9e5badc288a860112cb86dc40e6ef8957b2"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/publish_gasoline_divergence.ps1",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/publish_gasoline_divergence.ps1?v=fab87c1f0f152feaf6533f93b9a74ebd02e495db",
+      "bytes": 5367,
+      "sha256": "1fd511508f093ef993eb465a90439c670fd63f70c6a6e6ce3b6125c4195f0c0f"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/review_divergence.py",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/review_divergence.py?v=fab87c1f0f152feaf6533f93b9a74ebd02e495db",
+      "bytes": 16513,
+      "sha256": "d7e3c0df7ccd35dec1ade8f38496e81046c55c6df1f6689066b41b0b76203916"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/test_review_divergence.py",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/test_review_divergence.py?v=fab87c1f0f152feaf6533f93b9a74ebd02e495db",
+      "bytes": 4299,
+      "sha256": "77071e70c59d9555e39a3d1e549b9fa6a1493ce850ace1c8d8ac70f6de9b5071"
+    }
+  ],
+  "scope": "Read-only Gasoline divergence review. Native double differences verified; original failed gate retained. No new simulations or production viewer entries. Accepted total46."
+}

@@ -1,0 +1,119 @@
+{
+  "status": "verified_live",
+  "verified_at_utc": "2026-09-08T06:52:59.6453528Z",
+  "commit": "8964a45421318f7759ab81570a8b2f214cc0781f",
+  "previous_commit": "836ab3b72720feb133db27b1169e2d27d85a36f0",
+  "remote_main_matches": true,
+  "working_tree_clean": true,
+  "pages_workflow_id": 34196492965,
+  "pages_conclusion": "success",
+  "files_verified": 15,
+  "checks": [
+    {
+      "path": "analysis/README.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/README.md?v=8964a45421318f7759ab81570a8b2f214cc0781f",
+      "status": 200,
+      "bytes": 10763,
+      "sha256": "bf47b3b473cbf4489c92409723850e80532edb9d97e152bcfefee9027c5f394e"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/PLAN.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/PLAN.md?v=8964a45421318f7759ab81570a8b2f214cc0781f",
+      "status": 200,
+      "bytes": 11508,
+      "sha256": "0e903fde5169e46361d1a1636e932efddb0bf1fc8994097b919fe6328bc72d16"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/README.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/README.md?v=8964a45421318f7759ab81570a8b2f214cc0781f",
+      "status": 200,
+      "bytes": 11781,
+      "sha256": "658cb10828133fee4326ecffc9afcfe3932097071a1a9259cee3fdecdd5a4397"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gadget4/L4_VALIDATION.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gadget4/L4_VALIDATION.md?v=8964a45421318f7759ab81570a8b2f214cc0781f",
+      "status": 200,
+      "bytes": 4934,
+      "sha256": "09c7239c31c90a44c289fd6630484e6cf27fcb022e346da3bba50cd6fe5fb636"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gadget4/README.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gadget4/README.md?v=8964a45421318f7759ab81570a8b2f214cc0781f",
+      "status": 200,
+      "bytes": 9188,
+      "sha256": "3b3f128f02b9d9e0029dda1d53ceecd3edb1f4de185931376483189a5ac7b8cf"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gadget4/VALIDATION.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gadget4/VALIDATION.md?v=8964a45421318f7759ab81570a8b2f214cc0781f",
+      "status": 200,
+      "bytes": 4474,
+      "sha256": "8db90b9a149a12c70b527614d9f2293c97e4d26d8b29eaaec1e1e317354ec3f7"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gadget4/audit_render_duplicates.py",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gadget4/audit_render_duplicates.py?v=8964a45421318f7759ab81570a8b2f214cc0781f",
+      "status": 200,
+      "bytes": 2320,
+      "sha256": "246dd68fca6458cfec03ce65cca3ce344276c97dbe45ffb21be044b808a6e72c"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gadget4/freeze_l4_validation.py",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gadget4/freeze_l4_validation.py?v=8964a45421318f7759ab81570a8b2f214cc0781f",
+      "status": 200,
+      "bytes": 2100,
+      "sha256": "98290629fece4a95c66f0c5ffd7702bbe7ea6547b22339e9ea8865c8ba922b13"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gadget4/freeze_l4_validation.v1.py",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gadget4/freeze_l4_validation.v1.py?v=8964a45421318f7759ab81570a8b2f214cc0781f",
+      "status": 200,
+      "bytes": 1555,
+      "sha256": "6c3177b47f1e5b53d747c74e7018a82c8754a86cb7fa064c20808370e065fd31"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gadget4/gadget_l4_controls.py",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gadget4/gadget_l4_controls.py?v=8964a45421318f7759ab81570a8b2f214cc0781f",
+      "status": 200,
+      "bytes": 14083,
+      "sha256": "7319681b1925bd9c57cb10578e4ae141f58d09a1fb4e5b3c5f2947ea4e420458"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gadget4/l4_validation.json",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gadget4/l4_validation.json?v=8964a45421318f7759ab81570a8b2f214cc0781f",
+      "status": 200,
+      "bytes": 18863,
+      "sha256": "93ff90568d163636204df77aee7b7497c1f3f07980044808da50d6190cc20e21"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gadget4/l4_validation_bundle.json",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gadget4/l4_validation_bundle.json?v=8964a45421318f7759ab81570a8b2f214cc0781f",
+      "status": 200,
+      "bytes": 1845,
+      "sha256": "9cd68cd2a6d42ad29b7ef925a2f6f799134ec17e3a7d066ecad2089baf69b173"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gadget4/launch_l4_validation_windows.ps1",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gadget4/launch_l4_validation_windows.ps1?v=8964a45421318f7759ab81570a8b2f214cc0781f",
+      "status": 200,
+      "bytes": 1924,
+      "sha256": "4e82c79da1f9488f90fd5c697ebe6d0ea86adce6d1c7cb0f0b6d3bb7cf652ea1"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gadget4/stage_l4_publication.ps1",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gadget4/stage_l4_publication.ps1?v=8964a45421318f7759ab81570a8b2f214cc0781f",
+      "status": 200,
+      "bytes": 3141,
+      "sha256": "10434a8d18485eb915e15c2b06db3551759cb07a12f6ebf8de72dc8b97c1e3a6"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gadget4/test_gadget_l4.py",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gadget4/test_gadget_l4.py?v=8964a45421318f7759ab81570a8b2f214cc0781f",
+      "status": 200,
+      "bytes": 2507,
+      "sha256": "4eae00aa2b2028808c6cf1994fa8aea38db50e6abf050c1b5344cedce647822f"
+    }
+  ],
+  "scope": "Gadget-4 L4 native initial/evolved validation on four states, independent-reader checks,14 regression tests and measured full-pair storage hold. No full L4 controls launched; accepted study total remains44. Original SPH pressure variation and periodic boundaries retained. No raw, IC, restart, log or rendering cache deleted. No new production viewer entries."
+}

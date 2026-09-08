@@ -1,0 +1,133 @@
+{
+  "observed_at_utc": "2026-09-08T22:06:21.710081+00:00",
+  "scope": "Only listed roots. Mixed native outputs, ICs, checkpoints, source, logs, environments inside these roots, and visuals. Not a raw-only total or full-disk scan.",
+  "roots": [
+    {
+      "category": "CloudCrushing",
+      "files": 28971,
+      "logical_bytes": 232505895555,
+      "unique_inode_logical_bytes": 232505895555
+    },
+    {
+      "category": "codes",
+      "files": 75408,
+      "logical_bytes": 582412518387,
+      "unique_inode_logical_bytes": 582412518387
+    },
+    {
+      "category": "sensitivity_20260907",
+      "files": 42133,
+      "logical_bytes": 133566741165,
+      "unique_inode_logical_bytes": 133566741165
+    },
+    {
+      "category": "performance_20260907",
+      "files": 281,
+      "logical_bytes": 11974661422,
+      "unique_inode_logical_bytes": 11974661422
+    },
+    {
+      "category": "performance_20260907b",
+      "files": 190,
+      "logical_bytes": 16214758733,
+      "unique_inode_logical_bytes": 16214758733
+    },
+    {
+      "category": "performance_20260907c",
+      "files": 101,
+      "logical_bytes": 2648547130,
+      "unique_inode_logical_bytes": 2648547130
+    },
+    {
+      "category": "followup_20260907",
+      "files": 2677,
+      "logical_bytes": 12125875493,
+      "unique_inode_logical_bytes": 12125875493
+    },
+    {
+      "category": "restart_20260907",
+      "files": 2,
+      "logical_bytes": 4102,
+      "unique_inode_logical_bytes": 4102
+    },
+    {
+      "category": "ic_audit_20260907",
+      "files": 697,
+      "logical_bytes": 842902438,
+      "unique_inode_logical_bytes": 842902438
+    },
+    {
+      "category": "scratch_rvcheck",
+      "files": 91,
+      "logical_bytes": 367216596,
+      "unique_inode_logical_bytes": 367216596
+    },
+    {
+      "category": "l6probe",
+      "files": 170,
+      "logical_bytes": 2218593500,
+      "unique_inode_logical_bytes": 2218593500
+    },
+    {
+      "category": "rv_binary_backups",
+      "files": 5,
+      "logical_bytes": 8428594,
+      "unique_inode_logical_bytes": 8428594
+    },
+    {
+      "category": "dense_store",
+      "files": 103,
+      "logical_bytes": 21146632,
+      "unique_inode_logical_bytes": 21146632
+    },
+    {
+      "category": "retired_anisotropic_vols",
+      "files": 6,
+      "logical_bytes": 32687383,
+      "unique_inode_logical_bytes": 32687383
+    },
+    {
+      "category": "offladder_parked",
+      "files": 54,
+      "logical_bytes": 59060773,
+      "unique_inode_logical_bytes": 59060773
+    },
+    {
+      "category": "retired_runs",
+      "files": 8,
+      "logical_bytes": 54149,
+      "unique_inode_logical_bytes": 54149
+    },
+    {
+      "category": "C:\\Users\\kaanb\\CloudCrushing",
+      "files": 6488,
+      "logical_bytes": 19445694201,
+      "unique_inode_logical_bytes": 19445694201
+    },
+    {
+      "category": "C:\\Users\\kaanb\\cloud-studio-repo",
+      "files": 4047,
+      "logical_bytes": 889148896,
+      "unique_inode_logical_bytes": 889148896
+    },
+    {
+      "category": "C:\\Users\\kaanb\\cloud-frames-repo",
+      "files": 12219,
+      "logical_bytes": 1297541273,
+      "unique_inode_logical_bytes": 1297541273
+    }
+  ],
+  "metadata_only": true,
+  "raw_payload_backup": false,
+  "limitations": [
+    "Metadata only; no native payload contents read or hashed.",
+    "File count is NOT snapshot count or viewer frame count.",
+    "No simulation completion, scientific comparability, upload or backup proof.",
+    "GB = 1,000,000,000 bytes; GiB = 1,073,741,824 bytes.",
+    "Logical bytes are not necessarily physical disk allocation or reclaimable capacity.",
+    "Hardlinked paths count separately in path totals; unique inode totals also supplied.",
+    "Symlinks not followed; .git and this inventory directory excluded.",
+    "Not an atomic filesystem snapshot: files could change during collection.",
+    "WSL and C: share backing storage; do not add their free-space numbers."
+  ]
+}

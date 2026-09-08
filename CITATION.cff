@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "Please cite the specific report and repository commit used; this is a research software and data-visualization project, not a peer-reviewed paper."
+title: "Cloud Studio: native-code cloud-crushing research and visualization"
+type: software
+authors:
+  - family-names: Boge
+    given-names: Kaan
+repository-code: "https://github.com/KaanBoge/cloud-studio"
+url: "https://kaanboge.github.io/cloud-studio/research.html"
+keywords:
+  - cloud crushing
+  - hydrodynamics
+  - scientific visualization
+  - reproducibility

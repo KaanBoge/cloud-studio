@@ -1,0 +1,101 @@
+{
+  "status": "verified_live",
+  "verified_at_utc": "2026-09-08T17:11:04.1415809Z",
+  "commit": "d88b8ea7f6d38578ee2b37bdeaa52ed50b3a4892",
+  "previous_commit": "b86653c37451630f5256d8367d8aab9baeb62372",
+  "pages_workflow_id": 34255283075,
+  "files_verified": 15,
+  "checks": [
+    {
+      "path": "analysis/README.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/README.md?v=d88b8ea7f6d38578ee2b37bdeaa52ed50b3a4892",
+      "bytes": 14960,
+      "sha256": "ef525a16c8c78a3eb4026108b26d72c94c3ff12103b1402abdac1f955785f5b1"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/PLAN.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/PLAN.md?v=d88b8ea7f6d38578ee2b37bdeaa52ed50b3a4892",
+      "bytes": 21810,
+      "sha256": "c88f96977ac7fd626e94be59f5755fffe04b901800e4ab59d3d92a15896065bb"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/README.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/README.md?v=d88b8ea7f6d38578ee2b37bdeaa52ed50b3a4892",
+      "bytes": 17171,
+      "sha256": "d74960cc7ef1d81d20f1c5661fe9327faad0e87b684491ec62c7f6d5883bb7df"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/README.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/README.md?v=d88b8ea7f6d38578ee2b37bdeaa52ed50b3a4892",
+      "bytes": 17242,
+      "sha256": "484224da7d52909dd6d7152183b30be25aebedfe2d10c91bb30180e845231a5a"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/analyze_mfv_levels_v1.py",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/analyze_mfv_levels_v1.py?v=d88b8ea7f6d38578ee2b37bdeaa52ed50b3a4892",
+      "bytes": 15581,
+      "sha256": "a6da75d16d6de583189ccf50632f764c673c6f57876ff1ae86fd702487cee55a"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/mfv_analysis_levels_v1/QA.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/mfv_analysis_levels_v1/QA.md?v=d88b8ea7f6d38578ee2b37bdeaa52ed50b3a4892",
+      "bytes": 3255,
+      "sha256": "b5287ae579bfd1e3844042bda11ad8c58b41b1266fb339352b73dea7087bb042"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/mfv_analysis_levels_v1/README.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/mfv_analysis_levels_v1/README.md?v=d88b8ea7f6d38578ee2b37bdeaa52ed50b3a4892",
+      "bytes": 7222,
+      "sha256": "a535fe40778f8426184ae00e554ec6ad5ffafe094b3294c3c0c6b1fb39226270"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/mfv_analysis_levels_v1/full_l4_batch.json",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/mfv_analysis_levels_v1/full_l4_batch.json?v=d88b8ea7f6d38578ee2b37bdeaa52ed50b3a4892",
+      "bytes": 152965,
+      "sha256": "973aa5c5dce052274645a015a47091187078534fafa274373e8efbf0f84b4e25"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/mfv_analysis_levels_v1/full_l4_plan.json",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/mfv_analysis_levels_v1/full_l4_plan.json?v=d88b8ea7f6d38578ee2b37bdeaa52ed50b3a4892",
+      "bytes": 5183,
+      "sha256": "2b77bb64257e2826dfe241ca6fb31eedcd5b868d73eeb4761cf96ac079430d7c"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/mfv_analysis_levels_v1/mass_L3_L4.png",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/mfv_analysis_levels_v1/mass_L3_L4.png?v=d88b8ea7f6d38578ee2b37bdeaa52ed50b3a4892",
+      "bytes": 259942,
+      "sha256": "8b4851f0b4583ecf5db14657540f349d1832eece2ba452482a72f634b04e9ef2"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/mfv_analysis_levels_v1/report.json",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/mfv_analysis_levels_v1/report.json?v=d88b8ea7f6d38578ee2b37bdeaa52ed50b3a4892",
+      "bytes": 385853,
+      "sha256": "9049de2e08bb01dc92332ff08006ad1fb4e041e80ebd65b22ab8aac50e44aefe"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/mfv_analysis_levels_v1/validation.json",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/mfv_analysis_levels_v1/validation.json?v=d88b8ea7f6d38578ee2b37bdeaa52ed50b3a4892",
+      "bytes": 557,
+      "sha256": "123f1306ca2d8fdb67535359cc7181e41f5abf7f2b90f58cf7f13a8b943cd1a7"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/mfv_analysis_levels_v1/windows_readback.json",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/mfv_analysis_levels_v1/windows_readback.json?v=d88b8ea7f6d38578ee2b37bdeaa52ed50b3a4892",
+      "bytes": 670,
+      "sha256": "bf5625a8d935f06b539e7841a9533cd1d73e8e3f8e9dd9a781a2e268dc90249e"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/publish_mfv_levels_v1.ps1",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/publish_mfv_levels_v1.ps1?v=d88b8ea7f6d38578ee2b37bdeaa52ed50b3a4892",
+      "bytes": 7219,
+      "sha256": "114eaa323bda5576516b85df9767773979c43023ace759df038801f6978a3bfe"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/test_mfv_levels_v1.py",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/test_mfv_levels_v1.py?v=d88b8ea7f6d38578ee2b37bdeaa52ed50b3a4892",
+      "bytes": 3245,
+      "sha256": "e3335b94ed4a20e39bbd79a98f8355704b7c1e3157e19901a7461227803471a1"
+    }
+  ],
+  "scope": "Repaired native MFV L3/L4 comparison: four accepted controls,404 native states,two new L4 controls. Study total50controls/5054states. No old rerun,raw deletion or new production viewer entry."
+}

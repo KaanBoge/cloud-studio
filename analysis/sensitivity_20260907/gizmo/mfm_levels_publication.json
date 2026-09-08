@@ -1,0 +1,98 @@
+{
+  "status": "verified_live",
+  "verified_at_utc": "2026-09-08T05:38:27.8158172Z",
+  "commit": "897473cecb82ab325145bdf9f037dde82ba27cdd",
+  "previous_commit": "c58b730164e6ab193d075eb9c42d20d4d787cea6",
+  "remote_main_matches": true,
+  "working_tree_clean": true,
+  "pages_workflow_id": 34191244714,
+  "pages_conclusion": "success",
+  "files_verified": 12,
+  "checks": [
+    {
+      "path": "analysis/README.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/README.md?v=897473cecb82ab325145bdf9f037dde82ba27cdd",
+      "status": 200,
+      "bytes": 10362,
+      "sha256": "9aebe98332a1b6a6a746f71439e54c439dd731d6de7be47bea6e01b94ae57e7e"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/PLAN.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/PLAN.md?v=897473cecb82ab325145bdf9f037dde82ba27cdd",
+      "status": 200,
+      "bytes": 10605,
+      "sha256": "1fa5f1af083f3050c5e3c5b8532548157e9d855964ea40c017cb4ec7ecf24133"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/README.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/README.md?v=897473cecb82ab325145bdf9f037dde82ba27cdd",
+      "status": 200,
+      "bytes": 10705,
+      "sha256": "01c4f5fc1b32e780f980d564eb5c07a3bb8aaaaaa34ca9f98f03b62f1766749a"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/MFM_LEVELS_VALIDATION.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/MFM_LEVELS_VALIDATION.md?v=897473cecb82ab325145bdf9f037dde82ba27cdd",
+      "status": 200,
+      "bytes": 4781,
+      "sha256": "e540e09c168e6fcf45d50ad2577587243e9f3c5dde3c4e87247e95f11e7865a8"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/README.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/README.md?v=897473cecb82ab325145bdf9f037dde82ba27cdd",
+      "status": 200,
+      "bytes": 13858,
+      "sha256": "36db5bff919076a64f40a1b4320063529c6d240a58c7d432f52a15ecaeffe2d9"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/VALIDATION.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/VALIDATION.md?v=897473cecb82ab325145bdf9f037dde82ba27cdd",
+      "status": 200,
+      "bytes": 3949,
+      "sha256": "8b9cb018363784205cc3bf42ec214b5bb2594d12748b0dc77a1631ddf10877a1"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/analyze_mfm_levels.py",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/analyze_mfm_levels.py?v=897473cecb82ab325145bdf9f037dde82ba27cdd",
+      "status": 200,
+      "bytes": 8923,
+      "sha256": "5fedc56695eccea5e947ee196c8d9c07ee78a92877b477729a7e50b4654c99a3"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/mass_mfm_L3_L4.png",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/mass_mfm_L3_L4.png?v=897473cecb82ab325145bdf9f037dde82ba27cdd",
+      "status": 200,
+      "bytes": 95712,
+      "sha256": "4cdeaf5cc60365a30d20a12b81895489dbb819f0fc6229644a312dc3c94b30a0"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/mfm_l4_batch.json",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/mfm_l4_batch.json?v=897473cecb82ab325145bdf9f037dde82ba27cdd",
+      "status": 200,
+      "bytes": 276158,
+      "sha256": "ec67797121cd25f8968e5325fa9b63e7d17eb08e41b6a0578e3b724a31b5e25e"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/mfm_levels_report.json",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/mfm_levels_report.json?v=897473cecb82ab325145bdf9f037dde82ba27cdd",
+      "status": 200,
+      "bytes": 260332,
+      "sha256": "d459ddc97aff60da485929c66e17750ace3f4ebff549ba54e910c0e99a54e294"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/stage_mfm_levels.ps1",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/stage_mfm_levels.ps1?v=897473cecb82ab325145bdf9f037dde82ba27cdd",
+      "status": 200,
+      "bytes": 2798,
+      "sha256": "b105006a49989ad512951174f456be4b2a7ddd00ba9a57bcfca369dd11bbe6f5"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/test_mfm_levels_analysis.py",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/test_mfm_levels_analysis.py?v=897473cecb82ab325145bdf9f037dde82ba27cdd",
+      "status": 200,
+      "bytes": 1406,
+      "sha256": "5c0ef7ee8bead4dd6dc75e144c65dfee2ee646da73380ee0be47420d59a4c060"
+    }
+  ],
+  "scope": "Four completed native MFM L3/L4 controls with404 independently checked states, resolution-overlay analysis,6 analysis tests and the completed L4 ledger. Total accepted and analyzed study controls is42. MFV failures remain excluded. Native raw is retained locally; no native raw, binaries or new production viewer entries published."
+}

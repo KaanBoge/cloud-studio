@@ -1,0 +1,65 @@
+{
+  "status": "prepared_short_instrumentation_tests_only",
+  "resources": {
+    "guest_free": 17881153536,
+    "host_free": 38155870208,
+    "ram_available": 28651302912,
+    "scratch_budget": 1073741824,
+    "separate_reserve": 10737418240
+  },
+  "original_historical_ic": "/home/kaan/codes/gasoline/runs/CW3D_L3_chi100/ics_L3_chi100.std",
+  "historical_sha256": "2a9c3a84bf3ae3e13fe0dfbe2f8e93134e619387dfdfcad44737af3730978659",
+  "historical_all_arrays_exact": true,
+  "nonvelocity_pair_exact": true,
+  "chi": 100,
+  "mach": 2,
+  "gamma": 1.6666666666666667,
+  "radius": 1,
+  "vwind": 2.581988897471611,
+  "level": 3,
+  "lattice": [
+    64,
+    32,
+    32
+  ],
+  "mass_mode": "variable",
+  "seed": 42,
+  "cases": [
+    {
+      "name": "original_tanh",
+      "law": "tanh13",
+      "hook": false,
+      "binary": "/home/kaan/sensitivity_20260907/gasoline/gasoline_original",
+      "binary_sha256": "c7645e1774fb4a18fc68bac615ba03f24c83d06dfe4addfbbbc7df2cc4930bb5",
+      "ic_sha256": "2a9c3a84bf3ae3e13fe0dfbe2f8e93134e619387dfdfcad44737af3730978659",
+      "parameter_sha256": "41b629ab22fd69841521b21c4a132508d79e206bdea0eca1d4c471616bae57cc"
+    },
+    {
+      "name": "off_tanh",
+      "law": "tanh13",
+      "hook": false,
+      "binary": "/home/kaan/sensitivity_20260907/gasoline/native/gasoline/gasoline",
+      "binary_sha256": "7f3018e12f821fe9f74ae2617d80b11cf1e7f7feedd8040ceafc01822a21789e",
+      "ic_sha256": "2a9c3a84bf3ae3e13fe0dfbe2f8e93134e619387dfdfcad44737af3730978659",
+      "parameter_sha256": "41b629ab22fd69841521b21c4a132508d79e206bdea0eca1d4c471616bae57cc"
+    },
+    {
+      "name": "on_tanh",
+      "law": "tanh13",
+      "hook": true,
+      "binary": "/home/kaan/sensitivity_20260907/gasoline/native/gasoline/gasoline",
+      "binary_sha256": "7f3018e12f821fe9f74ae2617d80b11cf1e7f7feedd8040ceafc01822a21789e",
+      "ic_sha256": "2a9c3a84bf3ae3e13fe0dfbe2f8e93134e619387dfdfcad44737af3730978659",
+      "parameter_sha256": "41b629ab22fd69841521b21c4a132508d79e206bdea0eca1d4c471616bae57cc"
+    },
+    {
+      "name": "on_sharp",
+      "law": "sharp13",
+      "hook": true,
+      "binary": "/home/kaan/sensitivity_20260907/gasoline/native/gasoline/gasoline",
+      "binary_sha256": "7f3018e12f821fe9f74ae2617d80b11cf1e7f7feedd8040ceafc01822a21789e",
+      "ic_sha256": "e396be68108e9b303792984fffa7ecbc21d5a5bbcaa958063ad819d78482a317",
+      "parameter_sha256": "41b629ab22fd69841521b21c4a132508d79e206bdea0eca1d4c471616bae57cc"
+    }
+  ]
+}

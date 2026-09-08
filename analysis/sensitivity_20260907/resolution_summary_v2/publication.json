@@ -1,0 +1,71 @@
+{
+  "status": "verified_live",
+  "verified_at_utc": "2026-09-08T17:23:20.0547983Z",
+  "commit": "eb7755ea1d0585082276989e0613ec2b23d775c9",
+  "previous_commit": "d88b8ea7f6d38578ee2b37bdeaa52ed50b3a4892",
+  "pages_workflow_id": 34256535412,
+  "files_verified": 10,
+  "checks": [
+    {
+      "path": "analysis/README.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/README.md?v=eb7755ea1d0585082276989e0613ec2b23d775c9",
+      "bytes": 15349,
+      "sha256": "251dda7fe62fca2c153565f1b115ec9178b79d95611fb9c943f7fc4d51819ce1"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/PLAN.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/PLAN.md?v=eb7755ea1d0585082276989e0613ec2b23d775c9",
+      "bytes": 22605,
+      "sha256": "27cb8931a119e9b599ba4fbb97d12affe928c81d35df1ce5931c9f1e13cdf136"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/README.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/README.md?v=eb7755ea1d0585082276989e0613ec2b23d775c9",
+      "bytes": 17541,
+      "sha256": "b89853342516b874a0c2db8cc169ba0da2f015d03bca409736fd691c705172ea"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/extend_resolution_summary_v2.py",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/extend_resolution_summary_v2.py?v=eb7755ea1d0585082276989e0613ec2b23d775c9",
+      "bytes": 17141,
+      "sha256": "dc6f4b60b241a324197c097903ba8e66e21e5f71a0be19f147e6e22c29060225"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/publish_resolution_summary_v2.ps1",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/publish_resolution_summary_v2.ps1?v=eb7755ea1d0585082276989e0613ec2b23d775c9",
+      "bytes": 7315,
+      "sha256": "7f900a137c216f594a78917a68e69c26eca1d91365313b703083af3c9be35ce2"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/resolution_summary_v2/QA.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/resolution_summary_v2/QA.md?v=eb7755ea1d0585082276989e0613ec2b23d775c9",
+      "bytes": 3729,
+      "sha256": "e9c06ae1f1980dcc9159392d4ffbe99caa507e7f2746af667ddd12d4afa66f8f"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/resolution_summary_v2/README.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/resolution_summary_v2/README.md?v=eb7755ea1d0585082276989e0613ec2b23d775c9",
+      "bytes": 7649,
+      "sha256": "927e1ef8628639ffe7d342279a73d86d6e112d90c814608d16d512a285acf3b2"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/resolution_summary_v2/summary.json",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/resolution_summary_v2/summary.json?v=eb7755ea1d0585082276989e0613ec2b23d775c9",
+      "bytes": 65087,
+      "sha256": "7527a36c6d6118347daea4b07e95237166b3b7c49543be2e00d2573322628e8f"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/resolution_summary_v2/validation.json",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/resolution_summary_v2/validation.json?v=eb7755ea1d0585082276989e0613ec2b23d775c9",
+      "bytes": 586,
+      "sha256": "45fd9c724b84a51637e00bab49e7ab1cb0601870c96a7a58084028a839cf6840"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/test_resolution_summary_v2.py",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/test_resolution_summary_v2.py?v=eb7755ea1d0585082276989e0613ec2b23d775c9",
+      "bytes": 2795,
+      "sha256": "c3ec0faa61c73f08170feb10e9577c6f1037b73c3444b9910e9f8a333cfe34bd"
+    }
+  ],
+  "scope": "Updated report-only consolidation:25 accepted pairs,50 controls,5054 native analysis states. Original23 entries unchanged; two new L4 pairs appended. No native rerun,raw deletion,acceptance change or productionviewer entry."
+}

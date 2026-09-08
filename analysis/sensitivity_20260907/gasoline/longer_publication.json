@@ -1,0 +1,207 @@
+{
+  "status": "verified_live",
+  "verified_at_utc": "2026-09-08T08:21:48.3081014Z",
+  "commit": "ceffdc9ad3d7f6432054de541e7224c3235f51a1",
+  "previous_commit": "8964a45421318f7759ab81570a8b2f214cc0781f",
+  "remote_main_matches": true,
+  "working_tree_clean": true,
+  "pages_workflow_id": 34203922693,
+  "pages_conclusion": "success",
+  "files_verified": 23,
+  "repository_config_files_verified": 1,
+  "checks": [
+    {
+      "path": "analysis/README.md",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/README.md?v=ceffdc9ad3d7f6432054de541e7224c3235f51a1",
+      "status": 200,
+      "bytes": 11146,
+      "sha256": "31cd93ab935aa11e6a40739627d768dcf7ea3580d6df7ae595e6fb72287acd64"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/PLAN.md",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/PLAN.md?v=ceffdc9ad3d7f6432054de541e7224c3235f51a1",
+      "status": 200,
+      "bytes": 12321,
+      "sha256": "426313b47775e125a671db27b64b863eeb90c3c7ef832056ce21a179e977ad04"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/README.md",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/README.md?v=ceffdc9ad3d7f6432054de541e7224c3235f51a1",
+      "status": 200,
+      "bytes": 12360,
+      "sha256": "55ffb24e33281e12f2642b940defb896d4bd4c75695fe776bfb201b5195d66d0"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/.gitattributes",
+      "surface": "repository_config",
+      "url": "https://raw.githubusercontent.com/KaanBoge/cloud-studio/ceffdc9ad3d7f6432054de541e7224c3235f51a1/analysis/sensitivity_20260907/gasoline/.gitattributes",
+      "status": 200,
+      "bytes": 77,
+      "sha256": "be6697fb11a76b1438dfc42f7a53be9687d965644435b4067bf78a61e9e61b58"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/LONGER_VALIDATION.md",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/LONGER_VALIDATION.md?v=ceffdc9ad3d7f6432054de541e7224c3235f51a1",
+      "status": 200,
+      "bytes": 7816,
+      "sha256": "cc54f0c28e506721f573569d0fb3ab575e32cbd634a3ebef719d520c74c65d32"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/LONGER_VALIDATION_PLAN.md",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/LONGER_VALIDATION_PLAN.md?v=ceffdc9ad3d7f6432054de541e7224c3235f51a1",
+      "status": 200,
+      "bytes": 4535,
+      "sha256": "e2ff33e84b9df9e9e85462d84690274f0e42a115b27be2c4adb52fdaa4f2ee84"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/LONGER_VALIDATION_PLAN_2RANK.md",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/LONGER_VALIDATION_PLAN_2RANK.md?v=ceffdc9ad3d7f6432054de541e7224c3235f51a1",
+      "status": 200,
+      "bytes": 2175,
+      "sha256": "9983d91c52bce9717e1b1ef9fd4103f162427a6a2fc0c8a40891912aa88e6741"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/README.md",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/README.md?v=ceffdc9ad3d7f6432054de541e7224c3235f51a1",
+      "status": 200,
+      "bytes": 3994,
+      "sha256": "daddaf4d43dee9ae8f8bf3a8141dcb377c885637d86fd70f0583f29acff84e9f"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/VALIDATION.md",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/VALIDATION.md?v=ceffdc9ad3d7f6432054de541e7224c3235f51a1",
+      "status": 200,
+      "bytes": 7188,
+      "sha256": "2bfbefc380f9db42b96bac0425c534677d6c28ec411369ee36ead4b3f491541a"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/execution_2rank.py",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/execution_2rank.py?v=ceffdc9ad3d7f6432054de541e7224c3235f51a1",
+      "status": 200,
+      "bytes": 11041,
+      "sha256": "7c81428bfe80ecddd2b1ac54bd863e1dd198c02cad47b732f7a4dd4a3f158137"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/gasoline_controls.py",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/gasoline_controls.py?v=ceffdc9ad3d7f6432054de541e7224c3235f51a1",
+      "status": 200,
+      "bytes": 10977,
+      "sha256": "95d6137bd2617280316a6dfdee0276d252ba8ee1fdac51efb087ad41e0cf726a"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/longer_2rank_audit.json",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/longer_2rank_audit.json?v=ceffdc9ad3d7f6432054de541e7224c3235f51a1",
+      "status": 200,
+      "bytes": 403310,
+      "sha256": "3329dc075b9873cd608aa7a0ff9533ed4215c65145cc573c92190b3a23d544ff"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/longer_2rank_bundle.json",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/longer_2rank_bundle.json?v=ceffdc9ad3d7f6432054de541e7224c3235f51a1",
+      "status": 200,
+      "bytes": 48639,
+      "sha256": "8240dd24d5ba6d8378c9c3c611d3cb324f4e878117c87c03911f431fed3d5a17"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/longer_2rank_review.json",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/longer_2rank_review.json?v=ceffdc9ad3d7f6432054de541e7224c3235f51a1",
+      "status": 200,
+      "bytes": 7938,
+      "sha256": "cf3e6649b73a3254015f4ec4136f09ff9c29d2b4498860930de1e94b28759686"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/longer_checks_v2.py",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/longer_checks_v2.py?v=ceffdc9ad3d7f6432054de541e7224c3235f51a1",
+      "status": 200,
+      "bytes": 6712,
+      "sha256": "7051bbea0b83f1e5642ae0d2a60b6becd49342201d66253190a523905da9d942"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/repeatability_audit.json",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/repeatability_audit.json?v=ceffdc9ad3d7f6432054de541e7224c3235f51a1",
+      "status": 200,
+      "bytes": 17830,
+      "sha256": "b26dbfa39c8571b172d58b74bd9138d4f80b40e6ce724921301bc82cb7b0d665"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/review_longer.py",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/review_longer.py?v=ceffdc9ad3d7f6432054de541e7224c3235f51a1",
+      "status": 200,
+      "bytes": 7182,
+      "sha256": "3d704f4d807ea7b837ff7b74e76ae792b0c83e78e7fa70ab28dad8b0d7067413"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/stage_longer_publication.ps1",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/stage_longer_publication.ps1?v=ceffdc9ad3d7f6432054de541e7224c3235f51a1",
+      "status": 200,
+      "bytes": 4212,
+      "sha256": "b8fe008717594cf997fb0c4d5c6dbe030ff19b528eb93be93fcd572cff47493e"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/test_gasoline.py",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/test_gasoline.py?v=ceffdc9ad3d7f6432054de541e7224c3235f51a1",
+      "status": 200,
+      "bytes": 2139,
+      "sha256": "c3bd874f9bf73c13d71f58d3b7dd13adc98af80e871ba3ef72c1e35ff24376a7"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/test_longer_audit.py",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/test_longer_audit.py?v=ceffdc9ad3d7f6432054de541e7224c3235f51a1",
+      "status": 200,
+      "bytes": 1215,
+      "sha256": "fe6b04933c92f575dc38987d450293e8d358edbf3ee5cbc182e23ca4ff8e856a"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/test_longer_checks_v2.py",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/test_longer_checks_v2.py?v=ceffdc9ad3d7f6432054de541e7224c3235f51a1",
+      "status": 200,
+      "bytes": 1427,
+      "sha256": "40b5828540feb3c03d3646bf6b25d4e5d1a8fffcb7e1df575509328b78a73273"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/test_review_longer.py",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/test_review_longer.py?v=ceffdc9ad3d7f6432054de541e7224c3235f51a1",
+      "status": 200,
+      "bytes": 2318,
+      "sha256": "f9cc8d3e74d0edda59ff22a4dbe8dd0a0db210d792fd4d81bb2b293fcb1b169a"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/verify_instrumentation_v3.py",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/verify_instrumentation_v3.py?v=ceffdc9ad3d7f6432054de541e7224c3235f51a1",
+      "status": 200,
+      "bytes": 8554,
+      "sha256": "2f07044b93a518e9c743fc67cddba3ac2606618bcf29dca4e5cf220ea58fec92"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/verify_longer_2rank.py",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/verify_longer_2rank.py?v=ceffdc9ad3d7f6432054de541e7224c3235f51a1",
+      "status": 200,
+      "bytes": 6832,
+      "sha256": "ae843fcc2ddd895b5efca377036ae514a895c090dc041e2e734c694f64353285"
+    }
+  ],
+  "scope": "Gasoline81-state prospective failure audit, exact dense-mass agreement through1tcc, checkpoint retention and whole-pair storage measurements. No full Gasoline controls or production viewer entries. Accepted total44. Native raw and failed attempts retained."
+}

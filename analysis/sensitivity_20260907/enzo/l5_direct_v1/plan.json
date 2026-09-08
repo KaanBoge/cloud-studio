@@ -1,0 +1,66 @@
+{
+  "status": "staged_pending_tests_and_windows_readback",
+  "case_budget_bytes": 37473589657,
+  "full_pair_budget_bytes": 74947179314,
+  "diagnostics_budget_bytes": 2147483648,
+  "guest_ancillary_bytes": 1073741824,
+  "separate_reserve_bytes": 10737418240,
+  "pins": {
+    "/mnt/c/Users/kaanb/CloudCrushing/sensitivity_20260907/enzo/l5_direct_v1/runner.py": "939b4717b8d6fc31ae6c0fc9bb4d60e4ec5ce9dad1a034ec17477fa90749be92",
+    "/mnt/c/Users/kaanb/CloudCrushing/sensitivity_20260907/enzo/l5_direct_v1/prepare.py": "704a08786254ab9623cdb5ed67885d347f21495a9c21b77a47c75a513aacddaa",
+    "/mnt/c/Users/kaanb/CloudCrushing/sensitivity_20260907/enzo/l5_direct_v1/test_runner.py": "8ad902af9d4d71467a89e8153efed58c1b4b6e37482673e6d38bb82273db2a25",
+    "/mnt/c/Users/kaanb/CloudCrushing/sensitivity_20260907/enzo/l5_direct_v1/PLAN.md": "315ad67acccc1d6355b8adecf7c73e4a766c9158c170cfc8e5cda6acd8850098",
+    "/mnt/c/Users/kaanb/CloudCrushing/sensitivity_20260907/enzo/l5_direct_v1/run_enzo.py": "6e0447d35ae1bdd8a2da46e93f549f67c4087c2bfd7b680ea4e1d11fa01911d6",
+    "/mnt/c/Users/kaanb/CloudCrushing/sensitivity_20260907/enzo/l5_direct_v1/analyze_enzo.py": "3fcbfa6dcfcd98a91611498eef121cd721d1e9ef5ea4b54bd7526e656739d206",
+    "/home/kaan/sensitivity_20260907/enzo/enzo_pair": "28d482af94828aba1de2b097068b66c9ec80b88b53bd6405e0ff96fbecf57900",
+    "/mnt/c/Users/kaanb/CloudCrushing/sensitivity_20260907/enzo/build.json": "ea16c4d950c23d01955c2e979a2313900e15972a175d300d23ceb7bfabad202b",
+    "/home/kaan/sensitivity_20260907/enzo/build.json": "ea16c4d950c23d01955c2e979a2313900e15972a175d300d23ceb7bfabad202b",
+    "/home/kaan/ic_audit_20260907/grid_tests/enzo_chi100/CloudWind.enzo": "a51cece948d9a16841dbedf0edbb4dc62e5d36d592889ae13e1be16cfc5dcb5b",
+    "/home/kaan/verified_20260907/storage_guard.py": "f342c104352aa4526e737ac58a33e081a12d69d00c57cc55f15ad49a3f9e6fcb",
+    "/home/kaan/verified_20260907/run_params.py": "0fee43d86ae146713a14f780fd813b870340af5fe10b8db0bef6c93e9112ebee",
+    "/mnt/c/Users/kaanb/CloudCrushing/sensitivity_20260907/build.py": "4f39219a8d4d2ef2cee9ebfc055e365321ce9f46c66920d7cc05ee0df6366424",
+    "/mnt/c/Users/kaanb/CloudCrushing/audit_20260907/grid_smokes.py": "5a52040a10317930baa729ff612d9b66f3bbbff524b8690dc90812b26e56debc",
+    "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/sharp13/CloudWind.enzo": "53c183bd4ab93969b7bc7f1eae4c391a626625360a890ed34c78dbc4512cf5d0",
+    "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/tanh13/CloudWind.enzo": "56f94e34eaad56de090fb2bb6c365ffec4760d901acadb2dba54129cb27c544d",
+    "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/full/sharp13/CloudWind.enzo": "10d7c3b38c6bd478d14c2392b9ea19f9760e7e11a10f16f0f70ffb481d176a73",
+    "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/full/tanh13/CloudWind.enzo": "74f4ade78c3399efb3c82dad1e75b957091c592f2ec3644e13bfdcf5d34fd9d7"
+  },
+  "windows_files": {
+    "storage_probe.bin": "7daca2095d0438260fa849183dfc67faa459fdf4936e1bc91eec6b281b27e4c2",
+    "diagnostics/sharp13/CloudWind.enzo": "53c183bd4ab93969b7bc7f1eae4c391a626625360a890ed34c78dbc4512cf5d0",
+    "diagnostics/tanh13/CloudWind.enzo": "56f94e34eaad56de090fb2bb6c365ffec4760d901acadb2dba54129cb27c544d",
+    "full/sharp13/CloudWind.enzo": "10d7c3b38c6bd478d14c2392b9ea19f9760e7e11a10f16f0f70ffb481d176a73",
+    "full/tanh13/CloudWind.enzo": "74f4ade78c3399efb3c82dad1e75b957091c592f2ec3644e13bfdcf5d34fd9d7"
+  },
+  "storage": {
+    "guest_free_bytes": 15342718976,
+    "mounted_free_bytes": 166383792128,
+    "windows": {
+      "distribution": "Ubuntu",
+      "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+      "drive": "C:",
+      "free_bytes": 166383775744,
+      "total_bytes": 1999283154944
+    },
+    "remaining_budget_bytes": 77094662962,
+    "live": false,
+    "mount": {
+      "target": "/mnt/c",
+      "source": "C:\\",
+      "fstype": "9p",
+      "options": "rw,noatime,aname=drvfs;path=C:\\;uid=1000;gid=1000;symlinkroot=/mnt/,cache=0x5,access=client,msize=65536,trans=fd,rfd=5,wfd=5"
+    }
+  },
+  "binary": "/home/kaan/sensitivity_20260907/enzo/enzo_pair",
+  "binary_sha256": "28d482af94828aba1de2b097068b66c9ec80b88b53bd6405e0ff96fbecf57900",
+  "level": 5,
+  "chi": 100,
+  "mach": 2,
+  "dimensions": [
+    256,
+    128,
+    128
+  ],
+  "ranks": 8,
+  "old_blanket_queue_enabled": false
+}

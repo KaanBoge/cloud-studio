@@ -1,0 +1,409 @@
+{
+  "status": "validation_needs_review",
+  "full_science_controls_completed": 0,
+  "states": [
+    {
+      "case": "original_tanh",
+      "path": "/home/kaan/sensitivity_20260907/gasoline/instrumentation_v1/original_tanh/state.000003",
+      "sha256": "be55dc73824eddb472cf9ae3fed6ad4a36dafb86a97442356aa15107274c6754",
+      "time_code": 0.09682458365999999,
+      "time_tcc": 0.025000000001243115,
+      "count": 65536,
+      "mass_sums": [
+        2425.245532028377,
+        409.90798234939575,
+        368.7301419460533
+      ],
+      "pressure_min": 0.7178970171570996,
+      "pressure_max": 26.537536203028143,
+      "native_pressure_relative_difference": 0.016549192807333586,
+      "pressure_comparison": "different native stages; not an error estimate",
+      "sidecars": {
+        "state.000003.HI": "c3be36466b862036ade900ff13fdcf179fd5e14587e16d4fd068ebb7d12b028a",
+        "state.000003.HeI": "5ac0ffc7770f44e2d2d5c37ee7179066e5d0952e1ce7cb5229b700d584d3090e",
+        "state.000003.HeII": "c47cb07b97aa2edcae8a06904b330ccab138edd885ce06cc2c279c050d868dd2",
+        "state.000003.SPHH": "1a22c7375b5806f62db10e330ab019955560520d9e8932501c69e3abf08ff32b",
+        "state.000003.iord": "4bb160b93f0ff646f5c280406c6ed51a70037e27d6bac885bef30430fc23252c",
+        "state.000003.pres": "ee2792262711aa2434f4d6297377a6148f6da3ce8a6d590eb137e0ed8e0788cb"
+      },
+      "independent": {
+        "reader": "yt TipsyDataset raw fields",
+        "mass_sums": [
+          2425.245532028377,
+          409.90798234939575,
+          368.7301419460533
+        ],
+        "relative_discrepancies": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "count": 65536
+      }
+    },
+    {
+      "case": "original_tanh",
+      "path": "/home/kaan/sensitivity_20260907/gasoline/instrumentation_v1/original_tanh/state.000006",
+      "sha256": "1bca940b7f3af018a5d69c50cf8aa569c3c420960fe835022a4466b011675c54",
+      "time_code": 0.19364916732,
+      "time_tcc": 0.050000000002486236,
+      "count": 65536,
+      "mass_sums": [
+        2425.245532028377,
+        409.90798234939575,
+        368.7301419460533
+      ],
+      "pressure_min": 0.46534507786883483,
+      "pressure_max": 45.906638195898275,
+      "native_pressure_relative_difference": 0.012905279400839608,
+      "pressure_comparison": "different native stages; not an error estimate",
+      "sidecars": {
+        "state.000006.HI": "c3be36466b862036ade900ff13fdcf179fd5e14587e16d4fd068ebb7d12b028a",
+        "state.000006.HeI": "5ac0ffc7770f44e2d2d5c37ee7179066e5d0952e1ce7cb5229b700d584d3090e",
+        "state.000006.HeII": "c47cb07b97aa2edcae8a06904b330ccab138edd885ce06cc2c279c050d868dd2",
+        "state.000006.SPHH": "7dde59689e18810f0d00cb1ffd75741f958a1d5a93575f0a3778b5f6a71c41ea",
+        "state.000006.iord": "4bb160b93f0ff646f5c280406c6ed51a70037e27d6bac885bef30430fc23252c",
+        "state.000006.pres": "ad35023859e02ca45fd1ff4038ea40eb5c1bb3814090d9853201e6f4efd3deb1"
+      },
+      "independent": {
+        "reader": "yt TipsyDataset raw fields",
+        "mass_sums": [
+          2425.245532028377,
+          409.90798234939575,
+          368.7301419460533
+        ],
+        "relative_discrepancies": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "count": 65536
+      }
+    },
+    {
+      "case": "off_tanh",
+      "path": "/home/kaan/sensitivity_20260907/gasoline/instrumentation_v1/off_tanh/state.000003",
+      "sha256": "2c24cd654fe22264e77398be13c0580bc64e4c387697fc077afc088944be8aee",
+      "time_code": 0.09682458365999999,
+      "time_tcc": 0.025000000001243115,
+      "count": 65536,
+      "mass_sums": [
+        2425.245532028377,
+        409.90798234939575,
+        368.7301419460533
+      ],
+      "pressure_min": 0.7178970171570996,
+      "pressure_max": 26.537536203028143,
+      "native_pressure_relative_difference": 0.016549192807333586,
+      "pressure_comparison": "different native stages; not an error estimate",
+      "sidecars": {
+        "state.000003.HI": "c3be36466b862036ade900ff13fdcf179fd5e14587e16d4fd068ebb7d12b028a",
+        "state.000003.HeI": "5ac0ffc7770f44e2d2d5c37ee7179066e5d0952e1ce7cb5229b700d584d3090e",
+        "state.000003.HeII": "c47cb07b97aa2edcae8a06904b330ccab138edd885ce06cc2c279c050d868dd2",
+        "state.000003.SPHH": "1a22c7375b5806f62db10e330ab019955560520d9e8932501c69e3abf08ff32b",
+        "state.000003.iord": "4bb160b93f0ff646f5c280406c6ed51a70037e27d6bac885bef30430fc23252c",
+        "state.000003.pres": "5d1c116bfe1e52b3b9c92fd8f3c631285a277f0e6060bb5c053b109e2a93e1f3"
+      },
+      "independent": {
+        "reader": "yt TipsyDataset raw fields",
+        "mass_sums": [
+          2425.245532028377,
+          409.90798234939575,
+          368.7301419460533
+        ],
+        "relative_discrepancies": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "count": 65536
+      }
+    },
+    {
+      "case": "off_tanh",
+      "path": "/home/kaan/sensitivity_20260907/gasoline/instrumentation_v1/off_tanh/state.000006",
+      "sha256": "4611a550b33fb172b505ebbec86bf71ae30023e367533205a554dcba679ad9af",
+      "time_code": 0.19364916732,
+      "time_tcc": 0.050000000002486236,
+      "count": 65536,
+      "mass_sums": [
+        2425.245532028377,
+        409.90798234939575,
+        368.7301419460533
+      ],
+      "pressure_min": 0.46534507786883483,
+      "pressure_max": 45.906638195898275,
+      "native_pressure_relative_difference": 0.012905279400839608,
+      "pressure_comparison": "different native stages; not an error estimate",
+      "sidecars": {
+        "state.000006.HI": "c3be36466b862036ade900ff13fdcf179fd5e14587e16d4fd068ebb7d12b028a",
+        "state.000006.HeI": "5ac0ffc7770f44e2d2d5c37ee7179066e5d0952e1ce7cb5229b700d584d3090e",
+        "state.000006.HeII": "c47cb07b97aa2edcae8a06904b330ccab138edd885ce06cc2c279c050d868dd2",
+        "state.000006.SPHH": "a2ac3a3af14b488b51d68e0ed9d7edc9bca5b5804f5f7e1e5f59e3ab4ad8a125",
+        "state.000006.iord": "4bb160b93f0ff646f5c280406c6ed51a70037e27d6bac885bef30430fc23252c",
+        "state.000006.pres": "95272ff02b1d7c2031c335b6c1c3a2eabbf7f6b359e88fa428ab547b021a0809"
+      },
+      "independent": {
+        "reader": "yt TipsyDataset raw fields",
+        "mass_sums": [
+          2425.245532028377,
+          409.90798234939575,
+          368.7301419460533
+        ],
+        "relative_discrepancies": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "count": 65536
+      }
+    },
+    {
+      "case": "on_tanh",
+      "path": "/home/kaan/sensitivity_20260907/gasoline/instrumentation_v1/on_tanh/state.initial",
+      "sha256": "6e659b9b4f6e07a8ffbd0dc3a57641baff6d72845821c65e5bbc0f8f6eca809b",
+      "time_code": 0.0,
+      "time_tcc": 0.0,
+      "count": 65536,
+      "mass_sums": [
+        2425.245532028377,
+        409.90798234939575,
+        368.7301419460533
+      ],
+      "pressure_min": 0.7379455995292783,
+      "pressure_max": 6.291239210232373,
+      "native_pressure_relative_difference": 5.9323336040049494e-08,
+      "pressure_comparison": "same-stage initial check",
+      "sidecars": {
+        "state.initial.HI": "7d2f0cca52d84f2b29ba8510b52f6ef078a51f983d385558f472791a4f8e894a",
+        "state.initial.HeI": "c6182f39c206d6e9857ede43f20edefa817f61b3cecb93d4ec5563f0947edf17",
+        "state.initial.HeII": "c47cb07b97aa2edcae8a06904b330ccab138edd885ce06cc2c279c050d868dd2",
+        "state.initial.SPHH": "1310a7bdf882e0a5efb468caa7786bed208149dda2a63db0c779bc7596bd60d9",
+        "state.initial.iord": "3430dc0b0f5ffab5edc676be743672bd500349b4294dcf93df3304fdd645b38a",
+        "state.initial.pres": "10bd474cd9f6560cb463ea50ae89b241fd04866af37d294016f357da741ab01d"
+      },
+      "independent": {
+        "reader": "yt TipsyDataset raw fields",
+        "mass_sums": [
+          2425.245532028377,
+          409.90798234939575,
+          368.7301419460533
+        ],
+        "relative_discrepancies": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "count": 65536
+      },
+      "initial_density_vs_analytic_relative_max": 5.29123945532202
+    },
+    {
+      "case": "on_tanh",
+      "path": "/home/kaan/sensitivity_20260907/gasoline/instrumentation_v1/on_tanh/state.000003",
+      "sha256": "c7a784db9cf6e41cd3f254a4c448bd2c3e51a3596e96aa4ad75bceb086551243",
+      "time_code": 0.09682458365999999,
+      "time_tcc": 0.025000000001243115,
+      "count": 65536,
+      "mass_sums": [
+        2425.245532028377,
+        409.90798234939575,
+        368.7301419460533
+      ],
+      "pressure_min": 0.7178970171570996,
+      "pressure_max": 26.537536203028143,
+      "native_pressure_relative_difference": 0.016549192807333586,
+      "pressure_comparison": "different native stages; not an error estimate",
+      "sidecars": {
+        "state.000003.HI": "c3be36466b862036ade900ff13fdcf179fd5e14587e16d4fd068ebb7d12b028a",
+        "state.000003.HeI": "5ac0ffc7770f44e2d2d5c37ee7179066e5d0952e1ce7cb5229b700d584d3090e",
+        "state.000003.HeII": "c47cb07b97aa2edcae8a06904b330ccab138edd885ce06cc2c279c050d868dd2",
+        "state.000003.SPHH": "1a22c7375b5806f62db10e330ab019955560520d9e8932501c69e3abf08ff32b",
+        "state.000003.iord": "4bb160b93f0ff646f5c280406c6ed51a70037e27d6bac885bef30430fc23252c",
+        "state.000003.pres": "5d1c116bfe1e52b3b9c92fd8f3c631285a277f0e6060bb5c053b109e2a93e1f3"
+      },
+      "independent": {
+        "reader": "yt TipsyDataset raw fields",
+        "mass_sums": [
+          2425.245532028377,
+          409.90798234939575,
+          368.7301419460533
+        ],
+        "relative_discrepancies": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "count": 65536
+      }
+    },
+    {
+      "case": "on_tanh",
+      "path": "/home/kaan/sensitivity_20260907/gasoline/instrumentation_v1/on_tanh/state.000006",
+      "sha256": "3f7d202d0769c9eddf2d713169d890c44d29962cf1d85e163c59512b3410e054",
+      "time_code": 0.19364916732,
+      "time_tcc": 0.050000000002486236,
+      "count": 65536,
+      "mass_sums": [
+        2425.245532028377,
+        409.90798234939575,
+        368.7301419460533
+      ],
+      "pressure_min": 0.46534507786883483,
+      "pressure_max": 45.906638195898275,
+      "native_pressure_relative_difference": 0.012905279400839608,
+      "pressure_comparison": "different native stages; not an error estimate",
+      "sidecars": {
+        "state.000006.HI": "c3be36466b862036ade900ff13fdcf179fd5e14587e16d4fd068ebb7d12b028a",
+        "state.000006.HeI": "5ac0ffc7770f44e2d2d5c37ee7179066e5d0952e1ce7cb5229b700d584d3090e",
+        "state.000006.HeII": "c47cb07b97aa2edcae8a06904b330ccab138edd885ce06cc2c279c050d868dd2",
+        "state.000006.SPHH": "5184000787ae29d4027a2f22df98687f59ba697dc42985f5c3f97910646d3fe1",
+        "state.000006.iord": "4bb160b93f0ff646f5c280406c6ed51a70037e27d6bac885bef30430fc23252c",
+        "state.000006.pres": "26d545229c334e9f8433b3f5d5acf6e5e9420404228b238790c134d38e46cbbe"
+      },
+      "independent": {
+        "reader": "yt TipsyDataset raw fields",
+        "mass_sums": [
+          2425.245532028377,
+          409.90798234939575,
+          368.7301419460533
+        ],
+        "relative_discrepancies": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "count": 65536
+      }
+    },
+    {
+      "case": "on_sharp",
+      "path": "/home/kaan/sensitivity_20260907/gasoline/instrumentation_v1/on_sharp/state.initial",
+      "sha256": "ae68c669b89394202bfe2024360b94d57e361ec2a2127f13751922223eeba9fe",
+      "time_code": 0.0,
+      "time_tcc": 0.0,
+      "count": 65536,
+      "mass_sums": [
+        2425.245532028377,
+        409.90798234939575,
+        368.7301419460533
+      ],
+      "pressure_min": 0.7379455995292783,
+      "pressure_max": 6.291239210232373,
+      "native_pressure_relative_difference": 5.9323336040049494e-08,
+      "pressure_comparison": "same-stage initial check",
+      "sidecars": {
+        "state.initial.HI": "7d2f0cca52d84f2b29ba8510b52f6ef078a51f983d385558f472791a4f8e894a",
+        "state.initial.HeI": "c6182f39c206d6e9857ede43f20edefa817f61b3cecb93d4ec5563f0947edf17",
+        "state.initial.HeII": "c47cb07b97aa2edcae8a06904b330ccab138edd885ce06cc2c279c050d868dd2",
+        "state.initial.SPHH": "1310a7bdf882e0a5efb468caa7786bed208149dda2a63db0c779bc7596bd60d9",
+        "state.initial.iord": "3430dc0b0f5ffab5edc676be743672bd500349b4294dcf93df3304fdd645b38a",
+        "state.initial.pres": "10bd474cd9f6560cb463ea50ae89b241fd04866af37d294016f357da741ab01d"
+      },
+      "independent": {
+        "reader": "yt TipsyDataset raw fields",
+        "mass_sums": [
+          2425.245532028377,
+          409.90798234939575,
+          368.7301419460533
+        ],
+        "relative_discrepancies": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "count": 65536
+      },
+      "initial_density_vs_analytic_relative_max": 5.29123945532202
+    },
+    {
+      "case": "on_sharp",
+      "path": "/home/kaan/sensitivity_20260907/gasoline/instrumentation_v1/on_sharp/state.000003",
+      "sha256": "a6b138b9ef2224b8ffba4d3b78a6c3b72306f6622ccfa49777e1f06725ac54b2",
+      "time_code": 0.09682458365999999,
+      "time_tcc": 0.025000000001243115,
+      "count": 65536,
+      "mass_sums": [
+        2425.245532028377,
+        409.90798234939575,
+        368.7301419460533
+      ],
+      "pressure_min": 0.7224315296557744,
+      "pressure_max": 55.10307441296755,
+      "native_pressure_relative_difference": 0.014910884533297438,
+      "pressure_comparison": "different native stages; not an error estimate",
+      "sidecars": {
+        "state.000003.HI": "c3be36466b862036ade900ff13fdcf179fd5e14587e16d4fd068ebb7d12b028a",
+        "state.000003.HeI": "5ac0ffc7770f44e2d2d5c37ee7179066e5d0952e1ce7cb5229b700d584d3090e",
+        "state.000003.HeII": "c47cb07b97aa2edcae8a06904b330ccab138edd885ce06cc2c279c050d868dd2",
+        "state.000003.SPHH": "8aaafb75150aee489879ec37ad90841c9fbf40966ce50019c3b0a7e2b310f6f8",
+        "state.000003.iord": "4bb160b93f0ff646f5c280406c6ed51a70037e27d6bac885bef30430fc23252c",
+        "state.000003.pres": "b32d08a8dcd3da725f92ebc2fe210b66184901bc1a8d2603212dc15aa996bff7"
+      },
+      "independent": {
+        "reader": "yt TipsyDataset raw fields",
+        "mass_sums": [
+          2425.245532028377,
+          409.90798234939575,
+          368.7301419460533
+        ],
+        "relative_discrepancies": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "count": 65536
+      }
+    },
+    {
+      "case": "on_sharp",
+      "path": "/home/kaan/sensitivity_20260907/gasoline/instrumentation_v1/on_sharp/state.000006",
+      "sha256": "828b23397466d6fb02114374e3eb4461afc7c13ee67d536e718b094060df50b1",
+      "time_code": 0.19364916732,
+      "time_tcc": 0.050000000002486236,
+      "count": 65536,
+      "mass_sums": [
+        2425.245532028377,
+        409.90798234939575,
+        368.7301419460533
+      ],
+      "pressure_min": 0.4647643446617736,
+      "pressure_max": 81.53361427296599,
+      "native_pressure_relative_difference": 0.011148882985627159,
+      "pressure_comparison": "different native stages; not an error estimate",
+      "sidecars": {
+        "state.000006.HI": "c3be36466b862036ade900ff13fdcf179fd5e14587e16d4fd068ebb7d12b028a",
+        "state.000006.HeI": "5ac0ffc7770f44e2d2d5c37ee7179066e5d0952e1ce7cb5229b700d584d3090e",
+        "state.000006.HeII": "c47cb07b97aa2edcae8a06904b330ccab138edd885ce06cc2c279c050d868dd2",
+        "state.000006.SPHH": "58a653a30a8255ceffc387d61598623083979f05a7bbf5c91d9e6aeef385b740",
+        "state.000006.iord": "4bb160b93f0ff646f5c280406c6ed51a70037e27d6bac885bef30430fc23252c",
+        "state.000006.pres": "f83df3a2626a4d77b248e0695fcf5eff91ff6f4f48644be375350272893f9d4d"
+      },
+      "independent": {
+        "reader": "yt TipsyDataset raw fields",
+        "mass_sums": [
+          2425.245532028377,
+          409.90798234939575,
+          368.7301419460533
+        ],
+        "relative_discrepancies": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "count": 65536
+      }
+    }
+  ],
+  "equivalence": [],
+  "initial_pair": {},
+  "limitations": [
+    "Only six original-size native timesteps, not a full trajectory equivalence proof.",
+    "Original fully periodic, equal-volume variable-mass SPH recipe; not a grid-code baseline.",
+    "TIPSY temp uses parameter-derived energy scaling, not an assumed physical Kelvin field.",
+    "Mass/color sums cannot certify no periodic boundary crossing.",
+    "Evolved .pres is cached from predictor-energy force evaluation; TIPSY temp stores u after the closing kick. These are not the same-stage pressure diagnostic.",
+    "Pressure-at-header-time and evolved velocity synchronization remain uncertified; mass diagnostics only."
+  ],
+  "error": "AssertionError(('evolved field changed', 'off_tanh', 'state.000003', 'vel'))"
+}

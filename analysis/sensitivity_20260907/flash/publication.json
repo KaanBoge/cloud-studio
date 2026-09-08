@@ -1,0 +1,18 @@
+{
+  "status": "verified_live",
+  "date_local": "2026-09-08",
+  "commit": "171eb24d66a5d9f14c5bfcd46d08ad7c2d6816c5",
+  "remote_main_matches": true,
+  "pages_workflow_id": 34171330271,
+  "pages_conclusion": "success",
+  "flash_report_live": {
+    "status": "share_with_caveats",
+    "levels": [3, 4],
+    "frames_per_case": 101,
+    "peak_curve_differences": [0.1036965767665376, 0.06165459072601159]
+  },
+  "mass_plot_http": 200,
+  "flashx_smoke_proof_http": 200,
+  "working_tree_clean": true,
+  "scope": "Completed FLASH analysis and Flash-X setup only; no native raw or production viewer entries published."
+}

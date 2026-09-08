@@ -1,0 +1,110 @@
+{
+  "status": "verified_live",
+  "verified_at_utc": "2026-09-08T09:23:27.6923372Z",
+  "commit": "be70fb1e6f47dfad8775adf7ac9c5d83f8fee010",
+  "previous_commit": "ffe243e51cf961bda40851ddcbae0504d2beadc5",
+  "pages_workflow_id": 34209525887,
+  "pages_conclusion": "success",
+  "files_verified": 13,
+  "checks": [
+    {
+      "path": "analysis/README.md",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/README.md?v=be70fb1e6f47dfad8775adf7ac9c5d83f8fee010",
+      "bytes": 11807,
+      "sha256": "8060374a61a1352e9ebc87bf63028d47d12d54489eb72f78e344565c2b92996a"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/PLAN.md",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/PLAN.md?v=be70fb1e6f47dfad8775adf7ac9c5d83f8fee010",
+      "bytes": 13778,
+      "sha256": "b7525db6870bcf6800a2d5be156b2d02b03ae723b0e46c33b094a72ce47e7348"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/README.md",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/README.md?v=be70fb1e6f47dfad8775adf7ac9c5d83f8fee010",
+      "bytes": 13323,
+      "sha256": "97dec04300701681485511a9e5c3b317f539978b6f445e9e51a3521493343f05"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/.gitattributes",
+      "surface": "repository_config",
+      "url": "https://raw.githubusercontent.com/KaanBoge/cloud-studio/be70fb1e6f47dfad8775adf7ac9c5d83f8fee010/analysis/sensitivity_20260907/gizmo/.gitattributes",
+      "bytes": 768,
+      "sha256": "9dbf32a513a1adced58d0747f35d8cc31af4bef82fcbc3ac8d192a798dd5a99d"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/MFV_REPAIR_BUILD_VALIDATION.md",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/MFV_REPAIR_BUILD_VALIDATION.md?v=be70fb1e6f47dfad8775adf7ac9c5d83f8fee010",
+      "bytes": 4398,
+      "sha256": "ee00f1c666ebfc47f566cc31ad8ef7aadb1ed206587e48b1b396522f3020f42e"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/README.md",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/README.md?v=be70fb1e6f47dfad8775adf7ac9c5d83f8fee010",
+      "bytes": 15094,
+      "sha256": "127728ab9368928cb73ef401fb2293402f5636b661f21b729f9c41569b027dde"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/build_mfv_repair.py",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/build_mfv_repair.py?v=be70fb1e6f47dfad8775adf7ac9c5d83f8fee010",
+      "bytes": 7125,
+      "sha256": "2f52ff23117488111b856362d1a61f8122c492515d7266e931622e91cd363d5e"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/prepare_mfv_repair.ps1",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/prepare_mfv_repair.ps1?v=be70fb1e6f47dfad8775adf7ac9c5d83f8fee010",
+      "bytes": 3068,
+      "sha256": "e283e746342b903abed10b26757d9b2a52507ee4c2fc1729603a3d5c60174e7c"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/publish_mfv_repair_build.ps1",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/publish_mfv_repair_build.ps1?v=be70fb1e6f47dfad8775adf7ac9c5d83f8fee010",
+      "bytes": 5468,
+      "sha256": "8794a19061a90bfaf6bfc579548d525592ce727b2ba13b1b78f3f814d45f1428"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/repair_build_report.json",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/repair_build_report.json?v=be70fb1e6f47dfad8775adf7ac9c5d83f8fee010",
+      "bytes": 7703,
+      "sha256": "01457ba7a87dfc4054366d240b66f0ba8caca310af74f945eeafb6ebd928e509"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/repair_build_review.json",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/repair_build_review.json?v=be70fb1e6f47dfad8775adf7ac9c5d83f8fee010",
+      "bytes": 24281,
+      "sha256": "7ac8f279308221ad7a012d33f0e229417d10c38b8aaea42426c3a6eb5950e571"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/repair_flux_test_report.json",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/repair_flux_test_report.json?v=be70fb1e6f47dfad8775adf7ac9c5d83f8fee010",
+      "bytes": 1068,
+      "sha256": "ffa2d510b2e2737b66bed38ffd03b445694d1f04c3526dd98e0b1f4bd826d340"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/review_mfv_repair_build.py",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/review_mfv_repair_build.py?v=be70fb1e6f47dfad8775adf7ac9c5d83f8fee010",
+      "bytes": 4167,
+      "sha256": "e7efa28c782a9b3b2d925e0e43dc3ce0f1a77932b9fd2250c0bbe7758aeb8f93"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/test_native_mfv_flux.py",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/test_native_mfv_flux.py?v=be70fb1e6f47dfad8775adf7ac9c5d83f8fee010",
+      "bytes": 6326,
+      "sha256": "aaf951938b6eef2a67db51045295eb95e678c7e770f27ccfb17707da106e94bb"
+    }
+  ],
+  "scope": "Isolated MFV reference/repair builds, nine synthetic tests, selected ABI/toolchain/source review. No native evolution, original data/binary change or accepted-count change."
+}

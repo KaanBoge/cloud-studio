@@ -1,0 +1,65 @@
+{
+  "status": "verified_live",
+  "verified_at_utc": "2026-09-08T14:29:40.4569722Z",
+  "commit": "584d80e1bd55b9ac8143311729d71e189341347b",
+  "previous_commit": "be992e8080dddb7e5e5732dd4a7d9126da2ee3a0",
+  "pages_workflow_id": 34238380950,
+  "files_verified": 9,
+  "checks": [
+    {
+      "path": "analysis/README.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/README.md?v=584d80e1bd55b9ac8143311729d71e189341347b",
+      "bytes": 13998,
+      "sha256": "160f556ef944eb3490f94e04930cf655836f3d6778be8be48a7474bee7dbae71"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/PLAN.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/PLAN.md?v=584d80e1bd55b9ac8143311729d71e189341347b",
+      "bytes": 17547,
+      "sha256": "06054a1acdce11077ba53c13a037b8a7bf8f418de0514e064bdb9e0fcc607e1f"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/README.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/README.md?v=584d80e1bd55b9ac8143311729d71e189341347b",
+      "bytes": 15857,
+      "sha256": "d615dc7dac6c9684c43b8ba78a6abace8e46b9645a3f283bffd71da2283baf53"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/build_resolution_summary.py",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/build_resolution_summary.py?v=584d80e1bd55b9ac8143311729d71e189341347b",
+      "bytes": 18747,
+      "sha256": "cf96a7dc5f377edf1c3e2d8e64a9addf9eaddf64eb545020b915451fa1537ef4"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/publish_resolution_summary.ps1",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/publish_resolution_summary.ps1?v=584d80e1bd55b9ac8143311729d71e189341347b",
+      "bytes": 6574,
+      "sha256": "60cce4e10a5d47de3d77fa1fe4883273a2ce3e71911d0ceffde9de20e9749b5d"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/resolution_summary_v1/README.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/resolution_summary_v1/README.md?v=584d80e1bd55b9ac8143311729d71e189341347b",
+      "bytes": 11430,
+      "sha256": "5b8d14ae6743f79a1c479d93398ae3c66df5434da1f098f9a95b96ca634f7493"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/resolution_summary_v1/summary.json",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/resolution_summary_v1/summary.json?v=584d80e1bd55b9ac8143311729d71e189341347b",
+      "bytes": 58313,
+      "sha256": "806b7a696fec08d587e78fa9a0d2d3ba1e0fce202792a51410a99d262fd9cdcf"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/resolution_summary_v1/validation.json",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/resolution_summary_v1/validation.json?v=584d80e1bd55b9ac8143311729d71e189341347b",
+      "bytes": 16252,
+      "sha256": "9c23228a3729457ab03b0c26b999a3cb0c07d44d2b6071923b7956aa8a5f18c4"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/test_resolution_summary.py",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/test_resolution_summary.py?v=584d80e1bd55b9ac8143311729d71e189341347b",
+      "bytes": 9268,
+      "sha256": "77af8acf8f6ba49501e66cd8648f863e2906fb2a30a44cd51148a73a1e39a0d0"
+    }
+  ],
+  "scope": "Report-only consolidation of 23 accepted pairs, 46 controls,4650 native analysis states. No native rerun, raw deletion, acceptance change or viewer entry."
+}

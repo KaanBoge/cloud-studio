@@ -1,0 +1,126 @@
+{
+  "status": "verified_live",
+  "verified_at_utc": "2026-09-08T08:47:43.1490355Z",
+  "commit": "42932263fbb4bd7f7228a547a3f9dbc0f1a64e3c",
+  "previous_commit": "ceffdc9ad3d7f6432054de541e7224c3235f51a1",
+  "remote_main_matches": true,
+  "working_tree_clean": true,
+  "pages_workflow_id": 34206271266,
+  "pages_conclusion": "success",
+  "files_verified": 13,
+  "checks": [
+    {
+      "path": "analysis/README.md",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/README.md?v=42932263fbb4bd7f7228a547a3f9dbc0f1a64e3c",
+      "status": 200,
+      "bytes": 11464,
+      "sha256": "b1be0dda12c4e3482c9159fe66eeddb6b90f1eb5d8d188aff7554b67caea765e"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/PLAN.md",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/PLAN.md?v=42932263fbb4bd7f7228a547a3f9dbc0f1a64e3c",
+      "status": 200,
+      "bytes": 12999,
+      "sha256": "474b718b90bceb8b5a45e9d2c97c03cff99f51590ace8d0dd9d2b330cb8a7638"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/README.md",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/README.md?v=42932263fbb4bd7f7228a547a3f9dbc0f1a64e3c",
+      "status": 200,
+      "bytes": 12777,
+      "sha256": "610df397865751f9cca90027443a5f873a4d547fea42c80fd3eb8cc726240fff"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/.gitattributes",
+      "surface": "repository_config",
+      "url": "https://raw.githubusercontent.com/KaanBoge/cloud-studio/42932263fbb4bd7f7228a547a3f9dbc0f1a64e3c/analysis/sensitivity_20260907/gizmo/.gitattributes",
+      "status": 200,
+      "bytes": 285,
+      "sha256": "badbfce274674392d19b6b4d1196bbcb354061ae152caa9d674a165c8a189103"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/MFV_RESTART_DIAGNOSIS.md",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/MFV_RESTART_DIAGNOSIS.md?v=42932263fbb4bd7f7228a547a3f9dbc0f1a64e3c",
+      "status": 200,
+      "bytes": 5884,
+      "sha256": "eea7a870192d4b1a0b521524b348703bcab031a8aa0ddfd98fd3a4b66acd6624"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/README.md",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/README.md?v=42932263fbb4bd7f7228a547a3f9dbc0f1a64e3c",
+      "status": 200,
+      "bytes": 14491,
+      "sha256": "2d3c73e3eb012941ea29659daa56b3dbac4b9aefe27cdf485953371f16923ff1"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/VALIDATION.md",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/VALIDATION.md?v=42932263fbb4bd7f7228a547a3f9dbc0f1a64e3c",
+      "status": 200,
+      "bytes": 4185,
+      "sha256": "6b75e38df36c9af2c388e63794541a716f9885b6a3cc0040a5fae8921170582e"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/diagnose_mfv_restart.py",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/diagnose_mfv_restart.py?v=42932263fbb4bd7f7228a547a3f9dbc0f1a64e3c",
+      "status": 200,
+      "bytes": 16476,
+      "sha256": "df5a3f097c7f4c6cdd04d80036316f99e202f9d7c9c46f5ab131763d71a89e94"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/mfv_restart_diagnosis_v1.json",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/mfv_restart_diagnosis_v1.json?v=42932263fbb4bd7f7228a547a3f9dbc0f1a64e3c",
+      "status": 200,
+      "bytes": 19523,
+      "sha256": "88fbb20c30aeab70b9f7dd60638c05a0abcf1afd876ee091a2ebf0ab5e7956b3"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/mfv_restart_review_v1.json",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/mfv_restart_review_v1.json?v=42932263fbb4bd7f7228a547a3f9dbc0f1a64e3c",
+      "status": 200,
+      "bytes": 156088,
+      "sha256": "23cf16be3830b7d3a153fb8ae62e67e255cb6a8961b945c25250b09f62aa6f4e"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/review_mfv_restart.py",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/review_mfv_restart.py?v=42932263fbb4bd7f7228a547a3f9dbc0f1a64e3c",
+      "status": 200,
+      "bytes": 7641,
+      "sha256": "9a4ec491de098fef5c1d4e50272decf0853df13aedcb0269b9ff3bac8fce35f6"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/stage_mfv_publication.ps1",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/stage_mfv_publication.ps1?v=42932263fbb4bd7f7228a547a3f9dbc0f1a64e3c",
+      "status": 200,
+      "bytes": 3186,
+      "sha256": "a7cf4e4656e33c4a5b8672d3d20bf5a3ac074faf8f9a9655e7abaad92078e2ea"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/test_mfv_restart.py",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/test_mfv_restart.py?v=42932263fbb4bd7f7228a547a3f9dbc0f1a64e3c",
+      "status": 200,
+      "bytes": 4718,
+      "sha256": "296bb4f41f07e2ec2d0f7d169040b38251c9b9b0ef6535119495914d282beddf"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/verify_mfv_publication.ps1",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/verify_mfv_publication.ps1?v=42932263fbb4bd7f7228a547a3f9dbc0f1a64e3c",
+      "status": 200,
+      "bytes": 3626,
+      "sha256": "d6a7c90c0017a84a99ab0382423b2772203772acdc1b5d9d2628085727ce827b"
+    }
+  ],
+  "scope": "MFV terminal restart/export diagnosis only;44 accepted full controls unchanged. All raw states retained. No new simulation, compiler/floor change or production viewer entry."
+}

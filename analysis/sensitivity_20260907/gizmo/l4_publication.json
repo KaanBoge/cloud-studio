@@ -1,0 +1,105 @@
+{
+  "status": "verified_live",
+  "verified_at_utc": "2026-09-08T04:54:40.4679030Z",
+  "commit": "c58b730164e6ab193d075eb9c42d20d4d787cea6",
+  "previous_commit": "5d222423e8d94e5ad6e76dc7c7e1f6b017505031",
+  "remote_main_matches": true,
+  "working_tree_clean": true,
+  "pages_workflow_id": 34188583805,
+  "pages_conclusion": "success",
+  "files_verified": 13,
+  "checks": [
+    {
+      "path": "analysis/sensitivity_20260907/PLAN.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/PLAN.md?v=c58b730164e6ab193d075eb9c42d20d4d787cea6",
+      "status": 200,
+      "bytes": 10239,
+      "sha256": "d81d7a7eb9d754178b8d8f3d492f43c92a2ee76732ade8d312edc968bc2a4c31"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/README.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/README.md?v=c58b730164e6ab193d075eb9c42d20d4d787cea6",
+      "status": 200,
+      "bytes": 10605,
+      "sha256": "762c24b2cd4c4efa01d06fbe3896e6a04815458a4712b7b44d7267dc07dff757"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/L4_VALIDATION_PLAN.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/L4_VALIDATION_PLAN.md?v=c58b730164e6ab193d075eb9c42d20d4d787cea6",
+      "status": 200,
+      "bytes": 3446,
+      "sha256": "275f614d31cd5f98fbd0cdfd5cb88e248f34f23c560380e64973ded45b88ae5e"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/README.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/README.md?v=c58b730164e6ab193d075eb9c42d20d4d787cea6",
+      "status": 200,
+      "bytes": 12886,
+      "sha256": "79f9344b81c16d19ed7974c4c76caa35577a9f0c59e969cda9378e26159e6d83"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/freeze_mfm_l4.py",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/freeze_mfm_l4.py?v=c58b730164e6ab193d075eb9c42d20d4d787cea6",
+      "status": 200,
+      "bytes": 1668,
+      "sha256": "366427e889d869e88fd08b1fb414c62537e8fdfd034fa57a3209759587aaf162"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/launch_mfm_l4_windows.ps1",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/launch_mfm_l4_windows.ps1?v=c58b730164e6ab193d075eb9c42d20d4d787cea6",
+      "status": 200,
+      "bytes": 2092,
+      "sha256": "300b2a07c90709bb028d7a0118b45801bddb0620e0171560c4c977bc9fe7c16c"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/mfm_l4_bundle.json",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/mfm_l4_bundle.json?v=c58b730164e6ab193d075eb9c42d20d4d787cea6",
+      "status": 200,
+      "bytes": 724,
+      "sha256": "4cb047625c0ea1bb78b2841747b37900a27547077ce3ec11f5575d1340a9b5d0"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/mfm_l4_controls.py",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/mfm_l4_controls.py?v=c58b730164e6ab193d075eb9c42d20d4d787cea6",
+      "status": 200,
+      "bytes": 18162,
+      "sha256": "6e3c8b350d2a11e705216572f0a98a52c4062c8b768dd4f5599420b1586e583a"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/mfm_l4_tests.json",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/mfm_l4_tests.json?v=c58b730164e6ab193d075eb9c42d20d4d787cea6",
+      "status": 200,
+      "bytes": 165,
+      "sha256": "1984dc21593545a02e0a83330c064eca5006f7dc8d9e66839a3dc7b83c8e38c2"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/mfm_l4_validation.json",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/mfm_l4_validation.json?v=c58b730164e6ab193d075eb9c42d20d4d787cea6",
+      "status": 200,
+      "bytes": 42456,
+      "sha256": "958ccc25bd1c485c725e673745e4d3ace1b4945d9068c916eb88b10731a66f8a"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/stage_l4_validation.ps1",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/stage_l4_validation.ps1?v=c58b730164e6ab193d075eb9c42d20d4d787cea6",
+      "status": 200,
+      "bytes": 2564,
+      "sha256": "eb5ca2c538fe3f45c139cd63a135ce1d47017d5e1ea08c167d74ac887321026c"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/status_mfm_l4.py",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/status_mfm_l4.py?v=c58b730164e6ab193d075eb9c42d20d4d787cea6",
+      "status": 200,
+      "bytes": 1921,
+      "sha256": "b6d9f70023e0f4295dbbf7ddad0f3c9c6ac5f8e2cb36894e5a9291104202117f"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/test_mfm_l4.py",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/test_mfm_l4.py?v=c58b730164e6ab193d075eb9c42d20d4d787cea6",
+      "status": 200,
+      "bytes": 2215,
+      "sha256": "28333304bc4ce5ede41e936a80fc1aec7814fdef1f47665def7e48457628df01"
+    }
+  ],
+  "scope": "Native MFM L4 setup/timing validation,16 independent native test states,9 additional unit tests and the frozen guarded full-pair launcher. Full pair launched but not yet completed/accepted. Total accepted and analyzed controls remains40. No native raw, binaries or new production viewer entries published."
+}

@@ -1,0 +1,1807 @@
+{
+  "scope": "read-only compression feasibility, not applied",
+  "samples": [
+    {
+      "label": "L5_initial",
+      "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/full/sharp13/DD0000",
+      "files": [
+        {
+          "name": "CW_0000",
+          "bytes": 24879,
+          "fields": [],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 7530,
+              "seconds_compress_decompress_read": 0.008770013999992443,
+              "byte_exact": true,
+              "source_sha256": "ab3ed8c755d19f66ea2676eaef7376819388555ea1e04ce21f459543ec7b1202"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 6402,
+              "seconds_compress_decompress_read": 0.004966668999998092,
+              "byte_exact": true,
+              "source_sha256": "ab3ed8c755d19f66ea2676eaef7376819388555ea1e04ce21f459543ec7b1202"
+            }
+          ]
+        },
+        {
+          "name": "CW_0000.boundary",
+          "bytes": 237,
+          "fields": [],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 179,
+              "seconds_compress_decompress_read": 0.002845467999975426,
+              "byte_exact": true,
+              "source_sha256": "7ff7ecb173c78dd9bceab2342fdf96bb03130f2ab1050df6e7628f4f2299d603"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 177,
+              "seconds_compress_decompress_read": 0.0028584880000153134,
+              "byte_exact": true,
+              "source_sha256": "7ff7ecb173c78dd9bceab2342fdf96bb03130f2ab1050df6e7628f4f2299d603"
+            }
+          ]
+        },
+        {
+          "name": "CW_0000.boundary.hdf",
+          "bytes": 5098240,
+          "fields": [
+            {
+              "name": "BoundaryDimensionType.0",
+              "shape": [
+                215472
+              ],
+              "dtype": ">f4",
+              "logical_bytes": 861888,
+              "stored_bytes": 861888,
+              "compression": null,
+              "shuffle": false
+            },
+            {
+              "name": "BoundaryDimensionType.1",
+              "shape": [
+                421296
+              ],
+              "dtype": ">f4",
+              "logical_bytes": 1685184,
+              "stored_bytes": 1685184,
+              "compression": null,
+              "shuffle": false
+            },
+            {
+              "name": "BoundaryDimensionType.2",
+              "shape": [
+                421296
+              ],
+              "dtype": ">f4",
+              "logical_bytes": 1685184,
+              "stored_bytes": 1685184,
+              "compression": null,
+              "shuffle": false
+            },
+            {
+              "name": "BoundaryDimensionValue.0",
+              "shape": [
+                215472
+              ],
+              "dtype": ">f4",
+              "logical_bytes": 861888,
+              "stored_bytes": 861888,
+              "compression": null,
+              "shuffle": false
+            },
+            {
+              "name": "BoundaryDimensionValue.1",
+              "shape": [
+                421296
+              ],
+              "dtype": ">f4",
+              "logical_bytes": 1685184,
+              "stored_bytes": 0,
+              "compression": null,
+              "shuffle": false
+            },
+            {
+              "name": "BoundaryDimensionValue.2",
+              "shape": [
+                421296
+              ],
+              "dtype": ">f4",
+              "logical_bytes": 1685184,
+              "stored_bytes": 0,
+              "compression": null,
+              "shuffle": false
+            }
+          ],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 25494,
+              "seconds_compress_decompress_read": 0.033447243000011895,
+              "byte_exact": true,
+              "source_sha256": "53770f5c0bfdc1f6f80153c5679868615dead197a4eda557f633efa849114646"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 5918,
+              "seconds_compress_decompress_read": 0.04544015500005116,
+              "byte_exact": true,
+              "source_sha256": "53770f5c0bfdc1f6f80153c5679868615dead197a4eda557f633efa849114646"
+            }
+          ]
+        },
+        {
+          "name": "CW_0000.configure",
+          "bytes": 4371,
+          "fields": [],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 1559,
+              "seconds_compress_decompress_read": 0.00533639600001834,
+              "byte_exact": true,
+              "source_sha256": "c6f955770e408650307cea6a03375c4b13f6286aaa502614e4201eacd9e4be3d"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 1456,
+              "seconds_compress_decompress_read": 0.0028546069999606516,
+              "byte_exact": true,
+              "source_sha256": "c6f955770e408650307cea6a03375c4b13f6286aaa502614e4201eacd9e4be3d"
+            }
+          ]
+        },
+        {
+          "name": "CW_0000.cpu0000",
+          "bytes": 201332112,
+          "fields": [
+            {
+              "name": "Grid00000001/Density",
+              "shape": [
+                128,
+                128,
+                256
+              ],
+              "dtype": "float64",
+              "logical_bytes": 33554432,
+              "stored_bytes": 33554432,
+              "compression": null,
+              "shuffle": false
+            },
+            {
+              "name": "Grid00000001/Metal_Density",
+              "shape": [
+                128,
+                128,
+                256
+              ],
+              "dtype": "float64",
+              "logical_bytes": 33554432,
+              "stored_bytes": 33554432,
+              "compression": null,
+              "shuffle": false
+            },
+            {
+              "name": "Grid00000001/TotalEnergy",
+              "shape": [
+                128,
+                128,
+                256
+              ],
+              "dtype": "float64",
+              "logical_bytes": 33554432,
+              "stored_bytes": 33554432,
+              "compression": null,
+              "shuffle": false
+            },
+            {
+              "name": "Grid00000001/x-velocity",
+              "shape": [
+                128,
+                128,
+                256
+              ],
+              "dtype": "float64",
+              "logical_bytes": 33554432,
+              "stored_bytes": 33554432,
+              "compression": null,
+              "shuffle": false
+            },
+            {
+              "name": "Grid00000001/y-velocity",
+              "shape": [
+                128,
+                128,
+                256
+              ],
+              "dtype": "float64",
+              "logical_bytes": 33554432,
+              "stored_bytes": 33554432,
+              "compression": null,
+              "shuffle": false
+            },
+            {
+              "name": "Grid00000001/z-velocity",
+              "shape": [
+                128,
+                128,
+                256
+              ],
+              "dtype": "float64",
+              "logical_bytes": 33554432,
+              "stored_bytes": 33554432,
+              "compression": null,
+              "shuffle": false
+            }
+          ],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 3733340,
+              "seconds_compress_decompress_read": 1.092812213000002,
+              "byte_exact": true,
+              "source_sha256": "306388cb6105a27d8548c658c2d8806e5ce8150d507081224ec6f84106e8d63b"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 2691063,
+              "seconds_compress_decompress_read": 1.635244691999958,
+              "byte_exact": true,
+              "source_sha256": "306388cb6105a27d8548c658c2d8806e5ce8150d507081224ec6f84106e8d63b"
+            }
+          ]
+        },
+        {
+          "name": "CW_0000.cpu0001",
+          "bytes": 2328,
+          "fields": [],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 277,
+              "seconds_compress_decompress_read": 0.005721575999984907,
+              "byte_exact": true,
+              "source_sha256": "0297a589680e11f9d14d0e5f389605e09b488242e04a71e6d1e1c0cfe6ea623c"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 246,
+              "seconds_compress_decompress_read": 0.0030457880000085424,
+              "byte_exact": true,
+              "source_sha256": "0297a589680e11f9d14d0e5f389605e09b488242e04a71e6d1e1c0cfe6ea623c"
+            }
+          ]
+        },
+        {
+          "name": "CW_0000.cpu0002",
+          "bytes": 2328,
+          "fields": [],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 277,
+              "seconds_compress_decompress_read": 0.002833812999995189,
+              "byte_exact": true,
+              "source_sha256": "0297a589680e11f9d14d0e5f389605e09b488242e04a71e6d1e1c0cfe6ea623c"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 246,
+              "seconds_compress_decompress_read": 0.00299877300000162,
+              "byte_exact": true,
+              "source_sha256": "0297a589680e11f9d14d0e5f389605e09b488242e04a71e6d1e1c0cfe6ea623c"
+            }
+          ]
+        },
+        {
+          "name": "CW_0000.cpu0003",
+          "bytes": 2328,
+          "fields": [],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 277,
+              "seconds_compress_decompress_read": 0.0030904340000006414,
+              "byte_exact": true,
+              "source_sha256": "0297a589680e11f9d14d0e5f389605e09b488242e04a71e6d1e1c0cfe6ea623c"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 246,
+              "seconds_compress_decompress_read": 0.002941609000004064,
+              "byte_exact": true,
+              "source_sha256": "0297a589680e11f9d14d0e5f389605e09b488242e04a71e6d1e1c0cfe6ea623c"
+            }
+          ]
+        },
+        {
+          "name": "CW_0000.cpu0004",
+          "bytes": 2328,
+          "fields": [],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 277,
+              "seconds_compress_decompress_read": 0.00283029299998816,
+              "byte_exact": true,
+              "source_sha256": "0297a589680e11f9d14d0e5f389605e09b488242e04a71e6d1e1c0cfe6ea623c"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 246,
+              "seconds_compress_decompress_read": 0.0025355230000059237,
+              "byte_exact": true,
+              "source_sha256": "0297a589680e11f9d14d0e5f389605e09b488242e04a71e6d1e1c0cfe6ea623c"
+            }
+          ]
+        },
+        {
+          "name": "CW_0000.cpu0005",
+          "bytes": 2328,
+          "fields": [],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 277,
+              "seconds_compress_decompress_read": 0.003273433999993358,
+              "byte_exact": true,
+              "source_sha256": "0297a589680e11f9d14d0e5f389605e09b488242e04a71e6d1e1c0cfe6ea623c"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 246,
+              "seconds_compress_decompress_read": 0.002715481999985059,
+              "byte_exact": true,
+              "source_sha256": "0297a589680e11f9d14d0e5f389605e09b488242e04a71e6d1e1c0cfe6ea623c"
+            }
+          ]
+        },
+        {
+          "name": "CW_0000.cpu0006",
+          "bytes": 2328,
+          "fields": [],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 277,
+              "seconds_compress_decompress_read": 0.003147722999983671,
+              "byte_exact": true,
+              "source_sha256": "0297a589680e11f9d14d0e5f389605e09b488242e04a71e6d1e1c0cfe6ea623c"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 246,
+              "seconds_compress_decompress_read": 0.0030577229999835254,
+              "byte_exact": true,
+              "source_sha256": "0297a589680e11f9d14d0e5f389605e09b488242e04a71e6d1e1c0cfe6ea623c"
+            }
+          ]
+        },
+        {
+          "name": "CW_0000.cpu0007",
+          "bytes": 2328,
+          "fields": [],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 277,
+              "seconds_compress_decompress_read": 0.0030019429999583735,
+              "byte_exact": true,
+              "source_sha256": "0297a589680e11f9d14d0e5f389605e09b488242e04a71e6d1e1c0cfe6ea623c"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 246,
+              "seconds_compress_decompress_read": 0.0030887730000017655,
+              "byte_exact": true,
+              "source_sha256": "0297a589680e11f9d14d0e5f389605e09b488242e04a71e6d1e1c0cfe6ea623c"
+            }
+          ]
+        },
+        {
+          "name": "CW_0000.hierarchy",
+          "bytes": 635,
+          "fields": [],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 363,
+              "seconds_compress_decompress_read": 0.0032958140000118874,
+              "byte_exact": true,
+              "source_sha256": "bc869754414d6b43160dbda62d229b19ab8117854167559103027670cc7ddde2"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 349,
+              "seconds_compress_decompress_read": 0.0031689840000126424,
+              "byte_exact": true,
+              "source_sha256": "bc869754414d6b43160dbda62d229b19ab8117854167559103027670cc7ddde2"
+            }
+          ]
+        },
+        {
+          "name": "CW_0000.memorymap",
+          "bytes": 52,
+          "fields": [],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 55,
+              "seconds_compress_decompress_read": 0.0030503790000011577,
+              "byte_exact": true,
+              "source_sha256": "b403f49aac7ddececf231cb7d3450a1d5d8cc9faf117cd8b95bd146c407541cf"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 54,
+              "seconds_compress_decompress_read": 0.0031825830000116184,
+              "byte_exact": true,
+              "source_sha256": "b403f49aac7ddececf231cb7d3450a1d5d8cc9faf117cd8b95bd146c407541cf"
+            }
+          ]
+        }
+      ],
+      "original_bytes": 206476822,
+      "gzip1_bytes": 3770459,
+      "gzip6_bytes": 2707141
+    },
+    {
+      "label": "L5_early_tcc_0.25",
+      "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/full/sharp13/DD0005",
+      "files": [
+        {
+          "name": "CW_0005",
+          "bytes": 24896,
+          "fields": [],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 7546,
+              "seconds_compress_decompress_read": 0.0031415590000278826,
+              "byte_exact": true,
+              "source_sha256": "99d740bd460644e5405861f5df94a91a2d70653760753fe8063cf3432c9edef5"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 6421,
+              "seconds_compress_decompress_read": 0.0032263580000062575,
+              "byte_exact": true,
+              "source_sha256": "99d740bd460644e5405861f5df94a91a2d70653760753fe8063cf3432c9edef5"
+            }
+          ]
+        },
+        {
+          "name": "CW_0005.boundary",
+          "bytes": 237,
+          "fields": [],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 181,
+              "seconds_compress_decompress_read": 0.0025265529999956016,
+              "byte_exact": true,
+              "source_sha256": "e0ba48185e03b8be3cb5717be1b8722238e51c9aa5dadd4e50d8b4f9bfebe491"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 177,
+              "seconds_compress_decompress_read": 0.0030449640000256295,
+              "byte_exact": true,
+              "source_sha256": "e0ba48185e03b8be3cb5717be1b8722238e51c9aa5dadd4e50d8b4f9bfebe491"
+            }
+          ]
+        },
+        {
+          "name": "CW_0005.boundary.hdf",
+          "bytes": 5098240,
+          "fields": [
+            {
+              "name": "BoundaryDimensionType.0",
+              "shape": [
+                215472
+              ],
+              "dtype": ">f4",
+              "logical_bytes": 861888,
+              "stored_bytes": 861888,
+              "compression": null,
+              "shuffle": false
+            },
+            {
+              "name": "BoundaryDimensionType.1",
+              "shape": [
+                421296
+              ],
+              "dtype": ">f4",
+              "logical_bytes": 1685184,
+              "stored_bytes": 1685184,
+              "compression": null,
+              "shuffle": false
+            },
+            {
+              "name": "BoundaryDimensionType.2",
+              "shape": [
+                421296
+              ],
+              "dtype": ">f4",
+              "logical_bytes": 1685184,
+              "stored_bytes": 1685184,
+              "compression": null,
+              "shuffle": false
+            },
+            {
+              "name": "BoundaryDimensionValue.0",
+              "shape": [
+                215472
+              ],
+              "dtype": ">f4",
+              "logical_bytes": 861888,
+              "stored_bytes": 861888,
+              "compression": null,
+              "shuffle": false
+            },
+            {
+              "name": "BoundaryDimensionValue.1",
+              "shape": [
+                421296
+              ],
+              "dtype": ">f4",
+              "logical_bytes": 1685184,
+              "stored_bytes": 0,
+              "compression": null,
+              "shuffle": false
+            },
+            {
+              "name": "BoundaryDimensionValue.2",
+              "shape": [
+                421296
+              ],
+              "dtype": ">f4",
+              "logical_bytes": 1685184,
+              "stored_bytes": 0,
+              "compression": null,
+              "shuffle": false
+            }
+          ],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 25494,
+              "seconds_compress_decompress_read": 0.03678528899996536,
+              "byte_exact": true,
+              "source_sha256": "cf86c969d76362b6f030d64c31cb4d929daee5c613db4cc04e4dbe6a67abf321"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 5918,
+              "seconds_compress_decompress_read": 0.044043382999973346,
+              "byte_exact": true,
+              "source_sha256": "cf86c969d76362b6f030d64c31cb4d929daee5c613db4cc04e4dbe6a67abf321"
+            }
+          ]
+        },
+        {
+          "name": "CW_0005.configure",
+          "bytes": 4371,
+          "fields": [],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 1559,
+              "seconds_compress_decompress_read": 0.004755824000028497,
+              "byte_exact": true,
+              "source_sha256": "c6f955770e408650307cea6a03375c4b13f6286aaa502614e4201eacd9e4be3d"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 1456,
+              "seconds_compress_decompress_read": 0.006654458000014074,
+              "byte_exact": true,
+              "source_sha256": "c6f955770e408650307cea6a03375c4b13f6286aaa502614e4201eacd9e4be3d"
+            }
+          ]
+        },
+        {
+          "name": "CW_0005.cpu0000",
+          "bytes": 201332112,
+          "fields": [
+            {
+              "name": "Grid00000001/Density",
+              "shape": [
+                128,
+                128,
+                256
+              ],
+              "dtype": "float64",
+              "logical_bytes": 33554432,
+              "stored_bytes": 33554432,
+              "compression": null,
+              "shuffle": false
+            },
+            {
+              "name": "Grid00000001/Metal_Density",
+              "shape": [
+                128,
+                128,
+                256
+              ],
+              "dtype": "float64",
+              "logical_bytes": 33554432,
+              "stored_bytes": 33554432,
+              "compression": null,
+              "shuffle": false
+            },
+            {
+              "name": "Grid00000001/TotalEnergy",
+              "shape": [
+                128,
+                128,
+                256
+              ],
+              "dtype": "float64",
+              "logical_bytes": 33554432,
+              "stored_bytes": 33554432,
+              "compression": null,
+              "shuffle": false
+            },
+            {
+              "name": "Grid00000001/x-velocity",
+              "shape": [
+                128,
+                128,
+                256
+              ],
+              "dtype": "float64",
+              "logical_bytes": 33554432,
+              "stored_bytes": 33554432,
+              "compression": null,
+              "shuffle": false
+            },
+            {
+              "name": "Grid00000001/y-velocity",
+              "shape": [
+                128,
+                128,
+                256
+              ],
+              "dtype": "float64",
+              "logical_bytes": 33554432,
+              "stored_bytes": 33554432,
+              "compression": null,
+              "shuffle": false
+            },
+            {
+              "name": "Grid00000001/z-velocity",
+              "shape": [
+                128,
+                128,
+                256
+              ],
+              "dtype": "float64",
+              "logical_bytes": 33554432,
+              "stored_bytes": 33554432,
+              "compression": null,
+              "shuffle": false
+            }
+          ],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 66584919,
+              "seconds_compress_decompress_read": 2.423377538000011,
+              "byte_exact": true,
+              "source_sha256": "c7ea1be942310e38b288a7aafd74ff6c706020741b616253ff3200a16d537b0d"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 64608969,
+              "seconds_compress_decompress_read": 3.3561705519999805,
+              "byte_exact": true,
+              "source_sha256": "c7ea1be942310e38b288a7aafd74ff6c706020741b616253ff3200a16d537b0d"
+            }
+          ]
+        },
+        {
+          "name": "CW_0005.cpu0001",
+          "bytes": 2328,
+          "fields": [],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 281,
+              "seconds_compress_decompress_read": 0.002652792999981557,
+              "byte_exact": true,
+              "source_sha256": "2d7bd9a8fa4ad93f26d5092627226872bf763782f964bdd597455925415d573a"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 249,
+              "seconds_compress_decompress_read": 0.002756341999997858,
+              "byte_exact": true,
+              "source_sha256": "2d7bd9a8fa4ad93f26d5092627226872bf763782f964bdd597455925415d573a"
+            }
+          ]
+        },
+        {
+          "name": "CW_0005.cpu0002",
+          "bytes": 2328,
+          "fields": [],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 281,
+              "seconds_compress_decompress_read": 0.0030661229999964235,
+              "byte_exact": true,
+              "source_sha256": "2d7bd9a8fa4ad93f26d5092627226872bf763782f964bdd597455925415d573a"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 249,
+              "seconds_compress_decompress_read": 0.002916787000003751,
+              "byte_exact": true,
+              "source_sha256": "2d7bd9a8fa4ad93f26d5092627226872bf763782f964bdd597455925415d573a"
+            }
+          ]
+        },
+        {
+          "name": "CW_0005.cpu0003",
+          "bytes": 2328,
+          "fields": [],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 281,
+              "seconds_compress_decompress_read": 0.0029447329999925387,
+              "byte_exact": true,
+              "source_sha256": "2d7bd9a8fa4ad93f26d5092627226872bf763782f964bdd597455925415d573a"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 249,
+              "seconds_compress_decompress_read": 0.0029205380000121295,
+              "byte_exact": true,
+              "source_sha256": "2d7bd9a8fa4ad93f26d5092627226872bf763782f964bdd597455925415d573a"
+            }
+          ]
+        },
+        {
+          "name": "CW_0005.cpu0004",
+          "bytes": 2328,
+          "fields": [],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 281,
+              "seconds_compress_decompress_read": 0.003134842999998,
+              "byte_exact": true,
+              "source_sha256": "2d7bd9a8fa4ad93f26d5092627226872bf763782f964bdd597455925415d573a"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 249,
+              "seconds_compress_decompress_read": 0.002986048000025221,
+              "byte_exact": true,
+              "source_sha256": "2d7bd9a8fa4ad93f26d5092627226872bf763782f964bdd597455925415d573a"
+            }
+          ]
+        },
+        {
+          "name": "CW_0005.cpu0005",
+          "bytes": 2328,
+          "fields": [],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 281,
+              "seconds_compress_decompress_read": 0.0031157669999970494,
+              "byte_exact": true,
+              "source_sha256": "2d7bd9a8fa4ad93f26d5092627226872bf763782f964bdd597455925415d573a"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 249,
+              "seconds_compress_decompress_read": 0.0030640829999697416,
+              "byte_exact": true,
+              "source_sha256": "2d7bd9a8fa4ad93f26d5092627226872bf763782f964bdd597455925415d573a"
+            }
+          ]
+        },
+        {
+          "name": "CW_0005.cpu0006",
+          "bytes": 2328,
+          "fields": [],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 281,
+              "seconds_compress_decompress_read": 0.0030006819999925938,
+              "byte_exact": true,
+              "source_sha256": "2d7bd9a8fa4ad93f26d5092627226872bf763782f964bdd597455925415d573a"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 249,
+              "seconds_compress_decompress_read": 0.003071658000010302,
+              "byte_exact": true,
+              "source_sha256": "2d7bd9a8fa4ad93f26d5092627226872bf763782f964bdd597455925415d573a"
+            }
+          ]
+        },
+        {
+          "name": "CW_0005.cpu0007",
+          "bytes": 2328,
+          "fields": [],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 281,
+              "seconds_compress_decompress_read": 0.0028732680000302935,
+              "byte_exact": true,
+              "source_sha256": "2d7bd9a8fa4ad93f26d5092627226872bf763782f964bdd597455925415d573a"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 249,
+              "seconds_compress_decompress_read": 0.0029146420000074613,
+              "byte_exact": true,
+              "source_sha256": "2d7bd9a8fa4ad93f26d5092627226872bf763782f964bdd597455925415d573a"
+            }
+          ]
+        },
+        {
+          "name": "CW_0005.hierarchy",
+          "bytes": 650,
+          "fields": [],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 376,
+              "seconds_compress_decompress_read": 0.0029483619999837174,
+              "byte_exact": true,
+              "source_sha256": "fdd484b3cac162e0c169f8510af7f4639ffb752f453682992ec62dc2a6caa888"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 362,
+              "seconds_compress_decompress_read": 0.00270310299998755,
+              "byte_exact": true,
+              "source_sha256": "fdd484b3cac162e0c169f8510af7f4639ffb752f453682992ec62dc2a6caa888"
+            }
+          ]
+        },
+        {
+          "name": "CW_0005.memorymap",
+          "bytes": 52,
+          "fields": [],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 55,
+              "seconds_compress_decompress_read": 0.0027321130000359517,
+              "byte_exact": true,
+              "source_sha256": "b403f49aac7ddececf231cb7d3450a1d5d8cc9faf117cd8b95bd146c407541cf"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 54,
+              "seconds_compress_decompress_read": 0.0030215329999805363,
+              "byte_exact": true,
+              "source_sha256": "b403f49aac7ddececf231cb7d3450a1d5d8cc9faf117cd8b95bd146c407541cf"
+            }
+          ]
+        }
+      ],
+      "original_bytes": 206476854,
+      "gzip1_bytes": 66622097,
+      "gzip6_bytes": 64625100
+    },
+    {
+      "label": "L4_sharp_terminal",
+      "path": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0101",
+      "files": [
+        {
+          "name": "CW_0101",
+          "bytes": 24889,
+          "fields": [],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 7542,
+              "seconds_compress_decompress_read": 0.0004977410000037708,
+              "byte_exact": true,
+              "source_sha256": "230ac39a38eabe80d814a5cc67b591e354b45ee51f58ef7f42b0e8d44e68f044"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 6416,
+              "seconds_compress_decompress_read": 0.0006197210000209452,
+              "byte_exact": true,
+              "source_sha256": "230ac39a38eabe80d814a5cc67b591e354b45ee51f58ef7f42b0e8d44e68f044"
+            }
+          ]
+        },
+        {
+          "name": "CW_0101.boundary",
+          "bytes": 235,
+          "fields": [],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 179,
+              "seconds_compress_decompress_read": 0.0002508900000179892,
+              "byte_exact": true,
+              "source_sha256": "39728fe978743916bbcd3c566bc00fa0cc84f15c24fb1ce8cda3dfb42960b312"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 176,
+              "seconds_compress_decompress_read": 3.2079999982670415e-05,
+              "byte_exact": true,
+              "source_sha256": "39728fe978743916bbcd3c566bc00fa0cc84f15c24fb1ce8cda3dfb42960b312"
+            }
+          ]
+        },
+        {
+          "name": "CW_0101.boundary.hdf",
+          "bytes": 1374976,
+          "fields": [
+            {
+              "name": "BoundaryDimensionType.0",
+              "shape": [
+                58800
+              ],
+              "dtype": ">f4",
+              "logical_bytes": 235200,
+              "stored_bytes": 235200,
+              "compression": null,
+              "shuffle": false
+            },
+            {
+              "name": "BoundaryDimensionType.1",
+              "shape": [
+                112560
+              ],
+              "dtype": ">f4",
+              "logical_bytes": 450240,
+              "stored_bytes": 450240,
+              "compression": null,
+              "shuffle": false
+            },
+            {
+              "name": "BoundaryDimensionType.2",
+              "shape": [
+                112560
+              ],
+              "dtype": ">f4",
+              "logical_bytes": 450240,
+              "stored_bytes": 450240,
+              "compression": null,
+              "shuffle": false
+            },
+            {
+              "name": "BoundaryDimensionValue.0",
+              "shape": [
+                58800
+              ],
+              "dtype": ">f4",
+              "logical_bytes": 235200,
+              "stored_bytes": 235200,
+              "compression": null,
+              "shuffle": false
+            },
+            {
+              "name": "BoundaryDimensionValue.1",
+              "shape": [
+                112560
+              ],
+              "dtype": ">f4",
+              "logical_bytes": 450240,
+              "stored_bytes": 0,
+              "compression": null,
+              "shuffle": false
+            },
+            {
+              "name": "BoundaryDimensionValue.2",
+              "shape": [
+                112560
+              ],
+              "dtype": ">f4",
+              "logical_bytes": 450240,
+              "stored_bytes": 0,
+              "compression": null,
+              "shuffle": false
+            }
+          ],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 7449,
+              "seconds_compress_decompress_read": 0.00322179900001629,
+              "byte_exact": true,
+              "source_sha256": "e12e412033a53c5cba92c92e61bcd95cde1d8a789ebfb7a805ae6954ce996973"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 2111,
+              "seconds_compress_decompress_read": 0.0044751490000294325,
+              "byte_exact": true,
+              "source_sha256": "e12e412033a53c5cba92c92e61bcd95cde1d8a789ebfb7a805ae6954ce996973"
+            }
+          ]
+        },
+        {
+          "name": "CW_0101.configure",
+          "bytes": 4371,
+          "fields": [],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 1559,
+              "seconds_compress_decompress_read": 0.00026895999997123,
+              "byte_exact": true,
+              "source_sha256": "c6f955770e408650307cea6a03375c4b13f6286aaa502614e4201eacd9e4be3d"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 1456,
+              "seconds_compress_decompress_read": 8.708100000376362e-05,
+              "byte_exact": true,
+              "source_sha256": "c6f955770e408650307cea6a03375c4b13f6286aaa502614e4201eacd9e4be3d"
+            }
+          ]
+        },
+        {
+          "name": "CW_0101.cpu0000",
+          "bytes": 25171344,
+          "fields": [
+            {
+              "name": "Grid00000001/Density",
+              "shape": [
+                64,
+                64,
+                128
+              ],
+              "dtype": "float64",
+              "logical_bytes": 4194304,
+              "stored_bytes": 4194304,
+              "compression": null,
+              "shuffle": false
+            },
+            {
+              "name": "Grid00000001/Metal_Density",
+              "shape": [
+                64,
+                64,
+                128
+              ],
+              "dtype": "float64",
+              "logical_bytes": 4194304,
+              "stored_bytes": 4194304,
+              "compression": null,
+              "shuffle": false
+            },
+            {
+              "name": "Grid00000001/TotalEnergy",
+              "shape": [
+                64,
+                64,
+                128
+              ],
+              "dtype": "float64",
+              "logical_bytes": 4194304,
+              "stored_bytes": 4194304,
+              "compression": null,
+              "shuffle": false
+            },
+            {
+              "name": "Grid00000001/x-velocity",
+              "shape": [
+                64,
+                64,
+                128
+              ],
+              "dtype": "float64",
+              "logical_bytes": 4194304,
+              "stored_bytes": 4194304,
+              "compression": null,
+              "shuffle": false
+            },
+            {
+              "name": "Grid00000001/y-velocity",
+              "shape": [
+                64,
+                64,
+                128
+              ],
+              "dtype": "float64",
+              "logical_bytes": 4194304,
+              "stored_bytes": 4194304,
+              "compression": null,
+              "shuffle": false
+            },
+            {
+              "name": "Grid00000001/z-velocity",
+              "shape": [
+                64,
+                64,
+                128
+              ],
+              "dtype": "float64",
+              "logical_bytes": 4194304,
+              "stored_bytes": 4194304,
+              "compression": null,
+              "shuffle": false
+            }
+          ],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 20120656,
+              "seconds_compress_decompress_read": 0.5240224679999983,
+              "byte_exact": true,
+              "source_sha256": "b4718efa717c39e711d36b1e3b803fd15e02293e816ef5d0b863544c0dd1aacc"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 19879092,
+              "seconds_compress_decompress_read": 0.7511393269999758,
+              "byte_exact": true,
+              "source_sha256": "b4718efa717c39e711d36b1e3b803fd15e02293e816ef5d0b863544c0dd1aacc"
+            }
+          ]
+        },
+        {
+          "name": "CW_0101.cpu0001",
+          "bytes": 2328,
+          "fields": [],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 281,
+              "seconds_compress_decompress_read": 6.638000002112676e-05,
+              "byte_exact": true,
+              "source_sha256": "a5b2a965add463198f689f954c5187f7feaa6e96f20399a6e0e86bbeccc13b1f"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 250,
+              "seconds_compress_decompress_read": 6.761000003052686e-05,
+              "byte_exact": true,
+              "source_sha256": "a5b2a965add463198f689f954c5187f7feaa6e96f20399a6e0e86bbeccc13b1f"
+            }
+          ]
+        },
+        {
+          "name": "CW_0101.cpu0002",
+          "bytes": 2328,
+          "fields": [],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 281,
+              "seconds_compress_decompress_read": 4.850999999916894e-05,
+              "byte_exact": true,
+              "source_sha256": "a5b2a965add463198f689f954c5187f7feaa6e96f20399a6e0e86bbeccc13b1f"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 250,
+              "seconds_compress_decompress_read": 5.129999999553547e-05,
+              "byte_exact": true,
+              "source_sha256": "a5b2a965add463198f689f954c5187f7feaa6e96f20399a6e0e86bbeccc13b1f"
+            }
+          ]
+        },
+        {
+          "name": "CW_0101.cpu0003",
+          "bytes": 2328,
+          "fields": [],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 281,
+              "seconds_compress_decompress_read": 3.6160000036034035e-05,
+              "byte_exact": true,
+              "source_sha256": "a5b2a965add463198f689f954c5187f7feaa6e96f20399a6e0e86bbeccc13b1f"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 250,
+              "seconds_compress_decompress_read": 3.8189999997939594e-05,
+              "byte_exact": true,
+              "source_sha256": "a5b2a965add463198f689f954c5187f7feaa6e96f20399a6e0e86bbeccc13b1f"
+            }
+          ]
+        },
+        {
+          "name": "CW_0101.cpu0004",
+          "bytes": 2328,
+          "fields": [],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 281,
+              "seconds_compress_decompress_read": 4.3330000039532024e-05,
+              "byte_exact": true,
+              "source_sha256": "a5b2a965add463198f689f954c5187f7feaa6e96f20399a6e0e86bbeccc13b1f"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 250,
+              "seconds_compress_decompress_read": 4.6989999987090414e-05,
+              "byte_exact": true,
+              "source_sha256": "a5b2a965add463198f689f954c5187f7feaa6e96f20399a6e0e86bbeccc13b1f"
+            }
+          ]
+        },
+        {
+          "name": "CW_0101.cpu0005",
+          "bytes": 2328,
+          "fields": [],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 281,
+              "seconds_compress_decompress_read": 3.902999998217638e-05,
+              "byte_exact": true,
+              "source_sha256": "a5b2a965add463198f689f954c5187f7feaa6e96f20399a6e0e86bbeccc13b1f"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 250,
+              "seconds_compress_decompress_read": 4.6909999980471184e-05,
+              "byte_exact": true,
+              "source_sha256": "a5b2a965add463198f689f954c5187f7feaa6e96f20399a6e0e86bbeccc13b1f"
+            }
+          ]
+        },
+        {
+          "name": "CW_0101.cpu0006",
+          "bytes": 2328,
+          "fields": [],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 281,
+              "seconds_compress_decompress_read": 3.8529999983438756e-05,
+              "byte_exact": true,
+              "source_sha256": "a5b2a965add463198f689f954c5187f7feaa6e96f20399a6e0e86bbeccc13b1f"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 250,
+              "seconds_compress_decompress_read": 3.894999997555715e-05,
+              "byte_exact": true,
+              "source_sha256": "a5b2a965add463198f689f954c5187f7feaa6e96f20399a6e0e86bbeccc13b1f"
+            }
+          ]
+        },
+        {
+          "name": "CW_0101.cpu0007",
+          "bytes": 2328,
+          "fields": [],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 281,
+              "seconds_compress_decompress_read": 3.9990000004763715e-05,
+              "byte_exact": true,
+              "source_sha256": "a5b2a965add463198f689f954c5187f7feaa6e96f20399a6e0e86bbeccc13b1f"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 250,
+              "seconds_compress_decompress_read": 3.865999997287872e-05,
+              "byte_exact": true,
+              "source_sha256": "a5b2a965add463198f689f954c5187f7feaa6e96f20399a6e0e86bbeccc13b1f"
+            }
+          ]
+        },
+        {
+          "name": "CW_0101.hierarchy",
+          "bytes": 645,
+          "fields": [],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 372,
+              "seconds_compress_decompress_read": 0.00020761099995070253,
+              "byte_exact": true,
+              "source_sha256": "3a5080cf09da4833c3817364c80dc859011f132f17505ceaea3f181dcc7e441e"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 360,
+              "seconds_compress_decompress_read": 3.967999998621963e-05,
+              "byte_exact": true,
+              "source_sha256": "3a5080cf09da4833c3817364c80dc859011f132f17505ceaea3f181dcc7e441e"
+            }
+          ]
+        },
+        {
+          "name": "CW_0101.memorymap",
+          "bytes": 52,
+          "fields": [],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 55,
+              "seconds_compress_decompress_read": 0.00019659000003002802,
+              "byte_exact": true,
+              "source_sha256": "b403f49aac7ddececf231cb7d3450a1d5d8cc9faf117cd8b95bd146c407541cf"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 54,
+              "seconds_compress_decompress_read": 2.2639999997409177e-05,
+              "byte_exact": true,
+              "source_sha256": "b403f49aac7ddececf231cb7d3450a1d5d8cc9faf117cd8b95bd146c407541cf"
+            }
+          ]
+        }
+      ],
+      "original_bytes": 26592808,
+      "gzip1_bytes": 20139779,
+      "gzip6_bytes": 19891415
+    },
+    {
+      "label": "L4_historical_terminal",
+      "path": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0101",
+      "files": [
+        {
+          "name": "CW_0101",
+          "bytes": 24889,
+          "fields": [],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 7542,
+              "seconds_compress_decompress_read": 0.00043686999998726606,
+              "byte_exact": true,
+              "source_sha256": "77dd098e2c550b6867be73d4f66c9152bff34f94cdda21f3c728f30aef68f60d"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 6418,
+              "seconds_compress_decompress_read": 0.00048013099996069286,
+              "byte_exact": true,
+              "source_sha256": "77dd098e2c550b6867be73d4f66c9152bff34f94cdda21f3c728f30aef68f60d"
+            }
+          ]
+        },
+        {
+          "name": "CW_0101.boundary",
+          "bytes": 235,
+          "fields": [],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 179,
+              "seconds_compress_decompress_read": 0.00017969999998967978,
+              "byte_exact": true,
+              "source_sha256": "39728fe978743916bbcd3c566bc00fa0cc84f15c24fb1ce8cda3dfb42960b312"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 176,
+              "seconds_compress_decompress_read": 3.0530000003636815e-05,
+              "byte_exact": true,
+              "source_sha256": "39728fe978743916bbcd3c566bc00fa0cc84f15c24fb1ce8cda3dfb42960b312"
+            }
+          ]
+        },
+        {
+          "name": "CW_0101.boundary.hdf",
+          "bytes": 1374976,
+          "fields": [
+            {
+              "name": "BoundaryDimensionType.0",
+              "shape": [
+                58800
+              ],
+              "dtype": ">f4",
+              "logical_bytes": 235200,
+              "stored_bytes": 235200,
+              "compression": null,
+              "shuffle": false
+            },
+            {
+              "name": "BoundaryDimensionType.1",
+              "shape": [
+                112560
+              ],
+              "dtype": ">f4",
+              "logical_bytes": 450240,
+              "stored_bytes": 450240,
+              "compression": null,
+              "shuffle": false
+            },
+            {
+              "name": "BoundaryDimensionType.2",
+              "shape": [
+                112560
+              ],
+              "dtype": ">f4",
+              "logical_bytes": 450240,
+              "stored_bytes": 450240,
+              "compression": null,
+              "shuffle": false
+            },
+            {
+              "name": "BoundaryDimensionValue.0",
+              "shape": [
+                58800
+              ],
+              "dtype": ">f4",
+              "logical_bytes": 235200,
+              "stored_bytes": 235200,
+              "compression": null,
+              "shuffle": false
+            },
+            {
+              "name": "BoundaryDimensionValue.1",
+              "shape": [
+                112560
+              ],
+              "dtype": ">f4",
+              "logical_bytes": 450240,
+              "stored_bytes": 0,
+              "compression": null,
+              "shuffle": false
+            },
+            {
+              "name": "BoundaryDimensionValue.2",
+              "shape": [
+                112560
+              ],
+              "dtype": ">f4",
+              "logical_bytes": 450240,
+              "stored_bytes": 0,
+              "compression": null,
+              "shuffle": false
+            }
+          ],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 7449,
+              "seconds_compress_decompress_read": 0.005599345999996785,
+              "byte_exact": true,
+              "source_sha256": "8ed85dbe1d1cdfc5deff940db07653b2bdfb3fffefb28eda23201f4412042ace"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 2112,
+              "seconds_compress_decompress_read": 0.007176598000000922,
+              "byte_exact": true,
+              "source_sha256": "8ed85dbe1d1cdfc5deff940db07653b2bdfb3fffefb28eda23201f4412042ace"
+            }
+          ]
+        },
+        {
+          "name": "CW_0101.configure",
+          "bytes": 4371,
+          "fields": [],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 1559,
+              "seconds_compress_decompress_read": 0.0003097850000131075,
+              "byte_exact": true,
+              "source_sha256": "c6f955770e408650307cea6a03375c4b13f6286aaa502614e4201eacd9e4be3d"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 1456,
+              "seconds_compress_decompress_read": 0.00010494100001778861,
+              "byte_exact": true,
+              "source_sha256": "c6f955770e408650307cea6a03375c4b13f6286aaa502614e4201eacd9e4be3d"
+            }
+          ]
+        },
+        {
+          "name": "CW_0101.cpu0000",
+          "bytes": 25171344,
+          "fields": [
+            {
+              "name": "Grid00000001/Density",
+              "shape": [
+                64,
+                64,
+                128
+              ],
+              "dtype": "float64",
+              "logical_bytes": 4194304,
+              "stored_bytes": 4194304,
+              "compression": null,
+              "shuffle": false
+            },
+            {
+              "name": "Grid00000001/Metal_Density",
+              "shape": [
+                64,
+                64,
+                128
+              ],
+              "dtype": "float64",
+              "logical_bytes": 4194304,
+              "stored_bytes": 4194304,
+              "compression": null,
+              "shuffle": false
+            },
+            {
+              "name": "Grid00000001/TotalEnergy",
+              "shape": [
+                64,
+                64,
+                128
+              ],
+              "dtype": "float64",
+              "logical_bytes": 4194304,
+              "stored_bytes": 4194304,
+              "compression": null,
+              "shuffle": false
+            },
+            {
+              "name": "Grid00000001/x-velocity",
+              "shape": [
+                64,
+                64,
+                128
+              ],
+              "dtype": "float64",
+              "logical_bytes": 4194304,
+              "stored_bytes": 4194304,
+              "compression": null,
+              "shuffle": false
+            },
+            {
+              "name": "Grid00000001/y-velocity",
+              "shape": [
+                64,
+                64,
+                128
+              ],
+              "dtype": "float64",
+              "logical_bytes": 4194304,
+              "stored_bytes": 4194304,
+              "compression": null,
+              "shuffle": false
+            },
+            {
+              "name": "Grid00000001/z-velocity",
+              "shape": [
+                64,
+                64,
+                128
+              ],
+              "dtype": "float64",
+              "logical_bytes": 4194304,
+              "stored_bytes": 4194304,
+              "compression": null,
+              "shuffle": false
+            }
+          ],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 19729006,
+              "seconds_compress_decompress_read": 0.5156072640000389,
+              "byte_exact": true,
+              "source_sha256": "e583da8ec46e05688806dcc1cc1410d12e851cecd57a74e59186b8a373052c20"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 19473508,
+              "seconds_compress_decompress_read": 0.7401332459999708,
+              "byte_exact": true,
+              "source_sha256": "e583da8ec46e05688806dcc1cc1410d12e851cecd57a74e59186b8a373052c20"
+            }
+          ]
+        },
+        {
+          "name": "CW_0101.cpu0001",
+          "bytes": 2328,
+          "fields": [],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 281,
+              "seconds_compress_decompress_read": 6.229999996776314e-05,
+              "byte_exact": true,
+              "source_sha256": "17998a98fd4be8f60f54197f66ee531c302e82a6eac4c0e994ddd34321d2ccb0"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 250,
+              "seconds_compress_decompress_read": 4.701999995404549e-05,
+              "byte_exact": true,
+              "source_sha256": "17998a98fd4be8f60f54197f66ee531c302e82a6eac4c0e994ddd34321d2ccb0"
+            }
+          ]
+        },
+        {
+          "name": "CW_0101.cpu0002",
+          "bytes": 2328,
+          "fields": [],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 281,
+              "seconds_compress_decompress_read": 4.175999998778934e-05,
+              "byte_exact": true,
+              "source_sha256": "17998a98fd4be8f60f54197f66ee531c302e82a6eac4c0e994ddd34321d2ccb0"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 250,
+              "seconds_compress_decompress_read": 4.061000004185189e-05,
+              "byte_exact": true,
+              "source_sha256": "17998a98fd4be8f60f54197f66ee531c302e82a6eac4c0e994ddd34321d2ccb0"
+            }
+          ]
+        },
+        {
+          "name": "CW_0101.cpu0003",
+          "bytes": 2328,
+          "fields": [],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 281,
+              "seconds_compress_decompress_read": 3.748000000314278e-05,
+              "byte_exact": true,
+              "source_sha256": "17998a98fd4be8f60f54197f66ee531c302e82a6eac4c0e994ddd34321d2ccb0"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 250,
+              "seconds_compress_decompress_read": 3.8520000032349344e-05,
+              "byte_exact": true,
+              "source_sha256": "17998a98fd4be8f60f54197f66ee531c302e82a6eac4c0e994ddd34321d2ccb0"
+            }
+          ]
+        },
+        {
+          "name": "CW_0101.cpu0004",
+          "bytes": 2328,
+          "fields": [],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 281,
+              "seconds_compress_decompress_read": 3.651000002946603e-05,
+              "byte_exact": true,
+              "source_sha256": "17998a98fd4be8f60f54197f66ee531c302e82a6eac4c0e994ddd34321d2ccb0"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 250,
+              "seconds_compress_decompress_read": 3.6969999996472325e-05,
+              "byte_exact": true,
+              "source_sha256": "17998a98fd4be8f60f54197f66ee531c302e82a6eac4c0e994ddd34321d2ccb0"
+            }
+          ]
+        },
+        {
+          "name": "CW_0101.cpu0005",
+          "bytes": 2328,
+          "fields": [],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 281,
+              "seconds_compress_decompress_read": 3.5099999990961805e-05,
+              "byte_exact": true,
+              "source_sha256": "17998a98fd4be8f60f54197f66ee531c302e82a6eac4c0e994ddd34321d2ccb0"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 250,
+              "seconds_compress_decompress_read": 3.685000001496519e-05,
+              "byte_exact": true,
+              "source_sha256": "17998a98fd4be8f60f54197f66ee531c302e82a6eac4c0e994ddd34321d2ccb0"
+            }
+          ]
+        },
+        {
+          "name": "CW_0101.cpu0006",
+          "bytes": 2328,
+          "fields": [],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 281,
+              "seconds_compress_decompress_read": 3.395000004502435e-05,
+              "byte_exact": true,
+              "source_sha256": "17998a98fd4be8f60f54197f66ee531c302e82a6eac4c0e994ddd34321d2ccb0"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 250,
+              "seconds_compress_decompress_read": 3.441000001203065e-05,
+              "byte_exact": true,
+              "source_sha256": "17998a98fd4be8f60f54197f66ee531c302e82a6eac4c0e994ddd34321d2ccb0"
+            }
+          ]
+        },
+        {
+          "name": "CW_0101.cpu0007",
+          "bytes": 2328,
+          "fields": [],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 281,
+              "seconds_compress_decompress_read": 3.4289999973680096e-05,
+              "byte_exact": true,
+              "source_sha256": "17998a98fd4be8f60f54197f66ee531c302e82a6eac4c0e994ddd34321d2ccb0"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 250,
+              "seconds_compress_decompress_read": 3.415999998424013e-05,
+              "byte_exact": true,
+              "source_sha256": "17998a98fd4be8f60f54197f66ee531c302e82a6eac4c0e994ddd34321d2ccb0"
+            }
+          ]
+        },
+        {
+          "name": "CW_0101.hierarchy",
+          "bytes": 645,
+          "fields": [],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 372,
+              "seconds_compress_decompress_read": 0.0001753110000208835,
+              "byte_exact": true,
+              "source_sha256": "3a5080cf09da4833c3817364c80dc859011f132f17505ceaea3f181dcc7e441e"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 360,
+              "seconds_compress_decompress_read": 3.743000002032204e-05,
+              "byte_exact": true,
+              "source_sha256": "3a5080cf09da4833c3817364c80dc859011f132f17505ceaea3f181dcc7e441e"
+            }
+          ]
+        },
+        {
+          "name": "CW_0101.memorymap",
+          "bytes": 52,
+          "fields": [],
+          "probes": [
+            {
+              "gzip_level": 1,
+              "bytes": 55,
+              "seconds_compress_decompress_read": 0.00017373999997971623,
+              "byte_exact": true,
+              "source_sha256": "b403f49aac7ddececf231cb7d3450a1d5d8cc9faf117cd8b95bd146c407541cf"
+            },
+            {
+              "gzip_level": 6,
+              "bytes": 54,
+              "seconds_compress_decompress_read": 2.8579999991507066e-05,
+              "byte_exact": true,
+              "source_sha256": "b403f49aac7ddececf231cb7d3450a1d5d8cc9faf117cd8b95bd146c407541cf"
+            }
+          ]
+        }
+      ],
+      "original_bytes": 26592808,
+      "gzip1_bytes": 19748129,
+      "gzip6_bytes": 19485834
+    }
+  ],
+  "limitations": [
+    "Four snapshots only; L5 sample is early and L4 terminal is lower resolution.",
+    "Wall times include read, compression and round-trip verification under live solver load.",
+    "Whole-file gzip archives need extraction before native readers/restarts; not certified here.",
+    "No research file changed or deleted. Conservative live admission budget unchanged."
+  ]
+}

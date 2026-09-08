@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Kaan Boge's cloud-crushing research: verified velocity-sensitivity evidence, native-code methods, historical 3D frames and downloadable analysis data.">
+<title>Research &amp; data · Cloud Studio</title>
+<link rel="stylesheet" href="research.css">
+<script src="research.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to research data</a>
+<header class="masthead">
+  <a class="brand" href="index.html">CLOUD <span>STUDIO</span></a>
+  <nav aria-label="Main navigation"><a href="research.html" aria-current="page">Research &amp; data</a><a href="viewer.html">3D viewer</a><a href="index.html">Movies &amp; images</a><a href="https://github.com/KaanBoge/cloud-studio">GitHub ↗</a></nav>
+</header>
+<main id="main">
+  <section class="intro" aria-labelledby="title">
+    <div><p class="eyebrow">KAAN BOGE · HORIZON / HARP</p><h1 id="title">The evidence behind<br>the cloud.</h1><p class="lede">Native-code simulations, measured diagnostics and interactive 3D. Find the results, inspect the data, and see what still needs testing.</p></div>
+    <aside class="current"><p class="eyebrow">CURRENT RESEARCH QUESTION</p><h2>How much does the initial velocity prescription matter?</h2><p>Historical versus sharp velocity, within each code, at fixed χ = 100 and Mach 2. Test the impact before deciding which historical runs need replacing.</p><a class="primary" href="https://github.com/KaanBoge/cloud-studio/blob/main/analysis/sensitivity_20260907/resolution_summary_v2/README.md">Read the all-code findings ↗</a></aside>
+  </section>
+  <section class="metrics" aria-label="Published evidence counts">
+    <div><strong id="controls">50</strong><span>accepted sensitivity controls</span></div><div><strong id="states">5,054</strong><span>analyzed native states</span></div><div><strong id="viewer-count">—</strong><span>historical viewer entries</span></div><div><strong id="files-count">—</strong><span>public analysis files</span></div>
+  </section>
+  <p id="snapshot" class="snapshot">Accepted counts come from the published 8 September 2026 summary. Loading the dated catalog…</p>
+  <p class="notice"><strong>Two collections, different evidence.</strong> The sensitivity controls are validated within-code experiments. The historical viewer is a separate visualization archive with varying cadence and scientific limitations. Do not add these counts together or assume all entries have 101 frames.</p>
+  <section class="section" id="reports" aria-labelledby="reports-title">
+    <div class="section-heading"><h2 id="reports-title">Read the research</h2><a href="https://github.com/KaanBoge/cloud-studio/tree/main/analysis">All reports &amp; scripts ↗</a></div>
+    <div class="report-grid">
+      <article class="report"><span class="tag accepted">ACCEPTED EVIDENCE</span><h3>Velocity sensitivity</h3><p>25 pairs across native methods. Resolution overlays, measured mass differences, source hashes and code-specific caveats.</p><a href="https://github.com/KaanBoge/cloud-studio/blob/main/analysis/sensitivity_20260907/resolution_summary_v2/README.md">Results and limitations ↗</a></article>
+      <article class="report"><span class="tag pending">NEW PREPARATION</span><h3>Enzo at level 5</h3><p>The 256 × 128 × 128 diagnostic pair passed. Full-run progress is recorded separately and is not included in the accepted summary above.</p><a href="https://github.com/KaanBoge/cloud-studio/tree/main/analysis/sensitivity_20260907/enzo/l5_direct_v1">Plan, scripts and checks ↗</a></article>
+      <article class="report"><span class="tag caution">IMPORTANT CORRECTIONS</span><h3>Cooling &amp; tracking</h3><p>Historical cooling-labelled runs had cooling disabled. Frame-tracking tests do not yet establish complete material retention.</p><a href="https://github.com/KaanBoge/cloud-studio/blob/main/analysis/followup_20260907/README.md">Read the native evidence ↗</a></article>
+    </div>
+  </section>
+  <section class="section downloads" aria-labelledby="download-title">
+    <div><p class="eyebrow">REVIEW IT YOURSELF</p><h2 id="download-title">Take the analysis with you.</h2><p>Reports, custom scripts, figures and provenance in one evidence bundle. Native solver binaries and full raw arrays are not included.</p><a class="primary" href="downloads/research-evidence-2026-09-09.zip" download>Download research evidence ↓</a></div>
+    <div class="download-links"><a href="data/research-files.csv" download>Analysis files &amp; SHA-256 · CSV ↓</a><a href="data/streaming-inventory.csv" download>Historical frame inventory · CSV ↓</a><a href="data/research-status.json">Dated status · JSON ↗</a><a href="https://github.com/KaanBoge/cloud-studio/blob/main/docs/DATA.md">What is—and is not—backed up ↗</a></div>
+  </section>
+  <section class="section" aria-labelledby="catalog-title">
+    <div class="section-heading"><h2 id="catalog-title">Browse the evidence</h2><span id="file-result-count" class="muted" aria-live="polite"></span></div>
+    <div class="filters"><label for="file-search">Find a code, report or script<input id="file-search" type="search" placeholder="For example: Enzo, mass, tracking…"></label><label for="file-kind">File type<select id="file-kind"><option value="">All types</option><option value="md">Reports · Markdown</option><option value="json">Data · JSON</option><option value="png">Figures · PNG</option><option value="py">Python</option><option value="sh">Bash</option><option value="ps1">PowerShell</option></select></label></div>
+    <div class="table-scroll"><table><caption class="sr-only">Published analysis files with download sizes</caption><thead><tr><th scope="col">File</th><th scope="col">Type</th><th scope="col">Size</th><th scope="col">Open</th></tr></thead><tbody id="file-rows"><tr><td colspan="4">Loading catalog… <a href="data/research-files.csv">Download the CSV directly</a>.</td></tr></tbody></table></div>
+    <button id="more-files" class="secondary" hidden>Show more files</button>
+  </section>
+  <section class="section" aria-labelledby="frame-title">
+    <div class="section-heading"><h2 id="frame-title">What is in each historical 3D entry?</h2><span id="run-result-count" class="muted" aria-live="polite"></span></div>
+    <p class="muted">Counts and times below come from the published frame indexes. A complete index is not proof of valid physics or complete raw retention. This check confirms references against the remote file tree; it does not decode every mesh.</p>
+    <div class="filters"><label for="run-search">Find a historical entry<input id="run-search" type="search" placeholder="For example: apk_L6 or chi1000"></label><label for="run-scope">Show<select id="run-scope"><option value="listed">Listed in the viewer</option><option value="all">All remote indexes</option><option value="short">Fewer than 101 indexed frames</option></select></label></div>
+    <div class="table-scroll"><table><caption class="sr-only">Historical streamed frame counts and measured times</caption><thead><tr><th scope="col">Run ID</th><th scope="col">Frames</th><th scope="col">Measured t / t_cc</th><th scope="col">Mesh size</th><th scope="col">Scientific status</th></tr></thead><tbody id="run-rows"><tr><td colspan="5">Loading frame inventory… <a href="data/streaming-inventory.csv">Download the CSV directly</a>.</td></tr></tbody></table></div>
+  </section>
+  <section class="section guide" aria-labelledby="guide-title"><div><h2 id="guide-title">Same labels are not enough.</h2><p>Level 5 means 256 × 128 × 128. Level 6 means 512 × 256 × 256—not 512³. Particle levels describe initial sampling, not a fixed evolved grid. Native methods keep their documented boundary, tracer and pressure limitations.</p></div><div><a href="https://github.com/KaanBoge/cloud-studio/blob/main/docs/METHODS.md">Methods &amp; directory layout ↗</a><a href="https://github.com/KaanBoge/cloud-studio/blob/main/docs/ROADMAP.md">What remains to be done ↗</a><a href="verification.html">Verification and earlier audits ↗</a></div></section>
+  <noscript><p class="notice">The reports and downloads work without JavaScript. For the searchable catalogs, enable JavaScript or use the CSV links above.</p></noscript>
+</main>
+<footer><span>Cloud Studio · Kaan Boge</span><span>Native outputs → checked diagnostics → published visualizations.</span><a href="https://github.com/KaanBoge/cloud-studio/blob/main/CITATION.cff">Citation metadata ↗</a></footer>
+</body>
+</html>

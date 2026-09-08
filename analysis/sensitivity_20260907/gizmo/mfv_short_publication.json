@@ -1,0 +1,117 @@
+{
+  "status": "verified_live",
+  "verified_at_utc": "2026-09-08T09:59:41.2307618Z",
+  "commit": "b985e49f4171ae30105826ba3f62d7bc870334f5",
+  "previous_commit": "be70fb1e6f47dfad8775adf7ac9c5d83f8fee010",
+  "pages_workflow_id": 34212815665,
+  "pages_conclusion": "success",
+  "files_verified": 14,
+  "checks": [
+    {
+      "path": "analysis/README.md",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/README.md?v=b985e49f4171ae30105826ba3f62d7bc870334f5",
+      "bytes": 11931,
+      "sha256": "19649d5fd5902a27ae5684a53a0939d5101f57e02df50040d9b3f58c2ce61ec0"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/PLAN.md",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/PLAN.md?v=b985e49f4171ae30105826ba3f62d7bc870334f5",
+      "bytes": 13988,
+      "sha256": "9359cc1eb15d71435c934a4283f1d9ee19ac62a0b8d29c3cecee73e587a7fa4a"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/README.md",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/README.md?v=b985e49f4171ae30105826ba3f62d7bc870334f5",
+      "bytes": 13522,
+      "sha256": "cfbfd6bfe5e743cb6e9894daafabf7c9ad0a270b58386dac82d9a823a80a5f0e"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/.gitattributes",
+      "surface": "repository_config",
+      "url": "https://raw.githubusercontent.com/KaanBoge/cloud-studio/b985e49f4171ae30105826ba3f62d7bc870334f5/analysis/sensitivity_20260907/gizmo/.gitattributes",
+      "bytes": 1021,
+      "sha256": "c8c17b2def73763d4ba3977ccae968e308fb37bc5c251260782b3afa77c1095b"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/MFV_REPAIR_BUILD_VALIDATION.md",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/MFV_REPAIR_BUILD_VALIDATION.md?v=b985e49f4171ae30105826ba3f62d7bc870334f5",
+      "bytes": 4560,
+      "sha256": "6b8d50454165fd3b8552c8fe8dba1c96f2d2af36f3e2ae2ccde50ce0e5d3cbfd"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/MFV_SHORT_VALIDATION.md",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/MFV_SHORT_VALIDATION.md?v=b985e49f4171ae30105826ba3f62d7bc870334f5",
+      "bytes": 5304,
+      "sha256": "dfb655943774a50e40e8b2e5362685eaa618b029010d8f1ddcaf8677f14bfe8f"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/MFV_SHORT_VALIDATION_PLAN.md",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/MFV_SHORT_VALIDATION_PLAN.md?v=b985e49f4171ae30105826ba3f62d7bc870334f5",
+      "bytes": 4379,
+      "sha256": "11b50f71439fbb5b8a1006e92c4b631998552860d8d8947e539a633d0f20125c"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/README.md",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/README.md?v=b985e49f4171ae30105826ba3f62d7bc870334f5",
+      "bytes": 15376,
+      "sha256": "4cc9275e865798c8f071bd3dd609abbf405dd1537c522176a1c3d3522b0d5801"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/mfv_short_batch.json",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/mfv_short_batch.json?v=b985e49f4171ae30105826ba3f62d7bc870334f5",
+      "bytes": 1864,
+      "sha256": "f59689b825fe06d526d171aa7b98bca1a0fef55ccc7ada0db626ae24d389843a"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/mfv_short_controls.py",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/mfv_short_controls.py?v=b985e49f4171ae30105826ba3f62d7bc870334f5",
+      "bytes": 18368,
+      "sha256": "62b37376a15d76ce7ea30c55b5b2eb931baa8b14ae4f1a4dd8032e54bce6bd69"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/mfv_short_plan.json",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/mfv_short_plan.json?v=b985e49f4171ae30105826ba3f62d7bc870334f5",
+      "bytes": 3398,
+      "sha256": "73aecfe271c30300a2d3ebe0c547791dc17e310b3f7727f876ca238598df01e9"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/mfv_short_validation.json",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/mfv_short_validation.json?v=b985e49f4171ae30105826ba3f62d7bc870334f5",
+      "bytes": 22226,
+      "sha256": "1a454241ada059c40994ecc0cde6e2a774fbd7f0ed6d8a608419739188019cc6"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/publish_mfv_short.ps1",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/publish_mfv_short.ps1?v=b985e49f4171ae30105826ba3f62d7bc870334f5",
+      "bytes": 6275,
+      "sha256": "248075c70ca501feb56ba91b0f236f3270462218d3839bf7c3335e5a84d2be01"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/storage_guard.py",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/storage_guard.py?v=b985e49f4171ae30105826ba3f62d7bc870334f5",
+      "bytes": 4269,
+      "sha256": "f342c104352aa4526e737ac58a33e081a12d69d00c57cc55f15ad49a3f9e6fcb"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/test_mfv_short.py",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/test_mfv_short.py?v=b985e49f4171ae30105826ba3f62d7bc870334f5",
+      "bytes": 1672,
+      "sha256": "7173f29e998e75a44267a205617ce1b6a0f61a3cb04157fa0a3b7d7bf306a9b4"
+    }
+  ],
+  "scope": "Four short native MFV diagnostic outputs: reference exact versus retained old outputs, repaired mass response and combined mass accounting pass. Not late-failure validation; accepted full controls remain44. All raw retained."
+}

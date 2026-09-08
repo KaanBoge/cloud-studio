@@ -1,0 +1,195 @@
+"""Guarded native Enzo sensitivity pairs. Keeps every HDF5 output and restart.
+
+L3/L4 first; L5 only if the complete pair plus safety reserve fits. Native Enzo
+can emit an extra terminal dump: retain it and record actual distinct times,
+rather than pretending the target of 101 outputs is the observed count.
+"""
+import argparse
+import fcntl
+import gc
+import json
+import math
+import os
+from pathlib import Path
+import re
+import signal
+import subprocess
+import sys
+import time
+import numpy as np
+import psutil
+import yt
+sys.path.insert(0,'/home/kaan/verified_20260907')
+from run_params import parse_file,read_values
+from storage_guard import storage_snapshot,require_storage,GIB
+sys.path.insert(0,'/mnt/c/Users/kaanb/CloudCrushing/sensitivity_20260907')
+from build import sha
+sys.path.insert(0,'/mnt/c/Users/kaanb/CloudCrushing/audit_20260907')
+from grid_smokes import set_flat
+ROOT=Path('/home/kaan/sensitivity_20260907/enzo')
+yt.set_log_level(40)
+
+def save(path,data):
+    p=Path(path);tmp=p.with_suffix(p.suffix+'.tmp');tmp.write_text(json.dumps(data,indent=2,allow_nan=False));tmp.replace(p)
+
+def input_for(level,mode,smoke=False):
+    if level not in (3,4,5) or mode not in (0,1):raise ValueError('Unvalidated case')
+    nx=8*2**level;tcc=math.sqrt(100)/(2*math.sqrt(5/3))
+    original=Path('/home/kaan/ic_audit_20260907/grid_tests/enzo_chi100/CloudWind.enzo').read_text()
+    original='\n'.join(re.split(r'#|//',line,maxsplit=1)[0].rstrip() for line in original.splitlines())
+    return '# Isolated native Enzo velocity-IC sensitivity study.\n'+set_flat(original,{
+        'TopGridDimensions':f'{nx} {nx//2} {nx//2}', 'CloudWindVelocityIC':mode,
+        'CloudWindVelocity':repr(2*math.sqrt(5/3)),'CloudWindChi':100,'Gamma':repr(5/3),
+        'StopTime':repr(.01 if smoke else 5*tcc),'StopCycle':2 if smoke else 500000,
+        # Enzo dtRestartDump is WALL time and deliberately terminates the job.
+        # Preserve its native disabled setting. Full DD snapshots remain saved.
+        'StopSteps':500000,'dtDataDump':repr(tcc/20),'dtRestartDump':-99999,
+        'DataDumpName':'CW_','RestartDumpName':'restart'})
+
+def no_mode(text):
+    if len(re.findall(r'(?m)^CloudWindVelocityIC = [01]$',text))!=1:raise ValueError('Ambiguous IC switch')
+    return re.sub(r'(?m)^CloudWindVelocityIC = [01]$','',text)
+
+def raw(path,params,full=False):
+    ds=yt.load(str(path));ad=ds.all_data()
+    rho=ad['enzo','Density'].to_value('code_density')
+    tracer=ad['enzo','Metal_Density'].to_value('code_density')
+    energy=ad['enzo','TotalEnergy'].to_value('code_velocity**2')
+    vel=np.stack([ad['enzo',a+'-velocity'].to_value('code_velocity') for a in 'xyz'],axis=1)
+    dv=ad['index','cell_volume'].to_value('code_length**3')
+    # Output metadata prints Gamma rounded to 1.66667. Use the input Gamma,
+    # not yt's derived pressure based on that rounded display value.
+    pressure=(params['gamma']-1)*rho*(energy-.5*np.sum(vel*vel,axis=1))
+    if not all(np.all(np.isfinite(a)) for a in (rho,tracer,energy,vel,dv,pressure)) or rho.min()<=0 or pressure.min()<=0:
+        raise ValueError('Nonfinite or nonpositive native field')
+    if not np.allclose(ds.domain_left_edge.to_value('code_length'),[-3,-5,-5]) or not np.allclose(ds.domain_width.to_value('code_length'),[20,10,10]):
+        raise ValueError('Wrong domain')
+    out=dict(time=float(ds.current_time.to_value('code_time')),rho=rho,tracer=tracer,dv=dv,vel=vel,pressure=pressure)
+    if full:out['xyz']=np.stack([ad['index',a].to_value('code_length') for a in 'xyz'],axis=1)
+    return out
+
+def check_initial(data,params,mode):
+    if data['time']!=0:raise ValueError('Initial time missing')
+    rad=np.linalg.norm(data['xyz'],axis=1);f=.5*(1-np.tanh((rad-params['r_cloud'])/.1))
+    rho=params['rho_wind']*(1+(params['chi']-1)*f);vw=params['v_wind']
+    vx=vw*(1-.5*(1-np.tanh((rad-1.3)/.1))) if mode else np.where(rad>1.3,vw,0.)
+    errors=dict(density_relative=float(np.max(np.abs(data['rho']-rho)/rho)),
+        velocity_over_wind=float(max(np.max(np.abs(data['vel'][:,0]-vx)),np.max(np.abs(data['vel'][:,1:])))/vw),
+        pressure_absolute=float(np.max(np.abs(data['pressure']-params['p_wind']))),
+        tracer_over_initial_cloud_density=float(np.max(np.abs(data['tracer']-np.maximum(f*rho,1e-20)))/params['chi']))
+    if max(errors.values())>1e-10:raise ValueError('Native IC mismatch '+str(errors))
+    return errors
+
+def pair_initial(a,b):
+    if a['binary_sha256']!=b['binary_sha256']:raise ValueError('Different binaries')
+    if no_mode((Path(a['directory'])/'CloudWind.enzo').read_text())!=no_mode((Path(b['directory'])/'CloudWind.enzo').read_text()):raise ValueError('Confounded pair')
+    da=raw(a['series'][0]['snapshot'],a['parameters'],True);db=raw(b['series'][0]['snapshot'],b['parameters'],True)
+    for key in ('rho','tracer','xyz','dv'):
+        if not np.array_equal(da[key],db[key]):raise ValueError('Pair mismatch '+key)
+    pe=float(np.max(np.abs(da['pressure']-db['pressure'])))
+    vd=float(np.max(np.abs(da['vel']-db['vel'])))
+    if pe>1e-10 or vd<1e-8:raise ValueError('Pressure changed or velocity did not')
+    return dict(density_tracer_coordinates_volumes_exact=True,pressure_max_difference=pe,velocity_max_difference=vd)
+
+def validate(folder,params,level,mode,smoke):
+    paths=sorted(folder.glob('DD*/CW_*'));paths=[p for p in paths if p.is_file() and re.fullmatch(r'CW_\d{4}',p.name)]
+    if not paths:raise ValueError('No native snapshots')
+    rows=[];n=(8*2**level)*(4*2**level)**2
+    for i,p in enumerate(paths):
+        d=raw(p,params,i==0)
+        if len(d['rho'])!=n or not np.allclose(d['dv'],2000/n,rtol=1e-12):raise ValueError('Missing/unexpected cells')
+        mass=d['rho']*d['dv'];dense=d['rho']>params['rho_wind']*params['chi']/3
+        row=dict(snapshot=str(p),time_code=d['time'],t_over_tcc=d['time']/params['t_cc'],
+            cells=n,dense_mass=float(mass[dense].sum()),tracer_mass=float(np.dot(d['tracer'],d['dv'])))
+        if i==0:row['initial_checks']=check_initial(d,params,mode)
+        rows.append(row);del d;gc.collect()
+    rows.sort(key=lambda x:x['time_code']);unique=[];duplicates=[]
+    for r in rows:
+        if unique and r['time_code']==unique[-1]['time_code']:duplicates.append(r)
+        else:unique.append(r)
+    if not smoke:
+        if not (101<=len(unique)<=102) or abs(unique[-1]['t_over_tcc']-5)>1e-6:raise ValueError('Incomplete native cadence')
+        offsets=np.array([x['t_over_tcc'] for x in unique[:101]])-np.linspace(0,5,101)
+        if offsets.min() < -1e-6 or offsets.max()>=.05:raise ValueError('Bad native cadence')
+    if unique[0]['dense_mass']<=0 or unique[0]['tracer_mass']<=0:raise ValueError('No initial cloud mass')
+    for r in unique:
+        r['dense_mass_over_initial']=r['dense_mass']/unique[0]['dense_mass']
+        r['tracer_mass_over_initial']=r['tracer_mass']/unique[0]['tracer_mass']
+    return dict(unique_snapshots=len(unique),target_snapshots=101,series=unique,
+        exact_duplicate_time_outputs_retained=duplicates,native_output_precision='Six native HDF5 float64 fields; unchanged compute and restart precision')
+
+def budget(level):
+    n=(8*2**level)*(4*2**level)**2
+    return int(n*(64*103*1.2+8*96)+GIB)
+
+def run_case(level,mode,smoke=False):
+    b=json.loads((ROOT/'build.json').read_text());binary=b['binary']
+    if sha(binary)!=b['binary_sha256']:raise ValueError('Binary changed')
+    folder=ROOT/('smokes_v2' if smoke else 'runs_v2')/f"L{level}_chi100_{'tanh13' if mode else 'sharp13'}"
+    text=input_for(level,mode,smoke)
+    if folder.exists():
+        prior=json.loads((folder/'result.json').read_text())
+        if prior.get('status')!='complete_native_checks' or (folder/'CloudWind.enzo').read_text()!=text or prior['binary_sha256']!=b['binary_sha256']:raise ValueError('Existing partial case needs review')
+        return prior
+    disk=GIB if smoke else budget(level);storage=storage_snapshot(ROOT);require_storage(storage,disk)
+    n=(8*2**level)*(4*2**level)**2
+    if psutil.virtual_memory().available<n*768+2*GIB:raise RuntimeError('RAM guard')
+    folder.mkdir(parents=True);(folder/'CloudWind.enzo').write_text(text);params=parse_file(folder/'CloudWind.enzo')
+    if not(math.isclose(params['chi'],100) and math.isclose(params['mach'],2)):raise ValueError('Physical input mismatch')
+    command=['mpirun','--bind-to','core','-np','8',binary,'CloudWind.enzo']
+    record=dict(status='running',level=level,mode=mode,directory=str(folder),parameters=params,
+        command=command,binary_sha256=b['binary_sha256'],parameter_sha256=sha(folder/'CloudWind.enzo'),
+        storage_preflight=storage,reserved_output_gib=disk/GIB,started_unix=time.time())
+    save(folder/'result.json',record);save(ROOT/'current_v2.json',record);print('START '+str(folder),flush=True)
+    peak=0
+    with (folder/'run.log').open('x') as log,(folder/'resources.jsonl').open('x') as res:
+        proc=subprocess.Popen(command,cwd=folder,stdout=log,stderr=subprocess.STDOUT,start_new_session=True,
+            env=dict(os.environ,OMP_NUM_THREADS='1',OPENBLAS_NUM_THREADS='1'))
+        handle=psutil.Process(proc.pid)
+        while proc.poll() is None:
+            try:peak=max(peak,sum(p.memory_info().rss for p in handle.children(recursive=True)))
+            except (psutil.NoSuchProcess,psutil.AccessDenied):pass
+            res.write(json.dumps(dict(unix=time.time(),peak_child_rss_bytes=peak,ram_available_bytes=psutil.virtual_memory().available,loadavg=os.getloadavg()))+'\n');res.flush()
+            if time.time()-record['started_unix']>(300 if smoke else 21600):
+                os.killpg(proc.pid,signal.SIGTERM)
+                try:proc.wait(timeout=15)
+                except subprocess.TimeoutExpired:os.killpg(proc.pid,signal.SIGKILL);proc.wait(timeout=15)
+                break
+            try:proc.wait(timeout=5)
+            except subprocess.TimeoutExpired:pass
+    record.update(status='needs_review',returncode=proc.returncode,wall_seconds=time.time()-record['started_unix'],peak_child_rss_gib=peak/GIB)
+    save(folder/'result.json',record)
+    if proc.returncode:raise RuntimeError('Solver failed; outputs retained')
+    echo=(folder/'amr.out').read_text()
+    if f'CloudWindVelocityIC = {mode}' not in echo:raise ValueError('IC mode was not echoed')
+    record.update(validate(folder,params,level,mode,smoke));record['status']='complete_native_checks'
+    save(folder/'result.json',record);save(ROOT/'current_v2.json',record)
+    print(f'FINISH L{level} mode={mode}: {record["unique_snapshots"]} distinct times, {record["wall_seconds"]:.1f}s',flush=True)
+    return record
+
+def main():
+    ap=argparse.ArgumentParser();ap.add_argument('--smoke',action='store_true');a=ap.parse_args()
+    locks=[]
+    for name in ('benchmark.lock','production.lock'):
+        f=Path('/home/kaan/performance_20260907',name).open('a');fcntl.flock(f,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(f)
+    output=ROOT/('smoke_batch_v2.json' if a.smoke else 'batch_v2.json');batch=dict(status='running',pid=os.getpid(),finished=[],pairs=[])
+    try:
+        if not a.smoke:
+            proof=json.loads((ROOT/'smoke_batch_v2.json').read_text())
+            if proof['status']!='complete_native_checks' or not proof['pairs']:raise ValueError('Validated smoke pair required')
+        for level in ((3,) if a.smoke else (3,4,5)):
+            if no_mode(input_for(level,0,a.smoke))!=no_mode(input_for(level,1,a.smoke)):raise ValueError('Confounded inputs')
+            if not a.smoke:
+                try:require_storage(storage_snapshot(ROOT),2*budget(level))
+                except RuntimeError as error:
+                    batch.update(status='held_storage',held_level=level,reason=str(error));save(output,batch);print('HOLD '+str(error),flush=True);return
+            pair=[]
+            for mode in (0,1):
+                pair.append(run_case(level,mode,a.smoke));batch['finished'].append(pair[-1]);save(output,batch)
+            batch['pairs'].append(dict(level=level,checks=pair_initial(*pair)));save(output,batch);gc.collect()
+        batch['status']='complete_native_checks'
+    except Exception as error:
+        batch.update(status='stopped_needs_review',error=str(error));raise
+    finally:save(output,batch)
+
+if __name__=='__main__':main()

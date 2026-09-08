@@ -1,0 +1,21 @@
+{
+  "generated_at_utc": "2026-09-08T23:43:31.761474+00:00",
+  "accepted_controls": 50,
+  "accepted_pairs": 25,
+  "analyzed_native_states": 5054,
+  "historical_viewer_entries": 174,
+  "historical_indexed_frames": 11913,
+  "analysis_files": 919,
+  "analysis_bytes": 30266103,
+  "frames_commit": "7b25e3b651dafffb76716bdf0c7d778d2e441182",
+  "new_enzo_l5": {
+    "observed_at_utc": "2026-09-08T23:43:31.463925+00:00",
+    "status": "running",
+    "active_mode": 1,
+    "validated_new_controls": 0,
+    "plan_sha256": "367f318dcb2c0d3007f4f8273531dbd62a0f10d585029f9bfcb0366349c73b25",
+    "independently_checked_finished_cases": 1,
+    "scope": "Dated launcher observation, not a live dashboard or acceptance/publication of L5 results."
+  },
+  "summary_source": "analysis/sensitivity_20260907/resolution_summary_v2/summary.json"
+}

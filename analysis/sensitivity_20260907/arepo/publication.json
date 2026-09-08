@@ -1,0 +1,18 @@
+{
+  "status": "verified_live",
+  "verified_at_utc": "2026-09-08T03:26:00Z",
+  "commit": "1045abe4f485e66c96defa7e421c5e823d86ad8e",
+  "previous_commit": "d6e8db58d8e8c7b41bf6966d7ac240f2760998ef",
+  "remote_main_matches": true,
+  "working_tree_clean": true,
+  "pages_workflow_id": 34183341668,
+  "pages_conclusion": "success",
+  "report_url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/arepo/report.json",
+  "report_status": "share_with_caveats",
+  "batch_sha256": "bb32437197ad477d7ef61f9367cf8e233b75e4182bf3770bde80c6ceada33108",
+  "live_frames_per_control": [101, 101, 101, 101],
+  "live_max_independent_relative_mass_error": 6.168784409260898e-16,
+  "plot_url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/arepo/mass_and_retention.png",
+  "plot_http_status": 200,
+  "scope": "Four completed Arepo sensitivity controls, analysis and QA. Not raw datasets or new production 3D viewer entries. All native raw remains locally saved. Arepo L5 remains storage-held."
+}

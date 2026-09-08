@@ -1,0 +1,191 @@
+{
+  "status": "verified_live",
+  "verified_at_utc": "2026-09-08T13:45:14.4935853Z",
+  "commit": "be992e8080dddb7e5e5732dd4a7d9126da2ee3a0",
+  "previous_commit": "492f2f186a65b0ab1067b9f730336fb651ec9b55",
+  "pages_workflow_id": 34233606814,
+  "files_verified": 30,
+  "checks": [
+    {
+      "path": "analysis/README.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/README.md?v=be992e8080dddb7e5e5732dd4a7d9126da2ee3a0",
+      "bytes": 13600,
+      "sha256": "05ccf61267a2e61fb7270f608320f7287106d4ebb052630223d751d665ffcd3c"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/PLAN.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/PLAN.md?v=be992e8080dddb7e5e5732dd4a7d9126da2ee3a0",
+      "bytes": 16967,
+      "sha256": "d7252dddffd5950e8610f13f28a5c1ca239ec23790adead77d59cb3726fc0568"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/README.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/README.md?v=be992e8080dddb7e5e5732dd4a7d9126da2ee3a0",
+      "bytes": 15421,
+      "sha256": "d063d089990882cc0d8a8374fd003141d1e3d711f202bb6b67de8bfc36392286"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/FORCE_COMPARISON_PLAN.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/FORCE_COMPARISON_PLAN.md?v=be992e8080dddb7e5e5732dd4a7d9126da2ee3a0",
+      "bytes": 3060,
+      "sha256": "b463d03e6488d6d74e0117456c3173a1db29fd6f9186427046636ecd75ffb258"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/FORCE_ORDER_RESULTS.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/FORCE_ORDER_RESULTS.md?v=be992e8080dddb7e5e5732dd4a7d9126da2ee3a0",
+      "bytes": 8980,
+      "sha256": "ca4ca383ec6092c5e4578dbde58bc5dedf96c93c001d5898b7b15c57e41c8295"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/FORCE_ORDER_TRACE_DESIGN.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/FORCE_ORDER_TRACE_DESIGN.md?v=be992e8080dddb7e5e5732dd4a7d9126da2ee3a0",
+      "bytes": 7252,
+      "sha256": "206c52397109d2461b5757967e485ebc64432c07d8ea7d9558063af568f5da63"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/FORCE_TRACE_CORE_VALIDATION.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/FORCE_TRACE_CORE_VALIDATION.md?v=be992e8080dddb7e5e5732dd4a7d9126da2ee3a0",
+      "bytes": 3251,
+      "sha256": "41c822191337b5d4069ad9b6d38e4abd7bac33d2fed48be9e91a06846bf53c51"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/README.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/README.md?v=be992e8080dddb7e5e5732dd4a7d9126da2ee3a0",
+      "bytes": 5225,
+      "sha256": "73df268225b6c9c315deeebe0c9a5c26dc88a1babef57781101f86a5345edd9b"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/compare_force_order.py",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/compare_force_order.py?v=be992e8080dddb7e5e5732dd4a7d9126da2ee3a0",
+      "bytes": 11567,
+      "sha256": "b2be1dda4fe1bca2e0415d81d28b4917a7b5630b686e9c47ff19143d4da158c1"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/force_comparison_plan.json",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/force_comparison_plan.json?v=be992e8080dddb7e5e5732dd4a7d9126da2ee3a0",
+      "bytes": 1825,
+      "sha256": "a58caffa967caacc54329994fa0383e0e7cfea9d896f39d1645c1f90793ab051"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/force_comparison_report.json",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/force_comparison_report.json?v=be992e8080dddb7e5e5732dd4a7d9126da2ee3a0",
+      "bytes": 5889857,
+      "sha256": "5c78fd85a3f5dc35800443a200955a883ecd97dce512b1bc7af665c48c66f7ef"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/force_comparison_review.json",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/force_comparison_review.json?v=be992e8080dddb7e5e5732dd4a7d9126da2ee3a0",
+      "bytes": 7223,
+      "sha256": "a20b4b4a746a83d701bd528e1958c40eb287321a4c5b988d2d6e8f6c3c1c453b"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/force_native_build.json",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/force_native_build.json?v=be992e8080dddb7e5e5732dd4a7d9126da2ee3a0",
+      "bytes": 20166,
+      "sha256": "b50b5d18cf20f629a46cfa83e6ae84a41acd11505e69da92ff21e7bdd5f93029"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/force_native_plan.json",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/force_native_plan.json?v=be992e8080dddb7e5e5732dd4a7d9126da2ee3a0",
+      "bytes": 29888,
+      "sha256": "464b45b773fab6d2af9cc8922c58fc577ca721bee8d04064af65b916cd74579a"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/force_native_report.json",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/force_native_report.json?v=be992e8080dddb7e5e5732dd4a7d9126da2ee3a0",
+      "bytes": 52891,
+      "sha256": "94ed097aa774b930c065bb1710d2c4f4f9d4cf618adcf09c52b23debf8822b97"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/force_trace_core.h",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/force_trace_core.h?v=be992e8080dddb7e5e5732dd4a7d9126da2ee3a0",
+      "bytes": 3811,
+      "sha256": "fcfc15450b8a82bc2f0a94b70b807396471f81ac16748da69750eccc95216ca3"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/force_trace_core_plan.json",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/force_trace_core_plan.json?v=be992e8080dddb7e5e5732dd4a7d9126da2ee3a0",
+      "bytes": 2034,
+      "sha256": "1b35716e8d781253aeff19bc61f826065593cfde3192a6a41982e3d1df77ea2a"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/force_trace_core_report.json",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/force_trace_core_report.json?v=be992e8080dddb7e5e5732dd4a7d9126da2ee3a0",
+      "bytes": 3269,
+      "sha256": "69100849bf2cd4423d6f91bfcf82e887a87bff62bc1ffa4719ad8118eed772cb"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/force_trace_native.h",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/force_trace_native.h?v=be992e8080dddb7e5e5732dd4a7d9126da2ee3a0",
+      "bytes": 6754,
+      "sha256": "650f3fb46a5e5550aa44387a9dc98adeec9be4f97b877be24dd9e195cc9cb99f"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/force_trace_replay.py",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/force_trace_replay.py?v=be992e8080dddb7e5e5732dd4a7d9126da2ee3a0",
+      "bytes": 8694,
+      "sha256": "4d5a510dd2cc3332620523696fcaf471f3fb80072e121a8bd7c5b94a414642ee"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/prepare_force_native.py",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/prepare_force_native.py?v=be992e8080dddb7e5e5732dd4a7d9126da2ee3a0",
+      "bytes": 7166,
+      "sha256": "be2a493c1ccc6fe4f6fb243ad8b5fc689ea95df5c0338daf4835a06c00a973e4"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/prepare_force_trace_core.py",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/prepare_force_trace_core.py?v=be992e8080dddb7e5e5732dd4a7d9126da2ee3a0",
+      "bytes": 4973,
+      "sha256": "271e830ceccc8e80df014782c242256830c847585b26beb00a5250fa925e1ff8"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/publish_force_order.ps1",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/publish_force_order.ps1?v=be992e8080dddb7e5e5732dd4a7d9126da2ee3a0",
+      "bytes": 7448,
+      "sha256": "55ce8defa8a5213c47d4472c695a94032f5d0d9d72c7f4f09b697da675d48d1b"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/review_force_comparison.py",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/review_force_comparison.py?v=be992e8080dddb7e5e5732dd4a7d9126da2ee3a0",
+      "bytes": 5911,
+      "sha256": "5345fa462eb658a6b4840917fa2bb22af36c068c1284e763c1b8b0197d84cbfa"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/run_force_order.py",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/run_force_order.py?v=be992e8080dddb7e5e5732dd4a7d9126da2ee3a0",
+      "bytes": 14009,
+      "sha256": "056613524bf2813795ebde5926fe273be0e4391b8dd92386cd176ca3be616316"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/test_compare_force_order.py",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/test_compare_force_order.py?v=be992e8080dddb7e5e5732dd4a7d9126da2ee3a0",
+      "bytes": 4247,
+      "sha256": "045d5105ea9c730028786fa59b7c5974540374c9c7d765f6f04a0bb232aebc02"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/test_force_trace_core.c",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/test_force_trace_core.c?v=be992e8080dddb7e5e5732dd4a7d9126da2ee3a0",
+      "bytes": 1936,
+      "sha256": "a03800c3a2d1dbe215fffde7bbeda04da92f2ae719b4c2ee35ebbd80837d14fc"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/test_force_trace_native.c",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/test_force_trace_native.c?v=be992e8080dddb7e5e5732dd4a7d9126da2ee3a0",
+      "bytes": 2763,
+      "sha256": "2a1382acc59f2762796c941275e96cd7040ce08c9e82a237cef154c59635f518"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/test_force_trace_replay.py",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/test_force_trace_replay.py?v=be992e8080dddb7e5e5732dd4a7d9126da2ee3a0",
+      "bytes": 5322,
+      "sha256": "02b7301d6071f69be0672d13b194f7b52b3773d636ccd7e9ac689c52785b3ff5"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gasoline/test_run_force_order.py",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gasoline/test_run_force_order.py?v=be992e8080dddb7e5e5732dd4a7d9126da2ee3a0",
+      "bytes": 1616,
+      "sha256": "6ca3fda60d2ee9fd43af30b56e3de1e22917c0496d679e6a357243840f147767"
+    }
+  ],
+  "scope": "Three short native force diagnostics: four states and three checkpoints. All27 selected order-only comparisons independently reproduced. Failed density gate remains;46 full controls, no full Gasoline control or viewer entry added."
+}

@@ -1,0 +1,152 @@
+{
+  "status": "verified_live",
+  "verified_at_utc": "2026-09-08T10:33:51.3368014Z",
+  "commit": "2958c63601910de541cb6ebc33a04cd600c90179",
+  "previous_commit": "b985e49f4171ae30105826ba3f62d7bc870334f5",
+  "pages_workflow_id": 34215872153,
+  "pages_conclusion": "success",
+  "files_verified": 19,
+  "checks": [
+    {
+      "path": "analysis/README.md",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/README.md?v=2958c63601910de541cb6ebc33a04cd600c90179",
+      "bytes": 12181,
+      "sha256": "769e429e2d4f26a3d6f763487f333bcef33f300e51887e3ad7e273de703ab35c"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/PLAN.md",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/PLAN.md?v=2958c63601910de541cb6ebc33a04cd600c90179",
+      "bytes": 14673,
+      "sha256": "06e3a04ca7705d79c2479c3275c7e98e9628c76766fb273fdefb85a3007086f9"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/README.md",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/README.md?v=2958c63601910de541cb6ebc33a04cd600c90179",
+      "bytes": 13900,
+      "sha256": "d57999b244cc96bbfc31c12fbf9ba39124b2f21004ae4bbf9d875c812ad35229"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/.gitattributes",
+      "surface": "repository_config",
+      "url": "https://raw.githubusercontent.com/KaanBoge/cloud-studio/2958c63601910de541cb6ebc33a04cd600c90179/analysis/sensitivity_20260907/gizmo/.gitattributes",
+      "bytes": 1415,
+      "sha256": "4ab17fe1531ff59cd81d04f093d2cdbd17b31a24ede2b7f56cd82d9726eb3328"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/MFV_ONSET_CLOCK_REVIEW.md",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/MFV_ONSET_CLOCK_REVIEW.md?v=2958c63601910de541cb6ebc33a04cd600c90179",
+      "bytes": 2198,
+      "sha256": "7a9a71e1f6b43538224ce0eafaa3941dc5a4f1274fc3b61e378d105af2384190"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/MFV_ONSET_PLAN.md",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/MFV_ONSET_PLAN.md?v=2958c63601910de541cb6ebc33a04cd600c90179",
+      "bytes": 4441,
+      "sha256": "a1ed4c5a6239d4884df6a9c3384757b440615569acad38ce561bd3727e23667b"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/MFV_ONSET_VALIDATION.md",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/MFV_ONSET_VALIDATION.md?v=2958c63601910de541cb6ebc33a04cd600c90179",
+      "bytes": 5453,
+      "sha256": "8c045d95c92a0fb9d190153aab571e40e3dbc1b2b2f1ab4c6d74283344ef7d2c"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/MFV_SHORT_VALIDATION.md",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/MFV_SHORT_VALIDATION.md?v=2958c63601910de541cb6ebc33a04cd600c90179",
+      "bytes": 5455,
+      "sha256": "255d9b308eaf35bc08b1a8b0c14245119e6ebc0cdab65b2723d1c88b69df8fbd"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/README.md",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/README.md?v=2958c63601910de541cb6ebc33a04cd600c90179",
+      "bytes": 15904,
+      "sha256": "37a3ae6e99a6713ef1e25af07cdfb4650d07a1ef9bafe7d3777662fe9fe7b443"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/mfv_onset.py",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/mfv_onset.py?v=2958c63601910de541cb6ebc33a04cd600c90179",
+      "bytes": 20471,
+      "sha256": "40782c2b16e09d92a0ba1c1f6bfc4c8019ae86426e784cbbc663fb6503c3112e"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/onset_clock_review.json",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/onset_clock_review.json?v=2958c63601910de541cb6ebc33a04cd600c90179",
+      "bytes": 31890,
+      "sha256": "53d8f951fabe54ec48795a626be1a55d27a48e25192d5021dd705f7ce95cfb5f"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/onset_initial_validation.json",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/onset_initial_validation.json?v=2958c63601910de541cb6ebc33a04cd600c90179",
+      "bytes": 88835,
+      "sha256": "d1da6d9d1e5b356fb1dd10e8f34931f316e51529a4865a72442f5757dd7a1d76"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/onset_native_result.json",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/onset_native_result.json?v=2958c63601910de541cb6ebc33a04cd600c90179",
+      "bytes": 329,
+      "sha256": "6655b288479c721aa01acc5c84ba0c72b47511c9cfde0c4fcf0dcc1fb9715e01"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/onset_plan.json",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/onset_plan.json?v=2958c63601910de541cb6ebc33a04cd600c90179",
+      "bytes": 3695,
+      "sha256": "52c8ecbea186266d336652bcd0ad4d465de3b2a0a8a19b13880f126e027998ce"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/publish_mfv_onset.ps1",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/publish_mfv_onset.ps1?v=2958c63601910de541cb6ebc33a04cd600c90179",
+      "bytes": 6784,
+      "sha256": "9dc27da34943df438357bc2a0e55cc47f8d5d70048420cb240ee46ceb2400f90"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/review_mfv_onset.py",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/review_mfv_onset.py?v=2958c63601910de541cb6ebc33a04cd600c90179",
+      "bytes": 9185,
+      "sha256": "ef0012ec11903861ea4c4e52ccdf530fd6286e39fd4e0e02f04f91ad278755f0"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/review_mfv_onset_v2.py",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/review_mfv_onset_v2.py?v=2958c63601910de541cb6ebc33a04cd600c90179",
+      "bytes": 9460,
+      "sha256": "1c35820cb8ad567d13bdad26f6b3c1088f4b994f86f6596efaa6af2c5c9f3359"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/test_mfv_onset.py",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/test_mfv_onset.py?v=2958c63601910de541cb6ebc33a04cd600c90179",
+      "bytes": 2173,
+      "sha256": "f9d0d5c0b9eb4ac583db7175a269cadd35059405554efb1eb7c478b8f8be7911"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/test_mfv_onset_clock.py",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/test_mfv_onset_clock.py?v=2958c63601910de541cb6ebc33a04cd600c90179",
+      "bytes": 1177,
+      "sha256": "2587c23f930c71e4484dce1544dc94280750263cb5705a3d9a0354ddd7546d8c"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/test_mfv_onset_clock_v2.py",
+      "surface": "live_pages",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/test_mfv_onset_clock_v2.py?v=2958c63601910de541cb6ebc33a04cd600c90179",
+      "bytes": 1532,
+      "sha256": "a1c3535aa4fe3c6d25fa21eaa873b09880b82ff266aa5edd5f04cf86f648061e"
+    }
+  ],
+  "scope": "101 native repaired historical MFV diagnostic states through5tcc pass field and combined mass-ledger checks. Source-derived clock and JSON reporting corrections disclosed; no rerun. Not an accepted velocity pair; accepted full controls remain44. All raw retained."
+}

@@ -1,0 +1,21 @@
+{
+  "status": "verified_live",
+  "verified_at_utc": "2026-09-08T00:42:23Z",
+  "commit": "d6e8db58d8e8c7b41bf6966d7ac240f2760998ef",
+  "previous_commit": "171eb24d66a5d9f14c5bfcd46d08ad7c2d6816c5",
+  "remote_main_matches": true,
+  "working_tree_clean": true,
+  "pages_workflow_id": 34174083698,
+  "pages_conclusion": "success",
+  "report_url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/flashx/report.json",
+  "report_status": "share_with_caveats",
+  "source_batch_sha256": "dae662bf63c952bdfc55a2a0f621f60628d79d93c21d261ef2d66e7dca534697",
+  "live_frames_per_control": [101, 101, 101, 101],
+  "live_max_independent_relative_mass_error": 4.01005694695467e-16,
+  "plot_url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/flashx/mass_evolution.png",
+  "plot_http_status": 200,
+  "arepo_setup_url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/arepo/setup_validation.json",
+  "arepo_setup_status": "passed",
+  "arepo_verified_launcher_sha256": "f6806defd0ff6dc139232a9a0baf385e6ba8ebe7c297147cf386941a89912356",
+  "scope": "Completed Flash-X analysis and native Arepo setup/scripts only. Arepo full queue remains active. This is not publication of raw datasets or new production 3D viewer entries. All native raw is retained locally."
+}

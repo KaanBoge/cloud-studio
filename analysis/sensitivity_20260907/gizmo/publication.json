@@ -1,0 +1,19 @@
+{
+  "status": "verified_live",
+  "verified_at_utc": "2026-09-08T03:42:37Z",
+  "commit": "745d05e38a49734e121b3b5c8ab78c7458769be1",
+  "previous_commit": "1045abe4f485e66c96defa7e421c5e823d86ad8e",
+  "remote_main_matches": true,
+  "working_tree_clean": true,
+  "pages_workflow_id": 34184318876,
+  "pages_conclusion": "success",
+  "verification_url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/verification.json",
+  "live_verification_status": "passed",
+  "live_native_smoke_states": 8,
+  "validator_sha256": "fcdf4f5560912a74fa067eec5f4f9abf677e71cc53af979932f3bc088c7765b6",
+  "timing_report_url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/snapshot_timing_report.json",
+  "live_timing_status": "passed",
+  "live_timing_diagnostics": 8,
+  "readme_http_status": 200,
+  "scope": "L3 native GIZMO MFM/MFV smoke and snapshot-timing validation, custom scripts and inputs. No full GIZMO controls, raw snapshots, native binaries or new production viewer entries are claimed. All raw remains locally retained."
+}

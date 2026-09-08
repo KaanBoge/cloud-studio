@@ -1,0 +1,609 @@
+{
+  "status": "complete_independent_pair_checks",
+  "stage": "diagnostics",
+  "plan_sha256": "367f318dcb2c0d3007f4f8273531dbd62a0f10d585029f9bfcb0366349c73b25",
+  "finished": [
+    {
+      "status": "complete_independent_checks",
+      "code": "Enzo",
+      "level": 5,
+      "mode": 0,
+      "diagnostic": true,
+      "directory": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/sharp13",
+      "parameters": {
+        "source": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/sharp13/CloudWind.enzo",
+        "parameter_sha256": "53c183bd4ab93969b7bc7f1eae4c391a626625360a890ed34c78dbc4512cf5d0",
+        "assumptions": [],
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1.0,
+        "rho_wind": 1.0,
+        "p_wind": 1.0,
+        "v_wind": 2.581988897471611,
+        "chi": 100.0,
+        "rv_scale": 1.3,
+        "tmax": 0.01,
+        "output_dt": 0.19364916731037085,
+        "mach": 2.0,
+        "kind": "enzo",
+        "t_cc": 3.872983346207417
+      },
+      "command": [
+        "mpirun",
+        "--bind-to",
+        "core",
+        "-np",
+        "8",
+        "/home/kaan/sensitivity_20260907/enzo/enzo_pair",
+        "CloudWind.enzo"
+      ],
+      "binary_sha256": "28d482af94828aba1de2b097068b66c9ec80b88b53bd6405e0ff96fbecf57900",
+      "parameter_sha256": "53c183bd4ab93969b7bc7f1eae4c391a626625360a890ed34c78dbc4512cf5d0",
+      "storage": {
+        "guest_free_bytes": 15342718976,
+        "mounted_free_bytes": 166382649344,
+        "windows": {
+          "distribution": "Ubuntu",
+          "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+          "drive": "C:",
+          "free_bytes": 166382649344,
+          "total_bytes": 1999283154944
+        },
+        "remaining_budget_bytes": 77094662962,
+        "live": false,
+        "mount": {
+          "target": "/mnt/c",
+          "source": "C:\\",
+          "fstype": "9p",
+          "options": "rw,noatime,aname=drvfs;path=C:\\;uid=1000;gid=1000;symlinkroot=/mnt/,cache=0x5,access=client,msize=65536,trans=fd,rfd=5,wfd=5"
+        }
+      },
+      "gpu_solver": false,
+      "started_utc": "2026-09-08T22:34:43Z",
+      "mpirun_pid": 57,
+      "mpirun_create_time": 1788906882.27,
+      "returncode": 0,
+      "error": null,
+      "wall_seconds": 3.3260669989999982,
+      "peak_child_rss_gib": 1.39288330078125,
+      "median_busy_cpu_workers": null,
+      "unique_snapshots": 2,
+      "target_snapshots": 101,
+      "series": [
+        {
+          "snapshot": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/sharp13/DD0000/CW_0000",
+          "time_code": 0.0,
+          "t_over_tcc": 0.0,
+          "cells": 4194304,
+          "dense_mass": 399.9689412277787,
+          "tracer_mass": 366.49918845731247,
+          "initial_checks": {
+            "density_relative": 5.551115123125783e-15,
+            "velocity_over_wind": 0.0,
+            "pressure_absolute": 4.440892098500626e-16,
+            "tracer_over_initial_cloud_density": 2.842170943040401e-16
+          },
+          "dense_mass_over_initial": 1.0,
+          "tracer_mass_over_initial": 1.0
+        },
+        {
+          "snapshot": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/sharp13/DD0001/CW_0001",
+          "time_code": 0.0096824583655185,
+          "t_over_tcc": 0.002499999999999989,
+          "cells": 4194304,
+          "dense_mass": 399.9689412277787,
+          "tracer_mass": 366.499188457312,
+          "dense_mass_over_initial": 1.0,
+          "tracer_mass_over_initial": 0.9999999999999988
+        }
+      ],
+      "exact_duplicate_time_outputs_retained": [],
+      "native_output_precision": "Six native HDF5 float64 fields; unchanged compute and restart precision",
+      "independent_HDF5_checks": [
+        {
+          "snapshot": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/sharp13/DD0000/CW_0000",
+          "max_scaled_mass_error": 1.3958851366102248e-15
+        },
+        {
+          "snapshot": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/sharp13/DD0001/CW_0001",
+          "max_scaled_mass_error": 2.6366719247082054e-15
+        }
+      ],
+      "retained_files": [
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/sharp13/CloudWind.enzo",
+          "bytes": 1201,
+          "sha256": "53c183bd4ab93969b7bc7f1eae4c391a626625360a890ed34c78dbc4512cf5d0"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/sharp13/DD0000/CW_0000",
+          "bytes": 24863,
+          "sha256": "dd30862e97e8a10c92c62f4fb93013e2b53b7811afb7c4b434bf3529b888208e"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/sharp13/DD0000/CW_0000.boundary",
+          "bytes": 237,
+          "sha256": "7ff7ecb173c78dd9bceab2342fdf96bb03130f2ab1050df6e7628f4f2299d603"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/sharp13/DD0000/CW_0000.boundary.hdf",
+          "bytes": 5098240,
+          "sha256": "503ff475f494533e75f7df0928dda4245769435710379a59aed185ac70a84afe"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/sharp13/DD0000/CW_0000.configure",
+          "bytes": 4371,
+          "sha256": "c6f955770e408650307cea6a03375c4b13f6286aaa502614e4201eacd9e4be3d"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/sharp13/DD0000/CW_0000.cpu0000",
+          "bytes": 201332112,
+          "sha256": "2de7d70b32d7b9f7c6b80c0f89469265fc70b94c49df5e30e3acdba387fd6f5b"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/sharp13/DD0000/CW_0000.cpu0001",
+          "bytes": 2328,
+          "sha256": "0297a589680e11f9d14d0e5f389605e09b488242e04a71e6d1e1c0cfe6ea623c"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/sharp13/DD0000/CW_0000.cpu0002",
+          "bytes": 2328,
+          "sha256": "0297a589680e11f9d14d0e5f389605e09b488242e04a71e6d1e1c0cfe6ea623c"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/sharp13/DD0000/CW_0000.cpu0003",
+          "bytes": 2328,
+          "sha256": "0297a589680e11f9d14d0e5f389605e09b488242e04a71e6d1e1c0cfe6ea623c"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/sharp13/DD0000/CW_0000.cpu0004",
+          "bytes": 2328,
+          "sha256": "0297a589680e11f9d14d0e5f389605e09b488242e04a71e6d1e1c0cfe6ea623c"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/sharp13/DD0000/CW_0000.cpu0005",
+          "bytes": 2328,
+          "sha256": "0297a589680e11f9d14d0e5f389605e09b488242e04a71e6d1e1c0cfe6ea623c"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/sharp13/DD0000/CW_0000.cpu0006",
+          "bytes": 2328,
+          "sha256": "0297a589680e11f9d14d0e5f389605e09b488242e04a71e6d1e1c0cfe6ea623c"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/sharp13/DD0000/CW_0000.cpu0007",
+          "bytes": 2328,
+          "sha256": "0297a589680e11f9d14d0e5f389605e09b488242e04a71e6d1e1c0cfe6ea623c"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/sharp13/DD0000/CW_0000.hierarchy",
+          "bytes": 635,
+          "sha256": "bc869754414d6b43160dbda62d229b19ab8117854167559103027670cc7ddde2"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/sharp13/DD0000/CW_0000.memorymap",
+          "bytes": 52,
+          "sha256": "b403f49aac7ddececf231cb7d3450a1d5d8cc9faf117cd8b95bd146c407541cf"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/sharp13/DD0001/CW_0001",
+          "bytes": 24886,
+          "sha256": "8bfb1b420a5dce946de18797054eb4c791098b8ff5e47ed7a6714c190a68cc98"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/sharp13/DD0001/CW_0001.boundary",
+          "bytes": 237,
+          "sha256": "89b0eb60507f1f61a45056d1c49a8942090ab4f3bf53e5e94831eeecffe3bf8b"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/sharp13/DD0001/CW_0001.boundary.hdf",
+          "bytes": 5098240,
+          "sha256": "6fa9e052901420c9efcdcf3b682446e685abd3fcb625b10ee26ca871223a59bb"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/sharp13/DD0001/CW_0001.configure",
+          "bytes": 4371,
+          "sha256": "c6f955770e408650307cea6a03375c4b13f6286aaa502614e4201eacd9e4be3d"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/sharp13/DD0001/CW_0001.cpu0000",
+          "bytes": 201332112,
+          "sha256": "85bd84b12ed5af29a5c1abf0ed4daf12e996b82fe5f0cde0a66f41f4d5ee4635"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/sharp13/DD0001/CW_0001.cpu0001",
+          "bytes": 2328,
+          "sha256": "b04a0ae7f47aeb7351f491d5545fdf6789b6cee93fef87685af53aaacaf276b7"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/sharp13/DD0001/CW_0001.cpu0002",
+          "bytes": 2328,
+          "sha256": "b04a0ae7f47aeb7351f491d5545fdf6789b6cee93fef87685af53aaacaf276b7"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/sharp13/DD0001/CW_0001.cpu0003",
+          "bytes": 2328,
+          "sha256": "b04a0ae7f47aeb7351f491d5545fdf6789b6cee93fef87685af53aaacaf276b7"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/sharp13/DD0001/CW_0001.cpu0004",
+          "bytes": 2328,
+          "sha256": "b04a0ae7f47aeb7351f491d5545fdf6789b6cee93fef87685af53aaacaf276b7"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/sharp13/DD0001/CW_0001.cpu0005",
+          "bytes": 2328,
+          "sha256": "b04a0ae7f47aeb7351f491d5545fdf6789b6cee93fef87685af53aaacaf276b7"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/sharp13/DD0001/CW_0001.cpu0006",
+          "bytes": 2328,
+          "sha256": "b04a0ae7f47aeb7351f491d5545fdf6789b6cee93fef87685af53aaacaf276b7"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/sharp13/DD0001/CW_0001.cpu0007",
+          "bytes": 2328,
+          "sha256": "b04a0ae7f47aeb7351f491d5545fdf6789b6cee93fef87685af53aaacaf276b7"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/sharp13/DD0001/CW_0001.hierarchy",
+          "bytes": 652,
+          "sha256": "ce3da5d286bfe8cfda3bc2e8704da5c9e0671ff84d0428636d03fb19a3320839"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/sharp13/DD0001/CW_0001.memorymap",
+          "bytes": 52,
+          "sha256": "b403f49aac7ddececf231cb7d3450a1d5d8cc9faf117cd8b95bd146c407541cf"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/sharp13/Enzo_Build",
+          "bytes": 4371,
+          "sha256": "c6f955770e408650307cea6a03375c4b13f6286aaa502614e4201eacd9e4be3d"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/sharp13/Evtime",
+          "bytes": 126,
+          "sha256": "ef27e6da665f640744f6fc4c4949f95b2e2e49eb8ace90720665b5bee6cf8855"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/sharp13/OutputLevelInformation.out",
+          "bytes": 325,
+          "sha256": "c6ea6a5fd87521bda4c960f2281cc99037ab30b2a24b229da8406fe2e6609d3d"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/sharp13/OutputLog",
+          "bytes": 200,
+          "sha256": "f91729d619dff8ec63b602bef5dc28f75f56a006984e3cebc71a7a27529e979c"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/sharp13/RunFinished",
+          "bytes": 20,
+          "sha256": "fc1c829f7a0f21f6bee31d8d1a78e5644a52fd4b6d5f1e3df7837357ff817c56"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/sharp13/amr.out",
+          "bytes": 25127,
+          "sha256": "07dfb4746cae16b4b22f10855b78e96b5f42d7ff5b0f2d724509ecc272658df4"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/sharp13/performance.out",
+          "bytes": 1697,
+          "sha256": "57594175ea6122668f77fd84ae710ab7361ad786e52c12728203477b42c226d1"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/sharp13/resources.jsonl",
+          "bytes": 245,
+          "sha256": "4a17bd0e5b1438698bfc291faab28ee4883dbac52f14c617a2f5675e131dab77"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/sharp13/run.log",
+          "bytes": 2127,
+          "sha256": "00623775f0f5f9a39bf25ad864fb2564cc85436867adc8cb6cde1d707670ed85"
+        }
+      ]
+    },
+    {
+      "status": "complete_independent_checks",
+      "code": "Enzo",
+      "level": 5,
+      "mode": 1,
+      "diagnostic": true,
+      "directory": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/tanh13",
+      "parameters": {
+        "source": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/tanh13/CloudWind.enzo",
+        "parameter_sha256": "56f94e34eaad56de090fb2bb6c365ffec4760d901acadb2dba54129cb27c544d",
+        "assumptions": [],
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1.0,
+        "rho_wind": 1.0,
+        "p_wind": 1.0,
+        "v_wind": 2.581988897471611,
+        "chi": 100.0,
+        "rv_scale": 1.3,
+        "tmax": 0.01,
+        "output_dt": 0.19364916731037085,
+        "mach": 2.0,
+        "kind": "enzo",
+        "t_cc": 3.872983346207417
+      },
+      "command": [
+        "mpirun",
+        "--bind-to",
+        "core",
+        "-np",
+        "8",
+        "/home/kaan/sensitivity_20260907/enzo/enzo_pair",
+        "CloudWind.enzo"
+      ],
+      "binary_sha256": "28d482af94828aba1de2b097068b66c9ec80b88b53bd6405e0ff96fbecf57900",
+      "parameter_sha256": "56f94e34eaad56de090fb2bb6c365ffec4760d901acadb2dba54129cb27c544d",
+      "storage": {
+        "guest_free_bytes": 15342718976,
+        "mounted_free_bytes": 165960622080,
+        "windows": {
+          "distribution": "Ubuntu",
+          "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+          "drive": "C:",
+          "free_bytes": 165960622080,
+          "total_bytes": 1999283154944
+        },
+        "remaining_budget_bytes": 39621073305,
+        "live": false,
+        "mount": {
+          "target": "/mnt/c",
+          "source": "C:\\",
+          "fstype": "9p",
+          "options": "rw,noatime,aname=drvfs;path=C:\\;uid=1000;gid=1000;symlinkroot=/mnt/,cache=0x5,access=client,msize=65536,trans=fd,rfd=5,wfd=5"
+        }
+      },
+      "gpu_solver": false,
+      "started_utc": "2026-09-08T22:34:54Z",
+      "mpirun_pid": 94,
+      "mpirun_create_time": 1788906893.3,
+      "returncode": 0,
+      "error": null,
+      "wall_seconds": 3.175296398999997,
+      "peak_child_rss_gib": 1.247894287109375,
+      "median_busy_cpu_workers": null,
+      "unique_snapshots": 2,
+      "target_snapshots": 101,
+      "series": [
+        {
+          "snapshot": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/tanh13/DD0000/CW_0000",
+          "time_code": 0.0,
+          "t_over_tcc": 0.0,
+          "cells": 4194304,
+          "dense_mass": 399.9689412277787,
+          "tracer_mass": 366.49918845731247,
+          "initial_checks": {
+            "density_relative": 5.551115123125783e-15,
+            "velocity_over_wind": 1.7199501139797033e-16,
+            "pressure_absolute": 4.440892098500626e-16,
+            "tracer_over_initial_cloud_density": 2.842170943040401e-16
+          },
+          "dense_mass_over_initial": 1.0,
+          "tracer_mass_over_initial": 1.0
+        },
+        {
+          "snapshot": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/tanh13/DD0001/CW_0001",
+          "time_code": 0.0096824583655185,
+          "t_over_tcc": 0.002499999999999989,
+          "cells": 4194304,
+          "dense_mass": 399.96967815891867,
+          "tracer_mass": 366.49918845731213,
+          "dense_mass_over_initial": 1.000001842470912,
+          "tracer_mass_over_initial": 0.9999999999999991
+        }
+      ],
+      "exact_duplicate_time_outputs_retained": [],
+      "native_output_precision": "Six native HDF5 float64 fields; unchanged compute and restart precision",
+      "independent_HDF5_checks": [
+        {
+          "snapshot": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/tanh13/DD0000/CW_0000",
+          "max_scaled_mass_error": 1.3958851366102248e-15
+        },
+        {
+          "snapshot": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/tanh13/DD0001/CW_0001",
+          "max_scaled_mass_error": 2.0162785306592155e-15
+        }
+      ],
+      "retained_files": [
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/tanh13/CloudWind.enzo",
+          "bytes": 1201,
+          "sha256": "56f94e34eaad56de090fb2bb6c365ffec4760d901acadb2dba54129cb27c544d"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/tanh13/DD0000/CW_0000",
+          "bytes": 24863,
+          "sha256": "6f806a797b6c80b0a39dcd32a26e2d62869af4eb09ccc795de0e735e0428771a"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/tanh13/DD0000/CW_0000.boundary",
+          "bytes": 237,
+          "sha256": "7ff7ecb173c78dd9bceab2342fdf96bb03130f2ab1050df6e7628f4f2299d603"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/tanh13/DD0000/CW_0000.boundary.hdf",
+          "bytes": 5098240,
+          "sha256": "0dc2d55579c257130ff6b9f25afaf06d0caa552029e640ce00a3cd175510937e"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/tanh13/DD0000/CW_0000.configure",
+          "bytes": 4371,
+          "sha256": "c6f955770e408650307cea6a03375c4b13f6286aaa502614e4201eacd9e4be3d"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/tanh13/DD0000/CW_0000.cpu0000",
+          "bytes": 201332112,
+          "sha256": "5faf37d4ea4a7b8fa0283af291e32c4da054296e051df25ed5e63113dac1477d"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/tanh13/DD0000/CW_0000.cpu0001",
+          "bytes": 2328,
+          "sha256": "0297a589680e11f9d14d0e5f389605e09b488242e04a71e6d1e1c0cfe6ea623c"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/tanh13/DD0000/CW_0000.cpu0002",
+          "bytes": 2328,
+          "sha256": "0297a589680e11f9d14d0e5f389605e09b488242e04a71e6d1e1c0cfe6ea623c"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/tanh13/DD0000/CW_0000.cpu0003",
+          "bytes": 2328,
+          "sha256": "0297a589680e11f9d14d0e5f389605e09b488242e04a71e6d1e1c0cfe6ea623c"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/tanh13/DD0000/CW_0000.cpu0004",
+          "bytes": 2328,
+          "sha256": "0297a589680e11f9d14d0e5f389605e09b488242e04a71e6d1e1c0cfe6ea623c"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/tanh13/DD0000/CW_0000.cpu0005",
+          "bytes": 2328,
+          "sha256": "0297a589680e11f9d14d0e5f389605e09b488242e04a71e6d1e1c0cfe6ea623c"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/tanh13/DD0000/CW_0000.cpu0006",
+          "bytes": 2328,
+          "sha256": "0297a589680e11f9d14d0e5f389605e09b488242e04a71e6d1e1c0cfe6ea623c"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/tanh13/DD0000/CW_0000.cpu0007",
+          "bytes": 2328,
+          "sha256": "0297a589680e11f9d14d0e5f389605e09b488242e04a71e6d1e1c0cfe6ea623c"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/tanh13/DD0000/CW_0000.hierarchy",
+          "bytes": 635,
+          "sha256": "bc869754414d6b43160dbda62d229b19ab8117854167559103027670cc7ddde2"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/tanh13/DD0000/CW_0000.memorymap",
+          "bytes": 52,
+          "sha256": "b403f49aac7ddececf231cb7d3450a1d5d8cc9faf117cd8b95bd146c407541cf"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/tanh13/DD0001/CW_0001",
+          "bytes": 24886,
+          "sha256": "8c68655e6f49f6b917396528b5e4fc60453c26a09f51672a182a8e3888573f0c"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/tanh13/DD0001/CW_0001.boundary",
+          "bytes": 237,
+          "sha256": "89b0eb60507f1f61a45056d1c49a8942090ab4f3bf53e5e94831eeecffe3bf8b"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/tanh13/DD0001/CW_0001.boundary.hdf",
+          "bytes": 5098240,
+          "sha256": "de429fdd55aa28615c02d682cc1122f422b9f24a67a15031086157ea62040d25"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/tanh13/DD0001/CW_0001.configure",
+          "bytes": 4371,
+          "sha256": "c6f955770e408650307cea6a03375c4b13f6286aaa502614e4201eacd9e4be3d"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/tanh13/DD0001/CW_0001.cpu0000",
+          "bytes": 201332112,
+          "sha256": "73950961cd1650aa4b235ac3b88deb9e73a3e075d67fe601496a68de313f26b9"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/tanh13/DD0001/CW_0001.cpu0001",
+          "bytes": 2328,
+          "sha256": "b04a0ae7f47aeb7351f491d5545fdf6789b6cee93fef87685af53aaacaf276b7"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/tanh13/DD0001/CW_0001.cpu0002",
+          "bytes": 2328,
+          "sha256": "b04a0ae7f47aeb7351f491d5545fdf6789b6cee93fef87685af53aaacaf276b7"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/tanh13/DD0001/CW_0001.cpu0003",
+          "bytes": 2328,
+          "sha256": "b04a0ae7f47aeb7351f491d5545fdf6789b6cee93fef87685af53aaacaf276b7"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/tanh13/DD0001/CW_0001.cpu0004",
+          "bytes": 2328,
+          "sha256": "b04a0ae7f47aeb7351f491d5545fdf6789b6cee93fef87685af53aaacaf276b7"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/tanh13/DD0001/CW_0001.cpu0005",
+          "bytes": 2328,
+          "sha256": "b04a0ae7f47aeb7351f491d5545fdf6789b6cee93fef87685af53aaacaf276b7"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/tanh13/DD0001/CW_0001.cpu0006",
+          "bytes": 2328,
+          "sha256": "b04a0ae7f47aeb7351f491d5545fdf6789b6cee93fef87685af53aaacaf276b7"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/tanh13/DD0001/CW_0001.cpu0007",
+          "bytes": 2328,
+          "sha256": "b04a0ae7f47aeb7351f491d5545fdf6789b6cee93fef87685af53aaacaf276b7"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/tanh13/DD0001/CW_0001.hierarchy",
+          "bytes": 652,
+          "sha256": "ce3da5d286bfe8cfda3bc2e8704da5c9e0671ff84d0428636d03fb19a3320839"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/tanh13/DD0001/CW_0001.memorymap",
+          "bytes": 52,
+          "sha256": "b403f49aac7ddececf231cb7d3450a1d5d8cc9faf117cd8b95bd146c407541cf"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/tanh13/Enzo_Build",
+          "bytes": 4371,
+          "sha256": "c6f955770e408650307cea6a03375c4b13f6286aaa502614e4201eacd9e4be3d"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/tanh13/Evtime",
+          "bytes": 126,
+          "sha256": "f4b8f18db8cfbb200a003d9ebe89ab4065d8effba3ff6a3698fe44884cb45624"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/tanh13/OutputLevelInformation.out",
+          "bytes": 325,
+          "sha256": "c6ea6a5fd87521bda4c960f2281cc99037ab30b2a24b229da8406fe2e6609d3d"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/tanh13/OutputLog",
+          "bytes": 200,
+          "sha256": "e5897f8537fe025fc537aefa63f7c85c25b1afc0e81cfae213c7093fd221789e"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/tanh13/RunFinished",
+          "bytes": 20,
+          "sha256": "fc1c829f7a0f21f6bee31d8d1a78e5644a52fd4b6d5f1e3df7837357ff817c56"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/tanh13/amr.out",
+          "bytes": 25127,
+          "sha256": "bfbeac63bfb8c9afbcc34432c531476002acae8792c76d11f87b3915523799f3"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/tanh13/performance.out",
+          "bytes": 1697,
+          "sha256": "a6dcf271277368feb710a4e1b134a8095d83c9eeec71c3533a1305ba2c07406e"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/tanh13/resources.jsonl",
+          "bytes": 245,
+          "sha256": "00c22a7ab0583a693f4a0cf8567b42e8444831608134e8da22db4c6e9688a12d"
+        },
+        {
+          "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/diagnostics/tanh13/run.log",
+          "bytes": 2127,
+          "sha256": "28cea13ab59f26d59a8ddf05831b424023da7995cb1e309f96426874fb76a32c"
+        }
+      ]
+    }
+  ],
+  "new_full_controls": 0,
+  "initial_pair_checks": {
+    "density_tracer_coordinates_volumes_exact": true,
+    "pressure_max_difference": 6.661338147750939e-16,
+    "velocity_max_difference": 1.290376214255788
+  }
+}

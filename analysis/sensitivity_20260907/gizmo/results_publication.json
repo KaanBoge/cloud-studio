@@ -1,0 +1,196 @@
+{
+  "status": "verified_live",
+  "verified_at_utc": "2026-09-08T04:35:34.9124846Z",
+  "commit": "5d222423e8d94e5ad6e76dc7c7e1f6b017505031",
+  "previous_commit": "745d05e38a49734e121b3b5c8ab78c7458769be1",
+  "remote_main_matches": true,
+  "working_tree_clean": true,
+  "pages_workflow_id": 34187418630,
+  "pages_conclusion": "success",
+  "files_verified": 26,
+  "checks": [
+    {
+      "path": "analysis/README.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/README.md?v=5d222423e8d94e5ad6e76dc7c7e1f6b017505031",
+      "status": 200,
+      "bytes": 10355,
+      "sha256": "aff0f1b976b9cb963f6fc6f27812f037defe2ba4e919e50058fd86b8517b7b32"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/PLAN.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/PLAN.md?v=5d222423e8d94e5ad6e76dc7c7e1f6b017505031",
+      "status": 200,
+      "bytes": 9427,
+      "sha256": "e73f7f9567ccf4a69857faa7f67c167864ba6287ff5216a5cba0511c1abe4097"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/README.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/README.md?v=5d222423e8d94e5ad6e76dc7c7e1f6b017505031",
+      "status": 200,
+      "bytes": 10338,
+      "sha256": "09a087f4dd298b5afc85316c9b8637944b05daa7b0ba2135dabe608ccd6d53b9"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/README.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/README.md?v=5d222423e8d94e5ad6e76dc7c7e1f6b017505031",
+      "status": 200,
+      "bytes": 10961,
+      "sha256": "bcdf7fc33844081c4bae420d8775963b59ef9579041ec869edbd935d6e7d6555"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/VALIDATION.md",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/VALIDATION.md?v=5d222423e8d94e5ad6e76dc7c7e1f6b017505031",
+      "status": 200,
+      "bytes": 3598,
+      "sha256": "ffbdf2a584f757555af4c4770fed0940dc866c40271f5492bb1dc70f87a60e4d"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/analyze_mfm_l3.py",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/analyze_mfm_l3.py?v=5d222423e8d94e5ad6e76dc7c7e1f6b017505031",
+      "status": 200,
+      "bytes": 3866,
+      "sha256": "269a326ea807a33e4454286e774bbde8cffa24c5535a398bb607c9e878ab9cd1"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/audit_mfv_pair.py",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/audit_mfv_pair.py?v=5d222423e8d94e5ad6e76dc7c7e1f6b017505031",
+      "status": 200,
+      "bytes": 5990,
+      "sha256": "38fe27a7f86bea56a096fbb9b66aa989de443840836eeb2148b706f322fca163"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/delivery_validation.json",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/delivery_validation.json?v=5d222423e8d94e5ad6e76dc7c7e1f6b017505031",
+      "status": 200,
+      "bytes": 1538,
+      "sha256": "c3c51766a28a94c57c8c9491700c3b2664136aa4bd753398ae5756294a18df09"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/freeze_full_l3.py",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/freeze_full_l3.py?v=5d222423e8d94e5ad6e76dc7c7e1f6b017505031",
+      "status": 200,
+      "bytes": 3283,
+      "sha256": "2cc32cb7d4ee4cd5feb870478392ff04ce3b8de3e17ca40abf64ba7b9acc7599"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/full_l3_batch.json",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/full_l3_batch.json?v=5d222423e8d94e5ad6e76dc7c7e1f6b017505031",
+      "status": 200,
+      "bytes": 143641,
+      "sha256": "82d1f2fb6c79a43944c06e0848ed5bcdd0ae579c1fbdd17795660c5c16c2c128"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/full_l3_bundle.json",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/full_l3_bundle.json?v=5d222423e8d94e5ad6e76dc7c7e1f6b017505031",
+      "status": 200,
+      "bytes": 2143,
+      "sha256": "7a9b27720775b1b22aed1a1067e966331f869a1524dae3b05e1e9f3324388281"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/full_l3_preflight.json",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/full_l3_preflight.json?v=5d222423e8d94e5ad6e76dc7c7e1f6b017505031",
+      "status": 200,
+      "bytes": 3103,
+      "sha256": "690c94ea72dbb5fb0f4750ea712b8aa6806ecea6606e6e319622618382b77bf4"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/full_l3_tests.json",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/full_l3_tests.json?v=5d222423e8d94e5ad6e76dc7c7e1f6b017505031",
+      "status": 200,
+      "bytes": 172,
+      "sha256": "0369e834c03a8976fa9a1486a6e5084efe4b88ca93b6833727db99016d4a3e45"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/inspect_mfv_fields.py",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/inspect_mfv_fields.py?v=5d222423e8d94e5ad6e76dc7c7e1f6b017505031",
+      "status": 200,
+      "bytes": 1754,
+      "sha256": "ed34bab4beeb231663329a2af36f37f2b9991b6c787d5f5600102a3c27496141"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/launch_full_l3_windows.ps1",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/launch_full_l3_windows.ps1?v=5d222423e8d94e5ad6e76dc7c7e1f6b017505031",
+      "status": 200,
+      "bytes": 1573,
+      "sha256": "63e27e09b549cc1e15905e4c775cecaf487b5cbde53977ef48af2ce3273ed704"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/launch_mfv_failure_control.ps1",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/launch_mfv_failure_control.ps1?v=5d222423e8d94e5ad6e76dc7c7e1f6b017505031",
+      "status": 200,
+      "bytes": 1214,
+      "sha256": "8733d5752cf074a94e2a27c90e13ee9b374dc786168199e7f40df58391ecfcac"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/mass_mfm_L3.png",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/mass_mfm_L3.png?v=5d222423e8d94e5ad6e76dc7c7e1f6b017505031",
+      "status": 200,
+      "bytes": 75063,
+      "sha256": "2a796108307e2262045f0d6f35ad60c7069f5c5d452e5b0fc0c6b5782b12eeb9"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/mfm_l3_report.json",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/mfm_l3_report.json?v=5d222423e8d94e5ad6e76dc7c7e1f6b017505031",
+      "status": 200,
+      "bytes": 119904,
+      "sha256": "65875b8ab7954967db7a6f8d2a58f0682cd257e30c7dff970cdeb067ca2ea313"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/mfv_failure_control.json",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/mfv_failure_control.json?v=5d222423e8d94e5ad6e76dc7c7e1f6b017505031",
+      "status": 200,
+      "bytes": 3410,
+      "sha256": "a41d156afdec0cc3f855199ace6a59d1a6e934cc24aea8ad5214f9284b9e34c3"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/mfv_field_audit.json",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/mfv_field_audit.json?v=5d222423e8d94e5ad6e76dc7c7e1f6b017505031",
+      "status": 200,
+      "bytes": 101901,
+      "sha256": "9fa66d0d81cbffa4e2022996a3230f55e2cdc54201026630f10255b89be064dc"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/mfv_pair_audit.json",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/mfv_pair_audit.json?v=5d222423e8d94e5ad6e76dc7c7e1f6b017505031",
+      "status": 200,
+      "bytes": 537344,
+      "sha256": "cd92d0fad6eabeb22c0f93d27926e89d25c6095b31f2cd57b403063888ccb2cc"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/run_full_l3.py",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/run_full_l3.py?v=5d222423e8d94e5ad6e76dc7c7e1f6b017505031",
+      "status": 200,
+      "bytes": 14773,
+      "sha256": "0630c91879a81ab8c300fc35d865e68e9039deb0a8481c8c8d390e260f3fbde2"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/run_mfv_failure_control.py",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/run_mfv_failure_control.py?v=5d222423e8d94e5ad6e76dc7c7e1f6b017505031",
+      "status": 200,
+      "bytes": 2523,
+      "sha256": "93a1e18feb8ac387ff9a483d3b9b3c13dfb7ebd539c82f1cf3f1cbb5c336a511"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/stage_results.ps1",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/stage_results.ps1?v=5d222423e8d94e5ad6e76dc7c7e1f6b017505031",
+      "status": 200,
+      "bytes": 3434,
+      "sha256": "4ac66583e67e7d561c83fc833b9b98eb023c1ccc989b8151e82ff7e1ad79a168"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/test_full_l3.py",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/test_full_l3.py?v=5d222423e8d94e5ad6e76dc7c7e1f6b017505031",
+      "status": 200,
+      "bytes": 2032,
+      "sha256": "2259bd22d8ddb1b0ba98708d7340974f4ff52ef322ace3a3baef844b78b85451"
+    },
+    {
+      "path": "analysis/sensitivity_20260907/gizmo/validate_results.py",
+      "url": "https://kaanboge.github.io/cloud-studio/analysis/sensitivity_20260907/gizmo/validate_results.py?v=5d222423e8d94e5ad6e76dc7c7e1f6b017505031",
+      "status": 200,
+      "bytes": 4362,
+      "sha256": "bc82eb087bf9f20fcabebd317aaec5fc13bc9bce568c48967ececcc6f4dd83bd"
+    }
+  ],
+  "scope": "Two accepted MFM L3 controls, 202 independently checked native states, mass plot and custom runner/audit evidence; two MFV cases separately documented as not certified. Total accepted study controls40. No native raw, binaries or new production viewer entries published."
+}

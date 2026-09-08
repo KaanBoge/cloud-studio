@@ -1,0 +1,329 @@
+{
+  "status": "diagnostic_only_exact_equivalence_failed",
+  "comparisons": [
+    {
+      "first": "original_tanh",
+      "second": "off_tanh",
+      "snapshot": "state.000003",
+      "fields": {
+        "mass": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "pos": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "vel": {
+          "unequal_values": 101845,
+          "max_absolute": 1.4210854715202004e-14,
+          "max_scaled_to_reference_peak": 5.412655070508017e-15
+        },
+        "rho": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "temp": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "eps": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "metals": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "phi": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        }
+      }
+    },
+    {
+      "first": "original_tanh",
+      "second": "off_tanh",
+      "snapshot": "state.000006",
+      "fields": {
+        "mass": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "pos": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "vel": {
+          "unequal_values": 106387,
+          "max_absolute": 5.684341886080802e-14,
+          "max_scaled_to_reference_peak": 2.158843934099203e-14
+        },
+        "rho": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "temp": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "eps": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "metals": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "phi": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        }
+      }
+    },
+    {
+      "first": "off_tanh",
+      "second": "on_tanh",
+      "snapshot": "state.000003",
+      "fields": {
+        "mass": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "pos": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "vel": {
+          "unequal_values": 25285,
+          "max_absolute": 3.552713678800501e-15,
+          "max_scaled_to_reference_peak": 1.3531637676270042e-15
+        },
+        "rho": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "temp": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "eps": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "metals": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "phi": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        }
+      }
+    },
+    {
+      "first": "off_tanh",
+      "second": "on_tanh",
+      "snapshot": "state.000006",
+      "fields": {
+        "mass": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "pos": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "vel": {
+          "unequal_values": 105275,
+          "max_absolute": 5.684341886080802e-14,
+          "max_scaled_to_reference_peak": 2.158843934099203e-14
+        },
+        "rho": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "temp": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "eps": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "metals": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "phi": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        }
+      }
+    },
+    {
+      "first": "original_tanh",
+      "second": "on_tanh",
+      "snapshot": "state.000003",
+      "fields": {
+        "mass": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "pos": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "vel": {
+          "unequal_values": 101722,
+          "max_absolute": 1.4210854715202004e-14,
+          "max_scaled_to_reference_peak": 5.412655070508017e-15
+        },
+        "rho": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "temp": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "eps": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "metals": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "phi": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        }
+      }
+    },
+    {
+      "first": "original_tanh",
+      "second": "on_tanh",
+      "snapshot": "state.000006",
+      "fields": {
+        "mass": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "pos": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "vel": {
+          "unequal_values": 106338,
+          "max_absolute": 2.842170943040401e-14,
+          "max_scaled_to_reference_peak": 1.0794219670496015e-14
+        },
+        "rho": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "temp": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "eps": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "metals": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        },
+        "phi": {
+          "unequal_values": 0,
+          "max_absolute": 0.0,
+          "max_scaled_to_reference_peak": 0.0
+        }
+      }
+    }
+  ],
+  "initial_pair": {
+    "mass": {
+      "unequal_values": 0,
+      "max_absolute": 0.0,
+      "max_scaled_to_reference_peak": 0.0
+    },
+    "pos": {
+      "unequal_values": 0,
+      "max_absolute": 0.0,
+      "max_scaled_to_reference_peak": 0.0
+    },
+    "vel": {
+      "unequal_values": 1300,
+      "max_absolute": 1.2888609170913696,
+      "max_scaled_to_reference_peak": 0.49917370336943606
+    },
+    "rho": {
+      "unequal_values": 0,
+      "max_absolute": 0.0,
+      "max_scaled_to_reference_peak": 0.0
+    },
+    "temp": {
+      "unequal_values": 0,
+      "max_absolute": 0.0,
+      "max_scaled_to_reference_peak": 0.0
+    },
+    "eps": {
+      "unequal_values": 0,
+      "max_absolute": 0.0,
+      "max_scaled_to_reference_peak": 0.0
+    },
+    "metals": {
+      "unequal_values": 0,
+      "max_absolute": 0.0,
+      "max_scaled_to_reference_peak": 0.0
+    },
+    "phi": {
+      "unequal_values": 0,
+      "max_absolute": 0.0,
+      "max_scaled_to_reference_peak": 0.0
+    }
+  }
+}
