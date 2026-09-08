@@ -1,0 +1,48 @@
+{
+  "status": "native_finished_pending_checks",
+  "cases": [
+    {
+      "variant": "reference",
+      "directory": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/short_native_v1/reference",
+      "command": [
+        "mpirun",
+        "--bind-to",
+        "core",
+        "-np",
+        "8",
+        "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/reference/GIZMO_reference",
+        "params.txt"
+      ],
+      "binary_sha256": "2619110ff4e5391d30d8ff08f822e8d98511410aee89089e0bb248a393bc6928",
+      "ic_sha256": "b85251c1ecae2dab665cec6525f06543104b11dc0a2c2763159ecfa5670bc4f0",
+      "input_sha256": "7f693c0d465973b39537bc470082ccd5dbb2f910877f67a1e4c2b486f49d24de",
+      "returncode": 0,
+      "observed_process_wall_seconds": 1.2410236759999975,
+      "peak_sampled_child_rss_bytes": 555667456,
+      "guard_failure": null,
+      "status": "native_finished_pending_checks"
+    },
+    {
+      "variant": "repaired",
+      "directory": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/short_native_v1/repaired",
+      "command": [
+        "mpirun",
+        "--bind-to",
+        "core",
+        "-np",
+        "8",
+        "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/repaired/GIZMO_repaired",
+        "params.txt"
+      ],
+      "binary_sha256": "4784336422c25db4714c6f56ef95337347f4be18dfd622e2b7e9acf7e1fe3d3c",
+      "ic_sha256": "b85251c1ecae2dab665cec6525f06543104b11dc0a2c2763159ecfa5670bc4f0",
+      "input_sha256": "7f693c0d465973b39537bc470082ccd5dbb2f910877f67a1e4c2b486f49d24de",
+      "returncode": 0,
+      "observed_process_wall_seconds": 1.1639476590000015,
+      "peak_sampled_child_rss_bytes": 557031424,
+      "guard_failure": null,
+      "status": "native_finished_pending_checks"
+    }
+  ],
+  "plan_sha256": "73aecfe271c30300a2d3ebe0c547791dc17e310b3f7727f876ca238598df01e9"
+}

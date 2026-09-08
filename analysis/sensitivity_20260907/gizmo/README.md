@@ -89,8 +89,12 @@ GCC. At the retained endpoint all65536 conserved masses per case exactly equal
 their IC values despite nonzero instantaneous mass fluxes. This is a concrete
 source defect. The [isolated repair build](MFV_REPAIR_BUILD_VALIDATION.md) now
 compiles and passes nine synthetic mass-exchange tests and selected ABI checks.
-No repaired native evolution has run yet. Canonical source, original binaries,
-floors and datasets remain unchanged. MFV remains excluded.
+The [short native repair test](MFV_SHORT_VALIDATION.md) now passes on four actual
+outputs. Conserved mass changes in22347 repaired particles, with a combined
+mass-ledger residual of1.38e-14. The reference reproduces the retained original
+short outputs exactly. This does not reach the late thermal failure; full MFV
+controls remain excluded. Canonical source, original binaries, floors and old
+datasets remain unchanged.
 
 The [terminal restart diagnosis](MFV_RESTART_DIAGNOSIS.md) now explains the
 final exported zeros: internal double-precision energies are positive but tiny;

@@ -1,5 +1,8 @@
 # MFV isolated repair: build and synthetic checks passed
 
+Later update: the [short native repair test](MFV_SHORT_VALIDATION.md) now passes.
+The build-only assessment below is retained as the preceding validation stage.
+
 8 September 2026. **The one-assignment candidate compiles and passes nine
 synthetic tests. No repaired native simulation has run yet.** Accepted full
 controls remain 44, and the two failed MFV controls remain excluded.

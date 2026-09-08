@@ -1,0 +1,88 @@
+{
+  "status": "frozen_not_launched",
+  "files": {
+    "mfv_short_controls.py": "62b37376a15d76ce7ea30c55b5b2eb931baa8b14ae4f1a4dd8032e54bce6bd69",
+    "test_mfv_short.py": "7173f29e998e75a44267a205617ce1b6a0f61a3cb04157fa0a3b7d7bf306a9b4",
+    "diagnose_mfv_restart.py": "df5a3f097c7f4c6cdd04d80036316f99e202f9d7c9c46f5ab131763d71a89e94",
+    "storage_guard.py": "f342c104352aa4526e737ac58a33e081a12d69d00c57cc55f15ad49a3f9e6fcb",
+    "MFV_SHORT_VALIDATION_PLAN.md": "11b50f71439fbb5b8a1006e92c4b631998552860d8d8947e539a633d0f20125c"
+  },
+  "evidence": {
+    "build_report.json": "01457ba7a87dfc4054366d240b66f0ba8caca310af74f945eeafb6ebd928e509",
+    "flux_test_report.json": "ffa2d510b2e2737b66bed38ffd03b445694d1f04c3526dd98e0b1f4bd826d340",
+    "build_review.json": "7ac8f279308221ad7a012d33f0e229417d10c38b8aaea42426c3a6eb5950e571"
+  },
+  "old_result_sha256": "cfcad4579078f4b38b81ac11e7145965c8dc7834ceea43a9d6e49f1bd2fe817c",
+  "ic_sha256": "b85251c1ecae2dab665cec6525f06543104b11dc0a2c2763159ecfa5670bc4f0",
+  "input_sha256": "7f693c0d465973b39537bc470082ccd5dbb2f910877f67a1e4c2b486f49d24de",
+  "physics": {
+    "code": "GIZMO",
+    "variants": [
+      "mfm",
+      "mfv"
+    ],
+    "chi": 100,
+    "mach": 2,
+    "gamma": 1.6666666666666667,
+    "r_cloud": 1,
+    "rho_wind": 1,
+    "p_wind": 1,
+    "density_width": 0.1,
+    "rv_scale": 1.3,
+    "seed": 42,
+    "center": [
+      3,
+      5,
+      5
+    ],
+    "domain_left": [
+      0,
+      0,
+      0
+    ],
+    "domain_right": [
+      20,
+      10,
+      10
+    ],
+    "mass_mode": "volume",
+    "ranks": 8,
+    "t_end_over_tcc": 5,
+    "output_dt_over_tcc": 0.05,
+    "scope": "Within each native GIZMO variant, actual historical tanh versus sharp velocity. Regular equal-volume initial lattice, variable masses, original float32 IC/output precision and fully periodic native boundary recipe. Native kernel-derived density/pressure must be checked separately. No passive material tracer is assumed; particle-ID mass in MFV is not a material-retention diagnostic.",
+    "v_wind": 2.581988897471611,
+    "t_cc": 3.872983346207417
+  },
+  "case_bytes": 295077070,
+  "pair_bytes": 590154140,
+  "measured_snapshot_bytes": 4990184,
+  "measured_restart_bytes": 48875392,
+  "storage": {
+    "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1",
+    "filesystem_free_bytes": 16929001472,
+    "filesystem_total_bytes": 1081101176832,
+    "windows_backing_volume": {
+      "distribution": "Ubuntu",
+      "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+      "drive": "C:",
+      "free_bytes": 37513805824,
+      "total_bytes": 1999283154944
+    },
+    "policy": "Conservative growth budget; allocated but reusable VHDX blocks are not credited.",
+    "effective_free_bytes": 16929001472
+  },
+  "wall_limit": 180,
+  "stop_grace": 15,
+  "ranks": 8,
+  "binaries": {
+    "reference": {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/reference/GIZMO_reference",
+      "sha256": "2619110ff4e5391d30d8ff08f822e8d98511410aee89089e0bb248a393bc6928"
+    },
+    "repaired": {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/repaired/GIZMO_repaired",
+      "sha256": "4784336422c25db4714c6f56ef95337347f4be18dfd622e2b7e9acf7e1fe3d3c"
+    }
+  },
+  "tests_log_sha256": "3482445d5c28997e7369c1b51c65192849ad6820e506b88addf3a98420655b29"
+}

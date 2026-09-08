@@ -1,0 +1,672 @@
+{
+  "status": "passed_short_native_gates_not_full_science",
+  "failures": [],
+  "cases": [
+    {
+      "variant": "reference",
+      "outputs": [
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/short_native_v1/reference/output/snapshot_000.hdf5",
+          "sha256": "5acff3c04e978815f1ad6774e4ceca5829192bea30c36ac1d590ae96b0b71aaf",
+          "time_code": 0.0,
+          "total_mass": 2425.245532028377,
+          "dense_mass": 409.90798234939575,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "retained_original_exact": true
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/short_native_v1/reference/output/snapshot_001.hdf5",
+          "sha256": "688de4496079eccddbb70116585ecc6846fa75f7aaa9d680a6384290f0f49308",
+          "time_code": 0.1,
+          "total_mass": 2425.0312004238367,
+          "dense_mass": 400.9186038970947,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ],
+          "retained_original_exact": true
+        }
+      ],
+      "restart": {
+        "time_code": 0.1,
+        "mass_account": {
+          "initial": 2425.245532028377,
+          "conserved": 2425.245532028377,
+          "pending": 0.0,
+          "combined": 2425.245532028377,
+          "residual": 0.0,
+          "allowance": 1.0164086629633691e-05,
+          "passes": true,
+          "changed_particles": 0,
+          "max_absolute_change": 0.0,
+          "response_threshold": 2.16840400615783e-14,
+          "response_detected": false,
+          "steps": 8,
+          "criterion": "Prospective roundoff-scaled smoke gate; not an arbitrary-flux error theorem."
+        },
+        "files": [
+          {
+            "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/short_native_v1/reference/output/restartfiles/restart.0",
+            "bytes": 6099128,
+            "sha256": "4471c3ea16278f61baa64c85f104ab10ad0b8312dbaab3de2162ac62d5309b53",
+            "parsed_prefix_bytes": 5510816
+          },
+          {
+            "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/short_native_v1/reference/output/restartfiles/restart.1",
+            "bytes": 6110672,
+            "sha256": "b9e6718f799eb6c66df2efaa443e72acdaab1c4aac06142aef04acbc1f0330bb",
+            "parsed_prefix_bytes": 5520896
+          },
+          {
+            "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/short_native_v1/reference/output/restartfiles/restart.2",
+            "bytes": 6097592,
+            "sha256": "08a57cc29632299b811966840fdc353186fe404e55097604e203cd709896cd63",
+            "parsed_prefix_bytes": 5510816
+          },
+          {
+            "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/short_native_v1/reference/output/restartfiles/restart.3",
+            "bytes": 6112208,
+            "sha256": "eb973b33a84ca3bf4079526e18029d4fcc2600d24ea2542a5c9d4e4a15e17a65",
+            "parsed_prefix_bytes": 5520896
+          },
+          {
+            "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/short_native_v1/reference/output/restartfiles/restart.4",
+            "bytes": 6120488,
+            "sha256": "cab22e1e61a5bd3480ee9e45dab897ace2695967e08a2e323049bf09eab8d201",
+            "parsed_prefix_bytes": 5530976
+          },
+          {
+            "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/short_native_v1/reference/output/restartfiles/restart.5",
+            "bytes": 6120488,
+            "sha256": "86e434c385f78583f8499f1a6da9fbcdfd4a2c4272066927f3ea26713005b03c",
+            "parsed_prefix_bytes": 5530976
+          },
+          {
+            "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/short_native_v1/reference/output/restartfiles/restart.6",
+            "bytes": 6107408,
+            "sha256": "aead818a86b135d5c6b5fb8cdcc48f7d2dbdf0d037f9c63878135d189e6252e7",
+            "parsed_prefix_bytes": 5520896
+          },
+          {
+            "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/short_native_v1/reference/output/restartfiles/restart.7",
+            "bytes": 6107408,
+            "sha256": "1fc9f5dc76c9467c5892225b4f3bedf1fafaf35128c4ac7232ce443fe6f86e28",
+            "parsed_prefix_bytes": 5520896
+          }
+        ],
+        "abi": {
+          "global_data_all_processes": {
+            "itemsize": 15864,
+            "matching_definitions": 32,
+            "die_offsets": [
+              "0x289",
+              "0x1a22",
+              "0x2b0b",
+              "0x50eb",
+              "0x7e2a",
+              "0xb06b",
+              "0x16956",
+              "0x17f27",
+              "0x192c5",
+              "0x21884",
+              "0x24b8c",
+              "0x269c4",
+              "0x2c248",
+              "0x338d3",
+              "0x3477e",
+              "0x35908",
+              "0x38d81",
+              "0x3b2f4",
+              "0x3d08d",
+              "0x3e524",
+              "0x445ce",
+              "0x4659d",
+              "0x4843e",
+              "0x4ce00",
+              "0x4f059",
+              "0x513f6",
+              "0x5267f",
+              "0x585df",
+              "0x5c919",
+              "0x60093",
+              "0x6124b",
+              "0x62bb1"
+            ],
+            "fields": {
+              "Time": {
+                "offset": 408,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "TimeMax": {
+                "offset": 432,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "TotNumPart": {
+                "offset": 0,
+                "dtype": "int64",
+                "bytes": 8
+              },
+              "TotN_gas": {
+                "offset": 8,
+                "dtype": "int64",
+                "bytes": 8
+              },
+              "MinEgySpec": {
+                "offset": 128,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "NumCurrentTiStep": {
+                "offset": 400,
+                "dtype": "int64",
+                "bytes": 8
+              },
+              "cf_hubble_a": {
+                "offset": 216,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "BoxSize": {
+                "offset": 312,
+                "dtype": "float64",
+                "bytes": 8
+              }
+            }
+          },
+          "particle_data": {
+            "itemsize": 288,
+            "matching_definitions": 24,
+            "die_offsets": [
+              "0x3134",
+              "0x5714",
+              "0x8453",
+              "0xb6b7",
+              "0x16f7f",
+              "0x1854c",
+              "0x198f0",
+              "0x21eaf",
+              "0x251b4",
+              "0x27010",
+              "0x2c893",
+              "0x34da3",
+              "0x35f33",
+              "0x393cd",
+              "0x3d6b6",
+              "0x44bf2",
+              "0x48a8c",
+              "0x4d42b",
+              "0x4f680",
+              "0x52d12",
+              "0x58c2b",
+              "0x5cf65",
+              "0x606b8",
+              "0x61870"
+            ],
+            "fields": {
+              "Type": {
+                "offset": 0,
+                "dtype": "int16",
+                "bytes": 2
+              },
+              "ID": {
+                "offset": 4,
+                "dtype": "uint32",
+                "bytes": 4
+              },
+              "Mass": {
+                "offset": 56,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "Pos": {
+                "offset": 32,
+                "dtype": "('<f8', (3,))",
+                "bytes": 24
+              },
+              "Vel": {
+                "offset": 64,
+                "dtype": "('<f8', (3,))",
+                "bytes": 24
+              }
+            }
+          },
+          "gas_cell_data": {
+            "itemsize": 384,
+            "matching_definitions": 20,
+            "die_offsets": [
+              "0x32b3",
+              "0x5894",
+              "0x85d3",
+              "0xb847",
+              "0x170fe",
+              "0x186cb",
+              "0x2533f",
+              "0x271a0",
+              "0x2ca29",
+              "0x34f22",
+              "0x3955e",
+              "0x3d835",
+              "0x41d8d",
+              "0x44d71",
+              "0x52ea7",
+              "0x58dbc",
+              "0x5d0f6",
+              "0x60837",
+              "0x619ef",
+              "0x6322e"
+            ],
+            "fields": {
+              "MassTrue": {
+                "offset": 8,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "dMass": {
+                "offset": 16,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "DtMass": {
+                "offset": 24,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "Density": {
+                "offset": 0,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "Pressure": {
+                "offset": 80,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "InternalEnergy": {
+                "offset": 88,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "InternalEnergyPred": {
+                "offset": 96,
+                "dtype": "float64",
+                "bytes": 8
+              }
+            }
+          }
+        },
+        "nonzero_DtMass": 55146,
+        "nonzero_dMass": 0,
+        "min_energy": 0.01499946378741399,
+        "min_pressure": 0.5582980121310187
+      },
+      "resources": {
+        "variant": "reference",
+        "directory": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/short_native_v1/reference",
+        "command": [
+          "mpirun",
+          "--bind-to",
+          "core",
+          "-np",
+          "8",
+          "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/reference/GIZMO_reference",
+          "params.txt"
+        ],
+        "binary_sha256": "2619110ff4e5391d30d8ff08f822e8d98511410aee89089e0bb248a393bc6928",
+        "ic_sha256": "b85251c1ecae2dab665cec6525f06543104b11dc0a2c2763159ecfa5670bc4f0",
+        "input_sha256": "7f693c0d465973b39537bc470082ccd5dbb2f910877f67a1e4c2b486f49d24de",
+        "returncode": 0,
+        "observed_process_wall_seconds": 1.2410236759999975,
+        "peak_sampled_child_rss_bytes": 555667456,
+        "guard_failure": null,
+        "status": "native_finished_pending_checks"
+      }
+    },
+    {
+      "variant": "repaired",
+      "outputs": [
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/short_native_v1/repaired/output/snapshot_000.hdf5",
+          "sha256": "11187860be6ab4b464a0226634bff75bf7a413dc3dd5c2bd0f46785d7b49d93c",
+          "time_code": 0.0,
+          "total_mass": 2425.245532028377,
+          "dense_mass": 409.90798234939575,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/short_native_v1/repaired/output/snapshot_001.hdf5",
+          "sha256": "e70a3eadbd39c230951b508b45428b3cae9143a7e74dfc8d59e2b06689297287",
+          "time_code": 0.1,
+          "total_mass": 2425.006537757814,
+          "dense_mass": 399.11772108078003,
+          "independent_relative_errors": [
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "restart": {
+        "time_code": 0.1,
+        "mass_account": {
+          "initial": 2425.245532028377,
+          "conserved": 2425.1596192232287,
+          "pending": 0.08591280514854906,
+          "combined": 2425.245532028377,
+          "residual": 1.3836400495703088e-14,
+          "allowance": 1.0164644816302532e-05,
+          "passes": true,
+          "changed_particles": 22347,
+          "max_absolute_change": 0.09554867951594104,
+          "response_threshold": 2.16840400615783e-14,
+          "response_detected": true,
+          "steps": 8,
+          "criterion": "Prospective roundoff-scaled smoke gate; not an arbitrary-flux error theorem."
+        },
+        "files": [
+          {
+            "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/short_native_v1/repaired/output/restartfiles/restart.0",
+            "bytes": 6099732,
+            "sha256": "cc73fb954b36b4862a9b749bf4da3da109c318142d1c972b5ee09bfde14eadec",
+            "parsed_prefix_bytes": 5510816
+          },
+          {
+            "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/short_native_v1/repaired/output/restartfiles/restart.1",
+            "bytes": 6099732,
+            "sha256": "5fbb185e4040e6fac863bc180d44114a1366585be6cef0e2aa0f098cac191a82",
+            "parsed_prefix_bytes": 5510816
+          },
+          {
+            "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/short_native_v1/repaired/output/restartfiles/restart.2",
+            "bytes": 6114348,
+            "sha256": "a513129ab5ffdde7832a3bbc7719abc16fd878aa894c372a0c76783063e738c1",
+            "parsed_prefix_bytes": 5520896
+          },
+          {
+            "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/short_native_v1/repaired/output/restartfiles/restart.3",
+            "bytes": 6112812,
+            "sha256": "8ac856b4d670373ee282a2e63544ba801e182743013df21494ac616abedffd6c",
+            "parsed_prefix_bytes": 5520896
+          },
+          {
+            "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/short_native_v1/repaired/output/restartfiles/restart.4",
+            "bytes": 6122628,
+            "sha256": "462b5f3c4ee4184959611b17246dc81cae7551c3cc4519361829aa0941ab3ea0",
+            "parsed_prefix_bytes": 5530976
+          },
+          {
+            "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/short_native_v1/repaired/output/restartfiles/restart.5",
+            "bytes": 6122628,
+            "sha256": "cbf5dbe5396da242fe0b5b810d06ef50398bbad48ed3da77a0995be8c12e7422",
+            "parsed_prefix_bytes": 5530976
+          },
+          {
+            "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/short_native_v1/repaired/output/restartfiles/restart.6",
+            "bytes": 6109548,
+            "sha256": "87dbcb29e1b89f744b886f1afe16e4e33eb2471753fe7ea0b8a7664729df1399",
+            "parsed_prefix_bytes": 5520896
+          },
+          {
+            "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/short_native_v1/repaired/output/restartfiles/restart.7",
+            "bytes": 6109548,
+            "sha256": "3ef7adad23201f886d60479f08b86ce57e7b26913954bc8bd02610b764de74ff",
+            "parsed_prefix_bytes": 5520896
+          }
+        ],
+        "abi": {
+          "global_data_all_processes": {
+            "itemsize": 15864,
+            "matching_definitions": 32,
+            "die_offsets": [
+              "0x289",
+              "0x1a22",
+              "0x2b0b",
+              "0x50eb",
+              "0x7e2a",
+              "0xb06b",
+              "0x16956",
+              "0x17f27",
+              "0x192c5",
+              "0x21884",
+              "0x24b8c",
+              "0x269c4",
+              "0x2c248",
+              "0x338d3",
+              "0x3477e",
+              "0x35908",
+              "0x38d81",
+              "0x3b2f4",
+              "0x3d08d",
+              "0x3e524",
+              "0x445ce",
+              "0x4659d",
+              "0x4843e",
+              "0x4ce00",
+              "0x4f059",
+              "0x513f6",
+              "0x5267f",
+              "0x585e7",
+              "0x5c921",
+              "0x6009b",
+              "0x61253",
+              "0x62bb9"
+            ],
+            "fields": {
+              "Time": {
+                "offset": 408,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "TimeMax": {
+                "offset": 432,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "TotNumPart": {
+                "offset": 0,
+                "dtype": "int64",
+                "bytes": 8
+              },
+              "TotN_gas": {
+                "offset": 8,
+                "dtype": "int64",
+                "bytes": 8
+              },
+              "MinEgySpec": {
+                "offset": 128,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "NumCurrentTiStep": {
+                "offset": 400,
+                "dtype": "int64",
+                "bytes": 8
+              },
+              "cf_hubble_a": {
+                "offset": 216,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "BoxSize": {
+                "offset": 312,
+                "dtype": "float64",
+                "bytes": 8
+              }
+            }
+          },
+          "particle_data": {
+            "itemsize": 288,
+            "matching_definitions": 24,
+            "die_offsets": [
+              "0x3134",
+              "0x5714",
+              "0x8453",
+              "0xb6b7",
+              "0x16f7f",
+              "0x1854c",
+              "0x198f0",
+              "0x21eaf",
+              "0x251b4",
+              "0x27010",
+              "0x2c893",
+              "0x34da3",
+              "0x35f33",
+              "0x393cd",
+              "0x3d6b6",
+              "0x44bf2",
+              "0x48a8c",
+              "0x4d42b",
+              "0x4f680",
+              "0x52d12",
+              "0x58c33",
+              "0x5cf6d",
+              "0x606c0",
+              "0x61878"
+            ],
+            "fields": {
+              "Type": {
+                "offset": 0,
+                "dtype": "int16",
+                "bytes": 2
+              },
+              "ID": {
+                "offset": 4,
+                "dtype": "uint32",
+                "bytes": 4
+              },
+              "Mass": {
+                "offset": 56,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "Pos": {
+                "offset": 32,
+                "dtype": "('<f8', (3,))",
+                "bytes": 24
+              },
+              "Vel": {
+                "offset": 64,
+                "dtype": "('<f8', (3,))",
+                "bytes": 24
+              }
+            }
+          },
+          "gas_cell_data": {
+            "itemsize": 384,
+            "matching_definitions": 20,
+            "die_offsets": [
+              "0x32b3",
+              "0x5894",
+              "0x85d3",
+              "0xb847",
+              "0x170fe",
+              "0x186cb",
+              "0x2533f",
+              "0x271a0",
+              "0x2ca29",
+              "0x34f22",
+              "0x3955e",
+              "0x3d835",
+              "0x41d8d",
+              "0x44d71",
+              "0x52ea7",
+              "0x58dc4",
+              "0x5d0fe",
+              "0x6083f",
+              "0x619f7",
+              "0x63236"
+            ],
+            "fields": {
+              "MassTrue": {
+                "offset": 8,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "dMass": {
+                "offset": 16,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "DtMass": {
+                "offset": 24,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "Density": {
+                "offset": 0,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "Pressure": {
+                "offset": 80,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "InternalEnergy": {
+                "offset": 88,
+                "dtype": "float64",
+                "bytes": 8
+              },
+              "InternalEnergyPred": {
+                "offset": 96,
+                "dtype": "float64",
+                "bytes": 8
+              }
+            }
+          }
+        },
+        "nonzero_DtMass": 55193,
+        "nonzero_dMass": 57914,
+        "min_energy": 0.0149995144239317,
+        "min_pressure": 0.5383977203738298
+      },
+      "resources": {
+        "variant": "repaired",
+        "directory": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/short_native_v1/repaired",
+        "command": [
+          "mpirun",
+          "--bind-to",
+          "core",
+          "-np",
+          "8",
+          "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/repaired/GIZMO_repaired",
+          "params.txt"
+        ],
+        "binary_sha256": "4784336422c25db4714c6f56ef95337347f4be18dfd622e2b7e9acf7e1fe3d3c",
+        "ic_sha256": "b85251c1ecae2dab665cec6525f06543104b11dc0a2c2763159ecfa5670bc4f0",
+        "input_sha256": "7f693c0d465973b39537bc470082ccd5dbb2f910877f67a1e4c2b486f49d24de",
+        "returncode": 0,
+        "observed_process_wall_seconds": 1.1639476590000015,
+        "peak_sampled_child_rss_bytes": 557031424,
+        "guard_failure": null,
+        "status": "native_finished_pending_checks"
+      }
+    }
+  ],
+  "initial_nonvelocity_exact": {
+    "Coordinates": true,
+    "Density": true,
+    "InternalEnergy": true,
+    "Masses": true,
+    "ParticleChildIDsNumber": true,
+    "ParticleIDGenerationNumber": true,
+    "ParticleIDs": true,
+    "SmoothingLength": true
+  },
+  "script_sha256": "62b37376a15d76ce7ea30c55b5b2eb931baa8b14ae4f1a4dd8032e54bce6bd69",
+  "plan_sha256": "73aecfe271c30300a2d3ebe0c547791dc17e310b3f7727f876ca238598df01e9",
+  "completed_full_controls_added": 0,
+  "accepted_full_controls": 44,
+  "limitations": [
+    "Only historical L3 through code time0.1, not the late thermal failure.",
+    "Snapshots and final restart can have different native integration stages.",
+    "Mass allowance is the predeclared roundoff-scaled engineering gate, not a universal error theorem.",
+    "No source, raw, timestep, floor or timestamp was changed after the candidate build."
+  ]
+}
