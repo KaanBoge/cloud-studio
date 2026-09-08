@@ -1,0 +1,132 @@
+{
+  "records": [
+    {
+      "variant": "mfm",
+      "mode": 0,
+      "time": 0.0,
+      "errors": {
+        "Coordinates": {
+          "exact": true,
+          "max_absolute": 0.0,
+          "max_scaled": 0.0
+        },
+        "InternalEnergy": {
+          "exact": true,
+          "max_absolute": 0.0,
+          "max_scaled": 0.0
+        },
+        "Masses": {
+          "exact": true,
+          "max_absolute": 0.0,
+          "max_scaled": 0.0
+        },
+        "ParticleIDs": {
+          "exact": true,
+          "max_absolute": 0.0,
+          "max_scaled": 0.0
+        },
+        "Velocities": {
+          "exact": false,
+          "max_absolute": 0.22911763191223145,
+          "max_scaled": 0.11275480687618256
+        }
+      }
+    },
+    {
+      "variant": "mfm",
+      "mode": 1,
+      "time": 0.0,
+      "errors": {
+        "Coordinates": {
+          "exact": true,
+          "max_absolute": 0.0,
+          "max_scaled": 0.0
+        },
+        "InternalEnergy": {
+          "exact": true,
+          "max_absolute": 0.0,
+          "max_scaled": 0.0
+        },
+        "Masses": {
+          "exact": true,
+          "max_absolute": 0.0,
+          "max_scaled": 0.0
+        },
+        "ParticleIDs": {
+          "exact": true,
+          "max_absolute": 0.0,
+          "max_scaled": 0.0
+        },
+        "Velocities": {
+          "exact": false,
+          "max_absolute": 0.09876585006713867,
+          "max_scaled": 0.06426835060119629
+        }
+      }
+    },
+    {
+      "variant": "mfv",
+      "mode": 0,
+      "time": 0.0,
+      "errors": {
+        "Coordinates": {
+          "exact": true,
+          "max_absolute": 0.0,
+          "max_scaled": 0.0
+        },
+        "InternalEnergy": {
+          "exact": true,
+          "max_absolute": 0.0,
+          "max_scaled": 0.0
+        },
+        "Masses": {
+          "exact": true,
+          "max_absolute": 0.0,
+          "max_scaled": 0.0
+        },
+        "ParticleIDs": {
+          "exact": true,
+          "max_absolute": 0.0,
+          "max_scaled": 0.0
+        },
+        "Velocities": {
+          "exact": false,
+          "max_absolute": 0.46437978744506836,
+          "max_scaled": 0.17985352429802415
+        }
+      }
+    },
+    {
+      "variant": "mfv",
+      "mode": 1,
+      "time": 0.0,
+      "errors": {
+        "Coordinates": {
+          "exact": true,
+          "max_absolute": 0.0,
+          "max_scaled": 0.0
+        },
+        "InternalEnergy": {
+          "exact": true,
+          "max_absolute": 0.0,
+          "max_scaled": 0.0
+        },
+        "Masses": {
+          "exact": true,
+          "max_absolute": 0.0,
+          "max_scaled": 0.0
+        },
+        "ParticleIDs": {
+          "exact": true,
+          "max_absolute": 0.0,
+          "max_scaled": 0.0
+        },
+        "Velocities": {
+          "exact": false,
+          "max_absolute": 0.24055373668670654,
+          "max_scaled": 0.11470619934201895
+        }
+      }
+    }
+  ]
+}

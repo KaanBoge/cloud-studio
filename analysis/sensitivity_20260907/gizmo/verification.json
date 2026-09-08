@@ -1,0 +1,180 @@
+{
+  "status": "passed",
+  "pairs": [
+    {
+      "variant": "mfm",
+      "checks": {
+        "native_nonvelocity_initial_fields_exact": true,
+        "ic_nonvelocity_fields_exact": true,
+        "velocity_difference": 1.0794670581817627,
+        "native_initial_deviations": [
+          {
+            "native_density_vs_lattice_max_relative": 0.0009155219926687056,
+            "native_pressure_vs_uniform_max_absolute": 0.0009155574330177441,
+            "native_fields_exactly_recovered": [
+              "Coordinates",
+              "Masses",
+              "ParticleIDs",
+              "InternalEnergy"
+            ],
+            "velocity_output_timing": {
+              "report_sha256": "e7da471e9c39809947e0104021a726fe467962405a4ae885b8e0499fcd65abbf",
+              "checks": {
+                "norm_ratio": 0.49998347072352123,
+                "zero_step_extrapolation_max_error": 2.384185791015625e-07,
+                "float32_roundoff_bound": 1.2311882073845482e-06,
+                "full_step_max_delta": 9.1552734375e-05,
+                "half_step_max_delta": 4.57763671875e-05
+              },
+              "native_t0_velocity_max_offset": 0.22911763191223145,
+              "interpretation": "Native output velocity is staggered after the first half kick, not the input at header t=0. No native values are replaced. Velocity-at-header-time diagnostics are not validated by this mass study."
+            }
+          },
+          {
+            "native_density_vs_lattice_max_relative": 0.0009155219926687056,
+            "native_pressure_vs_uniform_max_absolute": 0.0009155574330177441,
+            "native_fields_exactly_recovered": [
+              "Coordinates",
+              "Masses",
+              "ParticleIDs",
+              "InternalEnergy"
+            ],
+            "velocity_output_timing": {
+              "report_sha256": "e7da471e9c39809947e0104021a726fe467962405a4ae885b8e0499fcd65abbf",
+              "checks": {
+                "norm_ratio": 0.5007596730450596,
+                "zero_step_extrapolation_max_error": 2.384185791015625e-07,
+                "float32_roundoff_bound": 1.2311882073845482e-06,
+                "full_step_max_delta": 3.9577484130859375e-05,
+                "half_step_max_delta": 1.9788742065429688e-05
+              },
+              "native_t0_velocity_max_offset": 0.09876585006713867,
+              "interpretation": "Native output velocity is staggered after the first half kick, not the input at header t=0. No native values are replaced. Velocity-at-header-time diagnostics are not validated by this mass study."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "variant": "mfv",
+      "checks": {
+        "native_nonvelocity_initial_fields_exact": true,
+        "ic_nonvelocity_fields_exact": true,
+        "velocity_difference": 1.0820262432098389,
+        "native_initial_deviations": [
+          {
+            "native_density_vs_lattice_max_relative": 0.0009155219926687056,
+            "native_pressure_vs_uniform_max_absolute": 0.0009155574330177441,
+            "native_fields_exactly_recovered": [
+              "Coordinates",
+              "Masses",
+              "ParticleIDs",
+              "InternalEnergy"
+            ],
+            "velocity_output_timing": {
+              "report_sha256": "e7da471e9c39809947e0104021a726fe467962405a4ae885b8e0499fcd65abbf",
+              "checks": {
+                "norm_ratio": 0.5001355540638672,
+                "zero_step_extrapolation_max_error": 2.384185791015625e-07,
+                "float32_roundoff_bound": 1.2311882073845482e-06,
+                "full_step_max_delta": 0.0007429122924804688,
+                "half_step_max_delta": 0.0003714561462402344
+              },
+              "native_t0_velocity_max_offset": 0.46437978744506836,
+              "interpretation": "Native output velocity is staggered after the first half kick, not the input at header t=0. No native values are replaced. Velocity-at-header-time diagnostics are not validated by this mass study."
+            }
+          },
+          {
+            "native_density_vs_lattice_max_relative": 0.0009155219926687056,
+            "native_pressure_vs_uniform_max_absolute": 0.0009155574330177441,
+            "native_fields_exactly_recovered": [
+              "Coordinates",
+              "Masses",
+              "ParticleIDs",
+              "InternalEnergy"
+            ],
+            "velocity_output_timing": {
+              "report_sha256": "e7da471e9c39809947e0104021a726fe467962405a4ae885b8e0499fcd65abbf",
+              "checks": {
+                "norm_ratio": 0.500215997041787,
+                "zero_step_extrapolation_max_error": 2.384185791015625e-07,
+                "float32_roundoff_bound": 1.2311882073845482e-06,
+                "full_step_max_delta": 0.00019240379333496094,
+                "half_step_max_delta": 9.632110595703125e-05
+              },
+              "native_t0_velocity_max_offset": 0.24055373668670654,
+              "interpretation": "Native output velocity is staggered after the first half kick, not the input at header t=0. No native values are replaced. Velocity-at-header-time diagnostics are not validated by this mass study."
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "independent_checks": [
+    {
+      "snapshot": "/home/kaan/sensitivity_20260907/gizmo/smokes/L3_mfm_sharp13/output/snapshot_000.hdf5",
+      "relative_errors": {
+        "total_mass": 0.0,
+        "dense_mass": 0.0
+      }
+    },
+    {
+      "snapshot": "/home/kaan/sensitivity_20260907/gizmo/smokes/L3_mfm_sharp13/output/snapshot_001.hdf5",
+      "relative_errors": {
+        "total_mass": 0.0,
+        "dense_mass": 0.0
+      }
+    },
+    {
+      "snapshot": "/home/kaan/sensitivity_20260907/gizmo/smokes/L3_mfm_tanh13/output/snapshot_000.hdf5",
+      "relative_errors": {
+        "total_mass": 0.0,
+        "dense_mass": 0.0
+      }
+    },
+    {
+      "snapshot": "/home/kaan/sensitivity_20260907/gizmo/smokes/L3_mfm_tanh13/output/snapshot_001.hdf5",
+      "relative_errors": {
+        "total_mass": 0.0,
+        "dense_mass": 0.0
+      }
+    },
+    {
+      "snapshot": "/home/kaan/sensitivity_20260907/gizmo/smokes/L3_mfv_sharp13/output/snapshot_000.hdf5",
+      "relative_errors": {
+        "total_mass": 0.0,
+        "dense_mass": 0.0
+      }
+    },
+    {
+      "snapshot": "/home/kaan/sensitivity_20260907/gizmo/smokes/L3_mfv_sharp13/output/snapshot_001.hdf5",
+      "relative_errors": {
+        "total_mass": 0.0,
+        "dense_mass": 0.0
+      }
+    },
+    {
+      "snapshot": "/home/kaan/sensitivity_20260907/gizmo/smokes/L3_mfv_tanh13/output/snapshot_000.hdf5",
+      "relative_errors": {
+        "total_mass": 0.0,
+        "dense_mass": 0.0
+      }
+    },
+    {
+      "snapshot": "/home/kaan/sensitivity_20260907/gizmo/smokes/L3_mfv_tanh13/output/snapshot_001.hdf5",
+      "relative_errors": {
+        "total_mass": 0.0,
+        "dense_mass": 0.0
+      }
+    }
+  ],
+  "reader": "Explicit yt GizmoDataset, native fields, float64 aggregation, rectangular box",
+  "smoke_sha256": "5dc3b95a86465f142976db861a4716f6e357ec94eb9d034ce55d2e26c924de0b",
+  "script_sha256": "fcdf4f5560912a74fa067eec5f4f9abf677e71cc53af979932f3bc088c7765b6",
+  "caveats": [
+    "All boundaries periodic; not identical to grid inflow/outflow.",
+    "Native density/pressure deviations reported, not erased.",
+    "Native Velocities are staggered after a kick, including header t=0. Two-step-size native recovery is verified; velocity-at-header-time analysis still requires explicit treatment.",
+    "ID-selected mass is not passive material tracing for MFV; no tracer retention is claimed."
+  ]
+}

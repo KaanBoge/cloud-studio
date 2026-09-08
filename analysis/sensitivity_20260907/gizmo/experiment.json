@@ -1,0 +1,21 @@
+{
+  "code": "GIZMO",
+  "variants": ["mfm", "mfv"],
+  "chi": 100,
+  "mach": 2,
+  "gamma": 1.6666666666666667,
+  "r_cloud": 1,
+  "rho_wind": 1,
+  "p_wind": 1,
+  "density_width": 0.1,
+  "rv_scale": 1.3,
+  "seed": 42,
+  "center": [3, 5, 5],
+  "domain_left": [0, 0, 0],
+  "domain_right": [20, 10, 10],
+  "mass_mode": "volume",
+  "ranks": 8,
+  "t_end_over_tcc": 5,
+  "output_dt_over_tcc": 0.05,
+  "scope": "Within each native GIZMO variant, actual historical tanh versus sharp velocity. Regular equal-volume initial lattice, variable masses, original float32 IC/output precision and fully periodic native boundary recipe. Native kernel-derived density/pressure must be checked separately. No passive material tracer is assumed; particle-ID mass in MFV is not a material-retention diagnostic."
+}

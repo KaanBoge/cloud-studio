@@ -1,0 +1,632 @@
+{
+  "status": "passed",
+  "source_evidence": {
+    "run.c": {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/snapshot_timing_audit_v2/run.c",
+      "sha256": "ed2fd6c642411bd61db8d763e8a328e134d285e9acdddae110cb87b2b45d25dd"
+    },
+    "kicks.c": {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/snapshot_timing_audit_v2/kicks.c",
+      "sha256": "e71c939b547e8ef02918f7213bf71505c9a69c909fda8db050960dd78b76c4aa"
+    },
+    "io.c": {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/snapshot_timing_audit_v2/io.c",
+      "sha256": "835892c84cb27ef94f95fb8a37b85bd74347a98da5b1555adf9e2d780aca3994"
+    },
+    "init.c": {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/snapshot_timing_audit_v2/init.c",
+      "sha256": "6c1fe5e6bb0aa043cbffa988b677927e45bda09fd457757088ba5c21700bd1ba"
+    }
+  },
+  "diagnostics": [
+    {
+      "variant": "mfm",
+      "mode": 0,
+      "max_timestep": 1e-05,
+      "directory": "/home/kaan/sensitivity_20260907/gizmo/snapshot_timing_audit_v2/mfm_0_1e-05",
+      "command": [
+        "mpirun",
+        "--bind-to",
+        "core",
+        "-np",
+        "8",
+        "/home/kaan/sensitivity_20260907/gizmo/GIZMO_mfm_pair",
+        "params.txt"
+      ],
+      "physics": {
+        "code": "GIZMO",
+        "variants": [
+          "mfm",
+          "mfv"
+        ],
+        "chi": 100,
+        "mach": 2,
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1,
+        "rho_wind": 1,
+        "p_wind": 1,
+        "density_width": 0.1,
+        "rv_scale": 1.3,
+        "seed": 42,
+        "center": [
+          3,
+          5,
+          5
+        ],
+        "domain_left": [
+          0,
+          0,
+          0
+        ],
+        "domain_right": [
+          20,
+          10,
+          10
+        ],
+        "mass_mode": "volume",
+        "ranks": 8,
+        "t_end_over_tcc": 5,
+        "output_dt_over_tcc": 0.05,
+        "scope": "Within each native GIZMO variant, actual historical tanh versus sharp velocity. Regular equal-volume initial lattice, variable masses, original float32 IC/output precision and fully periodic native boundary recipe. Native kernel-derived density/pressure must be checked separately. No passive material tracer is assumed; particle-ID mass in MFV is not a material-retention diagnostic.",
+        "v_wind": 2.581988897471611,
+        "t_cc": 3.872983346207417
+      },
+      "binary_sha256": "ad6787e8666f92e1ac5162eec1aa717277920c51c52b7b04277d0b53295c6011",
+      "input_sha256": "4b6298b4cba64478eb39a1838a6dda91d34ec97db6e56710b80dcdd12eae1f58",
+      "ic_sha256": "ae510c5a853ace97e3c55c6b234efb3e5cf6f64a1dbd512e5ee7be8d0e1b52e5",
+      "status": "collected_pending_scaling_check",
+      "returncode": 0,
+      "wall_seconds": 1.0685239980000034,
+      "peak_child_rss_gib": 0.4845123291015625,
+      "native_times": [
+        0.0,
+        3.9999999999999996e-05,
+        4e-05
+      ],
+      "snapshots": [
+        "/home/kaan/sensitivity_20260907/gizmo/snapshot_timing_audit_v2/mfm_0_1e-05/output/snapshot_000.hdf5",
+        "/home/kaan/sensitivity_20260907/gizmo/snapshot_timing_audit_v2/mfm_0_1e-05/output/snapshot_001.hdf5",
+        "/home/kaan/sensitivity_20260907/gizmo/snapshot_timing_audit_v2/mfm_0_1e-05/output/snapshot_002.hdf5"
+      ]
+    },
+    {
+      "variant": "mfm",
+      "mode": 0,
+      "max_timestep": 5e-06,
+      "directory": "/home/kaan/sensitivity_20260907/gizmo/snapshot_timing_audit_v2/mfm_0_5e-06",
+      "command": [
+        "mpirun",
+        "--bind-to",
+        "core",
+        "-np",
+        "8",
+        "/home/kaan/sensitivity_20260907/gizmo/GIZMO_mfm_pair",
+        "params.txt"
+      ],
+      "physics": {
+        "code": "GIZMO",
+        "variants": [
+          "mfm",
+          "mfv"
+        ],
+        "chi": 100,
+        "mach": 2,
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1,
+        "rho_wind": 1,
+        "p_wind": 1,
+        "density_width": 0.1,
+        "rv_scale": 1.3,
+        "seed": 42,
+        "center": [
+          3,
+          5,
+          5
+        ],
+        "domain_left": [
+          0,
+          0,
+          0
+        ],
+        "domain_right": [
+          20,
+          10,
+          10
+        ],
+        "mass_mode": "volume",
+        "ranks": 8,
+        "t_end_over_tcc": 5,
+        "output_dt_over_tcc": 0.05,
+        "scope": "Within each native GIZMO variant, actual historical tanh versus sharp velocity. Regular equal-volume initial lattice, variable masses, original float32 IC/output precision and fully periodic native boundary recipe. Native kernel-derived density/pressure must be checked separately. No passive material tracer is assumed; particle-ID mass in MFV is not a material-retention diagnostic.",
+        "v_wind": 2.581988897471611,
+        "t_cc": 3.872983346207417
+      },
+      "binary_sha256": "ad6787e8666f92e1ac5162eec1aa717277920c51c52b7b04277d0b53295c6011",
+      "input_sha256": "24741664b350ecdc9142e89cc8984bad905ee634e8d3f4d1e22a62fee371553b",
+      "ic_sha256": "ae510c5a853ace97e3c55c6b234efb3e5cf6f64a1dbd512e5ee7be8d0e1b52e5",
+      "status": "collected_pending_scaling_check",
+      "returncode": 0,
+      "wall_seconds": 1.4698157139999921,
+      "peak_child_rss_gib": 0.4854316711425781,
+      "native_times": [
+        0.0,
+        3.9999999999999996e-05,
+        4e-05
+      ],
+      "snapshots": [
+        "/home/kaan/sensitivity_20260907/gizmo/snapshot_timing_audit_v2/mfm_0_5e-06/output/snapshot_000.hdf5",
+        "/home/kaan/sensitivity_20260907/gizmo/snapshot_timing_audit_v2/mfm_0_5e-06/output/snapshot_001.hdf5",
+        "/home/kaan/sensitivity_20260907/gizmo/snapshot_timing_audit_v2/mfm_0_5e-06/output/snapshot_002.hdf5"
+      ]
+    },
+    {
+      "variant": "mfm",
+      "mode": 1,
+      "max_timestep": 1e-05,
+      "directory": "/home/kaan/sensitivity_20260907/gizmo/snapshot_timing_audit_v2/mfm_1_1e-05",
+      "command": [
+        "mpirun",
+        "--bind-to",
+        "core",
+        "-np",
+        "8",
+        "/home/kaan/sensitivity_20260907/gizmo/GIZMO_mfm_pair",
+        "params.txt"
+      ],
+      "physics": {
+        "code": "GIZMO",
+        "variants": [
+          "mfm",
+          "mfv"
+        ],
+        "chi": 100,
+        "mach": 2,
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1,
+        "rho_wind": 1,
+        "p_wind": 1,
+        "density_width": 0.1,
+        "rv_scale": 1.3,
+        "seed": 42,
+        "center": [
+          3,
+          5,
+          5
+        ],
+        "domain_left": [
+          0,
+          0,
+          0
+        ],
+        "domain_right": [
+          20,
+          10,
+          10
+        ],
+        "mass_mode": "volume",
+        "ranks": 8,
+        "t_end_over_tcc": 5,
+        "output_dt_over_tcc": 0.05,
+        "scope": "Within each native GIZMO variant, actual historical tanh versus sharp velocity. Regular equal-volume initial lattice, variable masses, original float32 IC/output precision and fully periodic native boundary recipe. Native kernel-derived density/pressure must be checked separately. No passive material tracer is assumed; particle-ID mass in MFV is not a material-retention diagnostic.",
+        "v_wind": 2.581988897471611,
+        "t_cc": 3.872983346207417
+      },
+      "binary_sha256": "ad6787e8666f92e1ac5162eec1aa717277920c51c52b7b04277d0b53295c6011",
+      "input_sha256": "4b6298b4cba64478eb39a1838a6dda91d34ec97db6e56710b80dcdd12eae1f58",
+      "ic_sha256": "b85251c1ecae2dab665cec6525f06543104b11dc0a2c2763159ecfa5670bc4f0",
+      "status": "collected_pending_scaling_check",
+      "returncode": 0,
+      "wall_seconds": 1.0122141690000035,
+      "peak_child_rss_gib": 0.48598480224609375,
+      "native_times": [
+        0.0,
+        3.9999999999999996e-05,
+        4e-05
+      ],
+      "snapshots": [
+        "/home/kaan/sensitivity_20260907/gizmo/snapshot_timing_audit_v2/mfm_1_1e-05/output/snapshot_000.hdf5",
+        "/home/kaan/sensitivity_20260907/gizmo/snapshot_timing_audit_v2/mfm_1_1e-05/output/snapshot_001.hdf5",
+        "/home/kaan/sensitivity_20260907/gizmo/snapshot_timing_audit_v2/mfm_1_1e-05/output/snapshot_002.hdf5"
+      ]
+    },
+    {
+      "variant": "mfm",
+      "mode": 1,
+      "max_timestep": 5e-06,
+      "directory": "/home/kaan/sensitivity_20260907/gizmo/snapshot_timing_audit_v2/mfm_1_5e-06",
+      "command": [
+        "mpirun",
+        "--bind-to",
+        "core",
+        "-np",
+        "8",
+        "/home/kaan/sensitivity_20260907/gizmo/GIZMO_mfm_pair",
+        "params.txt"
+      ],
+      "physics": {
+        "code": "GIZMO",
+        "variants": [
+          "mfm",
+          "mfv"
+        ],
+        "chi": 100,
+        "mach": 2,
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1,
+        "rho_wind": 1,
+        "p_wind": 1,
+        "density_width": 0.1,
+        "rv_scale": 1.3,
+        "seed": 42,
+        "center": [
+          3,
+          5,
+          5
+        ],
+        "domain_left": [
+          0,
+          0,
+          0
+        ],
+        "domain_right": [
+          20,
+          10,
+          10
+        ],
+        "mass_mode": "volume",
+        "ranks": 8,
+        "t_end_over_tcc": 5,
+        "output_dt_over_tcc": 0.05,
+        "scope": "Within each native GIZMO variant, actual historical tanh versus sharp velocity. Regular equal-volume initial lattice, variable masses, original float32 IC/output precision and fully periodic native boundary recipe. Native kernel-derived density/pressure must be checked separately. No passive material tracer is assumed; particle-ID mass in MFV is not a material-retention diagnostic.",
+        "v_wind": 2.581988897471611,
+        "t_cc": 3.872983346207417
+      },
+      "binary_sha256": "ad6787e8666f92e1ac5162eec1aa717277920c51c52b7b04277d0b53295c6011",
+      "input_sha256": "24741664b350ecdc9142e89cc8984bad905ee634e8d3f4d1e22a62fee371553b",
+      "ic_sha256": "b85251c1ecae2dab665cec6525f06543104b11dc0a2c2763159ecfa5670bc4f0",
+      "status": "collected_pending_scaling_check",
+      "returncode": 0,
+      "wall_seconds": 1.5102409710000018,
+      "peak_child_rss_gib": 0.48389434814453125,
+      "native_times": [
+        0.0,
+        3.9999999999999996e-05,
+        4e-05
+      ],
+      "snapshots": [
+        "/home/kaan/sensitivity_20260907/gizmo/snapshot_timing_audit_v2/mfm_1_5e-06/output/snapshot_000.hdf5",
+        "/home/kaan/sensitivity_20260907/gizmo/snapshot_timing_audit_v2/mfm_1_5e-06/output/snapshot_001.hdf5",
+        "/home/kaan/sensitivity_20260907/gizmo/snapshot_timing_audit_v2/mfm_1_5e-06/output/snapshot_002.hdf5"
+      ]
+    },
+    {
+      "variant": "mfv",
+      "mode": 0,
+      "max_timestep": 1e-05,
+      "directory": "/home/kaan/sensitivity_20260907/gizmo/snapshot_timing_audit_v2/mfv_0_1e-05",
+      "command": [
+        "mpirun",
+        "--bind-to",
+        "core",
+        "-np",
+        "8",
+        "/home/kaan/sensitivity_20260907/gizmo/GIZMO_mfv_pair",
+        "params.txt"
+      ],
+      "physics": {
+        "code": "GIZMO",
+        "variants": [
+          "mfm",
+          "mfv"
+        ],
+        "chi": 100,
+        "mach": 2,
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1,
+        "rho_wind": 1,
+        "p_wind": 1,
+        "density_width": 0.1,
+        "rv_scale": 1.3,
+        "seed": 42,
+        "center": [
+          3,
+          5,
+          5
+        ],
+        "domain_left": [
+          0,
+          0,
+          0
+        ],
+        "domain_right": [
+          20,
+          10,
+          10
+        ],
+        "mass_mode": "volume",
+        "ranks": 8,
+        "t_end_over_tcc": 5,
+        "output_dt_over_tcc": 0.05,
+        "scope": "Within each native GIZMO variant, actual historical tanh versus sharp velocity. Regular equal-volume initial lattice, variable masses, original float32 IC/output precision and fully periodic native boundary recipe. Native kernel-derived density/pressure must be checked separately. No passive material tracer is assumed; particle-ID mass in MFV is not a material-retention diagnostic.",
+        "v_wind": 2.581988897471611,
+        "t_cc": 3.872983346207417
+      },
+      "binary_sha256": "b7634f844d98ceef246d66e2243827f0c5774c9997b92bd8ffeedfdf940eed91",
+      "input_sha256": "4b6298b4cba64478eb39a1838a6dda91d34ec97db6e56710b80dcdd12eae1f58",
+      "ic_sha256": "ae510c5a853ace97e3c55c6b234efb3e5cf6f64a1dbd512e5ee7be8d0e1b52e5",
+      "status": "collected_pending_scaling_check",
+      "returncode": 0,
+      "wall_seconds": 1.068615637000022,
+      "peak_child_rss_gib": 0.5120506286621094,
+      "native_times": [
+        0.0,
+        3.9999999999999996e-05,
+        4e-05
+      ],
+      "snapshots": [
+        "/home/kaan/sensitivity_20260907/gizmo/snapshot_timing_audit_v2/mfv_0_1e-05/output/snapshot_000.hdf5",
+        "/home/kaan/sensitivity_20260907/gizmo/snapshot_timing_audit_v2/mfv_0_1e-05/output/snapshot_001.hdf5",
+        "/home/kaan/sensitivity_20260907/gizmo/snapshot_timing_audit_v2/mfv_0_1e-05/output/snapshot_002.hdf5"
+      ]
+    },
+    {
+      "variant": "mfv",
+      "mode": 0,
+      "max_timestep": 5e-06,
+      "directory": "/home/kaan/sensitivity_20260907/gizmo/snapshot_timing_audit_v2/mfv_0_5e-06",
+      "command": [
+        "mpirun",
+        "--bind-to",
+        "core",
+        "-np",
+        "8",
+        "/home/kaan/sensitivity_20260907/gizmo/GIZMO_mfv_pair",
+        "params.txt"
+      ],
+      "physics": {
+        "code": "GIZMO",
+        "variants": [
+          "mfm",
+          "mfv"
+        ],
+        "chi": 100,
+        "mach": 2,
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1,
+        "rho_wind": 1,
+        "p_wind": 1,
+        "density_width": 0.1,
+        "rv_scale": 1.3,
+        "seed": 42,
+        "center": [
+          3,
+          5,
+          5
+        ],
+        "domain_left": [
+          0,
+          0,
+          0
+        ],
+        "domain_right": [
+          20,
+          10,
+          10
+        ],
+        "mass_mode": "volume",
+        "ranks": 8,
+        "t_end_over_tcc": 5,
+        "output_dt_over_tcc": 0.05,
+        "scope": "Within each native GIZMO variant, actual historical tanh versus sharp velocity. Regular equal-volume initial lattice, variable masses, original float32 IC/output precision and fully periodic native boundary recipe. Native kernel-derived density/pressure must be checked separately. No passive material tracer is assumed; particle-ID mass in MFV is not a material-retention diagnostic.",
+        "v_wind": 2.581988897471611,
+        "t_cc": 3.872983346207417
+      },
+      "binary_sha256": "b7634f844d98ceef246d66e2243827f0c5774c9997b92bd8ffeedfdf940eed91",
+      "input_sha256": "24741664b350ecdc9142e89cc8984bad905ee634e8d3f4d1e22a62fee371553b",
+      "ic_sha256": "ae510c5a853ace97e3c55c6b234efb3e5cf6f64a1dbd512e5ee7be8d0e1b52e5",
+      "status": "collected_pending_scaling_check",
+      "returncode": 0,
+      "wall_seconds": 1.5707635379999942,
+      "peak_child_rss_gib": 0.5126380920410156,
+      "native_times": [
+        0.0,
+        3.9999999999999996e-05,
+        4e-05
+      ],
+      "snapshots": [
+        "/home/kaan/sensitivity_20260907/gizmo/snapshot_timing_audit_v2/mfv_0_5e-06/output/snapshot_000.hdf5",
+        "/home/kaan/sensitivity_20260907/gizmo/snapshot_timing_audit_v2/mfv_0_5e-06/output/snapshot_001.hdf5",
+        "/home/kaan/sensitivity_20260907/gizmo/snapshot_timing_audit_v2/mfv_0_5e-06/output/snapshot_002.hdf5"
+      ]
+    },
+    {
+      "variant": "mfv",
+      "mode": 1,
+      "max_timestep": 1e-05,
+      "directory": "/home/kaan/sensitivity_20260907/gizmo/snapshot_timing_audit_v2/mfv_1_1e-05",
+      "command": [
+        "mpirun",
+        "--bind-to",
+        "core",
+        "-np",
+        "8",
+        "/home/kaan/sensitivity_20260907/gizmo/GIZMO_mfv_pair",
+        "params.txt"
+      ],
+      "physics": {
+        "code": "GIZMO",
+        "variants": [
+          "mfm",
+          "mfv"
+        ],
+        "chi": 100,
+        "mach": 2,
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1,
+        "rho_wind": 1,
+        "p_wind": 1,
+        "density_width": 0.1,
+        "rv_scale": 1.3,
+        "seed": 42,
+        "center": [
+          3,
+          5,
+          5
+        ],
+        "domain_left": [
+          0,
+          0,
+          0
+        ],
+        "domain_right": [
+          20,
+          10,
+          10
+        ],
+        "mass_mode": "volume",
+        "ranks": 8,
+        "t_end_over_tcc": 5,
+        "output_dt_over_tcc": 0.05,
+        "scope": "Within each native GIZMO variant, actual historical tanh versus sharp velocity. Regular equal-volume initial lattice, variable masses, original float32 IC/output precision and fully periodic native boundary recipe. Native kernel-derived density/pressure must be checked separately. No passive material tracer is assumed; particle-ID mass in MFV is not a material-retention diagnostic.",
+        "v_wind": 2.581988897471611,
+        "t_cc": 3.872983346207417
+      },
+      "binary_sha256": "b7634f844d98ceef246d66e2243827f0c5774c9997b92bd8ffeedfdf940eed91",
+      "input_sha256": "4b6298b4cba64478eb39a1838a6dda91d34ec97db6e56710b80dcdd12eae1f58",
+      "ic_sha256": "b85251c1ecae2dab665cec6525f06543104b11dc0a2c2763159ecfa5670bc4f0",
+      "status": "collected_pending_scaling_check",
+      "returncode": 0,
+      "wall_seconds": 1.0365825069999914,
+      "peak_child_rss_gib": 0.5122489929199219,
+      "native_times": [
+        0.0,
+        3.9999999999999996e-05,
+        4e-05
+      ],
+      "snapshots": [
+        "/home/kaan/sensitivity_20260907/gizmo/snapshot_timing_audit_v2/mfv_1_1e-05/output/snapshot_000.hdf5",
+        "/home/kaan/sensitivity_20260907/gizmo/snapshot_timing_audit_v2/mfv_1_1e-05/output/snapshot_001.hdf5",
+        "/home/kaan/sensitivity_20260907/gizmo/snapshot_timing_audit_v2/mfv_1_1e-05/output/snapshot_002.hdf5"
+      ]
+    },
+    {
+      "variant": "mfv",
+      "mode": 1,
+      "max_timestep": 5e-06,
+      "directory": "/home/kaan/sensitivity_20260907/gizmo/snapshot_timing_audit_v2/mfv_1_5e-06",
+      "command": [
+        "mpirun",
+        "--bind-to",
+        "core",
+        "-np",
+        "8",
+        "/home/kaan/sensitivity_20260907/gizmo/GIZMO_mfv_pair",
+        "params.txt"
+      ],
+      "physics": {
+        "code": "GIZMO",
+        "variants": [
+          "mfm",
+          "mfv"
+        ],
+        "chi": 100,
+        "mach": 2,
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1,
+        "rho_wind": 1,
+        "p_wind": 1,
+        "density_width": 0.1,
+        "rv_scale": 1.3,
+        "seed": 42,
+        "center": [
+          3,
+          5,
+          5
+        ],
+        "domain_left": [
+          0,
+          0,
+          0
+        ],
+        "domain_right": [
+          20,
+          10,
+          10
+        ],
+        "mass_mode": "volume",
+        "ranks": 8,
+        "t_end_over_tcc": 5,
+        "output_dt_over_tcc": 0.05,
+        "scope": "Within each native GIZMO variant, actual historical tanh versus sharp velocity. Regular equal-volume initial lattice, variable masses, original float32 IC/output precision and fully periodic native boundary recipe. Native kernel-derived density/pressure must be checked separately. No passive material tracer is assumed; particle-ID mass in MFV is not a material-retention diagnostic.",
+        "v_wind": 2.581988897471611,
+        "t_cc": 3.872983346207417
+      },
+      "binary_sha256": "b7634f844d98ceef246d66e2243827f0c5774c9997b92bd8ffeedfdf940eed91",
+      "input_sha256": "24741664b350ecdc9142e89cc8984bad905ee634e8d3f4d1e22a62fee371553b",
+      "ic_sha256": "b85251c1ecae2dab665cec6525f06543104b11dc0a2c2763159ecfa5670bc4f0",
+      "status": "collected_pending_scaling_check",
+      "returncode": 0,
+      "wall_seconds": 1.522493647999994,
+      "peak_child_rss_gib": 0.512847900390625,
+      "native_times": [
+        0.0,
+        3.9999999999999996e-05,
+        4e-05
+      ],
+      "snapshots": [
+        "/home/kaan/sensitivity_20260907/gizmo/snapshot_timing_audit_v2/mfv_1_5e-06/output/snapshot_000.hdf5",
+        "/home/kaan/sensitivity_20260907/gizmo/snapshot_timing_audit_v2/mfv_1_5e-06/output/snapshot_001.hdf5",
+        "/home/kaan/sensitivity_20260907/gizmo/snapshot_timing_audit_v2/mfv_1_5e-06/output/snapshot_002.hdf5"
+      ]
+    }
+  ],
+  "scaling_checks": [
+    {
+      "variant": "mfm",
+      "mode": 0,
+      "checks": {
+        "norm_ratio": 0.49998347072352123,
+        "zero_step_extrapolation_max_error": 2.384185791015625e-07,
+        "float32_roundoff_bound": 1.2311882073845482e-06,
+        "full_step_max_delta": 9.1552734375e-05,
+        "half_step_max_delta": 4.57763671875e-05
+      }
+    },
+    {
+      "variant": "mfm",
+      "mode": 1,
+      "checks": {
+        "norm_ratio": 0.5007596730450596,
+        "zero_step_extrapolation_max_error": 2.384185791015625e-07,
+        "float32_roundoff_bound": 1.2311882073845482e-06,
+        "full_step_max_delta": 3.9577484130859375e-05,
+        "half_step_max_delta": 1.9788742065429688e-05
+      }
+    },
+    {
+      "variant": "mfv",
+      "mode": 0,
+      "checks": {
+        "norm_ratio": 0.5001355540638672,
+        "zero_step_extrapolation_max_error": 2.384185791015625e-07,
+        "float32_roundoff_bound": 1.2311882073845482e-06,
+        "full_step_max_delta": 0.0007429122924804688,
+        "half_step_max_delta": 0.0003714561462402344
+      }
+    },
+    {
+      "variant": "mfv",
+      "mode": 1,
+      "checks": {
+        "norm_ratio": 0.500215997041787,
+        "zero_step_extrapolation_max_error": 2.384185791015625e-07,
+        "float32_roundoff_bound": 1.2311882073845482e-06,
+        "full_step_max_delta": 0.00019240379333496094,
+        "half_step_max_delta": 9.632110595703125e-05
+      }
+    }
+  ],
+  "conclusion": "Native t=0 Velocities are staggered after the first kick. Halving diagnostic timestep halves the velocity offset; zero-step extrapolation recovers input within float32 rounding. No native output has been retimed or corrected.",
+  "scope": "Output-timing validation only, not a full control or validation of historical velocity diagnostics.",
+  "script_sha256": "6d456af60ab166128aad5ed380ecc17a6f1d5cb180ede976b98da3f6311f5e31"
+}

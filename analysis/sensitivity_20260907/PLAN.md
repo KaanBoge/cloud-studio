@@ -95,15 +95,21 @@ The L5 pair needs 124.02 GiB plus reserve and remains separately guarded.
 Next safe code families remain GIZMO MFM/MFV, Gadget-4 and Gasoline;
 no runnable queue for those is claimed before native historical-law and
 initial-field checks and identical within-pair particle sampling are verified.
-Four GIZMO L3 smokes have completed native evolution. Their t=0 snapshot
-velocities differ from the input, so output/kick timing must be resolved before
-full controls are admitted. This is a validation hold, not a completed study.
+Four GIZMO L3 smokes now pass independent mass checks. Eight small native tests
+confirmed that their t=0 velocities are staggered after the first half-step
+kick: halving the timestep halves the offset, and zero-step extrapolation
+recovers the IC to float32 precision. No native field is rewritten. The mass
+study must document this native output convention; velocity-at-header-time
+analysis remains unvalidated. Full GIZMO controls require the production
+launcher, per-level checks and retention budgets before admission.
 
 ## Validation and analysis
 
 Unit tests reject wrong velocity modes, extra parameter differences and incorrect
 native ICs. Each real run is checked for positive finite fields and all native
-timestamps. Saved t=0 fields must reproduce the selected analytic velocity law.
+timestamps. Saved t=0 fields must reproduce the selected analytic velocity law
+where native output is synchronized; GIZMO's explicitly validated half-step
+velocity output is a documented exception, not a relaxed IC tolerance.
 
 Measure density-selected mass (`rho > rho_cloud_initial/3`) with the same measured
 initial dense-mass denominator within each pair, plus tracer mass in the box,

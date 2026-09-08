@@ -1,0 +1,48 @@
+%---- GIZMO cloud-wind, EQUAL-VOLUME ladder level 3, chi=100, flavour MFV
+%---- grid-equivalent 64x32x32 = 65536 elements, dx=0.3125
+%----   -> 3.2 elements per cloud radius (matches the grid codes exactly)
+%---- code units: rho_amb=1, P_amb=1, R_cloud=1; cs_amb=1.290994, vwind=2.581989
+%---- t_cc = sqrt(chi)*R/vwind = 3.872983 ; TimeMax = 5 t_cc = 19.364917
+%---- 101 snapshots at TimeBetSnapshot = TimeMax/100 = 0.19364917
+%---- binary: /home/kaan/codes/gizmo/GIZMO_MFV_3D_PER  (transverse y,z PERIODIC -- see README.txt)
+InitCondFile                ics
+OutputDir                   output
+ICFormat                    3
+SnapFormat                  3
+RestartFile                 restart
+SnapshotFileBase            snapshot
+OutputListOn                0
+NumFilesPerSnapshot         1
+NumFilesWrittenInParallel   1
+TimeOfFirstSnapshot         0
+TimeBetSnapshot             0.19364917
+TimeLimitCPU                604800
+CpuTimeBetRestartFile       3600
+MaxMemSize                  1000
+PartAllocFactor             2.5
+BufferSize                  100
+TimeBegin                   0
+TimeMax                     19.364917
+ComovingIntegrationOn       0
+BoxSize                     10.0
+Omega_Matter                0
+Omega_Lambda                0
+Omega_Baryon                0
+HubbleParam                 1
+MaxSizeTimestep             0.05
+MinSizeTimestep             1.0e-12
+UnitLength_in_cm            1
+UnitMass_in_g               1
+UnitVelocity_in_cm_per_s    1
+GravityConstantInternal     1
+InitGasTemp                 0
+MinGasTemp                  0
+DesNumNgb                   32
+MaxHsml                     10.0
+MinGasHsmlFractional        0
+Softening_Type0             0.3125
+Softening_Type1             0.3125
+Softening_Type2             0.3125
+Softening_Type3             0.3125
+Softening_Type4             0.3125
+Softening_Type5             0.3125

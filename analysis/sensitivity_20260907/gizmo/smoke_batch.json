@@ -1,0 +1,393 @@
+{
+  "status": "collected_pending_pair_validation",
+  "finished": [
+    {
+      "variant": "mfm",
+      "mode": 0,
+      "level": 3,
+      "directory": "/home/kaan/sensitivity_20260907/gizmo/smokes/L3_mfm_sharp13",
+      "physics": {
+        "code": "GIZMO",
+        "variants": [
+          "mfm",
+          "mfv"
+        ],
+        "chi": 100,
+        "mach": 2,
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1,
+        "rho_wind": 1,
+        "p_wind": 1,
+        "density_width": 0.1,
+        "rv_scale": 1.3,
+        "seed": 42,
+        "center": [
+          3,
+          5,
+          5
+        ],
+        "domain_left": [
+          0,
+          0,
+          0
+        ],
+        "domain_right": [
+          20,
+          10,
+          10
+        ],
+        "mass_mode": "volume",
+        "ranks": 8,
+        "t_end_over_tcc": 5,
+        "output_dt_over_tcc": 0.05,
+        "scope": "Within each native GIZMO variant, actual historical tanh versus sharp velocity. Regular equal-volume initial lattice, variable masses, original float32 IC/output precision and fully periodic native boundary recipe. Native kernel-derived density/pressure must be checked separately. No passive material tracer is assumed; particle-ID mass in MFV is not a material-retention diagnostic.",
+        "v_wind": 2.581988897471611,
+        "t_cc": 3.872983346207417
+      },
+      "command": [
+        "mpirun",
+        "--bind-to",
+        "core",
+        "-np",
+        "8",
+        "/home/kaan/sensitivity_20260907/gizmo/GIZMO_mfm_pair",
+        "params.txt"
+      ],
+      "binary_sha256": "ad6787e8666f92e1ac5162eec1aa717277920c51c52b7b04277d0b53295c6011",
+      "input_sha256": "7f693c0d465973b39537bc470082ccd5dbb2f910877f67a1e4c2b486f49d24de",
+      "ic_sha256": "ae510c5a853ace97e3c55c6b234efb3e5cf6f64a1dbd512e5ee7be8d0e1b52e5",
+      "status": "native_outputs_collected_pending_pair_validation",
+      "returncode": 0,
+      "wall_seconds": 0.9186294078826904,
+      "peak_child_rss_gib": 0.4853477478027344,
+      "outputs": [
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/smokes/L3_mfm_sharp13/output/snapshot_000.hdf5",
+          "time": 0.0,
+          "fields": {
+            "Coordinates": "float64",
+            "Density": "float32",
+            "InternalEnergy": "float32",
+            "Masses": "float32",
+            "ParticleChildIDsNumber": "uint32",
+            "ParticleIDGenerationNumber": "uint32",
+            "ParticleIDs": "uint32",
+            "SmoothingLength": "float32",
+            "Velocities": "float32"
+          },
+          "elements": 65536,
+          "bytes": 4203752
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/smokes/L3_mfm_sharp13/output/snapshot_001.hdf5",
+          "time": 0.1,
+          "fields": {
+            "Coordinates": "float64",
+            "Density": "float32",
+            "InternalEnergy": "float32",
+            "Masses": "float32",
+            "ParticleChildIDsNumber": "uint32",
+            "ParticleIDGenerationNumber": "uint32",
+            "ParticleIDs": "uint32",
+            "SmoothingLength": "float32",
+            "Velocities": "float32"
+          },
+          "elements": 65536,
+          "bytes": 4203752
+        }
+      ]
+    },
+    {
+      "variant": "mfm",
+      "mode": 1,
+      "level": 3,
+      "directory": "/home/kaan/sensitivity_20260907/gizmo/smokes/L3_mfm_tanh13",
+      "physics": {
+        "code": "GIZMO",
+        "variants": [
+          "mfm",
+          "mfv"
+        ],
+        "chi": 100,
+        "mach": 2,
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1,
+        "rho_wind": 1,
+        "p_wind": 1,
+        "density_width": 0.1,
+        "rv_scale": 1.3,
+        "seed": 42,
+        "center": [
+          3,
+          5,
+          5
+        ],
+        "domain_left": [
+          0,
+          0,
+          0
+        ],
+        "domain_right": [
+          20,
+          10,
+          10
+        ],
+        "mass_mode": "volume",
+        "ranks": 8,
+        "t_end_over_tcc": 5,
+        "output_dt_over_tcc": 0.05,
+        "scope": "Within each native GIZMO variant, actual historical tanh versus sharp velocity. Regular equal-volume initial lattice, variable masses, original float32 IC/output precision and fully periodic native boundary recipe. Native kernel-derived density/pressure must be checked separately. No passive material tracer is assumed; particle-ID mass in MFV is not a material-retention diagnostic.",
+        "v_wind": 2.581988897471611,
+        "t_cc": 3.872983346207417
+      },
+      "command": [
+        "mpirun",
+        "--bind-to",
+        "core",
+        "-np",
+        "8",
+        "/home/kaan/sensitivity_20260907/gizmo/GIZMO_mfm_pair",
+        "params.txt"
+      ],
+      "binary_sha256": "ad6787e8666f92e1ac5162eec1aa717277920c51c52b7b04277d0b53295c6011",
+      "input_sha256": "7f693c0d465973b39537bc470082ccd5dbb2f910877f67a1e4c2b486f49d24de",
+      "ic_sha256": "b85251c1ecae2dab665cec6525f06543104b11dc0a2c2763159ecfa5670bc4f0",
+      "status": "native_outputs_collected_pending_pair_validation",
+      "returncode": 0,
+      "wall_seconds": 0.8174145221710205,
+      "peak_child_rss_gib": 0.487701416015625,
+      "outputs": [
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/smokes/L3_mfm_tanh13/output/snapshot_000.hdf5",
+          "time": 0.0,
+          "fields": {
+            "Coordinates": "float64",
+            "Density": "float32",
+            "InternalEnergy": "float32",
+            "Masses": "float32",
+            "ParticleChildIDsNumber": "uint32",
+            "ParticleIDGenerationNumber": "uint32",
+            "ParticleIDs": "uint32",
+            "SmoothingLength": "float32",
+            "Velocities": "float32"
+          },
+          "elements": 65536,
+          "bytes": 4203752
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/smokes/L3_mfm_tanh13/output/snapshot_001.hdf5",
+          "time": 0.1,
+          "fields": {
+            "Coordinates": "float64",
+            "Density": "float32",
+            "InternalEnergy": "float32",
+            "Masses": "float32",
+            "ParticleChildIDsNumber": "uint32",
+            "ParticleIDGenerationNumber": "uint32",
+            "ParticleIDs": "uint32",
+            "SmoothingLength": "float32",
+            "Velocities": "float32"
+          },
+          "elements": 65536,
+          "bytes": 4203752
+        }
+      ]
+    },
+    {
+      "variant": "mfv",
+      "mode": 0,
+      "level": 3,
+      "directory": "/home/kaan/sensitivity_20260907/gizmo/smokes/L3_mfv_sharp13",
+      "physics": {
+        "code": "GIZMO",
+        "variants": [
+          "mfm",
+          "mfv"
+        ],
+        "chi": 100,
+        "mach": 2,
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1,
+        "rho_wind": 1,
+        "p_wind": 1,
+        "density_width": 0.1,
+        "rv_scale": 1.3,
+        "seed": 42,
+        "center": [
+          3,
+          5,
+          5
+        ],
+        "domain_left": [
+          0,
+          0,
+          0
+        ],
+        "domain_right": [
+          20,
+          10,
+          10
+        ],
+        "mass_mode": "volume",
+        "ranks": 8,
+        "t_end_over_tcc": 5,
+        "output_dt_over_tcc": 0.05,
+        "scope": "Within each native GIZMO variant, actual historical tanh versus sharp velocity. Regular equal-volume initial lattice, variable masses, original float32 IC/output precision and fully periodic native boundary recipe. Native kernel-derived density/pressure must be checked separately. No passive material tracer is assumed; particle-ID mass in MFV is not a material-retention diagnostic.",
+        "v_wind": 2.581988897471611,
+        "t_cc": 3.872983346207417
+      },
+      "command": [
+        "mpirun",
+        "--bind-to",
+        "core",
+        "-np",
+        "8",
+        "/home/kaan/sensitivity_20260907/gizmo/GIZMO_mfv_pair",
+        "params.txt"
+      ],
+      "binary_sha256": "b7634f844d98ceef246d66e2243827f0c5774c9997b92bd8ffeedfdf940eed91",
+      "input_sha256": "7f693c0d465973b39537bc470082ccd5dbb2f910877f67a1e4c2b486f49d24de",
+      "ic_sha256": "ae510c5a853ace97e3c55c6b234efb3e5cf6f64a1dbd512e5ee7be8d0e1b52e5",
+      "status": "native_outputs_collected_pending_pair_validation",
+      "returncode": 0,
+      "wall_seconds": 1.1687381267547607,
+      "peak_child_rss_gib": 0.5161705017089844,
+      "outputs": [
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/smokes/L3_mfv_sharp13/output/snapshot_000.hdf5",
+          "time": 0.0,
+          "fields": {
+            "Coordinates": "float64",
+            "Density": "float32",
+            "InternalEnergy": "float32",
+            "Masses": "float32",
+            "ParticleChildIDsNumber": "uint32",
+            "ParticleIDGenerationNumber": "uint32",
+            "ParticleIDs": "uint32",
+            "ParticleVelocities": "float32",
+            "SmoothingLength": "float32",
+            "Velocities": "float32"
+          },
+          "elements": 65536,
+          "bytes": 4990184
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/smokes/L3_mfv_sharp13/output/snapshot_001.hdf5",
+          "time": 0.1,
+          "fields": {
+            "Coordinates": "float64",
+            "Density": "float32",
+            "InternalEnergy": "float32",
+            "Masses": "float32",
+            "ParticleChildIDsNumber": "uint32",
+            "ParticleIDGenerationNumber": "uint32",
+            "ParticleIDs": "uint32",
+            "ParticleVelocities": "float32",
+            "SmoothingLength": "float32",
+            "Velocities": "float32"
+          },
+          "elements": 65536,
+          "bytes": 4990184
+        }
+      ]
+    },
+    {
+      "variant": "mfv",
+      "mode": 1,
+      "level": 3,
+      "directory": "/home/kaan/sensitivity_20260907/gizmo/smokes/L3_mfv_tanh13",
+      "physics": {
+        "code": "GIZMO",
+        "variants": [
+          "mfm",
+          "mfv"
+        ],
+        "chi": 100,
+        "mach": 2,
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1,
+        "rho_wind": 1,
+        "p_wind": 1,
+        "density_width": 0.1,
+        "rv_scale": 1.3,
+        "seed": 42,
+        "center": [
+          3,
+          5,
+          5
+        ],
+        "domain_left": [
+          0,
+          0,
+          0
+        ],
+        "domain_right": [
+          20,
+          10,
+          10
+        ],
+        "mass_mode": "volume",
+        "ranks": 8,
+        "t_end_over_tcc": 5,
+        "output_dt_over_tcc": 0.05,
+        "scope": "Within each native GIZMO variant, actual historical tanh versus sharp velocity. Regular equal-volume initial lattice, variable masses, original float32 IC/output precision and fully periodic native boundary recipe. Native kernel-derived density/pressure must be checked separately. No passive material tracer is assumed; particle-ID mass in MFV is not a material-retention diagnostic.",
+        "v_wind": 2.581988897471611,
+        "t_cc": 3.872983346207417
+      },
+      "command": [
+        "mpirun",
+        "--bind-to",
+        "core",
+        "-np",
+        "8",
+        "/home/kaan/sensitivity_20260907/gizmo/GIZMO_mfv_pair",
+        "params.txt"
+      ],
+      "binary_sha256": "b7634f844d98ceef246d66e2243827f0c5774c9997b92bd8ffeedfdf940eed91",
+      "input_sha256": "7f693c0d465973b39537bc470082ccd5dbb2f910877f67a1e4c2b486f49d24de",
+      "ic_sha256": "b85251c1ecae2dab665cec6525f06543104b11dc0a2c2763159ecfa5670bc4f0",
+      "status": "native_outputs_collected_pending_pair_validation",
+      "returncode": 0,
+      "wall_seconds": 1.1188642978668213,
+      "peak_child_rss_gib": 0.5188751220703125,
+      "outputs": [
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/smokes/L3_mfv_tanh13/output/snapshot_000.hdf5",
+          "time": 0.0,
+          "fields": {
+            "Coordinates": "float64",
+            "Density": "float32",
+            "InternalEnergy": "float32",
+            "Masses": "float32",
+            "ParticleChildIDsNumber": "uint32",
+            "ParticleIDGenerationNumber": "uint32",
+            "ParticleIDs": "uint32",
+            "ParticleVelocities": "float32",
+            "SmoothingLength": "float32",
+            "Velocities": "float32"
+          },
+          "elements": 65536,
+          "bytes": 4990184
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/smokes/L3_mfv_tanh13/output/snapshot_001.hdf5",
+          "time": 0.1,
+          "fields": {
+            "Coordinates": "float64",
+            "Density": "float32",
+            "InternalEnergy": "float32",
+            "Masses": "float32",
+            "ParticleChildIDsNumber": "uint32",
+            "ParticleIDGenerationNumber": "uint32",
+            "ParticleIDs": "uint32",
+            "ParticleVelocities": "float32",
+            "SmoothingLength": "float32",
+            "Velocities": "float32"
+          },
+          "elements": 65536,
+          "bytes": 4990184
+        }
+      ]
+    }
+  ]
+}

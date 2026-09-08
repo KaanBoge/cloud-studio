@@ -145,9 +145,12 @@ Arepo's original jittered lattice gives native pressure deviations up to 14.45%
 in both controls, and its streamwise boundary is periodic. These limitations
 are preserved and documented for the within-code experiment, not claimed as
 a matched cross-code setup. See [Arepo results and caveats](arepo/README.md).
-GIZMO MFM/MFV short native smokes have completed, but full production remains
-held for initial snapshot velocity/output-timing validation. They are not
-counted as completed controls. Gadget-4 and Gasoline remain unprepared.
+GIZMO MFM/MFV short native smokes and independent mass checks now pass. A
+separate timestep-scaling test explains their native t=0 velocity staggering;
+those velocities must not be interpreted as simultaneous with the header time.
+Full GIZMO controls still need the production launcher, per-level and retention
+checks and are not counted as completed runs. See [GIZMO validation](gizmo/README.md).
+Gadget-4 and Gasoline remain unprepared.
 A 15-minute task follow-up is enabled to inspect progress and
 advance safe pending work. The old blanket replacement queue remains inactive.
 Cooling, tracking and paper-ready retention checks remain separate work.

@@ -1,0 +1,54 @@
+{
+  "compiled_anything": false,
+  "source_files_unchanged": {
+    "/home/kaan/codes/gizmo/scripts/make_cloudwind_ic.py": "77206f4786b1ded804de004c6c261273bd85f1f048d61c3c5335cd1eeeae5cdd",
+    "/mnt/c/Users/kaanb/CloudCrushing/audit_20260907/before/home/kaan/codes/gizmo/scripts/make_cloudwind_ic.py": "b8bec842eb6b12773fa094187606bebd23205e39d89e28b1eda96b7f627f6a54",
+    "/mnt/c/Users/kaanb/CloudCrushing/sensitivity_20260907/gizmo/experiment.json": "dfe611ff0aaf0b766d4ddc405871427159aa37093fe1cbee7d6e4b53b4bbdd4a",
+    "/home/kaan/codes/gizmo/io.c": "835892c84cb27ef94f95fb8a37b85bd74347a98da5b1555adf9e2d780aca3994",
+    "/home/kaan/codes/gizmo/begrun.c": "e194faa51c8a078a65a567789cbb8b8cffdf24e24ad8aa54b8b192c337a70e9c",
+    "/home/kaan/codes/gizmo/GIZMO_MFM_3D_PER": "ad6787e8666f92e1ac5162eec1aa717277920c51c52b7b04277d0b53295c6011",
+    "/home/kaan/codes/gizmo/Config_MFM_3D_periodic.sh": "ef389556cc732c84f3bf72450547b827e86dc53d2cb78e2fb3a9c1657e4aa558",
+    "/home/kaan/codes/gizmo/runs/GZ_L3_chi100_mfm/params.txt": "ea8f6fc061a3a0f96151836d4176ec42ff516f7a8cff3bc9f078ac08d0734df4",
+    "/home/kaan/codes/gizmo/runs/GZ_L4_chi100_mfm/params.txt": "f0717851e410a41a48f66f64c5d0f43e46a25faaf323fdff2195158072ccf6ce",
+    "/home/kaan/codes/gizmo/runs/GZ_L5_chi100_mfm/params.txt": "836cb1426e2e3fcf20712e6031e777508affc47efc01f67423d624c92ccec334",
+    "/home/kaan/codes/gizmo/GIZMO_MFV_3D_PER": "b7634f844d98ceef246d66e2243827f0c5774c9997b92bd8ffeedfdf940eed91",
+    "/home/kaan/codes/gizmo/Config_MFV_3D_periodic.sh": "6ce161fe2bd5766c7abfa82536fe35e1168c81562c15c9f5bf5132575e671f3b",
+    "/home/kaan/codes/gizmo/runs/GZ_L3_chi100_mfv/params.txt": "a92150b872cc5d54694dad403f40588a332696e61de4f72b4f91416cc90690ce",
+    "/home/kaan/codes/gizmo/runs/GZ_L4_chi100_mfv/params.txt": "c81fe048ab3aedf6e43aa6767cc3c2369ee6a22c28bc024903b68638a0515f7c",
+    "/home/kaan/codes/gizmo/runs/GZ_L5_chi100_mfv/params.txt": "cf188d47913b9d798455c84a2eaf17b2366814bb2d7d2739006757e8e4b8f1c8"
+  },
+  "pinned_files": {
+    "generator_sharp.py": "77206f4786b1ded804de004c6c261273bd85f1f048d61c3c5335cd1eeeae5cdd",
+    "generator_historical.py": "b8bec842eb6b12773fa094187606bebd23205e39d89e28b1eda96b7f627f6a54",
+    "experiment.json": "dfe611ff0aaf0b766d4ddc405871427159aa37093fe1cbee7d6e4b53b4bbdd4a",
+    "native_io.c": "835892c84cb27ef94f95fb8a37b85bd74347a98da5b1555adf9e2d780aca3994",
+    "native_begrun.c": "e194faa51c8a078a65a567789cbb8b8cffdf24e24ad8aa54b8b192c337a70e9c",
+    "GIZMO_mfm_pair": "ad6787e8666f92e1ac5162eec1aa717277920c51c52b7b04277d0b53295c6011",
+    "Config_mfm.sh": "ef389556cc732c84f3bf72450547b827e86dc53d2cb78e2fb3a9c1657e4aa558",
+    "params_mfm_L3.txt": "ea8f6fc061a3a0f96151836d4176ec42ff516f7a8cff3bc9f078ac08d0734df4",
+    "params_mfm_L4.txt": "f0717851e410a41a48f66f64c5d0f43e46a25faaf323fdff2195158072ccf6ce",
+    "params_mfm_L5.txt": "836cb1426e2e3fcf20712e6031e777508affc47efc01f67423d624c92ccec334",
+    "GIZMO_mfv_pair": "b7634f844d98ceef246d66e2243827f0c5774c9997b92bd8ffeedfdf940eed91",
+    "Config_mfv.sh": "6ce161fe2bd5766c7abfa82536fe35e1168c81562c15c9f5bf5132575e671f3b",
+    "params_mfv_L3.txt": "a92150b872cc5d54694dad403f40588a332696e61de4f72b4f91416cc90690ce",
+    "params_mfv_L4.txt": "c81fe048ab3aedf6e43aa6767cc3c2369ee6a22c28bc024903b68638a0515f7c",
+    "params_mfv_L5.txt": "cf188d47913b9d798455c84a2eaf17b2366814bb2d7d2739006757e8e4b8f1c8"
+  },
+  "expected_config": {
+    "mfm": [
+      "HYDRO_MESHLESS_FINITE_MASS",
+      "BOX_PERIODIC",
+      "BOX_LONG_X=2",
+      "SELFGRAVITY_OFF",
+      "EOS_GAMMA=(5.0/3.0)"
+    ],
+    "mfv": [
+      "HYDRO_MESHLESS_FINITE_VOLUME",
+      "BOX_PERIODIC",
+      "BOX_LONG_X=2",
+      "SELFGRAVITY_OFF",
+      "EOS_GAMMA=(5.0/3.0)"
+    ]
+  },
+  "scope": "Native binaries and actual writers pinned; not a validated evolved pair until smoke checks pass. Native solver source evidence stays local."
+}
