@@ -4,6 +4,16 @@ Ryan requested a few resolutions per code at fixed chi and Mach before deciding
 whether affected historical runs need replacing. This study preserves all old
 and new raw data. It does not authorize a blanket replacement campaign.
 
+## Completed consolidation: resolution summary
+
+The [resolution summary](resolution_summary_v1/README.md) collates the 23
+accepted pairs from existing reports, with exact source hashes and 12 unit
+tests plus scalar cross-checks for all pairs. No native reruns, raw relocation
+or acceptance changes were made. Accepted total remains 46; eight L3/L4
+controls remain held, plus higher levels. The storage-relocation approval
+and Gasoline scientific-repeatability decision remain pending. Do not repeat
+this consolidation or the completed native diagnostics on unchanged follow-ups.
+
 ## Latest completed gate: repaired MFV L3 pair
 
 8 September: sharp preparation and the missing full control now pass on the

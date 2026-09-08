@@ -1,5 +1,11 @@
 # Cloud-crushing analysis: verification status
 
+The [code-by-code resolution summary](sensitivity_20260907/resolution_summary_v1/README.md)
+brings together all 23 accepted velocity-law pairs: 46 controls and 4,650 native
+analysis states, at fixed chi=100 and Mach=2. Values and source links were
+checked without rerunning simulations. This is sensitivity evidence, not a
+cross-code accuracy ranking or a blanket historical-replacement decision.
+
 The [velocity-prescription sensitivity study](sensitivity_20260907/README.md)
 now tests historical versus corrected initial velocities within each native code
 at fixed chi=100 and Mach=2, following Ryan's request to measure impact before

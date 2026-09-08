@@ -1,0 +1,1224 @@
+{
+  "schema": 1,
+  "generated_at_utc": "2026-09-08T14:17:55.642147+00:00",
+  "scope": "Completed native-code velocity sensitivity controls only; fixed chi=100, Mach=2. Not a new simulation or cross-code accuracy ranking.",
+  "accepted_pairs": 23,
+  "accepted_full_controls": 46,
+  "native_states_in_accepted_analysis": 4650,
+  "new_native_runs": 0,
+  "blanket_replacement_queue": "inactive; not changed by this script",
+  "sources": {
+    "analysis/report.json": {
+      "sha256": "78839ce52a83cb295c61a0f8a772819f53c24915d38f34a41e5ea213ed2a396d",
+      "bytes": 489488
+    },
+    "athw/report.json": {
+      "sha256": "39e3c1551f121c3dd43ae7fb68f93f829b8f2436d00ffa752d6a0905c0441803",
+      "bytes": 272888
+    },
+    "enzo/report.json": {
+      "sha256": "47a8bf75d24c68d671b788ed2b06cab40e71bdbf3a6ba0dc63f1755871834571",
+      "bytes": 173275
+    },
+    "enzoe/report.json": {
+      "sha256": "0c524b12dbba6dfafda403a9eb3a2c7aacd7e2aaa79256cb80dc61aae8e6d0a6",
+      "bytes": 457451
+    },
+    "ramses/report.json": {
+      "sha256": "9d83898b6ab2952c9b3aec8bbaa7aa25cb5e82ccd4e74bf6924e9007c1069664",
+      "bytes": 200843
+    },
+    "flash/report.json": {
+      "sha256": "8c9b29abd130e39e26c81db04f8eb88a5f99acf08bacb4cdfb0f67c311be60c0",
+      "bytes": 176006
+    },
+    "flashx/report.json": {
+      "sha256": "e63ef0c1ae9df8945f506a6703ae6a9236ed396f9d31114c346777a8f18b4c13",
+      "bytes": 175357
+    },
+    "arepo/report.json": {
+      "sha256": "7c74f7b5cff0306cba9f724941a2513dc76485a3eade6d6a1714b6cd81e49fce",
+      "bytes": 217989
+    },
+    "gizmo/mfm_levels_report.json": {
+      "sha256": "d459ddc97aff60da485929c66e17750ace3f4ebff549ba54e910c0e99a54e294",
+      "bytes": 260332
+    },
+    "gadget4/l3_report.json": {
+      "sha256": "d6ed96d014d3f2c667c5276d15f81079fda9183401ffad11e413c22700387e22",
+      "bytes": 234958
+    },
+    "gizmo/mfv_repaired_pair.json": {
+      "sha256": "db45f9d985a4e8eb87b63f0247d1d5f61572acfaab5dad6f9272dfe36b0a017d",
+      "bytes": 194332
+    }
+  },
+  "pairs": [
+    {
+      "code_id": "athpp",
+      "code": "Athena++",
+      "level": 3,
+      "dimensions_streamwise": [
+        64,
+        32,
+        32
+      ],
+      "resolution_meaning": "grid dimensions",
+      "initial_elements_per_cloud_radius": 3.2,
+      "chi": 100,
+      "mach": 2,
+      "historical_velocity_law": "tanh velocity at 1.3R",
+      "sharp_velocity_law": "zero through 1.3R; constant wind outside",
+      "peak_dense_mass_separation_fraction": 0.08145337918675621,
+      "peak_dense_mass_separation_percent": 8.145337918675622,
+      "metric_source_json_pointer": "/pairs/0/max_abs_curve_delta_in_units_initial_dense_mass",
+      "metric_method_verbatim": "Linear interpolation of scalar mass diagnostics only onto 0:0.05:5 t_cc; raw times retained.",
+      "variants": {
+        "sharp": {
+          "source_json_pointer": "/series/athpp_L3_chi100_sharp13",
+          "native_states": 101,
+          "first_t_over_tcc": 0.0,
+          "last_t_over_tcc": 5.0,
+          "equal_header_intervals_retained": 0,
+          "initial_dense_mass": 409.9079855231985,
+          "final_dense_fraction": 0.0
+        },
+        "historical": {
+          "source_json_pointer": "/series/athpp_L3_chi100_historical_tanh13",
+          "native_states": 101,
+          "first_t_over_tcc": 0.0,
+          "last_t_over_tcc": 5.0,
+          "equal_header_intervals_retained": 0,
+          "initial_dense_mass": 409.9079855231985,
+          "final_dense_fraction": 0.0
+        }
+      },
+      "source_report": "analysis/report.json",
+      "source_sha256": "78839ce52a83cb295c61a0f8a772819f53c24915d38f34a41e5ea213ed2a396d",
+      "source_caveats_verbatim": [
+        "Only velocity changes within each code pair; tracer and native axis differ between codes.",
+        "L3/L4 have 3.2/6.4 cells per R: density/velocity edge behavior is underresolved and requires finer confirmation.",
+        "Finite box and tracer loss can contribute to late-time differences.",
+        "No claim of negligible impact, convergence, all-code comparability or suitability for a paper based on this pilot alone.",
+        "Existing historical runs still require individual provenance checks before reuse."
+      ],
+      "reuse_decision": "undecided; within-code sensitivity evidence only"
+    },
+    {
+      "code_id": "athpp",
+      "code": "Athena++",
+      "level": 4,
+      "dimensions_streamwise": [
+        128,
+        64,
+        64
+      ],
+      "resolution_meaning": "grid dimensions",
+      "initial_elements_per_cloud_radius": 6.4,
+      "chi": 100,
+      "mach": 2,
+      "historical_velocity_law": "tanh velocity at 1.3R",
+      "sharp_velocity_law": "zero through 1.3R; constant wind outside",
+      "peak_dense_mass_separation_fraction": 0.06801225098361599,
+      "peak_dense_mass_separation_percent": 6.801225098361599,
+      "metric_source_json_pointer": "/pairs/1/max_abs_curve_delta_in_units_initial_dense_mass",
+      "metric_method_verbatim": "Linear interpolation of scalar mass diagnostics only onto 0:0.05:5 t_cc; raw times retained.",
+      "variants": {
+        "sharp": {
+          "source_json_pointer": "/series/athpp_L4_chi100_sharp13",
+          "native_states": 101,
+          "first_t_over_tcc": 0.0,
+          "last_t_over_tcc": 5.0,
+          "equal_header_intervals_retained": 0,
+          "initial_dense_mass": 398.4896893072199,
+          "final_dense_fraction": 0.02181533367714802
+        },
+        "historical": {
+          "source_json_pointer": "/series/athpp_L4_chi100_historical_tanh13",
+          "native_states": 101,
+          "first_t_over_tcc": 0.0,
+          "last_t_over_tcc": 5.0,
+          "equal_header_intervals_retained": 0,
+          "initial_dense_mass": 398.4896893072199,
+          "final_dense_fraction": 0.002554280643034335
+        }
+      },
+      "source_report": "analysis/report.json",
+      "source_sha256": "78839ce52a83cb295c61a0f8a772819f53c24915d38f34a41e5ea213ed2a396d",
+      "source_caveats_verbatim": [
+        "Only velocity changes within each code pair; tracer and native axis differ between codes.",
+        "L3/L4 have 3.2/6.4 cells per R: density/velocity edge behavior is underresolved and requires finer confirmation.",
+        "Finite box and tracer loss can contribute to late-time differences.",
+        "No claim of negligible impact, convergence, all-code comparability or suitability for a paper based on this pilot alone.",
+        "Existing historical runs still require individual provenance checks before reuse."
+      ],
+      "reuse_decision": "undecided; within-code sensitivity evidence only"
+    },
+    {
+      "code_id": "apk",
+      "code": "AthenaPK",
+      "level": 3,
+      "dimensions_streamwise": [
+        64,
+        32,
+        32
+      ],
+      "resolution_meaning": "grid dimensions",
+      "initial_elements_per_cloud_radius": 3.2,
+      "chi": 100,
+      "mach": 2,
+      "historical_velocity_law": "constant outer momentum",
+      "sharp_velocity_law": "zero through 1.3R; constant wind outside",
+      "peak_dense_mass_separation_fraction": 0.05946971301162733,
+      "peak_dense_mass_separation_percent": 5.946971301162733,
+      "metric_source_json_pointer": "/pairs/2/max_abs_curve_delta_in_units_initial_dense_mass",
+      "metric_method_verbatim": "Linear interpolation of scalar mass diagnostics only onto 0:0.05:5 t_cc; raw times retained.",
+      "variants": {
+        "sharp": {
+          "source_json_pointer": "/series/apk_L3_chi100_sharp13",
+          "native_states": 101,
+          "first_t_over_tcc": 0.0,
+          "last_t_over_tcc": 5.0,
+          "equal_header_intervals_retained": 0,
+          "initial_dense_mass": 409.9079855231985,
+          "final_dense_fraction": 0.0
+        },
+        "historical": {
+          "source_json_pointer": "/series/apk_L3_chi100_historical_momentum13",
+          "native_states": 101,
+          "first_t_over_tcc": 0.0,
+          "last_t_over_tcc": 5.0,
+          "equal_header_intervals_retained": 0,
+          "initial_dense_mass": 409.9079855231985,
+          "final_dense_fraction": 0.0
+        }
+      },
+      "source_report": "analysis/report.json",
+      "source_sha256": "78839ce52a83cb295c61a0f8a772819f53c24915d38f34a41e5ea213ed2a396d",
+      "source_caveats_verbatim": [
+        "Only velocity changes within each code pair; tracer and native axis differ between codes.",
+        "L3/L4 have 3.2/6.4 cells per R: density/velocity edge behavior is underresolved and requires finer confirmation.",
+        "Finite box and tracer loss can contribute to late-time differences.",
+        "No claim of negligible impact, convergence, all-code comparability or suitability for a paper based on this pilot alone.",
+        "Existing historical runs still require individual provenance checks before reuse."
+      ],
+      "reuse_decision": "undecided; within-code sensitivity evidence only"
+    },
+    {
+      "code_id": "apk",
+      "code": "AthenaPK",
+      "level": 4,
+      "dimensions_streamwise": [
+        128,
+        64,
+        64
+      ],
+      "resolution_meaning": "grid dimensions",
+      "initial_elements_per_cloud_radius": 6.4,
+      "chi": 100,
+      "mach": 2,
+      "historical_velocity_law": "constant outer momentum",
+      "sharp_velocity_law": "zero through 1.3R; constant wind outside",
+      "peak_dense_mass_separation_fraction": 0.011389665034214139,
+      "peak_dense_mass_separation_percent": 1.1389665034214138,
+      "metric_source_json_pointer": "/pairs/3/max_abs_curve_delta_in_units_initial_dense_mass",
+      "metric_method_verbatim": "Linear interpolation of scalar mass diagnostics only onto 0:0.05:5 t_cc; raw times retained.",
+      "variants": {
+        "sharp": {
+          "source_json_pointer": "/series/apk_L4_chi100_sharp13",
+          "native_states": 101,
+          "first_t_over_tcc": 0.0,
+          "last_t_over_tcc": 5.0,
+          "equal_header_intervals_retained": 0,
+          "initial_dense_mass": 398.4896893072199,
+          "final_dense_fraction": 0.02181533367714821
+        },
+        "historical": {
+          "source_json_pointer": "/series/apk_L4_chi100_historical_momentum13",
+          "native_states": 101,
+          "first_t_over_tcc": 0.0,
+          "last_t_over_tcc": 5.0,
+          "equal_header_intervals_retained": 0,
+          "initial_dense_mass": 398.4896893072199,
+          "final_dense_fraction": 0.02154038901273626
+        }
+      },
+      "source_report": "analysis/report.json",
+      "source_sha256": "78839ce52a83cb295c61a0f8a772819f53c24915d38f34a41e5ea213ed2a396d",
+      "source_caveats_verbatim": [
+        "Only velocity changes within each code pair; tracer and native axis differ between codes.",
+        "L3/L4 have 3.2/6.4 cells per R: density/velocity edge behavior is underresolved and requires finer confirmation.",
+        "Finite box and tracer loss can contribute to late-time differences.",
+        "No claim of negligible impact, convergence, all-code comparability or suitability for a paper based on this pilot alone.",
+        "Existing historical runs still require individual provenance checks before reuse."
+      ],
+      "reuse_decision": "undecided; within-code sensitivity evidence only"
+    },
+    {
+      "code_id": "athw",
+      "code": "Athena 4.2",
+      "level": 3,
+      "dimensions_streamwise": [
+        64,
+        32,
+        32
+      ],
+      "resolution_meaning": "grid dimensions",
+      "initial_elements_per_cloud_radius": 3.2,
+      "chi": 100,
+      "mach": 2,
+      "historical_velocity_law": "tanh velocity at 1.3R",
+      "sharp_velocity_law": "zero through 1.3R; constant wind outside",
+      "peak_dense_mass_separation_fraction": 0.13085415671763675,
+      "peak_dense_mass_separation_percent": 13.085415671763675,
+      "metric_source_json_pointer": "/pairs/0/max_abs_curve_delta_over_initial_mass",
+      "metric_method_verbatim": "Within-code pairs; only velocity_ic_tanh changes. Dense rho>rho_cloud_initial/3. Fixed native M_dense(0). Curves plotted at actual times; scalar curve separation interpolated onto 0:0.05:5 t_cc.",
+      "variants": {
+        "sharp": {
+          "source_json_pointer": "/series/L3_chi100_sharp13",
+          "native_states": 101,
+          "first_t_over_tcc": 0.0,
+          "last_t_over_tcc": 5.000000844042596,
+          "equal_header_intervals_retained": 0,
+          "initial_dense_mass": 409.90798361599445,
+          "final_dense_fraction": 0.0
+        },
+        "historical": {
+          "source_json_pointer": "/series/L3_chi100_tanh13",
+          "native_states": 101,
+          "first_t_over_tcc": 0.0,
+          "last_t_over_tcc": 5.000000844042596,
+          "equal_header_intervals_retained": 0,
+          "initial_dense_mass": 409.90798361599445,
+          "final_dense_fraction": 0.0
+        }
+      },
+      "source_report": "athw/report.json",
+      "source_sha256": "39e3c1551f121c3dd43ae7fb68f93f829b8f2436d00ffa752d6a0905c0441803",
+      "source_caveats_verbatim": [
+        "Three finite resolutions do not establish a universal reuse decision or convergence.",
+        "Net tracer retention is not proof that no material crossed a boundary.",
+        "Native VTK is float32; density/tracer equality is checked at this native precision.",
+        "Tracer concentration is chi*f/rho in Athena 4.2, unlike the other codes; interpret within-code pairs."
+      ],
+      "reuse_decision": "undecided; within-code sensitivity evidence only"
+    },
+    {
+      "code_id": "athw",
+      "code": "Athena 4.2",
+      "level": 4,
+      "dimensions_streamwise": [
+        128,
+        64,
+        64
+      ],
+      "resolution_meaning": "grid dimensions",
+      "initial_elements_per_cloud_radius": 6.4,
+      "chi": 100,
+      "mach": 2,
+      "historical_velocity_law": "tanh velocity at 1.3R",
+      "sharp_velocity_law": "zero through 1.3R; constant wind outside",
+      "peak_dense_mass_separation_fraction": 0.07590570994055601,
+      "peak_dense_mass_separation_percent": 7.590570994055601,
+      "metric_source_json_pointer": "/pairs/1/max_abs_curve_delta_over_initial_mass",
+      "metric_method_verbatim": "Within-code pairs; only velocity_ic_tanh changes. Dense rho>rho_cloud_initial/3. Fixed native M_dense(0). Curves plotted at actual times; scalar curve separation interpolated onto 0:0.05:5 t_cc.",
+      "variants": {
+        "sharp": {
+          "source_json_pointer": "/series/L4_chi100_sharp13",
+          "native_states": 101,
+          "first_t_over_tcc": 0.0,
+          "last_t_over_tcc": 5.000000844042596,
+          "equal_header_intervals_retained": 0,
+          "initial_dense_mass": 398.48968671867624,
+          "final_dense_fraction": 0.0
+        },
+        "historical": {
+          "source_json_pointer": "/series/L4_chi100_tanh13",
+          "native_states": 101,
+          "first_t_over_tcc": 0.0,
+          "last_t_over_tcc": 5.000000844042596,
+          "equal_header_intervals_retained": 0,
+          "initial_dense_mass": 398.48968671867624,
+          "final_dense_fraction": 0.0
+        }
+      },
+      "source_report": "athw/report.json",
+      "source_sha256": "39e3c1551f121c3dd43ae7fb68f93f829b8f2436d00ffa752d6a0905c0441803",
+      "source_caveats_verbatim": [
+        "Three finite resolutions do not establish a universal reuse decision or convergence.",
+        "Net tracer retention is not proof that no material crossed a boundary.",
+        "Native VTK is float32; density/tracer equality is checked at this native precision.",
+        "Tracer concentration is chi*f/rho in Athena 4.2, unlike the other codes; interpret within-code pairs."
+      ],
+      "reuse_decision": "undecided; within-code sensitivity evidence only"
+    },
+    {
+      "code_id": "athw",
+      "code": "Athena 4.2",
+      "level": 5,
+      "dimensions_streamwise": [
+        256,
+        128,
+        128
+      ],
+      "resolution_meaning": "grid dimensions",
+      "initial_elements_per_cloud_radius": 12.8,
+      "chi": 100,
+      "mach": 2,
+      "historical_velocity_law": "tanh velocity at 1.3R",
+      "sharp_velocity_law": "zero through 1.3R; constant wind outside",
+      "peak_dense_mass_separation_fraction": 0.08695128377191197,
+      "peak_dense_mass_separation_percent": 8.695128377191196,
+      "metric_source_json_pointer": "/pairs/2/max_abs_curve_delta_over_initial_mass",
+      "metric_method_verbatim": "Within-code pairs; only velocity_ic_tanh changes. Dense rho>rho_cloud_initial/3. Fixed native M_dense(0). Curves plotted at actual times; scalar curve separation interpolated onto 0:0.05:5 t_cc.",
+      "variants": {
+        "sharp": {
+          "source_json_pointer": "/series/L5_chi100_sharp13",
+          "native_states": 101,
+          "first_t_over_tcc": 0.0,
+          "last_t_over_tcc": 5.000000844042596,
+          "equal_header_intervals_retained": 0,
+          "initial_dense_mass": 399.9689407792175,
+          "final_dense_fraction": 0.1855138454063114
+        },
+        "historical": {
+          "source_json_pointer": "/series/L5_chi100_tanh13",
+          "native_states": 101,
+          "first_t_over_tcc": 0.0,
+          "last_t_over_tcc": 5.000000844042596,
+          "equal_header_intervals_retained": 0,
+          "initial_dense_mass": 399.9689407792175,
+          "final_dense_fraction": 0.20676297942930974
+        }
+      },
+      "source_report": "athw/report.json",
+      "source_sha256": "39e3c1551f121c3dd43ae7fb68f93f829b8f2436d00ffa752d6a0905c0441803",
+      "source_caveats_verbatim": [
+        "Three finite resolutions do not establish a universal reuse decision or convergence.",
+        "Net tracer retention is not proof that no material crossed a boundary.",
+        "Native VTK is float32; density/tracer equality is checked at this native precision.",
+        "Tracer concentration is chi*f/rho in Athena 4.2, unlike the other codes; interpret within-code pairs."
+      ],
+      "reuse_decision": "undecided; within-code sensitivity evidence only"
+    },
+    {
+      "code_id": "enzo",
+      "code": "Enzo",
+      "level": 3,
+      "dimensions_streamwise": [
+        64,
+        32,
+        32
+      ],
+      "resolution_meaning": "grid dimensions",
+      "initial_elements_per_cloud_radius": 3.2,
+      "chi": 100,
+      "mach": 2,
+      "historical_velocity_law": "tanh velocity at 1.3R",
+      "sharp_velocity_law": "zero through 1.3R; constant wind outside",
+      "peak_dense_mass_separation_fraction": 0.23355975801587053,
+      "peak_dense_mass_separation_percent": 23.355975801587054,
+      "metric_source_json_pointer": "/pairs/0/max_abs_curve_delta_over_initial_mass",
+      "metric_method_verbatim": "rho>rho_cloud_initial/3, fixed native initial dense mass. Actual native times plotted. Curve separation linearly interpolates scalar diagnostics to 0:0.05:5 t_cc only.",
+      "variants": {
+        "sharp": {
+          "source_json_pointer": "/series/L3_chi100_sharp13",
+          "native_states": 102,
+          "first_t_over_tcc": 0.0,
+          "last_t_over_tcc": 4.999999999999978,
+          "equal_header_intervals_retained": 0,
+          "initial_dense_mass": 409.9079855231985,
+          "final_dense_fraction": 0.01025247705207361
+        },
+        "historical": {
+          "source_json_pointer": "/series/L3_chi100_tanh13",
+          "native_states": 102,
+          "first_t_over_tcc": 0.0,
+          "last_t_over_tcc": 4.999999999999978,
+          "equal_header_intervals_retained": 0,
+          "initial_dense_mass": 409.9079855231985,
+          "final_dense_fraction": 0.10608490919136075
+        }
+      },
+      "source_report": "enzo/report.json",
+      "source_sha256": "47a8bf75d24c68d671b788ed2b06cab40e71bdbf3a6ba0dc63f1755871834571",
+      "source_caveats_verbatim": [
+        "L3/L4 only; L5 pair storage-held, no convergence or universal historical reuse decision.",
+        "All 102 actual native times per run are retained, including the extra terminal dump.",
+        "Tracer loss means t=5 is not a certified all-material-retained figure time.",
+        "Full native fields remain on disk; derived figures are not raw backups."
+      ],
+      "reuse_decision": "undecided; within-code sensitivity evidence only"
+    },
+    {
+      "code_id": "enzo",
+      "code": "Enzo",
+      "level": 4,
+      "dimensions_streamwise": [
+        128,
+        64,
+        64
+      ],
+      "resolution_meaning": "grid dimensions",
+      "initial_elements_per_cloud_radius": 6.4,
+      "chi": 100,
+      "mach": 2,
+      "historical_velocity_law": "tanh velocity at 1.3R",
+      "sharp_velocity_law": "zero through 1.3R; constant wind outside",
+      "peak_dense_mass_separation_fraction": 0.032358298629999616,
+      "peak_dense_mass_separation_percent": 3.2358298629999616,
+      "metric_source_json_pointer": "/pairs/1/max_abs_curve_delta_over_initial_mass",
+      "metric_method_verbatim": "rho>rho_cloud_initial/3, fixed native initial dense mass. Actual native times plotted. Curve separation linearly interpolates scalar diagnostics to 0:0.05:5 t_cc only.",
+      "variants": {
+        "sharp": {
+          "source_json_pointer": "/series/L4_chi100_sharp13",
+          "native_states": 102,
+          "first_t_over_tcc": 0.0,
+          "last_t_over_tcc": 4.999999999999978,
+          "equal_header_intervals_retained": 0,
+          "initial_dense_mass": 398.4896893072199,
+          "final_dense_fraction": 0.2819267474192508
+        },
+        "historical": {
+          "source_json_pointer": "/series/L4_chi100_tanh13",
+          "native_states": 102,
+          "first_t_over_tcc": 0.0,
+          "last_t_over_tcc": 4.999999999999978,
+          "equal_header_intervals_retained": 0,
+          "initial_dense_mass": 398.4896893072199,
+          "final_dense_fraction": 0.26093476439896457
+        }
+      },
+      "source_report": "enzo/report.json",
+      "source_sha256": "47a8bf75d24c68d671b788ed2b06cab40e71bdbf3a6ba0dc63f1755871834571",
+      "source_caveats_verbatim": [
+        "L3/L4 only; L5 pair storage-held, no convergence or universal historical reuse decision.",
+        "All 102 actual native times per run are retained, including the extra terminal dump.",
+        "Tracer loss means t=5 is not a certified all-material-retained figure time.",
+        "Full native fields remain on disk; derived figures are not raw backups."
+      ],
+      "reuse_decision": "undecided; within-code sensitivity evidence only"
+    },
+    {
+      "code_id": "enzoe",
+      "code": "Enzo-E",
+      "level": 3,
+      "dimensions_streamwise": [
+        64,
+        32,
+        32
+      ],
+      "resolution_meaning": "grid dimensions",
+      "initial_elements_per_cloud_radius": 3.2,
+      "chi": 100,
+      "mach": 2,
+      "historical_velocity_law": "tanh velocity at 1.3R",
+      "sharp_velocity_law": "zero through 1.3R; constant wind outside",
+      "peak_dense_mass_separation_fraction": 0.08211125572292438,
+      "peak_dense_mass_separation_percent": 8.211125572292438,
+      "metric_source_json_pointer": "/pairs/0/max_abs_curve_delta_over_initial_mass",
+      "metric_method_verbatim": "All 404 native snapshots; native active-cell mass sums with ghost cells excluded. Dense rho>rho_cloud_initial/3, fixed native initial denominator. Plot actual times; scalar difference linearly interpolated onto 0:0.05:5 t_cc.",
+      "variants": {
+        "sharp": {
+          "source_json_pointer": "/series/L3_chi100_sharp13",
+          "native_states": 101,
+          "first_t_over_tcc": 0.0,
+          "last_t_over_tcc": 5.0,
+          "equal_header_intervals_retained": 0,
+          "initial_dense_mass": 409.90798552319853,
+          "final_dense_fraction": 0.025923199072297752
+        },
+        "historical": {
+          "source_json_pointer": "/series/L3_chi100_tanh13",
+          "native_states": 101,
+          "first_t_over_tcc": 0.0,
+          "last_t_over_tcc": 5.0,
+          "equal_header_intervals_retained": 0,
+          "initial_dense_mass": 409.90798552319853,
+          "final_dense_fraction": 0.05222798857082185
+        }
+      },
+      "source_report": "enzoe/report.json",
+      "source_sha256": "0c524b12dbba6dfafda403a9eb3a2c7aacd7e2aaa79256cb80dc61aae8e6d0a6",
+      "source_caveats_verbatim": [
+        "No passive tracer in either native recipe; material retention is not measured.",
+        "L3/L4 only; L5 pair storage-held. No universal historical reuse or convergence decision.",
+        "Historical radial law from 2D input is tested spherically in the audited 3D setup."
+      ],
+      "reuse_decision": "undecided; within-code sensitivity evidence only"
+    },
+    {
+      "code_id": "enzoe",
+      "code": "Enzo-E",
+      "level": 4,
+      "dimensions_streamwise": [
+        128,
+        64,
+        64
+      ],
+      "resolution_meaning": "grid dimensions",
+      "initial_elements_per_cloud_radius": 6.4,
+      "chi": 100,
+      "mach": 2,
+      "historical_velocity_law": "tanh velocity at 1.3R",
+      "sharp_velocity_law": "zero through 1.3R; constant wind outside",
+      "peak_dense_mass_separation_fraction": 0.06347734607742855,
+      "peak_dense_mass_separation_percent": 6.347734607742855,
+      "metric_source_json_pointer": "/pairs/1/max_abs_curve_delta_over_initial_mass",
+      "metric_method_verbatim": "All 404 native snapshots; native active-cell mass sums with ghost cells excluded. Dense rho>rho_cloud_initial/3, fixed native initial denominator. Plot actual times; scalar difference linearly interpolated onto 0:0.05:5 t_cc.",
+      "variants": {
+        "sharp": {
+          "source_json_pointer": "/series/L4_chi100_sharp13",
+          "native_states": 101,
+          "first_t_over_tcc": 0.0,
+          "last_t_over_tcc": 5.0,
+          "equal_header_intervals_retained": 0,
+          "initial_dense_mass": 398.48968930722,
+          "final_dense_fraction": 0.16203393834167257
+        },
+        "historical": {
+          "source_json_pointer": "/series/L4_chi100_tanh13",
+          "native_states": 101,
+          "first_t_over_tcc": 0.0,
+          "last_t_over_tcc": 5.0,
+          "equal_header_intervals_retained": 0,
+          "initial_dense_mass": 398.48968930722,
+          "final_dense_fraction": 0.16628227643893914
+        }
+      },
+      "source_report": "enzoe/report.json",
+      "source_sha256": "0c524b12dbba6dfafda403a9eb3a2c7aacd7e2aaa79256cb80dc61aae8e6d0a6",
+      "source_caveats_verbatim": [
+        "No passive tracer in either native recipe; material retention is not measured.",
+        "L3/L4 only; L5 pair storage-held. No universal historical reuse or convergence decision.",
+        "Historical radial law from 2D input is tested spherically in the audited 3D setup."
+      ],
+      "reuse_decision": "undecided; within-code sensitivity evidence only"
+    },
+    {
+      "code_id": "ramses",
+      "code": "RAMSES",
+      "level": 3,
+      "dimensions_streamwise": [
+        64,
+        32,
+        32
+      ],
+      "resolution_meaning": "grid dimensions",
+      "initial_elements_per_cloud_radius": 3.2,
+      "chi": 100,
+      "mach": 2,
+      "historical_velocity_law": "tanh velocity at 1.3R",
+      "sharp_velocity_law": "zero through 1.3R; constant wind outside",
+      "peak_dense_mass_separation_fraction": 0.07470701531716675,
+      "peak_dense_mass_separation_percent": 7.470701531716675,
+      "metric_source_json_pointer": "/pairs/0/max_abs_curve_delta_over_initial_mass",
+      "metric_method_verbatim": "All actual native leaf-cell outputs; rho>rho_cloud_initial/3 with a fixed measured initial denominator. Plot native times unchanged. Only scalar curve separation uses linear interpolation to 0:0.05:5 t_cc.",
+      "variants": {
+        "sharp": {
+          "source_json_pointer": "/series/L3_chi100_sharp13",
+          "native_states": 101,
+          "first_t_over_tcc": 0.0,
+          "last_t_over_tcc": 5.00421748553318,
+          "equal_header_intervals_retained": 0,
+          "initial_dense_mass": 409.9079855231984,
+          "final_dense_fraction": 0.0
+        },
+        "historical": {
+          "source_json_pointer": "/series/L3_chi100_tanh13",
+          "native_states": 101,
+          "first_t_over_tcc": 0.0,
+          "last_t_over_tcc": 5.002047526794947,
+          "equal_header_intervals_retained": 0,
+          "initial_dense_mass": 409.9079855231984,
+          "final_dense_fraction": 0.0
+        }
+      },
+      "source_report": "ramses/report.json",
+      "source_sha256": "9d83898b6ab2952c9b3aec8bbaa7aa25cb5e82ccd4e74bf6924e9007c1069664",
+      "source_caveats_verbatim": [
+        "L3/L4 are coarse within-code controls, not convergence or a universal reuse decision.",
+        "Native timestep-crossing output times can be slightly later than nominal times; no snapshots were retimed.",
+        "Tracer retention is measured, not assumed. Final images need not retain all initial material.",
+        "The second aggregation shares the native record decoder; stock yt does not support this rectangular patch correctly.",
+        "L5 depends on full raw-retention storage. No raw files have been deleted."
+      ],
+      "reuse_decision": "undecided; within-code sensitivity evidence only"
+    },
+    {
+      "code_id": "ramses",
+      "code": "RAMSES",
+      "level": 4,
+      "dimensions_streamwise": [
+        128,
+        64,
+        64
+      ],
+      "resolution_meaning": "grid dimensions",
+      "initial_elements_per_cloud_radius": 6.4,
+      "chi": 100,
+      "mach": 2,
+      "historical_velocity_law": "tanh velocity at 1.3R",
+      "sharp_velocity_law": "zero through 1.3R; constant wind outside",
+      "peak_dense_mass_separation_fraction": 0.04179300178052775,
+      "peak_dense_mass_separation_percent": 4.179300178052775,
+      "metric_source_json_pointer": "/pairs/1/max_abs_curve_delta_over_initial_mass",
+      "metric_method_verbatim": "All actual native leaf-cell outputs; rho>rho_cloud_initial/3 with a fixed measured initial denominator. Plot native times unchanged. Only scalar curve separation uses linear interpolation to 0:0.05:5 t_cc.",
+      "variants": {
+        "sharp": {
+          "source_json_pointer": "/series/L4_chi100_sharp13",
+          "native_states": 101,
+          "first_t_over_tcc": 0.0,
+          "last_t_over_tcc": 5.000312394219631,
+          "equal_header_intervals_retained": 0,
+          "initial_dense_mass": 398.4896893072199,
+          "final_dense_fraction": 0.0
+        },
+        "historical": {
+          "source_json_pointer": "/series/L4_chi100_tanh13",
+          "native_states": 101,
+          "first_t_over_tcc": 0.0,
+          "last_t_over_tcc": 5.001765679255874,
+          "equal_header_intervals_retained": 0,
+          "initial_dense_mass": 398.4896893072199,
+          "final_dense_fraction": 0.0
+        }
+      },
+      "source_report": "ramses/report.json",
+      "source_sha256": "9d83898b6ab2952c9b3aec8bbaa7aa25cb5e82ccd4e74bf6924e9007c1069664",
+      "source_caveats_verbatim": [
+        "L3/L4 are coarse within-code controls, not convergence or a universal reuse decision.",
+        "Native timestep-crossing output times can be slightly later than nominal times; no snapshots were retimed.",
+        "Tracer retention is measured, not assumed. Final images need not retain all initial material.",
+        "The second aggregation shares the native record decoder; stock yt does not support this rectangular patch correctly.",
+        "L5 depends on full raw-retention storage. No raw files have been deleted."
+      ],
+      "reuse_decision": "undecided; within-code sensitivity evidence only"
+    },
+    {
+      "code_id": "flash",
+      "code": "FLASH 4.8",
+      "level": 3,
+      "dimensions_streamwise": [
+        64,
+        32,
+        32
+      ],
+      "resolution_meaning": "grid dimensions",
+      "initial_elements_per_cloud_radius": 3.2,
+      "chi": 100,
+      "mach": 2,
+      "historical_velocity_law": "tanh velocity at 1.3R",
+      "sharp_velocity_law": "zero through 1.3R; constant wind outside",
+      "peak_dense_mass_separation_fraction": 0.1036965767665376,
+      "peak_dense_mass_separation_percent": 10.369657676653759,
+      "metric_source_json_pointer": "/pairs/0/max_abs_curve_delta_over_initial_mass",
+      "metric_method_verbatim": "Full float64 checkpoint leaf-cell sums checked independently with yt. Density threshold rho>rho_cloud_initial/3 and fixed measured initial denominator. Plot native times. Only scalar difference interpolates to 0:0.05:5 t_cc.",
+      "variants": {
+        "sharp": {
+          "source_json_pointer": "/series/L3_chi100_sharp13",
+          "native_states": 101,
+          "first_t_over_tcc": 0.0,
+          "last_t_over_tcc": 5.001615851945098,
+          "equal_header_intervals_retained": 0,
+          "initial_dense_mass": 0.4099079855231985,
+          "final_dense_fraction": 0.0
+        },
+        "historical": {
+          "source_json_pointer": "/series/L3_chi100_tanh13",
+          "native_states": 101,
+          "first_t_over_tcc": 0.0,
+          "last_t_over_tcc": 5.003904520399533,
+          "equal_header_intervals_retained": 0,
+          "initial_dense_mass": 0.4099079855231985,
+          "final_dense_fraction": 0.0
+        }
+      },
+      "source_report": "flash/report.json",
+      "source_sha256": "8c9b29abd130e39e26c81db04f8eb88a5f99acf08bacb4cdfb0f67c311be60c0",
+      "source_caveats_verbatim": [
+        "No passive tracer in the native FLASH recipe; no tracer-based material retention claim.",
+        "Full checkpoints now saved at every plot time, without checkpoint overwriting; all original plotfields/precision retained.",
+        "L3/L4 are coarse controls, not convergence or a universal historical reuse decision.",
+        "All actual native times retained. Extra same-time forced outputs remain in the raw directory and are listed separately."
+      ],
+      "reuse_decision": "undecided; within-code sensitivity evidence only"
+    },
+    {
+      "code_id": "flash",
+      "code": "FLASH 4.8",
+      "level": 4,
+      "dimensions_streamwise": [
+        128,
+        64,
+        64
+      ],
+      "resolution_meaning": "grid dimensions",
+      "initial_elements_per_cloud_radius": 6.4,
+      "chi": 100,
+      "mach": 2,
+      "historical_velocity_law": "tanh velocity at 1.3R",
+      "sharp_velocity_law": "zero through 1.3R; constant wind outside",
+      "peak_dense_mass_separation_fraction": 0.06165459072601159,
+      "peak_dense_mass_separation_percent": 6.165459072601159,
+      "metric_source_json_pointer": "/pairs/1/max_abs_curve_delta_over_initial_mass",
+      "metric_method_verbatim": "Full float64 checkpoint leaf-cell sums checked independently with yt. Density threshold rho>rho_cloud_initial/3 and fixed measured initial denominator. Plot native times. Only scalar difference interpolates to 0:0.05:5 t_cc.",
+      "variants": {
+        "sharp": {
+          "source_json_pointer": "/series/L4_chi100_sharp13",
+          "native_states": 101,
+          "first_t_over_tcc": 0.0,
+          "last_t_over_tcc": 5.003083394356716,
+          "equal_header_intervals_retained": 0,
+          "initial_dense_mass": 0.39848968930721995,
+          "final_dense_fraction": 0.04027347010208681
+        },
+        "historical": {
+          "source_json_pointer": "/series/L4_chi100_tanh13",
+          "native_states": 101,
+          "first_t_over_tcc": 0.0,
+          "last_t_over_tcc": 5.001929171075189,
+          "equal_header_intervals_retained": 0,
+          "initial_dense_mass": 0.39848968930721995,
+          "final_dense_fraction": 0.05483555054476115
+        }
+      },
+      "source_report": "flash/report.json",
+      "source_sha256": "8c9b29abd130e39e26c81db04f8eb88a5f99acf08bacb4cdfb0f67c311be60c0",
+      "source_caveats_verbatim": [
+        "No passive tracer in the native FLASH recipe; no tracer-based material retention claim.",
+        "Full checkpoints now saved at every plot time, without checkpoint overwriting; all original plotfields/precision retained.",
+        "L3/L4 are coarse controls, not convergence or a universal historical reuse decision.",
+        "All actual native times retained. Extra same-time forced outputs remain in the raw directory and are listed separately."
+      ],
+      "reuse_decision": "undecided; within-code sensitivity evidence only"
+    },
+    {
+      "code_id": "flashx",
+      "code": "Flash-X",
+      "level": 3,
+      "dimensions_streamwise": [
+        64,
+        32,
+        32
+      ],
+      "resolution_meaning": "grid dimensions",
+      "initial_elements_per_cloud_radius": 3.2,
+      "chi": 100,
+      "mach": 2,
+      "historical_velocity_law": "tanh velocity at 1.3R",
+      "sharp_velocity_law": "zero through 1.3R; constant wind outside",
+      "peak_dense_mass_separation_fraction": 0.10132949391437712,
+      "peak_dense_mass_separation_percent": 10.132949391437712,
+      "metric_source_json_pointer": "/pairs/0/max_abs_curve_delta_over_initial_mass",
+      "metric_method_verbatim": "Full float64 checkpoint leaf-cell sums checked independently with yt. Density threshold rho>rho_cloud_initial/3 and fixed measured initial denominator. Plot native times. Only scalar difference interpolates to 0:0.05:5 t_cc.",
+      "variants": {
+        "sharp": {
+          "source_json_pointer": "/series/L3_chi100_sharp13",
+          "native_states": 101,
+          "first_t_over_tcc": 0.0,
+          "last_t_over_tcc": 5.000098662984559,
+          "equal_header_intervals_retained": 0,
+          "initial_dense_mass": 409.9079855231985,
+          "final_dense_fraction": 0.0
+        },
+        "historical": {
+          "source_json_pointer": "/series/L3_chi100_tanh13",
+          "native_states": 101,
+          "first_t_over_tcc": 0.0,
+          "last_t_over_tcc": 5.002504750800296,
+          "equal_header_intervals_retained": 0,
+          "initial_dense_mass": 409.9079855231985,
+          "final_dense_fraction": 0.0
+        }
+      },
+      "source_report": "flashx/report.json",
+      "source_sha256": "e63ef0c1ae9df8945f506a6703ae6a9236ed396f9d31114c346777a8f18b4c13",
+      "source_caveats_verbatim": [
+        "No passive tracer in the native Flash-X recipe; no tracer-based material retention claim.",
+        "Full checkpoints now saved at every plot time, without checkpoint overwriting; all original plotfields/precision retained.",
+        "L3/L4 are coarse controls, not convergence or a universal historical reuse decision.",
+        "All actual native times retained. Extra same-time forced outputs remain in the raw directory and are listed separately."
+      ],
+      "reuse_decision": "undecided; within-code sensitivity evidence only"
+    },
+    {
+      "code_id": "flashx",
+      "code": "Flash-X",
+      "level": 4,
+      "dimensions_streamwise": [
+        128,
+        64,
+        64
+      ],
+      "resolution_meaning": "grid dimensions",
+      "initial_elements_per_cloud_radius": 6.4,
+      "chi": 100,
+      "mach": 2,
+      "historical_velocity_law": "tanh velocity at 1.3R",
+      "sharp_velocity_law": "zero through 1.3R; constant wind outside",
+      "peak_dense_mass_separation_fraction": 0.06543024612133175,
+      "peak_dense_mass_separation_percent": 6.543024612133175,
+      "metric_source_json_pointer": "/pairs/1/max_abs_curve_delta_over_initial_mass",
+      "metric_method_verbatim": "Full float64 checkpoint leaf-cell sums checked independently with yt. Density threshold rho>rho_cloud_initial/3 and fixed measured initial denominator. Plot native times. Only scalar difference interpolates to 0:0.05:5 t_cc.",
+      "variants": {
+        "sharp": {
+          "source_json_pointer": "/series/L4_chi100_sharp13",
+          "native_states": 101,
+          "first_t_over_tcc": 0.0,
+          "last_t_over_tcc": 5.00293912156378,
+          "equal_header_intervals_retained": 0,
+          "initial_dense_mass": 398.4896893072199,
+          "final_dense_fraction": 0.03488354120591474
+        },
+        "historical": {
+          "source_json_pointer": "/series/L4_chi100_tanh13",
+          "native_states": 101,
+          "first_t_over_tcc": 0.0,
+          "last_t_over_tcc": 5.000047318429542,
+          "equal_header_intervals_retained": 0,
+          "initial_dense_mass": 398.4896893072199,
+          "final_dense_fraction": 0.058855299305912566
+        }
+      },
+      "source_report": "flashx/report.json",
+      "source_sha256": "e63ef0c1ae9df8945f506a6703ae6a9236ed396f9d31114c346777a8f18b4c13",
+      "source_caveats_verbatim": [
+        "No passive tracer in the native Flash-X recipe; no tracer-based material retention claim.",
+        "Full checkpoints now saved at every plot time, without checkpoint overwriting; all original plotfields/precision retained.",
+        "L3/L4 are coarse controls, not convergence or a universal historical reuse decision.",
+        "All actual native times retained. Extra same-time forced outputs remain in the raw directory and are listed separately."
+      ],
+      "reuse_decision": "undecided; within-code sensitivity evidence only"
+    },
+    {
+      "code_id": "arepo",
+      "code": "Arepo",
+      "level": 3,
+      "dimensions_streamwise": [
+        64,
+        32,
+        32
+      ],
+      "resolution_meaning": "initial lattice, not fixed evolved resolution",
+      "initial_elements_per_cloud_radius": 3.2,
+      "chi": 100,
+      "mach": 2,
+      "historical_velocity_law": "tanh velocity at 1.3R",
+      "sharp_velocity_law": "zero through 1.3R; constant wind outside",
+      "peak_dense_mass_separation_fraction": 0.028113026320798484,
+      "peak_dense_mass_separation_percent": 2.8113026320798484,
+      "metric_source_json_pointer": "/pairs/0/peak_curve_difference_over_initial_mass",
+      "metric_method_verbatim": "Native density threshold rho>rho_cloud_initial/3, fixed native initial mass denominator. Native times plotted. Scalar peak difference interpolated to 0:0.05:5 t_cc. Independent yt Arepo native particle sums with explicit rectangular bounds.",
+      "variants": {
+        "sharp": {
+          "source_json_pointer": "/series/L3_chi100_sharp13",
+          "native_states": 101,
+          "first_t_over_tcc": 0.0,
+          "last_t_over_tcc": 5.0,
+          "equal_header_intervals_retained": 0,
+          "initial_dense_mass": 405.6474499542853,
+          "final_dense_fraction": 0.3248926399585576
+        },
+        "historical": {
+          "source_json_pointer": "/series/L3_chi100_tanh13",
+          "native_states": 101,
+          "first_t_over_tcc": 0.0,
+          "last_t_over_tcc": 5.0,
+          "equal_header_intervals_retained": 0,
+          "initial_dense_mass": 405.6474499542853,
+          "final_dense_fraction": 0.3263755983038335
+        }
+      },
+      "source_report": "arepo/report.json",
+      "source_sha256": "7c74f7b5cff0306cba9f724941a2513dc76485a3eade6d6a1714b6cd81e49fce",
+      "source_caveats_verbatim": [
+        "Periodic streamwise boundary retained, not matched to grid-code inflow/outflow. Tracer can recirculate; in-box mass is not proof it never crossed a boundary.",
+        "Original jittered lattice gives native Voronoi density and pressure perturbations; report their measured magnitude. These are identical within each initial pair.",
+        "Initial lattice level is not a fixed later moving-mesh resolution. Coarse tests do not certify convergence or a universal reuse decision.",
+        "All native snapshots, restart files and failed smoke attempts retained. No cooling or frame tracking enabled."
+      ],
+      "reuse_decision": "undecided; within-code sensitivity evidence only"
+    },
+    {
+      "code_id": "arepo",
+      "code": "Arepo",
+      "level": 4,
+      "dimensions_streamwise": [
+        128,
+        64,
+        64
+      ],
+      "resolution_meaning": "initial lattice, not fixed evolved resolution",
+      "initial_elements_per_cloud_radius": 6.4,
+      "chi": 100,
+      "mach": 2,
+      "historical_velocity_law": "tanh velocity at 1.3R",
+      "sharp_velocity_law": "zero through 1.3R; constant wind outside",
+      "peak_dense_mass_separation_fraction": 0.026992787108330973,
+      "peak_dense_mass_separation_percent": 2.6992787108330973,
+      "metric_source_json_pointer": "/pairs/1/peak_curve_difference_over_initial_mass",
+      "metric_method_verbatim": "Native density threshold rho>rho_cloud_initial/3, fixed native initial mass denominator. Native times plotted. Scalar peak difference interpolated to 0:0.05:5 t_cc. Independent yt Arepo native particle sums with explicit rectangular bounds.",
+      "variants": {
+        "sharp": {
+          "source_json_pointer": "/series/L4_chi100_sharp13",
+          "native_states": 101,
+          "first_t_over_tcc": 0.0,
+          "last_t_over_tcc": 5.0,
+          "equal_header_intervals_retained": 0,
+          "initial_dense_mass": 398.4557714129187,
+          "final_dense_fraction": 0.5426912574375778
+        },
+        "historical": {
+          "source_json_pointer": "/series/L4_chi100_tanh13",
+          "native_states": 101,
+          "first_t_over_tcc": 0.0,
+          "last_t_over_tcc": 5.0,
+          "equal_header_intervals_retained": 0,
+          "initial_dense_mass": 398.4557714129187,
+          "final_dense_fraction": 0.540331634891013
+        }
+      },
+      "source_report": "arepo/report.json",
+      "source_sha256": "7c74f7b5cff0306cba9f724941a2513dc76485a3eade6d6a1714b6cd81e49fce",
+      "source_caveats_verbatim": [
+        "Periodic streamwise boundary retained, not matched to grid-code inflow/outflow. Tracer can recirculate; in-box mass is not proof it never crossed a boundary.",
+        "Original jittered lattice gives native Voronoi density and pressure perturbations; report their measured magnitude. These are identical within each initial pair.",
+        "Initial lattice level is not a fixed later moving-mesh resolution. Coarse tests do not certify convergence or a universal reuse decision.",
+        "All native snapshots, restart files and failed smoke attempts retained. No cooling or frame tracking enabled."
+      ],
+      "reuse_decision": "undecided; within-code sensitivity evidence only"
+    },
+    {
+      "code_id": "mfm",
+      "code": "GIZMO MFM",
+      "level": 3,
+      "dimensions_streamwise": [
+        64,
+        32,
+        32
+      ],
+      "resolution_meaning": "initial lattice, not fixed evolved resolution",
+      "initial_elements_per_cloud_radius": 3.2,
+      "chi": 100,
+      "mach": 2,
+      "historical_velocity_law": "tanh velocity at 1.3R",
+      "sharp_velocity_law": "zero through 1.3R; constant wind outside",
+      "peak_dense_mass_separation_fraction": 0.039790264893005745,
+      "peak_dense_mass_separation_percent": 3.9790264893005745,
+      "metric_source_json_pointer": "/levels/0/peak_curve_difference_over_initial_mass",
+      "metric_method_verbatim": "rho > rho_cloud_initial/3; same measured initial dense mass within each pair. Each resolution has its own measured initial denominator. Curves use every actual header time; scalar peak uses linear interpolation onto0:0.05:5 t_cc.",
+      "variants": {
+        "sharp": {
+          "source_json_pointer": "/cases/0/series",
+          "native_states": 101,
+          "first_t_over_tcc": 0.0,
+          "last_t_over_tcc": 5.0,
+          "equal_header_intervals_retained": 0,
+          "initial_dense_mass": 409.90798234939575,
+          "final_dense_fraction": 0.9711114042831532
+        },
+        "historical": {
+          "source_json_pointer": "/cases/1/series",
+          "native_states": 101,
+          "first_t_over_tcc": 0.0,
+          "last_t_over_tcc": 5.0,
+          "equal_header_intervals_retained": 0,
+          "initial_dense_mass": 409.90798234939575,
+          "final_dense_fraction": 0.9790995536622396
+        }
+      },
+      "source_report": "gizmo/mfm_levels_report.json",
+      "source_sha256": "d459ddc97aff60da485929c66e17750ace3f4ebff549ba54e910c0e99a54e294",
+      "source_caveats_verbatim": [
+        "Only two coarse levels (3.2/6.4 initial elements per cloud radius), not demonstrated convergence or universal historical reuse.",
+        "Original fully periodic boundaries and native kernel pressure/density deviations retained; not a matched grid inflow/outflow experiment.",
+        "No passive material tracer or all-material-retained terminal-image claim. Conserved output velocity remains staggered.",
+        "MFV L3 failures are excluded from this method-specific result and separately retained as failed controls.",
+        "No snapshots retimed, repeated, deleted or substituted; independent yt evidence covers every accepted native state."
+      ],
+      "reuse_decision": "undecided; within-code sensitivity evidence only"
+    },
+    {
+      "code_id": "mfm",
+      "code": "GIZMO MFM",
+      "level": 4,
+      "dimensions_streamwise": [
+        128,
+        64,
+        64
+      ],
+      "resolution_meaning": "initial lattice, not fixed evolved resolution",
+      "initial_elements_per_cloud_radius": 6.4,
+      "chi": 100,
+      "mach": 2,
+      "historical_velocity_law": "tanh velocity at 1.3R",
+      "sharp_velocity_law": "zero through 1.3R; constant wind outside",
+      "peak_dense_mass_separation_fraction": 0.009549717898155397,
+      "peak_dense_mass_separation_percent": 0.9549717898155397,
+      "metric_source_json_pointer": "/levels/1/peak_curve_difference_over_initial_mass",
+      "metric_method_verbatim": "rho > rho_cloud_initial/3; same measured initial dense mass within each pair. Each resolution has its own measured initial denominator. Curves use every actual header time; scalar peak uses linear interpolation onto0:0.05:5 t_cc.",
+      "variants": {
+        "sharp": {
+          "source_json_pointer": "/cases/2/series",
+          "native_states": 101,
+          "first_t_over_tcc": 0.0,
+          "last_t_over_tcc": 5.0,
+          "equal_header_intervals_retained": 0,
+          "initial_dense_mass": 398.4896878004074,
+          "final_dense_fraction": 0.9648637581767225
+        },
+        "historical": {
+          "source_json_pointer": "/cases/3/series",
+          "native_states": 101,
+          "first_t_over_tcc": 0.0,
+          "last_t_over_tcc": 5.0,
+          "equal_header_intervals_retained": 0,
+          "initial_dense_mass": 398.4896878004074,
+          "final_dense_fraction": 0.9695169435280928
+        }
+      },
+      "source_report": "gizmo/mfm_levels_report.json",
+      "source_sha256": "d459ddc97aff60da485929c66e17750ace3f4ebff549ba54e910c0e99a54e294",
+      "source_caveats_verbatim": [
+        "Only two coarse levels (3.2/6.4 initial elements per cloud radius), not demonstrated convergence or universal historical reuse.",
+        "Original fully periodic boundaries and native kernel pressure/density deviations retained; not a matched grid inflow/outflow experiment.",
+        "No passive material tracer or all-material-retained terminal-image claim. Conserved output velocity remains staggered.",
+        "MFV L3 failures are excluded from this method-specific result and separately retained as failed controls.",
+        "No snapshots retimed, repeated, deleted or substituted; independent yt evidence covers every accepted native state."
+      ],
+      "reuse_decision": "undecided; within-code sensitivity evidence only"
+    },
+    {
+      "code_id": "gadget4",
+      "code": "Gadget-4 SPH",
+      "level": 3,
+      "dimensions_streamwise": [
+        64,
+        32,
+        32
+      ],
+      "resolution_meaning": "initial lattice, not fixed evolved resolution",
+      "initial_elements_per_cloud_radius": 3.2,
+      "chi": 100,
+      "mach": 2,
+      "historical_velocity_law": "tanh velocity at 1.3R",
+      "sharp_velocity_law": "zero through 1.3R; constant wind outside",
+      "peak_dense_mass_separation_fraction": 0.06953827510535826,
+      "peak_dense_mass_separation_percent": 6.953827510535826,
+      "metric_source_json_pointer": "/metrics/peak_curve_difference_over_initial_mass",
+      "metric_method_verbatim": "rho > rho_cloud_initial/3. Fixed measured initial dense mass within pair. Plot uses every actual native time. Scalar peak is linearly interpolated onto0:.05:5tcc; no native frame interpolation.",
+      "variants": {
+        "sharp": {
+          "source_json_pointer": "/cases/0/series",
+          "native_states": 101,
+          "first_t_over_tcc": 0.0,
+          "last_t_over_tcc": 5.0,
+          "equal_header_intervals_retained": 0,
+          "initial_dense_mass": 409.90798234939575,
+          "final_dense_fraction": 0.5871764547957027
+        },
+        "historical": {
+          "source_json_pointer": "/cases/1/series",
+          "native_states": 101,
+          "first_t_over_tcc": 0.0,
+          "last_t_over_tcc": 5.0,
+          "equal_header_intervals_retained": 0,
+          "initial_dense_mass": 409.90798234939575,
+          "final_dense_fraction": 0.5967030097953462
+        }
+      },
+      "source_report": "gadget4/l3_report.json",
+      "source_sha256": "d6ed96d014d3f2c667c5276d15f81079fda9183401ffad11e413c22700387e22",
+      "source_caveats_verbatim": [
+        "Single coarse L3 (3.2elements/R), not resolution convergence, exact-solution error or a universal reuse decision.",
+        "Original periodic boundaries and SPH initial pressure up to3.9003x nominal retained identically in both controls; not a matched grid baseline.",
+        "Existing hfix smoothing-length seed patch retained, not a pristine upstream binary. No numerics or native data changed.",
+        "Native scheduled outputs round earlier or later; exact native scheduler reproduced, not timestamps rewritten.",
+        "ID-tagged in-box mass does not demonstrate no periodic boundary crossing. Evolved velocity-time diagnostics remain unvalidated."
+      ],
+      "reuse_decision": "undecided; within-code sensitivity evidence only"
+    },
+    {
+      "code_id": "mfv",
+      "code": "GIZMO MFV (repaired)",
+      "level": 3,
+      "dimensions_streamwise": [
+        64,
+        32,
+        32
+      ],
+      "resolution_meaning": "initial lattice, not fixed evolved resolution",
+      "initial_elements_per_cloud_radius": 3.2,
+      "chi": 100,
+      "mach": 2,
+      "historical_velocity_law": "tanh velocity at 1.3R",
+      "sharp_velocity_law": "zero through 1.3R; constant wind outside",
+      "peak_dense_mass_separation_fraction": 0.06437793485359761,
+      "peak_dense_mass_separation_percent": 6.4377934853597605,
+      "metric_source_json_pointer": "/mass_comparison/maximum_absolute_separation_fraction",
+      "metric_method_verbatim": "Native-time curves; peak uses explicit linear scalar interpolation onto0:0.05:5tcc. No3Dframe interpolation.",
+      "variants": {
+        "sharp": {
+          "source_json_pointer": "/sharp_outputs",
+          "native_states": 101,
+          "first_t_over_tcc": 0.0,
+          "last_t_over_tcc": 5.0,
+          "equal_header_intervals_retained": 0,
+          "initial_dense_mass": 409.90798234939575,
+          "final_dense_fraction": 0.25305623429788454
+        },
+        "historical": {
+          "source_json_pointer": "/historical_outputs",
+          "native_states": 101,
+          "first_t_over_tcc": 0.0,
+          "last_t_over_tcc": 5.0,
+          "equal_header_intervals_retained": 0,
+          "initial_dense_mass": 409.90798234939575,
+          "final_dense_fraction": 0.28771051509979456
+        }
+      },
+      "source_report": "gizmo/mfv_repaired_pair.json",
+      "source_sha256": "db45f9d985a4e8eb87b63f0247d1d5f61572acfaab5dad6f9272dfe36b0a017d",
+      "source_caveats_verbatim": [
+        "One coarse initial64x32x32 lattice; finer resolution not validated.",
+        "Old failed uninitialized-timestep MFV controls remain excluded.",
+        "Native velocities are staggered; no simultaneous velocity diagnostics.",
+        "Periodic boundaries and kernel-pressure deviations retained; no cross-code equality.",
+        "No passive material-retention diagnostic, cooling or frame tracking.",
+        "Validated analysis is not new production3Dviewer entries or a raw backup."
+      ],
+      "reuse_decision": "undecided; within-code sensitivity evidence only"
+    }
+  ],
+  "pending_L3_L4": [
+    {
+      "code": "Gadget-4 SPH",
+      "level": 4,
+      "controls": 2,
+      "hold": "Full-pair storage gate; proposed raw relocation not yet approved. Full runner still needs freezing and review. Existing L4 validation must not be repeated."
+    },
+    {
+      "code": "GIZMO MFV (repaired)",
+      "level": 4,
+      "controls": 2,
+      "hold": "Full-pair retention budget and L4 initial-condition/timing/repair validation remain pending."
+    },
+    {
+      "code": "Gasoline",
+      "level": 3,
+      "controls": 2,
+      "hold": "Scientific repeatability decision required; existing field-equivalence gate failed. Do not relax it or rerun completed traces."
+    },
+    {
+      "code": "Gasoline",
+      "level": 4,
+      "controls": 2,
+      "hold": "Same scientific hold as L3; same-executable sharp initial-condition validation and full runner remain pending."
+    }
+  ],
+  "pending_L3_L4_full_controls": 8,
+  "higher_levels": "Additional storage-held work, excluded from the eight pending L3/L4 controls.",
+  "verification_scope": "Report schema/count/time/normalization checks only. Earlier native validation is cited, not rerun. Raw files are not opened or modified.",
+  "extractor_sha256": "cf96a7dc5f377edf1c3e2d8e64a9addf9eaddf64eb545020b915451fa1537ef4"
+}

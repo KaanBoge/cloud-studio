@@ -2,6 +2,13 @@
 
 ## Update: 8 September 2026
 
+The [consolidated resolution summary](resolution_summary_v1/README.md) now
+compares all 23 accepted velocity-law pairs at fixed chi=100 and Mach=2.
+Its 46 controls contain 4,650 native analysis states. All 23 copied peak
+metrics were cross-checked against the existing scalar reports; no native
+experiment was repeated. It preserves each code's pressure, boundary and
+timing caveats and makes no blanket reuse or replacement decision.
+
 Forty-six full controls are now validated and analyzed: the eight pilot runs below, six
 native Athena 4.2 runs at L3/L4/L5, four Enzo runs at L3/L4, and four Enzo-E runs
 at L3/L4, plus four each for RAMSES, FLASH 4.8, Flash-X and Arepo at L3/L4,

@@ -1,0 +1,502 @@
+{
+  "status": "passed_report_only_checks",
+  "verified_at_utc": "2026-09-08T14:19:49.499504+00:00",
+  "unit_tests_passed": 12,
+  "code_level_pairs_crosschecked": 23,
+  "native_states_counted_from_stored_reports": 4650,
+  "new_native_runs": 0,
+  "summary_sha256": "806b7a696fec08d587e78fa9a0d2d3ba1e0fce202792a51410a99d262fd9cdcf",
+  "test_script_sha256": "77af8acf8f6ba49501e66cd8648f863e2906fb2a30a44cd51148a73a1e39a0d0",
+  "maximum_scalar_peak_recheck_difference": 1.1796119636642288e-15,
+  "checks": [
+    {
+      "code": "Athena++",
+      "level": 3,
+      "copied_metric_exact": true,
+      "scalar_peak_recheck": 0.08145337918675621,
+      "absolute_recheck_difference": 0.0,
+      "scalar_endpoint_handling": [
+        {
+          "law": "sharp",
+          "scalar_grid_queries_before_native_start": 0,
+          "scalar_grid_queries_after_native_end": 0,
+          "maximum_endpoint_distance_tcc": 0
+        },
+        {
+          "law": "historical",
+          "scalar_grid_queries_before_native_start": 0,
+          "scalar_grid_queries_after_native_end": 0,
+          "maximum_endpoint_distance_tcc": 0
+        }
+      ]
+    },
+    {
+      "code": "Athena++",
+      "level": 4,
+      "copied_metric_exact": true,
+      "scalar_peak_recheck": 0.06801225098361599,
+      "absolute_recheck_difference": 0.0,
+      "scalar_endpoint_handling": [
+        {
+          "law": "sharp",
+          "scalar_grid_queries_before_native_start": 0,
+          "scalar_grid_queries_after_native_end": 0,
+          "maximum_endpoint_distance_tcc": 0
+        },
+        {
+          "law": "historical",
+          "scalar_grid_queries_before_native_start": 0,
+          "scalar_grid_queries_after_native_end": 0,
+          "maximum_endpoint_distance_tcc": 0
+        }
+      ]
+    },
+    {
+      "code": "AthenaPK",
+      "level": 3,
+      "copied_metric_exact": true,
+      "scalar_peak_recheck": 0.05946971301162733,
+      "absolute_recheck_difference": 0.0,
+      "scalar_endpoint_handling": [
+        {
+          "law": "sharp",
+          "scalar_grid_queries_before_native_start": 0,
+          "scalar_grid_queries_after_native_end": 0,
+          "maximum_endpoint_distance_tcc": 0
+        },
+        {
+          "law": "historical",
+          "scalar_grid_queries_before_native_start": 0,
+          "scalar_grid_queries_after_native_end": 0,
+          "maximum_endpoint_distance_tcc": 0
+        }
+      ]
+    },
+    {
+      "code": "AthenaPK",
+      "level": 4,
+      "copied_metric_exact": true,
+      "scalar_peak_recheck": 0.011389665034214142,
+      "absolute_recheck_difference": 3.469446951953614e-18,
+      "scalar_endpoint_handling": [
+        {
+          "law": "sharp",
+          "scalar_grid_queries_before_native_start": 0,
+          "scalar_grid_queries_after_native_end": 0,
+          "maximum_endpoint_distance_tcc": 0
+        },
+        {
+          "law": "historical",
+          "scalar_grid_queries_before_native_start": 0,
+          "scalar_grid_queries_after_native_end": 0,
+          "maximum_endpoint_distance_tcc": 0
+        }
+      ]
+    },
+    {
+      "code": "Athena 4.2",
+      "level": 3,
+      "copied_metric_exact": true,
+      "scalar_peak_recheck": 0.13085415671763675,
+      "absolute_recheck_difference": 0.0,
+      "scalar_endpoint_handling": [
+        {
+          "law": "sharp",
+          "scalar_grid_queries_before_native_start": 0,
+          "scalar_grid_queries_after_native_end": 0,
+          "maximum_endpoint_distance_tcc": 0
+        },
+        {
+          "law": "historical",
+          "scalar_grid_queries_before_native_start": 0,
+          "scalar_grid_queries_after_native_end": 0,
+          "maximum_endpoint_distance_tcc": 0
+        }
+      ]
+    },
+    {
+      "code": "Athena 4.2",
+      "level": 4,
+      "copied_metric_exact": true,
+      "scalar_peak_recheck": 0.07590570994055601,
+      "absolute_recheck_difference": 0.0,
+      "scalar_endpoint_handling": [
+        {
+          "law": "sharp",
+          "scalar_grid_queries_before_native_start": 0,
+          "scalar_grid_queries_after_native_end": 0,
+          "maximum_endpoint_distance_tcc": 0
+        },
+        {
+          "law": "historical",
+          "scalar_grid_queries_before_native_start": 0,
+          "scalar_grid_queries_after_native_end": 0,
+          "maximum_endpoint_distance_tcc": 0
+        }
+      ]
+    },
+    {
+      "code": "Athena 4.2",
+      "level": 5,
+      "copied_metric_exact": true,
+      "scalar_peak_recheck": 0.08695128377191197,
+      "absolute_recheck_difference": 0.0,
+      "scalar_endpoint_handling": [
+        {
+          "law": "sharp",
+          "scalar_grid_queries_before_native_start": 0,
+          "scalar_grid_queries_after_native_end": 0,
+          "maximum_endpoint_distance_tcc": 0
+        },
+        {
+          "law": "historical",
+          "scalar_grid_queries_before_native_start": 0,
+          "scalar_grid_queries_after_native_end": 0,
+          "maximum_endpoint_distance_tcc": 0
+        }
+      ]
+    },
+    {
+      "code": "Enzo",
+      "level": 3,
+      "copied_metric_exact": true,
+      "scalar_peak_recheck": 0.23355975801587053,
+      "absolute_recheck_difference": 0.0,
+      "scalar_endpoint_handling": [
+        {
+          "law": "sharp",
+          "scalar_grid_queries_before_native_start": 0,
+          "scalar_grid_queries_after_native_end": 1,
+          "maximum_endpoint_distance_tcc": 2.220446049250313e-14
+        },
+        {
+          "law": "historical",
+          "scalar_grid_queries_before_native_start": 0,
+          "scalar_grid_queries_after_native_end": 1,
+          "maximum_endpoint_distance_tcc": 2.220446049250313e-14
+        }
+      ]
+    },
+    {
+      "code": "Enzo",
+      "level": 4,
+      "copied_metric_exact": true,
+      "scalar_peak_recheck": 0.032358298629999616,
+      "absolute_recheck_difference": 0.0,
+      "scalar_endpoint_handling": [
+        {
+          "law": "sharp",
+          "scalar_grid_queries_before_native_start": 0,
+          "scalar_grid_queries_after_native_end": 1,
+          "maximum_endpoint_distance_tcc": 2.220446049250313e-14
+        },
+        {
+          "law": "historical",
+          "scalar_grid_queries_before_native_start": 0,
+          "scalar_grid_queries_after_native_end": 1,
+          "maximum_endpoint_distance_tcc": 2.220446049250313e-14
+        }
+      ]
+    },
+    {
+      "code": "Enzo-E",
+      "level": 3,
+      "copied_metric_exact": true,
+      "scalar_peak_recheck": 0.08211125572292366,
+      "absolute_recheck_difference": 7.216449660063518e-16,
+      "scalar_endpoint_handling": [
+        {
+          "law": "sharp",
+          "scalar_grid_queries_before_native_start": 0,
+          "scalar_grid_queries_after_native_end": 0,
+          "maximum_endpoint_distance_tcc": 0
+        },
+        {
+          "law": "historical",
+          "scalar_grid_queries_before_native_start": 0,
+          "scalar_grid_queries_after_native_end": 0,
+          "maximum_endpoint_distance_tcc": 0
+        }
+      ]
+    },
+    {
+      "code": "Enzo-E",
+      "level": 4,
+      "copied_metric_exact": true,
+      "scalar_peak_recheck": 0.06347734607742855,
+      "absolute_recheck_difference": 0.0,
+      "scalar_endpoint_handling": [
+        {
+          "law": "sharp",
+          "scalar_grid_queries_before_native_start": 0,
+          "scalar_grid_queries_after_native_end": 0,
+          "maximum_endpoint_distance_tcc": 0
+        },
+        {
+          "law": "historical",
+          "scalar_grid_queries_before_native_start": 0,
+          "scalar_grid_queries_after_native_end": 0,
+          "maximum_endpoint_distance_tcc": 0
+        }
+      ]
+    },
+    {
+      "code": "RAMSES",
+      "level": 3,
+      "copied_metric_exact": true,
+      "scalar_peak_recheck": 0.07470701531716673,
+      "absolute_recheck_difference": 2.7755575615628914e-17,
+      "scalar_endpoint_handling": [
+        {
+          "law": "sharp",
+          "scalar_grid_queries_before_native_start": 0,
+          "scalar_grid_queries_after_native_end": 0,
+          "maximum_endpoint_distance_tcc": 0
+        },
+        {
+          "law": "historical",
+          "scalar_grid_queries_before_native_start": 0,
+          "scalar_grid_queries_after_native_end": 0,
+          "maximum_endpoint_distance_tcc": 0
+        }
+      ]
+    },
+    {
+      "code": "RAMSES",
+      "level": 4,
+      "copied_metric_exact": true,
+      "scalar_peak_recheck": 0.04179300178052775,
+      "absolute_recheck_difference": 0.0,
+      "scalar_endpoint_handling": [
+        {
+          "law": "sharp",
+          "scalar_grid_queries_before_native_start": 0,
+          "scalar_grid_queries_after_native_end": 0,
+          "maximum_endpoint_distance_tcc": 0
+        },
+        {
+          "law": "historical",
+          "scalar_grid_queries_before_native_start": 0,
+          "scalar_grid_queries_after_native_end": 0,
+          "maximum_endpoint_distance_tcc": 0
+        }
+      ]
+    },
+    {
+      "code": "FLASH 4.8",
+      "level": 3,
+      "copied_metric_exact": true,
+      "scalar_peak_recheck": 0.10369657676653642,
+      "absolute_recheck_difference": 1.1796119636642288e-15,
+      "scalar_endpoint_handling": [
+        {
+          "law": "sharp",
+          "scalar_grid_queries_before_native_start": 0,
+          "scalar_grid_queries_after_native_end": 0,
+          "maximum_endpoint_distance_tcc": 0
+        },
+        {
+          "law": "historical",
+          "scalar_grid_queries_before_native_start": 0,
+          "scalar_grid_queries_after_native_end": 0,
+          "maximum_endpoint_distance_tcc": 0
+        }
+      ]
+    },
+    {
+      "code": "FLASH 4.8",
+      "level": 4,
+      "copied_metric_exact": true,
+      "scalar_peak_recheck": 0.06165459072601137,
+      "absolute_recheck_difference": 2.220446049250313e-16,
+      "scalar_endpoint_handling": [
+        {
+          "law": "sharp",
+          "scalar_grid_queries_before_native_start": 0,
+          "scalar_grid_queries_after_native_end": 0,
+          "maximum_endpoint_distance_tcc": 0
+        },
+        {
+          "law": "historical",
+          "scalar_grid_queries_before_native_start": 0,
+          "scalar_grid_queries_after_native_end": 0,
+          "maximum_endpoint_distance_tcc": 0
+        }
+      ]
+    },
+    {
+      "code": "Flash-X",
+      "level": 3,
+      "copied_metric_exact": true,
+      "scalar_peak_recheck": 0.10132949391437712,
+      "absolute_recheck_difference": 0.0,
+      "scalar_endpoint_handling": [
+        {
+          "law": "sharp",
+          "scalar_grid_queries_before_native_start": 0,
+          "scalar_grid_queries_after_native_end": 0,
+          "maximum_endpoint_distance_tcc": 0
+        },
+        {
+          "law": "historical",
+          "scalar_grid_queries_before_native_start": 0,
+          "scalar_grid_queries_after_native_end": 0,
+          "maximum_endpoint_distance_tcc": 0
+        }
+      ]
+    },
+    {
+      "code": "Flash-X",
+      "level": 4,
+      "copied_metric_exact": true,
+      "scalar_peak_recheck": 0.06543024612133147,
+      "absolute_recheck_difference": 2.7755575615628914e-16,
+      "scalar_endpoint_handling": [
+        {
+          "law": "sharp",
+          "scalar_grid_queries_before_native_start": 0,
+          "scalar_grid_queries_after_native_end": 0,
+          "maximum_endpoint_distance_tcc": 0
+        },
+        {
+          "law": "historical",
+          "scalar_grid_queries_before_native_start": 0,
+          "scalar_grid_queries_after_native_end": 0,
+          "maximum_endpoint_distance_tcc": 0
+        }
+      ]
+    },
+    {
+      "code": "Arepo",
+      "level": 3,
+      "copied_metric_exact": true,
+      "scalar_peak_recheck": 0.028113026320798484,
+      "absolute_recheck_difference": 0.0,
+      "scalar_endpoint_handling": [
+        {
+          "law": "sharp",
+          "scalar_grid_queries_before_native_start": 0,
+          "scalar_grid_queries_after_native_end": 0,
+          "maximum_endpoint_distance_tcc": 0
+        },
+        {
+          "law": "historical",
+          "scalar_grid_queries_before_native_start": 0,
+          "scalar_grid_queries_after_native_end": 0,
+          "maximum_endpoint_distance_tcc": 0
+        }
+      ]
+    },
+    {
+      "code": "Arepo",
+      "level": 4,
+      "copied_metric_exact": true,
+      "scalar_peak_recheck": 0.026992787108330973,
+      "absolute_recheck_difference": 0.0,
+      "scalar_endpoint_handling": [
+        {
+          "law": "sharp",
+          "scalar_grid_queries_before_native_start": 0,
+          "scalar_grid_queries_after_native_end": 0,
+          "maximum_endpoint_distance_tcc": 0
+        },
+        {
+          "law": "historical",
+          "scalar_grid_queries_before_native_start": 0,
+          "scalar_grid_queries_after_native_end": 0,
+          "maximum_endpoint_distance_tcc": 0
+        }
+      ]
+    },
+    {
+      "code": "GIZMO MFM",
+      "level": 3,
+      "copied_metric_exact": true,
+      "scalar_peak_recheck": 0.039790264893005745,
+      "absolute_recheck_difference": 0.0,
+      "scalar_endpoint_handling": [
+        {
+          "law": "sharp",
+          "scalar_grid_queries_before_native_start": 0,
+          "scalar_grid_queries_after_native_end": 0,
+          "maximum_endpoint_distance_tcc": 0
+        },
+        {
+          "law": "historical",
+          "scalar_grid_queries_before_native_start": 0,
+          "scalar_grid_queries_after_native_end": 0,
+          "maximum_endpoint_distance_tcc": 0
+        }
+      ]
+    },
+    {
+      "code": "GIZMO MFM",
+      "level": 4,
+      "copied_metric_exact": true,
+      "scalar_peak_recheck": 0.009549717898155397,
+      "absolute_recheck_difference": 0.0,
+      "scalar_endpoint_handling": [
+        {
+          "law": "sharp",
+          "scalar_grid_queries_before_native_start": 0,
+          "scalar_grid_queries_after_native_end": 0,
+          "maximum_endpoint_distance_tcc": 0
+        },
+        {
+          "law": "historical",
+          "scalar_grid_queries_before_native_start": 0,
+          "scalar_grid_queries_after_native_end": 0,
+          "maximum_endpoint_distance_tcc": 0
+        }
+      ]
+    },
+    {
+      "code": "Gadget-4 SPH",
+      "level": 3,
+      "copied_metric_exact": true,
+      "scalar_peak_recheck": 0.06953827510535815,
+      "absolute_recheck_difference": 1.1102230246251565e-16,
+      "scalar_endpoint_handling": [
+        {
+          "law": "sharp",
+          "scalar_grid_queries_before_native_start": 0,
+          "scalar_grid_queries_after_native_end": 0,
+          "maximum_endpoint_distance_tcc": 0
+        },
+        {
+          "law": "historical",
+          "scalar_grid_queries_before_native_start": 0,
+          "scalar_grid_queries_after_native_end": 0,
+          "maximum_endpoint_distance_tcc": 0
+        }
+      ]
+    },
+    {
+      "code": "GIZMO MFV (repaired)",
+      "level": 3,
+      "copied_metric_exact": true,
+      "scalar_peak_recheck": 0.06437793485359761,
+      "absolute_recheck_difference": 0.0,
+      "scalar_endpoint_handling": [
+        {
+          "law": "sharp",
+          "scalar_grid_queries_before_native_start": 0,
+          "scalar_grid_queries_after_native_end": 0,
+          "maximum_endpoint_distance_tcc": 0
+        },
+        {
+          "law": "historical",
+          "scalar_grid_queries_before_native_start": 0,
+          "scalar_grid_queries_after_native_end": 0,
+          "maximum_endpoint_distance_tcc": 0
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Checks use previously analyzed scalar reports, not raw fields or a new native validation.",
+    "The 1e-12 recheck tolerance tests scalar arithmetic agreement only, not physical insignificance.",
+    "Scalar interpolation holds endpoints and selects rightmost equal timestamps; native frames are never dropped or retimed.",
+    "No historical-reuse threshold, native acceptance rule, queue or raw file was changed."
+  ]
+}
