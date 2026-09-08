@@ -8,3 +8,9 @@ README.md -text
 VALIDATION.md -text
 stage_mfv_publication.ps1 -text
 verify_mfv_publication.ps1 -text
+trace_mfv_mass_update.py -text
+test_mfv_mass_update.py -text
+mfv_mass_update_trace_v1.json -text
+MFV_MASS_UPDATE_DEFECT.md -text
+MFV_TIMESTEP_REPAIR_PLAN.md -text
+publish_mfv_mass_trace.ps1 -text

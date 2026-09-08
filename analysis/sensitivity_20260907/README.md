@@ -77,6 +77,12 @@ The underlying thermal collapse is still unvalidated, so neither MFV attempt
 is promoted. All202 raw snapshots and16 restart hashes were rechecked; no rerun
 or data deletion was needed.
 
+The follow-up [MFV flux-timestep audit](gizmo/MFV_MASS_UPDATE_DEFECT.md) found a
+compiler-confirmed uninitialized local timestep in native mass integration.
+Both terminal restarts retain exactly the original conserved mass for every
+particle despite nonzero mass-flux derivatives. A prospective isolated repair
+test is documented; no repaired solver has run or been accepted yet.
+
 The first Enzo full
 attempt exposed an output-setting error: dtRestartDump is a wall-clock exit
 trigger, not a physical-time snapshot interval. Its 21 saved outputs remain

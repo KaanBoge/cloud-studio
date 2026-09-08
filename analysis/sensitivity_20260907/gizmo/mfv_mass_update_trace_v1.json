@@ -1,0 +1,396 @@
+{
+  "status": "source_defect_confirmed_causal_repair_test_pending",
+  "created_utc": "2026-09-08T08:56:20.046685+00:00",
+  "script_sha256": "0ef35de01714173eac1c962a3b749587f8bbe32e8dc961295eef688aeac6c36a",
+  "decoder_dependency_sha256": "df5a3f097c7f4c6cdd04d80036316f99e202f9d7c9c46f5ab131763d71a89e94",
+  "prior_diagnosis_sha256": "88fbb20c30aeab70b9f7dd60638c05a0abcf1afd876ee091a2ebf0ab5e7956b3",
+  "prior_review_sha256": "23cf16be3830b7d3a153fb8ae62e67e255cb6a8961b945c25250b09f62aa6f4e",
+  "binary_sha256": "b7634f844d98ceef246d66e2243827f0c5774c9997b92bd8ffeedfdf940eed91",
+  "native_source_commit": "a828c4ba79d67093bd1a3d04f6f90b5d2d94d65f",
+  "native_source_hashes": {
+    "hydro/hydro_evaluate.h": "74de06e57e625926d544112e33650f5364804ec8c7893c61ab06b7a6f6483151",
+    "hydro/hydro_toplevel.c": "7aba9ef5d0935fc28d4d3b408c2eeb5ee891852299b639cd27352f0310102768",
+    "hydro/hydro_core_meshless.h": "a243ccc548366b99635447b026b8d8ad244ff58d1eb7147b2ef870e4fd364572",
+    "kicks.c": "e71c939b547e8ef02918f7213bf71505c9a69c909fda8db050960dd78b76c4aa",
+    "predict.c": "3e4392f3bc856de6881b2af8ffcd6721985249fafde16b29b0e1669a64b75a7d",
+    "allvars.h": "0514cb0c9ffb94bdae1dcbbc5671b6899d71988cfc78d764d24e20d6062041bf",
+    "eos/eos.c": "f3d851ac0d39c18e4c653ad8ad435ad750a2c35ccd71c9279c24f266c9a98b3e"
+  },
+  "native_files_equal_commit": true,
+  "compiler_check": {
+    "command": [
+      "flock",
+      "-n",
+      "/home/kaan/performance_20260907/benchmark.lock",
+      "flock",
+      "-n",
+      "/home/kaan/performance_20260907/production.lock",
+      "nice",
+      "-n",
+      "19",
+      "mpicc",
+      "-g",
+      "-O1",
+      "-ffast-math",
+      "-fcommon",
+      "-Wall",
+      "-Wuninitialized",
+      "-Wmaybe-uninitialized",
+      "-DDISABLE_ALIGNED_ALLOC",
+      "-DH5_USE_16_API",
+      "-I/usr/include/hdf5/openmpi",
+      "-I.",
+      "-S",
+      "hydro/hydro_toplevel.c",
+      "-o",
+      "/dev/null"
+    ],
+    "returncode": 0,
+    "warning_lines": [
+      "hydro/hydro_evaluate.h:375:24: warning: \u2018dt_hydrostep_i\u2019 may be used uninitialized [-Wmaybe-uninitialized]"
+    ],
+    "all_stderr_sha256": "0f045c42c101f0bc019509c024cb5d162e8058d5af2809ef8ff496f6ea8abe31",
+    "scope": "Warning-only compilation to /dev/null, not a rebuilt solver or simulation."
+  },
+  "new_compiled_field_layouts": {
+    "global_data_all_processes": {
+      "itemsize": 15864,
+      "matching_definitions": 32,
+      "die_offsets": [
+        "0x289",
+        "0x1a22",
+        "0x2b0b",
+        "0x50eb",
+        "0x7e2a",
+        "0xb06b",
+        "0x16956",
+        "0x17f27",
+        "0x192c5",
+        "0x21884",
+        "0x24b8c",
+        "0x269c4",
+        "0x2c248",
+        "0x338d3",
+        "0x3477e",
+        "0x35908",
+        "0x38d81",
+        "0x3b2f4",
+        "0x3d08d",
+        "0x3e524",
+        "0x445ce",
+        "0x4659d",
+        "0x4843e",
+        "0x4ce00",
+        "0x4f059",
+        "0x513f6",
+        "0x5267f",
+        "0x585df",
+        "0x5c919",
+        "0x60093",
+        "0x6124b",
+        "0x62bb1"
+      ],
+      "fields": {
+        "Time": {
+          "offset": 408,
+          "dtype": "float64",
+          "bytes": 8
+        },
+        "MinEgySpec": {
+          "offset": 128,
+          "dtype": "float64",
+          "bytes": 8
+        },
+        "Timebase_interval": {
+          "offset": 440,
+          "dtype": "float64",
+          "bytes": 8
+        },
+        "cf_hubble_a": {
+          "offset": 216,
+          "dtype": "float64",
+          "bytes": 8
+        }
+      }
+    },
+    "particle_data": {
+      "itemsize": 288,
+      "matching_definitions": 24,
+      "die_offsets": [
+        "0x3134",
+        "0x5714",
+        "0x8453",
+        "0xb6b7",
+        "0x16f7f",
+        "0x1854c",
+        "0x198f0",
+        "0x21eaf",
+        "0x251b4",
+        "0x27010",
+        "0x2c893",
+        "0x34da3",
+        "0x35f33",
+        "0x393cd",
+        "0x3d6b6",
+        "0x44bf2",
+        "0x48a8c",
+        "0x4d42b",
+        "0x4f680",
+        "0x52d12",
+        "0x58c2b",
+        "0x5cf65",
+        "0x606b8",
+        "0x61870"
+      ],
+      "fields": {
+        "ID": {
+          "offset": 4,
+          "dtype": "uint32",
+          "bytes": 4
+        },
+        "Mass": {
+          "offset": 56,
+          "dtype": "float64",
+          "bytes": 8
+        },
+        "GravAccel": {
+          "offset": 120,
+          "dtype": "('<f8', (3,))",
+          "bytes": 24
+        }
+      }
+    },
+    "gas_cell_data": {
+      "itemsize": 384,
+      "matching_definitions": 20,
+      "die_offsets": [
+        "0x32b3",
+        "0x5894",
+        "0x85d3",
+        "0xb847",
+        "0x170fe",
+        "0x186cb",
+        "0x2533f",
+        "0x271a0",
+        "0x2ca29",
+        "0x34f22",
+        "0x3955e",
+        "0x3d835",
+        "0x41d8d",
+        "0x44d71",
+        "0x52ea7",
+        "0x58dbc",
+        "0x5d0f6",
+        "0x60837",
+        "0x619ef",
+        "0x6322e"
+      ],
+      "fields": {
+        "MassTrue": {
+          "offset": 8,
+          "dtype": "float64",
+          "bytes": 8
+        },
+        "dMass": {
+          "offset": 16,
+          "dtype": "float64",
+          "bytes": 8
+        },
+        "DtMass": {
+          "offset": 24,
+          "dtype": "float64",
+          "bytes": 8
+        },
+        "InternalEnergy": {
+          "offset": 88,
+          "dtype": "float64",
+          "bytes": 8
+        },
+        "InternalEnergyPred": {
+          "offset": 96,
+          "dtype": "float64",
+          "bytes": 8
+        },
+        "DtInternalEnergy": {
+          "offset": 104,
+          "dtype": "float64",
+          "bytes": 8
+        },
+        "Density": {
+          "offset": 0,
+          "dtype": "float64",
+          "bytes": 8
+        },
+        "Pressure": {
+          "offset": 80,
+          "dtype": "float64",
+          "bytes": 8
+        }
+      }
+    }
+  },
+  "cases": [
+    {
+      "law": "sharp13",
+      "terminal_mass_update": {
+        "particles": 65536,
+        "conserved_mass_different_from_ic": 0,
+        "predicted_mass_different_from_conserved": 0,
+        "nonzero_accumulated_dMass": 0,
+        "nonzero_DtMass": 65536,
+        "max_abs_conserved_minus_ic": 0.0,
+        "max_abs_DtMass": 4.257077251891822
+      },
+      "affected": [
+        {
+          "id": 109,
+          "terminal_mass_true": 3.051217555999756,
+          "terminal_dMass": 0.0,
+          "terminal_DtMass": -4.194021585729265,
+          "limiter": {
+            "energy": 1.52799421328655e-43,
+            "derivative": -0.007065293391544323,
+            "clock_quantum": 1.679638783183304e-17,
+            "trial_after_one_clock_quantum": -1.1867140795006546e-19,
+            "would_half_limit": true,
+            "max_dt_before_half_limit": 1.0813381190335557e-41,
+            "interpretation": "Counterfactual endpoint probe using saved derivative, not an executed next kick or past limiter count."
+          },
+          "first_saved_positive_energy_below_1e_10": {
+            "time_code": 14.33003838096743,
+            "t_over_tcc": 3.6999999999999966,
+            "density": 218.5512237548828,
+            "internal_energy": 3.356463371129159e-11,
+            "mass": 3.0167219638824463
+          },
+          "history_mass_range": [
+            2.9934699535369873,
+            3.0660715103149414
+          ],
+          "caveat": "The 1e-10 threshold is a descriptive locator, not an acceptance cutoff. ID histories are not material tracers."
+        }
+      ],
+      "final_time": 19.364916731037084,
+      "restart_sha256": [
+        "825365768f41695f55acf32f1ebfe8eadcc693850ebb9b7b686e3430d7d52dcd",
+        "382382d55647d7bb92493cf511709bc6f1fee6e8f613910db7d25c66d3074f7c",
+        "f592cb246c4b0d32341c1689745fb32a0372dc1538aa372d589513d68de2f290",
+        "547ca0cc5f7362140f3ec46a3a48ed1317429df41103da317de9615831b819bb",
+        "2d1d18d1ab81ab5c1adbab3d76afb627992fa208606a90ebe72a9e124bb4ce60",
+        "75e601622ef29bb7c55c74ec6e05b3cb9e2de1948fb1ced7f73a59851b0436c4",
+        "4beaf95aa1c1035cdbc35ff7f1404521148f2636c62ddc38f774ee0cb4c9a3ca",
+        "3b00230ca703757edcc073ac730a5f18d259d4ae40ca84dcd52f53f9c4e14095"
+      ]
+    },
+    {
+      "law": "tanh13",
+      "terminal_mass_update": {
+        "particles": 65536,
+        "conserved_mass_different_from_ic": 0,
+        "predicted_mass_different_from_conserved": 0,
+        "nonzero_accumulated_dMass": 0,
+        "nonzero_DtMass": 65536,
+        "max_abs_conserved_minus_ic": 0.0,
+        "max_abs_DtMass": 4.415755451764986
+      },
+      "affected": [
+        {
+          "id": 96,
+          "terminal_mass_true": 3.051217555999756,
+          "terminal_dMass": 0.0,
+          "terminal_DtMass": -4.400690991307486,
+          "limiter": {
+            "energy": 4.37163851163316e-141,
+            "derivative": -0.018393211215337307,
+            "clock_quantum": 1.679638783183304e-17,
+            "trial_after_one_clock_quantum": -3.089395090456265e-19,
+            "would_half_limit": true,
+            "max_dt_before_half_limit": 1.1883837086554628e-139,
+            "interpretation": "Counterfactual endpoint probe using saved derivative, not an executed next kick or past limiter count."
+          },
+          "first_saved_positive_energy_below_1e_10": {
+            "time_code": 16.072880886760768,
+            "t_over_tcc": 4.149999999999997,
+            "density": 344.09033203125,
+            "internal_energy": 6.579191932996707e-18,
+            "mass": 3.0212819576263428
+          },
+          "history_mass_range": [
+            2.995617628097534,
+            3.066051483154297
+          ],
+          "caveat": "The 1e-10 threshold is a descriptive locator, not an acceptance cutoff. ID histories are not material tracers."
+        },
+        {
+          "id": 99,
+          "terminal_mass_true": 3.051217555999756,
+          "terminal_dMass": 0.0,
+          "terminal_DtMass": -4.415755451764986,
+          "limiter": {
+            "energy": 2.498054346189284e-78,
+            "derivative": -0.027470317347863652,
+            "clock_quantum": 1.679638783183304e-17,
+            "trial_after_one_clock_quantum": -4.614021040382491e-19,
+            "would_half_limit": true,
+            "max_dt_before_half_limit": 4.5468246954627126e-77,
+            "interpretation": "Counterfactual endpoint probe using saved derivative, not an executed next kick or past limiter count."
+          },
+          "first_saved_positive_energy_below_1e_10": {
+            "time_code": 14.910985882898542,
+            "t_over_tcc": 3.8499999999999965,
+            "density": 212.3390350341797,
+            "internal_energy": 1.7917412230081948e-20,
+            "mass": 3.023641586303711
+          },
+          "history_mass_range": [
+            2.9920146465301514,
+            3.070128917694092
+          ],
+          "caveat": "The 1e-10 threshold is a descriptive locator, not an acceptance cutoff. ID histories are not material tracers."
+        },
+        {
+          "id": 102,
+          "terminal_mass_true": 3.051217555999756,
+          "terminal_dMass": 0.0,
+          "terminal_DtMass": -2.624763146129455,
+          "limiter": {
+            "energy": 1.649788009116768e-48,
+            "derivative": -0.0072665959073992216,
+            "clock_quantum": 1.679638783183304e-17,
+            "trial_after_one_clock_quantum": -1.2205256307788805e-19,
+            "would_half_limit": true,
+            "max_dt_before_half_limit": 1.1351862895230413e-46,
+            "interpretation": "Counterfactual endpoint probe using saved derivative, not an executed next kick or past limiter count."
+          },
+          "first_saved_positive_energy_below_1e_10": {
+            "time_code": 18.396670894485236,
+            "t_over_tcc": 4.750000000000002,
+            "density": 257.6818542480469,
+            "internal_energy": 8.771777575133921e-12,
+            "mass": 3.005906343460083
+          },
+          "history_mass_range": [
+            3.000732421875,
+            3.0678012371063232
+          ],
+          "caveat": "The 1e-10 threshold is a descriptive locator, not an acceptance cutoff. ID histories are not material tracers."
+        }
+      ],
+      "final_time": 19.364916731037084,
+      "restart_sha256": [
+        "c8f402991c196c75aca95f55d44270f041156bce265b50563ae685ce67ad656f",
+        "0050344fbfeee6cd4f965f74f75a785d37c5f46b1a2130519577e95f8a0f0955",
+        "6c97c9f9d157b91a70752223f539f2ff9e577d61c7b1eac345e36ca62f4ed734",
+        "563048e916fd4e3f106ed05f82453839c73751dd9e9bad232c2912f2c1dcd88c",
+        "783ec0cf325e9a0e693aa10fe35656bfbfe2736acb1ac9b953277c1f7ca3695a",
+        "15859dee15687c7af802ef78e0c9fc677079d1f9122f436ebca0c60affd9101b",
+        "dd3779bae3a4ba5607bab10bc12fa30efa7736f68d5f7ce0a8630ea6c752e3ec",
+        "8f9480cc47a873009a2782fda54daa1919bcf5af037b6160df72dc2a642d6a43"
+      ]
+    }
+  ],
+  "interpretation": "Uninitialized local dt_hydrostep_i is used for integrated MFV mass flux while local.dt_hydrostep_i is populated separately. Actual retained terminal mass/flux evidence is measured above. No single-source cause of every thermal anomaly is asserted without a prospective isolated correction test. MFM impact requires code-path review, not assumption.",
+  "native_simulations_started": 0,
+  "raw_files_changed": 0,
+  "accepted_full_controls": 44
+}

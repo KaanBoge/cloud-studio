@@ -83,6 +83,13 @@ and [the dated L3 pre-delivery validation](VALIDATION.md).
 
 ## MFV failure evidence: preserved, not certified
 
+A further [mass-update diagnosis](MFV_MASS_UPDATE_DEFECT.md) found an
+uninitialized timestep in the original native MFV flux routine, confirmed by
+GCC. At the retained endpoint all65536 conserved masses per case exactly equal
+their IC values despite nonzero instantaneous mass fluxes. This is a concrete
+source defect; an isolated repair/evolution test is planned, not yet performed.
+No native source, binary, floor or dataset changed. MFV remains excluded.
+
 The [terminal restart diagnosis](MFV_RESTART_DIAGNOSIS.md) now explains the
 final exported zeros: internal double-precision energies are positive but tiny;
 three underflow float32 and one is flushed from a float32 subnormal to zero by

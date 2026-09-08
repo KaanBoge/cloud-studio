@@ -149,6 +149,13 @@ review is required before an isolated instrumentation test or larger MFV pair.
 No floor, native field, build, acceptance gate or raw file changed. See
 [the evidence and limitations](gizmo/MFV_RESTART_DIAGNOSIS.md).
 
+Further source tracing found an uninitialized local timestep used to integrate
+MFV mass flux, confirmed by a warning-only compiler check. All terminal
+conserved masses equal their IC values despite nonzero flux derivatives.
+Read [the repair-validation plan](gizmo/MFV_TIMESTEP_REPAIR_PLAN.md) before
+any isolated source change or test. The exact causal effect on thermal decline
+is not yet established; existing native data/binaries and44accepted controls remain.
+
 MFM L4 subsequently passed its own two short evolved controls and four tiny
 velocity-timing diagnostics: all16 native outputs independently checked, with
 unchanged nonvelocity initial fields. Nine L4 unit tests pass. Its measured
