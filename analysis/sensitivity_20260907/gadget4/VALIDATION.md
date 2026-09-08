@@ -19,7 +19,12 @@
 | Unit | Fixed denominator, interval completeness and unchanged time rows | 4 passed |
 | Full runs | All 202 native states, exact native schedule, independent mass sums | Passed |
 | Delivery analysis | Fresh raw hashes/direct mass sums and fixed normalization | Zero reported discrepancy |
-| L4 | Own native initial/evolved and timing checks | Not yet performed |
+| L4 | Own native initial/evolved and output-scheduler checks | Four native states passed; full pair storage-held |
+
+The separate [level-4 report](L4_VALIDATION.md) gives its per-level spacing,
+counts, original-pressure caveat, nine regression tests and whole-pair storage
+budget. Evolved velocity synchronization remains unvalidated. These short
+tests do not add any completed full science controls to the study total.
 
 There is no blanket native-initial-pressure acceptance threshold hidden in
 these checks: the measured pressure deviation is large (up to +290.03%),

@@ -179,6 +179,11 @@ identical in both laws, so it is not a uniform-pressure grid-code baseline.
 Its native scheduler rounds requested output times both early and late;
 every saved time is retained and verified against that exact native rule.
 See [Gadget-4 results and native-code caveats](gadget4/README.md).
+Gadget-4 L4 has now passed its own four-state native/independent validation.
+Its full pair is storage-held: 7.30 GiB plus the 10 GiB reserve is required,
+against 16.66 GiB free in WSL at 09:39 local on 8 September. Neither full L4
+control has started, and the total remains 44. No native data was deleted.
+See [the per-level validation and storage measurements](gadget4/L4_VALIDATION.md).
 Gasoline remains unprepared.
 A 15-minute task follow-up is enabled to inspect progress and
 advance safe pending work. The old blanket replacement queue remains inactive.

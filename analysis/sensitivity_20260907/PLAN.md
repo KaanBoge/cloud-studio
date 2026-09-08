@@ -40,7 +40,8 @@ deleted or thinned, and the live viewer is not relabeled with these experiments.
 
 The remaining unprepared code families need historical-source and native-IC checks
 before their paired launchers are enabled: Gasoline. Gadget-4 L3 is now
-complete and independently checked; L4 still needs its own native checks. GIZMO's L3
+complete and independently checked; L4's own native checks now pass, but its
+full pair is storage-held. GIZMO's L3
 setup and separate MFM L4 checks are validated; MFV's later L3 energy failure
 remains a separate blocker. Particle sampling
 and random seeds must be identical within a pair. This is pending work, not an
@@ -101,6 +102,11 @@ initial pressure peaks at 3.9003 times nominal, identically
 within the pair: this is not a uniform-pressure grid-code baseline. The existing
 native smoothing-length patch is retained, not introduced as another change.
 See [Gadget-4 scope and validation](gadget4/README.md). Gasoline remains unprepared.
+Gadget-4 L4 now passes per-level IC, initial/evolved native-field, scheduler
+and independent-reader checks on four short-test outputs. Its full-pair
+budget is 7.30 GiB plus a 10 GiB reserve on both filesystems; WSL had only
+16.66 GiB free. No full L4 worker has been launched and the accepted total
+remains 44. See [the L4 storage hold](gadget4/L4_VALIDATION.md).
 No higher-level queue is claimed before per-level initial-field,
 timing and identical within-pair particle sampling checks are verified.
 Four GIZMO L3 smokes now pass independent mass checks. Eight small native tests

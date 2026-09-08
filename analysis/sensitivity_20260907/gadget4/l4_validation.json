@@ -1,0 +1,481 @@
+{
+  "status": "passed_L4_initial_and_short_evolved_mass_checks",
+  "level": 4,
+  "grid": [
+    128,
+    64,
+    64
+  ],
+  "elements": 524288,
+  "physics": {
+    "code": "Gadget-4 SPH",
+    "chi": 100,
+    "mach": 2,
+    "gamma": 1.6666666666666667,
+    "rho_wind": 1,
+    "p_wind": 1,
+    "r_cloud": 1,
+    "density_width": 0.1,
+    "rv_scale": 1.3,
+    "center": [
+      3,
+      5,
+      5
+    ],
+    "box": [
+      20,
+      10,
+      10
+    ],
+    "boundary": "fully periodic",
+    "sampling": "regular cell-centered equal-volume lattice with variable masses",
+    "cloud_id_start": 1000000000,
+    "ranks": 8,
+    "native_variant": "Gadget4_3d_mixed_hfix; existing mean-mass and periodic-box smoothing-length seed patch retained in both laws",
+    "scope": "Within-code velocity sensitivity, not a matched grid inflow/outflow comparison. No cooling, magnetic field, gravity or frame tracking.",
+    "v_wind": 2.581988897471611,
+    "t_cc": 3.872983346207417
+  },
+  "storage_before": {
+    "path": "/home/kaan/sensitivity_20260907/gadget4",
+    "filesystem_free_bytes": 18292752384,
+    "filesystem_total_bytes": 1081101176832,
+    "windows_backing_volume": {
+      "distribution": "Ubuntu",
+      "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+      "drive": "C:",
+      "free_bytes": 38357508096,
+      "total_bytes": 1999283154944
+    },
+    "policy": "Conservative growth budget; allocated but reusable VHDX blocks are not credited.",
+    "effective_free_bytes": 18292752384
+  },
+  "cases": [
+    {
+      "status": "passed_independent_L4_smoke",
+      "level": 4,
+      "mode": 0,
+      "physics": {
+        "code": "Gadget-4 SPH",
+        "chi": 100,
+        "mach": 2,
+        "gamma": 1.6666666666666667,
+        "rho_wind": 1,
+        "p_wind": 1,
+        "r_cloud": 1,
+        "density_width": 0.1,
+        "rv_scale": 1.3,
+        "center": [
+          3,
+          5,
+          5
+        ],
+        "box": [
+          20,
+          10,
+          10
+        ],
+        "boundary": "fully periodic",
+        "sampling": "regular cell-centered equal-volume lattice with variable masses",
+        "cloud_id_start": 1000000000,
+        "ranks": 8,
+        "native_variant": "Gadget4_3d_mixed_hfix; existing mean-mass and periodic-box smoothing-length seed patch retained in both laws",
+        "scope": "Within-code velocity sensitivity, not a matched grid inflow/outflow comparison. No cooling, magnetic field, gravity or frame tracking.",
+        "v_wind": 2.581988897471611,
+        "t_cc": 3.872983346207417
+      },
+      "directory": "/home/kaan/sensitivity_20260907/gadget4/validation_l4_v1/sharp13",
+      "command": [
+        "mpirun",
+        "--bind-to",
+        "core",
+        "-np",
+        "8",
+        "/home/kaan/sensitivity_20260907/gadget4/Gadget4_pair",
+        "params.txt"
+      ],
+      "binary_sha256": "5ab857aba8cf4213fbce701ae8eaa6c449f5de43c0b9ab61722e962d88dca8d3",
+      "input_sha256": "c90eedc69d701112eef3bab845bbe9aecdeef47de3dcfd9d4fb20c055b1bcd66",
+      "ic_sha256": "5c6438577d5d5d04900ecc894773954cecaf4d04a1f5ba671104627fd6ed854d",
+      "returncode": 0,
+      "wall_seconds": 5.490992059000007,
+      "peak_child_rss_gib": 1.2202224731445312,
+      "guard": null,
+      "series": [
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gadget4/validation_l4_v1/sharp13/output/snapshot_000.hdf5",
+          "sha256": "42450e7b3e4edbf759d639de508d7cc15d504c5800c42f95c4356301cb89c6bf",
+          "time_code": 0.0,
+          "t_over_tcc": 0.0,
+          "elements": 524288,
+          "bytes": 25179656,
+          "fields": {
+            "Coordinates": "float32",
+            "Density": "float32",
+            "InternalEnergy": "float32",
+            "Masses": "float32",
+            "ParticleIDs": "uint32",
+            "Pressure": "float32",
+            "SmoothingLength": "float32",
+            "Velocities": "float32"
+          },
+          "total_mass": 2424.8441153885797,
+          "dense_mass": 405.949510127306,
+          "tagged_mass": 378.06117057800293,
+          "pressure_reconstruction_max_relative": 2.8092594230885496e-07,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0,
+            "tagged_mass": 0.0
+          }
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gadget4/validation_l4_v1/sharp13/output/snapshot_001.hdf5",
+          "sha256": "40d659ec8c65cd54a68db1a24388a3dca2636725d892e7b3f2b434e081003117",
+          "time_code": 0.1,
+          "t_over_tcc": 0.025819888974716113,
+          "elements": 524288,
+          "bytes": 25179656,
+          "fields": {
+            "Coordinates": "float32",
+            "Density": "float32",
+            "InternalEnergy": "float32",
+            "Masses": "float32",
+            "ParticleIDs": "uint32",
+            "Pressure": "float32",
+            "SmoothingLength": "float32",
+            "Velocities": "float32"
+          },
+          "total_mass": 2424.8441153885797,
+          "dense_mass": 406.81605461239815,
+          "tagged_mass": 378.06117057800293,
+          "pressure_reconstruction_max_relative": 2.949248160899303e-07,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0,
+            "tagged_mass": 0.0
+          }
+        }
+      ],
+      "initial": {
+        "level": 4,
+        "dx": 0.15625,
+        "native_vs_ic": {
+          "Coordinates": {
+            "max_absolute_error": 0.0,
+            "storage_roundoff_bound": 9.499490261077881e-06
+          },
+          "Masses": {
+            "max_absolute_error": 0.0,
+            "storage_roundoff_bound": 1.8189894035458565e-07
+          },
+          "InternalEnergy": {
+            "max_absolute_error": 1.1920928955078125e-07,
+            "storage_roundoff_bound": 7.152557373046875e-07
+          },
+          "Velocities": {
+            "max_absolute_error": 0.0,
+            "storage_roundoff_bound": 1.2311882073845482e-06
+          }
+        },
+        "native_density_vs_lattice_max_relative": 1.1042010198599979,
+        "native_pressure_vs_uniform_max_absolute": 1.104200839996338,
+        "native_pressure_min": 0.8082737326622009,
+        "native_pressure_max": 2.104200839996338,
+        "scope": "Only initial header velocity synchronization tested. Evolved mass diagnostics; no synchronized velocity claim."
+      },
+      "cadence": {
+        "native_count": 2,
+        "max_exact_scheduler_error": 0.0,
+        "integer_time_unit_code": 1.8626451492309571e-10,
+        "native_output_block_code": 0.05,
+        "roundoff_bound": 1.7763568394002505e-15,
+        "actual_times": [
+          0.0,
+          0.1
+        ]
+      },
+      "retained_restarts": [
+        {
+          "path": "/home/kaan/sensitivity_20260907/gadget4/validation_l4_v1/sharp13/output/restartfiles/restart.0",
+          "bytes": 12605146,
+          "sha256": "5064e11c6373cdd23f30de8090a6dcbb4412c4d025953855efe8ae3531e69ea5"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gadget4/validation_l4_v1/sharp13/output/restartfiles/restart.1",
+          "bytes": 13462476,
+          "sha256": "083d7aad6dd0cd862e49fec2bf24fc2de3812bd60635ab97db649df69610f3af"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gadget4/validation_l4_v1/sharp13/output/restartfiles/restart.2",
+          "bytes": 15676396,
+          "sha256": "a09542024eb7b537866a123cb7ce6a645ec333705fa8606fdb0f2266a9ae19e4"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gadget4/validation_l4_v1/sharp13/output/restartfiles/restart.3",
+          "bytes": 14999916,
+          "sha256": "b1944985f416e9d905b7253bddc3a55bb641ccc12e422004150ff291eff7bbd8"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gadget4/validation_l4_v1/sharp13/output/restartfiles/restart.4",
+          "bytes": 14305548,
+          "sha256": "99d1e05a74673ee45014df9e4e820d65110e99b22da5c4290ad598a1889e5243"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gadget4/validation_l4_v1/sharp13/output/restartfiles/restart.5",
+          "bytes": 14143660,
+          "sha256": "e038972bb617381524fb65cb5f23137c1e37eda573241e2c0eae749554968428"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gadget4/validation_l4_v1/sharp13/output/restartfiles/restart.6",
+          "bytes": 14489612,
+          "sha256": "02ca97a7c71faecb3de6ea3319015b63759477675b50a7a6cab52f168c0ffc8e"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gadget4/validation_l4_v1/sharp13/output/restartfiles/restart.7",
+          "bytes": 14190508,
+          "sha256": "c20862c87ef4e0cb7ce8e23103d08399ec5d77406b0ba84ad2ef978fc9711f82"
+        }
+      ]
+    },
+    {
+      "status": "passed_independent_L4_smoke",
+      "level": 4,
+      "mode": 1,
+      "physics": {
+        "code": "Gadget-4 SPH",
+        "chi": 100,
+        "mach": 2,
+        "gamma": 1.6666666666666667,
+        "rho_wind": 1,
+        "p_wind": 1,
+        "r_cloud": 1,
+        "density_width": 0.1,
+        "rv_scale": 1.3,
+        "center": [
+          3,
+          5,
+          5
+        ],
+        "box": [
+          20,
+          10,
+          10
+        ],
+        "boundary": "fully periodic",
+        "sampling": "regular cell-centered equal-volume lattice with variable masses",
+        "cloud_id_start": 1000000000,
+        "ranks": 8,
+        "native_variant": "Gadget4_3d_mixed_hfix; existing mean-mass and periodic-box smoothing-length seed patch retained in both laws",
+        "scope": "Within-code velocity sensitivity, not a matched grid inflow/outflow comparison. No cooling, magnetic field, gravity or frame tracking.",
+        "v_wind": 2.581988897471611,
+        "t_cc": 3.872983346207417
+      },
+      "directory": "/home/kaan/sensitivity_20260907/gadget4/validation_l4_v1/tanh13",
+      "command": [
+        "mpirun",
+        "--bind-to",
+        "core",
+        "-np",
+        "8",
+        "/home/kaan/sensitivity_20260907/gadget4/Gadget4_pair",
+        "params.txt"
+      ],
+      "binary_sha256": "5ab857aba8cf4213fbce701ae8eaa6c449f5de43c0b9ab61722e962d88dca8d3",
+      "input_sha256": "c90eedc69d701112eef3bab845bbe9aecdeef47de3dcfd9d4fb20c055b1bcd66",
+      "ic_sha256": "b2d15efa488fa4ddaad7e7f6c23aae1c291effe012a89d57db6c4726e64ffd8c",
+      "returncode": 0,
+      "wall_seconds": 5.2399253300000055,
+      "peak_child_rss_gib": 1.1497154235839844,
+      "guard": null,
+      "series": [
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gadget4/validation_l4_v1/tanh13/output/snapshot_000.hdf5",
+          "sha256": "13d1a200bf125ed61e5dd275477494fc94bfa8edc5df8315b861de741ff759fb",
+          "time_code": 0.0,
+          "t_over_tcc": 0.0,
+          "elements": 524288,
+          "bytes": 25179656,
+          "fields": {
+            "Coordinates": "float32",
+            "Density": "float32",
+            "InternalEnergy": "float32",
+            "Masses": "float32",
+            "ParticleIDs": "uint32",
+            "Pressure": "float32",
+            "SmoothingLength": "float32",
+            "Velocities": "float32"
+          },
+          "total_mass": 2424.8441153885797,
+          "dense_mass": 405.949510127306,
+          "tagged_mass": 378.06117057800293,
+          "pressure_reconstruction_max_relative": 2.8092594230885496e-07,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0,
+            "tagged_mass": 0.0
+          }
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gadget4/validation_l4_v1/tanh13/output/snapshot_001.hdf5",
+          "sha256": "2da13e009e0832b28ca813e5513aa7cdcea78e6f525d2dca9f13b21538b69c1e",
+          "time_code": 0.1,
+          "t_over_tcc": 0.025819888974716113,
+          "elements": 524288,
+          "bytes": 25179656,
+          "fields": {
+            "Coordinates": "float32",
+            "Density": "float32",
+            "InternalEnergy": "float32",
+            "Masses": "float32",
+            "ParticleIDs": "uint32",
+            "Pressure": "float32",
+            "SmoothingLength": "float32",
+            "Velocities": "float32"
+          },
+          "total_mass": 2424.8441153885797,
+          "dense_mass": 407.22180807590485,
+          "tagged_mass": 378.06117057800293,
+          "pressure_reconstruction_max_relative": 2.853407364132032e-07,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0,
+            "tagged_mass": 0.0
+          }
+        }
+      ],
+      "initial": {
+        "level": 4,
+        "dx": 0.15625,
+        "native_vs_ic": {
+          "Coordinates": {
+            "max_absolute_error": 0.0,
+            "storage_roundoff_bound": 9.499490261077881e-06
+          },
+          "Masses": {
+            "max_absolute_error": 0.0,
+            "storage_roundoff_bound": 1.8189894035458565e-07
+          },
+          "InternalEnergy": {
+            "max_absolute_error": 1.1920928955078125e-07,
+            "storage_roundoff_bound": 7.152557373046875e-07
+          },
+          "Velocities": {
+            "max_absolute_error": 0.0,
+            "storage_roundoff_bound": 1.2311882073845482e-06
+          }
+        },
+        "native_density_vs_lattice_max_relative": 1.1042010198599979,
+        "native_pressure_vs_uniform_max_absolute": 1.104200839996338,
+        "native_pressure_min": 0.8082737326622009,
+        "native_pressure_max": 2.104200839996338,
+        "scope": "Only initial header velocity synchronization tested. Evolved mass diagnostics; no synchronized velocity claim."
+      },
+      "cadence": {
+        "native_count": 2,
+        "max_exact_scheduler_error": 0.0,
+        "integer_time_unit_code": 1.8626451492309571e-10,
+        "native_output_block_code": 0.05,
+        "roundoff_bound": 1.7763568394002505e-15,
+        "actual_times": [
+          0.0,
+          0.1
+        ]
+      },
+      "retained_restarts": [
+        {
+          "path": "/home/kaan/sensitivity_20260907/gadget4/validation_l4_v1/tanh13/output/restartfiles/restart.0",
+          "bytes": 13627970,
+          "sha256": "2b576c13621ef394f29088672b8493e54e4c66a868e28cfb361bf12b39b4d583"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gadget4/validation_l4_v1/tanh13/output/restartfiles/restart.1",
+          "bytes": 13417388,
+          "sha256": "14e3673a053e37e5d1ba767b86f044b0c1b11c32479fdfa0e9390c98a5d40ae2"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gadget4/validation_l4_v1/tanh13/output/restartfiles/restart.2",
+          "bytes": 13536172,
+          "sha256": "2f09876acd323116511dc15b2590f504af38b912bfe7472d30706cd61182eb98"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gadget4/validation_l4_v1/tanh13/output/restartfiles/restart.3",
+          "bytes": 14368812,
+          "sha256": "75c561ddaf35dbd32fa30c153ff610c14f4b824b80df1fbe64bf59fd89ba345b"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gadget4/validation_l4_v1/tanh13/output/restartfiles/restart.4",
+          "bytes": 13804012,
+          "sha256": "1bc1db51f1f3b8a1253a5390531c9db3d06daff88487e30c61b63e09bf7dad67"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gadget4/validation_l4_v1/tanh13/output/restartfiles/restart.5",
+          "bytes": 13441964,
+          "sha256": "b6cf4f832000612615bce9a3c837a9dc343800580ef3a5eb17016bb85517bcc6"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gadget4/validation_l4_v1/tanh13/output/restartfiles/restart.6",
+          "bytes": 16176108,
+          "sha256": "aeac6a9095371ca499da56561833e603a6bfa9c3f21eb549db6c5067c644c916"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gadget4/validation_l4_v1/tanh13/output/restartfiles/restart.7",
+          "bytes": 15641004,
+          "sha256": "27c8f71083e734e787563349882df1fe2080d410a2109cdfa34c4baae38b726a"
+        }
+      ]
+    }
+  ],
+  "full_science_controls_completed": 0,
+  "frozen_bundle_sha256": "9cd68cd2a6d42ad29b7ef925a2f6f799134ec17e3a7d066ecad2089baf69b173",
+  "native_output_count": 4,
+  "historical_IC_arrays_exactly_reproduced": true,
+  "original_ladder_ic_sha256": "b2d15efa488fa4ddaad7e7f6c23aae1c291effe012a89d57db6c4726e64ffd8c",
+  "nonvelocity_IC_and_native_initial_fields_exact": true,
+  "full_native_schedule_prediction": {
+    "native_snapshots": 101,
+    "distinct_header_times": 101,
+    "scheduled_count": 101,
+    "integer_timebase": 536870912,
+    "integer_time_unit_code": 3.6069968214327626e-08,
+    "native_output_block_code": 0.037822102990306805,
+    "exact_scheduler_max_absolute_error": 0.0,
+    "roundoff_bound": 3.4399002279594065e-14,
+    "policy": "Native run.cc rounds each requested time to nearest power-of-two MaxSizeTimestep block, possibly early or late. All native headers unchanged. Exact extra/repeated states require review, never silent filtering."
+  },
+  "full_pair_budget": {
+    "native_snapshot_bytes": 25179656,
+    "eight_rank_restart_bytes": 114013430,
+    "ic_bytes": 37754984,
+    "per_case_bytes": 3920297945,
+    "pair_bytes": 7840595890,
+    "formula": "104 snapshots +3 measured eight-rank restart sets +IC +256MiB logs per case, then20% margin. Separate10GiB reserve on BOTH filesystems. Full-case external cap6000s below native7200s restart interval, no auto-resume."
+  },
+  "full_pair_storage_gate": {
+    "passed": false,
+    "reason": "Insufficient raw-retention space: need 7.30 GiB plus 10.00 GiB safety reserve; effective free 16.66 GiB; Windows C: 35.72 GiB free. Nothing launched or deleted."
+  },
+  "storage_after": {
+    "path": "/home/kaan/sensitivity_20260907/gadget4",
+    "filesystem_free_bytes": 17887395840,
+    "filesystem_total_bytes": 1081101176832,
+    "windows_backing_volume": {
+      "distribution": "Ubuntu",
+      "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+      "drive": "C:",
+      "free_bytes": 38357352448,
+      "total_bytes": 1999283154944
+    },
+    "policy": "Conservative growth budget; allocated but reusable VHDX blocks are not credited.",
+    "effective_free_bytes": 17887395840
+  },
+  "checker_sha256": "7319681b1925bd9c57cb10578e4ae141f58d09a1fb4e5b3c5f2947ea4e420458",
+  "all_raw_retained": true,
+  "caveats": [
+    "Two short tests, not full101-state controls. No full L4 worker enabled here.",
+    "Original native SPH kernel pressure variation and fully periodic boundaries retained identically; not a matched grid-code baseline.",
+    "Initial velocity checked; evolved velocity-at-header-time synchronization not certified.",
+    "yt sums raw particle fields without spatial reconstruction; rectangular bounds affect only reader geometry.",
+    "All native timestamps and raw/IC/restart/log files retained unchanged."
+  ]
+}

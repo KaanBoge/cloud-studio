@@ -11,6 +11,9 @@ not a matched uniform-pressure grid baseline. GIZMO MFV's two full L3 attempts f
 checks and are published as failure evidence, not accepted controls. See
 [GIZMO results](sensitivity_20260907/gizmo/README.md). Larger pairs remain
 separately guarded. These experiments are distinct from the historical viewer.
+Gadget-4 L4's native short validation now passes, but its full pair is held
+for storage. The [L4 evidence](sensitivity_20260907/gadget4/L4_VALIDATION.md)
+does not increase the accepted full-control count.
 
 Updated 7 September 2026. **Historical runs are not yet a validated matched-code
 comparison.** The corrected scripts are in `verified_20260907/`. Previous

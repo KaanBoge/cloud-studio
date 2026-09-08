@@ -1,0 +1,17 @@
+{
+  "status": "tested_L4_validation_only",
+  "pinned_files": {
+    "/home/kaan/sensitivity_20260907/gadget4/gadget_controls.py": "fc3d8e79f2ed0f1c8aafbaea57d4c01286f96a8a891261330428c26e9b37de58",
+    "/home/kaan/sensitivity_20260907/gadget4/build.json": "61fb3bb2ea56f6fa96347ace74d795987e4bdff7cb3abc98ceda5cecc93bf041",
+    "/home/kaan/sensitivity_20260907/gadget4/experiment.json": "2927619117202ecea7d44acbd1648b73a6f1e8fb592bd20f57319acc125d9e29",
+    "/home/kaan/verified_20260907/storage_guard.py": "f342c104352aa4526e737ac58a33e081a12d69d00c57cc55f15ad49a3f9e6fcb",
+    "/home/kaan/sensitivity_20260907/gadget4/runner_validation_l4_v2/gadget_l4_controls.py": "7319681b1925bd9c57cb10578e4ae141f58d09a1fb4e5b3c5f2947ea4e420458",
+    "/home/kaan/sensitivity_20260907/gadget4/runner_validation_l4_v2/test_gadget_l4.py": "4eae00aa2b2028808c6cf1994fa8aea38db50e6abf050c1b5344cedce647822f",
+    "/home/kaan/sensitivity_20260907/gadget4/runner_validation_l4_v2/native_cadence.py": "16366499d38f2d5690b86d5df01a5d797493f87651d2e19d687d1e9a65075669",
+    "/home/kaan/sensitivity_20260907/gadget4/runner_validation_l4_v2/test_native_cadence.py": "c79bcac43d3875564fa5ca9d0602e027dcc5039da08b10d0122664d329c369d0"
+  },
+  "tests": ".........\n----------------------------------------------------------------------\nRan 9 tests in 0.007s\n\nOK\n",
+  "native_cadence_tests": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.014s\n\nOK\n",
+  "scope": "Native L4 short validation and measured full-pair storage audit only. No full controls or existing outputs changed.",
+  "previous_attempt": "runner_validation_l4_v1 is retained incomplete: freeze used a nonexistent root scheduler path; no native case was launched. V2 copies the exact pinned scheduler into its own bundle and tests that frozen copy."
+}

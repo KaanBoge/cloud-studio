@@ -6,6 +6,11 @@ checked with yt. These two controls bring the analyzed study total to 44.
 This is a single coarse-resolution result, not convergence or a universal
 historical-reuse decision.
 
+Level 4 has now passed its own native initial/evolved checks and independent
+reader tests. The full pair is storage-held, not completed: its measured
+7.30 GiB budget plus 10 GiB reserve exceeds the 16.66 GiB free in WSL.
+See [the level-4 validation and storage evidence](L4_VALIDATION.md).
+
 Sharp took 75.22 seconds and historical took 75.73 seconds on eight MPI
 workers, with median sampled busy CPU 7.996/8.000 workers and peak summed
 solver-child RSS 0.406/0.407 GiB. Solver times exclude validation/publication.
@@ -139,8 +144,8 @@ restart growth; native stop receives 60 seconds grace. No guard removes data.
 Completed ledger: `/home/kaan/sensitivity_20260907/gadget4/full_l3_continuation_v2/batch.json`.
 Sharp raw remains under `full_l3_v1/sharp13`; historical raw is under
 `full_l3_continuation_v2/tanh13`. The immutable analysis is `analysis_l3_v1`.
-All raw fields, ICs, logs, restarts and failed attempts stay local. L4 requires
-its own native validation before a larger full pair; L5 is not enabled.
+All raw fields, ICs, logs, restarts and failed attempts stay local. L4's own
+native validation is complete, but the full pair is storage-held; L5 is not enabled.
 These controls are not new production entries in the 3D viewer.
 
 Scripts are machine-specific and use `/home/kaan/venv/bin/python` under WSL.
