@@ -14,3 +14,12 @@ mfv_mass_update_trace_v1.json -text
 MFV_MASS_UPDATE_DEFECT.md -text
 MFV_TIMESTEP_REPAIR_PLAN.md -text
 publish_mfv_mass_trace.ps1 -text
+MFV_REPAIR_BUILD_VALIDATION.md -text
+prepare_mfv_repair.ps1 -text
+build_mfv_repair.py -text
+test_native_mfv_flux.py -text
+review_mfv_repair_build.py -text
+repair_build_report.json -text
+repair_flux_test_report.json -text
+repair_build_review.json -text
+publish_mfv_repair_build.ps1 -text

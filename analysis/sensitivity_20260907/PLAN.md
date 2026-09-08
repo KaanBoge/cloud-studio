@@ -155,6 +155,10 @@ conserved masses equal their IC values despite nonzero flux derivatives.
 Read [the repair-validation plan](gizmo/MFV_TIMESTEP_REPAIR_PLAN.md) before
 any isolated source change or test. The exact causal effect on thermal decline
 is not yet established; existing native data/binaries and44accepted controls remain.
+The isolated reference/repaired builds now compile, nine synthetic exchange
+tests pass, and selected native ABI/toolchain checks pass. A new guarded short
+native runner and prospective conservation/output-stage checks remain before
+any evolution test. See [build validation](gizmo/MFV_REPAIR_BUILD_VALIDATION.md).
 
 MFM L4 subsequently passed its own two short evolved controls and four tiny
 velocity-timing diagnostics: all16 native outputs independently checked, with

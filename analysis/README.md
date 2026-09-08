@@ -17,7 +17,8 @@ output, including native flush-to-zero. Their physical evolution is still
 unvalidated; no failed control was promoted and no raw data was deleted.
 The [follow-up MFV source audit](sensitivity_20260907/gizmo/MFV_MASS_UPDATE_DEFECT.md)
 identifies an uninitialized mass-flux timestep and documents a prospective
-isolated repair test. No repaired simulation has run yet.
+isolated repair test. The [isolated builds and nine synthetic tests](sensitivity_20260907/gizmo/MFV_REPAIR_BUILD_VALIDATION.md)
+now pass; no repaired native simulation has run yet.
 Gadget-4 L4's native short validation now passes, but its full pair is held
 for storage. The [L4 evidence](sensitivity_20260907/gadget4/L4_VALIDATION.md)
 does not increase the accepted full-control count.

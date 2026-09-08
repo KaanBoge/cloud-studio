@@ -1,0 +1,756 @@
+{
+  "status": "passed_selected_abi_toolchain_and_source_review_not_native_evolution",
+  "build_report_sha256": "01457ba7a87dfc4054366d240b66f0ba8caca310af74f945eeafb6ebd928e509",
+  "script_sha256": "e7efa28c782a9b3b2d925e0e43dc3ce0f1a77932b9fd2250c0bbe7758aeb8f93",
+  "decoder_sha256": "df5a3f097c7f4c6cdd04d80036316f99e202f9d7c9c46f5ab131763d71a89e94",
+  "binaries": {
+    "original": {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/GIZMO_mfv_pair",
+      "sha256": "b7634f844d98ceef246d66e2243827f0c5774c9997b92bd8ffeedfdf940eed91",
+      "selected_abi": {
+        "global_data_all_processes": {
+          "itemsize": 15864,
+          "matching_definitions": 32,
+          "die_offsets": [
+            "0x289",
+            "0x1a22",
+            "0x2b0b",
+            "0x50eb",
+            "0x7e2a",
+            "0xb06b",
+            "0x16956",
+            "0x17f27",
+            "0x192c5",
+            "0x21884",
+            "0x24b8c",
+            "0x269c4",
+            "0x2c248",
+            "0x338d3",
+            "0x3477e",
+            "0x35908",
+            "0x38d81",
+            "0x3b2f4",
+            "0x3d08d",
+            "0x3e524",
+            "0x445ce",
+            "0x4659d",
+            "0x4843e",
+            "0x4ce00",
+            "0x4f059",
+            "0x513f6",
+            "0x5267f",
+            "0x585df",
+            "0x5c919",
+            "0x60093",
+            "0x6124b",
+            "0x62bb1"
+          ],
+          "fields": {
+            "Time": {
+              "offset": 408,
+              "dtype": "float64",
+              "bytes": 8
+            },
+            "TimeMax": {
+              "offset": 432,
+              "dtype": "float64",
+              "bytes": 8
+            },
+            "TotNumPart": {
+              "offset": 0,
+              "dtype": "int64",
+              "bytes": 8
+            },
+            "TotN_gas": {
+              "offset": 8,
+              "dtype": "int64",
+              "bytes": 8
+            },
+            "MinEgySpec": {
+              "offset": 128,
+              "dtype": "float64",
+              "bytes": 8
+            },
+            "Timebase_interval": {
+              "offset": 440,
+              "dtype": "float64",
+              "bytes": 8
+            },
+            "cf_hubble_a": {
+              "offset": 216,
+              "dtype": "float64",
+              "bytes": 8
+            },
+            "cf_a3inv": {
+              "offset": 184,
+              "dtype": "float64",
+              "bytes": 8
+            },
+            "BoxSize": {
+              "offset": 312,
+              "dtype": "float64",
+              "bytes": 8
+            },
+            "ComovingIntegrationOn": {
+              "offset": 320,
+              "dtype": "int32",
+              "bytes": 4
+            }
+          }
+        },
+        "particle_data": {
+          "itemsize": 288,
+          "matching_definitions": 24,
+          "die_offsets": [
+            "0x3134",
+            "0x5714",
+            "0x8453",
+            "0xb6b7",
+            "0x16f7f",
+            "0x1854c",
+            "0x198f0",
+            "0x21eaf",
+            "0x251b4",
+            "0x27010",
+            "0x2c893",
+            "0x34da3",
+            "0x35f33",
+            "0x393cd",
+            "0x3d6b6",
+            "0x44bf2",
+            "0x48a8c",
+            "0x4d42b",
+            "0x4f680",
+            "0x52d12",
+            "0x58c2b",
+            "0x5cf65",
+            "0x606b8",
+            "0x61870"
+          ],
+          "fields": {
+            "Type": {
+              "offset": 0,
+              "dtype": "int16",
+              "bytes": 2
+            },
+            "ID": {
+              "offset": 4,
+              "dtype": "uint32",
+              "bytes": 4
+            },
+            "ID_child_number": {
+              "offset": 8,
+              "dtype": "uint32",
+              "bytes": 4
+            },
+            "ID_generation": {
+              "offset": 12,
+              "dtype": "int32",
+              "bytes": 4
+            },
+            "Pos": {
+              "offset": 32,
+              "dtype": "('<f8', (3,))",
+              "bytes": 24
+            },
+            "Mass": {
+              "offset": 56,
+              "dtype": "float64",
+              "bytes": 8
+            },
+            "Vel": {
+              "offset": 64,
+              "dtype": "('<f8', (3,))",
+              "bytes": 24
+            },
+            "GravAccel": {
+              "offset": 120,
+              "dtype": "('<f8', (3,))",
+              "bytes": 24
+            }
+          }
+        },
+        "gas_cell_data": {
+          "itemsize": 384,
+          "matching_definitions": 20,
+          "die_offsets": [
+            "0x32b3",
+            "0x5894",
+            "0x85d3",
+            "0xb847",
+            "0x170fe",
+            "0x186cb",
+            "0x2533f",
+            "0x271a0",
+            "0x2ca29",
+            "0x34f22",
+            "0x3955e",
+            "0x3d835",
+            "0x41d8d",
+            "0x44d71",
+            "0x52ea7",
+            "0x58dbc",
+            "0x5d0f6",
+            "0x60837",
+            "0x619ef",
+            "0x6322e"
+          ],
+          "fields": {
+            "Density": {
+              "offset": 0,
+              "dtype": "float64",
+              "bytes": 8
+            },
+            "MassTrue": {
+              "offset": 8,
+              "dtype": "float64",
+              "bytes": 8
+            },
+            "dMass": {
+              "offset": 16,
+              "dtype": "float64",
+              "bytes": 8
+            },
+            "DtMass": {
+              "offset": 24,
+              "dtype": "float64",
+              "bytes": 8
+            },
+            "ParticleVel": {
+              "offset": 56,
+              "dtype": "('<f8', (3,))",
+              "bytes": 24
+            },
+            "Pressure": {
+              "offset": 80,
+              "dtype": "float64",
+              "bytes": 8
+            },
+            "InternalEnergy": {
+              "offset": 88,
+              "dtype": "float64",
+              "bytes": 8
+            },
+            "InternalEnergyPred": {
+              "offset": 96,
+              "dtype": "float64",
+              "bytes": 8
+            },
+            "DtInternalEnergy": {
+              "offset": 104,
+              "dtype": "float64",
+              "bytes": 8
+            }
+          }
+        }
+      },
+      "dwarf_producers": [
+        "GNU C23 15.2.0 -D_FORTIFY_SOURCE=3 -mlong-double-80 -mshstk -mtune=generic -march=x86-64 -g -g -g -O2 -O2 -O2 -fno-omit-frame-pointer -fcf-protection=full -fbuilding-libgcc -fno-stack-protector -fpic -fcf-protection=full -fasynchronous-unwind-tables -fstack-clash-protection -fzero-init-padding-bits=all",
+        "GNU C23 15.2.0 -D_FORTIFY_SOURCE=3 -mtune=generic -march=x86-64 -g -g -O1 -fcommon -ffast-math -funroll-loops -finline-functions -funswitch-loops -fpredictive-commoning -fgcse-after-reload -fipa-cp-clone -ftree-loop-distribute-patterns -fvect-cost-model=dynamic -ftree-partial-pre -fasynchronous-unwind-tables -fstack-protector-strong -fstack-clash-protection -fcf-protection -fzero-init-padding-bits=all"
+      ],
+      "fast_math_constructor": "\n/home/kaan/sensitivity_20260907/gizmo/GIZMO_mfv_pair:     file format elf64-x86-64\n\n\nDisassembly of section .init:\n\nDisassembly of section .plt:\n\nDisassembly of section .plt.got:\n\nDisassembly of section .plt.sec:\n\nDisassembly of section .text:\n\n0000000000004040 <set_fast_math>:\n    4040:\tf3 0f 1e fa          \tendbr64\n    4044:\t55                   \tpush   %rbp\n    4045:\t48 89 e5             \tmov    %rsp,%rbp\n    4048:\t0f ae 5d fc          \tstmxcsr -0x4(%rbp)\n    404c:\t8b 45 fc             \tmov    -0x4(%rbp),%eax\n    404f:\t0d 40 80 00 00       \tor     $0x8040,%eax\n    4054:\t89 45 f8             \tmov    %eax,-0x8(%rbp)\n    4057:\t0f ae 55 f8          \tldmxcsr -0x8(%rbp)\n    405b:\t5d                   \tpop    %rbp\n    405c:\tc3                   \tret\n\nDisassembly of section .fini:\n",
+      "note": "Constructor instructions checked; not a new dynamic FTZ observation or full restart-executability test."
+    },
+    "reference": {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/reference/GIZMO_reference",
+      "sha256": "2619110ff4e5391d30d8ff08f822e8d98511410aee89089e0bb248a393bc6928",
+      "selected_abi": {
+        "global_data_all_processes": {
+          "itemsize": 15864,
+          "matching_definitions": 32,
+          "die_offsets": [
+            "0x289",
+            "0x1a22",
+            "0x2b0b",
+            "0x50eb",
+            "0x7e2a",
+            "0xb06b",
+            "0x16956",
+            "0x17f27",
+            "0x192c5",
+            "0x21884",
+            "0x24b8c",
+            "0x269c4",
+            "0x2c248",
+            "0x338d3",
+            "0x3477e",
+            "0x35908",
+            "0x38d81",
+            "0x3b2f4",
+            "0x3d08d",
+            "0x3e524",
+            "0x445ce",
+            "0x4659d",
+            "0x4843e",
+            "0x4ce00",
+            "0x4f059",
+            "0x513f6",
+            "0x5267f",
+            "0x585df",
+            "0x5c919",
+            "0x60093",
+            "0x6124b",
+            "0x62bb1"
+          ],
+          "fields": {
+            "Time": {
+              "offset": 408,
+              "dtype": "float64",
+              "bytes": 8
+            },
+            "TimeMax": {
+              "offset": 432,
+              "dtype": "float64",
+              "bytes": 8
+            },
+            "TotNumPart": {
+              "offset": 0,
+              "dtype": "int64",
+              "bytes": 8
+            },
+            "TotN_gas": {
+              "offset": 8,
+              "dtype": "int64",
+              "bytes": 8
+            },
+            "MinEgySpec": {
+              "offset": 128,
+              "dtype": "float64",
+              "bytes": 8
+            },
+            "Timebase_interval": {
+              "offset": 440,
+              "dtype": "float64",
+              "bytes": 8
+            },
+            "cf_hubble_a": {
+              "offset": 216,
+              "dtype": "float64",
+              "bytes": 8
+            },
+            "cf_a3inv": {
+              "offset": 184,
+              "dtype": "float64",
+              "bytes": 8
+            },
+            "BoxSize": {
+              "offset": 312,
+              "dtype": "float64",
+              "bytes": 8
+            },
+            "ComovingIntegrationOn": {
+              "offset": 320,
+              "dtype": "int32",
+              "bytes": 4
+            }
+          }
+        },
+        "particle_data": {
+          "itemsize": 288,
+          "matching_definitions": 24,
+          "die_offsets": [
+            "0x3134",
+            "0x5714",
+            "0x8453",
+            "0xb6b7",
+            "0x16f7f",
+            "0x1854c",
+            "0x198f0",
+            "0x21eaf",
+            "0x251b4",
+            "0x27010",
+            "0x2c893",
+            "0x34da3",
+            "0x35f33",
+            "0x393cd",
+            "0x3d6b6",
+            "0x44bf2",
+            "0x48a8c",
+            "0x4d42b",
+            "0x4f680",
+            "0x52d12",
+            "0x58c2b",
+            "0x5cf65",
+            "0x606b8",
+            "0x61870"
+          ],
+          "fields": {
+            "Type": {
+              "offset": 0,
+              "dtype": "int16",
+              "bytes": 2
+            },
+            "ID": {
+              "offset": 4,
+              "dtype": "uint32",
+              "bytes": 4
+            },
+            "ID_child_number": {
+              "offset": 8,
+              "dtype": "uint32",
+              "bytes": 4
+            },
+            "ID_generation": {
+              "offset": 12,
+              "dtype": "int32",
+              "bytes": 4
+            },
+            "Pos": {
+              "offset": 32,
+              "dtype": "('<f8', (3,))",
+              "bytes": 24
+            },
+            "Mass": {
+              "offset": 56,
+              "dtype": "float64",
+              "bytes": 8
+            },
+            "Vel": {
+              "offset": 64,
+              "dtype": "('<f8', (3,))",
+              "bytes": 24
+            },
+            "GravAccel": {
+              "offset": 120,
+              "dtype": "('<f8', (3,))",
+              "bytes": 24
+            }
+          }
+        },
+        "gas_cell_data": {
+          "itemsize": 384,
+          "matching_definitions": 20,
+          "die_offsets": [
+            "0x32b3",
+            "0x5894",
+            "0x85d3",
+            "0xb847",
+            "0x170fe",
+            "0x186cb",
+            "0x2533f",
+            "0x271a0",
+            "0x2ca29",
+            "0x34f22",
+            "0x3955e",
+            "0x3d835",
+            "0x41d8d",
+            "0x44d71",
+            "0x52ea7",
+            "0x58dbc",
+            "0x5d0f6",
+            "0x60837",
+            "0x619ef",
+            "0x6322e"
+          ],
+          "fields": {
+            "Density": {
+              "offset": 0,
+              "dtype": "float64",
+              "bytes": 8
+            },
+            "MassTrue": {
+              "offset": 8,
+              "dtype": "float64",
+              "bytes": 8
+            },
+            "dMass": {
+              "offset": 16,
+              "dtype": "float64",
+              "bytes": 8
+            },
+            "DtMass": {
+              "offset": 24,
+              "dtype": "float64",
+              "bytes": 8
+            },
+            "ParticleVel": {
+              "offset": 56,
+              "dtype": "('<f8', (3,))",
+              "bytes": 24
+            },
+            "Pressure": {
+              "offset": 80,
+              "dtype": "float64",
+              "bytes": 8
+            },
+            "InternalEnergy": {
+              "offset": 88,
+              "dtype": "float64",
+              "bytes": 8
+            },
+            "InternalEnergyPred": {
+              "offset": 96,
+              "dtype": "float64",
+              "bytes": 8
+            },
+            "DtInternalEnergy": {
+              "offset": 104,
+              "dtype": "float64",
+              "bytes": 8
+            }
+          }
+        }
+      },
+      "dwarf_producers": [
+        "GNU C23 15.2.0 -D_FORTIFY_SOURCE=3 -mlong-double-80 -mshstk -mtune=generic -march=x86-64 -g -g -g -O2 -O2 -O2 -fno-omit-frame-pointer -fcf-protection=full -fbuilding-libgcc -fno-stack-protector -fpic -fcf-protection=full -fasynchronous-unwind-tables -fstack-clash-protection -fzero-init-padding-bits=all",
+        "GNU C23 15.2.0 -D_FORTIFY_SOURCE=3 -mtune=generic -march=x86-64 -g -g -O1 -fcommon -ffast-math -funroll-loops -finline-functions -funswitch-loops -fpredictive-commoning -fgcse-after-reload -fipa-cp-clone -ftree-loop-distribute-patterns -fvect-cost-model=dynamic -ftree-partial-pre -fasynchronous-unwind-tables -fstack-protector-strong -fstack-clash-protection -fcf-protection -fzero-init-padding-bits=all"
+      ],
+      "fast_math_constructor": "\n/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/reference/GIZMO_reference:     file format elf64-x86-64\n\n\nDisassembly of section .init:\n\nDisassembly of section .plt:\n\nDisassembly of section .plt.got:\n\nDisassembly of section .plt.sec:\n\nDisassembly of section .text:\n\n0000000000004040 <set_fast_math>:\n    4040:\tf3 0f 1e fa          \tendbr64\n    4044:\t55                   \tpush   %rbp\n    4045:\t48 89 e5             \tmov    %rsp,%rbp\n    4048:\t0f ae 5d fc          \tstmxcsr -0x4(%rbp)\n    404c:\t8b 45 fc             \tmov    -0x4(%rbp),%eax\n    404f:\t0d 40 80 00 00       \tor     $0x8040,%eax\n    4054:\t89 45 f8             \tmov    %eax,-0x8(%rbp)\n    4057:\t0f ae 55 f8          \tldmxcsr -0x8(%rbp)\n    405b:\t5d                   \tpop    %rbp\n    405c:\tc3                   \tret\n\nDisassembly of section .fini:\n",
+      "note": "Constructor instructions checked; not a new dynamic FTZ observation or full restart-executability test."
+    },
+    "repaired": {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/repaired/GIZMO_repaired",
+      "sha256": "4784336422c25db4714c6f56ef95337347f4be18dfd622e2b7e9acf7e1fe3d3c",
+      "selected_abi": {
+        "global_data_all_processes": {
+          "itemsize": 15864,
+          "matching_definitions": 32,
+          "die_offsets": [
+            "0x289",
+            "0x1a22",
+            "0x2b0b",
+            "0x50eb",
+            "0x7e2a",
+            "0xb06b",
+            "0x16956",
+            "0x17f27",
+            "0x192c5",
+            "0x21884",
+            "0x24b8c",
+            "0x269c4",
+            "0x2c248",
+            "0x338d3",
+            "0x3477e",
+            "0x35908",
+            "0x38d81",
+            "0x3b2f4",
+            "0x3d08d",
+            "0x3e524",
+            "0x445ce",
+            "0x4659d",
+            "0x4843e",
+            "0x4ce00",
+            "0x4f059",
+            "0x513f6",
+            "0x5267f",
+            "0x585e7",
+            "0x5c921",
+            "0x6009b",
+            "0x61253",
+            "0x62bb9"
+          ],
+          "fields": {
+            "Time": {
+              "offset": 408,
+              "dtype": "float64",
+              "bytes": 8
+            },
+            "TimeMax": {
+              "offset": 432,
+              "dtype": "float64",
+              "bytes": 8
+            },
+            "TotNumPart": {
+              "offset": 0,
+              "dtype": "int64",
+              "bytes": 8
+            },
+            "TotN_gas": {
+              "offset": 8,
+              "dtype": "int64",
+              "bytes": 8
+            },
+            "MinEgySpec": {
+              "offset": 128,
+              "dtype": "float64",
+              "bytes": 8
+            },
+            "Timebase_interval": {
+              "offset": 440,
+              "dtype": "float64",
+              "bytes": 8
+            },
+            "cf_hubble_a": {
+              "offset": 216,
+              "dtype": "float64",
+              "bytes": 8
+            },
+            "cf_a3inv": {
+              "offset": 184,
+              "dtype": "float64",
+              "bytes": 8
+            },
+            "BoxSize": {
+              "offset": 312,
+              "dtype": "float64",
+              "bytes": 8
+            },
+            "ComovingIntegrationOn": {
+              "offset": 320,
+              "dtype": "int32",
+              "bytes": 4
+            }
+          }
+        },
+        "particle_data": {
+          "itemsize": 288,
+          "matching_definitions": 24,
+          "die_offsets": [
+            "0x3134",
+            "0x5714",
+            "0x8453",
+            "0xb6b7",
+            "0x16f7f",
+            "0x1854c",
+            "0x198f0",
+            "0x21eaf",
+            "0x251b4",
+            "0x27010",
+            "0x2c893",
+            "0x34da3",
+            "0x35f33",
+            "0x393cd",
+            "0x3d6b6",
+            "0x44bf2",
+            "0x48a8c",
+            "0x4d42b",
+            "0x4f680",
+            "0x52d12",
+            "0x58c33",
+            "0x5cf6d",
+            "0x606c0",
+            "0x61878"
+          ],
+          "fields": {
+            "Type": {
+              "offset": 0,
+              "dtype": "int16",
+              "bytes": 2
+            },
+            "ID": {
+              "offset": 4,
+              "dtype": "uint32",
+              "bytes": 4
+            },
+            "ID_child_number": {
+              "offset": 8,
+              "dtype": "uint32",
+              "bytes": 4
+            },
+            "ID_generation": {
+              "offset": 12,
+              "dtype": "int32",
+              "bytes": 4
+            },
+            "Pos": {
+              "offset": 32,
+              "dtype": "('<f8', (3,))",
+              "bytes": 24
+            },
+            "Mass": {
+              "offset": 56,
+              "dtype": "float64",
+              "bytes": 8
+            },
+            "Vel": {
+              "offset": 64,
+              "dtype": "('<f8', (3,))",
+              "bytes": 24
+            },
+            "GravAccel": {
+              "offset": 120,
+              "dtype": "('<f8', (3,))",
+              "bytes": 24
+            }
+          }
+        },
+        "gas_cell_data": {
+          "itemsize": 384,
+          "matching_definitions": 20,
+          "die_offsets": [
+            "0x32b3",
+            "0x5894",
+            "0x85d3",
+            "0xb847",
+            "0x170fe",
+            "0x186cb",
+            "0x2533f",
+            "0x271a0",
+            "0x2ca29",
+            "0x34f22",
+            "0x3955e",
+            "0x3d835",
+            "0x41d8d",
+            "0x44d71",
+            "0x52ea7",
+            "0x58dc4",
+            "0x5d0fe",
+            "0x6083f",
+            "0x619f7",
+            "0x63236"
+          ],
+          "fields": {
+            "Density": {
+              "offset": 0,
+              "dtype": "float64",
+              "bytes": 8
+            },
+            "MassTrue": {
+              "offset": 8,
+              "dtype": "float64",
+              "bytes": 8
+            },
+            "dMass": {
+              "offset": 16,
+              "dtype": "float64",
+              "bytes": 8
+            },
+            "DtMass": {
+              "offset": 24,
+              "dtype": "float64",
+              "bytes": 8
+            },
+            "ParticleVel": {
+              "offset": 56,
+              "dtype": "('<f8', (3,))",
+              "bytes": 24
+            },
+            "Pressure": {
+              "offset": 80,
+              "dtype": "float64",
+              "bytes": 8
+            },
+            "InternalEnergy": {
+              "offset": 88,
+              "dtype": "float64",
+              "bytes": 8
+            },
+            "InternalEnergyPred": {
+              "offset": 96,
+              "dtype": "float64",
+              "bytes": 8
+            },
+            "DtInternalEnergy": {
+              "offset": 104,
+              "dtype": "float64",
+              "bytes": 8
+            }
+          }
+        }
+      },
+      "dwarf_producers": [
+        "GNU C23 15.2.0 -D_FORTIFY_SOURCE=3 -mlong-double-80 -mshstk -mtune=generic -march=x86-64 -g -g -g -O2 -O2 -O2 -fno-omit-frame-pointer -fcf-protection=full -fbuilding-libgcc -fno-stack-protector -fpic -fcf-protection=full -fasynchronous-unwind-tables -fstack-clash-protection -fzero-init-padding-bits=all",
+        "GNU C23 15.2.0 -D_FORTIFY_SOURCE=3 -mtune=generic -march=x86-64 -g -g -O1 -fcommon -ffast-math -funroll-loops -finline-functions -funswitch-loops -fpredictive-commoning -fgcse-after-reload -fipa-cp-clone -ftree-loop-distribute-patterns -fvect-cost-model=dynamic -ftree-partial-pre -fasynchronous-unwind-tables -fstack-protector-strong -fstack-clash-protection -fcf-protection -fzero-init-padding-bits=all"
+      ],
+      "fast_math_constructor": "\n/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/repaired/GIZMO_repaired:     file format elf64-x86-64\n\n\nDisassembly of section .init:\n\nDisassembly of section .plt:\n\nDisassembly of section .plt.got:\n\nDisassembly of section .plt.sec:\n\nDisassembly of section .text:\n\n0000000000004040 <set_fast_math>:\n    4040:\tf3 0f 1e fa          \tendbr64\n    4044:\t55                   \tpush   %rbp\n    4045:\t48 89 e5             \tmov    %rsp,%rbp\n    4048:\t0f ae 5d fc          \tstmxcsr -0x4(%rbp)\n    404c:\t8b 45 fc             \tmov    -0x4(%rbp),%eax\n    404f:\t0d 40 80 00 00       \tor     $0x8040,%eax\n    4054:\t89 45 f8             \tmov    %eax,-0x8(%rbp)\n    4057:\t0f ae 55 f8          \tldmxcsr -0x8(%rbp)\n    405b:\t5d                   \tpop    %rbp\n    405c:\tc3                   \tret\n\nDisassembly of section .fini:\n",
+      "note": "Constructor instructions checked; not a new dynamic FTZ observation or full restart-executability test."
+    }
+  },
+  "mfm_active_local_timestep_lines": [
+    "double hinv_i,hinv3_i,hinv4_i,hinv_j,hinv3_j,hinv4_j,V_i,V_j,dt_hydrostep_i,dt_hydrostep_j,dt_hydrostep,r2,rinv,rinv_soft,u,Particle_Size_i;",
+    "dt_hydrostep = DMAX(dt_hydrostep_i , dt_hydrostep_j);"
+  ],
+  "mfm_limit": "In this exact preprocessed configuration, the uninitialized local only feeds an unused maximum; optional half-step/upwind/MFV mass branches absent. No all-configuration claim or MFM rerun.",
+  "native_simulations_started": 0,
+  "canonical_source_files_changed": 0
+}

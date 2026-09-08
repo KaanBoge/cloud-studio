@@ -1,0 +1,214 @@
+{
+  "status": "isolated_build_and_source_checks_only",
+  "script_sha256": "2f52ff23117488111b856362d1a61f8122c492515d7266e931622e91cd363d5e",
+  "manifest_sha256": "83ec806e1c193d7d6e29dcc5f864b45fb4e6336bd71c22bfe63c2c9a0a430bc4",
+  "config_sha256": {
+    "reference": "6ce161fe2bd5766c7abfa82536fe35e1168c81562c15c9f5bf5132575e671f3b",
+    "repaired": "6ce161fe2bd5766c7abfa82536fe35e1168c81562c15c9f5bf5132575e671f3b",
+    "mfm_probe": "ef389556cc732c84f3bf72450547b827e86dc53d2cb78e2fb3a9c1657e4aa558"
+  },
+  "native_simulations_started": 0,
+  "commands": {
+    "reference": {
+      "command": [
+        "make",
+        "-j2",
+        "EXEC=GIZMO_reference",
+        "HG_COMMIT=a828c4b",
+        "HG_BRANCH=master",
+        "HG_REPO=https://github.com/pfhopkins/gizmo-public.git"
+      ],
+      "seconds": 4.004134810000011,
+      "log_sha256": "70b18fc6df761062dbf04f820ea6bad121938525452d350971499c31460f180d"
+    },
+    "repaired": {
+      "command": [
+        "make",
+        "-j2",
+        "EXEC=GIZMO_repaired",
+        "HG_COMMIT=a828c4b",
+        "HG_BRANCH=master",
+        "HG_REPO=https://github.com/pfhopkins/gizmo-public.git"
+      ],
+      "seconds": 4.00368461299999,
+      "log_sha256": "69e9dd7d01d6f79754fbc48302312eeb3f8397061cc6ed3e88517e1e872edb66"
+    },
+    "mfm_config": {
+      "command": [
+        "perl",
+        "prepare-config.perl",
+        "Config.sh"
+      ],
+      "seconds": 0.5006555690000027,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "reference_warnings": {
+      "command": [
+        "mpicc",
+        "-g",
+        "-O1",
+        "-ffast-math",
+        "-fcommon",
+        "-Wall",
+        "-Wuninitialized",
+        "-Wmaybe-uninitialized",
+        "-DDISABLE_ALIGNED_ALLOC",
+        "-DCHIMES_USE_DOUBLE_PRECISION",
+        "-DH5_USE_16_API",
+        "-I/usr/include/hdf5/openmpi",
+        "-I.",
+        "-S",
+        "hydro/hydro_toplevel.c",
+        "-o",
+        "/dev/null"
+      ],
+      "seconds": 0.5006488980000086,
+      "log_sha256": "0f045c42c101f0bc019509c024cb5d162e8058d5af2809ef8ff496f6ea8abe31"
+    },
+    "reference_preprocess": {
+      "command": [
+        "mpicc",
+        "-g",
+        "-O1",
+        "-ffast-math",
+        "-fcommon",
+        "-Wall",
+        "-Wuninitialized",
+        "-Wmaybe-uninitialized",
+        "-DDISABLE_ALIGNED_ALLOC",
+        "-DCHIMES_USE_DOUBLE_PRECISION",
+        "-DH5_USE_16_API",
+        "-I/usr/include/hdf5/openmpi",
+        "-I.",
+        "-E",
+        "-P",
+        "hydro/hydro_toplevel.c",
+        "-o",
+        "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/reference.i"
+      ],
+      "seconds": 0.5007113350000054,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "repaired_warnings": {
+      "command": [
+        "mpicc",
+        "-g",
+        "-O1",
+        "-ffast-math",
+        "-fcommon",
+        "-Wall",
+        "-Wuninitialized",
+        "-Wmaybe-uninitialized",
+        "-DDISABLE_ALIGNED_ALLOC",
+        "-DCHIMES_USE_DOUBLE_PRECISION",
+        "-DH5_USE_16_API",
+        "-I/usr/include/hdf5/openmpi",
+        "-I.",
+        "-S",
+        "hydro/hydro_toplevel.c",
+        "-o",
+        "/dev/null"
+      ],
+      "seconds": 0.5006936569999993,
+      "log_sha256": "b41e8d6d5c77e494de562ea2575635a4ab2c328c1edaa47e3cb356fce84300ce"
+    },
+    "repaired_preprocess": {
+      "command": [
+        "mpicc",
+        "-g",
+        "-O1",
+        "-ffast-math",
+        "-fcommon",
+        "-Wall",
+        "-Wuninitialized",
+        "-Wmaybe-uninitialized",
+        "-DDISABLE_ALIGNED_ALLOC",
+        "-DCHIMES_USE_DOUBLE_PRECISION",
+        "-DH5_USE_16_API",
+        "-I/usr/include/hdf5/openmpi",
+        "-I.",
+        "-E",
+        "-P",
+        "hydro/hydro_toplevel.c",
+        "-o",
+        "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/repaired.i"
+      ],
+      "seconds": 0.5006492110000238,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "mfm_probe_warnings": {
+      "command": [
+        "mpicc",
+        "-g",
+        "-O1",
+        "-ffast-math",
+        "-fcommon",
+        "-Wall",
+        "-Wuninitialized",
+        "-Wmaybe-uninitialized",
+        "-DDISABLE_ALIGNED_ALLOC",
+        "-DCHIMES_USE_DOUBLE_PRECISION",
+        "-DH5_USE_16_API",
+        "-I/usr/include/hdf5/openmpi",
+        "-I.",
+        "-S",
+        "hydro/hydro_toplevel.c",
+        "-o",
+        "/dev/null"
+      ],
+      "seconds": 0.5006607500000086,
+      "log_sha256": "bd2668d6a055de95a19a7ec9669f73bfd291ef60c67243691660d22178eace10"
+    },
+    "mfm_probe_preprocess": {
+      "command": [
+        "mpicc",
+        "-g",
+        "-O1",
+        "-ffast-math",
+        "-fcommon",
+        "-Wall",
+        "-Wuninitialized",
+        "-Wmaybe-uninitialized",
+        "-DDISABLE_ALIGNED_ALLOC",
+        "-DCHIMES_USE_DOUBLE_PRECISION",
+        "-DH5_USE_16_API",
+        "-I/usr/include/hdf5/openmpi",
+        "-I.",
+        "-E",
+        "-P",
+        "hydro/hydro_toplevel.c",
+        "-o",
+        "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/mfm_probe.i"
+      ],
+      "seconds": 0.5006963040000016,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "binaries": {
+    "reference": {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/reference/GIZMO_reference",
+      "bytes": 1412944,
+      "sha256": "2619110ff4e5391d30d8ff08f822e8d98511410aee89089e0bb248a393bc6928"
+    },
+    "repaired": {
+      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/repaired/GIZMO_repaired",
+      "bytes": 1413360,
+      "sha256": "4784336422c25db4714c6f56ef95337347f4be18dfd622e2b7e9acf7e1fe3d3c"
+    }
+  },
+  "source_diff": "--- reference/hydro/hydro_evaluate.h\n+++ repaired/hydro/hydro_evaluate.h\n@@ -62,6 +62,8 @@\n         local = DATAGET_NAME[target]; // this setup allows for all the fields we need to define (don't hard-code here)\n     }\n \n+    dt_hydrostep_i = local.dt_hydrostep_i;\n+\n     /* certain particles should never enter the loop: check for these */\n     if(local.Mass <= 0) return 0;\n     if(local.Density <= 0) return 0;\n",
+  "toolchain": {
+    "mpicc": "gcc (Ubuntu 15.2.0-16ubuntu1) 15.2.0\nCopyright (C) 2025 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.",
+    "mpi_wrapper": "gcc -I/usr/lib/x86_64-linux-gnu/openmpi/include -I/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -L/usr/lib/x86_64-linux-gnu/openmpi/lib -lmpi",
+    "make": "GNU Make 4.4.1\nBuilt for x86_64-pc-linux-gnu\nCopyright (C) 1988-2023 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law."
+  },
+  "mfm_active_timestep_lines": [
+    "MyFloat dt_hydrostep_i;",
+    "in->dt_hydrostep_i = ((((P[i].dt_step)) * ((All.Timebase_interval/All.cf_hubble_a) * (1))));",
+    "double hinv_i,hinv3_i,hinv4_i,hinv_j,hinv3_j,hinv4_j,V_i,V_j,dt_hydrostep_i,dt_hydrostep_j,dt_hydrostep,r2,rinv,rinv_soft,u,Particle_Size_i;",
+    "dt_hydrostep_j = ((((P[j].dt_step)) * ((All.Timebase_interval/All.cf_hubble_a) * (1))));",
+    "dt_hydrostep = DMAX(dt_hydrostep_i , dt_hydrostep_j);"
+  ],
+  "mfm_scope": "Active preprocessed lines retained for review; no MFM rebuild/run or universal equivalence claim.",
+  "original_binary_sha256": "b7634f844d98ceef246d66e2243827f0c5774c9997b92bd8ffeedfdf940eed91"
+}

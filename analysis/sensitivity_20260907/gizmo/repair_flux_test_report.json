@@ -1,0 +1,27 @@
+{
+  "status": "passed_synthetic_fragments_not_native_evolution",
+  "tests": 9,
+  "failures": 0,
+  "errors": 0,
+  "build_report_sha256": "01457ba7a87dfc4054366d240b66f0ba8caca310af74f945eeafb6ebd928e509",
+  "script_sha256": "aaf951938b6eef2a67db51045295eb95e678c7e770f27ccfb17707da106e94bb",
+  "provenance": {
+    "command": [
+      "cc",
+      "-shared",
+      "-fPIC",
+      "-O1",
+      "-ffast-math",
+      "-Wall",
+      "-Werror=uninitialized",
+      "-Werror=maybe-uninitialized",
+      "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/flux_tests_v1/native_flux_fragment.c",
+      "-o",
+      "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/flux_tests_v1/native_flux_fragment.so"
+    ],
+    "native_source_sha256": "1920926963f76463ee1a71df0d5a0062068898fafe58a6c3efb0715eb2cc07ee",
+    "harness_sha256": "c022db05e124192eeb1d6c87e0d4237d8c1bb23199006aed4d6388cd4f78fbd9"
+  },
+  "native_simulations_started": 0,
+  "limitations": "Actual input dispatch and mass-update fragments only; no neighbor/Riemann/MPI/thermal-evolution proof."
+}

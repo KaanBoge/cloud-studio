@@ -80,8 +80,10 @@ or data deletion was needed.
 The follow-up [MFV flux-timestep audit](gizmo/MFV_MASS_UPDATE_DEFECT.md) found a
 compiler-confirmed uninitialized local timestep in native mass integration.
 Both terminal restarts retain exactly the original conserved mass for every
-particle despite nonzero mass-flux derivatives. A prospective isolated repair
-test is documented; no repaired solver has run or been accepted yet.
+particle despite nonzero mass-flux derivatives. The [isolated repair build](gizmo/MFV_REPAIR_BUILD_VALIDATION.md)
+now passes compilation, nine synthetic exchange tests and selected ABI checks.
+No repaired native simulation has run or been accepted yet; original data and
+canonical solver files remain unchanged.
 
 The first Enzo full
 attempt exposed an output-setting error: dtRestartDump is a wall-clock exit

@@ -87,8 +87,10 @@ A further [mass-update diagnosis](MFV_MASS_UPDATE_DEFECT.md) found an
 uninitialized timestep in the original native MFV flux routine, confirmed by
 GCC. At the retained endpoint all65536 conserved masses per case exactly equal
 their IC values despite nonzero instantaneous mass fluxes. This is a concrete
-source defect; an isolated repair/evolution test is planned, not yet performed.
-No native source, binary, floor or dataset changed. MFV remains excluded.
+source defect. The [isolated repair build](MFV_REPAIR_BUILD_VALIDATION.md) now
+compiles and passes nine synthetic mass-exchange tests and selected ABI checks.
+No repaired native evolution has run yet. Canonical source, original binaries,
+floors and datasets remain unchanged. MFV remains excluded.
 
 The [terminal restart diagnosis](MFV_RESTART_DIAGNOSIS.md) now explains the
 final exported zeros: internal double-precision energies are positive but tiny;
