@@ -1,5 +1,12 @@
 # Gasoline native velocity-control preparation
 
+The latest [native force-order result](FORCE_ORDER_RESULTS.md) identifies27
+paired force sums whose different endpoints are exactly explained by identical
+recorded contributions in different orders. Other differences involve changed
+inputs. Three short tests saved four real states and three checkpoints; no
+full control was added. Independent replay passes, but the earlier density
+gate remains failed and a scientific acceptance decision is still needed.
+
 8 September 2026. **No full Gasoline controls are accepted; the study now has
 46 accepted controls from other codes.** The [read-only divergence review](DIVERGENCE_REVIEW.md)
 finds differences already present in double-precision checkpoints, including

@@ -229,6 +229,12 @@ The subsequent [serial-output observation test](gasoline/SERIAL_OBSERVER_VALIDAT
 preserved both hosted particle buffers and the restored master buffer exactly.
 Its two real outputs and checkpoint remain saved; the narrower 3-second
 diagnostic does not clear trajectory equivalence or add a full control.
+The subsequent [force-order comparison](gasoline/FORCE_ORDER_RESULTS.md)
+finds27 paired force sums with identical starts/contributions but different
+native orders and exactly reproduced different endpoints. Other differences
+already have changed inputs. Three short tests saved four actual states and
+three checkpoints; their traces were compared without new simulation work.
+The original density gate remains failed; no full Gasoline control is enabled.
 A 15-minute task follow-up is enabled to inspect progress and
 advance safe pending work. The old blanket replacement queue remains inactive.
 Cooling, tracking and paper-ready retention checks remain separate work.

@@ -1,0 +1,58 @@
+{
+  "status": "passed_synthetic_trace_transport_and_replay",
+  "native_solver_runs": 0,
+  "native_frames_added": 0,
+  "full_controls_added": 0,
+  "accepted_study_total": 46,
+  "native_insertion_and_runner_pending": true,
+  "trajectory_gate_cleared": false,
+  "test_wall_seconds": 0.33361529300000003,
+  "artifact_bytes_before_report": 63101,
+  "c_trace_replay": {
+    "status": "passed_trace_structure_and_selected_arithmetic",
+    "rank": 0,
+    "records": 47,
+    "phases": [
+      {
+        "phase": 1,
+        "time_code": 0.0,
+        "owner_ids": [
+          13729
+        ],
+        "cache_lifetimes": 1
+      }
+    ],
+    "event_counts": {
+      "1": 1,
+      "2": 12,
+      "3": 9,
+      "4": 12,
+      "5": 6,
+      "6": 6,
+      "7": 1
+    },
+    "trajectory_gate_cleared": false,
+    "limits": [
+      "Selected recorded fields only; native insertion coverage requires separate review.",
+      "Recorded cache lifetimes need not include a separate outgoing-packet capture.",
+      "Trace validity is not proof of no instrumentation effect or trajectory equivalence."
+    ]
+  },
+  "overflow_correctly_rejected": "Incomplete or empty trace",
+  "plan_sha256": "1b35716e8d781253aeff19bc61f826065593cfde3192a6a41982e3d1df77ea2a",
+  "artifacts": {
+    "/home/kaan/sensitivity_20260907/gasoline/force_trace_core_v1/force_trace_core.h": "fcfc15450b8a82bc2f0a94b70b807396471f81ac16748da69750eccc95216ca3",
+    "/home/kaan/sensitivity_20260907/gasoline/force_trace_core_v1/python_tests.log": "42e2f3a029d16a06e35def4aed20decae6dbaaf3cae98ecda4ef33d6c5cf0e87",
+    "/home/kaan/sensitivity_20260907/gasoline/force_trace_core_v1/test_force_trace_core.c": "a03800c3a2d1dbe215fffde7bbeda04da92f2ae719b4c2ee35ebbd80837d14fc",
+    "/home/kaan/sensitivity_20260907/gasoline/force_trace_core_v1/compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/kaan/sensitivity_20260907/gasoline/force_trace_core_v1/test_force_trace_replay.py": "02b7301d6071f69be0672d13b194f7b52b3773d636ccd7e9ac689c52785b3ff5",
+    "/home/kaan/sensitivity_20260907/gasoline/force_trace_core_v1/FORCE_ORDER_TRACE_DESIGN.md": "206c52397109d2461b5757967e485ebc64432c07d8ea7d9558063af568f5da63",
+    "/home/kaan/sensitivity_20260907/gasoline/force_trace_core_v1/force_trace_replay.py": "4d5a510dd2cc3332620523696fcaf471f3fb80072e121a8bd7c5b94a414642ee",
+    "/home/kaan/sensitivity_20260907/gasoline/force_trace_core_v1/core_test": "f92cd31d1330823ce795f80a6976de5f743a9978e5090bd8140690b47eb788ad",
+    "/home/kaan/sensitivity_20260907/gasoline/force_trace_core_v1/plan.json": "1b35716e8d781253aeff19bc61f826065593cfde3192a6a41982e3d1df77ea2a",
+    "/home/kaan/sensitivity_20260907/gasoline/force_trace_core_v1/core_trace.bin": "f9cc0b9fef6ecef0566d248b10b0e71493b3ad10cf8bf0a137067e31748c0e04",
+    "/home/kaan/sensitivity_20260907/gasoline/force_trace_core_v1/c_tests.log": "64e7fe740e0a77b16a23e963277487bfbf8bf30e0a86dea27a97fcc5c0fbf3d2",
+    "/home/kaan/sensitivity_20260907/gasoline/force_trace_core_v1/overflow_trace.bin": "a5908340141a8a293d4044e46ba8f04e742f64462323a1cc722bad70636c563f",
+    "/home/kaan/sensitivity_20260907/gasoline/force_trace_core_v1/prepare_force_trace_core.py": "271e830ceccc8e80df014782c242256830c847585b26beb00a5250fa925e1ff8"
+  }
+}

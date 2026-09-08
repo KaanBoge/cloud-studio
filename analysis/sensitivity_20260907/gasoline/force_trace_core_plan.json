@@ -1,0 +1,26 @@
+{
+  "status": "frozen_synthetic_trace_core_only",
+  "pins": {
+    "/home/kaan/sensitivity_20260907/gasoline/force_trace_core_v1/force_trace_core.h": "fcfc15450b8a82bc2f0a94b70b807396471f81ac16748da69750eccc95216ca3",
+    "/home/kaan/sensitivity_20260907/gasoline/force_trace_core_v1/test_force_trace_core.c": "a03800c3a2d1dbe215fffde7bbeda04da92f2ae719b4c2ee35ebbd80837d14fc",
+    "/home/kaan/sensitivity_20260907/gasoline/force_trace_core_v1/force_trace_replay.py": "4d5a510dd2cc3332620523696fcaf471f3fb80072e121a8bd7c5b94a414642ee",
+    "/home/kaan/sensitivity_20260907/gasoline/force_trace_core_v1/test_force_trace_replay.py": "02b7301d6071f69be0672d13b194f7b52b3773d636ccd7e9ac689c52785b3ff5",
+    "/home/kaan/sensitivity_20260907/gasoline/force_trace_core_v1/prepare_force_trace_core.py": "271e830ceccc8e80df014782c242256830c847585b26beb00a5250fa925e1ff8",
+    "/home/kaan/sensitivity_20260907/gasoline/force_trace_core_v1/FORCE_ORDER_TRACE_DESIGN.md": "206c52397109d2461b5757967e485ebc64432c07d8ea7d9558063af568f5da63"
+  },
+  "native_source_pins": {
+    "/home/kaan/sensitivity_20260907/gasoline/native_retained/gasoline/gasoline": "7eb37f0ced056f78435b9f2c71883bf60c39ac78ee3948d6331a21204c222be3",
+    "/home/kaan/sensitivity_20260907/gasoline/native_retained/gasoline/smooth.c": "e4d7c9061a8b6106c6fe325a3371f5b127139aeded32d68c928308d2dbe5e742",
+    "/home/kaan/sensitivity_20260907/gasoline/native_retained/gasoline/smoothfcn.c": "02ffb741289c43de8c9f0638ce05ae71a9cbb1081c6947816d4a5faa5f705a37",
+    "/home/kaan/sensitivity_20260907/gasoline/native_retained/gasoline/SphPressureTerms.h": "04dab99b7e04e51700187fb02f96407c309d46d62107fd743a4d9d933ea310fc",
+    "/home/kaan/sensitivity_20260907/gasoline/native_retained/gasoline/floattype.h": "8eb6ad0a91014b073d9c56c788927e3d0ad9809b62e35053e6121d24cc4887ee"
+  },
+  "resources": {
+    "guest": 15436398592,
+    "host": 37909688320,
+    "available_ram": 28717600768
+  },
+  "native_solver_runs": 0,
+  "full_controls_added": 0,
+  "native_insertion_and_runner_pending": true
+}

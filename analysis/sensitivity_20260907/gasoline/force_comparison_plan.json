@@ -1,0 +1,21 @@
+{
+  "status": "frozen_read_only_comparison",
+  "input_pins": {
+    "/home/kaan/sensitivity_20260907/gasoline/force_order_runner_v1/report.json": "94ed097aa774b930c065bb1710d2c4f4f9d4cf618adcf09c52b23debf8822b97",
+    "/mnt/c/Users/kaanb/CloudCrushing/sensitivity_20260907/gasoline/force_trace_replay.py": "4d5a510dd2cc3332620523696fcaf471f3fb80072e121a8bd7c5b94a414642ee",
+    "/home/kaan/sensitivity_20260907/gasoline/force_order_cases_v1/off_a/force.rank00.bin": "425b929f75e2caca62c55e929a6a70c0b2f9970db382d703a7ebb2b9f29f7e0e",
+    "/home/kaan/sensitivity_20260907/gasoline/force_order_cases_v1/off_a/force.rank01.bin": "06198d1d8520536132aa9fcaf7b56cdfd792375fc2c6a58dcbf5f9f8b342615b",
+    "/home/kaan/sensitivity_20260907/gasoline/force_order_cases_v1/off_b/force.rank00.bin": "e20839f2e3d0475d734179d68f4657fe9092056b4df79b5bddcdd9b607f39d18",
+    "/home/kaan/sensitivity_20260907/gasoline/force_order_cases_v1/off_b/force.rank01.bin": "1af81790710c36b7c8410072be2551af4692887938cbeec8c4a8562bf7be4ab6",
+    "/home/kaan/sensitivity_20260907/gasoline/force_order_cases_v1/on/force.rank00.bin": "82749463cf902e6f0b79f4041004127a547d0eb8d0317e81a1fce368606af139",
+    "/home/kaan/sensitivity_20260907/gasoline/force_order_cases_v1/on/force.rank01.bin": "49fe5a627f7dd206b35ab647ea6f92715c97ce1064697dfd2f54abbfb8edb0f1"
+  },
+  "source_pins": {
+    "test_compare_force_order.py": "045d5105ea9c730028786fa59b7c5974540374c9c7d765f6f04a0bb232aebc02",
+    "FORCE_COMPARISON_PLAN.md": "b463d03e6488d6d74e0117456c3173a1db29fd6f9186427046636ecd75ffb258",
+    "force_trace_replay.py": "4d5a510dd2cc3332620523696fcaf471f3fb80072e121a8bd7c5b94a414642ee",
+    "compare_force_order.py": "b2be1dda4fe1bca2e0415d81d28b4917a7b5630b686e9c47ff19143d4da158c1"
+  },
+  "native_runs_to_launch": 0,
+  "criteria": "FORCE_COMPARISON_PLAN.md"
+}

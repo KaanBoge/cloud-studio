@@ -1,0 +1,338 @@
+{
+  "status": "passed_independent_selected_order_checks",
+  "comparison_sha256": "5c78fd85a3f5dc35800443a200955a883ecd97dce512b1bc7af665c48c66f7ef",
+  "source_sha256": "5345fa462eb658a6b4840917fa2bb22af36c068c1284e763c1b8b0197d84cbfa",
+  "paired_summary_counts_checked": 1638,
+  "order_comparisons_checked": 27,
+  "exact_rational_owner_sums_checked": 54,
+  "checks": [
+    {
+      "cases": [
+        "off_a",
+        "off_b"
+      ],
+      "phase": 11,
+      "time_code": 0.1613743061,
+      "target": 36578,
+      "component": "a0",
+      "strict_multiset_equal": true,
+      "rational_replay_exact": true
+    },
+    {
+      "cases": [
+        "off_a",
+        "off_b"
+      ],
+      "phase": 11,
+      "time_code": 0.1613743061,
+      "target": 36578,
+      "component": "a1",
+      "strict_multiset_equal": true,
+      "rational_replay_exact": true
+    },
+    {
+      "cases": [
+        "off_a",
+        "off_b"
+      ],
+      "phase": 11,
+      "time_code": 0.1613743061,
+      "target": 36578,
+      "component": "a2",
+      "strict_multiset_equal": true,
+      "rational_replay_exact": true
+    },
+    {
+      "cases": [
+        "off_a",
+        "off_b"
+      ],
+      "phase": 11,
+      "time_code": 0.1613743061,
+      "target": 36578,
+      "component": "uDotAV",
+      "strict_multiset_equal": true,
+      "rational_replay_exact": true
+    },
+    {
+      "cases": [
+        "off_a",
+        "off_b"
+      ],
+      "phase": 11,
+      "time_code": 0.1613743061,
+      "target": 64579,
+      "component": "a0",
+      "strict_multiset_equal": true,
+      "rational_replay_exact": true
+    },
+    {
+      "cases": [
+        "off_a",
+        "off_b"
+      ],
+      "phase": 11,
+      "time_code": 0.1613743061,
+      "target": 64579,
+      "component": "a1",
+      "strict_multiset_equal": true,
+      "rational_replay_exact": true
+    },
+    {
+      "cases": [
+        "off_a",
+        "off_b"
+      ],
+      "phase": 11,
+      "time_code": 0.1613743061,
+      "target": 64579,
+      "component": "a2",
+      "strict_multiset_equal": true,
+      "rational_replay_exact": true
+    },
+    {
+      "cases": [
+        "off_a",
+        "on"
+      ],
+      "phase": 3,
+      "time_code": 0.03227486122,
+      "target": 36578,
+      "component": "a0",
+      "strict_multiset_equal": true,
+      "rational_replay_exact": true
+    },
+    {
+      "cases": [
+        "off_a",
+        "on"
+      ],
+      "phase": 3,
+      "time_code": 0.03227486122,
+      "target": 36578,
+      "component": "a1",
+      "strict_multiset_equal": true,
+      "rational_replay_exact": true
+    },
+    {
+      "cases": [
+        "off_a",
+        "on"
+      ],
+      "phase": 3,
+      "time_code": 0.03227486122,
+      "target": 36578,
+      "component": "uDotAV",
+      "strict_multiset_equal": true,
+      "rational_replay_exact": true
+    },
+    {
+      "cases": [
+        "off_a",
+        "on"
+      ],
+      "phase": 3,
+      "time_code": 0.03227486122,
+      "target": 64579,
+      "component": "a0",
+      "strict_multiset_equal": true,
+      "rational_replay_exact": true
+    },
+    {
+      "cases": [
+        "off_a",
+        "on"
+      ],
+      "phase": 11,
+      "time_code": 0.1613743061,
+      "target": 36578,
+      "component": "a0",
+      "strict_multiset_equal": true,
+      "rational_replay_exact": true
+    },
+    {
+      "cases": [
+        "off_a",
+        "on"
+      ],
+      "phase": 11,
+      "time_code": 0.1613743061,
+      "target": 36578,
+      "component": "a1",
+      "strict_multiset_equal": true,
+      "rational_replay_exact": true
+    },
+    {
+      "cases": [
+        "off_a",
+        "on"
+      ],
+      "phase": 11,
+      "time_code": 0.1613743061,
+      "target": 36578,
+      "component": "a2",
+      "strict_multiset_equal": true,
+      "rational_replay_exact": true
+    },
+    {
+      "cases": [
+        "off_a",
+        "on"
+      ],
+      "phase": 11,
+      "time_code": 0.1613743061,
+      "target": 63924,
+      "component": "a0",
+      "strict_multiset_equal": true,
+      "rational_replay_exact": true
+    },
+    {
+      "cases": [
+        "off_a",
+        "on"
+      ],
+      "phase": 11,
+      "time_code": 0.1613743061,
+      "target": 63924,
+      "component": "a1",
+      "strict_multiset_equal": true,
+      "rational_replay_exact": true
+    },
+    {
+      "cases": [
+        "off_a",
+        "on"
+      ],
+      "phase": 11,
+      "time_code": 0.1613743061,
+      "target": 63924,
+      "component": "a2",
+      "strict_multiset_equal": true,
+      "rational_replay_exact": true
+    },
+    {
+      "cases": [
+        "off_a",
+        "on"
+      ],
+      "phase": 11,
+      "time_code": 0.1613743061,
+      "target": 64579,
+      "component": "a0",
+      "strict_multiset_equal": true,
+      "rational_replay_exact": true
+    },
+    {
+      "cases": [
+        "off_a",
+        "on"
+      ],
+      "phase": 11,
+      "time_code": 0.1613743061,
+      "target": 64579,
+      "component": "a1",
+      "strict_multiset_equal": true,
+      "rational_replay_exact": true
+    },
+    {
+      "cases": [
+        "off_a",
+        "on"
+      ],
+      "phase": 11,
+      "time_code": 0.1613743061,
+      "target": 64579,
+      "component": "a2",
+      "strict_multiset_equal": true,
+      "rational_replay_exact": true
+    },
+    {
+      "cases": [
+        "off_b",
+        "on"
+      ],
+      "phase": 3,
+      "time_code": 0.03227486122,
+      "target": 36578,
+      "component": "a0",
+      "strict_multiset_equal": true,
+      "rational_replay_exact": true
+    },
+    {
+      "cases": [
+        "off_b",
+        "on"
+      ],
+      "phase": 3,
+      "time_code": 0.03227486122,
+      "target": 36578,
+      "component": "a1",
+      "strict_multiset_equal": true,
+      "rational_replay_exact": true
+    },
+    {
+      "cases": [
+        "off_b",
+        "on"
+      ],
+      "phase": 3,
+      "time_code": 0.03227486122,
+      "target": 36578,
+      "component": "uDotAV",
+      "strict_multiset_equal": true,
+      "rational_replay_exact": true
+    },
+    {
+      "cases": [
+        "off_b",
+        "on"
+      ],
+      "phase": 3,
+      "time_code": 0.03227486122,
+      "target": 64579,
+      "component": "a0",
+      "strict_multiset_equal": true,
+      "rational_replay_exact": true
+    },
+    {
+      "cases": [
+        "off_b",
+        "on"
+      ],
+      "phase": 11,
+      "time_code": 0.1613743061,
+      "target": 63924,
+      "component": "a0",
+      "strict_multiset_equal": true,
+      "rational_replay_exact": true
+    },
+    {
+      "cases": [
+        "off_b",
+        "on"
+      ],
+      "phase": 11,
+      "time_code": 0.1613743061,
+      "target": 63924,
+      "component": "a1",
+      "strict_multiset_equal": true,
+      "rational_replay_exact": true
+    },
+    {
+      "cases": [
+        "off_b",
+        "on"
+      ],
+      "phase": 11,
+      "time_code": 0.1613743061,
+      "target": 63924,
+      "component": "a2",
+      "strict_multiset_equal": true,
+      "rational_replay_exact": true
+    }
+  ],
+  "method": "Independent struct reader; exact rational add/sub rounded to binary64 at each native event.",
+  "scope": "All claimed order-only pairs, not an independent classification of every changed-input case.",
+  "old_field_gate_still_failed": true,
+  "native_runs_launched": 0
+}

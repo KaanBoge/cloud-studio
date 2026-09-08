@@ -45,6 +45,12 @@ The subsequent [native serial-output test](sensitivity_20260907/gasoline/SERIAL_
 passes its within-operation byte/count checks on both hosted particle buffers
 and the restored master buffer. It saved two real diagnostic states and a
 checkpoint; the separate trajectory-equivalence hold remains.
+The [native force-order result](sensitivity_20260907/gasoline/FORCE_ORDER_RESULTS.md)
+now identifies27 paired force sums with identical inputs whose different
+addition orders reproduce different endpoints. The other differences are not
+all explained. Three short diagnostics saved four states and three checkpoints;
+all27 positive order claims have independent arithmetic checks. No full control
+or production viewer entry was added, and the failed density gate remains.
 
 Updated 7 September 2026. **Historical runs are not yet a validated matched-code
 comparison.** The corrected scripts are in `verified_20260907/`. Previous

@@ -29,6 +29,14 @@ passed three exact byte/count checks in a new six-step, two-worker diagnostic.
 Both real states and the finalized checkpoint are retained. Its initial failed
 preparation is preserved separately. This tests direct buffer mutation only,
 not calculation-order or trajectory equivalence; no full control is enabled.
+The subsequent [native force-order study](gasoline/FORCE_ORDER_RESULTS.md)
+now reproduces27 selected paired force-sum differences from identical inputs
+in different recorded orders. All three planned six-step traces completed;
+four actual states and three checkpoints remain saved. The read-only comparison
+and independent rational replay pass. Changed-input cases remain distinct and
+the previous density gate remains failed. No further traces or full Gasoline
+controls are enabled without a scientific acceptance decision and the remaining
+same-executable sharp-IC validation.
 
 ## Fixed pilot design
 
