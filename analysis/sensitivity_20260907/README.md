@@ -2,17 +2,29 @@
 
 ## Update: 8 September 2026
 
-The [consolidated resolution summary](resolution_summary_v1/README.md) now
-compares all 23 accepted velocity-law pairs at fixed chi=100 and Mach=2.
+The [Gadget-4 L3/L4 comparison](gadget4/analysis_levels_v1/README.md) is now
+complete: both new L4 controls passed all 101 native states through 5 t_cc.
+Peak paired mass separation is 6.954% at L3 and 4.232% at L4, not a
+convergence or universal reuse decision. L4 took 12m40s / 12m34s with about
+eight busy CPU workers and 1.80 / 1.78 GiB peak solver-child RSS. New raw
+was written directly to C:; no old data was moved or deleted.
+
+The accepted total is now **48 controls and 4,852 native analysis states**.
+Six L3/L4 controls remain: four Gasoline (scientific validation held) and
+two repaired MFV L4 (own-level validation and storage review still needed).
+Higher levels are additional work. The old blanket replacement queue is inactive.
+
+The earlier immutable [consolidated resolution summary](resolution_summary_v1/README.md)
+compares the preceding 23 accepted velocity-law pairs at fixed chi=100 and Mach=2.
 Its 46 controls contain 4,650 native analysis states. All 23 copied peak
 metrics were cross-checked against the existing scalar reports; no native
 experiment was repeated. It preserves each code's pressure, boundary and
 timing caveats and makes no blanket reuse or replacement decision.
 
-Forty-six full controls are now validated and analyzed: the eight pilot runs below, six
+Forty-eight full controls are now validated and analyzed: the eight pilot runs below, six
 native Athena 4.2 runs at L3/L4/L5, four Enzo runs at L3/L4, and four Enzo-E runs
 at L3/L4, plus four each for RAMSES, FLASH 4.8, Flash-X and Arepo at L3/L4,
-four GIZMO MFM controls at L3/L4, two Gadget-4 controls at L3, and the two
+four GIZMO MFM controls at L3/L4, four Gadget-4 controls at L3/L4, and the two
 repaired GIZMO MFV controls at L3. The missing sharp MFV case took2m16s on
 eight CPU workers; the existing repaired historical diagnostic was reused.
 Each has101 native frames. Peak paired dense-mass separation is6.438% of
@@ -79,7 +91,7 @@ CPU workers, peaking at 1.636 GiB solver-child RSS. These two coarse levels
 do not establish convergence or a universal historical-reuse decision. Both MFV L3
 controls also reached 101 outputs, but zero stored internal energy first
 appears at t=3.95 t_cc in each. They are retained as failure evidence and
-excluded from the 46 validated controls. No floor or output was changed.
+excluded from the 48 validated controls. No floor or output was changed.
 See [GIZMO results and failure audit](gizmo/README.md).
 
 The later [MFV terminal restart diagnosis](gizmo/MFV_RESTART_DIAGNOSIS.md)

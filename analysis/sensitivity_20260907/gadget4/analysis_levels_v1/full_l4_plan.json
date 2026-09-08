@@ -1,0 +1,118 @@
+{
+  "status": "frozen_reviewed_ready_for_windows_readback",
+  "physics": {
+    "code": "Gadget-4 SPH",
+    "chi": 100,
+    "mach": 2,
+    "gamma": 1.6666666666666667,
+    "rho_wind": 1,
+    "p_wind": 1,
+    "r_cloud": 1,
+    "density_width": 0.1,
+    "rv_scale": 1.3,
+    "center": [
+      3,
+      5,
+      5
+    ],
+    "box": [
+      20,
+      10,
+      10
+    ],
+    "boundary": "fully periodic",
+    "sampling": "regular cell-centered equal-volume lattice with variable masses",
+    "cloud_id_start": 1000000000,
+    "ranks": 8,
+    "native_variant": "Gadget4_3d_mixed_hfix; existing mean-mass and periodic-box smoothing-length seed patch retained in both laws",
+    "scope": "Within-code velocity sensitivity, not a matched grid inflow/outflow comparison. No cooling, magnetic field, gravity or frame tracking.",
+    "v_wind": 2.581988897471611,
+    "t_cc": 3.872983346207417
+  },
+  "pins": {
+    "/home/kaan/sensitivity_20260907/gadget4/runner_full_l4_ntfs_v1/run_l4_direct_storage.py": "19949877defff0868f31d78d7db635c93f8fce83f2d7128a283eab6a41996329",
+    "/home/kaan/sensitivity_20260907/gadget4/runner_full_l4_ntfs_v1/test_l4_direct_storage.py": "ee2923581c60ab87a7ddaf37d94efe7ccb8db7ed96611cee7295f166ce134fc5",
+    "/home/kaan/sensitivity_20260907/gadget4/runner_full_l4_ntfs_v1/prepare_l4_direct_storage.py": "31ae56732c188446ab803c29c4508391475511a122831a170c7d26372c22df11",
+    "/home/kaan/sensitivity_20260907/gadget4/runner_full_l4_ntfs_v1/L4_DIRECT_STORAGE_PLAN.md": "12714dbadbe78122ff466b751e7c02fa9f56b4d5d84375591a11b6f8be4f7e20",
+    "/home/kaan/sensitivity_20260907/gadget4/runner_full_l4_ntfs_v1/gadget_l4_controls.py": "7319681b1925bd9c57cb10578e4ae141f58d09a1fb4e5b3c5f2947ea4e420458",
+    "/home/kaan/sensitivity_20260907/gadget4/runner_full_l4_ntfs_v1/native_cadence.py": "16366499d38f2d5690b86d5df01a5d797493f87651d2e19d687d1e9a65075669",
+    "/home/kaan/sensitivity_20260907/gadget4/gadget_controls.py": "fc3d8e79f2ed0f1c8aafbaea57d4c01286f96a8a891261330428c26e9b37de58",
+    "/home/kaan/sensitivity_20260907/gadget4/build.json": "61fb3bb2ea56f6fa96347ace74d795987e4bdff7cb3abc98ceda5cecc93bf041",
+    "/home/kaan/sensitivity_20260907/gadget4/experiment.json": "2927619117202ecea7d44acbd1648b73a6f1e8fb592bd20f57319acc125d9e29",
+    "/home/kaan/sensitivity_20260907/gadget4/params_L4.txt": "7d4fae2eedbeae4c3217edbff5b6c24f30306843c1c46127740b4f6e18420851",
+    "/home/kaan/sensitivity_20260907/gadget4/Gadget4_pair": "5ab857aba8cf4213fbce701ae8eaa6c449f5de43c0b9ab61722e962d88dca8d3",
+    "/home/kaan/sensitivity_20260907/gadget4/validation_l4_v1/report.json": "93ff90568d163636204df77aee7b7497c1f3f07980044808da50d6190cc20e21",
+    "/home/kaan/verified_20260907/storage_guard.py": "f342c104352aa4526e737ac58a33e081a12d69d00c57cc55f15ad49a3f9e6fcb",
+    "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/gadget4_L4_velocity_pair_v1/sharp13/ics.hdf5": "5c6438577d5d5d04900ecc894773954cecaf4d04a1f5ba671104627fd6ed854d",
+    "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/gadget4_L4_velocity_pair_v1/sharp13/params.txt": "33f8dbd043a49ed99c5ba3c8d14d8b144f2eb852df7756fe39631b385d6114be",
+    "/home/kaan/sensitivity_20260907/gadget4/validation_l4_v1/sharp13/ics.hdf5": "5c6438577d5d5d04900ecc894773954cecaf4d04a1f5ba671104627fd6ed854d",
+    "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/gadget4_L4_velocity_pair_v1/tanh13/ics.hdf5": "b2d15efa488fa4ddaad7e7f6c23aae1c291effe012a89d57db6c4726e64ffd8c",
+    "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/gadget4_L4_velocity_pair_v1/tanh13/params.txt": "33f8dbd043a49ed99c5ba3c8d14d8b144f2eb852df7756fe39631b385d6114be",
+    "/home/kaan/sensitivity_20260907/gadget4/validation_l4_v1/tanh13/ics.hdf5": "b2d15efa488fa4ddaad7e7f6c23aae1c291effe012a89d57db6c4726e64ffd8c"
+  },
+  "windows_readback_files": {
+    "storage_probe.bin": "7daca2095d0438260fa849183dfc67faa459fdf4936e1bc91eec6b281b27e4c2",
+    "sharp13/ics.hdf5": "5c6438577d5d5d04900ecc894773954cecaf4d04a1f5ba671104627fd6ed854d",
+    "sharp13/params.txt": "33f8dbd043a49ed99c5ba3c8d14d8b144f2eb852df7756fe39631b385d6114be",
+    "tanh13/ics.hdf5": "b2d15efa488fa4ddaad7e7f6c23aae1c291effe012a89d57db6c4726e64ffd8c",
+    "tanh13/params.txt": "33f8dbd043a49ed99c5ba3c8d14d8b144f2eb852df7756fe39631b385d6114be"
+  },
+  "tests": {
+    "returncode": 0,
+    "output": "test_changed_native_numerics_fail (__main__.DirectStorageTests.test_changed_native_numerics_fail) ... ok\ntest_changed_pin_fails_before_run (__main__.DirectStorageTests.test_changed_pin_fails_before_run) ... ok\ntest_full_pair_and_ancillary_are_reserved (__main__.DirectStorageTests.test_full_pair_and_ancillary_are_reserved) ... ok\ntest_guest_space_never_counts_as_host_capacity (__main__.DirectStorageTests.test_guest_space_never_counts_as_host_capacity) ... ok\ntest_host_space_never_counts_as_guest_capacity (__main__.DirectStorageTests.test_host_space_never_counts_as_guest_capacity) ... ok\ntest_measured_mapping (__main__.DirectStorageTests.test_measured_mapping) ... ok\ntest_missing_host_measurement_fails (__main__.DirectStorageTests.test_missing_host_measurement_fails) ... ok\ntest_mount_free_is_independently_checked (__main__.DirectStorageTests.test_mount_free_is_independently_checked) ... ok\ntest_non_drvfs_fails (__main__.DirectStorageTests.test_non_drvfs_fails) ... ok\ntest_only_path_and_metadata_times_change (__main__.DirectStorageTests.test_only_path_and_metadata_times_change) ... ok\ntest_other_drive_fails (__main__.DirectStorageTests.test_other_drive_fails) ... ok\ntest_readonly_fails (__main__.DirectStorageTests.test_readonly_fails) ... ok\ntest_remaining_budget_never_negative (__main__.DirectStorageTests.test_remaining_budget_never_negative) ... ok\ntest_same_device_fails (__main__.DirectStorageTests.test_same_device_fails) ... ok\ntest_wrong_raw_destination_fails (__main__.DirectStorageTests.test_wrong_raw_destination_fails) ... ok\n\n----------------------------------------------------------------------\nRan 15 tests in 0.001s\n\nOK\n"
+  },
+  "native_validation_report_sha256": "93ff90568d163636204df77aee7b7497c1f3f07980044808da50d6190cc20e21",
+  "source_plan_sha256": "12714dbadbe78122ff466b751e7c02fa9f56b4d5d84375591a11b6f8be4f7e20",
+  "storage_before": {
+    "guest_free_bytes": 15342968832,
+    "mounted_free_bytes": 37605994496,
+    "windows": {
+      "distribution": "Ubuntu",
+      "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+      "drive": "C:",
+      "free_bytes": 37605978112,
+      "total_bytes": 1999283154944
+    },
+    "output_mount": {
+      "target": "/mnt/c",
+      "source": "C:\\",
+      "fstype": "9p",
+      "options": "rw,noatime,aname=drvfs;path=C:\\;uid=1000;gid=1000;symlinkroot=/mnt/,cache=0x5,access=client,msize=65536,trans=fd,rfd=5,wfd=5"
+    },
+    "remaining_raw_budget": 7840595890,
+    "live_guard": false
+  },
+  "storage_after": {
+    "guest_free_bytes": 15342968832,
+    "mounted_free_bytes": 37530148864,
+    "windows": {
+      "distribution": "Ubuntu",
+      "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+      "drive": "C:",
+      "free_bytes": 37530148864,
+      "total_bytes": 1999283154944
+    },
+    "output_mount": {
+      "target": "/mnt/c",
+      "source": "C:\\",
+      "fstype": "9p",
+      "options": "rw,noatime,aname=drvfs;path=C:\\;uid=1000;gid=1000;symlinkroot=/mnt/,cache=0x5,access=client,msize=65536,trans=fd,rfd=5,wfd=5"
+    },
+    "remaining_raw_budget": 7840595890,
+    "live_guard": false
+  },
+  "unchanged_native_retention_budget": {
+    "native_snapshot_bytes": 25179656,
+    "eight_rank_restart_bytes": 114013430,
+    "ic_bytes": 37754984,
+    "per_case_bytes": 3920297945,
+    "pair_bytes": 7840595890,
+    "formula": "104 snapshots +3 measured eight-rank restart sets +IC +256MiB logs per case, then20% margin. Separate10GiB reserve on BOTH filesystems. Full-case external cap6000s below native7200s restart interval, no auto-resume."
+  },
+  "guest_ancillary_allowance": 1073741824,
+  "source_binary": "5ab857aba8cf4213fbce701ae8eaa6c449f5de43c0b9ab61722e962d88dca8d3",
+  "raw_destination": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/gadget4_L4_velocity_pair_v1",
+  "native_solver_runs_started": 0,
+  "existing_raw_copied_moved_deleted": 0,
+  "scope": "Only two validated IC copies and small new runner/probe files prepared. No old raw relocation, no native experiment repeated."
+}

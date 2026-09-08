@@ -1,4 +1,15 @@
-# Native Gadget-4 L3 velocity sensitivity results
+# Native Gadget-4 velocity sensitivity results
+
+## Latest: L3 and L4 complete
+
+The [new two-resolution comparison](analysis_levels_v1/README.md) includes
+all four full controls, 101 native states each through 5 t_cc. Peak paired
+dense-mass separation is 6.954% at L3 and 4.232% at L4. The two new L4
+controls took 12m40s / 12m34s on eight busy CPU workers and bring the study
+to 48 accepted controls. All native files remain retained. This is
+within-code sensitivity evidence, not convergence or a matched grid baseline.
+
+## Earlier L3 report and original short L4 gate
 
 8 September 2026. Both full native L3 controls are complete and analyzed:
 101 distinct native outputs each through 5 t_cc, all 202 independently
@@ -6,8 +17,9 @@ checked with yt. These two controls bring the analyzed study total to 44.
 This is a single coarse-resolution result, not convergence or a universal
 historical-reuse decision.
 
-Level 4 has now passed its own native initial/evolved checks and independent
-reader tests. The full pair is storage-held, not completed: its measured
+At the earlier short-validation stage, level 4 passed its own native
+initial/evolved checks and independent reader tests. Its full pair was then
+storage-held: the measured
 7.30 GiB budget plus 10 GiB reserve exceeds the 16.66 GiB free in WSL.
 See [the level-4 validation and storage evidence](L4_VALIDATION.md).
 

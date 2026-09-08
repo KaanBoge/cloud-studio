@@ -4,14 +4,45 @@ Ryan requested a few resolutions per code at fixed chi and Mach before deciding
 whether affected historical runs need replacing. This study preserves all old
 and new raw data. It does not authorize a blanket replacement campaign.
 
-## Completed consolidation: resolution summary
+## Completed: Gadget-4 L4 pair and L3/L4 comparison
+
+8 September: both missing L4 sharp/historical controls completed with
+the unchanged validated native binary and eight CPU workers. The new
+[storage/launch plan](gadget4/L4_DIRECT_STORAGE_PLAN.md) saves new raw data
+directly on C:, with a separately tested mount/capacity mapping; it does not
+move or delete completed WSL data. All 15 new wrapper tests and independent
+Windows readback of both ICs, parameters and the small storage probe passed.
+The full pair budget and host/guest reserves were guarded. Both controls
+have 101 independently checked native states through 5 t_cc. The new
+[L3/L4 analysis](gadget4/analysis_levels_v1/README.md) reuses the accepted
+L3 scalar report and measures peak separation 6.954% / 4.232%. It adds
+12 scalar tests, an independent interpolation check and new raw hash verification.
+
+Runner: `/home/kaan/sensitivity_20260907/gadget4/runner_full_l4_ntfs_v1`.
+Raw and live ledger: `C:/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/gadget4_L4_velocity_pair_v1`.
+Plan SHA256: `a66c291cdaf6858a0c69560a47ed137f5d026e85851af205134b5cb0d67bdba4`.
+Do not relaunch preparation, tests, either case, or the frozen runner.
+Accepted controls are now 48, containing 4,852 native analysis states. Six
+L3/L4 controls remain: two repaired MFV L4 and four Gasoline. No Gadget-4
+solver remains active after this pair. Before new native work, check live
+processes and both shared locks; saved PIDs are not activity evidence.
+
+Next safe scope: assess repaired MFV L4 with its own IC, timing, repair and
+conservation validation before a full pair. Direct C: storage requires a
+separately reviewed mapping/budget for MFV; do not blindly reuse Gadget's
+runner or charge its payload only to guest space. Refresh host and guest
+space and retain full new raw plus reserves. Gasoline still requires its
+scientific validation decision. No blanket queue is enabled, no old raw
+relocation approved, and no native data deletion is needed for this result.
+
+## Earlier immutable consolidation: resolution summary
 
 The [resolution summary](resolution_summary_v1/README.md) collates the 23
 accepted pairs from existing reports, with exact source hashes and 12 unit
 tests plus scalar cross-checks for all pairs. No native reruns, raw relocation
-or acceptance changes were made. Accepted total remains 46; eight L3/L4
+or acceptance changes were made. At that snapshot the accepted total was 46; eight L3/L4
 controls remain held, plus higher levels. The storage-relocation approval
-and Gasoline scientific-repeatability decision remain pending. Do not repeat
+and Gasoline scientific-repeatability decision were pending. Do not repeat
 this consolidation or the completed native diagnostics on unchanged follow-ups.
 
 ## Latest completed gate: repaired MFV L3 pair

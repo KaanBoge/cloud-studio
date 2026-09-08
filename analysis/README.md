@@ -1,7 +1,13 @@
 # Cloud-crushing analysis: verification status
 
-The [code-by-code resolution summary](sensitivity_20260907/resolution_summary_v1/README.md)
-brings together all 23 accepted velocity-law pairs: 46 controls and 4,650 native
+The new [Gadget-4 L3/L4 comparison](sensitivity_20260907/gadget4/analysis_levels_v1/README.md)
+adds two complete L4 controls, each with 101 native states through 5 t_cc.
+Peak mass-curve separation is 6.954% at L3 and 4.232% at L4. The study now
+has **48 accepted controls and 4,852 native analysis states**, with six
+L3/L4 controls pending plus higher levels. All raw data remains retained.
+
+The earlier [code-by-code resolution summary](sensitivity_20260907/resolution_summary_v1/README.md)
+is an immutable snapshot of the preceding 23 accepted velocity-law pairs: 46 controls and 4,650 native
 analysis states, at fixed chi=100 and Mach=2. Values and source links were
 checked without rerunning simulations. This is sensitivity evidence, not a
 cross-code accuracy ranking or a blanket historical-replacement decision.
@@ -9,9 +15,9 @@ cross-code accuracy ranking or a blanket historical-replacement decision.
 The [velocity-prescription sensitivity study](sensitivity_20260907/README.md)
 now tests historical versus corrected initial velocities within each native code
 at fixed chi=100 and Mach=2, following Ryan's request to measure impact before
-deciding which old runs need replacing. Forty-six full controls are validated
+deciding which old runs need replacing. Forty-eight full controls are validated
 and analyzed, including Athena 4.2 L3/L4/L5, Enzo/Enzo-E/RAMSES/FLASH 4.8/Flash-X/Arepo L3/L4,
-GIZMO MFM L3/L4, Gadget-4 L3 and the repaired GIZMO MFV L3 pair.
+GIZMO MFM L3/L4, Gadget-4 L3/L4 and the repaired GIZMO MFV L3 pair.
 [Gadget-4's result](sensitivity_20260907/gadget4/README.md)
 retains the original SPH pressure deviations and periodic boundaries, and is
 not a matched uniform-pressure grid baseline. GIZMO MFV's two full L3 attempts failed positive-energy
@@ -34,9 +40,9 @@ has now passed on the same repaired executable, completing the
 Peak dense-mass separation is6.438% of initial dense mass at this one coarse
 level, not convergence. The historical diagnostic was reused, not rerun;
 all native raw and failed attempts remain retained.
-Gadget-4 L4's native short validation now passes, but its full pair is held
-for storage. The [L4 evidence](sensitivity_20260907/gadget4/L4_VALIDATION.md)
-does not increase the accepted full-control count.
+Gadget-4 L4's original [short validation](sensitivity_20260907/gadget4/L4_VALIDATION.md)
+is retained as earlier evidence. Its subsequent full pair now passed on
+reviewed direct Windows storage, with no old raw relocation or deletion.
 
 [Gasoline's longer diagnostic](sensitivity_20260907/gasoline/LONGER_VALIDATION.md)
 adds81 independently checked states and verified checkpoint retention, not
