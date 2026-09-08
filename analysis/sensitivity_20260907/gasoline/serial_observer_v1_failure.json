@@ -1,0 +1,5 @@
+{
+  "status": "observer_stopped_needs_review",
+  "error": "ValueError('Missing/duplicate/out-of-order observer records')",
+  "full_controls_added": 0
+}

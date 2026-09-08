@@ -24,6 +24,11 @@ native doubles, including original-binary repeats. The actual density callback
 is gather-only; symmetric force/energy cache accumulation is a candidate for
 further tracing, not a proven cause. No new solver was run or tolerance changed.
 Gasoline remains scientifically held and the accepted total stays46.
+The later [serial-output buffer test](gasoline/SERIAL_OBSERVER_VALIDATION.md)
+passed three exact byte/count checks in a new six-step, two-worker diagnostic.
+Both real states and the finalized checkpoint are retained. Its initial failed
+preparation is preserved separately. This tests direct buffer mutation only,
+not calculation-order or trajectory equivalence; no full control is enabled.
 
 ## Fixed pilot design
 

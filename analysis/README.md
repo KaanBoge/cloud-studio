@@ -41,6 +41,10 @@ The [read-only checkpoint investigation](sensitivity_20260907/gasoline/DIVERGENC
 confirms differences already present in native double precision, including
 untouched-binary repeats. Exact selected-field export checks rule out a TIPSY
 conversion discrepancy for those fields, but do not yet establish the cause.
+The subsequent [native serial-output test](sensitivity_20260907/gasoline/SERIAL_OBSERVER_VALIDATION.md)
+passes its within-operation byte/count checks on both hosted particle buffers
+and the restored master buffer. It saved two real diagnostic states and a
+checkpoint; the separate trajectory-equivalence hold remains.
 
 Updated 7 September 2026. **Historical runs are not yet a validated matched-code
 comparison.** The corrected scripts are in `verified_20260907/`. Previous

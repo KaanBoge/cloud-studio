@@ -5,7 +5,12 @@
 finds differences already present in double-precision checkpoints, including
 untouched-executable repeats. All selected checkpoint fields reproduce their
 TIPSY exports exactly. The cause and output-observation acceptance remain under
-review; no additional simulation or changed tolerance was used.
+review; no additional simulation or changed tolerance was used for that review.
+The subsequent [serial-output buffer diagnostic](SERIAL_OBSERVER_VALIDATION.md)
+now passes its narrower within-operation byte/count checks. It took 3.064 seconds
+on the original two workers and saved two real states plus a valid checkpoint.
+The first failed preparation remains preserved. This does not clear the
+trajectory-equivalence hold or add a full science control.
 Four longer diagnostic runs have now completed on the historical
 two-worker count, producing81 actual native states through approximately
 1 t_cc. All independent mass checks pass, but the predeclared field-equivalence

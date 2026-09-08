@@ -1,0 +1,422 @@
+{
+  "status": "passed_observed_serial_particle_bytes_not_trajectory_equivalence",
+  "full_controls_added": 0,
+  "accepted_study_total": 46,
+  "old_field_gate_still_failed": true,
+  "observer_records": [
+    {
+      "stage": "master_written",
+      "count": 32768,
+      "bytes": 13369344,
+      "equal": true
+    },
+    {
+      "stage": "remote_written",
+      "count": 32768,
+      "bytes": 13369344,
+      "equal": true
+    },
+    {
+      "stage": "master_restored",
+      "count": 32768,
+      "bytes": 13369344,
+      "equal": true
+    }
+  ],
+  "native_states": [
+    {
+      "path": "/home/kaan/sensitivity_20260907/gasoline/serial_observer_case_v2/state.initial",
+      "sha256": "c546f5ff33398f60a1a3730e39872ed4ab4fa614d49e5052177a8eee589ad985",
+      "time_code": 0.0,
+      "count": 65536,
+      "direct_mass": [
+        2425.245532028377,
+        409.90798234939575
+      ],
+      "yt_mass": [
+        2425.245532028377,
+        409.90798234939575
+      ],
+      "relative_difference": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "/home/kaan/sensitivity_20260907/gasoline/serial_observer_case_v2/state.000006",
+      "sha256": "32442451041fb353380a288671f580319ac764ad87fb3844981af99ef032140d",
+      "time_code": 0.19364916732,
+      "count": 65536,
+      "direct_mass": [
+        2425.245532028377,
+        409.90798234939575
+      ],
+      "yt_mass": [
+        2425.245532028377,
+        409.90798234939575
+      ],
+      "relative_difference": [
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "native_result": {
+    "exit_code": 0,
+    "wall_seconds": 3.063951850999999,
+    "guard": null,
+    "samples": [
+      [
+        0.0009286459999984231,
+        0,
+        0.0
+      ],
+      [
+        0.05176296999999863,
+        0,
+        0.0
+      ],
+      [
+        0.10266136099999912,
+        15327232,
+        0.06
+      ],
+      [
+        0.15367871499999808,
+        15327232,
+        0.06
+      ],
+      [
+        0.20457200099999895,
+        25706496,
+        0.08
+      ],
+      [
+        0.25667686299999914,
+        81907712,
+        0.18
+      ],
+      [
+        0.30781178099999806,
+        90263552,
+        0.28
+      ],
+      [
+        0.3588543890000011,
+        92073984,
+        0.38
+      ],
+      [
+        0.40990627700000104,
+        92196864,
+        0.48
+      ],
+      [
+        0.4610005340000001,
+        90411008,
+        0.59
+      ],
+      [
+        0.5119621730000006,
+        85868544,
+        0.6799999999999999
+      ],
+      [
+        0.5628334889999991,
+        91877376,
+        0.79
+      ],
+      [
+        0.6138255780000001,
+        92102656,
+        0.89
+      ],
+      [
+        0.6648166260000004,
+        89411584,
+        0.99
+      ],
+      [
+        0.7159333630000013,
+        90427392,
+        1.09
+      ],
+      [
+        0.7668606509999982,
+        92086272,
+        1.2000000000000002
+      ],
+      [
+        0.8179754189999997,
+        129150976,
+        1.2999999999999998
+      ],
+      [
+        0.8690227969999995,
+        99545088,
+        1.4
+      ],
+      [
+        0.9200475349999984,
+        102563840,
+        1.5
+      ],
+      [
+        0.9710372969999987,
+        105635840,
+        1.6099999999999999
+      ],
+      [
+        1.0221041809999996,
+        105738240,
+        1.71
+      ],
+      [
+        1.0731702090000006,
+        103845888,
+        1.7999999999999998
+      ],
+      [
+        1.1241261260000002,
+        104730624,
+        1.9
+      ],
+      [
+        1.1751536029999983,
+        105639936,
+        2.01
+      ],
+      [
+        1.2260079399999988,
+        100474880,
+        2.1100000000000003
+      ],
+      [
+        1.2770067099999984,
+        104316928,
+        2.22
+      ],
+      [
+        1.3281327219999994,
+        105517056,
+        2.3200000000000003
+      ],
+      [
+        1.3791399439999985,
+        105721856,
+        2.42
+      ],
+      [
+        1.4301504929999993,
+        103911424,
+        2.54
+      ],
+      [
+        1.48109745,
+        104837120,
+        2.64
+      ],
+      [
+        1.5320324129999996,
+        105664512,
+        2.74
+      ],
+      [
+        1.5830533759999987,
+        100618240,
+        2.8400000000000003
+      ],
+      [
+        1.6341135740000006,
+        104398848,
+        2.9400000000000004
+      ],
+      [
+        1.6852285959999982,
+        105656320,
+        3.04
+      ],
+      [
+        1.7362536089999985,
+        102830080,
+        3.14
+      ],
+      [
+        1.7873276679999996,
+        104013824,
+        3.24
+      ],
+      [
+        1.8383721659999992,
+        105033728,
+        3.3400000000000003
+      ],
+      [
+        1.8894213919999991,
+        99614720,
+        3.45
+      ],
+      [
+        1.9404602010000005,
+        101998592,
+        3.55
+      ],
+      [
+        1.9915385500000014,
+        105275392,
+        3.64
+      ],
+      [
+        2.0426867979999983,
+        105766912,
+        3.74
+      ],
+      [
+        2.093715776,
+        103137280,
+        3.8400000000000003
+      ],
+      [
+        2.1447340269999984,
+        104280064,
+        3.95
+      ],
+      [
+        2.195791872000001,
+        105447424,
+        4.05
+      ],
+      [
+        2.2468288889999997,
+        99631104,
+        4.15
+      ],
+      [
+        2.297903137999999,
+        102432768,
+        4.26
+      ],
+      [
+        2.348925209000001,
+        104775680,
+        4.369999999999999
+      ],
+      [
+        2.399920352999999,
+        105766912,
+        4.46
+      ],
+      [
+        2.4509395000000005,
+        103497728,
+        4.57
+      ],
+      [
+        2.501960787999998,
+        104349696,
+        4.67
+      ],
+      [
+        2.552999656000001,
+        105558016,
+        4.77
+      ],
+      [
+        2.6040548249999986,
+        99622912,
+        4.869999999999999
+      ],
+      [
+        2.6551615419999983,
+        102203392,
+        4.970000000000001
+      ],
+      [
+        2.7062506609999986,
+        105455616,
+        5.0600000000000005
+      ],
+      [
+        2.757343517999999,
+        105771008,
+        5.180000000000001
+      ],
+      [
+        2.8083881260000005,
+        103620608,
+        5.28
+      ],
+      [
+        2.8594578539999986,
+        104738816,
+        5.38
+      ],
+      [
+        2.910478271999999,
+        105578496,
+        5.48
+      ],
+      [
+        2.9615727109999987,
+        102408192,
+        5.59
+      ],
+      [
+        3.012879723000001,
+        67420160,
+        5.66
+      ]
+    ],
+    "peak_solver_rss_bytes": 129150976,
+    "median_busy_cpu_workers": 1.9592933683071836,
+    "ranks": 2,
+    "gpu_used": false
+  },
+  "checkpoint": {
+    "path": "/home/kaan/sensitivity_20260907/gasoline/serial_observer_case_v2/state.step000000006.chk",
+    "sha256": "2dafe8b46895fb290a71dfc66913a680ef351f4722209c97a70b5efcbdf9fc94",
+    "header": {
+      "version": 8,
+      "valid": 1,
+      "count": 65536,
+      "gas": 65536,
+      "dark": 0,
+      "stars": 0,
+      "step": 6,
+      "time": 0.19364916732,
+      "particle_offset": 5145
+    }
+  },
+  "plan_sha256": "5c383a4772b36252bf8edf79ef66affea3a4e67b74973df66146d416c07d9c79",
+  "all_case_files": {
+    "/home/kaan/sensitivity_20260907/gasoline/serial_observer_case_v2/state.initial.HI": "22d40761a8b115333b40c528b20d70ef5de19de806ddc652291c54e13024dd57",
+    "/home/kaan/sensitivity_20260907/gasoline/serial_observer_case_v2/ic.std": "2a9c3a84bf3ae3e13fe0dfbe2f8e93134e619387dfdfcad44737af3730978659",
+    "/home/kaan/sensitivity_20260907/gasoline/serial_observer_case_v2/state.initial.HeII": "c47cb07b97aa2edcae8a06904b330ccab138edd885ce06cc2c279c050d868dd2",
+    "/home/kaan/sensitivity_20260907/gasoline/serial_observer_case_v2/state.000006.SPHH": "0ad9838718b7134dbe03eb7ff80395a3fb679f34b0d31038d85271b5437e714f",
+    "/home/kaan/sensitivity_20260907/gasoline/serial_observer_case_v2/state.000006": "32442451041fb353380a288671f580319ac764ad87fb3844981af99ef032140d",
+    "/home/kaan/sensitivity_20260907/gasoline/serial_observer_case_v2/state.000006.HI": "c3be36466b862036ade900ff13fdcf179fd5e14587e16d4fd068ebb7d12b028a",
+    "/home/kaan/sensitivity_20260907/gasoline/serial_observer_case_v2/state.log": "a8966128dc67d0827b7a71305f6028054a5635da5cb81a5763d8091e41e5dd57",
+    "/home/kaan/sensitivity_20260907/gasoline/serial_observer_case_v2/state.000006.HeI": "5ac0ffc7770f44e2d2d5c37ee7179066e5d0952e1ce7cb5229b700d584d3090e",
+    "/home/kaan/sensitivity_20260907/gasoline/serial_observer_case_v2/started.json": "6a4e2b549b481142a17905b6c8e2b692b0484149e5ef38c6b06e2ad704240545",
+    "/home/kaan/sensitivity_20260907/gasoline/serial_observer_case_v2/state.initial-hsml": "cbb69f4a360e59bc8e980c743d8f92dbfa5ac32c12219417da51da82f7c77c74",
+    "/home/kaan/sensitivity_20260907/gasoline/serial_observer_case_v2/state.initial.HeI": "d7cb4ca936ccec7a34311175d37414f8bbf247968bb7e9fc7a23c2b4538c33ac",
+    "/home/kaan/sensitivity_20260907/gasoline/serial_observer_case_v2/native_result.json": "60702a92539bc1b51d9e1386385808dc8efc3467ce4b3774a2614ed4b90ca2e6",
+    "/home/kaan/sensitivity_20260907/gasoline/serial_observer_case_v2/state.000006.HeII": "c47cb07b97aa2edcae8a06904b330ccab138edd885ce06cc2c279c050d868dd2",
+    "/home/kaan/sensitivity_20260907/gasoline/serial_observer_case_v2/run.out": "a7dd8e83887c593b9c073f0c817ebdff79e029b2103d44e2cc01b5ade49fd775",
+    "/home/kaan/sensitivity_20260907/gasoline/serial_observer_case_v2/state.000006-hsml": "6232986367daa903f8546d27eb25ee2673b10cf1ddc669f8c8d07b791eca3877",
+    "/home/kaan/sensitivity_20260907/gasoline/serial_observer_case_v2/run.param": "b0bd3393ea3a6e5fdc38d650ff32cc33847f212ce5ccc30f7790142afb8416b0",
+    "/home/kaan/sensitivity_20260907/gasoline/serial_observer_case_v2/state.initial": "c546f5ff33398f60a1a3730e39872ed4ab4fa614d49e5052177a8eee589ad985",
+    "/home/kaan/sensitivity_20260907/gasoline/serial_observer_case_v2/state.initial.iord": "6f50ceac0ace1e582d898c3485532421da7a99e14995e229e6787e678d501971",
+    "/home/kaan/sensitivity_20260907/gasoline/serial_observer_case_v2/state.initial.SPHH": "1310a7bdf882e0a5efb468caa7786bed208149dda2a63db0c779bc7596bd60d9",
+    "/home/kaan/sensitivity_20260907/gasoline/serial_observer_case_v2/state.step000000006.chk": "2dafe8b46895fb290a71dfc66913a680ef351f4722209c97a70b5efcbdf9fc94",
+    "/home/kaan/sensitivity_20260907/gasoline/serial_observer_case_v2/state.000006.iord": "4bb160b93f0ff646f5c280406c6ed51a70037e27d6bac885bef30430fc23252c",
+    "/home/kaan/sensitivity_20260907/gasoline/serial_observer_case_v2/state.000006.pres": "afde4a4d64afcb019ceb95dedb2f7ea163343f264175acb4fe263a1f70c85444",
+    "/home/kaan/sensitivity_20260907/gasoline/serial_observer_case_v2/state.initial.pres": "ffa8d7c5cdcc734c90902a3a1a880ea926a7bda5e289b7ded9d6880012ee5f5d"
+  },
+  "limitations": [
+    "Only byte/count equality inside this instrumented serial writer is demonstrated.",
+    "Not all process state, caches, communication order, timing or trajectory equivalence.",
+    "Instrumentation may itself alter timing; unchanged arithmetic objects are not a no-effect proof.",
+    "No extra repeat, changed tolerance, production viewer entry or full science control."
+  ]
+}
