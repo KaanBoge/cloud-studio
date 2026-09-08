@@ -1,0 +1,88 @@
+param([ValidateSet('stage','verify')][string]$Mode='stage',[string]$Commit,[long]$WorkflowId)
+$ErrorActionPreference='Stop'
+$taskRepo='C:\Users\kaanb\cloud-studio-repo'
+$taskStudy='C:\Users\kaanb\CloudCrushing\sensitivity_20260907'
+$taskBase='d88b8ea7f6d38578ee2b37bdeaa52ed50b3a4892'
+$taskFiles=@('README.md','PLAN.md','extend_resolution_summary_v2.py','test_resolution_summary_v2.py',
+ 'publish_resolution_summary_v2.ps1','resolution_summary_v2/README.md','resolution_summary_v2/QA.md',
+ 'resolution_summary_v2/summary.json','resolution_summary_v2/validation.json')
+$taskCopies=@()
+foreach($taskName in $taskFiles){$taskCopies+=,@((Join-Path $taskStudy $taskName),('analysis/sensitivity_20260907/'+$taskName))}
+$taskCopies+=,@((Join-Path $taskStudy 'analysis_index.md'),'analysis/README.md')
+if(@(git -C $taskRepo status --porcelain).Count){throw 'Unexpected repository changes'}
+$taskSummary=Get-Content -Raw -LiteralPath (Join-Path $taskStudy 'resolution_summary_v2/summary.json') | ConvertFrom-Json
+$taskValidation=Get-Content -Raw -LiteralPath (Join-Path $taskStudy 'resolution_summary_v2/validation.json') | ConvertFrom-Json
+if($taskSummary.accepted_full_controls -ne 50 -or $taskSummary.accepted_pairs -ne 25 -or $taskSummary.native_states_in_accepted_analysis -ne 5054 -or $taskValidation.unit_tests_passed -ne 12 -or $taskValidation.previous_pairs_reused_exactly -ne 23 -or $taskValidation.new_pairs_checked -ne 2 -or $taskValidation.raw_files_opened -ne 0 -or $taskValidation.status -ne 'passed_report_only_extension'){throw 'Unexpected validated summary scope'}
+foreach($taskCheck in @(
+ @('resolution_summary_v2/summary.json',$taskValidation.summary_sha256),
+ @('resolution_summary_v2/README.md',$taskValidation.readme_sha256),
+ @('extend_resolution_summary_v2.py',$taskSummary.extractor_sha256),
+ @('test_resolution_summary_v2.py',$taskValidation.test_script_sha256),
+ @('resolution_summary_v1/summary.json',$taskSummary.previous_summary_sha256)
+)){
+ if((Get-FileHash -LiteralPath (Join-Path $taskStudy $taskCheck[0])).Hash.ToLower() -ne $taskCheck[1]){throw ('Changed validated source: '+$taskCheck[0])}
+}
+foreach($taskSource in $taskSummary.sources.PSObject.Properties){
+ foreach($taskRoot in @($taskStudy,(Join-Path $taskRepo 'analysis/sensitivity_20260907'))){
+  if((Get-FileHash -LiteralPath (Join-Path $taskRoot $taskSource.Name)).Hash.ToLower() -ne $taskSource.Value.sha256){throw ('Changed source report: '+$taskSource.Name)}
+ }
+}
+if($Mode -eq 'stage'){
+ if((git -C $taskRepo rev-parse HEAD).Trim() -ne $taskBase){throw 'Unexpected publication base'}
+ foreach($taskCopy in $taskCopies){
+  $taskTarget=[IO.Path]::GetFullPath((Join-Path $taskRepo $taskCopy[1]))
+  if(!$taskTarget.StartsWith($taskRepo+'\analysis\',[StringComparison]::OrdinalIgnoreCase)){throw 'Outside analysis'}
+  $taskParent=Split-Path -Parent $taskTarget
+  if(!(Test-Path -LiteralPath $taskParent)){New-Item -ItemType Directory -Path $taskParent | Out-Null}
+  $taskTemp=$taskTarget+'.publish.tmp'
+  if(Test-Path -LiteralPath $taskTemp){throw 'Staging temporary exists'}
+  Copy-Item -LiteralPath $taskCopy[0] -Destination $taskTemp
+  if((Get-FileHash -LiteralPath $taskCopy[0]).Hash -ne (Get-FileHash -LiteralPath $taskTemp).Hash){throw 'Copy mismatch'}
+  Move-Item -LiteralPath $taskTemp -Destination $taskTarget -Force
+ }
+ $taskLinks=0
+ foreach($taskCopy in $taskCopies){
+  if(!$taskCopy[1].EndsWith('.md')){continue}
+  $taskMarkdown=Get-Content -LiteralPath (Join-Path $taskRepo $taskCopy[1]) -Raw
+  foreach($taskMatch in [regex]::Matches($taskMarkdown,'\[[^\]]*\]\(([^)]+)\)')){
+   $taskLink=$taskMatch.Groups[1].Value
+   if($taskLink -match '^(https?:|#|mailto:)'){continue}
+   if(!(Test-Path -LiteralPath (Join-Path (Split-Path -Parent (Join-Path $taskRepo $taskCopy[1])) ($taskLink -split '#',2)[0]))){throw ('Missing relative link: '+$taskLink)}
+   $taskLinks++
+  }
+ }
+ $taskPaths=@($taskCopies | ForEach-Object {$_[1]})
+ git -C $taskRepo -c core.autocrlf=false add -- $taskPaths
+ if($LASTEXITCODE -ne 0){throw 'Git add failed'}
+ foreach($taskCopy in $taskCopies){
+  if((git -C $taskRepo hash-object --no-filters $taskCopy[0]).Trim() -ne (git -C $taskRepo rev-parse (':'+$taskCopy[1])).Trim()){throw 'Staged bytes changed'}
+ }
+ git -C $taskRepo -c core.whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol diff --cached --check
+ if($LASTEXITCODE -ne 0){throw 'Staged whitespace check failed'}
+ $taskChanged=@(git -C $taskRepo diff --cached --name-only)
+ if(@(Compare-Object $taskChanged $taskPaths).Count){throw 'Unexpected staged scope'}
+ Write-Output ('Staged '+$taskCopies.Count+' validated analysis files; checked '+$taskLinks+' relative links. No production viewer/native artifacts.');exit
+}
+$taskProofPath=Join-Path $taskStudy 'resolution_summary_v2/publication.json'
+if(Test-Path -LiteralPath $taskProofPath){throw 'Completed proof exists'}
+if($Commit -notmatch '^[0-9a-f]{40}$' -or $Commit -eq $taskBase -or (git -C $taskRepo rev-parse HEAD).Trim() -ne $Commit -or (git -C $taskRepo ls-remote origin refs/heads/main).Split()[0] -ne $Commit){throw 'Expected advanced matching commit'}
+$taskRun=Invoke-RestMethod ('https://api.github.com/repos/KaanBoge/cloud-studio/actions/runs/'+$WorkflowId) -Headers @{'User-Agent'='CloudStudio-verification'}
+if($taskRun.status -ne 'completed'){Write-Output ('Pages still '+$taskRun.status);exit 2}
+if($taskRun.conclusion -ne 'success' -or $taskRun.head_sha -ne $Commit -or $taskRun.name -ne 'pages build and deployment'){throw 'Wrong Pages deployment'}
+$taskChanged=@(git -C $taskRepo diff-tree --no-commit-id --name-only -r $Commit)
+$taskPaths=@($taskCopies | ForEach-Object {$_[1]})
+if($LASTEXITCODE -ne 0 -or @(Compare-Object $taskChanged $taskPaths).Count){throw 'Unexpected changed file set'}
+Add-Type -AssemblyName System.Net.Http
+$taskClient=[Net.Http.HttpClient]::new();$taskClient.Timeout=[TimeSpan]::FromSeconds(30);$taskChecks=@()
+try{foreach($taskFile in $taskChanged){
+ $taskUrl='https://kaanboge.github.io/cloud-studio/'+$taskFile+'?v='+$Commit
+ $taskBytes=$taskClient.GetByteArrayAsync($taskUrl).GetAwaiter().GetResult()
+ $taskHash=([BitConverter]::ToString([Security.Cryptography.SHA256]::HashData($taskBytes))).Replace('-','').ToLower()
+ if($taskHash -ne (Get-FileHash -LiteralPath (Join-Path $taskRepo $taskFile)).Hash.ToLower()){throw ('Live mismatch: '+$taskFile)}
+ $taskChecks+=[ordered]@{path=$taskFile;url=$taskUrl;bytes=$taskBytes.Length;sha256=$taskHash}
+}}finally{$taskClient.Dispose()}
+$taskProof=[ordered]@{status='verified_live';verified_at_utc=[DateTime]::UtcNow.ToString('o');commit=$Commit;previous_commit=$taskBase;pages_workflow_id=$WorkflowId;files_verified=$taskChecks.Count;checks=$taskChecks;scope='Updated report-only consolidation:25 accepted pairs,50 controls,5054 native analysis states. Original23 entries unchanged; two new L4 pairs appended. No native rerun,raw deletion,acceptance change or productionviewer entry.'}
+$taskTemp=$taskProofPath+'.tmp';if(Test-Path -LiteralPath $taskTemp){throw 'Proof temporary exists'}
+[IO.File]::WriteAllText($taskTemp,($taskProof|ConvertTo-Json -Depth 8),[Text.UTF8Encoding]::new($false))
+Move-Item -LiteralPath $taskTemp -Destination $taskProofPath
+[pscustomobject]$taskProof | Select-Object status,verified_at_utc,commit,pages_workflow_id,files_verified | ConvertTo-Json -Compress

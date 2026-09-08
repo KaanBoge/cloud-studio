@@ -1,0 +1,14 @@
+{
+  "status": "passed_report_only_extension",
+  "unit_tests_passed": 12,
+  "previous_pairs_reused_exactly": 23,
+  "new_pairs_checked": 2,
+  "unique_code_level_pairs": 25,
+  "native_states_counted_from_reports": 5054,
+  "new_native_runs": 0,
+  "raw_files_opened": 0,
+  "source_report_hashes_checked": 13,
+  "summary_sha256": "7527a36c6d6118347daea4b07e95237166b3b7c49543be2e00d2573322628e8f",
+  "readme_sha256": "927e1ef8628639ffe7d342279a73d86d6e112d90c814608d16d512a285acf3b2",
+  "test_script_sha256": "c3ec0faa61c73f08170feb10e9577c6f1037b73c3444b9910e9f8a333cfe34bd"
+}

@@ -4,6 +4,20 @@ Ryan requested a few resolutions per code at fixed chi and Mach before deciding
 whether affected historical runs need replacing. This study preserves all old
 and new raw data. It does not authorize a blanket replacement campaign.
 
+## Current decision package: updated all-code summary
+
+The new [resolution_summary_v2](resolution_summary_v2/README.md) consolidates
+25 accepted pairs/50 controls/5,054 native states. The previous23 entries
+are reused exactly and the newly completed Gadget-4/MFV L4 pairs appended.
+All13 scalar-source hashes and12 new merge tests pass; no raw analysis,
+native experiment or old extractor was rerun. Previous reports are immutable.
+
+Remaining native work requires a prospective scientific decision for
+Gasoline's failed repeatability check and its remaining sharp-IC validation,
+or sufficient verified raw-retention storage for higher levels. Do not
+relax acceptance criteria or rerun completed tests to create activity.
+The blanket queue remains inactive and no raw data was deleted or moved.
+
 ## Complete: repaired MFV L4 pair and L3/L4 comparison
 
 Both full L4 controls now pass with 101 native states each. The

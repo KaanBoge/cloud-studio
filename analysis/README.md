@@ -1,5 +1,11 @@
 # Cloud-crushing analysis: verification status
 
+The [updated all-code comparison](sensitivity_20260907/resolution_summary_v2/README.md)
+now collects all25 accepted pairs:50 controls and5,054 native analysis states.
+It preserves the earlier23 entries and adds the two newly completed L4 pairs,
+with12 report-only tests and source hashes checked. This is sensitivity
+evidence with caveats, not a code ranking or a blanket reuse decision.
+
 The [repaired MFV L3/L4 comparison](sensitivity_20260907/gizmo/mfv_analysis_levels_v1/README.md)
 is complete: both new L4 controls passed101 native states through5 t_cc.
 Peak paired mass separation6.438% at L3 and2.072% at L4 is not a convergence

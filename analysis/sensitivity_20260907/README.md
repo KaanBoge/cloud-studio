@@ -2,6 +2,12 @@
 
 ## Update: 8 September 2026
 
+The [updated all-code resolution summary](resolution_summary_v2/README.md)
+now includes all25 accepted velocity-law pairs:50 controls and5,054 native
+analysis states. It adds the new Gadget-4/MFV L4 evidence without rerunning
+or replacing the earlier23 entries. Four Gasoline L3/L4 controls remain
+scientifically held; higher resolutions require raw-retention storage.
+
 The [repaired MFV L3/L4 comparison](gizmo/mfv_analysis_levels_v1/README.md)
 is complete. Both new L4 runs passed all 101 native states through 5 t_cc;
 sharp took 29m33s and historical 28m58s, with eight nearly fully busy CPU
