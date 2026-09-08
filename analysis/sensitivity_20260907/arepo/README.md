@@ -1,12 +1,28 @@
 # Native Arepo velocity sensitivity controls
 
-## Queue started 8 September 2026
+## Completed results: 8 September 2026
 
-The native L3/L4 queue started at 03:30 local on eight MPI ranks. It is not yet
-a completed analysis. Windows-owned launcher PID was 2432: verify actual
-processes and `worker_windows.json/log/err.log`, not a stale PID. Native status:
-`/home/kaan/sensitivity_20260907/arepo/batch.json` and `current.json`; raw in
-`runs/`. Do not duplicate the worker or edit its loaded `run_arepo.py`.
+All four L3/L4 controls have finished and been analyzed. Each has 101 distinct
+native snapshots from t=0 through exactly 5 t_cc. All 404 native states pass
+independent yt mass checks, with maximum relative discrepancy 6.2e-16.
+**Share with the limitations below; not a cross-code equivalence certificate.**
+
+| Initial lattice level | Peak curve separation / initial dense mass | Sharp / historical solver time | Peak child RSS |
+| --- | ---: | --- | ---: |
+| L3 | 2.81% | 4m20s / 4m20s | 1.68 GiB |
+| L4 | 2.70% | 1h06m35s / 1h06m26s | 3.66 GiB |
+
+These are sensitivity differences, not errors against an exact solution.
+The denominator is the same measured initial dense mass within each pair.
+Final sharp/historical dense fractions are 0.324893/0.326376 at L3 and
+0.542691/0.540332 at L4. All saved times enter the plotted curves.
+
+See [mass and in-box tracer curves](mass_and_retention.png),
+[full diagnostic series](report.json), [validation review](VALIDATION.md),
+and [native run ledger](batch.json). The native raw is still in
+`/home/kaan/sensitivity_20260907/arepo/runs/`. The worker ended normally;
+L5 is storage-held. Do not rerun completed controls or the analysis into their
+existing directories. The public analysis is not a replacement for raw data.
 
 ## Scope and important baseline limitations
 
@@ -21,8 +37,9 @@ Gamma is the compiled default, not a fabricated native runtime parameter.
 **This is not an identical-to-grid-code initial state.** Original equal-volume
 lattice masses are assigned before a 5% positional jitter is converted to
 actual Voronoi volumes. Native density is mass/Voronoi-volume rather than
-mass/lattice-volume. The native L3 smoke has local density and pressure
-deviations up to **14.4508%** from the nominal profile/uniform pressure. They
+mass/lattice-volume. The native initial outputs have local density and pressure
+deviations up to **14.4508% at L3 and 13.7478% at L4** from the nominal
+profile/uniform pressure. They
 are identical within the pair. Initial native volume sums to
 2000.0000000000023, consistent with the whole 20x10x10 domain.
 
@@ -93,17 +110,18 @@ external cap; a timeout preserves partial output for review and is not called
 complete or silently resumed. L5 needs further runtime/restart-retention
 review even if space later becomes available.
 
-Native smoke times3.7/3.5seconds, peak child RSS1.664GiB. Current L3 workers
-were observed99.8-99.9% CPU each, around1.67GiB total solver memory. These are
-not total Windows usage or measured full-case durations. RAM gating budgets
+Native smoke times3.7/3.5seconds, peak child RSS1.664GiB. During full evolution,
+eight MPI workers were observed near100% CPU each. The full solver timings and
+sampled child-RSS peaks are in the table above, not whole-PC usage. RAM gating budgets
 the native per-rank allocation plus4GiB headroom. Both shared locks and guest
 AND Windows backing-drive storage checks apply. Whole-pair retained-output
 budgets: L3 3.91GiB, L4 17.25GiB, L5 124.02GiB, each plus10GiB reserve. No
 raw deletion, unvalidated restart, cooling, tracking or competing heavy build.
 
-After the worker finishes, `analyze_arepo.py` requires all four controls,
-checks every native mass sum with yt and writes resolution-overlaid mass and
-in-box tracer curves. It uses fixed measured initial denominators. Only scalar
+`analyze_arepo.py` has checked all four controls and every native mass sum
+with yt, writing resolution-overlaid mass and in-box tracer curves. The report
+records hashes of the analysis script and source ledger, verified against the
+published copies. It uses fixed measured initial denominators. Only scalar
 curve differences interpolate to0:0.05:5 t_cc; plots retain native times.
 Coarse controls do not certify convergence or universal historical reuse.
 

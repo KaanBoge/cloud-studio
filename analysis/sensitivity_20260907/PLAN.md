@@ -39,7 +39,7 @@ native outputs through 5 t_cc plus unchanged restart settings. No raw file is
 deleted or thinned, and the live viewer is not relabeled with these experiments.
 
 The remaining code families/variants need historical-source and native-IC checks
-before their paired launchers are enabled: Arepo, GIZMO MFM, GIZMO MFV,
+before their paired launchers are enabled: GIZMO MFM, GIZMO MFV,
 Gadget-4, Gasoline. Particle sampling
 and random seeds must be identical within a pair. This is pending work, not an
 already runnable all-code queue.
@@ -65,7 +65,7 @@ with 101 actual times each, exact paired initial density/tracer/grid and
 pressure agreement to roundoff. All 404 outputs pass checks; its extra
 unsorted-record aggregation agrees within 8.9e-15 but shares the native decoder.
 Native timestep-crossing times are preserved. L5 is held by the 172.49 GiB
-whole-pair retention budget plus reserve. There are now 34 analyzed controls.
+whole-pair retention budget plus reserve. There are now 38 analyzed controls.
 FLASH 4.8's four L3/L4 controls are complete with 101 full-state times each;
 all 404 checkpoint mass sums pass independent yt checks. Its native setup
 has no tracer, so retention is unavailable. The unchanged native plotfiles are
@@ -88,10 +88,16 @@ native and independent initial/evolved checks. Nonvelocity IC fields and native
 initial density/geometry are exact within pairs, but original Voronoi pressure
 perturbations (up to 14.45% at L3) and periodic x boundaries remain. This is
 within-Arepo sensitivity, not certification of a matched grid-code baseline.
+All four Arepo L3/L4 controls and their 404 native times are now complete and
+analyzed, with independent yt mass-sum agreement within 6.2e-16. Peak curve
+separation is 2.81% at L3 and 2.70% at L4. The full native files remain saved.
 The L5 pair needs 124.02 GiB plus reserve and remains separately guarded.
 Next safe code families remain GIZMO MFM/MFV, Gadget-4 and Gasoline;
 no runnable queue for those is claimed before native historical-law and
 initial-field checks and identical within-pair particle sampling are verified.
+Four GIZMO L3 smokes have completed native evolution. Their t=0 snapshot
+velocities differ from the input, so output/kick timing must be resolved before
+full controls are admitted. This is a validation hold, not a completed study.
 
 ## Validation and analysis
 
