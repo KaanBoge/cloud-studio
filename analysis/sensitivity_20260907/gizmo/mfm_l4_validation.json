@@ -1,0 +1,1067 @@
+{
+  "status": "passed",
+  "level": 4,
+  "variant": "mfm",
+  "smokes": [
+    {
+      "status": "native_checked",
+      "variant": "mfm",
+      "mode": 0,
+      "level": 4,
+      "role": "smoke",
+      "max_timestep": 0.05,
+      "t_end": 0.1,
+      "directory": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/smoke_0",
+      "physics": {
+        "code": "GIZMO",
+        "variants": [
+          "mfm",
+          "mfv"
+        ],
+        "chi": 100,
+        "mach": 2,
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1,
+        "rho_wind": 1,
+        "p_wind": 1,
+        "density_width": 0.1,
+        "rv_scale": 1.3,
+        "seed": 42,
+        "center": [
+          3,
+          5,
+          5
+        ],
+        "domain_left": [
+          0,
+          0,
+          0
+        ],
+        "domain_right": [
+          20,
+          10,
+          10
+        ],
+        "mass_mode": "volume",
+        "ranks": 8,
+        "t_end_over_tcc": 5,
+        "output_dt_over_tcc": 0.05,
+        "scope": "Within each native GIZMO variant, actual historical tanh versus sharp velocity. Regular equal-volume initial lattice, variable masses, original float32 IC/output precision and fully periodic native boundary recipe. Native kernel-derived density/pressure must be checked separately. No passive material tracer is assumed; particle-ID mass in MFV is not a material-retention diagnostic.",
+        "v_wind": 2.581988897471611,
+        "t_cc": 3.872983346207417
+      },
+      "input_sha256": "45ddc99a14ff101f126cf87198103b2d4d8b800253188e3e1d684fc07978949b",
+      "ic_sha256": "304d5eb3ac868a866c85ad9503f1f206ef37fafaea6c4ba27f466fe14aad4114",
+      "binary_sha256": "ad6787e8666f92e1ac5162eec1aa717277920c51c52b7b04277d0b53295c6011",
+      "launcher_sha256": "6e3c8b350d2a11e705216572f0a98a52c4062c8b768dd4f5599420b1586e583a",
+      "case_bytes": 1073741824,
+      "storage_preflight": {
+        "path": "/home/kaan/sensitivity_20260907/gizmo",
+        "filesystem_free_bytes": 29243527168,
+        "filesystem_total_bytes": 1081101176832,
+        "windows_backing_volume": {
+          "distribution": "Ubuntu",
+          "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+          "drive": "C:",
+          "free_bytes": 37575147520,
+          "total_bytes": 1999283154944
+        },
+        "policy": "Conservative growth budget; allocated but reusable VHDX blocks are not credited.",
+        "effective_free_bytes": 29243527168
+      },
+      "command": [
+        "mpirun",
+        "--bind-to",
+        "core",
+        "-np",
+        "8",
+        "/home/kaan/sensitivity_20260907/gizmo/GIZMO_mfm_pair",
+        "params.txt"
+      ],
+      "started_unix": 1788842906.9609826,
+      "wall_limit_seconds": 180,
+      "mpi_pid": 44,
+      "returncode": 0,
+      "wall_seconds": 6.397320367999999,
+      "peak_child_rss_gib": 1.5832443237304688,
+      "stop_reason": null,
+      "series": [
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/smoke_0/output/snapshot_000.hdf5",
+          "sha256": "072afb51213f68fe61c52a0e2c6e0cb350b07a6b5ff920357c0121a14fc2776c",
+          "time_code": 0.0,
+          "t_over_tcc": 0.0,
+          "elements": 524288,
+          "bytes": 33563880,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2424.8441153885797,
+          "dense_mass": 398.4896878004074,
+          "dense_mass_over_initial": 1.0
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/smoke_0/output/snapshot_001.hdf5",
+          "sha256": "5cdb7d88be5874bffb76d152ac60f1203d6dab2418457d63fe0ae05842a75c38",
+          "time_code": 0.1,
+          "t_over_tcc": 0.025819888974716113,
+          "elements": 524288,
+          "bytes": 33563880,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2424.8441153885797,
+          "dense_mass": 402.10375025868416,
+          "dense_mass_over_initial": 1.0090694002101428
+        }
+      ],
+      "restart_files": [
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/smoke_0/output/restartfiles/restart.1",
+          "bytes": 42034376,
+          "sha256": "b79ae4bf547b545d576070ce5018abd70257d904d15d3594182a4590e671ab72"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/smoke_0/output/restartfiles/restart.0",
+          "bytes": 42034376,
+          "sha256": "044b63f9e58bd74b72c8cbba7f7264d5dcad758a9eb3c74481c4704bb08a670a"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/smoke_0/output/restartfiles/restart.4",
+          "bytes": 41959880,
+          "sha256": "288eeed57c5bf2cb6f6f059da3c2e5b000ec8e8cbc8cb51c28accfd29a31d1da"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/smoke_0/output/restartfiles/restart.5",
+          "bytes": 41959880,
+          "sha256": "0b4f3d996bbf9da99d148dcbe827c6b54b0354e1b5f8e0c76f2b590d6e72c36e"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/smoke_0/output/restartfiles/restart.2",
+          "bytes": 41984456,
+          "sha256": "ee08a249e152dd428c28a972430c5e39dcacb3a20055553a46a620cb75f839c3"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/smoke_0/output/restartfiles/restart.7",
+          "bytes": 41909960,
+          "sha256": "76a7c295f2ae5e5188d6053ce5691d5a43f1e4d6cb0fba39b85b095d1fb8a263"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/smoke_0/output/restartfiles/restart.3",
+          "bytes": 41984456,
+          "sha256": "8921604c8ee18e29368370b7c857f9f23b61c095d1bce8e277cb357d51b70cbb"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/smoke_0/output/restartfiles/restart.6",
+          "bytes": 41909960,
+          "sha256": "af830fc2ef4e216d043c306355b579b7af560407e4ad16200e496b6ebabeb4f3"
+        }
+      ],
+      "independent_max_relative_mass_error": 0.0
+    },
+    {
+      "status": "native_checked",
+      "variant": "mfm",
+      "mode": 1,
+      "level": 4,
+      "role": "smoke",
+      "max_timestep": 0.05,
+      "t_end": 0.1,
+      "directory": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/smoke_1",
+      "physics": {
+        "code": "GIZMO",
+        "variants": [
+          "mfm",
+          "mfv"
+        ],
+        "chi": 100,
+        "mach": 2,
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1,
+        "rho_wind": 1,
+        "p_wind": 1,
+        "density_width": 0.1,
+        "rv_scale": 1.3,
+        "seed": 42,
+        "center": [
+          3,
+          5,
+          5
+        ],
+        "domain_left": [
+          0,
+          0,
+          0
+        ],
+        "domain_right": [
+          20,
+          10,
+          10
+        ],
+        "mass_mode": "volume",
+        "ranks": 8,
+        "t_end_over_tcc": 5,
+        "output_dt_over_tcc": 0.05,
+        "scope": "Within each native GIZMO variant, actual historical tanh versus sharp velocity. Regular equal-volume initial lattice, variable masses, original float32 IC/output precision and fully periodic native boundary recipe. Native kernel-derived density/pressure must be checked separately. No passive material tracer is assumed; particle-ID mass in MFV is not a material-retention diagnostic.",
+        "v_wind": 2.581988897471611,
+        "t_cc": 3.872983346207417
+      },
+      "input_sha256": "45ddc99a14ff101f126cf87198103b2d4d8b800253188e3e1d684fc07978949b",
+      "ic_sha256": "e02c59a5d95eb6ca44bfecee912cbe81826b56a4cff7411077c150ee9ea1ae17",
+      "binary_sha256": "ad6787e8666f92e1ac5162eec1aa717277920c51c52b7b04277d0b53295c6011",
+      "launcher_sha256": "6e3c8b350d2a11e705216572f0a98a52c4062c8b768dd4f5599420b1586e583a",
+      "case_bytes": 1073741824,
+      "storage_preflight": {
+        "path": "/home/kaan/sensitivity_20260907/gizmo",
+        "filesystem_free_bytes": 27910443008,
+        "filesystem_total_bytes": 1081101176832,
+        "windows_backing_volume": {
+          "distribution": "Ubuntu",
+          "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+          "drive": "C:",
+          "free_bytes": 37563449344,
+          "total_bytes": 1999283154944
+        },
+        "policy": "Conservative growth budget; allocated but reusable VHDX blocks are not credited.",
+        "effective_free_bytes": 27910443008
+      },
+      "command": [
+        "mpirun",
+        "--bind-to",
+        "core",
+        "-np",
+        "8",
+        "/home/kaan/sensitivity_20260907/gizmo/GIZMO_mfm_pair",
+        "params.txt"
+      ],
+      "started_unix": 1788842938.321985,
+      "wall_limit_seconds": 180,
+      "mpi_pid": 170,
+      "returncode": 0,
+      "wall_seconds": 6.245642836000002,
+      "peak_child_rss_gib": 1.5844039916992188,
+      "stop_reason": null,
+      "series": [
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/smoke_1/output/snapshot_000.hdf5",
+          "sha256": "ade3d296a992383a2e224b7a91af23c042e2cb7ff2d6134b145df713d991d510",
+          "time_code": 0.0,
+          "t_over_tcc": 0.0,
+          "elements": 524288,
+          "bytes": 33563880,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2424.8441153885797,
+          "dense_mass": 398.4896878004074,
+          "dense_mass_over_initial": 1.0
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/smoke_1/output/snapshot_001.hdf5",
+          "sha256": "a968a5ee0053ec9956f3d732cd29ce089f98a57aa132fd37135d715e69bef5d8",
+          "time_code": 0.1,
+          "t_over_tcc": 0.025819888974716113,
+          "elements": 524288,
+          "bytes": 33563880,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2424.8441153885797,
+          "dense_mass": 402.10375025868416,
+          "dense_mass_over_initial": 1.0090694002101428
+        }
+      ],
+      "restart_files": [
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/smoke_1/output/restartfiles/restart.1",
+          "bytes": 41959880,
+          "sha256": "49955a13197131e0bf3b4645d290a40ffe774e437cd6b34cbd96885410f29150"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/smoke_1/output/restartfiles/restart.0",
+          "bytes": 41959880,
+          "sha256": "b72cf57d33e6ebe30ced1fb3da108477639ca15b8bb50bce7cfb31d465220809"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/smoke_1/output/restartfiles/restart.4",
+          "bytes": 41982152,
+          "sha256": "97bc58bd1b908204460e68c544edc78200d0c4362ad2d2f0347006bc36e1112b"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/smoke_1/output/restartfiles/restart.5",
+          "bytes": 41912552,
+          "sha256": "98e981ed092e4eacedfa67494ee377e48b1810bb1edfd87d10915c8bb3bc70f3"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/smoke_1/output/restartfiles/restart.2",
+          "bytes": 41959880,
+          "sha256": "b6fc3c79dd2bdba75d2718ffd799e53b8b97680542412c5addf4aa4eb92edead"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/smoke_1/output/restartfiles/restart.7",
+          "bytes": 42099080,
+          "sha256": "47c5fb99428e81f7de30528a98f2bc2a61907a4fcf5d516ee9a3354a38beeca5"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/smoke_1/output/restartfiles/restart.3",
+          "bytes": 41982152,
+          "sha256": "1a70985269fa6eb142c46145806ed2c48e61a9bea952d3f37ee67b0c9a5d2219"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/smoke_1/output/restartfiles/restart.6",
+          "bytes": 41912552,
+          "sha256": "f7c39e913e28c262b09c4d5fcd7b151ce0c9adea22f9c27762c4ed3a166cd04e"
+        }
+      ],
+      "independent_max_relative_mass_error": 0.0
+    }
+  ],
+  "diagnostics": [
+    {
+      "status": "native_checked",
+      "variant": "mfm",
+      "mode": 0,
+      "level": 4,
+      "role": "timing",
+      "max_timestep": 1e-05,
+      "t_end": 4e-05,
+      "directory": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/timing_0_1e-05",
+      "physics": {
+        "code": "GIZMO",
+        "variants": [
+          "mfm",
+          "mfv"
+        ],
+        "chi": 100,
+        "mach": 2,
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1,
+        "rho_wind": 1,
+        "p_wind": 1,
+        "density_width": 0.1,
+        "rv_scale": 1.3,
+        "seed": 42,
+        "center": [
+          3,
+          5,
+          5
+        ],
+        "domain_left": [
+          0,
+          0,
+          0
+        ],
+        "domain_right": [
+          20,
+          10,
+          10
+        ],
+        "mass_mode": "volume",
+        "ranks": 8,
+        "t_end_over_tcc": 5,
+        "output_dt_over_tcc": 0.05,
+        "scope": "Within each native GIZMO variant, actual historical tanh versus sharp velocity. Regular equal-volume initial lattice, variable masses, original float32 IC/output precision and fully periodic native boundary recipe. Native kernel-derived density/pressure must be checked separately. No passive material tracer is assumed; particle-ID mass in MFV is not a material-retention diagnostic.",
+        "v_wind": 2.581988897471611,
+        "t_cc": 3.872983346207417
+      },
+      "input_sha256": "e6e607ee3fc382d1a7d539e7922205e44f7fee714a91ad2a2c00ba4b5d0591ab",
+      "ic_sha256": "304d5eb3ac868a866c85ad9503f1f206ef37fafaea6c4ba27f466fe14aad4114",
+      "binary_sha256": "ad6787e8666f92e1ac5162eec1aa717277920c51c52b7b04277d0b53295c6011",
+      "launcher_sha256": "6e3c8b350d2a11e705216572f0a98a52c4062c8b768dd4f5599420b1586e583a",
+      "case_bytes": 1073741824,
+      "storage_preflight": {
+        "path": "/home/kaan/sensitivity_20260907/gizmo",
+        "filesystem_free_bytes": 28821524480,
+        "filesystem_total_bytes": 1081101176832,
+        "windows_backing_volume": {
+          "distribution": "Ubuntu",
+          "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+          "drive": "C:",
+          "free_bytes": 37575118848,
+          "total_bytes": 1999283154944
+        },
+        "policy": "Conservative growth budget; allocated but reusable VHDX blocks are not credited.",
+        "effective_free_bytes": 28821524480
+      },
+      "command": [
+        "mpirun",
+        "--bind-to",
+        "core",
+        "-np",
+        "8",
+        "/home/kaan/sensitivity_20260907/gizmo/GIZMO_mfm_pair",
+        "params.txt"
+      ],
+      "started_unix": 1788842916.0207946,
+      "wall_limit_seconds": 180,
+      "mpi_pid": 87,
+      "returncode": 0,
+      "wall_seconds": 6.031176069000001,
+      "peak_child_rss_gib": 1.5833015441894531,
+      "stop_reason": null,
+      "series": [
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/timing_0_1e-05/output/snapshot_000.hdf5",
+          "sha256": "cd3573bd4e35ab1965889bd1b75baa48c3d73bfebb3af35cd53a47b909efe659",
+          "time_code": 0.0,
+          "t_over_tcc": 0.0,
+          "elements": 524288,
+          "bytes": 33563880,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2424.8441153885797,
+          "dense_mass": 398.4896878004074,
+          "dense_mass_over_initial": 1.0
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/timing_0_1e-05/output/snapshot_001.hdf5",
+          "sha256": "8c630fd64bb6c476acfa2a8aa5c2fa1a2de697a58d5f28a1c0b9a1b502589339",
+          "time_code": 3.9999999999999996e-05,
+          "t_over_tcc": 1.0327955589886443e-05,
+          "elements": 524288,
+          "bytes": 33563880,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2424.8441153885797,
+          "dense_mass": 398.4896878004074,
+          "dense_mass_over_initial": 1.0
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/timing_0_1e-05/output/snapshot_002.hdf5",
+          "sha256": "afcc66b5b1b9105b3077e25b0e221d73c2ffbc3b67e7b2cb44bb8a1f2465fb86",
+          "time_code": 4e-05,
+          "t_over_tcc": 1.0327955589886445e-05,
+          "elements": 524288,
+          "bytes": 33563880,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2424.8441153885797,
+          "dense_mass": 398.4896878004074,
+          "dense_mass_over_initial": 1.0
+        }
+      ],
+      "restart_files": [
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/timing_0_1e-05/output/restartfiles/restart.1",
+          "bytes": 41959880,
+          "sha256": "2f9126c177b94ddf4712892d1ee6b3db8024613e131e7ed83a631a36292f1970"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/timing_0_1e-05/output/restartfiles/restart.0",
+          "bytes": 41959880,
+          "sha256": "33c8646f0dca3344a8451159618bc047251b930b9240d368a120a54285691989"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/timing_0_1e-05/output/restartfiles/restart.4",
+          "bytes": 41959880,
+          "sha256": "2202a5f56d48ad6f28c67be61d071df1a9fbf4ad5dabf9a6cea03f685cec5b5d"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/timing_0_1e-05/output/restartfiles/restart.5",
+          "bytes": 41959880,
+          "sha256": "98e5dd238cb9a354e0d9a6eb23ba29709486b6ad294d19eccc634fd2b677d6f4"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/timing_0_1e-05/output/restartfiles/restart.2",
+          "bytes": 41959880,
+          "sha256": "beb94d48372501ba40db0312da940e3f870d12e1381c94b4349bf2261db14c66"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/timing_0_1e-05/output/restartfiles/restart.7",
+          "bytes": 41959880,
+          "sha256": "2c2b6ae71e076b82a237dbac2f04c3b11dbab19f721da074f86d0c96e792afdf"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/timing_0_1e-05/output/restartfiles/restart.3",
+          "bytes": 41959880,
+          "sha256": "9cc9fbd5f5b1bcbfd1ac5d94b8ca755a125772f30147b736ddffe725a2deffff"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/timing_0_1e-05/output/restartfiles/restart.6",
+          "bytes": 41959880,
+          "sha256": "aad366da88e0bb8e07e187235f3d39bd555e8ed055c78cd5283b948e43187047"
+        }
+      ],
+      "independent_max_relative_mass_error": 0.0
+    },
+    {
+      "status": "native_checked",
+      "variant": "mfm",
+      "mode": 0,
+      "level": 4,
+      "role": "timing",
+      "max_timestep": 5e-06,
+      "t_end": 4e-05,
+      "directory": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/timing_0_5e-06",
+      "physics": {
+        "code": "GIZMO",
+        "variants": [
+          "mfm",
+          "mfv"
+        ],
+        "chi": 100,
+        "mach": 2,
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1,
+        "rho_wind": 1,
+        "p_wind": 1,
+        "density_width": 0.1,
+        "rv_scale": 1.3,
+        "seed": 42,
+        "center": [
+          3,
+          5,
+          5
+        ],
+        "domain_left": [
+          0,
+          0,
+          0
+        ],
+        "domain_right": [
+          20,
+          10,
+          10
+        ],
+        "mass_mode": "volume",
+        "ranks": 8,
+        "t_end_over_tcc": 5,
+        "output_dt_over_tcc": 0.05,
+        "scope": "Within each native GIZMO variant, actual historical tanh versus sharp velocity. Regular equal-volume initial lattice, variable masses, original float32 IC/output precision and fully periodic native boundary recipe. Native kernel-derived density/pressure must be checked separately. No passive material tracer is assumed; particle-ID mass in MFV is not a material-retention diagnostic.",
+        "v_wind": 2.581988897471611,
+        "t_cc": 3.872983346207417
+      },
+      "input_sha256": "7a60924a201771ad399c191565e2dacdbedcfa39c6f6e08887e0d8fe080fa96e",
+      "ic_sha256": "304d5eb3ac868a866c85ad9503f1f206ef37fafaea6c4ba27f466fe14aad4114",
+      "binary_sha256": "ad6787e8666f92e1ac5162eec1aa717277920c51c52b7b04277d0b53295c6011",
+      "launcher_sha256": "6e3c8b350d2a11e705216572f0a98a52c4062c8b768dd4f5599420b1586e583a",
+      "case_bytes": 1073741824,
+      "storage_preflight": {
+        "path": "/home/kaan/sensitivity_20260907/gizmo",
+        "filesystem_free_bytes": 28365987840,
+        "filesystem_total_bytes": 1081101176832,
+        "windows_backing_volume": {
+          "distribution": "Ubuntu",
+          "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+          "drive": "C:",
+          "free_bytes": 37563580416,
+          "total_bytes": 1999283154944
+        },
+        "policy": "Conservative growth budget; allocated but reusable VHDX blocks are not credited.",
+        "effective_free_bytes": 28365987840
+      },
+      "command": [
+        "mpirun",
+        "--bind-to",
+        "core",
+        "-np",
+        "8",
+        "/home/kaan/sensitivity_20260907/gizmo/GIZMO_mfm_pair",
+        "params.txt"
+      ],
+      "started_unix": 1788842925.4482949,
+      "wall_limit_seconds": 180,
+      "mpi_pid": 127,
+      "returncode": 0,
+      "wall_seconds": 9.461871966000004,
+      "peak_child_rss_gib": 1.5831680297851562,
+      "stop_reason": null,
+      "series": [
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/timing_0_5e-06/output/snapshot_000.hdf5",
+          "sha256": "0212f3067a5b97bfbd4f9e6c3e948f4a3cdbcaf7e418ca8be5f122ef690e3ba7",
+          "time_code": 0.0,
+          "t_over_tcc": 0.0,
+          "elements": 524288,
+          "bytes": 33563880,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2424.8441153885797,
+          "dense_mass": 398.4896878004074,
+          "dense_mass_over_initial": 1.0
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/timing_0_5e-06/output/snapshot_001.hdf5",
+          "sha256": "b0e50a91af713f95bc0a1b00107f5f7330c434c47db39be8544eaf7d013a6985",
+          "time_code": 3.9999999999999996e-05,
+          "t_over_tcc": 1.0327955589886443e-05,
+          "elements": 524288,
+          "bytes": 33563880,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2424.8441153885797,
+          "dense_mass": 398.4896878004074,
+          "dense_mass_over_initial": 1.0
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/timing_0_5e-06/output/snapshot_002.hdf5",
+          "sha256": "2db40dcb4279a30d48cddb5cc13401bb08758a6433672cef695c66f1d7d94536",
+          "time_code": 4e-05,
+          "t_over_tcc": 1.0327955589886445e-05,
+          "elements": 524288,
+          "bytes": 33563880,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2424.8441153885797,
+          "dense_mass": 398.4896878004074,
+          "dense_mass_over_initial": 1.0
+        }
+      ],
+      "restart_files": [
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/timing_0_5e-06/output/restartfiles/restart.1",
+          "bytes": 41959880,
+          "sha256": "a7dc3239410fd1a13ccdea5266e100566b444b71a9fc23d8c58c9da140469d08"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/timing_0_5e-06/output/restartfiles/restart.0",
+          "bytes": 41959880,
+          "sha256": "31b20dabdf713eeacd53751d140e4305efa177504c67c6b3ab50fe324c4e2c2f"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/timing_0_5e-06/output/restartfiles/restart.4",
+          "bytes": 41959880,
+          "sha256": "7a3d482244dfd848aba16613783e3a372b21f5c9adc22bda042e71353c0aa133"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/timing_0_5e-06/output/restartfiles/restart.5",
+          "bytes": 41959880,
+          "sha256": "11186a14d52bf87d395f1928baa8dc717cdb9df0602442fd33c20424bf4f1ff7"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/timing_0_5e-06/output/restartfiles/restart.2",
+          "bytes": 41959880,
+          "sha256": "ed03ff73592dfbf5aae2d46347dc38a1ce5ac8e2ea2ef72a31f7415607276b6a"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/timing_0_5e-06/output/restartfiles/restart.7",
+          "bytes": 41959880,
+          "sha256": "1c1f8f0c86d87ea53dafc9095f7ac889c838afa8b9da5e70efe54edcc4e72111"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/timing_0_5e-06/output/restartfiles/restart.3",
+          "bytes": 41959880,
+          "sha256": "83d43e85f48e3347430c36527465a9342537a954cb4a60e7f725768b9124cb90"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/timing_0_5e-06/output/restartfiles/restart.6",
+          "bytes": 41959880,
+          "sha256": "968364b6b721116654aa6801d123aaacc4b29267f3067cfcba4a275121758b1d"
+        }
+      ],
+      "independent_max_relative_mass_error": 0.0
+    },
+    {
+      "status": "native_checked",
+      "variant": "mfm",
+      "mode": 1,
+      "level": 4,
+      "role": "timing",
+      "max_timestep": 1e-05,
+      "t_end": 4e-05,
+      "directory": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/timing_1_1e-05",
+      "physics": {
+        "code": "GIZMO",
+        "variants": [
+          "mfm",
+          "mfv"
+        ],
+        "chi": 100,
+        "mach": 2,
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1,
+        "rho_wind": 1,
+        "p_wind": 1,
+        "density_width": 0.1,
+        "rv_scale": 1.3,
+        "seed": 42,
+        "center": [
+          3,
+          5,
+          5
+        ],
+        "domain_left": [
+          0,
+          0,
+          0
+        ],
+        "domain_right": [
+          20,
+          10,
+          10
+        ],
+        "mass_mode": "volume",
+        "ranks": 8,
+        "t_end_over_tcc": 5,
+        "output_dt_over_tcc": 0.05,
+        "scope": "Within each native GIZMO variant, actual historical tanh versus sharp velocity. Regular equal-volume initial lattice, variable masses, original float32 IC/output precision and fully periodic native boundary recipe. Native kernel-derived density/pressure must be checked separately. No passive material tracer is assumed; particle-ID mass in MFV is not a material-retention diagnostic.",
+        "v_wind": 2.581988897471611,
+        "t_cc": 3.872983346207417
+      },
+      "input_sha256": "e6e607ee3fc382d1a7d539e7922205e44f7fee714a91ad2a2c00ba4b5d0591ab",
+      "ic_sha256": "e02c59a5d95eb6ca44bfecee912cbe81826b56a4cff7411077c150ee9ea1ae17",
+      "binary_sha256": "ad6787e8666f92e1ac5162eec1aa717277920c51c52b7b04277d0b53295c6011",
+      "launcher_sha256": "6e3c8b350d2a11e705216572f0a98a52c4062c8b768dd4f5599420b1586e583a",
+      "case_bytes": 1073741824,
+      "storage_preflight": {
+        "path": "/home/kaan/sensitivity_20260907/gizmo",
+        "filesystem_free_bytes": 27488423936,
+        "filesystem_total_bytes": 1081101176832,
+        "windows_backing_volume": {
+          "distribution": "Ubuntu",
+          "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+          "drive": "C:",
+          "free_bytes": 37563465728,
+          "total_bytes": 1999283154944
+        },
+        "policy": "Conservative growth budget; allocated but reusable VHDX blocks are not credited.",
+        "effective_free_bytes": 27488423936
+      },
+      "command": [
+        "mpirun",
+        "--bind-to",
+        "core",
+        "-np",
+        "8",
+        "/home/kaan/sensitivity_20260907/gizmo/GIZMO_mfm_pair",
+        "params.txt"
+      ],
+      "started_unix": 1788842947.1400018,
+      "wall_limit_seconds": 180,
+      "mpi_pid": 210,
+      "returncode": 0,
+      "wall_seconds": 6.063333608000001,
+      "peak_child_rss_gib": 1.5833702087402344,
+      "stop_reason": null,
+      "series": [
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/timing_1_1e-05/output/snapshot_000.hdf5",
+          "sha256": "ec01308224bb31630f4656f83a0b5ba2bd5a8023df4059509281283bd0b9616f",
+          "time_code": 0.0,
+          "t_over_tcc": 0.0,
+          "elements": 524288,
+          "bytes": 33563880,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2424.8441153885797,
+          "dense_mass": 398.4896878004074,
+          "dense_mass_over_initial": 1.0
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/timing_1_1e-05/output/snapshot_001.hdf5",
+          "sha256": "c2077a6eb004166e8a8fc41b9a28d911910d1f9d75dbe100f8da25aa224d5fc8",
+          "time_code": 3.9999999999999996e-05,
+          "t_over_tcc": 1.0327955589886443e-05,
+          "elements": 524288,
+          "bytes": 33563880,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2424.8441153885797,
+          "dense_mass": 398.4896878004074,
+          "dense_mass_over_initial": 1.0
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/timing_1_1e-05/output/snapshot_002.hdf5",
+          "sha256": "2e075b54198033c1601fdb9714486afd5e8a4f5af78a28ebc0b748bb2718c5a1",
+          "time_code": 4e-05,
+          "t_over_tcc": 1.0327955589886445e-05,
+          "elements": 524288,
+          "bytes": 33563880,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2424.8441153885797,
+          "dense_mass": 398.4896878004074,
+          "dense_mass_over_initial": 1.0
+        }
+      ],
+      "restart_files": [
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/timing_1_1e-05/output/restartfiles/restart.1",
+          "bytes": 41959880,
+          "sha256": "a148e7c034bd3f6442797456fcaba5c6547a34a901b531077c1e7d4b9b953a8e"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/timing_1_1e-05/output/restartfiles/restart.0",
+          "bytes": 41959880,
+          "sha256": "b7ea959fef2784c5cd19221a6f6baec965cccb583e30ab40ad1351b5d2b9a413"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/timing_1_1e-05/output/restartfiles/restart.4",
+          "bytes": 41959880,
+          "sha256": "c2fee5bac0779ca437eac57d7879b230c4b4c65246a9b11a4478783d6bad5cb2"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/timing_1_1e-05/output/restartfiles/restart.5",
+          "bytes": 41959880,
+          "sha256": "d16f0bcd813060aa143c888f9640f5f596d2becf4343dfbdd731a276581afe25"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/timing_1_1e-05/output/restartfiles/restart.2",
+          "bytes": 41959880,
+          "sha256": "48f47951fc194e6e41e6c3b4e764efc60d414d7a762824bf2e4bd1a7d96c79da"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/timing_1_1e-05/output/restartfiles/restart.7",
+          "bytes": 41959880,
+          "sha256": "b1007a8e457ed83b4507602bed1c3aa6851954bfd4c3107e659a68503d6c1bdf"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/timing_1_1e-05/output/restartfiles/restart.3",
+          "bytes": 41959880,
+          "sha256": "8b7e7ab755321e6b13824e86905677ce74548a6ef3e49c73f1541f79a433a763"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/timing_1_1e-05/output/restartfiles/restart.6",
+          "bytes": 41959880,
+          "sha256": "a2d1f426c8bc66037dfccaff03bfe82fe3eb1cccbce0f3155db94e49db8809a0"
+        }
+      ],
+      "independent_max_relative_mass_error": 0.0
+    },
+    {
+      "status": "native_checked",
+      "variant": "mfm",
+      "mode": 1,
+      "level": 4,
+      "role": "timing",
+      "max_timestep": 5e-06,
+      "t_end": 4e-05,
+      "directory": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/timing_1_5e-06",
+      "physics": {
+        "code": "GIZMO",
+        "variants": [
+          "mfm",
+          "mfv"
+        ],
+        "chi": 100,
+        "mach": 2,
+        "gamma": 1.6666666666666667,
+        "r_cloud": 1,
+        "rho_wind": 1,
+        "p_wind": 1,
+        "density_width": 0.1,
+        "rv_scale": 1.3,
+        "seed": 42,
+        "center": [
+          3,
+          5,
+          5
+        ],
+        "domain_left": [
+          0,
+          0,
+          0
+        ],
+        "domain_right": [
+          20,
+          10,
+          10
+        ],
+        "mass_mode": "volume",
+        "ranks": 8,
+        "t_end_over_tcc": 5,
+        "output_dt_over_tcc": 0.05,
+        "scope": "Within each native GIZMO variant, actual historical tanh versus sharp velocity. Regular equal-volume initial lattice, variable masses, original float32 IC/output precision and fully periodic native boundary recipe. Native kernel-derived density/pressure must be checked separately. No passive material tracer is assumed; particle-ID mass in MFV is not a material-retention diagnostic.",
+        "v_wind": 2.581988897471611,
+        "t_cc": 3.872983346207417
+      },
+      "input_sha256": "7a60924a201771ad399c191565e2dacdbedcfa39c6f6e08887e0d8fe080fa96e",
+      "ic_sha256": "e02c59a5d95eb6ca44bfecee912cbe81826b56a4cff7411077c150ee9ea1ae17",
+      "binary_sha256": "ad6787e8666f92e1ac5162eec1aa717277920c51c52b7b04277d0b53295c6011",
+      "launcher_sha256": "6e3c8b350d2a11e705216572f0a98a52c4062c8b768dd4f5599420b1586e583a",
+      "case_bytes": 1073741824,
+      "storage_preflight": {
+        "path": "/home/kaan/sensitivity_20260907/gizmo",
+        "filesystem_free_bytes": 27032887296,
+        "filesystem_total_bytes": 1081101176832,
+        "windows_backing_volume": {
+          "distribution": "Ubuntu",
+          "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+          "drive": "C:",
+          "free_bytes": 37563461632,
+          "total_bytes": 1999283154944
+        },
+        "policy": "Conservative growth budget; allocated but reusable VHDX blocks are not credited.",
+        "effective_free_bytes": 27032887296
+      },
+      "command": [
+        "mpirun",
+        "--bind-to",
+        "core",
+        "-np",
+        "8",
+        "/home/kaan/sensitivity_20260907/gizmo/GIZMO_mfm_pair",
+        "params.txt"
+      ],
+      "started_unix": 1788842956.6261976,
+      "wall_limit_seconds": 180,
+      "mpi_pid": 250,
+      "returncode": 0,
+      "wall_seconds": 9.511266939999999,
+      "peak_child_rss_gib": 1.5830307006835938,
+      "stop_reason": null,
+      "series": [
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/timing_1_5e-06/output/snapshot_000.hdf5",
+          "sha256": "cbcc00a4b5be1be13cc7aa4ab8ccd935edd2200bd555beb5ddc9f816cdae33f6",
+          "time_code": 0.0,
+          "t_over_tcc": 0.0,
+          "elements": 524288,
+          "bytes": 33563880,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2424.8441153885797,
+          "dense_mass": 398.4896878004074,
+          "dense_mass_over_initial": 1.0
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/timing_1_5e-06/output/snapshot_001.hdf5",
+          "sha256": "de32edf3ae6e3abc01fa88dab9e072d06ea7ee20bbebfc1f37d06c2940450282",
+          "time_code": 3.9999999999999996e-05,
+          "t_over_tcc": 1.0327955589886443e-05,
+          "elements": 524288,
+          "bytes": 33563880,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2424.8441153885797,
+          "dense_mass": 398.4896878004074,
+          "dense_mass_over_initial": 1.0
+        },
+        {
+          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/timing_1_5e-06/output/snapshot_002.hdf5",
+          "sha256": "2d18cd84efad63daee0a00db7d8ed3b084ea3cba8f231055a3b6ec76d3a6565a",
+          "time_code": 4e-05,
+          "t_over_tcc": 1.0327955589886445e-05,
+          "elements": 524288,
+          "bytes": 33563880,
+          "independent_relative_errors": {
+            "total_mass": 0.0,
+            "dense_mass": 0.0
+          },
+          "total_mass": 2424.8441153885797,
+          "dense_mass": 398.4896878004074,
+          "dense_mass_over_initial": 1.0
+        }
+      ],
+      "restart_files": [
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/timing_1_5e-06/output/restartfiles/restart.1",
+          "bytes": 41959880,
+          "sha256": "de88c7c41295d560c43c4e2498844b506f4ccb019ec7e0141af809e8eef4f882"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/timing_1_5e-06/output/restartfiles/restart.0",
+          "bytes": 41959880,
+          "sha256": "53be7083ed537472ff39035bd79495a048719b3ad8227a21c531f5deeb4e2f23"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/timing_1_5e-06/output/restartfiles/restart.4",
+          "bytes": 41959880,
+          "sha256": "a968343a801676c32d1463025c8131c2d5ca1c0cfae9477ba4d8afe7416c7799"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/timing_1_5e-06/output/restartfiles/restart.5",
+          "bytes": 41959880,
+          "sha256": "cb580023bf605ee91d01b142d6b7bad78eef46f1c33c97e4a4bc58a79aeaaa2e"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/timing_1_5e-06/output/restartfiles/restart.2",
+          "bytes": 41959880,
+          "sha256": "5a7ef9e1d852d2bba0dd4ccb571505b3a87777db93bffcdcadcd96b5827cef6b"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/timing_1_5e-06/output/restartfiles/restart.7",
+          "bytes": 41959880,
+          "sha256": "76f0cbb3ca8f9a563469cf874e9ba3b55df4d733e337ab148ec479ba572fc7f2"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/timing_1_5e-06/output/restartfiles/restart.3",
+          "bytes": 41959880,
+          "sha256": "23afcb0cef8d1e720facf8ab108f3104d706361ab842829629a6c1b532ebd74b"
+        },
+        {
+          "path": "/home/kaan/sensitivity_20260907/gizmo/validation_mfm_l4_v1/timing_1_5e-06/output/restartfiles/restart.6",
+          "bytes": 41959880,
+          "sha256": "f76fb9ca918e5bd468110550020ad3adaf065a3b358966cbb6a5d7e789c7e101"
+        }
+      ],
+      "independent_max_relative_mass_error": 0.0
+    }
+  ],
+  "script_sha256": "6e3c8b350d2a11e705216572f0a98a52c4062c8b768dd4f5599420b1586e583a",
+  "initial_checks": [
+    {
+      "native_density_vs_lattice_max_relative": 0.0009214775475143299,
+      "native_pressure_vs_uniform_max_absolute": 0.000921481016135095,
+      "native_t0_velocity_max_offset": 0.17493700981140137,
+      "timing_scaling": {
+        "norm_ratio": 0.499990729261341,
+        "zero_step_extrapolation_max_error": 2.384185791015625e-07,
+        "float32_roundoff_bound": 1.2311882073845482e-06,
+        "full_step_max_delta": 0.0001399517059326172,
+        "half_step_max_delta": 6.985664367675781e-05
+      }
+    },
+    {
+      "native_density_vs_lattice_max_relative": 0.0009214775475143299,
+      "native_pressure_vs_uniform_max_absolute": 0.000921481016135095,
+      "native_t0_velocity_max_offset": 0.05078756809234619,
+      "timing_scaling": {
+        "norm_ratio": 0.5003091033559544,
+        "zero_step_extrapolation_max_error": 2.384185791015625e-07,
+        "float32_roundoff_bound": 1.2311882073845482e-06,
+        "full_step_max_delta": 2.0265579223632812e-05,
+        "half_step_max_delta": 1.0251998901367188e-05
+      }
+    }
+  ],
+  "budget": {
+    "case_bytes": 5503085754,
+    "pair_bytes": 11006171508,
+    "snapshot_bytes": 33563880,
+    "restart_bytes": 335777344,
+    "ic_bytes": 18880952,
+    "method": "104 native snapshots + two retained restart sets with 50% margin + IC +256MiB logs, all with15% margin. Separate10GiB free reserve. Runtime bounded6000+60s; original3600s restart interval."
+  },
+  "full_pair_storage_check": {
+    "path": "/home/kaan/sensitivity_20260907/gizmo",
+    "filesystem_free_bytes": 26577338368,
+    "filesystem_total_bytes": 1081101176832,
+    "windows_backing_volume": {
+      "distribution": "Ubuntu",
+      "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+      "drive": "C:",
+      "free_bytes": 37563432960,
+      "total_bytes": 1999283154944
+    },
+    "policy": "Conservative growth budget; allocated but reusable VHDX blocks are not credited.",
+    "effective_free_bytes": 26577338368
+  },
+  "scope": "MFM L4 setup/output-timing and short evolved native validation, not full science controls. No native values changed."
+}

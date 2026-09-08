@@ -161,8 +161,12 @@ solver but failed positive-energy checks in both controls. All 404 native
 outputs remain retained. The stopped L3 batch must not be relaunched.
 A separate timestep-scaling test explains native t=0 velocity staggering;
 those velocities must not be interpreted as simultaneous with the header time.
-MFM L4 still needs per-level native/timing checks and a whole-pair retention
-budget. MFV requires diagnosis, not silent floor changes or blanket retries.
+MFM L4 per-level native/timing tests now pass:16 actual test outputs and nine
+additional unit tests. Its separate full pair launched at07:50 local on
+8 September, sharp then historical, using eight CPU workers. This launch is
+not yet included in the40 accepted/analyzed controls. Its whole-pair budget
+is10.25GiB plus10GiB reserve on both filesystems. MFV requires diagnosis,
+not silent floor changes or blanket retries.
 See [GIZMO validation and remaining work](gizmo/README.md).
 Gadget-4 and Gasoline remain unprepared.
 A 15-minute task follow-up is enabled to inspect progress and

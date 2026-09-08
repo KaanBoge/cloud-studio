@@ -1,0 +1,11 @@
+{
+  "status": "tested_for_native_L4_validation_only",
+  "files": {
+    "mfm_l4_controls.py": "6e3c8b350d2a11e705216572f0a98a52c4062c8b768dd4f5599420b1586e583a",
+    "test_mfm_l4.py": "28333304bc4ce5ede41e936a80fc1aec7814fdef1f47665def7e48457628df01"
+  },
+  "base_bundle_sha256": "7a9b27720775b1b22aed1a1067e966331f869a1524dae3b05e1e9f3324388281",
+  "build_sha256": "a23e103cbd5df1849386578246cf635d42b3d60ae174ca4e227b1961e59c0f94",
+  "tests_sha256": "1984dc21593545a02e0a83330c064eca5006f7dc8d9e66839a3dc7b83c8e38c2",
+  "scope": "MFM L4 only. No full run admitted without per-level native/timing/independent checks and whole-pair storage budget. Native solver binaries, numerics and existing helper bundle are unchanged."
+}

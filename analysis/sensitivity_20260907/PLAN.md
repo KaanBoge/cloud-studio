@@ -40,7 +40,8 @@ deleted or thinned, and the live viewer is not relabeled with these experiments.
 
 The remaining unprepared code families need historical-source and native-IC checks
 before their paired launchers are enabled: Gadget-4 and Gasoline. GIZMO's L3
-setup is validated, while L4 requires its own checks. Particle sampling
+setup and separate MFM L4 checks are validated; MFV's later L3 energy failure
+remains a separate blocker. Particle sampling
 and random seeds must be identical within a pair. This is pending work, not an
 already runnable all-code queue.
 
@@ -92,7 +93,7 @@ All four Arepo L3/L4 controls and their 404 native times are now complete and
 analyzed, with independent yt mass-sum agreement within 6.2e-16. Peak curve
 separation is 2.81% at L3 and 2.70% at L4. The full native files remain saved.
 The L5 pair needs 124.02 GiB plus reserve and remains separately guarded.
-Next safe work is GIZMO MFM L4 validation, plus preparation of Gadget-4 and
+Next safe work is completion/analysis of GIZMO MFM L4, plus preparation of Gadget-4 and
 Gasoline. No higher-level queue is claimed before per-level initial-field,
 timing and identical within-pair particle sampling checks are verified.
 Four GIZMO L3 smokes now pass independent mass checks. Eight small native tests
@@ -113,6 +114,17 @@ energy checks, first at t=3.95 t_cc. These two are NOT counted as validated
 controls. The original stopped ledger and separate historical diagnostic
 control remain intact; neither is a runnable continuation queue. Do not
 change floors or filter invalid states to turn a failure into a completion.
+
+MFM L4 subsequently passed its own two short evolved controls and four tiny
+velocity-timing diagnostics: all16 native outputs independently checked, with
+unchanged nonvelocity initial fields. Nine L4 unit tests pass. Its measured
+full-pair retention budget is10.25GiB plus10GiB reserve; this fits current
+guest and Windows capacity. A separate immutable L4 runner launched the full
+sharp/historical pair at07:50 local on8 September using eight ranks. Native
+per-level settings remain unchanged, including MaxMemSize1500MiB/rank,
+MaxSizeTimestep0.05 and restart interval3600seconds. Tiny diagnostic timestep
+caps do not enter production. The new full pair is not counted as accepted
+until all states pass checks and its L3/L4 analysis is complete.
 
 ## Validation and analysis
 

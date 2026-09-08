@@ -6,6 +6,36 @@ distinct native snapshots through 5 t_cc. The two **MFV L3** attempts also
 reached 101 snapshots, but both failed positive-energy checks and are excluded
 from that total. No simulation is currently running in this L3 batch.
 
+## Level 4: validated setup, full pair launched
+
+At 07:50 local time on 8 September, the separate native MFM L4 pair started
+on eight MPI workers: sharp first, historical second. This section records
+the launch, **not completion**. The accepted/analyzed study total remains40
+until the new full outputs pass validation and analysis. MFV is not launched.
+
+Two L4 short evolved controls and four separate timestep-scaling diagnostics
+passed all16 actual native snapshot checks, including independent yt mass
+sums. Nine additional L4 unit tests pass. Native initial nonvelocity fields
+match exactly within the pair; kernel density/pressure deviations from the
+nominal target are at most0.09215%, identical for both laws. Level-specific
+offset-halving ratios are0.499991/0.500309, with zero-step recovery error
+2.3842e-7 below the float32 bound1.2312e-6. This is L4 evidence, not reuse of
+the L3 arrays. Native velocities and snapshot times remain untouched.
+
+The full pair targets101 native snapshots per case through5tcc on the initial
+128x64x64 lattice (524288 elements,6.4 elements/R). Actual measured native
+snapshot size is33,563,880bytes; eight-rank restart-set size335,777,344bytes.
+The complete retained pair budget is10.25GiB plus a separate10GiB reserve on
+both filesystems. The short evolved cases took6.40/6.25seconds, peaking at
+1.58GiB child RSS; these are test costs, not full-run completion estimates.
+
+See [L4 validation evidence](mfm_l4_validation.json),
+[the test plan](L4_VALIDATION_PLAN.md), [frozen runner proof](mfm_l4_bundle.json),
+and [the full L4 runner](mfm_l4_controls.py). The native live ledger is
+`/home/kaan/sensitivity_20260907/gizmo/full_mfm_l4_v1/batch.json`.
+`status_mfm_l4.py` checks actual worker directories and readable output headers;
+progress observations are not a substitute for final full-field validation.
+
 ## Full L3 findings
 
 | Native method and velocity law | Snapshots | Solver time | Peak child RSS | Outcome |
@@ -164,10 +194,11 @@ limit bounds the retained current/backup generations. Low memory or storage
 requests a native checkpoint/stop, with a bounded grace period. No native
 restart is auto-resumed. The guard was not triggered in these four short runs.
 
-Next: validate MFM L4 native initial/evolved fields and level-specific velocity
-timing, then measure its whole-pair retained disk budget before enabling a
-separate frozen L4 runner. MFV requires further diagnosis before larger runs.
-Gadget-4 and Gasoline remain unprepared. Neither L4 nor L5 is launched here. Native
+MFM L4 setup/timing and retained-budget checks have now passed and its separate
+frozen full runner was launched as documented above. On completion, validate
+all full states and create an L3/L4 mass-resolution overlay under a new analysis
+directory before publication. MFV requires further diagnosis before larger runs.
+Gadget-4 and Gasoline remain unprepared. L5 is not launched here. Native
 MaxSizeTimestep, precision, CFL and other production numerics must stay at their
 original settings; the tiny diagnostic timestep caps are never production inputs.
 L5 parameter copies are provenance, not evidence of an enabled or validated L5 queue.
