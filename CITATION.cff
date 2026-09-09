@@ -1,7 +1,8 @@
 cff-version: 1.2.0
-message: "Please cite the specific report and repository commit used; this is a research software and data-visualization project, not a peer-reviewed paper."
+message: "Please cite the specific report and commit used. Cloud Studio is ongoing research, not a peer-reviewed paper. MIT covers the original website/viewer and specified utilities; see LICENSING.md for exclusions."
 title: "Cloud Studio: native-code cloud-crushing research and visualization"
 type: software
+license: MIT
 authors:
   - family-names: Boge
     given-names: Kaan

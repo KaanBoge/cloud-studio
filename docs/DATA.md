@@ -2,7 +2,7 @@
 
 ## What can I download?
 
-* [Research evidence bundle](../downloads/research-evidence-2026-09-09.zip): public custom analysis scripts, Markdown reports, JSON diagnostics/provenance, figures and these guides. Native code source directories, the legacy archive, binary executables and raw simulation arrays are excluded. It is not a portable prebuilt solver installation.
+* [Research evidence bundle](../downloads/research-evidence-2026-09-09-current.zip): public custom analysis scripts, Markdown reports, JSON diagnostics/provenance, figures and these guides. Native code source directories, the legacy archive, binary executables and raw simulation arrays are excluded. It is not a portable prebuilt solver installation. The included [license scope](../LICENSING.md) distinguishes MIT software from research artifacts and third-party material.
 * [Analysis file inventory](../data/research-files.csv), also [JSON](../data/research-files.json): repository-relative paths, byte counts and SHA-256 hashes for the public analysis tree. A catalog entry is not a scientific acceptance certificate.
 * [Historical streaming inventory](../data/streaming-inventory.csv), also [JSON](../data/streaming-inventory.json): every index in a pinned snapshot of the existing public frames branch, actual index counts/times, referenced mesh bytes and any integrity warnings. Listed/unlisted viewer entries are distinguished. Binary mesh payloads were not decoded by this metadata check.
 * [Local project storage inventory](../analysis/storage_20260909/project_storage_inventory.json): dated counts and sizes by research directory category. It includes raw outputs, source, logs, environments and visuals inside those categories; it is not a raw-only total, an atomic snapshot, or proof of upload.
@@ -29,7 +29,7 @@ Read-only gzip tests measured about206.5→64.6MB for an early L5 snapshot and26
 
 [GitHub Pages limits published sites to1GB](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits). [GitHub blocks individual regular Git files over100MiB](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github) and is not a raw-data backup service. The existing frames branch is a derived visualization store, not a way to claim that terabytes of native state are backed up.
 
-No Zenodo deposit or external raw archive is verified. A future archive needs actual uploaded objects, checksums, access verification and a durable link before it can be described as a backup. Do not delete raw results just because a movie, size inventory or paper figure is public.
+No Zenodo deposit or external raw archive is verified. The published movies, size inventories and figures are derived results, not complete native-data backups. Native outputs retained locally contain fields that are absent from these visualizations.
 
 ## Time and completion
 

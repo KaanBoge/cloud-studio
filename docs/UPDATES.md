@@ -1,5 +1,15 @@
 # Publication update · 9 September 2026
 
+## Ongoing project and software license
+
+The public overview now identifies Cloud Studio as Kaan Boge's ongoing project
+and describes the currently published collection. The overview has no mentorship
+branding or proposed-work list. Historical scientific records and references
+remain unchanged. The original website/viewer, selected standalone utilities
+and project guides now have an MIT License with explicit scope; native-code
+derivatives and research data are not blanket-relicensed. The bundled three.js
+license is included with its original authorship.
+
 ## Easier to inspect
 
 The repository now has an expanded README, native-code/method directory,

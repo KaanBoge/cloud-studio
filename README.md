@@ -2,11 +2,13 @@
 
 ### Native simulations. Measured results. Interactive 3D.
 
-Cloud-crushing research by **Kaan Boge**, with mentorship from **Dr. Ryan Farber** through Horizon/HARP. The project studies how a dense cloud evolves in a hot wind using independent hydrodynamics codes.
+**Cloud Studio is an ongoing cloud-crushing research and visualization project by [Kaan Boge](https://github.com/KaanBoge).** It studies how a dense cloud evolves in a hot wind using independent hydrodynamics codes. This repository contains the software, visualizations and analysis available so far—not a finished paper.
 
-**[Explore the research & data](https://kaanboge.github.io/cloud-studio/research.html)** · **[Open the 3D viewer](https://kaanboge.github.io/cloud-studio/viewer.html)** · **[Browse movies & images](https://kaanboge.github.io/cloud-studio/)** · **[Download the evidence bundle](https://kaanboge.github.io/cloud-studio/downloads/research-evidence-2026-09-09.zip)**
+**[Explore the research & data](https://kaanboge.github.io/cloud-studio/research.html)** · **[Open the 3D viewer](https://kaanboge.github.io/cloud-studio/viewer.html)** · **[Browse movies & images](https://kaanboge.github.io/cloud-studio/)** · **[Download the evidence bundle](https://kaanboge.github.io/cloud-studio/downloads/research-evidence-2026-09-09-current.zip)**
 
-> **Read the status before comparing.** The historical viewer is a visualization archive, not a certified matched-code experiment. The validated velocity-sensitivity study is separate. Its latest published summary contains **50 accepted controls, 25 pairs and 5,054 analyzed native states**. A new Enzo level-5 pair is underway at the dated publication check; it is not included in those accepted totals.
+[Website & viewer: MIT](LICENSE) · [License scope](LICENSING.md) · [Third-party notices](THIRD_PARTY_NOTICES.md)
+
+> **Currently published:** **174 historical viewer entries**, **919 analysis files**, and a velocity-sensitivity summary containing **50 accepted controls, 25 pairs and 5,054 analyzed native states**. These are separate collections, not one combined count of validated simulations. Counts describe the dated public catalog, not live simulation status.
 
 ## Start here
 
@@ -18,12 +20,12 @@ Cloud-crushing research by **Kaan Boge**, with mentorship from **Dr. Ryan Farber
 | Check how many frames a historical entry contains | [Frame inventory CSV](data/streaming-inventory.csv) · [JSON](data/streaming-inventory.json) |
 | Inspect the new Enzo level-5 preparation | [Pinned plan and validation](analysis/sensitivity_20260907/enzo/l5_direct_v1/PLAN.md) |
 | Understand what is public versus retained locally | [Data guide](docs/DATA.md) |
-| See what remains to be simulated | [Research roadmap](docs/ROADMAP.md) |
+| See the contents of the published collection | [Current contents](docs/STATUS.md) |
 | Reproduce or review the workflow | [Methods and reproducibility](docs/METHODS.md) |
 
 ## What is being tested?
 
-Ryan's current request is to measure the effect of the velocity prescription at a few resolutions **before deciding which historical runs need replacing**. Each accepted within-code pair uses the same native executable, grid or initial particle sampling, numerical settings and physical parameters. Only the chosen velocity law and its consistent kinetic energy change.
+The published velocity-sensitivity study measures the effect of the initial velocity prescription at several resolutions. Each accepted within-code pair uses the same native executable, grid or initial particle sampling, numerical settings and physical parameters. Only the chosen velocity law and its consistent kinetic energy change.
 
 The pilot fixes **χ = 100, Mach = 2, γ = 5/3**, with the existing density edge and domain. AthenaPK's historical prescription was constant outer momentum; it was not the same tanh-velocity prescription used by the other accepted pairs. Native boundary, tracer and SPH pressure caveats are retained, not hidden behind a common label.
 
@@ -89,7 +91,7 @@ viewer.html            Existing interactive 3D viewer
 analysis/              Custom analysis scripts, reports, diagnostics and figures
 data/                  Viewer manifests and downloadable research/frame catalogs
 assets/                Published movies and images
-docs/                  Methods, data policy, roadmap and update notes
+docs/                  Methods, data guide, current contents and update notes
 downloads/             Portable research-evidence bundle
 vendor/                Existing browser dependencies
 ```
@@ -98,18 +100,20 @@ The separate [`frames` branch](https://github.com/KaanBoge/cloud-studio/tree/fra
 
 **No raw output was deleted for this publication.** The local storage inventory is metadata, not a cloud backup. [Compression tests](analysis/storage_20260909/compression_probe.json) restored every tested byte, but compression has not been enabled for the active Enzo pair.
 
-## Scientific limits and next steps
+## Interpreting the current results
 
-* The blanket replacement queue remains inactive. Reuse decisions require the sensitivity evidence, historical provenance and a scientific tolerance agreed with Ryan.
+* The historical viewer is not a certified matched-code experiment. Shared grid labels and color scales do not remove differences in initial conditions, boundaries or numerical methods.
 * Gasoline's field-repeatability gate remains failed. Completed diagnostics are not accepted full controls.
-* Earlier cooling-labelled cases **did not enable cooling**. They are not radiative results; physical cooling units/table choices and independent validation are still required.
+* Earlier cooling-labelled cases **did not enable cooling**. They are not radiative results.
 * Existing frame-tracking tests verify several implementation properties, but **do not establish complete cloud-material retention**.
 * Movies and quantized isosurfaces are not replacements for native pressure, energy, velocity or tracer fields.
 
-See [verification](https://kaanboge.github.io/cloud-studio/verification.html), [tracking/cooling evidence](analysis/followup_20260907/README.md), and the [roadmap](docs/ROADMAP.md).
+See [verification](https://kaanboge.github.io/cloud-studio/verification.html), [tracking/cooling evidence](analysis/followup_20260907/README.md), and [current published contents](docs/STATUS.md).
 
 ## Reuse, attribution and contributions
 
 This repository is maintained by **[KaanBoge](https://github.com/KaanBoge)**. Please cite the particular report and commit used; [CITATION.cff](CITATION.cff) provides project metadata. No DOI or peer-reviewed publication is claimed.
 
-Upstream simulation codes retain their own licenses and access requirements. This repository does not grant a blanket license over third-party solvers or data. See [contribution and review guidance](CONTRIBUTING.md) before proposing changes. Never overwrite accepted evidence or silently change a scientific acceptance rule.
+Cloud Studio's original website/viewer software and the specifically listed utilities and documentation are released under the **[MIT License](LICENSE)**, copyright **2026 Kaan Boge**. MIT permits reuse, modification and commercial distribution while requiring preservation of the license and copyright notice. It is a software license, not an MIT institutional affiliation or a scientific certification.
+
+The grant is scoped in [LICENSING.md](LICENSING.md). Third-party simulation codes, adapted native-code files, research datasets and archived evidence are **not blanket-relicensed**. Bundled three.js retains its authors' MIT notice. See [third-party notices](THIRD_PARTY_NOTICES.md) and [contribution guidance](CONTRIBUTING.md). Scientific references and recorded provenance remain intact.

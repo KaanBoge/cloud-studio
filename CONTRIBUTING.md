@@ -13,5 +13,7 @@ Link the relevant run/report and specify what is known, inferred and untested.
 * Check links, file sizes, source hashes and the actual deployed result.
 * Describe UI-only changes separately from simulation or scientific changes.
 
-The repository owner is KaanBoge. No blanket third-party software license is
-granted by this repository; upstream licenses and access terms still apply.
+The repository owner is KaanBoge. The original website/viewer and explicitly
+listed utilities and guides use the [MIT License](LICENSE); see [the exact
+scope](LICENSING.md). Preserve upstream copyright and license notices. Research
+data and native-code derivatives are not covered by a blanket MIT grant.

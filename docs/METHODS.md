@@ -2,7 +2,7 @@
 
 ## Scope
 
-This is a native-code cloud-crushing research workspace and public evidence archive, not one universal executable. Kaan Boge maintains the project with scientific mentorship from Dr. Ryan Farber. The current accepted experiment is a **within-code velocity-prescription sensitivity study**, not a finished comparison in which all codes have identical evolved resolution and boundary physics.
+Cloud Studio is Kaan Boge's ongoing native-code cloud-crushing research and visualization project, not one universal executable. The published analysis is a **within-code velocity-prescription sensitivity study**. Each solver retains its own native method and documented boundary physics; the historical collection is not a certified matched-code experiment.
 
 ## Execution
 
