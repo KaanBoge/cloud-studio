@@ -1,6 +1,6 @@
 <!doctype html>
 <meta charset="utf-8">
-<title>Cloud Crushing &mdash; 3D viewer</title>
+<title>Cloud Crushing · 3D viewer</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <style>
   :root{
@@ -70,7 +70,7 @@
 </style>
 
 <div id="wrap"><div class="pane" id="paneA"><canvas class="view" id="cvA"></canvas>
-  <div class="ptitle" id="titleA">&mdash;</div></div></div>
+  <div class="ptitle" id="titleA">…</div></div></div>
 <div id="msg">loading&hellip;</div>
 
 <button class="card" id="sideShow" style="display:none;top:14px;left:14px;z-index:6;
@@ -81,7 +81,7 @@
     position:absolute;top:10px;right:12px;color:var(--mut);font-size:15px;
     padding:2px 6px;border-radius:6px">&#10094;</button>
   <h1>3D viewer</h1>
-  <p class="sub">Drag to turn &middot; scroll to zoom &middot; right-drag to pan
+  <p class="sub">Drag to turn &middot; scroll to zoom &middot; right drag to pan
     &middot; <a class="back" href="index.html">back to studio</a>
     &middot; <a class="back" href="research.html">research &amp; data</a></p>
   <p style="font-size:12px;color:#ffcf90">Historical results: matching levels do not certify matching physics.
@@ -123,14 +123,14 @@
 </div>
 
 <div class="card" id="hud">
-  <div><b id="fps">&mdash;</b> fps</div>
-  <div><b id="tris">&mdash;</b> triangles</div>
+  <div><b id="fps">…</b> fps</div>
+  <div><b id="tris">…</b> triangles</div>
 </div>
 
 <div class="card" id="chartcard">
   <div class="lbl">Surviving dense mass</div>
   <canvas id="chart" width="640" height="300"></canvas>
-  <div id="chartnote">M_dense(t) / M_dense(0); only corrected native-data diagnostics are shown.</div>
+  <div id="chartnote">M_dense(t) / M_dense(0); only corrected native data diagnostics are shown.</div>
 </div>
 
 <div class="card" id="bar">
@@ -138,7 +138,7 @@
   <button id="play">&#9654;</button>
   <button id="next">&#9654;&#9654;</button>
   <input id="slider" type="range" min="0" max="0" value="0" step="1">
-  <span id="tlab">&mdash;</span>
+  <span id="tlab">…</span>
 </div>
 
 <script>var STUDIO_DATA={},VOL_DATA={},VOLSEQ_DATA={},VOLHQ_DATA={};</script>
@@ -659,7 +659,7 @@ cmpOn.onchange = () => {
   if (cmpOn.checked) {
     if (!B) {
       const pane = document.createElement("div"); pane.className = "pane"; pane.id = "paneB";
-      pane.innerHTML = '<canvas class="view" id="cvB"></canvas><div class="ptitle" id="titleB">&mdash;</div>';
+      pane.innerHTML = '<canvas class="view" id="cvB"></canvas><div class="ptitle" id="titleB">…</div>';
       wrap.appendChild(pane);
       B = makePane(document.getElementById("cvB"));
     }
@@ -727,7 +727,7 @@ function drawChart() {
     ctx.beginPath(); ctx.moveTo(X(t), 8); ctx.lineTo(X(t), H - 34); ctx.stroke();
   }
   const note = document.getElementById("chartnote");
-  if (!diagA && !diagB) note.textContent = "Historical mass curves withheld: corrected native-data analysis is not available for this run. The 3D frames remain accessible.";
+  if (!diagA && !diagB) note.textContent = "Historical mass curves withheld: corrected native data analysis is not available for this run. The 3D frames remain accessible.";
   else note.innerHTML = (diagA ? "<span class='sw' style='background:#6ea8ff'></span>" + (A.id||"") + " " : "")
                       + (diagB ? "&nbsp;<span class='sw' style='background:#ffb46e'></span>" + (B && B.id || "") : "");
 }

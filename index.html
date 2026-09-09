@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cloud Crushing Studio</title>
-<meta name="description" content="Kaan Boge's native-code cloud-crushing simulations, interactive 3D visualizations, measured diagnostics and research evidence.">
+<meta name="description" content="Kaan Boge's native code cloud crushing simulations, interactive 3D visualizations, measured diagnostics and research evidence.">
 <style>
   :root {
     color-scheme: light dark;
@@ -125,11 +125,11 @@
 </head>
 <body>
 <div class="wrap">
-  <p class="eyebrow">Cloud-crushing research by Kaan Boge · Work in progress</p>
+  <p class="eyebrow">Cloud crushing research by Kaan Boge · Work in progress</p>
   <h1>Cloud Crushing Studio</h1>
   <p class="sub"><a href="research.html"><strong>Research &amp; data</strong></a> · <a href="viewer.html">Interactive 3D viewer</a> · <a href="https://github.com/KaanBoge/cloud-studio">KaanBoge on GitHub</a></p>
-  <p class="sub">Cloud-crushing experiments across several simulation codes.
-    Movies and interactive isosurfaces are visualizations of solver output, not raw-data backups.
+  <p class="sub">Cloud crushing experiments across several simulation codes.
+    Movies and interactive isosurfaces are visualizations of solver output, not raw data backups.
     Historical runs have differences in initial and boundary conditions and are not a validated matched comparison.
     <a href="verification.html">Verification report and corrected analysis, 7 September 2026</a>.</p>
 
@@ -160,7 +160,7 @@
   </section>
 
   <section class="panel" id="p-terrain">
-    <div class="note">Density becomes altitude. Drag to orbit, scroll to zoom, right-drag to pan.
+    <div class="note">Density becomes altitude. Drag to orbit, scroll to zoom, right drag to pan.
       The wind blows left to right; the mountains are the cloud.</div>
     <div class="twrap">
       <div id="tlist"></div>
@@ -180,7 +180,7 @@
 
   <section class="panel" id="p-volumes">
     <div class="note">A real 3D simulation, in your hands: nested density shells from the run itself.
-      Drag to orbit, scroll to zoom, right-drag to pan. The faint outer shell is shocked wind, the
+      Drag to orbit, scroll to zoom, right drag to pan. The faint outer shell is shocked wind, the
       middle shell is the cloud surface, the solid core is the densest gas. More runs join as they
       finish computing.</div>
     <div class="twrap">
@@ -198,7 +198,7 @@
     </div>
     <p class="note" style="margin-top:22px">Drag to turn the cloud, scroll to zoom, and use the
       slider above to move through time. Everything else made from the 3D runs is a flat picture
-      of three-dimensional data: the recorded videos are in Movies and the frame sets are in
+      of three dimensional data: the recorded videos are in Movies and the frame sets are in
       Gallery, both labelled as slices.</p>
     <p style="margin:14px 0 4px">
       <a id="fullview" href="viewer.html" target="_blank" rel="noopener"
@@ -351,9 +351,9 @@
     if ((r = base.match(/^athw_chi(\d+)_(\d+)$/)))
       return { title: "Athena 4.2 wind tunnel, " + gridTxt(r[2], false) + slow, chi: +r[1], code: "Athena 4.2", res: +r[2] };
     if ((r = base.match(/^athena_shock_d(\d+)_(\d+)$/)))
-      return { title: "Athena 4.2, " + shockLevel(+r[2]) + ", shock-driven" + slow, chi: +r[1], code: "Athena 4.2", res: +r[2] * 2 };
+      return { title: "Athena 4.2, " + shockLevel(+r[2]) + ", shock driven" + slow, chi: +r[1], code: "Athena 4.2", res: +r[2] * 2 };
     if ((r = base.match(/^athena_shk_cloud_(hires|ultra)$/)))
-      return { title: "Athena 4.2, " + shockLevel(r[1] === "hires" ? 1800 : 3600) + ", shock-driven" + slow, chi: 10, code: "Athena 4.2", res: (r[1] === "hires" ? 3600 : 7200) };
+      return { title: "Athena 4.2, " + shockLevel(r[1] === "hires" ? 1800 : 3600) + ", shock driven" + slow, chi: 10, code: "Athena 4.2", res: (r[1] === "hires" ? 3600 : 7200) };
     // generic 3D family: <code>3d_chi<chi>[_l<level> | _lref<level> | _<cells>]
     // catches the runs whose names carry a level instead of a cell count, and
     // the ones that carry neither, so nothing 3D falls through to the flat tab

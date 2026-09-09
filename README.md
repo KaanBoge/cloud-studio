@@ -2,58 +2,58 @@
 
 ### Native simulations. Measured results. Interactive 3D.
 
-**Cloud Studio is an ongoing cloud-crushing research and visualization project by [Kaan Boge](https://github.com/KaanBoge).** It studies how a dense cloud evolves in a hot wind using independent hydrodynamics codes. This repository contains the software, visualizations and analysis available so far—not a finished paper.
+**Cloud Studio is an ongoing cloud crushing research and visualization project by [Kaan Boge](https://github.com/KaanBoge).** It studies how a dense cloud evolves in a hot wind using independent hydrodynamics codes. This repository contains the software, visualizations and analysis available so far. This is not a finished paper.
 
 **[Explore the research & data](https://kaanboge.github.io/cloud-studio/research.html)** · **[Open the 3D viewer](https://kaanboge.github.io/cloud-studio/viewer.html)** · **[Browse movies & images](https://kaanboge.github.io/cloud-studio/)** · **[Download the evidence bundle](https://kaanboge.github.io/cloud-studio/downloads/research-evidence-2026-09-09-current.zip)**
 
-[Website & viewer: MIT](LICENSE) · [License scope](LICENSING.md) · [Third-party notices](THIRD_PARTY_NOTICES.md)
+[Website & viewer: MIT](LICENSE) · [License scope](LICENSING.md) · [Third party notices](THIRD_PARTY_NOTICES.md)
 
-> **Currently published:** **174 historical viewer entries**, **919 analysis files**, and a velocity-sensitivity summary containing **50 accepted controls, 25 pairs and 5,054 analyzed native states**. These are separate collections, not one combined count of validated simulations. Counts describe the dated public catalog, not live simulation status.
+> **Currently published:** **174 historical viewer entries**, **919 analysis files**, and a velocity sensitivity summary containing **50 accepted controls, 25 pairs and 5,054 analyzed native states**. These are separate collections, not one combined count of validated simulations. Counts describe the dated public catalog, not live simulation status.
 
 ## Start here
 
 | If you want to… | Open |
 |---|---|
 | Rotate, zoom and compare cloud structures | [Interactive 3D viewer](https://kaanboge.github.io/cloud-studio/viewer.html) |
-| Read the current scientific findings | [All-code velocity-sensitivity summary](analysis/sensitivity_20260907/resolution_summary_v2/README.md) |
+| Read the current scientific findings | [All code velocity sensitivity summary](analysis/sensitivity_20260907/resolution_summary_v2/README.md) |
 | Find reports, scripts, checks and figures | [Research hub](https://kaanboge.github.io/cloud-studio/research.html) · [Analysis directory](analysis/) |
 | Check how many frames a historical entry contains | [Frame inventory CSV](data/streaming-inventory.csv) · [JSON](data/streaming-inventory.json) |
-| Inspect the new Enzo level-5 preparation | [Pinned plan and validation](analysis/sensitivity_20260907/enzo/l5_direct_v1/PLAN.md) |
+| Inspect the new Enzo level 5 preparation | [Pinned plan and validation](analysis/sensitivity_20260907/enzo/l5_direct_v1/PLAN.md) |
 | Understand what is public versus retained locally | [Data guide](docs/DATA.md) |
 | See the contents of the published collection | [Current contents](docs/STATUS.md) |
 | Reproduce or review the workflow | [Methods and reproducibility](docs/METHODS.md) |
 
 ## What is being tested?
 
-The published velocity-sensitivity study measures the effect of the initial velocity prescription at several resolutions. Each accepted within-code pair uses the same native executable, grid or initial particle sampling, numerical settings and physical parameters. Only the chosen velocity law and its consistent kinetic energy change.
+The published velocity sensitivity study measures the effect of the initial velocity prescription at several resolutions. Each accepted within code pair uses the same native executable, grid or initial particle sampling, numerical settings and physical parameters. Only the chosen velocity law and its consistent kinetic energy change.
 
-The pilot fixes **χ = 100, Mach = 2, γ = 5/3**, with the existing density edge and domain. AthenaPK's historical prescription was constant outer momentum; it was not the same tanh-velocity prescription used by the other accepted pairs. Native boundary, tracer and SPH pressure caveats are retained, not hidden behind a common label.
+The pilot fixes **χ = 100, Mach = 2, γ = 5/3**, with the existing density edge and domain. AthenaPK's historical prescription was constant outer momentum; it was not the same tanh velocity prescription used by the other accepted pairs. Native boundary, tracer and SPH pressure caveats are retained, not hidden behind a common label.
 
-![Measured dense-mass evolution in the original Athena++ and AthenaPK sensitivity pilot](analysis/sensitivity_20260907/analysis/mass_evolution.png)
+![Measured dense mass evolution in the original Athena++ and AthenaPK sensitivity pilot](analysis/sensitivity_20260907/analysis/mass_evolution.png)
 
-*One part of the study: the original two-code pilot. Curves use the measured native outputs. See the [updated all-code report](analysis/sensitivity_20260907/resolution_summary_v2/README.md) for the wider evidence; this image is not a code ranking or a convergence proof.*
+*One part of the study: the original two code pilot. Curves use the measured native outputs. See the [updated all code report](analysis/sensitivity_20260907/resolution_summary_v2/README.md) for the wider evidence; this image is not a code ranking or a convergence proof.*
 
 ## Independent native codes
 
 | Code / method | Execution in this project | Published sensitivity evidence |
 |---|---|---|
-| AthenaPK | CUDA/GPU | [L3–L4](analysis/sensitivity_20260907/README.md) |
-| Athena++ | MPI/CPU | [L3–L4](analysis/sensitivity_20260907/README.md) |
-| Athena 4.2 | MPI/CPU | [L3–L5](analysis/sensitivity_20260907/athw/README.md) |
-| Enzo | MPI/CPU | [L3–L4](analysis/sensitivity_20260907/enzo/README.md) · [new L5 preparation](analysis/sensitivity_20260907/enzo/l5_direct_v1/PLAN.md) |
-| Enzo-E | Charm++/CPU | [L3–L4](analysis/sensitivity_20260907/enzoe/README.md) |
-| RAMSES | MPI/CPU | [L3–L4](analysis/sensitivity_20260907/ramses/README.md) |
-| FLASH 4.8 | MPI/CPU | [L3–L4](analysis/sensitivity_20260907/flash/README.md) |
-| Flash-X | MPI/CPU | [L3–L4](analysis/sensitivity_20260907/flashx/README.md) |
-| Arepo | MPI/CPU, moving mesh | [L3–L4](analysis/sensitivity_20260907/arepo/README.md) |
-| GIZMO MFM | MPI/CPU, mesh-free finite mass | [L3–L4](analysis/sensitivity_20260907/gizmo/README.md) |
-| GIZMO MFV | MPI/CPU, mesh-free finite volume | [Repaired L3–L4](analysis/sensitivity_20260907/gizmo/mfv_analysis_levels_v1/README.md) |
-| Gadget-4 | MPI/CPU, SPH | [L3–L4](analysis/sensitivity_20260907/gadget4/analysis_levels_v1/README.md) |
+| AthenaPK | CUDA/GPU | [L3 to L4](analysis/sensitivity_20260907/README.md) |
+| Athena++ | MPI/CPU | [L3 to L4](analysis/sensitivity_20260907/README.md) |
+| Athena 4.2 | MPI/CPU | [L3 to L5](analysis/sensitivity_20260907/athw/README.md) |
+| Enzo | MPI/CPU | [L3 to L4](analysis/sensitivity_20260907/enzo/README.md) · [new L5 preparation](analysis/sensitivity_20260907/enzo/l5_direct_v1/PLAN.md) |
+| Enzo-E | Charm++/CPU | [L3 to L4](analysis/sensitivity_20260907/enzoe/README.md) |
+| RAMSES | MPI/CPU | [L3 to L4](analysis/sensitivity_20260907/ramses/README.md) |
+| FLASH 4.8 | MPI/CPU | [L3 to L4](analysis/sensitivity_20260907/flash/README.md) |
+| Flash-X | MPI/CPU | [L3 to L4](analysis/sensitivity_20260907/flashx/README.md) |
+| Arepo | MPI/CPU, moving mesh | [L3 to L4](analysis/sensitivity_20260907/arepo/README.md) |
+| GIZMO MFM | MPI/CPU, mesh free finite mass | [L3 to L4](analysis/sensitivity_20260907/gizmo/README.md) |
+| GIZMO MFV | MPI/CPU, mesh free finite volume | [Repaired L3 to L4](analysis/sensitivity_20260907/gizmo/mfv_analysis_levels_v1/README.md) |
+| Gadget-4 | MPI/CPU, SPH | [L3 to L4](analysis/sensitivity_20260907/gadget4/analysis_levels_v1/README.md) |
 | Gasoline | CPU, SPH | [Validation hold](analysis/sensitivity_20260907/gasoline/FORCE_ORDER_RESULTS.md) |
 
 These are twelve code families and thirteen methods when GIZMO MFM and MFV are counted separately. Results are produced by each code's own solver, not by relabelling FLASH output.
 
-## Resolution means a physical grid—not movie resolution
+## Resolution means a physical grid, not movie resolution
 
 | Project level | Streamwise × transverse × transverse | Initial elements per cloud radius |
 |---|---|---:|
@@ -64,7 +64,7 @@ These are twelve code families and thirteen methods when GIZMO MFM and MFV are c
 | 5 | 256 × 128 × 128 | 12.8 |
 | 6 | 512 × 256 × 256 | 25.6 |
 
-The domain is 20 × 10 × 10 cloud radii. **Level 6 is not 512³.** For moving-mesh and particle codes, this ladder describes the initial sampling; it does not guarantee identical evolved spatial resolution. Levels 1–2 do not resolve a cloud well enough for quantitative convergence conclusions.
+The domain is 20 × 10 × 10 cloud radii. **Level 6 is not 512³.** For moving mesh and particle codes, this ladder describes the initial sampling; it does not guarantee identical evolved spatial resolution. Levels 1 to 2 do not resolve a cloud well enough for quantitative convergence conclusions.
 
 ## From a simulation to the website
 
@@ -102,18 +102,18 @@ The separate [`frames` branch](https://github.com/KaanBoge/cloud-studio/tree/fra
 
 ## Interpreting the current results
 
-* The historical viewer is not a certified matched-code experiment. Shared grid labels and color scales do not remove differences in initial conditions, boundaries or numerical methods.
-* Gasoline's field-repeatability gate remains failed. Completed diagnostics are not accepted full controls.
-* Earlier cooling-labelled cases **did not enable cooling**. They are not radiative results.
-* Existing frame-tracking tests verify several implementation properties, but **do not establish complete cloud-material retention**.
+* The historical viewer is not a certified matched code experiment. Shared grid labels and color scales do not remove differences in initial conditions, boundaries or numerical methods.
+* Gasoline's field repeatability gate remains failed. Completed diagnostics are not accepted full controls.
+* Earlier cooling labelled cases **did not enable cooling**. They are not radiative results.
+* Existing frame tracking tests verify several implementation properties, but **do not establish complete cloud material retention**.
 * Movies and quantized isosurfaces are not replacements for native pressure, energy, velocity or tracer fields.
 
 See [verification](https://kaanboge.github.io/cloud-studio/verification.html), [tracking/cooling evidence](analysis/followup_20260907/README.md), and [current published contents](docs/STATUS.md).
 
 ## Reuse, attribution and contributions
 
-This repository is maintained by **[KaanBoge](https://github.com/KaanBoge)**. Please cite the particular report and commit used; [CITATION.cff](CITATION.cff) provides project metadata. No DOI or peer-reviewed publication is claimed.
+This repository is maintained by **[KaanBoge](https://github.com/KaanBoge)**. Please cite the particular report and commit used; [CITATION.cff](CITATION.cff) provides project metadata. No DOI or peer reviewed publication is claimed.
 
 Cloud Studio's original website/viewer software and the specifically listed utilities and documentation are released under the **[MIT License](LICENSE)**, copyright **2026 Kaan Boge**. MIT permits reuse, modification and commercial distribution while requiring preservation of the license and copyright notice. It is a software license, not an MIT institutional affiliation or a scientific certification.
 
-The grant is scoped in [LICENSING.md](LICENSING.md). Third-party simulation codes, adapted native-code files, research datasets and archived evidence are **not blanket-relicensed**. Bundled three.js retains its authors' MIT notice. See [third-party notices](THIRD_PARTY_NOTICES.md) and [contribution guidance](CONTRIBUTING.md). Scientific references and recorded provenance remain intact.
+The grant is scoped in [LICENSING.md](LICENSING.md). Third party simulation codes, adapted native code files, research datasets and archived evidence are **not blanket relicensed**. Bundled three.js retains its authors' MIT notice. See [third party notices](THIRD_PARTY_NOTICES.md) and [contribution guidance](CONTRIBUTING.md). Scientific references and recorded provenance remain intact.

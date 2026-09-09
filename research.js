@@ -23,7 +23,7 @@ async function init(){
   if(results[2].status==='fulfilled'){
     const all=results[2].value.runs;const time=t=>typeof t==='number'?Number(t.toFixed(4)).toString():'unknown';
     const render=()=>{const query=byId('run-search').value.trim().toLowerCase(),scope=byId('run-scope').value;const matches=all.filter(r=>(!query||r.run_id.toLowerCase().includes(query))&&(scope==='all'||(r.listed_in_viewer&&(scope!=='short'||r.index_frame_count<101))));const rows=[];
-      for(const run of matches){const row=node('tr'),name=node('td');name.append(link(run.run_id,run.index_url));row.append(name,node('td',number(run.index_frame_count)),node('td','t = '+time(run.first_t_tcc)+' → '+time(run.last_t_tcc)),node('td',size(run.mesh_bytes)),node('td',run.scientific_status+(run.issues.length?' · INDEX WARNING: '+run.issues.join(', '):'')));rows.push(row);}
+      for(const run of matches){const row=node('tr'),name=node('td');name.append(link(run.run_id,run.index_url));row.append(name,node('td',number(run.index_frame_count)),node('td','t = '+time(run.first_t_tcc)+' → '+time(run.last_t_tcc)),node('td',size(run.mesh_bytes)),node('td',run.scientific_status.replace('matched-code','matched code')+(run.issues.length?' · INDEX WARNING: '+run.issues.join(', '):'')));rows.push(row);}
       if(rows.length)byId('run-rows').replaceChildren(...rows);else message(byId('run-rows'),'No entries match this filter.',5);byId('run-result-count').textContent=number(matches.length)+' entries';};
     byId('run-search').addEventListener('input',render);byId('run-scope').addEventListener('change',render);render();
   }else message(byId('run-rows'),'Frame inventory unavailable. Use the frame CSV download above.',5);
