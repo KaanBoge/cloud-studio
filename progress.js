@@ -48,7 +48,7 @@
     }
     $('queue').replaceChildren();
     if(!queue.length)$('queue').append(node('p',old?'No queued native job in the last report.':'No additional native simulation is approved and waiting to start.'));
-    for(const [i,run] of queue.entries())$('queue').append(node('p',`${i+1}. ${run.code}, level ${run.level}, χ = ${run.chi}, Mach ${run.mach}. ${run.status}.`));
+    for(const [i,run] of queue.entries())$('queue').append(node('p',`${i+1}. ${run.code}, level ${run.level}, ${run.law}, χ = ${run.chi}, Mach ${run.mach}. ${run.status}.`));
     const m=observation.monitor||{};
     $('monitor-cost').textContent=m.collection_cpu_seconds!==undefined?`Last collector sample: ${(m.collection_cpu_seconds*1000).toFixed(1)} ms CPU · ${(m.working_set_bytes/1048576).toFixed(1)} MiB publisher RAM. Upload cost is separate.`:'Publisher measurement unavailable';
   }
