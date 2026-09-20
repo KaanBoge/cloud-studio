@@ -14,6 +14,7 @@
 
 | If you want to… | Open |
 |---|---|
+| Check current activity, measured runtimes and the planning inventory | [Live simulation progress](https://kaanboge.github.io/cloud-studio/progress.html) |
 | Rotate, zoom and compare cloud structures | [Interactive 3D viewer](https://kaanboge.github.io/cloud-studio/viewer.html) |
 | Read the current scientific findings | [All code velocity sensitivity summary](analysis/sensitivity_20260907/resolution_summary_v2/README.md) |
 | Find reports, scripts, checks and figures | [Research hub](https://kaanboge.github.io/cloud-studio/research.html) · [Analysis directory](analysis/) |
