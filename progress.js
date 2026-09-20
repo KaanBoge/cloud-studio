@@ -2,7 +2,8 @@
 (() => {
   const $ = id => document.getElementById(id);
   const LIVE = 'https://raw.githubusercontent.com/KaanBoge/cloud-studio/live-status/progress.json';
-  let catalog, observation, remote = false, loading = false, planLimit = 60;
+  const REF = 'https://api.github.com/repos/KaanBoge/cloud-studio/git/ref/heads/live-status';
+  let catalog, observation, remote = false, loading = false, planLimit = 60, lastRefPoll = 0, knownRef = null;
   function node(tag, text, cls) { const e=document.createElement(tag); if(text!==undefined)e.textContent=text; if(cls)e.className=cls; return e; }
   function duration(s) {
     if (s===null || s===undefined || !Number.isFinite(Number(s))) return 'Not available';
@@ -23,7 +24,7 @@
     $('connection').textContent=old?'Snapshot, not live':'Publisher connected';
     $('connection').className='badge'+(old?' amber':'');
     const date=new Date(observation.observed_unix*1000);
-    $('updated').textContent=`Last observation ${date.toLocaleString()}. ${old?'Live activity and remaining time are withheld until a fresh report arrives.':'Updates about once a minute during activity and every five minutes while idle.'}`;
+    $('updated').textContent=`Last observation ${date.toLocaleString()}. ${old?'Live activity and remaining time are withheld until a fresh report arrives.':'Display updates about every two minutes during activity. Idle reports update about every five minutes.'}`;
     $('running').textContent=old?'Unknown':String(native.length);
     $('running-note').textContent=old?'Waiting for a fresh report':active.length&&!native.length?'Validation, analysis or unconfirmed activity':'Native evolution only';
     $('queued').textContent=old?'Unknown':String(queue.length);
@@ -93,7 +94,16 @@
   }
   async function refresh(){
     if(loading)return; loading=true;$('refresh').disabled=true;
-    try{const data=await fetchJSON(`${LIVE}?minute=${Math.floor(Date.now()/60000)}`);if(data.schema!==1||!Array.isArray(data.active)||!Number.isFinite(data.observed_unix))throw Error('Unsupported status');observation=data;remote=true;}
+    try{
+      if(Date.now()-lastRefPoll>=120000){
+        lastRefPoll=Date.now();
+        try{const ref=await fetchJSON(`${REF}?interval=${Math.floor(Date.now()/120000)}`);if(ref.ref==='refs/heads/live-status'&&/^[a-f0-9]{40}$/.test(ref.object?.sha))knownRef=ref.object.sha;}catch{knownRef=null;}
+      }
+      const url=knownRef?`https://raw.githubusercontent.com/KaanBoge/cloud-studio/${knownRef}/progress.json`:`${LIVE}?minute=${Math.floor(Date.now()/60000)}`;
+      const data=await fetchJSON(url);if(data.schema!==1||!Array.isArray(data.active)||!Number.isFinite(data.observed_unix))throw Error('Unsupported status');
+      if(!observation||data.observed_unix>=observation.observed_unix)observation=data;
+      remote=true;
+    }
     catch{remote=false;}
     finally{loading=false;$('refresh').disabled=false;mergeCompletions();renderLive();}
   }
