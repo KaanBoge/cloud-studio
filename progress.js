@@ -67,7 +67,8 @@
   function renderPlan(){
     if(!catalog)return;
     const chi=$('plan-chi').value,code=$('plan-code').value,status=$('plan-status').value;
-    const rows=catalog.planning_slots.filter(r=>(!chi||r.chi===Number(chi))&&(!code||r.method===code)&&(!status||r.status===status));
+    const slots=catalog.planning_slots.map(slot=>{const found=catalog.runs.filter(r=>r.method===slot.method&&r.level===slot.level&&r.chi===slot.chi&&r.mach===slot.mach);return found.length?{...slot,status:'Evidence available',native_runs_present:found.length,reason:'Existing controlled results require compatible scientific admission, not automatic replacement.'}:slot;});
+    const rows=slots.filter(r=>(!chi||r.chi===Number(chi))&&(!code||r.method===code)&&(!status||r.status===status));
     rows.sort((a,b)=>a.code.localeCompare(b.code)||a.chi-b.chi||a.level-b.level);
     $('plan').replaceChildren();
     for(const r of rows.slice(0,planLimit)){const tr=node('tr');const readiness=node('td');readiness.append(badge(r.status,r.status!=='Evidence available'),node('span',r.reason,'detail'));
@@ -80,11 +81,21 @@
     $('more-plan').hidden=rows.length<=planLimit;
   }
   async function fetchJSON(url){const c=new AbortController(),timer=setTimeout(()=>c.abort(),12000);try{const r=await fetch(url,{signal:c.signal,cache:'no-store'});if(!r.ok)throw Error('Status unavailable');return await r.json();}finally{clearTimeout(timer);}}
+  function mergeCompletions(){
+    if(!catalog||!observation)return;
+    let changed=false;
+    for(const r of observation.completed||[]){
+      if(!Number.isFinite(r.native_seconds)||!Number.isInteger(r.frames)||r.frames<90)continue;
+      const existing=catalog.runs.find(e=>e.method===r.method&&e.level===r.level&&e.law===r.law&&e.chi===r.chi&&e.mach===r.mach);
+      if(!existing){catalog.runs.push({...r,validation_seconds:null,finished_utc:null,evidence:'Native completion record',review:'Independent scientific review not reported',hardware:r.method==='apk'?'GPU':'CPU'});changed=true;}
+    }
+    if(changed){$('completed').textContent=catalog.runs.length;$('methods').textContent=new Set(catalog.runs.map(r=>r.method)).size;renderRuns();renderPlan();}
+  }
   async function refresh(){
     if(loading)return; loading=true;$('refresh').disabled=true;
     try{const data=await fetchJSON(`${LIVE}?minute=${Math.floor(Date.now()/60000)}`);if(data.schema!==1||!Array.isArray(data.active)||!Number.isFinite(data.observed_unix))throw Error('Unsupported status');observation=data;remote=true;}
     catch{remote=false;}
-    finally{loading=false;$('refresh').disabled=false;renderLive();}
+    finally{loading=false;$('refresh').disabled=false;mergeCompletions();renderLive();}
   }
   async function init(){
     try{
