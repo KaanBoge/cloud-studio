@@ -13,12 +13,21 @@
     return h ? `${h} h ${m} min` : `${m} min ${sec} s`;
   }
   function grid(level) { return `${2**(level+3)} × ${2**(level+2)} × ${2**(level+2)}`; }
+  function sampling(run) { return run.dimensions ? `Reported normalized sampling: ${run.dimensions}` : `Level derived sampling: ${grid(run.level)}. Native layout not recorded here.`; }
   function detailCell(main, sub) { const c=node('td');c.append(node('strong',main));if(sub)c.append(node('span',sub,'detail'));return c; }
   function badge(text, warning=false) { return node('span',text,'badge'+(warning?' amber':'')); }
   function option(select,value,label) { const e=node('option',label);e.value=value;$(select).append(e); }
   function stale() { return !remote || !observation || Date.now()/1000-observation.observed_unix>(observation.active?.length?180:observation.stale_after_seconds) || Date.now()/1000<observation.observed_unix-120; }
   function renderLive() {
-    if(!observation)return;
+    if(!observation){
+      $('connection').textContent=loading?'Connecting to live report':'Live report unavailable';
+      $('connection').className='badge amber';
+      $('updated').textContent=loading?'Loading current status independently of the inventory.':'Automatic retry continues every minute while this page is visible. Refresh now retries immediately.';
+      $('running').textContent='Unknown';$('queued').textContent='Unknown';
+      $('running-note').textContent='No fresh observation';$('phase').textContent='Unconfirmed';
+      $('activity').replaceChildren(node('p','No current observation is available. This is not evidence that a simulation has stopped.'));
+      return;
+    }
     const old=stale(), active=observation.active||[], queue=observation.queue||[];
     const native=active.filter(a=>a.live&&a.phase==='Native evolution');
     $('connection').textContent=old?'Snapshot, not live':'Publisher connected';
@@ -26,7 +35,7 @@
     const date=new Date(observation.observed_unix*1000);
     $('updated').textContent=`Last observation ${date.toLocaleString()}. ${old?'Live activity and remaining time are withheld until a fresh report arrives.':'Display updates about every two minutes during activity. Idle reports update about every five minutes.'}`;
     $('running').textContent=old?'Unknown':String(native.length);
-    $('running-note').textContent=old?'Waiting for a fresh report':active.length&&!native.length?'Validation, analysis or unconfirmed activity':'Native evolution only';
+    $('running-note').textContent=old?'Waiting for a fresh report':native.length?'Native evolution only':active.length?active.map(a=>a.phase).join(', '):'No native evolution reported';
     $('queued').textContent=old?'Unknown':String(queue.length);
     const box=$('activity');box.replaceChildren();
     $('phase').textContent=old?'Last known state':active.length?active[0].phase:observation.current_state;
@@ -37,18 +46,24 @@
     }
     for(const run of active){
       box.append(node('p',`${run.code} · Level ${run.level} · ${run.law}`,'run-title'));
-      box.append(node('p',`${run.dimensions} · χ = ${run.chi} · Mach ${run.mach}`,'muted'));
-      const trusted=!old&&run.live, stats=node('div',undefined,'activity-grid');
-      const values=[['Native progress',trusted&&run.percent!==null?`${run.percent.toFixed(1)}%`:'Unknown'],
-        ['Native time remaining',trusted&&run.eta_seconds!==null?'About '+duration(run.eta_seconds):'Not estimated'],
+      box.append(node('p',`${sampling(run)} · χ = ${run.chi} · Mach ${run.mach}`,'muted'));
+      const trusted=!old&&run.live;
+      if(run.phase==='Waiting for RAM reserve'){
+        box.append(node('p',trusted?'The supervisor is waiting for required free RAM. No native simulation is computing for this case. Startup is automatic when memory and the other required checks pass.':'The last report showed a memory wait. The current supervisor state is unconfirmed.','run-title'));
+        box.append(node('p','There is no native start time or completion estimate during this wait. A connected publisher is not a running solver.','small'));
+        continue;
+      }
+      const stats=node('div',undefined,'activity-grid');
+      const values=[['Native progress',trusted&&Number.isFinite(run.percent)?`${run.percent.toFixed(1)}%`:'Unknown'],
+        ['Native time remaining',trusted&&Number.isFinite(run.eta_seconds)?'About '+duration(run.eta_seconds):'Not estimated'],
         ['Elapsed since native start',trusted?duration(run.elapsed_seconds):'Unknown']];
       for(const [label,value] of values){const cell=node('div');cell.append(node('strong',value),node('span',label));stats.append(cell);}box.append(stats);
-      if(trusted&&run.percent!==null){const bar=node('progress');bar.max=100;bar.value=run.percent;bar.setAttribute('aria-label','Native physical time progress');box.append(bar);}
+      if(trusted&&Number.isFinite(run.percent)){const bar=node('progress');bar.max=100;bar.value=run.percent;bar.setAttribute('aria-label','Native physical time progress');box.append(bar);}
       box.append(node('p','Remaining time covers native evolution only. Saved outputs still require validation and analysis.','small'));
     }
     $('queue').replaceChildren();
     if(!queue.length)$('queue').append(node('p',old?'No queued native job in the last report.':'No additional native simulation is approved and waiting to start.'));
-    for(const [i,run] of queue.entries())$('queue').append(node('p',`${i+1}. ${run.code}, level ${run.level}, ${run.law}, χ = ${run.chi}, Mach ${run.mach}. ${run.status}.`));
+    for(const [i,run] of queue.entries())$('queue').append(node('p',`${i+1}. ${run.code}, level ${run.level}, ${run.law}. ${sampling(run)}. χ = ${run.chi}, Mach ${run.mach}. ${run.status}.`));
     const m=observation.monitor||{};
     $('monitor-cost').textContent=m.collection_cpu_seconds!==undefined?`Last collector sample: ${(m.collection_cpu_seconds*1000).toFixed(1)} ms CPU · ${(m.working_set_bytes/1048576).toFixed(1)} MiB publisher RAM. Upload cost is separate.`:'Publisher measurement unavailable';
   }
@@ -58,12 +73,12 @@
     const rows=catalog.runs.filter(r=>(!code||r.method===code)&&(!level||r.level===Number(level))&&(!search||`${r.code} ${r.law}`.toLowerCase().includes(search)));
     rows.sort((a,b)=>sort==='slow'?b.native_seconds-a.native_seconds:sort==='level'?b.level-a.level||a.code.localeCompare(b.code):sort==='code'?a.code.localeCompare(b.code)||b.level-a.level:(Date.parse(b.finished_utc)||0)-(Date.parse(a.finished_utc)||0));
     $('runs').replaceChildren();
-    for(const r of rows){const tr=node('tr');tr.append(detailCell(r.code,`${r.hardware} · ${r.law}`),detailCell(`Level ${r.level}`,grid(r.level)),
+    for(const r of rows){const tr=node('tr');tr.append(detailCell(r.code,`${r.hardware} · ${r.law}`),detailCell(`Level ${r.level}`,sampling(r)),detailCell(`χ = ${r.chi}`,`Mach ${r.mach}`),
       detailCell(duration(r.native_seconds),`${(r.native_seconds/3600).toFixed(3)} hours including native output I/O`),
       detailCell(duration(r.validation_seconds),r.validation_seconds===null?'Not separately recorded':'After native evolution'),detailCell(String(r.frames),'Actual native states'),
       detailCell(r.evidence,r.review));$('runs').append(tr);}
-    if(!rows.length){const tr=node('tr'),td=node('td','No completed records match these filters.');td.colSpan=6;tr.append(td);$('runs').append(tr);}
-    $('shown').textContent=`${rows.length} of ${catalog.runs.length} completed controls shown. Particle grids describe initial sampling, not a fixed evolved grid.`;
+    if(!rows.length){const tr=node('tr'),td=node('td','No completed records match these filters.');td.colSpan=7;tr.append(td);$('runs').append(tr);}
+    $('shown').textContent=`${rows.length} of ${catalog.runs.length} completed controls shown. Normalized or level derived sampling does not establish exact native resolution. Particle sampling is not a fixed evolved grid. Paper admission requires source bound native layout and condition checks.`;
   }
   function renderPlan(){
     if(!catalog)return;
@@ -82,6 +97,11 @@
     $('more-plan').hidden=rows.length<=planLimit;
   }
   async function fetchJSON(url){const c=new AbortController(),timer=setTimeout(()=>c.abort(),12000);try{const r=await fetch(url,{signal:c.signal,cache:'no-store'});if(!r.ok)throw Error('Status unavailable');return await r.json();}finally{clearTimeout(timer);}}
+  async function fetchReport(url){
+    const data=await fetchJSON(url);
+    if(data.schema!==1||!Array.isArray(data.active)||!Number.isFinite(data.observed_unix))throw Error('Unsupported status');
+    return data;
+  }
   function mergeCompletions(){
     if(!catalog||!observation)return;
     let changed=false;
@@ -92,35 +112,54 @@
     }
     if(changed){$('completed').textContent=catalog.runs.length;$('methods').textContent=new Set(catalog.runs.map(r=>r.method)).size;renderRuns();renderPlan();}
   }
-  async function refresh(){
+  async function refresh(force=false){
     if(loading)return; loading=true;$('refresh').disabled=true;
+    if(force)lastRefPoll=0;
+    if(!observation)renderLive();
     try{
       if(Date.now()-lastRefPoll>=120000){
         lastRefPoll=Date.now();
         try{const ref=await fetchJSON(`${REF}?interval=${Math.floor(Date.now()/120000)}`);if(ref.ref==='refs/heads/live-status'&&/^[a-f0-9]{40}$/.test(ref.object?.sha))knownRef=ref.object.sha;}catch{knownRef=null;}
       }
       const url=knownRef?`https://raw.githubusercontent.com/KaanBoge/cloud-studio/${knownRef}/progress.json`:`${LIVE}?minute=${Math.floor(Date.now()/60000)}`;
-      const data=await fetchJSON(url);if(data.schema!==1||!Array.isArray(data.active)||!Number.isFinite(data.observed_unix))throw Error('Unsupported status');
-      if(!observation||data.observed_unix>=observation.observed_unix)observation=data;
-      remote=true;
+      let data;
+      try{data=await fetchReport(url);}catch(error){
+        if(!knownRef)throw error;
+        knownRef=null;
+        data=await fetchReport(`${LIVE}?minute=${Math.floor(Date.now()/60000)}`);
+      }
+      if(!observation||data.observed_unix>=observation.observed_unix){observation=data;remote=true;}
     }
     catch{remote=false;}
     finally{loading=false;$('refresh').disabled=false;mergeCompletions();renderLive();}
   }
-  async function init(){
+  async function loadCatalog(){
     try{
-      [catalog,observation]=await Promise.all([fetchJSON('data/progress-catalog.json'),fetchJSON('data/progress-initial.json')]);
-      if(catalog.schema!==1||!Array.isArray(catalog.runs))throw Error('Unsupported catalog');
+      const data=await fetchJSON('data/progress-catalog.json');
+      if(data.schema!==1||!Array.isArray(data.runs)||!Array.isArray(data.planning_slots))throw Error('Unsupported catalog');
+      catalog=data;
       $('completed').textContent=catalog.runs.length;$('methods').textContent=new Set(catalog.runs.map(r=>r.method)).size;
       const codes=new Map(catalog.planning_slots.map(r=>[r.method,r.code]));
       for(const [id,name] of [...codes].sort((a,b)=>a[1].localeCompare(b[1]))){option('code',id,name);option('plan-code',id,name);}
       for(let level=1;level<=6;level++)option('level',level,`Level ${level}`);
-      renderRuns();renderPlan();renderLive();await refresh();
-    }catch{$('activity').replaceChildren(node('p','The inventory could not be loaded. Please refresh or use the JSON download.'));$('connection').textContent='Data unavailable';}
+      mergeCompletions();renderRuns();renderPlan();
+    }catch{
+      $('shown').textContent='The historical inventory could not be loaded. Live status is checked separately.';
+      $('completed').textContent='Unavailable';$('methods').textContent='Unavailable';
+    }
   }
+  async function loadSnapshot(){
+    try{
+      const data=await fetchJSON('data/progress-initial.json');
+      if(data.schema===1&&Array.isArray(data.active)&&Number.isFinite(data.observed_unix)&&(!observation||data.observed_unix>observation.observed_unix)){
+        observation=data;remote=false;mergeCompletions();renderLive();
+      }
+    }catch{/* A missing bundled snapshot must not block live status. */}
+  }
+  async function init(){await Promise.allSettled([loadCatalog(),loadSnapshot(),refresh()]);}
   for(const id of ['code','level','sort','search'])$(id).addEventListener(id==='search'?'input':'change',renderRuns);
   for(const id of ['plan-chi','plan-code','plan-status'])$(id).addEventListener('change',()=>{planLimit=60;renderPlan();});
-  $('more-plan').addEventListener('click',()=>{planLimit+=60;renderPlan();});$('refresh').addEventListener('click',refresh);
+  $('more-plan').addEventListener('click',()=>{planLimit+=60;renderPlan();});$('refresh').addEventListener('click',()=>refresh(true));
   setInterval(()=>{if(document.visibilityState==='visible')refresh();},60000);
   document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible'){renderLive();refresh();}});
   init();
