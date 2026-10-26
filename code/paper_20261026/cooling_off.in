@@ -1,0 +1,80 @@
+# New matched AthenaPK pair candidate. NOT launch admission.
+<job>
+problem_id = cloud
+<parthenon/time>
+cfl = 0.4
+nlim = -1
+tlim = 5
+integrator = vl2
+<parthenon/mesh>
+packs_per_rank = 1
+refinement = none
+nghost = 2
+nx1 = 128
+x1min = -5
+x1max = 5
+ix1_bc = outflow
+ox1_bc = outflow
+nx2 = 256
+x2min = -3
+x2max = 17
+ix2_bc = cloud_inflow_x2
+ox2_bc = outflow
+nx3 = 128
+x3min = -5
+x3max = 5
+ix3_bc = outflow
+ox3_bc = outflow
+<parthenon/meshblock>
+nx1 = 32
+nx2 = 32
+nx3 = 32
+<hydro>
+fluid = euler
+eos = adiabatic
+riemann = hlle
+reconstruction = plm
+gamma = 1.6666666666666667
+first_order_flux_correct = true
+bounded_tracer_uniform_shared_faces = true
+nscalars = 1
+Tfloor = 10000
+He_mass_fraction = 0.23999999999999999
+<cooling>
+enable_cooling = none
+table_filename = solar.cooling
+lambda_units_cgs = 1
+integrator = townsend
+max_iter = 100
+cfl = 0.1
+d_log_temp_tol = 1e-8
+d_e_tol = 1e-8
+<units>
+code_length_cgs = 3.0856775809623248e+20
+code_mass_cgs = 2.9379989445851788e+34
+code_time_cgs = 10091912632256.885
+<problem/cloud>
+r0_cgs = 3.0856775809623248e+20
+rho_wind_cgs = 1e-27
+rho_cloud_cgs = 1e-25
+T_wind_cgs = 1000000
+v_wind_cgs = 30575746.079088535
+rescale_code_time_to_tcc = true
+plasma_beta = -1
+cloud_steepness = 10
+rv_scale = 1.3
+<parthenon/output1>
+file_type = hdf5
+variables = prim
+dt = 0.05
+id = prim
+single_precision_output = false
+hdf5_compression_level = 0
+<parthenon/output2>
+file_type = rst
+dt = 1
+id = restart
+hdf5_compression_level = 0
+<parthenon/output3>
+file_type = hst
+dt = 0.05

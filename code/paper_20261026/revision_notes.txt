@@ -1,0 +1,41 @@
+Revision of 26 October 2026
+
+Implemented editorial changes
+- OJA LaTeX source, a broad astrophysical abstract and expanded introduction.
+- Methods section, separate numbered density-profile equation, rounded times.
+- Physical spacing and n=32,64,128 replace the internal L3/L4/L5 labels.
+- Each numerical method is followed by its reference; MFM and MFV panels are adjacent.
+- Morphology precedes dense-mass evolution. GIZMO diagnostics and the cooling pair
+  have separate figures. Cooling and detailed validation are in appendices.
+- Existing completed outcomes are retained; ongoing runs are not presented as results.
+- Tracer meaning, shared-face correction, whole-domain fallback, composition,
+  solar cooling convention and mixed-gas cooling time are explained.
+
+Concrete scientific findings
+- The finest GIZMO input uses a uniform lattice with variable masses. Its preparation
+  record reports 8,808 centres inside the cloud radius. This differs from the
+  denser equal-mass cloud sampling used in the Braspenning comparison.
+- Wind-direction boundary conditions differ between recorded code configurations.
+- GADGET-4 has measured initial reconstructed pressure excesses. Its curves are
+  explicitly marked as requiring corrected initial-pressure controls.
+- MFV's dense-mass resolution trend is non-monotonic; the present ladder does not
+  support a convergence claim. Similar covering fractions coexist with different
+  dense masses, so the diagnostics must be interpreted together.
+
+Scientific work still required
+1. Match particle sampling and boundaries, then run controlled A/B comparisons.
+2. Verify reconstructed initial pressure for each particle scheme.
+3. Complete the missing n=128 cases before calling the set uniformly resolved.
+4. Compare selected HLLC/PPM controls and document Athena's H-correction state.
+5. Resolve cooling layers and audit floor/radiative/boundary energy budgets before
+   promoting the cooling pilot to a cross-code radiative conclusion.
+These items require new evidence. Editing the paper does not complete them.
+
+Scope of reproduction
+plot_revision.py regenerates three figures from retained scalar reductions. It
+does not rerun evolution, completion validators, raw hashes or raw-field analysis.
+Other figure PDFs are retained from the earlier completed analysis. The overview
+header alone was changed from the internal L4 label to n=64.
+
+The manuscript is a working scientific draft, not a submission-ready claim that
+all code configurations are identical or that a preferred solver is established.
