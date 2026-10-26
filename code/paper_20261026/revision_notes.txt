@@ -39,3 +39,15 @@ header alone was changed from the internal L4 label to n=64.
 
 The manuscript is a working scientific draft, not a submission-ready claim that
 all code configurations are identical or that a preferred solver is established.
+
+Completed AthenaPK contrast extension
+The non-radiative n=128, chi=10, Mach-2 calculation completed 101 outputs through
+5 cloud-crushing times and passed the reviewed automatic numerical checker.
+Its final dense-mass fraction is 0.565, with the initial integrated material
+tag retained. Four whole-domain first-order fallback stages qualify the result;
+this is the modified algorithm, not a convergence or matched-solver claim.
+apk_chi10_history.json contains its saved scalar history. contrast_series.json
+and plot_contrasts.py reproduce the updated contrast figure without raw reads.
+RUN_INVENTORY.csv remains the original 65-record inventory; this extension is
+documented separately rather than silently rewriting that dated provenance.
+Published code: https://github.com/KaanBoge/cloud-studio/tree/main/code/paper_20261026
