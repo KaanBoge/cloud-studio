@@ -2,7 +2,9 @@
 
 ### Native simulations. Measured results. Interactive 3D.
 
-**Cloud Studio is an ongoing cloud crushing research and visualization project by [Kaan Boge](https://github.com/KaanBoge).** It studies how a dense cloud evolves in a hot wind using independent hydrodynamics codes. This repository contains the software, visualizations and analysis available so far. This is not a finished paper.
+**Cloud Studio is an ongoing cloud crushing research and visualization project by [Kaan Boge](https://github.com/KaanBoge).** It studies how a dense cloud evolves in a hot wind using independent hydrodynamics codes. This repository contains the software, visualizations and analysis available so far. The manuscript reports the measured results and the scientific controls that remain outstanding.
+
+**[Read the current paper](paper/Cloud_survival_OJA.pdf)** · **[Download the Overleaf ZIP](paper/Cloud_survival_OJA_Overleaf.zip)** · **[Paper source and figures](paper/)**
 
 **[Explore the research & data](https://kaanboge.github.io/cloud-studio/research.html)** · **[Open the 3D viewer](https://kaanboge.github.io/cloud-studio/viewer.html)** · **[Browse movies & images](https://kaanboge.github.io/cloud-studio/)** · **[Download the evidence bundle](https://kaanboge.github.io/cloud-studio/downloads/research-evidence-2026-09-09-current.zip)**
 

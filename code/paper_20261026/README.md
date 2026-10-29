@@ -1,6 +1,6 @@
-# Cloud-wind code and saved reductions — 26 October 2026
+# Cloud-wind code and saved reductions
 
-This dated package supports the revised cloud-survival manuscript. It contains the recorded GIZMO initializer, modified AthenaPK source components, cooling inputs and table, and portable plotting code with saved scalar reductions.
+This package supports the cloud-survival manuscript. The [current PDF, Overleaf ZIP and complete manuscript sources](../../paper/) are available in the paper folder. It contains the recorded GIZMO initializer, modified AthenaPK source components, cooling inputs and table, and portable plotting code with saved scalar reductions.
 
 ## Contents
 
@@ -18,3 +18,7 @@ The source components require the compatible upstream solver build described in 
 ## Attribution
 
 The AthenaPK source headers and BSD 3-Clause license are preserved in LICENSE-AthenaPK.txt. Repository licensing remains scoped by the root LICENSING.md; the simulation sources and research data are not blanket relicensed. See the manuscript bibliography for scientific references.
+
+## Additional accepted scalar histories
+
+`athpp_chi1000_series_20261029.json` and `validated_scalar_series_20261029.json` retain the accepted Athena++ high-contrast history and the three additional AthenaPK HLLC/PPM histories. Their source/correction and convergence limitations remain in the manuscript. `plot_contrasts_reportlab.py` and `plot_validated_series_20261029.py` generate the updated panels. No simulation launcher is added.

@@ -1,0 +1,3895 @@
+[
+  {
+    "label": "GIZMO MFM sharp",
+    "status": "ACCEPTED_BOUNDED_NATIVE_FIELDS",
+    "snapshots": 101,
+    "series": [
+      {
+        "index": 0,
+        "time_code": 0.0,
+        "t_over_tcc": 0.0,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 399.96894121170044,
+        "thermal_energy": 3000.000000051904,
+        "density_min": 0.9991060495376587,
+        "density_max": 99.91062927246094
+      },
+      {
+        "index": 1,
+        "time_code": 0.19364916731037085,
+        "t_over_tcc": 0.05,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 404.4323681984097,
+        "thermal_energy": 3006.437715273021,
+        "density_min": 0.3213573098182678,
+        "density_max": 99.91062927246094
+      },
+      {
+        "index": 2,
+        "time_code": 0.3872983346207417,
+        "t_over_tcc": 0.1,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 405.9841413926333,
+        "thermal_energy": 3011.625740538284,
+        "density_min": 0.28640511631965637,
+        "density_max": 132.44102478027344
+      },
+      {
+        "index": 3,
+        "time_code": 0.5809475019311126,
+        "t_over_tcc": 0.15,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 404.47034232132137,
+        "thermal_energy": 3016.0089869450835,
+        "density_min": 0.30321112275123596,
+        "density_max": 179.84140014648438
+      },
+      {
+        "index": 4,
+        "time_code": 0.7745966692414834,
+        "t_over_tcc": 0.2,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 402.1584588456899,
+        "thermal_energy": 3020.142653905336,
+        "density_min": 0.2980133891105652,
+        "density_max": 214.3347625732422
+      },
+      {
+        "index": 5,
+        "time_code": 0.9682458365518543,
+        "t_over_tcc": 0.25,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 399.6840157127008,
+        "thermal_energy": 3024.444927431153,
+        "density_min": 0.25857895612716675,
+        "density_max": 226.70384216308594
+      },
+      {
+        "index": 6,
+        "time_code": 1.161895003862225,
+        "t_over_tcc": 0.3,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 398.11953091807663,
+        "thermal_energy": 3028.9003857434495,
+        "density_min": 0.25165992975234985,
+        "density_max": 243.31838989257812
+      },
+      {
+        "index": 7,
+        "time_code": 1.355544171172596,
+        "t_over_tcc": 0.35,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 395.9038971476257,
+        "thermal_energy": 3033.4596838140355,
+        "density_min": 0.25179728865623474,
+        "density_max": 248.42230224609375
+      },
+      {
+        "index": 8,
+        "time_code": 1.5491933384829668,
+        "t_over_tcc": 0.4,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 393.9073220929131,
+        "thermal_energy": 3038.117576729353,
+        "density_min": 0.2793290913105011,
+        "density_max": 252.9344482421875
+      },
+      {
+        "index": 9,
+        "time_code": 1.7428425057933374,
+        "t_over_tcc": 0.44999999999999996,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 392.62595915142447,
+        "thermal_energy": 3042.8802280096934,
+        "density_min": 0.26135799288749695,
+        "density_max": 251.88816833496094
+      },
+      {
+        "index": 10,
+        "time_code": 1.9364916731037085,
+        "t_over_tcc": 0.5,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 391.3941180529073,
+        "thermal_energy": 3047.640715198793,
+        "density_min": 0.26950642466545105,
+        "density_max": 253.83851623535156
+      },
+      {
+        "index": 11,
+        "time_code": 2.1301408404140796,
+        "t_over_tcc": 0.55,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 389.57755774538964,
+        "thermal_energy": 3052.4215956957623,
+        "density_min": 0.25599655508995056,
+        "density_max": 255.07032775878906
+      },
+      {
+        "index": 12,
+        "time_code": 2.32379000772445,
+        "t_over_tcc": 0.6,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 387.9287162888795,
+        "thermal_energy": 3057.2719779791255,
+        "density_min": 0.26286259293556213,
+        "density_max": 256.83984375
+      },
+      {
+        "index": 13,
+        "time_code": 2.517439175034821,
+        "t_over_tcc": 0.6499999999999999,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 386.1134100481868,
+        "thermal_energy": 3062.2273758633173,
+        "density_min": 0.2800159156322479,
+        "density_max": 257.936279296875
+      },
+      {
+        "index": 14,
+        "time_code": 2.7110883423451915,
+        "t_over_tcc": 0.6999999999999998,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 384.90469523333013,
+        "thermal_energy": 3067.400141212749,
+        "density_min": 0.2794121205806732,
+        "density_max": 258.5434265136719
+      },
+      {
+        "index": 15,
+        "time_code": 2.904737509655562,
+        "t_over_tcc": 0.7499999999999998,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 384.0232944712043,
+        "thermal_energy": 3072.71478544633,
+        "density_min": 0.2784981429576874,
+        "density_max": 261.37359619140625
+      },
+      {
+        "index": 16,
+        "time_code": 3.0983866769659323,
+        "t_over_tcc": 0.7999999999999997,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 383.38996543735266,
+        "thermal_energy": 3078.004428038627,
+        "density_min": 0.2796216607093811,
+        "density_max": 262.81365966796875
+      },
+      {
+        "index": 17,
+        "time_code": 3.2920358442763034,
+        "t_over_tcc": 0.8499999999999998,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 382.4094688333571,
+        "thermal_energy": 3083.271046700927,
+        "density_min": 0.29696500301361084,
+        "density_max": 261.8870544433594
+      },
+      {
+        "index": 18,
+        "time_code": 3.485685011586674,
+        "t_over_tcc": 0.8999999999999997,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 381.14162055775523,
+        "thermal_energy": 3088.35463416631,
+        "density_min": 0.3156169652938843,
+        "density_max": 259.6549377441406
+      },
+      {
+        "index": 19,
+        "time_code": 3.6793341788970446,
+        "t_over_tcc": 0.9499999999999996,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 379.34362270962447,
+        "thermal_energy": 3093.2929573191955,
+        "density_min": 0.324478417634964,
+        "density_max": 256.0785827636719
+      },
+      {
+        "index": 20,
+        "time_code": 3.8729833462074152,
+        "t_over_tcc": 0.9999999999999996,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 377.8486901624128,
+        "thermal_energy": 3098.2930268150762,
+        "density_min": 0.32300180196762085,
+        "density_max": 262.51312255859375
+      },
+      {
+        "index": 21,
+        "time_code": 4.066632513517786,
+        "t_over_tcc": 1.0499999999999994,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 377.024177278392,
+        "thermal_energy": 3103.547978072937,
+        "density_min": 0.34619489312171936,
+        "density_max": 275.89105224609375
+      },
+      {
+        "index": 22,
+        "time_code": 4.2602816808281565,
+        "t_over_tcc": 1.0999999999999994,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 375.68139538541436,
+        "thermal_energy": 3108.968868800482,
+        "density_min": 0.32828980684280396,
+        "density_max": 285.01397705078125
+      },
+      {
+        "index": 23,
+        "time_code": 4.453930848138527,
+        "t_over_tcc": 1.1499999999999995,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 376.1243952140212,
+        "thermal_energy": 3114.427919358043,
+        "density_min": 0.3419482409954071,
+        "density_max": 271.6108093261719
+      },
+      {
+        "index": 24,
+        "time_code": 4.647580015448898,
+        "t_over_tcc": 1.1999999999999993,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 376.44768515694886,
+        "thermal_energy": 3119.888513519508,
+        "density_min": 0.3450091481208801,
+        "density_max": 257.3769226074219
+      },
+      {
+        "index": 25,
+        "time_code": 4.841229182759268,
+        "t_over_tcc": 1.2499999999999993,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 377.1622327417135,
+        "thermal_energy": 3124.983666871879,
+        "density_min": 0.3528952896595001,
+        "density_max": 232.74407958984375
+      },
+      {
+        "index": 26,
+        "time_code": 5.034878350069639,
+        "t_over_tcc": 1.2999999999999992,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 378.35808843327686,
+        "thermal_energy": 3129.7309291318415,
+        "density_min": 0.36082565784454346,
+        "density_max": 216.61451721191406
+      },
+      {
+        "index": 27,
+        "time_code": 5.22852751738001,
+        "t_over_tcc": 1.3499999999999992,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 380.2163941334002,
+        "thermal_energy": 3134.76211493416,
+        "density_min": 0.3601665198802948,
+        "density_max": 205.66871643066406
+      },
+      {
+        "index": 28,
+        "time_code": 5.422176684690379,
+        "t_over_tcc": 1.3999999999999988,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 382.06242228485644,
+        "thermal_energy": 3140.5307168741474,
+        "density_min": 0.3659253418445587,
+        "density_max": 199.49171447753906
+      },
+      {
+        "index": 29,
+        "time_code": 5.615825852000751,
+        "t_over_tcc": 1.449999999999999,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 382.35070391278714,
+        "thermal_energy": 3146.4912501359318,
+        "density_min": 0.36016079783439636,
+        "density_max": 207.0253143310547
+      },
+      {
+        "index": 30,
+        "time_code": 5.8094750193111215,
+        "t_over_tcc": 1.499999999999999,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 384.9838117584586,
+        "thermal_energy": 3152.525238968118,
+        "density_min": 0.36478984355926514,
+        "density_max": 209.83685302734375
+      },
+      {
+        "index": 31,
+        "time_code": 6.003124186621492,
+        "t_over_tcc": 1.549999999999999,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 384.58910935232416,
+        "thermal_energy": 3158.1527382605577,
+        "density_min": 0.3618796467781067,
+        "density_max": 213.26934814453125
+      },
+      {
+        "index": 32,
+        "time_code": 6.196773353931863,
+        "t_over_tcc": 1.5999999999999988,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 384.2725594686344,
+        "thermal_energy": 3163.258678031081,
+        "density_min": 0.3863157331943512,
+        "density_max": 208.8917236328125
+      },
+      {
+        "index": 33,
+        "time_code": 6.390422521242233,
+        "t_over_tcc": 1.6499999999999988,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 383.5354128498584,
+        "thermal_energy": 3168.394242618253,
+        "density_min": 0.37443146109580994,
+        "density_max": 206.8988494873047
+      },
+      {
+        "index": 34,
+        "time_code": 6.584071688552604,
+        "t_over_tcc": 1.6999999999999988,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 382.7939233938232,
+        "thermal_energy": 3174.379499838326,
+        "density_min": 0.37955442070961,
+        "density_max": 208.1092987060547
+      },
+      {
+        "index": 35,
+        "time_code": 6.777720855862975,
+        "t_over_tcc": 1.7499999999999987,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 382.0775155518204,
+        "thermal_energy": 3181.04719255552,
+        "density_min": 0.389315664768219,
+        "density_max": 208.55784606933594
+      },
+      {
+        "index": 36,
+        "time_code": 6.971370023173346,
+        "t_over_tcc": 1.799999999999999,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 381.8287268653512,
+        "thermal_energy": 3187.703253058059,
+        "density_min": 0.3706672489643097,
+        "density_max": 218.228759765625
+      },
+      {
+        "index": 37,
+        "time_code": 7.165019190483716,
+        "t_over_tcc": 1.8499999999999985,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 381.4664778476581,
+        "thermal_energy": 3194.2564669368194,
+        "density_min": 0.3912816345691681,
+        "density_max": 218.7655029296875
+      },
+      {
+        "index": 38,
+        "time_code": 7.358668357794087,
+        "t_over_tcc": 1.8999999999999986,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 380.68757223617285,
+        "thermal_energy": 3200.855140326982,
+        "density_min": 0.4005591571331024,
+        "density_max": 217.542236328125
+      },
+      {
+        "index": 39,
+        "time_code": 7.552317525104456,
+        "t_over_tcc": 1.9499999999999982,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 379.8230431228876,
+        "thermal_energy": 3207.4965892423015,
+        "density_min": 0.4004860520362854,
+        "density_max": 211.9972381591797
+      },
+      {
+        "index": 40,
+        "time_code": 7.745966692414828,
+        "t_over_tcc": 1.9999999999999984,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 378.4189218021929,
+        "thermal_energy": 3214.154128680379,
+        "density_min": 0.3946867287158966,
+        "density_max": 216.31210327148438
+      },
+      {
+        "index": 41,
+        "time_code": 7.9396158597251985,
+        "t_over_tcc": 2.0499999999999985,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 377.3090351615101,
+        "thermal_energy": 3220.5778672422916,
+        "density_min": 0.3946031928062439,
+        "density_max": 207.87936401367188
+      },
+      {
+        "index": 42,
+        "time_code": 8.13326502703557,
+        "t_over_tcc": 2.0999999999999983,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 376.1387044750154,
+        "thermal_energy": 3226.7926968903184,
+        "density_min": 0.37918615341186523,
+        "density_max": 202.53720092773438
+      },
+      {
+        "index": 43,
+        "time_code": 8.32691419434594,
+        "t_over_tcc": 2.1499999999999986,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 375.2523075910285,
+        "thermal_energy": 3232.6276939701347,
+        "density_min": 0.3722859025001526,
+        "density_max": 197.37379455566406
+      },
+      {
+        "index": 44,
+        "time_code": 8.520563361656311,
+        "t_over_tcc": 2.1999999999999984,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 374.4169470015913,
+        "thermal_energy": 3238.321973054826,
+        "density_min": 0.3690147399902344,
+        "density_max": 199.2508544921875
+      },
+      {
+        "index": 45,
+        "time_code": 8.714212528966682,
+        "t_over_tcc": 2.2499999999999982,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 373.9340338986367,
+        "thermal_energy": 3244.1203071395757,
+        "density_min": 0.3871612250804901,
+        "density_max": 197.25535583496094
+      },
+      {
+        "index": 46,
+        "time_code": 8.907861696277052,
+        "t_over_tcc": 2.2999999999999985,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 373.77348905801773,
+        "thermal_energy": 3250.219371312909,
+        "density_min": 0.38486984372138977,
+        "density_max": 193.62310791015625
+      },
+      {
+        "index": 47,
+        "time_code": 9.101510863587423,
+        "t_over_tcc": 2.3499999999999983,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 373.52319408301264,
+        "thermal_energy": 3256.4095346367667,
+        "density_min": 0.40672799944877625,
+        "density_max": 197.34446716308594
+      },
+      {
+        "index": 48,
+        "time_code": 9.295160030897794,
+        "t_over_tcc": 2.399999999999998,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 373.2425216753036,
+        "thermal_energy": 3262.8006172322744,
+        "density_min": 0.41720476746559143,
+        "density_max": 200.6884002685547
+      },
+      {
+        "index": 49,
+        "time_code": 9.488809198208164,
+        "t_over_tcc": 2.449999999999998,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 372.43138524517417,
+        "thermal_energy": 3269.427565416563,
+        "density_min": 0.4099254310131073,
+        "density_max": 200.0122528076172
+      },
+      {
+        "index": 50,
+        "time_code": 9.682458365518535,
+        "t_over_tcc": 2.4999999999999982,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 372.35284622199833,
+        "thermal_energy": 3276.147169423957,
+        "density_min": 0.3929585814476013,
+        "density_max": 202.73692321777344
+      },
+      {
+        "index": 51,
+        "time_code": 9.876107532828904,
+        "t_over_tcc": 2.5499999999999976,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 371.8587162774056,
+        "thermal_energy": 3282.838670178108,
+        "density_min": 0.3957388699054718,
+        "density_max": 217.2202911376953
+      },
+      {
+        "index": 52,
+        "time_code": 10.069756700139276,
+        "t_over_tcc": 2.599999999999998,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 371.31617851927876,
+        "thermal_energy": 3289.257247028719,
+        "density_min": 0.3944856822490692,
+        "density_max": 221.83892822265625
+      },
+      {
+        "index": 53,
+        "time_code": 10.263405867449647,
+        "t_over_tcc": 2.6499999999999977,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 370.90753356181085,
+        "thermal_energy": 3295.592450474311,
+        "density_min": 0.3826337158679962,
+        "density_max": 221.75067138671875
+      },
+      {
+        "index": 54,
+        "time_code": 10.457055034760018,
+        "t_over_tcc": 2.699999999999998,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 370.37188736349344,
+        "thermal_energy": 3301.9668991337226,
+        "density_min": 0.36266329884529114,
+        "density_max": 215.1739044189453
+      },
+      {
+        "index": 55,
+        "time_code": 10.650704202070388,
+        "t_over_tcc": 2.749999999999998,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 369.6824732031673,
+        "thermal_energy": 3308.235175606411,
+        "density_min": 0.36006948351860046,
+        "density_max": 210.58978271484375
+      },
+      {
+        "index": 56,
+        "time_code": 10.844353369380759,
+        "t_over_tcc": 2.7999999999999976,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 369.20396353676915,
+        "thermal_energy": 3314.606615878734,
+        "density_min": 0.3394117057323456,
+        "density_max": 201.13787841796875
+      },
+      {
+        "index": 57,
+        "time_code": 11.038002536691128,
+        "t_over_tcc": 2.849999999999997,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 369.6186296828091,
+        "thermal_energy": 3320.6189213362,
+        "density_min": 0.3569566607475281,
+        "density_max": 192.67449951171875
+      },
+      {
+        "index": 58,
+        "time_code": 11.2316517040015,
+        "t_over_tcc": 2.8999999999999977,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 369.99448026996106,
+        "thermal_energy": 3326.056237379512,
+        "density_min": 0.3380618393421173,
+        "density_max": 190.57867431640625
+      },
+      {
+        "index": 59,
+        "time_code": 11.42530087131187,
+        "t_over_tcc": 2.9499999999999975,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 370.70177223253995,
+        "thermal_energy": 3331.8558925532093,
+        "density_min": 0.342130184173584,
+        "density_max": 192.454833984375
+      },
+      {
+        "index": 60,
+        "time_code": 11.618950038622241,
+        "t_over_tcc": 2.9999999999999973,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 370.96479793824255,
+        "thermal_energy": 3337.8086570228834,
+        "density_min": 0.34403520822525024,
+        "density_max": 183.8640899658203
+      },
+      {
+        "index": 61,
+        "time_code": 11.812599205932612,
+        "t_over_tcc": 3.0499999999999976,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 371.08771364577115,
+        "thermal_energy": 3343.338904189498,
+        "density_min": 0.3327427804470062,
+        "density_max": 184.33770751953125
+      },
+      {
+        "index": 62,
+        "time_code": 12.00624837324298,
+        "t_over_tcc": 3.099999999999997,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 372.11325153242797,
+        "thermal_energy": 3348.381690761026,
+        "density_min": 0.33512574434280396,
+        "density_max": 190.7886962890625
+      },
+      {
+        "index": 63,
+        "time_code": 12.199897540553353,
+        "t_over_tcc": 3.1499999999999972,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 373.46816755551845,
+        "thermal_energy": 3353.789617168966,
+        "density_min": 0.342079758644104,
+        "density_max": 186.90174865722656
+      },
+      {
+        "index": 64,
+        "time_code": 12.393546707863724,
+        "t_over_tcc": 3.199999999999997,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 374.4521052185446,
+        "thermal_energy": 3360.087526134786,
+        "density_min": 0.3385671079158783,
+        "density_max": 182.02239990234375
+      },
+      {
+        "index": 65,
+        "time_code": 12.587195875174094,
+        "t_over_tcc": 3.2499999999999973,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 376.16527757328004,
+        "thermal_energy": 3366.8221916692037,
+        "density_min": 0.3376792073249817,
+        "density_max": 187.32772827148438
+      },
+      {
+        "index": 66,
+        "time_code": 12.780845042484465,
+        "t_over_tcc": 3.299999999999997,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 377.1539781950414,
+        "thermal_energy": 3373.4357208868846,
+        "density_min": 0.3409660756587982,
+        "density_max": 179.42056274414062
+      },
+      {
+        "index": 67,
+        "time_code": 12.974494209794836,
+        "t_over_tcc": 3.349999999999997,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 377.63243872020394,
+        "thermal_energy": 3379.567325556996,
+        "density_min": 0.3496934771537781,
+        "density_max": 176.92816162109375
+      },
+      {
+        "index": 68,
+        "time_code": 13.168143377105205,
+        "t_over_tcc": 3.3999999999999964,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 377.5092283934355,
+        "thermal_energy": 3384.9089721487644,
+        "density_min": 0.3360271453857422,
+        "density_max": 172.90829467773438
+      },
+      {
+        "index": 69,
+        "time_code": 13.361792544415577,
+        "t_over_tcc": 3.449999999999997,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 376.9783238917589,
+        "thermal_energy": 3389.6320734377387,
+        "density_min": 0.34552645683288574,
+        "density_max": 175.05662536621094
+      },
+      {
+        "index": 70,
+        "time_code": 13.555441711725948,
+        "t_over_tcc": 3.499999999999997,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 375.9076212057844,
+        "thermal_energy": 3394.1625738295725,
+        "density_min": 0.3556446135044098,
+        "density_max": 176.95335388183594
+      },
+      {
+        "index": 71,
+        "time_code": 13.749090879036318,
+        "t_over_tcc": 3.5499999999999967,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 374.83606714289635,
+        "thermal_energy": 3398.883325263891,
+        "density_min": 0.3548307418823242,
+        "density_max": 179.32640075683594
+      },
+      {
+        "index": 72,
+        "time_code": 13.942740046346689,
+        "t_over_tcc": 3.599999999999997,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 373.514159408398,
+        "thermal_energy": 3403.624812971309,
+        "density_min": 0.34921687841415405,
+        "density_max": 178.55364990234375
+      },
+      {
+        "index": 73,
+        "time_code": 14.136389213657058,
+        "t_over_tcc": 3.6499999999999964,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 372.57576596643776,
+        "thermal_energy": 3408.6276394860542,
+        "density_min": 0.3260567784309387,
+        "density_max": 164.20118713378906
+      },
+      {
+        "index": 74,
+        "time_code": 14.33003838096743,
+        "t_over_tcc": 3.6999999999999966,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 371.9401717921719,
+        "thermal_energy": 3413.9610332351285,
+        "density_min": 0.3266788125038147,
+        "density_max": 160.8938751220703
+      },
+      {
+        "index": 75,
+        "time_code": 14.5236875482778,
+        "t_over_tcc": 3.7499999999999964,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 371.538809845224,
+        "thermal_energy": 3419.2181954894095,
+        "density_min": 0.3114047050476074,
+        "density_max": 160.82908630371094
+      },
+      {
+        "index": 76,
+        "time_code": 14.717336715588171,
+        "t_over_tcc": 3.7999999999999967,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 372.0912531968206,
+        "thermal_energy": 3424.4958533819768,
+        "density_min": 0.31309571862220764,
+        "density_max": 160.01617431640625
+      },
+      {
+        "index": 77,
+        "time_code": 14.910985882898542,
+        "t_over_tcc": 3.8499999999999965,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 372.05042391549796,
+        "thermal_energy": 3429.1471601895328,
+        "density_min": 0.3170148730278015,
+        "density_max": 159.59671020507812
+      },
+      {
+        "index": 78,
+        "time_code": 15.104635050208913,
+        "t_over_tcc": 3.8999999999999964,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 372.29469756409526,
+        "thermal_energy": 3433.4737271742692,
+        "density_min": 0.3173578083515167,
+        "density_max": 159.9132080078125
+      },
+      {
+        "index": 79,
+        "time_code": 15.298284217519281,
+        "t_over_tcc": 3.9499999999999957,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 373.7141261091456,
+        "thermal_energy": 3437.8238950328137,
+        "density_min": 0.31631672382354736,
+        "density_max": 159.92970275878906
+      },
+      {
+        "index": 80,
+        "time_code": 15.491933384829654,
+        "t_over_tcc": 3.9999999999999964,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 375.16984674334526,
+        "thermal_energy": 3442.383287885044,
+        "density_min": 0.30471354722976685,
+        "density_max": 160.04248046875
+      },
+      {
+        "index": 81,
+        "time_code": 15.685582552140025,
+        "t_over_tcc": 4.049999999999996,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 377.0840243110433,
+        "thermal_energy": 3446.649725797351,
+        "density_min": 0.30276742577552795,
+        "density_max": 158.81089782714844
+      },
+      {
+        "index": 82,
+        "time_code": 15.879231719450395,
+        "t_over_tcc": 4.099999999999996,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 379.1852774685249,
+        "thermal_energy": 3450.7104853075716,
+        "density_min": 0.31115370988845825,
+        "density_max": 157.21768188476562
+      },
+      {
+        "index": 83,
+        "time_code": 16.072880886760768,
+        "t_over_tcc": 4.149999999999997,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 380.75202253460884,
+        "thermal_energy": 3454.7063287368455,
+        "density_min": 0.324197918176651,
+        "density_max": 183.00762939453125
+      },
+      {
+        "index": 84,
+        "time_code": 16.26653005407114,
+        "t_over_tcc": 4.199999999999997,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 382.55567253753543,
+        "thermal_energy": 3458.810593123781,
+        "density_min": 0.3097729980945587,
+        "density_max": 190.09718322753906
+      },
+      {
+        "index": 85,
+        "time_code": 16.460179221381512,
+        "t_over_tcc": 4.249999999999997,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 383.6453194078058,
+        "thermal_energy": 3462.5630564748913,
+        "density_min": 0.32436978816986084,
+        "density_max": 173.20884704589844
+      },
+      {
+        "index": 86,
+        "time_code": 16.653828388691885,
+        "t_over_tcc": 4.299999999999998,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 384.2405533893034,
+        "thermal_energy": 3466.1361687190483,
+        "density_min": 0.34094351530075073,
+        "density_max": 158.60504150390625
+      },
+      {
+        "index": 87,
+        "time_code": 16.847477556002257,
+        "t_over_tcc": 4.349999999999998,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 384.75832401495427,
+        "thermal_energy": 3469.7502751079423,
+        "density_min": 0.3489481508731842,
+        "density_max": 162.23191833496094
+      },
+      {
+        "index": 88,
+        "time_code": 17.04112672331263,
+        "t_over_tcc": 4.399999999999999,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 385.01011708565056,
+        "thermal_energy": 3473.637268875117,
+        "density_min": 0.3545742928981781,
+        "density_max": 156.984619140625
+      },
+      {
+        "index": 89,
+        "time_code": 17.234775890623002,
+        "t_over_tcc": 4.449999999999999,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 385.4075032826513,
+        "thermal_energy": 3477.333931228399,
+        "density_min": 0.3625561594963074,
+        "density_max": 144.9273681640625
+      },
+      {
+        "index": 90,
+        "time_code": 17.428425057933374,
+        "t_over_tcc": 4.499999999999999,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 385.2149351872504,
+        "thermal_energy": 3481.05452394578,
+        "density_min": 0.4072149097919464,
+        "density_max": 152.79144287109375
+      },
+      {
+        "index": 91,
+        "time_code": 17.622074225243747,
+        "t_over_tcc": 4.55,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 385.33843345940113,
+        "thermal_energy": 3485.482626498179,
+        "density_min": 0.41067102551460266,
+        "density_max": 157.37527465820312
+      },
+      {
+        "index": 92,
+        "time_code": 17.81572339255412,
+        "t_over_tcc": 4.6000000000000005,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 385.41365356370807,
+        "thermal_energy": 3490.413155125781,
+        "density_min": 0.43188464641571045,
+        "density_max": 152.18106079101562
+      },
+      {
+        "index": 93,
+        "time_code": 18.00937255986449,
+        "t_over_tcc": 4.65,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 385.50134488753974,
+        "thermal_energy": 3494.8542603753203,
+        "density_min": 0.4164290130138397,
+        "density_max": 141.395751953125
+      },
+      {
+        "index": 94,
+        "time_code": 18.203021727174864,
+        "t_over_tcc": 4.700000000000001,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 386.2537996992469,
+        "thermal_energy": 3498.851276450904,
+        "density_min": 0.43628886342048645,
+        "density_max": 132.52748107910156
+      },
+      {
+        "index": 95,
+        "time_code": 18.396670894485236,
+        "t_over_tcc": 4.750000000000002,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 386.8894737660885,
+        "thermal_energy": 3502.595577292412,
+        "density_min": 0.43274083733558655,
+        "density_max": 143.7777099609375
+      },
+      {
+        "index": 96,
+        "time_code": 18.59032006179561,
+        "t_over_tcc": 4.800000000000002,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 387.8936279695481,
+        "thermal_energy": 3506.3554631945067,
+        "density_min": 0.44893473386764526,
+        "density_max": 149.4917449951172
+      },
+      {
+        "index": 97,
+        "time_code": 18.78396922910598,
+        "t_over_tcc": 4.850000000000002,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 388.7539559751749,
+        "thermal_energy": 3510.44060783914,
+        "density_min": 0.45744484663009644,
+        "density_max": 143.94479370117188
+      },
+      {
+        "index": 98,
+        "time_code": 18.977618396416354,
+        "t_over_tcc": 4.900000000000003,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 389.4778880579397,
+        "thermal_energy": 3515.2058385530117,
+        "density_min": 0.452394038438797,
+        "density_max": 133.909912109375
+      },
+      {
+        "index": 99,
+        "time_code": 19.171267563726726,
+        "t_over_tcc": 4.950000000000003,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 389.74369233008474,
+        "thermal_energy": 3520.39797491844,
+        "density_min": 0.45797935128211975,
+        "density_max": 134.98704528808594
+      },
+      {
+        "index": 100,
+        "time_code": 19.364916731037084,
+        "t_over_tcc": 5.0,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 390.38583002146333,
+        "thermal_energy": 3525.721663861174,
+        "density_min": 0.4404003918170929,
+        "density_max": 139.32569885253906
+      }
+    ],
+    "limitations": [
+      "No convergence, cross-code equivalence or paper admission.",
+      "Fully periodic boundaries; velocities staggered after kick, including header time zero.",
+      "Dense mass is a density-threshold diagnostic, not a passive material tracer.",
+      "No repeated raw-byte hash audit; exact ID-to-mass, all field finiteness/positivity, native schemas and metadata stability checked.",
+      "Source/schema-specific bounded validator, not universal scientific correctness."
+    ]
+  },
+  {
+    "label": "GIZMO MFM historical",
+    "status": "ACCEPTED_BOUNDED_NATIVE_FIELDS",
+    "snapshots": 101,
+    "series": [
+      {
+        "index": 0,
+        "time_code": 0.0,
+        "t_over_tcc": 0.0,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 399.96894121170044,
+        "thermal_energy": 3000.000000051904,
+        "density_min": 0.9991060495376587,
+        "density_max": 99.91062927246094
+      },
+      {
+        "index": 1,
+        "time_code": 0.19364916731037085,
+        "t_over_tcc": 0.05,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 403.7798981759697,
+        "thermal_energy": 3003.7514288365364,
+        "density_min": 0.5483646392822266,
+        "density_max": 99.91062927246094
+      },
+      {
+        "index": 2,
+        "time_code": 0.3872983346207417,
+        "t_over_tcc": 0.1,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 405.4123371820897,
+        "thermal_energy": 3008.6672427573412,
+        "density_min": 0.32554057240486145,
+        "density_max": 137.9053955078125
+      },
+      {
+        "index": 3,
+        "time_code": 0.5809475019311126,
+        "t_over_tcc": 0.15,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 403.6311825122684,
+        "thermal_energy": 3012.8093779660862,
+        "density_min": 0.2890511155128479,
+        "density_max": 182.45848083496094
+      },
+      {
+        "index": 4,
+        "time_code": 0.7745966692414834,
+        "t_over_tcc": 0.2,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 401.1714739035815,
+        "thermal_energy": 3016.6148501604966,
+        "density_min": 0.274548202753067,
+        "density_max": 213.12326049804688
+      },
+      {
+        "index": 5,
+        "time_code": 0.9682458365518543,
+        "t_over_tcc": 0.25,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 399.1326798517257,
+        "thermal_energy": 3020.5648748716453,
+        "density_min": 0.41320282220840454,
+        "density_max": 225.1027374267578
+      },
+      {
+        "index": 6,
+        "time_code": 1.161895003862225,
+        "t_over_tcc": 0.3,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 396.9940701974556,
+        "thermal_energy": 3024.8290140122817,
+        "density_min": 0.3891475796699524,
+        "density_max": 239.69961547851562
+      },
+      {
+        "index": 7,
+        "time_code": 1.355544171172596,
+        "t_over_tcc": 0.35,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 394.18007445614785,
+        "thermal_energy": 3029.2627642149782,
+        "density_min": 0.3363867402076721,
+        "density_max": 248.5101776123047
+      },
+      {
+        "index": 8,
+        "time_code": 1.5491933384829668,
+        "t_over_tcc": 0.4,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 392.3836761796847,
+        "thermal_energy": 3033.792404248216,
+        "density_min": 0.3147692382335663,
+        "density_max": 252.62286376953125
+      },
+      {
+        "index": 9,
+        "time_code": 1.7428425057933374,
+        "t_over_tcc": 0.44999999999999996,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 391.34512372966856,
+        "thermal_energy": 3038.425523299739,
+        "density_min": 0.30831030011177063,
+        "density_max": 252.03094482421875
+      },
+      {
+        "index": 10,
+        "time_code": 1.9364916731037085,
+        "t_over_tcc": 0.5,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 389.504260269925,
+        "thermal_energy": 3043.1016739737825,
+        "density_min": 0.29489782452583313,
+        "density_max": 251.8944854736328
+      },
+      {
+        "index": 11,
+        "time_code": 2.1301408404140796,
+        "t_over_tcc": 0.55,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 388.07304902374744,
+        "thermal_energy": 3047.836981850176,
+        "density_min": 0.2658458650112152,
+        "density_max": 254.88848876953125
+      },
+      {
+        "index": 12,
+        "time_code": 2.32379000772445,
+        "t_over_tcc": 0.6,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 386.7487226203084,
+        "thermal_energy": 3052.649366448555,
+        "density_min": 0.23977990448474884,
+        "density_max": 256.3554992675781
+      },
+      {
+        "index": 13,
+        "time_code": 2.517439175034821,
+        "t_over_tcc": 0.6499999999999999,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 386.1054292488843,
+        "thermal_energy": 3057.569966526662,
+        "density_min": 0.23629292845726013,
+        "density_max": 258.55194091796875
+      },
+      {
+        "index": 14,
+        "time_code": 2.7110883423451915,
+        "t_over_tcc": 0.6999999999999998,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 384.7741349451244,
+        "thermal_energy": 3062.659986201915,
+        "density_min": 0.2531099021434784,
+        "density_max": 259.0788879394531
+      },
+      {
+        "index": 15,
+        "time_code": 2.904737509655562,
+        "t_over_tcc": 0.7499999999999998,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 383.63857378344983,
+        "thermal_energy": 3067.978979704768,
+        "density_min": 0.28335362672805786,
+        "density_max": 260.3167724609375
+      },
+      {
+        "index": 16,
+        "time_code": 3.0983866769659323,
+        "t_over_tcc": 0.7999999999999997,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 382.789978726767,
+        "thermal_energy": 3073.318287898898,
+        "density_min": 0.27387160062789917,
+        "density_max": 260.78082275390625
+      },
+      {
+        "index": 17,
+        "time_code": 3.2920358442763034,
+        "t_over_tcc": 0.8499999999999998,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 380.4489838145673,
+        "thermal_energy": 3078.630138517581,
+        "density_min": 0.2820589542388916,
+        "density_max": 260.6680603027344
+      },
+      {
+        "index": 18,
+        "time_code": 3.485685011586674,
+        "t_over_tcc": 0.8999999999999997,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 378.58514831308275,
+        "thermal_energy": 3083.793073380374,
+        "density_min": 0.28924137353897095,
+        "density_max": 258.499267578125
+      },
+      {
+        "index": 19,
+        "time_code": 3.6793341788970446,
+        "t_over_tcc": 0.9499999999999996,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 377.71380918473005,
+        "thermal_energy": 3088.8403299382435,
+        "density_min": 0.2922789454460144,
+        "density_max": 257.5277404785156
+      },
+      {
+        "index": 20,
+        "time_code": 3.8729833462074152,
+        "t_over_tcc": 0.9999999999999996,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 376.6747765429318,
+        "thermal_energy": 3093.914651662313,
+        "density_min": 0.29065391421318054,
+        "density_max": 263.6358337402344
+      },
+      {
+        "index": 21,
+        "time_code": 4.066632513517786,
+        "t_over_tcc": 1.0499999999999994,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 375.82297162432224,
+        "thermal_energy": 3099.198035747394,
+        "density_min": 0.2925969064235687,
+        "density_max": 273.52996826171875
+      },
+      {
+        "index": 22,
+        "time_code": 4.2602816808281565,
+        "t_over_tcc": 1.0999999999999994,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 375.03472307976335,
+        "thermal_energy": 3104.636239994826,
+        "density_min": 0.31554314494132996,
+        "density_max": 277.8573913574219
+      },
+      {
+        "index": 23,
+        "time_code": 4.453930848138527,
+        "t_over_tcc": 1.1499999999999995,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 375.0745168905705,
+        "thermal_energy": 3110.129336739254,
+        "density_min": 0.33427247405052185,
+        "density_max": 268.28826904296875
+      },
+      {
+        "index": 24,
+        "time_code": 4.647580015448898,
+        "t_over_tcc": 1.1999999999999993,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 375.0286971172318,
+        "thermal_energy": 3115.6297686245302,
+        "density_min": 0.3252796530723572,
+        "density_max": 252.7522430419922
+      },
+      {
+        "index": 25,
+        "time_code": 4.841229182759268,
+        "t_over_tcc": 1.2499999999999993,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 374.48257447592914,
+        "thermal_energy": 3120.722667466775,
+        "density_min": 0.33431482315063477,
+        "density_max": 228.42474365234375
+      },
+      {
+        "index": 26,
+        "time_code": 5.034878350069639,
+        "t_over_tcc": 1.2999999999999992,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 375.3449605111964,
+        "thermal_energy": 3125.5291860110547,
+        "density_min": 0.3324465751647949,
+        "density_max": 208.1228790283203
+      },
+      {
+        "index": 27,
+        "time_code": 5.22852751738001,
+        "t_over_tcc": 1.3499999999999992,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 376.81568273575976,
+        "thermal_energy": 3130.5450363078253,
+        "density_min": 0.3408255875110626,
+        "density_max": 199.93016052246094
+      },
+      {
+        "index": 28,
+        "time_code": 5.422176684690379,
+        "t_over_tcc": 1.3999999999999988,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 377.27046216093004,
+        "thermal_energy": 3136.3947069937617,
+        "density_min": 0.3366982340812683,
+        "density_max": 203.37677001953125
+      },
+      {
+        "index": 29,
+        "time_code": 5.615825852000751,
+        "t_over_tcc": 1.449999999999999,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 377.8885629372671,
+        "thermal_energy": 3142.4405158393038,
+        "density_min": 0.33133789896965027,
+        "density_max": 209.397705078125
+      },
+      {
+        "index": 30,
+        "time_code": 5.8094750193111215,
+        "t_over_tcc": 1.499999999999999,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 381.3572915135883,
+        "thermal_energy": 3148.514718375657,
+        "density_min": 0.3345174789428711,
+        "density_max": 205.51983642578125
+      },
+      {
+        "index": 31,
+        "time_code": 6.003124186621492,
+        "t_over_tcc": 1.549999999999999,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 381.55772823421285,
+        "thermal_energy": 3154.1114272683662,
+        "density_min": 0.35153961181640625,
+        "density_max": 207.04837036132812
+      },
+      {
+        "index": 32,
+        "time_code": 6.196773353931863,
+        "t_over_tcc": 1.5999999999999988,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 381.5386880347505,
+        "thermal_energy": 3159.081568597573,
+        "density_min": 0.37006133794784546,
+        "density_max": 208.9359130859375
+      },
+      {
+        "index": 33,
+        "time_code": 6.390422521242233,
+        "t_over_tcc": 1.6499999999999988,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 381.15064362902194,
+        "thermal_energy": 3164.082554259373,
+        "density_min": 0.3720201253890991,
+        "density_max": 207.73870849609375
+      },
+      {
+        "index": 34,
+        "time_code": 6.584071688552604,
+        "t_over_tcc": 1.6999999999999988,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 380.5663257325068,
+        "thermal_energy": 3170.0107636060884,
+        "density_min": 0.36542293429374695,
+        "density_max": 204.77818298339844
+      },
+      {
+        "index": 35,
+        "time_code": 6.777720855862975,
+        "t_over_tcc": 1.7499999999999987,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 379.9055117662065,
+        "thermal_energy": 3176.7509326681934,
+        "density_min": 0.3801502585411072,
+        "density_max": 208.90650939941406
+      },
+      {
+        "index": 36,
+        "time_code": 6.971370023173346,
+        "t_over_tcc": 1.799999999999999,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 379.5173208671622,
+        "thermal_energy": 3183.531279604738,
+        "density_min": 0.37480685114860535,
+        "density_max": 211.9916534423828
+      },
+      {
+        "index": 37,
+        "time_code": 7.165019190483716,
+        "t_over_tcc": 1.8499999999999985,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 379.64077792456374,
+        "thermal_energy": 3190.0571795832598,
+        "density_min": 0.3785703778266907,
+        "density_max": 216.39599609375
+      },
+      {
+        "index": 38,
+        "time_code": 7.358668357794087,
+        "t_over_tcc": 1.8999999999999986,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 379.76954637281597,
+        "thermal_energy": 3196.6905430001057,
+        "density_min": 0.37369269132614136,
+        "density_max": 215.18626403808594
+      },
+      {
+        "index": 39,
+        "time_code": 7.552317525104456,
+        "t_over_tcc": 1.9499999999999982,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 379.44658973254263,
+        "thermal_energy": 3203.347313040993,
+        "density_min": 0.38655468821525574,
+        "density_max": 210.1057891845703
+      },
+      {
+        "index": 40,
+        "time_code": 7.745966692414828,
+        "t_over_tcc": 1.9999999999999984,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 378.4216547347605,
+        "thermal_energy": 3210.071177242716,
+        "density_min": 0.38820749521255493,
+        "density_max": 210.3199462890625
+      },
+      {
+        "index": 41,
+        "time_code": 7.9396158597251985,
+        "t_over_tcc": 2.0499999999999985,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 378.24349895399064,
+        "thermal_energy": 3216.6157514172914,
+        "density_min": 0.3774067461490631,
+        "density_max": 204.16912841796875
+      },
+      {
+        "index": 42,
+        "time_code": 8.13326502703557,
+        "t_over_tcc": 2.0999999999999983,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 377.3672206318006,
+        "thermal_energy": 3222.9735677972817,
+        "density_min": 0.35836657881736755,
+        "density_max": 198.73851013183594
+      },
+      {
+        "index": 43,
+        "time_code": 8.32691419434594,
+        "t_over_tcc": 2.1499999999999986,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 376.3949495013803,
+        "thermal_energy": 3228.9450134230888,
+        "density_min": 0.3497592806816101,
+        "density_max": 200.84689331054688
+      },
+      {
+        "index": 44,
+        "time_code": 8.520563361656311,
+        "t_over_tcc": 2.1999999999999984,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 375.8629558207467,
+        "thermal_energy": 3234.7018853960262,
+        "density_min": 0.3550323247909546,
+        "density_max": 192.66070556640625
+      },
+      {
+        "index": 45,
+        "time_code": 8.714212528966682,
+        "t_over_tcc": 2.2499999999999982,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 375.60354894027114,
+        "thermal_energy": 3240.5577861676798,
+        "density_min": 0.3732620179653168,
+        "density_max": 196.3643341064453
+      },
+      {
+        "index": 46,
+        "time_code": 8.907861696277052,
+        "t_over_tcc": 2.2999999999999985,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 375.4431832674891,
+        "thermal_energy": 3246.607466229426,
+        "density_min": 0.3743612766265869,
+        "density_max": 201.55416870117188
+      },
+      {
+        "index": 47,
+        "time_code": 9.101510863587423,
+        "t_over_tcc": 2.3499999999999983,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 375.31955576036125,
+        "thermal_energy": 3252.6703186366185,
+        "density_min": 0.38172799348831177,
+        "density_max": 196.17288208007812
+      },
+      {
+        "index": 48,
+        "time_code": 9.295160030897794,
+        "t_over_tcc": 2.399999999999998,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 375.3670673109591,
+        "thermal_energy": 3258.855089849472,
+        "density_min": 0.3911018669605255,
+        "density_max": 200.26849365234375
+      },
+      {
+        "index": 49,
+        "time_code": 9.488809198208164,
+        "t_over_tcc": 2.449999999999998,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 375.2867600163445,
+        "thermal_energy": 3265.1913229718,
+        "density_min": 0.40352776646614075,
+        "density_max": 201.3147735595703
+      },
+      {
+        "index": 50,
+        "time_code": 9.682458365518535,
+        "t_over_tcc": 2.4999999999999982,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 375.17161520570517,
+        "thermal_energy": 3271.6576273173982,
+        "density_min": 0.40183454751968384,
+        "density_max": 209.28819274902344
+      },
+      {
+        "index": 51,
+        "time_code": 9.876107532828904,
+        "t_over_tcc": 2.5499999999999976,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 374.26140973716974,
+        "thermal_energy": 3278.2085945621416,
+        "density_min": 0.4116175174713135,
+        "density_max": 203.2636260986328
+      },
+      {
+        "index": 52,
+        "time_code": 10.069756700139276,
+        "t_over_tcc": 2.599999999999998,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 374.2760233078152,
+        "thermal_energy": 3284.506437717984,
+        "density_min": 0.3867760896682739,
+        "density_max": 211.5748748779297
+      },
+      {
+        "index": 53,
+        "time_code": 10.263405867449647,
+        "t_over_tcc": 2.6499999999999977,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 373.81044441461563,
+        "thermal_energy": 3290.566816977152,
+        "density_min": 0.3709932267665863,
+        "density_max": 214.59347534179688
+      },
+      {
+        "index": 54,
+        "time_code": 10.457055034760018,
+        "t_over_tcc": 2.699999999999998,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 372.8791018538177,
+        "thermal_energy": 3296.735715052019,
+        "density_min": 0.3556806147098541,
+        "density_max": 215.43344116210938
+      },
+      {
+        "index": 55,
+        "time_code": 10.650704202070388,
+        "t_over_tcc": 2.749999999999998,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 372.01544982381165,
+        "thermal_energy": 3302.9295626882385,
+        "density_min": 0.3748164176940918,
+        "density_max": 210.74435424804688
+      },
+      {
+        "index": 56,
+        "time_code": 10.844353369380759,
+        "t_over_tcc": 2.7999999999999976,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 371.82328185625374,
+        "thermal_energy": 3309.239781827205,
+        "density_min": 0.3737525939941406,
+        "density_max": 203.9353485107422
+      },
+      {
+        "index": 57,
+        "time_code": 11.038002536691128,
+        "t_over_tcc": 2.849999999999997,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 371.42205705307424,
+        "thermal_energy": 3315.310189467258,
+        "density_min": 0.3560568392276764,
+        "density_max": 195.25550842285156
+      },
+      {
+        "index": 58,
+        "time_code": 11.2316517040015,
+        "t_over_tcc": 2.8999999999999977,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 371.8409253489226,
+        "thermal_energy": 3320.849360907074,
+        "density_min": 0.3376178741455078,
+        "density_max": 188.80758666992188
+      },
+      {
+        "index": 59,
+        "time_code": 11.42530087131187,
+        "t_over_tcc": 2.9499999999999975,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 371.9287624862045,
+        "thermal_energy": 3326.6427138852455,
+        "density_min": 0.33510637283325195,
+        "density_max": 183.9407196044922
+      },
+      {
+        "index": 60,
+        "time_code": 11.618950038622241,
+        "t_over_tcc": 2.9999999999999973,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 372.15393389202654,
+        "thermal_energy": 3332.4762683891877,
+        "density_min": 0.3192681074142456,
+        "density_max": 181.45584106445312
+      },
+      {
+        "index": 61,
+        "time_code": 11.812599205932612,
+        "t_over_tcc": 3.0499999999999976,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 372.54236716777086,
+        "thermal_energy": 3337.803639985383,
+        "density_min": 0.33091723918914795,
+        "density_max": 176.08352661132812
+      },
+      {
+        "index": 62,
+        "time_code": 12.00624837324298,
+        "t_over_tcc": 3.099999999999997,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 373.51995566114783,
+        "thermal_energy": 3342.620671577045,
+        "density_min": 0.3264401853084564,
+        "density_max": 175.55409240722656
+      },
+      {
+        "index": 63,
+        "time_code": 12.199897540553353,
+        "t_over_tcc": 3.1499999999999972,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 374.23499218095094,
+        "thermal_energy": 3347.7739268020136,
+        "density_min": 0.3285197913646698,
+        "density_max": 172.55978393554688
+      },
+      {
+        "index": 64,
+        "time_code": 12.393546707863724,
+        "t_over_tcc": 3.199999999999997,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 374.86429644189775,
+        "thermal_energy": 3353.7871976389893,
+        "density_min": 0.33290940523147583,
+        "density_max": 171.36402893066406
+      },
+      {
+        "index": 65,
+        "time_code": 12.587195875174094,
+        "t_over_tcc": 3.2499999999999973,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 374.7223455226049,
+        "thermal_energy": 3360.2818020556565,
+        "density_min": 0.3378143012523651,
+        "density_max": 173.98580932617188
+      },
+      {
+        "index": 66,
+        "time_code": 12.780845042484465,
+        "t_over_tcc": 3.299999999999997,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 375.16402039304376,
+        "thermal_energy": 3366.712381957831,
+        "density_min": 0.3332865536212921,
+        "density_max": 184.3895263671875
+      },
+      {
+        "index": 67,
+        "time_code": 12.974494209794836,
+        "t_over_tcc": 3.349999999999997,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 376.1937073683366,
+        "thermal_energy": 3372.700139350606,
+        "density_min": 0.3350481688976288,
+        "density_max": 176.73899841308594
+      },
+      {
+        "index": 68,
+        "time_code": 13.168143377105205,
+        "t_over_tcc": 3.3999999999999964,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 375.9933011494577,
+        "thermal_energy": 3377.8329245849845,
+        "density_min": 0.3278530240058899,
+        "density_max": 172.72906494140625
+      },
+      {
+        "index": 69,
+        "time_code": 13.361792544415577,
+        "t_over_tcc": 3.449999999999997,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 375.5357424104586,
+        "thermal_energy": 3382.296040397863,
+        "density_min": 0.3430362343788147,
+        "density_max": 172.0568084716797
+      },
+      {
+        "index": 70,
+        "time_code": 13.555441711725948,
+        "t_over_tcc": 3.499999999999997,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 374.8030467517674,
+        "thermal_energy": 3386.5140736386984,
+        "density_min": 0.33858510851860046,
+        "density_max": 165.17771911621094
+      },
+      {
+        "index": 71,
+        "time_code": 13.749090879036318,
+        "t_over_tcc": 3.5499999999999967,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 374.5330339586362,
+        "thermal_energy": 3391.0012254776166,
+        "density_min": 0.3253948390483856,
+        "density_max": 158.25315856933594
+      },
+      {
+        "index": 72,
+        "time_code": 13.942740046346689,
+        "t_over_tcc": 3.599999999999997,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 373.2535429596901,
+        "thermal_energy": 3395.477525144987,
+        "density_min": 0.33524006605148315,
+        "density_max": 153.11984252929688
+      },
+      {
+        "index": 73,
+        "time_code": 14.136389213657058,
+        "t_over_tcc": 3.6499999999999964,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 373.11725255008787,
+        "thermal_energy": 3400.3364013734163,
+        "density_min": 0.33504289388656616,
+        "density_max": 150.13714599609375
+      },
+      {
+        "index": 74,
+        "time_code": 14.33003838096743,
+        "t_over_tcc": 3.6999999999999966,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 373.01425720285624,
+        "thermal_energy": 3405.5945331909775,
+        "density_min": 0.3342289924621582,
+        "density_max": 147.29856872558594
+      },
+      {
+        "index": 75,
+        "time_code": 14.5236875482778,
+        "t_over_tcc": 3.7499999999999964,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 372.79724551551044,
+        "thermal_energy": 3410.8311795161526,
+        "density_min": 0.33300313353538513,
+        "density_max": 144.85081481933594
+      },
+      {
+        "index": 76,
+        "time_code": 14.717336715588171,
+        "t_over_tcc": 3.7999999999999967,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 372.98507921304554,
+        "thermal_energy": 3415.967414577959,
+        "density_min": 0.3386874794960022,
+        "density_max": 147.3524169921875
+      },
+      {
+        "index": 77,
+        "time_code": 14.910985882898542,
+        "t_over_tcc": 3.8499999999999965,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 373.04099362622947,
+        "thermal_energy": 3420.592356875322,
+        "density_min": 0.32063359022140503,
+        "density_max": 148.96182250976562
+      },
+      {
+        "index": 78,
+        "time_code": 15.104635050208913,
+        "t_over_tcc": 3.8999999999999964,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 373.67840774171054,
+        "thermal_energy": 3424.8722135281573,
+        "density_min": 0.31305059790611267,
+        "density_max": 150.078125
+      },
+      {
+        "index": 79,
+        "time_code": 15.298284217519281,
+        "t_over_tcc": 3.9499999999999957,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 374.36175334546715,
+        "thermal_energy": 3429.0750097849295,
+        "density_min": 0.31087425351142883,
+        "density_max": 150.8720245361328
+      },
+      {
+        "index": 80,
+        "time_code": 15.491933384829654,
+        "t_over_tcc": 3.9999999999999964,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 375.686185574159,
+        "thermal_energy": 3433.2983083198465,
+        "density_min": 0.3189510405063629,
+        "density_max": 149.47003173828125
+      },
+      {
+        "index": 81,
+        "time_code": 15.685582552140025,
+        "t_over_tcc": 4.049999999999996,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 376.85550618637353,
+        "thermal_energy": 3437.164092562184,
+        "density_min": 0.3163067102432251,
+        "density_max": 153.26182556152344
+      },
+      {
+        "index": 82,
+        "time_code": 15.879231719450395,
+        "t_over_tcc": 4.099999999999996,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 378.1671794652939,
+        "thermal_energy": 3440.838700201173,
+        "density_min": 0.31625452637672424,
+        "density_max": 157.80113220214844
+      },
+      {
+        "index": 83,
+        "time_code": 16.072880886760768,
+        "t_over_tcc": 4.149999999999997,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 379.6889416035265,
+        "thermal_energy": 3444.418430398497,
+        "density_min": 0.3298848271369934,
+        "density_max": 173.187255859375
+      },
+      {
+        "index": 84,
+        "time_code": 16.26653005407114,
+        "t_over_tcc": 4.199999999999997,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 380.90281075425446,
+        "thermal_energy": 3447.9245334321495,
+        "density_min": 0.3355821669101715,
+        "density_max": 165.7870330810547
+      },
+      {
+        "index": 85,
+        "time_code": 16.460179221381512,
+        "t_over_tcc": 4.249999999999997,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 382.1300173997879,
+        "thermal_energy": 3451.06603236932,
+        "density_min": 0.32319435477256775,
+        "density_max": 170.76272583007812
+      },
+      {
+        "index": 86,
+        "time_code": 16.653828388691885,
+        "t_over_tcc": 4.299999999999998,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 383.0482357610017,
+        "thermal_energy": 3454.002774483276,
+        "density_min": 0.34002983570098877,
+        "density_max": 163.9168243408203
+      },
+      {
+        "index": 87,
+        "time_code": 16.847477556002257,
+        "t_over_tcc": 4.349999999999998,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 383.74035250395536,
+        "thermal_energy": 3457.124095902716,
+        "density_min": 0.3504837453365326,
+        "density_max": 157.22079467773438
+      },
+      {
+        "index": 88,
+        "time_code": 17.04112672331263,
+        "t_over_tcc": 4.399999999999999,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 384.10475235339254,
+        "thermal_energy": 3460.4702855463943,
+        "density_min": 0.36843743920326233,
+        "density_max": 146.4232940673828
+      },
+      {
+        "index": 89,
+        "time_code": 17.234775890623002,
+        "t_over_tcc": 4.449999999999999,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 384.63834440056235,
+        "thermal_energy": 3463.715637948981,
+        "density_min": 0.38614094257354736,
+        "density_max": 140.8973388671875
+      },
+      {
+        "index": 90,
+        "time_code": 17.428425057933374,
+        "t_over_tcc": 4.499999999999999,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 384.7979684676975,
+        "thermal_energy": 3467.0540559779765,
+        "density_min": 0.41000595688819885,
+        "density_max": 131.58299255371094
+      },
+      {
+        "index": 91,
+        "time_code": 17.622074225243747,
+        "t_over_tcc": 4.55,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 385.52123076003045,
+        "thermal_energy": 3470.9608811778226,
+        "density_min": 0.42391782999038696,
+        "density_max": 124.79486846923828
+      },
+      {
+        "index": 92,
+        "time_code": 17.81572339255412,
+        "t_over_tcc": 4.6000000000000005,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 385.93933429941535,
+        "thermal_energy": 3475.4435893659615,
+        "density_min": 0.4343172311782837,
+        "density_max": 123.89507293701172
+      },
+      {
+        "index": 93,
+        "time_code": 18.00937255986449,
+        "t_over_tcc": 4.65,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 386.5841422434896,
+        "thermal_energy": 3479.5568044405013,
+        "density_min": 0.4596708118915558,
+        "density_max": 132.31890869140625
+      },
+      {
+        "index": 94,
+        "time_code": 18.203021727174864,
+        "t_over_tcc": 4.700000000000001,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 387.47493788413703,
+        "thermal_energy": 3483.086750911824,
+        "density_min": 0.4699903428554535,
+        "density_max": 132.6673126220703
+      },
+      {
+        "index": 95,
+        "time_code": 18.396670894485236,
+        "t_over_tcc": 4.750000000000002,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 388.34554398432374,
+        "thermal_energy": 3486.2569291926143,
+        "density_min": 0.47109273076057434,
+        "density_max": 145.9408721923828
+      },
+      {
+        "index": 96,
+        "time_code": 18.59032006179561,
+        "t_over_tcc": 4.800000000000002,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 388.78386774100363,
+        "thermal_energy": 3489.397303284361,
+        "density_min": 0.47960710525512695,
+        "density_max": 152.93942260742188
+      },
+      {
+        "index": 97,
+        "time_code": 18.78396922910598,
+        "t_over_tcc": 4.850000000000002,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 389.77726119570434,
+        "thermal_energy": 3492.7492983970683,
+        "density_min": 0.4968687891960144,
+        "density_max": 142.70596313476562
+      },
+      {
+        "index": 98,
+        "time_code": 18.977618396416354,
+        "t_over_tcc": 4.900000000000003,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 390.3289968110621,
+        "thermal_energy": 3496.728238588028,
+        "density_min": 0.4990820586681366,
+        "density_max": 143.5218963623047
+      },
+      {
+        "index": 99,
+        "time_code": 19.171267563726726,
+        "t_over_tcc": 4.950000000000003,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 390.9385398309678,
+        "thermal_energy": 3501.1531160702643,
+        "density_min": 0.500455915927887,
+        "density_max": 138.66485595703125
+      },
+      {
+        "index": 100,
+        "time_code": 19.364916731037084,
+        "t_over_tcc": 5.0,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 391.3281009728089,
+        "thermal_energy": 3505.6194620250344,
+        "density_min": 0.5167044997215271,
+        "density_max": 137.7729034423828
+      }
+    ],
+    "limitations": [
+      "No convergence, cross-code equivalence or paper admission.",
+      "Fully periodic boundaries; velocities staggered after kick, including header time zero.",
+      "Dense mass is a density-threshold diagnostic, not a passive material tracer.",
+      "No repeated raw-byte hash audit; exact ID-to-mass, all field finiteness/positivity, native schemas and metadata stability checked.",
+      "Source/schema-specific bounded validator, not universal scientific correctness."
+    ]
+  },
+  {
+    "label": "GIZMO MFV sharp",
+    "status": "ACCEPTED_BOUNDED_MFV_FIELDS",
+    "snapshots": 101,
+    "series": [
+      {
+        "index": 0,
+        "time_code": 0.0,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 399.96894121170044,
+        "thermal_energy": 3000.000000051904,
+        "density_min": 0.9991060495376587,
+        "density_max": 99.91062927246094
+      },
+      {
+        "index": 1,
+        "time_code": 0.19364916731037085,
+        "total_mass": 2424.9269492340973,
+        "dense_mass": 404.2123815435916,
+        "thermal_energy": 3006.0918599184733,
+        "density_min": 0.35782134532928467,
+        "density_max": 99.91062927246094
+      },
+      {
+        "index": 2,
+        "time_code": 0.3872983346207417,
+        "total_mass": 2424.961169361399,
+        "dense_mass": 405.96331978961825,
+        "thermal_energy": 3010.9767025148717,
+        "density_min": 0.22149568796157837,
+        "density_max": 135.69927978515625
+      },
+      {
+        "index": 3,
+        "time_code": 0.5809475019311126,
+        "total_mass": 2424.947610453033,
+        "dense_mass": 404.4887107638642,
+        "thermal_energy": 3015.1318004238456,
+        "density_min": 0.2965838611125946,
+        "density_max": 183.0990447998047
+      },
+      {
+        "index": 4,
+        "time_code": 0.7745966692414834,
+        "total_mass": 2424.9940831387357,
+        "dense_mass": 402.14569777064025,
+        "thermal_energy": 3019.045779401455,
+        "density_min": 0.26154065132141113,
+        "density_max": 219.35903930664062
+      },
+      {
+        "index": 5,
+        "time_code": 0.9682458365518543,
+        "total_mass": 2424.9645826614287,
+        "dense_mass": 399.3308098423295,
+        "thermal_energy": 3023.1264538450637,
+        "density_min": 0.23715715110301971,
+        "density_max": 235.47903442382812
+      },
+      {
+        "index": 6,
+        "time_code": 1.161895003862225,
+        "total_mass": 2424.965047796839,
+        "dense_mass": 397.670495219063,
+        "thermal_energy": 3027.353923584205,
+        "density_min": 0.24036477506160736,
+        "density_max": 242.71893310546875
+      },
+      {
+        "index": 7,
+        "time_code": 1.355544171172596,
+        "total_mass": 2424.954001453618,
+        "dense_mass": 394.81191836996004,
+        "thermal_energy": 3031.674065888982,
+        "density_min": 0.25450098514556885,
+        "density_max": 250.1745147705078
+      },
+      {
+        "index": 8,
+        "time_code": 1.5491933384829668,
+        "total_mass": 2424.9517097203643,
+        "dense_mass": 392.34942282317206,
+        "thermal_energy": 3036.0253372709735,
+        "density_min": 0.25322192907333374,
+        "density_max": 260.0654296875
+      },
+      {
+        "index": 9,
+        "time_code": 1.7428425057933374,
+        "total_mass": 2424.9496786963427,
+        "dense_mass": 390.1554788937792,
+        "thermal_energy": 3040.4151108728074,
+        "density_min": 0.29138943552970886,
+        "density_max": 262.0062255859375
+      },
+      {
+        "index": 10,
+        "time_code": 1.9364916731037085,
+        "total_mass": 2424.9441403777746,
+        "dense_mass": 388.5928199230693,
+        "thermal_energy": 3044.8350531143255,
+        "density_min": 0.29644590616226196,
+        "density_max": 262.6650390625
+      },
+      {
+        "index": 11,
+        "time_code": 2.1301408404140796,
+        "total_mass": 2424.9367768576485,
+        "dense_mass": 385.83803521469235,
+        "thermal_energy": 3049.2487836389264,
+        "density_min": 0.300709068775177,
+        "density_max": 260.8368225097656
+      },
+      {
+        "index": 12,
+        "time_code": 2.32379000772445,
+        "total_mass": 2424.935673664324,
+        "dense_mass": 384.84540789201856,
+        "thermal_energy": 3053.686192704898,
+        "density_min": 0.307172566652298,
+        "density_max": 263.0240478515625
+      },
+      {
+        "index": 13,
+        "time_code": 2.517439175034821,
+        "total_mass": 2424.934536709916,
+        "dense_mass": 382.5420901365578,
+        "thermal_energy": 3058.125333977439,
+        "density_min": 0.31425097584724426,
+        "density_max": 262.7403564453125
+      },
+      {
+        "index": 14,
+        "time_code": 2.7110883423451915,
+        "total_mass": 2424.933582277881,
+        "dense_mass": 380.8270104196854,
+        "thermal_energy": 3062.7846726120333,
+        "density_min": 0.32021382451057434,
+        "density_max": 264.4814758300781
+      },
+      {
+        "index": 15,
+        "time_code": 2.904737509655562,
+        "total_mass": 2424.9240962399344,
+        "dense_mass": 377.5378015432507,
+        "thermal_energy": 3067.590009934114,
+        "density_min": 0.3544536232948303,
+        "density_max": 265.49957275390625
+      },
+      {
+        "index": 16,
+        "time_code": 3.0983866769659323,
+        "total_mass": 2424.9188911628153,
+        "dense_mass": 377.98013545479625,
+        "thermal_energy": 3072.3409131708586,
+        "density_min": 0.3454506993293762,
+        "density_max": 265.4586486816406
+      },
+      {
+        "index": 17,
+        "time_code": 3.2920358442763034,
+        "total_mass": 2424.9247920965427,
+        "dense_mass": 375.6154970754869,
+        "thermal_energy": 3076.9569762109127,
+        "density_min": 0.35081496834754944,
+        "density_max": 264.0445861816406
+      },
+      {
+        "index": 18,
+        "time_code": 3.485685011586674,
+        "total_mass": 2424.932769941777,
+        "dense_mass": 373.56446542264894,
+        "thermal_energy": 3081.4446128516083,
+        "density_min": 0.36925315856933594,
+        "density_max": 260.7334899902344
+      },
+      {
+        "index": 19,
+        "time_code": 3.6793341788970446,
+        "total_mass": 2424.922433642554,
+        "dense_mass": 371.5667369728908,
+        "thermal_energy": 3085.7902158596075,
+        "density_min": 0.37884771823883057,
+        "density_max": 257.9521484375
+      },
+      {
+        "index": 20,
+        "time_code": 3.8729833462074152,
+        "total_mass": 2424.915166220395,
+        "dense_mass": 370.1119407485239,
+        "thermal_energy": 3090.176336530036,
+        "density_min": 0.3878352642059326,
+        "density_max": 258.8538818359375
+      },
+      {
+        "index": 21,
+        "time_code": 4.066632513517786,
+        "total_mass": 2424.920971938147,
+        "dense_mass": 366.9537109765224,
+        "thermal_energy": 3094.650358058076,
+        "density_min": 0.3784503936767578,
+        "density_max": 278.7203369140625
+      },
+      {
+        "index": 22,
+        "time_code": 4.2602816808281565,
+        "total_mass": 2424.9116896768683,
+        "dense_mass": 365.1227127746679,
+        "thermal_energy": 3099.314562620484,
+        "density_min": 0.3854253590106964,
+        "density_max": 285.8928527832031
+      },
+      {
+        "index": 23,
+        "time_code": 4.453930848138527,
+        "total_mass": 2424.9014446536894,
+        "dense_mass": 363.3857681094669,
+        "thermal_energy": 3103.996228736578,
+        "density_min": 0.39391347765922546,
+        "density_max": 289.47003173828125
+      },
+      {
+        "index": 24,
+        "time_code": 4.647580015448898,
+        "total_mass": 2424.8980451613315,
+        "dense_mass": 361.2046845750883,
+        "thermal_energy": 3108.665843516481,
+        "density_min": 0.3998671770095825,
+        "density_max": 276.185791015625
+      },
+      {
+        "index": 25,
+        "time_code": 4.841229182759268,
+        "total_mass": 2424.885552804568,
+        "dense_mass": 360.5119859497063,
+        "thermal_energy": 3112.9017399766826,
+        "density_min": 0.3989969491958618,
+        "density_max": 252.34725952148438
+      },
+      {
+        "index": 26,
+        "time_code": 5.034878350069639,
+        "total_mass": 2424.9046156678814,
+        "dense_mass": 361.1076849703677,
+        "thermal_energy": 3116.6127373148806,
+        "density_min": 0.39275985956192017,
+        "density_max": 227.7730255126953
+      },
+      {
+        "index": 27,
+        "time_code": 5.22852751738001,
+        "total_mass": 2424.9116516091162,
+        "dense_mass": 361.5266452967189,
+        "thermal_energy": 3120.7996749206304,
+        "density_min": 0.39329275488853455,
+        "density_max": 215.1658477783203
+      },
+      {
+        "index": 28,
+        "time_code": 5.422176684690379,
+        "total_mass": 2424.898238894908,
+        "dense_mass": 361.1527385599911,
+        "thermal_energy": 3125.7730669851485,
+        "density_min": 0.37981516122817993,
+        "density_max": 211.85693359375
+      },
+      {
+        "index": 29,
+        "time_code": 5.615825852000751,
+        "total_mass": 2424.8927559055155,
+        "dense_mass": 362.0125063559972,
+        "thermal_energy": 3130.778032188936,
+        "density_min": 0.4256557822227478,
+        "density_max": 209.54989624023438
+      },
+      {
+        "index": 30,
+        "time_code": 5.8094750193111215,
+        "total_mass": 2424.9027602955466,
+        "dense_mass": 364.59149593906477,
+        "thermal_energy": 3135.7034021181753,
+        "density_min": 0.4610646963119507,
+        "density_max": 219.9122314453125
+      },
+      {
+        "index": 31,
+        "time_code": 6.003124186621492,
+        "total_mass": 2424.9070727360086,
+        "dense_mass": 366.03130647493526,
+        "thermal_energy": 3140.2660768158053,
+        "density_min": 0.4509299695491791,
+        "density_max": 224.55015563964844
+      },
+      {
+        "index": 32,
+        "time_code": 6.196773353931863,
+        "total_mass": 2424.8983870475204,
+        "dense_mass": 364.9520550747402,
+        "thermal_energy": 3144.339531147572,
+        "density_min": 0.4749913811683655,
+        "density_max": 223.52218627929688
+      },
+      {
+        "index": 33,
+        "time_code": 6.390422521242233,
+        "total_mass": 2424.8841753085726,
+        "dense_mass": 363.3786031343043,
+        "thermal_energy": 3148.4425362924703,
+        "density_min": 0.46733081340789795,
+        "density_max": 222.36978149414062
+      },
+      {
+        "index": 34,
+        "time_code": 6.584071688552604,
+        "total_mass": 2424.8912483353924,
+        "dense_mass": 362.25431156298146,
+        "thermal_energy": 3153.339419970798,
+        "density_min": 0.4528456926345825,
+        "density_max": 220.25843811035156
+      },
+      {
+        "index": 35,
+        "time_code": 6.777720855862975,
+        "total_mass": 2424.8886880208156,
+        "dense_mass": 360.9889003466815,
+        "thermal_energy": 3159.159615700808,
+        "density_min": 0.4500714838504791,
+        "density_max": 219.0111846923828
+      },
+      {
+        "index": 36,
+        "time_code": 6.971370023173346,
+        "total_mass": 2424.894142164936,
+        "dense_mass": 359.97677624598145,
+        "thermal_energy": 3165.00770662628,
+        "density_min": 0.46050703525543213,
+        "density_max": 220.4274444580078
+      },
+      {
+        "index": 37,
+        "time_code": 7.165019190483716,
+        "total_mass": 2424.8991137445846,
+        "dense_mass": 359.32799871405587,
+        "thermal_energy": 3170.7426126138266,
+        "density_min": 0.456097275018692,
+        "density_max": 227.9852752685547
+      },
+      {
+        "index": 38,
+        "time_code": 7.358668357794087,
+        "total_mass": 2424.9316867184534,
+        "dense_mass": 358.66023254347965,
+        "thermal_energy": 3176.418191675562,
+        "density_min": 0.46285179257392883,
+        "density_max": 230.28245544433594
+      },
+      {
+        "index": 39,
+        "time_code": 7.552317525104456,
+        "total_mass": 2424.941427787475,
+        "dense_mass": 356.90377884171903,
+        "thermal_energy": 3182.2325864563772,
+        "density_min": 0.4604160189628601,
+        "density_max": 227.88243103027344
+      },
+      {
+        "index": 40,
+        "time_code": 7.745966692414828,
+        "total_mass": 2424.932774331246,
+        "dense_mass": 354.90091080218554,
+        "thermal_energy": 3188.0763002861854,
+        "density_min": 0.4665120244026184,
+        "density_max": 222.23837280273438
+      },
+      {
+        "index": 41,
+        "time_code": 7.9396158597251985,
+        "total_mass": 2424.924185374577,
+        "dense_mass": 352.91388609586284,
+        "thermal_energy": 3193.66685597513,
+        "density_min": 0.46364057064056396,
+        "density_max": 219.33180236816406
+      },
+      {
+        "index": 42,
+        "time_code": 8.13326502703557,
+        "total_mass": 2424.914347207494,
+        "dense_mass": 350.301934489049,
+        "thermal_energy": 3198.9083248493203,
+        "density_min": 0.43638771772384644,
+        "density_max": 217.30760192871094
+      },
+      {
+        "index": 43,
+        "time_code": 8.32691419434594,
+        "total_mass": 2424.9112683763087,
+        "dense_mass": 347.7112727048807,
+        "thermal_energy": 3203.802880728501,
+        "density_min": 0.46343985199928284,
+        "density_max": 216.09803771972656
+      },
+      {
+        "index": 44,
+        "time_code": 8.520563361656311,
+        "total_mass": 2424.9079760759196,
+        "dense_mass": 344.27796910423785,
+        "thermal_energy": 3208.6547959754334,
+        "density_min": 0.45873141288757324,
+        "density_max": 213.15460205078125
+      },
+      {
+        "index": 45,
+        "time_code": 8.714212528966682,
+        "total_mass": 2424.903766498406,
+        "dense_mass": 340.8273845985532,
+        "thermal_energy": 3213.6566316050103,
+        "density_min": 0.45098060369491577,
+        "density_max": 208.75494384765625
+      },
+      {
+        "index": 46,
+        "time_code": 8.907861696277052,
+        "total_mass": 2424.9151122459734,
+        "dense_mass": 337.48486174689606,
+        "thermal_energy": 3218.890500918693,
+        "density_min": 0.4351898431777954,
+        "density_max": 207.3047637939453
+      },
+      {
+        "index": 47,
+        "time_code": 9.101510863587423,
+        "total_mass": 2424.906556699483,
+        "dense_mass": 334.89187762280926,
+        "thermal_energy": 3224.373498131677,
+        "density_min": 0.42843353748321533,
+        "density_max": 209.28091430664062
+      },
+      {
+        "index": 48,
+        "time_code": 9.295160030897794,
+        "total_mass": 2424.9106758707494,
+        "dense_mass": 332.65431287605315,
+        "thermal_energy": 3230.1497228550097,
+        "density_min": 0.42765626311302185,
+        "density_max": 209.21600341796875
+      },
+      {
+        "index": 49,
+        "time_code": 9.488809198208164,
+        "total_mass": 2424.9138940613484,
+        "dense_mass": 329.7279964238405,
+        "thermal_energy": 3236.1811957221385,
+        "density_min": 0.40887215733528137,
+        "density_max": 208.4140167236328
+      },
+      {
+        "index": 50,
+        "time_code": 9.682458365518535,
+        "total_mass": 2424.8974927359377,
+        "dense_mass": 326.92551425565034,
+        "thermal_energy": 3242.206345618133,
+        "density_min": 0.4226532578468323,
+        "density_max": 219.64280700683594
+      },
+      {
+        "index": 51,
+        "time_code": 9.876107532828904,
+        "total_mass": 2424.908479225909,
+        "dense_mass": 323.8178996210918,
+        "thermal_energy": 3248.044412320786,
+        "density_min": 0.4026031196117401,
+        "density_max": 234.53213500976562
+      },
+      {
+        "index": 52,
+        "time_code": 10.069756700139276,
+        "total_mass": 2424.8952878354758,
+        "dense_mass": 320.8455896480009,
+        "thermal_energy": 3253.693886116634,
+        "density_min": 0.38152530789375305,
+        "density_max": 240.94155883789062
+      },
+      {
+        "index": 53,
+        "time_code": 10.263405867449647,
+        "total_mass": 2424.8931858944998,
+        "dense_mass": 317.99175308970734,
+        "thermal_energy": 3259.3716525531117,
+        "density_min": 0.37617260217666626,
+        "density_max": 240.98870849609375
+      },
+      {
+        "index": 54,
+        "time_code": 10.457055034760018,
+        "total_mass": 2424.8838032108615,
+        "dense_mass": 316.2205846775323,
+        "thermal_energy": 3265.045280878833,
+        "density_min": 0.35647016763687134,
+        "density_max": 237.37937927246094
+      },
+      {
+        "index": 55,
+        "time_code": 10.650704202070388,
+        "total_mass": 2424.897728830081,
+        "dense_mass": 314.5589985931292,
+        "thermal_energy": 3270.6431446552506,
+        "density_min": 0.36902347207069397,
+        "density_max": 238.3472137451172
+      },
+      {
+        "index": 56,
+        "time_code": 10.844353369380759,
+        "total_mass": 2424.8858602955006,
+        "dense_mass": 312.7296890998259,
+        "thermal_energy": 3276.670307976462,
+        "density_min": 0.3760926425457001,
+        "density_max": 234.81405639648438
+      },
+      {
+        "index": 57,
+        "time_code": 11.038002536691128,
+        "total_mass": 2424.8734558815486,
+        "dense_mass": 311.281716151163,
+        "thermal_energy": 3282.5447486706266,
+        "density_min": 0.3644810914993286,
+        "density_max": 228.2957305908203
+      },
+      {
+        "index": 58,
+        "time_code": 11.2316517040015,
+        "total_mass": 2424.8415416361822,
+        "dense_mass": 310.13270870037377,
+        "thermal_energy": 3287.772247494065,
+        "density_min": 0.35195228457450867,
+        "density_max": 224.6619873046875
+      },
+      {
+        "index": 59,
+        "time_code": 11.42530087131187,
+        "total_mass": 2424.872858645016,
+        "dense_mass": 309.7638115286827,
+        "thermal_energy": 3293.433588602198,
+        "density_min": 0.3745870590209961,
+        "density_max": 220.32577514648438
+      },
+      {
+        "index": 60,
+        "time_code": 11.618950038622241,
+        "total_mass": 2424.8860137226875,
+        "dense_mass": 309.2434530928731,
+        "thermal_energy": 3299.575465643032,
+        "density_min": 0.3750993013381958,
+        "density_max": 220.43641662597656
+      },
+      {
+        "index": 61,
+        "time_code": 11.812599205932612,
+        "total_mass": 2424.8804105072923,
+        "dense_mass": 308.41045847162604,
+        "thermal_energy": 3305.341293948386,
+        "density_min": 0.37853676080703735,
+        "density_max": 217.28038024902344
+      },
+      {
+        "index": 62,
+        "time_code": 12.00624837324298,
+        "total_mass": 2424.840816077718,
+        "dense_mass": 307.5438683144748,
+        "thermal_energy": 3310.6231452605034,
+        "density_min": 0.3590504825115204,
+        "density_max": 212.4567108154297
+      },
+      {
+        "index": 63,
+        "time_code": 12.199897540553353,
+        "total_mass": 2424.8580062638794,
+        "dense_mass": 305.7016159379855,
+        "thermal_energy": 3316.3556242742584,
+        "density_min": 0.3668000102043152,
+        "density_max": 213.23312377929688
+      },
+      {
+        "index": 64,
+        "time_code": 12.393546707863724,
+        "total_mass": 2424.8435155260377,
+        "dense_mass": 304.1654787361622,
+        "thermal_energy": 3323.245058264086,
+        "density_min": 0.3518734574317932,
+        "density_max": 218.49984741210938
+      },
+      {
+        "index": 65,
+        "time_code": 12.587195875174094,
+        "total_mass": 2424.848749009572,
+        "dense_mass": 302.0415364233777,
+        "thermal_energy": 3330.6874447048353,
+        "density_min": 0.33677148818969727,
+        "density_max": 224.52484130859375
+      },
+      {
+        "index": 66,
+        "time_code": 12.780845042484465,
+        "total_mass": 2424.8412089016056,
+        "dense_mass": 299.0677120964974,
+        "thermal_energy": 3337.8365981170427,
+        "density_min": 0.33987414836883545,
+        "density_max": 218.50637817382812
+      },
+      {
+        "index": 67,
+        "time_code": 12.974494209794836,
+        "total_mass": 2424.8932099613885,
+        "dense_mass": 296.1271645296365,
+        "thermal_energy": 3344.190375443611,
+        "density_min": 0.3390772044658661,
+        "density_max": 210.43382263183594
+      },
+      {
+        "index": 68,
+        "time_code": 13.168143377105205,
+        "total_mass": 2424.862540055823,
+        "dense_mass": 293.1052277414128,
+        "thermal_energy": 3349.8429042082767,
+        "density_min": 0.34548890590667725,
+        "density_max": 202.23406982421875
+      },
+      {
+        "index": 69,
+        "time_code": 13.361792544415577,
+        "total_mass": 2424.8483397030795,
+        "dense_mass": 290.1328871278092,
+        "thermal_energy": 3355.1181143335366,
+        "density_min": 0.3318757712841034,
+        "density_max": 192.6162872314453
+      },
+      {
+        "index": 70,
+        "time_code": 13.555441711725948,
+        "total_mass": 2424.8194848466082,
+        "dense_mass": 287.50623259227723,
+        "thermal_energy": 3360.1512054541126,
+        "density_min": 0.3340267539024353,
+        "density_max": 190.4879150390625
+      },
+      {
+        "index": 71,
+        "time_code": 13.749090879036318,
+        "total_mass": 2424.8696457953774,
+        "dense_mass": 284.89056266471744,
+        "thermal_energy": 3365.0907143605486,
+        "density_min": 0.31348559260368347,
+        "density_max": 189.0897674560547
+      },
+      {
+        "index": 72,
+        "time_code": 13.942740046346689,
+        "total_mass": 2424.841119774763,
+        "dense_mass": 282.65880355238914,
+        "thermal_energy": 3370.14176066782,
+        "density_min": 0.32354819774627686,
+        "density_max": 191.52610778808594
+      },
+      {
+        "index": 73,
+        "time_code": 14.136389213657058,
+        "total_mass": 2424.832617770182,
+        "dense_mass": 279.9015694344416,
+        "thermal_energy": 3375.3855779974588,
+        "density_min": 0.3215858042240143,
+        "density_max": 191.88221740722656
+      },
+      {
+        "index": 74,
+        "time_code": 14.33003838096743,
+        "total_mass": 2424.7925033423235,
+        "dense_mass": 277.2118703285232,
+        "thermal_energy": 3381.0376334022117,
+        "density_min": 0.3183118402957916,
+        "density_max": 188.3398895263672
+      },
+      {
+        "index": 75,
+        "time_code": 14.5236875482778,
+        "total_mass": 2424.7325229397393,
+        "dense_mass": 273.8540073800832,
+        "thermal_energy": 3386.731271977831,
+        "density_min": 0.30802130699157715,
+        "density_max": 185.45738220214844
+      },
+      {
+        "index": 76,
+        "time_code": 14.717336715588171,
+        "total_mass": 2424.8143147385854,
+        "dense_mass": 271.3631705380976,
+        "thermal_energy": 3392.177262490697,
+        "density_min": 0.26125219464302063,
+        "density_max": 181.67396545410156
+      },
+      {
+        "index": 77,
+        "time_code": 14.910985882898542,
+        "total_mass": 2424.764513888629,
+        "dense_mass": 268.15013270359486,
+        "thermal_energy": 3397.3730951835405,
+        "density_min": 0.28615307807922363,
+        "density_max": 173.82510375976562
+      },
+      {
+        "index": 78,
+        "time_code": 15.104635050208913,
+        "total_mass": 2424.7537947621604,
+        "dense_mass": 264.62876527942717,
+        "thermal_energy": 3402.372826712329,
+        "density_min": 0.2933855354785919,
+        "density_max": 169.64675903320312
+      },
+      {
+        "index": 79,
+        "time_code": 15.298284217519281,
+        "total_mass": 2424.701678284124,
+        "dense_mass": 260.63056855555624,
+        "thermal_energy": 3407.079222944977,
+        "density_min": 0.2761119306087494,
+        "density_max": 168.0738067626953
+      },
+      {
+        "index": 80,
+        "time_code": 15.491933384829654,
+        "total_mass": 2424.792149981484,
+        "dense_mass": 255.8210848402232,
+        "thermal_energy": 3411.5499245626884,
+        "density_min": 0.30937516689300537,
+        "density_max": 163.38211059570312
+      },
+      {
+        "index": 81,
+        "time_code": 15.685582552140025,
+        "total_mass": 2424.739608604228,
+        "dense_mass": 250.98320170026273,
+        "thermal_energy": 3416.013790335537,
+        "density_min": 0.29773300886154175,
+        "density_max": 163.0072021484375
+      },
+      {
+        "index": 82,
+        "time_code": 15.879231719450395,
+        "total_mass": 2424.736455906939,
+        "dense_mass": 245.72633526660502,
+        "thermal_energy": 3420.486194207901,
+        "density_min": 0.27243295311927795,
+        "density_max": 177.69139099121094
+      },
+      {
+        "index": 83,
+        "time_code": 16.072880886760768,
+        "total_mass": 2424.689790859469,
+        "dense_mass": 240.10472159925848,
+        "thermal_energy": 3424.8948964003707,
+        "density_min": 0.290076345205307,
+        "density_max": 187.25733947753906
+      },
+      {
+        "index": 84,
+        "time_code": 16.26653005407114,
+        "total_mass": 2424.7960283007415,
+        "dense_mass": 234.34336159192026,
+        "thermal_energy": 3429.2808819371057,
+        "density_min": 0.306345671415329,
+        "density_max": 191.94241333007812
+      },
+      {
+        "index": 85,
+        "time_code": 16.460179221381512,
+        "total_mass": 2424.755278383236,
+        "dense_mass": 228.89713069051504,
+        "thermal_energy": 3433.4078436249365,
+        "density_min": 0.28556859493255615,
+        "density_max": 181.9235076904297
+      },
+      {
+        "index": 86,
+        "time_code": 16.653828388691885,
+        "total_mass": 2424.7616639788903,
+        "dense_mass": 221.8988240007311,
+        "thermal_energy": 3437.470210665915,
+        "density_min": 0.30239975452423096,
+        "density_max": 171.70730590820312
+      },
+      {
+        "index": 87,
+        "time_code": 16.847477556002257,
+        "total_mass": 2424.7245676107996,
+        "dense_mass": 215.44763541407883,
+        "thermal_energy": 3441.604021056661,
+        "density_min": 0.30706214904785156,
+        "density_max": 175.40452575683594
+      },
+      {
+        "index": 88,
+        "time_code": 17.04112672331263,
+        "total_mass": 2424.8164473101497,
+        "dense_mass": 208.70257338043302,
+        "thermal_energy": 3446.0810565280135,
+        "density_min": 0.36865121126174927,
+        "density_max": 177.62271118164062
+      },
+      {
+        "index": 89,
+        "time_code": 17.234775890623002,
+        "total_mass": 2424.7776645706326,
+        "dense_mass": 201.5828785849735,
+        "thermal_energy": 3450.5274299786756,
+        "density_min": 0.3381480574607849,
+        "density_max": 170.95677185058594
+      },
+      {
+        "index": 90,
+        "time_code": 17.428425057933374,
+        "total_mass": 2424.7827519875136,
+        "dense_mass": 194.221390937455,
+        "thermal_energy": 3455.069679148954,
+        "density_min": 0.37328094244003296,
+        "density_max": 165.8878173828125
+      },
+      {
+        "index": 91,
+        "time_code": 17.622074225243747,
+        "total_mass": 2424.736499634222,
+        "dense_mass": 188.32090288680047,
+        "thermal_energy": 3461.220153696451,
+        "density_min": 0.3662163317203522,
+        "density_max": 156.5688934326172
+      },
+      {
+        "index": 92,
+        "time_code": 17.81572339255412,
+        "total_mass": 2424.8228602802556,
+        "dense_mass": 182.8941001482308,
+        "thermal_energy": 3467.8394556488784,
+        "density_min": 0.404523640871048,
+        "density_max": 149.92391967773438
+      },
+      {
+        "index": 93,
+        "time_code": 18.00937255986449,
+        "total_mass": 2424.7788275607745,
+        "dense_mass": 177.10618446487933,
+        "thermal_energy": 3473.7533441966248,
+        "density_min": 0.38787683844566345,
+        "density_max": 140.92579650878906
+      },
+      {
+        "index": 94,
+        "time_code": 18.203021727174864,
+        "total_mass": 2424.7826116464275,
+        "dense_mass": 171.78455424215645,
+        "thermal_energy": 3478.905521269426,
+        "density_min": 0.39578670263290405,
+        "density_max": 128.1162567138672
+      },
+      {
+        "index": 95,
+        "time_code": 18.396670894485236,
+        "total_mass": 2424.732547943335,
+        "dense_mass": 167.87311663106084,
+        "thermal_energy": 3483.4265257257666,
+        "density_min": 0.3980770707130432,
+        "density_max": 128.6073760986328
+      },
+      {
+        "index": 96,
+        "time_code": 18.59032006179561,
+        "total_mass": 2424.8222607133794,
+        "dense_mass": 163.8973548365757,
+        "thermal_energy": 3488.0236070847654,
+        "density_min": 0.41785481572151184,
+        "density_max": 137.69686889648438
+      },
+      {
+        "index": 97,
+        "time_code": 18.78396922910598,
+        "total_mass": 2424.7736683556286,
+        "dense_mass": 160.118721826002,
+        "thermal_energy": 3493.0254959350314,
+        "density_min": 0.3994240164756775,
+        "density_max": 154.94757080078125
+      },
+      {
+        "index": 98,
+        "time_code": 18.977618396416354,
+        "total_mass": 2424.7839807842684,
+        "dense_mass": 155.3390235323459,
+        "thermal_energy": 3498.461425730064,
+        "density_min": 0.3858139216899872,
+        "density_max": 154.01455688476562
+      },
+      {
+        "index": 99,
+        "time_code": 19.171267563726726,
+        "total_mass": 2424.7437706351047,
+        "dense_mass": 151.743087509647,
+        "thermal_energy": 3504.33097155241,
+        "density_min": 0.3975345492362976,
+        "density_max": 165.11537170410156
+      },
+      {
+        "index": 100,
+        "time_code": 19.364916731037084,
+        "total_mass": 2424.835534537706,
+        "dense_mass": 146.59202912356704,
+        "thermal_energy": 3510.415251377388,
+        "density_min": 0.4076221287250519,
+        "density_max": 161.0499725341797
+      }
+    ],
+    "limitations": [
+      "Native velocities are staggered; timing comparison does not rewrite fields.",
+      "MFV MassTrue plus pending dMass is checked using the prospective engineering accumulation bound, not a physical-accuracy theorem.",
+      "Restart tails are retained but not certified for resuming.",
+      "No paired-law, convergence, cross-code or paper admission; dense mass is a density-threshold proxy."
+    ]
+  },
+  {
+    "label": "GIZMO MFV historical",
+    "status": "ACCEPTED_BOUNDED_MFV_FIELDS",
+    "snapshots": 101,
+    "series": [
+      {
+        "index": 0,
+        "time_code": 0.0,
+        "total_mass": 2424.9223189685727,
+        "dense_mass": 399.96894121170044,
+        "thermal_energy": 3000.000000051904,
+        "density_min": 0.9991060495376587,
+        "density_max": 99.91062927246094
+      },
+      {
+        "index": 1,
+        "time_code": 0.19364916731037085,
+        "total_mass": 2424.933556139702,
+        "dense_mass": 403.5611737091094,
+        "thermal_energy": 3003.606899974699,
+        "density_min": 0.5373917818069458,
+        "density_max": 99.91062927246094
+      },
+      {
+        "index": 2,
+        "time_code": 0.3872983346207417,
+        "total_mass": 2424.9658528816653,
+        "dense_mass": 405.3980948701501,
+        "thermal_energy": 3008.1935742894148,
+        "density_min": 0.31705161929130554,
+        "density_max": 142.02366638183594
+      },
+      {
+        "index": 3,
+        "time_code": 0.5809475019311126,
+        "total_mass": 2424.9655982756813,
+        "dense_mass": 403.3141977265477,
+        "thermal_energy": 3012.0961946589928,
+        "density_min": 0.31104138493537903,
+        "density_max": 186.97573852539062
+      },
+      {
+        "index": 4,
+        "time_code": 0.7745966692414834,
+        "total_mass": 2424.993359501619,
+        "dense_mass": 400.52362157031894,
+        "thermal_energy": 3015.6753085076916,
+        "density_min": 0.39946672320365906,
+        "density_max": 215.91156005859375
+      },
+      {
+        "index": 5,
+        "time_code": 0.9682458365518543,
+        "total_mass": 2424.967231521936,
+        "dense_mass": 398.3805578518659,
+        "thermal_energy": 3019.3712159487,
+        "density_min": 0.4439581334590912,
+        "density_max": 232.80828857421875
+      },
+      {
+        "index": 6,
+        "time_code": 1.161895003862225,
+        "total_mass": 2424.961794216535,
+        "dense_mass": 395.518410123419,
+        "thermal_energy": 3023.3995803823177,
+        "density_min": 0.39604052901268005,
+        "density_max": 243.7247772216797
+      },
+      {
+        "index": 7,
+        "time_code": 1.355544171172596,
+        "total_mass": 2424.9479781593254,
+        "dense_mass": 392.23156502936035,
+        "thermal_energy": 3027.646848871552,
+        "density_min": 0.37599050998687744,
+        "density_max": 248.57603454589844
+      },
+      {
+        "index": 8,
+        "time_code": 1.5491933384829668,
+        "total_mass": 2424.9524945855665,
+        "dense_mass": 390.16462635900825,
+        "thermal_energy": 3031.982743054047,
+        "density_min": 0.3547317385673523,
+        "density_max": 259.3639831542969
+      },
+      {
+        "index": 9,
+        "time_code": 1.7428425057933374,
+        "total_mass": 2424.9511882349616,
+        "dense_mass": 388.95087462244555,
+        "thermal_energy": 3036.3547055935005,
+        "density_min": 0.3493996262550354,
+        "density_max": 262.4991149902344
+      },
+      {
+        "index": 10,
+        "time_code": 1.9364916731037085,
+        "total_mass": 2424.9409226372954,
+        "dense_mass": 387.5575820370577,
+        "thermal_energy": 3040.7928753683477,
+        "density_min": 0.3111080229282379,
+        "density_max": 265.0926513671875
+      },
+      {
+        "index": 11,
+        "time_code": 2.1301408404140796,
+        "total_mass": 2424.934972545132,
+        "dense_mass": 385.0597377019003,
+        "thermal_energy": 3045.2317945368695,
+        "density_min": 0.30583441257476807,
+        "density_max": 263.6279296875
+      },
+      {
+        "index": 12,
+        "time_code": 2.32379000772445,
+        "total_mass": 2424.9341131362307,
+        "dense_mass": 383.3885900047608,
+        "thermal_energy": 3049.660548128362,
+        "density_min": 0.28795409202575684,
+        "density_max": 261.3675842285156
+      },
+      {
+        "index": 13,
+        "time_code": 2.517439175034821,
+        "total_mass": 2424.9237436479016,
+        "dense_mass": 381.6462683500722,
+        "thermal_energy": 3054.1032699398997,
+        "density_min": 0.27269360423088074,
+        "density_max": 260.673828125
+      },
+      {
+        "index": 14,
+        "time_code": 2.7110883423451915,
+        "total_mass": 2424.9330872330465,
+        "dense_mass": 379.75988850882277,
+        "thermal_energy": 3058.662136973565,
+        "density_min": 0.3248388171195984,
+        "density_max": 260.9258117675781
+      },
+      {
+        "index": 15,
+        "time_code": 2.904737509655562,
+        "total_mass": 2424.925069487479,
+        "dense_mass": 377.94526647543535,
+        "thermal_energy": 3063.3880210709153,
+        "density_min": 0.3357394337654114,
+        "density_max": 263.4573974609375
+      },
+      {
+        "index": 16,
+        "time_code": 3.0983866769659323,
+        "total_mass": 2424.9021492853353,
+        "dense_mass": 376.6191184404306,
+        "thermal_energy": 3068.118115223683,
+        "density_min": 0.35080063343048096,
+        "density_max": 263.6106872558594
+      },
+      {
+        "index": 17,
+        "time_code": 3.2920358442763034,
+        "total_mass": 2424.921976777696,
+        "dense_mass": 374.0107033676468,
+        "thermal_energy": 3072.73239480392,
+        "density_min": 0.37330862879753113,
+        "density_max": 262.0286560058594
+      },
+      {
+        "index": 18,
+        "time_code": 3.485685011586674,
+        "total_mass": 2424.9258805219433,
+        "dense_mass": 371.674315538723,
+        "thermal_energy": 3077.21793661221,
+        "density_min": 0.38781821727752686,
+        "density_max": 259.8355407714844
+      },
+      {
+        "index": 19,
+        "time_code": 3.6793341788970446,
+        "total_mass": 2424.9240925693593,
+        "dense_mass": 369.52712211059406,
+        "thermal_energy": 3081.590266105263,
+        "density_min": 0.37535080313682556,
+        "density_max": 256.4497375488281
+      },
+      {
+        "index": 20,
+        "time_code": 3.8729833462074152,
+        "total_mass": 2424.9199055753706,
+        "dense_mass": 366.65660483855754,
+        "thermal_energy": 3085.9623446430414,
+        "density_min": 0.37550368905067444,
+        "density_max": 260.4593505859375
+      },
+      {
+        "index": 21,
+        "time_code": 4.066632513517786,
+        "total_mass": 2424.9189892871946,
+        "dense_mass": 364.3441979205236,
+        "thermal_energy": 3090.4147287158976,
+        "density_min": 0.392373263835907,
+        "density_max": 276.7523193359375
+      },
+      {
+        "index": 22,
+        "time_code": 4.2602816808281565,
+        "total_mass": 2424.9106170141604,
+        "dense_mass": 361.9155221451074,
+        "thermal_energy": 3095.044533319904,
+        "density_min": 0.3726116418838501,
+        "density_max": 279.0025329589844
+      },
+      {
+        "index": 23,
+        "time_code": 4.453930848138527,
+        "total_mass": 2424.89610508224,
+        "dense_mass": 361.21310462709516,
+        "thermal_energy": 3099.7065994372997,
+        "density_min": 0.3797755241394043,
+        "density_max": 280.75457763671875
+      },
+      {
+        "index": 24,
+        "time_code": 4.647580015448898,
+        "total_mass": 2424.898890954966,
+        "dense_mass": 359.1235533906147,
+        "thermal_energy": 3104.3423115869477,
+        "density_min": 0.4022428095340729,
+        "density_max": 263.6848449707031
+      },
+      {
+        "index": 25,
+        "time_code": 4.841229182759268,
+        "total_mass": 2424.89064303544,
+        "dense_mass": 357.21440222719684,
+        "thermal_energy": 3108.4716962391867,
+        "density_min": 0.38034138083457947,
+        "density_max": 240.20428466796875
+      },
+      {
+        "index": 26,
+        "time_code": 5.034878350069639,
+        "total_mass": 2424.9077591802343,
+        "dense_mass": 356.8419560678303,
+        "thermal_energy": 3112.1477462643643,
+        "density_min": 0.40917497873306274,
+        "density_max": 213.61038208007812
+      },
+      {
+        "index": 27,
+        "time_code": 5.22852751738001,
+        "total_mass": 2424.913157108298,
+        "dense_mass": 356.12138845864683,
+        "thermal_energy": 3116.2471930444317,
+        "density_min": 0.39860856533050537,
+        "density_max": 212.876708984375
+      },
+      {
+        "index": 28,
+        "time_code": 5.422176684690379,
+        "total_mass": 2424.8981601625565,
+        "dense_mass": 355.60811744770035,
+        "thermal_energy": 3121.2265424638654,
+        "density_min": 0.4149930775165558,
+        "density_max": 210.4778289794922
+      },
+      {
+        "index": 29,
+        "time_code": 5.615825852000751,
+        "total_mass": 2424.8914190368087,
+        "dense_mass": 356.88894825056195,
+        "thermal_energy": 3126.2737062284955,
+        "density_min": 0.40506240725517273,
+        "density_max": 210.16539001464844
+      },
+      {
+        "index": 30,
+        "time_code": 5.8094750193111215,
+        "total_mass": 2424.903241884429,
+        "dense_mass": 357.18591867480427,
+        "thermal_energy": 3131.1662278104673,
+        "density_min": 0.4272409677505493,
+        "density_max": 217.95651245117188
+      },
+      {
+        "index": 31,
+        "time_code": 6.003124186621492,
+        "total_mass": 2424.9062536382407,
+        "dense_mass": 359.7153956675902,
+        "thermal_energy": 3135.6171242306964,
+        "density_min": 0.43346816301345825,
+        "density_max": 221.859375
+      },
+      {
+        "index": 32,
+        "time_code": 6.196773353931863,
+        "total_mass": 2424.9032971847046,
+        "dense_mass": 361.3735903678462,
+        "thermal_energy": 3139.388287342306,
+        "density_min": 0.4566878378391266,
+        "density_max": 222.44985961914062
+      },
+      {
+        "index": 33,
+        "time_code": 6.390422521242233,
+        "total_mass": 2424.8956526038237,
+        "dense_mass": 360.59144155308604,
+        "thermal_energy": 3143.2594716479134,
+        "density_min": 0.4680866599082947,
+        "density_max": 219.98121643066406
+      },
+      {
+        "index": 34,
+        "time_code": 6.584071688552604,
+        "total_mass": 2424.9001700110675,
+        "dense_mass": 359.77212580339983,
+        "thermal_energy": 3147.919061187715,
+        "density_min": 0.45672595500946045,
+        "density_max": 217.75482177734375
+      },
+      {
+        "index": 35,
+        "time_code": 6.777720855862975,
+        "total_mass": 2424.8873922635976,
+        "dense_mass": 358.7391700129956,
+        "thermal_energy": 3153.6324986367053,
+        "density_min": 0.458062082529068,
+        "density_max": 217.6865997314453
+      },
+      {
+        "index": 36,
+        "time_code": 6.971370023173346,
+        "total_mass": 2424.8826955269615,
+        "dense_mass": 358.0117286425084,
+        "thermal_energy": 3159.433621226222,
+        "density_min": 0.44530749320983887,
+        "density_max": 217.30014038085938
+      },
+      {
+        "index": 37,
+        "time_code": 7.165019190483716,
+        "total_mass": 2424.896541326598,
+        "dense_mass": 357.2025336129591,
+        "thermal_energy": 3164.9553101561796,
+        "density_min": 0.44728726148605347,
+        "density_max": 221.34521484375
+      },
+      {
+        "index": 38,
+        "time_code": 7.358668357794087,
+        "total_mass": 2424.9150480797107,
+        "dense_mass": 355.8180001513101,
+        "thermal_energy": 3170.4928162931874,
+        "density_min": 0.47716471552848816,
+        "density_max": 223.9195556640625
+      },
+      {
+        "index": 39,
+        "time_code": 7.552317525104456,
+        "total_mass": 2424.9266823677463,
+        "dense_mass": 354.00051355781034,
+        "thermal_energy": 3176.163584624893,
+        "density_min": 0.45273557305336,
+        "density_max": 226.6504364013672
+      },
+      {
+        "index": 40,
+        "time_code": 7.745966692414828,
+        "total_mass": 2424.9342564094113,
+        "dense_mass": 352.8818259057589,
+        "thermal_energy": 3181.8969450247178,
+        "density_min": 0.46317777037620544,
+        "density_max": 221.4783172607422
+      },
+      {
+        "index": 41,
+        "time_code": 7.9396158597251985,
+        "total_mass": 2424.9357788711204,
+        "dense_mass": 350.8710370119661,
+        "thermal_energy": 3187.33345561618,
+        "density_min": 0.44421330094337463,
+        "density_max": 216.92745971679688
+      },
+      {
+        "index": 42,
+        "time_code": 8.13326502703557,
+        "total_mass": 2424.917982077808,
+        "dense_mass": 348.6746006924659,
+        "thermal_energy": 3192.422614126562,
+        "density_min": 0.4544331431388855,
+        "density_max": 212.84521484375
+      },
+      {
+        "index": 43,
+        "time_code": 8.32691419434594,
+        "total_mass": 2424.912834625982,
+        "dense_mass": 346.0532357413322,
+        "thermal_energy": 3197.21254916912,
+        "density_min": 0.4408825635910034,
+        "density_max": 211.86973571777344
+      },
+      {
+        "index": 44,
+        "time_code": 8.520563361656311,
+        "total_mass": 2424.910214609874,
+        "dense_mass": 343.4626449616626,
+        "thermal_energy": 3201.876013199309,
+        "density_min": 0.43101635575294495,
+        "density_max": 208.69943237304688
+      },
+      {
+        "index": 45,
+        "time_code": 8.714212528966682,
+        "total_mass": 2424.905641778314,
+        "dense_mass": 340.53129905834794,
+        "thermal_energy": 3206.6312289053512,
+        "density_min": 0.41482627391815186,
+        "density_max": 202.99436950683594
+      },
+      {
+        "index": 46,
+        "time_code": 8.907861696277052,
+        "total_mass": 2424.915729884291,
+        "dense_mass": 337.48553901771083,
+        "thermal_energy": 3211.4382441446046,
+        "density_min": 0.44094088673591614,
+        "density_max": 202.14749145507812
+      },
+      {
+        "index": 47,
+        "time_code": 9.101510863587423,
+        "total_mass": 2424.908294217079,
+        "dense_mass": 335.1221796851605,
+        "thermal_energy": 3216.495738383927,
+        "density_min": 0.43287602066993713,
+        "density_max": 204.00477600097656
+      },
+      {
+        "index": 48,
+        "time_code": 9.295160030897794,
+        "total_mass": 2424.902749513334,
+        "dense_mass": 333.162925045006,
+        "thermal_energy": 3221.7722252858653,
+        "density_min": 0.4315764307975769,
+        "density_max": 205.47108459472656
+      },
+      {
+        "index": 49,
+        "time_code": 9.488809198208164,
+        "total_mass": 2424.8957529393956,
+        "dense_mass": 330.94846800900996,
+        "thermal_energy": 3227.235934724243,
+        "density_min": 0.42158904671669006,
+        "density_max": 210.51121520996094
+      },
+      {
+        "index": 50,
+        "time_code": 9.682458365518535,
+        "total_mass": 2424.8829053906957,
+        "dense_mass": 328.5304106660187,
+        "thermal_energy": 3232.725704316777,
+        "density_min": 0.42443498969078064,
+        "density_max": 213.9188232421875
+      },
+      {
+        "index": 51,
+        "time_code": 9.876107532828904,
+        "total_mass": 2424.910764420434,
+        "dense_mass": 325.99331210926175,
+        "thermal_energy": 3238.1548659418604,
+        "density_min": 0.41273871064186096,
+        "density_max": 219.49801635742188
+      },
+      {
+        "index": 52,
+        "time_code": 10.069756700139276,
+        "total_mass": 2424.9038029718213,
+        "dense_mass": 323.83230986632407,
+        "thermal_energy": 3243.4852362070033,
+        "density_min": 0.3906424641609192,
+        "density_max": 213.8268280029297
+      },
+      {
+        "index": 53,
+        "time_code": 10.263405867449647,
+        "total_mass": 2424.8901660575357,
+        "dense_mass": 321.62935951165855,
+        "thermal_energy": 3248.7101437024585,
+        "density_min": 0.37562137842178345,
+        "density_max": 236.18960571289062
+      },
+      {
+        "index": 54,
+        "time_code": 10.457055034760018,
+        "total_mass": 2424.8787077046873,
+        "dense_mass": 319.838665118441,
+        "thermal_energy": 3254.0685518454093,
+        "density_min": 0.3549421727657318,
+        "density_max": 232.7312469482422
+      },
+      {
+        "index": 55,
+        "time_code": 10.650704202070388,
+        "total_mass": 2424.901839494676,
+        "dense_mass": 317.9194508306682,
+        "thermal_energy": 3259.45696209111,
+        "density_min": 0.40936949849128723,
+        "density_max": 232.21543884277344
+      },
+      {
+        "index": 56,
+        "time_code": 10.844353369380759,
+        "total_mass": 2424.9002054282464,
+        "dense_mass": 316.04035125114024,
+        "thermal_energy": 3265.280421913012,
+        "density_min": 0.378113716840744,
+        "density_max": 231.81906127929688
+      },
+      {
+        "index": 57,
+        "time_code": 11.038002536691128,
+        "total_mass": 2424.8923239576106,
+        "dense_mass": 313.2225662251003,
+        "thermal_energy": 3270.914347309418,
+        "density_min": 0.3592936396598816,
+        "density_max": 229.6830596923828
+      },
+      {
+        "index": 58,
+        "time_code": 11.2316517040015,
+        "total_mass": 2424.8667394903023,
+        "dense_mass": 311.73779273498803,
+        "thermal_energy": 3275.8319510204187,
+        "density_min": 0.3436039984226227,
+        "density_max": 229.7429656982422
+      },
+      {
+        "index": 59,
+        "time_code": 11.42530087131187,
+        "total_mass": 2424.872319066024,
+        "dense_mass": 310.77926180511713,
+        "thermal_energy": 3281.1062426891285,
+        "density_min": 0.33452415466308594,
+        "density_max": 235.5689697265625
+      },
+      {
+        "index": 60,
+        "time_code": 11.618950038622241,
+        "total_mass": 2424.882776674902,
+        "dense_mass": 308.2710690740496,
+        "thermal_energy": 3286.829156942596,
+        "density_min": 0.3445756435394287,
+        "density_max": 233.81008911132812
+      },
+      {
+        "index": 61,
+        "time_code": 11.812599205932612,
+        "total_mass": 2424.882835166616,
+        "dense_mass": 306.835162431933,
+        "thermal_energy": 3292.0418745944985,
+        "density_min": 0.35700100660324097,
+        "density_max": 217.93125915527344
+      },
+      {
+        "index": 62,
+        "time_code": 12.00624837324298,
+        "total_mass": 2424.8527146314154,
+        "dense_mass": 305.58639073278755,
+        "thermal_energy": 3296.759785146062,
+        "density_min": 0.36735785007476807,
+        "density_max": 207.73838806152344
+      },
+      {
+        "index": 63,
+        "time_code": 12.199897540553353,
+        "total_mass": 2424.8625216815562,
+        "dense_mass": 304.302304581739,
+        "thermal_energy": 3301.8521797541134,
+        "density_min": 0.3594343066215515,
+        "density_max": 201.71603393554688
+      },
+      {
+        "index": 64,
+        "time_code": 12.393546707863724,
+        "total_mass": 2424.8435359025607,
+        "dense_mass": 302.8234537532553,
+        "thermal_energy": 3308.204278313352,
+        "density_min": 0.35834115743637085,
+        "density_max": 204.8487091064453
+      },
+      {
+        "index": 65,
+        "time_code": 12.587195875174094,
+        "total_mass": 2424.8429031479463,
+        "dense_mass": 301.3271121159196,
+        "thermal_energy": 3315.2022174698827,
+        "density_min": 0.35103148221969604,
+        "density_max": 211.3818359375
+      },
+      {
+        "index": 66,
+        "time_code": 12.780845042484465,
+        "total_mass": 2424.837346597895,
+        "dense_mass": 299.1887686718255,
+        "thermal_energy": 3322.0970990190845,
+        "density_min": 0.3546527028083801,
+        "density_max": 210.25990295410156
+      },
+      {
+        "index": 67,
+        "time_code": 12.974494209794836,
+        "total_mass": 2424.8977718667593,
+        "dense_mass": 295.8125477619469,
+        "thermal_energy": 3328.1874511619617,
+        "density_min": 0.34712934494018555,
+        "density_max": 209.97520446777344
+      },
+      {
+        "index": 68,
+        "time_code": 13.168143377105205,
+        "total_mass": 2424.8702969929145,
+        "dense_mass": 293.0554108377546,
+        "thermal_energy": 3333.604597223593,
+        "density_min": 0.35336458683013916,
+        "density_max": 207.93894958496094
+      },
+      {
+        "index": 69,
+        "time_code": 13.361792544415577,
+        "total_mass": 2424.8539329495397,
+        "dense_mass": 289.3690915843472,
+        "thermal_energy": 3338.6521694081894,
+        "density_min": 0.3526338040828705,
+        "density_max": 201.69056701660156
+      },
+      {
+        "index": 70,
+        "time_code": 13.555441711725948,
+        "total_mass": 2424.818320261111,
+        "dense_mass": 285.80453432165086,
+        "thermal_energy": 3343.527749991269,
+        "density_min": 0.33005598187446594,
+        "density_max": 197.06170654296875
+      },
+      {
+        "index": 71,
+        "time_code": 13.749090879036318,
+        "total_mass": 2424.867542063177,
+        "dense_mass": 282.20919543504715,
+        "thermal_energy": 3348.315441607341,
+        "density_min": 0.3378201127052307,
+        "density_max": 195.30130004882812
+      },
+      {
+        "index": 72,
+        "time_code": 13.942740046346689,
+        "total_mass": 2424.838312961161,
+        "dense_mass": 279.41009752918035,
+        "thermal_energy": 3353.2457748109,
+        "density_min": 0.3358439803123474,
+        "density_max": 194.19235229492188
+      },
+      {
+        "index": 73,
+        "time_code": 14.136389213657058,
+        "total_mass": 2424.8245797305135,
+        "dense_mass": 276.63978114537895,
+        "thermal_energy": 3358.4026735872276,
+        "density_min": 0.32377564907073975,
+        "density_max": 192.6594696044922
+      },
+      {
+        "index": 74,
+        "time_code": 14.33003838096743,
+        "total_mass": 2424.784020513558,
+        "dense_mass": 273.13700876012444,
+        "thermal_energy": 3364.050307728475,
+        "density_min": 0.3113878071308136,
+        "density_max": 192.42440795898438
+      },
+      {
+        "index": 75,
+        "time_code": 14.5236875482778,
+        "total_mass": 2424.7250853388396,
+        "dense_mass": 269.64148964360356,
+        "thermal_energy": 3369.852566448147,
+        "density_min": 0.3125975728034973,
+        "density_max": 194.35202026367188
+      },
+      {
+        "index": 76,
+        "time_code": 14.717336715588171,
+        "total_mass": 2424.8206311454705,
+        "dense_mass": 267.1830607978627,
+        "thermal_energy": 3375.4016576182507,
+        "density_min": 0.32365334033966064,
+        "density_max": 200.4808807373047
+      },
+      {
+        "index": 77,
+        "time_code": 14.910985882898542,
+        "total_mass": 2424.774470467324,
+        "dense_mass": 264.06440622732043,
+        "thermal_energy": 3380.623719261419,
+        "density_min": 0.3189176023006439,
+        "density_max": 196.98870849609375
+      },
+      {
+        "index": 78,
+        "time_code": 15.104635050208913,
+        "total_mass": 2424.766946287593,
+        "dense_mass": 260.6863342327997,
+        "thermal_energy": 3385.754174005432,
+        "density_min": 0.3281940817832947,
+        "density_max": 186.72813415527344
+      },
+      {
+        "index": 79,
+        "time_code": 15.298284217519281,
+        "total_mass": 2424.7115081041993,
+        "dense_mass": 257.44828769005835,
+        "thermal_energy": 3390.840336404853,
+        "density_min": 0.30786991119384766,
+        "density_max": 183.65145874023438
+      },
+      {
+        "index": 80,
+        "time_code": 15.491933384829654,
+        "total_mass": 2424.7962522845773,
+        "dense_mass": 254.18001161143184,
+        "thermal_energy": 3395.651873768484,
+        "density_min": 0.3362674117088318,
+        "density_max": 183.66867065429688
+      },
+      {
+        "index": 81,
+        "time_code": 15.685582552140025,
+        "total_mass": 2424.738135898253,
+        "dense_mass": 250.18474880233407,
+        "thermal_energy": 3400.3082106132347,
+        "density_min": 0.29285311698913574,
+        "density_max": 183.49655151367188
+      },
+      {
+        "index": 82,
+        "time_code": 15.879231719450395,
+        "total_mass": 2424.741604512208,
+        "dense_mass": 246.00464808568358,
+        "thermal_energy": 3404.9135794131935,
+        "density_min": 0.2796139717102051,
+        "density_max": 180.813232421875
+      },
+      {
+        "index": 83,
+        "time_code": 16.072880886760768,
+        "total_mass": 2424.684899846179,
+        "dense_mass": 240.51145308930427,
+        "thermal_energy": 3409.429368036231,
+        "density_min": 0.2799888551235199,
+        "density_max": 181.25057983398438
+      },
+      {
+        "index": 84,
+        "time_code": 16.26653005407114,
+        "total_mass": 2424.7965794724296,
+        "dense_mass": 235.54962281417102,
+        "thermal_energy": 3413.888081143617,
+        "density_min": 0.29421013593673706,
+        "density_max": 184.7395477294922
+      },
+      {
+        "index": 85,
+        "time_code": 16.460179221381512,
+        "total_mass": 2424.740854287782,
+        "dense_mass": 230.14804904256016,
+        "thermal_energy": 3418.0297164460644,
+        "density_min": 0.2585209608078003,
+        "density_max": 187.88258361816406
+      },
+      {
+        "index": 86,
+        "time_code": 16.653828388691885,
+        "total_mass": 2424.740140798269,
+        "dense_mass": 224.0051561165601,
+        "thermal_energy": 3422.190382429631,
+        "density_min": 0.28636252880096436,
+        "density_max": 189.88018798828125
+      },
+      {
+        "index": 87,
+        "time_code": 16.847477556002257,
+        "total_mass": 2424.690425553068,
+        "dense_mass": 217.25271808728576,
+        "thermal_energy": 3426.502004361756,
+        "density_min": 0.2822312116622925,
+        "density_max": 187.28335571289062
+      },
+      {
+        "index": 88,
+        "time_code": 17.04112672331263,
+        "total_mass": 2424.7966014127596,
+        "dense_mass": 209.40771467983723,
+        "thermal_energy": 3431.090204711278,
+        "density_min": 0.2999715209007263,
+        "density_max": 191.82028198242188
+      },
+      {
+        "index": 89,
+        "time_code": 17.234775890623002,
+        "total_mass": 2424.7539619895106,
+        "dense_mass": 201.60595850739628,
+        "thermal_energy": 3435.8616323789747,
+        "density_min": 0.3097325265407562,
+        "density_max": 182.54360961914062
+      },
+      {
+        "index": 90,
+        "time_code": 17.428425057933374,
+        "total_mass": 2424.7649758193293,
+        "dense_mass": 194.27226126007736,
+        "thermal_energy": 3440.805783567371,
+        "density_min": 0.32990700006484985,
+        "density_max": 164.34365844726562
+      },
+      {
+        "index": 91,
+        "time_code": 17.622074225243747,
+        "total_mass": 2424.7150234584697,
+        "dense_mass": 186.42807868868113,
+        "thermal_energy": 3447.2143500733814,
+        "density_min": 0.3319128453731537,
+        "density_max": 154.57281494140625
+      },
+      {
+        "index": 92,
+        "time_code": 17.81572339255412,
+        "total_mass": 2424.8110655949567,
+        "dense_mass": 179.38746610283852,
+        "thermal_energy": 3453.974582210582,
+        "density_min": 0.3363730311393738,
+        "density_max": 148.53713989257812
+      },
+      {
+        "index": 93,
+        "time_code": 18.00937255986449,
+        "total_mass": 2424.7588946160104,
+        "dense_mass": 172.62614224944264,
+        "thermal_energy": 3459.922578047952,
+        "density_min": 0.3397939205169678,
+        "density_max": 147.5871124267578
+      },
+      {
+        "index": 94,
+        "time_code": 18.203021727174864,
+        "total_mass": 2424.7711015461537,
+        "dense_mass": 165.98547286726534,
+        "thermal_energy": 3465.0110488705136,
+        "density_min": 0.36724868416786194,
+        "density_max": 138.1904296875
+      },
+      {
+        "index": 95,
+        "time_code": 18.396670894485236,
+        "total_mass": 2424.7135161251936,
+        "dense_mass": 160.22092931345105,
+        "thermal_energy": 3469.555137251961,
+        "density_min": 0.3894476592540741,
+        "density_max": 143.322509765625
+      },
+      {
+        "index": 96,
+        "time_code": 18.59032006179561,
+        "total_mass": 2424.8151396175963,
+        "dense_mass": 154.70883775595576,
+        "thermal_energy": 3474.057233504454,
+        "density_min": 0.4274240732192993,
+        "density_max": 149.47265625
+      },
+      {
+        "index": 97,
+        "time_code": 18.78396922910598,
+        "total_mass": 2424.7639155417273,
+        "dense_mass": 149.56256505008787,
+        "thermal_energy": 3478.999132682062,
+        "density_min": 0.42997005581855774,
+        "density_max": 148.89443969726562
+      },
+      {
+        "index": 98,
+        "time_code": 18.977618396416354,
+        "total_mass": 2424.779188615037,
+        "dense_mass": 144.0851076086983,
+        "thermal_energy": 3484.5581112849623,
+        "density_min": 0.43966594338417053,
+        "density_max": 146.2960205078125
+      },
+      {
+        "index": 99,
+        "time_code": 19.171267563726726,
+        "total_mass": 2424.7388989140454,
+        "dense_mass": 138.96317861881107,
+        "thermal_energy": 3490.9046343076925,
+        "density_min": 0.421354740858078,
+        "density_max": 142.83367919921875
+      },
+      {
+        "index": 100,
+        "time_code": 19.364916731037084,
+        "total_mass": 2424.8314615754643,
+        "dense_mass": 133.6186323808506,
+        "thermal_energy": 3497.7120716281274,
+        "density_min": 0.4155174791812897,
+        "density_max": 145.07638549804688
+      }
+    ],
+    "limitations": [
+      "Native velocities are staggered; timing comparison does not rewrite fields.",
+      "MFV MassTrue plus pending dMass is checked using the prospective engineering accumulation bound, not a physical-accuracy theorem.",
+      "Restart tails are retained but not certified for resuming.",
+      "No paired-law, convergence, cross-code or paper admission; dense mass is a density-threshold proxy.",
+      "Same-build L5 half-kick implementation evidence is reused from sharp-law timing cases; historical-law smoke is independently validated, not a new historical half-kick comparison."
+    ]
+  }
+]

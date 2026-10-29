@@ -1,0 +1,16 @@
+cohort,count,conditions,treatment_in_paper,status_and_limits
+Established sharp sample,24,12 methods; L3/L4; chi100; Mach2,Figures 1 and 3; primary comparison,Native configurations differ; not a convergence or accuracy ranking
+Established historical controls,24,12 methods; L3/L4; chi100; Mach2,Retained as supporting archive and summarized in Section 2.2,Not duplicated as primary figures
+Existing L5 grid histories,6,Athena++; Enzo; Enzo-E; chi100; sharp/historical,Sharp histories in Figure 3; historical controls in Section 3.2,Resolution and initialization sensitivity remain finite-sampling results
+Full contrast histories,5,Enzo-E chi10/1000; Athena++ chi10; Enzo chi10/1000,All five in Figure 4; Enzo endpoint maps in Figure 2,Enzo chi1000 has accepted saved-result screen; original controller failure remains recorded
+New GIZMO MFM sharp,1,L5; chi100; Mach2; sharp; 101 states,Figures 2/3/6; Tables 3/4,Bounded native result accepted; periodic boundaries; staggered velocities
+New GIZMO MFM historical,1,L5; chi100; Mach2; historical; 101 states,Table 3; supporting scalar receipt,Independent physical evolution; not a primary second storyline
+New GIZMO MFV sharp,1,L5; chi100; Mach2; sharp; 101 states,Figures 2/3/6; Tables 3/4,Bounded native result accepted; pending-mass ledger part of conservation interpretation
+New GIZMO MFV historical,1,L5; chi100; Mach2; historical; 101 combined states,Table 3; supporting scalar receipt,Checkpoint prefix and continuation counted as one evolution
+New AthenaPK cooling on,1,L5; chi100; Mach2; R100pc; 101 states,Figures 5/6; Sections 2.3/3.4/3.5,Accepted bounded matched result; unresolved cooling length; 23 fallback stages
+New AthenaPK cooling off,1,Same initial fields and numerical settings; cooling term disabled,Figures 5/6; Sections 2.3/3.4/3.5,Accepted bounded matched result; shared floor; 55 fallback stages
+Readiness runs and failed attempts,0,Preserved in original archive,Not counted as independent full physical experiments,No discarded data and no failed attempt relabeled complete
+Unlaunched AthenaPK chi10 candidate,0,Prepared only,Explicitly excluded from results,No native result
+GIZMO L6 target,0,Higher-resolution comparison unfinished,Table 1 target and discussion limitation,No completed result; memory feasibility unresolved
+Gasoline,0,Existing hold preserved,Not in completed sample,No inferred or invented result
+Additional Athena++ high-contrast evolution,1,Athena++; chi1000; Mach2; n128; 4194304 cells; 16 mesh blocks; nonradiative,Contrast history and endpoint mass fractions; 101 states through 5 tcc,"Accepted numerical field/time screen; dense 0.0721144007, tagged 0.8622888393, total 0.9245301661; no convergence claim"

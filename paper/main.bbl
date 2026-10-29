@@ -1,0 +1,307 @@
+%merlin.mbs apsrev4-1.bst 2010-07-25 4.21a (PWD, AO, DPC) hacked
+%Control: key (0)
+%Control: author (72) initials jnrlst
+%Control: editor formatted (1) identically to author
+%Control: production of article title (-1) disabled
+%Control: page (0) single
+%Control: year (1) truncated
+%Control: production of eprint (0) enabled
+\begin{thebibliography}{25}%
+\makeatletter
+\providecommand \@ifxundefined [1]{%
+ \@ifx{#1\undefined}
+}%
+\providecommand \@ifnum [1]{%
+ \ifnum #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \@ifx [1]{%
+ \ifx #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \natexlab [1]{#1}%
+\providecommand \enquote  [1]{``#1''}%
+\providecommand \bibnamefont  [1]{#1}%
+\providecommand \bibfnamefont [1]{#1}%
+\providecommand \citenamefont [1]{#1}%
+\providecommand \href@noop [0]{\@secondoftwo}%
+\providecommand \href [0]{\begingroup \@sanitize@url \@href}%
+\providecommand \@href[1]{\@@startlink{#1}\@@href}%
+\providecommand \@@href[1]{\endgroup#1\@@endlink}%
+\providecommand \@sanitize@url [0]{\catcode `\\12\catcode `\$12\catcode
+  `\&12\catcode `\#12\catcode `\^12\catcode `\_12\catcode `\%12\relax}%
+\providecommand \@@startlink[1]{}%
+\providecommand \@@endlink[0]{}%
+\providecommand \url  [0]{\begingroup\@sanitize@url \@url }%
+\providecommand \@url [1]{\endgroup\@href {#1}{\urlprefix }}%
+\providecommand \urlprefix  [0]{URL }%
+\providecommand \Eprint [0]{\href }%
+\providecommand \doibase [0]{http://dx.doi.org/}%
+\providecommand \selectlanguage [0]{\@gobble}%
+\providecommand \bibinfo  [0]{\@secondoftwo}%
+\providecommand \bibfield  [0]{\@secondoftwo}%
+\providecommand \translation [1]{[#1]}%
+\providecommand \BibitemOpen [0]{}%
+\providecommand \bibitemStop [0]{}%
+\providecommand \bibitemNoStop [0]{.\EOS\space}%
+\providecommand \EOS [0]{\spacefactor3000\relax}%
+\providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
+\let\auto@bib@innerbib\@empty
+%</preamble>
+\bibitem [{\citenamefont {Tumlinson}\ \emph {et~al.}(2017)\citenamefont
+  {Tumlinson}, \citenamefont {Peeples},\ and\ \citenamefont
+  {Werk}}]{Tumlinson2017}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Tumlinson}}, \bibinfo {author} {\bibfnamefont {M.~S.}\ \bibnamefont
+  {Peeples}}, \ and\ \bibinfo {author} {\bibfnamefont {J.~K.}\ \bibnamefont
+  {Werk}},\ }\href {\doibase 10.1146/annurev-astro-091916-055240} {\bibfield
+  {journal} {\bibinfo  {journal} {Annual Review of Astronomy and Astrophysics}\
+  }\textbf {\bibinfo {volume} {55}},\ \bibinfo {pages} {389} (\bibinfo {year}
+  {2017})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Werk}\ \emph {et~al.}(2014)\citenamefont {Werk},
+  \citenamefont {Prochaska}, \citenamefont {Tumlinson}, \citenamefont
+  {Peeples}, \citenamefont {Tripp}, \citenamefont {Fox}, \citenamefont
+  {Lehner}, \citenamefont {Thom}, \citenamefont {O'Meara}, \citenamefont
+  {Ford}, \citenamefont {Bordoloi}, \citenamefont {Katz}, \citenamefont
+  {Tejos}, \citenamefont {Oppenheimer}, \citenamefont {Dav{\'e}},\ and\
+  \citenamefont {Weinberg}}]{Werk2014}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~K.}\ \bibnamefont
+  {Werk}}, \bibinfo {author} {\bibfnamefont {J.~X.}\ \bibnamefont {Prochaska}},
+  \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Tumlinson}}, \bibinfo
+  {author} {\bibfnamefont {M.~S.}\ \bibnamefont {Peeples}}, \bibinfo {author}
+  {\bibfnamefont {T.~M.}\ \bibnamefont {Tripp}}, \bibinfo {author}
+  {\bibfnamefont {A.~J.}\ \bibnamefont {Fox}}, \bibinfo {author} {\bibfnamefont
+  {N.}~\bibnamefont {Lehner}}, \bibinfo {author} {\bibfnamefont
+  {C.}~\bibnamefont {Thom}}, \bibinfo {author} {\bibfnamefont {J.~M.}\
+  \bibnamefont {O'Meara}}, \bibinfo {author} {\bibfnamefont {A.~B.}\
+  \bibnamefont {Ford}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Bordoloi}}, \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Katz}},
+  \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Tejos}}, \bibinfo
+  {author} {\bibfnamefont {B.~D.}\ \bibnamefont {Oppenheimer}}, \bibinfo
+  {author} {\bibfnamefont {R.}~\bibnamefont {Dav{\'e}}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {D.~H.}\ \bibnamefont {Weinberg}},\ }\href {\doibase
+  10.1088/0004-637X/792/1/8} {\bibfield  {journal} {\bibinfo  {journal} {The
+  Astrophysical Journal}\ }\textbf {\bibinfo {volume} {792}},\ \bibinfo {pages}
+  {8} (\bibinfo {year} {2014})},\ \Eprint {http://arxiv.org/abs/1403.0947}
+  {arXiv:1403.0947} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Klein}\ \emph {et~al.}(1994)\citenamefont {Klein},
+  \citenamefont {McKee},\ and\ \citenamefont {Colella}}]{Klein1994}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.~I.}\ \bibnamefont
+  {Klein}}, \bibinfo {author} {\bibfnamefont {C.~F.}\ \bibnamefont {McKee}}, \
+  and\ \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Colella}},\ }\href
+  {\doibase 10.1086/173554} {\bibfield  {journal} {\bibinfo  {journal} {The
+  Astrophysical Journal}\ }\textbf {\bibinfo {volume} {420}},\ \bibinfo {pages}
+  {213} (\bibinfo {year} {1994})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Scannapieco}\ and\ \citenamefont
+  {Br{\"u}ggen}(2015)}]{Scannapieco2015}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.}~\bibnamefont
+  {Scannapieco}}\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Br{\"u}ggen}},\ }\href {\doibase 10.1088/0004-637X/805/2/158} {\bibfield
+  {journal} {\bibinfo  {journal} {The Astrophysical Journal}\ }\textbf
+  {\bibinfo {volume} {805}},\ \bibinfo {pages} {158} (\bibinfo {year}
+  {2015})},\ \Eprint {http://arxiv.org/abs/1503.06800} {arXiv:1503.06800}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Schneider}\ and\ \citenamefont
+  {Robertson}(2017)}]{Schneider2017}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.~E.}\ \bibnamefont
+  {Schneider}}\ and\ \bibinfo {author} {\bibfnamefont {B.~E.}\ \bibnamefont
+  {Robertson}},\ }\href {\doibase 10.3847/1538-4357/834/2/144} {\bibfield
+  {journal} {\bibinfo  {journal} {The Astrophysical Journal}\ }\textbf
+  {\bibinfo {volume} {834}},\ \bibinfo {pages} {144} (\bibinfo {year}
+  {2017})},\ \Eprint {http://arxiv.org/abs/1607.01788} {arXiv:1607.01788}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Armillotta}\ \emph {et~al.}(2016)\citenamefont
+  {Armillotta}, \citenamefont {Fraternali},\ and\ \citenamefont
+  {Marinacci}}]{Armillotta2016}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {Armillotta}}, \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Fraternali}}, \ and\ \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Marinacci}},\ }\href {\doibase 10.1093/mnras/stw1930} {\bibfield  {journal}
+  {\bibinfo  {journal} {Monthly Notices of the Royal Astronomical Society}\
+  }\textbf {\bibinfo {volume} {462}},\ \bibinfo {pages} {4157} (\bibinfo {year}
+  {2016})},\ \Eprint {http://arxiv.org/abs/1608.06290} {arXiv:1608.06290}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Gronke}\ and\ \citenamefont
+  {Oh}(2018)}]{GronkeOh2018}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Gronke}}\ and\ \bibinfo {author} {\bibfnamefont {S.~P.}\ \bibnamefont
+  {Oh}},\ }\href {\doibase 10.1093/mnrasl/sly131} {\bibfield  {journal}
+  {\bibinfo  {journal} {Monthly Notices of the Royal Astronomical Society}\
+  }\textbf {\bibinfo {volume} {480}},\ \bibinfo {pages} {L111} (\bibinfo {year}
+  {2018})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Sparre}\ \emph {et~al.}(2020)\citenamefont {Sparre},
+  \citenamefont {Pfrommer},\ and\ \citenamefont {Ehlert}}]{Sparre2020}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Sparre}}, \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Pfrommer}}, \
+  and\ \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Ehlert}},\ }\href
+  {\doibase 10.1093/mnras/staa3177} {\bibfield  {journal} {\bibinfo  {journal}
+  {Monthly Notices of the Royal Astronomical Society}\ }\textbf {\bibinfo
+  {volume} {499}},\ \bibinfo {pages} {4261} (\bibinfo {year}
+  {2020})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Br{\"u}ggen}\ and\ \citenamefont
+  {Scannapieco}(2016)}]{Bruggen2016}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Br{\"u}ggen}}\ and\ \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont
+  {Scannapieco}},\ }\href {\doibase 10.3847/0004-637X/822/1/31} {\bibfield
+  {journal} {\bibinfo  {journal} {The Astrophysical Journal}\ }\textbf
+  {\bibinfo {volume} {822}},\ \bibinfo {pages} {31} (\bibinfo {year} {2016})},\
+  \Eprint {http://arxiv.org/abs/1602.01843} {arXiv:1602.01843} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Agertz}\ \emph {et~al.}(2007)\citenamefont {Agertz}
+  \emph {et~al.}}]{Agertz2007}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {O.}~\bibnamefont
+  {Agertz}} \emph {et~al.},\ }\href {\doibase 10.1111/j.1365-2966.2007.12183.x}
+  {\bibfield  {journal} {\bibinfo  {journal} {Monthly Notices of the Royal
+  Astronomical Society}\ }\textbf {\bibinfo {volume} {380}},\ \bibinfo {pages}
+  {963} (\bibinfo {year} {2007})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Springel}(2010)}]{Springel2010}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {V.}~\bibnamefont
+  {Springel}},\ }\href {\doibase 10.1111/j.1365-2966.2009.15715.x} {\bibfield
+  {journal} {\bibinfo  {journal} {Monthly Notices of the Royal Astronomical
+  Society}\ }\textbf {\bibinfo {volume} {401}},\ \bibinfo {pages} {791}
+  (\bibinfo {year} {2010})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Hopkins}(2015)}]{Hopkins2015}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.~F.}\ \bibnamefont
+  {Hopkins}},\ }\href {\doibase 10.1093/mnras/stv195} {\bibfield  {journal}
+  {\bibinfo  {journal} {Monthly Notices of the Royal Astronomical Society}\
+  }\textbf {\bibinfo {volume} {450}},\ \bibinfo {pages} {53} (\bibinfo {year}
+  {2015})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Braspenning}\ \emph {et~al.}(2023)\citenamefont
+  {Braspenning}, \citenamefont {Schaye}, \citenamefont {Borrow},\ and\
+  \citenamefont {Schaller}}]{Braspenning2023}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Braspenning}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Schaye}},
+  \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Borrow}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {M.}~\bibnamefont {Schaller}},\ }\href {\doibase
+  10.1093/mnras/stad1243} {\bibfield  {journal} {\bibinfo  {journal} {Monthly
+  Notices of the Royal Astronomical Society}\ }\textbf {\bibinfo {volume}
+  {523}},\ \bibinfo {pages} {1280} (\bibinfo {year} {2023})},\ \Eprint
+  {http://arxiv.org/abs/2203.13915} {arXiv:2203.13915} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Gr{\o}nnow}\ \emph {et~al.}(2018)\citenamefont
+  {Gr{\o}nnow}, \citenamefont {Tepper-Garc{\'i}a},\ and\ \citenamefont
+  {Bland-Hawthorn}}]{Gronnow2018}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Gr{\o}nnow}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Tepper-Garc{\'i}a}}, \ and\ \bibinfo {author} {\bibfnamefont
+  {J.}~\bibnamefont {Bland-Hawthorn}},\ }\href {\doibase
+  10.3847/1538-4357/aada0e} {\bibfield  {journal} {\bibinfo  {journal} {The
+  Astrophysical Journal}\ }\textbf {\bibinfo {volume} {865}},\ \bibinfo {pages}
+  {64} (\bibinfo {year} {2018})},\ \Eprint {http://arxiv.org/abs/1805.03903}
+  {arXiv:1805.03903} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Stone}\ \emph {et~al.}(2020)\citenamefont {Stone},
+  \citenamefont {Tomida}, \citenamefont {White},\ and\ \citenamefont
+  {Felker}}]{Stone2020}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~M.}\ \bibnamefont
+  {Stone}}, \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Tomida}},
+  \bibinfo {author} {\bibfnamefont {C.~J.}\ \bibnamefont {White}}, \ and\
+  \bibinfo {author} {\bibfnamefont {K.~G.}\ \bibnamefont {Felker}},\ }\href
+  {\doibase 10.3847/1538-4365/ab929b} {\bibfield  {journal} {\bibinfo
+  {journal} {The Astrophysical Journal Supplement Series}\ }\textbf {\bibinfo
+  {volume} {249}},\ \bibinfo {pages} {4} (\bibinfo {year} {2020})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Grete}\ \emph {et~al.}(2023)\citenamefont {Grete}
+  \emph {et~al.}}]{Grete2022}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Grete}} \emph {et~al.},\ }\href {\doibase 10.1177/10943420221143775}
+  {\bibfield  {journal} {\bibinfo  {journal} {International Journal of High
+  Performance Computing Applications}\ }\textbf {\bibinfo {volume} {37}},\
+  \bibinfo {pages} {465} (\bibinfo {year} {2023})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Stone}\ \emph {et~al.}(2008)\citenamefont {Stone},
+  \citenamefont {Gardiner}, \citenamefont {Teuben}, \citenamefont {Hawley},\
+  and\ \citenamefont {Simon}}]{Stone2008}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~M.}\ \bibnamefont
+  {Stone}}, \bibinfo {author} {\bibfnamefont {T.~A.}\ \bibnamefont {Gardiner}},
+  \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Teuben}}, \bibinfo
+  {author} {\bibfnamefont {J.~F.}\ \bibnamefont {Hawley}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {J.~B.}\ \bibnamefont {Simon}},\ }\href {\doibase
+  10.1086/588755} {\bibfield  {journal} {\bibinfo  {journal} {The Astrophysical
+  Journal Supplement Series}\ }\textbf {\bibinfo {volume} {178}},\ \bibinfo
+  {pages} {137} (\bibinfo {year} {2008})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Bryan}\ \emph {et~al.}(2014)\citenamefont {Bryan}
+  \emph {et~al.}}]{Bryan2014}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.~L.}\ \bibnamefont
+  {Bryan}} \emph {et~al.},\ }\href {\doibase 10.1088/0067-0049/211/2/19}
+  {\bibfield  {journal} {\bibinfo  {journal} {The Astrophysical Journal
+  Supplement Series}\ }\textbf {\bibinfo {volume} {211}},\ \bibinfo {pages}
+  {19} (\bibinfo {year} {2014})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Bordner}\ and\ \citenamefont
+  {Norman}(2018)}]{Bordner2018}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Bordner}}\ and\ \bibinfo {author} {\bibfnamefont {M.~L.}\ \bibnamefont
+  {Norman}},\ }\href {https://arxiv.org/abs/1810.01319} {\enquote {\bibinfo
+  {title} {Computational cosmology and astrophysics on adaptive meshes using
+  charm++},}\ } (\bibinfo {year} {2018})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Teyssier}(2002)}]{Teyssier2002}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Teyssier}},\ }\href {\doibase 10.1051/0004-6361:20011817} {\bibfield
+  {journal} {\bibinfo  {journal} {Astronomy and Astrophysics}\ }\textbf
+  {\bibinfo {volume} {385}},\ \bibinfo {pages} {337} (\bibinfo {year}
+  {2002})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Fryxell}\ \emph {et~al.}(2000)\citenamefont {Fryxell}
+  \emph {et~al.}}]{Fryxell2000}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.}~\bibnamefont
+  {Fryxell}} \emph {et~al.},\ }\href {\doibase 10.1086/317361} {\bibfield
+  {journal} {\bibinfo  {journal} {The Astrophysical Journal Supplement Series}\
+  }\textbf {\bibinfo {volume} {131}},\ \bibinfo {pages} {273} (\bibinfo {year}
+  {2000})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Dubey}\ \emph {et~al.}(2022)\citenamefont {Dubey}
+  \emph {et~al.}}]{Dubey2022}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Dubey}} \emph {et~al.},\ }\href {\doibase 10.1016/j.softx.2022.101168}
+  {\bibfield  {journal} {\bibinfo  {journal} {SoftwareX}\ }\textbf {\bibinfo
+  {volume} {19}},\ \bibinfo {pages} {101168} (\bibinfo {year}
+  {2022})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Springel}\ \emph {et~al.}(2021)\citenamefont
+  {Springel}, \citenamefont {Pakmor}, \citenamefont {Zier},\ and\ \citenamefont
+  {Reinecke}}]{Springel2021}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {V.}~\bibnamefont
+  {Springel}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Pakmor}},
+  \bibinfo {author} {\bibfnamefont {O.}~\bibnamefont {Zier}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {M.}~\bibnamefont {Reinecke}},\ }\href {\doibase
+  10.1093/mnras/stab1855} {\bibfield  {journal} {\bibinfo  {journal} {Monthly
+  Notices of the Royal Astronomical Society}\ }\textbf {\bibinfo {volume}
+  {506}},\ \bibinfo {pages} {2871} (\bibinfo {year} {2021})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Sutherland}\ and\ \citenamefont
+  {Dopita}(1993)}]{Sutherland1993}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.~S.}\ \bibnamefont
+  {Sutherland}}\ and\ \bibinfo {author} {\bibfnamefont {M.~A.}\ \bibnamefont
+  {Dopita}},\ }\href {\doibase 10.1086/191823} {\bibfield  {journal} {\bibinfo
+  {journal} {The Astrophysical Journal Supplement Series}\ }\textbf {\bibinfo
+  {volume} {88}},\ \bibinfo {pages} {253} (\bibinfo {year} {1993})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Townsend}(2009)}]{Townsend2009}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.~H.~D.}\
+  \bibnamefont {Townsend}},\ }\href {\doibase 10.1088/0067-0049/181/2/391}
+  {\bibfield  {journal} {\bibinfo  {journal} {The Astrophysical Journal
+  Supplement Series}\ }\textbf {\bibinfo {volume} {181}},\ \bibinfo {pages}
+  {391} (\bibinfo {year} {2009})},\ \Eprint {http://arxiv.org/abs/0901.3146}
+  {arXiv:0901.3146} \BibitemShut {NoStop}%
+\end{thebibliography}%

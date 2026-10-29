@@ -1,0 +1,65 @@
+{
+  "source_project": "D:\\CloudCrushing\\meeting_20261010_v1\\paper_ryan_revision_20261026_v2",
+  "revised_project": "D:\\CloudCrushing\\meeting_20261010_v1\\paper_ryan_revision_20261029_v3",
+  "changed": [
+    "introduction literature and framing",
+    "Independent Researcher author label",
+    "MFV literature comparison and support/spacing hypotheses",
+    "Arepo saved-scalar comparison",
+    "conclusions and outstanding scientific controls"
+  ],
+  "new_references": [
+    "Werk2014",
+    "Scannapieco2015",
+    "Schneider2017",
+    "Armillotta2016",
+    "Bruggen2016"
+  ],
+  "intro_reference_keys": [
+    "Agertz2007",
+    "Armillotta2016",
+    "Braspenning2023",
+    "Bruggen2016",
+    "GronkeOh2018",
+    "Hopkins2015",
+    "Klein1994",
+    "Scannapieco2015",
+    "Schneider2017",
+    "Sparre2020",
+    "Springel2010",
+    "Tumlinson2017",
+    "Werk2014"
+  ],
+  "arepo_source": "plot_series.json, code=arepo, levels=3/4, existing accepted histories",
+  "arepo_endpoints": [
+    0.3248926399585576,
+    0.5426912574375778
+  ],
+  "unchanged": [
+    "all numerical series",
+    "all scientific figures",
+    "all raw simulation outputs",
+    "original project"
+  ],
+  "no_new_evolution_or_raw_validation": true,
+  "literature_urls": [
+    "https://arxiv.org/html/2203.13915v2",
+    "https://arxiv.org/html/1409.7395v2",
+    "https://arxiv.org/abs/0901.4107",
+    "https://arxiv.org/abs/1403.0947",
+    "https://arxiv.org/abs/1503.06800",
+    "https://arxiv.org/abs/1607.01788",
+    "https://arxiv.org/abs/1608.06290",
+    "https://arxiv.org/abs/1602.01843"
+  ],
+  "scope": "Current paper revision only. No remote upload or simulation launch.",
+  "verification": {
+    "compiled_pages": 14,
+    "undefined_citations_or_references": false,
+    "overfull_boxes": false,
+    "visual_review": "All pages contact sheet; title, revised discussion and references inspected at larger size. No clipping/overlap or missing figures.",
+    "figure_count": 9,
+    "unchanged_derived_data_and_figures": true,
+    "remaining_class_warnings": "OJA/revtex LastPage duplicate label and deferred-float warnings; all nine figures placed and page numbers checked visually."
+  }
+}

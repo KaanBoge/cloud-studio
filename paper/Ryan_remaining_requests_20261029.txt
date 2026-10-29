@@ -1,0 +1,15 @@
+RYAN FEEDBACK: STATUS OF THIS MANUSCRIPT REVISION
+
+Completed: expanded the introduction with five verified primary studies and 13 distinct literature references in the introduction; retained the OJA class and clean title; identified the author as Independent Researcher; discussed the measured MFV resolution sequence, its different method ordering from Braspenning et al., and particle spacing/support as untested explanations; quantified the existing Arepo resolution dependence; retained all previously integrated numerical results and figures.
+
+Unfinished scientific work, not claimed as completed:
+1. Equal-mass/variable-mass initial-condition controls, reconstructed pressure and first-update audit, including the GADGET-4 equilibrium issue.
+2. Support-radius/neighbour-count measurements and controlled MFV/MFM support variations.
+3. A finer matched Arepo sequence and cell-volume/interface diagnostics; no n=128 Arepo result is present.
+4. Matched open/periodic boundary controls with mass/energy transport measurements.
+5. Missing common n=128 methods and converged resolution sequences.
+6. Separate Riemann-solver/reconstruction/correction-source tests and exact Athena H-correction verification.
+7. Resolved cooling layers, radiative/floor/boundary energy budgets, and matched cooling in additional methods.
+8. Additional scientific morphology/thermal/kinematic reductions for new series. Website 2D/3D display exports do not by themselves complete these measurements.
+
+Delivery: local PDF and portable Overleaf ZIP; no remote synchronization is implied. Conference naming, November dates and the separate Lumiere/student-journal advice remain outside this astrophysics manuscript. No claim of first-ever coverage, physical convergence or journal acceptance is made.
