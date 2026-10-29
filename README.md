@@ -118,3 +118,8 @@ This repository is maintained by **[KaanBoge](https://github.com/KaanBoge)**. Pl
 Cloud Studio's original website/viewer software and the specifically listed utilities and documentation are released under the **[MIT License](LICENSE)**, copyright **2026 Kaan Boge**. MIT permits reuse, modification and commercial distribution while requiring preservation of the license and copyright notice. It is a software license, not an MIT institutional affiliation or a scientific certification.
 
 The grant is scoped in [LICENSING.md](LICENSING.md). Third party simulation codes, adapted native code files, research datasets and archived evidence are **not blanket relicensed**. Bundled three.js retains its authors' MIT notice. See [third party notices](THIRD_PARTY_NOTICES.md) and [contribution guidance](CONTRIBUTING.md). Scientific references and recorded provenance remain intact.
+
+
+## New simulation capture gallery
+
+[Open the paper simulation gallery](https://KaanBoge.github.io/cloud-studio/recent.html?run=enzo-1000): 16 completed runs with edge-on and face-on projections, synchronized comparison, 1920 × 1080 PNG export, and browser video recording. Each sequence samples 11 real saved states through 5 cloud-crushing times. See [projection provenance](analysis/recent_gallery_README.txt) for method and comparison limits.
