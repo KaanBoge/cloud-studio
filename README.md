@@ -123,3 +123,5 @@ The grant is scoped in [LICENSING.md](LICENSING.md). Third party simulation code
 ## New simulation capture gallery
 
 [Open the paper simulation gallery](https://KaanBoge.github.io/cloud-studio/recent.html?run=enzo-1000): 16 completed runs with edge-on and face-on projections, synchronized comparison, 1920 × 1080 PNG export, and browser video recording. Each sequence samples 11 real saved states through 5 cloud-crushing times. See [projection provenance](analysis/recent_gallery_README.txt) for method and comparison limits.
+
+The [rotatable 3D viewer](https://kaanboge.github.io/cloud-studio/viewer.html?run=new_enzo-1000) now includes the same 16 new runs, smooth surfaces, edge-on/face-on camera presets, PNG export, orbit recording and saved-state evolution recording. Each new run uses 21 sampled native states; smoothing is display-only. [3D visualization method](analysis/recent_3d_README.txt).

@@ -67,6 +67,11 @@
   .sw{display:inline-block;width:14px;height:3px;border-radius:2px;vertical-align:middle;margin-right:5px}
   #msg{position:fixed;inset:0;display:grid;place-items:center;color:var(--mut);
     font-size:13px;pointer-events:none;z-index:4}
+#captureTools{top:14px;left:330px;right:120px;padding:9px;z-index:6;max-width:800px}
+  #captureTools button{background:#1b2435;color:var(--fg);border:1px solid var(--line);padding:7px 9px;border-radius:6px;cursor:pointer;font:12px system-ui}
+  #captureTools button:disabled{opacity:.5;cursor:wait}#captureStatus{font-size:11px;color:#ffcf90}
+  .ptitle{top:85px}select option{background:#141c2d;color:#edf2fb}
+  @media(max-width:850px){#captureTools{top:auto;bottom:83px;left:14px;right:14px}.ptitle{top:16px}#chartcard{display:none}#bar{gap:5px;padding:7px;min-width:calc(100vw - 20px)}#slider{min-width:30px}#tlab{min-width:90px;font-size:10px}#hud{display:none}}
 </style>
 
 <div id="wrap"><div class="pane" id="paneA"><canvas class="view" id="cvA"></canvas>
@@ -89,6 +94,11 @@
     <a class="back" href="verification.html">Verification report</a></p>
   <p style="font-size:12px;color:#ffcf90">Historical “apkcool” runs did not enable cooling.
     Legacy tracking runs are not validated replacements. Saved data remain available for inspection.</p>
+  <div class="lbl">New completed runs</div>
+  <select id="recentSelect" aria-label="New completed simulation" style="width:100%"><option value="">Choose a new run</option></select>
+  <p id="viewNote" style="font-size:11px;color:var(--mut)"></p>
+  <label class="chk"><input type="checkbox" id="smooth3d" checked> smooth surfaces</label>
+  <p><a class="back" id="projectionLink" href="recent.html">Density projections and images ↗</a></p>
   <div class="lbl">Overdensity</div>
   <div class="chips" id="chiChips">
     <button data-chi="all" class="on">all</button><button data-chi="10">&chi; = 10</button>
@@ -123,6 +133,10 @@
   <div id="shells" class="row"></div>
 </div>
 
+<div class="card" id="captureTools">
+  <div class="row"><button data-view="perspective">Perspective</button><button data-view="edge">Edge-on</button><button data-view="face">Face-on</button><button id="save3d">Save PNG</button><button id="orbitVideo">Record orbit</button><button id="evolutionVideo">Record evolution</button></div>
+  <div id="captureStatus" role="status" aria-live="polite"></div>
+</div>
 <div class="card" id="hud">
   <div><b id="fps">…</b> fps</div>
   <div><b id="tris">…</b> triangles</div>
@@ -145,6 +159,7 @@
 <script>var STUDIO_DATA={},VOL_DATA={},VOLSEQ_DATA={},VOLHQ_DATA={};</script>
 <script src="data/manifest.js"></script>
 <script src="data/densemap.js"></script>
+<script src="assets/recent3d/catalog.js"></script>
 <script type="importmap">
   {"imports": {"three": "./vendor/three.module.js",
                "three/addons/": "./vendor/addons/"}}
@@ -153,6 +168,8 @@
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 
+const recent3D = window.RECENT_3D || {};
+const frameBase = id => recent3D[id] ? "assets/recent3d/" : DENSE_BASE;
 const XL = [-3, 17], YL = [-5, 5], ZL = [-5, 5];
 const msg = document.getElementById("msg");
 const qScale = document.getElementById("qScale");
@@ -166,7 +183,7 @@ function loadScript(src) {
   });
 }
 let ids = (window.STUDIO_VOLS || []).map(s => String(s).replace(/^volhq_|^vol_seq_|^vol_/, ""))
-          .concat(typeof DENSE_RUNS !== "undefined" ? Object.keys(DENSE_RUNS) : [])
+          .concat(typeof DENSE_RUNS !== "undefined" ? Object.keys(DENSE_RUNS) : []).concat(Object.keys(recent3D))
           .filter((v, i, a) => a.indexOf(v) === i)
           .filter(id => !/_(384|448|1800|3600|7200|8192)(_|$)/.test(id));
 
@@ -175,6 +192,7 @@ const CODE_OF = { apk: "AthenaPK (GPU)", apk3d: "AthenaPK (GPU)", athpp: "Athena
   flash: "FLASH 4.8", flashx: "Flash-X", enzo: "Enzo", arepo: "Arepo",
   gzmfm: "GIZMO MFM", gzmfv: "GIZMO MFV", g4: "Gadget-4", gas: "Gasoline" };
 function meta(id) {
+  if(recent3D[id])return {...recent3D[id],code:"New · "+recent3D[id].label};
   const tag = id.split('_')[0];
   const machTag = tag.match(/M(05|15|45|5)$/);
   const pre = tag.replace(/M(05|15|45|5)$/, '').replace(/(?:cool|gal)$/, '');
@@ -203,7 +221,7 @@ ids.sort((a, b) => (/3d/.test(a) ? 1 : 0) - (/3d/.test(b) ? 1 : 0));
 {
   const seen = new Set();
   ids = ids.filter(id => {
-    const m = meta(id), k = m.code + "|" + m.chi + "|" + m.lvl;
+    const m = meta(id), k = recent3D[id] ? id : m.code + "|" + m.chi + "|" + m.lvl;
     if (seen.has(k)) return false;
     seen.add(k); return true;
   });
@@ -325,9 +343,9 @@ async function denseFetch(p, i) {
       const mat = new THREE.MeshPhysicalMaterial({
         color: new THREE.Color(col[0], col[1], col[2]),
         transparent: !opaque, opacity: op, roughness: 0.42,
-        clearcoat: opaque ? 0.35 : 0, side: THREE.DoubleSide, depthWrite: opaque });
+        clearcoat: opaque ? 0.35 : 0, flatShading: !document.getElementById("smooth3d").checked, side: THREE.DoubleSide, depthWrite: opaque });
       const mesh = new THREE.Mesh(geo, mat);
-      mesh.castShadow = opaque; mesh.userData.shell = s;
+      mesh.castShadow = opaque; mesh.userData.shell = level > 0.5 ? 1 : 0;
       grp.add(mesh);
     }
     if (p.dense !== d) {
@@ -395,28 +413,32 @@ async function loadRun(p, id, titleEl) {
   clearPane(p); p.id = id;
   const loadToken=p.loadToken;p.titleEl=titleEl;
   // dense first: every frame the run produced, streamed on demand
-  if (typeof DENSE_RUNS !== "undefined" && DENSE_RUNS[id]) {
+  if (recent3D[id] || (typeof DENSE_RUNS !== "undefined" && DENSE_RUNS[id])) {
     try {
-      const r = await fetch(DENSE_BASE + id + "/index.json", { cache: "no-cache" });
+      const r = await fetch(frameBase(id) + id + "/index.json", { cache: "no-cache" });
       if (r.ok) {
         const index = await r.json();
         if(p.loadToken!==loadToken)return;
         // Keep every distinct measured time, including t > 5. Reject missing
         // timing metadata rather than inventing evenly spaced frame times.
         normalizeFrameIndex(index);
-        p.dense = { tag: id, base: DENSE_BASE, index, cache: new Map(),
+        p.dense = { tag: id, base: frameBase(id), index, cache: new Map(),
                     pending: new Map(), order: [], token: 0, shown: null };
         p.times = index.times || [];
         p.frames = { length: index.frames.length };   // slider sizing only
         const mt = meta(id);
-        if (titleEl) titleEl.innerHTML = "<b>" + mt.code + "</b> &middot; &chi; = " + mt.chi +
+        if (titleEl && recent3D[id]) titleEl.innerHTML = "<b>"+recent3D[id].label+"</b> · n=128 · "+index.frames.length+" saved frames";
+        else if (titleEl) titleEl.innerHTML = "<b>" + mt.code + "</b> &middot; &chi; = " + mt.chi +
           " &middot; level " + mt.lvl + " &middot; " + index.frames.length + " frames";
         buildShellTogglesDense();
-        await denseShow(p, 0);
+        document.getElementById("viewNote").textContent = recent3D[id] ? recent3D[id].note + " Display-only smoothing: σ=0.8 native cells; 21 saved states; no temporal interpolation." : "Historical visualization; see the recorded run configuration.";
+        await denseShow(p, recent3D[id] ? index.frames.length-1 : 0);
         if(p.loadToken!==loadToken)return;
-        setFrameAll(0);
+        setFrameAll(recent3D[id] ? index.frames.length-1 : 0);
+        document.getElementById("recentSelect").value = recent3D[id] ? id : "";
         loadDiag(id, p === A ? 0 : 1);
         msg.style.display = "none";
+        if(p===A && recent3D[id] && innerWidth<850)document.getElementById("sideHide").click();
         return;
       }
     } catch (e) { /* fall through to embedded volumes */ }
@@ -521,7 +543,7 @@ function updateDisplayedTimes() {
     const shown=!p.dense || p.dense.shown;
     const t=shown?p.times[p.cur]:null;
     const status=p.frameError?' (frame unavailable)':(p.cur!==p.curTarget||!shown)?' (loading…)':'';
-    const text=t!==null?'t = '+t+' t_cc'+status:'loading frame…';
+    const text=t!==null?'t = '+Number(t).toFixed(3)+' t_cc'+status:'loading frame…';
     label.textContent=' · '+text;
     if(p===A)document.getElementById('tlab').textContent=text;
   }
@@ -581,7 +603,7 @@ function chip(hostId, key) {
 }
 chip("chiChips", "chi"); chip("lvlChips", "lvl");
 
-const isDense = id => typeof DENSE_RUNS !== "undefined" && DENSE_RUNS[id] >= 8;
+const isDense = id => !!recent3D[id] || (typeof DENSE_RUNS !== "undefined" && DENSE_RUNS[id] >= 8);
 // legacy (17-frame) runs live in their own collapsible section, folded away by
 // default; the choice sticks per browser
 let legacyOpen = false;
@@ -597,14 +619,14 @@ function visibleIds() {
 function renderGroups(host, list) {
   const byCode = {};
   list.forEach(id => { const c = meta(id).code; (byCode[c] = byCode[c] || []).push(id); });
-  Object.keys(byCode).sort().forEach(code => {
+  Object.keys(byCode).sort((a,b)=>(a.startsWith("New ·")?-1:0)-(b.startsWith("New ·")?-1:0)||a.localeCompare(b)).forEach(code => {
     const h = document.createElement("div"); h.className = "grp"; h.textContent = code;
     host.appendChild(h);
     byCode[code].sort((a, b) => (meta(b).lvl - meta(a).lvl) || (meta(a).chi - meta(b).chi))
       .forEach(id => {
         const m = meta(id);
         const b = document.createElement("button");
-        const fr = isDense(id) ? DENSE_RUNS[id] + "f" : "count on load";
+        const fr = recent3D[id] ? recent3D[id].frames+"f" : isDense(id) ? DENSE_RUNS[id] + "f" : "count on load";
         b.innerHTML = "<span>&chi; = " + m.chi + "</span><span class='m'>level " + m.lvl +
                       " &middot; " + fr + "</span>";
         b.dataset.id = id;
@@ -681,6 +703,11 @@ cmpSel.onchange = () => { if (cmpOn.checked && B) { stop(); loadRun(B, cmpSel.va
 let diagA = null, diagB = null;
 async function loadDiag(id, slot) {
   let d = null;
+  if(recent3D[id]) {
+    const pane=slot===0?A:B; d=pane?.dense?.index?.diagnostics;
+    if(!validDiagnostics(d))d=null;
+    if(slot===0)diagA=d;else diagB=d;drawChart();return;
+  }
   try {
     const r = await fetch("data/diag_v2_" + id + ".json", { cache: "no-store" });
     if (r.ok) {
@@ -747,13 +774,14 @@ playBtn.onclick = () => {
     // never outruns the network; the fetch is kicked regardless
     if (A.dense && !A.dense.cache.has(next)) { denseFetch(A, next).catch(() => {}); return; }
     setFrameAll(next);
-  }, 90);
+  }, recent3D[A.id] ? 280 : 90);
 };
 const curT = () => (A.curTarget !== undefined) ? A.curTarget : A.cur;
 document.getElementById("prev").onclick = () => { stop(); setFrameAll(curT() - 1); };
 document.getElementById("next").onclick = () => { stop(); setFrameAll(curT() + 1); };
 document.getElementById("slider").oninput = e => { stop(); setFrameAll(+e.target.value); };
 addEventListener("keydown", e => {
+  if(capturing)return;
   if (e.key === " ") { e.preventDefault(); playBtn.click(); }
   if (e.key === "ArrowLeft") { stop(); setFrameAll(curT() - 1); }
   if (e.key === "ArrowRight") { stop(); setFrameAll(curT() + 1); }
@@ -799,13 +827,51 @@ function loop(now) {
 }
 requestAnimationFrame(loop);
 
+// New-run access, camera presets and local-only capture. Raw output is never altered.
+const recentSelect=document.getElementById('recentSelect');
+Object.entries(recent3D).forEach(([id,m])=>{const o=new Option(m.label,id);recentSelect.add(o);});
+recentSelect.onchange=()=>{if(!recentSelect.value)return;stop();const id=recentSelect.value;loadRun(A,id,document.getElementById('titleA'));history.replaceState(null,'','?run='+encodeURIComponent(id));document.getElementById('projectionLink').href='recent.html?run='+recent3D[id].projection_id;if(innerWidth<850)document.getElementById('sideHide').click();};
+document.getElementById('smooth3d').onchange=e=>{for(const p of [A,B])if(p){const groups=p.dense?[...p.dense.cache.values()]:p.frames;groups.forEach(g=>g.traverse(o=>{if(o.material){o.material.flatShading=!e.target.checked;o.material.needsUpdate=true;}}));}};
+document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>{
+  spin=false;document.getElementById('qSpin').checked=false;
+  for(const p of [A,B])if(p){p.ctrl.target.set(7,0,0);p.cam.up.set(0,0,1);
+    if(b.dataset.view==='face')p.cam.position.set(35,0,0);
+    else if(b.dataset.view==='edge'){p.cam.up.set(0,1,0);p.cam.position.set(7,0,29);}
+    else p.cam.position.set(23,-24,17);
+    p.cam.lookAt(p.ctrl.target);p.ctrl.update();
+  }
+});
+const captureStatus=document.getElementById('captureStatus');let capturing=false;
+function captureDownload(blob,name){const u=URL.createObjectURL(blob),a=document.createElement('a');a.href=u;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),60000);}
+function captureRig(){const cv=document.createElement('canvas');cv.width=1920;cv.height=1080;const c=cv.getContext('2d');const ren=new THREE.WebGLRenderer({antialias:true,preserveDrawingBuffer:true});ren.setPixelRatio(1);ren.setClearColor(0x0a0d16,1);ren.toneMapping=THREE.ACESFilmicToneMapping;ren.shadowMap.enabled=document.getElementById('qShadow').checked;ren.shadowMap.type=THREE.PCFSoftShadowMap;
+ return {canvas:cv,ren,draw(angle=0,mode='Saved density isosurfaces'){
+  const panes=[A,...(B&&B.id&&document.getElementById('cmpOn').checked?[B]:[])],w=cv.width/panes.length;
+  c.fillStyle='#0a0d16';c.fillRect(0,0,cv.width,cv.height);
+  panes.forEach((p,i)=>{const cam=p.cam.clone();cam.aspect=w/1000;cam.updateProjectionMatrix();if(angle){cam.position.sub(p.ctrl.target).applyAxisAngle(cam.up.clone().normalize(),angle).add(p.ctrl.target);cam.lookAt(p.ctrl.target);}ren.setSize(w,1000,false);ren.render(p.scene,cam);c.drawImage(ren.domElement,i*w,45);c.fillStyle='#edf2fb';c.font='23px system-ui';c.fillText((recent3D[p.id]?.label||meta(p.id).code)+' · t/tcc = '+Number(p.times[p.cur]).toFixed(3),i*w+22,32);});
+  c.font='18px system-ui';c.fillStyle='#abb8cf';c.fillText(mode+' · Cloud Crushing Studio · Kaan Boge',22,1068);
+ },dispose(){ren.dispose();ren.forceContextLoss();}};}
+async function waitFrame(p,i){if(p.dense){await denseShow(p,i);if(p.frameError||p.cur!==i)throw new Error('A saved frame could not load');}else setFrame(p,i);}
+async function capture3d(kind){if(capturing)return;if(!A.frames.length||[A,...(B&&B.id?[B]:[])].some(p=>p.dense&&(!p.dense.shown||p.frameError||p.cur!==p.curTarget))){captureStatus.textContent='Wait for the selected saved frame to finish loading.';return;}capturing=true;stop();let rig,rec,stream;const saved=[...document.querySelectorAll('button,select,input')].map(e=>[e,e.disabled]);saved.forEach(([e])=>e.disabled=true);[A,B].forEach(p=>{if(p)p.ctrl.enabled=false;});
+ try{rig=captureRig();rig.draw();const name=(A.id||'cloud')+(B&&B.id?'_vs_'+B.id:'');
+  if(kind==='png'){const blob=await new Promise(r=>rig.canvas.toBlob(r,'image/png'));if(!blob)throw new Error('PNG encoding failed');captureDownload(blob,name+'-3d.png');captureStatus.textContent='1920 × 1080 PNG saved.';return;}
+  const mime=['video/webm;codecs=vp9','video/webm;codecs=vp8','video/mp4'].find(t=>window.MediaRecorder&&MediaRecorder.isTypeSupported(t));if(!mime)throw new Error('This browser does not support video recording');
+  if(kind==='evolution'){A.curTarget=0;await waitFrame(A,0);if(B&&B.id){B.curTarget=0;await waitFrame(B,0);}rig.draw(0,'Saved time sequence · no interpolated fluid motion');}
+  stream=rig.canvas.captureStream(30);rec=new MediaRecorder(stream,{mimeType:mime,videoBitsPerSecond:8000000});const chunks=[];rec.ondataavailable=e=>{if(e.data.size)chunks.push(e.data);};const done=new Promise((r,j)=>{rec.onstop=r;rec.onerror=e=>j(e.error||new Error('Video encoding failed'));});rec.start();
+  if(kind==='orbit'){const start=performance.now();while(performance.now()-start<10000){rig.draw((performance.now()-start)/10000*Math.PI*2,'Camera orbit · one real saved state');captureStatus.textContent='Recording 10-second camera orbit…';await new Promise(r=>setTimeout(r,33));}}
+  else {for(let i=0;i<A.frames.length;i++){A.curTarget=i;await waitFrame(A,i);if(B&&B.id&&B.frames.length){const t=Number(A.times[i]);let bi=0;B.times.forEach((bt,k)=>{if(Math.abs(Number(bt)-t)<Math.abs(Number(B.times[bi])-t))bi=k;});B.curTarget=bi;await waitFrame(B,bi);}document.getElementById('slider').value=i;rig.draw(0,'Saved time sequence · no interpolated fluid motion');captureStatus.textContent='Recording saved frame '+(i+1)+' / '+A.frames.length+'…';await new Promise(r=>setTimeout(r,recent3D[A.id]?350:100));}}
+  rec.stop();await done;const blob=new Blob(chunks,{type:mime});if(!blob.size)throw new Error('Empty recording');captureDownload(blob,name+'-'+kind+(mime.startsWith('video/mp4')?'.mp4':'.webm'));captureStatus.textContent='Video saved.';
+ }catch(e){if(rec&&rec.state!=='inactive')rec.stop();captureStatus.textContent='Capture unavailable: '+e.message;}
+ finally{if(stream)stream.getTracks().forEach(t=>t.stop());if(rig)rig.dispose();saved.forEach(([e,d])=>e.disabled=d);[A,B].forEach(p=>{if(p)p.ctrl.enabled=true;});capturing=false;}
+}
+document.getElementById('save3d').onclick=()=>capture3d('png');document.getElementById('orbitVideo').onclick=()=>capture3d('orbit');document.getElementById('evolutionVideo').onclick=()=>capture3d('evolution');
+
 // ----------------------------------------------------------------- startup
 buildList();
 const q = new URLSearchParams(location.search);
 const want = q.get("run");
 const vis0 = visibleIds();
 const first = (want && ids.indexOf(want) >= 0) ? want
-            : (vis0.find(isDense) || vis0[0] || null);
+            : (ids.includes("new_enzo-1000") ? "new_enzo-1000" : vis0.find(isDense) || vis0[0] || null);
 if (first && !isDense(first) && !legacyOpen) { legacyOpen = true; buildList(); }
 if (first) {
   const b = document.querySelector('#runs button[data-id="' + CSS.escape(first) + '"], #legacyRuns button[data-id="' + CSS.escape(first) + '"]');
