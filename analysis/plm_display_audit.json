@@ -1,0 +1,132 @@
+{
+  "receipt_sha256": "bb1d77a42b8630a4646e94cb7f7462e5c8a3240f7625da1661266bb30c2ff229",
+  "samples": [
+    {
+      "snapshot_index": 0,
+      "time": 0.0,
+      "relative_error": 1.8753068802444012e-16,
+      "bytes": 20803
+    },
+    {
+      "snapshot_index": 5,
+      "time": 0.2501096866623338,
+      "relative_error": 0.0,
+      "bytes": 19852
+    },
+    {
+      "snapshot_index": 10,
+      "time": 0.5017394374743206,
+      "relative_error": 3.750613760488802e-16,
+      "bytes": 18739
+    },
+    {
+      "snapshot_index": 15,
+      "time": 0.7515485145015743,
+      "relative_error": 1.8776486157683284e-16,
+      "bytes": 18249
+    },
+    {
+      "snapshot_index": 20,
+      "time": 1.000184670324207,
+      "relative_error": 7.570956245111333e-16,
+      "bytes": 18145
+    },
+    {
+      "snapshot_index": 25,
+      "time": 1.2502772692577302,
+      "relative_error": 1.9044770907289747e-16,
+      "bytes": 17988
+    },
+    {
+      "snapshot_index": 30,
+      "time": 1.500988789531233,
+      "relative_error": 3.833352026848242e-16,
+      "bytes": 18473
+    },
+    {
+      "snapshot_index": 35,
+      "time": 1.7518787416636086,
+      "relative_error": 1.9258265408861e-16,
+      "bytes": 19911
+    },
+    {
+      "snapshot_index": 40,
+      "time": 2.001157155312176,
+      "relative_error": 5.798696575023552e-16,
+      "bytes": 22033
+    },
+    {
+      "snapshot_index": 45,
+      "time": 2.250289234265456,
+      "relative_error": 0.0,
+      "bytes": 21132
+    },
+    {
+      "snapshot_index": 50,
+      "time": 2.501041222763106,
+      "relative_error": 5.825611403729841e-16,
+      "bytes": 21397
+    },
+    {
+      "snapshot_index": 55,
+      "time": 2.7502408951419723,
+      "relative_error": 3.892494779931217e-16,
+      "bytes": 21163
+    },
+    {
+      "snapshot_index": 60,
+      "time": 3.0001146710656315,
+      "relative_error": 3.898345108945655e-16,
+      "bytes": 22110
+    },
+    {
+      "snapshot_index": 65,
+      "time": 3.251627433216513,
+      "relative_error": 3.898092488538666e-16,
+      "bytes": 24997
+    },
+    {
+      "snapshot_index": 70,
+      "time": 3.5006192837295735,
+      "relative_error": 1.9489930690603194e-16,
+      "bytes": 25557
+    },
+    {
+      "snapshot_index": 75,
+      "time": 3.750794009311357,
+      "relative_error": 3.9024513461208773e-16,
+      "bytes": 28644
+    },
+    {
+      "snapshot_index": 80,
+      "time": 4.001633023509503,
+      "relative_error": 5.863053381164396e-16,
+      "bytes": 30073
+    },
+    {
+      "snapshot_index": 85,
+      "time": 4.251330563315166,
+      "relative_error": 1.6269030991118346e-16,
+      "bytes": 29011
+    },
+    {
+      "snapshot_index": 90,
+      "time": 4.500564074349366,
+      "relative_error": 1.1758121236464062e-16,
+      "bytes": 35360
+    },
+    {
+      "snapshot_index": 95,
+      "time": 4.75097303129505,
+      "relative_error": 9.813048688221598e-16,
+      "bytes": 38370
+    },
+    {
+      "snapshot_index": 100,
+      "time": 5.0,
+      "relative_error": 3.92066404280186e-16,
+      "bytes": 36546
+    }
+  ],
+  "original_data_modified": false
+}

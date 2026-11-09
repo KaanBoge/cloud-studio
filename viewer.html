@@ -73,6 +73,7 @@
   .ptitle{top:85px}select option{background:#141c2d;color:#edf2fb}
   @media(max-width:850px){#captureTools{top:auto;bottom:83px;left:14px;right:14px}.ptitle{top:16px}#chartcard{display:none}#bar{gap:5px;padding:7px;min-width:calc(100vw - 20px)}#slider{min-width:30px}#tlab{min-width:90px;font-size:10px}#hud{display:none}}
 </style>
+<link rel="stylesheet" href="studio-viewer.css">
 
 <div id="wrap"><div class="pane" id="paneA"><canvas class="view" id="cvA"></canvas>
   <div class="ptitle" id="titleA">…</div></div></div>
@@ -90,11 +91,12 @@
     &middot; <a class="back" href="index.html">back to studio</a>
     &middot; <a class="back" href="research.html">research &amp; data</a>
     &middot; <a class="back" href="progress.html">live progress</a></p>
-  <p style="font-size:12px;color:#ffcf90">Historical results: matching levels do not certify matching physics.
+  <details class="viewer-notes"><summary>Scientific scope & historical notes</summary><p>Historical results: matching levels do not certify matching physics.
     <a class="back" href="verification.html">Verification report</a></p>
   <p style="font-size:12px;color:#ffcf90">Historical “apkcool” runs did not enable cooling.
-    Legacy tracking runs are not validated replacements. Saved data remain available for inspection.</p>
-  <div class="lbl">New completed runs</div>
+    Legacy tracking runs are not validated replacements. Saved data remain available for inspection.</p></details>
+  <label class="lbl" for="runSearch">Find a simulation</label><input id="runSearch" type="search" placeholder="Code, contrast, level…">
+  <div class="lbl">Recent results</div>
   <select id="recentSelect" aria-label="New completed simulation" style="width:100%"><option value="">Choose a new run</option></select>
   <p id="viewNote" style="font-size:11px;color:var(--mut)"></p>
   <label class="chk"><input type="checkbox" id="smooth3d" checked> smooth surfaces</label>
@@ -134,7 +136,7 @@
 </div>
 
 <div class="card" id="captureTools">
-  <div class="row"><button data-view="perspective">Perspective</button><button data-view="edge">Edge-on</button><button data-view="face">Face-on</button><button id="save3d">Save PNG</button><button id="orbitVideo">Record orbit</button><button id="evolutionVideo">Record evolution</button></div>
+  <div class="row"><button data-view="perspective">Perspective</button><button data-view="edge">Edge-on</button><button data-view="face">Face-on</button><button id="fitView">Fit view</button><button id="viewerShare">Copy view link</button><button id="save3d">Save PNG</button><button id="orbitVideo">Record orbit</button><button id="evolutionVideo">Record evolution</button></div>
   <div id="captureStatus" role="status" aria-live="polite"></div>
 </div>
 <div class="card" id="hud">
@@ -149,11 +151,11 @@
 </div>
 
 <div class="card" id="bar">
-  <button id="prev">&#9664;</button>
-  <button id="play">&#9654;</button>
-  <button id="next">&#9654;&#9654;</button>
-  <input id="slider" type="range" min="0" max="0" value="0" step="1">
-  <span id="tlab">…</span>
+  <button id="prev" aria-label="Previous frame">&#9664;</button>
+  <button id="play" aria-label="Play or pause">&#9654;</button>
+  <button id="next" aria-label="Next frame">&#9654;&#9654;</button>
+  <input id="slider" aria-label="Saved simulation frame" type="range" min="0" max="0" value="0" step="1">
+  <span id="tlab">…</span><select id="playSpeed" aria-label="Playback speed"><option value="0.25">0.25×</option><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="2">2×</option></select>
 </div>
 
 <script>var STUDIO_DATA={},VOL_DATA={},VOLSEQ_DATA={},VOLHQ_DATA={};</script>
@@ -608,9 +610,12 @@ const isDense = id => !!recent3D[id] || (typeof DENSE_RUNS !== "undefined" && DE
 // default; the choice sticks per browser
 let legacyOpen = false;
 try { legacyOpen = localStorage.getItem("cc_legacyOpen") === "1"; } catch (e) {}
+document.getElementById("runSearch").oninput=()=>buildList();
 function visibleIds() {
   return ids.filter(id => {
     const m = meta(id);
+    const term=document.getElementById("runSearch").value.toLowerCase();
+    if(term && !(m.code+" "+id+" chi"+m.chi+" level "+m.lvl).toLowerCase().includes(term))return false;
     if (state.chi !== "all" && String(m.chi) !== state.chi) return false;
     if (state.lvl !== "all" && String(m.lvl) !== state.lvl) return false;
     return true;
@@ -774,14 +779,16 @@ playBtn.onclick = () => {
     // never outruns the network; the fetch is kicked regardless
     if (A.dense && !A.dense.cache.has(next)) { denseFetch(A, next).catch(() => {}); return; }
     setFrameAll(next);
-  }, recent3D[A.id] ? 280 : 90);
+  }, (recent3D[A.id] ? 280 : 90)/Number(document.getElementById("playSpeed").value));
 };
+document.getElementById("playSpeed").onchange=()=>{if(timer){stop();playBtn.click();}};
+document.addEventListener("visibilitychange",()=>{if(document.hidden&&!capturing)stop();});
 const curT = () => (A.curTarget !== undefined) ? A.curTarget : A.cur;
 document.getElementById("prev").onclick = () => { stop(); setFrameAll(curT() - 1); };
 document.getElementById("next").onclick = () => { stop(); setFrameAll(curT() + 1); };
 document.getElementById("slider").oninput = e => { stop(); setFrameAll(+e.target.value); };
 addEventListener("keydown", e => {
-  if(capturing)return;
+  if(capturing||/INPUT|SELECT|TEXTAREA|BUTTON/.test(e.target.tagName))return;
   if (e.key === " ") { e.preventDefault(); playBtn.click(); }
   if (e.key === "ArrowLeft") { stop(); setFrameAll(curT() - 1); }
   if (e.key === "ArrowRight") { stop(); setFrameAll(curT() + 1); }
@@ -795,6 +802,13 @@ document.getElementById("qSpin").onchange = e => { spin = e.target.checked; };
 qScale.onchange = () => { [A, B].forEach(p => { if (p) { p.lastW = 0; } }); };
 
 // -------------------------------------------------------------- main loop
+function fitPane(p) {
+  const center=new THREE.Vector3(7,0,0),direction=p.cam.position.clone().sub(p.ctrl.target).normalize();
+  const vertical=THREE.MathUtils.degToRad(p.cam.fov/2),half=Math.atan(Math.tan(vertical)*Math.min(1,p.cam.aspect));
+  const distance=13/Math.sin(half);
+  p.ctrl.target.copy(center);p.cam.position.copy(center).addScaledVector(direction,distance);
+  p.scene.fog.near=distance+8;p.scene.fog.far=distance+70;p.ctrl.update();
+}
 function resizePane(p) {
   const w = p.cv.clientWidth, h = p.cv.clientHeight;
   if (w === p.lastW && h === p.lastH) return;
@@ -802,6 +816,7 @@ function resizePane(p) {
   const dpr = Math.min(+qScale.value || 2, window.devicePixelRatio || 1, 3);
   p.ren.setPixelRatio(dpr); p.ren.setSize(w, h, false);
   p.cam.aspect = w / Math.max(h, 1); p.cam.updateProjectionMatrix();
+  if(!p.initialFit){p.initialFit=true;if(w<600)fitPane(p);}
 }
 let fCount = 0, fLast = performance.now();
 function loop(now) {
@@ -863,6 +878,8 @@ async function capture3d(kind){if(capturing)return;if(!A.frames.length||[A,...(B
  }catch(e){if(rec&&rec.state!=='inactive')rec.stop();captureStatus.textContent='Capture unavailable: '+e.message;}
  finally{if(stream)stream.getTracks().forEach(t=>t.stop());if(rig)rig.dispose();saved.forEach(([e,d])=>e.disabled=d);[A,B].forEach(p=>{if(p)p.ctrl.enabled=true;});capturing=false;}
 }
+document.getElementById('fitView').onclick=()=>[A,B].forEach(p=>{if(p)fitPane(p);});
+document.getElementById('viewerShare').onclick=async()=>{const u=new URL(location);u.searchParams.set('run',A.id);if(B?.id)u.searchParams.set('vs',B.id);try{await navigator.clipboard.writeText(u.href);captureStatus.textContent='Link copied with the selected runs.';}catch{captureStatus.textContent=u.href;}};
 document.getElementById('save3d').onclick=()=>capture3d('png');document.getElementById('orbitVideo').onclick=()=>capture3d('orbit');document.getElementById('evolutionVideo').onclick=()=>capture3d('evolution');
 
 // ----------------------------------------------------------------- startup

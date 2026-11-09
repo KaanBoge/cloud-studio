@@ -59,7 +59,7 @@ for id,label,c,raw in apk:
     note=f"Modified tracer/flux correction; {j['global_first_order_fallback_stages']} global first-order fallback stages. "
     note+='Cooling layer under-resolved. ' if j.get('cooling')=='tabular' else ''
     note+='HLLC/PPM cooling-on and off have different correction-source histories.' if 'hllc' in id else 'HLLE/PLM controls retained separately.'
-    add(id,label,j.get('chi',100),'apk',c/'validation_result.json',raw,note=note,cooling=j.get('cooling','none'))
+    add(id,label,j.get('chi',100),'apk',c/'validation_result.json',raw,note=note,cooling=('tabular' if id.endswith('-on') else j.get('cooling','none')))
 
 def project(run,i,row):
     fmt=run['fmt'];root=run['raw'];j=run['receipt_data'];chi=run['chi'];files=[]

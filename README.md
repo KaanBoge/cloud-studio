@@ -127,3 +127,18 @@ The grant is scoped in [LICENSING.md](LICENSING.md). Third party simulation code
 [Open the paper simulation gallery](https://KaanBoge.github.io/cloud-studio/recent.html?run=enzo-1000): 16 completed runs with edge-on and face-on projections, synchronized comparison, 1920 × 1080 PNG export, and browser video recording. Each sequence samples 11 real saved states through 5 cloud-crushing times. See [projection provenance](analysis/recent_gallery_README.txt) for method and comparison limits.
 
 The [rotatable 3D viewer](https://kaanboge.github.io/cloud-studio/viewer.html?run=new_enzo-1000) now includes the same 16 new runs, smooth surfaces, edge-on/face-on camera presets, PNG export, orbit recording and saved-state evolution recording. Each new run uses 21 sampled native states; smoothing is display-only. [3D visualization method](analysis/recent_3d_README.txt).
+# Cloud Studio library refresh
+
+The home page now brings all available display collections together with search,
+code/contrast/level/physics filters, favorites, image browsing and a film player.
+Use [the library](https://kaanboge.github.io/cloud-studio/),
+[3D studio](https://kaanboge.github.io/cloud-studio/viewer.html), or
+[projection comparison](https://kaanboge.github.io/cloud-studio/recent.html).
+The previous interface remains available at `archive.html`.
+
+The library contains 197 3D entries, including 17 recent bounded results, and
+476 video files/variants. These are display counts, not distinct scientifically
+validated simulations. Recent films are 1080p exports of real saved states;
+30 fps packaging does not imply additional simulation snapshots. Historical and
+partial runs keep their limitations. See `analysis/studio_refresh_README.md` for
+the media and catalog build details.

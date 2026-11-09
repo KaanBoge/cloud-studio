@@ -1,0 +1,350 @@
+{
+  "new_films": [
+    {
+      "file": "assets\\films\\enzo-1000-edge.mp4",
+      "states": 11,
+      "duration_seconds": 22,
+      "width": 1920,
+      "height": 1080,
+      "container_fps": 30,
+      "interpolated_motion": false,
+      "bytes": 483494
+    },
+    {
+      "file": "assets\\films\\enzo-1000-face.mp4",
+      "states": 11,
+      "duration_seconds": 22,
+      "width": 1920,
+      "height": 1080,
+      "container_fps": 30,
+      "interpolated_motion": false,
+      "bytes": 302910
+    },
+    {
+      "file": "assets\\films\\enzo-10-edge.mp4",
+      "states": 11,
+      "duration_seconds": 22,
+      "width": 1920,
+      "height": 1080,
+      "container_fps": 30,
+      "interpolated_motion": false,
+      "bytes": 251306
+    },
+    {
+      "file": "assets\\films\\enzo-10-face.mp4",
+      "states": 11,
+      "duration_seconds": 22,
+      "width": 1920,
+      "height": 1080,
+      "container_fps": 30,
+      "interpolated_motion": false,
+      "bytes": 172433
+    },
+    {
+      "file": "assets\\films\\enzoe-10-edge.mp4",
+      "states": 11,
+      "duration_seconds": 22,
+      "width": 1920,
+      "height": 1080,
+      "container_fps": 30,
+      "interpolated_motion": false,
+      "bytes": 250712
+    },
+    {
+      "file": "assets\\films\\enzoe-10-face.mp4",
+      "states": 11,
+      "duration_seconds": 22,
+      "width": 1920,
+      "height": 1080,
+      "container_fps": 30,
+      "interpolated_motion": false,
+      "bytes": 171696
+    },
+    {
+      "file": "assets\\films\\enzoe-1000-edge.mp4",
+      "states": 11,
+      "duration_seconds": 22,
+      "width": 1920,
+      "height": 1080,
+      "container_fps": 30,
+      "interpolated_motion": false,
+      "bytes": 453703
+    },
+    {
+      "file": "assets\\films\\enzoe-1000-face.mp4",
+      "states": 11,
+      "duration_seconds": 22,
+      "width": 1920,
+      "height": 1080,
+      "container_fps": 30,
+      "interpolated_motion": false,
+      "bytes": 285350
+    },
+    {
+      "file": "assets\\films\\athpp-10-edge.mp4",
+      "states": 11,
+      "duration_seconds": 22,
+      "width": 1920,
+      "height": 1080,
+      "container_fps": 30,
+      "interpolated_motion": false,
+      "bytes": 245700
+    },
+    {
+      "file": "assets\\films\\athpp-10-face.mp4",
+      "states": 11,
+      "duration_seconds": 22,
+      "width": 1920,
+      "height": 1080,
+      "container_fps": 30,
+      "interpolated_motion": false,
+      "bytes": 164980
+    },
+    {
+      "file": "assets\\films\\athpp-1000-edge.mp4",
+      "states": 11,
+      "duration_seconds": 22,
+      "width": 1920,
+      "height": 1080,
+      "container_fps": 30,
+      "interpolated_motion": false,
+      "bytes": 413713
+    },
+    {
+      "file": "assets\\films\\athpp-1000-face.mp4",
+      "states": 11,
+      "duration_seconds": 22,
+      "width": 1920,
+      "height": 1080,
+      "container_fps": 30,
+      "interpolated_motion": false,
+      "bytes": 296461
+    },
+    {
+      "file": "assets\\films\\mfm-sharp-edge.mp4",
+      "states": 11,
+      "duration_seconds": 22,
+      "width": 1920,
+      "height": 1080,
+      "container_fps": 30,
+      "interpolated_motion": false,
+      "bytes": 1697262
+    },
+    {
+      "file": "assets\\films\\mfm-sharp-face.mp4",
+      "states": 11,
+      "duration_seconds": 22,
+      "width": 1920,
+      "height": 1080,
+      "container_fps": 30,
+      "interpolated_motion": false,
+      "bytes": 852368
+    },
+    {
+      "file": "assets\\films\\mfm-historical-edge.mp4",
+      "states": 11,
+      "duration_seconds": 22,
+      "width": 1920,
+      "height": 1080,
+      "container_fps": 30,
+      "interpolated_motion": false,
+      "bytes": 1695042
+    },
+    {
+      "file": "assets\\films\\mfm-historical-face.mp4",
+      "states": 11,
+      "duration_seconds": 22,
+      "width": 1920,
+      "height": 1080,
+      "container_fps": 30,
+      "interpolated_motion": false,
+      "bytes": 847562
+    },
+    {
+      "file": "assets\\films\\mfv-sharp-edge.mp4",
+      "states": 11,
+      "duration_seconds": 22,
+      "width": 1920,
+      "height": 1080,
+      "container_fps": 30,
+      "interpolated_motion": false,
+      "bytes": 1524632
+    },
+    {
+      "file": "assets\\films\\mfv-sharp-face.mp4",
+      "states": 11,
+      "duration_seconds": 22,
+      "width": 1920,
+      "height": 1080,
+      "container_fps": 30,
+      "interpolated_motion": false,
+      "bytes": 773474
+    },
+    {
+      "file": "assets\\films\\mfv-historical-edge.mp4",
+      "states": 11,
+      "duration_seconds": 22,
+      "width": 1920,
+      "height": 1080,
+      "container_fps": 30,
+      "interpolated_motion": false,
+      "bytes": 1522349
+    },
+    {
+      "file": "assets\\films\\mfv-historical-face.mp4",
+      "states": 11,
+      "duration_seconds": 22,
+      "width": 1920,
+      "height": 1080,
+      "container_fps": 30,
+      "interpolated_motion": false,
+      "bytes": 772610
+    },
+    {
+      "file": "assets\\films\\apk-hlle-off-edge.mp4",
+      "states": 11,
+      "duration_seconds": 22,
+      "width": 1920,
+      "height": 1080,
+      "container_fps": 30,
+      "interpolated_motion": false,
+      "bytes": 343952
+    },
+    {
+      "file": "assets\\films\\apk-hlle-off-face.mp4",
+      "states": 11,
+      "duration_seconds": 22,
+      "width": 1920,
+      "height": 1080,
+      "container_fps": 30,
+      "interpolated_motion": false,
+      "bytes": 200793
+    },
+    {
+      "file": "assets\\films\\apk-hlle-on-edge.mp4",
+      "states": 11,
+      "duration_seconds": 22,
+      "width": 1920,
+      "height": 1080,
+      "container_fps": 30,
+      "interpolated_motion": false,
+      "bytes": 307691
+    },
+    {
+      "file": "assets\\films\\apk-hlle-on-face.mp4",
+      "states": 11,
+      "duration_seconds": 22,
+      "width": 1920,
+      "height": 1080,
+      "container_fps": 30,
+      "interpolated_motion": false,
+      "bytes": 165757
+    },
+    {
+      "file": "assets\\films\\apk-hlle-10-edge.mp4",
+      "states": 11,
+      "duration_seconds": 22,
+      "width": 1920,
+      "height": 1080,
+      "container_fps": 30,
+      "interpolated_motion": false,
+      "bytes": 247258
+    },
+    {
+      "file": "assets\\films\\apk-hlle-10-face.mp4",
+      "states": 11,
+      "duration_seconds": 22,
+      "width": 1920,
+      "height": 1080,
+      "container_fps": 30,
+      "interpolated_motion": false,
+      "bytes": 165813
+    },
+    {
+      "file": "assets\\films\\apk-hllc-off-edge.mp4",
+      "states": 11,
+      "duration_seconds": 22,
+      "width": 1920,
+      "height": 1080,
+      "container_fps": 30,
+      "interpolated_motion": false,
+      "bytes": 381224
+    },
+    {
+      "file": "assets\\films\\apk-hllc-off-face.mp4",
+      "states": 11,
+      "duration_seconds": 22,
+      "width": 1920,
+      "height": 1080,
+      "container_fps": 30,
+      "interpolated_motion": false,
+      "bytes": 229454
+    },
+    {
+      "file": "assets\\films\\apk-hllc-on-edge.mp4",
+      "states": 11,
+      "duration_seconds": 22,
+      "width": 1920,
+      "height": 1080,
+      "container_fps": 30,
+      "interpolated_motion": false,
+      "bytes": 334371
+    },
+    {
+      "file": "assets\\films\\apk-hllc-on-face.mp4",
+      "states": 11,
+      "duration_seconds": 22,
+      "width": 1920,
+      "height": 1080,
+      "container_fps": 30,
+      "interpolated_motion": false,
+      "bytes": 181208
+    },
+    {
+      "file": "assets\\films\\apk-hllc-10-edge.mp4",
+      "states": 11,
+      "duration_seconds": 22,
+      "width": 1920,
+      "height": 1080,
+      "container_fps": 30,
+      "interpolated_motion": false,
+      "bytes": 247509
+    },
+    {
+      "file": "assets\\films\\apk-hllc-10-face.mp4",
+      "states": 11,
+      "duration_seconds": 22,
+      "width": 1920,
+      "height": 1080,
+      "container_fps": 30,
+      "interpolated_motion": false,
+      "bytes": 174319
+    },
+    {
+      "file": "assets\\films\\apk-hllc-plm-off-edge.mp4",
+      "states": 11,
+      "duration_seconds": 22,
+      "width": 1920,
+      "height": 1080,
+      "container_fps": 30,
+      "interpolated_motion": false,
+      "bytes": 354507
+    },
+    {
+      "file": "assets\\films\\apk-hllc-plm-off-face.mp4",
+      "states": 11,
+      "duration_seconds": 22,
+      "width": 1920,
+      "height": 1080,
+      "container_fps": 30,
+      "interpolated_motion": false,
+      "bytes": 213134
+    }
+  ],
+  "legacy_films_checked": 442,
+  "legacy_losslessly_remuxed_this_pass": 267,
+  "legacy_streams_preserved_except_empty_repair": true,
+  "repaired_empty_variant": "flash3d_chi100_lref6_smooth.mp4: rebuilt from original, 30fps held frames; invalid 261-byte source preserved",
+  "unchanged_encoded_payloads_verified": 441,
+  "legacy_remuxed_total": 441
+}
