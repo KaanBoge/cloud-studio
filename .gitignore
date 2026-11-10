@@ -1,0 +1,3 @@
+# Display derivatives are published on the media-60fps branch to keep Pages small.
+/assets/smooth60/
+/analysis/__pycache__/

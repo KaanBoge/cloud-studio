@@ -124,9 +124,9 @@ The grant is scoped in [LICENSING.md](LICENSING.md). Third party simulation code
 
 ## New simulation capture gallery
 
-[Open the paper simulation gallery](https://KaanBoge.github.io/cloud-studio/recent.html?run=enzo-1000): 16 completed runs with edge-on and face-on projections, synchronized comparison, 1920 × 1080 PNG export, and browser video recording. Each sequence samples 11 real saved states through 5 cloud-crushing times. See [projection provenance](analysis/recent_gallery_README.txt) for method and comparison limits.
+[Open the paper simulation gallery](https://KaanBoge.github.io/cloud-studio/recent.html?run=enzo-1000): 17 completed runs with edge-on and face-on projections, synchronized comparison, 1920 × 1080 PNG export, and browser video recording. Each sequence samples 11 real saved states through 5 cloud-crushing times. See [projection provenance](analysis/recent_gallery_README.txt) for method and comparison limits.
 
-The [rotatable 3D viewer](https://kaanboge.github.io/cloud-studio/viewer.html?run=new_enzo-1000) now includes the same 16 new runs, smooth surfaces, edge-on/face-on camera presets, PNG export, orbit recording and saved-state evolution recording. Each new run uses 21 sampled native states; smoothing is display-only. [3D visualization method](analysis/recent_3d_README.txt).
+The [rotatable 3D viewer](https://kaanboge.github.io/cloud-studio/viewer.html?run=new_enzo-1000) now includes the same 17 new runs, smooth surfaces, edge-on/face-on camera presets, PNG export, orbit recording and saved-state evolution recording. Each new run uses 21 sampled native states; smoothing is display-only. [3D visualization method](analysis/recent_3d_README.txt).
 # Cloud Studio library refresh
 
 The home page now brings all available display collections together with search,
@@ -142,3 +142,21 @@ validated simulations. Recent films are 1080p exports of real saved states;
 30 fps packaging does not imply additional simulation snapshots. Historical and
 partial runs keep their limitations. See `analysis/studio_refresh_README.md` for
 the media and catalog build details.
+
+## Smooth playback
+
+Every one of the 476 source movies has a separate 60 fps blended preview.
+The library offers both versions; originals, scientific fields and timings remain
+unchanged. These crossfades are visual transitions, not extra simulated states.
+The projection and 3D studios offer optional smooth transitions, with browser
+capture targeting 60 fps. Actual interactive/capture performance depends on the
+device; paused views and PNG export use saved states.
+
+Videos remain silent: the saved outputs do not establish a physical soundtrack.
+Data sonification would be a chosen mapping, not an accurate sound recording.
+
+Previews are served from a pinned commit on the `media-60fps` branch so the
+existing Pages site retains its size headroom. `data/smooth60.json` binds each
+original movie to its derivative; `analysis/smooth60_receipt.json` records frame
+rate, extent, duration and source hashes. Local previews use `assets/smooth60/`,
+which is excluded from the main branch.

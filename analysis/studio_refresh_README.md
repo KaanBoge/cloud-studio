@@ -36,3 +36,23 @@ shareable film links, compact/card layouts, and explicit load-more pagination.
 Films have rate, loop, picture-in-picture and download controls. Recent comparison
 links preserve the selected runs, projection and sampled time. The 3D viewer has
 search, playback-rate selection and safer keyboard handling in form controls.
+
+
+## 60 fps display previews
+
+`build_60fps.py` creates separate H.264 previews with blended transitions.
+Recent movies sample their eleven known two-second state boundaries. Legacy
+movies blend existing rendered frames. This is not a numerical interpolation
+of the fluid or a new solver result. `fix_60fps_labels.py` replaces the blended
+lettering on recent movies with clear approximate times derived from the saved
+timestamps. Originals are preserved.
+
+Every preview is checked for 60 fps sample timing, unchanged dimensions and
+duration. Browser capture targets 60 fps but can drop frames under load.
+`package_60fps.py` builds a separate media-only Git branch and pins its commit
+in the website manifest, keeping the Pages artifact below its size limit.
+Run the build, label correction and packaging in that order. Push media-60fps
+before publishing main. The local media directory is intentionally ignored.
+
+No sonification was added because these saved outputs do not establish a
+physically accurate audible signal or a real-world listening geometry/time scale.

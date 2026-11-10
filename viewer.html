@@ -99,7 +99,7 @@
   <div class="lbl">Recent results</div>
   <select id="recentSelect" aria-label="New completed simulation" style="width:100%"><option value="">Choose a new run</option></select>
   <p id="viewNote" style="font-size:11px;color:var(--mut)"></p>
-  <label class="chk"><input type="checkbox" id="smooth3d" checked> smooth surfaces</label>
+  <label class="chk"><input type="checkbox" id="smoothTime3d" checked> Smooth transitions · 60 fps target</label><p class="viewer-notes">Smooth mode crossfades saved surfaces; it does not calculate intermediate fluid states. PNGs and paused views use saved states.</p><label class="chk"><input type="checkbox" id="smooth3d" checked> smooth surfaces</label>
   <p><a class="back" id="projectionLink" href="recent.html">Density projections and images ↗</a></p>
   <div class="lbl">Overdensity</div>
   <div class="chips" id="chiChips">
@@ -288,6 +288,7 @@ function makePane(cv) {
 }
 
 function clearPane(p) {
+  finishFade(p);
   p.loadToken=(p.loadToken||0)+1;
   p.root.traverse(o => { if (o.geometry) o.geometry.dispose(); if (o.material) o.material.dispose(); });
   p.scene.remove(p.root);
@@ -359,7 +360,7 @@ async function denseFetch(p, i) {
     d.order.push(i);
     while (d.order.length > 28) {                    // LRU: bound GPU memory
       const ev = d.order.shift();
-      if (ev === p.cur || ev === i) { d.order.push(ev); break; }
+      if (ev === p.cur || ev === i || ev === p.fade?.fromIndex) { d.order.push(ev); break; }
       const g = d.cache.get(ev);
       if (g) {
         if (g.parent) g.parent.remove(g);
@@ -373,6 +374,24 @@ async function denseFetch(p, i) {
   d.pending.set(i, guarded);
   return guarded;
 }
+const fadeMaterialState=new WeakMap();
+function fadeWeight(group,weight){
+  group.traverse(o=>{if(!o.material)return;const m=o.material;if(!fadeMaterialState.has(m))fadeMaterialState.set(m,{opacity:m.opacity,transparent:m.transparent,depthWrite:m.depthWrite});
+    const original=fadeMaterialState.get(m);m.opacity=original.opacity*weight;const transparent=weight<1||original.transparent,depthWrite=weight<1?false:original.depthWrite;const changed=m.transparent!==transparent||m.depthWrite!==depthWrite;m.transparent=transparent;m.depthWrite=depthWrite;if(changed)m.needsUpdate=true;
+  });
+}
+function finishFade(p){
+  if(!p?.fade)return;const f=p.fade;fadeWeight(f.from,1);fadeWeight(f.to,1);
+  if(p.dense&&f.from.parent)p.root.remove(f.from);else f.from.visible=false;
+  f.to.visible=true;p.fade=null;updateDisplayedTimes();
+}
+function beginFade(p,from,to,fromIndex){
+  finishFade(p);if(!from||from===to)return;
+  if(!document.getElementById('smoothTime3d').checked||!(timer||p.captureFade)){if(p.dense&&from.parent)p.root.remove(from);else from.visible=false;return;}
+  from.visible=true;to.visible=true;fadeWeight(from,1);fadeWeight(to,0);
+  p.fade={from,to,fromIndex,start:performance.now(),duration:p.captureFade?300:Math.max(60,(recent3D[p.id]?260:80)/Number(document.getElementById('playSpeed').value))};
+}
+function advanceFade(p,now){if(!p?.fade)return;const f=p.fade,t=Math.min(1,(now-f.start)/f.duration);fadeWeight(f.from,1-t);fadeWeight(f.to,t);if(t>=1)finishFade(p);}
 async function denseShow(p, i) {
   const d = p.dense;
   i = Math.max(0, Math.min(d.index.frames.length - 1, i));
@@ -383,8 +402,9 @@ async function denseShow(p, i) {
     return;
   }
   if (p.dense !== d || token !== d.token) return; // obsolete run or newer scrub
-  if (d.shown && d.shown.parent) p.root.remove(d.shown);
-  p.root.add(grp);
+  const previous=d.shown,previousIndex=p.cur;
+  finishFade(p);p.root.add(grp);
+  beginFade(p,previous,grp,previousIndex);
   grp.children.forEach(m => { if (shellOn.length) m.visible = shellOn[m.userData.shell] !== false; });
   d.shown = grp; p.cur = i;p.frameError=false;
   p.tris = (d.index.tris && d.index.tris[i]) ?? 0;
@@ -433,7 +453,7 @@ async function loadRun(p, id, titleEl) {
         else if (titleEl) titleEl.innerHTML = "<b>" + mt.code + "</b> &middot; &chi; = " + mt.chi +
           " &middot; level " + mt.lvl + " &middot; " + index.frames.length + " frames";
         buildShellTogglesDense();
-        document.getElementById("viewNote").textContent = recent3D[id] ? recent3D[id].note + " Display-only smoothing: σ=0.8 native cells; 21 saved states; no temporal interpolation." : "Historical visualization; see the recorded run configuration.";
+        document.getElementById("viewNote").textContent = recent3D[id] ? recent3D[id].note + " Display-only smoothing: σ=0.8 native cells; 21 saved states. Optional crossfades are display-only." : "Historical visualization; see the recorded run configuration.";
         await denseShow(p, recent3D[id] ? index.frames.length-1 : 0);
         if(p.loadToken!==loadToken)return;
         setFrameAll(recent3D[id] ? index.frames.length-1 : 0);
@@ -511,8 +531,9 @@ function setFrame(p, i) {
   if (!p) return;
   if (p.dense) { denseShow(p, i); return; }
   if (!p.frames.length) return;
-  p.frames[p.cur].visible = false;
+  const previousIndex=p.cur,previous=p.frames[p.cur];finishFade(p);
   p.cur = Math.max(0, Math.min(p.frames.length - 1, i));
+  beginFade(p,previous,p.frames[p.cur],previousIndex);
   p.frames[p.cur].visible = true;
   p.frames[p.cur].children.forEach(m => {
     if (shellOn.length) m.visible = shellOn[m.userData.shell] !== false;
@@ -545,7 +566,7 @@ function updateDisplayedTimes() {
     const shown=!p.dense || p.dense.shown;
     const t=shown?p.times[p.cur]:null;
     const status=p.frameError?' (frame unavailable)':(p.cur!==p.curTarget||!shown)?' (loading…)':'';
-    const text=t!==null?'t = '+Number(t).toFixed(3)+' t_cc'+status:'loading frame…';
+    const text=t!==null?(p.fade?'Blend → ':'')+'t = '+Number(t).toFixed(3)+' t_cc'+status:'loading frame…';
     label.textContent=' · '+text;
     if(p===A)document.getElementById('tlab').textContent=text;
   }
@@ -768,7 +789,7 @@ function drawChart() {
 // ---------------------------------------------------------------- playback
 let timer = null;
 const playBtn = document.getElementById("play");
-function stop() { if (timer) { clearInterval(timer); timer = null; playBtn.innerHTML = "&#9654;"; } }
+function stop() { [A,B].forEach(p=>finishFade(p)); if (timer) { clearInterval(timer); timer = null; playBtn.innerHTML = "&#9654;"; } }
 playBtn.onclick = () => {
   if (timer) return stop();
   playBtn.innerHTML = "&#10074;&#10074;";
@@ -824,7 +845,7 @@ function loop(now) {
   const link = document.getElementById("cmpLink").checked;
   [A, B].forEach(p => {
     if (!p || !p.cv.offsetParent) return;
-    resizePane(p);
+    resizePane(p);advanceFade(p,now);
     p.ctrl.autoRotate = spin; p.ctrl.autoRotateSpeed = 0.8;
     p.ctrl.update();
   });
@@ -843,6 +864,8 @@ function loop(now) {
 requestAnimationFrame(loop);
 
 // New-run access, camera presets and local-only capture. Raw output is never altered.
+document.getElementById('smoothTime3d').checked=!matchMedia('(prefers-reduced-motion: reduce)').matches;
+document.getElementById('smoothTime3d').onchange=()=>[A,B].forEach(p=>finishFade(p));
 const recentSelect=document.getElementById('recentSelect');
 Object.entries(recent3D).forEach(([id,m])=>{const o=new Option(m.label,id);recentSelect.add(o);});
 recentSelect.onchange=()=>{if(!recentSelect.value)return;stop();const id=recentSelect.value;loadRun(A,id,document.getElementById('titleA'));history.replaceState(null,'','?run='+encodeURIComponent(id));document.getElementById('projectionLink').href='recent.html?run='+recent3D[id].projection_id;if(innerWidth<850)document.getElementById('sideHide').click();};
@@ -862,21 +885,21 @@ function captureRig(){const cv=document.createElement('canvas');cv.width=1920;cv
  return {canvas:cv,ren,draw(angle=0,mode='Saved density isosurfaces'){
   const panes=[A,...(B&&B.id&&document.getElementById('cmpOn').checked?[B]:[])],w=cv.width/panes.length;
   c.fillStyle='#0a0d16';c.fillRect(0,0,cv.width,cv.height);
-  panes.forEach((p,i)=>{const cam=p.cam.clone();cam.aspect=w/1000;cam.updateProjectionMatrix();if(angle){cam.position.sub(p.ctrl.target).applyAxisAngle(cam.up.clone().normalize(),angle).add(p.ctrl.target);cam.lookAt(p.ctrl.target);}ren.setSize(w,1000,false);ren.render(p.scene,cam);c.drawImage(ren.domElement,i*w,45);c.fillStyle='#edf2fb';c.font='23px system-ui';c.fillText((recent3D[p.id]?.label||meta(p.id).code)+' · t/tcc = '+Number(p.times[p.cur]).toFixed(3),i*w+22,32);});
+  panes.forEach((p,i)=>{const cam=p.cam.clone();cam.aspect=w/1000;cam.updateProjectionMatrix();if(angle){cam.position.sub(p.ctrl.target).applyAxisAngle(cam.up.clone().normalize(),angle).add(p.ctrl.target);cam.lookAt(p.ctrl.target);}ren.setSize(w,1000,false);ren.render(p.scene,cam);c.drawImage(ren.domElement,i*w,45);c.fillStyle='#edf2fb';c.font='23px system-ui';c.fillText((recent3D[p.id]?.label||meta(p.id).code)+(p.fade?' · blend → t/tcc = ':' · t/tcc = ')+Number(p.times[p.cur]).toFixed(3),i*w+22,32);});
   c.font='18px system-ui';c.fillStyle='#abb8cf';c.fillText(mode+' · Cloud Crushing Studio · Kaan Boge',22,1068);
  },dispose(){ren.dispose();ren.forceContextLoss();}};}
 async function waitFrame(p,i){if(p.dense){await denseShow(p,i);if(p.frameError||p.cur!==i)throw new Error('A saved frame could not load');}else setFrame(p,i);}
 async function capture3d(kind){if(capturing)return;if(!A.frames.length||[A,...(B&&B.id?[B]:[])].some(p=>p.dense&&(!p.dense.shown||p.frameError||p.cur!==p.curTarget))){captureStatus.textContent='Wait for the selected saved frame to finish loading.';return;}capturing=true;stop();let rig,rec,stream;const saved=[...document.querySelectorAll('button,select,input')].map(e=>[e,e.disabled]);saved.forEach(([e])=>e.disabled=true);[A,B].forEach(p=>{if(p)p.ctrl.enabled=false;});
  try{rig=captureRig();rig.draw();const name=(A.id||'cloud')+(B&&B.id?'_vs_'+B.id:'');
   if(kind==='png'){const blob=await new Promise(r=>rig.canvas.toBlob(r,'image/png'));if(!blob)throw new Error('PNG encoding failed');captureDownload(blob,name+'-3d.png');captureStatus.textContent='1920 × 1080 PNG saved.';return;}
-  const mime=['video/webm;codecs=vp9','video/webm;codecs=vp8','video/mp4'].find(t=>window.MediaRecorder&&MediaRecorder.isTypeSupported(t));if(!mime)throw new Error('This browser does not support video recording');
+  const mime=['video/mp4','video/webm;codecs=vp9','video/webm;codecs=vp8'].find(t=>window.MediaRecorder&&MediaRecorder.isTypeSupported(t));if(!mime)throw new Error('This browser does not support video recording');
   if(kind==='evolution'){A.curTarget=0;await waitFrame(A,0);if(B&&B.id){B.curTarget=0;await waitFrame(B,0);}rig.draw(0,'Saved time sequence · no interpolated fluid motion');}
-  stream=rig.canvas.captureStream(30);rec=new MediaRecorder(stream,{mimeType:mime,videoBitsPerSecond:8000000});const chunks=[];rec.ondataavailable=e=>{if(e.data.size)chunks.push(e.data);};const done=new Promise((r,j)=>{rec.onstop=r;rec.onerror=e=>j(e.error||new Error('Video encoding failed'));});rec.start();
-  if(kind==='orbit'){const start=performance.now();while(performance.now()-start<10000){rig.draw((performance.now()-start)/10000*Math.PI*2,'Camera orbit · one real saved state');captureStatus.textContent='Recording 10-second camera orbit…';await new Promise(r=>setTimeout(r,33));}}
-  else {for(let i=0;i<A.frames.length;i++){A.curTarget=i;await waitFrame(A,i);if(B&&B.id&&B.frames.length){const t=Number(A.times[i]);let bi=0;B.times.forEach((bt,k)=>{if(Math.abs(Number(bt)-t)<Math.abs(Number(B.times[bi])-t))bi=k;});B.curTarget=bi;await waitFrame(B,bi);}document.getElementById('slider').value=i;rig.draw(0,'Saved time sequence · no interpolated fluid motion');captureStatus.textContent='Recording saved frame '+(i+1)+' / '+A.frames.length+'…';await new Promise(r=>setTimeout(r,recent3D[A.id]?350:100));}}
+  stream=rig.canvas.captureStream(60);rec=new MediaRecorder(stream,{mimeType:mime,videoBitsPerSecond:12000000});const chunks=[];rec.ondataavailable=e=>{if(e.data.size)chunks.push(e.data);};const done=new Promise((r,j)=>{rec.onstop=r;rec.onerror=e=>j(e.error||new Error('Video encoding failed'));});rec.start();
+  if(kind==='orbit'){const start=performance.now();while(performance.now()-start<10000){rig.draw((performance.now()-start)/10000*Math.PI*2,'Camera orbit · one real saved state');captureStatus.textContent='Recording 10-second camera orbit…';await new Promise(requestAnimationFrame);}}
+  else {for(let i=0;i<A.frames.length;i++){[A,B].forEach(p=>{if(p)p.captureFade=i>0;});A.curTarget=i;await waitFrame(A,i);if(B&&B.id&&B.frames.length){const t=Number(A.times[i]);let bi=0;B.times.forEach((bt,k)=>{if(Math.abs(Number(bt)-t)<Math.abs(Number(B.times[bi])-t))bi=k;});B.curTarget=bi;await waitFrame(B,bi);}document.getElementById('slider').value=i;rig.draw(0,'Saved time sequence · no interpolated fluid motion');captureStatus.textContent='Recording saved frame '+(i+1)+' / '+A.frames.length+'…';await new Promise(resolve=>{const start=performance.now(),span=recent3D[A.id]?350:320;function recordStep(now){[A,B].forEach(p=>advanceFade(p,now));rig.draw(0,document.getElementById('smoothTime3d').checked?'Blended surface preview - not additional physical states':'Discrete saved states');if(now-start<span)requestAnimationFrame(recordStep);else resolve();}requestAnimationFrame(recordStep);});}}
   rec.stop();await done;const blob=new Blob(chunks,{type:mime});if(!blob.size)throw new Error('Empty recording');captureDownload(blob,name+'-'+kind+(mime.startsWith('video/mp4')?'.mp4':'.webm'));captureStatus.textContent='Video saved.';
  }catch(e){if(rec&&rec.state!=='inactive')rec.stop();captureStatus.textContent='Capture unavailable: '+e.message;}
- finally{if(stream)stream.getTracks().forEach(t=>t.stop());if(rig)rig.dispose();saved.forEach(([e,d])=>e.disabled=d);[A,B].forEach(p=>{if(p)p.ctrl.enabled=true;});capturing=false;}
+ finally{if(stream)stream.getTracks().forEach(t=>t.stop());if(rig)rig.dispose();saved.forEach(([e,d])=>e.disabled=d);[A,B].forEach(p=>{if(p){p.ctrl.enabled=true;p.captureFade=false;finishFade(p);}});capturing=false;}
 }
 document.getElementById('fitView').onclick=()=>[A,B].forEach(p=>{if(p)fitPane(p);});
 document.getElementById('viewerShare').onclick=async()=>{const u=new URL(location);u.searchParams.set('run',A.id);if(B?.id)u.searchParams.set('vs',B.id);try{await navigator.clipboard.writeText(u.href);captureStatus.textContent='Link copied with the selected runs.';}catch{captureStatus.textContent=u.href;}};

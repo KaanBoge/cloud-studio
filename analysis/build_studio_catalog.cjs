@@ -40,6 +40,8 @@ for(const g of ctx.STUDIO_GALLERY){
  const preview=g.files.find(f=>/Slice|slice|dens|proj/i.test(f))||g.files[0];
  entries.push({id:'gallery_'+g.dir.split('/').pop(),label:g.tag.replaceAll('_',' '),code:family(g.code==='ramses'?'RAMSES':g.code),chi:g.chi||null,level:null,physics:'unknown',kind:'image',status:'Historical image set',poster:g.dir+'/'+preview,images:g.files.map(f=>g.dir+'/'+f),note:g.kind,projection:'archive.html#gallery'});
 }
-const out={schema:'cloud-studio-library/1',description:'Display entries, not a count of independently validated simulations. Existing variants and partial runs are preserved.',counts:{runs:ctx.viewerEntries.length,codes:new Set(ctx.viewerEntries.map(m=>family(m.code))).size,films:[...movies.values()].reduce((n,v)=>n+v.length,0)+recent.length*2},entries};
+const smooth=fs.existsSync('data/smooth60.json')?JSON.parse(read('data/smooth60.json')):{};
+for(const r of entries){if(!r.variants)continue;const previews=r.variants.filter(v=>smooth[v.src]).map(v=>({src:smooth[v.src].src,localSrc:smooth[v.src].localSrc,label:'60 fps blended · '+v.label,poster:v.poster,interpolated:true,originalSource:v.src}));r.variants=[...previews,...r.variants.map(v=>({...v,label:previews.length?'Original · '+v.label:v.label}))];}
+const out={schema:'cloud-studio-library/1',description:'Display entries, not a count of independently validated simulations. Existing variants and partial runs are preserved. Smooth 60 fps previews are visualization blends, not extra physical outputs.',counts:{runs:ctx.viewerEntries.length,codes:new Set(ctx.viewerEntries.map(m=>family(m.code))).size,films:entries.reduce((n,r)=>n+(r.variants?.length||0),0)},entries};
 fs.writeFileSync('data/studio-catalog.json',JSON.stringify(out));
 console.log(JSON.stringify({entries:entries.length,...out.counts}));
