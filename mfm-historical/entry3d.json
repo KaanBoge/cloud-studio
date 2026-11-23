@@ -1,0 +1,1 @@
+{"label":"GIZMO MFM · χ 100 · level 5 · smooth velocity profile","code":"GIZMO MFM","chi":100,"lvl":5,"frames":101,"note":"Meshless finite mass method in a box that is periodic on all faces. The wind starts with a smooth tanh velocity profile around the cloud.","projection_id":"mfm-historical"}
