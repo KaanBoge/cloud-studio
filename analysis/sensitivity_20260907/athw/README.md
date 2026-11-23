@@ -44,14 +44,14 @@ The first Linux-detached launch failed during the Windows backing-disk check,
 before starting a run: its parent WSL interoperability endpoint had exited.
 That failure and its log were retained. Use the Windows-owned launcher instead:
 `launch_windows.ps1`. It holds the WSL process for the lifetime of the queue.
-The old `launch.py`, `/home/kaan/sensitivity_20260907/athw/worker.json` and
+The old `launch.py`, `/home/user/sensitivity_20260907/athw/worker.json` and
 `worker.log` are evidence of that failed launch, not the active worker.
 
 Completed launch record and logs are in this Windows directory:
 `worker_windows.json`, `worker_windows.log`, `worker_windows.err.log`.
-Native current status: `/home/kaan/sensitivity_20260907/athw/current.json`.
-Native aggregate status: `/home/kaan/sensitivity_20260907/athw/batch.json`.
-Native outputs: `/home/kaan/sensitivity_20260907/athw/runs`.
+Native current status: `/home/user/sensitivity_20260907/athw/current.json`.
+Native aggregate status: `/home/user/sensitivity_20260907/athw/batch.json`.
+Native outputs: `/home/user/sensitivity_20260907/athw/runs`.
 Inspect actual process command lines and logs before any relaunch. Existing
 complete cases are skipped; partial cases require review and are never silently
 restarted at t=0. Restart files are retained but checkpoint resume has not been

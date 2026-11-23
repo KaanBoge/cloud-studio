@@ -74,8 +74,8 @@ The guarded launcher and current profiles are in
 `--run` is explicitly supplied. Three new L5 CPU and three new L6 GPU input directories
 are prepared, not completed:
 
-    /home/kaan/codes/athenapp/runs/OPTLTO_sharp13_20260907_L5_chi{10,100,1000}
-    /home/kaan/codes/athenapk/runs/OPTIO1_sharp13_20260907_L6_chi{10,100,1000}
+    /home/user/codes/athenapp/runs/OPTLTO_sharp13_20260907_L5_chi{10,100,1000}
+    /home/user/codes/athenapk/runs/OPTIO1_sharp13_20260907_L6_chi{10,100,1000}
 
 The earlier `OPT_...` directories remain intact. The run ID changes so new output
 cannot overwrite old data. The production target remains 101 actual snapshot
@@ -84,7 +84,7 @@ target was achieved. Checkpoint compression remains unchanged. No frames were
 thinned, repeated or interpolated by this optimization.
 
 The conservative L6 retention reservation is still about 236 GiB. The benchmark
-files are retained under `/home/kaan/performance_20260907b/runs`; this experiment
+files are retained under `/home/user/performance_20260907b/runs`; this experiment
 did not free space by deleting scientific data or treating viewer meshes as backups.
 
 ## Reproduce or inspect

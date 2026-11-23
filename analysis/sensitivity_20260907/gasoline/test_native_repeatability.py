@@ -8,7 +8,7 @@ from pathlib import Path
 import shutil
 import sys
 
-ROOT=Path('/home/kaan/sensitivity_20260907/gasoline')
+ROOT=Path('/home/user/sensitivity_20260907/gasoline')
 sys.path.insert(0,str(ROOT/'runner_instrumentation_v1'))
 import gasoline_controls as g
 

@@ -5,7 +5,7 @@ from pathlib import Path
 import statistics
 
 here=Path(__file__).resolve().parent
-root=Path('/home/kaan/performance_20260907')
+root=Path('/home/user/performance_20260907')
 bench=root/'benchmarks_v3'
 rows={f.parent.name:json.loads(f.read_text()) for f in bench.glob('*/result.json')}
 reg=json.loads((here/'field_regression.json').read_text())
@@ -44,7 +44,7 @@ for code,level,case,base in [('athpp',5,'native64_r16','base32_r8'),('athpp',6,'
        'code':code,'level':level,'binary':d['binary'],'binary_sha256':d['binary_sha256'],
        'ranks':d['ranks'],'block':d['block'],'benchmark_case':case,'regression':proof,
        'measured_native_output_bytes_per_cell':bpc,
-       'ic_proof_root':str(root/'ic_tests' if code=='athpp' else Path('/home/kaan/ic_audit_20260907/grid_tests')),
+       'ic_proof_root':str(root/'ic_tests' if code=='athpp' else Path('/home/user/ic_audit_20260907/grid_tests')),
        'production_validation':'pending; short tests are not a completed replacement run'}
 (here/'optimized_profiles.json').write_text(json.dumps(profiles,indent=2))
 for k in ('cpu_L5','cpu_L6','gpu_L5','gpu_L6'):

@@ -36,4 +36,4 @@ leaving the box. There is no all-material-retained terminal-image claim.
 No cooling or tracking is enabled. Full-state checkpoint cadence and noncycling
 retention were increased identically in both controls; precision and original
 plot fields were not reduced. L5 remains storage-held. Additional resolutions
-and Ryan's interpretation are needed before deciding on historical reuse.
+and their interpretation are needed before deciding on historical reuse.

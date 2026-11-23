@@ -8,7 +8,7 @@ levels. The blanket replacement campaign stays inactive.
 ## Fixed scope
 
 Use only the existing isolated repaired GIZMO MFV executable:
-`/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/repaired/GIZMO_repaired`.
+`/home/user/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/repaired/GIZMO_repaired`.
 SHA256: `4784336422c25db4714c6f56ef95337347f4be18dfd622e2b7e9acf7e1fe3d3c`.
 No new rebuild or change to the repair, original failed executable or
 completed L3 experiments. Read MFV_REPAIRED_PAIR_VALIDATION.md first.
@@ -82,7 +82,7 @@ If new raw is written directly on C:, review a separate MFV-specific
 Windows mount/capacity mapping. Gadget's successful mapping is evidence
 about the filesystem, not authorization to use its code-specific runner.
 Keep source/executable on ext4, write new raw only to a fresh validated
-directory under C:/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907,
+directory under C:/Users/user/CloudCrushing/native_runs/sensitivity_20260907,
 and verify independent Windows byte readback. Charge all new payload to
 C: plus a guest ancillary allowance charged to both guest and backing host.
 Require10GiB reserves on BOTH filesystems. Never count guest capacity as

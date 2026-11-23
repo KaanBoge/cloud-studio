@@ -6,24 +6,24 @@ import shutil
 import subprocess
 import sys
 import time
-sys.path.insert(0,'/mnt/c/Users/kaanb/CloudCrushing/sensitivity_20260907')
+sys.path.insert(0,'/mnt/c/Users/user/CloudCrushing/sensitivity_20260907')
 from build import sha
-sys.path.insert(0,'/home/kaan/verified_20260907')
+sys.path.insert(0,'/home/user/verified_20260907')
 from storage_guard import storage_snapshot,require_storage,GIB
-ROOT=Path('/home/kaan/sensitivity_20260907/flash')
-NATIVE=Path('/home/kaan/CloudCrushing/FLASH4.8')
+ROOT=Path('/home/user/sensitivity_20260907/flash')
+NATIVE=Path('/home/user/CloudCrushing/FLASH4.8')
 PROBLEM=NATIVE/'source/Simulation/SimulationMain/CloudCrush'
 UNIT=NATIVE/'source/Simulation/SimulationMain/CloudCrushSensitivity_20260908'
-STAGED=Path('/mnt/c/Users/kaanb/CloudCrushing/sensitivity_20260907/flash/source')
+STAGED=Path('/mnt/c/Users/user/CloudCrushing/sensitivity_20260907/flash/source')
 BUILD=NATIVE/'object_sensitivity_20260908'
 
 def main():
     locks=[]
     for name in ('benchmark.lock','production.lock'):
-        f=Path('/home/kaan/performance_20260907',name).open('a');fcntl.flock(f,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(f)
+        f=Path('/home/user/performance_20260907',name).open('a');fcntl.flock(f,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(f)
     ROOT.mkdir(exist_ok=False);require_storage(storage_snapshot(ROOT),2*GIB)
     if BUILD.exists() or UNIT.exists():raise ValueError('Isolated unit/build already exists')
-    historical=Path('/mnt/c/Users/kaanb/CloudCrushing/audit_20260907/before/home/kaan/CloudCrushing/FLASH4.8/source/Simulation/SimulationMain/CloudCrush/Simulation_initBlock.F90')
+    historical=Path('/mnt/c/Users/user/CloudCrushing/audit_20260907/before/home/user/CloudCrushing/FLASH4.8/source/Simulation/SimulationMain/CloudCrush/Simulation_initBlock.F90')
     if 'velFrac   = 0.5 * (1.0 - tanh((radius - sim_rvScale*sim_rCloud)/delta))' not in historical.read_text():
         raise ValueError('Historical-law provenance missing')
     before={str(p):sha(p) for parent in (PROBLEM,NATIVE/'object_ic20260907') for p in parent.iterdir() if p.is_file()}

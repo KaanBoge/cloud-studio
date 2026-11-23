@@ -238,7 +238,7 @@ def markdown(result):
             "they do not certify identical pressure and boundary conditions across codes.", "",
             "This narrow summary addresses dense-mass evolution. It does not validate simultaneous velocity "
             "diagnostics, cooling, magnetic fields, Galilean tracking, or an all-material-retained final figure. "
-            "A reuse decision needs a prospective, science-specific tolerance agreed with Ryan and a "
+            "A reuse decision needs a prospective, science-specific tolerance set in advance and a "
             "provenance match to each historical run. No universal cutoff is introduced here.", "",
             "## Remaining work and unchanged holds", "",
             "Eight full L3/L4 controls remain, in addition to higher storage-held levels:", ""]

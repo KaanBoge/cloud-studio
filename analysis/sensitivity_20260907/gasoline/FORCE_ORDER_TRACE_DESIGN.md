@@ -27,7 +27,7 @@ the first causally affected particles in the integrator.
 ## Source-specific observations
 
 The retained native tree is
-`/home/kaan/sensitivity_20260907/gasoline/native_retained/gasoline`.
+`/home/user/sensitivity_20260907/gasoline/native_retained/gasoline`.
 Its executable is pinned as
 `7eb37f0ced056f78435b9f2c71883bf60c39ac78ee3948d6331a21204c222be3`.
 

@@ -7,7 +7,7 @@ from check_snapshot import check
 from run_params import parse_file
 from grid_smokes import input_for
 
-ROOT=Path('/home/kaan/ic_audit_20260907')
+ROOT=Path('/home/user/ic_audit_20260907')
 HERE=Path(__file__).resolve().parent
 results=[]
 for kind in ('athpp','apk','flash','flashx','enzo','athw'):

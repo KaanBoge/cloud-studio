@@ -15,7 +15,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d.art3d import Poly3DCollection
 
-S = "/mnt/c/Users/kaanb/cloud-frames-repo"
+S = "/mnt/c/Users/user/cloud-frames-repo"
 OUT = sys.argv[1]
 LEVEL = sys.argv[2]
 CODES = sys.argv[3].split(",")

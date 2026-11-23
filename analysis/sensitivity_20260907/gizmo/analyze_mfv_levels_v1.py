@@ -3,7 +3,7 @@
 Reuses the pinned accepted L3 scalar report and new independently checked L4
 series. Verifies new raw bytes and frozen provenance, not a repeated field/yt
 extraction. Native-time curves are preserved; only scalar peaks interpolate.
-Run with /home/kaan/venv/bin/python under WSL. Output is create-once.
+Run with /home/user/venv/bin/python under WSL. Output is create-once.
 """
 import fcntl
 import hashlib
@@ -24,8 +24,8 @@ import matplotlib.pyplot as plt
 
 HERE = Path(__file__).resolve().parent
 DEST = HERE / 'mfv_analysis_levels_v1'
-RAW = Path('/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1')
-FROZEN = Path('/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/l4_full_runner_v1')
+RAW = Path('/mnt/c/Users/user/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1')
+FROZEN = Path('/home/user/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/l4_full_runner_v1')
 PREP = FROZEN.parent / 'l4_prepare_runner_v1'
 PLAN_SHA = '2b77bb64257e2826dfe241ca6fb31eedcd5b868d73eeb4761cf96ac079430d7c'
 L3_SHA = 'db45f9d985a4e8eb87b63f0247d1d5f61572acfaab5dad6f9272dfe36b0a017d'
@@ -127,7 +127,7 @@ def main():
     require(not DEST.exists(), 'Existing analysis is immutable')
     held = []
     for name in ('benchmark.lock', 'production.lock'):
-        handle = open('/home/kaan/performance_20260907/'+name, 'rb')
+        handle = open('/home/user/performance_20260907/'+name, 'rb')
         fcntl.flock(handle, fcntl.LOCK_EX | fcntl.LOCK_NB)
         held.append(handle)
     blocked = {'GIZMO_repaired', 'GIZMO', 'Gadget4', 'Gadget4_3d_mixed_hfix', 'athena', 'athena_l6',

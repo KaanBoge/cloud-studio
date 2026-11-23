@@ -3,15 +3,15 @@ import collections
 import json
 from pathlib import Path
 
-OUT=Path('/mnt/c/Users/kaanb/CloudCrushing/performance_20260907c')
+OUT=Path('/mnt/c/Users/user/CloudCrushing/performance_20260907c')
 FAMILIES={'athpp':'Athena++','apk':'AthenaPK','athw':'Athena 4.2','enzo':'Enzo',
           'enzoe':'Enzo-E','flash':'FLASH 4.8','flashx':'Flash-X','ramses':'RAMSES',
           'arepo':'Arepo','gzmfm':'GIZMO MFM','gzmfv':'GIZMO MFV','gadget4':'Gadget-4','gas':'Gasoline'}
 
 
 def main():
-    recent=json.loads(Path('/home/kaan/restart_20260907/batch.json').read_text())
-    queue=json.loads(Path('/home/kaan/queued_20260907/queue.json').read_text())
+    recent=json.loads(Path('/home/user/restart_20260907/batch.json').read_text())
+    queue=json.loads(Path('/home/user/queued_20260907/queue.json').read_text())
     finished={(r['code'],r['level'],r['chi']):r for r in recent['finished']}
     finished.update({(j['code'],j['level'],j['chi']):j['result'] for j in queue['jobs'] if j['status']=='completed'})
     held={(j['code'],j['level'],j['chi']):j for j in queue['jobs'] if j['status']=='held_resources'}
@@ -45,9 +45,9 @@ def main():
                     row['prerequisite']='Review retained historical native runs for reuse, then verify complete-run launcher, boundary conditions and tracer'
                 rows.append(row)
     report=dict(scope='Requested Mach-2 nonradiative baseline, not a declaration that every old run must be repeated.',
-        memory_sources=['C:/Users/kaanb/.claude/projects/C--/memory/cloud-crushing-mentorship.md',
-                        'C:/Users/kaanb/.claude/projects/C--/memory/cloud-crushing-3d-ceiling.md'],
-        memory_caveat='August notes are historical and contain superseded IC, resolution-limit and deletion claims. Current September audit takes precedence.',
+        note_sources=['August 2026 project notes: cloud crushing project overview',
+                      'August 2026 project notes: measured 3D resolution limits'],
+        note_caveat='August notes are historical and contain superseded IC, resolution-limit and deletion claims. Current September audit takes precedence.',
         code_families=12,solver_variants=13,target_cells=len(rows),
         counts=dict(collections.Counter(r['status'] for r in rows)),baseline=rows,
         further_work=[

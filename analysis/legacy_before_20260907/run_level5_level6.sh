@@ -23,11 +23,11 @@ CHI=${2:?chi, 10 100 or 1000}
 shift 2
 CODES=${*:-apk athpp athw enzo flashx flash ramses}
 
-PY=/home/kaan/venv/bin/python
-CO=/home/kaan/codes
-A8=/home/kaan/CloudCrushing/A8
-STORE=/mnt/c/Users/kaanb/cloud-frames-repo
-LOG=/mnt/c/Users/kaanb/CloudCrushing/results_A8/level${L}.log
+PY=/home/user/venv/bin/python
+CO=/home/user/codes
+WT=/home/user/CloudCrushing/wind_tunnel
+STORE=/mnt/c/Users/user/cloud-frames-repo
+LOG=/mnt/c/Users/user/CloudCrushing/results_wind_tunnel/level${L}.log
 
 NX=$(( 8 * (2 ** L) ))          # streamwise cells
 NY=$(( NX / 2 ))                # transverse
@@ -51,8 +51,8 @@ need_ram() {
 harvest() { # tag kind dir glob
   local files; files=$(ls -d $3/$4 2>/dev/null | sort)
   [ -z "$files" ] && return
-  $PY /home/kaan/dense_export.py "$1" "$2" "$CHI" "$STORE" $files >> "$LOG" 2>&1
-  $PY /home/kaan/diagnostics.py  "$1" "$2" "$CHI" "$TCC" $files >> "$LOG" 2>&1
+  $PY /home/user/dense_export.py "$1" "$2" "$CHI" "$STORE" $files >> "$LOG" 2>&1
+  $PY /home/user/diagnostics.py  "$1" "$2" "$CHI" "$TCC" $files >> "$LOG" 2>&1
   echo "  $1: $(ls $STORE/$1/f*.bin 2>/dev/null | wc -l) frames" | tee -a "$LOG"
 }
 
@@ -64,7 +64,7 @@ for code in $CODES; do
     apk)
       need_ram 4 || continue
       d=$CO/athenapk/runs/M3D_L${L}_chi${CHI}; mkdir -p "$d"
-      $PY /home/kaan/make_athenapk_input.py \
+      $PY /home/user/make_athenapk_input.py \
           "$CO/athenapk/runs/M3D_L5_chi10/athinput" "$d/athinput" \
           "$NY" "$NX" "$NY" 16 "$TLIM" "$DT" "$CHI" "$VW" || continue
       ( cd "$d" && rm -f ./*.phdf && \
@@ -88,14 +88,14 @@ for code in $CODES; do
     # ---- Athena 4.2, 8 ranks, NGrid must multiply to the rank count
     athw)
       need_ram 10 || continue
-      d=$A8/M3D_ATHW_L${L}_chi${CHI}; mkdir -p "$d"
+      d=$WT/M3D_ATHW_L${L}_chi${CHI}; mkdir -p "$d"
       sed -e "s/^drat *=.*/drat = $CHI/" -e "s/^tlim *=.*/tlim = $TLIM/" \
           -e "s/^dt *=.*/dt = $DT/" \
           -e "s/^Nx1 *=.*/Nx1 = $NX/" -e "s/^Nx2 *=.*/Nx2 = $NY/" -e "s/^Nx3 *=.*/Nx3 = $NY/" \
           -e "s/^NGrid_x1 *=.*/NGrid_x1 = 2/" -e "s/^NGrid_x2 *=.*/NGrid_x2 = 2/" \
           -e "s/^NGrid_x3 *=.*/NGrid_x3 = 2/" \
-          "$A8/M3D_ATHW_L5_chi10/athinput" > "$d/athinput"
-      cp -f "$A8/M3D_ATHW_L5_chi10/athena_redo3d" "$d/athena_run" 2>/dev/null
+          "$WT/M3D_ATHW_L5_chi10/athinput" > "$d/athinput"
+      cp -f "$WT/M3D_ATHW_L5_chi10/athena_redo3d" "$d/athena_run" 2>/dev/null
       ( cd "$d" && rm -rf id* && \
         mpirun --bind-to core -np 8 ./athena_run -i athinput > run.out 2>&1 )
       harvest "athw_L${L}_chi${CHI}" athw "$d/id0" '*.vtk' ;;
@@ -133,16 +133,16 @@ for code in $CODES; do
     #      smaller than every other code's. Pass the right one to diagnostics.
     flash)
       need_ram 12 || continue
-      d=$A8/M3D_FLASH48_L${L}_chi${CHI}; mkdir -p "$d"
+      d=$WT/M3D_FLASH48_L${L}_chi${CHI}; mkdir -p "$d"
       TCCF=$($PY -c "import math;print('%.6f'%(math.sqrt($CHI)*0.1/$VW))")
       TLF=$($PY -c "import math;print('%.6f'%(5*math.sqrt($CHI)*0.1/$VW))")
       sed -e "s/^sim_rhoCloud.*/sim_rhoCloud = ${CHI}.0/" \
           -e "s/^tmax.*/tmax = $TLF/" \
-          "$A8/M3D_FLASH48_L5_chi10/flash.par" > "$d/flash.par"
+          "$WT/M3D_FLASH48_L5_chi10/flash.par" > "$d/flash.par"
       ( cd "$d" && mpirun --oversubscribe -np 12 ./flash4 > run.out 2>&1 )
       files=$(ls "$d"/cloudcrush_hdf5_plt_cnt_* 2>/dev/null | sort)
-      [ -n "$files" ] && $PY /home/kaan/dense_export.py "flash_L${L}_chi${CHI}" flash "$CHI" "$STORE" $files >> "$LOG" 2>&1
-      [ -n "$files" ] && $PY /home/kaan/diagnostics.py "flash_L${L}_chi${CHI}" flash "$CHI" "$TCCF" $files >> "$LOG" 2>&1 ;;
+      [ -n "$files" ] && $PY /home/user/dense_export.py "flash_L${L}_chi${CHI}" flash "$CHI" "$STORE" $files >> "$LOG" 2>&1
+      [ -n "$files" ] && $PY /home/user/diagnostics.py "flash_L${L}_chi${CHI}" flash "$CHI" "$TCCF" $files >> "$LOG" 2>&1 ;;
 
     # ---- RAMSES. Cubic box, levelmin = levelmax = log2(streamwise cells).
     ramses)

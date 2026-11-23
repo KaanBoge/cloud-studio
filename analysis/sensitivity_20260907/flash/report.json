@@ -80,7 +80,7 @@
   "series": {
     "L3_chi100_sharp13": [
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0000",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0000",
         "time_code": 0.0,
         "t_over_tcc": 0.0,
         "cells": 65536,
@@ -96,7 +96,7 @@
         "dense_mass_over_initial": 1.0
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0001",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0001",
         "time_code": 0.0211723553166552,
         "t_over_tcc": 0.05466678636092776,
         "cells": 65536,
@@ -107,7 +107,7 @@
         "dense_mass_over_initial": 0.9734929520494737
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0002",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0002",
         "time_code": 0.03888600226202002,
         "t_over_tcc": 0.10040322610759164,
         "cells": 65536,
@@ -118,7 +118,7 @@
         "dense_mass_over_initial": 0.9723895876982592
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0003",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0003",
         "time_code": 0.05979437494669278,
         "t_over_tcc": 0.1543884122436154,
         "cells": 65536,
@@ -129,7 +129,7 @@
         "dense_mass_over_initial": 0.9542548331751927
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0004",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0004",
         "time_code": 0.08056996707718402,
         "t_over_tcc": 0.20803076046294236,
         "cells": 65536,
@@ -140,7 +140,7 @@
         "dense_mass_over_initial": 0.9558050101458394
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0005",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0005",
         "time_code": 0.09779698790724435,
         "t_over_tcc": 0.25251073698267035,
         "cells": 65536,
@@ -151,7 +151,7 @@
         "dense_mass_over_initial": 0.956080062440955
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0006",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0006",
         "time_code": 0.11843114184700398,
         "t_over_tcc": 0.3057878933638498,
         "cells": 65536,
@@ -162,7 +162,7 @@
         "dense_mass_over_initial": 0.9553100375646704
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0007",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0007",
         "time_code": 0.13565130990118912,
         "t_over_tcc": 0.35025017609235115,
         "cells": 65536,
@@ -173,7 +173,7 @@
         "dense_mass_over_initial": 0.9443695314105448
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0008",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0008",
         "time_code": 0.15636904627412943,
         "t_over_tcc": 0.4037431413880268,
         "cells": 65536,
@@ -184,7 +184,7 @@
         "dense_mass_over_initial": 0.9419592209849451
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0009",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0009",
         "time_code": 0.17711969291228477,
         "t_over_tcc": 0.4573210806231005,
         "cells": 65536,
@@ -195,7 +195,7 @@
         "dense_mass_over_initial": 0.9197674260322783
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0010",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0010",
         "time_code": 0.19442138972324813,
         "t_over_tcc": 0.5019938696964279,
         "cells": 65536,
@@ -206,7 +206,7 @@
         "dense_mass_over_initial": 0.9080577913521795
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0011",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0011",
         "time_code": 0.21519898302314117,
         "t_over_tcc": 0.5556413849129322,
         "cells": 65536,
@@ -217,7 +217,7 @@
         "dense_mass_over_initial": 0.9036753261044134
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0012",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0012",
         "time_code": 0.2324874165424751,
         "t_over_tcc": 0.6002799283145285,
         "cells": 65536,
@@ -228,7 +228,7 @@
         "dense_mass_over_initial": 0.897981789742974
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0013",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0013",
         "time_code": 0.25323970722055456,
         "t_over_tcc": 0.6538621124424333,
         "cells": 65536,
@@ -239,7 +239,7 @@
         "dense_mass_over_initial": 0.8890308759394527
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0014",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0014",
         "time_code": 0.2740183738204591,
         "t_over_tcc": 0.707512398907651,
         "cells": 65536,
@@ -250,7 +250,7 @@
         "dense_mass_over_initial": 0.8615535461836705
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0015",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0015",
         "time_code": 0.29136644746631657,
         "t_over_tcc": 0.7523049324537748,
         "cells": 65536,
@@ -261,7 +261,7 @@
         "dense_mass_over_initial": 0.8754167772233132
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0016",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0016",
         "time_code": 0.31224038649812164,
         "t_over_tcc": 0.8062012112803948,
         "cells": 65536,
@@ -272,7 +272,7 @@
         "dense_mass_over_initial": 0.850100077598036
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0017",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0017",
         "time_code": 0.3296963408289178,
         "t_over_tcc": 0.851272291557282,
         "cells": 65536,
@@ -283,7 +283,7 @@
         "dense_mass_over_initial": 0.8382946191670598
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0018",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0018",
         "time_code": 0.3507010390936134,
         "t_over_tcc": 0.9055061892714672,
         "cells": 65536,
@@ -294,7 +294,7 @@
         "dense_mass_over_initial": 0.8340352260792596
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0019",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0019",
         "time_code": 0.36824594613344014,
         "t_over_tcc": 0.9508069444554714,
         "cells": 65536,
@@ -305,7 +305,7 @@
         "dense_mass_over_initial": 0.8284789177784877
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0020",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0020",
         "time_code": 0.38933999152668014,
         "t_over_tcc": 1.0052715354635793,
         "cells": 65536,
@@ -316,7 +316,7 @@
         "dense_mass_over_initial": 0.8100506738165448
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0021",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0021",
         "time_code": 0.40695135004149335,
         "t_over_tcc": 1.050743867618219,
         "cells": 65536,
@@ -327,7 +327,7 @@
         "dense_mass_over_initial": 0.7921019011393006
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0022",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0022",
         "time_code": 0.4281228514928191,
         "t_over_tcc": 1.1054084493083463,
         "cells": 65536,
@@ -338,7 +338,7 @@
         "dense_mass_over_initial": 0.7928979595127811
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0023",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0023",
         "time_code": 0.44578781235631326,
         "t_over_tcc": 1.1510191821321587,
         "cells": 65536,
@@ -349,7 +349,7 @@
         "dense_mass_over_initial": 0.7837351794646442
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0024",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0024",
         "time_code": 0.4670149326001329,
         "t_over_tcc": 1.205827370926996,
         "cells": 65536,
@@ -360,7 +360,7 @@
         "dense_mass_over_initial": 0.7643316028159441
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0025",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0025",
         "time_code": 0.48472141810939307,
         "t_over_tcc": 1.2515453199251476,
         "cells": 65536,
@@ -371,7 +371,7 @@
         "dense_mass_over_initial": 0.7394790495361095
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0026",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0026",
         "time_code": 0.5059065699760809,
         "t_over_tcc": 1.3062451468361855,
         "cells": 65536,
@@ -382,7 +382,7 @@
         "dense_mass_over_initial": 0.7324898972724273
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0027",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0027",
         "time_code": 0.5234955976193584,
         "t_over_tcc": 1.3516598209284494,
         "cells": 65536,
@@ -393,7 +393,7 @@
         "dense_mass_over_initial": 0.7151653402445872
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0028",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0028",
         "time_code": 0.5445612352835668,
         "t_over_tcc": 1.4060510634955954,
         "cells": 65536,
@@ -404,7 +404,7 @@
         "dense_mass_over_initial": 0.7379745437898309
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0029",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0029",
         "time_code": 0.5621020897451786,
         "t_over_tcc": 1.4513413549676424,
         "cells": 65536,
@@ -415,7 +415,7 @@
         "dense_mass_over_initial": 0.7530707222249231
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0030",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0030",
         "time_code": 0.5831696390944905,
         "t_over_tcc": 1.505737533484501,
         "cells": 65536,
@@ -426,7 +426,7 @@
         "dense_mass_over_initial": 0.7549901500435868
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0031",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0031",
         "time_code": 0.6007481324615662,
         "t_over_tcc": 1.5511250081925687,
         "cells": 65536,
@@ -437,7 +437,7 @@
         "dense_mass_over_initial": 0.7457610565406687
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0032",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0032",
         "time_code": 0.6218731038732845,
         "t_over_tcc": 1.6056694498370307,
         "cells": 65536,
@@ -448,7 +448,7 @@
         "dense_mass_over_initial": 0.7233302891329053
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0033",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0033",
         "time_code": 0.6395005284329983,
         "t_over_tcc": 1.65118326434123,
         "cells": 65536,
@@ -459,7 +459,7 @@
         "dense_mass_over_initial": 0.7100476012913528
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0034",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0034",
         "time_code": 0.6606865770780186,
         "t_over_tcc": 1.705885406723966,
         "cells": 65536,
@@ -470,7 +470,7 @@
         "dense_mass_over_initial": 0.7095588872199616
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0035",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0035",
         "time_code": 0.6783692418348221,
         "t_over_tcc": 1.751541850803745,
         "cells": 65536,
@@ -481,7 +481,7 @@
         "dense_mass_over_initial": 0.6826008850573978
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0036",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0036",
         "time_code": 0.6996197653510119,
         "t_over_tcc": 1.8064104665880065,
         "cells": 65536,
@@ -492,7 +492,7 @@
         "dense_mass_over_initial": 0.7148945473834267
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0037",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0037",
         "time_code": 0.7173452041219742,
         "t_over_tcc": 1.852177352697444,
         "cells": 65536,
@@ -503,7 +503,7 @@
         "dense_mass_over_initial": 0.7078456234505102
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0038",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0038",
         "time_code": 0.7386341502021884,
         "t_over_tcc": 1.9071451751154287,
         "cells": 65536,
@@ -514,7 +514,7 @@
         "dense_mass_over_initial": 0.7035863775085084
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0039",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0039",
         "time_code": 0.7563938474062621,
         "t_over_tcc": 1.9530005161188049,
         "cells": 65536,
@@ -525,7 +525,7 @@
         "dense_mass_over_initial": 0.6952232777278806
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0040",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0040",
         "time_code": 0.7777111107574856,
         "t_over_tcc": 2.0080414534161424,
         "cells": 65536,
@@ -536,7 +536,7 @@
         "dense_mass_over_initial": 0.6734093370012281
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0041",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0041",
         "time_code": 0.7954784123503029,
         "t_over_tcc": 2.053916428866826,
         "cells": 65536,
@@ -547,7 +547,7 @@
         "dense_mass_over_initial": 0.6425956723776601
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0042",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0042",
         "time_code": 0.8167991202289951,
         "t_over_tcc": 2.108966259895845,
         "cells": 65536,
@@ -558,7 +558,7 @@
         "dense_mass_over_initial": 0.6178514511499181
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0043",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0043",
         "time_code": 0.8345702645433746,
         "t_over_tcc": 2.154851157210939,
         "cells": 65536,
@@ -569,7 +569,7 @@
         "dense_mass_over_initial": 0.6490093288713431
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0044",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0044",
         "time_code": 0.8523345573929951,
         "t_over_tcc": 2.2007183641200934,
         "cells": 65536,
@@ -580,7 +580,7 @@
         "dense_mass_over_initial": 0.6659156191665923
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0045",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0045",
         "time_code": 0.8736424417557682,
         "t_over_tcc": 2.255735084973382,
         "cells": 65536,
@@ -591,7 +591,7 @@
         "dense_mass_over_initial": 0.6655516932779258
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0046",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0046",
         "time_code": 0.8913839407182977,
         "t_over_tcc": 2.3015434383191375,
         "cells": 65536,
@@ -602,7 +602,7 @@
         "dense_mass_over_initial": 0.6509003408087903
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0047",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0047",
         "time_code": 0.9126553128096981,
         "t_over_tcc": 2.356465884893121,
         "cells": 65536,
@@ -613,7 +613,7 @@
         "dense_mass_over_initial": 0.6052053331405046
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0048",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0048",
         "time_code": 0.9303583443560225,
         "t_over_tcc": 2.4021749157973202,
         "cells": 65536,
@@ -624,7 +624,7 @@
         "dense_mass_over_initial": 0.5972227111727836
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0049",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0049",
         "time_code": 0.9516092184442216,
         "t_over_tcc": 2.4570444367546176,
         "cells": 65536,
@@ -635,7 +635,7 @@
         "dense_mass_over_initial": 0.6141573372528789
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0050",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0050",
         "time_code": 0.9693202542692253,
         "t_over_tcc": 2.502774134617499,
         "cells": 65536,
@@ -646,7 +646,7 @@
         "dense_mass_over_initial": 0.5922877758454735
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0051",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0051",
         "time_code": 0.9905622523405408,
         "t_over_tcc": 2.557620737797749,
         "cells": 65536,
@@ -657,7 +657,7 @@
         "dense_mass_over_initial": 0.612491525051841
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0052",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0052",
         "time_code": 1.0082651296567111,
         "t_over_tcc": 2.6033293704814024,
         "cells": 65536,
@@ -668,7 +668,7 @@
         "dense_mass_over_initial": 0.6298825165363798
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0053",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0053",
         "time_code": 1.0295226135742706,
         "t_over_tcc": 2.6582159579447224,
         "cells": 65536,
@@ -679,7 +679,7 @@
         "dense_mass_over_initial": 0.6165464219439957
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0054",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0054",
         "time_code": 1.0472349076628182,
         "t_over_tcc": 2.7039489046301046,
         "cells": 65536,
@@ -690,7 +690,7 @@
         "dense_mass_over_initial": 0.5882285012939175
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0055",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0055",
         "time_code": 1.0684847238094657,
         "t_over_tcc": 2.758815693994061,
         "cells": 65536,
@@ -701,7 +701,7 @@
         "dense_mass_over_initial": 0.5400826962906891
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0056",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0056",
         "time_code": 1.0861936466591646,
         "t_over_tcc": 2.8045399361781653,
         "cells": 65536,
@@ -712,7 +712,7 @@
         "dense_mass_over_initial": 0.5689390126238137
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0057",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0057",
         "time_code": 1.103923379078297,
         "t_over_tcc": 2.8503179084395076,
         "cells": 65536,
@@ -723,7 +723,7 @@
         "dense_mass_over_initial": 0.567839175813338
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0058",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0058",
         "time_code": 1.1251395229124113,
         "t_over_tcc": 2.9050977562663514,
         "cells": 65536,
@@ -734,7 +734,7 @@
         "dense_mass_over_initial": 0.5189646447066657
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0059",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0059",
         "time_code": 1.1427845572822843,
         "t_over_tcc": 2.9506570391048688,
         "cells": 65536,
@@ -745,7 +745,7 @@
         "dense_mass_over_initial": 0.5040462211899964
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0060",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0060",
         "time_code": 1.1639446483075135,
         "t_over_tcc": 3.005292159201499,
         "cells": 65536,
@@ -756,7 +756,7 @@
         "dense_mass_over_initial": 0.48186468183412656
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0061",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0061",
         "time_code": 1.1815875088043677,
         "t_over_tcc": 3.050845829124017,
         "cells": 65536,
@@ -767,7 +767,7 @@
         "dense_mass_over_initial": 0.545498353754973
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0062",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0062",
         "time_code": 1.2027722187829082,
         "t_over_tcc": 3.1055445150847647,
         "cells": 65536,
@@ -778,7 +778,7 @@
         "dense_mass_over_initial": 0.48380545684558823
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0063",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0063",
         "time_code": 1.220387922116662,
         "t_over_tcc": 3.1510280655136707,
         "cells": 65536,
@@ -789,7 +789,7 @@
         "dense_mass_over_initial": 0.43392541665343826
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0064",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0064",
         "time_code": 1.2414853356630484,
         "t_over_tcc": 3.2055013530558076,
         "cells": 65536,
@@ -800,7 +800,7 @@
         "dense_mass_over_initial": 0.4504400801429385
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0065",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0065",
         "time_code": 1.25906984524202,
         "t_over_tcc": 3.250904361556195,
         "cells": 65536,
@@ -811,7 +811,7 @@
         "dense_mass_over_initial": 0.501475088562539
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0066",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0066",
         "time_code": 1.2801752165172329,
         "t_over_tcc": 3.3053981958658114,
         "cells": 65536,
@@ -822,7 +822,7 @@
         "dense_mass_over_initial": 0.4132771492044805
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0067",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0067",
         "time_code": 1.2977561437562657,
         "t_over_tcc": 3.35079195480425,
         "cells": 65536,
@@ -833,7 +833,7 @@
         "dense_mass_over_initial": 0.4093505447017734
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0068",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0068",
         "time_code": 1.3187953979960256,
         "t_over_tcc": 3.4051150756623927,
         "cells": 65536,
@@ -844,7 +844,7 @@
         "dense_mass_over_initial": 0.4366955070493816
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0069",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0069",
         "time_code": 1.3362979814668006,
         "t_over_tcc": 3.450306551861004,
         "cells": 65536,
@@ -855,7 +855,7 @@
         "dense_mass_over_initial": 0.4022054961045974
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0070",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0070",
         "time_code": 1.3572954054540316,
         "t_over_tcc": 3.5045216674715385,
         "cells": 65536,
@@ -866,7 +866,7 @@
         "dense_mass_over_initial": 0.34378477198033264
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0071",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0071",
         "time_code": 1.3782906479219825,
         "t_over_tcc": 3.558731150423512,
         "cells": 65536,
@@ -877,7 +877,7 @@
         "dense_mass_over_initial": 0.32980277821918025
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0072",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0072",
         "time_code": 1.3958066713380395,
         "t_over_tcc": 3.603957328411624,
         "cells": 65536,
@@ -888,7 +888,7 @@
         "dense_mass_over_initial": 0.3548245129494075
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0073",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0073",
         "time_code": 1.4168389188652648,
         "t_over_tcc": 3.6582623580157945,
         "cells": 65536,
@@ -899,7 +899,7 @@
         "dense_mass_over_initial": 0.26408334815458134
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0074",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0074",
         "time_code": 1.4343506962933412,
         "t_over_tcc": 3.703477572910082,
         "cells": 65536,
@@ -910,7 +910,7 @@
         "dense_mass_over_initial": 0.2866888377676309
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0075",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0075",
         "time_code": 1.4553542888062667,
         "t_over_tcc": 3.7577086155854733,
         "cells": 65536,
@@ -921,7 +921,7 @@
         "dense_mass_over_initial": 0.2914917534167557
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0076",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0076",
         "time_code": 1.4728559734396338,
         "t_over_tcc": 3.8028977709958767,
         "cells": 65536,
@@ -932,7 +932,7 @@
         "dense_mass_over_initial": 0.23347255522547242
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0077",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0077",
         "time_code": 1.4938517439499588,
         "t_over_tcc": 3.857108617347398,
         "cells": 65536,
@@ -943,7 +943,7 @@
         "dense_mass_over_initial": 0.2363747001243647
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0078",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0078",
         "time_code": 1.5113474506784719,
         "t_over_tcc": 3.902282337873838,
         "cells": 65536,
@@ -954,7 +954,7 @@
         "dense_mass_over_initial": 0.2245853374346747
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0079",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0079",
         "time_code": 1.5323385549032185,
         "t_over_tcc": 3.956481135927803,
         "cells": 65536,
@@ -965,7 +965,7 @@
         "dense_mass_over_initial": 0.16639682919534213
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0080",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0080",
         "time_code": 1.549808819310042,
         "t_over_tcc": 4.001589164662115,
         "cells": 65536,
@@ -976,7 +976,7 @@
         "dense_mass_over_initial": 0.1924146555803603
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0081",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0081",
         "time_code": 1.570775512494777,
         "t_over_tcc": 4.055724933681795,
         "cells": 65536,
@@ -987,7 +987,7 @@
         "dense_mass_over_initial": 0.14950181784434896
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0082",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0082",
         "time_code": 1.5882521532618912,
         "t_over_tcc": 4.100849426107583,
         "cells": 65536,
@@ -998,7 +998,7 @@
         "dense_mass_over_initial": 0.09494165251263054
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0083",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0083",
         "time_code": 1.6091792060388106,
         "t_over_tcc": 4.1548828440343915,
         "cells": 65536,
@@ -1009,7 +1009,7 @@
         "dense_mass_over_initial": 0.13429090570033037
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0084",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0084",
         "time_code": 1.6300450180913684,
         "t_over_tcc": 4.208758139090825,
         "cells": 65536,
@@ -1020,7 +1020,7 @@
         "dense_mass_over_initial": 0.08987877030215871
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0085",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0085",
         "time_code": 1.6474013876882638,
         "t_over_tcc": 4.253572092690423,
         "cells": 65536,
@@ -1031,7 +1031,7 @@
         "dense_mass_over_initial": 0.11797385292933288
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0086",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0086",
         "time_code": 1.6681779944478137,
         "t_over_tcc": 4.307217060670714,
         "cells": 65536,
@@ -1042,7 +1042,7 @@
         "dense_mass_over_initial": 0.06685047523861984
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0087",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0087",
         "time_code": 1.6854300153375779,
         "t_over_tcc": 4.351761587067033,
         "cells": 65536,
@@ -1053,7 +1053,7 @@
         "dense_mass_over_initial": 0.046300731245402967
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0088",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0088",
         "time_code": 1.7061015061086273,
         "t_over_tcc": 4.40513514673207,
         "cells": 65536,
@@ -1064,7 +1064,7 @@
         "dense_mass_over_initial": 0.07473345258591474
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0089",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0089",
         "time_code": 1.726765459366859,
         "t_over_tcc": 4.4584892446226965,
         "cells": 65536,
@@ -1075,7 +1075,7 @@
         "dense_mass_over_initial": 0.044089129408742836
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0090",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0090",
         "time_code": 1.7440260299773862,
         "t_over_tcc": 4.503055846303102,
         "cells": 65536,
@@ -1086,7 +1086,7 @@
         "dense_mass_over_initial": 0.0428794825239634
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0091",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0091",
         "time_code": 1.7647753828438861,
         "t_over_tcc": 4.556630445034126,
         "cells": 65536,
@@ -1097,7 +1097,7 @@
         "dense_mass_over_initial": 0.03195816033852451
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0092",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0092",
         "time_code": 1.7820666907271279,
         "t_over_tcc": 4.60127641001142,
         "cells": 65536,
@@ -1108,7 +1108,7 @@
         "dense_mass_over_initial": 0.021883940325839856
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0093",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0093",
         "time_code": 1.8028228235847845,
         "t_over_tcc": 4.654868514604335,
         "cells": 65536,
@@ -1119,7 +1119,7 @@
         "dense_mass_over_initial": 0.011361408127183635
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0094",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0094",
         "time_code": 1.8236084689626255,
         "t_over_tcc": 4.708536820196702,
         "cells": 65536,
@@ -1130,7 +1130,7 @@
         "dense_mass_over_initial": 0.01053977152107963
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0095",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0095",
         "time_code": 1.8409343807421141,
         "t_over_tcc": 4.753272132049915,
         "cells": 65536,
@@ -1141,7 +1141,7 @@
         "dense_mass_over_initial": 0.010451265796318892
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0096",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0096",
         "time_code": 1.8616502870028542,
         "t_over_tcc": 4.806760372016208,
         "cells": 65536,
@@ -1152,7 +1152,7 @@
         "dense_mass_over_initial": 0.0
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0097",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0097",
         "time_code": 1.8788179184859701,
         "t_over_tcc": 4.851087005901498,
         "cells": 65536,
@@ -1163,7 +1163,7 @@
         "dense_mass_over_initial": 0.0
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0098",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0098",
         "time_code": 1.8993864568896726,
         "t_over_tcc": 4.904194743697076,
         "cells": 65536,
@@ -1174,7 +1174,7 @@
         "dense_mass_over_initial": 0.0
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0099",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0099",
         "time_code": 1.919975286951552,
         "t_over_tcc": 4.957354874328778,
         "cells": 65536,
@@ -1185,7 +1185,7 @@
         "dense_mass_over_initial": 0.0
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0100",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_sharp13/cloudcrush_hdf5_chk_0100",
         "time_code": 1.9371174898710386,
         "t_over_tcc": 5.001615851945098,
         "cells": 65536,
@@ -1198,7 +1198,7 @@
     ],
     "L3_chi100_tanh13": [
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0000",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0000",
         "time_code": 0.0,
         "t_over_tcc": 0.0,
         "cells": 65536,
@@ -1214,7 +1214,7 @@
         "dense_mass_over_initial": 1.0
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0001",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0001",
         "time_code": 0.021205667908082305,
         "t_over_tcc": 0.05475279910213856,
         "cells": 65536,
@@ -1225,7 +1225,7 @@
         "dense_mass_over_initial": 0.9717743985501369
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0002",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0002",
         "time_code": 0.03910741577625881,
         "t_over_tcc": 0.10097491334310638,
         "cells": 65536,
@@ -1236,7 +1236,7 @@
         "dense_mass_over_initial": 0.9499615441896346
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0003",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0003",
         "time_code": 0.06019024973728407,
         "t_over_tcc": 0.15541055655771102,
         "cells": 65536,
@@ -1247,7 +1247,7 @@
         "dense_mass_over_initial": 0.9515483885542046
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0004",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0004",
         "time_code": 0.07762090724846386,
         "t_over_tcc": 0.20041632072720741,
         "cells": 65536,
@@ -1258,7 +1258,7 @@
         "dense_mass_over_initial": 0.9528462455135716
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0005",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0005",
         "time_code": 0.09842390617276685,
         "t_over_tcc": 0.2541294329838716,
         "cells": 65536,
@@ -1269,7 +1269,7 @@
         "dense_mass_over_initial": 0.9531945253518259
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0006",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0006",
         "time_code": 0.11912440120449395,
         "t_over_tcc": 0.3075778813279572,
         "cells": 65536,
@@ -1280,7 +1280,7 @@
         "dense_mass_over_initial": 0.9521811616258594
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0007",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0007",
         "time_code": 0.13641502276909376,
         "t_over_tcc": 0.3522220742381371,
         "cells": 65536,
@@ -1291,7 +1291,7 @@
         "dense_mass_over_initial": 0.9401002377020578
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0008",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0008",
         "time_code": 0.15720530043467015,
         "t_over_tcc": 0.40590234034600736,
         "cells": 65536,
@@ -1302,7 +1302,7 @@
         "dense_mass_over_initial": 0.9373594377775997
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0009",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0009",
         "time_code": 0.17456706786237297,
         "t_over_tcc": 0.4507302310848203,
         "cells": 65536,
@@ -1313,7 +1313,7 @@
         "dense_mass_over_initial": 0.9147746981690023
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0010",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0010",
         "time_code": 0.19541701284442753,
         "t_over_tcc": 0.5045645575413791,
         "cells": 65536,
@@ -1324,7 +1324,7 @@
         "dense_mass_over_initial": 0.9021934380174687
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0011",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0011",
         "time_code": 0.2162712305447843,
         "t_over_tcc": 0.5584099161091562,
         "cells": 65536,
@@ -1335,7 +1335,7 @@
         "dense_mass_over_initial": 0.897171339624964
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0012",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0012",
         "time_code": 0.2336639930568962,
         "t_over_tcc": 0.6033178358117897,
         "cells": 65536,
@@ -1346,7 +1346,7 @@
         "dense_mass_over_initial": 0.8908962399788188
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0013",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0013",
         "time_code": 0.2545148440128329,
         "t_over_tcc": 0.6571545014828536,
         "cells": 65536,
@@ -1357,7 +1357,7 @@
         "dense_mass_over_initial": 0.8818278181838248
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0014",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0014",
         "time_code": 0.2718848878376259,
         "t_over_tcc": 0.7020037617870643,
         "cells": 65536,
@@ -1368,7 +1368,7 @@
         "dense_mass_over_initial": 0.8560090064260789
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0015",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0015",
         "time_code": 0.2927435119755922,
         "t_over_tcc": 0.7558604977278266,
         "cells": 65536,
@@ -1379,7 +1379,7 @@
         "dense_mass_over_initial": 0.8503249131523413
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0016",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0016",
         "time_code": 0.3101693682606231,
         "t_over_tcc": 0.8008538651847124,
         "cells": 65536,
@@ -1390,7 +1390,7 @@
         "dense_mass_over_initial": 0.8474935451397855
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0017",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0017",
         "time_code": 0.33113711174041377,
         "t_over_tcc": 0.8549923460545646,
         "cells": 65536,
@@ -1401,7 +1401,7 @@
         "dense_mass_over_initial": 0.8337571315657661
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0018",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0018",
         "time_code": 0.348646007343467,
         "t_over_tcc": 0.9002001201086376,
         "cells": 65536,
@@ -1412,7 +1412,7 @@
         "dense_mass_over_initial": 0.8301968435621423
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0019",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0019",
         "time_code": 0.36970690317409366,
         "t_over_tcc": 0.9545791193141218,
         "cells": 65536,
@@ -1423,7 +1423,7 @@
         "dense_mass_over_initial": 0.813866947331746
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0020",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0020",
         "time_code": 0.3872995226028686,
         "t_over_tcc": 1.000003067356662,
         "cells": 65536,
@@ -1434,7 +1434,7 @@
         "dense_mass_over_initial": 0.8069264207507989
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0021",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0021",
         "time_code": 0.4084498729695904,
         "t_over_tcc": 1.0546130371811724,
         "cells": 65536,
@@ -1445,7 +1445,7 @@
         "dense_mass_over_initial": 0.7975251427195755
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0022",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0022",
         "time_code": 0.426107957794659,
         "t_over_tcc": 1.1002060161501115,
         "cells": 65536,
@@ -1456,7 +1456,7 @@
         "dense_mass_over_initial": 0.7902217933866954
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0023",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0023",
         "time_code": 0.4473258830495414,
         "t_over_tcc": 1.1549904635856003,
         "cells": 65536,
@@ -1467,7 +1467,7 @@
         "dense_mass_over_initial": 0.7796189617745141
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0024",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0024",
         "time_code": 0.46503043272481237,
         "t_over_tcc": 1.2007034142818847,
         "cells": 65536,
@@ -1478,7 +1478,7 @@
         "dense_mass_over_initial": 0.7413836811277286
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0025",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0025",
         "time_code": 0.48626401615684356,
         "t_over_tcc": 1.2555282909569263,
         "cells": 65536,
@@ -1489,7 +1489,7 @@
         "dense_mass_over_initial": 0.7362737488350215
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0026",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0026",
         "time_code": 0.5039041435817064,
         "t_over_tcc": 1.3010749041179066,
         "cells": 65536,
@@ -1500,7 +1500,7 @@
         "dense_mass_over_initial": 0.7190719783841325
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0027",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0027",
         "time_code": 0.525014928162669,
         "t_over_tcc": 1.355582715522867,
         "cells": 65536,
@@ -1511,7 +1511,7 @@
         "dense_mass_over_initial": 0.7613517997538385
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0028",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0028",
         "time_code": 0.5425789177880926,
         "t_over_tcc": 1.4009327417310173,
         "cells": 65536,
@@ -1522,7 +1522,7 @@
         "dense_mass_over_initial": 0.7396513154599013
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0029",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0029",
         "time_code": 0.5636521980936549,
         "t_over_tcc": 1.4553437175132862,
         "cells": 65536,
@@ -1533,7 +1533,7 @@
         "dense_mass_over_initial": 0.7540117953015483
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0030",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0030",
         "time_code": 0.581217531387295,
         "t_over_tcc": 1.5006972130578535,
         "cells": 65536,
@@ -1544,7 +1544,7 @@
         "dense_mass_over_initial": 0.7573952898826622
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0031",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0031",
         "time_code": 0.6023345495818206,
         "t_over_tcc": 1.5552211195838246,
         "cells": 65536,
@@ -1555,7 +1555,7 @@
         "dense_mass_over_initial": 0.7461672513633794
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0032",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0032",
         "time_code": 0.6199683242230775,
         "t_over_tcc": 1.6007513299280662,
         "cells": 65536,
@@ -1566,7 +1566,7 @@
         "dense_mass_over_initial": 0.7249646328571148
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0033",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0033",
         "time_code": 0.6411625491832255,
         "t_over_tcc": 1.6554745834656839,
         "cells": 65536,
@@ -1577,7 +1577,7 @@
         "dense_mass_over_initial": 0.7092084435972108
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0034",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0034",
         "time_code": 0.6588490877727432,
         "t_over_tcc": 1.701141029738522,
         "cells": 65536,
@@ -1588,7 +1588,7 @@
         "dense_mass_over_initial": 0.6871381877023741
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0035",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0035",
         "time_code": 0.6801043850243913,
         "t_over_tcc": 1.7560219712547362,
         "cells": 65536,
@@ -1599,7 +1599,7 @@
         "dense_mass_over_initial": 0.667154688689103
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0036",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0036",
         "time_code": 0.6978299829549086,
         "t_over_tcc": 1.8017892683123777,
         "cells": 65536,
@@ -1610,7 +1610,7 @@
         "dense_mass_over_initial": 0.6910334747387125
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0037",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0037",
         "time_code": 0.719113271037753,
         "t_over_tcc": 1.8567424818439717,
         "cells": 65536,
@@ -1621,7 +1621,7 @@
         "dense_mass_over_initial": 0.6871660097250768
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0038",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0038",
         "time_code": 0.7368634120142417,
         "t_over_tcc": 1.9025731487738213,
         "cells": 65536,
@@ -1632,7 +1632,7 @@
         "dense_mass_over_initial": 0.6831230498785272
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0039",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0039",
         "time_code": 0.758166927286374,
         "t_over_tcc": 1.9575785886835841,
         "cells": 65536,
@@ -1643,7 +1643,7 @@
         "dense_mass_over_initial": 0.6723446164459612
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0040",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0040",
         "time_code": 0.7759118149108476,
         "t_over_tcc": 2.003395691516856,
         "cells": 65536,
@@ -1654,7 +1654,7 @@
         "dense_mass_over_initial": 0.6501088442427128
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0041",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0041",
         "time_code": 0.7972094546520978,
         "t_over_tcc": 2.0583859608711146,
         "cells": 65536,
@@ -1665,7 +1665,7 @@
         "dense_mass_over_initial": 0.6148658917430065
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0042",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0042",
         "time_code": 0.8149504374003376,
         "t_over_tcc": 2.104192981357305,
         "cells": 65536,
@@ -1676,7 +1676,7 @@
         "dense_mass_over_initial": 0.6435980663665503
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0043",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0043",
         "time_code": 0.8362393829798105,
         "t_over_tcc": 2.1591608024823814,
         "cells": 65536,
@@ -1687,7 +1687,7 @@
         "dense_mass_over_initial": 0.6489686980613687
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0044",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0044",
         "time_code": 0.8539883389483665,
         "t_over_tcc": 2.2049884097349053,
         "cells": 65536,
@@ -1698,7 +1698,7 @@
         "dense_mass_over_initial": 0.6383138664144007
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0045",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0045",
         "time_code": 0.8717537007031029,
         "t_over_tcc": 2.2508583765452017,
         "cells": 65536,
@@ -1709,7 +1709,7 @@
         "dense_mass_over_initial": 0.6275059550635504
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0046",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0046",
         "time_code": 0.8930683420998827,
         "t_over_tcc": 2.305892543985276,
         "cells": 65536,
@@ -1720,7 +1720,7 @@
         "dense_mass_over_initial": 0.6298864920859636
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0047",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0047",
         "time_code": 0.9108067899148943,
         "t_over_tcc": 2.351693019302015,
         "cells": 65536,
@@ -1731,7 +1731,7 @@
         "dense_mass_over_initial": 0.60323938544007
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0048",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0048",
         "time_code": 0.9320846362246429,
         "t_over_tcc": 2.4066321822358936,
         "cells": 65536,
@@ -1742,7 +1742,7 @@
         "dense_mass_over_initial": 0.5938787625148166
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0049",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0049",
         "time_code": 0.9497938488819291,
         "t_over_tcc": 2.45235717269997,
         "cells": 65536,
@@ -1753,7 +1753,7 @@
         "dense_mass_over_initial": 0.5924587352204447
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0050",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0050",
         "time_code": 0.9710385014467211,
         "t_over_tcc": 2.507210629752905,
         "cells": 65536,
@@ -1764,7 +1764,7 @@
         "dense_mass_over_initial": 0.6178620817000717
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0051",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0051",
         "time_code": 0.9887394708176154,
         "t_over_tcc": 2.552914336143039,
         "cells": 65536,
@@ -1775,7 +1775,7 @@
         "dense_mass_over_initial": 0.5894425279492795
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0052",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0052",
         "time_code": 1.009986843746629,
         "t_over_tcc": 2.607774817146191,
         "cells": 65536,
@@ -1786,7 +1786,7 @@
         "dense_mass_over_initial": 0.5933431697132975
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0053",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0053",
         "time_code": 1.027708034287091,
         "t_over_tcc": 2.653530734371643,
         "cells": 65536,
@@ -1797,7 +1797,7 @@
         "dense_mass_over_initial": 0.6052388376273633
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0054",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0054",
         "time_code": 1.048983335845386,
         "t_over_tcc": 2.708463326785521,
         "cells": 65536,
@@ -1808,7 +1808,7 @@
         "dense_mass_over_initial": 0.5790414219357013
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0055",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0055",
         "time_code": 1.0667109804852513,
         "t_over_tcc": 2.754235908423975,
         "cells": 65536,
@@ -1819,7 +1819,7 @@
         "dense_mass_over_initial": 0.5512293860524401
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0056",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0056",
         "time_code": 1.0844526594917354,
         "t_over_tcc": 2.8000447266412225,
         "cells": 65536,
@@ -1830,7 +1830,7 @@
         "dense_mass_over_initial": 0.5781439851246476
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0057",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0057",
         "time_code": 1.1057301905641082,
         "t_over_tcc": 2.854983075635696,
         "cells": 65536,
@@ -1841,7 +1841,7 @@
         "dense_mass_over_initial": 0.581043209411656
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0058",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0058",
         "time_code": 1.1234179129839237,
         "t_over_tcc": 2.9006525785452197,
         "cells": 65536,
@@ -1852,7 +1852,7 @@
         "dense_mass_over_initial": 0.5685137054767215
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0059",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0059",
         "time_code": 1.1446165118554628,
         "t_over_tcc": 2.9553871254734876,
         "cells": 65536,
@@ -1863,7 +1863,7 @@
         "dense_mass_over_initial": 0.5554889238913131
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0060",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0060",
         "time_code": 1.1622822574300826,
         "t_over_tcc": 3.0009998844127144,
         "cells": 65536,
@@ -1874,7 +1874,7 @@
         "dense_mass_over_initial": 0.526259431973574
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0061",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0061",
         "time_code": 1.1834981414377532,
         "t_over_tcc": 3.0557790613705653,
         "cells": 65536,
@@ -1885,7 +1885,7 @@
         "dense_mass_over_initial": 0.5504577731002439
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0062",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0062",
         "time_code": 1.2011668920204657,
         "t_over_tcc": 3.101399579207324,
         "cells": 65536,
@@ -1896,7 +1896,7 @@
         "dense_mass_over_initial": 0.5372577849740221
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0063",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0063",
         "time_code": 1.2223300162442212,
         "t_over_tcc": 3.156042530988873,
         "cells": 65536,
@@ -1907,7 +1907,7 @@
         "dense_mass_over_initial": 0.4793547625557711
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0064",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0064",
         "time_code": 1.239948969767217,
         "t_over_tcc": 3.201534473370317,
         "cells": 65536,
@@ -1918,7 +1918,7 @@
         "dense_mass_over_initial": 0.4605648733757688
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0065",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0065",
         "time_code": 1.2610998134468276,
         "t_over_tcc": 3.256145716923229,
         "cells": 65536,
@@ -1929,7 +1929,7 @@
         "dense_mass_over_initial": 0.5063257673435023
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0066",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0066",
         "time_code": 1.278726951767754,
         "t_over_tcc": 3.301658792362057,
         "cells": 65536,
@@ -1940,7 +1940,7 @@
         "dense_mass_over_initial": 0.4021015276985271
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0067",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0067",
         "time_code": 1.2998719705627433,
         "t_over_tcc": 3.3562549961275483,
         "cells": 65536,
@@ -1951,7 +1951,7 @@
         "dense_mass_over_initial": 0.4222815165835259
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0068",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0068",
         "time_code": 1.317479221891984,
         "t_over_tcc": 3.4017167235746397,
         "cells": 65536,
@@ -1962,7 +1962,7 @@
         "dense_mass_over_initial": 0.4280774279545175
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0069",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0069",
         "time_code": 1.3385902757119306,
         "t_over_tcc": 3.456225230151668,
         "cells": 65536,
@@ -1973,7 +1973,7 @@
         "dense_mass_over_initial": 0.4451702035053157
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0070",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0070",
         "time_code": 1.3562102119330206,
         "t_over_tcc": 3.50171970984868,
         "cells": 65536,
@@ -1984,7 +1984,7 @@
         "dense_mass_over_initial": 0.3527321242674263
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0071",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0071",
         "time_code": 1.377357713598088,
         "t_over_tcc": 3.5563223243571462,
         "cells": 65536,
@@ -1995,7 +1995,7 @@
         "dense_mass_over_initial": 0.3844662318306837
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0072",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0072",
         "time_code": 1.3949349767570125,
         "t_over_tcc": 3.601706622681426,
         "cells": 65536,
@@ -2006,7 +2006,7 @@
         "dense_mass_over_initial": 0.37485201915997285
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0073",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0073",
         "time_code": 1.4159633883946996,
         "t_over_tcc": 3.656001748061397,
         "cells": 65536,
@@ -2017,7 +2017,7 @@
         "dense_mass_over_initial": 0.3309309753236078
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0074",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0074",
         "time_code": 1.4334841368797524,
         "t_over_tcc": 3.701240126125196,
         "cells": 65536,
@@ -2028,7 +2028,7 @@
         "dense_mass_over_initial": 0.3038565916848053
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0075",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0075",
         "time_code": 1.4545061360351157,
         "t_over_tcc": 3.7555186945470016,
         "cells": 65536,
@@ -2039,7 +2039,7 @@
         "dense_mass_over_initial": 0.3299735642568532
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0076",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0076",
         "time_code": 1.4720266881125643,
         "t_over_tcc": 3.8007565654885473,
         "cells": 65536,
@@ -2050,7 +2050,7 @@
         "dense_mass_over_initial": 0.31712189287321335
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0077",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0077",
         "time_code": 1.493034129556607,
         "t_over_tcc": 3.8549975460613504,
         "cells": 65536,
@@ -2061,7 +2061,7 @@
         "dense_mass_over_initial": 0.2290458564708942
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0078",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0078",
         "time_code": 1.510510740147062,
         "t_over_tcc": 3.90012196057134,
         "cells": 65536,
@@ -2072,7 +2072,7 @@
         "dense_mass_over_initial": 0.2603432909439931
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0079",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0079",
         "time_code": 1.5314770917593286,
         "t_over_tcc": 3.9542568476546984,
         "cells": 65536,
@@ -2083,7 +2083,7 @@
         "dense_mass_over_initial": 0.27651000769814826
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0080",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0080",
         "time_code": 1.5524514875914461,
         "t_over_tcc": 4.008412504824401,
         "cells": 65536,
@@ -2094,7 +2094,7 @@
         "dense_mass_over_initial": 0.17937923984698229
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0081",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0081",
         "time_code": 1.5699362566207036,
         "t_over_tcc": 4.053557984332799,
         "cells": 65536,
@@ -2105,7 +2105,7 @@
         "dense_mass_over_initial": 0.19317462035752814
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0082",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0082",
         "time_code": 1.5909139871719378,
         "t_over_tcc": 4.1077222517102365,
         "cells": 65536,
@@ -2116,7 +2116,7 @@
         "dense_mass_over_initial": 0.20074452107887286
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0083",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0083",
         "time_code": 1.6083802277131207,
         "t_over_tcc": 4.152819890868139,
         "cells": 65536,
@@ -2127,7 +2127,7 @@
         "dense_mass_over_initial": 0.10565644277467824
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0084",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0084",
         "time_code": 1.6293446563795013,
         "t_over_tcc": 4.206949812926569,
         "cells": 65536,
@@ -2138,7 +2138,7 @@
         "dense_mass_over_initial": 0.14222940096882053
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0085",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0085",
         "time_code": 1.646836729891614,
         "t_over_tcc": 4.252114152528602,
         "cells": 65536,
@@ -2149,7 +2149,7 @@
         "dense_mass_over_initial": 0.10218262838806018
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0086",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0086",
         "time_code": 1.6677914864817907,
         "t_over_tcc": 4.306219101393658,
         "cells": 65536,
@@ -2160,7 +2160,7 @@
         "dense_mass_over_initial": 0.08799752104679665
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0087",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0087",
         "time_code": 1.6852116863382085,
         "t_over_tcc": 4.351197864014666,
         "cells": 65536,
@@ -2171,7 +2171,7 @@
         "dense_mass_over_initial": 0.09800447009927771
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0088",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0088",
         "time_code": 1.7060939740482426,
         "t_over_tcc": 4.405115699035782,
         "cells": 65536,
@@ -2182,7 +2182,7 @@
         "dense_mass_over_initial": 0.04656952400132622
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0089",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0089",
         "time_code": 1.726942721934869,
         "t_over_tcc": 4.458946934605236,
         "cells": 65536,
@@ -2193,7 +2193,7 @@
         "dense_mass_over_initial": 0.05533520906955647
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0090",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0090",
         "time_code": 1.744261386443433,
         "t_over_tcc": 4.5036635340853834,
         "cells": 65536,
@@ -2204,7 +2204,7 @@
         "dense_mass_over_initial": 0.03510014697495554
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0091",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0091",
         "time_code": 1.7650146182399056,
         "t_over_tcc": 4.5572481481705305,
         "cells": 65536,
@@ -2215,7 +2215,7 @@
         "dense_mass_over_initial": 0.06385503207502273
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0092",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0092",
         "time_code": 1.7823040267600614,
         "t_over_tcc": 4.601889209013424,
         "cells": 65536,
@@ -2226,7 +2226,7 @@
         "dense_mass_over_initial": 0.033693263746434
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0093",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0093",
         "time_code": 1.8030750772157846,
         "t_over_tcc": 4.655519830678924,
         "cells": 65536,
@@ -2237,7 +2237,7 @@
         "dense_mass_over_initial": 0.02212066333009888
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0094",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0094",
         "time_code": 1.8203915094997936,
         "t_over_tcc": 4.700230666580054,
         "cells": 65536,
@@ -2248,7 +2248,7 @@
         "dense_mass_over_initial": 0.011798549384542556
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0095",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0095",
         "time_code": 1.8411820396928773,
         "t_over_tcc": 4.753911584711145,
         "cells": 65536,
@@ -2259,7 +2259,7 @@
         "dense_mass_over_initial": 0.021798712874342468
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0096",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0096",
         "time_code": 1.8619774419717119,
         "t_over_tcc": 4.807605082513551,
         "cells": 65536,
@@ -2270,7 +2270,7 @@
         "dense_mass_over_initial": 0.011296686619250939
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0097",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0097",
         "time_code": 1.879312926316877,
         "t_over_tcc": 4.852365110625061,
         "cells": 65536,
@@ -2281,7 +2281,7 @@
         "dense_mass_over_initial": 0.020533162170695157
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0098",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0098",
         "time_code": 1.9000933677901568,
         "t_over_tcc": 4.906019979793627,
         "cells": 65536,
@@ -2292,7 +2292,7 @@
         "dense_mass_over_initial": 0.01042299092701355
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0099",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0099",
         "time_code": 1.9173820435916265,
         "t_over_tcc": 4.950659148765008,
         "cells": 65536,
@@ -2303,7 +2303,7 @@
         "dense_mass_over_initial": 0.0
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0100",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L3_chi100_tanh13/cloudcrush_hdf5_chk_0100",
         "time_code": 1.9380038873519403,
         "t_over_tcc": 5.003904520399533,
         "cells": 65536,
@@ -2316,7 +2316,7 @@
     ],
     "L4_chi100_sharp13": [
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0000",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0000",
         "time_code": 0.0,
         "t_over_tcc": 0.0,
         "cells": 524288,
@@ -2332,7 +2332,7 @@
         "dense_mass_over_initial": 1.0
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0001",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0001",
         "time_code": 0.019477851127906908,
         "t_over_tcc": 0.05029159535886053,
         "cells": 524288,
@@ -2343,7 +2343,7 @@
         "dense_mass_over_initial": 1.0003897928685728
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0002",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0002",
         "time_code": 0.04021948179407852,
         "t_over_tcc": 0.10384625545437233,
         "cells": 524288,
@@ -2354,7 +2354,7 @@
         "dense_mass_over_initial": 1.005015803618874
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0003",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0003",
         "time_code": 0.05903075961187221,
         "t_over_tcc": 0.15241676592716963,
         "cells": 524288,
@@ -2365,7 +2365,7 @@
         "dense_mass_over_initial": 1.0056015199181119
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0004",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0004",
         "time_code": 0.07772044478567057,
         "t_over_tcc": 0.20067332554315678,
         "cells": 524288,
@@ -2376,7 +2376,7 @@
         "dense_mass_over_initial": 1.0009733980409086
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0005",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0005",
         "time_code": 0.0982025869262026,
         "t_over_tcc": 0.2535579891464459,
         "cells": 524288,
@@ -2387,7 +2387,7 @@
         "dense_mass_over_initial": 0.9968963301659525
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0006",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0006",
         "time_code": 0.11698200144972663,
         "t_over_tcc": 0.30204622894720207,
         "cells": 524288,
@@ -2398,7 +2398,7 @@
         "dense_mass_over_initial": 0.9888154204946219
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0007",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0007",
         "time_code": 0.13579989576735796,
         "t_over_tcc": 0.3506338231491203,
         "cells": 524288,
@@ -2409,7 +2409,7 @@
         "dense_mass_over_initial": 0.984719904086466
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0008",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0008",
         "time_code": 0.1563534460230657,
         "t_over_tcc": 0.4037028617129825,
         "cells": 524288,
@@ -2420,7 +2420,7 @@
         "dense_mass_over_initial": 0.9713565576494164
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0009",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0009",
         "time_code": 0.17519137223190975,
         "t_over_tcc": 0.4523421780356073,
         "cells": 524288,
@@ -2431,7 +2431,7 @@
         "dense_mass_over_initial": 0.9703566111193804
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0010",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0010",
         "time_code": 0.19407745412271563,
         "t_over_tcc": 0.5011058317944077,
         "cells": 524288,
@@ -2442,7 +2442,7 @@
         "dense_mass_over_initial": 0.9603819531421333
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0011",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0011",
         "time_code": 0.21471989105747571,
         "t_over_tcc": 0.5544043747767162,
         "cells": 524288,
@@ -2453,7 +2453,7 @@
         "dense_mass_over_initial": 0.9581468251681257
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0012",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0012",
         "time_code": 0.2336989195404775,
         "t_over_tcc": 0.6034080156046243,
         "cells": 524288,
@@ -2464,7 +2464,7 @@
         "dense_mass_over_initial": 0.9545884696922016
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0013",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0013",
         "time_code": 0.2527254475857419,
         "t_over_tcc": 0.6525342997749292,
         "cells": 524288,
@@ -2475,7 +2475,7 @@
         "dense_mass_over_initial": 0.9463594618985403
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0014",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0014",
         "time_code": 0.2717823301613727,
         "t_over_tcc": 0.7017389590056281,
         "cells": 524288,
@@ -2486,7 +2486,7 @@
         "dense_mass_over_initial": 0.9370692253536268
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0015",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0015",
         "time_code": 0.290882179786341,
         "t_over_tcc": 0.7510545586806736,
         "cells": 524288,
@@ -2497,7 +2497,7 @@
         "dense_mass_over_initial": 0.9324371148711905
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0016",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0016",
         "time_code": 0.3100454313517848,
         "t_over_tcc": 0.8005338614621049,
         "cells": 524288,
@@ -2508,7 +2508,7 @@
         "dense_mass_over_initial": 0.9249938293966923
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0017",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0017",
         "time_code": 0.32922790097909116,
         "t_over_tcc": 0.8500627850658964,
         "cells": 524288,
@@ -2519,7 +2519,7 @@
         "dense_mass_over_initial": 0.917016932303682
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0018",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0018",
         "time_code": 0.35016342076931417,
         "t_over_tcc": 0.9041180647270494,
         "cells": 524288,
@@ -2530,7 +2530,7 @@
         "dense_mass_over_initial": 0.9161899020672117
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0019",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0019",
         "time_code": 0.3693808960569317,
         "t_over_tcc": 0.9537373725571129,
         "cells": 524288,
@@ -2541,7 +2541,7 @@
         "dense_mass_over_initial": 0.9058932673698664
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0020",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0020",
         "time_code": 0.3886324599174487,
         "t_over_tcc": 1.0034446967039334,
         "cells": 524288,
@@ -2552,7 +2552,7 @@
         "dense_mass_over_initial": 0.8938759275138014
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0021",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0021",
         "time_code": 0.40791583623127353,
         "t_over_tcc": 1.0532341602519963,
         "cells": 524288,
@@ -2563,7 +2563,7 @@
         "dense_mass_over_initial": 0.8913415021196407
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0022",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0022",
         "time_code": 0.4272541069626499,
         "t_over_tcc": 1.1031653605767102,
         "cells": 524288,
@@ -2574,7 +2574,7 @@
         "dense_mass_over_initial": 0.88791147564426
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0023",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0023",
         "time_code": 0.44658193327003237,
         "t_over_tcc": 1.1530695935146316,
         "cells": 524288,
@@ -2585,7 +2585,7 @@
         "dense_mass_over_initial": 0.8792214963965092
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0024",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0024",
         "time_code": 0.4659066557116482,
         "t_over_tcc": 1.202965812305604,
         "cells": 524288,
@@ -2596,7 +2596,7 @@
         "dense_mass_over_initial": 0.8689775879177986
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0025",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0025",
         "time_code": 0.4852780720244493,
         "t_over_tcc": 1.2529825941535568,
         "cells": 524288,
@@ -2607,7 +2607,7 @@
         "dense_mass_over_initial": 0.8785154841732598
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0026",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0026",
         "time_code": 0.504715426478762,
         "t_over_tcc": 1.3031696275508127,
         "cells": 524288,
@@ -2618,7 +2618,7 @@
         "dense_mass_over_initial": 0.8632410199486991
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0027",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0027",
         "time_code": 0.524169770062779,
         "t_over_tcc": 1.3534005266923426,
         "cells": 524288,
@@ -2629,7 +2629,7 @@
         "dense_mass_over_initial": 0.8573629540868987
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0028",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0028",
         "time_code": 0.5435749819957664,
         "t_over_tcc": 1.4035045684563996,
         "cells": 524288,
@@ -2640,7 +2640,7 @@
         "dense_mass_over_initial": 0.8528559804324242
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0029",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0029",
         "time_code": 0.562991398199201,
         "t_over_tcc": 1.4536375395223557,
         "cells": 524288,
@@ -2651,7 +2651,7 @@
         "dense_mass_over_initial": 0.8488903587277683
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0030",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0030",
         "time_code": 0.5824449990053886,
         "t_over_tcc": 1.503866520819777,
         "cells": 524288,
@@ -2662,7 +2662,7 @@
         "dense_mass_over_initial": 0.8481960785134509
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0031",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0031",
         "time_code": 0.601915321269034,
         "t_over_tcc": 1.5541386767347039,
         "cells": 524288,
@@ -2673,7 +2673,7 @@
         "dense_mass_over_initial": 0.8432965238712756
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0032",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0032",
         "time_code": 0.6214276600698755,
         "t_over_tcc": 1.604519318882181,
         "cells": 524288,
@@ -2684,7 +2684,7 @@
         "dense_mass_over_initial": 0.8549029800648875
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0033",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0033",
         "time_code": 0.639192935837827,
         "t_over_tcc": 1.6503890636755532,
         "cells": 524288,
@@ -2695,7 +2695,7 @@
         "dense_mass_over_initial": 0.8593324048890431
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0034",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0034",
         "time_code": 0.6587365392364188,
         "t_over_tcc": 1.7008504306673058,
         "cells": 524288,
@@ -2706,7 +2706,7 @@
         "dense_mass_over_initial": 0.8592129003827299
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0035",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0035",
         "time_code": 0.6782816724161593,
         "t_over_tcc": 1.7513157475369998,
         "cells": 524288,
@@ -2717,7 +2717,7 @@
         "dense_mass_over_initial": 0.849305699480672
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0036",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0036",
         "time_code": 0.6978288769109905,
         "t_over_tcc": 1.801786412519261,
         "cells": 524288,
@@ -2728,7 +2728,7 @@
         "dense_mass_over_initial": 0.8422041913683953
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0037",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0037",
         "time_code": 0.7173283627130039,
         "t_over_tcc": 1.852133868366465,
         "cells": 524288,
@@ -2739,7 +2739,7 @@
         "dense_mass_over_initial": 0.8522067832412276
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0038",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0038",
         "time_code": 0.7367967327429507,
         "t_over_tcc": 1.9024009836356566,
         "cells": 524288,
@@ -2750,7 +2750,7 @@
         "dense_mass_over_initial": 0.8490800100251642
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0039",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0039",
         "time_code": 0.7562986007165563,
         "t_over_tcc": 1.9527545902234635,
         "cells": 524288,
@@ -2761,7 +2761,7 @@
         "dense_mass_over_initial": 0.8519186350055024
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0040",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0040",
         "time_code": 0.7758354258128163,
         "t_over_tcc": 2.0031984557138514,
         "cells": 524288,
@@ -2772,7 +2772,7 @@
         "dense_mass_over_initial": 0.8377765887332232
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0041",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0041",
         "time_code": 0.795364189364139,
         "t_over_tcc": 2.053621506384715,
         "cells": 524288,
@@ -2783,7 +2783,7 @@
         "dense_mass_over_initial": 0.829826891970852
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0042",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0042",
         "time_code": 0.8148750867681595,
         "t_over_tcc": 2.1039984268616037,
         "cells": 524288,
@@ -2794,7 +2794,7 @@
         "dense_mass_over_initial": 0.8204889484698621
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0043",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0043",
         "time_code": 0.8343584568663936,
         "t_over_tcc": 2.1543042721405747,
         "cells": 524288,
@@ -2805,7 +2805,7 @@
         "dense_mass_over_initial": 0.8255031246599859
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0044",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0044",
         "time_code": 0.8520672352145497,
         "t_over_tcc": 2.2000281412232994,
         "cells": 524288,
@@ -2816,7 +2816,7 @@
         "dense_mass_over_initial": 0.8180988080653672
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0045",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0045",
         "time_code": 0.8715131283896405,
         "t_over_tcc": 2.2502372215028026,
         "cells": 524288,
@@ -2827,7 +2827,7 @@
         "dense_mass_over_initial": 0.789770318482777
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0046",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0046",
         "time_code": 0.8909126167977737,
         "t_over_tcc": 2.3003264851892316,
         "cells": 524288,
@@ -2838,7 +2838,7 @@
         "dense_mass_over_initial": 0.7991723623325441
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0047",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0047",
         "time_code": 0.910313069791631,
         "t_over_tcc": 2.350418239425291,
         "cells": 524288,
@@ -2849,7 +2849,7 @@
         "dense_mass_over_initial": 0.793645638279442
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0048",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0048",
         "time_code": 0.9297154617765689,
         "t_over_tcc": 2.400515000114793,
         "cells": 524288,
@@ -2860,7 +2860,7 @@
         "dense_mass_over_initial": 0.795801883553557
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0049",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0049",
         "time_code": 0.949113385803652,
         "t_over_tcc": 2.4506002245867196,
         "cells": 524288,
@@ -2871,7 +2871,7 @@
         "dense_mass_over_initial": 0.7856434557189461
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0050",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0050",
         "time_code": 0.9685338739133188,
         "t_over_tcc": 2.5007437092693583,
         "cells": 524288,
@@ -2882,7 +2882,7 @@
         "dense_mass_over_initial": 0.7755182144711633
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0051",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0051",
         "time_code": 0.987929673678496,
         "t_over_tcc": 2.5508234489206285,
         "cells": 524288,
@@ -2893,7 +2893,7 @@
         "dense_mass_over_initial": 0.7493449275277103
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0052",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0052",
         "time_code": 1.007273757087699,
         "t_over_tcc": 2.6007696575149555,
         "cells": 524288,
@@ -2904,7 +2904,7 @@
         "dense_mass_over_initial": 0.7554524291965721
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0053",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0053",
         "time_code": 1.026616946507036,
         "t_over_tcc": 2.650713557837374,
         "cells": 524288,
@@ -2915,7 +2915,7 @@
         "dense_mass_over_initial": 0.7626671001283617
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0054",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0054",
         "time_code": 1.0459851320506406,
         "t_over_tcc": 2.700721997875131,
         "cells": 524288,
@@ -2926,7 +2926,7 @@
         "dense_mass_over_initial": 0.746644051683197
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0055",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0055",
         "time_code": 1.0653581483185588,
         "t_over_tcc": 2.750742910789433,
         "cells": 524288,
@@ -2937,7 +2937,7 @@
         "dense_mass_over_initial": 0.7292615935772443
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0056",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0056",
         "time_code": 1.084746961113861,
         "t_over_tcc": 2.8008046101620585,
         "cells": 524288,
@@ -2948,7 +2948,7 @@
         "dense_mass_over_initial": 0.7374649868035323
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0057",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0057",
         "time_code": 1.1041323449986278,
         "t_over_tcc": 2.8508574561257514,
         "cells": 524288,
@@ -2959,7 +2959,7 @@
         "dense_mass_over_initial": 0.7157007676362378
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0058",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0058",
         "time_code": 1.1235399082512816,
         "t_over_tcc": 2.900967568971082,
         "cells": 524288,
@@ -2970,7 +2970,7 @@
         "dense_mass_over_initial": 0.7053074211990269
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0059",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0059",
         "time_code": 1.1429600078969444,
         "t_over_tcc": 2.9511100506439756,
         "cells": 524288,
@@ -2981,7 +2981,7 @@
         "dense_mass_over_initial": 0.7052017584906667
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0060",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0060",
         "time_code": 1.1623348816329684,
         "t_over_tcc": 3.0011357595203036,
         "cells": 524288,
@@ -2992,7 +2992,7 @@
         "dense_mass_over_initial": 0.6776561990492789
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0061",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0061",
         "time_code": 1.1816652252088464,
         "t_over_tcc": 3.0510464920175324,
         "cells": 524288,
@@ -3003,7 +3003,7 @@
         "dense_mass_over_initial": 0.6764442597128955
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0062",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0062",
         "time_code": 1.200945123158262,
         "t_over_tcc": 3.100826974467309,
         "cells": 524288,
@@ -3014,7 +3014,7 @@
         "dense_mass_over_initial": 0.6453497614222778
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0063",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0063",
         "time_code": 1.2201928667625013,
         "t_over_tcc": 3.150524434754835,
         "cells": 524288,
@@ -3025,7 +3025,7 @@
         "dense_mass_over_initial": 0.6504074212951163
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0064",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0064",
         "time_code": 1.2394620620759793,
         "t_over_tcc": 3.2002772831174475,
         "cells": 524288,
@@ -3036,7 +3036,7 @@
         "dense_mass_over_initial": 0.6213250162100585
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0065",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0065",
         "time_code": 1.2587436438601585,
         "t_over_tcc": 3.250062113209889,
         "cells": 524288,
@@ -3047,7 +3047,7 @@
         "dense_mass_over_initial": 0.6435196855755158
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0066",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0066",
         "time_code": 1.2798088328851838,
         "t_over_tcc": 3.304452197395645,
         "cells": 524288,
@@ -3058,7 +3058,7 @@
         "dense_mass_over_initial": 0.603620786319769
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0067",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0067",
         "time_code": 1.2991639984242096,
         "t_over_tcc": 3.354427019926135,
         "cells": 524288,
@@ -3069,7 +3069,7 @@
         "dense_mass_over_initial": 0.6152019083589507
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0068",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0068",
         "time_code": 1.3185388803576128,
         "t_over_tcc": 3.4044527499680055,
         "cells": 524288,
@@ -3080,7 +3080,7 @@
         "dense_mass_over_initial": 0.5838801397111489
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0069",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0069",
         "time_code": 1.337863708963348,
         "t_over_tcc": 3.4543492428735556,
         "cells": 524288,
@@ -3091,7 +3091,7 @@
         "dense_mass_over_initial": 0.5858322904316693
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0070",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0070",
         "time_code": 1.3571556840032801,
         "t_over_tcc": 3.5041609082369596,
         "cells": 524288,
@@ -3102,7 +3102,7 @@
         "dense_mass_over_initial": 0.569518170423387
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0071",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0071",
         "time_code": 1.3762971628751735,
         "t_over_tcc": 3.5535839941653755,
         "cells": 524288,
@@ -3113,7 +3113,7 @@
         "dense_mass_over_initial": 0.5664242024965332
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0072",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0072",
         "time_code": 1.3953850862110726,
         "t_over_tcc": 3.6028688002944564,
         "cells": 524288,
@@ -3124,7 +3124,7 @@
         "dense_mass_over_initial": 0.5407128787564472
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0073",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0073",
         "time_code": 1.4144825797255305,
         "t_over_tcc": 3.652178316518323,
         "cells": 524288,
@@ -3135,7 +3135,7 @@
         "dense_mass_over_initial": 0.5354016161689477
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0074",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0074",
         "time_code": 1.4336016447751432,
         "t_over_tcc": 3.70154353020646,
         "cells": 524288,
@@ -3146,7 +3146,7 @@
         "dense_mass_over_initial": 0.5170044677278869
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0075",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0075",
         "time_code": 1.4527388012918843,
         "t_over_tcc": 3.7509554558618623,
         "cells": 524288,
@@ -3157,7 +3157,7 @@
         "dense_mass_over_initial": 0.4972263654804241
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0076",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0076",
         "time_code": 1.471833211596288,
         "t_over_tcc": 3.8002570112716003,
         "cells": 524288,
@@ -3168,7 +3168,7 @@
         "dense_mass_over_initial": 0.4596575950248024
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0077",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0077",
         "time_code": 1.4926484177869335,
         "t_over_tcc": 3.854001642554429,
         "cells": 524288,
@@ -3179,7 +3179,7 @@
         "dense_mass_over_initial": 0.4779389905004165
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0078",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0078",
         "time_code": 1.5116594590401373,
         "t_over_tcc": 3.903087939999576,
         "cells": 524288,
@@ -3190,7 +3190,7 @@
         "dense_mass_over_initial": 0.4628848061725213
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0079",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0079",
         "time_code": 1.5306116922870163,
         "t_over_tcc": 3.9520223958253102,
         "cells": 524288,
@@ -3201,7 +3201,7 @@
         "dense_mass_over_initial": 0.43412892301355493
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0080",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0080",
         "time_code": 1.5495862149432662,
         "t_over_tcc": 4.001014402658571,
         "cells": 524288,
@@ -3212,7 +3212,7 @@
         "dense_mass_over_initial": 0.4024361824453191
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0081",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0081",
         "time_code": 1.5685743592016346,
         "t_over_tcc": 4.050041580317267,
         "cells": 524288,
@@ -3223,7 +3223,7 @@
         "dense_mass_over_initial": 0.36182250377421354
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0082",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0082",
         "time_code": 1.5892522871602042,
         "t_over_tcc": 4.103431760729012,
         "cells": 524288,
@@ -3234,7 +3234,7 @@
         "dense_mass_over_initial": 0.36564711507811276
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0083",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0083",
         "time_code": 1.6082098150495736,
         "t_over_tcc": 4.152379887262872,
         "cells": 524288,
@@ -3245,7 +3245,7 @@
         "dense_mass_over_initial": 0.3587884911497055
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0084",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0084",
         "time_code": 1.627171315913686,
         "t_over_tcc": 4.201338271973409,
         "cells": 524288,
@@ -3256,7 +3256,7 @@
         "dense_mass_over_initial": 0.31351546574035394
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0085",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0085",
         "time_code": 1.6461107411746279,
         "t_over_tcc": 4.250239657721654,
         "cells": 524288,
@@ -3267,7 +3267,7 @@
         "dense_mass_over_initial": 0.30997280357370627
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0086",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0086",
         "time_code": 1.6667809904678785,
         "t_over_tcc": 4.303610011904798,
         "cells": 524288,
@@ -3278,7 +3278,7 @@
         "dense_mass_over_initial": 0.28408484765719294
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0087",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0087",
         "time_code": 1.6857528309358185,
         "t_over_tcc": 4.352595093357621,
         "cells": 524288,
@@ -3289,7 +3289,7 @@
         "dense_mass_over_initial": 0.2666491920964888
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0088",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0088",
         "time_code": 1.7047653766095963,
         "t_over_tcc": 4.401685275199988,
         "cells": 524288,
@@ -3300,7 +3300,7 @@
         "dense_mass_over_initial": 0.23094074167135037
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0089",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0089",
         "time_code": 1.7236928194459646,
         "t_over_tcc": 4.4505557224610195,
         "cells": 524288,
@@ -3311,7 +3311,7 @@
         "dense_mass_over_initial": 0.18839649193215652
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0090",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0090",
         "time_code": 1.7442052533807444,
         "t_over_tcc": 4.50351859914074,
         "cells": 524288,
@@ -3322,7 +3322,7 @@
         "dense_mass_over_initial": 0.1866495385668247
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0091",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0091",
         "time_code": 1.762932686020084,
         "t_over_tcc": 4.551872622293663,
         "cells": 524288,
@@ -3333,7 +3333,7 @@
         "dense_mass_over_initial": 0.14788356475192108
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0092",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0092",
         "time_code": 1.781658361944432,
         "t_over_tcc": 4.600222109627981,
         "cells": 524288,
@@ -3344,7 +3344,7 @@
         "dense_mass_over_initial": 0.13653091673808496
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0093",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0093",
         "time_code": 1.8020645448633117,
         "t_over_tcc": 4.652910647364303,
         "cells": 524288,
@@ -3355,7 +3355,7 @@
         "dense_mass_over_initial": 0.1184788817508593
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0094",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0094",
         "time_code": 1.8207372990608244,
         "t_over_tcc": 4.701123491387497,
         "cells": 524288,
@@ -3366,7 +3366,7 @@
         "dense_mass_over_initial": 0.093631934798828
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0095",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0095",
         "time_code": 1.8410613804051383,
         "t_over_tcc": 4.753600043769826,
         "cells": 524288,
@@ -3377,7 +3377,7 @@
         "dense_mass_over_initial": 0.08641775170417221
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0096",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0096",
         "time_code": 1.859557196887491,
         "t_over_tcc": 4.801356036576933,
         "cells": 524288,
@@ -3388,7 +3388,7 @@
         "dense_mass_over_initial": 0.07850276544308529
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0097",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0097",
         "time_code": 1.8795153872231138,
         "t_over_tcc": 4.852887862437136,
         "cells": 524288,
@@ -3399,7 +3399,7 @@
         "dense_mass_over_initial": 0.06805517160757105
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0098",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0098",
         "time_code": 1.8977821213167871,
         "t_over_tcc": 4.900052367060066,
         "cells": 524288,
@@ -3410,7 +3410,7 @@
         "dense_mass_over_initial": 0.05437283990750157
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0099",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0099",
         "time_code": 1.9177341357549664,
         "t_over_tcc": 4.951568246821639,
         "cells": 524288,
@@ -3421,7 +3421,7 @@
         "dense_mass_over_initial": 0.0503388865982552
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0100",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_sharp13/cloudcrush_hdf5_chk_0100",
         "time_code": 1.9376858666030439,
         "t_over_tcc": 5.003083394356716,
         "cells": 524288,
@@ -3434,7 +3434,7 @@
     ],
     "L4_chi100_tanh13": [
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0000",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0000",
         "time_code": 0.0,
         "t_over_tcc": 0.0,
         "cells": 524288,
@@ -3450,7 +3450,7 @@
         "dense_mass_over_initial": 1.0
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0001",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0001",
         "time_code": 0.01966182008565433,
         "t_over_tcc": 0.050766601165243806,
         "cells": 524288,
@@ -3461,7 +3461,7 @@
         "dense_mass_over_initial": 0.9995453182745482
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0002",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0002",
         "time_code": 0.03914566325774077,
         "t_over_tcc": 0.10107366791564905,
         "cells": 524288,
@@ -3472,7 +3472,7 @@
         "dense_mass_over_initial": 1.0005539023459031
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0003",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0003",
         "time_code": 0.05822531162466317,
         "t_over_tcc": 0.15033710816670504,
         "cells": 524288,
@@ -3483,7 +3483,7 @@
         "dense_mass_over_initial": 1.0031995122176083
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0004",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0004",
         "time_code": 0.0788820674723378,
         "t_over_tcc": 0.2036726224231827,
         "cells": 524288,
@@ -3494,7 +3494,7 @@
         "dense_mass_over_initial": 1.0007076480723203
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0005",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0005",
         "time_code": 0.0977972629904903,
         "t_over_tcc": 0.25251144724455726,
         "cells": 524288,
@@ -3505,7 +3505,7 @@
         "dense_mass_over_initial": 0.9927208493285024
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0006",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0006",
         "time_code": 0.11672382091058722,
         "t_over_tcc": 0.3013796096616009,
         "cells": 524288,
@@ -3516,7 +3516,7 @@
         "dense_mass_over_initial": 0.9879002500862848
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0007",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0007",
         "time_code": 0.13560986060600894,
         "t_over_tcc": 0.35014315447238786,
         "cells": 524288,
@@ -3527,7 +3527,7 @@
         "dense_mass_over_initial": 0.9807957767622145
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0008",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0008",
         "time_code": 0.15617019081851913,
         "t_over_tcc": 0.4032296988094393,
         "cells": 524288,
@@ -3538,7 +3538,7 @@
         "dense_mass_over_initial": 0.9672412836224655
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0009",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0009",
         "time_code": 0.17501011803692965,
         "t_over_tcc": 0.45187418171654853,
         "cells": 524288,
@@ -3549,7 +3549,7 @@
         "dense_mass_over_initial": 0.9630009934544493
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0010",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0010",
         "time_code": 0.19389260527527255,
         "t_over_tcc": 0.5006285541225993,
         "cells": 524288,
@@ -3560,7 +3560,7 @@
         "dense_mass_over_initial": 0.9555605750310142
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0011",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0011",
         "time_code": 0.21453928481944368,
         "t_over_tcc": 0.5539380514753034,
         "cells": 524288,
@@ -3571,7 +3571,7 @@
         "dense_mass_over_initial": 0.9490701923335134
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0012",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0012",
         "time_code": 0.23351599078287485,
         "t_over_tcc": 0.6029356955834659,
         "cells": 524288,
@@ -3582,7 +3582,7 @@
         "dense_mass_over_initial": 0.951292783301716
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0013",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0013",
         "time_code": 0.2525283554952163,
         "t_over_tcc": 0.6520254101854126,
         "cells": 524288,
@@ -3593,7 +3593,7 @@
         "dense_mass_over_initial": 0.9443498559680035
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0014",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0014",
         "time_code": 0.27158213172178636,
         "t_over_tcc": 0.7012220488573251,
         "cells": 524288,
@@ -3604,7 +3604,7 @@
         "dense_mass_over_initial": 0.9327063104991775
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0015",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0015",
         "time_code": 0.2907073474425017,
         "t_over_tcc": 0.7506031435099616,
         "cells": 524288,
@@ -3615,7 +3615,7 @@
         "dense_mass_over_initial": 0.9258319972593756
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0016",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0016",
         "time_code": 0.3098803266800281,
         "t_over_tcc": 0.8001075630327084,
         "cells": 524288,
@@ -3626,7 +3626,7 @@
         "dense_mass_over_initial": 0.917648386762303
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0017",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0017",
         "time_code": 0.33084467766100917,
         "t_over_tcc": 0.8542372845082996,
         "cells": 524288,
@@ -3637,7 +3637,7 @@
         "dense_mass_over_initial": 0.9134811110830843
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0018",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0018",
         "time_code": 0.35009351989090687,
         "t_over_tcc": 0.9039375814350782,
         "cells": 524288,
@@ -3648,7 +3648,7 @@
         "dense_mass_over_initial": 0.9073072318039602
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0019",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0019",
         "time_code": 0.36936886050633044,
         "t_over_tcc": 0.9537062968990855,
         "cells": 524288,
@@ -3659,7 +3659,7 @@
         "dense_mass_over_initial": 0.895510469637559
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0020",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0020",
         "time_code": 0.3886534365282603,
         "t_over_tcc": 1.0034988580801556,
         "cells": 524288,
@@ -3670,7 +3670,7 @@
         "dense_mass_over_initial": 0.8879175007382113
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0021",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0021",
         "time_code": 0.4079850105983518,
         "t_over_tcc": 1.053412767699782,
         "cells": 524288,
@@ -3681,7 +3681,7 @@
         "dense_mass_over_initial": 0.8810849386211987
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0022",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0022",
         "time_code": 0.42734634698921403,
         "t_over_tcc": 1.1034035233012014,
         "cells": 524288,
@@ -3692,7 +3692,7 @@
         "dense_mass_over_initial": 0.877537163463332
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0023",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0023",
         "time_code": 0.4467055321881942,
         "t_over_tcc": 1.1533887245490648,
         "cells": 524288,
@@ -3703,7 +3703,7 @@
         "dense_mass_over_initial": 0.8622255513653684
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0024",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0024",
         "time_code": 0.4661078219259651,
         "t_over_tcc": 1.2034852212375167,
         "cells": 524288,
@@ -3714,7 +3714,7 @@
         "dense_mass_over_initial": 0.8667360175840741
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0025",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0025",
         "time_code": 0.4855594988182995,
         "t_over_tcc": 1.2537092350107293,
         "cells": 524288,
@@ -3725,7 +3725,7 @@
         "dense_mass_over_initial": 0.8664549475092747
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0026",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0026",
         "time_code": 0.5050312087308206,
         "t_over_tcc": 1.3039849738196467,
         "cells": 524288,
@@ -3736,7 +3736,7 @@
         "dense_mass_over_initial": 0.8597444258374773
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0027",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0027",
         "time_code": 0.5244841705823087,
         "t_over_tcc": 1.3542123053431276,
         "cells": 524288,
@@ -3747,7 +3747,7 @@
         "dense_mass_over_initial": 0.8515547058758298
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0028",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0028",
         "time_code": 0.5439030969518411,
         "t_over_tcc": 1.404351757630079,
         "cells": 524288,
@@ -3758,7 +3758,7 @@
         "dense_mass_over_initial": 0.8435589862761737
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0029",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0029",
         "time_code": 0.5615837324450405,
         "t_over_tcc": 1.4500029621737622,
         "cells": 524288,
@@ -3769,7 +3769,7 @@
         "dense_mass_over_initial": 0.8451080608042875
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0030",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0030",
         "time_code": 0.5810748786387321,
         "t_over_tcc": 1.5003288852448702,
         "cells": 524288,
@@ -3780,7 +3780,7 @@
         "dense_mass_over_initial": 0.8420223301610756
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0031",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0031",
         "time_code": 0.6005826370602809,
         "t_over_tcc": 1.5506977009038676,
         "cells": 524288,
@@ -3791,7 +3791,7 @@
         "dense_mass_over_initial": 0.8336693570566058
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0032",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0032",
         "time_code": 0.6200761474970654,
         "t_over_tcc": 1.6010297284243922,
         "cells": 524288,
@@ -3802,7 +3802,7 @@
         "dense_mass_over_initial": 0.8279636960431175
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0033",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0033",
         "time_code": 0.6395799046121033,
         "t_over_tcc": 1.651388212754403,
         "cells": 524288,
@@ -3813,7 +3813,7 @@
         "dense_mass_over_initial": 0.8242285696366719
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0034",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0034",
         "time_code": 0.6591302692955956,
         "t_over_tcc": 1.701867037308701,
         "cells": 524288,
@@ -3824,7 +3824,7 @@
         "dense_mass_over_initial": 0.8283049806599792
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0035",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0035",
         "time_code": 0.6786974931575278,
         "t_over_tcc": 1.7523893920745517,
         "cells": 524288,
@@ -3835,7 +3835,7 @@
         "dense_mass_over_initial": 0.8425643409512154
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0036",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0036",
         "time_code": 0.6982430756276703,
         "t_over_tcc": 1.8028558690070753,
         "cells": 524288,
@@ -3846,7 +3846,7 @@
         "dense_mass_over_initial": 0.8368445279504493
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0037",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0037",
         "time_code": 0.7177310851171365,
         "t_over_tcc": 1.8531736931426983,
         "cells": 524288,
@@ -3857,7 +3857,7 @@
         "dense_mass_over_initial": 0.8355792517100418
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0038",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0038",
         "time_code": 0.7371934804140284,
         "t_over_tcc": 1.903425381717477,
         "cells": 524288,
@@ -3868,7 +3868,7 @@
         "dense_mass_over_initial": 0.8414246076708454
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0039",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0039",
         "time_code": 0.756690388756781,
         "t_over_tcc": 1.9537661825934858,
         "cells": 524288,
@@ -3879,7 +3879,7 @@
         "dense_mass_over_initial": 0.8251698450092527
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0040",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0040",
         "time_code": 0.7761784695152719,
         "t_over_tcc": 2.0040841907449396,
         "cells": 524288,
@@ -3890,7 +3890,7 @@
         "dense_mass_over_initial": 0.8235653758452532
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0041",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0041",
         "time_code": 0.7956500521032309,
         "t_over_tcc": 2.054359600803251,
         "cells": 524288,
@@ -3901,7 +3901,7 @@
         "dense_mass_over_initial": 0.8190361163743103
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0042",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0042",
         "time_code": 0.813337481308929,
         "t_over_tcc": 2.100028346637179,
         "cells": 524288,
@@ -3912,7 +3912,7 @@
         "dense_mass_over_initial": 0.8065304319365083
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0043",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0043",
         "time_code": 0.8327670340424026,
         "t_over_tcc": 2.1501952360778467,
         "cells": 524288,
@@ -3923,7 +3923,7 @@
         "dense_mass_over_initial": 0.8077344500782389
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0044",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0044",
         "time_code": 0.8521924240861267,
         "t_over_tcc": 2.200351377499798,
         "cells": 524288,
@@ -3934,7 +3934,7 @@
         "dense_mass_over_initial": 0.8062423691636548
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0045",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0045",
         "time_code": 0.8716072787657584,
         "t_over_tcc": 2.250480316728632,
         "cells": 524288,
@@ -3945,7 +3945,7 @@
         "dense_mass_over_initial": 0.7988874426983822
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0046",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0046",
         "time_code": 0.8910216838033387,
         "t_over_tcc": 2.300608094986681,
         "cells": 524288,
@@ -3956,7 +3956,7 @@
         "dense_mass_over_initial": 0.799217572239764
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0047",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0047",
         "time_code": 0.9104265095734854,
         "t_over_tcc": 2.350711139682571,
         "cells": 524288,
@@ -3967,7 +3967,7 @@
         "dense_mass_over_initial": 0.7792874348530471
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0048",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0048",
         "time_code": 0.9298089572239904,
         "t_over_tcc": 2.4007564043219993,
         "cells": 524288,
@@ -3978,7 +3978,7 @@
         "dense_mass_over_initial": 0.7762902516603818
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0049",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0049",
         "time_code": 0.9492011258305129,
         "t_over_tcc": 2.450826768361938,
         "cells": 524288,
@@ -3989,7 +3989,7 @@
         "dense_mass_over_initial": 0.7539779610816394
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0050",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0050",
         "time_code": 0.9686117820586149,
         "t_over_tcc": 2.5009448672355354,
         "cells": 524288,
@@ -4000,7 +4000,7 @@
         "dense_mass_over_initial": 0.7677626563274286
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0051",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0051",
         "time_code": 0.9879873471422963,
         "t_over_tcc": 2.5509723611638395,
         "cells": 524288,
@@ -4011,7 +4011,7 @@
         "dense_mass_over_initial": 0.7507160266263635
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0052",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0052",
         "time_code": 1.0073171503227878,
         "t_over_tcc": 2.60088169836618,
         "cells": 524288,
@@ -4022,7 +4022,7 @@
         "dense_mass_over_initial": 0.7629953815856725
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0053",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0053",
         "time_code": 1.026660676240535,
         "t_over_tcc": 2.650826467523758,
         "cells": 524288,
@@ -4033,7 +4033,7 @@
         "dense_mass_over_initial": 0.7374172684170839
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0054",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0054",
         "time_code": 1.0460359993036474,
         "t_over_tcc": 2.7008533365576395,
         "cells": 524288,
@@ -4044,7 +4044,7 @@
         "dense_mass_over_initial": 0.7377952955321003
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0055",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0055",
         "time_code": 1.0653870534664318,
         "t_over_tcc": 2.750817543560321,
         "cells": 524288,
@@ -4055,7 +4055,7 @@
         "dense_mass_over_initial": 0.7412216325030179
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0056",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0056",
         "time_code": 1.084735699151633,
         "t_over_tcc": 2.8007755319006225,
         "cells": 524288,
@@ -4066,7 +4066,7 @@
         "dense_mass_over_initial": 0.7377062570843655
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0057",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0057",
         "time_code": 1.1041177455945261,
         "t_over_tcc": 2.8508197606264516,
         "cells": 524288,
@@ -4077,7 +4077,7 @@
         "dense_mass_over_initial": 0.716950347755599
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0058",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0058",
         "time_code": 1.123523256114264,
         "t_over_tcc": 2.9009245733381834,
         "cells": 524288,
@@ -4088,7 +4088,7 @@
         "dense_mass_over_initial": 0.7303057541745438
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0059",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0059",
         "time_code": 1.1429230115729694,
         "t_over_tcc": 2.9510145265462246,
         "cells": 524288,
@@ -4099,7 +4099,7 @@
         "dense_mass_over_initial": 0.6935717962314857
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0060",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0060",
         "time_code": 1.1623111479593131,
         "t_over_tcc": 3.0010744794384294,
         "cells": 524288,
@@ -4110,7 +4110,7 @@
         "dense_mass_over_initial": 0.6961882067559373
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0061",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0061",
         "time_code": 1.1816686883290484,
         "t_over_tcc": 3.0510554337554443,
         "cells": 524288,
@@ -4121,7 +4121,7 @@
         "dense_mass_over_initial": 0.6735365041939765
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0062",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0062",
         "time_code": 1.200949364142,
         "t_over_tcc": 3.100837924640235,
         "cells": 524288,
@@ -4132,7 +4132,7 @@
         "dense_mass_over_initial": 0.6616279454614011
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0063",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0063",
         "time_code": 1.220143684561473,
         "t_over_tcc": 3.150397446857827,
         "cells": 524288,
@@ -4143,7 +4143,7 @@
         "dense_mass_over_initial": 0.63986128393955
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0064",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0064",
         "time_code": 1.2410376325808963,
         "t_over_tcc": 3.204345388668327,
         "cells": 524288,
@@ -4154,7 +4154,7 @@
         "dense_mass_over_initial": 0.6379189644500001
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0065",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0065",
         "time_code": 1.260200169761507,
         "t_over_tcc": 3.253822846916051,
         "cells": 524288,
@@ -4165,7 +4165,7 @@
         "dense_mass_over_initial": 0.6120432447231485
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0066",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0066",
         "time_code": 1.279399921801035,
         "t_over_tcc": 3.3033963935163198,
         "cells": 524288,
@@ -4176,7 +4176,7 @@
         "dense_mass_over_initial": 0.6437019755077057
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0067",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0067",
         "time_code": 1.298664012274167,
         "t_over_tcc": 3.3531360612378354,
         "cells": 524288,
@@ -4187,7 +4187,7 @@
         "dense_mass_over_initial": 0.5982239784937243
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0068",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0068",
         "time_code": 1.317976971488468,
         "t_over_tcc": 3.4030019075064826,
         "cells": 524288,
@@ -4198,7 +4198,7 @@
         "dense_mass_over_initial": 0.6195875312405137
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0069",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0069",
         "time_code": 1.337340587016701,
         "t_over_tcc": 3.452998547815289,
         "cells": 524288,
@@ -4209,7 +4209,7 @@
         "dense_mass_over_initial": 0.5824888508369676
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0070",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0070",
         "time_code": 1.3566789793572336,
         "t_over_tcc": 3.5029300621334944,
         "cells": 524288,
@@ -4220,7 +4220,7 @@
         "dense_mass_over_initial": 0.5715602251003751
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0071",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0071",
         "time_code": 1.375966815831551,
         "t_over_tcc": 3.55273104176643,
         "cells": 524288,
@@ -4231,7 +4231,7 @@
         "dense_mass_over_initial": 0.5531030608564751
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0072",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0072",
         "time_code": 1.3951744492275808,
         "t_over_tcc": 3.6023249379416837,
         "cells": 524288,
@@ -4242,7 +4242,7 @@
         "dense_mass_over_initial": 0.5568162122003535
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0073",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0073",
         "time_code": 1.4143181789182366,
         "t_over_tcc": 3.6517538354591546,
         "cells": 524288,
@@ -4253,7 +4253,7 @@
         "dense_mass_over_initial": 0.5465817998428263
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0074",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0074",
         "time_code": 1.4334601029484864,
         "t_over_tcc": 3.7011780707815047,
         "cells": 524288,
@@ -4264,7 +4264,7 @@
         "dense_mass_over_initial": 0.5203879472070564
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0075",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0075",
         "time_code": 1.4525804817932142,
         "t_over_tcc": 3.750546676674043,
         "cells": 524288,
@@ -4275,7 +4275,7 @@
         "dense_mass_over_initial": 0.5323379374592926
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0076",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0076",
         "time_code": 1.4734407275920542,
         "t_over_tcc": 3.8044075997251765,
         "cells": 524288,
@@ -4286,7 +4286,7 @@
         "dense_mass_over_initial": 0.5205428024537201
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0077",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0077",
         "time_code": 1.4925338978947942,
         "t_over_tcc": 3.853705953464386,
         "cells": 524288,
@@ -4297,7 +4297,7 @@
         "dense_mass_over_initial": 0.47501433494217016
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0078",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0078",
         "time_code": 1.511604082476562,
         "t_over_tcc": 3.9029449583272444,
         "cells": 524288,
@@ -4308,7 +4308,7 @@
         "dense_mass_over_initial": 0.4630835244462628
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0079",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0079",
         "time_code": 1.5306555924752099,
         "t_over_tcc": 3.952135745623823,
         "cells": 524288,
@@ -4319,7 +4319,7 @@
         "dense_mass_over_initial": 0.4547010763021192
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0080",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0080",
         "time_code": 1.5496754146460607,
         "t_over_tcc": 4.001244715300844,
         "cells": 524288,
@@ -4330,7 +4330,7 @@
         "dense_mass_over_initial": 0.43707394580596287
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0081",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0081",
         "time_code": 1.5686831721434082,
         "t_over_tcc": 4.050322534124828,
         "cells": 524288,
@@ -4341,7 +4341,7 @@
         "dense_mass_over_initial": 0.41607520662367165
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0082",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0082",
         "time_code": 1.5893690406809788,
         "t_over_tcc": 4.103733217023393,
         "cells": 524288,
@@ -4352,7 +4352,7 @@
         "dense_mass_over_initial": 0.3927027104415343
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0083",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0083",
         "time_code": 1.6082890892990571,
         "t_over_tcc": 4.152584572494894,
         "cells": 524288,
@@ -4363,7 +4363,7 @@
         "dense_mass_over_initial": 0.3654998950000396
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0084",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0084",
         "time_code": 1.6272149792910346,
         "t_over_tcc": 4.201451010328949,
         "cells": 524288,
@@ -4374,7 +4374,7 @@
         "dense_mass_over_initial": 0.35548530778821036
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0085",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0085",
         "time_code": 1.6461374201251642,
         "t_over_tcc": 4.250308542475735,
         "cells": 524288,
@@ -4385,7 +4385,7 @@
         "dense_mass_over_initial": 0.34350510684087066
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0086",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0086",
         "time_code": 1.6668138612291465,
         "t_over_tcc": 4.303694883845443,
         "cells": 524288,
@@ -4396,7 +4396,7 @@
         "dense_mass_over_initial": 0.3235366384957908
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0087",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0087",
         "time_code": 1.6857560402950627,
         "t_over_tcc": 4.352603379887558,
         "cells": 524288,
@@ -4407,7 +4407,7 @@
         "dense_mass_over_initial": 0.307197007625718
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0088",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0088",
         "time_code": 1.704705478351312,
         "t_over_tcc": 4.40153061856212,
         "cells": 524288,
@@ -4418,7 +4418,7 @@
         "dense_mass_over_initial": 0.2812828510903988
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0089",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0089",
         "time_code": 1.7236229829328795,
         "t_over_tcc": 4.450375405359595,
         "cells": 524288,
@@ -4429,7 +4429,7 @@
         "dense_mass_over_initial": 0.24569671939193038
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0090",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0090",
         "time_code": 1.7442896872148748,
         "t_over_tcc": 4.503736606363036,
         "cells": 524288,
@@ -4440,7 +4440,7 @@
         "dense_mass_over_initial": 0.22175339385720885
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0091",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0091",
         "time_code": 1.7632100416562118,
         "t_over_tcc": 4.5525887514667955,
         "cells": 524288,
@@ -4451,7 +4451,7 @@
         "dense_mass_over_initial": 0.19442731927975831
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0092",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0092",
         "time_code": 1.7820271369273761,
         "t_over_tcc": 4.601174282539608,
         "cells": 524288,
@@ -4462,7 +4462,7 @@
         "dense_mass_over_initial": 0.16715553553678794
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0093",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0093",
         "time_code": 1.8024655047816678,
         "t_over_tcc": 4.65394592142183,
         "cells": 524288,
@@ -4473,7 +4473,7 @@
         "dense_mass_over_initial": 0.1404077038334032
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0094",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0094",
         "time_code": 1.8211841483964093,
         "t_over_tcc": 4.70227725141082,
         "cells": 524288,
@@ -4484,7 +4484,7 @@
         "dense_mass_over_initial": 0.11694485288564382
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0095",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0095",
         "time_code": 1.839851027680628,
         "t_over_tcc": 4.750474926473116,
         "cells": 524288,
@@ -4495,7 +4495,7 @@
         "dense_mass_over_initial": 0.10036106426470191
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0096",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0096",
         "time_code": 1.8601776204685119,
         "t_over_tcc": 4.802957963374858,
         "cells": 524288,
@@ -4506,7 +4506,7 @@
         "dense_mass_over_initial": 0.086708170448524
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0097",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0097",
         "time_code": 1.8787377131230258,
         "t_over_tcc": 4.850879916544858,
         "cells": 524288,
@@ -4517,7 +4517,7 @@
         "dense_mass_over_initial": 0.07843485063644778
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0098",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0098",
         "time_code": 1.8989173471546152,
         "t_over_tcc": 4.902983507569462,
         "cells": 524288,
@@ -4528,7 +4528,7 @@
         "dense_mass_over_initial": 0.07178474555125358
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0099",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0099",
         "time_code": 1.9172765126652371,
         "t_over_tcc": 4.950386669084732,
         "cells": 524288,
@@ -4539,7 +4539,7 @@
         "dense_mass_over_initial": 0.06458748807902302
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0100",
+        "snapshot": "/home/user/sensitivity_20260907/flash/runs/L4_chi100_tanh13/cloudcrush_hdf5_chk_0100",
         "time_code": 1.9372388378483278,
         "t_over_tcc": 5.001929171075189,
         "cells": 524288,

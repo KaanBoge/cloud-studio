@@ -85,11 +85,11 @@ controlled scaling benchmarks or forecasts for level 6. Both runs exited
 normally; the historical run started automatically after sharp validation.
 
 New raw root:
-`C:/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1`.
+`C:/Users/user/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1`.
 Each law directory retains `ics.hdf5`, `params.txt`, native HDF5 snapshots,
 restart files, `run.log`, resource samples and validation records. No old or
 new raw file was deleted. The frozen native runner is
-`/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/l4_full_runner_v1`.
+`/home/user/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/l4_full_runner_v1`.
 
 ## Required caveats and next decision
 
@@ -110,7 +110,7 @@ This adds two analyzed controls, bringing the study to **50 controls and
 5,054 native analysis states**. Four L3/L4 Gasoline controls remain held on
 their failed scientific validation gate; higher levels require additional
 raw-retention storage. The old blanket replacement queue remains inactive.
-Discuss the measured resolution trends with Ryan before deciding which
+Review the measured resolution trends before deciding which
 historical datasets need replacing; do not introduce a post-hoc threshold.
 
 ## Reproducibility and review
@@ -123,7 +123,7 @@ historical datasets need replacing; do not introduce a post-hoc threshold.
 [Windows input readback](windows_readback.json),
 [per-level preparation](../MFV_L4_PREPARATION_RESULTS.md).
 
-The analysis script runs under `/home/kaan/venv/bin/python` in WSL. It
+The analysis script runs under `/home/user/venv/bin/python` in WSL. It
 refuses to overwrite `mfv_analysis_levels_v1`, and the native runners
 refuse existing runs. For future analysis, create a new versioned output
 path and preserve this record; do not replay a completed native queue.

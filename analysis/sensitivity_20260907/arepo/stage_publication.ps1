@@ -1,6 +1,6 @@
 $ErrorActionPreference='Stop'
-$taskFrom='C:\Users\kaanb\CloudCrushing\sensitivity_20260907\arepo'
-$taskTo='C:\Users\kaanb\cloud-studio-repo\analysis\sensitivity_20260907\arepo'
+$taskFrom='C:\Users\user\CloudCrushing\sensitivity_20260907\arepo'
+$taskTo='C:\Users\user\cloud-studio-repo\analysis\sensitivity_20260907\arepo'
 $taskSetup=Get-Content -LiteralPath (Join-Path $taskFrom 'setup_validation.json') -Raw | ConvertFrom-Json
 $taskYt=Get-Content -LiteralPath (Join-Path $taskFrom 'yt_smoke_validation.json') -Raw | ConvertFrom-Json
 $taskSmoke=Get-Content -LiteralPath (Join-Path $taskFrom 'smoke_batch_v2.json') -Raw | ConvertFrom-Json

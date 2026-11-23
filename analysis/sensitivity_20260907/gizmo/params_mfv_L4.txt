@@ -4,7 +4,7 @@
 %---- code units: rho_amb=1, P_amb=1, R_cloud=1; cs_amb=1.290994, vwind=2.581989
 %---- t_cc = sqrt(chi)*R/vwind = 3.872983 ; TimeMax = 5 t_cc = 19.364917
 %---- 101 snapshots at TimeBetSnapshot = TimeMax/100 = 0.19364917
-%---- binary: /home/kaan/codes/gizmo/GIZMO_MFV_3D_PER  (transverse y,z PERIODIC -- see README.txt)
+%---- binary: /home/user/codes/gizmo/GIZMO_MFV_3D_PER  (transverse y,z PERIODIC -- see README.txt)
 InitCondFile                ics
 OutputDir                   output
 ICFormat                    3

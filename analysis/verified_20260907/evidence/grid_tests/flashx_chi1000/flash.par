@@ -3,7 +3,7 @@
 #
 # BUILD (must be the level-6 object dir, NOT object_3d):
 #   ./setup CloudWind -auto -3d +pm4dev +parallelIO \
-#           -nxb=32 -nyb=32 -nzb=32 -maxblocks=256 -objdir=object_3d_l6 -site=Axstarl
+#           -nxb=32 -nyb=32 -nzb=32 -maxblocks=256 -objdir=object_3d_l6 -site=workstation
 #
 # WHY nxb=32 RATHER THAN A BIGGER MAXBLOCKS.
 #   The PARAMESH tree for a uniform mesh is fixed by nxb. With the level-5 build

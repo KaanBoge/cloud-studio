@@ -2,8 +2,8 @@
   "chi": 100,
   "returncode": 0,
   "snapshots": [
-    "/home/kaan/ic_audit_20260907/ramses_rect_tests/chi100/output_00002/info_00002.txt",
-    "/home/kaan/ic_audit_20260907/ramses_rect_tests/chi100/output_00001/info_00001.txt"
+    "/home/user/ic_audit_20260907/ramses_rect_tests/chi100/output_00002/info_00002.txt",
+    "/home/user/ic_audit_20260907/ramses_rect_tests/chi100/output_00001/info_00001.txt"
   ],
   "time": 0.0193645294481693,
   "domain": [

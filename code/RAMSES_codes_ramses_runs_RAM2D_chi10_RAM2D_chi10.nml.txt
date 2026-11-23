@@ -3,7 +3,7 @@
 ! GEOMETRY NOTE: current RAMSES supports a single interior coarse cell, so the
 ! domain is a SQUARE box [0,20]^2. Mapping to the physical SPEC frame:
 !   x_phys = x_box - 3   (x_phys in [-3,17], as in the SPEC)
-!   y_phys = y_box - 10  (y_phys in [-10,10]; SPEC asks [-5,5] - RAMSES box is
+!   y_phys = y_box - 10  (y_phys in [-10,10]; SPEC asks [-5,5]; RAMSES box is
 !                         2x wider in y; outflow boundaries are simply farther
 !                         from the cloud, cloud dynamics unaffected)
 ! Cloud center at box (3,10) = physical origin, radius 1.0.

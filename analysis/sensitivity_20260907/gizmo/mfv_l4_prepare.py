@@ -23,16 +23,16 @@ from mfv_l4_native_checks import check,sha,save,safe,parameters
 from storage_guard import windows_backing_volume
 
 HERE=Path(__file__).resolve().parent
-BASE=Path('/home/kaan/sensitivity_20260907/gizmo')
+BASE=Path('/home/user/sensitivity_20260907/gizmo')
 PACKAGE=BASE/'mfv_timestep_repair_v1/l4_prepare_runner_v1'
-RAW=Path('/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_preparation_v1')
+RAW=Path('/mnt/c/Users/user/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_preparation_v1')
 GIB=1024**3
 RESERVE=10*GIB
 ANCILLARY=GIB
 PREP_PLAN_SHA='74c54e9db5785752e3193e3130e5d2a3ae94474262ce6121b24e6564adbbe6e8'
 L3_REPORT_SHA='db45f9d985a4e8eb87b63f0247d1d5f61572acfaab5dad6f9272dfe36b0a017d'
 IC_SOURCES=[BASE/'full_mfm_l4_v1'/law/'ics.hdf5' for law in ('sharp13','tanh13')]
-ARCHIVE=Path('/home/kaan/codes/gizmo/runs/GZ_L4_chi100_mfv/ics.hdf5')
+ARCHIVE=Path('/home/user/codes/gizmo/runs/GZ_L4_chi100_mfv/ics.hdf5')
 CASES=[dict(name=f'{law}_{role}',mode=mode,role=role) for mode,law in enumerate(('sharp13','tanh13'))
        for role in ('smoke','timing_full','timing_half')]
 
@@ -59,7 +59,7 @@ def budget_gate(guest,mounted,host,remaining,live=False):
 
 
 def storage(remaining,live=False):
-    parent=Path('/mnt/c/Users/kaanb/CloudCrushing')
+    parent=Path('/mnt/c/Users/user/CloudCrushing')
     check(parent.resolve()==parent and BASE.resolve()==BASE,'Unexpected root symlink')
     mount=json.loads(subprocess.check_output(['findmnt','-J','-T',str(parent),'-o','TARGET,SOURCE,FSTYPE,OPTIONS'],text=True))['filesystems']
     check(len(mount)==1,'Ambiguous raw mount');host=windows_backing_volume()
@@ -81,7 +81,7 @@ def no_competing():
 def locks():
     held=[]
     for name in ('benchmark.lock','production.lock'):
-        handle=Path('/home/kaan/performance_20260907',name).open('a')
+        handle=Path('/home/user/performance_20260907',name).open('a')
         fcntl.flock(handle,fcntl.LOCK_EX|fcntl.LOCK_NB);held.append(handle)
     return held
 
@@ -149,7 +149,7 @@ def freeze():
     for name in prior['files']:pins[str(v.PREP/name)]=sha(v.PREP/name)
     for name in v.prior.onset.PINNED_SOURCE:pins[str(v.BINARY.parent/name)]=sha(v.BINARY.parent/name)
     for name,digest in readback.items():pins[str(RAW/name)]=digest
-    tests=subprocess.run(['/home/kaan/venv/bin/python','-m','unittest','-v','test_mfv_l4_prepare'],cwd=PACKAGE,capture_output=True,text=True,timeout=60)
+    tests=subprocess.run(['/home/user/venv/bin/python','-m','unittest','-v','test_mfv_l4_prepare'],cwd=PACKAGE,capture_output=True,text=True,timeout=60)
     save(PACKAGE/'tests.json',dict(returncode=tests.returncode,stdout=tests.stdout,stderr=tests.stderr))
     check(tests.returncode==0 and 'Ran 23 tests' in tests.stderr and '\nOK\n' in tests.stderr,'New L4 tests failed')
     pins[str(PACKAGE/'tests.json')]=sha(PACKAGE/'tests.json')

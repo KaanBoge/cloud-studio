@@ -15,12 +15,12 @@ import time
 import numpy as np
 import psutil
 
-ROOT=Path('/home/kaan/sensitivity_20260907/gasoline')
+ROOT=Path('/home/user/sensitivity_20260907/gasoline')
 BASE=ROOT/'native_retained'
 TREE=ROOT/'serial_observer_native_v1'
 OUT=ROOT/'serial_observer_runner_v1'
 CASE=ROOT/'serial_observer_case_v1'
-PY='/home/kaan/venv/bin/python'
+PY='/home/user/venv/bin/python'
 GIB=1024**3
 FILES=('serial_observer_run.py','test_serial_observer_run.py','serial_observer.h',
        'test_serial_observer.c','SERIAL_OBSERVER_PLAN.md')
@@ -88,7 +88,7 @@ def resources(preflight=True):
 def locks():
     with contextlib.ExitStack() as stack:
         for name in ('benchmark','production'):
-            f=stack.enter_context(open('/home/kaan/performance_20260907/'+name+'.lock','a'))
+            f=stack.enter_context(open('/home/user/performance_20260907/'+name+'.lock','a'))
             fcntl.flock(f,fcntl.LOCK_EX|fcntl.LOCK_NB)
         yield
 

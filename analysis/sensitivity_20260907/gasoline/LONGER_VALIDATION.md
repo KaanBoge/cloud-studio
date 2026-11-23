@@ -108,7 +108,7 @@ Gasoline hold.** No full runner has been enabled by these measurements.
 
 ## Reproduction and remaining checks
 
-Native root: `/home/kaan/sensitivity_20260907/gasoline`.
+Native root: `/home/user/sensitivity_20260907/gasoline`.
 `longer_validation_v1` retains the failed eight-worker attempt.
 `longer_validation_2rank_v1` contains the four completed diagnostics;
 `longer_2rank_audit_v1` contains the immutable81-state audit.

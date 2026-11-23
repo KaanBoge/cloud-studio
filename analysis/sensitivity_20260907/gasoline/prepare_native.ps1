@@ -1,7 +1,7 @@
 $ErrorActionPreference='Stop'
-$taskNative='\\wsl.localhost\Ubuntu\home\kaan\sensitivity_20260907\gasoline'
-$taskSource='\\wsl.localhost\Ubuntu\home\kaan\codes\gasoline'
-$taskMdl='\\wsl.localhost\Ubuntu\home\kaan\codes\mdl\mpi'
+$taskNative='\\wsl.localhost\Ubuntu\home\user\sensitivity_20260907\gasoline'
+$taskSource='\\wsl.localhost\Ubuntu\home\user\codes\gasoline'
+$taskMdl='\\wsl.localhost\Ubuntu\home\user\codes\mdl\mpi'
 if(Test-Path -LiteralPath $taskNative){throw 'Existing native preparation must not be overwritten'}
 $taskSha=(Get-FileHash -LiteralPath (Join-Path $taskSource 'gasoline')).Hash.ToLower()
 if($taskSha -ne 'c7645e1774fb4a18fc68bac615ba03f24c83d06dfe4addfbbbc7df2cc4930bb5'){throw 'Native binary changed; review required'}
@@ -21,7 +21,7 @@ foreach($taskPair in @(@($taskSource,$taskDest),@($taskMdl,$taskMdlDest))){
 }
 Copy-Item -LiteralPath (Join-Path $taskSource 'gasoline') -Destination (Join-Path $taskNative 'gasoline_original')
 foreach($taskMode in @('tanh13','sharp13')){
-  $taskFrom=if($taskMode -eq 'tanh13'){'C:\Users\kaanb\CloudCrushing\audit_20260907\before\home\kaan\codes\gasoline\ics'}else{Join-Path $taskSource 'ics'}
+  $taskFrom=if($taskMode -eq 'tanh13'){'C:\Users\user\CloudCrushing\audit_20260907\before\home\user\codes\gasoline\ics'}else{Join-Path $taskSource 'ics'}
   $taskTo=Join-Path $taskNative ('generators\'+$taskMode)
   New-Item -ItemType Directory -Path $taskTo | Out-Null
   foreach($taskName in @('make_gasoline_cloudwind.py','make_gasoline_cloudwind_3d.py')){

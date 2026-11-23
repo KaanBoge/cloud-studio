@@ -2,7 +2,7 @@
   "schema_version": 2,
   "kind": "ramses",
   "parameters": {
-    "source": "/home/kaan/ic_audit_20260907/ramses_rect_tests/chi1000/run.nml",
+    "source": "/home/user/ic_audit_20260907/ramses_rect_tests/chi1000/run.nml",
     "parameter_sha256": "8114a648bde786e8de89699936b5e25adfd0fa5b1eda04c5a88bdcaf8613b48b",
     "assumptions": [],
     "gamma": 1.6666666666666667,
@@ -58,7 +58,7 @@
           10.0
         ]
       },
-      "snapshot": "/home/kaan/ic_audit_20260907/ramses_rect_tests/chi1000/output_00001",
+      "snapshot": "/home/user/ic_audit_20260907/ramses_rect_tests/chi1000/output_00001",
       "dense_mass_over_initial_dense_mass": 1.0
     },
     {
@@ -82,7 +82,7 @@
           10.0
         ]
       },
-      "snapshot": "/home/kaan/ic_audit_20260907/ramses_rect_tests/chi1000/output_00002",
+      "snapshot": "/home/user/ic_audit_20260907/ramses_rect_tests/chi1000/output_00002",
       "dense_mass_over_initial_dense_mass": 0.9999681697271025
     }
   ]

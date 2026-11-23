@@ -40,7 +40,7 @@ SwapFree:	 Largest =       0.00 Mb (on task=   0), Smallest =       0.00 Mb (on 
 AllocMem:	 Largest =    1622.99 Mb (on task=   0), Smallest =    1622.99 Mb (on task=   0), Average =    1622.99 Mb
 avail /dev/shm:	 Largest =   14030.78 Mb (on task=   0), Smallest =   14030.78 Mb (on task=   0), Average =   14030.78 Mb
 -------------------------------------------------------------------------------------------------------------------------
-Task=0 has the maximum commited memory and is host: Axstarl
+Task=0 has the maximum commited memory and is host: workstation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Obtaining parameters from file 'param.txt':
 

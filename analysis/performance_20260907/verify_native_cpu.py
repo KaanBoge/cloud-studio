@@ -5,12 +5,12 @@ import os
 from pathlib import Path
 import subprocess
 import sys
-sys.path.insert(0, '/mnt/c/Users/kaanb/CloudCrushing/audit_20260907')
+sys.path.insert(0, '/mnt/c/Users/user/CloudCrushing/audit_20260907')
 from check_snapshot import check
 from grid_smokes import set_sections
 from run_corrected_athpp import make_input
 
-root=Path('/home/kaan/performance_20260907')
+root=Path('/home/user/performance_20260907')
 binary=root/'bin/athpp_native'
 for chi in (10,100,1000):
     folder=root/'ic_tests'/f'athpp_chi{chi}'

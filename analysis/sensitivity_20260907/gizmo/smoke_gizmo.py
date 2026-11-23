@@ -92,7 +92,7 @@ def run_case(variant,mode):
 def main():
     locks=[]
     for name in ('benchmark.lock','production.lock'):
-        f=Path('/home/kaan/performance_20260907',name).open('a');fcntl.flock(f,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(f)
+        f=Path('/home/user/performance_20260907',name).open('a');fcntl.flock(f,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(f)
     dest=ROOT/'smoke_batch.json'
     if dest.exists():raise ValueError('Existing smoke batch requires review')
     batch=dict(status='running',finished=[])

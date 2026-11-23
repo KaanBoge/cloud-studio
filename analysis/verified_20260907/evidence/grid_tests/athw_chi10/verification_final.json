@@ -1,8 +1,8 @@
 {
   "passed": true,
-  "snapshot": "/home/kaan/ic_audit_20260907/grid_tests/athw_chi10/id0/Cloud.0000.vtk",
+  "snapshot": "/home/user/ic_audit_20260907/grid_tests/athw_chi10/id0/Cloud.0000.vtk",
   "parameters": {
-    "source": "/home/kaan/ic_audit_20260907/grid_tests/athw_chi10/athinput",
+    "source": "/home/user/ic_audit_20260907/grid_tests/athw_chi10/athinput",
     "parameter_sha256": "18d0c19bcccf840df455ee23b99585fc4f771b04b35b0c6c87b53ef93267e449",
     "assumptions": [
       "custom cloud_wind pgen fixes R=1, rho_wind=1 and P_wind=1"

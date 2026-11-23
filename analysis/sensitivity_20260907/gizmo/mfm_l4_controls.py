@@ -7,7 +7,7 @@ import argparse,fcntl,json,os,signal,subprocess,sys,time
 from pathlib import Path
 import numpy as np
 import psutil
-BASE=Path('/home/kaan/sensitivity_20260907/gizmo/runner_l3_v1')
+BASE=Path('/home/user/sensitivity_20260907/gizmo/runner_l3_v1')
 sys.path.insert(0,str(BASE))
 from smoke_gizmo import ROOT,sha,save,physics,params,read,generate,require_storage,storage_snapshot,GIB
 from verify_gizmo import native,snapshots,sums,yt_check
@@ -256,7 +256,7 @@ def main():
     group.add_argument('--validate',action='store_true');group.add_argument('--run',action='store_true');args=parser.parse_args()
     locks=[]
     for name in ('benchmark.lock','production.lock'):
-        handle=Path('/home/kaan/performance_20260907',name).open('a');fcntl.flock(handle,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(handle)
+        handle=Path('/home/user/performance_20260907',name).open('a');fcntl.flock(handle,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(handle)
     validate() if args.validate else full_pair()
 
 if __name__=='__main__':main()

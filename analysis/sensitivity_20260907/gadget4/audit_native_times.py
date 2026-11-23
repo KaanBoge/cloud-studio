@@ -2,7 +2,7 @@
 import json,sys
 from pathlib import Path
 import h5py,numpy as np
-sys.path.insert(0,'/home/kaan/sensitivity_20260907/gadget4')
+sys.path.insert(0,'/home/user/sensitivity_20260907/gadget4')
 from gadget_controls import ROOT,dependencies,sha,save,parameters,metadata
 from native_cadence import cadence,expected_times
 

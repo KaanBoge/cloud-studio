@@ -76,7 +76,7 @@ hashes. [The completed L4 ledger](mfm_l4_batch.json) records full native
 checks. [The analyzer](analyze_mfm_levels.py) and
 [six tests](test_mfm_levels_analysis.py) are supplied with the result.
 
-Native data remains at `/home/kaan/sensitivity_20260907/gizmo`; the immutable
+Native data remains at `/home/user/sensitivity_20260907/gizmo`; the immutable
 new analysis is `analysis_mfm_l3_l4_v1`. Existing output directories must
 not be overwritten or rerun. All raw data, ICs, logs, restart generations and
 failed attempts are retained. This public analysis package is not a raw

@@ -126,7 +126,7 @@ SPH pressure and periodic-boundary limitations remain. The previous
 field-equivalence gate is still failed.
 
 A scientific decision is now needed on whether and how to assess measured
-repeatability for Ryan's dense-mass comparison. Do not silently replace the
+repeatability for the dense-mass comparison. Do not silently replace the
 failed threshold. After that decision, sharp-IC validation on the same chosen
 executable and a separately guarded full runner remain required. No more
 traces or threshold changes are automatically scheduled to avoid that choice.
@@ -141,7 +141,7 @@ They depend on the documented local native tree; the site does not host the
 upstream native source, executable or raw files. Entry points refuse completed
 directories. Do not rerun completed stages; new work needs a new reviewed plan.
 
-Native root: `/home/kaan/sensitivity_20260907/gasoline`. Completed directories:
+Native root: `/home/user/sensitivity_20260907/gasoline`. Completed directories:
 `force_trace_core_v1`, `force_order_native_v1`, `force_order_prepare_v1`,
 `force_order_runner_v1`, `force_order_cases_v1`, `force_order_compare_v1`,
 `force_order_review_v1`. Every native state/checkpoint/trace, original binary

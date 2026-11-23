@@ -79,9 +79,9 @@ Exit0 alone does not accept a control. It preserves all raw data and stops
 for review on a guard/check failure; there is no blind auto-resume.
 
 Full raw directory:
-`C:/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1`.
+`C:/Users/user/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1`.
 Short raw directory:
-`C:/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_preparation_v1`.
+`C:/Users/user/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_preparation_v1`.
 Each native directory retains its IC, parameters, log, resource samples,
 actual HDF5 snapshots, restart files and validation evidence.
 

@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 from statistics import median
 HERE=Path(__file__).resolve().parent
-ROOT=Path('/home/kaan/performance_20260907b')
+ROOT=Path('/home/user/performance_20260907b')
 FIRST=HERE.parent/'performance_20260907'
 rows={p.parent.name:json.loads(p.read_text()) for p in (ROOT/'runs').glob('*/result.json')}
 fields=json.loads((HERE/'field_regression.json').read_text())

@@ -14,7 +14,7 @@ OUTSIDE the dense edge so that no particle is simultaneously dense and fast.
 Particles that are both dense and fast produce catastrophic cancellation between
 kinetic and total energy and poison the early evolution.  This matches
 arepo/runs/make_ic_cloud.py (--rv-scale 1.3), gasoline/ics/make_gasoline_cloudwind.py
-(RV_SCALE = 1.3) and the Athena++ problem generator CloudCrushing/A8/cloud_wind.c.
+(RV_SCALE = 1.3) and the Athena++ problem generator CloudCrushing/wind_tunnel/cloud_wind.c.
 
   CAVEAT (measured 2026-08-26): rv_scale=1.3 delivers its stated property only at
   chi=10.  The max density among material moving faster than 0.1*v_wind is 1.20 at

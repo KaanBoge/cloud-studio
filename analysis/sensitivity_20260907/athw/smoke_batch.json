@@ -6,9 +6,9 @@
       "status": "complete_native_checks",
       "level": 3,
       "mode": 0,
-      "directory": "/home/kaan/sensitivity_20260907/athw/smokes/L3_chi100_sharp13",
+      "directory": "/home/user/sensitivity_20260907/athw/smokes/L3_chi100_sharp13",
       "parameters": {
-        "source": "/home/kaan/sensitivity_20260907/athw/smokes/L3_chi100_sharp13/athinput",
+        "source": "/home/user/sensitivity_20260907/athw/smokes/L3_chi100_sharp13/athinput",
         "parameter_sha256": "0d08b9436a1adff9a7b6ec390c2b2c037e7f15ad839a8e091964549a5f8115c3",
         "assumptions": [
           "custom cloud_wind pgen fixes R=1, rho_wind=1 and P_wind=1"
@@ -32,19 +32,19 @@
         "core",
         "-np",
         "8",
-        "/home/kaan/sensitivity_20260907/athw/build/bin/athena",
+        "/home/user/sensitivity_20260907/athw/build/bin/athena",
         "-i",
         "athinput"
       ],
       "binary_sha256": "f50538d95d644f80d3dc4bbf12b737aa69a84e6afb27f6f2cf420d3a6120caef",
       "parameter_sha256": "0d08b9436a1adff9a7b6ec390c2b2c037e7f15ad839a8e091964549a5f8115c3",
       "storage_preflight": {
-        "path": "/home/kaan/sensitivity_20260907/athw",
+        "path": "/home/user/sensitivity_20260907/athw",
         "filesystem_free_bytes": 138103349248,
         "filesystem_total_bytes": 1081101176832,
         "windows_backing_volume": {
           "distribution": "Ubuntu",
-          "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+          "base_path": "C:\\Users\\user\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
           "drive": "C:",
           "free_bytes": 37891018752,
           "total_bytes": 1999283154944
@@ -60,7 +60,7 @@
       "unique_snapshots": 2,
       "series": [
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/athw/smokes/L3_chi100_sharp13/id0/SensitivityL3.0000.vtk",
+          "snapshot": "/home/user/sensitivity_20260907/athw/smokes/L3_chi100_sharp13/id0/SensitivityL3.0000.vtk",
           "time_code": 0.0,
           "t_over_tcc": 0.0,
           "dense_mass": 409.90798361599445,
@@ -75,7 +75,7 @@
           "dense_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/athw/smokes/L3_chi100_sharp13/id0/SensitivityL3.0001.vtk",
+          "snapshot": "/home/user/sensitivity_20260907/athw/smokes/L3_chi100_sharp13/id0/SensitivityL3.0001.vtk",
           "time_code": 0.01,
           "t_over_tcc": 0.0025819888974716113,
           "dense_mass": 409.90102756768465,
@@ -92,9 +92,9 @@
       "status": "complete_native_checks",
       "level": 3,
       "mode": 1,
-      "directory": "/home/kaan/sensitivity_20260907/athw/smokes/L3_chi100_tanh13",
+      "directory": "/home/user/sensitivity_20260907/athw/smokes/L3_chi100_tanh13",
       "parameters": {
-        "source": "/home/kaan/sensitivity_20260907/athw/smokes/L3_chi100_tanh13/athinput",
+        "source": "/home/user/sensitivity_20260907/athw/smokes/L3_chi100_tanh13/athinput",
         "parameter_sha256": "b445b762cc2f8c6fb0bf3539f38ea1ab61019f42fa00f116205a7408d53e4cd7",
         "assumptions": [
           "custom cloud_wind pgen fixes R=1, rho_wind=1 and P_wind=1"
@@ -118,19 +118,19 @@
         "core",
         "-np",
         "8",
-        "/home/kaan/sensitivity_20260907/athw/build/bin/athena",
+        "/home/user/sensitivity_20260907/athw/build/bin/athena",
         "-i",
         "athinput"
       ],
       "binary_sha256": "f50538d95d644f80d3dc4bbf12b737aa69a84e6afb27f6f2cf420d3a6120caef",
       "parameter_sha256": "b445b762cc2f8c6fb0bf3539f38ea1ab61019f42fa00f116205a7408d53e4cd7",
       "storage_preflight": {
-        "path": "/home/kaan/sensitivity_20260907/athw",
+        "path": "/home/user/sensitivity_20260907/athw",
         "filesystem_free_bytes": 138093711360,
         "filesystem_total_bytes": 1081101176832,
         "windows_backing_volume": {
           "distribution": "Ubuntu",
-          "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+          "base_path": "C:\\Users\\user\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
           "drive": "C:",
           "free_bytes": 37891035136,
           "total_bytes": 1999283154944
@@ -146,7 +146,7 @@
       "unique_snapshots": 2,
       "series": [
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/athw/smokes/L3_chi100_tanh13/id0/SensitivityL3.0000.vtk",
+          "snapshot": "/home/user/sensitivity_20260907/athw/smokes/L3_chi100_tanh13/id0/SensitivityL3.0000.vtk",
           "time_code": 0.0,
           "t_over_tcc": 0.0,
           "dense_mass": 409.90798361599445,
@@ -161,7 +161,7 @@
           "dense_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/athw/smokes/L3_chi100_tanh13/id0/SensitivityL3.0001.vtk",
+          "snapshot": "/home/user/sensitivity_20260907/athw/smokes/L3_chi100_tanh13/id0/SensitivityL3.0001.vtk",
           "time_code": 0.01,
           "t_over_tcc": 0.0025819888974716113,
           "dense_mass": 409.89068429917097,

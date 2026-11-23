@@ -1,9 +1,9 @@
 $ErrorActionPreference='Stop'
-$taskStudy='C:\Users\kaanb\CloudCrushing\sensitivity_20260907'
+$taskStudy='C:\Users\user\CloudCrushing\sensitivity_20260907'
 $taskFrom=Join-Path $taskStudy 'gasoline'
-$taskRepo='C:\Users\kaanb\cloud-studio-repo'
+$taskRepo='C:\Users\user\cloud-studio-repo'
 $taskTo=Join-Path $taskRepo 'analysis\sensitivity_20260907\gasoline'
-$taskNative='\\wsl.localhost\Ubuntu\home\kaan\sensitivity_20260907\gasoline'
+$taskNative='\\wsl.localhost\Ubuntu\home\user\sensitivity_20260907\gasoline'
 $taskAuditHash='3329dc075b9873cd608aa7a0ff9533ed4215c65145cc573c92190b3a23d544ff'
 if(@(git -C $taskRepo status --porcelain).Count){throw 'Review existing repo changes before publication'}
 if((git -C $taskRepo rev-parse HEAD).Trim() -ne '8964a45421318f7759ab81570a8b2f214cc0781f'){throw 'Unexpected publication base'}

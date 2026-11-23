@@ -15,7 +15,7 @@ both measured snapshots of its short test without repeating or inventing times.
 
 The evidence directory contains inputs, native solver logs, JSON verification
 results and source/binary hashes. Original changed sources and scripts are in
-before/. Test native fields remain at /home/kaan/ic_audit_20260907 in WSL.
+before/. Test native fields remain at /home/user/ic_audit_20260907 in WSL.
 
 See ANALYSIS_README.md for process, directory contents, script usage, scope and
 remaining limitations. In particular, particle boundaries, tracer definitions,

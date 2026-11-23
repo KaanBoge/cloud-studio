@@ -69,7 +69,7 @@ both filesystems. The short evolved cases took6.40/6.25seconds, peaking at
 See [L4 validation evidence](mfm_l4_validation.json),
 [the test plan](L4_VALIDATION_PLAN.md), [frozen runner proof](mfm_l4_bundle.json),
 and [the full L4 runner](mfm_l4_controls.py). The native live ledger is
-`/home/kaan/sensitivity_20260907/gizmo/full_mfm_l4_v1/batch.json`.
+`/home/user/sensitivity_20260907/gizmo/full_mfm_l4_v1/batch.json`.
 `status_mfm_l4.py` checks actual worker directories and readable output headers;
 progress observations are not a substitute for final full-field validation.
 
@@ -273,8 +273,8 @@ original settings; the tiny diagnostic timestep caps are never production inputs
 L5 parameter copies are provenance, not evidence of an enabled or validated L5 queue.
 
 Scripts are machine-specific: Windows source is
-`C:/Users/kaanb/CloudCrushing/sensitivity_20260907/gizmo`; native root is
-`/home/kaan/sensitivity_20260907/gizmo`, using `/home/kaan/venv/bin/python`.
+`C:/Users/user/CloudCrushing/sensitivity_20260907/gizmo`; native root is
+`/home/user/sensitivity_20260907/gizmo`, using `/home/user/venv/bin/python`.
 Existing setup/smoke/audit directories must not be overwritten or blindly rerun.
 Shared study/storage helpers are required. This publication contains custom
 scripts, configs and diagnostic evidence, not native binaries, raw snapshots,

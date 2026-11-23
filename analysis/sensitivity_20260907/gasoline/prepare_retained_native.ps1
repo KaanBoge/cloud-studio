@@ -1,5 +1,5 @@
 $ErrorActionPreference='Stop'
-$taskRoot='\\wsl.localhost\Ubuntu\home\kaan\sensitivity_20260907\gasoline'
+$taskRoot='\\wsl.localhost\Ubuntu\home\user\sensitivity_20260907\gasoline'
 $taskFrom=Join-Path $taskRoot 'native'
 $taskTo=Join-Path $taskRoot 'native_retained'
 if(Test-Path -LiteralPath $taskTo){throw 'Existing isolated checkpoint build must not be overwritten'}

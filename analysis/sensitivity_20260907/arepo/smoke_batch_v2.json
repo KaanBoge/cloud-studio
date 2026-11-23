@@ -5,7 +5,7 @@
       "status": "complete_native_checks",
       "level": 3,
       "mode": 0,
-      "directory": "/home/kaan/sensitivity_20260907/arepo/smokes_v2/L3_chi100_sharp13",
+      "directory": "/home/user/sensitivity_20260907/arepo/smokes_v2/L3_chi100_sharp13",
       "physics": {
         "code": "Arepo",
         "chi": 100,
@@ -46,13 +46,13 @@
         "core",
         "-np",
         "8",
-        "/home/kaan/sensitivity_20260907/arepo/Arepo_pair",
+        "/home/user/sensitivity_20260907/arepo/Arepo_pair",
         "param.txt"
       ],
       "generate_command": [
-        "/home/kaan/venv/bin/python",
-        "/home/kaan/sensitivity_20260907/arepo/generator_sharp.py",
-        "/home/kaan/sensitivity_20260907/arepo/smokes_v2/L3_chi100_sharp13",
+        "/home/user/venv/bin/python",
+        "/home/user/sensitivity_20260907/arepo/generator_sharp.py",
+        "/home/user/sensitivity_20260907/arepo/smokes_v2/L3_chi100_sharp13",
         "100",
         "32",
         "--ndim",
@@ -70,12 +70,12 @@
       "launcher_sha256": "4a657e9dc1a313c6a43d0a08f381895a94272ec22d97facd2125511bea230e9d",
       "started_unix": 1788827036.320137,
       "storage_preflight": {
-        "path": "/home/kaan/sensitivity_20260907/arepo",
+        "path": "/home/user/sensitivity_20260907/arepo",
         "filesystem_free_bytes": 46668427264,
         "filesystem_total_bytes": 1081101176832,
         "windows_backing_volume": {
           "distribution": "Ubuntu",
-          "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+          "base_path": "C:\\Users\\user\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
           "drive": "C:",
           "free_bytes": 38144802816,
           "total_bytes": 1999283154944
@@ -90,7 +90,7 @@
       "peak_child_rss_gib": 1.6639404296875,
       "series": [
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/smokes_v2/L3_chi100_sharp13/output/snap_000.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/smokes_v2/L3_chi100_sharp13/output/snap_000.hdf5",
           "time_code": 0.0,
           "t_over_tcc": 0.0,
           "elements": 65536,
@@ -109,7 +109,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/smokes_v2/L3_chi100_sharp13/output/snap_001.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/smokes_v2/L3_chi100_sharp13/output/snap_001.hdf5",
           "time_code": 0.1,
           "t_over_tcc": 0.025819888974716113,
           "elements": 65536,
@@ -143,7 +143,7 @@
       "status": "complete_native_checks",
       "level": 3,
       "mode": 1,
-      "directory": "/home/kaan/sensitivity_20260907/arepo/smokes_v2/L3_chi100_tanh13",
+      "directory": "/home/user/sensitivity_20260907/arepo/smokes_v2/L3_chi100_tanh13",
       "physics": {
         "code": "Arepo",
         "chi": 100,
@@ -184,13 +184,13 @@
         "core",
         "-np",
         "8",
-        "/home/kaan/sensitivity_20260907/arepo/Arepo_pair",
+        "/home/user/sensitivity_20260907/arepo/Arepo_pair",
         "param.txt"
       ],
       "generate_command": [
-        "/home/kaan/venv/bin/python",
-        "/home/kaan/sensitivity_20260907/arepo/generator_historical.py",
-        "/home/kaan/sensitivity_20260907/arepo/smokes_v2/L3_chi100_tanh13",
+        "/home/user/venv/bin/python",
+        "/home/user/sensitivity_20260907/arepo/generator_historical.py",
+        "/home/user/sensitivity_20260907/arepo/smokes_v2/L3_chi100_tanh13",
         "100",
         "32",
         "--ndim",
@@ -208,12 +208,12 @@
       "launcher_sha256": "4a657e9dc1a313c6a43d0a08f381895a94272ec22d97facd2125511bea230e9d",
       "started_unix": 1788827040.4475362,
       "storage_preflight": {
-        "path": "/home/kaan/sensitivity_20260907/arepo",
+        "path": "/home/user/sensitivity_20260907/arepo",
         "filesystem_free_bytes": 46583898112,
         "filesystem_total_bytes": 1081101176832,
         "windows_backing_volume": {
           "distribution": "Ubuntu",
-          "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+          "base_path": "C:\\Users\\user\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
           "drive": "C:",
           "free_bytes": 38144749568,
           "total_bytes": 1999283154944
@@ -228,7 +228,7 @@
       "peak_child_rss_gib": 1.66424560546875,
       "series": [
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/smokes_v2/L3_chi100_tanh13/output/snap_000.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/smokes_v2/L3_chi100_tanh13/output/snap_000.hdf5",
           "time_code": 0.0,
           "t_over_tcc": 0.0,
           "elements": 65536,
@@ -247,7 +247,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/smokes_v2/L3_chi100_tanh13/output/snap_001.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/smokes_v2/L3_chi100_tanh13/output/snap_001.hdf5",
           "time_code": 0.1,
           "t_over_tcc": 0.025819888974716113,
           "elements": 65536,

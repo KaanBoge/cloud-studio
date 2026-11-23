@@ -5,9 +5,9 @@ from pathlib import Path
 import sys
 import h5py
 import numpy as np
-sys.path.insert(0,'/home/kaan/codes/athenapp/vis/python')
+sys.path.insert(0,'/home/user/codes/athenapp/vis/python')
 import athena_read
-ROOT=Path('/home/kaan/performance_20260907b/runs')
+ROOT=Path('/home/user/performance_20260907b/runs')
 HERE=Path(__file__).resolve().parent
 
 def compare_cpu(base,candidate):

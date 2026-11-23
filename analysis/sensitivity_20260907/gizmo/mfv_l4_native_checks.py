@@ -11,7 +11,7 @@ from pathlib import Path
 import h5py
 import numpy as np
 
-PREP=Path('/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/sharp_prepare_runner_v1')
+PREP=Path('/home/user/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/sharp_prepare_runner_v1')
 sys.path.insert(0,str(PREP))
 import mfv_sharp_prepare as prior
 from mfv_short_controls import FIELDS, parameters, mass_account, check
@@ -20,7 +20,7 @@ from diagnose_mfv_restart import layouts, parse_dwarf
 N=524288
 DIMS=(128,64,64)
 DX=20/128
-BINARY=Path('/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/repaired/GIZMO_repaired')
+BINARY=Path('/home/user/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/repaired/GIZMO_repaired')
 BINARY_SHA='4784336422c25db4714c6f56ef95337347f4be18dfd622e2b7e9acf7e1fe3d3c'
 
 

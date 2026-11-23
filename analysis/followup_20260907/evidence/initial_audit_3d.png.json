@@ -3,7 +3,7 @@
     {
       "kind": "athpp",
       "parameters": {
-        "source": "/home/kaan/ic_audit_20260907/grid_tests/athpp_chi10/athinput",
+        "source": "/home/user/ic_audit_20260907/grid_tests/athpp_chi10/athinput",
         "parameter_sha256": "d4234632cbbedf760dfde89d3c64c094d5dd07e31fc0ed86f4723518e4daf191",
         "assumptions": [
           "custom cloud_wind pgen fixes R=1, rho_wind=1 and P_wind=1"
@@ -42,7 +42,7 @@
             10.0
           ]
         },
-        "snapshot": "/home/kaan/ic_audit_20260907/grid_tests/athpp_chi10/CloudWind.out2.00000.athdf",
+        "snapshot": "/home/user/ic_audit_20260907/grid_tests/athpp_chi10/CloudWind.out2.00000.athdf",
         "dense_mass_over_initial_dense_mass": 1.0
       },
       "center_code": [
@@ -55,7 +55,7 @@
     {
       "kind": "apk",
       "parameters": {
-        "source": "/home/kaan/ic_audit_20260907/grid_tests/apk_chi10/athinput",
+        "source": "/home/user/ic_audit_20260907/grid_tests/apk_chi10/athinput",
         "parameter_sha256": "5bdbe62d54ce86afe464248f95687419ca76fbc22688d0f8284025448f4abfac",
         "assumptions": [
           "AthenaPK checkout units.hpp constants; fully ionized H/He mu from hydro.cpp"
@@ -95,7 +95,7 @@
             10.0
           ]
         },
-        "snapshot": "/home/kaan/ic_audit_20260907/grid_tests/apk_chi10/parthenon.prim.00000.phdf",
+        "snapshot": "/home/user/ic_audit_20260907/grid_tests/apk_chi10/parthenon.prim.00000.phdf",
         "dense_mass_over_initial_dense_mass": 1.0
       },
       "center_code": [

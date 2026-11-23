@@ -205,8 +205,8 @@ independent L3 checks. `analysis/crosscheck_l4.json` adds independent L4 checks.
 `build.json`, `historical_sources.json`, `batch.json`: executables, commands,
 historical-law provenance, run timings and validation evidence.
 
-Native simulation output: `/home/kaan/sensitivity_20260907/runs`.
-Windows scripts/results: `C:/Users/kaanb/CloudCrushing/sensitivity_20260907`.
+Native simulation output: `/home/user/sensitivity_20260907/runs`.
+Windows scripts/results: `C:/Users/user/CloudCrushing/sensitivity_20260907`.
 
 ## Earlier pending notes (superseded by the dated update above)
 
@@ -273,6 +273,6 @@ Cooling, tracking and paper-ready retention checks remain separate work.
 
 These results have not been added to the public viewer or emailed. The analysis
 package is separate from viewer run entries; publication is verified separately.
-Use the sensitivity evidence and each code's resolution dependence to discuss
-with Ryan which historical datasets can be reused, rather than assuming that
+Use the sensitivity evidence and each code's resolution dependence to decide
+which historical datasets can be reused, rather than assuming that
 every earlier run must be replaced. See PLAN.md for the reproducible protocol.

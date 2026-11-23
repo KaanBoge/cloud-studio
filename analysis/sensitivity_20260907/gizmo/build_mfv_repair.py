@@ -11,8 +11,8 @@ import time
 
 import psutil
 
-ROOT = Path('/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1')
-CANON = Path('/home/kaan/codes/gizmo')
+ROOT = Path('/home/user/sensitivity_20260907/gizmo/mfv_timestep_repair_v1')
+CANON = Path('/home/user/codes/gizmo')
 STUDY = ROOT.parent
 GIB = 1024**3
 INSERT = '    dt_hydrostep_i = local.dt_hydrostep_i;\n\n'
@@ -94,7 +94,7 @@ def main():
     locks = []
     try:
         for name in ['benchmark.lock','production.lock']:
-            stream = open('/home/kaan/performance_20260907/'+name, 'a')
+            stream = open('/home/user/performance_20260907/'+name, 'a')
             fcntl.flock(stream.fileno(), fcntl.LOCK_EX|fcntl.LOCK_NB)
             locks.append(stream)
         for variant in ['reference','repaired']:

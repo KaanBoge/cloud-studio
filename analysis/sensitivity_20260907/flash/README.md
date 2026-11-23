@@ -31,7 +31,7 @@ The guarded L3/L4 queue started at 02:09 local time using eight native MPI ranks
 Both L3/L4 pairs and their four-control analysis are now complete. No FLASH
 worker remains active. These experiments are not production viewer entries.
 Read actual processes, Windows `worker_windows.*` and native
-`/home/kaan/sensitivity_20260907/flash/batch.json` / `current.json` for live status.
+`/home/user/sensitivity_20260907/flash/batch.json` / `current.json` for live status.
 The Windows-owned launcher PID was 28680; do not use a saved PID without checking.
 
 ## Native executable and unchanged conditions
@@ -116,8 +116,8 @@ free space on the Windows VHDX backing drive. All raw data is retained.
 
 ## Files and reproduction
 
-Windows source/scripts: `C:/Users/kaanb/CloudCrushing/sensitivity_20260907/flash`.
-Native runs: `/home/kaan/sensitivity_20260907/flash/runs`.
+Windows source/scripts: `C:/Users/user/CloudCrushing/sensitivity_20260907/flash`.
+Native runs: `/home/user/sensitivity_20260907/flash/runs`.
 The `planned_inputs` directory contains L3/L4/L5 input examples, not proof that
 all levels ran. Use `build_flash.py`, `test_flash.py`, `verify_setup.py`,
 `test_analysis_flash.py` and `verify_yt_smokes.py` for setup and checks.
@@ -133,7 +133,7 @@ scalar curve-separation metric interpolates to 0:0.05:5 t_cc. Coarse L3/L4
 controls do not establish convergence or universally certify historical reuse.
 
 Scripts are machine-specific and depend on the parent study's `build.py` and
-`/home/kaan/verified_20260907` helpers. No email was sent. Publication covers
+`/home/user/verified_20260907` helpers. No email was sent. Publication covers
 scripts, input examples and verification evidence, not native raw datasets.
 The deployment check verifies the remote commit, Pages build and live files;
 an incorrect analysis publication can be corrected without touching native data.

@@ -14,7 +14,7 @@ SwapTotal:	 Largest =       0.00 Mb (on task=   0), Smallest =       0.00 Mb (on
 SwapFree:	 Largest =       0.00 Mb (on task=   0), Smallest =       0.00 Mb (on task=   0), Average =       0.00 Mb
 AllocMem:	 Largest =     576.57 Mb (on task=   0), Smallest =     576.57 Mb (on task=   0), Average =     576.57 Mb
 -------------------------------------------------------------------------------------------------------------------------
-Task=0 has the maximum commited memory and is host: Axstarl
+Task=0 has the maximum commited memory and is host: workstation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This is Arepo, version Arepo public 1.0.

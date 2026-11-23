@@ -1,5 +1,5 @@
 $ErrorActionPreference='Stop'
-$taskRoot='\\wsl.localhost\Ubuntu\home\kaan\sensitivity_20260907\gasoline'
+$taskRoot='\\wsl.localhost\Ubuntu\home\user\sensitivity_20260907\gasoline'
 $taskDest=Join-Path $taskRoot 'runner_longer_v1'
 if(Test-Path -LiteralPath $taskDest){throw 'Existing frozen longer-test runner'}
 $taskManifest=Get-Content -Raw -LiteralPath (Join-Path $taskRoot 'retained_copy_manifest.json') | ConvertFrom-Json
@@ -12,7 +12,7 @@ if($taskChanged.Count -ne 3){throw 'Unexpected native retention build diff'}
 foreach($taskPath in $taskChanged){if((Split-Path -Leaf $taskPath) -notin @('master.c','master.o','gasoline')){throw 'Unexpected native modification'}}
 New-Item -ItemType Directory -Path $taskDest | Out-Null
 Copy-Item -LiteralPath (Join-Path $PSScriptRoot 'longer_checks.py'),(Join-Path $PSScriptRoot 'test_longer_checks.py') -Destination $taskDest
-& wsl.exe --exec env OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /home/kaan/venv/bin/python /home/kaan/sensitivity_20260907/gasoline/runner_longer_v1/test_longer_checks.py
+& wsl.exe --exec env OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /home/user/venv/bin/python /home/user/sensitivity_20260907/gasoline/runner_longer_v1/test_longer_checks.py
 if($LASTEXITCODE -ne 0){throw 'Frozen prospective-check regressions failed'}
 $taskPins=[ordered]@{}
 $taskPrior=Get-Content -Raw -LiteralPath (Join-Path $taskRoot 'runner_instrumentation_v1\bundle.json') | ConvertFrom-Json

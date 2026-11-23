@@ -1,8 +1,8 @@
 [
   {
     "path": "main.tex",
-    "bytes": 48322,
-    "sha256": "bba5e575c81f289579896f2a15e2b91d1c3311f1d5d704634eb5bed4d2f7486e"
+    "bytes": 57459,
+    "sha256": "9db6f60c23c210d02b1f815fb6435ab6040ae62e6ff53ac1927d5123f7c5c563"
   },
   {
     "path": "openjournal.cls",
@@ -11,13 +11,13 @@
   },
   {
     "path": "references.bib",
-    "bytes": 10345,
-    "sha256": "0dd8ec4f84323e52f4eb453204da3d578590a911b2c0a0036611f388e41db0bc"
+    "bytes": 10922,
+    "sha256": "0a5997bf22c069119869ae931dfa801c4f5a329d19a24891ce543ab13d183fcc"
   },
   {
     "path": "main.bbl",
-    "bytes": 17640,
-    "sha256": "34df477f11855ee7be7ce600fb3ef7556dbe6485461650b787feb93c3f87a0a1"
+    "bytes": 18729,
+    "sha256": "b56bc491af00e0b8c7bc80473395e7e332ce8d4cd4e879648e870562466ab359"
   },
   {
     "path": "plot_revision.py",
@@ -26,8 +26,33 @@
   },
   {
     "path": "plot_series.json",
-    "bytes": 106677,
-    "sha256": "23661be60058b3666f73df2225a0b716b53cc6e903f49b810126941e0f47873f"
+    "bytes": 140861,
+    "sha256": "ecbdd293f5082a6072550f2b3ff6e3662d8c5cecebad7541870f7340a2f6f8b4"
+  },
+  {
+    "path": "add_n128_series.py",
+    "bytes": 2500,
+    "sha256": "7cbcbd1aa9248ae866eaee3d658fb59728110fc53c48e44fd86c89567011bdc7"
+  },
+  {
+    "path": "summarize_series.py",
+    "bytes": 3125,
+    "sha256": "bd47e4c04a198cbc1c6966cfbf8996d5f8ab33bf2df5cffffc1838414d52c0f8"
+  },
+  {
+    "path": "make_boundary_control_series.py",
+    "bytes": 1457,
+    "sha256": "c9f683b66d7d33d74d7be7b33982d3bf3e6780abbb2e169272ad4f66f3a54e62"
+  },
+  {
+    "path": "plot_boundary_control.py",
+    "bytes": 2046,
+    "sha256": "f2d561d747a0917e4734ca46e337518024bdf1b104e10c6918d3f8c2c07cd79e"
+  },
+  {
+    "path": "boundary_control_series.json",
+    "bytes": 125387,
+    "sha256": "e9dc6e553321c4930869b8496045fd68e81a5714d214d5229857b8548b64586f"
   },
   {
     "path": "diagnostic_series.json",
@@ -36,8 +61,8 @@
   },
   {
     "path": "gizmo_full_histories.json",
-    "bytes": 132346,
-    "sha256": "7efebff4f873bf5153e56f7d191ebdb9a605c2b2084fc920561701e9bd2c1460"
+    "bytes": 96212,
+    "sha256": "563279b66cf3719ee9bf631fe2460d98805a6ec8b0aa346d294ebcc07e3a5b87"
   },
   {
     "path": "cooling_estimate.json",
@@ -45,49 +70,59 @@
     "sha256": "4677bda58891e8c54d451d9b2f7c6eae49052ffa9548bfe0f93c764b32c00619"
   },
   {
+    "path": "apk_chi10_history.json",
+    "bytes": 17200,
+    "sha256": "b1c6404f41e1e2df225ae00f943704211206dfe2f8aab649afd69ecb4813c479"
+  },
+  {
+    "path": "contrast_series.json",
+    "bytes": 34781,
+    "sha256": "ae36f2c4be49b556620d430e17f6989babfbab27fced7624d426d7c00dc1c377"
+  },
+  {
+    "path": "athpp_chi1000_series_20261029.json",
+    "bytes": 8488,
+    "sha256": "825dd18a57168d3d9a63ff3f816dd70a33d957e1a1e55d45d9e3074a37853612"
+  },
+  {
+    "path": "validated_scalar_series_20261029.json",
+    "bytes": 17800,
+    "sha256": "a690051de1a3ee142cd8f221d33470dc6c83451330d2fb70f24631dd88d1d5ff"
+  },
+  {
+    "path": "plot_contrasts.py",
+    "bytes": 1806,
+    "sha256": "5b462970b45dd091fb722e3c8f5d37c4edbc1d87e54b8e0366105a9ab5b1bd78"
+  },
+  {
+    "path": "plot_hllc.py",
+    "bytes": 1848,
+    "sha256": "676d8131818bc785f58f0eba135e0ad07513490d72eed6cede8e652d29779060"
+  },
+  {
+    "path": "plot_morphology.py",
+    "bytes": 5880,
+    "sha256": "65cc23a9c80e807fad4102236140145948c3ed7ea7b4f498969a3ef9c1077731"
+  },
+  {
+    "path": "check_contrast_maps.py",
+    "bytes": 1398,
+    "sha256": "a7df85d04f6360b7ee8f58fc4892aedb05ad20bbc132065033947b547cb2bfa8"
+  },
+  {
     "path": "RUN_INVENTORY.csv",
-    "bytes": 2720,
-    "sha256": "6285f956b10f0e54fad68de2ecf872ff01df07f1d418ec8e2b17b6ad1661cb4c"
+    "bytes": 1796,
+    "sha256": "57f50f8dc73eafc476facfa6bb3e2976a1ffd4f4251e19df860990bb1f2c900a"
   },
   {
-    "path": "figures/contrast_histories_updated.pdf",
-    "bytes": 9854,
-    "sha256": "d842be13411bd0b4bce00fdfee2243ee3bb1e946609b341d8d06da12a8a2f52c"
+    "path": "README_Overleaf.txt",
+    "bytes": 740,
+    "sha256": "dd12f095e4c2124af54c7097acdccfadfe4a18e6b57222062b1ba8d72afb6d40"
   },
   {
-    "path": "figures/cooling_diagnostics.pdf",
-    "bytes": 28505,
-    "sha256": "32b2b2c5c11658ca1aacc4a893a50d81fb6175b9a3b5b5e8bc24fdf57dabef19"
-  },
-  {
-    "path": "figures/cooling_histories.pdf",
-    "bytes": 22340,
-    "sha256": "983154c44a9d6f47ed15123983ccf050006ebff7503738ab244a636c9f732d5a"
-  },
-  {
-    "path": "figures/cooling_morphology.pdf",
-    "bytes": 34835,
-    "sha256": "b9cfbfb6555a51d0b3e999926daf4b21d76c7eef0acb72b05354c7f3d26ac77f"
-  },
-  {
-    "path": "figures/gizmo_diagnostics.pdf",
-    "bytes": 25260,
-    "sha256": "5b408789ac8a79a091a0aeed632c1364d2f715ad6e3d061e36e88593fda1a891"
-  },
-  {
-    "path": "figures/late_morphology_new.pdf",
-    "bytes": 118819,
-    "sha256": "8d668da3912f7e7749c223a57876bfbfe11514b5951de7e2063da96f7b843621"
-  },
-  {
-    "path": "figures/mass_histories.pdf",
-    "bytes": 49711,
-    "sha256": "f38a918fba152b0d147514648721335ff96d08332267200b8e47dfb3270d355d"
-  },
-  {
-    "path": "figures/morphology.pdf",
-    "bytes": 93627,
-    "sha256": "28dbbc9078b72c068ba6491efc95c24d7a40bd8ea356bcf07f74054f0491c442"
+    "path": "Cloud_survival_OJA.pdf",
+    "bytes": 893604,
+    "sha256": "655a03c571dab9f80a0bb953790be59d7bdde7cb17403a8c089ac1b328c8f851"
   },
   {
     "path": "custom_code/athenapk_hydro.cpp",
@@ -126,8 +161,8 @@
   },
   {
     "path": "custom_code/README.txt",
-    "bytes": 2100,
-    "sha256": "e0ac073bde4a92586e8adb23758f020c9b45ffbc8b312c26ff3756e6fed4ef0d"
+    "bytes": 1081,
+    "sha256": "d8d07de798bb36c3d1d69e9e4a050292b7dd0398bbae70d47bce4cd0a47da271"
   },
   {
     "path": "custom_code/solar.cooling",
@@ -140,63 +175,53 @@
     "sha256": "f4e296ba783cc0dd2a6f4dd70e16b114c14ec68477dd0db1d6da568612d3f6bd"
   },
   {
-    "path": "apk_chi10_history.json",
-    "bytes": 23164,
-    "sha256": "3f3292122e9525862fdd7b6b787c10faabe8ca84b1b2279dab904f103d725d58"
+    "path": "figures/morphology_n128.pdf",
+    "bytes": 334329,
+    "sha256": "9dd98c474b465e2406c0e8a37b7fe37d3267608eb1c7f81a86dc0460f7713760"
   },
   {
-    "path": "contrast_series.json",
-    "bytes": 48026,
-    "sha256": "8beebbce0d6bb1e6e19c90d4df284c3b93820dca712897840bbce0b089d50635"
+    "path": "figures/morphology_contrast.pdf",
+    "bytes": 165214,
+    "sha256": "931c52f319d24bcd6aa4d8413efe8daf41387ccf0797f5e3423fca7b7db62a79"
   },
   {
-    "path": "plot_contrasts.py",
-    "bytes": 949,
-    "sha256": "b26080b3def0d0930b5e58ed496632adaa7aecfe590ca894feba399cfaf6a23c"
+    "path": "figures/mass_histories.pdf",
+    "bytes": 56288,
+    "sha256": "030ca00adb7465b4e6343a175720efd6fd05a45adec78f1718a3bb1d8400e60d"
   },
   {
-    "path": "validated_scalar_series_20261029.json",
-    "bytes": 25761,
-    "sha256": "2e8a30fceed07d161cf939fd91071b8a4b4d7af2fc669784613e9c1dc3038414"
+    "path": "figures/boundary_control.pdf",
+    "bytes": 37821,
+    "sha256": "0753323aa6fb40500cadf2e1606672be02a2ae9709d25c44aa06468ef5a2b578"
   },
   {
-    "path": "Ryan_remaining_requests_20261029.txt",
-    "bytes": 1793,
-    "sha256": "0799cde9fcd2dc6d5ffedb1fe667734bed776de140503f2227e9d9bee11d279d"
+    "path": "figures/contrast_histories.pdf",
+    "bytes": 24275,
+    "sha256": "4856bd3910e97f843ae79b12d009c3e0b130f8aeef38f9a59ccc0030d37ee729"
   },
   {
-    "path": "figures/hllc_validated_histories_20261029.pdf",
-    "bytes": 24091,
-    "sha256": "494a1e67b226e0e499d75898d395198e23f77c0814e202fdce0c6c3acece71c3"
+    "path": "figures/gizmo_diagnostics.pdf",
+    "bytes": 25260,
+    "sha256": "7929a03297c52e74bf2aad364636952bbb7e6b91161d22a966e514bd986ac097"
   },
   {
-    "path": "plot_validated_series_20261029.py",
-    "bytes": 1209,
-    "sha256": "0046bbdd34ee3d29278481d1d262d5a3cd9e270865f00697bde3a19ae8c2a0e8"
+    "path": "figures/cooling_morphology_maps.pdf",
+    "bytes": 45449,
+    "sha256": "2a7b59a32b829efa021ec0e4d5bc41692bde257f0e37120fe96f3556c9ed09c8"
   },
   {
-    "path": "README_Overleaf.txt",
-    "bytes": 827,
-    "sha256": "f43eb908b2d92500183c1f3c4d2962fdcb535c1028dc5f7d4b24fa6a797a367e"
+    "path": "figures/cooling_histories.pdf",
+    "bytes": 22340,
+    "sha256": "c103365f39a8c3dbaa6bdbd0ddb43e2dc2ceaef9277db70cec72fdb6f204d8ba"
   },
   {
-    "path": "Cloud_survival_OJA.pdf",
-    "bytes": 506674,
-    "sha256": "c51c22d8630fdbe1d8b759f92d5ec6a7301cf56c05b443ab8b75608340620add"
+    "path": "figures/cooling_diagnostics.pdf",
+    "bytes": 28505,
+    "sha256": "116611b317389479c85fa7b062e18c565d2816581b62f701a51c1aad31f02e86"
   },
   {
-    "path": "athpp_chi1000_series_20261029.json",
-    "bytes": 10661,
-    "sha256": "80f3336fcfe36175d53137f91e3cdafbc2072126808e75c69f867cd295f9878f"
-  },
-  {
-    "path": "plot_contrasts_reportlab.py",
-    "bytes": 1785,
-    "sha256": "c6453c0f7d66f6f10f13388bd81615e59164c9db7f915e49e62cfd001136be0b"
-  },
-  {
-    "path": "revision_notes.json",
-    "bytes": 2228,
-    "sha256": "d4e1e07712b987bf5794bca58d90de1e9ffa5cb84ea4ec3697286344007169d1"
+    "path": "figures/hllc_histories.pdf",
+    "bytes": 20505,
+    "sha256": "c96f5d6e3197f06a1514051b93166c623b0d53b91357b478dc2e73ab1da221ed"
   }
 ]

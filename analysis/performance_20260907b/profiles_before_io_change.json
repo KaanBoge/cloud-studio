@@ -2,7 +2,7 @@
   "athpp_L5": {
     "code": "athpp",
     "level": 5,
-    "binary": "/home/kaan/performance_20260907/bin/athpp_native",
+    "binary": "/home/user/performance_20260907/bin/athpp_native",
     "binary_sha256": "05e45d1d945c7ea4c0ea3077dd8bcc887100afa8f999dd8153694eabac4ba902",
     "ranks": 16,
     "block": 64,
@@ -30,13 +30,13 @@
       "scope": "short-run field agreement; not a guarantee of bitwise identity over a full turbulent evolution"
     },
     "measured_native_output_bytes_per_cell": 48.013816833496094,
-    "ic_proof_root": "/home/kaan/performance_20260907/ic_tests",
+    "ic_proof_root": "/home/user/performance_20260907/ic_tests",
     "production_validation": "pending; short tests are not a completed replacement run"
   },
   "athpp_L6": {
     "code": "athpp",
     "level": 6,
-    "binary": "/home/kaan/performance_20260907/bin/athpp_native",
+    "binary": "/home/user/performance_20260907/bin/athpp_native",
     "binary_sha256": "05e45d1d945c7ea4c0ea3077dd8bcc887100afa8f999dd8153694eabac4ba902",
     "ranks": 16,
     "block": 64,
@@ -64,13 +64,13 @@
       "scope": "short-run field agreement; not a guarantee of bitwise identity over a full turbulent evolution"
     },
     "measured_native_output_bytes_per_cell": 48.012152671813965,
-    "ic_proof_root": "/home/kaan/performance_20260907/ic_tests",
+    "ic_proof_root": "/home/user/performance_20260907/ic_tests",
     "production_validation": "pending; short tests are not a completed replacement run"
   },
   "apk_L5": {
     "code": "apk",
     "level": 5,
-    "binary": "/home/kaan/ic_audit_20260907/bin/apk",
+    "binary": "/home/user/ic_audit_20260907/bin/apk",
     "binary_sha256": "d8d6ffe5b427216a58bda705ae0692c3cc12c3b7f072bd1a845fe11224a4af0f",
     "ranks": 1,
     "block": 64,
@@ -98,13 +98,13 @@
       "scope": "short-run field agreement; not a guarantee of bitwise identity over a full turbulent evolution"
     },
     "measured_native_output_bytes_per_cell": 3.5502030849456787,
-    "ic_proof_root": "/home/kaan/ic_audit_20260907/grid_tests",
+    "ic_proof_root": "/home/user/ic_audit_20260907/grid_tests",
     "production_validation": "pending; short tests are not a completed replacement run"
   },
   "apk_L6": {
     "code": "apk",
     "level": 6,
-    "binary": "/home/kaan/ic_audit_20260907/bin/apk",
+    "binary": "/home/user/ic_audit_20260907/bin/apk",
     "binary_sha256": "d8d6ffe5b427216a58bda705ae0692c3cc12c3b7f072bd1a845fe11224a4af0f",
     "ranks": 1,
     "block": 128,
@@ -132,7 +132,7 @@
       "scope": "short-run field agreement; not a guarantee of bitwise identity over a full turbulent evolution"
     },
     "measured_native_output_bytes_per_cell": 1.766786128282547,
-    "ic_proof_root": "/home/kaan/ic_audit_20260907/grid_tests",
+    "ic_proof_root": "/home/user/ic_audit_20260907/grid_tests",
     "production_validation": "pending; short tests are not a completed replacement run"
   }
 }

@@ -15,11 +15,11 @@ import subprocess
 import sys
 import time
 
-sys.path.insert(0, '/home/kaan/performance_20260907')
-sys.path.insert(0, '/home/kaan/verified_20260907')
+sys.path.insert(0, '/home/user/performance_20260907')
+sys.path.insert(0, '/home/user/verified_20260907')
 import run_optimized as r
 
-WORK = Path('/home/kaan/restart_20260907')
+WORK = Path('/home/user/restart_20260907')
 PLAN = [(code, chi) for chi in (10, 100, 1000) for code in ('athpp', 'apk')]
 STEM = 'RESTART_sharp13_20260907_L4'
 

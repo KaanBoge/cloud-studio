@@ -2,7 +2,7 @@
   "schema_version": 2,
   "kind": "athw",
   "parameters": {
-    "source": "/home/kaan/ic_audit_20260907/grid_tests/athw_chi1000/athinput",
+    "source": "/home/user/ic_audit_20260907/grid_tests/athw_chi1000/athinput",
     "parameter_sha256": "714a311ea3c625469ce3d026aef5436032f450b9baec1cc264bb2e184bcc76ac",
     "assumptions": [
       "custom cloud_wind pgen fixes R=1, rho_wind=1 and P_wind=1"
@@ -60,7 +60,7 @@
           10.0
         ]
       },
-      "snapshot": "/home/kaan/ic_audit_20260907/grid_tests/athw_chi1000/id0/Cloud.0000.vtk",
+      "snapshot": "/home/user/ic_audit_20260907/grid_tests/athw_chi1000/id0/Cloud.0000.vtk",
       "dense_mass_over_initial_dense_mass": 1.0
     },
     {
@@ -84,7 +84,7 @@
           10.0
         ]
       },
-      "snapshot": "/home/kaan/ic_audit_20260907/grid_tests/athw_chi1000/id0/Cloud.0001.vtk",
+      "snapshot": "/home/user/ic_audit_20260907/grid_tests/athw_chi1000/id0/Cloud.0001.vtk",
       "dense_mass_over_initial_dense_mass": 0.9999991242012073
     }
   ]

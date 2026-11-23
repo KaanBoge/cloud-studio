@@ -1,8 +1,8 @@
 // Isolated headless Edge profile. No existing user browser/profile is touched.
 const fs=require('node:fs'),path=require('node:path'),http=require('node:http'),assert=require('node:assert/strict');
-const {chromium}=require('C:/Users/kaanb/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
-const root='C:/Users/kaanb/cloud-studio-repo';
-const out='C:/Users/kaanb/CloudCrushing/followup_20260907/evidence';
+const {chromium}=require('playwright');
+const root='C:/Users/user/cloud-studio-repo';
+const out='C:/Users/user/CloudCrushing/followup_20260907/evidence';
 const server=http.createServer((req,res)=>{
   const filename=path.resolve(root,'.'+decodeURIComponent(new URL(req.url,'http://localhost').pathname));
   if(!filename.startsWith(path.resolve(root)+path.sep)){res.writeHead(403);res.end();return;}

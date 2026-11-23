@@ -22,7 +22,7 @@ The records below are now completed worker records; no Enzo-E solver is active.
 The paired queue was launched 8 September 2026 at 01:05 local time. Inspect
 `worker_windows.json`, `worker_windows.log`, `worker_windows.err.log`, actual
 processes and native `batch.json` for current status. Native root:
-`/home/kaan/sensitivity_20260907/enzoe`; raw outputs are in `runs/`.
+`/home/user/sensitivity_20260907/enzoe`; raw outputs are in `runs/`.
 L3/L4 pairs precede the guarded L5 pair. No other native worker is duplicated.
 
 The existing Enzo-E executable was copied and hash-verified, not rebuilt.

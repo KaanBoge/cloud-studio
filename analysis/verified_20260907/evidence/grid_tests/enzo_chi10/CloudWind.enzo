@@ -13,7 +13,7 @@
 # t_cc(chi=10) -> StopTime = 6.1237241, dtDataDump = 0.061237241
 #
 # NOTE: this file is generated whole, never by in-place sed. An earlier chain
-# script (a8_chain_3d.sh) truncated it to zero bytes by using the same path as
+# script (chain_3d.sh) truncated it to zero bytes by using the same path as
 # both sed input and shell redirect target, which produced the
 # "TopGridRank = -99999 ill defined" crash on 2026-08-25.
 # A pristine copy is kept alongside as CloudWind.enzo.reference.

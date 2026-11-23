@@ -153,14 +153,14 @@ preflight requires 12 GiB available; running low-memory and storage guards
 request a native checkpoint/stop. An external 6000-second case limit bounds
 restart growth; native stop receives 60 seconds grace. No guard removes data.
 
-Completed ledger: `/home/kaan/sensitivity_20260907/gadget4/full_l3_continuation_v2/batch.json`.
+Completed ledger: `/home/user/sensitivity_20260907/gadget4/full_l3_continuation_v2/batch.json`.
 Sharp raw remains under `full_l3_v1/sharp13`; historical raw is under
 `full_l3_continuation_v2/tanh13`. The immutable analysis is `analysis_l3_v1`.
 All raw fields, ICs, logs, restarts and failed attempts stay local. L4's own
 native validation is complete, but the full pair is storage-held; L5 is not enabled.
 These controls are not new production entries in the 3D viewer.
 
-Scripts are machine-specific and use `/home/kaan/venv/bin/python` under WSL.
+Scripts are machine-specific and use `/home/user/venv/bin/python` under WSL.
 Never rerun setup, smokes or full scripts into existing directories. Historical
 generator comments are archived provenance, not current scientific claims;
 use the guarded wrappers, not an unchecked direct overwrite command.

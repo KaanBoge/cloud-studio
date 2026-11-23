@@ -16,7 +16,7 @@ import time
 
 import force_trace_replay as f
 
-ROOT = Path('/home/kaan/sensitivity_20260907/gasoline')
+ROOT = Path('/home/user/sensitivity_20260907/gasoline')
 RUNNER = ROOT / 'force_order_runner_v1'
 OUT = ROOT / 'force_order_compare_v1'
 REPORT_SHA = '94ed097aa774b930c065bb1710d2c4f4f9d4cf618adcf09c52b23debf8822b97'

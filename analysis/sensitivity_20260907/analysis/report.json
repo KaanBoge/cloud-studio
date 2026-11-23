@@ -11479,49 +11479,49 @@
   },
   "independent_yt_checks": [
     {
-      "snapshot": "/home/kaan/sensitivity_20260907/runs/athpp_L3_chi100_historical_tanh13/sensitivity_L3_chi100.out2.00000.athdf",
+      "snapshot": "/home/user/sensitivity_20260907/runs/athpp_L3_chi100_historical_tanh13/sensitivity_L3_chi100.out2.00000.athdf",
       "direct_dense_mass": 409.9079855231985,
       "yt_dense_mass": 409.9079855231985,
       "relative_error": 0.0
     },
     {
-      "snapshot": "/home/kaan/sensitivity_20260907/runs/athpp_L3_chi100_historical_tanh13/sensitivity_L3_chi100.out2.00100.athdf",
+      "snapshot": "/home/user/sensitivity_20260907/runs/athpp_L3_chi100_historical_tanh13/sensitivity_L3_chi100.out2.00100.athdf",
       "direct_dense_mass": 0.0,
       "yt_dense_mass": 0.0,
       "relative_error": 0.0
     },
     {
-      "snapshot": "/home/kaan/sensitivity_20260907/runs/athpp_L3_chi100_sharp13/sensitivity_L3_chi100.out2.00000.athdf",
+      "snapshot": "/home/user/sensitivity_20260907/runs/athpp_L3_chi100_sharp13/sensitivity_L3_chi100.out2.00000.athdf",
       "direct_dense_mass": 409.9079855231985,
       "yt_dense_mass": 409.9079855231985,
       "relative_error": 0.0
     },
     {
-      "snapshot": "/home/kaan/sensitivity_20260907/runs/athpp_L3_chi100_sharp13/sensitivity_L3_chi100.out2.00100.athdf",
+      "snapshot": "/home/user/sensitivity_20260907/runs/athpp_L3_chi100_sharp13/sensitivity_L3_chi100.out2.00100.athdf",
       "direct_dense_mass": 0.0,
       "yt_dense_mass": 0.0,
       "relative_error": 0.0
     },
     {
-      "snapshot": "/home/kaan/sensitivity_20260907/runs/apk_L3_chi100_historical_momentum13/parthenon.prim.00000.phdf",
+      "snapshot": "/home/user/sensitivity_20260907/runs/apk_L3_chi100_historical_momentum13/parthenon.prim.00000.phdf",
       "direct_dense_mass": 409.9079855231985,
       "yt_dense_mass": 409.9079855231985,
       "relative_error": 0.0
     },
     {
-      "snapshot": "/home/kaan/sensitivity_20260907/runs/apk_L3_chi100_historical_momentum13/parthenon.prim.final.phdf",
+      "snapshot": "/home/user/sensitivity_20260907/runs/apk_L3_chi100_historical_momentum13/parthenon.prim.final.phdf",
       "direct_dense_mass": 0.0,
       "yt_dense_mass": 0.0,
       "relative_error": 0.0
     },
     {
-      "snapshot": "/home/kaan/sensitivity_20260907/runs/apk_L3_chi100_sharp13/parthenon.prim.00000.phdf",
+      "snapshot": "/home/user/sensitivity_20260907/runs/apk_L3_chi100_sharp13/parthenon.prim.00000.phdf",
       "direct_dense_mass": 409.9079855231985,
       "yt_dense_mass": 409.9079855231985,
       "relative_error": 0.0
     },
     {
-      "snapshot": "/home/kaan/sensitivity_20260907/runs/apk_L3_chi100_sharp13/parthenon.prim.final.phdf",
+      "snapshot": "/home/user/sensitivity_20260907/runs/apk_L3_chi100_sharp13/parthenon.prim.final.phdf",
       "direct_dense_mass": 0.0,
       "yt_dense_mass": 0.0,
       "relative_error": 0.0

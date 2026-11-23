@@ -20,7 +20,7 @@ import psutil
 import diagnose_mfv_restart as decoder
 from storage_guard import storage_snapshot, require_storage, GIB
 
-ROOT=Path('/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1')
+ROOT=Path('/home/user/sensitivity_20260907/gizmo/mfv_timestep_repair_v1')
 OLD=ROOT.parent/'smokes/L3_mfv_tanh13'
 RUNROOT=ROOT/'short_native_v1'
 SOURCE=Path(__file__).resolve().parent
@@ -126,7 +126,7 @@ def freeze():
         binary=ROOT/variant/('GIZMO_'+variant);check(sha(binary)==digest,'Binary changed')
         plan['binaries'][variant]=dict(path=str(binary),sha256=digest)
     with (dest/'tests.log').open('x') as stream:
-        subprocess.run(['/home/kaan/venv/bin/python','-m','unittest','-v','test_mfv_short'],cwd=dest,
+        subprocess.run(['/home/user/venv/bin/python','-m','unittest','-v','test_mfv_short'],cwd=dest,
                        stdout=stream,stderr=subprocess.STDOUT,check=True,timeout=60)
     plan['tests_log_sha256']=sha(dest/'tests.log')
     save_new(dest/'plan.json',plan)
@@ -161,7 +161,7 @@ def run(plan):
     locks=[];records=[]
     try:
         for name in ['benchmark.lock','production.lock']:
-            lock=open('/home/kaan/performance_20260907/'+name,'a');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(lock)
+            lock=open('/home/user/performance_20260907/'+name,'a');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(lock)
         RUNROOT.mkdir()
         for variant in ['reference','repaired']:
             check_frozen(plan);require_storage(storage_snapshot(ROOT),plan['case_bytes'])

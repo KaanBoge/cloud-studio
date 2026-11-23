@@ -4,7 +4,7 @@ from pathlib import Path
 import numpy as np
 from yt.frontends.gadget.data_structures import GadgetHDF5Dataset
 from yt.frontends.gadget.io import IOHandlerGadgetHDF5
-sys.path.insert(0,'/home/kaan/sensitivity_20260907/gadget4')
+sys.path.insert(0,'/home/user/sensitivity_20260907/gadget4')
 from gadget_controls import ROOT,NATIVE,read,sha,save,metadata,dependencies,native_summary,parameters,check_ic
 
 def paired_nonvelocity(a,b):

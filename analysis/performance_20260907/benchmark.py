@@ -13,11 +13,11 @@ import subprocess
 import sys
 import time
 import psutil
-sys.path.insert(0,'/mnt/c/Users/kaanb/CloudCrushing/audit_20260907')
+sys.path.insert(0,'/mnt/c/Users/user/CloudCrushing/audit_20260907')
 from grid_smokes import set_sections
 from run_corrected_athpp import make_input
 
-ROOT=Path('/home/kaan/performance_20260907')
+ROOT=Path('/home/user/performance_20260907')
 
 
 def run_case(name,kind,binary,ranks,block,steps=32,level=5,end_time=.25,timeout_seconds=300):
@@ -34,7 +34,7 @@ def run_case(name,kind,binary,ranks,block,steps=32,level=5,end_time=.25,timeout_
           'output1':{'dt':end_time},'output2':{'dt':end_time},
           'meshblock':{'nx1':block,'nx2':block,'nx3':block}})
     else:
-        text=Path('/home/kaan/ic_audit_20260907/grid_tests/apk_chi100/athinput').read_text()
+        text=Path('/home/user/ic_audit_20260907/grid_tests/apk_chi100/athinput').read_text()
         # Keep all physical/numerical controls, replacing only benchmark duration/decomposition.
         nx=8*2**level
         text=set_sections(text,{'parthenon/mesh':{'nx1':nx//2,'nx2':nx,'nx3':nx//2},
@@ -99,14 +99,14 @@ if __name__=='__main__':
     suite_lock=(ROOT/'benchmark.lock').open('a')
     fcntl.flock(suite_lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
     p=argparse.ArgumentParser();p.add_argument('suite',choices=['cpu','gpu','confirm','gpu_confirm','l6','l6_gpu_retry','gpu128_clean']);a=p.parse_args()
-    old='/home/kaan/ic_audit_20260907/bin/athpp';new=str(ROOT/'bin/athpp_native')
+    old='/home/user/ic_audit_20260907/bin/athpp';new=str(ROOT/'bin/athpp_native')
     if a.suite=='cpu':
         for name,binary,ranks,block in [('base32_r8',old,8,32),('native32_r8',new,8,32),
               ('native64_r8_retry',new,8,64),('native32_r16',new,16,32),('native64_r16',new,16,64),('native32_r4',new,4,32)]:
             try:run_case(name,'athpp',binary,ranks,block)
             except RuntimeError as e:print(str(e),flush=True)
     elif a.suite=='gpu':
-        for block in (16,32,64):run_case(f'apk_block{block}','apk','/home/kaan/ic_audit_20260907/bin/apk',1,block,64)
+        for block in (16,32,64):run_case(f'apk_block{block}','apk','/home/user/ic_audit_20260907/bin/apk',1,block,64)
     elif a.suite=='confirm':
         previous=[json.loads(f.read_text()) for f in (ROOT/'benchmarks_v3').glob('native*/result.json')]
         previous=[d for d in previous if d['returncode']==0 and len(d['native_outputs'])>=2]
@@ -116,16 +116,16 @@ if __name__=='__main__':
             run_case(f'best_repeat{repeat}','athpp',new,best['ranks'],best['block'])
     elif a.suite=='gpu_confirm':
         for repeat in (2,3):
-            for block in (32,64):run_case(f'apk_block{block}_repeat{repeat}','apk','/home/kaan/ic_audit_20260907/bin/apk',1,block)
+            for block in (32,64):run_case(f'apk_block{block}_repeat{repeat}','apk','/home/user/ic_audit_20260907/bin/apk',1,block)
     elif a.suite=='gpu128_clean':
-        run_case('apk_block128_clean','apk','/home/kaan/ic_audit_20260907/bin/apk',1,128)
-        run_case('L6_apk_block128_clean','apk','/home/kaan/ic_audit_20260907/bin/apk',1,128,level=6,end_time=.08,timeout_seconds=120)
+        run_case('apk_block128_clean','apk','/home/user/ic_audit_20260907/bin/apk',1,128)
+        run_case('L6_apk_block128_clean','apk','/home/user/ic_audit_20260907/bin/apk',1,128,level=6,end_time=.08,timeout_seconds=120)
     elif a.suite=='l6_gpu_retry':
         for block in (64,32):
-            try:run_case(f'L6_apk_block{block}_retry','apk','/home/kaan/ic_audit_20260907/bin/apk',1,block,level=6,end_time=.08,timeout_seconds=120)
+            try:run_case(f'L6_apk_block{block}_retry','apk','/home/user/ic_audit_20260907/bin/apk',1,block,level=6,end_time=.08,timeout_seconds=120)
             except RuntimeError as e:print(str(e),flush=True)
     else:
         run_case('L6_cpu_base','athpp',old,8,32,level=6,end_time=.08)
         run_case('L6_cpu_native','athpp',new,16,64,level=6,end_time=.08)
-        run_case('L6_apk_block32','apk','/home/kaan/ic_audit_20260907/bin/apk',1,32,level=6,end_time=.08)
-        run_case('L6_apk_block64','apk','/home/kaan/ic_audit_20260907/bin/apk',1,64,level=6,end_time=.08)
+        run_case('L6_apk_block32','apk','/home/user/ic_audit_20260907/bin/apk',1,32,level=6,end_time=.08)
+        run_case('L6_apk_block64','apk','/home/user/ic_audit_20260907/bin/apk',1,64,level=6,end_time=.08)

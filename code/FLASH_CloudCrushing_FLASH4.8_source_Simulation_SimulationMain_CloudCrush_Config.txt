@@ -1,7 +1,7 @@
-# Configuration file for the CloudCrush problem (Assignment 6, task 4):
-# cloud crushing — a supersonic wind strikes a dense, cold, initially
+# Configuration file for the CloudCrush problem:
+# cloud crushing, a supersonic wind striking a dense, cold, initially
 # static cloud.  Built by combining the CloudStatic initial condition
-# (task 3) with the inflow boundary machinery of the WindTunnel problem.
+# with the inflow boundary machinery of the WindTunnel problem.
 
 REQUIRES Grid/GridBoundaryConditions/OneRow
 REQUIRES physics/Hydro

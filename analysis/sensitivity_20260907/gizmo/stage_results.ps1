@@ -1,7 +1,7 @@
 $ErrorActionPreference='Stop'
-$taskStudy='C:\Users\kaanb\CloudCrushing\sensitivity_20260907'
+$taskStudy='C:\Users\user\CloudCrushing\sensitivity_20260907'
 $taskFrom=Join-Path $taskStudy 'gizmo'
-$taskRepo='C:\Users\kaanb\cloud-studio-repo'
+$taskRepo='C:\Users\user\cloud-studio-repo'
 $taskTo=Join-Path $taskRepo 'analysis\sensitivity_20260907\gizmo'
 if(!(Test-Path -LiteralPath $taskTo)){throw 'Existing validated GIZMO publication required'}
 if(@(git -C $taskRepo status --porcelain).Count -ne 0){throw 'Review existing repo changes before staging'}

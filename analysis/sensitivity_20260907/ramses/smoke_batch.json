@@ -5,9 +5,9 @@
       "status": "complete_native_checks",
       "level": 3,
       "mode": 0,
-      "directory": "/home/kaan/sensitivity_20260907/ramses/smokes/L3_chi100_sharp13",
+      "directory": "/home/user/sensitivity_20260907/ramses/smokes/L3_chi100_sharp13",
       "parameters": {
-        "source": "/home/kaan/sensitivity_20260907/ramses/smokes/L3_chi100_sharp13/run.nml",
+        "source": "/home/user/sensitivity_20260907/ramses/smokes/L3_chi100_sharp13/run.nml",
         "parameter_sha256": "62ba2be0a25b5f5a743b6a89839d7207b63820fbf567f7d29ea78de42fdfefba",
         "assumptions": [],
         "gamma": 1.6666666666666667,
@@ -46,18 +46,18 @@
         "core",
         "-np",
         "8",
-        "/home/kaan/sensitivity_20260907/ramses/ramses_pair3d",
+        "/home/user/sensitivity_20260907/ramses/ramses_pair3d",
         "run.nml"
       ],
       "binary_sha256": "52b822af90d1aa32899c7f860cf60e9826281d182f7ee91e8d83d41ad98922d7",
       "parameter_sha256": "62ba2be0a25b5f5a743b6a89839d7207b63820fbf567f7d29ea78de42fdfefba",
       "storage_preflight": {
-        "path": "/home/kaan/sensitivity_20260907/ramses",
+        "path": "/home/user/sensitivity_20260907/ramses",
         "filesystem_free_bytes": 93157244928,
         "filesystem_total_bytes": 1081101176832,
         "windows_backing_volume": {
           "distribution": "Ubuntu",
-          "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+          "base_path": "C:\\Users\\user\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
           "drive": "C:",
           "free_bytes": 37386473472,
           "total_bytes": 1999283154944
@@ -75,7 +75,7 @@
       "target_snapshots": 101,
       "series": [
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/ramses/smokes/L3_chi100_sharp13/output_00001",
+          "snapshot": "/home/user/sensitivity_20260907/ramses/smokes/L3_chi100_sharp13/output_00001",
           "time_code": 0.0,
           "t_over_tcc": 0.0,
           "cells": 65536,
@@ -93,7 +93,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/ramses/smokes/L3_chi100_sharp13/output_00002",
+          "snapshot": "/home/user/sensitivity_20260907/ramses/smokes/L3_chi100_sharp13/output_00002",
           "time_code": 0.01936452944816933,
           "t_over_tcc": 0.0049999000039935276,
           "cells": 65536,
@@ -111,9 +111,9 @@
       "status": "complete_native_checks",
       "level": 3,
       "mode": 1,
-      "directory": "/home/kaan/sensitivity_20260907/ramses/smokes/L3_chi100_tanh13",
+      "directory": "/home/user/sensitivity_20260907/ramses/smokes/L3_chi100_tanh13",
       "parameters": {
-        "source": "/home/kaan/sensitivity_20260907/ramses/smokes/L3_chi100_tanh13/run.nml",
+        "source": "/home/user/sensitivity_20260907/ramses/smokes/L3_chi100_tanh13/run.nml",
         "parameter_sha256": "602b27ba9c59c94ac041db8f9c1adbc49a6722c51aee1b22ce26295f9d7fac22",
         "assumptions": [],
         "gamma": 1.6666666666666667,
@@ -152,18 +152,18 @@
         "core",
         "-np",
         "8",
-        "/home/kaan/sensitivity_20260907/ramses/ramses_pair3d",
+        "/home/user/sensitivity_20260907/ramses/ramses_pair3d",
         "run.nml"
       ],
       "binary_sha256": "52b822af90d1aa32899c7f860cf60e9826281d182f7ee91e8d83d41ad98922d7",
       "parameter_sha256": "602b27ba9c59c94ac041db8f9c1adbc49a6722c51aee1b22ce26295f9d7fac22",
       "storage_preflight": {
-        "path": "/home/kaan/sensitivity_20260907/ramses",
+        "path": "/home/user/sensitivity_20260907/ramses",
         "filesystem_free_bytes": 93135552512,
         "filesystem_total_bytes": 1081101176832,
         "windows_backing_volume": {
           "distribution": "Ubuntu",
-          "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+          "base_path": "C:\\Users\\user\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
           "drive": "C:",
           "free_bytes": 37386489856,
           "total_bytes": 1999283154944
@@ -181,7 +181,7 @@
       "target_snapshots": 101,
       "series": [
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/ramses/smokes/L3_chi100_tanh13/output_00001",
+          "snapshot": "/home/user/sensitivity_20260907/ramses/smokes/L3_chi100_tanh13/output_00001",
           "time_code": 0.0,
           "t_over_tcc": 0.0,
           "cells": 65536,
@@ -199,7 +199,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/ramses/smokes/L3_chi100_tanh13/output_00002",
+          "snapshot": "/home/user/sensitivity_20260907/ramses/smokes/L3_chi100_tanh13/output_00002",
           "time_code": 0.01936452944816933,
           "t_over_tcc": 0.0049999000039935276,
           "cells": 65536,

@@ -1,22 +1,22 @@
 """Isolated copies of real native binaries, configuration and actual IC writers."""
 import fcntl,json,shutil,sys
 from pathlib import Path
-sys.path.insert(0,'/mnt/c/Users/kaanb/CloudCrushing/sensitivity_20260907')
+sys.path.insert(0,'/mnt/c/Users/user/CloudCrushing/sensitivity_20260907')
 from build import sha
-sys.path.insert(0,'/home/kaan/verified_20260907')
+sys.path.insert(0,'/home/user/verified_20260907')
 from storage_guard import storage_snapshot,require_storage,GIB
-ROOT=Path('/home/kaan/sensitivity_20260907/gizmo')
-STAGED=Path('/mnt/c/Users/kaanb/CloudCrushing/sensitivity_20260907/gizmo')
-NATIVE=Path('/home/kaan/codes/gizmo')
+ROOT=Path('/home/user/sensitivity_20260907/gizmo')
+STAGED=Path('/mnt/c/Users/user/CloudCrushing/sensitivity_20260907/gizmo')
+NATIVE=Path('/home/user/codes/gizmo')
 
 def main():
     locks=[]
     for name in ('benchmark.lock','production.lock'):
-        f=Path('/home/kaan/performance_20260907',name).open('a');fcntl.flock(f,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(f)
+        f=Path('/home/user/performance_20260907',name).open('a');fcntl.flock(f,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(f)
     if ROOT.exists():raise ValueError('Existing setup requires review')
     require_storage(storage_snapshot(NATIVE),GIB)
     sources={'generator_sharp.py':NATIVE/'scripts/make_cloudwind_ic.py',
-        'generator_historical.py':Path('/mnt/c/Users/kaanb/CloudCrushing/audit_20260907/before/home/kaan/codes/gizmo/scripts/make_cloudwind_ic.py'),
+        'generator_historical.py':Path('/mnt/c/Users/user/CloudCrushing/audit_20260907/before/home/user/codes/gizmo/scripts/make_cloudwind_ic.py'),
         'experiment.json':STAGED/'experiment.json','native_io.c':NATIVE/'io.c','native_begrun.c':NATIVE/'begrun.c'}
     expected={}
     for variant,method in (('mfm','MASS'),('mfv','VOLUME')):

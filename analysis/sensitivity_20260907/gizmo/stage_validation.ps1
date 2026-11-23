@@ -1,7 +1,7 @@
 $ErrorActionPreference='Stop'
-$taskStudy='C:\Users\kaanb\CloudCrushing\sensitivity_20260907'
+$taskStudy='C:\Users\user\CloudCrushing\sensitivity_20260907'
 $taskFrom=Join-Path $taskStudy 'gizmo'
-$taskTo='C:\Users\kaanb\cloud-studio-repo\analysis\sensitivity_20260907\gizmo'
+$taskTo='C:\Users\user\cloud-studio-repo\analysis\sensitivity_20260907\gizmo'
 if(Test-Path -LiteralPath $taskTo){throw 'Publication folder exists; review rather than overwrite it'}
 $taskValidation=Get-Content -Raw -LiteralPath (Join-Path $taskFrom 'verification.json') | ConvertFrom-Json
 $taskTiming=Get-Content -Raw -LiteralPath (Join-Path $taskFrom 'snapshot_timing_report.json') | ConvertFrom-Json

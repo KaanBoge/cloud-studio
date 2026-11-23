@@ -11,8 +11,8 @@ import time
 import h5py
 import numpy as np
 
-ROOT=Path('/home/kaan/performance_20260907c')
-RUN=Path('/home/kaan/codes/athenapp/runs/RESTART_sharp13_20260907_L4_chi100')
+ROOT=Path('/home/user/performance_20260907c')
+RUN=Path('/home/user/codes/athenapp/runs/RESTART_sharp13_20260907_L4_chi100')
 
 
 def exact_value(a,b):

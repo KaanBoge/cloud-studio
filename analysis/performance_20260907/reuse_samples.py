@@ -9,7 +9,7 @@ import sys
 import numpy as np
 import yt
 yt.set_log_level(40)
-sys.path.insert(0,'/home/kaan/verified_20260907')
+sys.path.insert(0,'/home/user/verified_20260907')
 from run_params import parse_file
 rows=json.loads(Path(__file__).with_name('reuse_inventory.json').read_text())
 chosen=['ATHPP3D_chi10_256','ATHPP3D_chi100_256','M3D_L3_chi10','M3D_L3_chi100','M3D_L3_chi1000',

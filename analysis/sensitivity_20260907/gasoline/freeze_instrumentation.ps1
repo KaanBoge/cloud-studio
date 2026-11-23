@@ -1,5 +1,5 @@
 $ErrorActionPreference='Stop'
-$taskRoot='\\wsl.localhost\Ubuntu\home\kaan\sensitivity_20260907\gasoline'
+$taskRoot='\\wsl.localhost\Ubuntu\home\user\sensitivity_20260907\gasoline'
 $taskBundle=Join-Path $taskRoot 'runner_instrumentation_v1'
 if(Test-Path -LiteralPath $taskBundle){throw 'Existing frozen bundle'}
 $taskOriginal=Get-Content -Raw -LiteralPath (Join-Path $taskRoot 'copy_manifest.json') | ConvertFrom-Json
@@ -14,7 +14,7 @@ foreach($taskFile in $taskChanged){
 }
 New-Item -ItemType Directory -Path $taskBundle | Out-Null
 Copy-Item -LiteralPath (Join-Path $PSScriptRoot 'gasoline_controls.py'),(Join-Path $PSScriptRoot 'test_gasoline.py') -Destination $taskBundle
-& wsl.exe --exec env OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /home/kaan/venv/bin/python /home/kaan/sensitivity_20260907/gasoline/runner_instrumentation_v1/test_gasoline.py
+& wsl.exe --exec env OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /home/user/venv/bin/python /home/user/sensitivity_20260907/gasoline/runner_instrumentation_v1/test_gasoline.py
 if($LASTEXITCODE -ne 0){throw 'Frozen tests failed'}
 $taskPins=[ordered]@{}
 $taskPaths=@((Join-Path $taskBundle 'gasoline_controls.py'),(Join-Path $taskBundle 'test_gasoline.py'),(Join-Path $taskRoot 'instrumentation_v1\preparation.json'),(Join-Path $taskRoot 'gasoline_original'))

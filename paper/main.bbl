@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{25}%
+\begin{thebibliography}{26}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -192,6 +192,18 @@
   Notices of the Royal Astronomical Society}\ }\textbf {\bibinfo {volume}
   {523}},\ \bibinfo {pages} {1280} (\bibinfo {year} {2023})},\ \Eprint
   {http://arxiv.org/abs/2203.13915} {arXiv:2203.13915} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Springel}\ \emph {et~al.}(2021)\citenamefont
+  {Springel}, \citenamefont {Pakmor}, \citenamefont {Zier},\ and\ \citenamefont
+  {Reinecke}}]{Springel2021}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {V.}~\bibnamefont
+  {Springel}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Pakmor}},
+  \bibinfo {author} {\bibfnamefont {O.}~\bibnamefont {Zier}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {M.}~\bibnamefont {Reinecke}},\ }\href {\doibase
+  10.1093/mnras/stab1855} {\bibfield  {journal} {\bibinfo  {journal} {Monthly
+  Notices of the Royal Astronomical Society}\ }\textbf {\bibinfo {volume}
+  {506}},\ \bibinfo {pages} {2871} (\bibinfo {year} {2021})}\BibitemShut
+  {NoStop}%
 \bibitem [{\citenamefont {Gr{\o}nnow}\ \emph {et~al.}(2018)\citenamefont
   {Gr{\o}nnow}, \citenamefont {Tepper-Garc{\'i}a},\ and\ \citenamefont
   {Bland-Hawthorn}}]{Gronnow2018}%
@@ -251,7 +263,8 @@
   {Bordner}}\ and\ \bibinfo {author} {\bibfnamefont {M.~L.}\ \bibnamefont
   {Norman}},\ }\href {https://arxiv.org/abs/1810.01319} {\enquote {\bibinfo
   {title} {Computational cosmology and astrophysics on adaptive meshes using
-  charm++},}\ } (\bibinfo {year} {2018})\BibitemShut {NoStop}%
+  {Charm++}},}\ } (\bibinfo {year} {2018}),\ \Eprint
+  {http://arxiv.org/abs/1810.01319} {arXiv:1810.01319} \BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Teyssier}(2002)}]{Teyssier2002}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
@@ -275,18 +288,21 @@
   {\bibfield  {journal} {\bibinfo  {journal} {SoftwareX}\ }\textbf {\bibinfo
   {volume} {19}},\ \bibinfo {pages} {101168} (\bibinfo {year}
   {2022})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Springel}\ \emph {et~al.}(2021)\citenamefont
-  {Springel}, \citenamefont {Pakmor}, \citenamefont {Zier},\ and\ \citenamefont
-  {Reinecke}}]{Springel2021}%
+\bibitem [{\citenamefont {Schaller}\ \emph {et~al.}(2024)\citenamefont
+  {Schaller}, \citenamefont {Borrow}, \citenamefont {Draper}, \citenamefont
+  {Ivkovic}, \citenamefont {McAlpine}, \citenamefont {Vandenbroucke} \emph
+  {et~al.}}]{Schaller2024}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {V.}~\bibnamefont
-  {Springel}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Pakmor}},
-  \bibinfo {author} {\bibfnamefont {O.}~\bibnamefont {Zier}}, \ and\ \bibinfo
-  {author} {\bibfnamefont {M.}~\bibnamefont {Reinecke}},\ }\href {\doibase
-  10.1093/mnras/stab1855} {\bibfield  {journal} {\bibinfo  {journal} {Monthly
-  Notices of the Royal Astronomical Society}\ }\textbf {\bibinfo {volume}
-  {506}},\ \bibinfo {pages} {2871} (\bibinfo {year} {2021})}\BibitemShut
-  {NoStop}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Schaller}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Borrow}},
+  \bibinfo {author} {\bibfnamefont {P.~W.}\ \bibnamefont {Draper}}, \bibinfo
+  {author} {\bibfnamefont {M.}~\bibnamefont {Ivkovic}}, \bibinfo {author}
+  {\bibfnamefont {S.}~\bibnamefont {McAlpine}}, \bibinfo {author}
+  {\bibfnamefont {B.}~\bibnamefont {Vandenbroucke}},  \emph {et~al.},\ }\href
+  {\doibase 10.1093/mnras/stae922} {\bibfield  {journal} {\bibinfo  {journal}
+  {Monthly Notices of the Royal Astronomical Society}\ }\textbf {\bibinfo
+  {volume} {530}},\ \bibinfo {pages} {2378} (\bibinfo {year} {2024})},\ \Eprint
+  {http://arxiv.org/abs/2305.13380} {arXiv:2305.13380} \BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Sutherland}\ and\ \citenamefont
   {Dopita}(1993)}]{Sutherland1993}%
   \BibitemOpen

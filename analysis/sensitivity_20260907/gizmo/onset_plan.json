@@ -74,12 +74,12 @@
   "measured_snapshot_bytes": 4990184,
   "measured_restart_bytes": 50629248,
   "storage_preflight": {
-    "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1",
+    "path": "/home/user/sensitivity_20260907/gizmo/mfv_timestep_repair_v1",
     "filesystem_free_bytes": 16806166528,
     "filesystem_total_bytes": 1081101176832,
     "windows_backing_volume": {
       "distribution": "Ubuntu",
-      "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+      "base_path": "C:\\Users\\user\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
       "drive": "C:",
       "free_bytes": 37415563264,
       "total_bytes": 1999283154944

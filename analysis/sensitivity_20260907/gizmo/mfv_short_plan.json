@@ -58,12 +58,12 @@
   "measured_snapshot_bytes": 4990184,
   "measured_restart_bytes": 48875392,
   "storage": {
-    "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1",
+    "path": "/home/user/sensitivity_20260907/gizmo/mfv_timestep_repair_v1",
     "filesystem_free_bytes": 16929001472,
     "filesystem_total_bytes": 1081101176832,
     "windows_backing_volume": {
       "distribution": "Ubuntu",
-      "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+      "base_path": "C:\\Users\\user\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
       "drive": "C:",
       "free_bytes": 37513805824,
       "total_bytes": 1999283154944
@@ -76,11 +76,11 @@
   "ranks": 8,
   "binaries": {
     "reference": {
-      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/reference/GIZMO_reference",
+      "path": "/home/user/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/reference/GIZMO_reference",
       "sha256": "2619110ff4e5391d30d8ff08f822e8d98511410aee89089e0bb248a393bc6928"
     },
     "repaired": {
-      "path": "/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/repaired/GIZMO_repaired",
+      "path": "/home/user/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/repaired/GIZMO_repaired",
       "sha256": "4784336422c25db4714c6f56ef95337347f4be18dfd622e2b7e9acf7e1fe3d3c"
     }
   },

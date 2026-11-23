@@ -40,10 +40,10 @@
         "core",
         "-np",
         "8",
-        "/home/kaan/sensitivity_20260907/gadget4/Gadget4_pair",
+        "/home/user/sensitivity_20260907/gadget4/Gadget4_pair",
         "params.txt"
       ],
-      "directory": "/home/kaan/sensitivity_20260907/gadget4/smokes/L3_sharp13",
+      "directory": "/home/user/sensitivity_20260907/gadget4/smokes/L3_sharp13",
       "binary_sha256": "5ab857aba8cf4213fbce701ae8eaa6c449f5de43c0b9ab61722e962d88dca8d3",
       "input_sha256": "77f848523da845ccba0257058ede7aa720508efce38931200cc51d4712f026ae",
       "ic_sha256": "ff8e878f6df22ab5604864a15e37812e5a3300c70ed0aa96382d2b687fb29951",
@@ -52,7 +52,7 @@
       "peak_child_rss_gib": 0.38730621337890625,
       "outputs": [
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gadget4/smokes/L3_sharp13/output/snapshot_000.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gadget4/smokes/L3_sharp13/output/snapshot_000.hdf5",
           "sha256": "d7aefb60062d730ee0d27aa97e62babd36b3f5f28d84ac76909978bf2bdeda5d",
           "time_code": 0.0,
           "t_over_tcc": 0.0,
@@ -74,7 +74,7 @@
           "pressure_reconstruction_max_relative": 2.5626080006714587e-07
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gadget4/smokes/L3_sharp13/output/snapshot_001.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gadget4/smokes/L3_sharp13/output/snapshot_001.hdf5",
           "sha256": "cc5527eba765808503245116f83a3c12a0105f9fff456afd6b2b0c046b9678e1",
           "time_code": 0.1,
           "t_over_tcc": 0.025819888974716113,
@@ -136,10 +136,10 @@
         "core",
         "-np",
         "8",
-        "/home/kaan/sensitivity_20260907/gadget4/Gadget4_pair",
+        "/home/user/sensitivity_20260907/gadget4/Gadget4_pair",
         "params.txt"
       ],
-      "directory": "/home/kaan/sensitivity_20260907/gadget4/smokes/L3_tanh13",
+      "directory": "/home/user/sensitivity_20260907/gadget4/smokes/L3_tanh13",
       "binary_sha256": "5ab857aba8cf4213fbce701ae8eaa6c449f5de43c0b9ab61722e962d88dca8d3",
       "input_sha256": "77f848523da845ccba0257058ede7aa720508efce38931200cc51d4712f026ae",
       "ic_sha256": "2db88d816502f29e078a9506957bc09d00fcb92568c7bb41591899feddb4c9a4",
@@ -148,7 +148,7 @@
       "peak_child_rss_gib": 0.3865547180175781,
       "outputs": [
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gadget4/smokes/L3_tanh13/output/snapshot_000.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gadget4/smokes/L3_tanh13/output/snapshot_000.hdf5",
           "sha256": "ecf20db646bdc25111fa0bb0b858194db4b51bc7482b8f306ca01ba64ce6e561",
           "time_code": 0.0,
           "t_over_tcc": 0.0,
@@ -170,7 +170,7 @@
           "pressure_reconstruction_max_relative": 2.5626080006714587e-07
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gadget4/smokes/L3_tanh13/output/snapshot_001.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gadget4/smokes/L3_tanh13/output/snapshot_001.hdf5",
           "sha256": "100c9370693bf1659be686fb5100bb198db61a476fa0fd03aae7813357aa82d9",
           "time_code": 0.1,
           "t_over_tcc": 0.025819888974716113,

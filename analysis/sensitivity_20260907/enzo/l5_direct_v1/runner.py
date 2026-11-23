@@ -17,10 +17,10 @@ import time
 import psutil
 
 HERE = Path(__file__).resolve().parent
-STUDY = Path('/mnt/c/Users/kaanb/CloudCrushing/sensitivity_20260907')
-GUEST = Path('/home/kaan/sensitivity_20260907/enzo')
-RAW = Path('/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1')
-HOST_ROOT = Path('/mnt/c/Users/kaanb/CloudCrushing')
+STUDY = Path('/mnt/c/Users/user/CloudCrushing/sensitivity_20260907')
+GUEST = Path('/home/user/sensitivity_20260907/enzo')
+RAW = Path('/mnt/c/Users/user/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1')
+HOST_ROOT = Path('/mnt/c/Users/user/CloudCrushing')
 BINARY = GUEST/'enzo_pair'
 BINARY_SHA = '28d482af94828aba1de2b097068b66c9ec80b88b53bd6405e0ff96fbecf57900'
 GIB = 1024**3
@@ -74,7 +74,7 @@ def budget_gate(guest, mounted, windows, remaining, live=False):
 
 
 def storage(remaining=0, live=False):
-    sys.path.insert(0, '/home/kaan/verified_20260907')
+    sys.path.insert(0, '/home/user/verified_20260907')
     from storage_guard import windows_backing_volume
     verify_path()
     require(HOST_ROOT.resolve()==HOST_ROOT and GUEST.resolve()==GUEST, 'Root mapping changed')
@@ -93,7 +93,7 @@ def storage(remaining=0, live=False):
 def acquire_locks():
     result=[]
     for name in ('benchmark.lock','production.lock'):
-        handle=Path('/home/kaan/performance_20260907',name).open('a')
+        handle=Path('/home/user/performance_20260907',name).open('a')
         fcntl.flock(handle,fcntl.LOCK_EX|fcntl.LOCK_NB)
         result.append(handle)
     competing=[]

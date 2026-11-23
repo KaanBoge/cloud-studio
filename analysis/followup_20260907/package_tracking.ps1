@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop'
-$taskSource = 'C:\Users\kaanb\CloudCrushing\followup_20260907'
-$taskRepo = 'C:\Users\kaanb\cloud-studio-repo'
-$taskNative = '\\wsl.localhost\Ubuntu\home\kaan\followup_20260907'
+$taskSource = 'C:\Users\user\CloudCrushing\followup_20260907'
+$taskRepo = 'C:\Users\user\cloud-studio-repo'
+$taskNative = '\\wsl.localhost\Ubuntu\home\user\followup_20260907'
 $taskEvidence = Join-Path $taskSource 'evidence'
 Copy-Item -LiteralPath (Join-Path $taskNative 'evidence\tracking_extended.json') -Destination $taskEvidence
 $taskReport = Get-Content -LiteralPath (Join-Path $taskEvidence 'tracking_extended.json') -Raw | ConvertFrom-Json
@@ -20,5 +20,5 @@ foreach ($taskFile in @('README.md','TRACKING_TEST_PLAN.md','TRACKING_RESULTS.md
 }
 Copy-Item -LiteralPath (Join-Path $taskEvidence 'tracking_extended.json') -Destination (Join-Path $taskPublished 'evidence')
 Copy-Item -LiteralPath $taskOutput -Destination (Join-Path $taskPublished 'evidence') -Recurse -Force
-Copy-Item -LiteralPath 'C:\Users\kaanb\CloudCrushing\studio\verification.html' -Destination (Join-Path $taskRepo 'verification.html')
+Copy-Item -LiteralPath 'C:\Users\user\CloudCrushing\studio\verification.html' -Destination (Join-Path $taskRepo 'verification.html')
 Write-Output 'Packaged completed tracking tests and explicit retention failures. Native fields remain in WSL.'

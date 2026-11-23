@@ -1,167 +1,133 @@
 <!doctype html>
+<html lang="en">
+<head>
 <meta charset="utf-8">
-<title>Cloud Crushing · 3D viewer</title>
+<title>3D viewer · Cloud Studio</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<style>
-  :root{
-    --bg:#0a0d16; --panel:rgba(16,20,32,.85); --line:rgba(255,255,255,.13);
-    --fg:#e8ecf6; --mut:#98a2bb; --acc:#6ea8ff; --acc2:#ffb46e;
-  }
-  *{box-sizing:border-box}
-  html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);
-    font:14px/1.45 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;overflow:hidden}
-  canvas.view{display:block;width:100%;height:100%;outline:none}
-  #wrap{position:fixed;inset:0;display:grid;grid-template-columns:1fr}
-  #wrap.split{grid-template-columns:1fr 1fr}
-  .pane{position:relative;min-width:0}
-  .pane+.pane{border-left:1px solid var(--line)}
-  .ptitle{position:absolute;top:10px;left:50%;transform:translateX(-50%);
-    font-size:13px;color:var(--mut);background:var(--panel);border:1px solid var(--line);
-    border-radius:8px;padding:4px 12px;max-width:85%;text-align:center;pointer-events:none}
-  .ptitle b{color:var(--fg);font-weight:600}
-
-  .card{position:fixed;background:var(--panel);border:1px solid var(--line);
-    border-radius:12px;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
-    box-shadow:0 10px 40px rgba(0,0,0,.45)}
-  #side{top:14px;left:14px;width:302px;max-height:calc(100vh - 28px);
-    overflow:auto;padding:14px 14px 10px;z-index:5}
-  #side h1{margin:0 0 2px;font-size:15px;font-weight:650}
-  #side .sub{color:var(--mut);font-size:12px;margin:0 0 10px}
-  .lbl{font-size:11px;text-transform:uppercase;letter-spacing:.09em;color:var(--mut);
-    margin:12px 0 6px;font-weight:600}
-  .chips{display:flex;flex-wrap:wrap;gap:5px}
-  .chips button{all:unset;cursor:pointer;padding:4px 9px;border-radius:999px;font-size:12px;
-    border:1px solid var(--line);color:var(--mut)}
-  .chips button.on{background:rgba(110,168,255,.16);border-color:rgba(110,168,255,.5);color:var(--fg)}
-  #runs{display:flex;flex-direction:column;gap:4px;margin-top:4px}
-  #runs .grp{font-size:11.5px;font-weight:650;color:var(--mut);margin:8px 0 2px;
-    text-transform:uppercase;letter-spacing:.06em}
-  #runs button{all:unset;cursor:pointer;padding:6px 9px;border-radius:8px;font-size:12.5px;
-    border:1px solid transparent;display:flex;justify-content:space-between;gap:8px}
-  #runs button:hover{background:rgba(255,255,255,.06)}
-  #runs button.on{background:rgba(110,168,255,.16);border-color:rgba(110,168,255,.45)}
-  #runs button .m{color:var(--mut);font-size:11.5px;white-space:nowrap}
-  .row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
-  .chk{display:flex;gap:6px;align-items:center;font-size:12px;color:var(--mut);cursor:pointer}
-  .chk input{accent-color:var(--acc);cursor:pointer}
-  select{background:rgba(255,255,255,.06);color:var(--fg);border:1px solid var(--line);
-    border-radius:7px;padding:5px 7px;font-size:12px;max-width:100%}
-  a.back{color:var(--acc);text-decoration:none;font-size:12px}
-
-  #bar{left:50%;transform:translateX(-50%);bottom:14px;padding:10px 14px;z-index:5;
-    display:flex;align-items:center;gap:12px;min-width:min(760px,calc(100vw - 28px))}
-  #bar button{all:unset;cursor:pointer;width:34px;height:34px;border-radius:8px;
-    display:grid;place-items:center;border:1px solid var(--line);font-size:13px}
-  #bar button:hover{background:rgba(255,255,255,.08)}
-  #slider{flex:1;accent-color:var(--acc);cursor:pointer}
-  #tlab{min-width:112px;text-align:right;color:var(--mut);font-variant-numeric:tabular-nums;font-size:12.5px}
-
-  #hud{top:14px;right:14px;padding:9px 12px;font-size:12px;color:var(--mut);
-    text-align:right;line-height:1.6;z-index:5}
-  #hud b{color:var(--fg);font-weight:600}
-
-  #chartcard{right:14px;bottom:70px;width:330px;padding:10px 12px 6px;z-index:5}
-  #chartcard .lbl{margin-top:0}
-  #chart{width:100%;height:150px;display:block}
-  #chartnote{font-size:11px;color:var(--mut);margin:2px 0 4px}
-  .sw{display:inline-block;width:14px;height:3px;border-radius:2px;vertical-align:middle;margin-right:5px}
-  #msg{position:fixed;inset:0;display:grid;place-items:center;color:var(--mut);
-    font-size:13px;pointer-events:none;z-index:4}
-#captureTools{top:14px;left:330px;right:120px;padding:9px;z-index:6;max-width:800px}
-  #captureTools button{background:#1b2435;color:var(--fg);border:1px solid var(--line);padding:7px 9px;border-radius:6px;cursor:pointer;font:12px system-ui}
-  #captureTools button:disabled{opacity:.5;cursor:wait}#captureStatus{font-size:11px;color:#ffcf90}
-  .ptitle{top:85px}select option{background:#141c2d;color:#edf2fb}
-  @media(max-width:850px){#captureTools{top:auto;bottom:83px;left:14px;right:14px}.ptitle{top:16px}#chartcard{display:none}#bar{gap:5px;padding:7px;min-width:calc(100vw - 20px)}#slider{min-width:30px}#tlab{min-width:90px;font-size:10px}#hud{display:none}}
-</style>
-<link rel="stylesheet" href="studio-viewer.css">
-
-<div id="wrap"><div class="pane" id="paneA"><canvas class="view" id="cvA"></canvas>
-  <div class="ptitle" id="titleA">…</div></div></div>
-<div id="msg">loading&hellip;</div>
-
-<button class="card" id="sideShow" style="display:none;top:14px;left:14px;z-index:6;
-  cursor:pointer;color:var(--fg);padding:8px 12px;font-size:13px;border:1px solid var(--line)">
-  &#9776; menu</button>
-<div class="card" id="side">
-  <button id="sideHide" title="hide this panel" style="all:unset;cursor:pointer;
-    position:absolute;top:10px;right:12px;color:var(--mut);font-size:15px;
-    padding:2px 6px;border-radius:6px">&#10094;</button>
-  <h1>3D viewer</h1>
-  <p class="sub">Drag to turn &middot; scroll to zoom &middot; right drag to pan
-    &middot; <a class="back" href="index.html">back to studio</a>
-    &middot; <a class="back" href="research.html">research &amp; data</a>
-    &middot; <a class="back" href="progress.html">live progress</a></p>
-  <details class="viewer-notes"><summary>Scientific scope & historical notes</summary><p>Historical results: matching levels do not certify matching physics.
-    <a class="back" href="verification.html">Verification report</a></p>
-  <p style="font-size:12px;color:#ffcf90">Historical “apkcool” runs did not enable cooling.
-    Legacy tracking runs are not validated replacements. Saved data remain available for inspection.</p></details>
-  <label class="lbl" for="runSearch">Find a simulation</label><input id="runSearch" type="search" placeholder="Code, contrast, level…">
-  <div class="lbl">Recent results</div>
-  <select id="recentSelect" aria-label="New completed simulation" style="width:100%"><option value="">Choose a new run</option></select>
-  <p id="viewNote" style="font-size:11px;color:var(--mut)"></p>
-  <label class="chk"><input type="checkbox" id="smoothTime3d" checked> Smooth transitions · 60 fps target</label><p class="viewer-notes">Smooth mode crossfades saved surfaces; it does not calculate intermediate fluid states. PNGs and paused views use saved states.</p><label class="chk"><input type="checkbox" id="smooth3d" checked> smooth surfaces</label>
-  <p><a class="back" id="projectionLink" href="recent.html">Density projections and images ↗</a></p>
-  <div class="lbl">Overdensity</div>
-  <div class="chips" id="chiChips">
-    <button data-chi="all" class="on">all</button><button data-chi="10">&chi; = 10</button>
-    <button data-chi="100">&chi; = 100</button><button data-chi="1000">&chi; = 1000</button>
+<meta name="description" content="Rotate, compare and capture the 3D density surfaces of Kaan Boge's cloud crushing simulations.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="studio-viewer.css?v=20261122">
+</head>
+<body>
+<main id="wrap" aria-label="3D view">
+  <div class="pane" id="paneA">
+    <canvas class="view" id="cvA" role="img" aria-label="3D density surfaces of the selected run. Drag to turn, scroll to zoom."></canvas>
+    <div class="ptitle" id="titleA">Loading</div>
+    <div class="legend" id="legendA" hidden></div>
   </div>
-  <div class="lbl">Level</div>
-  <div class="chips" id="lvlChips">
-    <button data-lvl="all" class="on">all</button><button data-lvl="3">3</button>
-    <button data-lvl="4">4</button><button data-lvl="5">5</button><button data-lvl="6">6</button>
-  </div>
-  <div class="lbl">Run</div>
-  <div id="runs"></div>
-  <button id="legacyHdr" style="all:unset;cursor:pointer;display:block;margin:10px 0 4px;
-    font-size:11.5px;font-weight:650;color:var(--mut);text-transform:uppercase;
-    letter-spacing:.06em"></button>
-  <div id="legacyRuns" style="display:none"></div>
-  <div class="lbl">Compare</div>
-  <div class="row">
-    <label class="chk"><input type="checkbox" id="cmpOn"> side by side</label>
-    <label class="chk"><input type="checkbox" id="cmpLink" checked> link cameras</label>
-  </div>
-  <select id="cmpSel" style="margin-top:6px;width:100%" disabled></select>
-  <div class="lbl">Quality</div>
-  <div class="row">
-    <label class="chk"><input type="checkbox" id="qShadow" checked> shadow</label>
-    <label class="chk"><input type="checkbox" id="qBox" checked> box</label>
-    <label class="chk"><input type="checkbox" id="qSpin"> spin</label>
-    <select id="qScale"><option value="1">1&times;</option><option value="1.5">1.5&times;</option>
-      <option value="2" selected>2&times;</option><option value="3">3&times;</option></select>
-  </div>
-  <div class="lbl">Shells</div>
-  <div id="shells" class="row"></div>
+</main>
+<div id="msg" role="status">Loading</div>
+
+<div class="card" id="sideShow" hidden>
+  <a class="brand" href="index.html"><span class="mark" aria-hidden="true">◌</span>Cloud <b>Studio</b></a>
+  <button type="button" id="sideOpen" aria-controls="side" aria-expanded="false">Menu</button>
 </div>
 
-<div class="card" id="captureTools">
-  <div class="row"><button data-view="perspective">Perspective</button><button data-view="edge">Edge-on</button><button data-view="face">Face-on</button><button id="fitView">Fit view</button><button id="viewerShare">Copy view link</button><button id="save3d">Save PNG</button><button id="orbitVideo">Record orbit</button><button id="evolutionVideo">Record evolution</button></div>
+<div class="card" id="captureTools" role="toolbar" aria-label="Camera and capture">
+  <div class="row">
+    <button type="button" data-view="perspective">Perspective</button>
+    <button type="button" data-view="edge">Edge-on</button>
+    <button type="button" data-view="face">Face-on</button>
+    <button type="button" id="fitView">Fit view</button>
+    <span class="sep" aria-hidden="true"></span>
+    <button type="button" id="save3d">Save PNG</button>
+    <select id="picSize" aria-label="Picture size"><option value="1080">1920 × 1080</option><option value="2160">3840 × 2160</option></select>
+    <button type="button" id="orbitVideo">Record orbit</button>
+    <button type="button" id="evolutionVideo">Record evolution</button>
+    <button type="button" id="viewerShare">Copy view link</button>
+  </div>
   <div id="captureStatus" role="status" aria-live="polite"></div>
-</div>
-<div class="card" id="hud">
-  <div><b id="fps">…</b> fps</div>
-  <div><b id="tris">…</b> triangles</div>
-</div>
-
-<div class="card" id="chartcard">
-  <div class="lbl">Surviving dense mass</div>
-  <canvas id="chart" width="640" height="300"></canvas>
-  <div id="chartnote">M_dense(t) / M_dense(0); only corrected native data diagnostics are shown.</div>
 </div>
 
 <div class="card" id="bar">
-  <button id="prev" aria-label="Previous frame">&#9664;</button>
-  <button id="play" aria-label="Play or pause">&#9654;</button>
-  <button id="next" aria-label="Next frame">&#9654;&#9654;</button>
-  <input id="slider" aria-label="Saved simulation frame" type="range" min="0" max="0" value="0" step="1">
-  <span id="tlab">…</span><select id="playSpeed" aria-label="Playback speed"><option value="0.25">0.25×</option><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="2">2×</option></select>
+  <button type="button" id="prev" aria-label="Previous frame">&#9664;</button>
+  <button type="button" id="play" aria-label="Play">&#9654;</button>
+  <button type="button" id="next" aria-label="Next frame">&#9654;&#9654;</button>
+  <input id="slider" aria-label="Simulation time" type="range" min="0" max="0" value="0" step="1">
+  <span id="tlab"></span>
+  <select id="playSpeed" aria-label="Playback speed"><option value="0.25">0.25×</option><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="2">2×</option><option value="4">4×</option></select>
+</div>
+
+<aside class="card" id="side" aria-label="Runs and display settings">
+  <header class="side-head">
+    <a class="brand" href="index.html"><span class="mark" aria-hidden="true">◌</span>Cloud <b>Studio</b></a>
+    <button type="button" id="sideHide" aria-controls="side" aria-expanded="true" aria-label="Hide the menu" title="Hide the menu">&#10094;</button>
+    <nav aria-label="Site">
+      <a href="index.html">Library</a>
+      <a href="viewer.html" aria-current="page">3D viewer</a>
+      <a href="recent.html">Compare</a>
+      <a href="research.html">Research</a>
+      <a href="paper/Cloud_survival_OJA.pdf">Paper</a>
+      <a href="https://github.com/KaanBoge/cloud-studio">GitHub</a>
+    </nav>
+  </header>
+  <h1>3D viewer</h1>
+  <p class="sub">Drag to turn, scroll to zoom, right drag to pan. Space plays, the arrow keys step through the frames.</p>
+
+  <label class="lbl" for="recentSelect">Complete runs</label>
+  <select id="recentSelect"><option value="">Choose a complete run</option></select>
+  <p id="viewNote" class="note"></p>
+  <p class="links"><a id="projectionLink" href="recent.html" hidden>Projections and films of this run</a></p>
+
+  <label class="lbl" for="runSearch">Find a run</label>
+  <input id="runSearch" type="search" placeholder="Code, χ or level" autocomplete="off" spellcheck="false">
+  <div class="lbl" id="chiLbl">Density contrast</div>
+  <div class="chips" id="chiChips" role="group" aria-labelledby="chiLbl"></div>
+  <div class="lbl" id="lvlLbl">Level</div>
+  <div class="chips" id="lvlChips" role="group" aria-labelledby="lvlLbl"></div>
+  <div id="runs"></div>
+  <button type="button" id="legacyHdr" class="fold" aria-expanded="false" aria-controls="legacyRuns" hidden></button>
+  <div id="legacyRuns" hidden></div>
+
+  <div class="lbl">Compare</div>
+  <div class="row">
+    <label class="chk"><input type="checkbox" id="cmpOn"> Side by side</label>
+    <label class="chk"><input type="checkbox" id="cmpLink" checked> Link cameras</label>
+  </div>
+  <select id="cmpSel" aria-label="Run in the second view" disabled></select>
+
+  <div class="lbl" id="shellLbl">Surfaces</div>
+  <div id="shells" class="row" role="group" aria-labelledby="shellLbl"></div>
+
+  <div class="lbl">Display</div>
+  <div class="row">
+    <label class="chk"><input type="checkbox" id="legendOn" checked> Legend</label>
+    <label class="chk"><input type="checkbox" id="smoothTime3d" checked> Smooth transitions</label>
+    <label class="chk"><input type="checkbox" id="smooth3d" checked> Smooth shading</label>
+    <label class="chk"><input type="checkbox" id="qShadow" checked> Shadow</label>
+    <label class="chk"><input type="checkbox" id="qBox" checked> Box</label>
+    <label class="chk"><input type="checkbox" id="qSpin"> Spin</label>
+    <label class="chk">Sharpness
+      <select id="qScale"><option value="1">1×</option><option value="1.5">1.5×</option><option value="2" selected>2×</option><option value="3">3×</option></select></label>
+  </div>
+
+  <details class="about">
+    <summary>About the surfaces</summary>
+    <p>Each frame is one saved state of the simulation. The two surfaces enclose gas denser than 0.15 and 0.6 of the initial cloud density, so the inner surface traces the cloud core.</p>
+    <p>Lengths are in cloud radii and the wind blows along the long side of the box. Smooth transitions crossfade between saved states during playback; paused views and pictures show a saved state exactly as stored.</p>
+  </details>
+
+  <footer class="side-foot">
+    <p>Cloud Studio. Cloud crushing research by Kaan Boge, ongoing. MIT licence.</p>
+    <a href="paper/Cloud_survival_OJA.pdf">Paper</a><a href="https://github.com/KaanBoge/cloud-studio">GitHub</a>
+  </footer>
+</aside>
+
+<div class="card" id="hud" aria-hidden="true">
+  <div><b id="fps">0</b> fps</div>
+  <div><b id="tris">0</b> triangles</div>
+</div>
+
+<div class="card" id="chartcard" hidden>
+  <div class="lbl">Surviving dense mass</div>
+  <canvas id="chart" width="640" height="300" role="img" aria-label="Dense gas mass relative to its initial value, against time"></canvas>
+  <div id="chartnote"></div>
 </div>
 
 <script>var STUDIO_DATA={},VOL_DATA={},VOLSEQ_DATA={},VOLHQ_DATA={};</script>
-<script src="data/manifest.js"></script>
-<script src="data/densemap.js"></script>
-<script src="assets/recent3d/catalog.js"></script>
+<script src="data/manifest.js?v=20261122"></script>
+<script src="data/densemap.js?v=20261122"></script>
+<script src="assets/recent3d/catalog.js?v=20261122"></script>
 <script type="importmap">
   {"imports": {"three": "./vendor/three.module.js",
                "three/addons/": "./vendor/addons/"}}
@@ -171,12 +137,18 @@ import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 
 const recent3D = window.RECENT_3D || {};
-const frameBase = id => recent3D[id] ? "assets/recent3d/" : DENSE_BASE;
 const XL = [-3, 17], YL = [-5, 5], ZL = [-5, 5];
-const msg = document.getElementById("msg");
-const qScale = document.getElementById("qScale");
+const BOX_C = new THREE.Vector3((XL[0] + XL[1]) / 2, 0, 0);
+const CACHE_KEY = "20261122";
+const $ = id => document.getElementById(id);
+const msg = $("msg");
+const qScale = $("qScale");
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
 // ------------------------------------------------------------------ data ids
+// The run list block below, up to the panes marker, is also executed by
+// analysis/build_studio_catalog.cjs: keep it free of page objects.
 function loadScript(src) {
   return new Promise((res, rej) => {
     const s = document.createElement("script");
@@ -189,47 +161,168 @@ let ids = (window.STUDIO_VOLS || []).map(s => String(s).replace(/^volhq_|^vol_se
           .filter((v, i, a) => a.indexOf(v) === i)
           .filter(id => !/_(384|448|1800|3600|7200|8192)(_|$)/.test(id));
 
-const CODE_OF = { apk: "AthenaPK (GPU)", apk3d: "AthenaPK (GPU)", athpp: "Athena++",
-  athpp3d: "Athena++", athw: "Athena 4.2", athw3d: "Athena 4.2", f: "FLASH 4.8", f3d: "FLASH 4.8",
-  flash: "FLASH 4.8", flashx: "Flash-X", enzo: "Enzo", arepo: "Arepo",
-  gzmfm: "GIZMO MFM", gzmfv: "GIZMO MFV", g4: "Gadget-4", gas: "Gasoline" };
+const CODE_OF = { apk: "AthenaPK", apk3d: "AthenaPK", athpp: "Athena++", athpp3d: "Athena++",
+  athw: "Athena 4.2", athw3d: "Athena 4.2", f: "FLASH 4.8", f3d: "FLASH 4.8", flash: "FLASH 4.8",
+  flashx: "Flash-X", enzo: "Enzo", enzoe: "Enzo-E", ramses: "RAMSES", arepo: "Arepo",
+  gzmfm: "GIZMO MFM", gzmfv: "GIZMO MFV", g4: "GADGET-4", gadget4: "GADGET-4", gas: "Gasoline" };
+const CODE_ALIAS = { "athenapk (gpu)": "AthenaPK", athenapk: "AthenaPK", "athena++": "Athena++", athena: "Athena 4.2",
+  "athena 4.2": "Athena 4.2", enzo: "Enzo", "enzo-e": "Enzo-E", enzoe: "Enzo-E", ramses: "RAMSES", flash: "FLASH 4.8",
+  "flash 4.8": "FLASH 4.8", "flash-x": "Flash-X", flashx: "Flash-X", arepo: "Arepo", "gizmo mfm": "GIZMO MFM",
+  "gizmo mfv": "GIZMO MFV", "gadget-4": "GADGET-4", gadget4: "GADGET-4", gadget: "GADGET-4", gasoline: "Gasoline" };
+const VARIANT_WORDS = { sharp: "sharp velocity", historical: "smooth velocity profile" };
+function codeName(s) { const k = String(s || "").trim(); return CODE_ALIAS[k.toLowerCase()] || k; }
+function intOr(v, d) { const n = Number(v); return (v !== null && v !== undefined && v !== "" && Number.isInteger(n)) ? n : d; }
 function meta(id) {
-  if(recent3D[id])return {...recent3D[id],code:"New · "+recent3D[id].label};
-  const tag = id.split('_')[0];
+  const r = recent3D[id];
+  if (r) {
+    const parts = String(r.label || "").split(" · ").map(s => s.trim()).filter(Boolean);
+    const base = codeName(String(r.code || parts[0] || "").split(" · ")[0].replace(/\s*χ\s*\d+\s*$/, ""));
+    const variant = parts.slice(1).filter(s => !/^(n|level)\s*\d+$/i.test(s) && !/^χ\s*[\d.]+$/.test(s)).map(s => VARIANT_WORDS[s] || s).join(" · ");
+    const lvl = intOr(r.lvl, intOr(r.level, 5));
+    return { code: variant ? base + " · " + variant : base, base, variant, chi: +r.chi || 0, lvl, recent: true };
+  }
+  const tag = id.split("_")[0];
   const machTag = tag.match(/M(05|15|45|5)$/);
-  const pre = tag.replace(/M(05|15|45|5)$/, '').replace(/(?:cool|gal)$/, '');
+  const pre = tag.replace(/M(05|15|45|5)$/, "").replace(/(?:cool|gal)$/, "");
   const chi = +((id.match(/chi(\d+)/) || [, 0])[1]);
   // magnetized runs are their own physics, never merged with hydro entries
   const mhd = id.match(/_mhd_b(\d+)_/);
   let lvl = null;
-  let m = id.match(/_[lL](\d)\b|_[lL](\d)(?:m|hq|_)/);
+  let m = id.match(/_[lL](\d)\b|_[lL](\d)(?:m|hq|r|_)/);
   if (m) lvl = +(m[1] || m[2]);
   else if ((m = id.match(/_(\d{3,4})(?:_|$)/))) {
     const L = Math.log2(+m[1]) - 3;
     if (Math.abs(L - Math.round(L)) < 0.02) lvl = Math.round(L);
   }
-  let code = CODE_OF[pre] || pre;
-  if (machTag) code += " M=" + ({'05':'0.5','15':'1.5','45':'4.5','5':'5'}[machTag[1]]);
-  if (/cool$/.test(tag)) code += " · cooling NOT enabled";
-  if (/gal$/.test(tag)) code += " · legacy tracking (unvalidated)";
-  if (mhd) code += " MHD β=" + mhd[1];
-  return { code, chi, lvl };
+  const base = CODE_OF[pre] || codeName(pre);
+  const extra = [];
+  if (machTag) extra.push("Mach " + ({ "05": "0.5", "15": "1.5", "45": "4.5", "5": "5" }[machTag[1]]));
+  if (/cool$/.test(tag)) extra.push("cooling inactive");
+  if (/gal$/.test(tag)) extra.push("cloud tracking");
+  if (mhd) extra.push("MHD β " + mhd[1]);
+  const variant = extra.join(" · ");
+  return { code: variant ? base + " · " + variant : base, base, variant, chi, lvl };
 }
 // only integer-ladder entries with an identifiable level
 ids = ids.filter(id => meta(id).lvl !== null);
-// one entry per (code, chi, level): the new-style tags (apk_L5_chi10) carry the
-// diagnostics and the freshest exports, so they win over old-style duplicates
+// one entry per (code, chi, level): new-style tags (apk_L5_chi10) win over the
+// old 3d-style duplicates, and among equals the run with more saved frames wins
+// (the complete Athena 4.2 level 6 reruns, _L6r, replace the partial _L6 runs)
+const frameCount = id => recent3D[id] ? (+recent3D[id].frames || 0)
+  : ((typeof DENSE_RUNS !== "undefined" && +DENSE_RUNS[id]) || 0);
 ids.sort((a, b) => (/3d/.test(a) ? 1 : 0) - (/3d/.test(b) ? 1 : 0));
+const dedupeAlias = {};
 {
-  const seen = new Set();
-  ids = ids.filter(id => {
+  const best = new Map(), keyOf = {};
+  ids.forEach(id => {
     const m = meta(id), k = recent3D[id] ? id : m.code + "|" + m.chi + "|" + m.lvl;
-    if (seen.has(k)) return false;
-    seen.add(k); return true;
+    keyOf[id] = k;
+    const prev = best.get(k);
+    if (prev === undefined || (/3d/.test(prev) === /3d/.test(id) && frameCount(id) > frameCount(prev))) best.set(k, id);
   });
+  ids.forEach(id => { if (best.get(keyOf[id]) !== id) dedupeAlias[id] = best.get(keyOf[id]); });
+  const keep = new Set(best.values());
+  ids = ids.filter(id => keep.has(id));
 }
 
 // ------------------------------------------------------------------- panes
+const TWELVE = ["Athena++", "AthenaPK", "Athena 4.2", "Enzo", "Enzo-E", "RAMSES", "FLASH 4.8", "Flash-X",
+  "Arepo", "GIZMO MFM", "GIZMO MFV", "GADGET-4"];
+const codeRank = c => { const i = TWELVE.indexOf(c); return i < 0 ? 99 : i; };
+const isDense = id => !!recent3D[id] || (typeof DENSE_RUNS !== "undefined" && DENSE_RUNS[id] >= 8);
+const EMBEDDED = (() => {
+  const vols = new Set(window.STUDIO_VOLS || []), seqs = new Set(window.STUDIO_VOLSEQS || []), out = {};
+  for (const id of ids) {
+    const kinds = [];
+    if (vols.has("volhq_" + id)) kinds.push("hq");
+    if (seqs.has("vol_seq_" + id)) kinds.push("seq");
+    if (vols.has("vol_" + id)) kinds.push("one");
+    out[id] = kinds;
+  }
+  return out;
+})();
+// embedded runs without any data file are not listed
+ids = ids.filter(id => recent3D[id] || (typeof DENSE_RUNS !== "undefined" && DENSE_RUNS[id]) || EMBEDDED[id].length);
+
+// --------------------------------------------------- run names and groups
+let recentCatalog = null;
+const catalogReady = fetch("assets/recent/catalog.json?v=" + CACHE_KEY)
+  .then(r => r.ok ? r.json() : null)
+  .then(c => { const map = new Map(); for (const run of (c && c.runs) || []) map.set(run.id, run); return map; })
+  .catch(() => new Map())
+  .then(map => { recentCatalog = map; infoCache.clear(); explicitGroups = null; return map; });
+function catalogRun(id) {
+  const r = recent3D[id];
+  if (!r || !recentCatalog) return null;
+  return recentCatalog.get(r.projection_id) || recentCatalog.get(id.replace(/^new_/, "")) || null;
+}
+let explicitGroups = null;
+function anyExplicitGroup() {
+  if (explicitGroups === null) {
+    explicitGroups = Object.values(recent3D).some(r => r && r.group) ||
+      !!(recentCatalog && [...recentCatalog.values()].some(r => r && r.group));
+  }
+  return explicitGroups;
+}
+const infoCache = new Map();
+function runInfo(id) {
+  if (!id) return null;
+  if (infoCache.has(id)) return infoCache.get(id);
+  const m = meta(id), r = recent3D[id], c = catalogRun(id);
+  const base = codeName((r && r.code && String(r.code).split(" · ")[0]) || (c && c.code) || m.base);
+  const chi = m.chi || (c && +c.chi) || 0;
+  const lvl = r ? intOr(r.lvl, intOr(r.level, intOr(c && c.level, 5))) : m.lvl;
+  let group;
+  if (r) {
+    group = r.group || (c && c.group) || null;
+    if (!group) group = (!anyExplicitGroup() && chi === 100 && TWELVE.includes(base) &&
+      (!m.variant || m.variant === "sharp velocity")) ? "twelve" : "other";
+  } else group = isDense(id) ? "earlier" : "legacy";
+  const boundary = (r && r.boundary) || (c && c.boundary) || "";
+  let variant = m.variant;
+  if (group === "twelve") variant = variant.split(" · ").filter(v => v && v !== "sharp velocity").join(" · ");
+  if (group === "boundary" && boundary) variant = boundary;
+  const label = base + " · χ " + chi + " · level " + lvl + (variant ? " · " + variant : "");
+  const frames = frameCount(id);
+  const info = { id, base, variant, chi, lvl, group, boundary, label, frames, recent: !!r,
+    cooling: c && c.cooling, projection: r && r.projection_id };
+  infoCache.set(id, info);
+  return info;
+}
+const GROUP_RANK = { twelve: 0, boundary: 1, other: 2 };
+function completeOrder(a, b) {
+  const A = runInfo(a), B = runInfo(b);
+  const g = (GROUP_RANK[A.group] ?? 2) - (GROUP_RANK[B.group] ?? 2);
+  if (g) return g;
+  if (A.group === "twelve" || A.group === "boundary")
+    return (B.lvl - A.lvl) || (codeRank(A.base) - codeRank(B.base)) || A.base.localeCompare(B.base) ||
+      A.boundary.localeCompare(B.boundary) || (A.chi - B.chi) || A.label.localeCompare(B.label);
+  return (codeRank(A.base) - codeRank(B.base)) || A.base.localeCompare(B.base) || (A.chi - B.chi) ||
+    (B.lvl - A.lvl) || A.label.localeCompare(B.label);
+}
+function groupHeading(info) {
+  if (info.group === "twelve") return "Twelve methods · level " + info.lvl;
+  if (info.group === "boundary") return "Boundary control · level " + info.lvl;
+  return "More complete runs";
+}
+
+// ------------------------------------------------------------- formatting
+const tfix = t => Number(t).toFixed(3);
+const timeHTML = t => "t = " + tfix(t) + " t<sub>cc</sub>";
+function densityParts(level, chi) {
+  const frac = (level > 1.0001 && chi) ? level / chi : level;
+  const v = Number(Number(frac).toPrecision(2));
+  return (level > 1.0001 && !chi) ? { value: String(Number(Number(level).toPrecision(3))), sub: "wind" } : { value: String(v), sub: "cl" };
+}
+const densityHTML = (level, chi) => { const d = densityParts(level, chi); return "ρ = " + d.value + " ρ<sub>" + d.sub + "</sub>"; };
+function shellNames(n) {
+  if (n === 2) return ["Outer surface", "Core"];
+  if (n === 3) return ["Outer surface", "Middle surface", "Core"];
+  return Array.from({ length: n }, (_, i) => "Surface " + (i + 1));
+}
+const cssColor = c => "rgb(" + c.map(v => Math.round(Math.max(0, Math.min(1, v)) * 255)).join(",") + ")";
+
+// ------------------------------------------------------------ pane objects
 function bytes(b64) {
   const raw = atob(b64), n = raw.length, buf = new Uint8Array(n);
   for (let i = 0; i < n; i++) buf[i] = raw.charCodeAt(i);
@@ -247,21 +340,22 @@ function decode(s) {
   return out;
 }
 
-function makePane(cv) {
+function makePane(cv, titleEl, legendEl) {
   const p = {};
   p.ren = new THREE.WebGLRenderer({ canvas: cv, antialias: true, powerPreference: "high-performance" });
   p.ren.setClearColor(0x0a0d16, 1);
   p.ren.toneMapping = THREE.ACESFilmicToneMapping;
-  p.ren.shadowMap.enabled = true;
+  p.ren.shadowMap.enabled = $("qShadow").checked;
   p.ren.shadowMap.type = THREE.PCFSoftShadowMap;
   p.scene = new THREE.Scene();
   p.scene.fog = new THREE.Fog(0x0a0d16, 26, 70);
   p.cam = new THREE.PerspectiveCamera(42, 2, 0.05, 500);
   p.cam.up.set(0, 0, 1);
-  p.cam.position.set(14, -17, 10);
+  p.cam.position.copy(BOX_C).add(new THREE.Vector3(16, -24, 17).normalize().multiplyScalar(36));
   p.ctrl = new OrbitControls(p.cam, cv);
   p.ctrl.enableDamping = true; p.ctrl.dampingFactor = 0.075;
-  p.ctrl.target.set(5, 0, 0);
+  p.ctrl.target.copy(BOX_C);
+  p.ctrl.addEventListener("start", () => { p.userMoved = true; lead = p; });
   p.scene.add(new THREE.HemisphereLight(0xbcd4ff, 0x202634, 0.85));
   const key = new THREE.DirectionalLight(0xffffff, 2.0);
   key.position.set(9, -14, 16); key.castShadow = true;
@@ -275,54 +369,68 @@ function makePane(cv) {
   const g = new THREE.BoxGeometry(XL[1]-XL[0], YL[1]-YL[0], ZL[1]-ZL[0]);
   const e = new THREE.LineSegments(new THREE.EdgesGeometry(g),
       new THREE.LineBasicMaterial({ color: 0x4a5570, transparent: true, opacity: 0.55 }));
-  e.position.set((XL[0]+XL[1])/2, 0, 0); p.boxG.add(e);
+  e.position.copy(BOX_C); p.boxG.add(e);
   const floor = new THREE.Mesh(new THREE.PlaneGeometry(XL[1]-XL[0], YL[1]-YL[0]),
       new THREE.ShadowMaterial({ opacity: 0.34 }));
-  floor.position.set((XL[0]+XL[1])/2, 0, ZL[0]+0.01); floor.receiveShadow = true;
+  floor.position.set(BOX_C.x, 0, ZL[0]+0.01); floor.receiveShadow = true;
   p.boxG.add(floor);
+  p.boxG.visible = $("qBox").checked;
   p.scene.add(p.boxG);
   p.root = new THREE.Group(); p.scene.add(p.root);
-  p.frames = []; p.times = []; p.cur = 0; p.id = null; p.tris = 0;
-  p.cv = cv; p.lastW = 0; p.lastH = 0;
+  p.frames = []; p.times = []; p.cur = 0; p.curTarget = 0; p.id = null; p.tris = 0;
+  p.cv = cv; p.titleEl = titleEl; p.legendEl = legendEl; p.lastW = 0; p.lastH = 0;
+  p.shellInfo = []; p.diag = null; p.userMoved = false; p.fitted = false;
   return p;
 }
 
+function disposeGroup(g) { g.traverse(o => { if (o.geometry) o.geometry.dispose(); if (o.material) o.material.dispose(); }); }
 function clearPane(p) {
   finishFade(p);
-  p.loadToken=(p.loadToken||0)+1;
-  p.root.traverse(o => { if (o.geometry) o.geometry.dispose(); if (o.material) o.material.dispose(); });
+  p.loadToken = (p.loadToken || 0) + 1;
+  disposeGroup(p.root);
   p.scene.remove(p.root);
   p.root = new THREE.Group(); p.scene.add(p.root);
-  p.frames = []; p.times = []; p.tris = 0;p.cur=0;p.curTarget=0;p.frameError=false;
-  if (p.dense) {
-    p.dense.cache.forEach(g => g.traverse(o => {
-      if (o.geometry) o.geometry.dispose(); if (o.material) o.material.dispose();
-    }));
-  }
-  p.dense = null;
+  p.frames = []; p.times = []; p.tris = 0; p.cur = 0; p.curTarget = 0; p.frameError = false;
+  if (p.dense) p.dense.cache.forEach(disposeGroup);
+  p.dense = null; p.diag = null; p.shellInfo = []; p.loaded = false; p.legendKey = "";
 }
 
-// ------------------------------------------------- dense streaming frames
-// Every snapshot of a run, fetched on demand from the frames branch as
-// indexed gzipped meshes. The site itself stays under the 1 GB Pages cap
-// because this data never enters the published bundle.
+// outer and core are told apart by order: shells sorted by level; a lone
+// shell is the core only when it is drawn opaque
+function assignShells(list) {
+  if (list.length === 1) { list[0].mesh.userData.shell = list[0].opacity >= 0.9 ? 1 : 0; return; }
+  list.map((s, i) => i).sort((a, b) => list[a].level - list[b].level)
+    .forEach((i, rank) => { list[i].mesh.userData.shell = rank; });
+}
+function noteShells(p, list) {
+  if (list.length <= p.shellInfo.length) return;
+  p.shellInfo = list.slice().sort((a, b) => a.level - b.level).map(s => ({ level: s.level, color: s.color, opacity: s.opacity }));
+  buildShellToggles();
+  p.legendKey = "";
+}
+function applyShellVisibility(grp) {
+  grp.children.forEach(m => { m.visible = shellOn[m.userData.shell] !== false; });
+}
+
+// ------------------------------------------------- streamed frames
+// Every saved frame of a run, fetched on demand as an indexed, gzipped mesh.
 async function denseFetch(p, i) {
   const d = p.dense;
   if (d.cache.has(i)) return d.cache.get(i);
   if (d.pending.has(i)) return d.pending.get(i);
   const job = (async () => {
-    const r = await fetch(d.base + d.tag + "/" + d.index.frames[i], { cache: "force-cache" });
+    const r = await fetch(d.dir + d.index.frames[i], { cache: "force-cache" });
     if (!r.ok) throw new Error("frame " + i + ": " + r.status);
-    let buf;
-    if (typeof DecompressionStream !== "undefined") {
-      buf = await new Response(r.body.pipeThrough(new DecompressionStream("gzip"))).arrayBuffer();
-    } else {
-      buf = await r.arrayBuffer();       // very old browsers: served raw would fail; acceptable
+    let buf = await r.arrayBuffer();
+    const head = new Uint8Array(buf, 0, Math.min(2, buf.byteLength));
+    if (head[0] === 0x1f && head[1] === 0x8b) {
+      if (typeof DecompressionStream === "undefined") throw new Error("this browser cannot read compressed frames");
+      buf = await new Response(new Blob([buf]).stream().pipeThrough(new DecompressionStream("gzip"))).arrayBuffer();
     }
     const dv = new DataView(buf);
     let o = 0;
     const nsh = dv.getUint8(o); o += 1;
-    const grp = new THREE.Group();
+    const grp = new THREE.Group(), list = [];
     for (let s = 0; s < nsh; s++) {
       const level = dv.getFloat32(o, true); o += 4;
       const op = dv.getFloat32(o, true); o += 4;
@@ -340,21 +448,21 @@ async function denseFetch(p, i) {
       }
       const geo = new THREE.BufferGeometry();
       geo.setAttribute("position", new THREE.BufferAttribute(pos, 3));
-      geo.setIndex(new THREE.BufferAttribute(new Uint32Array(faces), 1));
+      geo.setIndex(new THREE.BufferAttribute(faces, 1));
       geo.computeVertexNormals();
       const opaque = op >= 0.9;
       const mat = new THREE.MeshPhysicalMaterial({
         color: new THREE.Color(col[0], col[1], col[2]),
         transparent: !opaque, opacity: op, roughness: 0.42,
-        clearcoat: opaque ? 0.35 : 0, flatShading: !document.getElementById("smooth3d").checked, side: THREE.DoubleSide, depthWrite: opaque });
+        clearcoat: opaque ? 0.35 : 0, flatShading: !$("smooth3d").checked, side: THREE.DoubleSide, depthWrite: opaque });
       const mesh = new THREE.Mesh(geo, mat);
-      mesh.castShadow = opaque; mesh.userData.shell = level > 0.5 ? 1 : 0;
+      mesh.castShadow = opaque;
       grp.add(mesh);
+      list.push({ level, opacity: op, color: col, mesh });
     }
-    if (p.dense !== d) {
-      grp.traverse(x=>{if(x.geometry)x.geometry.dispose();if(x.material)x.material.dispose();});
-      throw new Error('Obsolete run request');
-    }
+    assignShells(list);
+    if (p.dense !== d) { disposeGroup(grp); throw new Error("Obsolete run request"); }
+    noteShells(p, list);
     d.pending.delete(i);
     d.cache.set(i, grp);
     d.order.push(i);
@@ -362,54 +470,64 @@ async function denseFetch(p, i) {
       const ev = d.order.shift();
       if (ev === p.cur || ev === i || ev === p.fade?.fromIndex) { d.order.push(ev); break; }
       const g = d.cache.get(ev);
-      if (g) {
-        if (g.parent) g.parent.remove(g);
-        g.traverse(x => { if (x.geometry) x.geometry.dispose(); if (x.material) x.material.dispose(); });
-        d.cache.delete(ev);
-      }
+      if (g) { if (g.parent) g.parent.remove(g); disposeGroup(g); d.cache.delete(ev); }
     }
     return grp;
   })();
-  const guarded=job.catch(e=>{d.pending.delete(i);throw e;});
+  const guarded = job.catch(e => { d.pending.delete(i); throw e; });
   d.pending.set(i, guarded);
   return guarded;
 }
-const fadeMaterialState=new WeakMap();
-function fadeWeight(group,weight){
-  group.traverse(o=>{if(!o.material)return;const m=o.material;if(!fadeMaterialState.has(m))fadeMaterialState.set(m,{opacity:m.opacity,transparent:m.transparent,depthWrite:m.depthWrite});
-    const original=fadeMaterialState.get(m);m.opacity=original.opacity*weight;const transparent=weight<1||original.transparent,depthWrite=weight<1?false:original.depthWrite;const changed=m.transparent!==transparent||m.depthWrite!==depthWrite;m.transparent=transparent;m.depthWrite=depthWrite;if(changed)m.needsUpdate=true;
+const fadeMaterialState = new WeakMap();
+function fadeWeight(group, weight) {
+  group.traverse(o => {
+    if (!o.material) return;
+    const m = o.material;
+    if (!fadeMaterialState.has(m)) fadeMaterialState.set(m, { opacity: m.opacity, transparent: m.transparent, depthWrite: m.depthWrite });
+    const original = fadeMaterialState.get(m);
+    m.opacity = original.opacity * weight;
+    const transparent = weight < 1 || original.transparent, depthWrite = weight < 1 ? false : original.depthWrite;
+    const changed = m.transparent !== transparent || m.depthWrite !== depthWrite;
+    m.transparent = transparent; m.depthWrite = depthWrite;
+    if (changed) m.needsUpdate = true;
   });
 }
-function finishFade(p){
-  if(!p?.fade)return;const f=p.fade;fadeWeight(f.from,1);fadeWeight(f.to,1);
-  if(p.dense&&f.from.parent)p.root.remove(f.from);else f.from.visible=false;
-  f.to.visible=true;p.fade=null;updateDisplayedTimes();
+function finishFade(p) {
+  if (!p?.fade) return;
+  const f = p.fade; fadeWeight(f.from, 1); fadeWeight(f.to, 1);
+  if (p.dense && f.from.parent) p.root.remove(f.from); else f.from.visible = false;
+  f.to.visible = true; p.fade = null; updateReadouts();
 }
-function beginFade(p,from,to,fromIndex){
-  finishFade(p);if(!from||from===to)return;
-  if(!document.getElementById('smoothTime3d').checked||!(timer||p.captureFade)){if(p.dense&&from.parent)p.root.remove(from);else from.visible=false;return;}
-  from.visible=true;to.visible=true;fadeWeight(from,1);fadeWeight(to,0);
-  p.fade={from,to,fromIndex,start:performance.now(),duration:p.captureFade?300:Math.max(60,(recent3D[p.id]?260:80)/Number(document.getElementById('playSpeed').value))};
+function beginFade(p, from, to, fromIndex) {
+  finishFade(p);
+  if (!from || from === to) return;
+  if (!$("smoothTime3d").checked || !timer) { if (p.dense && from.parent) p.root.remove(from); else from.visible = false; return; }
+  from.visible = true; to.visible = true; fadeWeight(from, 1); fadeWeight(to, 0);
+  p.fade = { from, to, fromIndex, start: performance.now(), duration: Math.max(60, 0.85 * playInterval()) };
 }
-function advanceFade(p,now){if(!p?.fade)return;const f=p.fade,t=Math.min(1,(now-f.start)/f.duration);fadeWeight(f.from,1-t);fadeWeight(f.to,t);if(t>=1)finishFade(p);}
+function advanceFade(p, now) {
+  if (!p?.fade || p.fade.manual) return;
+  const f = p.fade, t = Math.min(1, (now - f.start) / f.duration);
+  fadeWeight(f.from, 1 - t); fadeWeight(f.to, t);
+  if (t >= 1) finishFade(p);
+}
 async function denseShow(p, i) {
   const d = p.dense;
   i = Math.max(0, Math.min(d.index.frames.length - 1, i));
   const token = ++d.token;
   let grp;
   try { grp = await denseFetch(p, i); } catch (e) {
-    if(p.dense===d && token===d.token){p.frameError=true;stop();updateDisplayedTimes();}
+    if (p.dense === d && token === d.token) { p.frameError = true; stop(); updateReadouts(); }
     return;
   }
-  if (p.dense !== d || token !== d.token) return; // obsolete run or newer scrub
-  const previous=d.shown,previousIndex=p.cur;
-  finishFade(p);p.root.add(grp);
-  beginFade(p,previous,grp,previousIndex);
-  grp.children.forEach(m => { if (shellOn.length) m.visible = shellOn[m.userData.shell] !== false; });
-  d.shown = grp; p.cur = i;p.frameError=false;
+  if (p.dense !== d || token !== d.token) return;   // obsolete run or newer scrub
+  const previous = d.shown, previousIndex = p.cur;
+  finishFade(p); p.root.add(grp);
+  beginFade(p, previous, grp, previousIndex);
+  applyShellVisibility(grp);
+  d.shown = grp; p.cur = i; p.frameError = false;
   p.tris = (d.index.tris && d.index.tris[i]) ?? 0;
-  updateDisplayedTimes();
-  updateHud();
+  updateReadouts(); updateHud();
   // prefetch neighbours so scrubbing stays fluid
   if (i + 1 < d.index.frames.length) denseFetch(p, i + 1).catch(() => {});
   if (i > 0) denseFetch(p, i - 1).catch(() => {});
@@ -418,510 +536,1222 @@ async function denseShow(p, i) {
 function normalizeFrameIndex(index) {
   if (!Array.isArray(index.frames) || !Array.isArray(index.times) ||
       index.frames.length !== index.times.length || !index.frames.length ||
-      index.times.some(t => typeof t !== 'number' || !Number.isFinite(t) || t < 0)) {
-    throw new Error('Invalid native frame timing metadata');
+      index.times.some(t => typeof t !== "number" || !Number.isFinite(t) || t < 0)) {
+    throw new Error("Invalid frame timing metadata");
   }
-  const rows=index.frames.map((f,j)=>[index.times[j],f,(index.tris||[])[j]]);
-  rows.sort((a,b)=>a[0]-b[0]);
-  const unique=[];
-  for (const row of rows) {
-    if (!unique.length || row[0] !== unique[unique.length-1][0]) unique.push(row);
+  const rows = index.frames.map((f, j) => [index.times[j], f, (index.tris || [])[j]]);
+  rows.sort((a, b) => a[0] - b[0]);
+  const unique = [];
+  for (const row of rows) if (!unique.length || row[0] !== unique[unique.length - 1][0]) unique.push(row);
+  index.times = unique.map(r => r[0]); index.frames = unique.map(r => r[1]); index.tris = unique.map(r => r[2]);
+}
+function runDir(id) {
+  const r = recent3D[id], c = catalogRun(id);
+  const base = (r && r.base) || (c && c.base);
+  if (base) return String(base).replace(/\/?$/, "/") + "3d/";
+  if (r) return "assets/recent3d/" + id + "/";
+  return DENSE_BASE + id + "/";
+}
+async function loadEmbedded(id) {
+  for (const kind of EMBEDDED[id] || []) {
+    try {
+      if (kind === "hq") { if (!VOLHQ_DATA[id]) await loadScript("data/volhq_" + id + ".js"); if (VOLHQ_DATA[id]?.frames?.length) return VOLHQ_DATA[id]; }
+      if (kind === "seq") { if (!VOLSEQ_DATA[id]) await loadScript("data/vol_seq_" + id + ".js"); if (VOLSEQ_DATA[id]?.frames?.length) return VOLSEQ_DATA[id]; }
+      if (kind === "one") {
+        if (!VOL_DATA[id]) await loadScript("data/vol_" + id + ".js");
+        const v = VOL_DATA[id];
+        if (v && v.surfaces && v.surfaces.length) return { times: [parseFloat(v.meta && v.meta.t)], frames: [v.surfaces] };
+      }
+    } catch (e) { /* try the next file */ }
   }
-  index.times=unique.map(r=>r[0]);index.frames=unique.map(r=>r[1]);index.tris=unique.map(r=>r[2]);
+  return null;
 }
 
-async function loadRun(p, id, titleEl) {
-  msg.textContent = "loading " + id + "…"; msg.style.display = "grid";
+function nearestIndex(p, t) {
+  let bi = -1, best = Infinity;
+  for (let k = 0; k < p.times.length; k++) { const d = Math.abs(p.times[k] - t); if (d < best) { best = d; bi = k; } }
+  return bi;
+}
+async function loadRun(p, id, opts = {}) {
+  const info = runInfo(id);
   clearPane(p); p.id = id;
-  const loadToken=p.loadToken;p.titleEl=titleEl;
-  // dense first: every frame the run produced, streamed on demand
+  const token = p.loadToken;
+  showMsg("Loading " + info.label);
+  setTitle(p);
+  if (p === A) { syncRunControls(); updateRunNote(); }
+  let ok = false;
   if (recent3D[id] || (typeof DENSE_RUNS !== "undefined" && DENSE_RUNS[id])) {
     try {
-      const r = await fetch(frameBase(id) + id + "/index.json", { cache: "no-cache" });
+      if (recent3D[id] && !recent3D[id].base && !recentCatalog) await Promise.race([catalogReady, sleep(2500)]);
+      if (p.loadToken !== token) return;
+      const dir = runDir(id);
+      const r = await fetch(dir + "index.json", { cache: "no-cache" });
+      if (p.loadToken !== token) return;
       if (r.ok) {
         const index = await r.json();
-        if(p.loadToken!==loadToken)return;
-        // Keep every distinct measured time, including t > 5. Reject missing
-        // timing metadata rather than inventing evenly spaced frame times.
+        if (p.loadToken !== token) return;
         normalizeFrameIndex(index);
-        p.dense = { tag: id, base: frameBase(id), index, cache: new Map(),
-                    pending: new Map(), order: [], token: 0, shown: null };
-        p.times = index.times || [];
+        p.dense = { tag: id, dir, index, cache: new Map(), pending: new Map(), order: [], token: 0, shown: null };
+        p.times = index.times;
         p.frames = { length: index.frames.length };   // slider sizing only
-        const mt = meta(id);
-        if (titleEl && recent3D[id]) titleEl.innerHTML = "<b>"+recent3D[id].label+"</b> · n=128 · "+index.frames.length+" saved frames";
-        else if (titleEl) titleEl.innerHTML = "<b>" + mt.code + "</b> &middot; &chi; = " + mt.chi +
-          " &middot; level " + mt.lvl + " &middot; " + index.frames.length + " frames";
-        buildShellTogglesDense();
-        document.getElementById("viewNote").textContent = recent3D[id] ? recent3D[id].note + " Display-only smoothing: σ=0.8 native cells; 21 saved states. Optional crossfades are display-only." : "Historical visualization; see the recorded run configuration.";
-        await denseShow(p, recent3D[id] ? index.frames.length-1 : 0);
-        if(p.loadToken!==loadToken)return;
-        setFrameAll(recent3D[id] ? index.frames.length-1 : 0);
-        document.getElementById("recentSelect").value = recent3D[id] ? id : "";
-        loadDiag(id, p === A ? 0 : 1);
-        msg.style.display = "none";
-        if(p===A && recent3D[id] && innerWidth<850)document.getElementById("sideHide").click();
-        return;
+        p.diag = validDiagnostics(index.diagnostics) ? index.diagnostics : null;
+        ok = true;
       }
-    } catch (e) { /* fall through to embedded volumes */ }
+    } catch (e) { /* fall back to embedded volumes */ }
   }
-  let seq = null;
-  try { if (!VOLHQ_DATA[id]) await loadScript("data/volhq_" + id + ".js"); } catch (e) {}
-  if(p.loadToken!==loadToken)return;
-  seq = VOLHQ_DATA[id];
-  if (!seq) {
-    try { if (!VOLSEQ_DATA[id]) await loadScript("data/vol_seq_" + id + ".js"); } catch (e) {}
-    if(p.loadToken!==loadToken)return;
-    seq = VOLSEQ_DATA[id];
+  if (!ok && EMBEDDED[id] && EMBEDDED[id].length) {
+    const seq = await loadEmbedded(id);
+    if (p.loadToken !== token) return;
+    if (seq) {
+      try { normalizeFrameIndex(seq); ok = true; } catch (e) { ok = false; }
+      if (ok) {
+        p.times = seq.times;
+        let tri = 0;
+        seq.frames.forEach((surfs, fi) => {
+          const g = new THREE.Group(), list = []; g.visible = false;
+          (surfs || []).forEach(s => {
+            const pos = decode(s);
+            const geo = new THREE.BufferGeometry();
+            geo.setAttribute("position", new THREE.BufferAttribute(pos, 3));
+            geo.computeVertexNormals();
+            const opaque = s.opacity >= 0.9;
+            const mat = new THREE.MeshPhysicalMaterial({
+              color: new THREE.Color(s.color[0], s.color[1], s.color[2]),
+              transparent: !opaque, opacity: s.opacity, roughness: 0.42,
+              clearcoat: opaque ? 0.35 : 0, flatShading: !$("smooth3d").checked, side: THREE.DoubleSide, depthWrite: opaque });
+            const mm = new THREE.Mesh(geo, mat);
+            mm.castShadow = opaque;
+            g.add(mm);
+            list.push({ level: +s.level, opacity: +s.opacity, color: s.color, mesh: mm });
+            if (fi === 0) tri += pos.length / 9;
+          });
+          assignShells(list); noteShells(p, list);
+          p.frames.push(g); p.root.add(g);
+        });
+        p.tris = Math.round(tri);
+      }
+    }
   }
-  if (!seq || !seq.frames || !seq.frames.length) { msg.textContent = "no 3D data for " + id; return; }
-  try { normalizeFrameIndex(seq); }
-  catch (e) { msg.textContent = "Invalid saved timestamps for " + id + "; data need review."; return; }
-  p.times = seq.times || [];
-  let tri = 0;
-  seq.frames.forEach((surfs, fi) => {
-    const g = new THREE.Group(); g.visible = (fi === 0);
-    (surfs || []).forEach((s, si) => {
-      const pos = decode(s);
-      const geo = new THREE.BufferGeometry();
-      geo.setAttribute("position", new THREE.BufferAttribute(pos, 3));
-      geo.computeVertexNormals();
-      const opaque = s.opacity >= 0.9;
-      const mat = new THREE.MeshPhysicalMaterial({
-        color: new THREE.Color(s.color[0], s.color[1], s.color[2]),
-        transparent: !opaque, opacity: s.opacity, roughness: 0.42,
-        clearcoat: opaque ? 0.35 : 0, side: THREE.DoubleSide, depthWrite: opaque });
-      const mm = new THREE.Mesh(geo, mat);
-      mm.castShadow = opaque; mm.userData.shell = si;
-      g.add(mm);
-      if (fi === 0) tri += pos.length / 9;
-    });
-    p.frames.push(g); p.root.add(g);
-  });
-  p.tris = Math.round(tri);
-  const mt = meta(id);
-  if (titleEl) titleEl.innerHTML = "<b>" + mt.code + "</b> &middot; &chi; = " + mt.chi + " &middot; level " + mt.lvl;
-  setFrameAll(0);
-  buildShellToggles();
-  updateHud();
-  loadDiag(id, p === A ? 0 : 1);
-  msg.style.display = "none";
+  if (!ok) {
+    showMsg("The 3D frames of " + info.label + " could not be loaded.");
+    setTitle(p); updateReadouts();
+    return;
+  }
+  p.loaded = true;
+  const n = p.times.length;
+  let start = Math.floor((n - 1) / 2);
+  if (Number.isFinite(opts.time)) start = nearestIndex(p, opts.time);
+  if (p === B && A.loaded) start = nearestIndex(B, A.times[A.curTarget ?? A.cur]);
+  if (p === A) {
+    A.curTarget = start;
+    if (A.dense) await denseShow(A, start);
+    if (p.loadToken !== token) return;
+    setFrameAll(start);
+    updateRunNote();
+  } else {
+    B.curTarget = start;
+    if (B.dense) await denseShow(B, start); else setFrame(B, start);
+    if (p.loadToken !== token) return;
+  }
+  setTitle(p); updateReadouts(); updateHud(); drawChart();
+  hideMsg();
+  scheduleLayout();
 }
 
 // ------------------------------------------------------------ frame control
-const A = makePane(document.getElementById("cvA"));
+let lead = null;
+const A = makePane($("cvA"), $("titleA"), $("legendA"));
 let B = null;
 window.__A = A;                       // diagnostics only
+window.__viewer = { get A() { return A; }, get B() { return B; }, ids, runInfo };
 
-// -------------------------------------------------- collapsible legend panel
-{
-  const side = document.getElementById("side");
-  const show = document.getElementById("sideShow");
-  const apply = hidden => {
-    side.style.display = hidden ? "none" : "";
-    show.style.display = hidden ? "" : "none";
-    try { localStorage.setItem("cc_sideHidden", hidden ? "1" : "0"); } catch (e) {}
-  };
-  document.getElementById("sideHide").onclick = () => apply(true);
-  show.onclick = () => apply(false);
-  try { if (localStorage.getItem("cc_sideHidden") === "1") apply(true); } catch (e) {}
-}
 let shellOn = [];
 function setFrame(p, i) {
   if (!p) return;
   if (p.dense) { denseShow(p, i); return; }
   if (!p.frames.length) return;
-  const previousIndex=p.cur,previous=p.frames[p.cur];finishFade(p);
+  const previousIndex = p.cur, previous = p.frames[p.cur]; finishFade(p);
   p.cur = Math.max(0, Math.min(p.frames.length - 1, i));
-  beginFade(p,previous,p.frames[p.cur],previousIndex);
-  p.frames[p.cur].visible = true;
-  p.frames[p.cur].children.forEach(m => {
-    if (shellOn.length) m.visible = shellOn[m.userData.shell] !== false;
-  });
-  updateDisplayedTimes();
-}
-function buildShellTogglesDense() {
-  const host = document.getElementById("shells"); host.innerHTML = "";
-  shellOn = [true, true];
-  ["outer", "core"].forEach((nm, i) => {
-    const l = document.createElement("label"); l.className = "chk";
-    const c = document.createElement("input"); c.type = "checkbox"; c.checked = true;
-    c.onchange = () => {
-      shellOn[i] = c.checked;
-      [A, B].forEach(p => {
-        if (p && p.dense && p.dense.shown)
-          p.dense.shown.children.forEach(m => { m.visible = shellOn[m.userData.shell] !== false; });
-        else if (p) setFrame(p, p.cur);
-      });
-    };
-    l.appendChild(c); l.appendChild(document.createTextNode(nm));
-    host.appendChild(l);
-  });
-}
-function updateDisplayedTimes() {
-  for(const p of [A,B]) {
-    if(!p || !p.titleEl || !p.times.length)continue;
-    let label=p.titleEl.querySelector('.frameTime');
-    if(!label){label=document.createElement('span');label.className='frameTime';p.titleEl.appendChild(label);}
-    const shown=!p.dense || p.dense.shown;
-    const t=shown?p.times[p.cur]:null;
-    const status=p.frameError?' (frame unavailable)':(p.cur!==p.curTarget||!shown)?' (loading…)':'';
-    const text=t!==null?(p.fade?'Blend → ':'')+'t = '+Number(t).toFixed(3)+' t_cc'+status:'loading frame…';
-    label.textContent=' · '+text;
-    if(p===A)document.getElementById('tlab').textContent=text;
-  }
+  const grp = p.frames[p.cur];
+  grp.visible = true;
+  applyShellVisibility(grp);
+  if (previous && previous !== grp) beginFade(p, previous, grp, previousIndex);
+  updateReadouts();
 }
 function setFrameAll(i) {
   const nA = A.frames.length;
   const ni = Math.max(0, Math.min(nA - 1, i));
   A.curTarget = ni;
   setFrame(A, ni);
-  if (B && B.frames.length) {
-    // sync the panes by TIME, not slider fraction: two runs with different
-    // frame counts select the nearest measured time, not an identical time.
-    const tA = parseFloat(A.times[ni]);
-    let bi = -1;
-    if (isFinite(tA) && B.times && B.times.length === B.frames.length) {
-      let best = Infinity;
-      for (let k = 0; k < B.times.length; k++) {
-        const d = Math.abs(parseFloat(B.times[k]) - tA);
-        if (isFinite(d) && d < best) { best = d; bi = k; }
-      }
-    }
-    if (bi >= 0) {B.curTarget=bi;setFrame(B, bi);}
+  if (B && B.id && B.frames.length && B.loaded) {
+    // panes follow the TIME of the first view, not the slider position:
+    // runs with different frame counts show their nearest saved time
+    const bi = nearestIndex(B, A.times[ni]);
+    if (bi >= 0) { B.curTarget = bi; setFrame(B, bi); }
   }
-  const sl = document.getElementById("slider");
+  const sl = $("slider");
   sl.max = Math.max(nA - 1, 0); sl.value = ni;
-  updateDisplayedTimes();
+  updateReadouts();
   drawChart();
 }
 function buildShellToggles() {
-  const host = document.getElementById("shells"); host.innerHTML = "";
-  const n = A.frames[0] ? A.frames[0].children.length : 0;
-  shellOn = new Array(n).fill(true);
-  const names = ["outer", "core"];
-  for (let i = 0; i < n; i++) {
-    const l = document.createElement("label"); l.className = "chk";
-    const c = document.createElement("input"); c.type = "checkbox"; c.checked = true;
-    c.onchange = () => { shellOn[i] = c.checked; setFrameAll(A.cur); };
-    l.appendChild(c); l.appendChild(document.createTextNode(names[i] || "shell " + (i+1)));
+  const host = $("shells");
+  const src = [A, B].filter(p => p && p.id).sort((a, b) => b.shellInfo.length - a.shellInfo.length)[0];
+  const info = src ? src.shellInfo : [];
+  const key = info.map(s => s.level + ":" + s.color.join(",")).join("|") + "/" + (src && runInfo(src.id).chi);
+  if (host.dataset.key === key) return;
+  host.dataset.key = key;
+  host.innerHTML = "";
+  const names = shellNames(info.length);
+  if (shellOn.length !== info.length) shellOn = info.map((_, i) => shellOn[i] !== false);
+  info.forEach((s, i) => {
+    const l = document.createElement("label"); l.className = "chk shell";
+    const c = document.createElement("input"); c.type = "checkbox"; c.checked = shellOn[i] !== false;
+    c.onchange = () => {
+      shellOn[i] = c.checked;
+      for (const p of [A, B]) {
+        if (!p) continue;
+        if (p.dense) p.dense.cache.forEach(applyShellVisibility);
+        else p.frames.forEach(applyShellVisibility);
+        p.legendKey = "";
+      }
+    };
+    l.append(c);
+    const sw = document.createElement("span"); sw.className = "sw"; sw.style.background = cssColor(s.color);
+    l.append(sw);
+    const t = document.createElement("span");
+    t.innerHTML = names[i] + " · " + densityHTML(s.level, src ? runInfo(src.id).chi : 0);
+    l.append(t);
     host.appendChild(l);
-  }
+  });
 }
 function updateHud() {
-  document.getElementById("tris").textContent =
-    (A.tris + (B ? B.tris : 0)).toLocaleString();
+  $("tris").textContent = (A.tris + (B && B.id ? B.tris : 0)).toLocaleString("en");
 }
+
+// ----------------------------------------------------------- readouts
+function setTitle(p) {
+  if (!p || !p.titleEl) return;
+  const info = runInfo(p.id);
+  if (!info) { p.titleEl.textContent = ""; return; }
+  p.titleEl.innerHTML = "<span class='tl'><b>" + esc(info.base) + "</b> · χ " + info.chi + " · level " + info.lvl +
+    (info.variant ? " · " + esc(info.variant) : "") + "</span><span class='ft'></span>";
+  updateReadouts();
+  scheduleLayout();
+}
+function frameStatus(p) {
+  if (p.frameError) return "frame not available";
+  const shown = !p.dense || p.dense.shown;
+  if (!p.loaded || !shown || p.cur !== p.curTarget) return "loading";
+  return "";
+}
+function updateReadouts() {
+  for (const p of [A, B]) {
+    if (!p || !p.titleEl || !p.id) continue;
+    const span = p.titleEl.querySelector(".ft");
+    const st = frameStatus(p);
+    const t = p.times.length && (!p.dense || p.dense.shown) ? p.times[p.cur] : null;
+    const html = (t !== null ? timeHTML(t) : "") + (st ? " <span class='st'>" + (t !== null ? "· " : "") + st + "</span>" : "");
+    if (span && span.innerHTML !== html) span.innerHTML = html;
+    if (p === A) {
+      const bar = (t !== null ? timeHTML(t) : "") + (st ? " <span class='st'>· " + st + "</span>" : "");
+      const tl = $("tlab");
+      if (tl.innerHTML !== bar) tl.innerHTML = bar;
+      const sl = $("slider");
+      if (t !== null) sl.setAttribute("aria-valuetext", "t = " + tfix(t) + " t_cc, frame " + (p.cur + 1) + " of " + p.times.length);
+    }
+  }
+}
+function updateRunNote() {
+  const note = $("viewNote"), info = runInfo(A.id);
+  if (!info) { note.textContent = ""; return; }
+  const n = A.times.length, parts = [info.recent ? "Complete run." : "Earlier run."];
+  if (n === 1) parts.push("One frame at t = " + Number(A.times[0]).toFixed(2) + " t<sub>cc</sub>.");
+  else if (n > 1) {
+    const t1 = A.times[n - 1];
+    parts.push(n + " frames from t = " + Number(A.times[0]).toFixed(2) + " to " + Number(t1).toFixed(2) + " t<sub>cc</sub>.");
+    if (!info.recent && t1 < 4.99) parts.push("Ends at t = " + Number(t1).toFixed(2) + " t<sub>cc</sub>.");
+  } else if (info.frames) parts.push(info.frames + " frames.");
+  if (info.boundary) parts.push("Domain faces: " + esc(info.boundary) + ".");
+  if (info.cooling === "tabular") parts.push("Radiative cooling on.");
+  note.innerHTML = parts.join(" ");
+}
+function syncRunControls() {
+  const info = runInfo(A.id);
+  const sel = $("recentSelect");
+  sel.value = info && info.recent ? A.id : "";
+  const link = $("projectionLink");
+  if (info && info.recent && info.projection) { link.href = "recent.html?run=" + encodeURIComponent(info.projection); link.hidden = false; }
+  else link.hidden = true;
+  document.querySelectorAll(".runbtn").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.id === A.id)));
+}
+function showMsg(text) { msg.textContent = text; msg.hidden = false; placeMsg(); }
+function hideMsg() { msg.hidden = true; }
 
 // --------------------------------------------------------------- run list
-const state = { chi: "all", lvl: "all" };
-function chip(hostId, key) {
-  document.getElementById(hostId).addEventListener("click", e => {
-    const b = e.target.closest("button"); if (!b) return;
-    document.querySelectorAll("#" + hostId + " button").forEach(x => x.classList.remove("on"));
-    b.classList.add("on");
-    state[key] = b.dataset[key === "chi" ? "chi" : "lvl"];
-    buildList();
-  });
+const state = { chi: "all", lvl: "all", term: "" };
+function matches(id) {
+  const info = runInfo(id);
+  if (state.chi !== "all" && String(info.chi) !== state.chi) return false;
+  if (state.lvl !== "all" && String(info.lvl) !== state.lvl) return false;
+  const term = state.term.trim().toLowerCase();
+  if (!term) return true;
+  const hay = (info.label + " | χ" + info.chi + " chi" + info.chi + " chi " + info.chi + " level" + info.lvl +
+    " l" + info.lvl + " " + (info.recent ? "complete " : "earlier ") + info.group + " " + info.boundary).toLowerCase();
+  return term.split(/\s+/).every(tok => hay.includes(tok));
 }
-chip("chiChips", "chi"); chip("lvlChips", "lvl");
-
-const isDense = id => !!recent3D[id] || (typeof DENSE_RUNS !== "undefined" && DENSE_RUNS[id] >= 8);
-// legacy (17-frame) runs live in their own collapsible section, folded away by
-// default; the choice sticks per browser
+function buildChips() {
+  const make = (host, key, values, fmt) => {
+    host.innerHTML = "";
+    ["all", ...values].forEach(v => {
+      const b = document.createElement("button"); b.type = "button";
+      b.textContent = v === "all" ? "All" : fmt(v);
+      b.setAttribute("aria-pressed", String(state[key] === String(v)));
+      b.onclick = () => { state[key] = String(v); host.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", String(x === b))); buildList(); };
+      host.appendChild(b);
+    });
+  };
+  const chis = [...new Set(ids.map(id => runInfo(id).chi))].filter(Boolean).sort((a, b) => a - b);
+  const lvls = [...new Set(ids.map(id => runInfo(id).lvl))].filter(v => v !== null).sort((a, b) => a - b);
+  make($("chiChips"), "chi", chis, v => "χ " + v);
+  make($("lvlChips"), "lvl", lvls, v => String(v));
+}
 let legacyOpen = false;
 try { legacyOpen = localStorage.getItem("cc_legacyOpen") === "1"; } catch (e) {}
-document.getElementById("runSearch").oninput=()=>buildList();
-function visibleIds() {
-  return ids.filter(id => {
-    const m = meta(id);
-    const term=document.getElementById("runSearch").value.toLowerCase();
-    if(term && !(m.code+" "+id+" chi"+m.chi+" level "+m.lvl).toLowerCase().includes(term))return false;
-    if (state.chi !== "all" && String(m.chi) !== state.chi) return false;
-    if (state.lvl !== "all" && String(m.lvl) !== state.lvl) return false;
-    return true;
+function runButton(id, mainText, metaText) {
+  const b = document.createElement("button");
+  b.type = "button"; b.className = "runbtn"; b.dataset.id = id;
+  b.setAttribute("aria-pressed", String(id === A.id));
+  b.innerHTML = "<span class='rn'>" + mainText + "</span><span class='rm'>" + metaText + "</span>";
+  b.onclick = () => openRun(id);
+  return b;
+}
+const framesText = n => n ? n + " frame" + (n === 1 ? "" : "s") : "";
+function renderEarlier(host, list) {
+  const byCode = new Map();
+  list.forEach(id => { const c = runInfo(id).variant ? runInfo(id).base + " · " + runInfo(id).variant : runInfo(id).base; if (!byCode.has(c)) byCode.set(c, []); byCode.get(c).push(id); });
+  [...byCode.keys()].sort((a, b) => (codeRank(a.split(" · ")[0]) - codeRank(b.split(" · ")[0])) || a.localeCompare(b)).forEach(code => {
+    const h = document.createElement("div"); h.className = "grp"; h.textContent = code; host.appendChild(h);
+    byCode.get(code).sort((a, b) => (runInfo(b).lvl - runInfo(a).lvl) || (runInfo(a).chi - runInfo(b).chi)).forEach(id => {
+      const i = runInfo(id);
+      host.appendChild(runButton(id, "χ " + i.chi, ["level " + i.lvl, framesText(i.frames)].filter(Boolean).join(" · ")));
+    });
   });
 }
-function renderGroups(host, list) {
-  const byCode = {};
-  list.forEach(id => { const c = meta(id).code; (byCode[c] = byCode[c] || []).push(id); });
-  Object.keys(byCode).sort((a,b)=>(a.startsWith("New ·")?-1:0)-(b.startsWith("New ·")?-1:0)||a.localeCompare(b)).forEach(code => {
-    const h = document.createElement("div"); h.className = "grp"; h.textContent = code;
-    host.appendChild(h);
-    byCode[code].sort((a, b) => (meta(b).lvl - meta(a).lvl) || (meta(a).chi - meta(b).chi))
-      .forEach(id => {
-        const m = meta(id);
-        const b = document.createElement("button");
-        const fr = recent3D[id] ? recent3D[id].frames+"f" : isDense(id) ? DENSE_RUNS[id] + "f" : "count on load";
-        b.innerHTML = "<span>&chi; = " + m.chi + "</span><span class='m'>level " + m.lvl +
-                      " &middot; " + fr + "</span>";
-        b.dataset.id = id;
-        b.classList.toggle("on", id === A.id);
-        b.onclick = () => {
-          document.querySelectorAll("#runs button, #legacyRuns button").forEach(x => x.classList.remove("on"));
-          b.classList.add("on");
-          stop(); loadRun(A, id, document.getElementById("titleA"));
-          history.replaceState(null, "", "?run=" + encodeURIComponent(id) + (B && B.id ? "&vs=" + encodeURIComponent(B.id) : ""));
-        };
-        host.appendChild(b);
-      });
-  });
-}
+function completeIds() { return ids.filter(id => recent3D[id]).sort(completeOrder); }
 function buildList() {
-  const vis = visibleIds();
-  const dense = vis.filter(isDense), legacy = vis.filter(id => !isDense(id));
-  const host = document.getElementById("runs"); host.innerHTML = "";
-  renderGroups(host, dense);
-  const hdr = document.getElementById("legacyHdr");
-  const lhost = document.getElementById("legacyRuns"); lhost.innerHTML = "";
-  if (legacy.length) {
-    hdr.style.display = "block";
-    hdr.innerHTML = (legacyOpen ? "&#9662;" : "&#9656;") + " legacy runs (" + legacy.length +
-                    ") &middot; counts checked on load";
-    lhost.style.display = legacyOpen ? "block" : "none";
-    if (legacyOpen) renderGroups(lhost, legacy);
-    hdr.onclick = () => {
-      legacyOpen = !legacyOpen;
-      try { localStorage.setItem("cc_legacyOpen", legacyOpen ? "1" : "0"); } catch (e) {}
-      buildList();
-    };
-  } else {
-    hdr.style.display = "none"; lhost.style.display = "none";
+  const vis = ids.filter(matches);
+  const complete = vis.filter(id => recent3D[id]).sort(completeOrder);
+  const earlier = vis.filter(id => !recent3D[id] && isDense(id));
+  const legacy = vis.filter(id => !isDense(id));
+  const host = $("runs"); host.innerHTML = "";
+  if (!vis.length) { const p = document.createElement("p"); p.className = "note"; p.textContent = "No run matches these filters."; host.appendChild(p); }
+  if (complete.length) {
+    const s = document.createElement("div"); s.className = "sec"; s.textContent = "Complete runs"; host.appendChild(s);
+    let last = "";
+    complete.forEach(id => {
+      const i = runInfo(id), h = groupHeading(i);
+      if (h !== last) { const g = document.createElement("div"); g.className = "grp"; g.textContent = h; host.appendChild(g); last = h; }
+      host.appendChild(runButton(id, esc(i.base + (i.variant ? " · " + i.variant : "")),
+        ["χ " + i.chi, "level " + i.lvl, framesText(i.frames)].filter(Boolean).join(" · ")));
+    });
   }
-  // compare dropdown mirrors what is on screen
-  const sel = document.getElementById("cmpSel");
+  if (earlier.length) {
+    const s = document.createElement("div"); s.className = "sec"; s.textContent = "Earlier runs"; host.appendChild(s);
+    renderEarlier(host, earlier);
+  }
+  const hdr = $("legacyHdr"), lhost = $("legacyRuns");
+  lhost.innerHTML = "";
+  if (legacy.length) {
+    hdr.hidden = false;
+    hdr.textContent = (legacyOpen ? "▾ " : "▸ ") + "More earlier runs (" + legacy.length + ")";
+    hdr.setAttribute("aria-expanded", String(legacyOpen));
+    lhost.hidden = !legacyOpen;
+    if (legacyOpen) renderEarlier(lhost, legacy);
+  } else { hdr.hidden = true; lhost.hidden = true; }
+  // the compare list mirrors what is on screen, plus the run already shown there
+  const sel = $("cmpSel"), keep = B && B.id;
   sel.innerHTML = "";
-  dense.concat(legacyOpen ? legacy : []).forEach(id => {
-    const m = meta(id);
-    const o = document.createElement("option");
-    o.value = id; o.textContent = m.code + "  χ=" + m.chi + "  L" + m.lvl;
-    sel.appendChild(o);
+  const add = (label, list) => {
+    if (!list.length) return;
+    const og = document.createElement("optgroup"); og.label = label;
+    list.forEach(id => og.appendChild(new Option(runInfo(id).label, id)));
+    sel.appendChild(og);
+  };
+  const shown = new Set([...complete, ...earlier, ...(legacyOpen ? legacy : [])]);
+  add("Complete runs", complete);
+  add("Earlier runs", [...earlier, ...(legacyOpen ? legacy : [])]);
+  if (keep && !shown.has(keep)) add("Shown now", [keep]);
+  if (keep) sel.value = keep;
+}
+$("legacyHdr").onclick = () => {
+  legacyOpen = !legacyOpen;
+  try { localStorage.setItem("cc_legacyOpen", legacyOpen ? "1" : "0"); } catch (e) {}
+  buildList();
+};
+$("runSearch").oninput = e => { state.term = e.target.value; buildList(); };
+function buildRecentSelect() {
+  const sel = $("recentSelect");
+  sel.innerHTML = "";
+  sel.appendChild(new Option("Choose a complete run", ""));
+  let og = null, last = "";
+  completeIds().forEach(id => {
+    const i = runInfo(id), h = groupHeading(i);
+    if (h !== last) { og = document.createElement("optgroup"); og.label = h; sel.appendChild(og); last = h; }
+    og.appendChild(new Option(i.label, id));
   });
+  sel.value = A.id && recent3D[A.id] ? A.id : "";
+}
+$("recentSelect").onchange = () => { const id = $("recentSelect").value; if (id) openRun(id); };
+function openRun(id) {
+  stop();
+  const keepTime = A.loaded && A.times.length ? A.times[A.curTarget ?? A.cur] : undefined;
+  loadRun(A, id, { time: keepTime });
+  updateUrl(id, B && B.id && $("cmpOn").checked ? B.id : null);
+  if (innerWidth < 850) setSide(true);
+}
+function updateUrl(a, b) {
+  try { history.replaceState(null, "", "?run=" + encodeURIComponent(a) + (b ? "&vs=" + encodeURIComponent(b) : "")); } catch (e) {}
 }
 
 // ---------------------------------------------------------------- compare
-const cmpOn = document.getElementById("cmpOn");
-const cmpSel = document.getElementById("cmpSel");
+const cmpOn = $("cmpOn"), cmpSel = $("cmpSel");
+function defaultCompare() {
+  const list = completeIds(), a = runInfo(A.id);
+  if (a) {
+    const same = list.filter(id => id !== A.id && runInfo(id).group === a.group && runInfo(id).lvl === a.lvl);
+    if (same.length) { const k = list.indexOf(A.id); return same.find(id => list.indexOf(id) > k) || same[0]; }
+  }
+  return list.find(id => id !== A.id) || ids.find(id => id !== A.id) || A.id;
+}
+function ensureB() {
+  if (B) return;
+  const pane = document.createElement("div"); pane.className = "pane"; pane.id = "paneB";
+  pane.innerHTML = '<canvas class="view" id="cvB" role="img" aria-label="3D density surfaces of the second run"></canvas>' +
+    '<div class="ptitle" id="titleB"></div><div class="legend" id="legendB" hidden></div>';
+  $("wrap").appendChild(pane);
+  B = makePane($("cvB"), $("titleB"), $("legendB"));
+  B.cam.position.copy(A.cam.position); B.cam.up.copy(A.cam.up); B.ctrl.target.copy(A.ctrl.target);
+  paneObserver.observe(pane);
+}
 cmpOn.onchange = () => {
   cmpSel.disabled = !cmpOn.checked;
-  const wrap = document.getElementById("wrap");
+  const wrap = $("wrap");
   if (cmpOn.checked) {
-    if (!B) {
-      const pane = document.createElement("div"); pane.className = "pane"; pane.id = "paneB";
-      pane.innerHTML = '<canvas class="view" id="cvB"></canvas><div class="ptitle" id="titleB">…</div>';
-      wrap.appendChild(pane);
-      B = makePane(document.getElementById("cvB"));
-    }
-    document.getElementById("paneB").style.display = "";
+    ensureB();
+    $("paneB").hidden = false;
     wrap.classList.add("split");
-    const pick = cmpSel.value || (visibleIds().find(i => i !== A.id) || A.id);
+    const pick = (cmpSel.dataset.chosen && cmpSel.value && ids.includes(cmpSel.value)) ? cmpSel.value : defaultCompare();
+    if (![...cmpSel.options].some(o => o.value === pick)) cmpSel.appendChild(new Option(runInfo(pick).label, pick));
     cmpSel.value = pick;
-    loadRun(B, pick, document.getElementById("titleB"));
+    stop(); loadRun(B, pick);
+    A.userMoved = false; A.fitted = false;
   } else {
     wrap.classList.remove("split");
-    if (B) { document.getElementById("paneB").style.display = "none"; clearPane(B); B.id = null; }
-    diagB = null; drawChart(); updateHud();
+    if (B) { $("paneB").hidden = true; clearPane(B); B.id = null; B.legendEl.hidden = true; }
+    A.userMoved = false; A.fitted = false;
+    drawChart(); updateHud(); buildShellToggles();
   }
+  updateUrl(A.id, cmpOn.checked && B ? B.id : null);
+  scheduleLayout();
 };
-cmpSel.onchange = () => { if (cmpOn.checked && B) { stop(); loadRun(B, cmpSel.value, document.getElementById("titleB")); } };
+cmpSel.onchange = () => { cmpSel.dataset.chosen = "1"; if (cmpOn.checked && B && cmpSel.value) { stop(); loadRun(B, cmpSel.value); updateUrl(A.id, cmpSel.value); } };
 
-// ------------------------------------------------------------- diagnostics
-let diagA = null, diagB = null;
-async function loadDiag(id, slot) {
-  let d = null;
-  if(recent3D[id]) {
-    const pane=slot===0?A:B; d=pane?.dense?.index?.diagnostics;
-    if(!validDiagnostics(d))d=null;
-    if(slot===0)diagA=d;else diagB=d;drawChart();return;
-  }
-  try {
-    const r = await fetch("data/diag_v2_" + id + ".json", { cache: "no-store" });
-    if (r.ok) {
-      const candidate = await r.json();
-      if (validDiagnostics(candidate)) d = candidate;
-    }
-  } catch (e) {}
-  if (slot === 0) diagA = d; else diagB = d;
-  drawChart();
-}
+// ------------------------------------------------------------- dense mass
 function validDiagnostics(d) {
   if (!d || d.schema_version !== 2 || !Array.isArray(d.series) || d.series.length < 2) return false;
   return Math.abs(d.series[0].t_over_tcc) < 1e-10 &&
     Math.abs(d.series[0].dense_mass_over_initial_dense_mass - 1) < 1e-10 &&
-    d.series.every((r,i) => Number.isFinite(r.t_over_tcc) &&
+    d.series.every((r, i) => Number.isFinite(r.t_over_tcc) &&
       Number.isFinite(r.dense_mass_over_initial_dense_mass) && r.dense_mass_over_initial_dense_mass >= 0 &&
       (i === 0 || r.t_over_tcc > d.series[i-1].t_over_tcc));
 }
 function drawChart() {
-  const cv = document.getElementById("chart"), ctx = cv.getContext("2d");
-  const W = cv.width, H = cv.height;
-  const values = [diagA,diagB].filter(Boolean).flatMap(d => d.series);
-  const xmax = Math.max(5,...values.map(r => r.t_over_tcc));
-  const ymax = Math.max(1,...values.map(r => r.dense_mass_over_initial_dense_mass));
+  const card = $("chartcard");
+  const sets = [[A, "#e5ba83", false], [B, "#8fb8ff", true]].filter(([p]) => p && p.id && p.diag);
+  const show = sets.length > 0;
+  if (card.hidden === show) { card.hidden = !show; scheduleLayout(); }
+  if (!show) return;
+  const cv = $("chart"), ctx = cv.getContext("2d");
+  const W = cv.width, H = cv.height, L = 58, R = 18, T = 12, Bm = 76;
+  const values = sets.flatMap(([p]) => p.diag.series);
+  const xmax = Math.max(5, ...values.map(r => r.t_over_tcc));
+  const ymax = Math.max(1, ...values.map(r => r.dense_mass_over_initial_dense_mass));
+  const X = t => L + (W - L - R) * Math.min(Math.max(t / xmax, 0), 1);
+  const Y = v => T + (H - T - Bm) * (1 - v / ymax);
   ctx.clearRect(0, 0, W, H);
-  ctx.strokeStyle = "rgba(255,255,255,.15)"; ctx.lineWidth = 1;
-  ctx.strokeRect(40, 8, W - 52, H - 42);
-  ctx.fillStyle = "#98a2bb"; ctx.font = "20px sans-serif";
-  ctx.fillText("0", 24, H - 30); ctx.fillText(ymax.toFixed(2), 1, 24);
-  ctx.fillText("0", 38, H - 12); ctx.fillText(xmax.toFixed(1)+" t_cc", W - 95, H - 12);
-  const X = t => 40 + (W - 52) * Math.min(Math.max(t / xmax, 0), 1);
-  const Y = v => 8 + (H - 50) * (1 - v / ymax);
-  function line(d, color, dash) {
-    if (!d || !d.series || !d.series.length) return;
-    ctx.strokeStyle = color; ctx.lineWidth = 3; ctx.setLineDash(dash ? [8, 6] : []);
+  ctx.strokeStyle = "rgba(255,255,255,.16)"; ctx.lineWidth = 1.5;
+  ctx.strokeRect(L, T, W - L - R, H - T - Bm);
+  ctx.fillStyle = "#9baab9"; ctx.font = "22px 'Segoe UI', system-ui, sans-serif";
+  ctx.textAlign = "right"; ctx.textBaseline = "middle";
+  for (const v of [0, 0.5, 1]) { ctx.fillText(String(v), L - 8, Y(v)); }
+  ctx.textAlign = "center"; ctx.textBaseline = "top";
+  for (let t = 0; t <= Math.floor(xmax); t++) ctx.fillText(String(t), X(t), H - Bm + 8);
+  // axis label "t / t_cc" with a real subscript, centred under the ticks
+  ctx.textAlign = "left";
+  const lab = "t / t", wl = ctx.measureText(lab).width;
+  ctx.font = "16px 'Segoe UI', system-ui, sans-serif";
+  const ws = ctx.measureText("cc").width, x0 = L + (W - L - R - wl - ws - 2) / 2;
+  ctx.font = "22px 'Segoe UI', system-ui, sans-serif"; ctx.fillText(lab, x0, H - 34);
+  ctx.font = "16px 'Segoe UI', system-ui, sans-serif"; ctx.fillText("cc", x0 + wl + 2, H - 26);
+  for (const [p, color, dashed] of sets) {
+    ctx.strokeStyle = color; ctx.lineWidth = 3.5; ctx.setLineDash(dashed ? [10, 7] : []);
     ctx.beginPath();
-    d.series.forEach((r, i) => { const x = X(r.t_over_tcc), y = Y(r.dense_mass_over_initial_dense_mass); i ? ctx.lineTo(x, y) : ctx.moveTo(x, y); });
+    p.diag.series.forEach((r, i) => { const x = X(r.t_over_tcc), y = Y(r.dense_mass_over_initial_dense_mass); i ? ctx.lineTo(x, y) : ctx.moveTo(x, y); });
     ctx.stroke(); ctx.setLineDash([]);
   }
-  line(diagA, "#6ea8ff", false);
-  line(diagB, "#ffb46e", true);
-  const t = parseFloat(A.times[A.cur]);
-  if (isFinite(t)) {
-    ctx.strokeStyle = "rgba(255,255,255,.45)"; ctx.lineWidth = 1.5;
-    ctx.beginPath(); ctx.moveTo(X(t), 8); ctx.lineTo(X(t), H - 34); ctx.stroke();
+  const t = A.times.length ? A.times[A.cur] : NaN;
+  if (Number.isFinite(t)) {
+    ctx.strokeStyle = "rgba(255,255,255,.5)"; ctx.lineWidth = 2;
+    ctx.beginPath(); ctx.moveTo(X(t), T); ctx.lineTo(X(t), H - Bm); ctx.stroke();
   }
-  const note = document.getElementById("chartnote");
-  if (!diagA && !diagB) note.textContent = "Historical mass curves withheld: corrected native data analysis is not available for this run. The 3D frames remain accessible.";
-  else note.innerHTML = (diagA ? "<span class='sw' style='background:#6ea8ff'></span>" + (A.id||"") + " " : "")
-                      + (diagB ? "&nbsp;<span class='sw' style='background:#ffb46e'></span>" + (B && B.id || "") : "");
+  $("chartnote").innerHTML = "Dense mass relative to t = 0.<br>" + sets.map(([p, color, dashed]) =>
+    "<span class='sw" + (dashed ? " dash" : "") + "'" + (dashed ? "" : " style='background:" + color + "'") + "></span>" + esc(runInfo(p.id).label)).join("<br>");
 }
 
 // ---------------------------------------------------------------- playback
 let timer = null;
-const playBtn = document.getElementById("play");
-function stop() { [A,B].forEach(p=>finishFade(p)); if (timer) { clearInterval(timer); timer = null; playBtn.innerHTML = "&#9654;"; } }
+const playBtn = $("play");
+function playInterval() {
+  const n = Math.max(A.frames.length, 1);
+  return Math.min(300, Math.max(90, 12000 / n)) / Number($("playSpeed").value || 1);
+}
+function stop() {
+  [A, B].forEach(p => finishFade(p));
+  if (timer) { clearInterval(timer); timer = null; }
+  playBtn.innerHTML = "&#9654;"; playBtn.setAttribute("aria-label", "Play");
+}
 playBtn.onclick = () => {
   if (timer) return stop();
-  playBtn.innerHTML = "&#10074;&#10074;";
+  if (!A.loaded) return;
+  playBtn.innerHTML = "&#10074;&#10074;"; playBtn.setAttribute("aria-label", "Pause");
   timer = setInterval(() => {
-    const cur = (A.curTarget !== undefined) ? A.curTarget : A.cur;
+    const cur = A.curTarget ?? A.cur;
     const next = (cur + 1) % Math.max(A.frames.length, 1);
     // streaming panes only advance onto frames that are ready, so playback
     // never outruns the network; the fetch is kicked regardless
     if (A.dense && !A.dense.cache.has(next)) { denseFetch(A, next).catch(() => {}); return; }
     setFrameAll(next);
-  }, (recent3D[A.id] ? 280 : 90)/Number(document.getElementById("playSpeed").value));
+  }, playInterval());
 };
-document.getElementById("playSpeed").onchange=()=>{if(timer){stop();playBtn.click();}};
-document.addEventListener("visibilitychange",()=>{if(document.hidden&&!capturing)stop();});
-const curT = () => (A.curTarget !== undefined) ? A.curTarget : A.cur;
-document.getElementById("prev").onclick = () => { stop(); setFrameAll(curT() - 1); };
-document.getElementById("next").onclick = () => { stop(); setFrameAll(curT() + 1); };
-document.getElementById("slider").oninput = e => { stop(); setFrameAll(+e.target.value); };
+$("playSpeed").onchange = () => { if (timer) { stop(); playBtn.click(); } };
+document.addEventListener("visibilitychange", () => { if (document.hidden && !capturing) stop(); });
+const curT = () => A.curTarget ?? A.cur;
+$("prev").onclick = () => { stop(); setFrameAll(curT() - 1); };
+$("next").onclick = () => { stop(); setFrameAll(curT() + 1); };
+$("slider").oninput = e => { stop(); setFrameAll(+e.target.value); };
 addEventListener("keydown", e => {
-  if(capturing||/INPUT|SELECT|TEXTAREA|BUTTON/.test(e.target.tagName))return;
-  if (e.key === " ") { e.preventDefault(); playBtn.click(); }
+  const tag = e.target.tagName || "";
+  if (capturing || e.ctrlKey || e.metaKey || e.altKey || /^(INPUT|SELECT|TEXTAREA)$/.test(tag)) return;
+  if (e.key === " ") { if (/^(BUTTON|A|SUMMARY)$/.test(tag)) return; e.preventDefault(); playBtn.click(); }
   if (e.key === "ArrowLeft") { stop(); setFrameAll(curT() - 1); }
   if (e.key === "ArrowRight") { stop(); setFrameAll(curT() + 1); }
 });
-document.getElementById("qShadow").onchange = e => {
-  [A, B].forEach(p => { if (p) p.ren.shadowMap.enabled = e.target.checked; });
-};
-document.getElementById("qBox").onchange = e => { [A, B].forEach(p => { if (p) p.boxG.visible = e.target.checked; }); };
+$("qShadow").onchange = e => { [A, B].forEach(p => { if (p) p.ren.shadowMap.enabled = e.target.checked; }); };
+$("qBox").onchange = e => { [A, B].forEach(p => { if (p) p.boxG.visible = e.target.checked; }); };
 let spin = false;
-document.getElementById("qSpin").onchange = e => { spin = e.target.checked; };
-qScale.onchange = () => { [A, B].forEach(p => { if (p) { p.lastW = 0; } }); };
+$("qSpin").onchange = e => { spin = e.target.checked; };
+qScale.onchange = () => { [A, B].forEach(p => { if (p) p.lastW = 0; }); };
+$("legendOn").onchange = () => { try { localStorage.setItem("cc_legend", $("legendOn").checked ? "1" : "0"); } catch (e) {} [A, B].forEach(p => { if (p) p.legendKey = ""; }); };
+try { if (localStorage.getItem("cc_legend") === "0") $("legendOn").checked = false; } catch (e) {}
 
-// -------------------------------------------------------------- main loop
-function fitPane(p) {
-  const center=new THREE.Vector3(7,0,0),direction=p.cam.position.clone().sub(p.ctrl.target).normalize();
-  const vertical=THREE.MathUtils.degToRad(p.cam.fov/2),half=Math.atan(Math.tan(vertical)*Math.min(1,p.cam.aspect));
-  const distance=13/Math.sin(half);
-  p.ctrl.target.copy(center);p.cam.position.copy(center).addScaledVector(direction,distance);
-  p.scene.fog.near=distance+8;p.scene.fog.far=distance+70;p.ctrl.update();
+// ------------------------------------------------- layout and camera fit
+// Each pane keeps a free area that no floating card covers. The camera
+// centre sits in the middle of that area and "Fit view" frames the box in it.
+const OVERLAYS = ["side", "sideShow", "captureTools", "hud", "bar", "chartcard"];
+function visibleRect(el) {
+  if (!el || el.hidden) return null;
+  const cs = getComputedStyle(el);
+  if (cs.display === "none" || cs.visibility === "hidden") return null;
+  const r = el.getBoundingClientRect();
+  return (r.width > 0 && r.height > 0) ? r : null;
 }
+function computeLayout() {
+  const narrow = innerWidth < 850;
+  const rects = OVERLAYS.filter(id => !(narrow && id === "side")).map(id => visibleRect($(id))).filter(Boolean)
+    .sort((a, b) => b.width * b.height - a.width * a.height);
+  for (const p of [A, B]) {
+    if (!p || !p.cv.offsetParent) continue;
+    const pr = p.cv.parentElement.getBoundingClientRect();
+    let f = { l: pr.left, t: pr.top, r: pr.right, b: pr.bottom };
+    const score = q => { const w = q.r - q.l, h = q.b - q.t; return (w <= 0 || h <= 0) ? -1 : Math.min(w / 1.8, h); };
+    for (const o of rects) {
+      const pad = 8, R = { l: o.left - pad, t: o.top - pad, r: o.right + pad, b: o.bottom + pad };
+      if (R.r <= f.l || R.l >= f.r || R.b <= f.t || R.t >= f.b) continue;
+      // cut the side that keeps the most area, unless that costs more than
+      // 15 percent of the size the box could be drawn at
+      const cands = [{ ...f, l: Math.max(f.l, R.r) }, { ...f, r: Math.min(f.r, R.l) }, { ...f, t: Math.max(f.t, R.b) }, { ...f, b: Math.min(f.b, R.t) }];
+      const top = Math.max(...cands.map(score));
+      let best = null, area = -1;
+      for (const q of cands) { const a = (q.r - q.l) * (q.b - q.t); if (score(q) >= 0.85 * top && a > area) { area = a; best = q; } }
+      if (best && top > 40) f = best;
+    }
+    p.free = { x: f.l - pr.left, y: f.t - pr.top, w: f.r - f.l, h: f.b - f.t };
+    const t = p.titleEl;
+    t.style.left = (p.free.x + p.free.w / 2) + "px";
+    t.style.top = (p.free.y + 4) + "px";
+    t.style.maxWidth = Math.max(160, p.free.w - 16) + "px";
+    const th = t.offsetHeight || 30;
+    let v = { x: p.free.x + 8, y: p.free.y + th + 14, w: p.free.w - 16, h: p.free.h - th - 22 };
+    if (v.w < 80 || v.h < 80) v = { ...p.free };
+    p.view = v;
+    placeLegend(p);
+    applyViewOffset(p);
+  }
+  placeMsg();
+  if (A.loaded && (!A.fitted || !A.userMoved)) fitPanes();
+}
+function placeMsg() {
+  if (msg.hidden || !A.view) return;
+  const pr = A.cv.getBoundingClientRect();
+  msg.style.left = (pr.left + A.view.x + A.view.w / 2) + "px";
+  msg.style.top = (pr.top + A.view.y + A.view.h / 2) + "px";
+}
+let layoutQueued = false;
+function scheduleLayout() {
+  if (layoutQueued) return;
+  layoutQueued = true;
+  requestAnimationFrame(() => { layoutQueued = false; computeLayout(); });
+}
+function applyViewOffset(p) {
+  const W = p.cv.clientWidth, H = p.cv.clientHeight;
+  if (!W || !H || !p.view) return;
+  const dx = p.view.x + p.view.w / 2 - W / 2, dy = p.view.y + p.view.h / 2 - H / 2;
+  p.cam.aspect = W / H;
+  p.cam.setViewOffset(W, H, -dx, -dy, W, H);
+}
+const _m = new THREE.Matrix4(), _r = new THREE.Vector3(), _u = new THREE.Vector3(), _b = new THREE.Vector3(), _o = new THREE.Vector3();
+const CORNERS = [];
+for (const x of XL) for (const y of YL) for (const z of ZL) CORNERS.push(new THREE.Vector3(x, y, z).sub(BOX_C));
+function fitDistance(p, dir) {
+  const H = p.cv.clientHeight || 1, v = p.view || { w: p.cv.clientWidth || 1, h: H };
+  return fitDistanceRect(p.cam.fov, p.cam.up, dir, v.w, v.h, H);
+}
+// camera distance that frames the box in a vw x vh area of a picture H high
+function fitDistanceRect(fov, up, dir, vw, vh, H) {
+  const tanV = Math.tan(THREE.MathUtils.degToRad(fov / 2));
+  const tx = tanV * vw / H * 0.94, ty = tanV * vh / H * 0.94;
+  _m.lookAt(dir, _o.set(0, 0, 0), up); _m.extractBasis(_r, _u, _b);
+  let d = 1;
+  for (const c of CORNERS) {
+    const x = c.dot(_r), y = c.dot(_u), z = c.dot(_b);
+    d = Math.max(d, Math.abs(x) / tx + z, Math.abs(y) / ty + z);
+  }
+  return d;
+}
+function fitPanes() {
+  const ps = [A, B].filter(p => p && p.id && p.cv.offsetParent && p.view);
+  if (!ps.length) return;
+  const linked = $("cmpLink").checked && ps.length > 1;
+  const dirs = ps.map(p => { const d = p.cam.position.clone().sub(p.ctrl.target); return d.lengthSq() > 1e-9 ? d.normalize() : new THREE.Vector3(0, -1, 0.5).normalize(); });
+  const dists = ps.map((p, i) => fitDistance(p, dirs[i]));
+  ps.forEach((p, i) => {
+    const d = linked ? Math.max(...dists) : dists[i];
+    p.ctrl.target.copy(BOX_C);
+    p.cam.position.copy(BOX_C).addScaledVector(dirs[i], d);
+    p.cam.lookAt(BOX_C); p.ctrl.update();
+    p.userMoved = false; p.fitted = true;
+  });
+}
+const PRESETS = { perspective: { dir: [16, -24, 17], up: [0, 0, 1] }, edge: { dir: [0, 0, 1], up: [0, 1, 0] }, face: { dir: [-1, 0, 0], up: [0, 0, 1] } };
+document.querySelectorAll("[data-view]").forEach(b => b.onclick = () => {
+  spin = false; $("qSpin").checked = false;
+  const pr = PRESETS[b.dataset.view];
+  for (const p of [A, B]) if (p) {
+    p.cam.up.set(...pr.up);
+    p.ctrl.target.copy(BOX_C);
+    p.cam.position.copy(BOX_C).add(new THREE.Vector3(...pr.dir).normalize());
+  }
+  fitPanes();
+});
+$("fitView").onclick = () => fitPanes();
 function resizePane(p) {
   const w = p.cv.clientWidth, h = p.cv.clientHeight;
-  if (w === p.lastW && h === p.lastH) return;
+  if (w === p.lastW && h === p.lastH) return false;
   p.lastW = w; p.lastH = h;
   const dpr = Math.min(+qScale.value || 2, window.devicePixelRatio || 1, 3);
   p.ren.setPixelRatio(dpr); p.ren.setSize(w, h, false);
   p.cam.aspect = w / Math.max(h, 1); p.cam.updateProjectionMatrix();
-  if(!p.initialFit){p.initialFit=true;if(w<600)fitPane(p);}
+  return true;
+}
+const paneObserver = new ResizeObserver(() => scheduleLayout());
+paneObserver.observe($("paneA"));
+OVERLAYS.forEach(id => { const el = $(id); if (el) paneObserver.observe(el); });
+addEventListener("resize", scheduleLayout);
+
+// ------------------------------------------------------------- legend
+const _v0 = new THREE.Vector3(), _v1 = new THREE.Vector3(), _fw = new THREE.Vector3(), XHAT = new THREE.Vector3(1, 0, 0);
+function legendModel(p, cam, target, W, H, maxPx) {
+  cam.updateMatrixWorld();
+  _v0.copy(target).project(cam); _v1.copy(target).add(XHAT).project(cam);
+  const dx = (_v1.x - _v0.x) * W / 2, dy = -(_v1.y - _v0.y) * H / 2;
+  const dist = Math.max(1e-6, cam.position.distanceTo(target));
+  const ppr = (H / 2) / (Math.tan(THREE.MathUtils.degToRad(cam.fov / 2)) * dist) * (cam.zoom || 1);
+  let wind;
+  if (Math.hypot(dx, dy) < 0.35 * ppr) { cam.getWorldDirection(_fw); wind = { mode: _fw.x > 0 ? "in" : "out", angle: 0 }; }
+  else wind = { mode: "arrow", angle: Math.atan2(dy, dx) };
+  let L = 0.5;
+  for (const s of [0.5, 1, 2, 5, 10, 20]) if (s * ppr <= maxPx) L = s;
+  return { wind, scale: { L, px: L * ppr } };
+}
+function windSVG(w) {
+  if (w.mode === "in") return "<svg viewBox='-8 -8 16 16' aria-hidden='true'><circle r='7'/><path d='M-4 -4L4 4M4 -4L-4 4'/></svg>";
+  if (w.mode === "out") return "<svg viewBox='-8 -8 16 16' aria-hidden='true'><circle r='7'/><circle class='fill' r='2.2'/></svg>";
+  const deg = (w.angle * 180 / Math.PI).toFixed(0);
+  return "<svg viewBox='-8 -8 16 16' aria-hidden='true'><g transform='rotate(" + deg + ")'><path d='M-7 0H6'/><path d='M2 -4L7 0L2 4'/></g></svg>";
+}
+function updateLegend(p) {
+  const el = p.legendEl;
+  const on = $("legendOn").checked && p.id && p.loaded && p.shellInfo.length && p.view && innerHeight > 360;
+  if (!on) { if (!el.hidden) el.hidden = true; p.legendKey = ""; return; }
+  const m = legendModel(p, p.cam, p.ctrl.target, p.cv.clientWidth, p.cv.clientHeight, innerWidth < 850 ? 70 : 110);
+  const chi = runInfo(p.id).chi;
+  const key = p.shellInfo.map((s, i) => s.level + (shellOn[i] === false ? "x" : "")).join() + "|" + chi + "|" + m.wind.mode + Math.round(m.wind.angle * 90 / Math.PI) + "|" + m.scale.L + ":" + Math.round(m.scale.px);
+  if (key === p.legendKey && !el.hidden) return;
+  p.legendKey = key;
+  el.innerHTML = p.shellInfo.map((s, i) => "<div class='lr" + (shellOn[i] === false ? " off" : "") + "'><span class='sw' style='background:" + cssColor(s.color) + "'></span><span>" + densityHTML(s.level, chi) + "</span></div>").join("") +
+    "<div class='lr'>" + windSVG(m.wind) + "<span>wind" + (m.wind.mode === "in" ? " into the screen" : m.wind.mode === "out" ? " out of the screen" : "") + "</span></div>" +
+    "<div class='lr'><span class='scale' style='width:" + Math.round(m.scale.px) + "px'></span><span>" + m.scale.L + " R<sub>cl</sub></span></div>";
+  el.hidden = false;
+  placeLegend(p);
+}
+// the legend sits in the lower left corner of the pane, just above whatever
+// card is below it there
+function placeLegend(p) {
+  const el = p.legendEl;
+  if (el.hidden || !p.free) return;
+  const pr = p.cv.parentElement.getBoundingClientRect();
+  const lw = el.offsetWidth || 160, lh = el.offsetHeight || 90;
+  const x0 = pr.left + p.free.x + 4, x1 = x0 + lw;
+  let bottom = pr.bottom - 8;
+  const narrow = innerWidth < 850, freeBottom = pr.top + p.free.y + p.free.h;
+  for (const id of OVERLAYS) {
+    if (narrow && id === "side") continue;
+    const r = visibleRect($(id));
+    // cards in this column that reach below the free area
+    if (!r || r.right <= x0 || r.left >= x1 || r.bottom <= freeBottom - 2 || r.top >= pr.bottom) continue;
+    bottom = Math.min(bottom, r.top - 8);
+  }
+  const top = Math.max(pr.top + p.free.y + 4, bottom - lh);
+  const left = Math.round(x0 - pr.left) + "px", topPx = Math.round(top - pr.top) + "px";
+  if (el.style.left !== left) el.style.left = left;
+  if (el.style.top !== topPx) el.style.top = topPx;
+  el.style.bottom = "auto";
+}
+
+// -------------------------------------------------------------- main loop
+function updateFog(p) {
+  const d = p.cam.position.distanceTo(p.ctrl.target);
+  p.scene.fog.near = d + 6; p.scene.fog.far = d + 70;
 }
 let fCount = 0, fLast = performance.now();
 function loop(now) {
   requestAnimationFrame(loop);
-  const link = document.getElementById("cmpLink").checked;
-  [A, B].forEach(p => {
-    if (!p || !p.cv.offsetParent) return;
-    resizePane(p);advanceFade(p,now);
-    p.ctrl.autoRotate = spin; p.ctrl.autoRotateSpeed = 0.8;
+  const link = $("cmpLink").checked;
+  let resized = false;
+  for (const p of [A, B]) {
+    if (!p || !p.cv.offsetParent) continue;
+    if (resizePane(p)) resized = true;
+    advanceFade(p, now);
+    p.ctrl.autoRotate = spin && !capturing; p.ctrl.autoRotateSpeed = 0.8;
     p.ctrl.update();
-  });
-  if (B && link && B.cv.offsetParent) {
-    B.cam.position.copy(A.cam.position);
-    B.cam.quaternion.copy(A.cam.quaternion);
-    B.ctrl.target.copy(A.ctrl.target);
   }
-  [A, B].forEach(p => { if (p && p.cv.offsetParent) p.ren.render(p.scene, p.cam); });
+  if (resized) computeLayout();
+  if (B && B.id && link && B.cv.offsetParent) {
+    const src = lead === B ? B : A, dst = src === A ? B : A;
+    dst.cam.position.copy(src.cam.position);
+    dst.cam.quaternion.copy(src.cam.quaternion);
+    dst.cam.up.copy(src.cam.up);
+    dst.ctrl.target.copy(src.ctrl.target);
+  }
+  for (const p of [A, B]) {
+    if (!p || !p.cv.offsetParent) continue;
+    updateFog(p);
+    p.ren.render(p.scene, p.cam);
+    updateLegend(p);
+  }
   fCount++;
   if (now - fLast >= 500) {
-    document.getElementById("fps").textContent = Math.round(fCount * 1000 / (now - fLast));
+    $("fps").textContent = Math.round(fCount * 1000 / (now - fLast));
     fCount = 0; fLast = now;
   }
 }
 requestAnimationFrame(loop);
 
-// New-run access, camera presets and local-only capture. Raw output is never altered.
-document.getElementById('smoothTime3d').checked=!matchMedia('(prefers-reduced-motion: reduce)').matches;
-document.getElementById('smoothTime3d').onchange=()=>[A,B].forEach(p=>finishFade(p));
-const recentSelect=document.getElementById('recentSelect');
-Object.entries(recent3D).forEach(([id,m])=>{const o=new Option(m.label,id);recentSelect.add(o);});
-recentSelect.onchange=()=>{if(!recentSelect.value)return;stop();const id=recentSelect.value;loadRun(A,id,document.getElementById('titleA'));history.replaceState(null,'','?run='+encodeURIComponent(id));document.getElementById('projectionLink').href='recent.html?run='+recent3D[id].projection_id;if(innerWidth<850)document.getElementById('sideHide').click();};
-document.getElementById('smooth3d').onchange=e=>{for(const p of [A,B])if(p){const groups=p.dense?[...p.dense.cache.values()]:p.frames;groups.forEach(g=>g.traverse(o=>{if(o.material){o.material.flatShading=!e.target.checked;o.material.needsUpdate=true;}}));}};
-document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>{
-  spin=false;document.getElementById('qSpin').checked=false;
-  for(const p of [A,B])if(p){p.ctrl.target.set(7,0,0);p.cam.up.set(0,0,1);
-    if(b.dataset.view==='face')p.cam.position.set(35,0,0);
-    else if(b.dataset.view==='edge'){p.cam.up.set(0,1,0);p.cam.position.set(7,0,29);}
-    else p.cam.position.set(23,-24,17);
-    p.cam.lookAt(p.ctrl.target);p.ctrl.update();
-  }
-});
-const captureStatus=document.getElementById('captureStatus');let capturing=false;
-function captureDownload(blob,name){const u=URL.createObjectURL(blob),a=document.createElement('a');a.href=u;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),60000);}
-function captureRig(){const cv=document.createElement('canvas');cv.width=1920;cv.height=1080;const c=cv.getContext('2d');const ren=new THREE.WebGLRenderer({antialias:true,preserveDrawingBuffer:true});ren.setPixelRatio(1);ren.setClearColor(0x0a0d16,1);ren.toneMapping=THREE.ACESFilmicToneMapping;ren.shadowMap.enabled=document.getElementById('qShadow').checked;ren.shadowMap.type=THREE.PCFSoftShadowMap;
- return {canvas:cv,ren,draw(angle=0,mode='Saved density isosurfaces'){
-  const panes=[A,...(B&&B.id&&document.getElementById('cmpOn').checked?[B]:[])],w=cv.width/panes.length;
-  c.fillStyle='#0a0d16';c.fillRect(0,0,cv.width,cv.height);
-  panes.forEach((p,i)=>{const cam=p.cam.clone();cam.aspect=w/1000;cam.updateProjectionMatrix();if(angle){cam.position.sub(p.ctrl.target).applyAxisAngle(cam.up.clone().normalize(),angle).add(p.ctrl.target);cam.lookAt(p.ctrl.target);}ren.setSize(w,1000,false);ren.render(p.scene,cam);c.drawImage(ren.domElement,i*w,45);c.fillStyle='#edf2fb';c.font='23px system-ui';c.fillText((recent3D[p.id]?.label||meta(p.id).code)+(p.fade?' · blend → t/tcc = ':' · t/tcc = ')+Number(p.times[p.cur]).toFixed(3),i*w+22,32);});
-  c.font='18px system-ui';c.fillStyle='#abb8cf';c.fillText(mode+' · Cloud Crushing Studio · Kaan Boge',22,1068);
- },dispose(){ren.dispose();ren.forceContextLoss();}};}
-async function waitFrame(p,i){if(p.dense){await denseShow(p,i);if(p.frameError||p.cur!==i)throw new Error('A saved frame could not load');}else setFrame(p,i);}
-async function capture3d(kind){if(capturing)return;if(!A.frames.length||[A,...(B&&B.id?[B]:[])].some(p=>p.dense&&(!p.dense.shown||p.frameError||p.cur!==p.curTarget))){captureStatus.textContent='Wait for the selected saved frame to finish loading.';return;}capturing=true;stop();let rig,rec,stream;const saved=[...document.querySelectorAll('button,select,input')].map(e=>[e,e.disabled]);saved.forEach(([e])=>e.disabled=true);[A,B].forEach(p=>{if(p)p.ctrl.enabled=false;});
- try{rig=captureRig();rig.draw();const name=(A.id||'cloud')+(B&&B.id?'_vs_'+B.id:'');
-  if(kind==='png'){const blob=await new Promise(r=>rig.canvas.toBlob(r,'image/png'));if(!blob)throw new Error('PNG encoding failed');captureDownload(blob,name+'-3d.png');captureStatus.textContent='1920 × 1080 PNG saved.';return;}
-  const mime=['video/mp4','video/webm;codecs=vp9','video/webm;codecs=vp8'].find(t=>window.MediaRecorder&&MediaRecorder.isTypeSupported(t));if(!mime)throw new Error('This browser does not support video recording');
-  if(kind==='evolution'){A.curTarget=0;await waitFrame(A,0);if(B&&B.id){B.curTarget=0;await waitFrame(B,0);}rig.draw(0,'Saved time sequence · no interpolated fluid motion');}
-  stream=rig.canvas.captureStream(60);rec=new MediaRecorder(stream,{mimeType:mime,videoBitsPerSecond:12000000});const chunks=[];rec.ondataavailable=e=>{if(e.data.size)chunks.push(e.data);};const done=new Promise((r,j)=>{rec.onstop=r;rec.onerror=e=>j(e.error||new Error('Video encoding failed'));});rec.start();
-  if(kind==='orbit'){const start=performance.now();while(performance.now()-start<10000){rig.draw((performance.now()-start)/10000*Math.PI*2,'Camera orbit · one real saved state');captureStatus.textContent='Recording 10-second camera orbit…';await new Promise(requestAnimationFrame);}}
-  else {for(let i=0;i<A.frames.length;i++){[A,B].forEach(p=>{if(p)p.captureFade=i>0;});A.curTarget=i;await waitFrame(A,i);if(B&&B.id&&B.frames.length){const t=Number(A.times[i]);let bi=0;B.times.forEach((bt,k)=>{if(Math.abs(Number(bt)-t)<Math.abs(Number(B.times[bi])-t))bi=k;});B.curTarget=bi;await waitFrame(B,bi);}document.getElementById('slider').value=i;rig.draw(0,'Saved time sequence · no interpolated fluid motion');captureStatus.textContent='Recording saved frame '+(i+1)+' / '+A.frames.length+'…';await new Promise(resolve=>{const start=performance.now(),span=recent3D[A.id]?350:320;function recordStep(now){[A,B].forEach(p=>advanceFade(p,now));rig.draw(0,document.getElementById('smoothTime3d').checked?'Blended surface preview - not additional physical states':'Discrete saved states');if(now-start<span)requestAnimationFrame(recordStep);else resolve();}requestAnimationFrame(recordStep);});}}
-  rec.stop();await done;const blob=new Blob(chunks,{type:mime});if(!blob.size)throw new Error('Empty recording');captureDownload(blob,name+'-'+kind+(mime.startsWith('video/mp4')?'.mp4':'.webm'));captureStatus.textContent='Video saved.';
- }catch(e){if(rec&&rec.state!=='inactive')rec.stop();captureStatus.textContent='Capture unavailable: '+e.message;}
- finally{if(stream)stream.getTracks().forEach(t=>t.stop());if(rig)rig.dispose();saved.forEach(([e,d])=>e.disabled=d);[A,B].forEach(p=>{if(p){p.ctrl.enabled=true;p.captureFade=false;finishFade(p);}});capturing=false;}
+// ----------------------------------------------------------- side panel
+function setSide(hidden, remember = true) {
+  $("side").hidden = hidden; $("sideShow").hidden = !hidden;
+  document.body.classList.toggle("side-hidden", hidden);
+  $("sideOpen").setAttribute("aria-expanded", String(!hidden));
+  $("sideHide").setAttribute("aria-expanded", String(!hidden));
+  if (remember && innerWidth >= 850) { try { localStorage.setItem("cc_sideHidden", hidden ? "1" : "0"); } catch (e) {} }
+  scheduleLayout();
 }
-document.getElementById('fitView').onclick=()=>[A,B].forEach(p=>{if(p)fitPane(p);});
-document.getElementById('viewerShare').onclick=async()=>{const u=new URL(location);u.searchParams.set('run',A.id);if(B?.id)u.searchParams.set('vs',B.id);try{await navigator.clipboard.writeText(u.href);captureStatus.textContent='Link copied with the selected runs.';}catch{captureStatus.textContent=u.href;}};
-document.getElementById('save3d').onclick=()=>capture3d('png');document.getElementById('orbitVideo').onclick=()=>capture3d('orbit');document.getElementById('evolutionVideo').onclick=()=>capture3d('evolution');
+$("sideHide").onclick = () => { setSide(true); $("sideOpen").focus(); };
+$("sideOpen").onclick = () => { setSide(false); $("sideHide").focus(); };
+{
+  let hidden = innerWidth < 850;
+  if (!hidden) { try { hidden = localStorage.getItem("cc_sideHidden") === "1"; } catch (e) {} }
+  setSide(hidden, false);
+}
+
+// --------------------------------------------------------- other controls
+$("smoothTime3d").checked = !matchMedia("(prefers-reduced-motion: reduce)").matches;
+$("smoothTime3d").onchange = () => [A, B].forEach(p => finishFade(p));
+$("smooth3d").onchange = e => {
+  for (const p of [A, B]) if (p) {
+    const groups = p.dense ? [...p.dense.cache.values()] : p.frames;
+    groups.forEach(g => g.traverse(o => { if (o.material) { o.material.flatShading = !e.target.checked; o.material.needsUpdate = true; } }));
+  }
+};
+const captureStatus = $("captureStatus");
+let capturing = false;
+function setStatus(text) { captureStatus.textContent = text; }
+$("viewerShare").onclick = async () => {
+  if (!A.id) return;
+  const u = new URL(location.href);
+  u.search = "";
+  u.searchParams.set("run", A.id);
+  if (B && B.id && cmpOn.checked) u.searchParams.set("vs", B.id);
+  if (A.times.length) u.searchParams.set("t", tfix(A.times[A.cur]));
+  try { await navigator.clipboard.writeText(u.href); setStatus("Link copied: it opens these runs at this time."); }
+  catch (e) { setStatus(u.href); }
+};
+
+// ---------------------------------------------------------------- capture
+// Pictures at 1920 x 1080 or 3840 x 2160; films at 1920 x 1080 and 60 fps.
+// Films are encoded frame by frame with exact time stamps (H.264 in MP4)
+// where the browser offers it, so every saved state appears once and for
+// the same length of time. Otherwise the browser's own recorder is used.
+function captureDownload(blob, name) {
+  const u = URL.createObjectURL(blob), a = document.createElement("a");
+  a.href = u; a.download = name; document.body.append(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(u), 60000);
+}
+const slug = s => s.replace(/χ\s*/g, "chi").replace(/·/g, " ").replace(/[^A-Za-z0-9+.]+/g, "-").replace(/^-+|-+$/g, "");
+function captureName(panes, ext, kind) {
+  const parts = panes.map(p => slug(runInfo(p.id).label) + (kind === "png" || kind === "orbit" ? "_t" + tfix(p.times[p.cur]) : ""));
+  return "cloud-studio_" + parts.join("_vs_") + (kind === "png" ? "" : "_" + kind) + "." + ext;
+}
+const FONT = "'Segoe UI', system-ui, -apple-system, Roboto, Arial, sans-serif";
+// draws text segments, a segment with sub:true is set as a subscript
+function setRichFont(c, s, size, weight) {
+  c.font = (s.w || weight) + " " + Math.round(s.sub ? size * 0.7 : size) + "px " + FONT;
+  if ("letterSpacing" in c) c.letterSpacing = s.sub ? (size * 0.06).toFixed(1) + "px" : "0px";
+}
+function richWidth(c, segs, size, weight) {
+  let w = 0;
+  for (const s of segs) { setRichFont(c, s, size, weight); w += c.measureText(s.t).width + (s.sub ? size * 0.05 : 0); }
+  if ("letterSpacing" in c) c.letterSpacing = "0px";
+  return w;
+}
+function drawRich(c, x, y, segs, size, weight = 400, color = "#ecf1f5") {
+  for (const s of segs) {
+    setRichFont(c, s, size, weight);
+    c.fillStyle = s.color || color;
+    const gap = s.sub ? size * 0.05 : 0;
+    c.fillText(s.t, x + gap, y + (s.sub ? size * 0.22 : 0));
+    x += c.measureText(s.t).width + gap;
+  }
+  if ("letterSpacing" in c) c.letterSpacing = "0px";
+  return x;
+}
+const timeSegs = t => [{ t: "t = " + tfix(t) + " t" }, { t: "cc", sub: true }];
+// The picture keeps a content area clear of the labels at the top and the
+// legend at the bottom. While the camera is in its fitted state the box is
+// framed in that area; after the visitor turns or zooms, the area shows what
+// the free part of the screen shows.
+function captureCameras(panes, w, h) {
+  const s = h / 1080, top = 130 * s, bottom = 190 * s, mx = 60 * s;
+  const cw = w - 2 * mx, ch = h - top - bottom, dy = top + ch / 2 - h / 2;
+  const linked = $("cmpLink").checked && panes.length > 1;
+  const fitted = panes.every(p => !p.userMoved && p.ctrl.target.distanceTo(BOX_C) < 1e-6);
+  const dirs = panes.map(p => p.cam.position.clone().sub(p.ctrl.target).normalize());
+  let dists = null, ks = null;
+  if (fitted) {
+    dists = panes.map((p, i) => fitDistanceRect(p.cam.fov, p.cam.up, dirs[i], cw, ch, h));
+    if (linked) dists = dists.map(() => Math.max(...dists));
+  } else {
+    // pixels per unit of view angle tangent that map the screen view area onto the content area
+    ks = panes.map(p => {
+      const Hs = p.cv.clientHeight || h, v = p.view || { w: p.cv.clientWidth || w, h: Hs };
+      const tanV = Math.tan(THREE.MathUtils.degToRad(p.cam.fov / 2));
+      return Math.min((cw / 2) / (tanV * v.w / Hs), (ch / 2) / (tanV * v.h / Hs));
+    });
+    if (linked) ks = ks.map(() => Math.min(...ks));
+  }
+  return panes.map((p, i) => {
+    const cam = p.cam.clone();
+    cam.clearViewOffset();
+    cam.up.copy(p.cam.up);
+    if (fitted) {
+      cam.position.copy(BOX_C).addScaledVector(dirs[i], dists[i]);
+      cam.lookAt(BOX_C);
+    } else {
+      cam.fov = THREE.MathUtils.radToDeg(2 * Math.atan((h / 2) / ks[i]));
+      cam.position.copy(p.cam.position); cam.quaternion.copy(p.cam.quaternion);
+    }
+    cam.aspect = w / h;
+    cam.setViewOffset(w, h, 0, -dy, w, h);
+    cam.updateMatrixWorld();
+    return { cam, target: fitted ? BOX_C.clone() : p.ctrl.target.clone() };
+  });
+}
+function drawCaptureLegend(c, p, cam, target, x0, w, H, s) {
+  if (!$("legendOn").checked || !p.shellInfo.length) return;
+  const chi = runInfo(p.id).chi, size = 22 * s, rowH = 34 * s, pad = 16 * s, sw = 18 * s;
+  const m = legendModel(p, cam, target, w, H, 220 * s);
+  const rows = p.shellInfo.map((sh, i) => { const d = densityParts(sh.level, chi); return { kind: "shell", color: cssColor(sh.color), off: shellOn[i] === false, segs: [{ t: "ρ = " + d.value + " ρ" }, { t: d.sub, sub: true }] }; });
+  rows.push({ kind: "wind", segs: [{ t: "wind" + (m.wind.mode === "in" ? " into the picture" : m.wind.mode === "out" ? " out of the picture" : "") }] });
+  rows.push({ kind: "scale", segs: [{ t: m.scale.L + " R" }, { t: "cl", sub: true }] });
+  const iconW = Math.max(sw, m.scale.px);
+  const textW = Math.max(...rows.map(r => richWidth(c, r.segs, size, 400)));
+  const boxW = pad * 2 + Math.max(sw + 12 * s + textW, iconW + 12 * s + richWidth(c, rows[rows.length - 1].segs, size, 400));
+  const boxH = pad * 2 + rows.length * rowH - 6 * s;
+  const bx = x0 + w - boxW - 30 * s, by = H - boxH - 30 * s;
+  c.save();
+  c.fillStyle = "rgba(11,16,23,.78)"; c.strokeStyle = "rgba(255,255,255,.14)"; c.lineWidth = Math.max(1, s);
+  c.beginPath(); c.roundRect(bx, by, boxW, boxH, 12 * s); c.fill(); c.stroke();
+  c.textBaseline = "middle";
+  rows.forEach((r, i) => {
+    const cy = by + pad + i * rowH + rowH / 2 - 3 * s;
+    let tx = bx + pad + sw + 12 * s;
+    c.globalAlpha = r.off ? 0.45 : 1;
+    c.strokeStyle = "#ecf1f5"; c.fillStyle = "#ecf1f5"; c.lineWidth = 2.2 * s; c.lineCap = "round"; c.lineJoin = "round";
+    if (r.kind === "shell") { c.fillStyle = r.color; c.fillRect(bx + pad, cy - sw / 2, sw, sw); c.strokeStyle = "rgba(255,255,255,.3)"; c.lineWidth = s; c.strokeRect(bx + pad, cy - sw / 2, sw, sw); }
+    else if (r.kind === "wind") {
+      const cx = bx + pad + sw / 2, R = sw / 2;
+      if (m.wind.mode === "arrow") {
+        const ca = Math.cos(m.wind.angle), sa = Math.sin(m.wind.angle);
+        const P = (u, v) => [cx + u * ca - v * sa, cy + u * sa + v * ca];
+        c.beginPath(); c.moveTo(...P(-R, 0)); c.lineTo(...P(R * 0.9, 0)); c.stroke();
+        c.beginPath(); c.moveTo(...P(R * 0.25, -R * 0.55)); c.lineTo(...P(R, 0)); c.lineTo(...P(R * 0.25, R * 0.55)); c.stroke();
+      } else {
+        c.beginPath(); c.arc(cx, cy, R, 0, Math.PI * 2); c.stroke();
+        if (m.wind.mode === "out") { c.beginPath(); c.arc(cx, cy, R * 0.3, 0, Math.PI * 2); c.fill(); }
+        else { c.beginPath(); c.moveTo(cx - R * 0.55, cy - R * 0.55); c.lineTo(cx + R * 0.55, cy + R * 0.55); c.moveTo(cx + R * 0.55, cy - R * 0.55); c.lineTo(cx - R * 0.55, cy + R * 0.55); c.stroke(); }
+      }
+    } else if (r.kind === "scale") {
+      const x1 = bx + pad, x2 = x1 + m.scale.px;
+      c.beginPath(); c.moveTo(x1, cy - 6 * s); c.lineTo(x1, cy + 4 * s); c.lineTo(x2, cy + 4 * s); c.lineTo(x2, cy - 6 * s); c.stroke();
+      tx = x2 + 12 * s;
+    }
+    c.globalAlpha = r.off ? 0.45 : 1;
+    drawRich(c, tx, cy, r.segs, size, 400, "#dfe6ee");
+  });
+  c.restore();
+}
+function captureRig(W, H, panes) {
+  const cv = document.createElement("canvas"); cv.width = W; cv.height = H;
+  const c = cv.getContext("2d");
+  const ren = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true });
+  ren.setPixelRatio(1); ren.setClearColor(0x0a0d16, 1); ren.toneMapping = THREE.ACESFilmicToneMapping;
+  ren.shadowMap.enabled = $("qShadow").checked; ren.shadowMap.type = THREE.PCFSoftShadowMap;
+  const w = Math.floor(W / panes.length), s = H / 1080;
+  const rigs = captureCameras(panes, w, H);
+  return {
+    canvas: cv,
+    draw(angle = 0) {
+      c.fillStyle = "#0a0d16"; c.fillRect(0, 0, W, H);
+      panes.forEach((p, i) => {
+        let cam = rigs[i].cam;
+        const target = rigs[i].target;
+        if (angle) {
+          cam = cam.clone();
+          cam.position.sub(target).applyAxisAngle(cam.up.clone().normalize(), angle).add(target);
+          cam.lookAt(target); cam.updateMatrixWorld();
+        }
+        updateFog(p);
+        ren.setSize(w, H, false); ren.render(p.scene, cam);
+        c.drawImage(ren.domElement, i * w, 0);
+        const info = runInfo(p.id), x = i * w + 36 * s;
+        c.save();
+        c.shadowColor = "rgba(0,0,0,.75)"; c.shadowBlur = 10 * s; c.textBaseline = "alphabetic";
+        drawRich(c, x, 62 * s, [{ t: info.base, w: 600 }, { t: " · χ " + info.chi + " · level " + info.lvl + (info.variant ? " · " + info.variant : ""), color: "#c9d3de" }], 32 * s);
+        drawRich(c, x, 106 * s, timeSegs(p.times[p.cur]), 30 * s, 500, "#e5ba83");
+        c.restore();
+        drawCaptureLegend(c, p, cam, target, i * w, w, H, s);
+        if (i > 0) { c.fillStyle = "rgba(255,255,255,.16)"; c.fillRect(i * w, 0, Math.max(1, Math.round(s)), H); }
+      });
+      c.save();
+      c.shadowColor = "rgba(0,0,0,.75)"; c.shadowBlur = 8 * s; c.textBaseline = "alphabetic";
+      drawRich(c, 36 * s, H - 36 * s, [{ t: "Cloud Studio", w: 600, color: "#e5ba83" }, { t: "  ·  Kaan Boge", color: "#abb8cf" }], 24 * s);
+      c.restore();
+    },
+    dispose() { ren.dispose(); ren.forceContextLoss(); }
+  };
+}
+// minimal ISO base media file (MP4) writer for one H.264 track
+function mp4Mux({ width, height, timescale, delta, samples, avcC }) {
+  const te = new TextEncoder();
+  const u32 = v => [(v >>> 24) & 255, (v >>> 16) & 255, (v >>> 8) & 255, v & 255];
+  const u16 = v => [(v >>> 8) & 255, v & 255];
+  const box = (type, ...parts) => {
+    const arrs = parts.map(p => p instanceof Uint8Array ? p : Uint8Array.from(p));
+    const size = 8 + arrs.reduce((n, a) => n + a.length, 0), out = new Uint8Array(size);
+    out.set(u32(size), 0); out.set(te.encode(type), 4);
+    let o = 8; for (const a of arrs) { out.set(a, o); o += a.length; }
+    return out;
+  };
+  const full = (type, version, flags, ...parts) => box(type, [version, (flags >> 16) & 255, (flags >> 8) & 255, flags & 255], ...parts);
+  const n = samples.length, dur = n * delta, movieDur = Math.round(dur * 1000 / timescale);
+  const matrix = [0x00010000, 0, 0, 0, 0x00010000, 0, 0, 0, 0x40000000].flatMap(u32);
+  const ftyp = box("ftyp", te.encode("isom"), u32(0x200), te.encode("isomiso2avc1mp41"));
+  const keys = []; samples.forEach((s, i) => { if (s.key) keys.push(i + 1); });
+  const sizes = new Uint8Array(n * 4); samples.forEach((s, i) => sizes.set(u32(s.data.length), i * 4));
+  const keyBytes = new Uint8Array(keys.length * 4); keys.forEach((k, i) => keyBytes.set(u32(k), i * 4));
+  const build = offset => box("moov",
+    full("mvhd", 0, 0, u32(0), u32(0), u32(1000), u32(movieDur), u32(0x00010000), u16(0x0100), u16(0), u32(0), u32(0), matrix, new Uint8Array(24), u32(2)),
+    box("trak",
+      full("tkhd", 0, 3, u32(0), u32(0), u32(1), u32(0), u32(movieDur), u32(0), u32(0), u16(0), u16(0), u16(0), u16(0), matrix, u32(width * 65536), u32(height * 65536)),
+      box("mdia",
+        full("mdhd", 0, 0, u32(0), u32(0), u32(timescale), u32(dur), u16(0x55c4), u16(0)),
+        full("hdlr", 0, 0, u32(0), te.encode("vide"), u32(0), u32(0), u32(0), te.encode("Cloud Studio\0")),
+        box("minf",
+          full("vmhd", 0, 1, u16(0), u16(0), u16(0), u16(0)),
+          box("dinf", full("dref", 0, 0, u32(1), full("url ", 0, 1))),
+          box("stbl",
+            full("stsd", 0, 0, u32(1), box("avc1", new Uint8Array(6), u16(1), u16(0), u16(0), new Uint8Array(12), u16(width), u16(height),
+              u32(0x00480000), u32(0x00480000), u32(0), u16(1), new Uint8Array(32), u16(0x18), u16(0xffff), box("avcC", avcC))),
+            full("stts", 0, 0, u32(1), u32(n), u32(delta)),
+            full("stss", 0, 0, u32(keys.length), keyBytes),
+            full("stsc", 0, 0, u32(1), u32(1), u32(n), u32(1)),
+            full("stsz", 0, 0, u32(0), u32(n), sizes),
+            full("stco", 0, 0, u32(1), u32(offset)))))));
+  const dataStart = ftyp.length + build(0).length + 8;
+  const moov = build(dataStart);
+  const total = samples.reduce((a, s) => a + s.data.length, 0);
+  const mdat = new Uint8Array(8); mdat.set(u32(total + 8), 0); mdat.set(te.encode("mdat"), 4);
+  return new Blob([ftyp, moov, mdat, ...samples.map(s => s.data)], { type: "video/mp4" });
+}
+async function h264Encoder(W, H, fps) {
+  if (!("VideoEncoder" in window) || !("VideoFrame" in window)) return null;
+  let config = null;
+  for (const codec of ["avc1.64002A", "avc1.4D402A", "avc1.42E02A"]) {
+    const c = { codec, width: W, height: H, bitrate: 12000000, framerate: fps, latencyMode: "quality", avc: { format: "avc" } };
+    try { const r = await VideoEncoder.isConfigSupported(c); if (r.supported) { config = c; break; } } catch (e) { /* next */ }
+  }
+  if (!config) return null;
+  const samples = []; let avcC = null, failure = null;
+  const enc = new VideoEncoder({
+    output: (chunk, md) => {
+      const d = md && md.decoderConfig && md.decoderConfig.description;
+      if (d && !avcC) avcC = d instanceof ArrayBuffer ? new Uint8Array(d.slice(0)) : new Uint8Array(d.buffer.slice(d.byteOffset, d.byteOffset + d.byteLength));
+      const data = new Uint8Array(chunk.byteLength); chunk.copyTo(data);
+      samples.push({ data, key: chunk.type === "key", ts: chunk.timestamp });
+    },
+    error: e => { failure = e; }
+  });
+  enc.configure(config);
+  const step = 1e6 / fps;
+  return {
+    async add(canvas, j) {
+      if (failure) throw failure;
+      const frame = new VideoFrame(canvas, { timestamp: Math.round(j * step), duration: Math.round(step) });
+      enc.encode(frame, { keyFrame: j % (fps * 2) === 0 });
+      frame.close();
+      while (enc.encodeQueueSize > 4 && !failure) await sleep(2);
+    },
+    async finish() {
+      await enc.flush(); enc.close();
+      if (failure) throw failure;
+      if (!avcC || !samples.length) throw new Error("the encoder returned no video");
+      for (let i = 1; i < samples.length; i++) if (samples[i].ts <= samples[i - 1].ts) throw new Error("the encoder reordered frames");
+      return mp4Mux({ width: W, height: H, timescale: fps * 1000, delta: 1000, samples, avcC });
+    },
+    abort() { try { enc.close(); } catch (e) { /* closed */ } }
+  };
+}
+async function recordWithRecorder(rig, plan, fps) {
+  const types = ["video/mp4;codecs=avc1.64002A", "video/mp4;codecs=avc1.4D402A", "video/mp4;codecs=avc1.42E01E", "video/mp4;codecs=avc1", "video/mp4",
+    "video/webm;codecs=vp9", "video/webm;codecs=vp8", "video/webm"];
+  const mime = window.MediaRecorder && types.find(t => MediaRecorder.isTypeSupported(t));
+  if (!mime) throw new Error("this browser cannot record video");
+  const stream = rig.canvas.captureStream(0), track = stream.getVideoTracks()[0];
+  const rec = new MediaRecorder(stream, { mimeType: mime, videoBitsPerSecond: 12000000 });
+  const chunks = []; rec.ondataavailable = e => { if (e.data.size) chunks.push(e.data); };
+  const done = new Promise((res, rej) => { rec.onstop = res; rec.onerror = e => rej(e.error || new Error("video encoding failed")); });
+  rec.start();
+  try {
+    const t0 = performance.now();
+    for (let j = 0; j < plan.count; j++) {
+      await plan.frame(j);
+      const wait = t0 + j * 1000 / fps - performance.now();
+      if (wait > 1) await sleep(wait);
+      (track.requestFrame || stream.requestFrame).call(track.requestFrame ? track : stream);
+      if (j % 30 === 0) setStatus("Recording frame " + (j + 1) + " of " + plan.count);
+    }
+    await sleep(1000 / fps + 30);
+  } finally { if (rec.state !== "inactive") rec.stop(); }
+  await done;
+  stream.getTracks().forEach(t => t.stop());
+  const type = mime.split(";")[0];
+  const blob = new Blob(chunks, { type });
+  if (!blob.size) throw new Error("the recording is empty");
+  return { blob, ext: type === "video/mp4" ? "mp4" : "webm", format: type === "video/mp4" ? "MP4" : "WebM" };
+}
+async function encodeFilm(rig, plan, fps) {
+  const enc = await h264Encoder(rig.canvas.width, rig.canvas.height, fps).catch(() => null);
+  if (enc) {
+    try {
+      plan.reset();
+      for (let j = 0; j < plan.count; j++) {
+        await plan.frame(j);
+        await enc.add(rig.canvas, j);
+        if (j % 30 === 0) setStatus("Recording frame " + (j + 1) + " of " + plan.count);
+      }
+      return { blob: await enc.finish(), ext: "mp4", format: "H.264, MP4" };
+    } catch (e) { enc.abort(); console.warn("H.264 encoding failed, using the recorder instead:", e); }
+  }
+  plan.reset();
+  return recordWithRecorder(rig, plan, fps);
+}
+// shows saved frame i at once (fetching it first); with fade the previous
+// frame stays visible for a crossfade that the film steps frame by frame
+async function showForRecord(p, i, fade) {
+  if (p.dense) {
+    const d = p.dense, grp = await denseFetch(p, i);
+    if (p.dense !== d) throw new Error("the run changed during the recording");
+    const prev = d.shown, prevIndex = p.cur;
+    finishFade(p);
+    d.token++;
+    if (prev !== grp) {
+      p.root.add(grp); grp.visible = true;
+      if (prev && fade) { prev.visible = true; fadeWeight(prev, 1); fadeWeight(grp, 0); p.fade = { from: prev, to: grp, fromIndex: prevIndex, manual: true }; }
+      else if (prev && prev.parent) p.root.remove(prev);
+    }
+    applyShellVisibility(grp);
+    d.shown = grp; p.cur = i; p.curTarget = i; p.frameError = false;
+    p.tris = (d.index.tris && d.index.tris[i]) ?? 0;
+  } else {
+    const prev = p.frames[p.cur], grp = p.frames[i];
+    finishFade(p);
+    p.cur = i; p.curTarget = i;
+    grp.visible = true; applyShellVisibility(grp);
+    if (prev && prev !== grp) {
+      if (fade) { fadeWeight(prev, 1); fadeWeight(grp, 0); p.fade = { from: prev, to: grp, manual: true }; }
+      else prev.visible = false;
+    }
+  }
+}
+function setFadeProgress(p, w) {
+  if (!p.fade || !p.fade.manual) return;
+  fadeWeight(p.fade.from, 1 - w); fadeWeight(p.fade.to, w);
+  if (w >= 1) finishFade(p);
+}
+function evolutionPlan(rig, panes, fps) {
+  const N = A.frames.length;
+  const hold = Math.min(30, Math.max(6, Math.round(fps * 20 / N)));
+  const fadeN = $("smoothTime3d").checked ? Math.max(2, Math.round(hold * 0.6)) : 0;
+  const other = panes.length > 1 ? panes[1] : null;
+  let shown = -1;
+  return {
+    count: N * hold, hold,
+    reset() { shown = -1; },
+    async frame(j) {
+      const s = Math.floor(j / hold), k = j % hold;
+      if (s !== shown) {
+        const fade = fadeN > 0 && shown >= 0;
+        await showForRecord(A, s, fade);
+        if (other) { const bi = nearestIndex(other, A.times[s]); if (bi !== other.cur || shown < 0) await showForRecord(other, bi, fade && bi !== other.cur); }
+        shown = s;
+        for (let q = 1; q <= 4 && s + q < N; q++) {
+          if (A.dense) denseFetch(A, s + q).catch(() => {});
+          if (other && other.dense) { const bq = nearestIndex(other, A.times[s + q]); if (bq >= 0) denseFetch(other, bq).catch(() => {}); }
+        }
+        updateReadouts();
+      }
+      if (fadeN) for (const p of panes) setFadeProgress(p, Math.min(1, (k + 1) / fadeN));
+      rig.draw(0);
+    }
+  };
+}
+function orbitPlan(rig, fps) {
+  const count = 10 * fps;
+  return { count, reset() {}, async frame(j) { rig.draw(2 * Math.PI * j / count); } };
+}
+async function capture3d(kind) {
+  if (capturing) return;
+  const panes = [A, ...(B && B.id && cmpOn.checked ? [B] : [])];
+  if (!A.loaded || panes.some(p => !p.loaded || frameStatus(p))) { setStatus("The frame is still loading. Try again in a moment."); return; }
+  capturing = true; stop();
+  const saved = [...document.querySelectorAll("button,select,input")].map(e => [e, e.disabled]);
+  saved.forEach(([e]) => { e.disabled = true; });
+  panes.forEach(p => { p.ctrl.enabled = false; });
+  const startFrame = A.cur;
+  let rig = null;
+  try {
+    if (kind === "png") {
+      const big = $("picSize").value === "2160", W = big ? 3840 : 1920, H = big ? 2160 : 1080;
+      rig = captureRig(W, H, panes);
+      rig.draw(0);
+      const blob = await new Promise(r => rig.canvas.toBlob(r, "image/png"));
+      if (!blob || !blob.size) throw new Error("the picture could not be encoded");
+      captureDownload(blob, captureName(panes, "png", "png"));
+      setStatus("Saved a " + W + " × " + H + " picture.");
+      return;
+    }
+    const fps = 60;
+    rig = captureRig(1920, 1080, panes);
+    const plan = kind === "orbit" ? orbitPlan(rig, fps) : evolutionPlan(rig, panes, fps);
+    setStatus("Recording frame 1 of " + plan.count);
+    const out = await encodeFilm(rig, plan, fps);
+    captureDownload(out.blob, captureName(panes, out.ext, kind));
+    setStatus("Saved a " + (plan.count / fps).toFixed(1) + " s film at 60 fps (" + out.format + ").");
+  } catch (e) {
+    setStatus("Capture stopped: " + ((e && e.message) || e));
+  } finally {
+    if (rig) rig.dispose();
+    saved.forEach(([e, d]) => { e.disabled = d; });
+    cmpSel.disabled = !cmpOn.checked;
+    panes.forEach(p => { p.ctrl.enabled = true; finishFade(p); });
+    capturing = false;
+    if (kind === "evolution") setFrameAll(startFrame);
+    updateReadouts();
+  }
+}
+$("save3d").onclick = () => capture3d("png");
+$("orbitVideo").onclick = () => capture3d("orbit");
+$("evolutionVideo").onclick = () => capture3d("evolution");
 
 // ----------------------------------------------------------------- startup
+buildChips();
 buildList();
-const q = new URLSearchParams(location.search);
-const want = q.get("run");
-const vis0 = visibleIds();
-const first = (want && ids.indexOf(want) >= 0) ? want
-            : (ids.includes("new_enzo-1000") ? "new_enzo-1000" : vis0.find(isDense) || vis0[0] || null);
-if (first && !isDense(first) && !legacyOpen) { legacyOpen = true; buildList(); }
-if (first) {
-  const b = document.querySelector('#runs button[data-id="' + CSS.escape(first) + '"], #legacyRuns button[data-id="' + CSS.escape(first) + '"]');
-  if (b) b.click(); else loadRun(A, first, document.getElementById("titleA"));
-  const vs = q.get("vs");
-  if (vs && ids.indexOf(vs) >= 0) {
-    cmpOn.checked = true; cmpOn.onchange();
-    cmpSel.value = vs; cmpSel.onchange();
+buildRecentSelect();
+(async () => {
+  const q = new URLSearchParams(location.search);
+  const resolve = id => id && (ids.includes(id) ? id : (dedupeAlias[id] && ids.includes(dedupeAlias[id]) ? dedupeAlias[id] : null));
+  const want = q.get("run"), vs = q.get("vs"), tq = q.get("t");
+  let first = resolve(want);
+  if (!first) {
+    await Promise.race([catalogReady, sleep(1500)]);
+    const complete = completeIds();
+    first = complete.find(id => runInfo(id).group === "twelve" && runInfo(id).lvl === 5) ||
+      (ids.includes("new_enzo-1000") ? "new_enzo-1000" : complete[0] || ids.find(isDense) || ids[0] || null);
   }
-} else {
-  msg.textContent = "no 3D volumes found";
-}
+  if (!first) { showMsg("No 3D runs are available."); return; }
+  if (!isDense(first) && !legacyOpen) { legacyOpen = true; buildList(); }
+  const notes = [];
+  if (want && !resolve(want)) notes.push("This link names a run the viewer does not have, so it opened " + runInfo(first).label + ".");
+  const t = tq !== null && tq !== "" && Number.isFinite(+tq) ? +tq : undefined;
+  await loadRun(A, first, { time: t });
+  const second = resolve(vs);
+  if (vs && !second) notes.push("The second run in this link is not in the viewer.");
+  if (second) {
+    cmpOn.checked = true;
+    ensureB();
+    if (![...cmpSel.options].some(o => o.value === second)) cmpSel.appendChild(new Option(runInfo(second).label, second));
+    cmpSel.value = second;
+    cmpSel.dataset.chosen = "1";
+    cmpOn.onchange();
+  }
+  if (notes.length) setStatus(notes.join(" "));
+})();
+catalogReady.then(() => {
+  buildChips(); buildList(); buildRecentSelect();
+  for (const p of [A, B]) if (p && p.id) setTitle(p);
+  syncRunControls(); updateRunNote(); drawChart();
+});
 </script>
+</body>
+</html>

@@ -16,7 +16,7 @@ import time
 import run_l4 as q
 
 r = q.r
-WORK = Path('/home/kaan/queued_20260907')
+WORK = Path('/home/user/queued_20260907')
 MANIFEST = WORK/'queue.json'
 
 
@@ -81,7 +81,7 @@ def execute():
         with (r.WORK/'production.lock').open('a') as lock:
             fcntl.flock(lock,fcntl.LOCK_EX)
             fcntl.flock(lock,fcntl.LOCK_UN)
-        old = json.loads((Path('/home/kaan/restart_20260907')/'batch.json').read_text())
+        old = json.loads((Path('/home/user/restart_20260907')/'batch.json').read_text())
         if old['status'] != 'finished_native_checks_passed':
             manifest.update(status='needs_review',error='Preceding L4 batch did not validate')
             q.save(MANIFEST,manifest)

@@ -2,7 +2,7 @@
 /
 /  INITIALIZE A CLOUD-WIND (CLOUD CRUSHING) PROBLEM
 /
-/  written by: Claude (cloud-crushing code comparison, HARP/Horizon)
+/  written by: Kaan Boge (cloud-crushing code comparison)
 /  date:       August 2026
 /
 /  PURPOSE: Mach-2 wind hitting a static, smooth-edged overdense cloud.

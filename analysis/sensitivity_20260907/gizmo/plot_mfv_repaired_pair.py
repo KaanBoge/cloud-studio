@@ -7,7 +7,7 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import numpy as np
 
-ROOT=Path('/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1')
+ROOT=Path('/home/user/sensitivity_20260907/gizmo/mfv_timestep_repair_v1')
 REPORT=ROOT/'sharp_full_native_v1/pair_validation.json'
 DEST=ROOT/'sharp_pair_plot_v1'
 

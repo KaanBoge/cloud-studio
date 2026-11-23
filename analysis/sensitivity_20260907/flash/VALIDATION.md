@@ -49,5 +49,5 @@ fresh controls and checkpoint overwriting disabled; native solver precision
 and original plot fields remain unchanged. No cooling/tracking claim follows.
 
 L5 requires additional storage; no quality/field reduction was used to bypass
-the guard. Discuss the measured sensitivity and resolution dependence with
-Ryan before deciding which historical results can be reused.
+the guard. Review the measured sensitivity and resolution dependence
+before deciding which historical results can be reused.

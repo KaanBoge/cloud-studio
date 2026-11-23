@@ -2,9 +2,9 @@ import json
 import subprocess
 from pathlib import Path
 from check_snapshot import check
-root=Path('/home/kaan/ic_audit_20260907')
+root=Path('/home/user/ic_audit_20260907')
 controls=[('apk',root/'binary_before/athenaPK','*.phdf'),
-          ('athpp',Path('/home/kaan/codes/athenapp/bin/athena_tanhvel_backup'),'*.athdf')]
+          ('athpp',Path('/home/user/codes/athenapp/bin/athena_tanhvel_backup'),'*.athdf')]
 results=[]
 for kind,binary,pattern in controls:
     run=root/'negative_controls'/kind

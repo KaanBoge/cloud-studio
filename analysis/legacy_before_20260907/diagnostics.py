@@ -53,7 +53,7 @@ except ImportError:
     print("  [params] run_params.py not importable; USING argv values "
           "chi = %g, t_cc = %.6f (UNVERIFIED)" % (CHI, TCC))
 FILES = sys.argv[5:]
-OUT = "/mnt/c/Users/kaanb/CloudCrushing/studio/data/diag_%s.json" % RID
+OUT = "/mnt/c/Users/user/CloudCrushing/studio/data/diag_%s.json" % RID
 
 rows = []
 for fn in FILES:

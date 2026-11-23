@@ -5,7 +5,7 @@ import numpy as np
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-sys.path.insert(0,'/home/kaan/sensitivity_20260907/gizmo/runner_l3_v1')
+sys.path.insert(0,'/home/user/sensitivity_20260907/gizmo/runner_l3_v1')
 from run_full_l3 import ROOT,sha,save,check_times
 
 def main():

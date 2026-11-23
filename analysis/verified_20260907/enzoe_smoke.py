@@ -6,7 +6,7 @@ from pathlib import Path
 import h5py
 import numpy as np
 
-ROOT = Path('/home/kaan/ic_audit_20260907/enzoe_tests_v2')
+ROOT = Path('/home/user/ic_audit_20260907/enzoe_tests_v2')
 VW = 2*math.sqrt(5/3)
 results=[]
 for chi in (10,100,1000):
@@ -38,7 +38,7 @@ name=["ic-%03d-p%02d.h5","count","proc"]; schedule {{ var="time"; step=0.001; }}
 '''
     (run/'cloud.in').write_text(text)
     with open(run/'run.log','x') as log:
-        rc=subprocess.run(['/home/kaan/codes/enzoe/enzo-e/build/bin/enzo-e','cloud.in','+p1'],cwd=run,stdout=log,stderr=subprocess.STDOUT,timeout=120).returncode
+        rc=subprocess.run(['/home/user/codes/enzoe/enzo-e/build/bin/enzo-e','cloud.in','+p1'],cwd=run,stdout=log,stderr=subprocess.STDOUT,timeout=120).returncode
     result={'chi':chi,'solver_returncode':rc,'outputs':[str(p) for p in run.glob('*.h5')]}
     if rc:
         result['log_tail']=(run/'run.log').read_text(errors='replace')[-1800:]

@@ -2,12 +2,12 @@
 import argparse,fcntl,hashlib,importlib.util,json,math,os,shutil,signal,subprocess,sys,time
 from pathlib import Path
 import h5py,numpy as np,psutil
-sys.path.insert(0,'/home/kaan/verified_20260907')
+sys.path.insert(0,'/home/user/verified_20260907')
 from storage_guard import storage_snapshot,require_storage,GIB
 
-ROOT=Path('/home/kaan/sensitivity_20260907/gadget4')
-STAGED=Path('/mnt/c/Users/kaanb/CloudCrushing/sensitivity_20260907/gadget4')
-NATIVE=Path('/home/kaan/codes/gadget4')
+ROOT=Path('/home/user/sensitivity_20260907/gadget4')
+STAGED=Path('/mnt/c/Users/user/CloudCrushing/sensitivity_20260907/gadget4')
+NATIVE=Path('/home/user/codes/gadget4')
 EXPECTED_BINARY='5ab857aba8cf4213fbce701ae8eaa6c449f5de43c0b9ab61722e962d88dca8d3'
 CONFIG=['PERIODIC','NTYPES=2','LONG_Y_BITS=1','LONG_Z_BITS=1','DOUBLEPRECISION=2','POSITIONS_IN_32BIT','OUTPUT_PRESSURE']
 
@@ -82,7 +82,7 @@ def prepare():
     test=subprocess.run([sys.executable,str(STAGED/'test_gadget_controls.py')],capture_output=True,text=True,check=True)
     sources={'Gadget4_pair':NATIVE/'Gadget4_3d_mixed_hfix','Config.sh':NATIVE/'Config_3d_mixed.sh',
         'generator_sharp.py':NATIVE/'ics/make_g4_cloudwind.py',
-        'generator_historical.py':Path('/mnt/c/Users/kaanb/CloudCrushing/audit_20260907/before/home/kaan/codes/gadget4/ics/make_g4_cloudwind.py'),
+        'generator_historical.py':Path('/mnt/c/Users/user/CloudCrushing/audit_20260907/before/home/user/codes/gadget4/ics/make_g4_cloudwind.py'),
         'experiment.json':STAGED/'experiment.json','gadget_controls.py':STAGED/'gadget_controls.py','test_gadget_controls.py':STAGED/'test_gadget_controls.py',
         'native_init.cc':NATIVE/'src/main/init.cc','native_init_original.cc':NATIVE/'src/main/init.cc.orig_prehsmlclamp',
         'native_run.cc':NATIVE/'src/main/run.cc','native_snap_io.cc':NATIVE/'src/io/snap_io.cc','native_snap_io.h':NATIVE/'src/io/snap_io.h',
@@ -159,7 +159,7 @@ def main():
     args=argparse.ArgumentParser();args.add_argument('action',choices=['prepare','smoke']);action=args.parse_args().action
     locks=[]
     for name in ('benchmark.lock','production.lock'):
-        handle=Path('/home/kaan/performance_20260907',name).open('a');fcntl.flock(handle,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(handle)
+        handle=Path('/home/user/performance_20260907',name).open('a');fcntl.flock(handle,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(handle)
     if action=='prepare':prepare();return
     dest=ROOT/'smoke_batch.json'
     if dest.exists():raise ValueError('Existing batch cannot be overwritten')

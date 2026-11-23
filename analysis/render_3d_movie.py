@@ -14,7 +14,7 @@ density limits used everywhere else in the project.
 Usage:
   render_3d_movie.py <kind> <chi> <tcc> <label> <outname> <dir> <glob> [stride]
     kind: apk | flash | athw
-Writes /mnt/c/Users/kaanb/CloudCrushing/results_A8/movies/<outname>.mp4
+Writes /mnt/c/Users/user/CloudCrushing/results_wind_tunnel/movies/<outname>.mp4
    and .../<outname>_slow.mp4
 """
 import glob
@@ -60,7 +60,7 @@ LIGHT = np.array([0.30, -0.80, 0.52])
 LIGHT /= np.linalg.norm(LIGHT)
 BG = np.array([1.0, 1.0, 1.0])
 
-OUTDIR = "/mnt/c/Users/kaanb/CloudCrushing/results_A8/movies"
+OUTDIR = "/mnt/c/Users/user/CloudCrushing/results_wind_tunnel/movies"
 FRAMEDIR = os.path.join(DIR, "_iso3d_frames")
 
 

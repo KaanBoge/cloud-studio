@@ -3,13 +3,13 @@ import json
 from pathlib import Path
 import subprocess
 import sys
-sys.path.insert(0,'/home/kaan/verified_20260907')
+sys.path.insert(0,'/home/user/verified_20260907')
 from figure1_v2 import select_panels
 from figure2_v2 import load_runs
 from comparison_checks import require_common_physics
 
-ROOT=Path('/home/kaan/ic_audit_20260907/grid_tests')
-WORK=Path('/home/kaan/followup_20260907/evidence')
+ROOT=Path('/home/user/ic_audit_20260907/grid_tests')
+WORK=Path('/home/user/followup_20260907/evidence')
 files=sorted(ROOT.glob('*/mass_diagnostics_v2.json'))
 data=[json.loads(p.read_text()) for p in files]
 require_common_physics(data)
@@ -23,7 +23,7 @@ planfile=WORK/'figure_plan.json';planfile.write_text(json.dumps(plan,indent=2))
 commands=[['figure1_v2.py','--plan',str(planfile),'--time','0','--out',str(WORK/'initial_audit_3d.png')],
           ['figure2_v2.py','--out',str(WORK/'short_audit_mass.png'),*[str(p) for p in chosen]]]
 for c in commands:
-    subprocess.run([sys.executable,str(Path('/home/kaan/verified_20260907')/c[0]),*c[1:]],check=True)
+    subprocess.run([sys.executable,str(Path('/home/user/verified_20260907')/c[0]),*c[1:]],check=True)
 (WORK/'comparison_regression.json').write_text(json.dumps({'passed':True,'native_sequences_checked':len(data),
     'figures':['initial_audit_3d.png','short_audit_mass.png'],
     'scope':'Retained short IC audit outputs, not late-time production figures'},indent=2))

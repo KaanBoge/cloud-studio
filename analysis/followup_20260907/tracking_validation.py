@@ -18,8 +18,8 @@ import time
 import h5py
 import numpy as np
 
-sys.path[:0]=['/home/kaan/verified_20260907','/home/kaan/performance_20260907',
-               '/mnt/c/Users/kaanb/CloudCrushing/followup_20260907']
+sys.path[:0]=['/home/user/verified_20260907','/home/user/performance_20260907',
+               '/mnt/c/Users/user/CloudCrushing/followup_20260907']
 from run_corrected_athpp import make_input
 from run_optimized import set_sections
 from run_params import parse_file
@@ -27,7 +27,7 @@ from storage_guard import storage_snapshot,require_storage,GIB
 from verify_tracking import native_time,compare
 from check_snapshot import check
 
-WORK=Path('/home/kaan/followup_20260907')
+WORK=Path('/home/user/followup_20260907')
 ROOT=WORK/'tracking_validation_v1'
 BIN=WORK/'bin/athpp_tracking'
 EXPECTED='3885d83e2238eae01382b88add7a168f713ef72f46420c44219ad23bc7bd7655'
@@ -177,7 +177,7 @@ def main():
     parser=argparse.ArgumentParser();parser.add_argument('--resume-validation',action='store_true');args=parser.parse_args()
     ROOT.mkdir(exist_ok=args.resume_validation)
     # Share the optimized launcher's lock as well as our own per-run-directory guard.
-    with (Path('/home/kaan/performance_20260907')/'production.lock').open('a') as lock:
+    with (Path('/home/user/performance_20260907')/'production.lock').open('a') as lock:
         fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
         results={'scope':'existing-condition Athena++ native tracking validation; no cooling reruns','tests':{}}
         output=WORK/'evidence/tracking_extended.json'

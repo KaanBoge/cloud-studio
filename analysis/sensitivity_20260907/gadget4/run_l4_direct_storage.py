@@ -17,8 +17,8 @@ import numpy as np
 import psutil
 
 HERE = Path(__file__).resolve().parent
-BASE = Path('/home/kaan/sensitivity_20260907/gadget4')
-RAW = Path('/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/gadget4_L4_velocity_pair_v1')
+BASE = Path('/home/user/sensitivity_20260907/gadget4')
+RAW = Path('/mnt/c/Users/user/CloudCrushing/native_runs/sensitivity_20260907/gadget4_L4_velocity_pair_v1')
 RESERVE = 10 * 1024**3
 GUEST_ALLOWANCE = 1024**3
 PAIR_BYTES = 7840595890
@@ -51,7 +51,7 @@ def budget_gate(guest_free, mounted_free, windows_free, remaining):
 
 
 def inspect_storage(remaining=0, live=False):
-    parent = Path('/mnt/c/Users/kaanb/CloudCrushing')
+    parent = Path('/mnt/c/Users/user/CloudCrushing')
     require(parent.resolve() == parent and BASE.resolve() == BASE, 'Unexpected root symlink')
     rows = json.loads(subprocess.check_output(['findmnt', '-J', '-T', str(parent),
                                                '-o', 'TARGET,SOURCE,FSTYPE,OPTIONS'], text=True))['filesystems']
@@ -78,7 +78,7 @@ def no_competing_solver():
 
 
 def verify_paths():
-    expected = Path('/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/gadget4_L4_velocity_pair_v1')
+    expected = Path('/mnt/c/Users/user/CloudCrushing/native_runs/sensitivity_20260907/gadget4_L4_velocity_pair_v1')
     require(RAW == expected and RAW.resolve() == RAW, 'Unexpected raw path or symlink')
     for ancestor in (RAW, *list(RAW.parents)[:-1]):
         require(not ancestor.is_symlink(), 'Raw ancestor is a symlink')
@@ -222,7 +222,7 @@ def main():
     require(not (RAW/'batch.json').exists(), 'Existing batch cannot be restarted')
     locks = []
     for name in ('benchmark.lock', 'production.lock'):
-        handle = Path('/home/kaan/performance_20260907', name).open('a')
+        handle = Path('/home/user/performance_20260907', name).open('a')
         fcntl.flock(handle, fcntl.LOCK_EX | fcntl.LOCK_NB)
         locks.append(handle)
     no_competing_solver()

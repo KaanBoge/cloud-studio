@@ -3,13 +3,13 @@ import fcntl
 import json
 from pathlib import Path
 import sys
-sys.path.insert(0,'/mnt/c/Users/kaanb/CloudCrushing/restart_20260907')
+sys.path.insert(0,'/mnt/c/Users/user/CloudCrushing/restart_20260907')
 import queue_more as m
 
 with (m.WORK/'worker.lock').open('a') as lock:
     fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
     manifest=json.loads(m.MANIFEST.read_text())
-    oldfile=Path('/home/kaan/performance_20260907c/queue_before_l5_io.json')
+    oldfile=Path('/home/user/performance_20260907c/queue_before_l5_io.json')
     if oldfile.exists():raise RuntimeError('Queue migration already attempted')
     oldfile.write_text(json.dumps(manifest,indent=2))
     count=0

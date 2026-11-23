@@ -1,11 +1,11 @@
 param([ValidateSet('stage','verify')][string]$Mode='stage',[string]$Commit,[long]$WorkflowId)
 $ErrorActionPreference='Stop'
-$taskStudy='C:\Users\kaanb\CloudCrushing\sensitivity_20260907'
-$taskRepo='C:\Users\kaanb\cloud-studio-repo'
+$taskStudy='C:\Users\user\CloudCrushing\sensitivity_20260907'
+$taskRepo='C:\Users\user\cloud-studio-repo'
 $taskGizmo=Join-Path $taskStudy 'gizmo'
 $taskEvidence=Join-Path $taskGizmo 'l4_validation_v1'
-$taskNative='\\wsl.localhost\Ubuntu\home\kaan\sensitivity_20260907\gizmo\mfv_timestep_repair_v1'
-$taskRaw='C:\Users\kaanb\CloudCrushing\native_runs\sensitivity_20260907'
+$taskNative='\\wsl.localhost\Ubuntu\home\user\sensitivity_20260907\gizmo\mfv_timestep_repair_v1'
+$taskRaw='C:\Users\user\CloudCrushing\native_runs\sensitivity_20260907'
 $taskBase='92a9d6352ad84e2cd70f0729854d678d29e9b15d'
 $taskEvidenceCopies=@(
  @((Join-Path $taskNative 'l4_prepare_runner_v1\plan.json'),'prepare_plan.json'),

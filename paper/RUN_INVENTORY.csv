@@ -1,16 +1,8 @@
-cohort,count,conditions,treatment_in_paper,status_and_limits
-Established sharp sample,24,12 methods; L3/L4; chi100; Mach2,Figures 1 and 3; primary comparison,Native configurations differ; not a convergence or accuracy ranking
-Established historical controls,24,12 methods; L3/L4; chi100; Mach2,Retained as supporting archive and summarized in Section 2.2,Not duplicated as primary figures
-Existing L5 grid histories,6,Athena++; Enzo; Enzo-E; chi100; sharp/historical,Sharp histories in Figure 3; historical controls in Section 3.2,Resolution and initialization sensitivity remain finite-sampling results
-Full contrast histories,5,Enzo-E chi10/1000; Athena++ chi10; Enzo chi10/1000,All five in Figure 4; Enzo endpoint maps in Figure 2,Enzo chi1000 has accepted saved-result screen; original controller failure remains recorded
-New GIZMO MFM sharp,1,L5; chi100; Mach2; sharp; 101 states,Figures 2/3/6; Tables 3/4,Bounded native result accepted; periodic boundaries; staggered velocities
-New GIZMO MFM historical,1,L5; chi100; Mach2; historical; 101 states,Table 3; supporting scalar receipt,Independent physical evolution; not a primary second storyline
-New GIZMO MFV sharp,1,L5; chi100; Mach2; sharp; 101 states,Figures 2/3/6; Tables 3/4,Bounded native result accepted; pending-mass ledger part of conservation interpretation
-New GIZMO MFV historical,1,L5; chi100; Mach2; historical; 101 combined states,Table 3; supporting scalar receipt,Checkpoint prefix and continuation counted as one evolution
-New AthenaPK cooling on,1,L5; chi100; Mach2; R100pc; 101 states,Figures 5/6; Sections 2.3/3.4/3.5,Accepted bounded matched result; unresolved cooling length; 23 fallback stages
-New AthenaPK cooling off,1,Same initial fields and numerical settings; cooling term disabled,Figures 5/6; Sections 2.3/3.4/3.5,Accepted bounded matched result; shared floor; 55 fallback stages
-Readiness runs and failed attempts,0,Preserved in original archive,Not counted as independent full physical experiments,No discarded data and no failed attempt relabeled complete
-Unlaunched AthenaPK chi10 candidate,0,Prepared only,Explicitly excluded from results,No native result
-GIZMO L6 target,0,Higher-resolution comparison unfinished,Table 1 target and discussion limitation,No completed result; memory feasibility unresolved
-Gasoline,0,Existing hold preserved,Not in completed sample,No inferred or invented result
-Additional Athena++ high-contrast evolution,1,Athena++; chi1000; Mach2; n128; 4194304 cells; 16 mesh blocks; nonradiative,Contrast history and endpoint mass fractions; 101 states through 5 tcc,"Accepted numerical field/time screen; dense 0.0721144007, tagged 0.8622888393, total 0.9245301661; no convergence claim"
+group,calculations,conditions,where_in_paper,notes
+Reference sample,36,"12 methods; n = 32, 64 and 128; chi = 100; Mach 2; sharp initial velocity edge at 1.3 R","Figure 3, Table 2, Section 3.2","101 saved states to 5 t_cc in each calculation (Enzo writes one extra dump of the final state); the n = 128 calculations of FLASH 4.8, Flash-X, RAMSES, Athena 4.2, AthenaPK, GADGET-4 and Arepo enter in this revision"
+Boundary control,6,"Athena++; periodic on all faces and periodic along the wind; n = 32, 64 and 128; chi = 100; Mach 2","Figure 4, Table 2, Section 3.3","Same solver, options and initial state as the reference Athena++ calculations; only the treatment of the domain faces differs; the executable reproduces the reference n = 32 and 64 calculations bit for bit with inflow and outflow"
+Contrast extension,8,"n = 128; Mach 2; Enzo and Enzo-E at chi = 10 and 1000; Athena++ at chi = 10 and 1000; AthenaPK at chi = 10 in two numerical configurations","Figure 5, Section 3.4",
+Meshless diagnostics,2,"GIZMO MFM and MFV; n = 128; chi = 100; 11 states separated by 0.5 t_cc","Figure 6, Section 3.5",Same calculations as in the reference sample
+Radiative pair,2,"AthenaPK; n = 128; chi = 100; Mach 2; R = 100 pc; cooling on and off; HLLE and PLM","Figures 7 and 8, Appendix B",
+HLLC and PPM configurations,3,"AthenaPK; n = 128; Mach 2; non-radiative chi = 100, radiative chi = 100, non-radiative chi = 10","Figure 9, Table 3, Appendix C",The chi = 10 calculation also appears in Figure 5
+Earlier initial velocity prescription,29,"tanh velocity edge instead of the sharp edge; 12 methods at n = 32 and 64; Athena++, Enzo, Enzo-E, GIZMO MFM and GIZMO MFV at n = 128",Appendix A,Supporting archive; the GIZMO n = 128 pair is quoted in Appendix A and the main figures use the sharp velocity edge

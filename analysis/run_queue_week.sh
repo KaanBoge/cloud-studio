@@ -3,7 +3,7 @@ printf '%s\n' 'Historical queue disabled: binaries, ICs, boundaries and raw-data
 exit 2
 # Historical body below is preserved for provenance, not executed.
 # ============================================================================
-# WEEK QUEUE: everything on Ryan's list that can run without supervision.
+# WEEK QUEUE: every planned run that can go ahead without supervision.
 #
 # Ordered so the highest value lands first, because a queue that dies on
 # Thursday should still have delivered the Mach study.
@@ -27,13 +27,13 @@ exit 2
 #     dying mid-run.
 # ============================================================================
 set -u
-PY=/home/kaan/venv/bin/python
-CO=/home/kaan/codes
-A8=/home/kaan/CloudCrushing/A8
-STORE=/mnt/c/Users/kaanb/cloud-frames-repo
-LOG=/mnt/c/Users/kaanb/CloudCrushing/results_A8/week_queue.log
-FIG=/mnt/c/Users/kaanb/CloudCrushing/figures
-SWEEP=/home/kaan/sweep_gap.sh
+PY=/home/user/venv/bin/python
+CO=/home/user/codes
+WT=/home/user/CloudCrushing/wind_tunnel
+STORE=/mnt/c/Users/user/cloud-frames-repo
+LOG=/mnt/c/Users/user/CloudCrushing/results_wind_tunnel/week_queue.log
+FIG=/mnt/c/Users/user/CloudCrushing/figures
+SWEEP=/home/user/sweep_gap.sh
 CS=1.290994448735806
 COOLTBL=$CO/athenapk/inputs/cooling_tables/schure.cooling_1.0Z
 APK=$CO/athenapk/build-cuda/bin/athenaPK
@@ -42,7 +42,7 @@ mkdir -p "$FIG"
 echo "=== WEEK QUEUE $(date) ===" > "$LOG"
 say() { echo "$*" >> "$LOG"; }
 
-(setsid nohup bash /home/kaan/oom_priority.sh >/dev/null 2>&1 &) 2>/dev/null
+(setsid nohup bash /home/user/oom_priority.sh >/dev/null 2>&1 &) 2>/dev/null
 
 freegb() { df -BG --output=avail / 2>/dev/null | tail -1 | tr -dc 0-9; }
 availram() { free -g | awk '/Mem:/{print $7}'; }
@@ -62,8 +62,8 @@ harvest() {
   n=$(echo "$files" | grep -c .)
   if [ "${n:-0}" -lt 5 ]; then say "    nothing to harvest for $tag"; return 1; fi
   rm -rf "${STORE:?}/$tag"
-  nice -n 19 $PY /home/kaan/dense_export.py "$tag" "$kind" "$chi" "$STORE" $files >> "$LOG" 2>&1
-  nice -n 19 $PY /home/kaan/diagnostics.py "$tag" "$kind" "$chi" "$tcc" $files >> "$LOG" 2>&1
+  nice -n 19 $PY /home/user/dense_export.py "$tag" "$kind" "$chi" "$STORE" $files >> "$LOG" 2>&1
+  nice -n 19 $PY /home/user/diagnostics.py "$tag" "$kind" "$chi" "$tcc" $files >> "$LOG" 2>&1
   d=$(ls "$STORE/$tag"/f*.bin 2>/dev/null | wc -l)
   last=$(echo "$files" | tail -1)
   for f in $files; do
@@ -72,7 +72,7 @@ harvest() {
   say "    $tag harvested: $n raw into $d frames, raw stripped, free=$(freegb)GB"
 }
 
-publish() { bash /home/kaan/publish_now.sh >> "$LOG" 2>&1; }
+publish() { bash /home/user/publish_now.sh >> "$LOG" 2>&1; }
 
 # ---------------------------------------------------------------- A: unblock
 say ""
@@ -84,8 +84,8 @@ for chi in 10 100 1000; do
     have=$(ls $STORE/ramses_L5_chi${chi}/f*.bin 2>/dev/null | wc -l)
     if [ "${n:-0}" -gt "${have:-0}" ]; then
       rm -rf "${STORE:?}/ramses_L5_chi${chi}"
-      nice -n 19 $PY /home/kaan/dense_export.py "ramses_L5_chi${chi}" ramses "$chi" "$STORE" $(ls -d $d/output_* | sort) >> "$LOG" 2>&1
-      nice -n 19 $PY /home/kaan/diagnostics.py "ramses_L5_chi${chi}" ramses "$chi" "$($PY -c "import math;print(math.sqrt($chi)/2.582)")" $(ls -d $d/output_* | sort) >> "$LOG" 2>&1
+      nice -n 19 $PY /home/user/dense_export.py "ramses_L5_chi${chi}" ramses "$chi" "$STORE" $(ls -d $d/output_* | sort) >> "$LOG" 2>&1
+      nice -n 19 $PY /home/user/diagnostics.py "ramses_L5_chi${chi}" ramses "$chi" "$($PY -c "import math;print(math.sqrt($chi)/2.582)")" $(ls -d $d/output_* | sort) >> "$LOG" 2>&1
       say "  ramses_L5_chi${chi}: $n raw into $(ls $STORE/ramses_L5_chi${chi}/f*.bin 2>/dev/null | wc -l) frames"
     fi
   fi
@@ -94,7 +94,7 @@ for chi in 10 100 1000; do
     fs=$(ls -d $d/DD*/CW_[0-9][0-9][0-9][0-9] 2>/dev/null | sort)
     if [ -n "$fs" ]; then
       rm -rf "${STORE:?}/enzo_L4_chi${chi}"
-      nice -n 19 $PY /home/kaan/dense_export.py "enzo_L4_chi${chi}" enzo "$chi" "$STORE" $fs >> "$LOG" 2>&1
+      nice -n 19 $PY /home/user/dense_export.py "enzo_L4_chi${chi}" enzo "$chi" "$STORE" $fs >> "$LOG" 2>&1
       say "  enzo_L4_chi${chi}: into $(ls $STORE/enzo_L4_chi${chi}/f*.bin 2>/dev/null | wc -l) frames"
     fi
   fi
@@ -121,7 +121,7 @@ apk_run() {
   if ! need_disk 30; then say "  SKIP $tag (disk $(freegb)GB)"; return; fi
   d=$CO/athenapk/runs/WK_${tag}
   mkdir -p "$d" || return
-  if ! $PY /home/kaan/mkinput.py "$CO/athenapk/runs/M3D_L5_chi10/athinput" "$d/athinput" "$ny" "$nx" "$ny" "$mb" "$tlim" "$dt" "$chi" "$v" $cool >> "$LOG" 2>&1; then
+  if ! $PY /home/user/mkinput.py "$CO/athenapk/runs/M3D_L5_chi10/athinput" "$d/athinput" "$ny" "$nx" "$ny" "$mb" "$tlim" "$dt" "$chi" "$v" $cool >> "$LOG" 2>&1; then
     say "  SKIP $tag (input generation failed)"; return
   fi
   cd "$d" || return
@@ -182,13 +182,13 @@ cpu_mach() {
       if [ "$n" -ge 5 ]; then harvest "$tag" athpp "$chi" "$tcc" "$d" '*.athdf'; fi
       ;;
     athw)
-      d=$A8/WK_${tag}; mkdir -p "$d"; cd "$d" || return
+      d=$WT/WK_${tag}; mkdir -p "$d"; cd "$d" || return
       sed -e "s/^Mach *=.*/Mach = $M/" -e "s/^drat *=.*/drat = $chi/" \
           -e "s/^tlim *=.*/tlim = $tlim/" -e "s/^dt *=.*/dt = $dt/" \
           -e "s/^Nx1 *=.*/Nx1 = 128/" -e "s/^Nx2 *=.*/Nx2 = 64/" -e "s/^Nx3 *=.*/Nx3 = 64/" \
           -e "s/^NGrid_x1 *=.*/NGrid_x1 = 2/" -e "s/^NGrid_x2 *=.*/NGrid_x2 = 2/" -e "s/^NGrid_x3 *=.*/NGrid_x3 = 2/" \
-          "$A8/M3D_ATHW_L5_chi10/athinput" > athinput
-      cp -f "$A8/M3D_ATHW_L5_chi10/athena_redo3d" ./athena_wk 2>/dev/null
+          "$WT/M3D_ATHW_L5_chi10/athinput" > athinput
+      cp -f "$WT/M3D_ATHW_L5_chi10/athena_redo3d" ./athena_wk 2>/dev/null
       rm -rf id*
       timeout 43200 nice -n 5 mpirun --oversubscribe -np 8 ./athena_wk -i athinput > run.out 2>&1
       rc=$?; n=$(ls id0/*.vtk 2>/dev/null | wc -l)
@@ -260,15 +260,15 @@ done
 # ---------------------------------------------------------- F: figures
 say ""
 say "--- F: regenerate figures and publish ---"
-nice -n 19 $PY /home/kaan/fig1b.py "$FIG/figure1_3d_L3_t3.png" L3 apk,athpp,athw,enzo,ramses,arepo,gzmfm,gas 3.0 >> "$LOG" 2>&1
-nice -n 19 $PY /home/kaan/fig1b.py "$FIG/figure1_3d_L3_t5.png" L3 apk,athpp,athw,enzo,ramses,arepo,gzmfm,gas 5.0 >> "$LOG" 2>&1
-nice -n 19 $PY /home/kaan/fig1b.py "$FIG/figure1_3d_L4_t5.png" L4 apk,athpp,athw,enzo,ramses,arepo,gzmfm,gzmfv,gas 5.0 >> "$LOG" 2>&1
-nice -n 19 $PY /home/kaan/fig1b.py "$FIG/figure1_3d_L5_t5.png" L5 apk,enzo,flashx,ramses,gzmfm,gzmfv 5.0 >> "$LOG" 2>&1
-nice -n 19 $PY /home/kaan/fig1b.py "$FIG/figure1_mach_L4.png" L4 apkM05,apkM15,apk,apkM5 5.0 >> "$LOG" 2>&1
-nice -n 19 $PY /home/kaan/fig1b.py "$FIG/figure1_mach_L5.png" L5 apkM05,apkM15,apk,apkM5 5.0 >> "$LOG" 2>&1
-nice -n 19 $PY /home/kaan/fig1b.py "$FIG/figure1_cooling_L4.png" L4 apk,apkcool 5.0 >> "$LOG" 2>&1
+nice -n 19 $PY /home/user/fig1b.py "$FIG/figure1_3d_L3_t3.png" L3 apk,athpp,athw,enzo,ramses,arepo,gzmfm,gas 3.0 >> "$LOG" 2>&1
+nice -n 19 $PY /home/user/fig1b.py "$FIG/figure1_3d_L3_t5.png" L3 apk,athpp,athw,enzo,ramses,arepo,gzmfm,gas 5.0 >> "$LOG" 2>&1
+nice -n 19 $PY /home/user/fig1b.py "$FIG/figure1_3d_L4_t5.png" L4 apk,athpp,athw,enzo,ramses,arepo,gzmfm,gzmfv,gas 5.0 >> "$LOG" 2>&1
+nice -n 19 $PY /home/user/fig1b.py "$FIG/figure1_3d_L5_t5.png" L5 apk,enzo,flashx,ramses,gzmfm,gzmfv 5.0 >> "$LOG" 2>&1
+nice -n 19 $PY /home/user/fig1b.py "$FIG/figure1_mach_L4.png" L4 apkM05,apkM15,apk,apkM5 5.0 >> "$LOG" 2>&1
+nice -n 19 $PY /home/user/fig1b.py "$FIG/figure1_mach_L5.png" L5 apkM05,apkM15,apk,apkM5 5.0 >> "$LOG" 2>&1
+nice -n 19 $PY /home/user/fig1b.py "$FIG/figure1_cooling_L4.png" L4 apk,apkcool 5.0 >> "$LOG" 2>&1
 for L in L3 L4 L5; do
-  nice -n 19 $PY /home/kaan/fig2.py "$FIG/figure2_mass_$L.png" "$L" >> "$LOG" 2>&1
+  nice -n 19 $PY /home/user/fig2.py "$FIG/figure2_mass_$L.png" "$L" >> "$LOG" 2>&1
 done
 publish
 say ""

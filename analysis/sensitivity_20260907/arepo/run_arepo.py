@@ -2,11 +2,11 @@
 import argparse,fcntl,json,math,os,re,signal,subprocess,sys,time
 from pathlib import Path
 import h5py,numpy as np,psutil
-sys.path.insert(0,'/mnt/c/Users/kaanb/CloudCrushing/sensitivity_20260907')
+sys.path.insert(0,'/mnt/c/Users/user/CloudCrushing/sensitivity_20260907')
 from build import sha
-sys.path.insert(0,'/home/kaan/verified_20260907')
+sys.path.insert(0,'/home/user/verified_20260907')
 from storage_guard import storage_snapshot,require_storage,GIB
-ROOT=Path('/home/kaan/sensitivity_20260907/arepo')
+ROOT=Path('/home/user/sensitivity_20260907/arepo')
 FIELDS={'CenterOfMass','Coordinates','Density','InternalEnergy','Masses','ParticleIDs','PassiveScalars','Velocities'}
 
 def save(path,d):
@@ -181,7 +181,7 @@ def run_case(level,mode,smoke=False):
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('--smoke',action='store_true');args=parser.parse_args();locks=[]
     for name in ('benchmark.lock','production.lock'):
-        f=Path('/home/kaan/performance_20260907',name).open('a');fcntl.flock(f,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(f)
+        f=Path('/home/user/performance_20260907',name).open('a');fcntl.flock(f,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(f)
     path=ROOT/('smoke_batch_v2.json' if args.smoke else 'batch.json')
     if path.exists():raise ValueError('Existing batch requires review')
     batch=dict(status='running',finished=[],pairs=[],pid=os.getpid())

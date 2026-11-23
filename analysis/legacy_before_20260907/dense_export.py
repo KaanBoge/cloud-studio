@@ -46,7 +46,7 @@ if KIND in ("part", "tipsy"):
     CEN = np.array([float(v) for v in os.environ["P3D_CEN"].split(",")])
     DIMS = tuple(int(v) for v in os.environ["P3D_DIMS"].split(","))
     if KIND == "tipsy":
-        sys.path.insert(0, "/home/kaan/codes/gasoline/ics")
+        sys.path.insert(0, "/home/user/codes/gasoline/ics")
         from make_gasoline_cloudwind import read_tipsy  # noqa: E402
 else:
     import yt

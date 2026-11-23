@@ -3,7 +3,7 @@
 # equilibrium, everything at rest.  Physically nothing should happen;
 # this tests that a custom initial condition holds equilibrium and
 # shows how much the code numerically diffuses the cloud edge.
-# (Assignment 6, task 3 — modified from the Sedov problem.)
+# (Modified from the Sedov problem.)
 
 REQUIRES Driver
 REQUIRES physics/Hydro

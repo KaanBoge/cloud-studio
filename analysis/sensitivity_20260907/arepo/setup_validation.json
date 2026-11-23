@@ -3,7 +3,7 @@
   "launcher_sha256": "f6806defd0ff6dc139232a9a0baf385e6ba8ebe7c297147cf386941a89912356",
   "checks": [
     {
-      "directory": "/home/kaan/sensitivity_20260907/arepo/smokes_v2/L3_chi100_sharp13",
+      "directory": "/home/user/sensitivity_20260907/arepo/smokes_v2/L3_chi100_sharp13",
       "unique_times": 2,
       "initial": {
         "native_density_vs_lattice_max_relative": 0.14450823963276305,
@@ -13,7 +13,7 @@
       }
     },
     {
-      "directory": "/home/kaan/sensitivity_20260907/arepo/smokes_v2/L3_chi100_tanh13",
+      "directory": "/home/user/sensitivity_20260907/arepo/smokes_v2/L3_chi100_tanh13",
       "unique_times": 2,
       "initial": {
         "native_density_vs_lattice_max_relative": 0.14450823963276305,

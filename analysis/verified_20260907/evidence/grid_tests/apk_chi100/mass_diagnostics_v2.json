@@ -2,7 +2,7 @@
   "schema_version": 2,
   "kind": "apk",
   "parameters": {
-    "source": "/home/kaan/ic_audit_20260907/grid_tests/apk_chi100/athinput",
+    "source": "/home/user/ic_audit_20260907/grid_tests/apk_chi100/athinput",
     "parameter_sha256": "81da8c365c2919d619a64208380e39bde51da5e1e56dbb6c96a8d9b569bdbb1f",
     "assumptions": [
       "AthenaPK checkout units.hpp constants; fully ionized H/He mu from hydro.cpp"
@@ -61,7 +61,7 @@
           10.0
         ]
       },
-      "snapshot": "/home/kaan/ic_audit_20260907/grid_tests/apk_chi100/parthenon.prim.00000.phdf",
+      "snapshot": "/home/user/ic_audit_20260907/grid_tests/apk_chi100/parthenon.prim.00000.phdf",
       "dense_mass_over_initial_dense_mass": 1.0
     },
     {
@@ -85,7 +85,7 @@
           10.0
         ]
       },
-      "snapshot": "/home/kaan/ic_audit_20260907/grid_tests/apk_chi100/parthenon.prim.final.phdf",
+      "snapshot": "/home/user/ic_audit_20260907/grid_tests/apk_chi100/parthenon.prim.final.phdf",
       "dense_mass_over_initial_dense_mass": 0.999996128150561
     }
   ]

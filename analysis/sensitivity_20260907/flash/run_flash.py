@@ -14,13 +14,13 @@ import time
 import h5py
 import numpy as np
 import psutil
-sys.path.insert(0,'/home/kaan/verified_20260907')
+sys.path.insert(0,'/home/user/verified_20260907')
 from run_params import parse_file,read_values
 from storage_guard import storage_snapshot,require_storage,GIB
-sys.path.insert(0,'/mnt/c/Users/kaanb/CloudCrushing/sensitivity_20260907')
+sys.path.insert(0,'/mnt/c/Users/user/CloudCrushing/sensitivity_20260907')
 from build import sha
-ROOT=Path('/home/kaan/sensitivity_20260907/flash')
-TEMPLATE=Path('/home/kaan/ic_audit_20260907/grid_tests/flash_chi100/flash.par')
+ROOT=Path('/home/user/sensitivity_20260907/flash')
+TEMPLATE=Path('/home/user/ic_audit_20260907/grid_tests/flash_chi100/flash.par')
 CHECK_FIELDS={'dens','dfcf','eint','ener','fllm','gamc','game','pres','shok','temp','velx','vely','velz'}
 PLOT_FIELDS={'dens','pres','temp','velx','vely','velz'}
 
@@ -205,7 +205,7 @@ def main():
     parser=argparse.ArgumentParser();parser.add_argument('--smoke',action='store_true');args=parser.parse_args()
     locks=[]
     for name in ('benchmark.lock','production.lock'):
-        f=Path('/home/kaan/performance_20260907',name).open('a');fcntl.flock(f,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(f)
+        f=Path('/home/user/performance_20260907',name).open('a');fcntl.flock(f,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(f)
     batch=dict(status='running',finished=[],pairs=[],pid=os.getpid());path=ROOT/('smoke_batch.json' if args.smoke else 'batch.json')
     try:
         if not args.smoke and json.loads((ROOT/'smoke_batch.json').read_text())['status']!='complete_native_checks':raise ValueError('Native smoke pair required')

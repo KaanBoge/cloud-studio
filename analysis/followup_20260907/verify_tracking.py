@@ -14,18 +14,18 @@ import sys
 import time
 import h5py
 import numpy as np
-sys.path.insert(0,'/home/kaan/verified_20260907')
-sys.path.insert(0,'/home/kaan/performance_20260907')
-sys.path.insert(0,'/home/kaan/codes/athenapp/vis/python')
+sys.path.insert(0,'/home/user/verified_20260907')
+sys.path.insert(0,'/home/user/performance_20260907')
+sys.path.insert(0,'/home/user/codes/athenapp/vis/python')
 import athena_read
 from run_corrected_athpp import make_input
 from run_optimized import set_sections
 from check_snapshot import check
 from storage_guard import require_storage,storage_snapshot,GIB
 
-WORK=Path('/home/kaan/followup_20260907')
+WORK=Path('/home/user/followup_20260907')
 BINARY=WORK/'bin/athpp_tracking'
-BASE=Path('/home/kaan/ic_audit_20260907/bin/athpp')
+BASE=Path('/home/user/ic_audit_20260907/bin/athpp')
 ENV=dict(os.environ,OMP_NUM_THREADS='1',OPENBLAS_NUM_THREADS='1',MKL_NUM_THREADS='1')
 
 

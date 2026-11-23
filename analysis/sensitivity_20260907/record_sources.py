@@ -3,10 +3,10 @@ import json
 from pathlib import Path
 from build import ROOT,sha
 sources={
- 'athpp_historical_tanh':'/home/kaan/codes/athenapp/src/pgen/cloud_wind.cpp.tanh_backup',
- 'apk_historical_momentum':'/mnt/c/Users/kaanb/CloudCrushing/audit_20260907/before/home/kaan/codes/athenapk/src/pgen/cloud.cpp',
- 'athpp_production_source':'/home/kaan/codes/athenapp/src/pgen/cloud_wind.cpp',
- 'apk_production_source':'/home/kaan/codes/athenapk/src/pgen/cloud.cpp'}
+ 'athpp_historical_tanh':'/home/user/codes/athenapp/src/pgen/cloud_wind.cpp.tanh_backup',
+ 'apk_historical_momentum':'/mnt/c/Users/user/CloudCrushing/audit_20260907/before/home/user/codes/athenapk/src/pgen/cloud.cpp',
+ 'athpp_production_source':'/home/user/codes/athenapp/src/pgen/cloud_wind.cpp',
+ 'apk_production_source':'/home/user/codes/athenapk/src/pgen/cloud.cpp'}
 rows={}
 for name,path in sources.items():
     lines=Path(path).read_text().splitlines()

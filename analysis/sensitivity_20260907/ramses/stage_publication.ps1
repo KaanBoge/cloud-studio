@@ -1,7 +1,7 @@
 $ErrorActionPreference='Stop'
-$taskStudy='C:\Users\kaanb\CloudCrushing\sensitivity_20260907'
+$taskStudy='C:\Users\user\CloudCrushing\sensitivity_20260907'
 $taskSource=Join-Path $taskStudy 'ramses'
-$taskDestination='C:\Users\kaanb\cloud-studio-repo\analysis\sensitivity_20260907\ramses'
+$taskDestination='C:\Users\user\cloud-studio-repo\analysis\sensitivity_20260907\ramses'
 $taskReport=Get-Content -LiteralPath (Join-Path $taskSource 'report.json') -Raw | ConvertFrom-Json
 if($taskReport.status -ne 'share_with_caveats' -or $taskReport.pairs.Count -ne 2){throw 'Validated completed report required'}
 if(Test-Path -LiteralPath $taskDestination){throw 'Publication directory exists; review before overwriting'}

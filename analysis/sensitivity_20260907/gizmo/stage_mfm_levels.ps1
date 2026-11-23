@@ -1,7 +1,7 @@
 $ErrorActionPreference='Stop'
-$taskStudy='C:\Users\kaanb\CloudCrushing\sensitivity_20260907'
+$taskStudy='C:\Users\user\CloudCrushing\sensitivity_20260907'
 $taskFrom=Join-Path $taskStudy 'gizmo'
-$taskRepo='C:\Users\kaanb\cloud-studio-repo'
+$taskRepo='C:\Users\user\cloud-studio-repo'
 $taskTo=Join-Path $taskRepo 'analysis\sensitivity_20260907\gizmo'
 if(@(git -C $taskRepo status --porcelain).Count){throw 'Review existing repo changes before staging'}
 $taskReport=Get-Content -Raw -LiteralPath (Join-Path $taskFrom 'mfm_levels_report.json') | ConvertFrom-Json

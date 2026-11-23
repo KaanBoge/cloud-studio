@@ -20,13 +20,13 @@ Final sharp/historical dense fractions are 0.324893/0.326376 at L3 and
 See [mass and in-box tracer curves](mass_and_retention.png),
 [full diagnostic series](report.json), [validation review](VALIDATION.md),
 and [native run ledger](batch.json). The native raw is still in
-`/home/kaan/sensitivity_20260907/arepo/runs/`. The worker ended normally;
+`/home/user/sensitivity_20260907/arepo/runs/`. The worker ended normally;
 L5 is storage-held. Do not rerun completed controls or the analysis into their
 existing directories. The public analysis is not a replacement for raw data.
 
 ## Scope and important baseline limitations
 
-This follows Ryan's request to measure velocity sensitivity within each code.
+This measures velocity sensitivity within each code.
 Chi=100, Mach=2, gamma=5/3, R=1, nominal ambient density=pressure=1, density
 tanh width 0.1 R, velocity radius 1.3 R, seed42 and 5 t_cc. Physics that Arepo's
 native parameter file does not encode is explicitly recorded in
@@ -125,7 +125,7 @@ published copies. It uses fixed measured initial denominators. Only scalar
 curve differences interpolate to0:0.05:5 t_cc; plots retain native times.
 Coarse controls do not certify convergence or universal historical reuse.
 
-Scripts are machine-specific and use `/home/kaan/venv/bin/python`, parent
+Scripts are machine-specific and use `/home/user/venv/bin/python`, parent
 study `build.py` and audited storage helpers. Published setup/results are
 separate from production viewer entries and are not raw backups. No email
 was sent. Publication is verified by remote commit, Pages status and live files;

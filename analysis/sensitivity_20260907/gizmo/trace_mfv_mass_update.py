@@ -16,8 +16,8 @@ import h5py
 import numpy as np
 from diagnose_mfv_restart import layouts, parse_dwarf, read_prefix, sha, check
 
-ROOT = Path('/home/kaan/sensitivity_20260907/gizmo')
-SOURCE = Path('/home/kaan/codes/gizmo')
+ROOT = Path('/home/user/sensitivity_20260907/gizmo')
+SOURCE = Path('/home/user/codes/gizmo')
 REQUESTS = {
     'global_data_all_processes': ['Time', 'MinEgySpec', 'Timebase_interval', 'cf_hubble_a'],
     'particle_data': ['ID', 'Mass', 'GravAccel'],
@@ -70,8 +70,8 @@ def main():
     for name in files:
         tracked=subprocess.check_output(['git','-C',str(SOURCE),'show',commit+':'+name])
         check(hashlib.sha256(tracked).hexdigest()==hashes[name], 'Tracked native source modified: '+name)
-    command=['flock','-n','/home/kaan/performance_20260907/benchmark.lock',
-        'flock','-n','/home/kaan/performance_20260907/production.lock','nice','-n','19',
+    command=['flock','-n','/home/user/performance_20260907/benchmark.lock',
+        'flock','-n','/home/user/performance_20260907/production.lock','nice','-n','19',
         'mpicc','-g','-O1','-ffast-math','-fcommon','-Wall','-Wuninitialized','-Wmaybe-uninitialized',
         '-DDISABLE_ALIGNED_ALLOC','-DH5_USE_16_API','-I/usr/include/hdf5/openmpi','-I.',
         '-S','hydro/hydro_toplevel.c','-o','/dev/null']

@@ -3,55 +3,197 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Kaan Boge's cloud crushing research: verified velocity sensitivity evidence, native code methods, historical 3D frames and downloadable analysis data.">
-<title>Research &amp; data · Cloud Studio</title>
-<link rel="stylesheet" href="research.css">
-<script src="research.js" defer></script>
+<meta name="theme-color" content="#0b1017">
+<meta name="description" content="Kaan Boge's cloud crushing research: what was run, how to read the library, what the pictures and the 3D view show, and the main results of the twelve method comparison.">
+<title>Research · Cloud Studio</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="research.css?v=20261122">
+<script src="research.js?v=20261122" defer></script>
 </head>
 <body>
-<div style="padding:13px 20px;background:#171d29;color:#f4d5af;text-align:center;font:14px/1.5 system-ui"><a href="recent.html?run=enzo-1000" style="color:inherit;text-decoration:none"><strong>New simulations from the paper</strong> — 16 runs · edge-on &amp; face-on · save images &amp; videos →</a></div>
-<a class="skip" href="#main">Skip to research data</a>
-<header class="masthead">
-  <a class="brand" href="index.html">CLOUD <span>STUDIO</span></a>
-  <nav aria-label="Main navigation"><a href="research.html" aria-current="page">Research &amp; data</a><a href="progress.html">Live progress</a><a href="viewer.html">3D viewer</a><a href="index.html">Movies &amp; images</a><a href="https://github.com/KaanBoge/cloud-studio">GitHub ↗</a></nav>
-</header>
+<a class="skip" href="#main">Skip to the research</a>
+<header class="top"><a class="brand" href="index.html"><span class="mark" aria-hidden="true">◌</span> Cloud <b>Studio</b></a><nav aria-label="Main navigation"><a href="index.html">Library</a><a href="viewer.html">3D viewer</a><a href="recent.html">Compare</a><a href="research.html" aria-current="page">Research</a><a href="paper/Cloud_survival_OJA.pdf">Paper</a><a href="https://github.com/KaanBoge/cloud-studio">GitHub</a></nav></header>
 <main id="main">
-  <section class="intro" aria-labelledby="title">
-    <div><p class="eyebrow">KAAN BOGE · ONGOING RESEARCH</p><h1 id="title">Clouds in motion.<br>Research in progress.</h1><p class="lede">My cloud crushing simulations, analysis and interactive 3D viewer. Explore the results and software currently available in Cloud Studio.</p></div>
-    <aside class="current"><p class="eyebrow">CURRENT RESEARCH QUESTION</p><h2>How much does the initial velocity prescription matter?</h2><p>Historical versus sharp velocity, within each code, at fixed χ = 100 and Mach 2. The published analysis measures their differences across several resolutions.</p><a class="primary" href="https://github.com/KaanBoge/cloud-studio/blob/main/analysis/sensitivity_20260907/resolution_summary_v2/README.md">Read the current findings ↗</a></aside>
-  </section>
-  <section class="metrics" aria-label="Published evidence counts">
-    <div><strong id="controls">50</strong><span>accepted sensitivity controls</span></div><div><strong id="states">5,054</strong><span>analyzed native states</span></div><div><strong id="viewer-count">…</strong><span>historical viewer entries</span></div><div><strong id="files-count">…</strong><span>public analysis files</span></div>
-  </section>
-  <p id="snapshot" class="snapshot">Accepted counts come from the published 8 September 2026 summary. Loading the dated catalog…</p>
-  <p class="notice"><strong>Two collections, different evidence.</strong> The sensitivity controls are validated within code experiments. The historical viewer is a separate visualization archive with varying cadence and scientific limitations. Do not add these counts together or assume all entries have 101 frames.</p>
-  <section class="section" id="reports" aria-labelledby="reports-title">
-    <div class="section-heading"><h2 id="reports-title">Read the research</h2><a href="https://github.com/KaanBoge/cloud-studio/tree/main/analysis">All reports &amp; scripts ↗</a></div>
-    <div class="report-grid">
-      <article class="report"><span class="tag accepted">ACCEPTED EVIDENCE</span><h3>Velocity sensitivity</h3><p>25 pairs across native methods. Resolution overlays, measured mass differences, source hashes and code specific caveats.</p><a href="https://github.com/KaanBoge/cloud-studio/blob/main/analysis/sensitivity_20260907/resolution_summary_v2/README.md">Results and limitations ↗</a></article>
-      <article class="report"><span class="tag pending">PUBLISHED CHECKS</span><h3>Enzo at level 5</h3><p>The collection includes the 256 × 128 × 128 diagnostic pair and independent sharp run checks. These are separate from the accepted paired analysis summary above.</p><a href="https://github.com/KaanBoge/cloud-studio/tree/main/analysis/sensitivity_20260907/enzo/l5_direct_v1">Inputs, scripts and checks ↗</a></article>
-      <article class="report"><span class="tag caution">IMPORTANT CORRECTIONS</span><h3>Cooling &amp; tracking</h3><p>Historical cooling labelled runs had cooling disabled. Frame tracking tests do not yet establish complete material retention.</p><a href="https://github.com/KaanBoge/cloud-studio/blob/main/analysis/followup_20260907/README.md">Read the native evidence ↗</a></article>
+
+<section class="hero" aria-labelledby="title">
+  <div class="hero-copy">
+    <p class="eyebrow">RESEARCH · KAAN BOGE</p>
+    <h1 id="title">One cloud,<br><em>twelve methods.</em></h1>
+    <p class="lede">I simulate a dense gas cloud struck by a supersonic wind, and I run the same problem with twelve hydrodynamic methods. This page explains what I ran, how to read the library and what the runs show.</p>
+    <p class="actions"><a class="button primary" href="paper/Cloud_survival_OJA.pdf">Read the paper</a><a class="button" href="index.html">Open the library</a></p>
+  </div>
+  <aside class="setup" aria-label="The setup">
+    <p class="eyebrow">THE SETUP</p>
+    <dl>
+      <div><dt>Cloud</dt><dd>100 times denser than the wind (χ&nbsp;100), with a smooth edge</dd></div>
+      <div><dt>Wind</dt><dd>Mach 2</dd></div>
+      <div><dt>Box</dt><dd>20 × 10 × 10 cloud radii</dd></div>
+      <div><dt>Resolution</dt><dd>Levels 3, 4 and 5</dd></div>
+      <div><dt>Saved states</dt><dd>101 per run, up to 5 t<sub>cc</sub></dd></div>
+    </dl>
+  </aside>
+</section>
+
+<nav class="toc" aria-label="On this page"><a href="#what-i-ran">What I ran</a><a href="#reading-a-card">Reading a card</a><a href="#pictures">The pictures</a><a href="#three-d">The 3D view</a><a href="#results">Results</a><a href="#about-the-data">About the data</a><a href="#downloads">Downloads</a><a href="#earlier-logs">Earlier logs</a></nav>
+
+<section class="section" id="what-i-ran" aria-labelledby="ran-title">
+  <div class="section-head"><p class="eyebrow">THE RUNS</p><h2 id="ran-title">What I ran</h2></div>
+  <p class="wide">Every run of the comparison starts from the same cloud and the same wind. I run each method at levels 3, 4 and 5 and save 101 states, from the moment the wind reaches the cloud to 5 t<sub>cc</sub>. The methods differ in how they move the gas and in the faces of their box. Further runs at χ&nbsp;10 and 1000, one at level 6 and runs with radiative cooling show how the result depends on the cloud and the physics.</p>
+  <div class="methods">
+    <article class="method">
+      <h3>Eight grid codes</h3>
+      <p>The gas sits in fixed cells. The wind flows in through one face of the box and out through the others.</p>
+      <ul class="chips"><li>Athena++</li><li>AthenaPK</li><li>Athena 4.2</li><li>Enzo</li><li>Enzo-E</li><li>RAMSES</li><li>FLASH 4.8</li><li>Flash-X</li></ul>
+    </article>
+    <article class="method">
+      <h3>A moving mesh</h3>
+      <p>Arepo moves its cells with the gas. Its box is periodic along the wind.</p>
+      <ul class="chips"><li>Arepo</li></ul>
+    </article>
+    <article class="method">
+      <h3>Three particle methods</h3>
+      <p>The gas is carried by particles in a box that is periodic on all faces.</p>
+      <ul class="chips"><li>GIZMO MFM</li><li>GIZMO MFV</li><li>GADGET-4</li></ul>
+    </article>
+  </div>
+  <div class="split">
+    <div>
+      <h3>A boundary control</h3>
+      <p>The box faces differ between the methods, so I repeat Athena++ in the two periodic boxes of the other methods, periodic along the wind and periodic on all faces, at levels 3, 4 and 5. These runs show what the faces alone change.</p>
     </div>
-  </section>
-  <section class="section downloads" aria-labelledby="download-title">
-    <div><p class="eyebrow">REVIEW IT YOURSELF</p><h2 id="download-title">Take the analysis with you.</h2><p>Reports, custom scripts, figures and provenance in one evidence bundle. Native solver binaries and full raw arrays are not included.</p><a class="primary" href="downloads/research-evidence-2026-09-09-current.zip" download>Download research evidence ↓</a></div>
-    <div class="download-links"><a href="data/research-files.csv" download>Analysis files &amp; SHA-256 · CSV ↓</a><a href="data/streaming-inventory.csv" download>Historical frame inventory · CSV ↓</a><a href="data/research-status.json">Dated status · JSON ↗</a><a href="https://github.com/KaanBoge/cloud-studio/blob/main/docs/DATA.md">What is backed up and what is not ↗</a></div>
-  </section>
-  <section class="section" aria-labelledby="catalog-title">
-    <div class="section-heading"><h2 id="catalog-title">Browse the evidence</h2><span id="file-result-count" class="muted" aria-live="polite"></span></div>
-    <div class="filters"><label for="file-search">Find a code, report or script<input id="file-search" type="search" placeholder="For example: Enzo, mass, tracking…"></label><label for="file-kind">File type<select id="file-kind"><option value="">All types</option><option value="md">Reports · Markdown</option><option value="json">Data · JSON</option><option value="png">Figures · PNG</option><option value="py">Python</option><option value="sh">Bash</option><option value="ps1">PowerShell</option></select></label></div>
-    <div class="table-scroll"><table><caption class="sr-only">Published analysis files with download sizes</caption><thead><tr><th scope="col">File</th><th scope="col">Type</th><th scope="col">Size</th><th scope="col">Open</th></tr></thead><tbody id="file-rows"><tr><td colspan="4">Loading catalog… <a href="data/research-files.csv">Download the CSV directly</a>.</td></tr></tbody></table></div>
-    <button id="more-files" class="secondary" hidden>Show more files</button>
-  </section>
-  <section class="section" aria-labelledby="frame-title">
-    <div class="section-heading"><h2 id="frame-title">What is in each historical 3D entry?</h2><span id="run-result-count" class="muted" aria-live="polite"></span></div>
-    <p class="muted">Counts and times below come from the published frame indexes. A complete index is not proof of valid physics or complete raw retention. This check confirms references against the remote file tree; it does not decode every mesh.</p>
-    <div class="filters"><label for="run-search">Find a historical entry<input id="run-search" type="search" placeholder="For example: apk_L6 or chi1000"></label><label for="run-scope">Show<select id="run-scope"><option value="listed">Listed in the viewer</option><option value="all">All remote indexes</option><option value="short">Fewer than 101 indexed frames</option></select></label></div>
-    <div class="table-scroll"><table><caption class="sr-only">Historical streamed frame counts and measured times</caption><thead><tr><th scope="col">Run ID</th><th scope="col">Frames</th><th scope="col">Measured t / t_cc</th><th scope="col">Mesh size</th><th scope="col">Scientific status</th></tr></thead><tbody id="run-rows"><tr><td colspan="5">Loading frame inventory… <a href="data/streaming-inventory.csv">Download the CSV directly</a>.</td></tr></tbody></table></div>
-  </section>
-  <section class="section guide" aria-labelledby="guide-title"><div><h2 id="guide-title">Reading the comparison.</h2><p>Level 5 means 256 × 128 × 128. Level 6 means 512 × 256 × 256, not 512³. Particle levels describe initial sampling, not a fixed evolved grid. Native methods keep their documented boundary, tracer and pressure limitations.</p></div><div><a href="https://github.com/KaanBoge/cloud-studio/blob/main/docs/METHODS.md">Methods &amp; directory layout ↗</a><a href="https://github.com/KaanBoge/cloud-studio/blob/main/docs/STATUS.md">Currently published contents ↗</a><a href="verification.html">Verification and earlier audits ↗</a></div></section>
-  <noscript><p class="notice">The reports and downloads work without JavaScript. For the searchable catalogs, enable JavaScript or use the CSV links above.</p></noscript>
+    <div class="table-wrap">
+      <table class="levels">
+        <caption>Resolution levels in the 20 × 10 × 10 cloud radius box</caption>
+        <thead><tr><th scope="col">Level</th><th scope="col">Cells</th><th scope="col">Cells per cloud radius</th></tr></thead>
+        <tbody>
+          <tr><td>3</td><td>64 × 32 × 32</td><td>3.2</td></tr>
+          <tr><td>4</td><td>128 × 64 × 64</td><td>6.4</td></tr>
+          <tr><td>5</td><td>256 × 128 × 128</td><td>12.8</td></tr>
+          <tr><td>6</td><td>512 × 256 × 256</td><td>25.6</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="reading-a-card" aria-labelledby="card-title">
+  <div class="section-head"><p class="eyebrow">THE LIBRARY</p><h2 id="card-title">How to read a card</h2></div>
+  <div class="card-guide">
+    <figure class="sample" aria-label="Example of a library card">
+      <div class="sample-visual"><img src="assets/posters/mfm-sharp-edge.jpg" alt="GIZMO MFM · χ 100 · level 5, column density edge on at t = 5.00 t_cc" width="768" height="384" loading="lazy"><span class="readout">t = 5.00 t<sub>cc</sub></span></div>
+      <div class="sample-body">
+        <p class="sample-code">GIZMO MFM</p>
+        <p class="sample-title">GIZMO MFM · χ&nbsp;100 · level 5</p>
+        <p class="tags"><span>χ&nbsp;100</span><span>Level 5</span><span>5 t<sub>cc</sub></span><span>Dense mass 98 %</span></p>
+      </div>
+    </figure>
+    <dl class="terms">
+      <div><dt>Code</dt><dd>The simulation code and its method. The name comes first on every card, written as the code calls itself, for example Athena++ or GADGET-4.</dd></div>
+      <div><dt>Level</dt><dd>The resolution. Level 5 is 256 × 128 × 128 cells, 12.8 cells across the cloud radius. Each level doubles the cells in every direction.</dd></div>
+      <div><dt>χ</dt><dd>The density contrast between cloud and wind. χ&nbsp;100 means the cloud starts 100 times denser than the wind.</dd></div>
+      <div><dt>t<sub>cc</sub></dt><dd>The cloud crushing time, t<sub>cc</sub> = √χ R / v<sub>wind</sub>, the time the shock needs to cross the cloud. Every frame prints its time, for example t = 1.25 t<sub>cc</sub>.</dd></div>
+      <div><dt>Dense mass</dt><dd>The mass of gas denser than one third of the starting cloud density, as a fraction of its starting value. It shows how much of the cloud is still dense.</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="section" id="pictures" aria-labelledby="pictures-title">
+  <div class="section-head"><p class="eyebrow">PROJECTIONS</p><h2 id="pictures-title">What the pictures show</h2></div>
+  <p class="wide">Each picture shows the column density of all gas, the density added up along the line of sight. Edge on looks across the wind, which blows from left to right. Face on looks along the wind, straight at the cloud. Every run uses one logarithmic colour scale, so a colour means the same column in every picture and every film.</p>
+  <figure class="panels">
+    <div class="panel-grid">
+      <div class="panel edge"><img src="assets/posters/mfm-sharp-edge.jpg" alt="GIZMO MFM · χ 100 · level 5, edge on, t = 5.00 t_cc" width="768" height="384" loading="lazy"><span class="label">GIZMO MFM · χ&nbsp;100 · level 5 · edge on</span><span class="readout">t = 5.00 t<sub>cc</sub></span></div>
+      <div class="panel face"><img src="assets/posters/mfm-sharp-face.jpg" alt="GIZMO MFM · χ 100 · level 5, face on, t = 5.00 t_cc" width="384" height="384" loading="lazy"><span class="label">face on</span><span class="readout">t = 5.00 t<sub>cc</sub></span></div>
+      <div class="panel edge"><img src="assets/posters/mfv-sharp-edge.jpg" alt="GIZMO MFV · χ 100 · level 5, edge on, t = 5.00 t_cc" width="768" height="384" loading="lazy"><span class="label">GIZMO MFV · χ&nbsp;100 · level 5 · edge on</span><span class="readout">t = 5.00 t<sub>cc</sub></span></div>
+      <div class="panel face"><img src="assets/posters/mfv-sharp-face.jpg" alt="GIZMO MFV · χ 100 · level 5, face on, t = 5.00 t_cc" width="384" height="384" loading="lazy"><span class="label">face on</span><span class="readout">t = 5.00 t<sub>cc</sub></span></div>
+    </div>
+    <div class="colourbar"><span>0.008</span><i aria-hidden="true"></i><span>5</span></div>
+    <figcaption>Two of the twelve methods at the same moment, on the same colour scale. Column density in units of the starting cloud density times the cloud radius, Σ / (ρ<sub>c,0</sub> R).</figcaption>
+  </figure>
+</section>
+
+<section class="section" id="three-d" aria-labelledby="threed-title">
+  <div class="section-head"><p class="eyebrow">IN THREE DIMENSIONS</p><h2 id="threed-title">What the 3D view shows</h2></div>
+  <div class="split">
+    <p>The 3D viewer draws two density surfaces for every saved state. A translucent blue surface wraps all gas denser than 0.15 of the starting cloud density and shows the whole cloud with its tail. A solid orange surface wraps gas denser than 0.6 of it and shows the dense core.</p>
+    <p>You can turn the cloud, play it through time, set two runs side by side at the same time and save pictures or recordings. The time of the state on screen is printed with every frame. <a href="viewer.html">Open the 3D viewer</a></p>
+  </div>
+</section>
+
+<section class="section results" id="results" aria-labelledby="results-title">
+  <div class="section-head"><p class="eyebrow">MAIN RESULTS</p><h2 id="results-title">What the twelve methods show</h2></div>
+  <div class="split">
+    <div class="findings">
+      <p>For the first 3 t<sub>cc</sub> the methods stay close: at level 5, eleven of the twelve keep between 67 and 79 percent of the dense gas.</p>
+      <p>By 5 t<sub>cc</sub> they separate. The eight grid codes keep between 10 and 28 percent, GIZMO MFV 37 percent, Arepo 54 percent, GADGET-4 76 percent and GIZMO MFM 98 percent.</p>
+      <p>The box faces matter late in the run. Running Athena++ in the periodic boxes of the other methods changes nothing for the first 2 t<sub>cc</sub> and raises its final dense fraction from 0.10 to 0.27 when the box is periodic along the wind, and to 0.33 when it is periodic on all faces.</p>
+      <p>AthenaPK and Athena++ use the same scheme and give the same history.</p>
+      <p><a href="paper/Cloud_survival_OJA.pdf">The full comparison is in the paper</a></p>
+    </div>
+    <div class="charts">
+      <figure class="chart" aria-labelledby="chart-a">
+        <figcaption id="chart-a">Dense gas left at t = 5 t<sub>cc</sub> · level 5 · χ&nbsp;100</figcaption>
+        <ul class="bars">
+          <li><span class="name">Eight grid codes</span><span class="track"><b class="range" style="left:10%;width:18%"></b></span><span class="val">10 to 28 %</span></li>
+          <li><span class="name">GIZMO MFV</span><span class="track"><b style="width:37%"></b></span><span class="val">37 %</span></li>
+          <li><span class="name">Arepo</span><span class="track"><b style="width:54%"></b></span><span class="val">54 %</span></li>
+          <li><span class="name">GADGET-4</span><span class="track"><b style="width:76%"></b></span><span class="val">76 %</span></li>
+          <li><span class="name">GIZMO MFM</span><span class="track"><b style="width:98%"></b></span><span class="val">98 %</span></li>
+        </ul>
+      </figure>
+      <figure class="chart" aria-labelledby="chart-b">
+        <figcaption id="chart-b">Athena++ in three boxes · final dense fraction</figcaption>
+        <ul class="bars">
+          <li><span class="name">Inflow and outflow</span><span class="track"><b style="width:10%"></b></span><span class="val">0.10</span></li>
+          <li><span class="name">Periodic along the wind</span><span class="track"><b style="width:27%"></b></span><span class="val">0.27</span></li>
+          <li><span class="name">Periodic on all faces</span><span class="track"><b style="width:33%"></b></span><span class="val">0.33</span></li>
+        </ul>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="about-the-data" aria-labelledby="data-title">
+  <div class="section-head"><p class="eyebrow">ABOUT THE DATA</p><h2 id="data-title">What you are looking at</h2></div>
+  <div class="facts">
+    <article><h3>What is published</h3><p>The site carries pictures, films and 3D surfaces made from every saved state of each run. The raw simulation snapshots are kept offline because of their size; the paper and the downloads below hold the measured histories.</p></article>
+    <article><h3>Smooth films</h3><p>In the library and on the Compare page the default version of every film plays at 60 frames per second. Between two saved states the picture cross fades, so the motion is smooth; the original versions and the films of the archive page keep the rate they were made at. Every frame prints its time, and a paused view or a saved picture shows a saved state.</p></article>
+    <article><h3>One grid for display</h3><p>Arepo, GIZMO MFM, GIZMO MFV and GADGET-4 do not use fixed cells. For the pictures and the 3D surfaces I place their gas on the same grid as the other codes, so every run is shown the same way.</p></article>
+    <article><h3>Earlier runs</h3><p>Runs from before the paper setup, with other contrasts, two dimensional runs and earlier films, are kept in the <a href="archive.html">archive</a>.</p></article>
+  </div>
+</section>
+
+<section class="section" id="downloads" aria-labelledby="downloads-title">
+  <div class="section-head"><p class="eyebrow">TAKE IT WITH YOU</p><h2 id="downloads-title">Downloads</h2></div>
+  <ul class="downloads">
+    <li><a href="paper/Cloud_survival_OJA.pdf"><span class="kind">PDF</span><span class="what">The paper: Cloud survival in supersonic winds</span></a></li>
+    <li><a href="paper/Cloud_survival_OJA_Overleaf.zip" download><span class="kind">ZIP</span><span class="what">Paper source for Overleaf, with figures and data</span></a></li>
+    <li><a href="data/studio-catalog.json" download><span class="kind">JSON</span><span class="what">Library catalog</span></a></li>
+    <li><a href="assets/recent/catalog.json" download><span class="kind">JSON</span><span class="what">Projections with their dense mass histories</span></a></li>
+    <li><a href="downloads/research-evidence-2026-09-09-current.zip" download><span class="kind">ZIP</span><span class="what">Analysis bundle of the velocity setup study, September 2026</span></a></li>
+    <li><a href="data/research-files.csv" download><span class="kind">CSV</span><span class="what">Analysis files with SHA-256 checksums</span></a></li>
+    <li><a href="data/streaming-inventory.csv" download><span class="kind">CSV</span><span class="what">Frame list of the earlier 3D runs</span></a></li>
+    <li><a href="https://github.com/KaanBoge/cloud-studio/tree/main/code"><span class="kind">CODE</span><span class="what">Setup files and problem sources on GitHub</span></a></li>
+  </ul>
+  <details class="files" id="files">
+    <summary>Browse the analysis files</summary>
+    <div class="filters"><label for="file-search">Find a code, report or script<input id="file-search" type="search" placeholder="For example: Enzo, mass, gizmo"></label><label for="file-kind">File type<select id="file-kind"><option value="">All types</option><option value="md">Reports · Markdown</option><option value="json">Data · JSON</option><option value="png">Figures · PNG</option><option value="py">Python</option><option value="sh">Bash</option><option value="ps1">PowerShell</option></select></label></div>
+    <p class="muted" id="file-count" aria-live="polite">Open this list to load it.</p>
+    <div class="table-wrap"><table><caption class="sr-only">Analysis files with their sizes</caption><thead><tr><th scope="col">File</th><th scope="col">Type</th><th scope="col">Size</th></tr></thead><tbody id="file-rows"><tr><td colspan="3"><a href="data/research-files.csv">Download the list as CSV</a></td></tr></tbody></table></div>
+    <button id="more-files" class="button" type="button" hidden>Show more files</button>
+  </details>
+</section>
+
+<section class="section" id="earlier-logs" aria-labelledby="logs-title">
+  <div class="section-head"><p class="eyebrow">EARLIER WORK</p><h2 id="logs-title">Earlier logs</h2></div>
+  <ul class="logs">
+    <li><a href="progress.html"><strong>Progress log</strong><span>The runs of the velocity setup study with their measured run times, up to 20 September 2026.</span></a></li>
+    <li><a href="verification.html"><strong>Verification log</strong><span>Checks and corrections to the setup and the analysis, up to 7 September 2026.</span></a></li>
+    <li><a href="https://github.com/KaanBoge/cloud-studio/blob/main/analysis/sensitivity_20260907/resolution_summary_v2/README.md"><strong>Velocity setup study</strong><span>How the starting velocity at the cloud edge changes the dense gas history within each code, September 2026.</span></a></li>
+    <li><a href="archive.html"><strong>Archive</strong><span>Earlier runs, films, terrain views and image sets.</span></a></li>
+  </ul>
+</section>
 </main>
-<footer><span>Cloud Studio · Kaan Boge · Research in progress</span><a href="https://github.com/KaanBoge/cloud-studio/blob/main/LICENSING.md">Website &amp; viewer: MIT · Scope &amp; notices ↗</a><a href="https://github.com/KaanBoge/cloud-studio/blob/main/CITATION.cff">Citation metadata ↗</a></footer>
+<footer class="foot"><span>Cloud Studio. Cloud crushing research by Kaan Boge, ongoing. MIT licence.</span><span class="foot-links"><a href="paper/Cloud_survival_OJA.pdf">Paper</a><a href="https://github.com/KaanBoge/cloud-studio">GitHub</a></span></footer>
 </body>
 </html>

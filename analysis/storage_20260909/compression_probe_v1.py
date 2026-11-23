@@ -15,9 +15,9 @@ from pathlib import Path
 
 import h5py
 
-ROOT = Path('/mnt/c/Users/kaanb/CloudCrushing/storage_inventory_20260909')
-CURRENT = Path('/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/full/sharp13')
-OLD = Path('/home/kaan/sensitivity_20260907/enzo/runs_v2')
+ROOT = Path('/mnt/c/Users/user/CloudCrushing/storage_inventory_20260909')
+CURRENT = Path('/mnt/c/Users/user/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/full/sharp13')
+OLD = Path('/home/user/sensitivity_20260907/enzo/runs_v2')
 SAMPLES = [
     ('L5_initial', CURRENT / 'DD0000'),
     ('L5_early_tcc_0.25', CURRENT / 'DD0005'),

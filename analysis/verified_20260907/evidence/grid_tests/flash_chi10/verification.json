@@ -4,9 +4,9 @@
   "solver_returncode": 0,
   "binary_sha256": "80471ee74948d54eee58840aa83cd996e711ff3b60e362b39c14eda4857f2486",
   "passed": true,
-  "snapshot": "/home/kaan/ic_audit_20260907/grid_tests/flash_chi10/cloudcrush_hdf5_chk_0000",
+  "snapshot": "/home/user/ic_audit_20260907/grid_tests/flash_chi10/cloudcrush_hdf5_chk_0000",
   "parameters": {
-    "source": "/home/kaan/ic_audit_20260907/grid_tests/flash_chi10/flash.par",
+    "source": "/home/user/ic_audit_20260907/grid_tests/flash_chi10/flash.par",
     "parameter_sha256": "77daebef8adf4f1e4defd508a3afb81a784cb4dd7e9e67dfd8841b85e3c6b5f0",
     "assumptions": [],
     "gamma": 1.6666666666666667,

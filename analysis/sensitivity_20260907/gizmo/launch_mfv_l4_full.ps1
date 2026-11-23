@@ -1,7 +1,7 @@
 $ErrorActionPreference='Stop'
-$taskStudy='C:\Users\kaanb\CloudCrushing\sensitivity_20260907\gizmo'
-$taskRaw='C:\Users\kaanb\CloudCrushing\native_runs\sensitivity_20260907\mfv_L4_velocity_pair_v1'
-$taskNative='\\wsl.localhost\Ubuntu\home\kaan\sensitivity_20260907\gizmo\mfv_timestep_repair_v1\l4_full_runner_v1'
+$taskStudy='C:\Users\user\CloudCrushing\sensitivity_20260907\gizmo'
+$taskRaw='C:\Users\user\CloudCrushing\native_runs\sensitivity_20260907\mfv_L4_velocity_pair_v1'
+$taskNative='\\wsl.localhost\Ubuntu\home\user\sensitivity_20260907\gizmo\mfv_timestep_repair_v1\l4_full_runner_v1'
 $taskExpected='2b77bb64257e2826dfe241ca6fb31eedcd5b868d73eeb4761cf96ac079430d7c'
 $taskRecord=Join-Path $taskStudy 'mfv_l4_full_worker.json'
 foreach($taskPath in @($taskRecord,(Join-Path $taskRaw 'batch.json'),(Join-Path $taskRaw 'windows_readback.json'))){if(Test-Path -LiteralPath $taskPath){throw ('Existing full launch state: '+$taskPath)}}
@@ -23,8 +23,8 @@ foreach($taskLaw in @('sharp13','tanh13')){
 }
 $taskProof=[ordered]@{status='windows_readback_passed';plan_sha256=$taskExpected;hashes=$taskHashes;checked_at_utc=[DateTime]::UtcNow.ToString('o');scope='Both full L4 ICs and identical parameters independently checked before launch.'}
 [IO.File]::WriteAllText((Join-Path $taskRaw 'windows_readback.json'),($taskProof|ConvertTo-Json -Depth 6),[Text.UTF8Encoding]::new($false))
-$taskWorker=Start-Process -FilePath 'wsl.exe' -ArgumentList @('-d','Ubuntu','--exec','env','OPENBLAS_NUM_THREADS=1','OMP_NUM_THREADS=1','MKL_NUM_THREADS=1','/home/kaan/venv/bin/python','/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/l4_full_runner_v1/mfv_l4_full.py','run') -WindowStyle Hidden -PassThru -RedirectStandardOutput (Join-Path $taskStudy 'mfv_l4_full_worker.log') -RedirectStandardError (Join-Path $taskStudy 'mfv_l4_full_worker.err.log')
-$taskState=[ordered]@{windows_pid=$taskWorker.Id;windows_started_utc=$taskWorker.StartTime.ToUniversalTime().ToString('o');plan_sha256=$taskExpected;runner='/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/l4_full_runner_v1/mfv_l4_full.py';raw_directory=$taskRaw;scope='Fresh repaired MFV L4 sharp/historical full pair on eight CPU ranks; each targets5tcc with0.05tcc output cadence. Second follows first only after native checks pass. No old rerun, raw deletion, native rebuild or blanket queue.'}
+$taskWorker=Start-Process -FilePath 'wsl.exe' -ArgumentList @('-d','Ubuntu','--exec','env','OPENBLAS_NUM_THREADS=1','OMP_NUM_THREADS=1','MKL_NUM_THREADS=1','/home/user/venv/bin/python','/home/user/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/l4_full_runner_v1/mfv_l4_full.py','run') -WindowStyle Hidden -PassThru -RedirectStandardOutput (Join-Path $taskStudy 'mfv_l4_full_worker.log') -RedirectStandardError (Join-Path $taskStudy 'mfv_l4_full_worker.err.log')
+$taskState=[ordered]@{windows_pid=$taskWorker.Id;windows_started_utc=$taskWorker.StartTime.ToUniversalTime().ToString('o');plan_sha256=$taskExpected;runner='/home/user/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/l4_full_runner_v1/mfv_l4_full.py';raw_directory=$taskRaw;scope='Fresh repaired MFV L4 sharp/historical full pair on eight CPU ranks; each targets5tcc with0.05tcc output cadence. Second follows first only after native checks pass. No old rerun, raw deletion, native rebuild or blanket queue.'}
 [IO.File]::WriteAllText($taskRecord,($taskState|ConvertTo-Json -Depth 6),[Text.UTF8Encoding]::new($false))
 $taskWorker.Refresh()
 if($taskWorker.HasExited -and $taskWorker.ExitCode -ne 0){throw 'Full worker failed; inspect retained logs, do not relaunch'}

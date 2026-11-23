@@ -1,5 +1,5 @@
 const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');
-const html=fs.readFileSync('C:/Users/kaanb/CloudCrushing/studio/viewer.html','utf8');
+const html=fs.readFileSync('C:/Users/user/CloudCrushing/studio/viewer.html','utf8');
 const source=html.match(/<script type="module">([\s\S]*?)<\/script>/)[1];
 new vm.SourceTextModule(source);
 const context=vm.createContext({});

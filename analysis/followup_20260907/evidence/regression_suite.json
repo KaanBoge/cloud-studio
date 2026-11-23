@@ -41,12 +41,12 @@
     "message": "STOP: this legacy queue deletes native data, uses stale inputs/binaries, and lacks a verified retention/comparison plan.\nDo not restart it. Use the reviewed, non-destructive runners after physical and storage preflight.\n"
   },
   "storage": {
-    "path": "/home/kaan",
+    "path": "/home/user",
     "filesystem_free_bytes": 176760819712,
     "filesystem_total_bytes": 1081101176832,
     "windows_backing_volume": {
       "distribution": "Ubuntu",
-      "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+      "base_path": "C:\\Users\\user\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
       "drive": "C:",
       "free_bytes": 38184312832,
       "total_bytes": 1999283154944

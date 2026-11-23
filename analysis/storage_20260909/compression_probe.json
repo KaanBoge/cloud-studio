@@ -3,7 +3,7 @@
   "samples": [
     {
       "label": "L5_initial",
-      "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/full/sharp13/DD0000",
+      "path": "/mnt/c/Users/user/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/full/sharp13/DD0000",
       "files": [
         {
           "name": "CW_0000",
@@ -452,7 +452,7 @@
     },
     {
       "label": "L5_early_tcc_0.25",
-      "path": "/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/full/sharp13/DD0005",
+      "path": "/mnt/c/Users/user/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1/full/sharp13/DD0005",
       "files": [
         {
           "name": "CW_0005",
@@ -901,7 +901,7 @@
     },
     {
       "label": "L4_sharp_terminal",
-      "path": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0101",
+      "path": "/home/user/sensitivity_20260907/enzo/runs_v2/L4_chi100_sharp13/DD0101",
       "files": [
         {
           "name": "CW_0101",
@@ -1350,7 +1350,7 @@
     },
     {
       "label": "L4_historical_terminal",
-      "path": "/home/kaan/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0101",
+      "path": "/home/user/sensitivity_20260907/enzo/runs_v2/L4_chi100_tanh13/DD0101",
       "files": [
         {
           "name": "CW_0101",

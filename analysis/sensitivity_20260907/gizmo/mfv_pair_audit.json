@@ -566,7 +566,7 @@
       ],
       "frames": [
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_000.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_000.hdf5",
           "sha256": "8b9fe781dee63ab42622ca7b5d628946bbfa361292744ab6194ea798c0a9f73b",
           "time_code": 0.0,
           "t_over_tcc": 0.0,
@@ -644,7 +644,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_001.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_001.hdf5",
           "sha256": "e80f837ea87d20221db1950f47402b45e8582ec5e67d48126c1f3de9cce55205",
           "time_code": 0.19364916731037085,
           "t_over_tcc": 0.05,
@@ -722,7 +722,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_002.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_002.hdf5",
           "sha256": "73c4dcb0389abdf27c2d2d542ae635a30d0d86617299c5a14a5d667392396971",
           "time_code": 0.3872983346207417,
           "t_over_tcc": 0.1,
@@ -800,7 +800,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_003.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_003.hdf5",
           "sha256": "5b5c64c302b278567f78aae110f6d75cc8dbdbdeda1f359ea389cac48659d8a5",
           "time_code": 0.5809475019311126,
           "t_over_tcc": 0.15,
@@ -878,7 +878,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_004.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_004.hdf5",
           "sha256": "f9c920e4b6803d3244d6b6e7e000a865eac11c14d9c7d1676f25613ca989707c",
           "time_code": 0.7745966692414834,
           "t_over_tcc": 0.2,
@@ -956,7 +956,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_005.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_005.hdf5",
           "sha256": "6ae124c59e35e1aaa5c4f82866104be421485384a6d2b4ba60e359be0474281d",
           "time_code": 0.9682458365518543,
           "t_over_tcc": 0.25,
@@ -1034,7 +1034,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_006.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_006.hdf5",
           "sha256": "3a725b8d125700f8777c1c1980f91c5d418c61d978114087eec1f0b457ce10bc",
           "time_code": 1.161895003862225,
           "t_over_tcc": 0.3,
@@ -1112,7 +1112,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_007.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_007.hdf5",
           "sha256": "4da8ada5d9293b158f6033fdda3f6ce40558f65fe79d21fb6de458061aedd1d1",
           "time_code": 1.355544171172596,
           "t_over_tcc": 0.35,
@@ -1190,7 +1190,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_008.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_008.hdf5",
           "sha256": "2d8a0a401ff4b4d14fa50dec0bce31c2ebffe24b5309abe962736636406131e9",
           "time_code": 1.5491933384829668,
           "t_over_tcc": 0.4,
@@ -1268,7 +1268,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_009.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_009.hdf5",
           "sha256": "c4b66a4f6f806942c5363108fab14a02485c6e003cd86b234f90b7d2d2719b10",
           "time_code": 1.7428425057933374,
           "t_over_tcc": 0.44999999999999996,
@@ -1346,7 +1346,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_010.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_010.hdf5",
           "sha256": "a827318439a0c9c4fbfb5375018113b6ced7fc666ef40d46e4e9308e20f3ac9a",
           "time_code": 1.9364916731037085,
           "t_over_tcc": 0.5,
@@ -1424,7 +1424,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_011.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_011.hdf5",
           "sha256": "603464cea6213ad5175c115b45e9cee1e85cb38746da04c8d984dc7d853734f4",
           "time_code": 2.1301408404140796,
           "t_over_tcc": 0.55,
@@ -1502,7 +1502,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_012.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_012.hdf5",
           "sha256": "c820e2eb516f2e2d3e929f61c8c3a82359700a5870c05ce55a43bab4a6a15301",
           "time_code": 2.32379000772445,
           "t_over_tcc": 0.6,
@@ -1580,7 +1580,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_013.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_013.hdf5",
           "sha256": "8ccd794f49c24204ca39cdc490f5f2b9cc47548990fefe7df12e557ce1c9ffe0",
           "time_code": 2.517439175034821,
           "t_over_tcc": 0.6499999999999999,
@@ -1658,7 +1658,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_014.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_014.hdf5",
           "sha256": "70a793001770e536eb1c286731a4323a374aea66d61d3f44255d71b7207f616b",
           "time_code": 2.7110883423451915,
           "t_over_tcc": 0.6999999999999998,
@@ -1736,7 +1736,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_015.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_015.hdf5",
           "sha256": "79d3e053ca7d299899fb40092b4a2ab85fd1772d1de6b5bced7e591197ef1574",
           "time_code": 2.904737509655562,
           "t_over_tcc": 0.7499999999999998,
@@ -1814,7 +1814,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_016.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_016.hdf5",
           "sha256": "a269eb2ca7188bec99f1c053d089acb1cf78361cd1e2eafe9aaec772dc9034d1",
           "time_code": 3.0983866769659323,
           "t_over_tcc": 0.7999999999999997,
@@ -1892,7 +1892,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_017.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_017.hdf5",
           "sha256": "fc428a14459aca6762575f4b60730ab8d242c251156d6f655d71167f41626799",
           "time_code": 3.2920358442763034,
           "t_over_tcc": 0.8499999999999998,
@@ -1970,7 +1970,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_018.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_018.hdf5",
           "sha256": "df9166682832976525a834d4363878c01a16a8f807f65ad19df376f68e0a8110",
           "time_code": 3.485685011586674,
           "t_over_tcc": 0.8999999999999997,
@@ -2048,7 +2048,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_019.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_019.hdf5",
           "sha256": "2c480db140e55aed5a51944b44adb3ebd716d298b18cc5b5f540234676ec5d4f",
           "time_code": 3.6793341788970446,
           "t_over_tcc": 0.9499999999999996,
@@ -2126,7 +2126,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_020.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_020.hdf5",
           "sha256": "7fc674d7b31b791c148753c67c45ebec4db86ec6a19a5961a1dd43666fc3973a",
           "time_code": 3.8729833462074152,
           "t_over_tcc": 0.9999999999999996,
@@ -2204,7 +2204,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_021.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_021.hdf5",
           "sha256": "561994bfa458d60527005999485dac7df782947e822bc6e70d8af1056cdaecbb",
           "time_code": 4.066632513517786,
           "t_over_tcc": 1.0499999999999994,
@@ -2282,7 +2282,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_022.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_022.hdf5",
           "sha256": "5ff9531b9e996d9b38bd5132883c171fea2daa8a9dd418a4c7b76c17bed6a939",
           "time_code": 4.2602816808281565,
           "t_over_tcc": 1.0999999999999994,
@@ -2360,7 +2360,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_023.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_023.hdf5",
           "sha256": "1548fc3b5b3fe587fbc05b960ae753a57d8cf028ed65699ef020817d95ded858",
           "time_code": 4.453930848138527,
           "t_over_tcc": 1.1499999999999995,
@@ -2438,7 +2438,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_024.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_024.hdf5",
           "sha256": "f0d3c1a25e67421ad3c8c2276c5ee237ad13d5b71dcd287fd3b52a7cc11f3950",
           "time_code": 4.647580015448898,
           "t_over_tcc": 1.1999999999999993,
@@ -2516,7 +2516,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_025.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_025.hdf5",
           "sha256": "5f0ecbc206fee01b4aaca376e5af6dbafd9cd58c276473c447af5d58094047be",
           "time_code": 4.841229182759268,
           "t_over_tcc": 1.2499999999999993,
@@ -2594,7 +2594,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_026.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_026.hdf5",
           "sha256": "efa7c464189bd32e176d37d6e2ddd2461c31b3144ef8f3270ebfd036ed3c3d6b",
           "time_code": 5.034878350069639,
           "t_over_tcc": 1.2999999999999992,
@@ -2672,7 +2672,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_027.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_027.hdf5",
           "sha256": "5cc02f9fd6a27787f43c5f2ace7160fb4fb9e89ca5b1981504b16350b6b70f10",
           "time_code": 5.22852751738001,
           "t_over_tcc": 1.3499999999999992,
@@ -2750,7 +2750,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_028.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_028.hdf5",
           "sha256": "4c0a989127dc9580997bd9827fdf3371aa140dc0880d642afdd584eb965481ed",
           "time_code": 5.422176684690379,
           "t_over_tcc": 1.3999999999999988,
@@ -2828,7 +2828,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_029.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_029.hdf5",
           "sha256": "26dc4518388f3b94ba2de8864702bfb55839f7eb21046ccc15cd3da7eddf42a3",
           "time_code": 5.615825852000751,
           "t_over_tcc": 1.449999999999999,
@@ -2906,7 +2906,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_030.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_030.hdf5",
           "sha256": "50407c13b72c37c3f922268e004d29d919ed207b95698f3b7bd4ae236f2ca9d7",
           "time_code": 5.8094750193111215,
           "t_over_tcc": 1.499999999999999,
@@ -2984,7 +2984,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_031.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_031.hdf5",
           "sha256": "fa5d75e146f842e440530c9aaa0c2db5e1c2178fce9977a492cd76f7ef80acaa",
           "time_code": 6.003124186621492,
           "t_over_tcc": 1.549999999999999,
@@ -3062,7 +3062,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_032.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_032.hdf5",
           "sha256": "26732512292c88e25c20fa25ff89cecc551cddd3a5d207e097090688247e86bb",
           "time_code": 6.196773353931863,
           "t_over_tcc": 1.5999999999999988,
@@ -3140,7 +3140,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_033.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_033.hdf5",
           "sha256": "301033a1236a01b1775a8167dfcf1aa562ad3ed1993ffa20cb425df7a42a07d1",
           "time_code": 6.390422521242233,
           "t_over_tcc": 1.6499999999999988,
@@ -3218,7 +3218,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_034.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_034.hdf5",
           "sha256": "c8743d4d561667214e343fdbd5a5724f853ca5af30929af7a6ed13f2ab3a72b4",
           "time_code": 6.584071688552604,
           "t_over_tcc": 1.6999999999999988,
@@ -3296,7 +3296,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_035.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_035.hdf5",
           "sha256": "19c976bd2dac490987f155e4de851c4187c0505ff0f509b4254ee5a384380327",
           "time_code": 6.777720855862975,
           "t_over_tcc": 1.7499999999999987,
@@ -3374,7 +3374,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_036.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_036.hdf5",
           "sha256": "ca3a24317e4494416fc47fa9a49cbced604cf92802c10bc2b5ca980b5f40f510",
           "time_code": 6.971370023173346,
           "t_over_tcc": 1.799999999999999,
@@ -3452,7 +3452,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_037.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_037.hdf5",
           "sha256": "7511e93c9e60479d970133f61f17e5b0418ea12ae9bfebc9184ee0cff93b3b11",
           "time_code": 7.165019190483716,
           "t_over_tcc": 1.8499999999999985,
@@ -3530,7 +3530,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_038.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_038.hdf5",
           "sha256": "7524bfea1949b531561d81bb4ddaef3b3918aedf5dc1bb360fb490e55bcd3c0d",
           "time_code": 7.358668357794087,
           "t_over_tcc": 1.8999999999999986,
@@ -3608,7 +3608,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_039.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_039.hdf5",
           "sha256": "7a573a52ee40c6bf8449e1582596a4b677e176f2acdec117617641cc81e3a789",
           "time_code": 7.552317525104456,
           "t_over_tcc": 1.9499999999999982,
@@ -3686,7 +3686,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_040.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_040.hdf5",
           "sha256": "349097854570f5519cafd76f98e0a4c07c7bc6b376c3adb0f2cdf5cf6d4361fc",
           "time_code": 7.745966692414828,
           "t_over_tcc": 1.9999999999999984,
@@ -3764,7 +3764,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_041.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_041.hdf5",
           "sha256": "aaead5e36856f276c0fe1f1cea9f8d8085b237af1d80cd5a84e7da0009a356f6",
           "time_code": 7.9396158597251985,
           "t_over_tcc": 2.0499999999999985,
@@ -3842,7 +3842,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_042.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_042.hdf5",
           "sha256": "b867b46b149f1844926010692968b3cde23526033786d756dc7653265dfcf9ce",
           "time_code": 8.13326502703557,
           "t_over_tcc": 2.0999999999999983,
@@ -3920,7 +3920,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_043.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_043.hdf5",
           "sha256": "d6e12779998ee95a017abeafcab9786a468ea70bf78530499b630553776ef724",
           "time_code": 8.32691419434594,
           "t_over_tcc": 2.1499999999999986,
@@ -3998,7 +3998,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_044.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_044.hdf5",
           "sha256": "da8d7297bd5a0547f3b5b7b9785e392e53b77f1f6e3afc6539e2f727a3d95e9c",
           "time_code": 8.520563361656311,
           "t_over_tcc": 2.1999999999999984,
@@ -4076,7 +4076,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_045.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_045.hdf5",
           "sha256": "d8ccac49ebc95de76ff85df8044079441ca0457bb8cab4b5b13e9de7a02ca483",
           "time_code": 8.714212528966682,
           "t_over_tcc": 2.2499999999999982,
@@ -4154,7 +4154,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_046.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_046.hdf5",
           "sha256": "403623a7b1b3b19a5af744ba67256607621f106eca38f3e36d943f8d5b5cf4a0",
           "time_code": 8.907861696277052,
           "t_over_tcc": 2.2999999999999985,
@@ -4232,7 +4232,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_047.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_047.hdf5",
           "sha256": "bb573b9511898d87ccdbdf4778ba8082152a59f686dbce393cbd575ea17dbbe4",
           "time_code": 9.101510863587423,
           "t_over_tcc": 2.3499999999999983,
@@ -4310,7 +4310,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_048.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_048.hdf5",
           "sha256": "45d952297c2870c62545d2783f8ec271e19df538b0e057e9c212d3f596086b11",
           "time_code": 9.295160030897794,
           "t_over_tcc": 2.399999999999998,
@@ -4388,7 +4388,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_049.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_049.hdf5",
           "sha256": "daa5f837713b49002138a5ff38cb8b8ed1c8c8e6b764b4e77e31e7ff50b916ba",
           "time_code": 9.488809198208164,
           "t_over_tcc": 2.449999999999998,
@@ -4466,7 +4466,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_050.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_050.hdf5",
           "sha256": "ac773857289a953c5038d13bdf970d498075f82190453ae2e217a0ddd9e5a689",
           "time_code": 9.682458365518535,
           "t_over_tcc": 2.4999999999999982,
@@ -4544,7 +4544,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_051.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_051.hdf5",
           "sha256": "408d5414c31b3363118e0ec3ae3a5516a729e1fa89d96a0017f738d5926a7a84",
           "time_code": 9.876107532828904,
           "t_over_tcc": 2.5499999999999976,
@@ -4622,7 +4622,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_052.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_052.hdf5",
           "sha256": "7383b8cc304dcc977193b3f5db5a6a53dabb8f89b8b18ba8a243472a6666942e",
           "time_code": 10.069756700139276,
           "t_over_tcc": 2.599999999999998,
@@ -4700,7 +4700,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_053.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_053.hdf5",
           "sha256": "feee2b590542c23e9a5e2b5dfd61efae7e082624723b038aabfda014ef8a0023",
           "time_code": 10.263405867449647,
           "t_over_tcc": 2.6499999999999977,
@@ -4778,7 +4778,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_054.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_054.hdf5",
           "sha256": "e2323e2d3e296e1332e4a680e31bbe3172ffa9984ea50db8db43f43b142a7c8c",
           "time_code": 10.457055034760018,
           "t_over_tcc": 2.699999999999998,
@@ -4856,7 +4856,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_055.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_055.hdf5",
           "sha256": "34f1763c9e6cea5465761142c0b4c66e0d935a5bf32b6fb433023c3f31911160",
           "time_code": 10.650704202070388,
           "t_over_tcc": 2.749999999999998,
@@ -4934,7 +4934,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_056.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_056.hdf5",
           "sha256": "dbd427ea1e16acfbb6a611bdecb77638508ae968336addad2a8a9b9aa71f37e2",
           "time_code": 10.844353369380759,
           "t_over_tcc": 2.7999999999999976,
@@ -5012,7 +5012,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_057.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_057.hdf5",
           "sha256": "e42d8ab335a297a9894dae500cd482b58cb48ee947e6f537a423b60813fe278c",
           "time_code": 11.038002536691128,
           "t_over_tcc": 2.849999999999997,
@@ -5090,7 +5090,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_058.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_058.hdf5",
           "sha256": "0b83648cdcb7a0f6f60407d2373bdd4ec39b57f9d1dce76dbad6426920038762",
           "time_code": 11.2316517040015,
           "t_over_tcc": 2.8999999999999977,
@@ -5168,7 +5168,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_059.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_059.hdf5",
           "sha256": "b53c5be0b504994855ea45314137cb4f2541aee6081ae1e4c5b84bd82ad5bdc9",
           "time_code": 11.42530087131187,
           "t_over_tcc": 2.9499999999999975,
@@ -5246,7 +5246,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_060.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_060.hdf5",
           "sha256": "f4d5c14f6499ff50039b72dfc017d5abbe9ed42db1923e320723a25181ada23a",
           "time_code": 11.618950038622241,
           "t_over_tcc": 2.9999999999999973,
@@ -5324,7 +5324,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_061.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_061.hdf5",
           "sha256": "6fd0493bd614611240a1b87412107a3d1770a5798f203b79dcb94962fd4bbeaa",
           "time_code": 11.812599205932612,
           "t_over_tcc": 3.0499999999999976,
@@ -5402,7 +5402,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_062.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_062.hdf5",
           "sha256": "44417b9a0b3ff7d8a42a90c9f6a976c14fe5e2057d7c70f82edfb3dddfca4781",
           "time_code": 12.00624837324298,
           "t_over_tcc": 3.099999999999997,
@@ -5480,7 +5480,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_063.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_063.hdf5",
           "sha256": "9eb637ba849ad63b7c8ab31300b7c687d0ac9d6c751752dce418e065f08684c0",
           "time_code": 12.199897540553353,
           "t_over_tcc": 3.1499999999999972,
@@ -5558,7 +5558,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_064.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_064.hdf5",
           "sha256": "1435f83ca8309d57b612e9aba2724e6c200762e8e5c5118bda9ea9678ee92693",
           "time_code": 12.393546707863724,
           "t_over_tcc": 3.199999999999997,
@@ -5636,7 +5636,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_065.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_065.hdf5",
           "sha256": "0db4644e9fd7b59e40b1335830a311f800f7c374fc0df9bd0a3450ed84f9cab9",
           "time_code": 12.587195875174094,
           "t_over_tcc": 3.2499999999999973,
@@ -5714,7 +5714,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_066.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_066.hdf5",
           "sha256": "448e4a8456012faf57a9cc1a96d505476440c0c30f9b966dd89ac1e0b2e7b3a9",
           "time_code": 12.780845042484465,
           "t_over_tcc": 3.299999999999997,
@@ -5792,7 +5792,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_067.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_067.hdf5",
           "sha256": "ad793376b140e4bcd8e0413169369d88ec047fab65a1577947db21cfe6574e59",
           "time_code": 12.974494209794836,
           "t_over_tcc": 3.349999999999997,
@@ -5870,7 +5870,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_068.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_068.hdf5",
           "sha256": "3a50a35037feb84aa3b4d0898519e2aa52fc687cef8a466a68475decfd91384e",
           "time_code": 13.168143377105205,
           "t_over_tcc": 3.3999999999999964,
@@ -5948,7 +5948,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_069.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_069.hdf5",
           "sha256": "21df0784fde1b5986ac9d8f2950724cf06a1bea03185f8564fbf8fb2b6222fce",
           "time_code": 13.361792544415577,
           "t_over_tcc": 3.449999999999997,
@@ -6026,7 +6026,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_070.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_070.hdf5",
           "sha256": "b5343a42dd0854cd7b5658df312c1b3344e5454a48a5728be86368c64e482d58",
           "time_code": 13.555441711725948,
           "t_over_tcc": 3.499999999999997,
@@ -6104,7 +6104,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_071.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_071.hdf5",
           "sha256": "20be81bc214a0752d17e53ce97520ebe91263ecd8789f501aca6c9531ed42305",
           "time_code": 13.749090879036318,
           "t_over_tcc": 3.5499999999999967,
@@ -6182,7 +6182,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_072.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_072.hdf5",
           "sha256": "526e60a62300b58c2bd24468e67ecb77911c4b9820064fe9dead84526bbf0f4c",
           "time_code": 13.942740046346689,
           "t_over_tcc": 3.599999999999997,
@@ -6260,7 +6260,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_073.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_073.hdf5",
           "sha256": "f3bab0d9529c33a7fb4f954ed4f9eeb6bb41eb2cfd28a23f4697b1b55ef15788",
           "time_code": 14.136389213657058,
           "t_over_tcc": 3.6499999999999964,
@@ -6338,7 +6338,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_074.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_074.hdf5",
           "sha256": "0d4cff4ff66e99d88b200a2a1854f166400f102b796c530829efd7867174f375",
           "time_code": 14.33003838096743,
           "t_over_tcc": 3.6999999999999966,
@@ -6416,7 +6416,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_075.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_075.hdf5",
           "sha256": "ea36ff23969b1289f8063792ca1492dc8f3b472bae1f5f16f6a613fcda0f4080",
           "time_code": 14.5236875482778,
           "t_over_tcc": 3.7499999999999964,
@@ -6494,7 +6494,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_076.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_076.hdf5",
           "sha256": "1084c227dac4e5bcd2377f02ab3d99b26b27a182beac7830b81e5f506c144d3e",
           "time_code": 14.717336715588171,
           "t_over_tcc": 3.7999999999999967,
@@ -6572,7 +6572,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_077.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_077.hdf5",
           "sha256": "0ca5e39797eb95ffa6e772bf3d6d0d047108ff7ed6be1cdec109293fe6b19424",
           "time_code": 14.910985882898542,
           "t_over_tcc": 3.8499999999999965,
@@ -6650,7 +6650,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_078.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_078.hdf5",
           "sha256": "37e4aa27b652bf51d74a9a7c694c8d2bc16eb3715960b5aeaafb4d1f0c88ddeb",
           "time_code": 15.104635050208913,
           "t_over_tcc": 3.8999999999999964,
@@ -6728,7 +6728,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_079.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_079.hdf5",
           "sha256": "4efc9ae1b7e9a77d42de70a7d88fbbd07f70d99a88512ed983c083e73c33a15d",
           "time_code": 15.298284217519281,
           "t_over_tcc": 3.9499999999999957,
@@ -6806,7 +6806,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_080.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_080.hdf5",
           "sha256": "725a510f21322278696a41dc8dbaf2f329e8bf3bc3a231e052927b024626da8a",
           "time_code": 15.491933384829654,
           "t_over_tcc": 3.9999999999999964,
@@ -6884,7 +6884,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_081.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_081.hdf5",
           "sha256": "17607684fc7477297c80572885ad08d803f68bbb5caf570054893a240787c632",
           "time_code": 15.685582552140025,
           "t_over_tcc": 4.049999999999996,
@@ -6962,7 +6962,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_082.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_082.hdf5",
           "sha256": "40f003e3039b46c89cc9d8628e6285771f3fb9f1bf70b6ee1fdf252c85e9c7bb",
           "time_code": 15.879231719450395,
           "t_over_tcc": 4.099999999999996,
@@ -7040,7 +7040,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_083.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_083.hdf5",
           "sha256": "8397619ac40a5db7df303d349b195d19ecc39ab5c1dde58593b965856fc0e54b",
           "time_code": 16.072880886760768,
           "t_over_tcc": 4.149999999999997,
@@ -7118,7 +7118,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_084.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_084.hdf5",
           "sha256": "b08bac58fe1add9540e6a6c6a98c6ce6a53effaed26570e1361c8ecf72857510",
           "time_code": 16.26653005407114,
           "t_over_tcc": 4.199999999999997,
@@ -7196,7 +7196,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_085.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_085.hdf5",
           "sha256": "0e798aaafdf67105db6398c54944ee7d4161fe30428382fadc09ba790d8a550c",
           "time_code": 16.460179221381512,
           "t_over_tcc": 4.249999999999997,
@@ -7274,7 +7274,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_086.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_086.hdf5",
           "sha256": "6fc33d1630534c8e3c2825c90fddac0435c42e53ff5b7f540232f2eb4e3b76b7",
           "time_code": 16.653828388691885,
           "t_over_tcc": 4.299999999999998,
@@ -7352,7 +7352,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_087.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_087.hdf5",
           "sha256": "fd3a1257176d5c411b5ba7bd9c29ebd5ca8272eaab49593fb72fe0c9b1d0f6c2",
           "time_code": 16.847477556002257,
           "t_over_tcc": 4.349999999999998,
@@ -7430,7 +7430,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_088.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_088.hdf5",
           "sha256": "888714c6660f63943898ffc0e3cd571e052efabcb88fa01abc7339006d059162",
           "time_code": 17.04112672331263,
           "t_over_tcc": 4.399999999999999,
@@ -7508,7 +7508,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_089.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_089.hdf5",
           "sha256": "f966c0e966787f1d23a8bd48888869eb60fdecd92d803370088e2632fa41014d",
           "time_code": 17.234775890623002,
           "t_over_tcc": 4.449999999999999,
@@ -7586,7 +7586,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_090.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_090.hdf5",
           "sha256": "f29aae6f2dda87dd52390d2c0daf419a9f083490a6a7a7e3ca22137cef148d40",
           "time_code": 17.428425057933374,
           "t_over_tcc": 4.499999999999999,
@@ -7664,7 +7664,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_091.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_091.hdf5",
           "sha256": "744addf0b9c527c64bf698236112e154c1dd4c022fbdfa40a985923499b89c01",
           "time_code": 17.622074225243747,
           "t_over_tcc": 4.55,
@@ -7742,7 +7742,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_092.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_092.hdf5",
           "sha256": "8c37b4eb2486e965da32a94881f009aa2cb4620038818387d13783719ef48a44",
           "time_code": 17.81572339255412,
           "t_over_tcc": 4.6000000000000005,
@@ -7820,7 +7820,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_093.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_093.hdf5",
           "sha256": "afdb6ed712fe6b99d98f993b8545b1fe7156387daad5ef692b1ed29a1fe142cd",
           "time_code": 18.00937255986449,
           "t_over_tcc": 4.65,
@@ -7898,7 +7898,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_094.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_094.hdf5",
           "sha256": "efda3ad80c2d7fd8058e8d43d6f6251e8e3f9bf6134926e8ec4277d22aaef6fb",
           "time_code": 18.203021727174864,
           "t_over_tcc": 4.700000000000001,
@@ -7976,7 +7976,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_095.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_095.hdf5",
           "sha256": "bf77e582aa89267b359673dac02d8d8395c1a9f76e081afe2bf5175aeb0e413d",
           "time_code": 18.396670894485236,
           "t_over_tcc": 4.750000000000002,
@@ -8054,7 +8054,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_096.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_096.hdf5",
           "sha256": "215bdb1bc43dee79ec914d07db8623bf551bf834c9e795318f7abe54e36dcdd8",
           "time_code": 18.59032006179561,
           "t_over_tcc": 4.800000000000002,
@@ -8132,7 +8132,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_097.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_097.hdf5",
           "sha256": "be7962b07fbaafb026585cbe55f0a49006afd2b1e09884bee01ba392d2338ccf",
           "time_code": 18.78396922910598,
           "t_over_tcc": 4.850000000000002,
@@ -8210,7 +8210,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_098.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_098.hdf5",
           "sha256": "0f80f7fd41a70251bac9bccc7bf7a163bdd22f47d97850d5f5c98ed2b382eda5",
           "time_code": 18.977618396416354,
           "t_over_tcc": 4.900000000000003,
@@ -8288,7 +8288,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_099.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_099.hdf5",
           "sha256": "8425e26947404c0361c7eeb052511cc5db7ef916a273d2cebd28e685e57c076e",
           "time_code": 19.171267563726726,
           "t_over_tcc": 4.950000000000003,
@@ -8366,7 +8366,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_100.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_100.hdf5",
           "sha256": "d5ff5113ed39822a4382fe442587bf53aa99e244cae39f133255b53ae82b8dd6",
           "time_code": 19.364916731037084,
           "t_over_tcc": 5.0,
@@ -8446,42 +8446,42 @@
       ],
       "restart_files": [
         {
-          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/restartfiles/restart.1",
+          "path": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/restartfiles/restart.1",
           "bytes": 6352228,
           "sha256": "382382d55647d7bb92493cf511709bc6f1fee6e8f613910db7d25c66d3074f7c"
         },
         {
-          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/restartfiles/restart.0",
+          "path": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/restartfiles/restart.0",
           "bytes": 6285108,
           "sha256": "825365768f41695f55acf32f1ebfe8eadcc693850ebb9b7b686e3430d7d52dcd"
         },
         {
-          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/restartfiles/restart.4",
+          "path": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/restartfiles/restart.4",
           "bytes": 6327820,
           "sha256": "2d1d18d1ab81ab5c1adbab3d76afb627992fa208606a90ebe72a9e124bb4ce60"
         },
         {
-          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/restartfiles/restart.5",
+          "path": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/restartfiles/restart.5",
           "bytes": 6308340,
           "sha256": "75e601622ef29bb7c55c74ec6e05b3cb9e2de1948fb1ced7f73a59851b0436c4"
         },
         {
-          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/restartfiles/restart.2",
+          "path": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/restartfiles/restart.2",
           "bytes": 6298724,
           "sha256": "f592cb246c4b0d32341c1689745fb32a0372dc1538aa372d589513d68de2f290"
         },
         {
-          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/restartfiles/restart.7",
+          "path": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/restartfiles/restart.7",
           "bytes": 6330004,
           "sha256": "3b00230ca703757edcc073ac730a5f18d259d4ae40ca84dcd52f53f9c4e14095"
         },
         {
-          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/restartfiles/restart.3",
+          "path": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/restartfiles/restart.3",
           "bytes": 6357996,
           "sha256": "547ca0cc5f7362140f3ec46a3a48ed1317429df41103da317de9615831b819bb"
         },
         {
-          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/restartfiles/restart.6",
+          "path": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/restartfiles/restart.6",
           "bytes": 6317540,
           "sha256": "4beaf95aa1c1035cdbc35ff7f1404521148f2636c62ddc38f774ee0cb4c9a3ca"
         }
@@ -9005,7 +9005,7 @@
       ],
       "frames": [
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_000.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_000.hdf5",
           "sha256": "0722e124a64cfbc723fbe39cf7a5cbda0327fb522090bb62b8a8fb4c6a324390",
           "time_code": 0.0,
           "t_over_tcc": 0.0,
@@ -9083,7 +9083,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_001.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_001.hdf5",
           "sha256": "66a2866882c3bfd039df2634f6fbcb950a431f47945a5a79d4abdb06099dcfc3",
           "time_code": 0.19364916731037085,
           "t_over_tcc": 0.05,
@@ -9161,7 +9161,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_002.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_002.hdf5",
           "sha256": "facab3eac0dee2a4443e63a06355df0b9571ebd72ddfe0182a702b8a54bcc949",
           "time_code": 0.3872983346207417,
           "t_over_tcc": 0.1,
@@ -9239,7 +9239,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_003.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_003.hdf5",
           "sha256": "859b9cc94553fccd6ebe9039edee3a48f85f72cc7cf1ffbcc17619740de200d4",
           "time_code": 0.5809475019311126,
           "t_over_tcc": 0.15,
@@ -9317,7 +9317,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_004.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_004.hdf5",
           "sha256": "4f151c75a644ce2cfdf8fd7d53a52107aa641d216093b48a870323962b7ed205",
           "time_code": 0.7745966692414834,
           "t_over_tcc": 0.2,
@@ -9395,7 +9395,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_005.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_005.hdf5",
           "sha256": "2ef8c50d90037df4c62c9ccb8f435d9fe0781a314171dde41e16c428b60e3865",
           "time_code": 0.9682458365518543,
           "t_over_tcc": 0.25,
@@ -9473,7 +9473,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_006.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_006.hdf5",
           "sha256": "2321cecb09a43443b7701c3b1327f35e1120e7518d23619bc27cf0436ed0f3b5",
           "time_code": 1.161895003862225,
           "t_over_tcc": 0.3,
@@ -9551,7 +9551,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_007.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_007.hdf5",
           "sha256": "41e2e0706610262555dff5fe540543bc3ece94e52e78f0b7c32138e625d816a7",
           "time_code": 1.355544171172596,
           "t_over_tcc": 0.35,
@@ -9629,7 +9629,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_008.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_008.hdf5",
           "sha256": "704e207271e23b974cdeb12f800d7187c90937d6fa56dafcaa628c921d29d68a",
           "time_code": 1.5491933384829668,
           "t_over_tcc": 0.4,
@@ -9707,7 +9707,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_009.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_009.hdf5",
           "sha256": "4526a48db3dcea5dfb8c60caad717a36bf217a90858477ef129e628f33c0b83e",
           "time_code": 1.7428425057933374,
           "t_over_tcc": 0.44999999999999996,
@@ -9785,7 +9785,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_010.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_010.hdf5",
           "sha256": "48c13e504d43b96d3296ba4a9fd750aa9ed53383b9e4361747d0d54246358d1f",
           "time_code": 1.9364916731037085,
           "t_over_tcc": 0.5,
@@ -9863,7 +9863,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_011.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_011.hdf5",
           "sha256": "ca1a8156f43c1468d87be616cf0158fe72966aecb4a5c3e4a4054594aae53068",
           "time_code": 2.1301408404140796,
           "t_over_tcc": 0.55,
@@ -9941,7 +9941,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_012.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_012.hdf5",
           "sha256": "c3d5bff8315170c30644ca7805dd29c0ade93dd3b106eeada70c69bcf14aca24",
           "time_code": 2.32379000772445,
           "t_over_tcc": 0.6,
@@ -10019,7 +10019,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_013.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_013.hdf5",
           "sha256": "e8077ce9ac1eb378d1b82ab772a4c6fabc8699199fa91ee11592f83cdd764593",
           "time_code": 2.517439175034821,
           "t_over_tcc": 0.6499999999999999,
@@ -10097,7 +10097,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_014.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_014.hdf5",
           "sha256": "84342a15456dc88166cfbce11dd70391459c01384133bafbaad6615266349361",
           "time_code": 2.7110883423451915,
           "t_over_tcc": 0.6999999999999998,
@@ -10175,7 +10175,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_015.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_015.hdf5",
           "sha256": "ba93843e0d80501e295c90056ebc6581c1e35a61e5893ed14fbc329949cc30d5",
           "time_code": 2.904737509655562,
           "t_over_tcc": 0.7499999999999998,
@@ -10253,7 +10253,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_016.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_016.hdf5",
           "sha256": "4236893a62640638fce18d468f144585c4bca60e7a58de8f2be321bc5bb88ab3",
           "time_code": 3.0983866769659323,
           "t_over_tcc": 0.7999999999999997,
@@ -10331,7 +10331,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_017.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_017.hdf5",
           "sha256": "e31b5efbb3c39e6fedd461a8c3b3edd00a808a8d5fba70d881d813be1e91f76c",
           "time_code": 3.2920358442763034,
           "t_over_tcc": 0.8499999999999998,
@@ -10409,7 +10409,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_018.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_018.hdf5",
           "sha256": "54032243310079644f6c29887276dc168a2333de42c4f083ca4ab11f845c7ebc",
           "time_code": 3.485685011586674,
           "t_over_tcc": 0.8999999999999997,
@@ -10487,7 +10487,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_019.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_019.hdf5",
           "sha256": "e45c13041bf79ad6a4aa85c90da9a1d9962d8ac33b18386e16deeeaccfcd236c",
           "time_code": 3.6793341788970446,
           "t_over_tcc": 0.9499999999999996,
@@ -10565,7 +10565,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_020.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_020.hdf5",
           "sha256": "7b2a5e9bd8a83c25c516c2036ebff9297cda18a638fa6780cacd5b0092dc75c7",
           "time_code": 3.8729833462074152,
           "t_over_tcc": 0.9999999999999996,
@@ -10643,7 +10643,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_021.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_021.hdf5",
           "sha256": "ae6eae2f01a21d1a29279e1bd02fe45d80385cda70e733fbb444486888a11941",
           "time_code": 4.066632513517786,
           "t_over_tcc": 1.0499999999999994,
@@ -10721,7 +10721,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_022.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_022.hdf5",
           "sha256": "4f6acaa4aefe841ba97686c2e77fcac8abe350c261baae0a34b2c102099f2923",
           "time_code": 4.2602816808281565,
           "t_over_tcc": 1.0999999999999994,
@@ -10799,7 +10799,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_023.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_023.hdf5",
           "sha256": "28c7704aab2ffca134d9b29b0a7715c8f8f463557ec14936112d456ee8423eb7",
           "time_code": 4.453930848138527,
           "t_over_tcc": 1.1499999999999995,
@@ -10877,7 +10877,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_024.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_024.hdf5",
           "sha256": "80277bd300ed9e300f0b4cac63c118c6348966c0790bc24e98216bc35cd630a8",
           "time_code": 4.647580015448898,
           "t_over_tcc": 1.1999999999999993,
@@ -10955,7 +10955,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_025.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_025.hdf5",
           "sha256": "5b896bd84ccc81b556de095e73ebdfb168b4d834ea0c808f27f1e6be875e87f4",
           "time_code": 4.841229182759268,
           "t_over_tcc": 1.2499999999999993,
@@ -11033,7 +11033,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_026.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_026.hdf5",
           "sha256": "6f6ea369a937a46472ede1dad06c0a40ee21ea45f75afc684c7d3685c77413ac",
           "time_code": 5.034878350069639,
           "t_over_tcc": 1.2999999999999992,
@@ -11111,7 +11111,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_027.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_027.hdf5",
           "sha256": "95482ecf962a98b8e0939e2e7fa913eb265de06ab841f949c6c605b4fb7cb556",
           "time_code": 5.22852751738001,
           "t_over_tcc": 1.3499999999999992,
@@ -11189,7 +11189,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_028.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_028.hdf5",
           "sha256": "f73aa8f8bb7d77f271674133bd9e6c035951f4589790e549b79da5715c6804d1",
           "time_code": 5.422176684690379,
           "t_over_tcc": 1.3999999999999988,
@@ -11267,7 +11267,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_029.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_029.hdf5",
           "sha256": "54c5cfeb249082dda4b0f5051fdf9f757157d755bab814c57e41b7780b5eca01",
           "time_code": 5.615825852000751,
           "t_over_tcc": 1.449999999999999,
@@ -11345,7 +11345,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_030.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_030.hdf5",
           "sha256": "83ff7102e666b128e0338f45d30d84918722186fb3e94ba600160f9b272906b7",
           "time_code": 5.8094750193111215,
           "t_over_tcc": 1.499999999999999,
@@ -11423,7 +11423,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_031.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_031.hdf5",
           "sha256": "618ae6d22030de1cd29daf42bb691d762a569fa79b630be19ec8da96a5c35c84",
           "time_code": 6.003124186621492,
           "t_over_tcc": 1.549999999999999,
@@ -11501,7 +11501,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_032.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_032.hdf5",
           "sha256": "86d316c1e882be56a9d33e863a2c5811e1cf0c4ac8ef95a98630587604e7596a",
           "time_code": 6.196773353931863,
           "t_over_tcc": 1.5999999999999988,
@@ -11579,7 +11579,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_033.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_033.hdf5",
           "sha256": "9553c32910de0e918cc82c26e3459c2bc100ba99ba707e010631736b671e607e",
           "time_code": 6.390422521242233,
           "t_over_tcc": 1.6499999999999988,
@@ -11657,7 +11657,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_034.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_034.hdf5",
           "sha256": "14c2f23263e7ab03d677e9c14eb1e3c8b7975d3cc5b076a0f3ab0762ca0d5cf9",
           "time_code": 6.584071688552604,
           "t_over_tcc": 1.6999999999999988,
@@ -11735,7 +11735,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_035.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_035.hdf5",
           "sha256": "3b912b0a3fa939b30953b2068f6c82d7d7257f98d91df910eb7a4bd7e5461ff6",
           "time_code": 6.777720855862975,
           "t_over_tcc": 1.7499999999999987,
@@ -11813,7 +11813,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_036.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_036.hdf5",
           "sha256": "eab2a12fc2287ce2cd64b21011dfa2e658503535204cea86140f19c9e68028d7",
           "time_code": 6.971370023173346,
           "t_over_tcc": 1.799999999999999,
@@ -11891,7 +11891,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_037.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_037.hdf5",
           "sha256": "c3be57ac90b534ed668d2e3d2bab2739df8a12f4431d9b1f95591cf32316a96b",
           "time_code": 7.165019190483716,
           "t_over_tcc": 1.8499999999999985,
@@ -11969,7 +11969,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_038.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_038.hdf5",
           "sha256": "1f06ec7dea046b157cd3eca7efc713d4404a9b2ea01eaee93726c38cb2a036cb",
           "time_code": 7.358668357794087,
           "t_over_tcc": 1.8999999999999986,
@@ -12047,7 +12047,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_039.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_039.hdf5",
           "sha256": "54aac7f90edaf9e63d782ff312764ddf37296343c65792e5b4b0e7a8d19330f1",
           "time_code": 7.552317525104456,
           "t_over_tcc": 1.9499999999999982,
@@ -12125,7 +12125,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_040.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_040.hdf5",
           "sha256": "089eaa00045de1e273e48d6e0d6ad05f775758437f6ddb391a4afa4ce5250777",
           "time_code": 7.745966692414828,
           "t_over_tcc": 1.9999999999999984,
@@ -12203,7 +12203,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_041.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_041.hdf5",
           "sha256": "8e3c28b69df1f5fb722d34e51c04f5ac9614c6654762e224e7d2559dc4345989",
           "time_code": 7.9396158597251985,
           "t_over_tcc": 2.0499999999999985,
@@ -12281,7 +12281,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_042.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_042.hdf5",
           "sha256": "caefd4a9a3c359cd0fda01dbcd5701438085d2ca9e7a10eeb10973599c733649",
           "time_code": 8.13326502703557,
           "t_over_tcc": 2.0999999999999983,
@@ -12359,7 +12359,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_043.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_043.hdf5",
           "sha256": "0fda97e9d36088043cfc1646e96ae8c67c7fd3f51e2023e7c5018b4df96db9df",
           "time_code": 8.32691419434594,
           "t_over_tcc": 2.1499999999999986,
@@ -12437,7 +12437,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_044.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_044.hdf5",
           "sha256": "c7f7dc2dc4b72158546b79acc7d2b0d3d4d18c963b71c416552e8eeb34415c02",
           "time_code": 8.520563361656311,
           "t_over_tcc": 2.1999999999999984,
@@ -12515,7 +12515,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_045.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_045.hdf5",
           "sha256": "c4edd7f2d6d91cda8c9dcf1fd468dd5b2114eda792f06e4285b4be2a320be8c3",
           "time_code": 8.714212528966682,
           "t_over_tcc": 2.2499999999999982,
@@ -12593,7 +12593,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_046.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_046.hdf5",
           "sha256": "695d4a073b276f5d31e70f87465940e567e661154d25d7a8a073afbf9bba8931",
           "time_code": 8.907861696277052,
           "t_over_tcc": 2.2999999999999985,
@@ -12671,7 +12671,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_047.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_047.hdf5",
           "sha256": "77d21428bba3b1aec871dfe0366e5823c6a9e4e6e197c2cfbab3c24cdbf3d8bb",
           "time_code": 9.101510863587423,
           "t_over_tcc": 2.3499999999999983,
@@ -12749,7 +12749,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_048.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_048.hdf5",
           "sha256": "78466c7ee0c5e99a2877693fd734eaf109f82314e5e00d02b3af3822a2a58f67",
           "time_code": 9.295160030897794,
           "t_over_tcc": 2.399999999999998,
@@ -12827,7 +12827,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_049.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_049.hdf5",
           "sha256": "82fd5915d9133ee0431da22a1d91444536cac1a6e9fe6b62d731f8745cabc683",
           "time_code": 9.488809198208164,
           "t_over_tcc": 2.449999999999998,
@@ -12905,7 +12905,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_050.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_050.hdf5",
           "sha256": "b58eca4e8a62ea64e35489a384cb3a4330ece1f0a6cc0a88ffa9c8c4bb9cca1d",
           "time_code": 9.682458365518535,
           "t_over_tcc": 2.4999999999999982,
@@ -12983,7 +12983,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_051.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_051.hdf5",
           "sha256": "bd385a1ae7fbd74a03bd1f3c0f6e767851f26d977a6f61167bc395deaacd4ed0",
           "time_code": 9.876107532828904,
           "t_over_tcc": 2.5499999999999976,
@@ -13061,7 +13061,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_052.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_052.hdf5",
           "sha256": "6f810204a37af9c5eb785932798fa983eaca008d32676301c0f89e5f53831023",
           "time_code": 10.069756700139276,
           "t_over_tcc": 2.599999999999998,
@@ -13139,7 +13139,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_053.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_053.hdf5",
           "sha256": "8f60b85e6c59d4850a6ffb4f5a2ab46e19e58bd3b7f62ad224eafc170b667c08",
           "time_code": 10.263405867449647,
           "t_over_tcc": 2.6499999999999977,
@@ -13217,7 +13217,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_054.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_054.hdf5",
           "sha256": "94ba5027026078e25814995ee319fca1a56cf8c8d40d8bb1761e560ee6b5044d",
           "time_code": 10.457055034760018,
           "t_over_tcc": 2.699999999999998,
@@ -13295,7 +13295,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_055.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_055.hdf5",
           "sha256": "9caa682c4fc453b74ed4b9814d2a5f15442a0c3d8892afbb5dfe6f3703db3742",
           "time_code": 10.650704202070388,
           "t_over_tcc": 2.749999999999998,
@@ -13373,7 +13373,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_056.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_056.hdf5",
           "sha256": "7a1ae04dce21230bbc5d00d0198df5d7a0a6846f6fb2d2c2bbe9c87693306c08",
           "time_code": 10.844353369380759,
           "t_over_tcc": 2.7999999999999976,
@@ -13451,7 +13451,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_057.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_057.hdf5",
           "sha256": "c49da07cd777e776729eb65fb4073443c7be5ac9937241b6e515989abc1e440d",
           "time_code": 11.038002536691128,
           "t_over_tcc": 2.849999999999997,
@@ -13529,7 +13529,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_058.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_058.hdf5",
           "sha256": "9fd52c2f0542622afcc7beea159cee3b5c3dfaf86da272a89b8a41be2319c643",
           "time_code": 11.2316517040015,
           "t_over_tcc": 2.8999999999999977,
@@ -13607,7 +13607,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_059.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_059.hdf5",
           "sha256": "079b69fde99d25a4a781d661d3030bbb4de25a3a539718fd6e9449ecfad5f909",
           "time_code": 11.42530087131187,
           "t_over_tcc": 2.9499999999999975,
@@ -13685,7 +13685,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_060.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_060.hdf5",
           "sha256": "6bc15fef4e68a9a6970dbfbae3eb93c01819718e900930469833da5018090474",
           "time_code": 11.618950038622241,
           "t_over_tcc": 2.9999999999999973,
@@ -13763,7 +13763,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_061.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_061.hdf5",
           "sha256": "6e1845eff93204318c44b385d5a38aa9f274b6a9e0bf69403b2a89f4b5a221d0",
           "time_code": 11.812599205932612,
           "t_over_tcc": 3.0499999999999976,
@@ -13841,7 +13841,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_062.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_062.hdf5",
           "sha256": "adff400ad55782ccf0fa2c34c61193a6fb97be1c266a8a017ef1a6eff5614499",
           "time_code": 12.00624837324298,
           "t_over_tcc": 3.099999999999997,
@@ -13919,7 +13919,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_063.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_063.hdf5",
           "sha256": "356b0d3e0c62b318b1d0f6bc0916a0b7c4683bee38174f9f89abd8053c19778d",
           "time_code": 12.199897540553353,
           "t_over_tcc": 3.1499999999999972,
@@ -13997,7 +13997,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_064.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_064.hdf5",
           "sha256": "99a28bab203ada22294bf35300befb365b1b3c50dd789004c8966b3cf95c05ad",
           "time_code": 12.393546707863724,
           "t_over_tcc": 3.199999999999997,
@@ -14075,7 +14075,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_065.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_065.hdf5",
           "sha256": "1ea7c43b6ac222febb9c51b5f2d54b1614e415817f130b5f581e5ee2695609e9",
           "time_code": 12.587195875174094,
           "t_over_tcc": 3.2499999999999973,
@@ -14153,7 +14153,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_066.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_066.hdf5",
           "sha256": "d8dc01b97f14f46b15d56a3b325327716cd138fb752ebc46c18ae94b0930fdb4",
           "time_code": 12.780845042484465,
           "t_over_tcc": 3.299999999999997,
@@ -14231,7 +14231,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_067.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_067.hdf5",
           "sha256": "824112ee5c1a42fd59c891c8d0f3d2536fccf11194d5f69323fb0940c7241f5f",
           "time_code": 12.974494209794836,
           "t_over_tcc": 3.349999999999997,
@@ -14309,7 +14309,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_068.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_068.hdf5",
           "sha256": "afd74b94a0127b76160198e82e9586975ea8ca286f0d099b849d2aa273a509ae",
           "time_code": 13.168143377105205,
           "t_over_tcc": 3.3999999999999964,
@@ -14387,7 +14387,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_069.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_069.hdf5",
           "sha256": "a0716bc45d29e6ca83c512c318d8dfac75c837637dc442dea959764061578a3d",
           "time_code": 13.361792544415577,
           "t_over_tcc": 3.449999999999997,
@@ -14465,7 +14465,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_070.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_070.hdf5",
           "sha256": "008673b5f818e0ad2fe32b108fc0daf854115dc6772a4991463749baf93593ae",
           "time_code": 13.555441711725948,
           "t_over_tcc": 3.499999999999997,
@@ -14543,7 +14543,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_071.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_071.hdf5",
           "sha256": "b1fee00b37b00328595c0bac54b503f89d0c69d77d9da7d16b086234dc080b48",
           "time_code": 13.749090879036318,
           "t_over_tcc": 3.5499999999999967,
@@ -14621,7 +14621,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_072.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_072.hdf5",
           "sha256": "4f418663332ec3502f18a7f0b2503f770aff24b36c7dc3170221c96eb6163a9e",
           "time_code": 13.942740046346689,
           "t_over_tcc": 3.599999999999997,
@@ -14699,7 +14699,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_073.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_073.hdf5",
           "sha256": "4fc5865f112a4f83a63fb27b81f1f75f06470e89e1385f7abc2c917330bc00ae",
           "time_code": 14.136389213657058,
           "t_over_tcc": 3.6499999999999964,
@@ -14777,7 +14777,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_074.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_074.hdf5",
           "sha256": "ff5fc88374ed0519e17da65af70eddc07c96e6da64ccec111d86db0fceab6802",
           "time_code": 14.33003838096743,
           "t_over_tcc": 3.6999999999999966,
@@ -14855,7 +14855,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_075.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_075.hdf5",
           "sha256": "6423f3a3d5c96637c0688d22f5b31a62d596a8b06baa245678fb62fb5fab4948",
           "time_code": 14.5236875482778,
           "t_over_tcc": 3.7499999999999964,
@@ -14933,7 +14933,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_076.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_076.hdf5",
           "sha256": "c778ef27d2fe660be12d09c447f54393800ba5b8bb909120582afd7bdddb3cec",
           "time_code": 14.717336715588171,
           "t_over_tcc": 3.7999999999999967,
@@ -15011,7 +15011,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_077.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_077.hdf5",
           "sha256": "e62746adaae2e67390ac8e8334c03ee178f711171a2ab95bbfb10e41febe1c50",
           "time_code": 14.910985882898542,
           "t_over_tcc": 3.8499999999999965,
@@ -15089,7 +15089,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_078.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_078.hdf5",
           "sha256": "a3f4b9637674bfb63110ef9ee7a89cc0ad3595a92bbb5667a7db60b4e6d7458a",
           "time_code": 15.104635050208913,
           "t_over_tcc": 3.8999999999999964,
@@ -15167,7 +15167,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_079.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_079.hdf5",
           "sha256": "08ef5221c1287c421b8a6d5f632fbad015bfeb1c6ccb7fcd8ec4f791a56c2507",
           "time_code": 15.298284217519281,
           "t_over_tcc": 3.9499999999999957,
@@ -15245,7 +15245,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_080.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_080.hdf5",
           "sha256": "e17af9a37e14164ebe1147723cbb18b3470a1cb321a035a1c4ca96f1b4b100d6",
           "time_code": 15.491933384829654,
           "t_over_tcc": 3.9999999999999964,
@@ -15323,7 +15323,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_081.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_081.hdf5",
           "sha256": "1b8af148ce0f6f7757c15e0ebd4af58675fc53438424dc7ad93ce72ab7ee3286",
           "time_code": 15.685582552140025,
           "t_over_tcc": 4.049999999999996,
@@ -15401,7 +15401,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_082.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_082.hdf5",
           "sha256": "4d6548364cb79a11d174124476a5848839f74ad34fff2614b1d10eec173589ce",
           "time_code": 15.879231719450395,
           "t_over_tcc": 4.099999999999996,
@@ -15479,7 +15479,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_083.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_083.hdf5",
           "sha256": "ad39464f861597b12dc03d4a7faf2aef28232d870f0bf2e7e6e716a3b830873f",
           "time_code": 16.072880886760768,
           "t_over_tcc": 4.149999999999997,
@@ -15557,7 +15557,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_084.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_084.hdf5",
           "sha256": "5e82959798b25a21718618c7ef399ea17cdb8d435b0865070571844cfde9db52",
           "time_code": 16.26653005407114,
           "t_over_tcc": 4.199999999999997,
@@ -15635,7 +15635,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_085.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_085.hdf5",
           "sha256": "d41852e34f12bc1359b016050d2c1e36429e00b281faabe921cc5c1665f9876d",
           "time_code": 16.460179221381512,
           "t_over_tcc": 4.249999999999997,
@@ -15713,7 +15713,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_086.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_086.hdf5",
           "sha256": "3cd755384f1130e98240b5e6a8ecc733f08da7f05263bc6419d360b358afecbc",
           "time_code": 16.653828388691885,
           "t_over_tcc": 4.299999999999998,
@@ -15791,7 +15791,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_087.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_087.hdf5",
           "sha256": "f4310816da99de91e22504e25f10244c654b9ad573e5fe372f70cbaaab70cbf2",
           "time_code": 16.847477556002257,
           "t_over_tcc": 4.349999999999998,
@@ -15869,7 +15869,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_088.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_088.hdf5",
           "sha256": "5af248c4917625780b15fb4857dd1f6831eee0c667d9a904d0bdabf84d78063b",
           "time_code": 17.04112672331263,
           "t_over_tcc": 4.399999999999999,
@@ -15947,7 +15947,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_089.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_089.hdf5",
           "sha256": "6959cb943626e31ad05c04432c499a39d946265280bb8ae5f5fd510c6adfdc1d",
           "time_code": 17.234775890623002,
           "t_over_tcc": 4.449999999999999,
@@ -16025,7 +16025,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_090.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_090.hdf5",
           "sha256": "cd8badb7f66f3f1ec032f04c01b8a9953beb12700df5eb2e900a5d10eee217ac",
           "time_code": 17.428425057933374,
           "t_over_tcc": 4.499999999999999,
@@ -16103,7 +16103,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_091.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_091.hdf5",
           "sha256": "516a1b6a496b9795a8845f4b8e489d85cad21dfb0060a392c6d15a5cd8ae44c5",
           "time_code": 17.622074225243747,
           "t_over_tcc": 4.55,
@@ -16181,7 +16181,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_092.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_092.hdf5",
           "sha256": "a5bb05622854aeb9aaef4d7dc2ec160dcdc30415841bf39d301abbd2e3673568",
           "time_code": 17.81572339255412,
           "t_over_tcc": 4.6000000000000005,
@@ -16259,7 +16259,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_093.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_093.hdf5",
           "sha256": "b5818413ab15bf9df83c14e5927e8cca4fd93ec5cecdf9446bf0af0ba3bdb0fd",
           "time_code": 18.00937255986449,
           "t_over_tcc": 4.65,
@@ -16337,7 +16337,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_094.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_094.hdf5",
           "sha256": "b025851cd9b1029786e6aac5f4007a44a080e77538fe82892bc73fbd9ccf3a34",
           "time_code": 18.203021727174864,
           "t_over_tcc": 4.700000000000001,
@@ -16415,7 +16415,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_095.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_095.hdf5",
           "sha256": "9c0a7b8404317aff64d3e7f2805898ae59f3ff0093fa7e886833bc35a6b84149",
           "time_code": 18.396670894485236,
           "t_over_tcc": 4.750000000000002,
@@ -16493,7 +16493,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_096.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_096.hdf5",
           "sha256": "dbbb848945cc5d0a2a1743ef298a1829c946cb609ece33c401648848fb8f7f31",
           "time_code": 18.59032006179561,
           "t_over_tcc": 4.800000000000002,
@@ -16571,7 +16571,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_097.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_097.hdf5",
           "sha256": "e8635c729538fb1fa9043c58b3a8b9cb5f3b8a5d1e72f785d15a9cdcd92ba935",
           "time_code": 18.78396922910598,
           "t_over_tcc": 4.850000000000002,
@@ -16649,7 +16649,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_098.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_098.hdf5",
           "sha256": "8c99bd401c3e49f750f73a04d2d257a9bb0c73c92ebe1e1f931dc2dacf7b4972",
           "time_code": 18.977618396416354,
           "t_over_tcc": 4.900000000000003,
@@ -16727,7 +16727,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_099.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_099.hdf5",
           "sha256": "cc7f585d7cc391eaf9c8947783463033522c0e4b2ae127d5b59f4f0386781f32",
           "time_code": 19.171267563726726,
           "t_over_tcc": 4.950000000000003,
@@ -16805,7 +16805,7 @@
           }
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_100.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_100.hdf5",
           "sha256": "ff23f75f5cb5ca558ad3c82b426288564d68884c405658479cd652db960644ba",
           "time_code": 19.364916731037084,
           "t_over_tcc": 5.0,
@@ -16885,42 +16885,42 @@
       ],
       "restart_files": [
         {
-          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/restartfiles/restart.1",
+          "path": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/restartfiles/restart.1",
           "bytes": 6328856,
           "sha256": "0050344fbfeee6cd4f965f74f75a785d37c5f46b1a2130519577e95f8a0f0955"
         },
         {
-          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/restartfiles/restart.0",
+          "path": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/restartfiles/restart.0",
           "bytes": 6317096,
           "sha256": "c8f402991c196c75aca95f55d44270f041156bce265b50563ae685ce67ad656f"
         },
         {
-          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/restartfiles/restart.4",
+          "path": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/restartfiles/restart.4",
           "bytes": 6301192,
           "sha256": "783ec0cf325e9a0e693aa10fe35656bfbfe2736acb1ac9b953277c1f7ca3695a"
         },
         {
-          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/restartfiles/restart.5",
+          "path": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/restartfiles/restart.5",
           "bytes": 6349664,
           "sha256": "15859dee15687c7af802ef78e0c9fc677079d1f9122f436ebca0c60affd9101b"
         },
         {
-          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/restartfiles/restart.2",
+          "path": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/restartfiles/restart.2",
           "bytes": 6329344,
           "sha256": "6c97c9f9d157b91a70752223f539f2ff9e577d61c7b1eac345e36ca62f4ed734"
         },
         {
-          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/restartfiles/restart.7",
+          "path": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/restartfiles/restart.7",
           "bytes": 6338664,
           "sha256": "8f9480cc47a873009a2782fda54daa1919bcf5af037b6160df72dc2a642d6a43"
         },
         {
-          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/restartfiles/restart.3",
+          "path": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/restartfiles/restart.3",
           "bytes": 6321296,
           "sha256": "563048e916fd4e3f106ed05f82453839c73751dd9e9bad232c2912f2c1dcd88c"
         },
         {
-          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/restartfiles/restart.6",
+          "path": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/restartfiles/restart.6",
           "bytes": 6343136,
           "sha256": "dd3779bae3a4ba5607bab10bc12fa30efa7736f68d5f7ce0a8630ea6c752e3ec"
         }

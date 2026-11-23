@@ -27,7 +27,7 @@ cooling/max_iter
 cooling/table_filename
 
 
-  File:        /home/kaan/codes/athenapk/external/parthenon/src/parameter_input.cpp
+  File:        /home/user/codes/athenapk/external/parthenon/src/parameter_input.cpp
   Line number: 687
 # Variables in use:
 # Package: parthenon::resolved_state

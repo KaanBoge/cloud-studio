@@ -8,8 +8,8 @@
 # SAFETY: never clear an output directory that a live process is sitting in --
 # an earlier version would have deleted a running job's snapshots.
 set -u
-CO=/home/kaan/codes
-LOG=/mnt/c/Users/kaanb/CloudCrushing/results_A8/lag_serial.log
+CO=/home/user/codes
+LOG=/mnt/c/Users/user/CloudCrushing/results_wind_tunnel/lag_serial.log
 echo "=== LAGRANGIAN LEVEL 5, SERIAL $(date) ===" > "$LOG"
 avail() { free -g | awk '/Mem:/{print $7}'; }
 freegb() { df -BG --output=avail / 2>/dev/null | tail -1 | tr -dc '0-9'; }
@@ -54,4 +54,4 @@ for chi in 10 100 1000; do
   one "Gasoline  L5 chi=$chi" "$CO/gasoline/runs/CW3D_L5_chi${chi}"
 done
 echo "=== DONE $(date) ===" >> "$LOG"
-bash /home/kaan/publish_now.sh >> "$LOG" 2>&1
+bash /home/user/publish_now.sh >> "$LOG" 2>&1

@@ -8,7 +8,7 @@ from run_ramses import ROOT, read_output, raw, parameters, input_for, save
 def main():
     control=ROOT/'smokes/L3_chi100_sharp13'
     params=parameters(control/'run.nml');new=raw(control/'output_00001',params)
-    meta,old=read_output('/home/kaan/ic_audit_20260907/ramses_rect_tests/chi100/output_00001')
+    meta,old=read_output('/home/user/ic_audit_20260907/ramses_rect_tests/chi100/output_00001')
     old=old[np.lexsort((old[:,2],old[:,1],old[:,0]))]
     compared=dict(coordinates=np.array_equal(old[:,:3],new['xyz']),density=np.array_equal(old[:,4],new['rho']),
         velocity=np.array_equal(old[:,5:8],new['vel']),tracer=np.array_equal(old[:,9],new['tracer_concentration']))

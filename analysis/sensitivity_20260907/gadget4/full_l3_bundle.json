@@ -37,12 +37,12 @@
     "formula": "104 snapshots + 3 measured restart sets + IC +256MiB logs, then20% overall margin. Separate10GiB reserve on guest and Windows backing volume."
   },
   "capacity_at_freeze": {
-    "path": "/home/kaan/sensitivity_20260907/gadget4",
+    "path": "/home/user/sensitivity_20260907/gadget4",
     "filesystem_free_bytes": 18982264832,
     "filesystem_total_bytes": 1081101176832,
     "windows_backing_volume": {
       "distribution": "Ubuntu",
-      "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+      "base_path": "C:\\Users\\user\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
       "drive": "C:",
       "free_bytes": 37422706688,
       "total_bytes": 1999283154944

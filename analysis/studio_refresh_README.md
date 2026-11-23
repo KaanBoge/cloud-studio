@@ -1,58 +1,32 @@
-# Studio library and media refresh
+# Studio library and media
 
-The root library combines all entries exposed by the existing 3D viewer, the
-recent-result projection catalog, all local MP4s (including previously unlisted
-variants), and the image archive. Counts refer to display entries, not distinct
-accepted simulations. Historical, partial, and bounded-result labels remain
-separate. The original landing page remains at `archive.html`.
+The library combines the complete runs, the earlier runs in the 3D viewer, the films and the image
+archive. The original landing page remains at `archive.html`.
 
-`build_studio_catalog.cjs` uses existing catalogs only. Run it after adding display
-assets, then run `check_studio_catalog.cjs` to verify IDs, file coverage and links.
-The site needs only static hosting; no solver, AI schedule, or backend is started.
+## Complete runs
 
-`add_plm_display.py` adds only the previously missing accepted HLLC/PLM control:
-11 edge-on + 11 face-on projections and 21 3D meshes. New sample masses and times
-are compared to its saved accepted reductions. It does not rerun evolution or
-the completed validator. See `plm_display_audit.json`. The older HLLE cooling-on
-catalog field is corrected from `none` to `tabular`, supported by its bound
-`input.in` (`enable_cooling = tabular`). No numerical fields are changed.
+Every complete run has all 101 saved states, from t = 0 to 5 t<sub>cc</sub>. Its files live on the `runs`
+branch, one folder per run id, and each catalog entry points at its folder through the `base` field:
 
-`prepare_studio_media.py` creates two 1920×1080 H.264 MP4s for each recent run.
-Each contains 11 actual saved projections held for two seconds, in a 30 fps
-container. Spatial resampling is a display choice; no new temporal fluid motion
-is inferred. Original native resolution remains documented in the catalog.
-Legacy movies retain their original encoded streams and timing; where necessary,
-the MP4 seek index is moved to the front for progressive playback. All original
-movie versions remain available through version selection and Git history.
-The original checkout and raw simulation files are untouched.
+* `edge.png` and `face.png`: column density pictures, one 128 pixel row per saved state.
+* `poster-edge.jpg` and `poster-face.jpg`: the last saved state, at 5 t<sub>cc</sub>.
+* `film-edge.mp4` and `film-face.mp4`: 1920 × 1080 H.264 films at 60 fps. Each saved state appears on
+  its own frame, 240 frames per t<sub>cc</sub>, with linear cross fades between neighbouring states. The
+  first state is held for 0.5 s and the last for 1 s.
+* `3d/index.json` and `3d/fNNN.bin`: two density surfaces per state (0.15 and 0.6 of the initial cloud
+  density) for the 3D viewer.
+* `entry.json` and `entry3d.json`: the catalog entries.
 
-Media generation uses one encoder thread and local D: outputs. Python dependencies
-and workspace paths in the export scripts are local bindings and should be
-adapted on other computers. No C: cleanup, reservation changes, or simulation
-controller changes are part of this update.
+The tools in `run_staging/` made these folders. `build_studio_catalog.cjs` builds the library catalog
+from the display catalogs; `check_studio_catalog.cjs --base-root <runs branch checkout>` then verifies
+ids, file coverage, surfaces and links. The site needs only static hosting.
 
-The library supports combined search/filters, favorites saved only in the browser,
-shareable film links, compact/card layouts, and explicit load-more pagination.
-Films have rate, loop, picture-in-picture and download controls. Recent comparison
-links preserve the selected runs, projection and sampled time. The 3D viewer has
-search, playback-rate selection and safer keyboard handling in form controls.
+## Earlier media
 
+`add_plm_display.py`, `prepare_studio_media.py`, `build_60fps.py`, `fix_60fps_labels.py` and
+`package_60fps.py` made the earlier displays with eleven states per run and their 60 fps previews on the
+`media-60fps` branch. The complete runs replace those displays; the films of the archive keep their
+60 fps previews.
 
-## 60 fps display previews
-
-`build_60fps.py` creates separate H.264 previews with blended transitions.
-Recent movies sample their eleven known two-second state boundaries. Legacy
-movies blend existing rendered frames. This is not a numerical interpolation
-of the fluid or a new solver result. `fix_60fps_labels.py` replaces the blended
-lettering on recent movies with clear approximate times derived from the saved
-timestamps. Originals are preserved.
-
-Every preview is checked for 60 fps sample timing, unchanged dimensions and
-duration. Browser capture targets 60 fps but can drop frames under load.
-`package_60fps.py` builds a separate media-only Git branch and pins its commit
-in the website manifest, keeping the Pages artifact below its size limit.
-Run the build, label correction and packaging in that order. Push media-60fps
-before publishing main. The local media directory is intentionally ignored.
-
-No sonification was added because these saved outputs do not establish a
-physically accurate audible signal or a real-world listening geometry/time scale.
+The library supports search and filters, favourites saved only in the browser, shareable film links and
+compact or card layouts. Films have rate, loop, picture in picture and download controls.

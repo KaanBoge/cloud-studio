@@ -6,7 +6,7 @@ Reads all stored fields and original header times, and preserves input hashes.
 import fcntl,json,sys
 from pathlib import Path
 import h5py,numpy as np
-sys.path.insert(0,'/home/kaan/sensitivity_20260907/gizmo/runner_l3_v1')
+sys.path.insert(0,'/home/user/sensitivity_20260907/gizmo/runner_l3_v1')
 from run_full_l3 import ROOT,sha,save,check_times,restart_files
 from verify_gizmo import snapshots,pair,BASE
 
@@ -20,7 +20,7 @@ def resource_summary(folder):
 def main():
     locks=[]
     for name in ('benchmark.lock','production.lock'):
-        handle=Path('/home/kaan/performance_20260907',name).open('a')
+        handle=Path('/home/user/performance_20260907',name).open('a')
         fcntl.flock(handle,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(handle)
     dest=ROOT/'mfv_pair_audit.json'
     if dest.exists():raise ValueError('Completed audit exists; do not overwrite')

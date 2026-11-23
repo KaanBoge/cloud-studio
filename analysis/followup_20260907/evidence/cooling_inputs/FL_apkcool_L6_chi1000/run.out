@@ -27,7 +27,7 @@ cooling/max_iter
 cooling/table_filename
 
 
-  File:        /home/kaan/codes/athenapk/external/parthenon/src/parameter_input.cpp
+  File:        /home/user/codes/athenapk/external/parthenon/src/parameter_input.cpp
   Line number: 687
 # Variables in use:
 # Package: parthenon::resolved_state
@@ -82,6 +82,6 @@ A given task collection took longer than the current max number of
 	If this long duration is intended, change the timeout by updating
 	the parameter parthenon/mesh/task_collection_timeout_in_seconds
 	to a larger value. You may also wish to run on more resources.
-  File:        /home/kaan/codes/athenapk/external/parthenon/src/tasks/thread_pool.hpp
+  File:        /home/user/codes/athenapk/external/parthenon/src/tasks/thread_pool.hpp
   Line number: 44
 Step failed to complete all tasks.

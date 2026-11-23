@@ -6,20 +6,20 @@ import shutil
 import subprocess
 import sys
 import time
-sys.path.insert(0,'/mnt/c/Users/kaanb/CloudCrushing/sensitivity_20260907')
+sys.path.insert(0,'/mnt/c/Users/user/CloudCrushing/sensitivity_20260907')
 from build import sha
-sys.path.insert(0,'/home/kaan/verified_20260907')
+sys.path.insert(0,'/home/user/verified_20260907')
 from storage_guard import storage_snapshot,require_storage,GIB
 
-ROOT=Path('/home/kaan/sensitivity_20260907/athw')
-SRC=Path('/home/kaan/ic_audit_20260907/athw_build')
-STAGED=Path('/mnt/c/Users/kaanb/CloudCrushing/sensitivity_20260907/athw/cloud_wind.c')
+ROOT=Path('/home/user/sensitivity_20260907/athw')
+SRC=Path('/home/user/ic_audit_20260907/athw_build')
+STAGED=Path('/mnt/c/Users/user/CloudCrushing/sensitivity_20260907/athw/cloud_wind.c')
 
 def main():
     ROOT.mkdir(exist_ok=True)
     locks=[]
     for name in ('production.lock','benchmark.lock'):
-        f=Path('/home/kaan/performance_20260907',name).open('a')
+        f=Path('/home/user/performance_20260907',name).open('a')
         fcntl.flock(f,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(f)
     require_storage(storage_snapshot(ROOT),GIB)
     tree=ROOT/'build'
@@ -33,7 +33,7 @@ def main():
     binfile=tree/'bin/athena'
     record=dict(binary=str(binfile),binary_sha256=sha(binfile),command=cmd,
         source=str(STAGED),source_sha256=sha(STAGED),built_unix=time.time(),
-        historical_source='/mnt/c/Users/kaanb/CloudCrushing/audit_20260907/before/home/kaan/CloudCrushing/A8/cloud_wind.c',
+        historical_source='/mnt/c/Users/user/CloudCrushing/audit_20260907/before/home/user/CloudCrushing/wind_tunnel/cloud_wind.c',
         scope='Both IC laws use the same native Athena 4.2 binary; no production source edits.')
     record['historical_source_sha256']=sha(record['historical_source'])
     (ROOT/'build.json').write_text(json.dumps(record,indent=2))

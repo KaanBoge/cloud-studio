@@ -1,8 +1,8 @@
 {
   "passed": true,
-  "snapshot": "/home/kaan/ic_audit_20260907/grid_tests/apk_chi100/parthenon.prim.00000.phdf",
+  "snapshot": "/home/user/ic_audit_20260907/grid_tests/apk_chi100/parthenon.prim.00000.phdf",
   "parameters": {
-    "source": "/home/kaan/ic_audit_20260907/grid_tests/apk_chi100/athinput",
+    "source": "/home/user/ic_audit_20260907/grid_tests/apk_chi100/athinput",
     "parameter_sha256": "81da8c365c2919d619a64208380e39bde51da5e1e56dbb6c96a8d9b569bdbb1f",
     "assumptions": [
       "AthenaPK checkout units.hpp constants; fully ionized H/He mu from hydro.cpp"

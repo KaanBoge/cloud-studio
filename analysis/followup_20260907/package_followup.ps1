@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop'
-$taskSource = 'C:\Users\kaanb\CloudCrushing'
-$taskRepo = 'C:\Users\kaanb\cloud-studio-repo'
-$taskNative = '\\wsl.localhost\Ubuntu\home\kaan\followup_20260907'
+$taskSource = 'C:\Users\user\CloudCrushing'
+$taskRepo = 'C:\Users\user\cloud-studio-repo'
+$taskNative = '\\wsl.localhost\Ubuntu\home\user\followup_20260907'
 $taskEvidence = Join-Path $taskSource 'followup_20260907\evidence'
 New-Item -ItemType Directory -Path $taskEvidence -Force | Out-Null
 Copy-Item -LiteralPath (Join-Path $taskNative 'evidence') -Destination (Join-Path $taskSource 'followup_20260907') -Recurse -Force

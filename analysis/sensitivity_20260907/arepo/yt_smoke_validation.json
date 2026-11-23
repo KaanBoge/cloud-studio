@@ -2,7 +2,7 @@
   "status": "passed",
   "checks": [
     {
-      "snapshot": "/home/kaan/sensitivity_20260907/arepo/smokes_v2/L3_chi100_sharp13/output/snap_000.hdf5",
+      "snapshot": "/home/user/sensitivity_20260907/arepo/smokes_v2/L3_chi100_sharp13/output/snap_000.hdf5",
       "relative_errors": {
         "total_mass": 0.0,
         "dense_mass": 1.4013010279545457e-16,
@@ -10,7 +10,7 @@
       }
     },
     {
-      "snapshot": "/home/kaan/sensitivity_20260907/arepo/smokes_v2/L3_chi100_sharp13/output/snap_001.hdf5",
+      "snapshot": "/home/user/sensitivity_20260907/arepo/smokes_v2/L3_chi100_sharp13/output/snap_001.hdf5",
       "relative_errors": {
         "total_mass": 0.0,
         "dense_mass": 0.0,
@@ -18,7 +18,7 @@
       }
     },
     {
-      "snapshot": "/home/kaan/sensitivity_20260907/arepo/smokes_v2/L3_chi100_tanh13/output/snap_000.hdf5",
+      "snapshot": "/home/user/sensitivity_20260907/arepo/smokes_v2/L3_chi100_tanh13/output/snap_000.hdf5",
       "relative_errors": {
         "total_mass": 0.0,
         "dense_mass": 1.4013010279545457e-16,
@@ -26,7 +26,7 @@
       }
     },
     {
-      "snapshot": "/home/kaan/sensitivity_20260907/arepo/smokes_v2/L3_chi100_tanh13/output/snap_001.hdf5",
+      "snapshot": "/home/user/sensitivity_20260907/arepo/smokes_v2/L3_chi100_tanh13/output/snap_001.hdf5",
       "relative_errors": {
         "total_mass": 1.8742668680343047e-16,
         "dense_mass": 0.0,

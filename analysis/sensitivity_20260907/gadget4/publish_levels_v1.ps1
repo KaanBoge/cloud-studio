@@ -1,7 +1,7 @@
 param([ValidateSet('stage','verify')][string]$Mode='stage',[string]$Commit,[long]$WorkflowId)
 $ErrorActionPreference='Stop'
-$taskRepo='C:\Users\kaanb\cloud-studio-repo'
-$taskStudy='C:\Users\kaanb\CloudCrushing\sensitivity_20260907'
+$taskRepo='C:\Users\user\cloud-studio-repo'
+$taskStudy='C:\Users\user\CloudCrushing\sensitivity_20260907'
 $taskBase='584d80e1bd55b9ac8143311729d71e189341347b'
 $taskFiles=@('README.md','PLAN.md','gadget4/README.md','gadget4/analyze_levels_v1.py','gadget4/test_levels_v1.py',
  'gadget4/run_l4_direct_storage.py','gadget4/test_l4_direct_storage.py','gadget4/prepare_l4_direct_storage.py',

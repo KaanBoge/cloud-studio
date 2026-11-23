@@ -109,7 +109,7 @@ dt = 3.061862
 
 <cooling>
 integrator = townsend
-table_filename = /home/kaan/codes/athenapk/inputs/cooling_tables/schure.cooling_1.0Z
+table_filename = /home/user/codes/athenapk/inputs/cooling_tables/schure.cooling_1.0Z
 lambda_units_cgs = 1.0
 cfl = 0.1
 d_log_temp_tol = 1e-8

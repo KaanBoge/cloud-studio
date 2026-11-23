@@ -1,7 +1,7 @@
 import h5py
 from pathlib import Path
 for code, ext, name in [('athenapp','athdf','athpp'),('athenapk','phdf','apk')]:
-    root=Path('/home/kaan/codes')/code/'runs/RESTART_sharp13_20260907_L3_chi100'
+    root=Path('/home/user/codes')/code/'runs/RESTART_sharp13_20260907_L3_chi100'
     p=sorted(root.glob('*.'+ext))[0]
     print(name,p)
     with h5py.File(p) as f:

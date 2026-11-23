@@ -6,7 +6,7 @@ import runner as r
 class Gates(unittest.TestCase):
     def test_path_exact(self):
         r.verify_path()
-        with self.assertRaises(ValueError):r.verify_path(Path('/mnt/c/Users/kaanb/Downloads'))
+        with self.assertRaises(ValueError):r.verify_path(Path('/mnt/c/Users/user/Downloads'))
 
     def test_mount(self):
         good=dict(target='/mnt/c',source='C:\\',fstype='9p',options='rw,aname=drvfs;path=C:\\;uid=1000')

@@ -23,13 +23,13 @@ science runs. The existing L6 settings were not changed by this pass.
 The current profiles remain in `../performance_20260907/optimized_profiles.json`.
 Three untouched L5 GPU preparations were superseded by new directories:
 
-    /home/kaan/codes/athenapk/runs/OPTIO1_sharp13_20260907_L5_chi{10,100,1000}
+    /home/user/codes/athenapk/runs/OPTIO1_sharp13_20260907_L5_chi{10,100,1000}
 
 Only primitive snapshot compression changes. Native physics, precision, variables,
 grid, timestep controls, output schedule and checkpoints remain unchanged.
 The queue now points to these new preparations, with binary/input hashes checked.
 Old preparations, raw outputs and source binaries were retained. The prior
-profile and queue manifest are backed up under `/home/kaan/performance_20260907c`.
+profile and queue manifest are backed up under `/home/user/performance_20260907c`.
 Rollback means deliberately restoring those records while no worker is running,
 not overwriting an evolved run. The original 13 launcher tests pass.
 

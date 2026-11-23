@@ -83,21 +83,21 @@ MP4s and quantized viewer meshes are not lossless archives of those fields.
 
 ## Files and local usage
 
-Windows working directory: `C:\Users\kaanb\CloudCrushing\performance_20260907`.
-Native binaries and benchmark output: `/home/kaan/performance_20260907` in WSL.
+Windows working directory: `C:\Users\user\CloudCrushing\performance_20260907`.
+Native binaries and benchmark output: `/home/user/performance_20260907` in WSL.
 
 `run_optimized.py` prepares one fresh, versioned production directory. It does not
 run anything without `--run`. This release enables only the two solvers and levels
 actually benchmarked here; it does not pretend to optimize all twelve codes.
 
 ```bash
-/home/kaan/venv/bin/python /mnt/c/Users/kaanb/CloudCrushing/performance_20260907/run_optimized.py --code athpp --level 5 --chi 10
+/home/user/venv/bin/python /mnt/c/Users/user/CloudCrushing/performance_20260907/run_optimized.py --code athpp --level 5 --chi 10
 ```
 
 After preparation, the explicit launch command for that same untouched directory is:
 
 ```bash
-/home/kaan/venv/bin/python /mnt/c/Users/kaanb/CloudCrushing/performance_20260907/run_optimized.py --code athpp --level 5 --chi 10 --resume-prepared --run
+/home/user/venv/bin/python /mnt/c/Users/user/CloudCrushing/performance_20260907/run_optimized.py --code athpp --level 5 --chi 10 --resume-prepared --run
 ```
 
 Use `apk` for AthenaPK. Directories use `OPT_` for unchanged first-pass profiles,

@@ -1,8 +1,8 @@
 {
   "passed": true,
-  "snapshot": "/home/kaan/ic_audit_20260907/grid_tests/flash_chi1000/cloudcrush_hdf5_chk_0000",
+  "snapshot": "/home/user/ic_audit_20260907/grid_tests/flash_chi1000/cloudcrush_hdf5_chk_0000",
   "parameters": {
-    "source": "/home/kaan/ic_audit_20260907/grid_tests/flash_chi1000/flash.par",
+    "source": "/home/user/ic_audit_20260907/grid_tests/flash_chi1000/flash.par",
     "parameter_sha256": "b8a92bf15a25fc1f09a514eca07cfde992b9fa210e3f78064f24758f12bb9c60",
     "assumptions": [],
     "gamma": 1.6666666666666667,

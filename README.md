@@ -1,162 +1,75 @@
 # Cloud Studio
 
-### Native simulations. Measured results. Interactive 3D.
+### One cloud, twelve methods
 
-**Cloud Studio is an ongoing cloud crushing research and visualization project by [Kaan Boge](https://github.com/KaanBoge).** It studies how a dense cloud evolves in a hot wind using independent hydrodynamics codes. This repository contains the software, visualizations and analysis available so far. The manuscript reports the measured results and the scientific controls that remain outstanding.
+**Cloud Studio is the public home of my cloud crushing research.** I simulate a dense gas cloud struck by a supersonic wind and run the same problem with twelve hydrodynamic methods. The site shows every run as pictures, films and rotatable 3D surfaces, next to the paper that compares them. Kaan Boge, ongoing.
 
-**[Read the current paper](paper/Cloud_survival_OJA.pdf)** · **[Download the Overleaf ZIP](paper/Cloud_survival_OJA_Overleaf.zip)** · **[Paper source and figures](paper/)**
+**[Open Cloud Studio](https://kaanboge.github.io/cloud-studio/)** · **[Read the paper](paper/Cloud_survival_OJA.pdf)** · **[Paper source for Overleaf](paper/Cloud_survival_OJA_Overleaf.zip)** · **[How the work is done](https://kaanboge.github.io/cloud-studio/research.html)**
 
-**[Explore the research & data](https://kaanboge.github.io/cloud-studio/research.html)** · **[Open the 3D viewer](https://kaanboge.github.io/cloud-studio/viewer.html)** · **[Browse movies & images](https://kaanboge.github.io/cloud-studio/)** · **[Download the evidence bundle](https://kaanboge.github.io/cloud-studio/downloads/research-evidence-2026-09-09-current.zip)**
+## The site
 
-[Website & viewer: MIT](LICENSE) · [License scope](LICENSING.md) · [Third party notices](THIRD_PARTY_NOTICES.md)
-
-> **Currently published:** **174 historical viewer entries**, **919 analysis files**, and a velocity sensitivity summary containing **50 accepted controls, 25 pairs and 5,054 analyzed native states**. These are separate collections, not one combined count of validated simulations. Counts describe the dated public catalog, not live simulation status.
-
-## Start here
-
-| If you want to… | Open |
+| Page | What it holds |
 |---|---|
-| Check current activity, measured runtimes and the planning inventory | [Live simulation progress](https://kaanboge.github.io/cloud-studio/progress.html) |
-| Rotate, zoom and compare cloud structures | [Interactive 3D viewer](https://kaanboge.github.io/cloud-studio/viewer.html) |
-| Read the current scientific findings | [All code velocity sensitivity summary](analysis/sensitivity_20260907/resolution_summary_v2/README.md) |
-| Find reports, scripts, checks and figures | [Research hub](https://kaanboge.github.io/cloud-studio/research.html) · [Analysis directory](analysis/) |
-| Check how many frames a historical entry contains | [Frame inventory CSV](data/streaming-inventory.csv) · [JSON](data/streaming-inventory.json) |
-| Inspect the new Enzo level 5 preparation | [Pinned plan and validation](analysis/sensitivity_20260907/enzo/l5_direct_v1/PLAN.md) |
-| Understand what is public versus retained locally | [Data guide](docs/DATA.md) |
-| See the contents of the published collection | [Current contents](docs/STATUS.md) |
-| Reproduce or review the workflow | [Methods and reproducibility](docs/METHODS.md) |
+| [Library](https://kaanboge.github.io/cloud-studio/) | Every run as a card, with search and filters for code, contrast and level, films to play and pictures to download |
+| [3D viewer](https://kaanboge.github.io/cloud-studio/viewer.html) | Two density surfaces for every saved state: turn the cloud, play it through time, set two runs side by side, save pictures and recordings |
+| [Compare](https://kaanboge.github.io/cloud-studio/recent.html) | Edge on and face on column density pictures on one colour scale, two runs at the same moment, saved pictures and films |
+| [Research](https://kaanboge.github.io/cloud-studio/research.html) | What I ran, how to read a card, what the pictures and the 3D view show, the main results, the data and the downloads |
+| [Archive](https://kaanboge.github.io/cloud-studio/archive.html) | Earlier runs: two dimensional runs, films, image sets, terrain views and the first 3D volumes |
+| [Progress log](https://kaanboge.github.io/cloud-studio/progress.html) and [verification log](https://kaanboge.github.io/cloud-studio/verification.html) | Earlier work up to September 2026 |
 
-## What is being tested?
+Every frame of a film, picture or capture prints its time, written t = 1.25 t<sub>cc</sub>, where t<sub>cc</sub> is the cloud crushing time. In the library and on the Compare page the default version of every film plays at 60 frames per second and cross fades between saved states; the original versions and the films of the archive page keep the rate they were made at.
 
-The published velocity sensitivity study measures the effect of the initial velocity prescription at several resolutions. Each accepted within code pair uses the same native executable, grid or initial particle sampling, numerical settings and physical parameters. Only the chosen velocity law and its consistent kinetic energy change.
+## What I ran
 
-The pilot fixes **χ = 100, Mach = 2, γ = 5/3**, with the existing density edge and domain. AthenaPK's historical prescription was constant outer momentum; it was not the same tanh velocity prescription used by the other accepted pairs. Native boundary, tracer and SPH pressure caveats are retained, not hidden behind a common label.
+Every run of the comparison starts from the same cloud: 100 times denser than the wind (χ 100), with a smooth edge, in a Mach 2 wind, inside a box of 20 × 10 × 10 cloud radii. Each method runs at levels 3, 4 and 5 and saves 101 states up to 5 t<sub>cc</sub>. Further runs at χ 10 and 1000, one at level 6 and runs with radiative cooling show how the result depends on the cloud and the physics.
 
-![Measured dense mass evolution in the original Athena++ and AthenaPK sensitivity pilot](analysis/sensitivity_20260907/analysis/mass_evolution.png)
-
-*One part of the study: the original two code pilot. Curves use the measured native outputs. See the [updated all code report](analysis/sensitivity_20260907/resolution_summary_v2/README.md) for the wider evidence; this image is not a code ranking or a convergence proof.*
-
-## Independent native codes
-
-| Code / method | Execution in this project | Published sensitivity evidence |
+| Method | Codes | Box faces |
 |---|---|---|
-| AthenaPK | CUDA/GPU | [L3 to L4](analysis/sensitivity_20260907/README.md) |
-| Athena++ | MPI/CPU | [L3 to L4](analysis/sensitivity_20260907/README.md) |
-| Athena 4.2 | MPI/CPU | [L3 to L5](analysis/sensitivity_20260907/athw/README.md) |
-| Enzo | MPI/CPU | [L3 to L4](analysis/sensitivity_20260907/enzo/README.md) · [new L5 preparation](analysis/sensitivity_20260907/enzo/l5_direct_v1/PLAN.md) |
-| Enzo-E | Charm++/CPU | [L3 to L4](analysis/sensitivity_20260907/enzoe/README.md) |
-| RAMSES | MPI/CPU | [L3 to L4](analysis/sensitivity_20260907/ramses/README.md) |
-| FLASH 4.8 | MPI/CPU | [L3 to L4](analysis/sensitivity_20260907/flash/README.md) |
-| Flash-X | MPI/CPU | [L3 to L4](analysis/sensitivity_20260907/flashx/README.md) |
-| Arepo | MPI/CPU, moving mesh | [L3 to L4](analysis/sensitivity_20260907/arepo/README.md) |
-| GIZMO MFM | MPI/CPU, mesh free finite mass | [L3 to L4](analysis/sensitivity_20260907/gizmo/README.md) |
-| GIZMO MFV | MPI/CPU, mesh free finite volume | [Repaired L3 to L4](analysis/sensitivity_20260907/gizmo/mfv_analysis_levels_v1/README.md) |
-| Gadget-4 | MPI/CPU, SPH | [L3 to L4](analysis/sensitivity_20260907/gadget4/analysis_levels_v1/README.md) |
-| Gasoline | CPU, SPH | [Validation hold](analysis/sensitivity_20260907/gasoline/FORCE_ORDER_RESULTS.md) |
+| Eight grid codes | Athena++, AthenaPK, Athena 4.2, Enzo, Enzo-E, RAMSES, FLASH 4.8, Flash-X | Wind flows in and out |
+| Moving mesh | Arepo | Periodic along the wind |
+| Particle methods | GIZMO MFM, GIZMO MFV, GADGET-4 | Periodic on all faces |
 
-These are twelve code families and thirteen methods when GIZMO MFM and MFV are counted separately. Results are produced by each code's own solver, not by relabelling FLASH output.
+A boundary control repeats Athena++ in the two periodic boxes at levels 3, 4 and 5.
 
-## Resolution means a physical grid, not movie resolution
-
-| Project level | Streamwise × transverse × transverse | Initial elements per cloud radius |
+| Level | Cells | Cells per cloud radius |
 |---|---|---:|
-| 1 | 16 × 8 × 8 | 0.8 |
-| 2 | 32 × 16 × 16 | 1.6 |
 | 3 | 64 × 32 × 32 | 3.2 |
 | 4 | 128 × 64 × 64 | 6.4 |
 | 5 | 256 × 128 × 128 | 12.8 |
 | 6 | 512 × 256 × 256 | 25.6 |
 
-The domain is 20 × 10 × 10 cloud radii. **Level 6 is not 512³.** For moving mesh and particle codes, this ladder describes the initial sampling; it does not guarantee identical evolved spatial resolution. Levels 1 to 2 do not resolve a cloud well enough for quantitative convergence conclusions.
+## Main results
 
-## From a simulation to the website
+* For the first 3 t<sub>cc</sub> the methods stay close: at level 5, eleven of the twelve keep between 67 and 79 percent of the dense gas.
+* By 5 t<sub>cc</sub> they separate. The eight grid codes keep between 10 and 28 percent, GIZMO MFV 37 percent, Arepo 54 percent, GADGET-4 76 percent and GIZMO MFM 98 percent.
+* Running Athena++ in the periodic boxes of the other methods changes nothing for the first 2 t<sub>cc</sub> and raises its final dense fraction from 0.10 to 0.27 (periodic along the wind) and 0.33 (periodic on all faces).
+* AthenaPK and Athena++ use the same scheme and give the same history.
 
-```text
-Native code + pinned input
-        ↓
-3D output fields + logs + restart data, retained locally
-        ↓
-Native readers / yt → checked mass, time and field diagnostics
-        ↓
-matplotlib figures · extracted 3D surfaces · ffmpeg movies
-        ↓
-GitHub Pages + the existing streamed-mesh frames branch
-```
+Dense gas is gas denser than one third of the starting cloud density, counted as a fraction of its starting mass. The [paper](paper/Cloud_survival_OJA.pdf) has the full comparison.
 
-The website displays derived results; uploading an arbitrary HDF5 file does not turn it into a movie. The viewer uses recorded frame timestamps; this catalog does not independently revalidate them against every original native file. A target of 101 snapshots is **not** a promise that every historical entry has 101 frames, identical intermediate times, or all cloud material inside the box.
-
-## Data and repository layout
+## What is in this repository
 
 ```text
-research.html          Research reports, data downloads and status guide
-index.html             Existing image/movie studio
-viewer.html            Existing interactive 3D viewer
-analysis/              Custom analysis scripts, reports, diagnostics and figures
-data/                  Viewer manifests and downloadable research/frame catalogs
-assets/                Published movies and images
-docs/                  Methods, data guide, current contents and update notes
-downloads/             Portable research-evidence bundle
-vendor/                Existing browser dependencies
+index.html, studio.js, studio.css      Library
+viewer.html                             3D viewer
+recent.html, recent.js, recent.css      Compare page
+research.html, research.js              Research page
+archive.html                            Archive of earlier runs
+progress.html, verification.html        Earlier logs
+assets/                                 Pictures, films, posters and 3D frames shown on the site
+data/                                   Catalogs the pages read, and downloadable file lists
+paper/                                  The paper, its LaTeX source, figures and reduced data
+code/                                   Problem sources, input files and run logs of the simulation codes
+analysis/                               Analysis, rendering and publishing scripts with their reports
+docs/                                   Methods, data guide and update notes
+downloads/                              Analysis bundle of the September 2026 velocity setup study
+vendor/                                 three.js, served from the site itself
 ```
 
-The separate [`frames` branch](https://github.com/KaanBoge/cloud-studio/tree/frames) holds compressed **derived mesh frames**, not complete native fields. [File inventory and SHA-256 checksums](data/research-files.csv) make the published analysis package inspectable. The [download scope](docs/DATA.md) explains bundle exclusions.
+The site publishes derived pictures, films and 3D surfaces of every saved state. The raw simulation snapshots are kept offline because of their size. The files of the complete runs live on the [`runs` branch](https://github.com/KaanBoge/cloud-studio/tree/runs), one folder per run, the earlier 3D frames on the [`frames` branch](https://github.com/KaanBoge/cloud-studio/tree/frames) and the 60 fps film previews on the `media-60fps` branch, so the Pages site stays small. The [data guide](docs/DATA.md) and the [methods guide](docs/METHODS.md) describe the files and the steps from a simulation to the site.
 
-**No raw output was deleted for this publication.** The local storage inventory is metadata, not a cloud backup. [Compression tests](analysis/storage_20260909/compression_probe.json) restored every tested byte, but compression has not been enabled for the active Enzo pair.
+## Licence and citation
 
-## Interpreting the current results
+The website and viewer software are released under the **[MIT License](LICENSE)**, copyright 2026 Kaan Boge. [LICENSING.md](LICENSING.md) lists the files the licence covers; the simulation codes, their adapted sources and the research data keep their own terms, and the bundled three.js keeps its authors' MIT notice. See the [third party notices](THIRD_PARTY_NOTICES.md).
 
-* The historical viewer is not a certified matched code experiment. Shared grid labels and color scales do not remove differences in initial conditions, boundaries or numerical methods.
-* Gasoline's field repeatability gate remains failed. Completed diagnostics are not accepted full controls.
-* Earlier cooling labelled cases **did not enable cooling**. They are not radiative results.
-* Existing frame tracking tests verify several implementation properties, but **do not establish complete cloud material retention**.
-* Movies and quantized isosurfaces are not replacements for native pressure, energy, velocity or tracer fields.
-
-See [verification](https://kaanboge.github.io/cloud-studio/verification.html), [tracking/cooling evidence](analysis/followup_20260907/README.md), and [current published contents](docs/STATUS.md).
-
-## Reuse, attribution and contributions
-
-This repository is maintained by **[KaanBoge](https://github.com/KaanBoge)**. Please cite the particular report and commit used; [CITATION.cff](CITATION.cff) provides project metadata. No DOI or peer reviewed publication is claimed.
-
-Cloud Studio's original website/viewer software and the specifically listed utilities and documentation are released under the **[MIT License](LICENSE)**, copyright **2026 Kaan Boge**. MIT permits reuse, modification and commercial distribution while requiring preservation of the license and copyright notice. It is a software license, not an MIT institutional affiliation or a scientific certification.
-
-The grant is scoped in [LICENSING.md](LICENSING.md). Third party simulation codes, adapted native code files, research datasets and archived evidence are **not blanket relicensed**. Bundled three.js retains its authors' MIT notice. See [third party notices](THIRD_PARTY_NOTICES.md) and [contribution guidance](CONTRIBUTING.md). Scientific references and recorded provenance remain intact.
-
-
-## New simulation capture gallery
-
-[Open the paper simulation gallery](https://KaanBoge.github.io/cloud-studio/recent.html?run=enzo-1000): 17 completed runs with edge-on and face-on projections, synchronized comparison, 1920 × 1080 PNG export, and browser video recording. Each sequence samples 11 real saved states through 5 cloud-crushing times. See [projection provenance](analysis/recent_gallery_README.txt) for method and comparison limits.
-
-The [rotatable 3D viewer](https://kaanboge.github.io/cloud-studio/viewer.html?run=new_enzo-1000) now includes the same 17 new runs, smooth surfaces, edge-on/face-on camera presets, PNG export, orbit recording and saved-state evolution recording. Each new run uses 21 sampled native states; smoothing is display-only. [3D visualization method](analysis/recent_3d_README.txt).
-# Cloud Studio library refresh
-
-The home page now brings all available display collections together with search,
-code/contrast/level/physics filters, favorites, image browsing and a film player.
-Use [the library](https://kaanboge.github.io/cloud-studio/),
-[3D studio](https://kaanboge.github.io/cloud-studio/viewer.html), or
-[projection comparison](https://kaanboge.github.io/cloud-studio/recent.html).
-The previous interface remains available at `archive.html`.
-
-The library contains 197 3D entries, including 17 recent bounded results, and
-476 video files/variants. These are display counts, not distinct scientifically
-validated simulations. Recent films are 1080p exports of real saved states;
-30 fps packaging does not imply additional simulation snapshots. Historical and
-partial runs keep their limitations. See `analysis/studio_refresh_README.md` for
-the media and catalog build details.
-
-## Smooth playback
-
-Every one of the 476 source movies has a separate 60 fps blended preview.
-The library offers both versions; originals, scientific fields and timings remain
-unchanged. These crossfades are visual transitions, not extra simulated states.
-The projection and 3D studios offer optional smooth transitions, with browser
-capture targeting 60 fps. Actual interactive/capture performance depends on the
-device; paused views and PNG export use saved states.
-
-Videos remain silent: the saved outputs do not establish a physical soundtrack.
-Data sonification would be a chosen mapping, not an accurate sound recording.
-
-Previews are served from a pinned commit on the `media-60fps` branch so the
-existing Pages site retains its size headroom. `data/smooth60.json` binds each
-original movie to its derivative; `analysis/smooth60_receipt.json` records frame
-rate, extent, duration and source hashes. Local previews use `assets/smooth60/`,
-which is excluded from the main branch.
+To cite this work, cite the paper and the commit you used; [CITATION.cff](CITATION.cff) holds the project metadata. Ideas and corrections are welcome as issues or pull requests, see [CONTRIBUTING.md](CONTRIBUTING.md).

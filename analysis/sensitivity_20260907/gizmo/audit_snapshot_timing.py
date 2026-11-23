@@ -89,7 +89,7 @@ def run_diagnostic(variant,mode,cap,base,allow_existing=False):
 def main():
     locks=[]
     for name in ('benchmark.lock','production.lock'):
-        f=Path('/home/kaan/performance_20260907',name).open('a');fcntl.flock(f,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(f)
+        f=Path('/home/user/performance_20260907',name).open('a');fcntl.flock(f,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(f)
     allow_existing=sys.argv[1:]==['--continue-collected']
     if sys.argv[1:] and not allow_existing:raise ValueError('Only --continue-collected is supported')
     base=ROOT/'snapshot_timing_audit_v2'
@@ -97,7 +97,7 @@ def main():
     base.mkdir(exist_ok=allow_existing)
     report=dict(status='running',source_evidence={},diagnostics=[],scaling_checks=[])
     for name in ('run.c','kicks.c','io.c','init.c'):
-        src=Path('/home/kaan/codes/gizmo')/name;dest=base/name
+        src=Path('/home/user/codes/gizmo')/name;dest=base/name
         if dest.exists():
             if not allow_existing or sha(dest)!=sha(src):raise ValueError('Source evidence changed')
         else:shutil.copy2(src,dest)

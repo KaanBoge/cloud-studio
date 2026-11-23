@@ -1,7 +1,7 @@
 param([ValidateSet('stage','verify')][string]$Mode='stage',[string]$Commit,[long]$WorkflowId)
 $ErrorActionPreference='Stop'
-$taskRepo='C:\Users\kaanb\cloud-studio-repo'
-$taskStudy='C:\Users\kaanb\CloudCrushing\sensitivity_20260907'
+$taskRepo='C:\Users\user\cloud-studio-repo'
+$taskStudy='C:\Users\user\CloudCrushing\sensitivity_20260907'
 $taskFrom=Join-Path $taskStudy 'gasoline'
 $taskBase='fab87c1f0f152feaf6533f93b9a74ebd02e495db'
 $taskFiles=@('README.md','SERIAL_OBSERVER_VALIDATION.md','SERIAL_OBSERVER_PLAN.md','SERIAL_OBSERVER_PLAN_V2.md','serial_observer_run_v2.py','test_serial_observer_run_v2.py','serial_observer_v2.h','test_serial_observer_v2.c','serial_observer_plan_v2.json','serial_observer_result_v2.json','serial_observer_v1_failure.json','serial_observer_v1_native_result.json','publish_serial_observer.ps1')
@@ -21,7 +21,7 @@ if($Mode -eq 'stage'){
  if((Get-FileHash -LiteralPath $taskPlanPath).Hash.ToLower() -ne '5c383a4772b36252bf8edf79ef66affea3a4e67b74973df66146d416c07d9c79'){throw 'Frozen native observer plan changed'}
  $taskPlan=Get-Content -LiteralPath $taskPlanPath -Raw | ConvertFrom-Json
  foreach($taskName in @('serial_observer_run_v2.py','test_serial_observer_run_v2.py','serial_observer_v2.h','test_serial_observer_v2.c','SERIAL_OBSERVER_PLAN.md','SERIAL_OBSERVER_PLAN_V2.md')){
-  $taskPinned='/home/kaan/sensitivity_20260907/gasoline/serial_observer_runner_v2/'+$taskName
+  $taskPinned='/home/user/sensitivity_20260907/gasoline/serial_observer_runner_v2/'+$taskName
   if((Get-FileHash -LiteralPath (Join-Path $taskFrom $taskName)).Hash.ToLower() -ne $taskPlan.pins.$taskPinned){throw ('Frozen diagnostic source changed: '+$taskName)}
  }
  foreach($taskCopy in $taskCopies){

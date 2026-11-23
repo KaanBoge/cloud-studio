@@ -91,7 +91,7 @@ def read_output(directory):
 if __name__=='__main__':
     import json
     from run_params import parse_file
-    root=Path('/home/kaan/ic_audit_20260907/ramses_rect_tests')
+    root=Path('/home/user/ic_audit_20260907/ramses_rect_tests')
     for chi in (10,100,1000):
         run=root/f'chi{chi}'
         meta,c=read_output(run/'output_00001')

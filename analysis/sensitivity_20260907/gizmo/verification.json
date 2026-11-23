@@ -112,56 +112,56 @@
   ],
   "independent_checks": [
     {
-      "snapshot": "/home/kaan/sensitivity_20260907/gizmo/smokes/L3_mfm_sharp13/output/snapshot_000.hdf5",
+      "snapshot": "/home/user/sensitivity_20260907/gizmo/smokes/L3_mfm_sharp13/output/snapshot_000.hdf5",
       "relative_errors": {
         "total_mass": 0.0,
         "dense_mass": 0.0
       }
     },
     {
-      "snapshot": "/home/kaan/sensitivity_20260907/gizmo/smokes/L3_mfm_sharp13/output/snapshot_001.hdf5",
+      "snapshot": "/home/user/sensitivity_20260907/gizmo/smokes/L3_mfm_sharp13/output/snapshot_001.hdf5",
       "relative_errors": {
         "total_mass": 0.0,
         "dense_mass": 0.0
       }
     },
     {
-      "snapshot": "/home/kaan/sensitivity_20260907/gizmo/smokes/L3_mfm_tanh13/output/snapshot_000.hdf5",
+      "snapshot": "/home/user/sensitivity_20260907/gizmo/smokes/L3_mfm_tanh13/output/snapshot_000.hdf5",
       "relative_errors": {
         "total_mass": 0.0,
         "dense_mass": 0.0
       }
     },
     {
-      "snapshot": "/home/kaan/sensitivity_20260907/gizmo/smokes/L3_mfm_tanh13/output/snapshot_001.hdf5",
+      "snapshot": "/home/user/sensitivity_20260907/gizmo/smokes/L3_mfm_tanh13/output/snapshot_001.hdf5",
       "relative_errors": {
         "total_mass": 0.0,
         "dense_mass": 0.0
       }
     },
     {
-      "snapshot": "/home/kaan/sensitivity_20260907/gizmo/smokes/L3_mfv_sharp13/output/snapshot_000.hdf5",
+      "snapshot": "/home/user/sensitivity_20260907/gizmo/smokes/L3_mfv_sharp13/output/snapshot_000.hdf5",
       "relative_errors": {
         "total_mass": 0.0,
         "dense_mass": 0.0
       }
     },
     {
-      "snapshot": "/home/kaan/sensitivity_20260907/gizmo/smokes/L3_mfv_sharp13/output/snapshot_001.hdf5",
+      "snapshot": "/home/user/sensitivity_20260907/gizmo/smokes/L3_mfv_sharp13/output/snapshot_001.hdf5",
       "relative_errors": {
         "total_mass": 0.0,
         "dense_mass": 0.0
       }
     },
     {
-      "snapshot": "/home/kaan/sensitivity_20260907/gizmo/smokes/L3_mfv_tanh13/output/snapshot_000.hdf5",
+      "snapshot": "/home/user/sensitivity_20260907/gizmo/smokes/L3_mfv_tanh13/output/snapshot_000.hdf5",
       "relative_errors": {
         "total_mass": 0.0,
         "dense_mass": 0.0
       }
     },
     {
-      "snapshot": "/home/kaan/sensitivity_20260907/gizmo/smokes/L3_mfv_tanh13/output/snapshot_001.hdf5",
+      "snapshot": "/home/user/sensitivity_20260907/gizmo/smokes/L3_mfv_tanh13/output/snapshot_001.hdf5",
       "relative_errors": {
         "total_mass": 0.0,
         "dense_mass": 0.0

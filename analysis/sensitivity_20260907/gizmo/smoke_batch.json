@@ -5,7 +5,7 @@
       "variant": "mfm",
       "mode": 0,
       "level": 3,
-      "directory": "/home/kaan/sensitivity_20260907/gizmo/smokes/L3_mfm_sharp13",
+      "directory": "/home/user/sensitivity_20260907/gizmo/smokes/L3_mfm_sharp13",
       "physics": {
         "code": "GIZMO",
         "variants": [
@@ -50,7 +50,7 @@
         "core",
         "-np",
         "8",
-        "/home/kaan/sensitivity_20260907/gizmo/GIZMO_mfm_pair",
+        "/home/user/sensitivity_20260907/gizmo/GIZMO_mfm_pair",
         "params.txt"
       ],
       "binary_sha256": "ad6787e8666f92e1ac5162eec1aa717277920c51c52b7b04277d0b53295c6011",
@@ -62,7 +62,7 @@
       "peak_child_rss_gib": 0.4853477478027344,
       "outputs": [
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/smokes/L3_mfm_sharp13/output/snapshot_000.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/smokes/L3_mfm_sharp13/output/snapshot_000.hdf5",
           "time": 0.0,
           "fields": {
             "Coordinates": "float64",
@@ -79,7 +79,7 @@
           "bytes": 4203752
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/smokes/L3_mfm_sharp13/output/snapshot_001.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/smokes/L3_mfm_sharp13/output/snapshot_001.hdf5",
           "time": 0.1,
           "fields": {
             "Coordinates": "float64",
@@ -101,7 +101,7 @@
       "variant": "mfm",
       "mode": 1,
       "level": 3,
-      "directory": "/home/kaan/sensitivity_20260907/gizmo/smokes/L3_mfm_tanh13",
+      "directory": "/home/user/sensitivity_20260907/gizmo/smokes/L3_mfm_tanh13",
       "physics": {
         "code": "GIZMO",
         "variants": [
@@ -146,7 +146,7 @@
         "core",
         "-np",
         "8",
-        "/home/kaan/sensitivity_20260907/gizmo/GIZMO_mfm_pair",
+        "/home/user/sensitivity_20260907/gizmo/GIZMO_mfm_pair",
         "params.txt"
       ],
       "binary_sha256": "ad6787e8666f92e1ac5162eec1aa717277920c51c52b7b04277d0b53295c6011",
@@ -158,7 +158,7 @@
       "peak_child_rss_gib": 0.487701416015625,
       "outputs": [
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/smokes/L3_mfm_tanh13/output/snapshot_000.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/smokes/L3_mfm_tanh13/output/snapshot_000.hdf5",
           "time": 0.0,
           "fields": {
             "Coordinates": "float64",
@@ -175,7 +175,7 @@
           "bytes": 4203752
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/smokes/L3_mfm_tanh13/output/snapshot_001.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/smokes/L3_mfm_tanh13/output/snapshot_001.hdf5",
           "time": 0.1,
           "fields": {
             "Coordinates": "float64",
@@ -197,7 +197,7 @@
       "variant": "mfv",
       "mode": 0,
       "level": 3,
-      "directory": "/home/kaan/sensitivity_20260907/gizmo/smokes/L3_mfv_sharp13",
+      "directory": "/home/user/sensitivity_20260907/gizmo/smokes/L3_mfv_sharp13",
       "physics": {
         "code": "GIZMO",
         "variants": [
@@ -242,7 +242,7 @@
         "core",
         "-np",
         "8",
-        "/home/kaan/sensitivity_20260907/gizmo/GIZMO_mfv_pair",
+        "/home/user/sensitivity_20260907/gizmo/GIZMO_mfv_pair",
         "params.txt"
       ],
       "binary_sha256": "b7634f844d98ceef246d66e2243827f0c5774c9997b92bd8ffeedfdf940eed91",
@@ -254,7 +254,7 @@
       "peak_child_rss_gib": 0.5161705017089844,
       "outputs": [
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/smokes/L3_mfv_sharp13/output/snapshot_000.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/smokes/L3_mfv_sharp13/output/snapshot_000.hdf5",
           "time": 0.0,
           "fields": {
             "Coordinates": "float64",
@@ -272,7 +272,7 @@
           "bytes": 4990184
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/smokes/L3_mfv_sharp13/output/snapshot_001.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/smokes/L3_mfv_sharp13/output/snapshot_001.hdf5",
           "time": 0.1,
           "fields": {
             "Coordinates": "float64",
@@ -295,7 +295,7 @@
       "variant": "mfv",
       "mode": 1,
       "level": 3,
-      "directory": "/home/kaan/sensitivity_20260907/gizmo/smokes/L3_mfv_tanh13",
+      "directory": "/home/user/sensitivity_20260907/gizmo/smokes/L3_mfv_tanh13",
       "physics": {
         "code": "GIZMO",
         "variants": [
@@ -340,7 +340,7 @@
         "core",
         "-np",
         "8",
-        "/home/kaan/sensitivity_20260907/gizmo/GIZMO_mfv_pair",
+        "/home/user/sensitivity_20260907/gizmo/GIZMO_mfv_pair",
         "params.txt"
       ],
       "binary_sha256": "b7634f844d98ceef246d66e2243827f0c5774c9997b92bd8ffeedfdf940eed91",
@@ -352,7 +352,7 @@
       "peak_child_rss_gib": 0.5188751220703125,
       "outputs": [
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/smokes/L3_mfv_tanh13/output/snapshot_000.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/smokes/L3_mfv_tanh13/output/snapshot_000.hdf5",
           "time": 0.0,
           "fields": {
             "Coordinates": "float64",
@@ -370,7 +370,7 @@
           "bytes": 4990184
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/gizmo/smokes/L3_mfv_tanh13/output/snapshot_001.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/gizmo/smokes/L3_mfv_tanh13/output/snapshot_001.hdf5",
           "time": 0.1,
           "fields": {
             "Coordinates": "float64",

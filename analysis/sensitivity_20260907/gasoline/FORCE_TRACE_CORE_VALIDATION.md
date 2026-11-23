@@ -34,7 +34,7 @@ mechanism caused the existing Gasoline trajectory differences.
 ## Evidence and boundaries
 
 Completed frozen stage:
-`/home/kaan/sensitivity_20260907/gasoline/force_trace_core_v1`.
+`/home/user/sensitivity_20260907/gasoline/force_trace_core_v1`.
 Plan SHA256:
 `1b35716e8d781253aeff19bc61f826065593cfde3192a6a41982e3d1df77ea2a`.
 Report SHA256:

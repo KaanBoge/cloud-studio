@@ -4,8 +4,8 @@ from pathlib import Path
 import numpy as np
 import yt
 from grid_smokes import set_flat,VW
-root=Path('/home/kaan/ic_audit_20260907/ramses_rect_tests')
-template=Path('/home/kaan/codes/ramses/runs/RAM3D_chi10/RAM3D_chi10.nml').read_text()
+root=Path('/home/user/ic_audit_20260907/ramses_rect_tests')
+template=Path('/home/user/codes/ramses/runs/RAM3D_chi10/RAM3D_chi10.nml').read_text()
 template=template[template.index('&RUN_PARAMS'):]
 for chi in (10,100,1000):
     run=root/f'chi{chi}'
@@ -15,7 +15,7 @@ for chi in (10,100,1000):
     text=text.replace('&AMR_PARAMS','&AMR_PARAMS\nnx=2\nny=1\nnz=1')
     (run/'run.nml').write_text(text)
     with (run/'run.log').open('x') as log:
-        rc=subprocess.run(['mpirun','-np','1','/home/kaan/ic_audit_20260907/bin/ramses_rect','run.nml'],cwd=run,stdout=log,stderr=subprocess.STDOUT,timeout=120).returncode
+        rc=subprocess.run(['mpirun','-np','1','/home/user/ic_audit_20260907/bin/ramses_rect','run.nml'],cwd=run,stdout=log,stderr=subprocess.STDOUT,timeout=120).returncode
     result={'chi':chi,'returncode':rc,'snapshots':[str(p) for p in run.glob('output_*/info_*.txt')]}
     if not result['snapshots']:
         result['log_tail']=(run/'run.log').read_text(errors='replace')[-1600:]

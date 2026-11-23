@@ -1,10 +1,10 @@
 # New Enzo L5 velocity pair on direct C: storage
 
-9 September 2026. This is pending work from Ryan's within-code velocity sensitivity request, not a replacement queue. Previous L3/L4 results and all native data remain immutable. Gasoline remains scientifically held.
+9 September 2026. This extends the within-code velocity sensitivity study and is not a replacement queue. Previous L3/L4 results and all native data remain immutable. Gasoline remains scientifically held.
 
 Use the existing native `enzo_pair` executable, SHA256 `28d482af94828aba1de2b097068b66c9ec80b88b53bd6405e0ff96fbecf57900`, eight bound MPI CPU ranks and one thread per rank. Chi=100, Mach=2, gamma=5/3, 256x128x128 uniform cells, R=1 and the existing 20x10x10 R box, density edge, boundary/tracer recipes and pressure. Only CloudWindVelocityIC differs between laws. No native code rebuild, reduced precision, cooling, tracking, worker-count optimization or timestep change.
 
-New raw root: `C:/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1`, directly accessible at `/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1`. Relative native dump paths and the full input bytes from the existing L5 input generator are retained. Direct NTFS I/O may be slower than ext4; it is not claimed as a speed optimization.
+New raw root: `C:/Users/user/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1`, directly accessible at `/mnt/c/Users/user/CloudCrushing/native_runs/sensitivity_20260907/enzo_L5_velocity_pair_v1`. Relative native dump paths and the full input bytes from the existing L5 input generator are retained. Direct NTFS I/O may be slower than ext4; it is not claimed as a speed optimization.
 
 The new launcher independently verifies writable drvfs C: mapping, current distro backing C:, distinct host/guest filesystem devices, and no output-path symlinks. The original storage_guard module remains unchanged. Charge both full-case budgets from the existing native Enzo budget formula to C:, plus 2 GiB for new L5 diagnostics and 1 GiB guest ancillary allowance. Maintain separate 10 GiB reserves on host and guest. Never add host and guest capacity. Check RAM >= 8 GiB before native work and >= 2 GiB during work. No automatic deletion, relocation, thinning or VHDX resize.
 

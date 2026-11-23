@@ -5,7 +5,7 @@ from pathlib import Path
 import sys
 import numpy as np
 
-ROOT=Path('/home/kaan/sensitivity_20260907/gasoline')
+ROOT=Path('/home/user/sensitivity_20260907/gasoline')
 sys.path.insert(0,str(ROOT/'runner_longer_2rank_v1'))
 import longer_checks_v2 as l
 import gasoline_controls as g

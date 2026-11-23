@@ -9,7 +9,7 @@
     "core",
     "-np",
     "2",
-    "/home/kaan/followup_20260907/bin/athpp_tracking",
+    "/home/user/followup_20260907/bin/athpp_tracking",
     "-i",
     "athinput"
   ],
@@ -23,9 +23,9 @@
   "native_outputs": 101,
   "initial_fields": {
     "passed": true,
-    "snapshot": "/home/kaan/followup_20260907/tracking_tests_v2/fulltime_chi1000_shift0/cloud_sharp13_20260907_L3_chi1000.out2.00000.athdf",
+    "snapshot": "/home/user/followup_20260907/tracking_tests_v2/fulltime_chi1000_shift0/cloud_sharp13_20260907_L3_chi1000.out2.00000.athdf",
     "parameters": {
-      "source": "/home/kaan/followup_20260907/tracking_tests_v2/fulltime_chi1000_shift0/athinput",
+      "source": "/home/user/followup_20260907/tracking_tests_v2/fulltime_chi1000_shift0/athinput",
       "parameter_sha256": "42816825d560838afba09f5b39c92dff49aa19b17b9ad02b3faaf1bb345aae64",
       "assumptions": [
         "custom cloud_wind pgen fixes R=1, rho_wind=1 and P_wind=1"

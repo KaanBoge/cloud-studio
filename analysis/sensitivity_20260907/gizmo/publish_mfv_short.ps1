@@ -1,7 +1,7 @@
 param([ValidateSet('stage','verify')][string]$Mode='stage',[string]$Commit,[long]$WorkflowId)
 $ErrorActionPreference='Stop'
-$taskRepo='C:\Users\kaanb\cloud-studio-repo'
-$taskStudy='C:\Users\kaanb\CloudCrushing\sensitivity_20260907'
+$taskRepo='C:\Users\user\cloud-studio-repo'
+$taskStudy='C:\Users\user\CloudCrushing\sensitivity_20260907'
 $taskFrom=Join-Path $taskStudy 'gizmo'
 $taskBase='be70fb1e6f47dfad8775adf7ac9c5d83f8fee010'
 $taskFiles=@('README.md','.gitattributes','MFV_SHORT_VALIDATION.md','MFV_SHORT_VALIDATION_PLAN.md','mfv_short_controls.py','test_mfv_short.py','storage_guard.py','mfv_short_plan.json','mfv_short_batch.json','mfv_short_validation.json','MFV_REPAIR_BUILD_VALIDATION.md','publish_mfv_short.ps1')

@@ -28,10 +28,10 @@ def main():
         os.fsync(stream.fileno())
     paths=[r.HERE/name for name in ('runner.py','prepare.py','test_runner.py','PLAN.md',*expected)]
     paths += [r.BINARY,original/'build.json',r.GUEST/'build.json',
-        Path('/home/kaan/ic_audit_20260907/grid_tests/enzo_chi100/CloudWind.enzo'),
-        Path('/home/kaan/verified_20260907/storage_guard.py'),
-        Path('/home/kaan/verified_20260907/run_params.py'),
-        r.STUDY/'build.py',Path('/mnt/c/Users/kaanb/CloudCrushing/audit_20260907/grid_smokes.py')]
+        Path('/home/user/ic_audit_20260907/grid_tests/enzo_chi100/CloudWind.enzo'),
+        Path('/home/user/verified_20260907/storage_guard.py'),
+        Path('/home/user/verified_20260907/run_params.py'),
+        r.STUDY/'build.py',Path('/mnt/c/Users/user/CloudCrushing/audit_20260907/grid_smokes.py')]
     windows={'storage_probe.bin':r.sha(probe)}
     for smoke in (True,False):
         for mode in (0,1):

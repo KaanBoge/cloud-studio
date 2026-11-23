@@ -13,5 +13,5 @@
   "within_new_pair_requires_exact_density_tracer": true,
   "native_invalid_mode_rejected": true,
   "invalid_mode_returncode": 2,
-  "negative_control_directory": "/home/kaan/sensitivity_20260907/ramses/invalid_mode"
+  "negative_control_directory": "/home/user/sensitivity_20260907/ramses/invalid_mode"
 }

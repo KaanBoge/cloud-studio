@@ -5,7 +5,7 @@ import subprocess
 import sys
 import time
 here=Path(__file__).resolve().parent
-work=Path('/home/kaan/performance_20260907b');work.mkdir(exist_ok=True)
+work=Path('/home/user/performance_20260907b');work.mkdir(exist_ok=True)
 state=work/'driver_status.json'
 commands=[['bash',str(here/'build_lto.sh')],
           [sys.executable,str(here/'bench.py'),'cpu_sweep'],

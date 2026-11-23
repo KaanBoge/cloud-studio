@@ -2,7 +2,7 @@
   "schema_version": 2,
   "kind": "enzo",
   "parameters": {
-    "source": "/home/kaan/ic_audit_20260907/grid_tests/enzo_chi1000/CloudWind.enzo",
+    "source": "/home/user/ic_audit_20260907/grid_tests/enzo_chi1000/CloudWind.enzo",
     "parameter_sha256": "78537181cc9087f7f2b9d3e0dad12ea4d196bb800712c0564d7afd53b79e04bd",
     "assumptions": [],
     "gamma": 1.6666666666666667,
@@ -58,7 +58,7 @@
           10.0
         ]
       },
-      "snapshot": "/home/kaan/ic_audit_20260907/grid_tests/enzo_chi1000/DD0000/CW_0000",
+      "snapshot": "/home/user/ic_audit_20260907/grid_tests/enzo_chi1000/DD0000/CW_0000",
       "dense_mass_over_initial_dense_mass": 1.0
     },
     {
@@ -82,7 +82,7 @@
           10.0
         ]
       },
-      "snapshot": "/home/kaan/ic_audit_20260907/grid_tests/enzo_chi1000/DD0001/CW_0001",
+      "snapshot": "/home/user/ic_audit_20260907/grid_tests/enzo_chi1000/DD0001/CW_0001",
       "dense_mass_over_initial_dense_mass": 1.0000015624482432
     }
   ]

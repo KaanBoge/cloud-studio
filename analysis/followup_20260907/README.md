@@ -1,4 +1,4 @@
-# Ryan follow-up: verified repairs and outstanding science
+# Follow-up: verified repairs and outstanding science
 
 7 September 2026. These are code repairs and validation experiments, not a
 completed twelve-code production comparison. No historical native data were
@@ -143,8 +143,8 @@ capacity. This is filesystem capacity, not a verified SSD make/model.
 ## Directory contents and reproducibility
 
 ```
-C:\Users\kaanb\CloudCrushing\followup_20260907\  source, tests, this report
-/home/kaan/followup_20260907/
+C:\Users\user\CloudCrushing\followup_20260907\  source, tests, this report
+/home/user/followup_20260907/
   bin/athpp_tracking              separate experimental executable
   before/                        untouched pre-edit scripts, not published
   logs/build_tracking.log         build attempts, including initial failure

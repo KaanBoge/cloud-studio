@@ -2,7 +2,7 @@
 import json
 from pathlib import Path
 import h5py
-root=Path('/home/kaan/ic_audit_20260907/grid_tests/flash_chi100')
+root=Path('/home/user/ic_audit_20260907/grid_tests/flash_chi100')
 for p in sorted(root.glob('*hdf5*')):
     with h5py.File(p) as h:
         fields={k:dict(shape=list(v.shape),dtype=str(v.dtype)) for k,v in h.items() if isinstance(v,h5py.Dataset) and v.ndim==4}

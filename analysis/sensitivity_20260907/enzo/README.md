@@ -56,7 +56,7 @@ ranks are used. The L5 reservation exceeds the currently available backing-drive
 space; the worker will hold that pair instead of reducing native fields.
 
 Windows record/logs: `worker_v2_windows.json`, `worker_v2_windows.log`,
-`worker_v2_windows.err.log`. Native root: `/home/kaan/sensitivity_20260907/enzo`.
+`worker_v2_windows.err.log`. Native root: `/home/user/sensitivity_20260907/enzo`.
 Status: `batch_v2.json`, `current_v2.json`. Raw: `runs_v2/`. Validated initial
 tests: `smokes_v2/`, `smoke_batch_v2.json`. Launcher: `launch_windows.ps1`.
 The older worker record and batch.json describe the failed first attempt.
@@ -88,7 +88,7 @@ blindly resuming that checkpoint. Enzo checkpoint resume is not certified here.
 
 ## Reproduction and limitations
 
-Run with `/home/kaan/venv/bin/python` under WSL Ubuntu on this machine.
+Run with `/home/user/venv/bin/python` under WSL Ubuntu on this machine.
 `build_enzo.py` records every compile/link command and input hash. Scripts are
 machine-specific: paths to the native checkout and shared audited helpers are
 explicit. Do not run historical queue scripts or launch a second worker.

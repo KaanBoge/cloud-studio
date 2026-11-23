@@ -1,19 +1,60 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Compare simulations · Cloud Crushing Studio</title><meta name="description" content="Explore saved cloud-crushing results in edge-on and face-on projections. Play, compare, and download images or videos.">
-<link rel="stylesheet" href="recent.css"></head><body>
-<header><a class="brand" href="index.html">◌ Cloud Crushing Studio</a><nav><a href="index.html">Library</a><a href="viewer.html">3D viewer</a><a href="research.html">Research</a><a href="https://github.com/KaanBoge/cloud-studio">GitHub ↗</a></nav></header>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0b1017">
+<title>Compare · Cloud Studio</title>
+<meta name="description" content="Edge-on and face-on projections of the cloud crushing runs. Play a run, compare two runs at the same time, set the twelve methods side by side, and save pictures or films.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="recent.css?v=20261122"></head><body>
+<a class="skip" href="#screen">Skip to the picture</a>
+<header class="top"><a class="brand" href="index.html"><span class="mark" aria-hidden="true">◌</span> Cloud <b>Studio</b></a><nav aria-label="Main navigation"><a href="index.html">Library</a><a href="viewer.html">3D viewer</a><a href="recent.html" aria-current="page">Compare</a><a href="research.html">Research</a><a href="paper/Cloud_survival_OJA.pdf">Paper</a><a href="https://github.com/KaanBoge/cloud-studio">GitHub</a></nav></header>
 <main>
-<div class="intro"><div><p class="eyebrow">SAVED SIMULATION OUTPUTS</p><h1>The cloud, through time.</h1><p class="sub">Saved results from the campaign. Explore both projections, compare runs, and save a picture or video.</p></div><span class="pill" id="count">Loading results…</span></div>
-<section class="studio" aria-label="Simulation capture studio">
-<div class="selectors"><label class="primary">Simulation<select id="run" aria-label="Simulation"></select></label><label>View<select id="view" aria-label="View"><option value="edge">Edge-on · wind left to right</option><option value="face">Face-on · looking along wind</option></select></label><label>Compare with<select id="compare" aria-label="Compare with"><option value="">Single view</option></select></label></div>
-<div class="screen" id="screen"><canvas id="scene" width="1920" height="1080" aria-label="Density projection of the selected simulation"></canvas><p id="error" role="alert" hidden></p></div>
-<div class="transport"><button id="prevFrame" aria-label="Previous frame">‹</button><button id="nextFrame" aria-label="Next frame">›</button><button id="play" title="Play the saved frames">▶ Play</button><input id="time" aria-label="Simulation time" type="range" min="0" max="10" step="1" value="10"><output id="timeLabel">5.00 tcc</output><label class="speed">Speed<select id="speed" aria-label="Playback speed"><option value="1000">1 frame/s</option><option value="500" selected>2 frames/s</option><option value="250">4 frames/s</option></select></label></div>
-<div class="export"><label class="check"><input type="checkbox" id="smoothTime" checked> Smooth preview · 60 fps</label><label class="check"><input type="checkbox" id="labels" checked> Show labels</label><a id="rotate3d" href="viewer.html?run=new_enzo-1000" style="color:#f4d5af;padding:9px">Rotate in 3D ↗</a><button id="full">Full screen</button><button id="picture" class="accent">Save PNG</button><a id="mp4" class="accent" download>Download MP4 ↓</a><button id="shareView">Copy view link</button><button id="record" class="accent">Record one cycle</button><span id="message" role="status" aria-live="polite"></span></div>
-<div class="details"><div><span class="eyebrow">CURRENT RESULT</span><h2 id="title">Loading…</h2><p id="meta"></p></div><p id="note"></p></div>
+<div class="intro"><div><p class="eyebrow">PROJECTIONS OF THE SAVED STATES</p><h1>The cloud, <em>through time.</em></h1><p class="sub">Play a run, compare two runs at the same moment, and save a picture or a film.</p></div><span class="pill" id="count">Loading runs</span></div>
+<section class="studio" id="studio" aria-label="Compare studio">
+<div class="stage">
+<div class="screen" id="screen" tabindex="-1">
+<canvas id="scene" width="1920" height="1080" role="img" aria-label="Column density projection of the selected run"></canvas>
+<div class="grid" id="grid" hidden><p class="grid-head" id="gridHead"></p><div class="tiles" id="tiles"></div><div class="cbar" id="gridBar" aria-hidden="true"></div></div>
+<p id="error" role="alert" hidden></p>
+</div>
+<div class="caption" id="caption" hidden><div id="captionRows"></div><div class="cbar" id="captionBar" aria-hidden="true"></div></div>
+<div class="transport">
+<button id="prevFrame" aria-label="Previous frame" title="Previous frame (left arrow)">‹</button>
+<button id="play" class="play" aria-label="Play" title="Play or pause (space)">▶ Play</button>
+<button id="nextFrame" aria-label="Next frame" title="Next frame (right arrow)">›</button>
+<input id="time" aria-label="Simulation time" type="range" min="0" max="5" step="0.01" value="5">
+<output id="timeLabel" for="time">t = 5.00 t<sub>cc</sub></output>
+<label class="speed">Speed<select id="speed" aria-label="Playback speed"></select></label>
+</div>
+</div>
+<div class="side">
+<div class="modes" id="modes" role="group" aria-label="What to show" hidden><button id="modeRuns" aria-pressed="true">Runs</button><button id="modeTwelve" aria-pressed="false">Twelve methods</button></div>
+<div class="selectors">
+<label class="run-only">Run<select id="run"></select></label>
+<label class="run-only">Compare with<select id="compare"><option value="">No comparison</option></select></label>
+<label class="twelve-only" hidden>Level<select id="level"></select></label>
+<label>View<select id="view"><option value="edge">Edge-on · wind from left to right</option><option value="face">Face-on · looking along the wind</option></select></label>
+</div>
+<div class="options"><label class="check"><input type="checkbox" id="smoothTime" checked> Smooth playback at 60 fps</label><label class="check"><input type="checkbox" id="labels" checked> Axes and colour bar</label></div>
+<div class="export">
+<button id="picture" class="accent">Save picture</button>
+<a id="mp4" class="button accent run-only" download>Download film</a>
+<button id="record" class="accent">Record video</button>
+<button id="shareView">Copy view link</button>
+<button id="full">Full screen</button>
+<a id="rotate3d" class="button run-only" href="viewer.html">Rotate in 3D</a>
+</div>
+<p id="message" role="status" aria-live="polite"></p>
+<div class="details" id="details"><p class="eyebrow">ON SCREEN</p><h2 id="title">Loading</h2><div id="detailBody"></div></div>
+</div>
 </section>
-<div class="library-head"><div><p class="eyebrow">EXPLORE THE NEW RUNS</p><h2>One archive. Different outcomes.</h2></div><label>Filter<select id="filter" aria-label="Filter simulations"><option value="all">All simulations</option><option value="1000">χ = 1000</option><option value="100">χ = 100</option><option value="10">χ = 10</option><option value="cooling">Cooling on</option></select></label></div>
+<section class="runs" aria-labelledby="runsTitle">
+<div class="library-head"><div><p class="eyebrow">ALL RUNS ON THIS PAGE</p><h2 id="runsTitle">One archive. Different outcomes.</h2></div><label>Show<select id="filter" aria-label="Filter runs"><option value="all">All runs</option></select></label></div>
 <div id="cards" class="cards"></div>
-<details class="methods"><summary>What is shown and how to use it</summary><p>These are projections of total gas column density, normalized by the initial cloud density and radius: Σ / (ρc,0 R). Display resampling smooths enlarged pixels only; the underlying maps are unchanged. The fixed logarithmic magma scale, 0.008–5, matches the paper. Edge-on places the wind left to right; face-on looks along the wind. Coordinates use the initial cloud radius. Particle runs are binned into 128 × 256 and 128 × 128 maps and translated into the same plotting coordinates.</p><p>Each animation contains 11 real saved states sampled at approximately 0.5 cloud-crushing times, from 0 to 5. Smooth preview crossfades between saved images at a target of 60 display frames per second. It does not solve intervening fluid motion. Turn it off to inspect discrete saved states; actual browser frame rate depends on the device. The original runs retain their finer output cadence. PNG and video exports use the selected view, comparison and labels. Video is recorded locally in your browser; supported format depends on the browser. No simulation is running in this page.</p><p>Every projection was checked against the accepted saved mass and dense-mass reductions. Numerical acceptance does not establish convergence or rank the codes by physical accuracy. Boundary conditions, initial particle construction, transport choices and correction source differ between some runs; the selected run’s notes describe these limits. All original simulation files and backups are preserved.</p><p><a href="assets/recent/catalog.json" download>Download visualization catalog and scalar histories</a> · <a href="analysis/recent_gallery_export.py">Projection source</a></p></details>
-<footer>Cloud crushing research · Kaan Boge <span>Derived visualizations of retained native outputs</span></footer>
-</main><script src="media-download.js?v=60fps-1"></script><script src="recent.js?v=60fps-1"></script></body></html>
+<details class="methods"><summary>How to read the pictures</summary>
+<p>Each picture is a projection of the total gas column density, divided by the initial cloud density and radius: Σ / (ρ<sub>c,0</sub> R). The colour scale is logarithmic, from 0.008 to 5, the same as in the paper. Edge-on places the wind from left to right; face-on looks along the wind. Distances are in units of the initial cloud radius. Particle and moving mesh runs are binned onto the same 256 × 128 and 128 × 128 maps as the grid runs.</p>
+<p>Every frame is a saved state of the run, and every picture prints its time as t = 1.25 t<sub>cc</sub>. When two runs are compared, each panel shows its own saved state nearest to the chosen time and prints that time. Smooth playback blends neighbouring frames at 60 frames per second; when playback stops, the picture is a saved state again. Saved pictures and videos use the chosen view, comparison and labels. Space plays and pauses, the arrow keys step one frame.</p>
+<p>The pictures are made directly from the saved simulation output. <a href="research.html#about-the-data">About the data</a></p>
+<p><a href="assets/recent/catalog.json" download>Download the catalog with the mass histories</a> · <a href="analysis/recent_gallery_export.py">Projection source</a></p>
+</details>
+</section>
+<footer class="foot"><span>Cloud Studio. Cloud crushing research by Kaan Boge, ongoing. MIT licence.</span><span class="foot-links"><a href="paper/Cloud_survival_OJA.pdf">Paper</a><a href="https://github.com/KaanBoge/cloud-studio">GitHub</a></span></footer>
+</main><script src="media-download.js?v=20261122"></script><script src="recent.js?v=20261122"></script></body></html>

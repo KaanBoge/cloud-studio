@@ -1,7 +1,7 @@
 param([ValidateSet('stage','verify')][string]$Mode='stage',[string]$Commit,[long]$WorkflowId)
 $ErrorActionPreference='Stop'
-$taskRepo='C:\Users\kaanb\cloud-studio-repo'
-$taskStudy='C:\Users\kaanb\CloudCrushing\sensitivity_20260907'
+$taskRepo='C:\Users\user\cloud-studio-repo'
+$taskStudy='C:\Users\user\CloudCrushing\sensitivity_20260907'
 $taskFrom=Join-Path $taskStudy 'gasoline'
 $taskBase='492f2f186a65b0ab1067b9f730336fb651ec9b55'
 $taskFiles=@('README.md','FORCE_ORDER_RESULTS.md','FORCE_ORDER_TRACE_DESIGN.md','FORCE_TRACE_CORE_VALIDATION.md','FORCE_COMPARISON_PLAN.md','force_trace_core.h','test_force_trace_core.c','force_trace_replay.py','test_force_trace_replay.py','prepare_force_trace_core.py','force_trace_core_plan.json','force_trace_core_report.json','force_trace_native.h','test_force_trace_native.c','prepare_force_native.py','run_force_order.py','test_run_force_order.py','compare_force_order.py','test_compare_force_order.py','review_force_comparison.py','force_native_build.json','force_native_plan.json','force_native_report.json','force_comparison_plan.json','force_comparison_report.json','force_comparison_review.json','publish_force_order.ps1')

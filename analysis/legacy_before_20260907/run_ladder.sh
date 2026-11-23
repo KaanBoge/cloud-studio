@@ -17,10 +17,10 @@
 #
 # Rank counts fall with the grid: 8 ranks cannot usefully decompose a 16x8x8 box.
 set -u
-CC=/home/kaan/CloudCrushing
-CO=/home/kaan/codes
-PY=/home/kaan/venv/bin/python
-LOG=/mnt/c/Users/kaanb/CloudCrushing/results_A8/ladder.log
+CC=/home/user/CloudCrushing
+CO=/home/user/codes
+PY=/home/user/venv/bin/python
+LOG=/mnt/c/Users/user/CloudCrushing/results_wind_tunnel/ladder.log
 echo "=== BALANCED LADDER, LEVELS 1-4 $(date) ===" > "$LOG"
 
 # never start while the level-5 matched set is still using the machine
@@ -63,12 +63,12 @@ athw() { # level chi
   local nx=$(nx_of $L) ny nz np tlim dt
   ny=$(( nx / 2 )); nz=$(( nx / 2 )); np=$(ranks_of $L)
   tlim=$(tlim_of $chi); dt=$(dt_of $chi)
-  local d=$CC/A8/LAD_ATHW_L${L}_chi${chi}
+  local d=$CC/wind_tunnel/LAD_ATHW_L${L}_chi${chi}
   mkdir -p "$d"; cd "$d" || return
   sed -e "s/^drat *=.*/drat = $chi/" -e "s/^tlim *=.*/tlim = $tlim/" -e "s/^dt *=.*/dt = $dt/" \
       -e "s/^Nx1 *=.*/Nx1 = $nx/" -e "s/^Nx2 *=.*/Nx2 = $ny/" -e "s/^Nx3 *=.*/Nx3 = $nz/" \
-      "$CC/A8/ATHW3D_chi10_256/athinput" > athinput
-  cp -f "$CC/A8/athena_wind_mpi" ./athena_lad 2>/dev/null
+      "$CC/wind_tunnel/ATHW3D_chi10_256/athinput" > athinput
+  cp -f "$CC/wind_tunnel/athena_wind_mpi" ./athena_lad 2>/dev/null
   timeout 10800 nice -n 19 mpirun --oversubscribe -np $np ./athena_lad -i athinput > run.out 2>&1
   echo "  Athena4.2 L$L chi=$chi  ${nx}x${ny}x${nz} np=$np  rc=$? dumps=$(ls id0/*.vtk 2>/dev/null | wc -l)" >> "$LOG"
 }

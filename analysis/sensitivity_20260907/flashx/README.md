@@ -29,13 +29,13 @@ retention is unknown. The worker ended with L5 storage-held: 129.79 GiB plus
 The Windows-owned L3/L4 queue started at 02:47 local time using eight MPI
 ranks. L5 follows only if its entire retained pair fits the storage budget.
 L3/L4 full analysis is complete and no Flash-X worker remains active. Check native
-`/home/kaan/sensitivity_20260907/flashx/batch.json` and `current.json`, not a
+`/home/user/sensitivity_20260907/flashx/batch.json` and `current.json`, not a
 stale saved PID. Windows launcher/logs are `worker_windows.json/log/err.log`;
 the launch PID was 4064. Do not relaunch or edit the loaded worker while active.
 
 ## Native solver and controlled difference
 
-This executable is built from `/home/kaan/codes/flashx`, not FLASH 4.8.
+This executable is built from `/home/user/codes/flashx`, not FLASH 4.8.
 The custom CloudWind problem uses Flash-X's native tile-based API and existing
 boundary routine. An isolated `CloudWindSensitivity_20260908` problem unit and
 `object_sensitivity_20260908` build preserve canonical sources and binaries;
@@ -113,17 +113,17 @@ Whole-pair budgets from actual checkpoint+plot sizes, 103 output slots and
 reserve. L5 is expected to be held with about 35 GiB free on Windows C.
 No native output is deleted or thinned to defeat that storage constraint.
 
-Scripts are machine-specific. Run with `/home/kaan/venv/bin/python` in WSL:
+Scripts are machine-specific. Run with `/home/user/venv/bin/python` in WSL:
 `test_flashx.py`, `test_analysis_flashx.py`, `verify_setup.py` and
 `verify_yt_smokes.py`. `build_flashx.py` refuses existing isolated build paths.
 `launch_windows.ps1` preserves Windows interoperability for disk checks.
 After the full worker ends, `analyze_flashx.py` requires all four L3/L4 cases
 and independently checks every mass sum with yt before writing plots/reports.
 Dependencies include the parent study `build.py` and audited
-`/home/kaan/verified_20260907` helpers. No other code's native result is reused.
+`/home/user/verified_20260907` helpers. No other code's native result is reused.
 
-Native raw directory: `/home/kaan/sensitivity_20260907/flashx/runs`.
-Windows source: `C:/Users/kaanb/CloudCrushing/sensitivity_20260907/flashx`.
+Native raw directory: `/home/user/sensitivity_20260907/flashx/runs`.
+Windows source: `C:/Users/user/CloudCrushing/sensitivity_20260907/flashx`.
 Published setup/analysis packages are separate from production viewer entries.
 Scripts and proofs are published, not raw datasets. Nothing has been emailed.
 Publication verifies remote main, Pages status and live URLs; a publication

@@ -2,51 +2,49 @@
 
 ## Scope
 
-Cloud Studio is Kaan Boge's ongoing native code cloud crushing research and visualization project, not one universal executable. The published analysis is a **within code velocity prescription sensitivity study**. Each solver retains its own native method and documented boundary physics; the historical collection is not a certified matched code experiment.
+Cloud Studio holds my ongoing cloud crushing research: one cloud and one wind, run with twelve hydrodynamic methods. Each method uses its own native solver and its own boundary physics, and the [paper](../paper/Cloud_survival_OJA.pdf) compares their results.
 
 ## Execution
 
-Each solver is compiled from its own source and run under WSL2 Ubuntu on Windows. CPU codes use their native parallel runtime; AthenaPK uses CUDA on the NVIDIA GPU. Launch scripts record inputs, commands, executable/source hashes, clocks, memory and output retention. The current hardware is a Ryzen7 7800X3D (8physical cores/16threads),32GB installed RAM and an RTX4070TiSUPER with16GB VRAM. A code is not GPU enabled merely because the machine has a GPU.
+Each solver is compiled from its own source and runs under WSL2 Ubuntu on Windows. The CPU codes use their native parallel runtime, and AthenaPK runs on the NVIDIA GPU with CUDA. Launch scripts record the inputs, commands, executable and source hashes, clocks, memory and output retention. The workstation has a Ryzen 7 7800X3D (8 cores, 16 threads), 32 GB of RAM and an RTX 4070 Ti SUPER with 16 GB of video memory.
 
-## Current experiment
+## The setup
 
-Chi100, Mach2, gamma5/3; nominal ambient density and pressure1; cloud radius1 (FLASH uses a rescaled0.1); existing tanh density edge of width0.1R and20×10×10R domain. The sharp velocity law is zero inside1.3R and constant wind velocity outside. Each native pair holds its source/binary, numerical settings and initial nonvelocity fields fixed, with consistent energy for the selected velocity.
+χ = 100, Mach 2, γ = 5/3, with ambient density and pressure 1 and cloud radius 1 (FLASH uses a rescaled 0.1). The cloud has a tanh density edge of width 0.1 R and sits in a box of 20 × 10 × 10 R. The velocity is zero inside 1.3 R and equal to the wind velocity outside. Each code keeps its own pressure initialization, boundaries, tracers, particle kernels and time stepping, and its report documents them.
 
-AthenaPK's historical law had constant outer momentum. It must not be described as tanh velocity. Original code specific pressure initialization, boundaries, tracers, particle kernels and time staggering are documented in the accepted reports. Density edge and velocity edge are different prescriptions; this setup is not claimed as an exact reproduction of a cited paper.
+The cloud crushing time is t<sub>cc</sub> = √χ R / v<sub>wind</sub>. Dense gas is gas with ρ > ρ<sub>c,0</sub> / 3, and its mass is divided by the measured starting dense mass of the same run.
 
-The cloud crushing time is t_cc=sqrt(chi)R_cloud/v_wind. Dense mass uses rho>rho_cloud,initial/3 and a fixed measured native initial dense mass denominator within each level/pair. Quantities and units come from native parameters where available and are checked against recorded provenance.
+In the September 2026 velocity setup study each code ran in pairs: one run with the sharp velocity edge above and one with the earlier velocity law of that code, a tanh edge or, for AthenaPK, constant momentum outside the cloud. Everything else stayed fixed within a pair.
 
-## Output to figures and interactive 3D
+## From output to figures and 3D
 
-1. The native solver evolves the fluid and saves 3D states plus logs and restart data.
-2. Native readers and yt load measured fields and times. Validators check dimensions, initial laws, finite/positive fields and diagnostics; independent reader checks are code specific.
-3. Analysis produces mass evolution curves and resolution overlays. Any interpolation applies explicitly to scalar diagnostics, not invented 3D frames.
-4. Matplotlib makes 2D views of 3D states. Extracted surfaces provide 3D geometry. ffmpeg encodes rendered frame sequences into movies.
-5. The browser displays exported geometry through three.js. Camera motion does not simulate new physics. Surface/terrain exports must be labelled by what they represent.
+1. The native solver evolves the gas and saves 3D states, logs and restart data.
+2. Native readers and yt load the fields and times. Checks confirm the dimensions, starting conditions, finite and positive fields and the diagnostics.
+3. The analysis makes the dense mass histories and the resolution overlays.
+4. Column density pictures, surface meshes and films are made from every saved state. Particle and moving mesh runs are placed on the same grid as the grid codes for display.
+5. The browser shows the meshes with three.js and plays the default version of every film in the library at 60 frames per second, cross fading between saved states. Every frame prints its time.
 
-Example layout, with actual filenames varying by code:
+Example layout, with the actual file names depending on the code:
 
 ```text
 run/
   native-input                   Physical and numerical parameters
-  run.log                        Actual solver output
-  DD0000/CW_0000                  Enzo state metadata
-  DD0000/CW_0000.cpu0000          Native HDF5 fields (rank layout varies)
-  DD0001/...                     Next measured output
-  result.json                    Validation and provenance
+  run.log                        Solver output
+  DD0000/CW_0000                 Enzo state metadata
+  DD0000/CW_0000.cpu0000         Native HDF5 fields (rank layout varies)
+  DD0001/...                     Next saved state
+  result.json                    Checks and provenance
   resources.jsonl                Sampled resource use
 analysis/
   report.json                    Measured diagnostic series
-  mass_and_retention.png          Quantitative figure
-  README.md                      Interpretation and limitations
+  mass_and_retention.png         Figure
+  README.md                      Reading of the results
 ```
 
-## Reproduce carefully
+## Reproducing a run
 
-Use [the study plan](../analysis/sensitivity_20260907/PLAN.md), the relevant code report and its pinned input/source evidence. Scripts contain machine specific paths and require separately acquired native code dependencies. Build or run in a **new directory**. Do not rerun a completed launcher against an existing result directory, infer activity from an old PID, or overwrite a frozen report.
+Start from [the study plan](../analysis/sensitivity_20260907/PLAN.md), the report of the code and its pinned inputs and source evidence. The scripts carry machine specific paths and need the simulation codes installed separately. Build and run in a new directory, keep double precision and the same numerical settings, and check that the storage holds the whole run before it starts. A compressed archive is restored and checked before any workflow relies on it.
 
-Validate storage for the entire retained run or pair, accounting separately for WSL and its backing Windows drive. Do not sum their free space. Keep double precision and accepted numerics unchanged. A lossless archive must be restored and checked before any storage workflow relies on it; a metadata inventory is not such a check.
+## Reading the levels
 
-## Limits to report in a paper
-
-Resolution labels refer to initial cells/elements per cloud radius, not MP4 pixels; level6 is512×256×256. Moving meshes/particles change their spatial resolution during evolution. Two coarse levels do not establish convergence. Paired curve separation is not error against an exact solution or a ranking of solvers. A shared final time of5t_cc does not prove all cloud material remained in the box. Cooling and tracking results must pass their separate physical and numerical validation before use as a matched comparison.
+Resolution levels count cells across the box, not film pixels: level 5 is 256 × 128 × 128 and level 6 is 512 × 256 × 256. For the moving mesh and particle methods the level gives the starting sampling, and their spatial resolution follows the gas as it evolves.

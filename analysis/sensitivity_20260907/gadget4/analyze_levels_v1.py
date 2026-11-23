@@ -19,8 +19,8 @@ import matplotlib.pyplot as plt
 
 HERE = Path(__file__).resolve().parent
 DEST = HERE / 'analysis_levels_v1'
-RAW = Path('/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/gadget4_L4_velocity_pair_v1')
-FROZEN = Path('/home/kaan/sensitivity_20260907/gadget4/runner_full_l4_ntfs_v1')
+RAW = Path('/mnt/c/Users/user/CloudCrushing/native_runs/sensitivity_20260907/gadget4_L4_velocity_pair_v1')
+FROZEN = Path('/home/user/sensitivity_20260907/gadget4/runner_full_l4_ntfs_v1')
 PLAN_SHA = 'a66c291cdaf6858a0c69560a47ed137f5d026e85851af205134b5cb0d67bdba4'
 
 
@@ -111,7 +111,7 @@ def main():
     tests = unittest.TextTestRunner(verbosity=2).run(suite)
     require(tests.wasSuccessful() and tests.testsRun==12, 'New analysis tests failed or missing')
     old_path = HERE/'l3_report.json'
-    repo_old = Path('/mnt/c/Users/kaanb/cloud-studio-repo/analysis/sensitivity_20260907/gadget4/l3_report.json')
+    repo_old = Path('/mnt/c/Users/user/cloud-studio-repo/analysis/sensitivity_20260907/gadget4/l3_report.json')
     require(sha(old_path)==sha(repo_old), 'Accepted L3 source differs from published repository')
     old = read(old_path)
     require(old['status']=='share_with_caveats' and old['controls']==2 and old['native_states']==202, 'Unexpected accepted L3 report')

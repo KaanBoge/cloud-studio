@@ -11,13 +11,13 @@ import subprocess
 import sys
 import time
 import psutil
-sys.path.insert(0,'/mnt/c/Users/kaanb/CloudCrushing/performance_20260907')
+sys.path.insert(0,'/mnt/c/Users/user/CloudCrushing/performance_20260907')
 from run_optimized import input_for,set_sections,mpi_command
 
-ROOT=Path('/home/kaan/performance_20260907b')
-OLD='/home/kaan/performance_20260907/bin/athpp_native'
+ROOT=Path('/home/user/performance_20260907b')
+OLD='/home/user/performance_20260907/bin/athpp_native'
 LTO=str(ROOT/'bin/athpp_lto')
-APK='/home/kaan/ic_audit_20260907/bin/apk'
+APK='/home/user/ic_audit_20260907/bin/apk'
 
 def run(name,code='athpp',level=5,block=(64,64,64),binary=OLD,compression=None,end=.6,ranks=16):
     folder=ROOT/'runs'/name
@@ -79,7 +79,7 @@ def main():
     ROOT.mkdir(exist_ok=True)
     locks=[]
     for name in ('benchmark.lock','production.lock'):
-        lock=Path('/home/kaan/performance_20260907',name).open('a');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(lock)
+        lock=Path('/home/user/performance_20260907',name).open('a');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(lock)
     if a.suite=='cpu_sweep':
         for name,block,binary in [('current',(64,64,64),OLD),('wide128',(128,64,32),OLD),
               ('wide256',(256,32,32),OLD),('small128',(128,32,32),OLD),

@@ -10,7 +10,7 @@ from pathlib import Path
 import shutil
 import statistics
 
-ROOT = Path('/home/kaan/sensitivity_20260907/gasoline')
+ROOT = Path('/home/user/sensitivity_20260907/gasoline')
 AUDIT = ROOT / 'longer_2rank_audit_v1/report.json'
 OUTPUT = ROOT / 'longer_2rank_review_v1.json'
 AUDIT_SHA = '3329dc075b9873cd608aa7a0ff9533ed4215c65145cc573c92190b3a23d544ff'

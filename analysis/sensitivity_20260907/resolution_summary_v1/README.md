@@ -36,7 +36,7 @@ Athena 4.2 changes from 13.09% to 7.59% to 8.70% across L3/L4/L5: even the avail
 
 AthenaPK's historical prescription was constant outer momentum, not tanh velocity. The other accepted pairs compare historical tanh velocity with a sharp boundary at 1.3R. Within each pair, the completed source reports validate the retained native-code setup; they do not certify identical pressure and boundary conditions across codes.
 
-This narrow summary addresses dense-mass evolution. It does not validate simultaneous velocity diagnostics, cooling, magnetic fields, Galilean tracking, or an all-material-retained final figure. A reuse decision needs a prospective, science-specific tolerance agreed with Ryan and a provenance match to each historical run. No universal cutoff is introduced here.
+This narrow summary addresses dense-mass evolution. It does not validate simultaneous velocity diagnostics, cooling, magnetic fields, Galilean tracking, or an all-material-retained final figure. A reuse decision needs a prospective, science-specific tolerance set in advance and a provenance match to each historical run. No universal cutoff is introduced here.
 
 ## Remaining work and unchanged holds
 

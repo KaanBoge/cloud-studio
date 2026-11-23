@@ -12,10 +12,10 @@ import time
 
 import psutil
 
-ROOT=Path('/home/kaan/sensitivity_20260907/gasoline')
+ROOT=Path('/home/user/sensitivity_20260907/gasoline')
 OUT=ROOT/'force_trace_core_v1'
 BASE=ROOT/'native_retained/gasoline'
-PY='/home/kaan/venv/bin/python'
+PY='/home/user/venv/bin/python'
 GIB=1024**3
 FILES=('force_trace_core.h','test_force_trace_core.c','force_trace_replay.py',
        'test_force_trace_replay.py','prepare_force_trace_core.py','FORCE_ORDER_TRACE_DESIGN.md')
@@ -50,7 +50,7 @@ def main():
         ('gasoline','smooth.c','smoothfcn.c','SphPressureTerms.h','floattype.h')}
     with ExitStack() as stack:
         for name in ('benchmark','production'):
-            lock=stack.enter_context(open('/home/kaan/performance_20260907/'+name+'.lock','a'))
+            lock=stack.enter_context(open('/home/user/performance_20260907/'+name+'.lock','a'))
             fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
         OUT.mkdir()
         here=Path(__file__).resolve().parent

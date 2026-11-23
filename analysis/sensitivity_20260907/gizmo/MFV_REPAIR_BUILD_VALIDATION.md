@@ -14,7 +14,7 @@ optimization or a claim that the thermal failure has been resolved.
 ## Isolation and compilation
 
 Native work is under
-`/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1`.
+`/home/user/sensitivity_20260907/gizmo/mfv_timestep_repair_v1`.
 Three separate source copies contain 4714822 bytes each of selected tracked
 source/build inputs. No native runs, raw data, original objects or executables
 were copied into these source trees. The canonical source remains unchanged.

@@ -1,39 +1,28 @@
-# Publication update · 9 September 2026
+# Update notes
 
-## Ongoing project and software license
+## 23 November 2026
 
-The public overview now identifies Cloud Studio as Kaan Boge's ongoing project
-and describes the currently published collection. The overview has no mentorship
-branding or proposed work list. Historical scientific records and references
-remain unchanged. The original website/viewer, selected standalone utilities
-and project guides now have an MIT License with explicit scope; native code
-derivatives and research data are not blanket relicensed. The bundled three.js
-license is included with its original authorship.
+Every page now shares one navigation (Library, 3D viewer, Compare, Research, Paper, GitHub), one footer and the Cloud Studio icon, and each page title names its page.
 
-## Easier to inspect
+The research page explains the work in one place: the twelve methods and their boxes, how to read a library card, what the pictures and the 3D view show, the main results of the paper, how the data is made and what can be downloaded. The progress log and the verification log stay as dated logs of September 2026 and are linked from the research page.
 
-The repository now has an expanded README, native code/method directory,
-resolution definitions, workflow and data retention guidance, contribution
-instructions and citation metadata. A new research hub links the existing
-viewer and studio to the actual scientific evidence.
+In a desktop window the archive opens with 24 requests and about 1.2 MB instead of about 400 requests and 294 MB. Terrain views load when their tab opens, each 3D volume loads when its run is picked, films load when they are played, and the 3D tabs use the copy of three.js in `vendor/`.
 
-The searchable data catalogs expose public analysis files with SHA-256 hashes,
-and historical streamed mesh counts/times from the pinned existing frames
-branch. No viewer frame was synthesized, retimed or relabelled by this update.
-The research ZIP packages custom scripts, reports, plots and provenance, not
-raw fluid states or licensed native solver distributions.
+Some sentences in the analysis reports and code comments were reworded, and local user names, the machine name and the folder name of the early runs were replaced by neutral names (`user`, `workstation`, `wind_tunnel`). Checksums recorded inside the dated September 2026 records refer to the files as they were built and run; the analysis file list carries the current checksums of every analysis file.
 
-## Newly available evidence
+## 9 September 2026
 
-Previously unlisted custom analysis/validation helpers and publication receipts
-are included, together with the Enzo L5 direct storage plan, its passed diagnostic
-pair, the new independent sharp run checks when present in the dated snapshot,
-and read only storage/compression evidence. Existing frozen reports are unchanged.
+### Ongoing project and software licence
 
-The accepted all code summary remains50 controls/25pairs/5,054 native states;
-new native L5 checks are separate from a completed L3/L4/L5 paired analysis.
-See [the dated Enzo observation](../analysis/publication_20260909/enzo_l5_observation.json)
-for what was observed during packaging. This website is not a live monitor.
+The public overview presents Cloud Studio as my ongoing project and describes the published collection. The original website and viewer, selected standalone utilities and the project guides are MIT licensed with an explicit scope; native code derivatives and research data keep their own terms. The bundled three.js licence is included with its original authorship.
 
-No raw data was deleted or uploaded. No new cooling, tracking or blanket
-replacement campaign was enabled. The scheduled monitor remains paused.
+### Easier to inspect
+
+The repository gained an expanded README, a guide to the native codes and methods, resolution definitions, workflow and data retention guidance, contribution notes and citation metadata. A research page links the viewer and the library to the scientific evidence.
+
+The searchable data catalogs list the public analysis files with SHA-256 checksums, and the earlier streamed meshes with their counts and times from the pinned frames branch. The research bundle packages custom scripts, reports, plots and provenance, without raw fluid states or licensed solver distributions.
+
+### New evidence
+
+Custom analysis and checking helpers and publication records joined the repository, together with the storage plan for the level 5 Enzo pair, its diagnostic pair, the independent checks of its sharp run and read only storage and compression measurements.
+The all code summary covers 50 controls, 25 pairs and 5,054 native states; the level 5 Enzo checks are separate from it. [The dated Enzo observation](../analysis/publication_20260909/enzo_l5_observation.json) records what was observed during packaging.

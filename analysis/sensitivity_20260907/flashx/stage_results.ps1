@@ -1,7 +1,7 @@
 $ErrorActionPreference='Stop'
-$taskStudy='C:\Users\kaanb\CloudCrushing\sensitivity_20260907'
+$taskStudy='C:\Users\user\CloudCrushing\sensitivity_20260907'
 $taskFrom=Join-Path $taskStudy 'flashx'
-$taskTo='C:\Users\kaanb\cloud-studio-repo\analysis\sensitivity_20260907\flashx'
+$taskTo='C:\Users\user\cloud-studio-repo\analysis\sensitivity_20260907\flashx'
 $taskReport=Get-Content -LiteralPath (Join-Path $taskFrom 'report.json') -Raw | ConvertFrom-Json
 $taskBatch=Get-Content -LiteralPath (Join-Path $taskFrom 'batch.json') -Raw | ConvertFrom-Json
 if($taskReport.status -ne 'share_with_caveats' -or $taskBatch.finished.Count -ne 4 -or $taskReport.pairs.Count -ne 2){throw 'Unexpected completed scope'}
@@ -22,5 +22,5 @@ foreach($taskName in @('README.md','VALIDATION.md','report.json','mass_evolution
 foreach($taskName in @('README.md','PLAN.md')){
   Copy-VerifiedAtomic (Join-Path $taskStudy $taskName) (Join-Path (Split-Path $taskTo) $taskName)
 }
-Copy-VerifiedAtomic (Join-Path $taskStudy 'analysis_index.md') 'C:\Users\kaanb\cloud-studio-repo\analysis\README.md'
+Copy-VerifiedAtomic (Join-Path $taskStudy 'analysis_index.md') 'C:\Users\user\cloud-studio-repo\analysis\README.md'
 'Staged 404 independently checked Flash-X states and analysis, not raw datasets or viewer entries.'

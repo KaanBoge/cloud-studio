@@ -3,7 +3,7 @@ import json
 from pathlib import Path
 import yt
 yt.set_log_level(40)
-root=Path('/home/kaan/sensitivity_20260907/athw')
+root=Path('/home/user/sensitivity_20260907/athw')
 b=json.loads((root/'batch.json').read_text())
 print('BATCH',b['status'])
 for r in b['finished']:

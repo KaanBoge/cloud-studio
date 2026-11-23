@@ -1,8 +1,8 @@
 {
   "passed": true,
-  "snapshot": "/home/kaan/performance_20260907/ic_tests/athpp_chi100/cloud_sharp13_20260907_L3_chi100.out2.00000.athdf",
+  "snapshot": "/home/user/performance_20260907/ic_tests/athpp_chi100/cloud_sharp13_20260907_L3_chi100.out2.00000.athdf",
   "parameters": {
-    "source": "/home/kaan/performance_20260907/ic_tests/athpp_chi100/athinput",
+    "source": "/home/user/performance_20260907/ic_tests/athpp_chi100/athinput",
     "parameter_sha256": "7b31d3a4b4071692f21a803f9e317e71e5b7cc68e6e57a5061f44f50438507ea",
     "assumptions": [
       "custom cloud_wind pgen fixes R=1, rho_wind=1 and P_wind=1"

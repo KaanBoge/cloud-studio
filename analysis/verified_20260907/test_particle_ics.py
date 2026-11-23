@@ -12,12 +12,12 @@ from pathlib import Path
 import h5py
 import numpy as np
 
-ROOT = Path("/home/kaan/ic_audit_20260907/particle_tests")
+ROOT = Path("/home/user/ic_audit_20260907/particle_tests")
 ROOT.mkdir(parents=True, exist_ok=True)
 PY = sys.executable
 VW = 2 * math.sqrt(5 / 3)
 NX, NY, DX = 64, 32, 20 / 64
-spec = importlib.util.spec_from_file_location("gasoline_ic", "/home/kaan/codes/gasoline/ics/make_gasoline_cloudwind.py")
+spec = importlib.util.spec_from_file_location("gasoline_ic", "/home/user/codes/gasoline/ics/make_gasoline_cloudwind.py")
 gasmod = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(gasmod)
 results = []
@@ -27,13 +27,13 @@ for kind in ("arepo", "gizmo", "gadget4", "gasoline"):
         run.mkdir(exist_ok=False)
         ic = run / ("IC.std" if kind == "gasoline" else "IC.hdf5")
         if kind == "arepo":
-            cmd = [PY, "/home/kaan/codes/arepo/runs/make_ic_cloud.py", str(run), str(chi), str(NY), "--ndim", "3", "--v-wind", repr(VW)]
+            cmd = [PY, "/home/user/codes/arepo/runs/make_ic_cloud.py", str(run), str(chi), str(NY), "--ndim", "3", "--v-wind", repr(VW)]
         elif kind == "gizmo":
-            cmd = [PY, "/home/kaan/codes/gizmo/scripts/make_cloudwind_ic.py", "--chi", str(chi), "--level", "3", "--ndims", "3", "--mass-mode", "volume", "--fname", str(ic)]
+            cmd = [PY, "/home/user/codes/gizmo/scripts/make_cloudwind_ic.py", "--chi", str(chi), "--level", "3", "--ndims", "3", "--mass-mode", "volume", "--fname", str(ic)]
         elif kind == "gadget4":
-            cmd = [PY, "/home/kaan/codes/gadget4/ics/make_g4_cloudwind.py", "--chi", str(chi), "--dim", "3", "--nx", str(NX), "--out", str(ic)]
+            cmd = [PY, "/home/user/codes/gadget4/ics/make_g4_cloudwind.py", "--chi", str(chi), "--dim", "3", "--nx", str(NX), "--out", str(ic)]
         else:
-            cmd = [PY, "/home/kaan/codes/gasoline/ics/make_gasoline_cloudwind_3d.py", "--chi", str(chi), "--dx", repr(DX), "--mass-mode", "variable", "--out", str(ic)]
+            cmd = [PY, "/home/user/codes/gasoline/ics/make_gasoline_cloudwind_3d.py", "--chi", str(chi), "--dx", repr(DX), "--mass-mode", "variable", "--out", str(ic)]
         with open(run / "generate.log", "x") as out:
             subprocess.run(cmd, check=True, stdout=out, stderr=subprocess.STDOUT)
         if kind == "gasoline":

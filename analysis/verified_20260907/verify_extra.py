@@ -3,7 +3,7 @@ from pathlib import Path
 import numpy as np
 import h5py
 from check_snapshot import check
-root=Path('/home/kaan/ic_audit_20260907')
+root=Path('/home/user/ic_audit_20260907')
 results=[]
 for chi in (10,100,1000):
     run=root/'grid_tests'/f'athw_chi{chi}'

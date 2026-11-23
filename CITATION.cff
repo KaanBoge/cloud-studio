@@ -1,15 +1,15 @@
 cff-version: 1.2.0
-message: "Please cite the specific report and commit used. Cloud Studio is ongoing research, not a peer-reviewed paper. MIT covers the original website/viewer and specified utilities; see LICENSING.md for exclusions."
-title: "Cloud Studio: native-code cloud-crushing research and visualization"
+message: "Please cite the paper and the commit you used. MIT covers the original website, viewer and specified utilities; see LICENSING.md for the scope."
+title: "Cloud Studio: cloud crushing simulations with twelve hydrodynamic methods"
 type: software
 license: MIT
 authors:
   - family-names: Boge
     given-names: Kaan
 repository-code: "https://github.com/KaanBoge/cloud-studio"
-url: "https://kaanboge.github.io/cloud-studio/research.html"
+url: "https://kaanboge.github.io/cloud-studio/"
 keywords:
   - cloud crushing
   - hydrodynamics
+  - code comparison
   - scientific visualization
-  - reproducibility

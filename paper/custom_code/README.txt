@@ -1,34 +1,18 @@
-Source snapshots supporting the 26 October 2026 working draft
+Custom source code of the manuscript
 
-gizmo_generator_sharp.py is the recorded project initializer. The reported
-finest run selected its volume mode: uniform lattice, variable particle mass,
-and internal energy assigned from constant analytic pressure. The file also
-supports a legacy equal-mass mode; that mode was not used for the stated run.
-Dependencies: Python 3, numpy, h5py. Read its command-line help before reuse.
+gizmo_generator_sharp.py builds the GIZMO starting particles: a uniform lattice
+with variable particle mass and internal energy set from a constant pressure.
+It needs Python 3, numpy and h5py; its help option lists the settings.
 
-athenapk_hydro.cpp, athenapk_tabular_cooling.cpp and
-athenapk_tabular_cooling.hpp are exact source snapshots from the retained
-tracer_global_build_20261026_v1 build family. SHA-256 identifiers are in
-source_manifest.json. The original AthenaPK copyright headers and BSD
-3-Clause license are retained. These snapshots include project modifications
-and are not presented as unmodified upstream AthenaPK.
+athenapk_hydro.cpp, athenapk_tabular_cooling.cpp and athenapk_tabular_cooling.hpp
+are the AthenaPK source files changed for the radiative pair, with their SHA-256
+values in source_manifest.json and the AthenaPK copyright headers and BSD 3-Clause
+licence (LICENSE-AthenaPK.txt). The tracer update uses shared face fluxes; where
+four correction sweeps leave an invalid state, the stage is recomputed with a
+first order local Lax-Friedrichs update. The cooling-on and cooling-off runs used
+the same binary and recorded 23 and 55 such stages.
 
-In the bounded-tracer correction, shared fluxes are used by both neighbours.
-If invalid candidate states persist on the last of four correction sweeps,
-the hydro code switches the entire domain to a first-order local Lax-Friedrichs
-update computed from the original stage state. The cooling-on/off pair used
-the same binary. The recorded final fallback counts are 23 and 55. This
-changes numerical diffusion and requires scientific resolution tests; it is
-not a universal positivity or convergence certificate.
-
-The cooling source assumes a fixed ionized H/He composition and uses a solar
-equilibrium table with n_H squared normalization. Input examples and the exact
-table are included. Paths in example inputs describe the recorded setup;
-configure output locations explicitly before a new build or run.
-
-These files document the changed components rather than a standalone solver
-distribution. Reproduction of the executable also requires the compatible
-AthenaPK/Parthenon/Kokkos source tree, generated configuration, problem generator,
-compiler options and linked libraries retained in the local research archive.
-The upstream commit is not reconstructed from the file hashes. No launch
-authorization or live runtime-control state is included.
+The cooling source uses a fixed ionized H/He composition and the solar
+equilibrium table solar.cooling with n_H squared normalization; cooling_on.in and
+cooling_off.in are the inputs of the two runs. Building them needs the matching
+AthenaPK, Parthenon and Kokkos sources.

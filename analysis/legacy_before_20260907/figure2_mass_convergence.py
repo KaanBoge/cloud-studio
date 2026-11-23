@@ -25,7 +25,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
 
-DAT = "/mnt/c/Users/kaanb/CloudCrushing/studio/data"
+DAT = "/mnt/c/Users/user/CloudCrushing/studio/data"
 OUT = sys.argv[1] if len(sys.argv) > 1 else "figure2_mass_convergence.png"
 MINLEVEL = int(sys.argv[2]) if len(sys.argv) > 2 else 2
 

@@ -70,7 +70,7 @@
   "series": {
     "L3_chi100_sharp13": [
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00001",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00001",
         "time_code": 0.0,
         "t_over_tcc": 0.0,
         "cells": 65536,
@@ -88,7 +88,7 @@
         "tracer_mass_over_initial": 1.0
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00002",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00002",
         "time_code": 0.19834737741148503,
         "t_over_tcc": 0.05121307263190658,
         "cells": 65536,
@@ -100,7 +100,7 @@
         "tracer_mass_over_initial": 0.9999999999999992
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00003",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00003",
         "time_code": 0.3963872174833136,
         "t_over_tcc": 0.10234673946415807,
         "cells": 65536,
@@ -112,7 +112,7 @@
         "tracer_mass_over_initial": 0.9999999999999993
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00004",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00004",
         "time_code": 0.5909622998668764,
         "t_over_tcc": 0.15258580970805638,
         "cells": 65536,
@@ -124,7 +124,7 @@
         "tracer_mass_over_initial": 0.9999999999999997
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00005",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00005",
         "time_code": 0.7885305655531364,
         "t_over_tcc": 0.20359771655752087,
         "cells": 65536,
@@ -136,7 +136,7 @@
         "tracer_mass_over_initial": 0.9999999999999997
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00006",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00006",
         "time_code": 0.9732697687444569,
         "t_over_tcc": 0.25129717371429505,
         "cells": 65536,
@@ -148,7 +148,7 @@
         "tracer_mass_over_initial": 1.0
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00007",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00007",
         "time_code": 1.177148097530569,
         "t_over_tcc": 0.30393833185037583,
         "cells": 65536,
@@ -160,7 +160,7 @@
         "tracer_mass_over_initial": 0.9999999999999996
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00008",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00008",
         "time_code": 1.3669605486782872,
         "t_over_tcc": 0.35294769599690395,
         "cells": 65536,
@@ -172,7 +172,7 @@
         "tracer_mass_over_initial": 1.0
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00009",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00009",
         "time_code": 1.5577132340596336,
         "t_over_tcc": 0.40219982757865713,
         "cells": 65536,
@@ -184,7 +184,7 @@
         "tracer_mass_over_initial": 0.9999999999999993
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00010",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00010",
         "time_code": 1.7489901327200605,
         "t_over_tcc": 0.4515873104470596,
         "cells": 65536,
@@ -196,7 +196,7 @@
         "tracer_mass_over_initial": 0.9999999999999993
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00011",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00011",
         "time_code": 1.940746199047669,
         "t_over_tcc": 0.5010985138751312,
         "cells": 65536,
@@ -208,7 +208,7 @@
         "tracer_mass_over_initial": 0.9999999999999971
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00012",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00012",
         "time_code": 2.133185637250921,
         "t_over_tcc": 0.5507861631627782,
         "cells": 65536,
@@ -220,7 +220,7 @@
         "tracer_mass_over_initial": 0.9999999999999992
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00013",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00013",
         "time_code": 2.326300295065238,
         "t_over_tcc": 0.6006481534043377,
         "cells": 65536,
@@ -232,7 +232,7 @@
         "tracer_mass_over_initial": 1.0000000000000002
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00014",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00014",
         "time_code": 2.5199434710879625,
         "t_over_tcc": 0.6506466064605193,
         "cells": 65536,
@@ -244,7 +244,7 @@
         "tracer_mass_over_initial": 0.9999999999999929
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00015",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00015",
         "time_code": 2.713898429110741,
         "t_over_tcc": 0.7007255612829579,
         "cells": 65536,
@@ -256,7 +256,7 @@
         "tracer_mass_over_initial": 0.9999999999999056
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00016",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00016",
         "time_code": 2.9080963036900984,
         "t_over_tcc": 0.7508672368906065,
         "cells": 65536,
@@ -268,7 +268,7 @@
         "tracer_mass_over_initial": 0.9999999999993973
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00017",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00017",
         "time_code": 3.1024151587500657,
         "t_over_tcc": 0.8010401495240296,
         "cells": 65536,
@@ -280,7 +280,7 @@
         "tracer_mass_over_initial": 0.999999999997441
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00018",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00018",
         "time_code": 3.2968230057134806,
         "t_over_tcc": 0.8512360397681193,
         "cells": 65536,
@@ -292,7 +292,7 @@
         "tracer_mass_over_initial": 0.9999999999918326
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00019",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00019",
         "time_code": 3.491534929550254,
         "t_over_tcc": 0.9015104423233079,
         "cells": 65536,
@@ -304,7 +304,7 @@
         "tracer_mass_over_initial": 0.9999999999787392
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00020",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00020",
         "time_code": 3.6866196136395266,
         "t_over_tcc": 0.9518810911618338,
         "cells": 65536,
@@ -316,7 +316,7 @@
         "tracer_mass_over_initial": 0.9999999999525716
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00021",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00021",
         "time_code": 3.881977421066762,
         "t_over_tcc": 1.0023222601429858,
         "cells": 65536,
@@ -328,7 +328,7 @@
         "tracer_mass_over_initial": 0.9999999999058315
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00022",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00022",
         "time_code": 4.077525070739333,
         "t_over_tcc": 1.0528124461811104,
         "cells": 65536,
@@ -340,7 +340,7 @@
         "tracer_mass_over_initial": 0.9999999998272063
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00023",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00023",
         "time_code": 4.273089277268289,
         "t_over_tcc": 1.1033069071811714,
         "cells": 65536,
@@ -352,7 +352,7 @@
         "tracer_mass_over_initial": 0.9999999996918272
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00024",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00024",
         "time_code": 4.468683939145779,
         "t_over_tcc": 1.1538092317184108,
         "cells": 65536,
@@ -364,7 +364,7 @@
         "tracer_mass_over_initial": 0.9999999994163234
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00025",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00025",
         "time_code": 4.648107610079232,
         "t_over_tcc": 1.2001362243477882,
         "cells": 65536,
@@ -376,7 +376,7 @@
         "tracer_mass_over_initial": 0.9999999987663036
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00026",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00026",
         "time_code": 4.84439053899696,
         "t_over_tcc": 1.2508162586706664,
         "cells": 65536,
@@ -388,7 +388,7 @@
         "tracer_mass_over_initial": 0.9999999965284339
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00027",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00027",
         "time_code": 5.040854994521951,
         "t_over_tcc": 1.3015431629619998,
         "cells": 65536,
@@ -400,7 +400,7 @@
         "tracer_mass_over_initial": 0.9999999892082729
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00028",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00028",
         "time_code": 5.237280984579156,
         "t_over_tcc": 1.352260135512257,
         "cells": 65536,
@@ -412,7 +412,7 @@
         "tracer_mass_over_initial": 0.9999999676729171
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00029",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00029",
         "time_code": 5.433702798717171,
         "t_over_tcc": 1.4029760298448155,
         "cells": 65536,
@@ -424,7 +424,7 @@
         "tracer_mass_over_initial": 0.9999999122261987
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00030",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00030",
         "time_code": 5.630255316768423,
         "t_over_tcc": 1.4537256717826577,
         "cells": 65536,
@@ -436,7 +436,7 @@
         "tracer_mass_over_initial": 0.9999997854283781
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00031",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00031",
         "time_code": 5.810693002499585,
         "t_over_tcc": 1.500314481906991,
         "cells": 65536,
@@ -448,7 +448,7 @@
         "tracer_mass_over_initial": 0.9999995551780179
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00032",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00032",
         "time_code": 6.007818894101028,
         "t_over_tcc": 1.5512121682589028,
         "cells": 65536,
@@ -460,7 +460,7 @@
         "tracer_mass_over_initial": 0.9999991037331759
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00033",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00033",
         "time_code": 6.205299239999934,
         "t_over_tcc": 1.6022013743168855,
         "cells": 65536,
@@ -472,7 +472,7 @@
         "tracer_mass_over_initial": 0.9999983721286128
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00034",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00034",
         "time_code": 6.402953388050926,
         "t_over_tcc": 1.6532354558975726,
         "cells": 65536,
@@ -484,7 +484,7 @@
         "tracer_mass_over_initial": 0.9999972882262095
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00035",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00035",
         "time_code": 6.60052754983843,
         "t_over_tcc": 1.7042488851138324,
         "cells": 65536,
@@ -496,7 +496,7 @@
         "tracer_mass_over_initial": 0.9999957635495054
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00036",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00036",
         "time_code": 6.781677633724383,
         "t_over_tcc": 1.7510216356507906,
         "cells": 65536,
@@ -508,7 +508,7 @@
         "tracer_mass_over_initial": 0.9999938652286515
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00037",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00037",
         "time_code": 6.979334241704603,
         "t_over_tcc": 1.802056352382473,
         "cells": 65536,
@@ -520,7 +520,7 @@
         "tracer_mass_over_initial": 0.9999910206584836
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00038",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00038",
         "time_code": 7.177229876693445,
         "t_over_tcc": 1.8531527856224015,
         "cells": 65536,
@@ -532,7 +532,7 @@
         "tracer_mass_over_initial": 0.9999869334137371
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00039",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00039",
         "time_code": 7.359115627863776,
         "t_over_tcc": 1.9001154846354096,
         "cells": 65536,
@@ -544,7 +544,7 @@
         "tracer_mass_over_initial": 0.999981452530877
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00040",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00040",
         "time_code": 7.557789841326503,
         "t_over_tcc": 1.9514129459728762,
         "cells": 65536,
@@ -556,7 +556,7 @@
         "tracer_mass_over_initial": 0.9999724901847499
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00041",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00041",
         "time_code": 7.756582531668768,
         "t_over_tcc": 2.0027409979091,
         "cells": 65536,
@@ -568,7 +568,7 @@
         "tracer_mass_over_initial": 0.9999586806857553
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00042",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00042",
         "time_code": 7.955575127065888,
         "t_over_tcc": 2.0541206651085426,
         "cells": 65536,
@@ -580,7 +580,7 @@
         "tracer_mass_over_initial": 0.9999374113336872
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00043",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00043",
         "time_code": 8.137865045356651,
         "t_over_tcc": 2.101187719623318,
         "cells": 65536,
@@ -592,7 +592,7 @@
         "tracer_mass_over_initial": 0.9999083408741766
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00044",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00044",
         "time_code": 8.336876333820447,
         "t_over_tcc": 2.1525722133518226,
         "cells": 65536,
@@ -604,7 +604,7 @@
         "tracer_mass_over_initial": 0.9998617865482132
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00045",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00045",
         "time_code": 8.536338486974905,
         "t_over_tcc": 2.2040731198428816,
         "cells": 65536,
@@ -616,7 +616,7 @@
         "tracer_mass_over_initial": 0.9997939240238157
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00046",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00046",
         "time_code": 8.71974117364663,
         "t_over_tcc": 2.2514274899181674,
         "cells": 65536,
@@ -628,7 +628,7 @@
         "tracer_mass_over_initial": 0.9997067976978394
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00047",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00047",
         "time_code": 8.919836687480412,
         "t_over_tcc": 2.303091929433438,
         "cells": 65536,
@@ -640,7 +640,7 @@
         "tracer_mass_over_initial": 0.9995771653302555
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00048",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00048",
         "time_code": 9.103655647524887,
         "t_over_tcc": 2.3505537808313988,
         "cells": 65536,
@@ -652,7 +652,7 @@
         "tracer_mass_over_initial": 0.9994189324938383
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00049",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00049",
         "time_code": 9.304249402252127,
         "t_over_tcc": 2.402346865592187,
         "cells": 65536,
@@ -664,7 +664,7 @@
         "tracer_mass_over_initial": 0.9991950323449709
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00050",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00050",
         "time_code": 9.504994561417222,
         "t_over_tcc": 2.4541790428107313,
         "cells": 65536,
@@ -676,7 +676,7 @@
         "tracer_mass_over_initial": 0.9989088455399007
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00051",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00051",
         "time_code": 9.689628061685196,
         "t_over_tcc": 2.5018512075900543,
         "cells": 65536,
@@ -688,7 +688,7 @@
         "tracer_mass_over_initial": 0.9985837256512008
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00052",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00052",
         "time_code": 9.891167021401875,
         "t_over_tcc": 2.5538883432296986,
         "cells": 65536,
@@ -700,7 +700,7 @@
         "tracer_mass_over_initial": 0.9981543372256163
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00053",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00053",
         "time_code": 10.076254351036027,
         "t_over_tcc": 2.6016776862475037,
         "cells": 65536,
@@ -712,7 +712,7 @@
         "tracer_mass_over_initial": 0.9976858828726742
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00054",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00054",
         "time_code": 10.278270880583637,
         "t_over_tcc": 2.653838129887271,
         "cells": 65536,
@@ -724,7 +724,7 @@
         "tracer_mass_over_initial": 0.9970871606771824
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00055",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00055",
         "time_code": 10.463753494954153,
         "t_over_tcc": 2.701729534985139,
         "cells": 65536,
@@ -736,7 +736,7 @@
         "tracer_mass_over_initial": 0.9964511309502461
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00056",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00056",
         "time_code": 10.666319016931412,
         "t_over_tcc": 2.754031727860722,
         "cells": 65536,
@@ -748,7 +748,7 @@
         "tracer_mass_over_initial": 0.9956552759219851
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00057",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00057",
         "time_code": 10.852019034169798,
         "t_over_tcc": 2.8019792661377014,
         "cells": 65536,
@@ -760,7 +760,7 @@
         "tracer_mass_over_initial": 0.9948270560381685
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00058",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00058",
         "time_code": 11.054795339446372,
         "t_over_tcc": 2.854335883027144,
         "cells": 65536,
@@ -772,7 +772,7 @@
         "tracer_mass_over_initial": 0.9938094720750285
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00059",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00059",
         "time_code": 11.241009016089054,
         "t_over_tcc": 2.9024160475920215,
         "cells": 65536,
@@ -784,7 +784,7 @@
         "tracer_mass_over_initial": 0.9927673024387722
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00060",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00060",
         "time_code": 11.427408439873531,
         "t_over_tcc": 2.9505441718626844,
         "cells": 65536,
@@ -796,7 +796,7 @@
         "tracer_mass_over_initial": 0.9916183583118856
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00061",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00061",
         "time_code": 11.630603898487873,
         "t_over_tcc": 3.0030090136785725,
         "cells": 65536,
@@ -808,7 +808,7 @@
         "tracer_mass_over_initial": 0.990243339631474
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00062",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00062",
         "time_code": 11.817015168253477,
         "t_over_tcc": 3.05114019656841,
         "cells": 65536,
@@ -820,7 +820,7 @@
         "tracer_mass_over_initial": 0.9888679967052474
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00063",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00063",
         "time_code": 12.02058156483682,
         "t_over_tcc": 3.10370081415606,
         "cells": 65536,
@@ -832,7 +832,7 @@
         "tracer_mass_over_initial": 0.987240345791547
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00064",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00064",
         "time_code": 12.207390598226777,
         "t_over_tcc": 3.1519346991720867,
         "cells": 65536,
@@ -844,7 +844,7 @@
         "tracer_mass_over_initial": 0.9856306373039763
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00065",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00065",
         "time_code": 12.393968529515817,
         "t_over_tcc": 3.200108913882239,
         "cells": 65536,
@@ -856,7 +856,7 @@
         "tracer_mass_over_initial": 0.9839119626883901
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00066",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00066",
         "time_code": 12.597767641808398,
         "t_over_tcc": 3.25272961840764,
         "cells": 65536,
@@ -868,7 +868,7 @@
         "tracer_mass_over_initial": 0.9819082766267816
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00067",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00067",
         "time_code": 12.784787647596103,
         "t_over_tcc": 3.3010179762625333,
         "cells": 65536,
@@ -880,7 +880,7 @@
         "tracer_mass_over_initial": 0.979954097699602
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00068",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00068",
         "time_code": 12.989060187784787,
         "t_over_tcc": 3.353760919345084,
         "cells": 65536,
@@ -892,7 +892,7 @@
         "tracer_mass_over_initial": 0.9776941721749163
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00069",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00069",
         "time_code": 13.176105872761129,
         "t_over_tcc": 3.4020559075379726,
         "cells": 65536,
@@ -904,7 +904,7 @@
         "tracer_mass_over_initial": 0.9755102415489374
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00070",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00070",
         "time_code": 13.363359798558289,
         "t_over_tcc": 3.450404663279597,
         "cells": 65536,
@@ -916,7 +916,7 @@
         "tracer_mass_over_initial": 0.9732136799670549
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00071",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00071",
         "time_code": 13.568005987600587,
         "t_over_tcc": 3.5032440820813058,
         "cells": 65536,
@@ -928,7 +928,7 @@
         "tracer_mass_over_initial": 0.9705764818861018
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00072",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00072",
         "time_code": 13.755738438163366,
         "t_over_tcc": 3.5517163923861292,
         "cells": 65536,
@@ -940,7 +940,7 @@
         "tracer_mass_over_initial": 0.968039646896272
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00073",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00073",
         "time_code": 13.943431597016437,
         "t_over_tcc": 3.6001785576151297,
         "cells": 65536,
@@ -952,7 +952,7 @@
         "tracer_mass_over_initial": 0.9653913354899901
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00074",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00074",
         "time_code": 14.148370472625755,
         "t_over_tcc": 3.653093547763487,
         "cells": 65536,
@@ -964,7 +964,7 @@
         "tracer_mass_over_initial": 0.9623735387905142
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00075",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00075",
         "time_code": 14.336719324194222,
         "t_over_tcc": 3.7017250121236183,
         "cells": 65536,
@@ -976,7 +976,7 @@
         "tracer_mass_over_initial": 0.9594857844419876
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00076",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00076",
         "time_code": 14.525040139625343,
         "t_over_tcc": 3.7503492375842136,
         "cells": 65536,
@@ -988,7 +988,7 @@
         "tracer_mass_over_initial": 0.9564904875241728
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00077",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00077",
         "time_code": 14.730537938770013,
         "t_over_tcc": 3.8034085411688525,
         "cells": 65536,
@@ -1000,7 +1000,7 @@
         "tracer_mass_over_initial": 0.9530994427341779
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00078",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00078",
         "time_code": 14.91942022505315,
         "t_over_tcc": 3.852177737780064,
         "cells": 65536,
@@ -1012,7 +1012,7 @@
         "tracer_mass_over_initial": 0.949869259885824
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00079",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00079",
         "time_code": 15.108425297990529,
         "t_over_tcc": 3.9009786377690765,
         "cells": 65536,
@@ -1024,7 +1024,7 @@
         "tracer_mass_over_initial": 0.9465272566738632
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00080",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00080",
         "time_code": 15.314591666707882,
         "t_over_tcc": 3.9542105652751007,
         "cells": 65536,
@@ -1036,7 +1036,7 @@
         "tracer_mass_over_initial": 0.9427556974621348
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00081",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00081",
         "time_code": 15.504087173710587,
         "t_over_tcc": 4.003138094795275,
         "cells": 65536,
@@ -1048,7 +1048,7 @@
         "tracer_mass_over_initial": 0.9391727641623671
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00082",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00082",
         "time_code": 15.693746574850042,
         "t_over_tcc": 4.052107941599593,
         "cells": 65536,
@@ -1060,7 +1060,7 @@
         "tracer_mass_over_initial": 0.935475381186743
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00083",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00083",
         "time_code": 15.883376056781785,
         "t_over_tcc": 4.101070063297699,
         "cells": 65536,
@@ -1072,7 +1072,7 @@
         "tracer_mass_over_initial": 0.9316676543878235
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00084",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00084",
         "time_code": 16.07354978222257,
         "t_over_tcc": 4.1501727080655915,
         "cells": 65536,
@@ -1084,7 +1084,7 @@
         "tracer_mass_over_initial": 0.9277376491172129
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00085",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00085",
         "time_code": 16.281038195147115,
         "t_over_tcc": 4.2037459859181086,
         "cells": 65536,
@@ -1096,7 +1096,7 @@
         "tracer_mass_over_initial": 0.9233216787225257
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00086",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00086",
         "time_code": 16.471418846583877,
         "t_over_tcc": 4.252902058748422,
         "cells": 65536,
@@ -1108,7 +1108,7 @@
         "tracer_mass_over_initial": 0.919150692364559
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00087",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00087",
         "time_code": 16.662211210971346,
         "t_over_tcc": 4.302164435405502,
         "cells": 65536,
@@ -1120,7 +1120,7 @@
         "tracer_mass_over_initial": 0.9148549884677408
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00088",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00088",
         "time_code": 16.852919108714385,
         "t_over_tcc": 4.35140500286877,
         "cells": 65536,
@@ -1132,7 +1132,7 @@
         "tracer_mass_over_initial": 0.9104446097638605
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00089",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00089",
         "time_code": 17.044068926512494,
         "t_over_tcc": 4.400759673599614,
         "cells": 65536,
@@ -1144,7 +1144,7 @@
         "tracer_mass_over_initial": 0.9059066185969274
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00090",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00090",
         "time_code": 17.235166905063156,
         "t_over_tcc": 4.450100959494322,
         "cells": 65536,
@@ -1156,7 +1156,7 @@
         "tracer_mass_over_initial": 0.9012520186189737
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00091",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00091",
         "time_code": 17.44395615311032,
         "t_over_tcc": 4.504010111531245,
         "cells": 65536,
@@ -1168,7 +1168,7 @@
         "tracer_mass_over_initial": 0.8960313604925157
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00092",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00092",
         "time_code": 17.63539521308473,
         "t_over_tcc": 4.553439464270878,
         "cells": 65536,
@@ -1180,7 +1180,7 @@
         "tracer_mass_over_initial": 0.8911200007580463
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00093",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00093",
         "time_code": 17.826971178943587,
         "t_over_tcc": 4.602904165957874,
         "cells": 65536,
@@ -1192,7 +1192,7 @@
         "tracer_mass_over_initial": 0.8860854458761932
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00094",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00094",
         "time_code": 18.01873203485675,
         "t_over_tcc": 4.652416606051618,
         "cells": 65536,
@@ -1204,7 +1204,7 @@
         "tracer_mass_over_initial": 0.8809259622846394
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00095",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00095",
         "time_code": 18.210424355495572,
         "t_over_tcc": 4.701911350413619,
         "cells": 65536,
@@ -1216,7 +1216,7 @@
         "tracer_mass_over_initial": 0.8756484731263027
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00096",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00096",
         "time_code": 18.402464238128392,
         "t_over_tcc": 4.751495834896588,
         "cells": 65536,
@@ -1228,7 +1228,7 @@
         "tracer_mass_over_initial": 0.8702418251582921
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00097",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00097",
         "time_code": 18.594335076980858,
         "t_over_tcc": 4.801036672463151,
         "cells": 65536,
@@ -1240,7 +1240,7 @@
         "tracer_mass_over_initial": 0.8647211489829759
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00098",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00098",
         "time_code": 18.786578846655473,
         "t_over_tcc": 4.850673800353945,
         "cells": 65536,
@@ -1252,7 +1252,7 @@
         "tracer_mass_over_initial": 0.859071515086897
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00099",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00099",
         "time_code": 18.978765543309333,
         "t_over_tcc": 4.900296192054147,
         "cells": 65536,
@@ -1264,7 +1264,7 @@
         "tracer_mass_over_initial": 0.8533060245999985
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00100",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00100",
         "time_code": 19.188681507202634,
         "t_over_tcc": 4.954496260871602,
         "cells": 65536,
@@ -1276,7 +1276,7 @@
         "tracer_mass_over_initial": 0.8468750062156521
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00101",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_sharp13/output_00101",
         "time_code": 19.38125098226996,
         "t_over_tcc": 5.00421748553318,
         "cells": 65536,
@@ -1290,7 +1290,7 @@
     ],
     "L3_chi100_tanh13": [
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00001",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00001",
         "time_code": 0.0,
         "t_over_tcc": 0.0,
         "cells": 65536,
@@ -1308,7 +1308,7 @@
         "tracer_mass_over_initial": 1.0
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00002",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00002",
         "time_code": 0.19491757003856508,
         "t_over_tcc": 0.05032750017617202,
         "cells": 65536,
@@ -1320,7 +1320,7 @@
         "tracer_mass_over_initial": 0.9999999999999996
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00003",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00003",
         "time_code": 0.3993581328697367,
         "t_over_tcc": 0.10311382651846526,
         "cells": 65536,
@@ -1332,7 +1332,7 @@
         "tracer_mass_over_initial": 0.9999999999999987
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00004",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00004",
         "time_code": 0.5947964874630115,
         "t_over_tcc": 0.1535757926884608,
         "cells": 65536,
@@ -1344,7 +1344,7 @@
         "tracer_mass_over_initial": 1.0000000000000002
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00005",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00005",
         "time_code": 0.7767787847800336,
         "t_over_tcc": 0.2005634198093537,
         "cells": 65536,
@@ -1356,7 +1356,7 @@
         "tracer_mass_over_initial": 0.9999999999999999
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00006",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00006",
         "time_code": 0.9753396554987385,
         "t_over_tcc": 0.2518316161761529,
         "cells": 65536,
@@ -1368,7 +1368,7 @@
         "tracer_mass_over_initial": 1.0
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00007",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00007",
         "time_code": 1.162319845003336,
         "t_over_tcc": 0.3001096935109538,
         "cells": 65536,
@@ -1380,7 +1380,7 @@
         "tracer_mass_over_initial": 0.9999999999999999
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00008",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00008",
         "time_code": 1.3674802972690194,
         "t_over_tcc": 0.35308189450597866,
         "cells": 65536,
@@ -1392,7 +1392,7 @@
         "tracer_mass_over_initial": 0.9999999999999993
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00009",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00009",
         "time_code": 1.5580250557069761,
         "t_over_tcc": 0.4022803395818001,
         "cells": 65536,
@@ -1404,7 +1404,7 @@
         "tracer_mass_over_initial": 0.9999999999999991
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00010",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00010",
         "time_code": 1.7492051113330973,
         "t_over_tcc": 0.4516428176862651,
         "cells": 65536,
@@ -1416,7 +1416,7 @@
         "tracer_mass_over_initial": 0.9999999999999984
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00011",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00011",
         "time_code": 1.9411686358454032,
         "t_over_tcc": 0.5012075865872944,
         "cells": 65536,
@@ -1428,7 +1428,7 @@
         "tracer_mass_over_initial": 0.9999999999999976
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00012",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00012",
         "time_code": 2.133768280028889,
         "t_over_tcc": 0.5509366008811687,
         "cells": 65536,
@@ -1440,7 +1440,7 @@
         "tracer_mass_over_initial": 0.9999999999999992
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00013",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00013",
         "time_code": 2.3269560652472694,
         "t_over_tcc": 0.6008174725372676,
         "cells": 65536,
@@ -1452,7 +1452,7 @@
         "tracer_mass_over_initial": 0.9999999999999984
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00014",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00014",
         "time_code": 2.520594441463029,
         "t_over_tcc": 0.6508146862886197,
         "cells": 65536,
@@ -1464,7 +1464,7 @@
         "tracer_mass_over_initial": 0.9999999999999961
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00015",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00015",
         "time_code": 2.714559986445037,
         "t_over_tcc": 0.7008963746521774,
         "cells": 65536,
@@ -1476,7 +1476,7 @@
         "tracer_mass_over_initial": 0.9999999999999369
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00016",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00016",
         "time_code": 2.908645346509375,
         "t_over_tcc": 0.7510089991369673,
         "cells": 65536,
@@ -1488,7 +1488,7 @@
         "tracer_mass_over_initial": 0.9999999999995458
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00017",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00017",
         "time_code": 3.102689427867175,
         "t_over_tcc": 0.801110965505559,
         "cells": 65536,
@@ -1500,7 +1500,7 @@
         "tracer_mass_over_initial": 0.9999999999979227
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00018",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00018",
         "time_code": 3.296827628277924,
         "t_over_tcc": 0.8512372333091264,
         "cells": 65536,
@@ -1512,7 +1512,7 @@
         "tracer_mass_over_initial": 0.9999999999930158
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00019",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00019",
         "time_code": 3.491242181437535,
         "t_over_tcc": 0.9014348550856284,
         "cells": 65536,
@@ -1524,7 +1524,7 @@
         "tracer_mass_over_initial": 0.9999999999811323
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00020",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00020",
         "time_code": 3.686000402946092,
         "t_over_tcc": 0.9517212116482695,
         "cells": 65536,
@@ -1536,7 +1536,7 @@
         "tracer_mass_over_initial": 0.9999999999567822
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00021",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00021",
         "time_code": 3.8809957613360004,
         "t_over_tcc": 1.0020687966903936,
         "cells": 65536,
@@ -1548,7 +1548,7 @@
         "tracer_mass_over_initial": 0.999999999912688
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00022",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00022",
         "time_code": 4.076364887107838,
         "t_over_tcc": 1.0525128880555554,
         "cells": 65536,
@@ -1560,7 +1560,7 @@
         "tracer_mass_over_initial": 0.9999999998386823
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00023",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00023",
         "time_code": 4.271916333293206,
         "t_over_tcc": 1.1030040543490693,
         "cells": 65536,
@@ -1572,7 +1572,7 @@
         "tracer_mass_over_initial": 0.9999999997156941
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00024",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00024",
         "time_code": 4.4675541250035025,
         "t_over_tcc": 1.1535175149612542,
         "cells": 65536,
@@ -1584,7 +1584,7 @@
         "tracer_mass_over_initial": 0.9999999994870622
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00025",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00025",
         "time_code": 4.663606934736939,
         "t_over_tcc": 1.204138132766239,
         "cells": 65536,
@@ -1596,7 +1596,7 @@
         "tracer_mass_over_initial": 0.9999999989293961
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00026",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00026",
         "time_code": 4.8437730555664285,
         "t_over_tcc": 1.250656825134466,
         "cells": 65536,
@@ -1608,7 +1608,7 @@
         "tracer_mass_over_initial": 0.9999999974350923
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00027",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00027",
         "time_code": 5.0403214410203105,
         "t_over_tcc": 1.3014054000402555,
         "cells": 65536,
@@ -1620,7 +1620,7 @@
         "tracer_mass_over_initial": 0.9999999924069745
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00028",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00028",
         "time_code": 5.236831859755366,
         "t_over_tcc": 1.3521441719813965,
         "cells": 65536,
@@ -1632,7 +1632,7 @@
         "tracer_mass_over_initial": 0.9999999775764103
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00029",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00029",
         "time_code": 5.433392128682358,
         "t_over_tcc": 1.4028958151867492,
         "cells": 65536,
@@ -1644,7 +1644,7 @@
         "tracer_mass_over_initial": 0.999999939071337
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00030",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00030",
         "time_code": 5.629943007375398,
         "t_over_tcc": 1.4536450338441211,
         "cells": 65536,
@@ -1656,7 +1656,7 @@
         "tracer_mass_over_initial": 0.9999998503342743
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00031",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00031",
         "time_code": 5.810554072200924,
         "t_over_tcc": 1.5002786102581245,
         "cells": 65536,
@@ -1668,7 +1668,7 @@
         "tracer_mass_over_initial": 0.9999996875525441
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00032",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00032",
         "time_code": 6.007857628170697,
         "t_over_tcc": 1.5512221693526866,
         "cells": 65536,
@@ -1680,7 +1680,7 @@
         "tracer_mass_over_initial": 0.9999993636011469
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00033",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00033",
         "time_code": 6.205536525552186,
         "t_over_tcc": 1.60226264118303,
         "cells": 65536,
@@ -1692,7 +1692,7 @@
         "tracer_mass_over_initial": 0.9999988078305184
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00034",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00034",
         "time_code": 6.403327581150387,
         "t_over_tcc": 1.6533320721404048,
         "cells": 65536,
@@ -1704,7 +1704,7 @@
         "tracer_mass_over_initial": 0.9999979177652414
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00035",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00035",
         "time_code": 6.584674625527446,
         "t_over_tcc": 1.7001556776574906,
         "cells": 65536,
@@ -1716,7 +1716,7 @@
         "tracer_mass_over_initial": 0.9999966899986915
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00036",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00036",
         "time_code": 6.782518729008654,
         "t_over_tcc": 1.7512388055193608,
         "cells": 65536,
@@ -1728,7 +1728,7 @@
         "tracer_mass_over_initial": 0.9999947008574733
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00037",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00037",
         "time_code": 6.9804519518148505,
         "t_over_tcc": 1.8023449438919983,
         "cells": 65536,
@@ -1740,7 +1740,7 @@
         "tracer_mass_over_initial": 0.999991677727079
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00038",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00038",
         "time_code": 7.178685937050325,
         "t_over_tcc": 1.8535287387899528,
         "cells": 65536,
@@ -1752,7 +1752,7 @@
         "tracer_mass_over_initial": 0.9999870067981421
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00039",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00039",
         "time_code": 7.360763000484978,
         "t_over_tcc": 1.9005408344172037,
         "cells": 65536,
@@ -1764,7 +1764,7 @@
         "tracer_mass_over_initial": 0.9999804489127226
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00040",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00040",
         "time_code": 7.559472386272243,
         "t_over_tcc": 1.951847377209816,
         "cells": 65536,
@@ -1776,7 +1776,7 @@
         "tracer_mass_over_initial": 0.9999694706745246
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00041",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00041",
         "time_code": 7.7584896986255485,
         "t_over_tcc": 2.003233426299903,
         "cells": 65536,
@@ -1788,7 +1788,7 @@
         "tracer_mass_over_initial": 0.9999524269110823
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00042",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00042",
         "time_code": 7.941023640239287,
         "t_over_tcc": 2.0503634873657437,
         "cells": 65536,
@@ -1800,7 +1800,7 @@
         "tracer_mass_over_initial": 0.9999289689640279
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00043",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00043",
         "time_code": 8.140133188602947,
         "t_over_tcc": 2.1017733516912993,
         "cells": 65536,
@@ -1812,7 +1812,7 @@
         "tracer_mass_over_initial": 0.9998912111924658
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00044",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00044",
         "time_code": 8.339510131960152,
         "t_over_tcc": 2.1532522571073125,
         "cells": 65536,
@@ -1824,7 +1824,7 @@
         "tracer_mass_over_initial": 0.999835860345874
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00045",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00045",
         "time_code": 8.522654100750936,
         "t_over_tcc": 2.2005398265129816,
         "cells": 65536,
@@ -1836,7 +1836,7 @@
         "tracer_mass_over_initial": 0.999764381612226
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00046",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00046",
         "time_code": 8.722673885995883,
         "t_over_tcc": 2.2521847129906925,
         "cells": 65536,
@@ -1848,7 +1848,7 @@
         "tracer_mass_over_initial": 0.9996570685344384
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00047",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00047",
         "time_code": 8.922818455203236,
         "t_over_tcc": 2.3038618185489548,
         "cells": 65536,
@@ -1860,7 +1860,7 @@
         "tracer_mass_over_initial": 0.9995111758722814
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00048",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00048",
         "time_code": 9.106770500941165,
         "t_over_tcc": 2.3513580325252073,
         "cells": 65536,
@@ -1872,7 +1872,7 @@
         "tracer_mass_over_initial": 0.9993354814100843
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00049",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00049",
         "time_code": 9.307485896492881,
         "t_over_tcc": 2.4031825248118226,
         "cells": 65536,
@@ -1884,7 +1884,7 @@
         "tracer_mass_over_initial": 0.9990898173267729
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00050",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00050",
         "time_code": 9.491647592310757,
         "t_over_tcc": 2.4507328702059525,
         "cells": 65536,
@@ -1896,7 +1896,7 @@
         "tracer_mass_over_initial": 0.9988077869522306
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00051",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00051",
         "time_code": 9.693094883851538,
         "t_over_tcc": 2.502746337224355,
         "cells": 65536,
@@ -1908,7 +1908,7 @@
         "tracer_mass_over_initial": 0.9984303701891017
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00052",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00052",
         "time_code": 9.877856153488013,
         "t_over_tcc": 2.5504514919127685,
         "cells": 65536,
@@ -1920,7 +1920,7 @@
         "tracer_mass_over_initial": 0.9980156105705364
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00053",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00053",
         "time_code": 10.07993349413527,
         "t_over_tcc": 2.602627636910949,
         "cells": 65536,
@@ -1932,7 +1932,7 @@
         "tracer_mass_over_initial": 0.9974810450221656
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00054",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00054",
         "time_code": 10.265332952977278,
         "t_over_tcc": 2.65049757134368,
         "cells": 65536,
@@ -1944,7 +1944,7 @@
         "tracer_mass_over_initial": 0.9969108151096315
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00055",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00055",
         "time_code": 10.467836949474725,
         "t_over_tcc": 2.7027838784086837,
         "cells": 65536,
@@ -1956,7 +1956,7 @@
         "tracer_mass_over_initial": 0.9961941209877098
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00056",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00056",
         "time_code": 10.653440569515702,
         "t_over_tcc": 2.7507065270363182,
         "cells": 65536,
@@ -1968,7 +1968,7 @@
         "tracer_mass_over_initial": 0.9954449219134147
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00057",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00057",
         "time_code": 10.85610828061552,
         "t_over_tcc": 2.803035105029889,
         "cells": 65536,
@@ -1980,7 +1980,7 @@
         "tracer_mass_over_initial": 0.9945191385970973
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00058",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00058",
         "time_code": 11.042251408406054,
         "t_over_tcc": 2.851097053959469,
         "cells": 65536,
@@ -1992,7 +1992,7 @@
         "tracer_mass_over_initial": 0.9935644883199964
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00059",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00059",
         "time_code": 11.245704490379271,
         "t_over_tcc": 2.9036284138405923,
         "cells": 65536,
@@ -2004,7 +2004,7 @@
         "tracer_mass_over_initial": 0.9924024266068884
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00060",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00060",
         "time_code": 11.432097848419295,
         "t_over_tcc": 2.9517549719427714,
         "cells": 65536,
@@ -2016,7 +2016,7 @@
         "tracer_mass_over_initial": 0.9912266043218844
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00061",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00061",
         "time_code": 11.635430086911601,
         "t_over_tcc": 3.00425513017129,
         "cells": 65536,
@@ -2028,7 +2028,7 @@
         "tracer_mass_over_initial": 0.9898210342780813
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00062",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00062",
         "time_code": 11.822059387300781,
         "t_over_tcc": 3.0524426083260656,
         "cells": 65536,
@@ -2040,7 +2040,7 @@
         "tracer_mass_over_initial": 0.9884170069201261
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00063",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00063",
         "time_code": 12.008975646343155,
         "t_over_tcc": 3.100704178886499,
         "cells": 65536,
@@ -2052,7 +2052,7 @@
         "tracer_mass_over_initial": 0.9869007736321997
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00064",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00064",
         "time_code": 12.212785139677461,
         "t_over_tcc": 3.1533275637853486,
         "cells": 65536,
@@ -2064,7 +2064,7 @@
         "tracer_mass_over_initial": 0.9851216557974346
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00065",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00065",
         "time_code": 12.39946945277432,
         "t_over_tcc": 3.2015292461601685,
         "cells": 65536,
@@ -2076,7 +2076,7 @@
         "tracer_mass_over_initial": 0.9833769333266325
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00066",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00066",
         "time_code": 12.603418765985804,
         "t_over_tcc": 3.25418873239607,
         "cells": 65536,
@@ -2088,7 +2088,7 @@
         "tracer_mass_over_initial": 0.9813455454450879
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00067",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00067",
         "time_code": 12.790624360081251,
         "t_over_tcc": 3.302525008945972,
         "cells": 65536,
@@ -2100,7 +2100,7 @@
         "tracer_mass_over_initial": 0.9793663999436039
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00068",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00068",
         "time_code": 12.977736930329609,
         "t_over_tcc": 3.350837266841836,
         "cells": 65536,
@@ -2112,7 +2112,7 @@
         "tracer_mass_over_initial": 0.9772792553170448
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00069",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00069",
         "time_code": 13.18165896765981,
         "t_over_tcc": 3.403489710475473,
         "cells": 65536,
@@ -2124,7 +2124,7 @@
         "tracer_mass_over_initial": 0.9748807942630536
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00070",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00070",
         "time_code": 13.368916621193488,
         "t_over_tcc": 3.451839428714527,
         "cells": 65536,
@@ -2136,7 +2136,7 @@
         "tracer_mass_over_initial": 0.9725642764815277
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00071",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00071",
         "time_code": 13.55643490865803,
         "t_over_tcc": 3.5002564423451608,
         "cells": 65536,
@@ -2148,7 +2148,7 @@
         "tracer_mass_over_initial": 0.9701346473678695
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00072",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00072",
         "time_code": 13.760853453604007,
         "t_over_tcc": 3.553037083693942,
         "cells": 65536,
@@ -2160,7 +2160,7 @@
         "tracer_mass_over_initial": 0.9673609725070733
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00073",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00073",
         "time_code": 13.948198316912876,
         "t_over_tcc": 3.6014093194001258,
         "cells": 65536,
@@ -2172,7 +2172,7 @@
         "tracer_mass_over_initial": 0.9647057644379887
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00074",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00074",
         "time_code": 14.15290051105128,
         "t_over_tcc": 3.6542631986554697,
         "cells": 65536,
@@ -2184,7 +2184,7 @@
         "tracer_mass_over_initial": 0.9616830855733103
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00075",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00075",
         "time_code": 14.340868637112303,
         "t_over_tcc": 3.70279636011228,
         "cells": 65536,
@@ -2196,7 +2196,7 @@
         "tracer_mass_over_initial": 0.9587977511870246
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00076",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00076",
         "time_code": 14.528637055948984,
         "t_over_tcc": 3.7512779573854913,
         "cells": 65536,
@@ -2208,7 +2208,7 @@
         "tracer_mass_over_initial": 0.9558119158576039
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00077",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00077",
         "time_code": 14.733726789281443,
         "t_over_tcc": 3.8042318988304733,
         "cells": 65536,
@@ -2220,7 +2220,7 @@
         "tracer_mass_over_initial": 0.9524329795786235
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00078",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00078",
         "time_code": 14.922047733627197,
         "t_over_tcc": 3.852856157576684,
         "cells": 65536,
@@ -2232,7 +2232,7 @@
         "tracer_mass_over_initial": 0.9492221730702571
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00079",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00079",
         "time_code": 15.110432488648653,
         "t_over_tcc": 3.901496892168515,
         "cells": 65536,
@@ -2244,7 +2244,7 @@
         "tracer_mass_over_initial": 0.9459068624968668
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00080",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00080",
         "time_code": 15.298953571050406,
         "t_over_tcc": 3.9501728263385805,
         "cells": 65536,
@@ -2256,7 +2256,7 @@
         "tracer_mass_over_initial": 0.9424861276069989
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00081",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00081",
         "time_code": 15.50485079833398,
         "t_over_tcc": 4.003335261825218,
         "cells": 65536,
@@ -2268,7 +2268,7 @@
         "tracer_mass_over_initial": 0.9386332875823575
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00082",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00082",
         "time_code": 15.693855350931655,
         "t_over_tcc": 4.052136027463097,
         "cells": 65536,
@@ -2280,7 +2280,7 @@
         "tracer_mass_over_initial": 0.9349901422782159
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00083",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00083",
         "time_code": 15.882961044424743,
         "t_over_tcc": 4.1009629075678795,
         "cells": 65536,
@@ -2292,7 +2292,7 @@
         "tracer_mass_over_initial": 0.9312436592544552
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00084",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00084",
         "time_code": 16.089505353640543,
         "t_over_tcc": 4.154292418890993,
         "cells": 65536,
@@ -2304,7 +2304,7 @@
         "tracer_mass_over_initial": 0.9270355659026861
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00085",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00085",
         "time_code": 16.279098809193563,
         "t_over_tcc": 4.203245238618111,
         "cells": 65536,
@@ -2316,7 +2316,7 @@
         "tracer_mass_over_initial": 0.923065146236579
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00086",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00086",
         "time_code": 16.468835048321548,
         "t_over_tcc": 4.252234924905758,
         "cells": 65536,
@@ -2328,7 +2328,7 @@
         "tracer_mass_over_initial": 0.9189874032314708
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00087",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00087",
         "time_code": 16.658844365360583,
         "t_over_tcc": 4.301295119606853,
         "cells": 65536,
@@ -2340,7 +2340,7 @@
         "tracer_mass_over_initial": 0.914798241045381
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00088",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00088",
         "time_code": 16.849027979937194,
         "t_over_tcc": 4.350400317738637,
         "cells": 65536,
@@ -2352,7 +2352,7 @@
         "tracer_mass_over_initial": 0.9104987968508951
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00089",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00089",
         "time_code": 17.056678288561407,
         "t_over_tcc": 4.404015396881063,
         "cells": 65536,
@@ -2364,7 +2364,7 @@
         "tracer_mass_over_initial": 0.9056823653205186
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00090",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00090",
         "time_code": 17.247373149261865,
         "t_over_tcc": 4.453252598194411,
         "cells": 65536,
@@ -2376,7 +2376,7 @@
         "tracer_mass_over_initial": 0.9011464702296943
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00091",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00091",
         "time_code": 17.43814192828259,
         "t_over_tcc": 4.502508885135984,
         "cells": 65536,
@@ -2388,7 +2388,7 @@
         "tracer_mass_over_initial": 0.8965002811386406
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00092",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00092",
         "time_code": 17.62910718646966,
         "t_over_tcc": 4.551815902780166,
         "cells": 65536,
@@ -2400,7 +2400,7 @@
         "tracer_mass_over_initial": 0.8917401043052393
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00093",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00093",
         "time_code": 17.82039886656421,
         "t_over_tcc": 4.601207202198448,
         "cells": 65536,
@@ -2412,7 +2412,7 @@
         "tracer_mass_over_initial": 0.8868619390182867
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00094",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00094",
         "time_code": 18.011633450332443,
         "t_over_tcc": 4.650583759408666,
         "cells": 65536,
@@ -2424,7 +2424,7 @@
         "tracer_mass_over_initial": 0.8818752802704832
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00095",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00095",
         "time_code": 18.203315791962748,
         "t_over_tcc": 4.7000759272017465,
         "cells": 65536,
@@ -2436,7 +2436,7 @@
         "tracer_mass_over_initial": 0.8767669063326206
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00096",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00096",
         "time_code": 18.41234257107385,
         "t_over_tcc": 4.7540464094956585,
         "cells": 65536,
@@ -2448,7 +2448,7 @@
         "tracer_mass_over_initial": 0.8710713408820601
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00097",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00097",
         "time_code": 18.60427018269103,
         "t_over_tcc": 4.803601905727039,
         "cells": 65536,
@@ -2460,7 +2460,7 @@
         "tracer_mass_over_initial": 0.8657276132296361
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00098",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00098",
         "time_code": 18.796237321612637,
         "t_over_tcc": 4.8531676078645365,
         "cells": 65536,
@@ -2472,7 +2472,7 @@
         "tracer_mass_over_initial": 0.860274311090386
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00099",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00099",
         "time_code": 18.988339467988123,
         "t_over_tcc": 4.902768168776733,
         "cells": 65536,
@@ -2484,7 +2484,7 @@
         "tracer_mass_over_initial": 0.8547094843017743
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00100",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00100",
         "time_code": 19.180578153043605,
         "t_over_tcc": 4.952403983824513,
         "cells": 65536,
@@ -2496,7 +2496,7 @@
         "tracer_mass_over_initial": 0.8490337927378991
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00101",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L3_chi100_tanh13/output_00101",
         "time_code": 19.37284676821483,
         "t_over_tcc": 5.002047526794947,
         "cells": 65536,
@@ -2510,7 +2510,7 @@
     ],
     "L4_chi100_sharp13": [
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00001",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00001",
         "time_code": 0.0,
         "t_over_tcc": 0.0,
         "cells": 524288,
@@ -2528,7 +2528,7 @@
         "tracer_mass_over_initial": 1.0
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00002",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00002",
         "time_code": 0.19524802688963624,
         "t_over_tcc": 0.050412823768227935,
         "cells": 524288,
@@ -2540,7 +2540,7 @@
         "tracer_mass_over_initial": 1.000000000000002
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00003",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00003",
         "time_code": 0.39101844573965044,
         "t_over_tcc": 0.10096052856063831,
         "cells": 524288,
@@ -2552,7 +2552,7 @@
         "tracer_mass_over_initial": 1.0000000000000036
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00004",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00004",
         "time_code": 0.5836207256807507,
         "t_over_tcc": 0.15069022340420232,
         "cells": 524288,
@@ -2564,7 +2564,7 @@
         "tracer_mass_over_initial": 1.0000000000000038
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00005",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00005",
         "time_code": 0.7799621881579852,
         "t_over_tcc": 0.20138537102715817,
         "cells": 524288,
@@ -2576,7 +2576,7 @@
         "tracer_mass_over_initial": 1.0000000000000013
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00006",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00006",
         "time_code": 0.9712527878301496,
         "t_over_tcc": 0.25077639148157965,
         "cells": 524288,
@@ -2588,7 +2588,7 @@
         "tracer_mass_over_initial": 1.0000000000000018
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00007",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00007",
         "time_code": 1.164557401611983,
         "t_over_tcc": 0.3006874281430528,
         "cells": 524288,
@@ -2600,7 +2600,7 @@
         "tracer_mass_over_initial": 1.0
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00008",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00008",
         "time_code": 1.3596604750273003,
         "t_over_tcc": 0.35106282508514663,
         "cells": 524288,
@@ -2612,7 +2612,7 @@
         "tracer_mass_over_initial": 1.0000000000000013
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00009",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00009",
         "time_code": 1.5563692190452423,
         "t_over_tcc": 0.4018528043941378,
         "cells": 524288,
@@ -2624,7 +2624,7 @@
         "tracer_mass_over_initial": 1.0000000000000013
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00010",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00010",
         "time_code": 1.746039219051665,
         "t_over_tcc": 0.4508253878141401,
         "cells": 524288,
@@ -2636,7 +2636,7 @@
         "tracer_mass_over_initial": 0.9999999999999993
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00011",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00011",
         "time_code": 1.9444040268242664,
         "t_over_tcc": 0.5020429609459348,
         "cells": 524288,
@@ -2648,7 +2648,7 @@
         "tracer_mass_over_initial": 0.9999999999999984
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00012",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00012",
         "time_code": 2.1357957038643605,
         "t_over_tcc": 0.5514600794645343,
         "cells": 524288,
@@ -2660,7 +2660,7 @@
         "tracer_mass_over_initial": 0.9999999999999991
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00013",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00013",
         "time_code": 2.3279383775086875,
         "t_over_tcc": 0.6010711044725507,
         "cells": 524288,
@@ -2672,7 +2672,7 @@
         "tracer_mass_over_initial": 1.0000000000000013
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00014",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00014",
         "time_code": 2.5205167843415657,
         "t_over_tcc": 0.650794635306077,
         "cells": 524288,
@@ -2684,7 +2684,7 @@
         "tracer_mass_over_initial": 1.0000000000000036
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00015",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00015",
         "time_code": 2.7134927256333166,
         "t_over_tcc": 0.7006208090955204,
         "cells": 524288,
@@ -2696,7 +2696,7 @@
         "tracer_mass_over_initial": 1.000000000000001
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00016",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00016",
         "time_code": 2.907075036534511,
         "t_over_tcc": 0.7506035468448985,
         "cells": 524288,
@@ -2708,7 +2708,7 @@
         "tracer_mass_over_initial": 1.0000000000000016
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00017",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00017",
         "time_code": 3.101189358258097,
         "t_over_tcc": 0.8007236491979518,
         "cells": 524288,
@@ -2720,7 +2720,7 @@
         "tracer_mass_over_initial": 1.0000000000000022
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00018",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00018",
         "time_code": 3.2955078568716156,
         "t_over_tcc": 0.8508964697972975,
         "cells": 524288,
@@ -2732,7 +2732,7 @@
         "tracer_mass_over_initial": 0.9999999999999999
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00019",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00019",
         "time_code": 3.489684228556793,
         "t_over_tcc": 0.9010325933815424,
         "cells": 524288,
@@ -2744,7 +2744,7 @@
         "tracer_mass_over_initial": 1.0000000000000018
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00020",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00020",
         "time_code": 3.6837666150317596,
         "t_over_tcc": 0.9511444500888582,
         "cells": 524288,
@@ -2756,7 +2756,7 @@
         "tracer_mass_over_initial": 1.0000000000000016
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00021",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00021",
         "time_code": 3.8779642644868275,
         "t_over_tcc": 1.001286067569665,
         "cells": 524288,
@@ -2768,7 +2768,7 @@
         "tracer_mass_over_initial": 1.0000000000000002
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00022",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00022",
         "time_code": 4.072423916646158,
         "t_over_tcc": 1.0514953338578232,
         "cells": 524288,
@@ -2780,7 +2780,7 @@
         "tracer_mass_over_initial": 1.000000000000002
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00023",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00023",
         "time_code": 4.267105511548138,
         "t_over_tcc": 1.1017619055157213,
         "cells": 524288,
@@ -2792,7 +2792,7 @@
         "tracer_mass_over_initial": 0.9999999999999999
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00024",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00024",
         "time_code": 4.461901192204312,
         "t_over_tcc": 1.1520579339886878,
         "cells": 524288,
@@ -2804,7 +2804,7 @@
         "tracer_mass_over_initial": 1.0000000000000002
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00025",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00025",
         "time_code": 4.648680353895547,
         "t_over_tcc": 1.2002841061652703,
         "cells": 524288,
@@ -2816,7 +2816,7 @@
         "tracer_mass_over_initial": 0.999999999999982
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00026",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00026",
         "time_code": 4.843529111989183,
         "t_over_tcc": 1.2505938391736602,
         "cells": 524288,
@@ -2828,7 +2828,7 @@
         "tracer_mass_over_initial": 0.9999999999996788
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00027",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00027",
         "time_code": 5.038112804593067,
         "t_over_tcc": 1.3008351325668859,
         "cells": 524288,
@@ -2840,7 +2840,7 @@
         "tracer_mass_over_initial": 0.9999999999957468
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00028",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00028",
         "time_code": 5.2327799074561065,
         "t_over_tcc": 1.3510979623964192,
         "cells": 524288,
@@ -2852,7 +2852,7 @@
         "tracer_mass_over_initial": 0.99999999995898
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00029",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00029",
         "time_code": 5.427629934478503,
         "t_over_tcc": 1.4014080230408064,
         "cells": 524288,
@@ -2864,7 +2864,7 @@
         "tracer_mass_over_initial": 0.9999999996974412
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00030",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00030",
         "time_code": 5.6224584610573345,
         "t_over_tcc": 1.451712532294536,
         "cells": 524288,
@@ -2876,7 +2876,7 @@
         "tracer_mass_over_initial": 0.9999999982508042
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00031",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00031",
         "time_code": 5.817597805009045,
         "t_over_tcc": 1.502097294248857,
         "cells": 524288,
@@ -2888,7 +2888,7 @@
         "tracer_mass_over_initial": 0.9999999919053745
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00032",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00032",
         "time_code": 6.0049177805172045,
         "t_over_tcc": 1.5504631039525292,
         "cells": 524288,
@@ -2900,7 +2900,7 @@
         "tracer_mass_over_initial": 0.9999999714905152
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00033",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00033",
         "time_code": 6.200220304387473,
         "t_over_tcc": 1.6008899987806509,
         "cells": 524288,
@@ -2912,7 +2912,7 @@
         "tracer_mass_over_initial": 0.999999914328246
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00034",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00034",
         "time_code": 6.395519133700947,
         "t_over_tcc": 1.6513159396783104,
         "cells": 524288,
@@ -2924,7 +2924,7 @@
         "tracer_mass_over_initial": 0.9999997898336614
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00035",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00035",
         "time_code": 6.590876184713181,
         "t_over_tcc": 1.7017569133539485,
         "cells": 524288,
@@ -2936,7 +2936,7 @@
         "tracer_mass_over_initial": 0.999999573486976
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00036",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00036",
         "time_code": 6.778216092052874,
         "t_over_tcc": 1.7501278694343934,
         "cells": 524288,
@@ -2948,7 +2948,7 @@
         "tracer_mass_over_initial": 0.9999992727503971
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00037",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00037",
         "time_code": 6.973988464657586,
         "t_over_tcc": 1.8006760786840974,
         "cells": 524288,
@@ -2960,7 +2960,7 @@
         "tracer_mass_over_initial": 0.9999988374813583
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00038",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00038",
         "time_code": 7.169954290532959,
         "t_over_tcc": 1.8512742373535043,
         "cells": 524288,
@@ -2972,7 +2972,7 @@
         "tracer_mass_over_initial": 0.999998177070693
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00039",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00039",
         "time_code": 7.3657784468978935,
         "t_over_tcc": 1.9018358171126049,
         "cells": 524288,
@@ -2984,7 +2984,7 @@
         "tracer_mass_over_initial": 0.9999970374490508
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00040",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00040",
         "time_code": 7.553484807858399,
         "t_over_tcc": 1.9503013911110871,
         "cells": 524288,
@@ -2996,7 +2996,7 @@
         "tracer_mass_over_initial": 0.9999950283152252
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00041",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00041",
         "time_code": 7.749397078004809,
         "t_over_tcc": 2.0008857217507363,
         "cells": 524288,
@@ -3008,7 +3008,7 @@
         "tracer_mass_over_initial": 0.9999911132766753
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00042",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00042",
         "time_code": 7.9456859647187565,
         "t_over_tcc": 2.051567294369984,
         "cells": 524288,
@@ -3020,7 +3020,7 @@
         "tracer_mass_over_initial": 0.9999839530625565
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00043",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00043",
         "time_code": 8.133883899506733,
         "t_over_tcc": 2.100159792184948,
         "cells": 524288,
@@ -3032,7 +3032,7 @@
         "tracer_mass_over_initial": 0.9999723082714471
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00044",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00044",
         "time_code": 8.330275309258417,
         "t_over_tcc": 2.1508678361387124,
         "cells": 524288,
@@ -3044,7 +3044,7 @@
         "tracer_mass_over_initial": 0.9999530508061251
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00045",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00045",
         "time_code": 8.52671070264149,
         "t_over_tcc": 2.201587236617269,
         "cells": 524288,
@@ -3056,7 +3056,7 @@
         "tracer_mass_over_initial": 0.9999241927718103
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00046",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00046",
         "time_code": 8.715492133808265,
         "t_over_tcc": 2.2503303925494103,
         "cells": 524288,
@@ -3068,7 +3068,7 @@
         "tracer_mass_over_initial": 0.9998850865999707
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00047",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00047",
         "time_code": 8.91256404269974,
         "t_over_tcc": 2.3012141406255426,
         "cells": 524288,
@@ -3080,7 +3080,7 @@
         "tracer_mass_over_initial": 0.9998297271292025
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00048",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00048",
         "time_code": 9.109482961035223,
         "t_over_tcc": 2.3520583867099765,
         "cells": 524288,
@@ -3092,7 +3092,7 @@
         "tracer_mass_over_initial": 0.9997566355552943
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00049",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00049",
         "time_code": 9.298648299494225,
         "t_over_tcc": 2.4009006670787367,
         "cells": 524288,
@@ -3104,7 +3104,7 @@
         "tracer_mass_over_initial": 0.9996668091759997
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00050",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00050",
         "time_code": 9.496428875334253,
         "t_over_tcc": 2.451967392174186,
         "cells": 524288,
@@ -3116,7 +3116,7 @@
         "tracer_mass_over_initial": 0.9995491970148078
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00051",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00051",
         "time_code": 9.685888851256301,
         "t_over_tcc": 2.5008857476087827,
         "cells": 524288,
@@ -3128,7 +3128,7 @@
         "tracer_mass_over_initial": 0.999410679481784
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00052",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00052",
         "time_code": 9.884152386096691,
         "t_over_tcc": 2.552077172181919,
         "cells": 524288,
@@ -3140,7 +3140,7 @@
         "tracer_mass_over_initial": 0.9992351908074273
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00053",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00053",
         "time_code": 10.074232965692499,
         "t_over_tcc": 2.6011557667960536,
         "cells": 524288,
@@ -3152,7 +3152,7 @@
         "tracer_mass_over_initial": 0.9990341705379551
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00054",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00054",
         "time_code": 10.264472109476309,
         "t_over_tcc": 2.6502753025074837,
         "cells": 524288,
@@ -3164,7 +3164,7 @@
         "tracer_mass_over_initial": 0.9987971772660297
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00055",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00055",
         "time_code": 10.463092930198954,
         "t_over_tcc": 2.7015589778987406,
         "cells": 524288,
@@ -3176,7 +3176,7 @@
         "tracer_mass_over_initial": 0.9985073986867998
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00056",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00056",
         "time_code": 10.653197695838447,
         "t_over_tcc": 2.750643817322502,
         "cells": 524288,
@@ -3188,7 +3188,7 @@
         "tracer_mass_over_initial": 0.9981855897910192
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00057",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00057",
         "time_code": 10.851754481527257,
         "t_over_tcc": 2.801910958939118,
         "cells": 524288,
@@ -3200,7 +3200,7 @@
         "tracer_mass_over_initial": 0.997799150084924
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00058",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00058",
         "time_code": 11.042077191639246,
         "t_over_tcc": 2.851052071383704,
         "cells": 524288,
@@ -3212,7 +3212,7 @@
         "tracer_mass_over_initial": 0.9973776929243762
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00059",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00059",
         "time_code": 11.232020564841324,
         "t_over_tcc": 2.9000952394593114,
         "cells": 524288,
@@ -3224,7 +3224,7 @@
         "tracer_mass_over_initial": 0.9969053607320539
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00060",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00060",
         "time_code": 11.430496162052721,
         "t_over_tcc": 2.951341418301199,
         "cells": 524288,
@@ -3236,7 +3236,7 @@
         "tracer_mass_over_initial": 0.9963552254911432
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00061",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00061",
         "time_code": 11.620776514942722,
         "t_over_tcc": 3.0004715941580953,
         "cells": 524288,
@@ -3248,7 +3248,7 @@
         "tracer_mass_over_initial": 0.9957728241698897
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00062",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00062",
         "time_code": 11.819125253698862,
         "t_over_tcc": 3.0516850182876802,
         "cells": 524288,
@@ -3260,7 +3260,7 @@
         "tracer_mass_over_initial": 0.9951083899258903
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00063",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00063",
         "time_code": 12.00959499874881,
         "t_over_tcc": 3.1008640949900013,
         "cells": 524288,
@@ -3272,7 +3272,7 @@
         "tracer_mass_over_initial": 0.9944156269228174
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00064",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00064",
         "time_code": 12.199975768506018,
         "t_over_tcc": 3.1500201983705227,
         "cells": 524288,
@@ -3284,7 +3284,7 @@
         "tracer_mass_over_initial": 0.9936703107488354
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00065",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00065",
         "time_code": 12.39892881901768,
         "t_over_tcc": 3.2013896551244447,
         "cells": 524288,
@@ -3296,7 +3296,7 @@
         "tracer_mass_over_initial": 0.9928358509989846
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00066",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00066",
         "time_code": 12.589792087222005,
         "t_over_tcc": 3.250670339068316,
         "cells": 524288,
@@ -3308,7 +3308,7 @@
         "tracer_mass_over_initial": 0.9919823247642269
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00067",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00067",
         "time_code": 12.789112018336573,
         "t_over_tcc": 3.302134523986578,
         "cells": 524288,
@@ -3320,7 +3320,7 @@
         "tracer_mass_over_initial": 0.991035153833663
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00068",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00068",
         "time_code": 12.980357979238644,
         "t_over_tcc": 3.351514018760122,
         "cells": 524288,
@@ -3332,7 +3332,7 @@
         "tracer_mass_over_initial": 0.9900720433372456
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00069",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00069",
         "time_code": 13.171535114042321,
         "t_over_tcc": 3.4008757427114746,
         "cells": 524288,
@@ -3344,7 +3344,7 @@
         "tracer_mass_over_initial": 0.9890556429818197
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00070",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00070",
         "time_code": 13.362777191194493,
         "t_over_tcc": 3.450254234705106,
         "cells": 524288,
@@ -3356,7 +3356,7 @@
         "tracer_mass_over_initial": 0.9879854301932579
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00071",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00071",
         "time_code": 13.562383770734032,
         "t_over_tcc": 3.5017924319284437,
         "cells": 524288,
@@ -3368,7 +3368,7 @@
         "tracer_mass_over_initial": 0.9868119153193716
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00072",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00072",
         "time_code": 13.75371785735613,
         "t_over_tcc": 3.551194680665056,
         "cells": 524288,
@@ -3380,7 +3380,7 @@
         "tracer_mass_over_initial": 0.9856328671481923
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00073",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00073",
         "time_code": 13.945151571664475,
         "t_over_tcc": 3.6006226531596464,
         "cells": 524288,
@@ -3392,7 +3392,7 @@
         "tracer_mass_over_initial": 0.9843997138261862
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00074",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00074",
         "time_code": 14.136765642483681,
         "t_over_tcc": 3.650097193505099,
         "cells": 524288,
@@ -3404,7 +3404,7 @@
         "tracer_mass_over_initial": 0.9831110185852449
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00075",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00075",
         "time_code": 14.33682294892462,
         "t_over_tcc": 3.7017517679139575,
         "cells": 524288,
@@ -3416,7 +3416,7 @@
         "tracer_mass_over_initial": 0.9817065017176599
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00076",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00076",
         "time_code": 14.528821105432943,
         "t_over_tcc": 3.751325478757908,
         "cells": 524288,
@@ -3428,7 +3428,7 @@
         "tracer_mass_over_initial": 0.9803010039071716
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00077",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00077",
         "time_code": 14.720929094677828,
         "t_over_tcc": 3.800927548292497,
         "cells": 524288,
@@ -3440,7 +3440,7 @@
         "tracer_mass_over_initial": 0.9788373575777294
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00078",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00078",
         "time_code": 14.913397265718512,
         "t_over_tcc": 3.850622616366868,
         "cells": 524288,
@@ -3452,7 +3452,7 @@
         "tracer_mass_over_initial": 0.9773124737152372
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00079",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00079",
         "time_code": 15.105973244090796,
         "t_over_tcc": 3.9003455201745654,
         "cells": 524288,
@@ -3464,7 +3464,7 @@
         "tracer_mass_over_initial": 0.9757273585742818
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00080",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00080",
         "time_code": 15.298907231996996,
         "t_over_tcc": 3.950160861646438,
         "cells": 524288,
@@ -3476,7 +3476,7 @@
         "tracer_mass_over_initial": 0.9740790277330366
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00081",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00081",
         "time_code": 15.491936601700509,
         "t_over_tcc": 4.000000830592479,
         "cells": 524288,
@@ -3488,7 +3488,7 @@
         "tracer_mass_over_initial": 0.9723684104202475
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00082",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00082",
         "time_code": 15.693610810936546,
         "t_over_tcc": 4.052072887507861,
         "cells": 524288,
@@ -3500,7 +3500,7 @@
         "tracer_mass_over_initial": 0.970513869701168
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00083",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00083",
         "time_code": 15.88706179900038,
         "t_over_tcc": 4.102021717846434,
         "cells": 524288,
@@ -3512,7 +3512,7 @@
         "tracer_mass_over_initial": 0.9686686745261059
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00084",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00084",
         "time_code": 16.080710397420958,
         "t_over_tcc": 4.152021570959722,
         "cells": 524288,
@@ -3524,7 +3524,7 @@
         "tracer_mass_over_initial": 0.966754853109379
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00085",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00085",
         "time_code": 16.274714610972993,
         "t_over_tcc": 4.202113243505128,
         "cells": 524288,
@@ -3536,7 +3536,7 @@
         "tracer_mass_over_initial": 0.9647685822886566
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00086",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00086",
         "time_code": 16.460428675952475,
         "t_over_tcc": 4.250064408893262,
         "cells": 524288,
@@ -3548,7 +3548,7 @@
         "tracer_mass_over_initial": 0.9628007510031256
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00087",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00087",
         "time_code": 16.654750865482594,
         "t_over_tcc": 4.300238182483176,
         "cells": 524288,
@@ -3560,7 +3560,7 @@
         "tracer_mass_over_initial": 0.9606706255916456
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00088",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00088",
         "time_code": 16.84924303122912,
         "t_over_tcc": 4.3504558437434495,
         "cells": 524288,
@@ -3572,7 +3572,7 @@
         "tracer_mass_over_initial": 0.9584645055119068
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00089",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00089",
         "time_code": 17.04381574217324,
         "t_over_tcc": 4.400694301684317,
         "cells": 524288,
@@ -3584,7 +3584,7 @@
         "tracer_mass_over_initial": 0.9561816151224923
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00090",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00090",
         "time_code": 17.238566386844234,
         "t_over_tcc": 4.450978701915912,
         "cells": 524288,
@@ -3596,7 +3596,7 @@
         "tracer_mass_over_initial": 0.9538186476432049
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00091",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00091",
         "time_code": 17.433593663392376,
         "t_over_tcc": 4.501334528191054,
         "cells": 524288,
@@ -3608,7 +3608,7 @@
         "tracer_mass_over_initial": 0.9513719530517539
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00092",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00092",
         "time_code": 17.628784634533073,
         "t_over_tcc": 4.551732620228253,
         "cells": 524288,
@@ -3620,7 +3620,7 @@
         "tracer_mass_over_initial": 0.9488403212142764
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00093",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00093",
         "time_code": 17.823990461471205,
         "t_over_tcc": 4.602134548015855,
         "cells": 524288,
@@ -3632,7 +3632,7 @@
         "tracer_mass_over_initial": 0.9462231548120088
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00094",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00094",
         "time_code": 18.010790856055173,
         "t_over_tcc": 4.650366202501767,
         "cells": 524288,
@@ -3644,7 +3644,7 @@
         "tracer_mass_over_initial": 0.9436373536524997
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00095",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00095",
         "time_code": 18.206339029279384,
         "t_over_tcc": 4.700856523720344,
         "cells": 524288,
@@ -3656,7 +3656,7 @@
         "tracer_mass_over_initial": 0.9408451306212436
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00096",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00096",
         "time_code": 18.40213047991483,
         "t_over_tcc": 4.751409658896403,
         "cells": 524288,
@@ -3668,7 +3668,7 @@
         "tracer_mass_over_initial": 0.9379628104472872
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00097",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00097",
         "time_code": 18.598042520437694,
         "t_over_tcc": 4.801993930247507,
         "cells": 524288,
@@ -3680,7 +3680,7 @@
         "tracer_mass_over_initial": 0.9349927933760839
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00098",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00098",
         "time_code": 18.785489409406512,
         "t_over_tcc": 4.850392508865815,
         "cells": 524288,
@@ -3692,7 +3692,7 @@
         "tracer_mass_over_initial": 0.932070549628181
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00099",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00099",
         "time_code": 18.981700448213978,
         "t_over_tcc": 4.90105398124204,
         "cells": 524288,
@@ -3704,7 +3704,7 @@
         "tracer_mass_over_initial": 0.9289259478034092
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00100",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00100",
         "time_code": 19.178128233168962,
         "t_over_tcc": 4.95177141723291,
         "cells": 524288,
@@ -3716,7 +3716,7 @@
         "tracer_mass_over_initial": 0.9256872715224306
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00101",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_sharp13/output_00101",
         "time_code": 19.36612662864717,
         "t_over_tcc": 5.000312394219631,
         "cells": 524288,
@@ -3730,7 +3730,7 @@
     ],
     "L4_chi100_tanh13": [
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00001",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00001",
         "time_code": 0.0,
         "t_over_tcc": 0.0,
         "cells": 524288,
@@ -3748,7 +3748,7 @@
         "tracer_mass_over_initial": 1.0
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00002",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00002",
         "time_code": 0.19617904986861387,
         "t_over_tcc": 0.05065321286772906,
         "cells": 524288,
@@ -3760,7 +3760,7 @@
         "tracer_mass_over_initial": 0.9999999999999999
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00003",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00003",
         "time_code": 0.39453774064923175,
         "t_over_tcc": 0.10186920659898503,
         "cells": 524288,
@@ -3772,7 +3772,7 @@
         "tracer_mass_over_initial": 0.9999999999999991
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00004",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00004",
         "time_code": 0.586548574556167,
         "t_over_tcc": 0.1514461907331823,
         "cells": 524288,
@@ -3784,7 +3784,7 @@
         "tracer_mass_over_initial": 1.0000000000000018
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00005",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00005",
         "time_code": 0.7817334173717927,
         "t_over_tcc": 0.201842700443651,
         "cells": 524288,
@@ -3796,7 +3796,7 @@
         "tracer_mass_over_initial": 1.000000000000002
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00006",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00006",
         "time_code": 0.9725929859578344,
         "t_over_tcc": 0.2511224291501891,
         "cells": 524288,
@@ -3808,7 +3808,7 @@
         "tracer_mass_over_initial": 1.000000000000004
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00007",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00007",
         "time_code": 1.165477283839813,
         "t_over_tcc": 0.3009249407129767,
         "cells": 524288,
@@ -3820,7 +3820,7 @@
         "tracer_mass_over_initial": 1.0000000000000007
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00008",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00008",
         "time_code": 1.3601971997870237,
         "t_over_tcc": 0.351201406822207,
         "cells": 524288,
@@ -3832,7 +3832,7 @@
         "tracer_mass_over_initial": 1.000000000000006
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00009",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00009",
         "time_code": 1.5565407797680975,
         "t_over_tcc": 0.4018971011823032,
         "cells": 524288,
@@ -3844,7 +3844,7 @@
         "tracer_mass_over_initial": 0.9999999999999996
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00010",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00010",
         "time_code": 1.7459290093161488,
         "t_over_tcc": 0.45079693178279057,
         "cells": 524288,
@@ -3856,7 +3856,7 @@
         "tracer_mass_over_initial": 1.000000000000005
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00011",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00011",
         "time_code": 1.9441546550264486,
         "t_over_tcc": 0.5019785734246041,
         "cells": 524288,
@@ -3868,7 +3868,7 @@
         "tracer_mass_over_initial": 1.0000000000000049
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00012",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00012",
         "time_code": 2.135281558155914,
         "t_over_tcc": 0.5513273276134452,
         "cells": 524288,
@@ -3880,7 +3880,7 @@
         "tracer_mass_over_initial": 1.0000000000000007
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00013",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00013",
         "time_code": 2.32714421060349,
         "t_over_tcc": 0.6008660514593548,
         "cells": 524288,
@@ -3892,7 +3892,7 @@
         "tracer_mass_over_initial": 1.000000000000004
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00014",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00014",
         "time_code": 2.519575885517921,
         "t_over_tcc": 0.6505516962744475,
         "cells": 524288,
@@ -3904,7 +3904,7 @@
         "tracer_mass_over_initial": 1.0000000000000024
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00015",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00015",
         "time_code": 2.712521217818145,
         "t_over_tcc": 0.7003699668562624,
         "cells": 524288,
@@ -3916,7 +3916,7 @@
         "tracer_mass_over_initial": 0.999999999999997
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00016",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00016",
         "time_code": 2.9060854513364007,
         "t_over_tcc": 0.7503480370454363,
         "cells": 524288,
@@ -3928,7 +3928,7 @@
         "tracer_mass_over_initial": 1.0000000000000013
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00017",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00017",
         "time_code": 3.10011949469265,
         "t_over_tcc": 0.8004474116131723,
         "cells": 524288,
@@ -3940,7 +3940,7 @@
         "tracer_mass_over_initial": 1.0000000000000009
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00018",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00018",
         "time_code": 3.2943029443318554,
         "t_over_tcc": 0.850585362717289,
         "cells": 524288,
@@ -3952,7 +3952,7 @@
         "tracer_mass_over_initial": 1.0000000000000013
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00019",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00019",
         "time_code": 3.4883334151385395,
         "t_over_tcc": 0.9006838148566938,
         "cells": 524288,
@@ -3964,7 +3964,7 @@
         "tracer_mass_over_initial": 0.9999999999999999
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00020",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00020",
         "time_code": 3.6823276317580933,
         "t_over_tcc": 0.9507729062052328,
         "cells": 524288,
@@ -3976,7 +3976,7 @@
         "tracer_mass_over_initial": 1.0000000000000042
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00021",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00021",
         "time_code": 3.8764558816370105,
         "t_over_tcc": 1.0008966047925287,
         "cells": 524288,
@@ -3988,7 +3988,7 @@
         "tracer_mass_over_initial": 1.000000000000001
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00022",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00022",
         "time_code": 4.070918922494254,
         "t_over_tcc": 1.0511067460387258,
         "cells": 524288,
@@ -4000,7 +4000,7 @@
         "tracer_mass_over_initial": 0.9999999999999977
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00023",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00023",
         "time_code": 4.265543654441166,
         "t_over_tcc": 1.1013586357447573,
         "cells": 524288,
@@ -4012,7 +4012,7 @@
         "tracer_mass_over_initial": 1.0000000000000002
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00024",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00024",
         "time_code": 4.46027376746528,
         "t_over_tcc": 1.1516377347279227,
         "cells": 524288,
@@ -4024,7 +4024,7 @@
         "tracer_mass_over_initial": 1.0000000000000004
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00025",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00025",
         "time_code": 4.655150285222211,
         "t_over_tcc": 1.2019546352505552,
         "cells": 524288,
@@ -4036,7 +4036,7 @@
         "tracer_mass_over_initial": 0.9999999999999879
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00026",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00026",
         "time_code": 4.841764982975036,
         "t_over_tcc": 1.2501383430208368,
         "cells": 524288,
@@ -4048,7 +4048,7 @@
         "tracer_mass_over_initial": 0.9999999999998082
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00027",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00027",
         "time_code": 5.036302661288085,
         "t_over_tcc": 1.3003677555752564,
         "cells": 524288,
@@ -4060,7 +4060,7 @@
         "tracer_mass_over_initial": 0.9999999999974037
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00028",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00028",
         "time_code": 5.231022471154853,
         "t_over_tcc": 1.3506441942946343,
         "cells": 524288,
@@ -4072,7 +4072,7 @@
         "tracer_mass_over_initial": 0.999999999975013
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00029",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00029",
         "time_code": 5.425801178456451,
         "t_over_tcc": 1.4009358402662941,
         "cells": 524288,
@@ -4084,7 +4084,7 @@
         "tracer_mass_over_initial": 0.9999999998175934
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00030",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00030",
         "time_code": 5.620672319077981,
         "t_over_tcc": 1.451251352418536,
         "cells": 524288,
@@ -4096,7 +4096,7 @@
         "tracer_mass_over_initial": 0.9999999989610768
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00031",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00031",
         "time_code": 5.815926659565796,
         "t_over_tcc": 1.501665806350804,
         "cells": 524288,
@@ -4108,7 +4108,7 @@
         "tracer_mass_over_initial": 0.9999999952880028
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00032",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00032",
         "time_code": 6.003242190274408,
         "t_over_tcc": 1.550030468412168,
         "cells": 524288,
@@ -4120,7 +4120,7 @@
         "tracer_mass_over_initial": 0.9999999838347199
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00033",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00033",
         "time_code": 6.198511411804793,
         "t_over_tcc": 1.6004487646131056,
         "cells": 524288,
@@ -4132,7 +4132,7 @@
         "tracer_mass_over_initial": 0.9999999528578849
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00034",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00034",
         "time_code": 6.393864905364931,
         "t_over_tcc": 1.6508888197585627,
         "cells": 524288,
@@ -4144,7 +4144,7 @@
         "tracer_mass_over_initial": 0.9999998871038942
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00035",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00035",
         "time_code": 6.5892548504857125,
         "t_over_tcc": 1.701338286656507,
         "cells": 524288,
@@ -4156,7 +4156,7 @@
         "tracer_mass_over_initial": 0.999999770276241
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00036",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00036",
         "time_code": 6.784886761813574,
         "t_over_tcc": 1.751850228960476,
         "cells": 524288,
@@ -4168,7 +4168,7 @@
         "tracer_mass_over_initial": 0.9999995777008802
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00037",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00037",
         "time_code": 6.972638362940319,
         "t_over_tcc": 1.8003274839196532,
         "cells": 524288,
@@ -4180,7 +4180,7 @@
         "tracer_mass_over_initial": 0.9999992583726203
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00038",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00038",
         "time_code": 7.168578041307243,
         "t_over_tcc": 1.850918891331409,
         "cells": 524288,
@@ -4192,7 +4192,7 @@
         "tracer_mass_over_initial": 0.9999986210905125
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00039",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00039",
         "time_code": 7.364419762111583,
         "t_over_tcc": 1.901485006209263,
         "cells": 524288,
@@ -4204,7 +4204,7 @@
         "tracer_mass_over_initial": 0.9999973249345225
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00040",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00040",
         "time_code": 7.560371296891557,
         "t_over_tcc": 1.9520794749337045,
         "cells": 524288,
@@ -4216,7 +4216,7 @@
         "tracer_mass_over_initial": 0.9999947153960831
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00041",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00041",
         "time_code": 7.74826999339973,
         "t_over_tcc": 2.0005947097570536,
         "cells": 524288,
@@ -4228,7 +4228,7 @@
         "tracer_mass_over_initial": 0.9999899784734889
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00042",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00042",
         "time_code": 7.944731709617275,
         "t_over_tcc": 2.0513209067622458,
         "cells": 524288,
@@ -4240,7 +4240,7 @@
         "tracer_mass_over_initial": 0.9999811940456224
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00043",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00043",
         "time_code": 8.141136302794363,
         "t_over_tcc": 2.1020323546618127,
         "cells": 524288,
@@ -4252,7 +4252,7 @@
         "tracer_mass_over_initial": 0.9999666228275688
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00044",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00044",
         "time_code": 8.329297170645475,
         "t_over_tcc": 2.150615281834832,
         "cells": 524288,
@@ -4264,7 +4264,7 @@
         "tracer_mass_over_initial": 0.9999452769445151
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00045",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00045",
         "time_code": 8.525972928998986,
         "t_over_tcc": 2.2013967442818894,
         "cells": 524288,
@@ -4276,7 +4276,7 @@
         "tracer_mass_over_initial": 0.999912971622677
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00046",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00046",
         "time_code": 8.71492674390786,
         "t_over_tcc": 2.2501844095048513,
         "cells": 524288,
@@ -4288,7 +4288,7 @@
         "tracer_mass_over_initial": 0.9998699176483471
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00047",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00047",
         "time_code": 8.911957322068353,
         "t_over_tcc": 2.301057486032132,
         "cells": 524288,
@@ -4300,7 +4300,7 @@
         "tracer_mass_over_initial": 0.9998097121607287
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00048",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00048",
         "time_code": 9.10910658016733,
         "t_over_tcc": 2.3519612055877643,
         "cells": 524288,
@@ -4312,7 +4312,7 @@
         "tracer_mass_over_initial": 0.9997307518136325
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00049",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00049",
         "time_code": 9.298623508968227,
         "t_over_tcc": 2.4008942661924477,
         "cells": 524288,
@@ -4324,7 +4324,7 @@
         "tracer_mass_over_initial": 0.9996341162155455
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00050",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00050",
         "time_code": 9.496233886722234,
         "t_over_tcc": 2.451917046331049,
         "cells": 524288,
@@ -4336,7 +4336,7 @@
         "tracer_mass_over_initial": 0.9995083083210433
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00051",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00051",
         "time_code": 9.685819029883573,
         "t_over_tcc": 2.500867719807864,
         "cells": 524288,
@@ -4348,7 +4348,7 @@
         "tracer_mass_over_initial": 0.9993602191528923
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00052",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00052",
         "time_code": 9.884183951526785,
         "t_over_tcc": 2.5520853223409237,
         "cells": 524288,
@@ -4360,7 +4360,7 @@
         "tracer_mass_over_initial": 0.9991728775061496
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00053",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00053",
         "time_code": 10.074268574100797,
         "t_over_tcc": 2.601164960847542,
         "cells": 524288,
@@ -4372,7 +4372,7 @@
         "tracer_mass_over_initial": 0.9989587476957663
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00054",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00054",
         "time_code": 10.264831736473434,
         "t_over_tcc": 2.6503681577988645,
         "cells": 524288,
@@ -4384,7 +4384,7 @@
         "tracer_mass_over_initial": 0.9987065035971978
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00055",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00055",
         "time_code": 10.463720440288334,
         "t_over_tcc": 2.7017210003071237,
         "cells": 524288,
@@ -4396,7 +4396,7 @@
         "tracer_mass_over_initial": 0.9983989968731151
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00056",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00056",
         "time_code": 10.654547748343624,
         "t_over_tcc": 2.750992399380439,
         "cells": 524288,
@@ -4408,7 +4408,7 @@
         "tracer_mass_over_initial": 0.9980574039020936
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00057",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00057",
         "time_code": 10.84539244845305,
         "t_over_tcc": 2.8002682890628225,
         "cells": 524288,
@@ -4420,7 +4420,7 @@
         "tracer_mass_over_initial": 0.9976665772561094
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00058",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00058",
         "time_code": 11.044429989696855,
         "t_over_tcc": 2.851659561229978,
         "cells": 524288,
@@ -4432,7 +4432,7 @@
         "tracer_mass_over_initial": 0.9972035272843317
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00059",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00059",
         "time_code": 11.235393973796336,
         "t_over_tcc": 2.900966249906159,
         "cells": 524288,
@@ -4444,7 +4444,7 @@
         "tracer_mass_over_initial": 0.9967040403873607
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00060",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00060",
         "time_code": 11.426041040063678,
         "t_over_tcc": 2.9501911107499397,
         "cells": 524288,
@@ -4456,7 +4456,7 @@
         "tracer_mass_over_initial": 0.9961501987601334
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00061",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00061",
         "time_code": 11.624873467717032,
         "t_over_tcc": 3.0015294228157687,
         "cells": 524288,
@@ -4468,7 +4468,7 @@
         "tracer_mass_over_initial": 0.9955131111012121
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00062",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00062",
         "time_code": 11.815659312025186,
         "t_over_tcc": 3.050790115995609,
         "cells": 524288,
@@ -4480,7 +4480,7 @@
         "tracer_mass_over_initial": 0.9948448000964724
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00063",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00063",
         "time_code": 12.014419509849336,
         "t_over_tcc": 3.1021097783997305,
         "cells": 524288,
@@ -4492,7 +4492,7 @@
         "tracer_mass_over_initial": 0.9940900176965325
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00064",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00064",
         "time_code": 12.205094605671926,
         "t_over_tcc": 3.1513418764435563,
         "cells": 524288,
@@ -4504,7 +4504,7 @@
         "tracer_mass_over_initial": 0.9933107474287184
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00065",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00065",
         "time_code": 12.39582602118606,
         "t_over_tcc": 3.2005885161692107,
         "cells": 524288,
@@ -4516,7 +4516,7 @@
         "tracer_mass_over_initial": 0.9924780029717085
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00066",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00066",
         "time_code": 12.594918701096132,
         "t_over_tcc": 3.251994025078778,
         "cells": 524288,
@@ -4528,7 +4528,7 @@
         "tracer_mass_over_initial": 0.9915523535067887
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00067",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00067",
         "time_code": 12.786000596168174,
         "t_over_tcc": 3.3013311582371627,
         "cells": 524288,
@@ -4540,7 +4540,7 @@
         "tracer_mass_over_initial": 0.9906096721718145
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00068",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00068",
         "time_code": 12.977121262646753,
         "t_over_tcc": 3.350678302129669,
         "cells": 524288,
@@ -4552,7 +4552,7 @@
         "tracer_mass_over_initial": 0.9896134968928735
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00069",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00069",
         "time_code": 13.16855256476845,
         "t_over_tcc": 3.4001056518003447,
         "cells": 524288,
@@ -4564,7 +4564,7 @@
         "tracer_mass_over_initial": 0.9885623412717899
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00070",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00070",
         "time_code": 13.368327633743418,
         "t_over_tcc": 3.451687352808844,
         "cells": 524288,
@@ -4576,7 +4576,7 @@
         "tracer_mass_over_initial": 0.9874087017915171
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00071",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00071",
         "time_code": 13.559850212584545,
         "t_over_tcc": 3.501138270027136,
         "cells": 524288,
@@ -4588,7 +4588,7 @@
         "tracer_mass_over_initial": 0.9862484803454954
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00072",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00072",
         "time_code": 13.751518293758041,
         "t_over_tcc": 3.5506267557861015,
         "cells": 524288,
@@ -4600,7 +4600,7 @@
         "tracer_mass_over_initial": 0.9850336871981272
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00073",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00073",
         "time_code": 13.943064795968748,
         "t_over_tcc": 3.6000838499918584,
         "cells": 524288,
@@ -4612,7 +4612,7 @@
         "tracer_mass_over_initial": 0.9837652057459708
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00074",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00074",
         "time_code": 14.143124076245865,
         "t_over_tcc": 3.651738934043026,
         "cells": 524288,
@@ -4624,7 +4624,7 @@
         "tracer_mass_over_initial": 0.9823812967331449
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00075",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00075",
         "time_code": 14.334924538662044,
         "t_over_tcc": 3.7012616004918755,
         "cells": 524288,
@@ -4636,7 +4636,7 @@
         "tracer_mass_over_initial": 0.9809969274837033
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00076",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00076",
         "time_code": 14.526839285471112,
         "t_over_tcc": 3.7508137750440844,
         "cells": 524288,
@@ -4648,7 +4648,7 @@
         "tracer_mass_over_initial": 0.9795543623016146
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00077",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00077",
         "time_code": 14.719006578955977,
         "t_over_tcc": 3.8004311568675933,
         "cells": 524288,
@@ -4660,7 +4660,7 @@
         "tracer_mass_over_initial": 0.9780513606910672
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00078",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00078",
         "time_code": 14.911300529965049,
         "t_over_tcc": 3.8500812415232306,
         "cells": 524288,
@@ -4672,7 +4672,7 @@
         "tracer_mass_over_initial": 0.9764879393041509
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00079",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00079",
         "time_code": 15.112345926870171,
         "t_over_tcc": 3.9019909397929107,
         "cells": 524288,
@@ -4684,7 +4684,7 @@
         "tracer_mass_over_initial": 0.9747894186640286
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00080",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00080",
         "time_code": 15.30511726109201,
         "t_over_tcc": 3.951764284264068,
         "cells": 524288,
@@ -4696,7 +4696,7 @@
         "tracer_mass_over_initial": 0.9730989974380745
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00081",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00081",
         "time_code": 15.498232288642255,
         "t_over_tcc": 4.001626369971034,
         "cells": 524288,
@@ -4708,7 +4708,7 @@
         "tracer_mass_over_initial": 0.9713442145707
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00082",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00082",
         "time_code": 15.691473729042604,
         "t_over_tcc": 4.051521095335547,
         "cells": 524288,
@@ -4720,7 +4720,7 @@
         "tracer_mass_over_initial": 0.9695260439162523
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00083",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00083",
         "time_code": 15.884921159657715,
         "t_over_tcc": 4.101469007144809,
         "cells": 524288,
@@ -4732,7 +4732,7 @@
         "tracer_mass_over_initial": 0.9676426832195852
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00084",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00084",
         "time_code": 16.078557603015483,
         "t_over_tcc": 4.151465721834374,
         "cells": 524288,
@@ -4744,7 +4744,7 @@
         "tracer_mass_over_initial": 0.9656928139274173
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00085",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00085",
         "time_code": 16.272394248380316,
         "t_over_tcc": 4.201514128459888,
         "cells": 524288,
@@ -4756,7 +4756,7 @@
         "tracer_mass_over_initial": 0.9636742915900773
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00086",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00086",
         "time_code": 16.466531435989683,
         "t_over_tcc": 4.2516401347592625,
         "cells": 524288,
@@ -4768,7 +4768,7 @@
         "tracer_mass_over_initial": 0.9615838918018288
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00087",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00087",
         "time_code": 16.66091692583269,
         "t_over_tcc": 4.301830252419686,
         "cells": 524288,
@@ -4780,7 +4780,7 @@
         "tracer_mass_over_initial": 0.9594202247347985
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00088",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00088",
         "time_code": 16.855412901661808,
         "t_over_tcc": 4.3520488974390545,
         "cells": 524288,
@@ -4792,7 +4792,7 @@
         "tracer_mass_over_initial": 0.9571831485328439
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00089",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00089",
         "time_code": 17.041584798862957,
         "t_over_tcc": 4.400118274598514,
         "cells": 524288,
@@ -4804,7 +4804,7 @@
         "tracer_mass_over_initial": 0.9549728772428645
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00090",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00090",
         "time_code": 17.23636999783763,
         "t_over_tcc": 4.4504115967129545,
         "cells": 524288,
@@ -4816,7 +4816,7 @@
         "tracer_mass_over_initial": 0.9525866588251739
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00091",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00091",
         "time_code": 17.431327350379913,
         "t_over_tcc": 4.500749368687417,
         "cells": 524288,
@@ -4828,7 +4828,7 @@
         "tracer_mass_over_initial": 0.9501210222925284
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00092",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00092",
         "time_code": 17.62645099075672,
         "t_over_tcc": 4.551130075996133,
         "cells": 524288,
@@ -4840,7 +4840,7 @@
         "tracer_mass_over_initial": 0.9475735901850721
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00093",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00093",
         "time_code": 17.821770987214958,
         "t_over_tcc": 4.601561482227069,
         "cells": 524288,
@@ -4852,7 +4852,7 @@
         "tracer_mass_over_initial": 0.9449411367011294
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00094",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00094",
         "time_code": 18.017188629923965,
         "t_over_tcc": 4.652018100611542,
         "cells": 524288,
@@ -4864,7 +4864,7 @@
         "tracer_mass_over_initial": 0.9422220177712484
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00095",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00095",
         "time_code": 18.20416323162733,
         "t_over_tcc": 4.700294735182269,
         "cells": 524288,
@@ -4876,7 +4876,7 @@
         "tracer_mass_over_initial": 0.939538344620346
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00096",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00096",
         "time_code": 18.39975163500636,
         "t_over_tcc": 4.750795443782155,
         "cells": 524288,
@@ -4888,7 +4888,7 @@
         "tracer_mass_over_initial": 0.9366442856825914
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00097",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00097",
         "time_code": 18.595589531467752,
         "t_over_tcc": 4.801360571218906,
         "cells": 524288,
@@ -4900,7 +4900,7 @@
         "tracer_mass_over_initial": 0.9336580666451118
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00098",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00098",
         "time_code": 18.791592917474212,
         "t_over_tcc": 4.851968427872458,
         "cells": 524288,
@@ -4912,7 +4912,7 @@
         "tracer_mass_over_initial": 0.9305816848275892
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00099",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00099",
         "time_code": 18.97915550714219,
         "t_over_tcc": 4.900396880282831,
         "cells": 524288,
@@ -4924,7 +4924,7 @@
         "tracer_mass_over_initial": 0.9275562120317579
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00100",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00100",
         "time_code": 19.175385567397093,
         "t_over_tcc": 4.951063263975667,
         "cells": 524288,
@@ -4936,7 +4936,7 @@
         "tracer_mass_over_initial": 0.9243052149214532
       },
       {
-        "snapshot": "/home/kaan/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00101",
+        "snapshot": "/home/user/sensitivity_20260907/ramses/runs/L4_chi100_tanh13/output_00101",
         "time_code": 19.371755177389826,
         "t_over_tcc": 5.001765679255874,
         "cells": 524288,

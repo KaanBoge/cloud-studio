@@ -18,14 +18,14 @@ import sys
 import time
 import numpy as np
 import psutil
-sys.path.insert(0,'/home/kaan/verified_20260907')
+sys.path.insert(0,'/home/user/verified_20260907')
 from run_params import parse_file,read_values
 from ramses_native import read_output
 from storage_guard import storage_snapshot,require_storage,GIB
-sys.path.insert(0,'/mnt/c/Users/kaanb/CloudCrushing/sensitivity_20260907')
+sys.path.insert(0,'/mnt/c/Users/user/CloudCrushing/sensitivity_20260907')
 from build import sha
-ROOT=Path('/home/kaan/sensitivity_20260907/ramses')
-TEMPLATE=Path('/mnt/c/Users/kaanb/CloudCrushing/audit_20260907/evidence/ramses_rect_tests/chi100/run.nml')
+ROOT=Path('/home/user/sensitivity_20260907/ramses')
+TEMPLATE=Path('/mnt/c/Users/user/CloudCrushing/audit_20260907/evidence/ramses_rect_tests/chi100/run.nml')
 
 def save(path,data):
     p=Path(path);tmp=p.with_suffix(p.suffix+'.tmp')
@@ -157,7 +157,7 @@ def run_case(level,mode,smoke=False):
     record=dict(status='running',level=level,mode=mode,directory=str(folder),parameters=p,command=command,
         binary_sha256=b['binary_sha256'],parameter_sha256=sha(folder/'run.nml'),storage_preflight=storage,
         reserved_output_gib=disk/GIB,started_unix=time.time(),
-        launcher_sha256=sha(__file__),native_reader_sha256=sha('/home/kaan/verified_20260907/ramses_native.py'),
+        launcher_sha256=sha(__file__),native_reader_sha256=sha('/home/user/verified_20260907/ramses_native.py'),
         template_sha256=sha(TEMPLATE))
     save(folder/'result.json',record);save(ROOT/'current.json',record);print('START '+str(folder),flush=True)
     peak=0;limited=False
@@ -191,7 +191,7 @@ def main():
     parser=argparse.ArgumentParser();parser.add_argument('--smoke',action='store_true');args=parser.parse_args()
     locks=[]
     for name in ('benchmark.lock','production.lock'):
-        f=Path('/home/kaan/performance_20260907',name).open('a');fcntl.flock(f,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(f)
+        f=Path('/home/user/performance_20260907',name).open('a');fcntl.flock(f,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(f)
     path=ROOT/('smoke_batch.json' if args.smoke else 'batch.json');batch=dict(status='running',finished=[],pairs=[],pid=os.getpid())
     try:
         if not args.smoke:

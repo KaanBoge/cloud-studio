@@ -60,7 +60,7 @@ IC, logs and restart files. The preflight reserved1.096GiB plus separate
 10GiB host/guest reserves. The600second wall cap and resource guards did not
 trigger. Neither old native data nor any canonical executable was modified.
 
-Native data: `/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1`.
+Native data: `/home/user/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/onset_native_v1`.
 Frozen runner: adjacent `onset_runner_v1`. Successful read-only correction:
 `onset_review_v2`. All completed/failed directories are retained; do not
 relaunch them or overwrite their reports.

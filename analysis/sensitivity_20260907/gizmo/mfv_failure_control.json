@@ -10,7 +10,7 @@
     "variant": "mfv",
     "mode": 1,
     "level": 3,
-    "directory": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13",
+    "directory": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13",
     "physics": {
       "code": "GIZMO",
       "variants": [
@@ -62,12 +62,12 @@
       "method": "104 native snapshots + two restart sets with 50% margin + IC + 256MiB logs; 15% overall margin. Separate 10GiB free-space reserve."
     },
     "storage_preflight": {
-      "path": "/home/kaan/sensitivity_20260907/gizmo",
+      "path": "/home/user/sensitivity_20260907/gizmo",
       "filesystem_free_bytes": 29802582016,
       "filesystem_total_bytes": 1081101176832,
       "windows_backing_volume": {
         "distribution": "Ubuntu",
-        "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+        "base_path": "C:\\Users\\user\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
         "drive": "C:",
         "free_bytes": 37657571328,
         "total_bytes": 1999283154944
@@ -81,7 +81,7 @@
       "core",
       "-np",
       "8",
-      "/home/kaan/sensitivity_20260907/gizmo/GIZMO_mfv_pair",
+      "/home/user/sensitivity_20260907/gizmo/GIZMO_mfv_pair",
       "params.txt"
     ],
     "started_unix": 1788840868.6226482,

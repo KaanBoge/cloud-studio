@@ -8,7 +8,7 @@ import mfm_l4_controls as m
 def main():
     locks=[]
     for name in ('benchmark.lock','production.lock'):
-        h=Path('/home/kaan/performance_20260907',name).open('a');fcntl.flock(h,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(h)
+        h=Path('/home/user/performance_20260907',name).open('a');fcntl.flock(h,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(h)
     m.dependencies(False);m.guard(6*m.GIB)
     dest=m.ROOT/'runner_mfm_l4_v1'
     if dest.exists():raise ValueError('Existing frozen bundle must not be overwritten')

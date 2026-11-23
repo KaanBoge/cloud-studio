@@ -300,7 +300,7 @@
     "L6_cpu_base": {
       "name": "L6_cpu_base",
       "kind": "athpp",
-      "binary": "/home/kaan/ic_audit_20260907/bin/athpp",
+      "binary": "/home/user/ic_audit_20260907/bin/athpp",
       "binary_sha256": "b8bdcbadc51986cb761a0d741001e6804d212dc7f57d0bcaf8e80e0dd6e88bb0",
       "ranks": 8,
       "block": 32,
@@ -316,8 +316,8 @@
       "wall_seconds_with_initialization_and_output": 47.029251441,
       "peak_summed_child_rss_gib": 17.99292755126953,
       "native_outputs": [
-        "/home/kaan/performance_20260907/benchmarks_v3/L6_cpu_base/cloud_sharp13_20260907_L6_chi100.out2.00000.athdf",
-        "/home/kaan/performance_20260907/benchmarks_v3/L6_cpu_base/cloud_sharp13_20260907_L6_chi100.out2.00001.athdf"
+        "/home/user/performance_20260907/benchmarks_v3/L6_cpu_base/cloud_sharp13_20260907_L6_chi100.out2.00000.athdf",
+        "/home/user/performance_20260907/benchmarks_v3/L6_cpu_base/cloud_sharp13_20260907_L6_chi100.out2.00001.athdf"
       ],
       "solver_metrics": {
         "0": "zone-cycles = 704643072",
@@ -328,7 +328,7 @@
     "base32_r8": {
       "name": "base32_r8",
       "kind": "athpp",
-      "binary": "/home/kaan/ic_audit_20260907/bin/athpp",
+      "binary": "/home/user/ic_audit_20260907/bin/athpp",
       "binary_sha256": "b8bdcbadc51986cb761a0d741001e6804d212dc7f57d0bcaf8e80e0dd6e88bb0",
       "ranks": 8,
       "block": 32,
@@ -344,8 +344,8 @@
       "wall_seconds_with_initialization_and_output": 9.294225149999995,
       "peak_summed_child_rss_gib": 2.480358123779297,
       "native_outputs": [
-        "/home/kaan/performance_20260907/benchmarks_v3/base32_r8/cloud_sharp13_20260907_L5_chi100.out2.00000.athdf",
-        "/home/kaan/performance_20260907/benchmarks_v3/base32_r8/cloud_sharp13_20260907_L5_chi100.out2.00001.athdf"
+        "/home/user/performance_20260907/benchmarks_v3/base32_r8/cloud_sharp13_20260907_L5_chi100.out2.00000.athdf",
+        "/home/user/performance_20260907/benchmarks_v3/base32_r8/cloud_sharp13_20260907_L5_chi100.out2.00001.athdf"
       ],
       "solver_metrics": {
         "0": "zone-cycles = 138412032",
@@ -356,7 +356,7 @@
     "base32_r8_repeat2": {
       "name": "base32_r8_repeat2",
       "kind": "athpp",
-      "binary": "/home/kaan/ic_audit_20260907/bin/athpp",
+      "binary": "/home/user/ic_audit_20260907/bin/athpp",
       "binary_sha256": "b8bdcbadc51986cb761a0d741001e6804d212dc7f57d0bcaf8e80e0dd6e88bb0",
       "ranks": 8,
       "block": 32,
@@ -372,8 +372,8 @@
       "wall_seconds_with_initialization_and_output": 9.044456886999996,
       "peak_summed_child_rss_gib": 2.4864273071289062,
       "native_outputs": [
-        "/home/kaan/performance_20260907/benchmarks_v3/base32_r8_repeat2/cloud_sharp13_20260907_L5_chi100.out2.00000.athdf",
-        "/home/kaan/performance_20260907/benchmarks_v3/base32_r8_repeat2/cloud_sharp13_20260907_L5_chi100.out2.00001.athdf"
+        "/home/user/performance_20260907/benchmarks_v3/base32_r8_repeat2/cloud_sharp13_20260907_L5_chi100.out2.00000.athdf",
+        "/home/user/performance_20260907/benchmarks_v3/base32_r8_repeat2/cloud_sharp13_20260907_L5_chi100.out2.00001.athdf"
       ],
       "solver_metrics": {
         "0": "zone-cycles = 138412032",
@@ -384,7 +384,7 @@
     "L6_apk_block64_retry": {
       "name": "L6_apk_block64_retry",
       "kind": "apk",
-      "binary": "/home/kaan/ic_audit_20260907/bin/apk",
+      "binary": "/home/user/ic_audit_20260907/bin/apk",
       "binary_sha256": "d8d6ffe5b427216a58bda705ae0692c3cc12c3b7f072bd1a845fe11224a4af0f",
       "ranks": 1,
       "block": 64,
@@ -400,8 +400,8 @@
       "wall_seconds_with_initialization_and_output": 20.941279228999996,
       "peak_summed_child_rss_gib": 2.2656478881835938,
       "native_outputs": [
-        "/home/kaan/performance_20260907/benchmarks_v3/L6_apk_block64_retry/parthenon.prim.00000.phdf",
-        "/home/kaan/performance_20260907/benchmarks_v3/L6_apk_block64_retry/parthenon.prim.final.phdf"
+        "/home/user/performance_20260907/benchmarks_v3/L6_apk_block64_retry/parthenon.prim.00000.phdf",
+        "/home/user/performance_20260907/benchmarks_v3/L6_apk_block64_retry/parthenon.prim.final.phdf"
       ],
       "timed_out": false,
       "gpu_samples_device_wide": [
@@ -460,7 +460,7 @@
     "native32_r16": {
       "name": "native32_r16",
       "kind": "athpp",
-      "binary": "/home/kaan/performance_20260907/bin/athpp_native",
+      "binary": "/home/user/performance_20260907/bin/athpp_native",
       "binary_sha256": "05e45d1d945c7ea4c0ea3077dd8bcc887100afa8f999dd8153694eabac4ba902",
       "ranks": 16,
       "block": 32,
@@ -476,8 +476,8 @@
       "wall_seconds_with_initialization_and_output": 8.16185881300001,
       "peak_summed_child_rss_gib": 2.8687210083007812,
       "native_outputs": [
-        "/home/kaan/performance_20260907/benchmarks_v3/native32_r16/cloud_sharp13_20260907_L5_chi100.out2.00000.athdf",
-        "/home/kaan/performance_20260907/benchmarks_v3/native32_r16/cloud_sharp13_20260907_L5_chi100.out2.00001.athdf"
+        "/home/user/performance_20260907/benchmarks_v3/native32_r16/cloud_sharp13_20260907_L5_chi100.out2.00000.athdf",
+        "/home/user/performance_20260907/benchmarks_v3/native32_r16/cloud_sharp13_20260907_L5_chi100.out2.00001.athdf"
       ],
       "solver_metrics": {
         "0": "zone-cycles = 138412032",
@@ -488,7 +488,7 @@
     "native32_r4": {
       "name": "native32_r4",
       "kind": "athpp",
-      "binary": "/home/kaan/performance_20260907/bin/athpp_native",
+      "binary": "/home/user/performance_20260907/bin/athpp_native",
       "binary_sha256": "05e45d1d945c7ea4c0ea3077dd8bcc887100afa8f999dd8153694eabac4ba902",
       "ranks": 4,
       "block": 32,
@@ -504,8 +504,8 @@
       "wall_seconds_with_initialization_and_output": 11.289786243999998,
       "peak_summed_child_rss_gib": 2.356426239013672,
       "native_outputs": [
-        "/home/kaan/performance_20260907/benchmarks_v3/native32_r4/cloud_sharp13_20260907_L5_chi100.out2.00000.athdf",
-        "/home/kaan/performance_20260907/benchmarks_v3/native32_r4/cloud_sharp13_20260907_L5_chi100.out2.00001.athdf"
+        "/home/user/performance_20260907/benchmarks_v3/native32_r4/cloud_sharp13_20260907_L5_chi100.out2.00000.athdf",
+        "/home/user/performance_20260907/benchmarks_v3/native32_r4/cloud_sharp13_20260907_L5_chi100.out2.00001.athdf"
       ],
       "solver_metrics": {
         "0": "zone-cycles = 138412032",
@@ -516,7 +516,7 @@
     "L6_apk_block128_clean": {
       "name": "L6_apk_block128_clean",
       "kind": "apk",
-      "binary": "/home/kaan/ic_audit_20260907/bin/apk",
+      "binary": "/home/user/ic_audit_20260907/bin/apk",
       "binary_sha256": "d8d6ffe5b427216a58bda705ae0692c3cc12c3b7f072bd1a845fe11224a4af0f",
       "ranks": 1,
       "block": 128,
@@ -532,8 +532,8 @@
       "wall_seconds_with_initialization_and_output": 20.31566526499998,
       "peak_summed_child_rss_gib": 2.091693878173828,
       "native_outputs": [
-        "/home/kaan/performance_20260907/benchmarks_v3/L6_apk_block128_clean/parthenon.prim.00000.phdf",
-        "/home/kaan/performance_20260907/benchmarks_v3/L6_apk_block128_clean/parthenon.prim.final.phdf"
+        "/home/user/performance_20260907/benchmarks_v3/L6_apk_block128_clean/parthenon.prim.00000.phdf",
+        "/home/user/performance_20260907/benchmarks_v3/L6_apk_block128_clean/parthenon.prim.final.phdf"
       ],
       "timed_out": false,
       "gpu_samples_device_wide": [
@@ -588,7 +588,7 @@
     "apk_block64_repeat2": {
       "name": "apk_block64_repeat2",
       "kind": "apk",
-      "binary": "/home/kaan/ic_audit_20260907/bin/apk",
+      "binary": "/home/user/ic_audit_20260907/bin/apk",
       "binary_sha256": "d8d6ffe5b427216a58bda705ae0692c3cc12c3b7f072bd1a845fe11224a4af0f",
       "ranks": 1,
       "block": 64,
@@ -604,8 +604,8 @@
       "wall_seconds_with_initialization_and_output": 3.5074631609999996,
       "peak_summed_child_rss_gib": 0.53070068359375,
       "native_outputs": [
-        "/home/kaan/performance_20260907/benchmarks_v3/apk_block64_repeat2/parthenon.prim.00000.phdf",
-        "/home/kaan/performance_20260907/benchmarks_v3/apk_block64_repeat2/parthenon.prim.final.phdf"
+        "/home/user/performance_20260907/benchmarks_v3/apk_block64_repeat2/parthenon.prim.00000.phdf",
+        "/home/user/performance_20260907/benchmarks_v3/apk_block64_repeat2/parthenon.prim.final.phdf"
       ],
       "solver_metrics": {
         "0": "cycle=0 time=0.0000000000000000e+00 dt=8.0687153045987860e-03 zone-cycles/wsec_step=0.00e+00 wsec_total=6.54e-01 wsec_step=1.05e+00",
@@ -617,7 +617,7 @@
     "apk_block128_clean": {
       "name": "apk_block128_clean",
       "kind": "apk",
-      "binary": "/home/kaan/ic_audit_20260907/bin/apk",
+      "binary": "/home/user/ic_audit_20260907/bin/apk",
       "binary_sha256": "d8d6ffe5b427216a58bda705ae0692c3cc12c3b7f072bd1a845fe11224a4af0f",
       "ranks": 1,
       "block": 128,
@@ -633,8 +633,8 @@
       "wall_seconds_with_initialization_and_output": 3.597427001,
       "peak_summed_child_rss_gib": 0.49615478515625,
       "native_outputs": [
-        "/home/kaan/performance_20260907/benchmarks_v3/apk_block128_clean/parthenon.prim.00000.phdf",
-        "/home/kaan/performance_20260907/benchmarks_v3/apk_block128_clean/parthenon.prim.final.phdf"
+        "/home/user/performance_20260907/benchmarks_v3/apk_block128_clean/parthenon.prim.00000.phdf",
+        "/home/user/performance_20260907/benchmarks_v3/apk_block128_clean/parthenon.prim.final.phdf"
       ],
       "timed_out": false,
       "gpu_samples_device_wide": [
@@ -657,7 +657,7 @@
     "L6_cpu_native": {
       "name": "L6_cpu_native",
       "kind": "athpp",
-      "binary": "/home/kaan/performance_20260907/bin/athpp_native",
+      "binary": "/home/user/performance_20260907/bin/athpp_native",
       "binary_sha256": "05e45d1d945c7ea4c0ea3077dd8bcc887100afa8f999dd8153694eabac4ba902",
       "ranks": 16,
       "block": 64,
@@ -673,8 +673,8 @@
       "wall_seconds_with_initialization_and_output": 38.398570397,
       "peak_summed_child_rss_gib": 15.059005737304688,
       "native_outputs": [
-        "/home/kaan/performance_20260907/benchmarks_v3/L6_cpu_native/cloud_sharp13_20260907_L6_chi100.out2.00000.athdf",
-        "/home/kaan/performance_20260907/benchmarks_v3/L6_cpu_native/cloud_sharp13_20260907_L6_chi100.out2.00001.athdf"
+        "/home/user/performance_20260907/benchmarks_v3/L6_cpu_native/cloud_sharp13_20260907_L6_chi100.out2.00000.athdf",
+        "/home/user/performance_20260907/benchmarks_v3/L6_cpu_native/cloud_sharp13_20260907_L6_chi100.out2.00001.athdf"
       ],
       "solver_metrics": {
         "0": "zone-cycles = 704643072",
@@ -685,7 +685,7 @@
     "native64_r16": {
       "name": "native64_r16",
       "kind": "athpp",
-      "binary": "/home/kaan/performance_20260907/bin/athpp_native",
+      "binary": "/home/user/performance_20260907/bin/athpp_native",
       "binary_sha256": "05e45d1d945c7ea4c0ea3077dd8bcc887100afa8f999dd8153694eabac4ba902",
       "ranks": 16,
       "block": 64,
@@ -701,8 +701,8 @@
       "wall_seconds_with_initialization_and_output": 7.636828154,
       "peak_summed_child_rss_gib": 2.4122657775878906,
       "native_outputs": [
-        "/home/kaan/performance_20260907/benchmarks_v3/native64_r16/cloud_sharp13_20260907_L5_chi100.out2.00000.athdf",
-        "/home/kaan/performance_20260907/benchmarks_v3/native64_r16/cloud_sharp13_20260907_L5_chi100.out2.00001.athdf"
+        "/home/user/performance_20260907/benchmarks_v3/native64_r16/cloud_sharp13_20260907_L5_chi100.out2.00000.athdf",
+        "/home/user/performance_20260907/benchmarks_v3/native64_r16/cloud_sharp13_20260907_L5_chi100.out2.00001.athdf"
       ],
       "solver_metrics": {
         "0": "zone-cycles = 138412032",
@@ -713,7 +713,7 @@
     "native64_r8_retry": {
       "name": "native64_r8_retry",
       "kind": "athpp",
-      "binary": "/home/kaan/performance_20260907/bin/athpp_native",
+      "binary": "/home/user/performance_20260907/bin/athpp_native",
       "binary_sha256": "05e45d1d945c7ea4c0ea3077dd8bcc887100afa8f999dd8153694eabac4ba902",
       "ranks": 8,
       "block": 64,
@@ -729,8 +729,8 @@
       "wall_seconds_with_initialization_and_output": 8.298186226999988,
       "peak_summed_child_rss_gib": 2.0905494689941406,
       "native_outputs": [
-        "/home/kaan/performance_20260907/benchmarks_v3/native64_r8_retry/cloud_sharp13_20260907_L5_chi100.out2.00000.athdf",
-        "/home/kaan/performance_20260907/benchmarks_v3/native64_r8_retry/cloud_sharp13_20260907_L5_chi100.out2.00001.athdf"
+        "/home/user/performance_20260907/benchmarks_v3/native64_r8_retry/cloud_sharp13_20260907_L5_chi100.out2.00000.athdf",
+        "/home/user/performance_20260907/benchmarks_v3/native64_r8_retry/cloud_sharp13_20260907_L5_chi100.out2.00001.athdf"
       ],
       "solver_metrics": {
         "0": "zone-cycles = 138412032",
@@ -741,7 +741,7 @@
     "apk_block64": {
       "name": "apk_block64",
       "kind": "apk",
-      "binary": "/home/kaan/ic_audit_20260907/bin/apk",
+      "binary": "/home/user/ic_audit_20260907/bin/apk",
       "binary_sha256": "d8d6ffe5b427216a58bda705ae0692c3cc12c3b7f072bd1a845fe11224a4af0f",
       "ranks": 1,
       "block": 64,
@@ -757,8 +757,8 @@
       "wall_seconds_with_initialization_and_output": 3.507563578999992,
       "peak_summed_child_rss_gib": 0.5306930541992188,
       "native_outputs": [
-        "/home/kaan/performance_20260907/benchmarks_v3/apk_block64/parthenon.prim.00000.phdf",
-        "/home/kaan/performance_20260907/benchmarks_v3/apk_block64/parthenon.prim.final.phdf"
+        "/home/user/performance_20260907/benchmarks_v3/apk_block64/parthenon.prim.00000.phdf",
+        "/home/user/performance_20260907/benchmarks_v3/apk_block64/parthenon.prim.final.phdf"
       ],
       "solver_metrics": {
         "0": "cycle=0 time=0.0000000000000000e+00 dt=8.0687153045987860e-03 zone-cycles/wsec_step=0.00e+00 wsec_total=6.15e-01 wsec_step=1.02e+00",
@@ -770,7 +770,7 @@
     "best_repeat3": {
       "name": "best_repeat3",
       "kind": "athpp",
-      "binary": "/home/kaan/performance_20260907/bin/athpp_native",
+      "binary": "/home/user/performance_20260907/bin/athpp_native",
       "binary_sha256": "05e45d1d945c7ea4c0ea3077dd8bcc887100afa8f999dd8153694eabac4ba902",
       "ranks": 16,
       "block": 64,
@@ -786,8 +786,8 @@
       "wall_seconds_with_initialization_and_output": 7.6807354210000085,
       "peak_summed_child_rss_gib": 2.4035797119140625,
       "native_outputs": [
-        "/home/kaan/performance_20260907/benchmarks_v3/best_repeat3/cloud_sharp13_20260907_L5_chi100.out2.00000.athdf",
-        "/home/kaan/performance_20260907/benchmarks_v3/best_repeat3/cloud_sharp13_20260907_L5_chi100.out2.00001.athdf"
+        "/home/user/performance_20260907/benchmarks_v3/best_repeat3/cloud_sharp13_20260907_L5_chi100.out2.00000.athdf",
+        "/home/user/performance_20260907/benchmarks_v3/best_repeat3/cloud_sharp13_20260907_L5_chi100.out2.00001.athdf"
       ],
       "solver_metrics": {
         "0": "zone-cycles = 138412032",
@@ -798,7 +798,7 @@
     "native32_r8": {
       "name": "native32_r8",
       "kind": "athpp",
-      "binary": "/home/kaan/performance_20260907/bin/athpp_native",
+      "binary": "/home/user/performance_20260907/bin/athpp_native",
       "binary_sha256": "05e45d1d945c7ea4c0ea3077dd8bcc887100afa8f999dd8153694eabac4ba902",
       "ranks": 8,
       "block": 32,
@@ -814,8 +814,8 @@
       "wall_seconds_with_initialization_and_output": 9.048897009999997,
       "peak_summed_child_rss_gib": 2.5082855224609375,
       "native_outputs": [
-        "/home/kaan/performance_20260907/benchmarks_v3/native32_r8/cloud_sharp13_20260907_L5_chi100.out2.00000.athdf",
-        "/home/kaan/performance_20260907/benchmarks_v3/native32_r8/cloud_sharp13_20260907_L5_chi100.out2.00001.athdf"
+        "/home/user/performance_20260907/benchmarks_v3/native32_r8/cloud_sharp13_20260907_L5_chi100.out2.00000.athdf",
+        "/home/user/performance_20260907/benchmarks_v3/native32_r8/cloud_sharp13_20260907_L5_chi100.out2.00001.athdf"
       ],
       "solver_metrics": {
         "0": "zone-cycles = 138412032",
@@ -826,7 +826,7 @@
     "native64_r8": {
       "name": "native64_r8",
       "kind": "athpp",
-      "binary": "/home/kaan/performance_20260907/bin/athpp_native",
+      "binary": "/home/user/performance_20260907/bin/athpp_native",
       "binary_sha256": "05e45d1d945c7ea4c0ea3077dd8bcc887100afa8f999dd8153694eabac4ba902",
       "ranks": 8,
       "block": 64,
@@ -848,7 +848,7 @@
     "apk_block32_repeat2": {
       "name": "apk_block32_repeat2",
       "kind": "apk",
-      "binary": "/home/kaan/ic_audit_20260907/bin/apk",
+      "binary": "/home/user/ic_audit_20260907/bin/apk",
       "binary_sha256": "d8d6ffe5b427216a58bda705ae0692c3cc12c3b7f072bd1a845fe11224a4af0f",
       "ranks": 1,
       "block": 32,
@@ -864,8 +864,8 @@
       "wall_seconds_with_initialization_and_output": 5.261448851999999,
       "peak_summed_child_rss_gib": 0.600799560546875,
       "native_outputs": [
-        "/home/kaan/performance_20260907/benchmarks_v3/apk_block32_repeat2/parthenon.prim.00000.phdf",
-        "/home/kaan/performance_20260907/benchmarks_v3/apk_block32_repeat2/parthenon.prim.final.phdf"
+        "/home/user/performance_20260907/benchmarks_v3/apk_block32_repeat2/parthenon.prim.00000.phdf",
+        "/home/user/performance_20260907/benchmarks_v3/apk_block32_repeat2/parthenon.prim.final.phdf"
       ],
       "solver_metrics": {
         "0": "cycle=0 time=0.0000000000000000e+00 dt=8.0687153045987860e-03 zone-cycles/wsec_step=0.00e+00 wsec_total=7.15e-01 wsec_step=1.65e+00",
@@ -877,7 +877,7 @@
     "apk_block32": {
       "name": "apk_block32",
       "kind": "apk",
-      "binary": "/home/kaan/ic_audit_20260907/bin/apk",
+      "binary": "/home/user/ic_audit_20260907/bin/apk",
       "binary_sha256": "d8d6ffe5b427216a58bda705ae0692c3cc12c3b7f072bd1a845fe11224a4af0f",
       "ranks": 1,
       "block": 32,
@@ -893,8 +893,8 @@
       "wall_seconds_with_initialization_and_output": 5.010138712000014,
       "peak_summed_child_rss_gib": 0.60052490234375,
       "native_outputs": [
-        "/home/kaan/performance_20260907/benchmarks_v3/apk_block32/parthenon.prim.00000.phdf",
-        "/home/kaan/performance_20260907/benchmarks_v3/apk_block32/parthenon.prim.final.phdf"
+        "/home/user/performance_20260907/benchmarks_v3/apk_block32/parthenon.prim.00000.phdf",
+        "/home/user/performance_20260907/benchmarks_v3/apk_block32/parthenon.prim.final.phdf"
       ],
       "solver_metrics": {
         "0": "cycle=0 time=0.0000000000000000e+00 dt=8.0687153045987860e-03 zone-cycles/wsec_step=0.00e+00 wsec_total=6.69e-01 wsec_step=1.50e+00",
@@ -906,7 +906,7 @@
     "base32_r8_repeat3": {
       "name": "base32_r8_repeat3",
       "kind": "athpp",
-      "binary": "/home/kaan/ic_audit_20260907/bin/athpp",
+      "binary": "/home/user/ic_audit_20260907/bin/athpp",
       "binary_sha256": "b8bdcbadc51986cb761a0d741001e6804d212dc7f57d0bcaf8e80e0dd6e88bb0",
       "ranks": 8,
       "block": 32,
@@ -922,8 +922,8 @@
       "wall_seconds_with_initialization_and_output": 8.793926083999992,
       "peak_summed_child_rss_gib": 2.3288307189941406,
       "native_outputs": [
-        "/home/kaan/performance_20260907/benchmarks_v3/base32_r8_repeat3/cloud_sharp13_20260907_L5_chi100.out2.00000.athdf",
-        "/home/kaan/performance_20260907/benchmarks_v3/base32_r8_repeat3/cloud_sharp13_20260907_L5_chi100.out2.00001.athdf"
+        "/home/user/performance_20260907/benchmarks_v3/base32_r8_repeat3/cloud_sharp13_20260907_L5_chi100.out2.00000.athdf",
+        "/home/user/performance_20260907/benchmarks_v3/base32_r8_repeat3/cloud_sharp13_20260907_L5_chi100.out2.00001.athdf"
       ],
       "solver_metrics": {
         "0": "zone-cycles = 138412032",
@@ -934,7 +934,7 @@
     "apk_block128": {
       "name": "apk_block128",
       "kind": "apk",
-      "binary": "/home/kaan/ic_audit_20260907/bin/apk",
+      "binary": "/home/user/ic_audit_20260907/bin/apk",
       "binary_sha256": "d8d6ffe5b427216a58bda705ae0692c3cc12c3b7f072bd1a845fe11224a4af0f",
       "ranks": 1,
       "block": 128,
@@ -950,8 +950,8 @@
       "wall_seconds_with_initialization_and_output": 16.164851706999997,
       "peak_summed_child_rss_gib": 0.4938774108886719,
       "native_outputs": [
-        "/home/kaan/performance_20260907/benchmarks_v3/apk_block128/parthenon.prim.00000.phdf",
-        "/home/kaan/performance_20260907/benchmarks_v3/apk_block128/parthenon.prim.final.phdf"
+        "/home/user/performance_20260907/benchmarks_v3/apk_block128/parthenon.prim.00000.phdf",
+        "/home/user/performance_20260907/benchmarks_v3/apk_block128/parthenon.prim.final.phdf"
       ],
       "timed_out": false,
       "gpu_samples_device_wide": [
@@ -998,7 +998,7 @@
     "best_repeat2": {
       "name": "best_repeat2",
       "kind": "athpp",
-      "binary": "/home/kaan/performance_20260907/bin/athpp_native",
+      "binary": "/home/user/performance_20260907/bin/athpp_native",
       "binary_sha256": "05e45d1d945c7ea4c0ea3077dd8bcc887100afa8f999dd8153694eabac4ba902",
       "ranks": 16,
       "block": 64,
@@ -1014,8 +1014,8 @@
       "wall_seconds_with_initialization_and_output": 7.656346436000007,
       "peak_summed_child_rss_gib": 2.412872314453125,
       "native_outputs": [
-        "/home/kaan/performance_20260907/benchmarks_v3/best_repeat2/cloud_sharp13_20260907_L5_chi100.out2.00000.athdf",
-        "/home/kaan/performance_20260907/benchmarks_v3/best_repeat2/cloud_sharp13_20260907_L5_chi100.out2.00001.athdf"
+        "/home/user/performance_20260907/benchmarks_v3/best_repeat2/cloud_sharp13_20260907_L5_chi100.out2.00000.athdf",
+        "/home/user/performance_20260907/benchmarks_v3/best_repeat2/cloud_sharp13_20260907_L5_chi100.out2.00001.athdf"
       ],
       "solver_metrics": {
         "0": "zone-cycles = 138412032",
@@ -1026,7 +1026,7 @@
     "apk_block16": {
       "name": "apk_block16",
       "kind": "apk",
-      "binary": "/home/kaan/ic_audit_20260907/bin/apk",
+      "binary": "/home/user/ic_audit_20260907/bin/apk",
       "binary_sha256": "d8d6ffe5b427216a58bda705ae0692c3cc12c3b7f072bd1a845fe11224a4af0f",
       "ranks": 1,
       "block": 16,
@@ -1042,8 +1042,8 @@
       "wall_seconds_with_initialization_and_output": 10.772347038999982,
       "peak_summed_child_rss_gib": 0.9586410522460938,
       "native_outputs": [
-        "/home/kaan/performance_20260907/benchmarks_v3/apk_block16/parthenon.prim.00000.phdf",
-        "/home/kaan/performance_20260907/benchmarks_v3/apk_block16/parthenon.prim.final.phdf"
+        "/home/user/performance_20260907/benchmarks_v3/apk_block16/parthenon.prim.00000.phdf",
+        "/home/user/performance_20260907/benchmarks_v3/apk_block16/parthenon.prim.final.phdf"
       ],
       "solver_metrics": {
         "0": "cycle=0 time=0.0000000000000000e+00 dt=8.0687153045987860e-03 zone-cycles/wsec_step=0.00e+00 wsec_total=8.41e-01 wsec_step=3.55e+00",
@@ -1055,7 +1055,7 @@
     "apk_block64_repeat3": {
       "name": "apk_block64_repeat3",
       "kind": "apk",
-      "binary": "/home/kaan/ic_audit_20260907/bin/apk",
+      "binary": "/home/user/ic_audit_20260907/bin/apk",
       "binary_sha256": "d8d6ffe5b427216a58bda705ae0692c3cc12c3b7f072bd1a845fe11224a4af0f",
       "ranks": 1,
       "block": 64,
@@ -1071,8 +1071,8 @@
       "wall_seconds_with_initialization_and_output": 3.507088246000002,
       "peak_summed_child_rss_gib": 0.5306129455566406,
       "native_outputs": [
-        "/home/kaan/performance_20260907/benchmarks_v3/apk_block64_repeat3/parthenon.prim.00000.phdf",
-        "/home/kaan/performance_20260907/benchmarks_v3/apk_block64_repeat3/parthenon.prim.final.phdf"
+        "/home/user/performance_20260907/benchmarks_v3/apk_block64_repeat3/parthenon.prim.00000.phdf",
+        "/home/user/performance_20260907/benchmarks_v3/apk_block64_repeat3/parthenon.prim.final.phdf"
       ],
       "solver_metrics": {
         "0": "cycle=0 time=0.0000000000000000e+00 dt=8.0687153045987860e-03 zone-cycles/wsec_step=0.00e+00 wsec_total=6.53e-01 wsec_step=1.08e+00",
@@ -1084,7 +1084,7 @@
     "L6_apk_block32_retry": {
       "name": "L6_apk_block32_retry",
       "kind": "apk",
-      "binary": "/home/kaan/ic_audit_20260907/bin/apk",
+      "binary": "/home/user/ic_audit_20260907/bin/apk",
       "binary_sha256": "d8d6ffe5b427216a58bda705ae0692c3cc12c3b7f072bd1a845fe11224a4af0f",
       "ranks": 1,
       "block": 32,
@@ -1345,7 +1345,7 @@
     "apk_block32_repeat3": {
       "name": "apk_block32_repeat3",
       "kind": "apk",
-      "binary": "/home/kaan/ic_audit_20260907/bin/apk",
+      "binary": "/home/user/ic_audit_20260907/bin/apk",
       "binary_sha256": "d8d6ffe5b427216a58bda705ae0692c3cc12c3b7f072bd1a845fe11224a4af0f",
       "ranks": 1,
       "block": 32,
@@ -1361,8 +1361,8 @@
       "wall_seconds_with_initialization_and_output": 5.010049375000001,
       "peak_summed_child_rss_gib": 0.6007614135742188,
       "native_outputs": [
-        "/home/kaan/performance_20260907/benchmarks_v3/apk_block32_repeat3/parthenon.prim.00000.phdf",
-        "/home/kaan/performance_20260907/benchmarks_v3/apk_block32_repeat3/parthenon.prim.final.phdf"
+        "/home/user/performance_20260907/benchmarks_v3/apk_block32_repeat3/parthenon.prim.00000.phdf",
+        "/home/user/performance_20260907/benchmarks_v3/apk_block32_repeat3/parthenon.prim.final.phdf"
       ],
       "solver_metrics": {
         "0": "cycle=0 time=0.0000000000000000e+00 dt=8.0687153045987860e-03 zone-cycles/wsec_step=0.00e+00 wsec_total=6.70e-01 wsec_step=1.39e+00",
@@ -1374,7 +1374,7 @@
     "L6_apk_block128": {
       "name": "L6_apk_block128",
       "kind": "apk",
-      "binary": "/home/kaan/ic_audit_20260907/bin/apk",
+      "binary": "/home/user/ic_audit_20260907/bin/apk",
       "binary_sha256": "d8d6ffe5b427216a58bda705ae0692c3cc12c3b7f072bd1a845fe11224a4af0f",
       "ranks": 1,
       "block": 128,

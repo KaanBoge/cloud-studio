@@ -9,6 +9,6 @@
     "formula": "104 snapshots + 3 measured restart sets + IC +256MiB logs, then20% overall margin. Separate10GiB reserve on guest and Windows backing volume."
   },
   "finished": [],
-  "active_directory": "/home/kaan/sensitivity_20260907/gadget4/full_l3_v1/sharp13",
+  "active_directory": "/home/user/sensitivity_20260907/gadget4/full_l3_v1/sharp13",
   "error": "Missing scheduled output within native synchronization bound"
 }

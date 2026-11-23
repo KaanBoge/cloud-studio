@@ -5,11 +5,11 @@ import os
 from pathlib import Path
 import subprocess
 import sys
-sys.path.insert(0,'/mnt/c/Users/kaanb/CloudCrushing/performance_20260907')
+sys.path.insert(0,'/mnt/c/Users/user/CloudCrushing/performance_20260907')
 from run_optimized import input_for,set_sections,mpi_command
-sys.path.insert(0,'/home/kaan/verified_20260907')
+sys.path.insert(0,'/home/user/verified_20260907')
 from check_snapshot import check
-root=Path('/home/kaan/performance_20260907b')
+root=Path('/home/user/performance_20260907b')
 binary=root/'bin/athpp_lto'
 results=[]
 for chi in (10,100,1000):

@@ -5,8 +5,8 @@ Link the relevant run/report and specify what is known, inferred and untested.
 
 * Keep native code identity, measured time, units and provenance explicit.
 * Preserve completed experiments and frozen reports; use new versioned outputs.
-* Do not change acceptance criteria after seeing a failed result.
-* Do not relabel historical simulations as corrected, cooled or validated.
+* Do not change the criteria for a result after seeing it fail.
+* Do not relabel earlier simulations as corrected, cooled or checked.
 * Keep paired conditions, integer levels and every available real frame intact.
 * Never commit credentials, recordings, environments, native solver binaries or
   upstream source without verified redistribution rights.

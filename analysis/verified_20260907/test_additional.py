@@ -26,7 +26,7 @@ class AdditionalTests(unittest.TestCase):
             p=Path(d)/'old.json';p.write_text(json.dumps({'series':[{'t':0,'mass_frac':.1}]}))
             with self.assertRaises(ValueError): load_runs([p])
     def test_apk_pressure_from_parameters(self):
-        p=Path('/home/kaan/ic_audit_20260907/grid_tests/apk_chi10/athinput')
+        p=Path('/home/user/ic_audit_20260907/grid_tests/apk_chi10/athinput')
         if not p.exists(): self.skipTest('Local native input not available')
         got=parse_file(p)
         self.assertAlmostEqual(got['p_wind'],1,places=12)

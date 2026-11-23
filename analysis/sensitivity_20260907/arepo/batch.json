@@ -5,7 +5,7 @@
       "status": "complete_native_checks",
       "level": 3,
       "mode": 0,
-      "directory": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13",
+      "directory": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13",
       "physics": {
         "code": "Arepo",
         "chi": 100,
@@ -46,13 +46,13 @@
         "core",
         "-np",
         "8",
-        "/home/kaan/sensitivity_20260907/arepo/Arepo_pair",
+        "/home/user/sensitivity_20260907/arepo/Arepo_pair",
         "param.txt"
       ],
       "generate_command": [
-        "/home/kaan/venv/bin/python",
-        "/home/kaan/sensitivity_20260907/arepo/generator_sharp.py",
-        "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13",
+        "/home/user/venv/bin/python",
+        "/home/user/sensitivity_20260907/arepo/generator_sharp.py",
+        "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13",
         "100",
         "32",
         "--ndim",
@@ -70,12 +70,12 @@
       "launcher_sha256": "f6806defd0ff6dc139232a9a0baf385e6ba8ebe7c297147cf386941a89912356",
       "started_unix": 1788827436.178398,
       "storage_preflight": {
-        "path": "/home/kaan/sensitivity_20260907/arepo",
+        "path": "/home/user/sensitivity_20260907/arepo",
         "filesystem_free_bytes": 46493626368,
         "filesystem_total_bytes": 1081101176832,
         "windows_backing_volume": {
           "distribution": "Ubuntu",
-          "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+          "base_path": "C:\\Users\\user\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
           "drive": "C:",
           "free_bytes": 38083776512,
           "total_bytes": 1999283154944
@@ -90,7 +90,7 @@
       "peak_child_rss_gib": 1.682220458984375,
       "series": [
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_000.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_000.hdf5",
           "time_code": 0.0,
           "t_over_tcc": 0.0,
           "elements": 65536,
@@ -109,7 +109,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_001.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_001.hdf5",
           "time_code": 0.22693261794184083,
           "t_over_tcc": 0.05859375,
           "elements": 65536,
@@ -122,7 +122,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_002.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_002.hdf5",
           "time_code": 0.41604313289337486,
           "t_over_tcc": 0.107421875,
           "elements": 65536,
@@ -135,7 +135,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_003.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_003.hdf5",
           "time_code": 0.6051536478449089,
           "t_over_tcc": 0.15625,
           "elements": 65536,
@@ -148,7 +148,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_004.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_004.hdf5",
           "time_code": 0.7942641627964429,
           "t_over_tcc": 0.20507812499999997,
           "elements": 65536,
@@ -161,7 +161,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_005.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_005.hdf5",
           "time_code": 0.9833746777479769,
           "t_over_tcc": 0.25390625,
           "elements": 65536,
@@ -174,7 +174,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_006.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_006.hdf5",
           "time_code": 1.172485192699511,
           "t_over_tcc": 0.302734375,
           "elements": 65536,
@@ -187,7 +187,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_007.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_007.hdf5",
           "time_code": 1.361595707651045,
           "t_over_tcc": 0.3515625,
           "elements": 65536,
@@ -200,7 +200,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_008.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_008.hdf5",
           "time_code": 1.550706222602579,
           "t_over_tcc": 0.40039062499999994,
           "elements": 65536,
@@ -213,7 +213,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_009.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_009.hdf5",
           "time_code": 1.77763884054442,
           "t_over_tcc": 0.458984375,
           "elements": 65536,
@@ -226,7 +226,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_010.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_010.hdf5",
           "time_code": 1.9667493554959539,
           "t_over_tcc": 0.5078125,
           "elements": 65536,
@@ -239,7 +239,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_011.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_011.hdf5",
           "time_code": 2.155859870447488,
           "t_over_tcc": 0.556640625,
           "elements": 65536,
@@ -252,7 +252,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_012.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_012.hdf5",
           "time_code": 2.344970385399022,
           "t_over_tcc": 0.60546875,
           "elements": 65536,
@@ -265,7 +265,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_013.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_013.hdf5",
           "time_code": 2.5340809003505558,
           "t_over_tcc": 0.6542968749999999,
           "elements": 65536,
@@ -278,7 +278,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_014.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_014.hdf5",
           "time_code": 2.72319141530209,
           "t_over_tcc": 0.703125,
           "elements": 65536,
@@ -291,7 +291,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_015.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_015.hdf5",
           "time_code": 2.912301930253624,
           "t_over_tcc": 0.751953125,
           "elements": 65536,
@@ -304,7 +304,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_016.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_016.hdf5",
           "time_code": 3.101412445205158,
           "t_over_tcc": 0.8007812499999999,
           "elements": 65536,
@@ -317,7 +317,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_017.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_017.hdf5",
           "time_code": 3.328345063146999,
           "t_over_tcc": 0.859375,
           "elements": 65536,
@@ -330,7 +330,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_018.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_018.hdf5",
           "time_code": 3.517455578098533,
           "t_over_tcc": 0.908203125,
           "elements": 65536,
@@ -343,7 +343,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_019.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_019.hdf5",
           "time_code": 3.706566093050067,
           "t_over_tcc": 0.9570312499999999,
           "elements": 65536,
@@ -356,7 +356,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_020.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_020.hdf5",
           "time_code": 3.895676608001601,
           "t_over_tcc": 1.005859375,
           "elements": 65536,
@@ -369,7 +369,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_021.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_021.hdf5",
           "time_code": 4.084787122953135,
           "t_over_tcc": 1.0546875,
           "elements": 65536,
@@ -382,7 +382,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_022.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_022.hdf5",
           "time_code": 4.273897637904669,
           "t_over_tcc": 1.103515625,
           "elements": 65536,
@@ -395,7 +395,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_023.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_023.hdf5",
           "time_code": 4.463008152856203,
           "t_over_tcc": 1.1523437499999998,
           "elements": 65536,
@@ -408,7 +408,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_024.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_024.hdf5",
           "time_code": 4.652118667807737,
           "t_over_tcc": 1.201171875,
           "elements": 65536,
@@ -421,7 +421,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_025.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_025.hdf5",
           "time_code": 4.841229182759271,
           "t_over_tcc": 1.25,
           "elements": 65536,
@@ -434,7 +434,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_026.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_026.hdf5",
           "time_code": 5.0681618007011116,
           "t_over_tcc": 1.3085937499999998,
           "elements": 65536,
@@ -447,7 +447,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_027.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_027.hdf5",
           "time_code": 5.257272315652646,
           "t_over_tcc": 1.357421875,
           "elements": 65536,
@@ -460,7 +460,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_028.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_028.hdf5",
           "time_code": 5.44638283060418,
           "t_over_tcc": 1.40625,
           "elements": 65536,
@@ -473,7 +473,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_029.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_029.hdf5",
           "time_code": 5.635493345555714,
           "t_over_tcc": 1.455078125,
           "elements": 65536,
@@ -486,7 +486,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_030.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_030.hdf5",
           "time_code": 5.824603860507248,
           "t_over_tcc": 1.50390625,
           "elements": 65536,
@@ -499,7 +499,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_031.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_031.hdf5",
           "time_code": 6.013714375458782,
           "t_over_tcc": 1.5527343749999998,
           "elements": 65536,
@@ -512,7 +512,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_032.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_032.hdf5",
           "time_code": 6.202824890410316,
           "t_over_tcc": 1.6015624999999998,
           "elements": 65536,
@@ -525,7 +525,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_033.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_033.hdf5",
           "time_code": 6.39193540536185,
           "t_over_tcc": 1.650390625,
           "elements": 65536,
@@ -538,7 +538,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_034.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_034.hdf5",
           "time_code": 6.6188680233036905,
           "t_over_tcc": 1.7089843749999998,
           "elements": 65536,
@@ -551,7 +551,7 @@
           "tracer_mass_over_initial": 1.0000000000000004
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_035.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_035.hdf5",
           "time_code": 6.807978538255225,
           "t_over_tcc": 1.7578124999999998,
           "elements": 65536,
@@ -564,7 +564,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_036.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_036.hdf5",
           "time_code": 6.997089053206759,
           "t_over_tcc": 1.806640625,
           "elements": 65536,
@@ -577,7 +577,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_037.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_037.hdf5",
           "time_code": 7.186199568158293,
           "t_over_tcc": 1.85546875,
           "elements": 65536,
@@ -590,7 +590,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_038.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_038.hdf5",
           "time_code": 7.375310083109827,
           "t_over_tcc": 1.904296875,
           "elements": 65536,
@@ -603,7 +603,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_039.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_039.hdf5",
           "time_code": 7.564420598061361,
           "t_over_tcc": 1.9531249999999998,
           "elements": 65536,
@@ -616,7 +616,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_040.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_040.hdf5",
           "time_code": 7.753531113012895,
           "t_over_tcc": 2.001953125,
           "elements": 65536,
@@ -629,7 +629,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_041.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_041.hdf5",
           "time_code": 7.942641627964429,
           "t_over_tcc": 2.05078125,
           "elements": 65536,
@@ -642,7 +642,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_042.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_042.hdf5",
           "time_code": 8.16957424590627,
           "t_over_tcc": 2.109375,
           "elements": 65536,
@@ -655,7 +655,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_043.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_043.hdf5",
           "time_code": 8.358684760857804,
           "t_over_tcc": 2.158203125,
           "elements": 65536,
@@ -668,7 +668,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_044.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_044.hdf5",
           "time_code": 8.547795275809339,
           "t_over_tcc": 2.20703125,
           "elements": 65536,
@@ -681,7 +681,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_045.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_045.hdf5",
           "time_code": 8.736905790760872,
           "t_over_tcc": 2.255859375,
           "elements": 65536,
@@ -694,7 +694,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_046.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_046.hdf5",
           "time_code": 8.926016305712405,
           "t_over_tcc": 2.3046874999999996,
           "elements": 65536,
@@ -707,7 +707,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_047.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_047.hdf5",
           "time_code": 9.11512682066394,
           "t_over_tcc": 2.353515625,
           "elements": 65536,
@@ -720,7 +720,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_048.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_048.hdf5",
           "time_code": 9.304237335615474,
           "t_over_tcc": 2.40234375,
           "elements": 65536,
@@ -733,7 +733,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_049.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_049.hdf5",
           "time_code": 9.493347850567009,
           "t_over_tcc": 2.451171875,
           "elements": 65536,
@@ -746,7 +746,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_050.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_050.hdf5",
           "time_code": 9.682458365518542,
           "t_over_tcc": 2.5,
           "elements": 65536,
@@ -759,7 +759,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_051.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_051.hdf5",
           "time_code": 9.909390983460383,
           "t_over_tcc": 2.55859375,
           "elements": 65536,
@@ -772,7 +772,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_052.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_052.hdf5",
           "time_code": 10.098501498411917,
           "t_over_tcc": 2.607421875,
           "elements": 65536,
@@ -785,7 +785,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_053.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_053.hdf5",
           "time_code": 10.28761201336345,
           "t_over_tcc": 2.6562499999999996,
           "elements": 65536,
@@ -798,7 +798,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_054.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_054.hdf5",
           "time_code": 10.476722528314985,
           "t_over_tcc": 2.705078125,
           "elements": 65536,
@@ -811,7 +811,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_055.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_055.hdf5",
           "time_code": 10.665833043266518,
           "t_over_tcc": 2.7539062499999996,
           "elements": 65536,
@@ -824,7 +824,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_056.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_056.hdf5",
           "time_code": 10.854943558218054,
           "t_over_tcc": 2.802734375,
           "elements": 65536,
@@ -837,7 +837,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_057.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_057.hdf5",
           "time_code": 11.044054073169587,
           "t_over_tcc": 2.8515625,
           "elements": 65536,
@@ -850,7 +850,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_058.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_058.hdf5",
           "time_code": 11.233164588121122,
           "t_over_tcc": 2.900390625,
           "elements": 65536,
@@ -863,7 +863,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_059.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_059.hdf5",
           "time_code": 11.460097206062962,
           "t_over_tcc": 2.9589843749999996,
           "elements": 65536,
@@ -876,7 +876,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_060.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_060.hdf5",
           "time_code": 11.649207721014497,
           "t_over_tcc": 3.0078125,
           "elements": 65536,
@@ -889,7 +889,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_061.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_061.hdf5",
           "time_code": 11.83831823596603,
           "t_over_tcc": 3.056640625,
           "elements": 65536,
@@ -902,7 +902,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_062.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_062.hdf5",
           "time_code": 12.027428750917563,
           "t_over_tcc": 3.1054687499999996,
           "elements": 65536,
@@ -915,7 +915,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_063.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_063.hdf5",
           "time_code": 12.216539265869098,
           "t_over_tcc": 3.154296875,
           "elements": 65536,
@@ -928,7 +928,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_064.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_064.hdf5",
           "time_code": 12.405649780820632,
           "t_over_tcc": 3.2031249999999996,
           "elements": 65536,
@@ -941,7 +941,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_065.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_065.hdf5",
           "time_code": 12.594760295772167,
           "t_over_tcc": 3.251953125,
           "elements": 65536,
@@ -954,7 +954,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_066.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_066.hdf5",
           "time_code": 12.7838708107237,
           "t_over_tcc": 3.30078125,
           "elements": 65536,
@@ -967,7 +967,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_067.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_067.hdf5",
           "time_code": 13.010803428665541,
           "t_over_tcc": 3.359375,
           "elements": 65536,
@@ -980,7 +980,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_068.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_068.hdf5",
           "time_code": 13.199913943617075,
           "t_over_tcc": 3.4082031249999996,
           "elements": 65536,
@@ -993,7 +993,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_069.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_069.hdf5",
           "time_code": 13.38902445856861,
           "t_over_tcc": 3.45703125,
           "elements": 65536,
@@ -1006,7 +1006,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_070.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_070.hdf5",
           "time_code": 13.578134973520143,
           "t_over_tcc": 3.505859375,
           "elements": 65536,
@@ -1019,7 +1019,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_071.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_071.hdf5",
           "time_code": 13.767245488471676,
           "t_over_tcc": 3.5546874999999996,
           "elements": 65536,
@@ -1032,7 +1032,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_072.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_072.hdf5",
           "time_code": 13.956356003423211,
           "t_over_tcc": 3.603515625,
           "elements": 65536,
@@ -1045,7 +1045,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_073.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_073.hdf5",
           "time_code": 14.145466518374745,
           "t_over_tcc": 3.6523437499999996,
           "elements": 65536,
@@ -1058,7 +1058,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_074.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_074.hdf5",
           "time_code": 14.33457703332628,
           "t_over_tcc": 3.701171875,
           "elements": 65536,
@@ -1071,7 +1071,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_075.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_075.hdf5",
           "time_code": 14.523687548277813,
           "t_over_tcc": 3.75,
           "elements": 65536,
@@ -1084,7 +1084,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_076.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_076.hdf5",
           "time_code": 14.750620166219655,
           "t_over_tcc": 3.80859375,
           "elements": 65536,
@@ -1097,7 +1097,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_077.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_077.hdf5",
           "time_code": 14.939730681171188,
           "t_over_tcc": 3.857421875,
           "elements": 65536,
@@ -1110,7 +1110,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_078.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_078.hdf5",
           "time_code": 15.128841196122721,
           "t_over_tcc": 3.9062499999999996,
           "elements": 65536,
@@ -1123,7 +1123,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_079.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_079.hdf5",
           "time_code": 15.317951711074256,
           "t_over_tcc": 3.955078125,
           "elements": 65536,
@@ -1136,7 +1136,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_080.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_080.hdf5",
           "time_code": 15.50706222602579,
           "t_over_tcc": 4.00390625,
           "elements": 65536,
@@ -1149,7 +1149,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_081.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_081.hdf5",
           "time_code": 15.696172740977325,
           "t_over_tcc": 4.052734375,
           "elements": 65536,
@@ -1162,7 +1162,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_082.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_082.hdf5",
           "time_code": 15.885283255928858,
           "t_over_tcc": 4.1015625,
           "elements": 65536,
@@ -1175,7 +1175,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_083.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_083.hdf5",
           "time_code": 16.07439377088039,
           "t_over_tcc": 4.150390625,
           "elements": 65536,
@@ -1188,7 +1188,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_084.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_084.hdf5",
           "time_code": 16.301326388822233,
           "t_over_tcc": 4.208984375,
           "elements": 65536,
@@ -1201,7 +1201,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_085.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_085.hdf5",
           "time_code": 16.490436903773766,
           "t_over_tcc": 4.257812499999999,
           "elements": 65536,
@@ -1214,7 +1214,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_086.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_086.hdf5",
           "time_code": 16.679547418725303,
           "t_over_tcc": 4.306640625,
           "elements": 65536,
@@ -1227,7 +1227,7 @@
           "tracer_mass_over_initial": 0.9999999999999997
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_087.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_087.hdf5",
           "time_code": 16.868657933676836,
           "t_over_tcc": 4.35546875,
           "elements": 65536,
@@ -1240,7 +1240,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_088.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_088.hdf5",
           "time_code": 17.05776844862837,
           "t_over_tcc": 4.404296875,
           "elements": 65536,
@@ -1253,7 +1253,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_089.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_089.hdf5",
           "time_code": 17.246878963579903,
           "t_over_tcc": 4.453125,
           "elements": 65536,
@@ -1266,7 +1266,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_090.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_090.hdf5",
           "time_code": 17.435989478531436,
           "t_over_tcc": 4.501953124999999,
           "elements": 65536,
@@ -1279,7 +1279,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_091.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_091.hdf5",
           "time_code": 17.625099993482973,
           "t_over_tcc": 4.55078125,
           "elements": 65536,
@@ -1292,7 +1292,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_092.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_092.hdf5",
           "time_code": 17.85203261142481,
           "t_over_tcc": 4.609374999999999,
           "elements": 65536,
@@ -1305,7 +1305,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_093.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_093.hdf5",
           "time_code": 18.041143126376348,
           "t_over_tcc": 4.658203125,
           "elements": 65536,
@@ -1318,7 +1318,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_094.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_094.hdf5",
           "time_code": 18.23025364132788,
           "t_over_tcc": 4.70703125,
           "elements": 65536,
@@ -1331,7 +1331,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_095.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_095.hdf5",
           "time_code": 18.419364156279414,
           "t_over_tcc": 4.755859375,
           "elements": 65536,
@@ -1344,7 +1344,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_096.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_096.hdf5",
           "time_code": 18.608474671230947,
           "t_over_tcc": 4.8046875,
           "elements": 65536,
@@ -1357,7 +1357,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_097.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_097.hdf5",
           "time_code": 18.79758518618248,
           "t_over_tcc": 4.853515624999999,
           "elements": 65536,
@@ -1370,7 +1370,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_098.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_098.hdf5",
           "time_code": 18.986695701134018,
           "t_over_tcc": 4.90234375,
           "elements": 65536,
@@ -1383,7 +1383,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_099.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_099.hdf5",
           "time_code": 19.17580621608555,
           "t_over_tcc": 4.951171875,
           "elements": 65536,
@@ -1396,7 +1396,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_100.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_sharp13/output/snap_100.hdf5",
           "time_code": 19.364916731037084,
           "t_over_tcc": 5.0,
           "elements": 65536,
@@ -1430,7 +1430,7 @@
       "status": "complete_native_checks",
       "level": 3,
       "mode": 1,
-      "directory": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13",
+      "directory": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13",
       "physics": {
         "code": "Arepo",
         "chi": 100,
@@ -1471,13 +1471,13 @@
         "core",
         "-np",
         "8",
-        "/home/kaan/sensitivity_20260907/arepo/Arepo_pair",
+        "/home/user/sensitivity_20260907/arepo/Arepo_pair",
         "param.txt"
       ],
       "generate_command": [
-        "/home/kaan/venv/bin/python",
-        "/home/kaan/sensitivity_20260907/arepo/generator_historical.py",
-        "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13",
+        "/home/user/venv/bin/python",
+        "/home/user/sensitivity_20260907/arepo/generator_historical.py",
+        "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13",
         "100",
         "32",
         "--ndim",
@@ -1495,12 +1495,12 @@
       "launcher_sha256": "f6806defd0ff6dc139232a9a0baf385e6ba8ebe7c297147cf386941a89912356",
       "started_unix": 1788827698.1311991,
       "storage_preflight": {
-        "path": "/home/kaan/sensitivity_20260907/arepo",
+        "path": "/home/user/sensitivity_20260907/arepo",
         "filesystem_free_bytes": 45686697984,
         "filesystem_total_bytes": 1081101176832,
         "windows_backing_volume": {
           "distribution": "Ubuntu",
-          "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+          "base_path": "C:\\Users\\user\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
           "drive": "C:",
           "free_bytes": 38070960128,
           "total_bytes": 1999283154944
@@ -1515,7 +1515,7 @@
       "peak_child_rss_gib": 1.67340087890625,
       "series": [
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_000.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_000.hdf5",
           "time_code": 0.0,
           "t_over_tcc": 0.0,
           "elements": 65536,
@@ -1534,7 +1534,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_001.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_001.hdf5",
           "time_code": 0.22693261794184083,
           "t_over_tcc": 0.05859375,
           "elements": 65536,
@@ -1547,7 +1547,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_002.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_002.hdf5",
           "time_code": 0.41604313289337486,
           "t_over_tcc": 0.107421875,
           "elements": 65536,
@@ -1560,7 +1560,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_003.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_003.hdf5",
           "time_code": 0.6051536478449089,
           "t_over_tcc": 0.15625,
           "elements": 65536,
@@ -1573,7 +1573,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_004.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_004.hdf5",
           "time_code": 0.7942641627964429,
           "t_over_tcc": 0.20507812499999997,
           "elements": 65536,
@@ -1586,7 +1586,7 @@
           "tracer_mass_over_initial": 1.0000000000000004
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_005.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_005.hdf5",
           "time_code": 0.9833746777479769,
           "t_over_tcc": 0.25390625,
           "elements": 65536,
@@ -1599,7 +1599,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_006.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_006.hdf5",
           "time_code": 1.172485192699511,
           "t_over_tcc": 0.302734375,
           "elements": 65536,
@@ -1612,7 +1612,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_007.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_007.hdf5",
           "time_code": 1.361595707651045,
           "t_over_tcc": 0.3515625,
           "elements": 65536,
@@ -1625,7 +1625,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_008.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_008.hdf5",
           "time_code": 1.550706222602579,
           "t_over_tcc": 0.40039062499999994,
           "elements": 65536,
@@ -1638,7 +1638,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_009.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_009.hdf5",
           "time_code": 1.77763884054442,
           "t_over_tcc": 0.458984375,
           "elements": 65536,
@@ -1651,7 +1651,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_010.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_010.hdf5",
           "time_code": 1.9667493554959539,
           "t_over_tcc": 0.5078125,
           "elements": 65536,
@@ -1664,7 +1664,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_011.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_011.hdf5",
           "time_code": 2.155859870447488,
           "t_over_tcc": 0.556640625,
           "elements": 65536,
@@ -1677,7 +1677,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_012.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_012.hdf5",
           "time_code": 2.344970385399022,
           "t_over_tcc": 0.60546875,
           "elements": 65536,
@@ -1690,7 +1690,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_013.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_013.hdf5",
           "time_code": 2.5340809003505558,
           "t_over_tcc": 0.6542968749999999,
           "elements": 65536,
@@ -1703,7 +1703,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_014.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_014.hdf5",
           "time_code": 2.72319141530209,
           "t_over_tcc": 0.703125,
           "elements": 65536,
@@ -1716,7 +1716,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_015.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_015.hdf5",
           "time_code": 2.912301930253624,
           "t_over_tcc": 0.751953125,
           "elements": 65536,
@@ -1729,7 +1729,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_016.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_016.hdf5",
           "time_code": 3.101412445205158,
           "t_over_tcc": 0.8007812499999999,
           "elements": 65536,
@@ -1742,7 +1742,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_017.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_017.hdf5",
           "time_code": 3.328345063146999,
           "t_over_tcc": 0.859375,
           "elements": 65536,
@@ -1755,7 +1755,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_018.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_018.hdf5",
           "time_code": 3.517455578098533,
           "t_over_tcc": 0.908203125,
           "elements": 65536,
@@ -1768,7 +1768,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_019.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_019.hdf5",
           "time_code": 3.706566093050067,
           "t_over_tcc": 0.9570312499999999,
           "elements": 65536,
@@ -1781,7 +1781,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_020.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_020.hdf5",
           "time_code": 3.895676608001601,
           "t_over_tcc": 1.005859375,
           "elements": 65536,
@@ -1794,7 +1794,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_021.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_021.hdf5",
           "time_code": 4.084787122953135,
           "t_over_tcc": 1.0546875,
           "elements": 65536,
@@ -1807,7 +1807,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_022.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_022.hdf5",
           "time_code": 4.273897637904669,
           "t_over_tcc": 1.103515625,
           "elements": 65536,
@@ -1820,7 +1820,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_023.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_023.hdf5",
           "time_code": 4.463008152856203,
           "t_over_tcc": 1.1523437499999998,
           "elements": 65536,
@@ -1833,7 +1833,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_024.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_024.hdf5",
           "time_code": 4.652118667807737,
           "t_over_tcc": 1.201171875,
           "elements": 65536,
@@ -1846,7 +1846,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_025.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_025.hdf5",
           "time_code": 4.841229182759271,
           "t_over_tcc": 1.25,
           "elements": 65536,
@@ -1859,7 +1859,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_026.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_026.hdf5",
           "time_code": 5.0681618007011116,
           "t_over_tcc": 1.3085937499999998,
           "elements": 65536,
@@ -1872,7 +1872,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_027.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_027.hdf5",
           "time_code": 5.257272315652646,
           "t_over_tcc": 1.357421875,
           "elements": 65536,
@@ -1885,7 +1885,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_028.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_028.hdf5",
           "time_code": 5.44638283060418,
           "t_over_tcc": 1.40625,
           "elements": 65536,
@@ -1898,7 +1898,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_029.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_029.hdf5",
           "time_code": 5.635493345555714,
           "t_over_tcc": 1.455078125,
           "elements": 65536,
@@ -1911,7 +1911,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_030.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_030.hdf5",
           "time_code": 5.824603860507248,
           "t_over_tcc": 1.50390625,
           "elements": 65536,
@@ -1924,7 +1924,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_031.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_031.hdf5",
           "time_code": 6.013714375458782,
           "t_over_tcc": 1.5527343749999998,
           "elements": 65536,
@@ -1937,7 +1937,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_032.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_032.hdf5",
           "time_code": 6.202824890410316,
           "t_over_tcc": 1.6015624999999998,
           "elements": 65536,
@@ -1950,7 +1950,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_033.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_033.hdf5",
           "time_code": 6.39193540536185,
           "t_over_tcc": 1.650390625,
           "elements": 65536,
@@ -1963,7 +1963,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_034.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_034.hdf5",
           "time_code": 6.6188680233036905,
           "t_over_tcc": 1.7089843749999998,
           "elements": 65536,
@@ -1976,7 +1976,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_035.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_035.hdf5",
           "time_code": 6.807978538255225,
           "t_over_tcc": 1.7578124999999998,
           "elements": 65536,
@@ -1989,7 +1989,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_036.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_036.hdf5",
           "time_code": 6.997089053206759,
           "t_over_tcc": 1.806640625,
           "elements": 65536,
@@ -2002,7 +2002,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_037.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_037.hdf5",
           "time_code": 7.186199568158293,
           "t_over_tcc": 1.85546875,
           "elements": 65536,
@@ -2015,7 +2015,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_038.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_038.hdf5",
           "time_code": 7.375310083109827,
           "t_over_tcc": 1.904296875,
           "elements": 65536,
@@ -2028,7 +2028,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_039.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_039.hdf5",
           "time_code": 7.564420598061361,
           "t_over_tcc": 1.9531249999999998,
           "elements": 65536,
@@ -2041,7 +2041,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_040.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_040.hdf5",
           "time_code": 7.753531113012895,
           "t_over_tcc": 2.001953125,
           "elements": 65536,
@@ -2054,7 +2054,7 @@
           "tracer_mass_over_initial": 0.9999999999999997
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_041.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_041.hdf5",
           "time_code": 7.942641627964429,
           "t_over_tcc": 2.05078125,
           "elements": 65536,
@@ -2067,7 +2067,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_042.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_042.hdf5",
           "time_code": 8.16957424590627,
           "t_over_tcc": 2.109375,
           "elements": 65536,
@@ -2080,7 +2080,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_043.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_043.hdf5",
           "time_code": 8.358684760857804,
           "t_over_tcc": 2.158203125,
           "elements": 65536,
@@ -2093,7 +2093,7 @@
           "tracer_mass_over_initial": 0.9999999999999997
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_044.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_044.hdf5",
           "time_code": 8.547795275809339,
           "t_over_tcc": 2.20703125,
           "elements": 65536,
@@ -2106,7 +2106,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_045.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_045.hdf5",
           "time_code": 8.736905790760872,
           "t_over_tcc": 2.255859375,
           "elements": 65536,
@@ -2119,7 +2119,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_046.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_046.hdf5",
           "time_code": 8.926016305712405,
           "t_over_tcc": 2.3046874999999996,
           "elements": 65536,
@@ -2132,7 +2132,7 @@
           "tracer_mass_over_initial": 0.9999999999999996
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_047.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_047.hdf5",
           "time_code": 9.11512682066394,
           "t_over_tcc": 2.353515625,
           "elements": 65536,
@@ -2145,7 +2145,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_048.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_048.hdf5",
           "time_code": 9.304237335615474,
           "t_over_tcc": 2.40234375,
           "elements": 65536,
@@ -2158,7 +2158,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_049.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_049.hdf5",
           "time_code": 9.493347850567009,
           "t_over_tcc": 2.451171875,
           "elements": 65536,
@@ -2171,7 +2171,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_050.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_050.hdf5",
           "time_code": 9.682458365518542,
           "t_over_tcc": 2.5,
           "elements": 65536,
@@ -2184,7 +2184,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_051.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_051.hdf5",
           "time_code": 9.909390983460383,
           "t_over_tcc": 2.55859375,
           "elements": 65536,
@@ -2197,7 +2197,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_052.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_052.hdf5",
           "time_code": 10.098501498411917,
           "t_over_tcc": 2.607421875,
           "elements": 65536,
@@ -2210,7 +2210,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_053.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_053.hdf5",
           "time_code": 10.28761201336345,
           "t_over_tcc": 2.6562499999999996,
           "elements": 65536,
@@ -2223,7 +2223,7 @@
           "tracer_mass_over_initial": 0.9999999999999997
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_054.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_054.hdf5",
           "time_code": 10.476722528314985,
           "t_over_tcc": 2.705078125,
           "elements": 65536,
@@ -2236,7 +2236,7 @@
           "tracer_mass_over_initial": 0.9999999999999997
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_055.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_055.hdf5",
           "time_code": 10.665833043266518,
           "t_over_tcc": 2.7539062499999996,
           "elements": 65536,
@@ -2249,7 +2249,7 @@
           "tracer_mass_over_initial": 0.9999999999999997
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_056.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_056.hdf5",
           "time_code": 10.854943558218054,
           "t_over_tcc": 2.802734375,
           "elements": 65536,
@@ -2262,7 +2262,7 @@
           "tracer_mass_over_initial": 0.9999999999999996
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_057.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_057.hdf5",
           "time_code": 11.044054073169587,
           "t_over_tcc": 2.8515625,
           "elements": 65536,
@@ -2275,7 +2275,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_058.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_058.hdf5",
           "time_code": 11.233164588121122,
           "t_over_tcc": 2.900390625,
           "elements": 65536,
@@ -2288,7 +2288,7 @@
           "tracer_mass_over_initial": 0.9999999999999996
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_059.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_059.hdf5",
           "time_code": 11.460097206062962,
           "t_over_tcc": 2.9589843749999996,
           "elements": 65536,
@@ -2301,7 +2301,7 @@
           "tracer_mass_over_initial": 0.9999999999999997
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_060.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_060.hdf5",
           "time_code": 11.649207721014497,
           "t_over_tcc": 3.0078125,
           "elements": 65536,
@@ -2314,7 +2314,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_061.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_061.hdf5",
           "time_code": 11.83831823596603,
           "t_over_tcc": 3.056640625,
           "elements": 65536,
@@ -2327,7 +2327,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_062.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_062.hdf5",
           "time_code": 12.027428750917563,
           "t_over_tcc": 3.1054687499999996,
           "elements": 65536,
@@ -2340,7 +2340,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_063.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_063.hdf5",
           "time_code": 12.216539265869098,
           "t_over_tcc": 3.154296875,
           "elements": 65536,
@@ -2353,7 +2353,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_064.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_064.hdf5",
           "time_code": 12.405649780820632,
           "t_over_tcc": 3.2031249999999996,
           "elements": 65536,
@@ -2366,7 +2366,7 @@
           "tracer_mass_over_initial": 0.9999999999999997
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_065.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_065.hdf5",
           "time_code": 12.594760295772167,
           "t_over_tcc": 3.251953125,
           "elements": 65536,
@@ -2379,7 +2379,7 @@
           "tracer_mass_over_initial": 0.9999999999999997
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_066.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_066.hdf5",
           "time_code": 12.7838708107237,
           "t_over_tcc": 3.30078125,
           "elements": 65536,
@@ -2392,7 +2392,7 @@
           "tracer_mass_over_initial": 0.9999999999999996
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_067.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_067.hdf5",
           "time_code": 13.010803428665541,
           "t_over_tcc": 3.359375,
           "elements": 65536,
@@ -2405,7 +2405,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_068.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_068.hdf5",
           "time_code": 13.199913943617075,
           "t_over_tcc": 3.4082031249999996,
           "elements": 65536,
@@ -2418,7 +2418,7 @@
           "tracer_mass_over_initial": 0.9999999999999996
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_069.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_069.hdf5",
           "time_code": 13.38902445856861,
           "t_over_tcc": 3.45703125,
           "elements": 65536,
@@ -2431,7 +2431,7 @@
           "tracer_mass_over_initial": 0.9999999999999997
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_070.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_070.hdf5",
           "time_code": 13.578134973520143,
           "t_over_tcc": 3.505859375,
           "elements": 65536,
@@ -2444,7 +2444,7 @@
           "tracer_mass_over_initial": 0.9999999999999997
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_071.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_071.hdf5",
           "time_code": 13.767245488471676,
           "t_over_tcc": 3.5546874999999996,
           "elements": 65536,
@@ -2457,7 +2457,7 @@
           "tracer_mass_over_initial": 0.9999999999999997
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_072.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_072.hdf5",
           "time_code": 13.956356003423211,
           "t_over_tcc": 3.603515625,
           "elements": 65536,
@@ -2470,7 +2470,7 @@
           "tracer_mass_over_initial": 0.9999999999999997
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_073.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_073.hdf5",
           "time_code": 14.145466518374745,
           "t_over_tcc": 3.6523437499999996,
           "elements": 65536,
@@ -2483,7 +2483,7 @@
           "tracer_mass_over_initial": 0.9999999999999996
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_074.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_074.hdf5",
           "time_code": 14.33457703332628,
           "t_over_tcc": 3.701171875,
           "elements": 65536,
@@ -2496,7 +2496,7 @@
           "tracer_mass_over_initial": 0.9999999999999997
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_075.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_075.hdf5",
           "time_code": 14.523687548277813,
           "t_over_tcc": 3.75,
           "elements": 65536,
@@ -2509,7 +2509,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_076.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_076.hdf5",
           "time_code": 14.750620166219655,
           "t_over_tcc": 3.80859375,
           "elements": 65536,
@@ -2522,7 +2522,7 @@
           "tracer_mass_over_initial": 0.9999999999999996
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_077.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_077.hdf5",
           "time_code": 14.939730681171188,
           "t_over_tcc": 3.857421875,
           "elements": 65536,
@@ -2535,7 +2535,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_078.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_078.hdf5",
           "time_code": 15.128841196122721,
           "t_over_tcc": 3.9062499999999996,
           "elements": 65536,
@@ -2548,7 +2548,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_079.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_079.hdf5",
           "time_code": 15.317951711074256,
           "t_over_tcc": 3.955078125,
           "elements": 65536,
@@ -2561,7 +2561,7 @@
           "tracer_mass_over_initial": 0.9999999999999996
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_080.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_080.hdf5",
           "time_code": 15.50706222602579,
           "t_over_tcc": 4.00390625,
           "elements": 65536,
@@ -2574,7 +2574,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_081.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_081.hdf5",
           "time_code": 15.696172740977325,
           "t_over_tcc": 4.052734375,
           "elements": 65536,
@@ -2587,7 +2587,7 @@
           "tracer_mass_over_initial": 0.9999999999999997
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_082.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_082.hdf5",
           "time_code": 15.885283255928858,
           "t_over_tcc": 4.1015625,
           "elements": 65536,
@@ -2600,7 +2600,7 @@
           "tracer_mass_over_initial": 0.9999999999999997
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_083.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_083.hdf5",
           "time_code": 16.07439377088039,
           "t_over_tcc": 4.150390625,
           "elements": 65536,
@@ -2613,7 +2613,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_084.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_084.hdf5",
           "time_code": 16.301326388822233,
           "t_over_tcc": 4.208984375,
           "elements": 65536,
@@ -2626,7 +2626,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_085.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_085.hdf5",
           "time_code": 16.490436903773766,
           "t_over_tcc": 4.257812499999999,
           "elements": 65536,
@@ -2639,7 +2639,7 @@
           "tracer_mass_over_initial": 0.9999999999999996
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_086.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_086.hdf5",
           "time_code": 16.679547418725303,
           "t_over_tcc": 4.306640625,
           "elements": 65536,
@@ -2652,7 +2652,7 @@
           "tracer_mass_over_initial": 0.9999999999999997
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_087.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_087.hdf5",
           "time_code": 16.868657933676836,
           "t_over_tcc": 4.35546875,
           "elements": 65536,
@@ -2665,7 +2665,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_088.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_088.hdf5",
           "time_code": 17.05776844862837,
           "t_over_tcc": 4.404296875,
           "elements": 65536,
@@ -2678,7 +2678,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_089.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_089.hdf5",
           "time_code": 17.246878963579903,
           "t_over_tcc": 4.453125,
           "elements": 65536,
@@ -2691,7 +2691,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_090.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_090.hdf5",
           "time_code": 17.435989478531436,
           "t_over_tcc": 4.501953124999999,
           "elements": 65536,
@@ -2704,7 +2704,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_091.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_091.hdf5",
           "time_code": 17.625099993482973,
           "t_over_tcc": 4.55078125,
           "elements": 65536,
@@ -2717,7 +2717,7 @@
           "tracer_mass_over_initial": 0.9999999999999996
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_092.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_092.hdf5",
           "time_code": 17.85203261142481,
           "t_over_tcc": 4.609374999999999,
           "elements": 65536,
@@ -2730,7 +2730,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_093.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_093.hdf5",
           "time_code": 18.041143126376348,
           "t_over_tcc": 4.658203125,
           "elements": 65536,
@@ -2743,7 +2743,7 @@
           "tracer_mass_over_initial": 0.9999999999999997
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_094.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_094.hdf5",
           "time_code": 18.23025364132788,
           "t_over_tcc": 4.70703125,
           "elements": 65536,
@@ -2756,7 +2756,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_095.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_095.hdf5",
           "time_code": 18.419364156279414,
           "t_over_tcc": 4.755859375,
           "elements": 65536,
@@ -2769,7 +2769,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_096.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_096.hdf5",
           "time_code": 18.608474671230947,
           "t_over_tcc": 4.8046875,
           "elements": 65536,
@@ -2782,7 +2782,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_097.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_097.hdf5",
           "time_code": 18.79758518618248,
           "t_over_tcc": 4.853515624999999,
           "elements": 65536,
@@ -2795,7 +2795,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_098.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_098.hdf5",
           "time_code": 18.986695701134018,
           "t_over_tcc": 4.90234375,
           "elements": 65536,
@@ -2808,7 +2808,7 @@
           "tracer_mass_over_initial": 0.9999999999999997
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_099.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_099.hdf5",
           "time_code": 19.17580621608555,
           "t_over_tcc": 4.951171875,
           "elements": 65536,
@@ -2821,7 +2821,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_100.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L3_chi100_tanh13/output/snap_100.hdf5",
           "time_code": 19.364916731037084,
           "t_over_tcc": 5.0,
           "elements": 65536,
@@ -2855,7 +2855,7 @@
       "status": "complete_native_checks",
       "level": 4,
       "mode": 0,
-      "directory": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13",
+      "directory": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13",
       "physics": {
         "code": "Arepo",
         "chi": 100,
@@ -2896,13 +2896,13 @@
         "core",
         "-np",
         "8",
-        "/home/kaan/sensitivity_20260907/arepo/Arepo_pair",
+        "/home/user/sensitivity_20260907/arepo/Arepo_pair",
         "param.txt"
       ],
       "generate_command": [
-        "/home/kaan/venv/bin/python",
-        "/home/kaan/sensitivity_20260907/arepo/generator_sharp.py",
-        "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13",
+        "/home/user/venv/bin/python",
+        "/home/user/sensitivity_20260907/arepo/generator_sharp.py",
+        "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13",
         "100",
         "64",
         "--ndim",
@@ -2920,12 +2920,12 @@
       "launcher_sha256": "f6806defd0ff6dc139232a9a0baf385e6ba8ebe7c297147cf386941a89912356",
       "started_unix": 1788827959.8572748,
       "storage_preflight": {
-        "path": "/home/kaan/sensitivity_20260907/arepo",
+        "path": "/home/user/sensitivity_20260907/arepo",
         "filesystem_free_bytes": 44879634432,
         "filesystem_total_bytes": 1081101176832,
         "windows_backing_volume": {
           "distribution": "Ubuntu",
-          "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+          "base_path": "C:\\Users\\user\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
           "drive": "C:",
           "free_bytes": 38063759360,
           "total_bytes": 1999283154944
@@ -2940,7 +2940,7 @@
       "peak_child_rss_gib": 3.6388511657714844,
       "series": [
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_000.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_000.hdf5",
           "time_code": 0.0,
           "t_over_tcc": 0.0,
           "elements": 524288,
@@ -2959,7 +2959,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_001.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_001.hdf5",
           "time_code": 0.22693261794184083,
           "t_over_tcc": 0.05859375,
           "elements": 524288,
@@ -2972,7 +2972,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_002.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_002.hdf5",
           "time_code": 0.41604313289337486,
           "t_over_tcc": 0.107421875,
           "elements": 524288,
@@ -2985,7 +2985,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_003.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_003.hdf5",
           "time_code": 0.6051536478449089,
           "t_over_tcc": 0.15625,
           "elements": 524288,
@@ -2998,7 +2998,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_004.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_004.hdf5",
           "time_code": 0.7942641627964429,
           "t_over_tcc": 0.20507812499999997,
           "elements": 524288,
@@ -3011,7 +3011,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_005.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_005.hdf5",
           "time_code": 0.9833746777479769,
           "t_over_tcc": 0.25390625,
           "elements": 524288,
@@ -3024,7 +3024,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_006.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_006.hdf5",
           "time_code": 1.172485192699511,
           "t_over_tcc": 0.302734375,
           "elements": 524288,
@@ -3037,7 +3037,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_007.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_007.hdf5",
           "time_code": 1.361595707651045,
           "t_over_tcc": 0.3515625,
           "elements": 524288,
@@ -3050,7 +3050,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_008.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_008.hdf5",
           "time_code": 1.550706222602579,
           "t_over_tcc": 0.40039062499999994,
           "elements": 524288,
@@ -3063,7 +3063,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_009.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_009.hdf5",
           "time_code": 1.77763884054442,
           "t_over_tcc": 0.458984375,
           "elements": 524288,
@@ -3076,7 +3076,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_010.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_010.hdf5",
           "time_code": 1.9667493554959539,
           "t_over_tcc": 0.5078125,
           "elements": 524288,
@@ -3089,7 +3089,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_011.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_011.hdf5",
           "time_code": 2.155859870447488,
           "t_over_tcc": 0.556640625,
           "elements": 524288,
@@ -3102,7 +3102,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_012.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_012.hdf5",
           "time_code": 2.344970385399022,
           "t_over_tcc": 0.60546875,
           "elements": 524288,
@@ -3115,7 +3115,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_013.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_013.hdf5",
           "time_code": 2.5340809003505558,
           "t_over_tcc": 0.6542968749999999,
           "elements": 524288,
@@ -3128,7 +3128,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_014.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_014.hdf5",
           "time_code": 2.72319141530209,
           "t_over_tcc": 0.703125,
           "elements": 524288,
@@ -3141,7 +3141,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_015.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_015.hdf5",
           "time_code": 2.912301930253624,
           "t_over_tcc": 0.751953125,
           "elements": 524288,
@@ -3154,7 +3154,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_016.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_016.hdf5",
           "time_code": 3.101412445205158,
           "t_over_tcc": 0.8007812499999999,
           "elements": 524288,
@@ -3167,7 +3167,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_017.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_017.hdf5",
           "time_code": 3.328345063146999,
           "t_over_tcc": 0.859375,
           "elements": 524288,
@@ -3180,7 +3180,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_018.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_018.hdf5",
           "time_code": 3.517455578098533,
           "t_over_tcc": 0.908203125,
           "elements": 524288,
@@ -3193,7 +3193,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_019.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_019.hdf5",
           "time_code": 3.706566093050067,
           "t_over_tcc": 0.9570312499999999,
           "elements": 524288,
@@ -3206,7 +3206,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_020.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_020.hdf5",
           "time_code": 3.895676608001601,
           "t_over_tcc": 1.005859375,
           "elements": 524288,
@@ -3219,7 +3219,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_021.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_021.hdf5",
           "time_code": 4.084787122953135,
           "t_over_tcc": 1.0546875,
           "elements": 524288,
@@ -3232,7 +3232,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_022.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_022.hdf5",
           "time_code": 4.273897637904669,
           "t_over_tcc": 1.103515625,
           "elements": 524288,
@@ -3245,7 +3245,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_023.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_023.hdf5",
           "time_code": 4.463008152856203,
           "t_over_tcc": 1.1523437499999998,
           "elements": 524288,
@@ -3258,7 +3258,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_024.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_024.hdf5",
           "time_code": 4.652118667807737,
           "t_over_tcc": 1.201171875,
           "elements": 524288,
@@ -3271,7 +3271,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_025.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_025.hdf5",
           "time_code": 4.841229182759271,
           "t_over_tcc": 1.25,
           "elements": 524288,
@@ -3284,7 +3284,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_026.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_026.hdf5",
           "time_code": 5.0681618007011116,
           "t_over_tcc": 1.3085937499999998,
           "elements": 524288,
@@ -3297,7 +3297,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_027.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_027.hdf5",
           "time_code": 5.257272315652646,
           "t_over_tcc": 1.357421875,
           "elements": 524288,
@@ -3310,7 +3310,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_028.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_028.hdf5",
           "time_code": 5.44638283060418,
           "t_over_tcc": 1.40625,
           "elements": 524288,
@@ -3323,7 +3323,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_029.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_029.hdf5",
           "time_code": 5.635493345555714,
           "t_over_tcc": 1.455078125,
           "elements": 524288,
@@ -3336,7 +3336,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_030.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_030.hdf5",
           "time_code": 5.824603860507248,
           "t_over_tcc": 1.50390625,
           "elements": 524288,
@@ -3349,7 +3349,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_031.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_031.hdf5",
           "time_code": 6.013714375458782,
           "t_over_tcc": 1.5527343749999998,
           "elements": 524288,
@@ -3362,7 +3362,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_032.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_032.hdf5",
           "time_code": 6.202824890410316,
           "t_over_tcc": 1.6015624999999998,
           "elements": 524288,
@@ -3375,7 +3375,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_033.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_033.hdf5",
           "time_code": 6.39193540536185,
           "t_over_tcc": 1.650390625,
           "elements": 524288,
@@ -3388,7 +3388,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_034.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_034.hdf5",
           "time_code": 6.6188680233036905,
           "t_over_tcc": 1.7089843749999998,
           "elements": 524288,
@@ -3401,7 +3401,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_035.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_035.hdf5",
           "time_code": 6.807978538255225,
           "t_over_tcc": 1.7578124999999998,
           "elements": 524288,
@@ -3414,7 +3414,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_036.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_036.hdf5",
           "time_code": 6.997089053206759,
           "t_over_tcc": 1.806640625,
           "elements": 524288,
@@ -3427,7 +3427,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_037.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_037.hdf5",
           "time_code": 7.186199568158293,
           "t_over_tcc": 1.85546875,
           "elements": 524288,
@@ -3440,7 +3440,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_038.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_038.hdf5",
           "time_code": 7.375310083109827,
           "t_over_tcc": 1.904296875,
           "elements": 524288,
@@ -3453,7 +3453,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_039.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_039.hdf5",
           "time_code": 7.564420598061361,
           "t_over_tcc": 1.9531249999999998,
           "elements": 524288,
@@ -3466,7 +3466,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_040.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_040.hdf5",
           "time_code": 7.753531113012895,
           "t_over_tcc": 2.001953125,
           "elements": 524288,
@@ -3479,7 +3479,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_041.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_041.hdf5",
           "time_code": 7.942641627964429,
           "t_over_tcc": 2.05078125,
           "elements": 524288,
@@ -3492,7 +3492,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_042.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_042.hdf5",
           "time_code": 8.16957424590627,
           "t_over_tcc": 2.109375,
           "elements": 524288,
@@ -3505,7 +3505,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_043.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_043.hdf5",
           "time_code": 8.358684760857804,
           "t_over_tcc": 2.158203125,
           "elements": 524288,
@@ -3518,7 +3518,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_044.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_044.hdf5",
           "time_code": 8.547795275809339,
           "t_over_tcc": 2.20703125,
           "elements": 524288,
@@ -3531,7 +3531,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_045.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_045.hdf5",
           "time_code": 8.736905790760872,
           "t_over_tcc": 2.255859375,
           "elements": 524288,
@@ -3544,7 +3544,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_046.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_046.hdf5",
           "time_code": 8.926016305712405,
           "t_over_tcc": 2.3046874999999996,
           "elements": 524288,
@@ -3557,7 +3557,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_047.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_047.hdf5",
           "time_code": 9.11512682066394,
           "t_over_tcc": 2.353515625,
           "elements": 524288,
@@ -3570,7 +3570,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_048.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_048.hdf5",
           "time_code": 9.304237335615474,
           "t_over_tcc": 2.40234375,
           "elements": 524288,
@@ -3583,7 +3583,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_049.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_049.hdf5",
           "time_code": 9.493347850567009,
           "t_over_tcc": 2.451171875,
           "elements": 524288,
@@ -3596,7 +3596,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_050.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_050.hdf5",
           "time_code": 9.682458365518542,
           "t_over_tcc": 2.5,
           "elements": 524288,
@@ -3609,7 +3609,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_051.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_051.hdf5",
           "time_code": 9.909390983460383,
           "t_over_tcc": 2.55859375,
           "elements": 524288,
@@ -3622,7 +3622,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_052.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_052.hdf5",
           "time_code": 10.098501498411917,
           "t_over_tcc": 2.607421875,
           "elements": 524288,
@@ -3635,7 +3635,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_053.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_053.hdf5",
           "time_code": 10.28761201336345,
           "t_over_tcc": 2.6562499999999996,
           "elements": 524288,
@@ -3648,7 +3648,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_054.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_054.hdf5",
           "time_code": 10.476722528314985,
           "t_over_tcc": 2.705078125,
           "elements": 524288,
@@ -3661,7 +3661,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_055.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_055.hdf5",
           "time_code": 10.665833043266518,
           "t_over_tcc": 2.7539062499999996,
           "elements": 524288,
@@ -3674,7 +3674,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_056.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_056.hdf5",
           "time_code": 10.854943558218054,
           "t_over_tcc": 2.802734375,
           "elements": 524288,
@@ -3687,7 +3687,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_057.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_057.hdf5",
           "time_code": 11.044054073169587,
           "t_over_tcc": 2.8515625,
           "elements": 524288,
@@ -3700,7 +3700,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_058.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_058.hdf5",
           "time_code": 11.233164588121122,
           "t_over_tcc": 2.900390625,
           "elements": 524288,
@@ -3713,7 +3713,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_059.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_059.hdf5",
           "time_code": 11.460097206062962,
           "t_over_tcc": 2.9589843749999996,
           "elements": 524288,
@@ -3726,7 +3726,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_060.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_060.hdf5",
           "time_code": 11.649207721014497,
           "t_over_tcc": 3.0078125,
           "elements": 524288,
@@ -3739,7 +3739,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_061.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_061.hdf5",
           "time_code": 11.83831823596603,
           "t_over_tcc": 3.056640625,
           "elements": 524288,
@@ -3752,7 +3752,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_062.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_062.hdf5",
           "time_code": 12.027428750917563,
           "t_over_tcc": 3.1054687499999996,
           "elements": 524288,
@@ -3765,7 +3765,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_063.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_063.hdf5",
           "time_code": 12.216539265869098,
           "t_over_tcc": 3.154296875,
           "elements": 524288,
@@ -3778,7 +3778,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_064.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_064.hdf5",
           "time_code": 12.405649780820632,
           "t_over_tcc": 3.2031249999999996,
           "elements": 524288,
@@ -3791,7 +3791,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_065.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_065.hdf5",
           "time_code": 12.594760295772167,
           "t_over_tcc": 3.251953125,
           "elements": 524288,
@@ -3804,7 +3804,7 @@
           "tracer_mass_over_initial": 1.0000000000000004
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_066.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_066.hdf5",
           "time_code": 12.7838708107237,
           "t_over_tcc": 3.30078125,
           "elements": 524288,
@@ -3817,7 +3817,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_067.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_067.hdf5",
           "time_code": 13.010803428665541,
           "t_over_tcc": 3.359375,
           "elements": 524288,
@@ -3830,7 +3830,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_068.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_068.hdf5",
           "time_code": 13.199913943617075,
           "t_over_tcc": 3.4082031249999996,
           "elements": 524288,
@@ -3843,7 +3843,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_069.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_069.hdf5",
           "time_code": 13.38902445856861,
           "t_over_tcc": 3.45703125,
           "elements": 524288,
@@ -3856,7 +3856,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_070.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_070.hdf5",
           "time_code": 13.578134973520143,
           "t_over_tcc": 3.505859375,
           "elements": 524288,
@@ -3869,7 +3869,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_071.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_071.hdf5",
           "time_code": 13.767245488471676,
           "t_over_tcc": 3.5546874999999996,
           "elements": 524288,
@@ -3882,7 +3882,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_072.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_072.hdf5",
           "time_code": 13.956356003423211,
           "t_over_tcc": 3.603515625,
           "elements": 524288,
@@ -3895,7 +3895,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_073.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_073.hdf5",
           "time_code": 14.145466518374745,
           "t_over_tcc": 3.6523437499999996,
           "elements": 524288,
@@ -3908,7 +3908,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_074.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_074.hdf5",
           "time_code": 14.33457703332628,
           "t_over_tcc": 3.701171875,
           "elements": 524288,
@@ -3921,7 +3921,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_075.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_075.hdf5",
           "time_code": 14.523687548277813,
           "t_over_tcc": 3.75,
           "elements": 524288,
@@ -3934,7 +3934,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_076.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_076.hdf5",
           "time_code": 14.750620166219655,
           "t_over_tcc": 3.80859375,
           "elements": 524288,
@@ -3947,7 +3947,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_077.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_077.hdf5",
           "time_code": 14.939730681171188,
           "t_over_tcc": 3.857421875,
           "elements": 524288,
@@ -3960,7 +3960,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_078.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_078.hdf5",
           "time_code": 15.128841196122721,
           "t_over_tcc": 3.9062499999999996,
           "elements": 524288,
@@ -3973,7 +3973,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_079.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_079.hdf5",
           "time_code": 15.317951711074256,
           "t_over_tcc": 3.955078125,
           "elements": 524288,
@@ -3986,7 +3986,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_080.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_080.hdf5",
           "time_code": 15.50706222602579,
           "t_over_tcc": 4.00390625,
           "elements": 524288,
@@ -3999,7 +3999,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_081.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_081.hdf5",
           "time_code": 15.696172740977325,
           "t_over_tcc": 4.052734375,
           "elements": 524288,
@@ -4012,7 +4012,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_082.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_082.hdf5",
           "time_code": 15.885283255928858,
           "t_over_tcc": 4.1015625,
           "elements": 524288,
@@ -4025,7 +4025,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_083.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_083.hdf5",
           "time_code": 16.07439377088039,
           "t_over_tcc": 4.150390625,
           "elements": 524288,
@@ -4038,7 +4038,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_084.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_084.hdf5",
           "time_code": 16.301326388822233,
           "t_over_tcc": 4.208984375,
           "elements": 524288,
@@ -4051,7 +4051,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_085.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_085.hdf5",
           "time_code": 16.490436903773766,
           "t_over_tcc": 4.257812499999999,
           "elements": 524288,
@@ -4064,7 +4064,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_086.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_086.hdf5",
           "time_code": 16.679547418725303,
           "t_over_tcc": 4.306640625,
           "elements": 524288,
@@ -4077,7 +4077,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_087.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_087.hdf5",
           "time_code": 16.868657933676836,
           "t_over_tcc": 4.35546875,
           "elements": 524288,
@@ -4090,7 +4090,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_088.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_088.hdf5",
           "time_code": 17.05776844862837,
           "t_over_tcc": 4.404296875,
           "elements": 524288,
@@ -4103,7 +4103,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_089.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_089.hdf5",
           "time_code": 17.246878963579903,
           "t_over_tcc": 4.453125,
           "elements": 524288,
@@ -4116,7 +4116,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_090.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_090.hdf5",
           "time_code": 17.435989478531436,
           "t_over_tcc": 4.501953124999999,
           "elements": 524288,
@@ -4129,7 +4129,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_091.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_091.hdf5",
           "time_code": 17.625099993482973,
           "t_over_tcc": 4.55078125,
           "elements": 524288,
@@ -4142,7 +4142,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_092.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_092.hdf5",
           "time_code": 17.85203261142481,
           "t_over_tcc": 4.609374999999999,
           "elements": 524288,
@@ -4155,7 +4155,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_093.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_093.hdf5",
           "time_code": 18.041143126376348,
           "t_over_tcc": 4.658203125,
           "elements": 524288,
@@ -4168,7 +4168,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_094.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_094.hdf5",
           "time_code": 18.23025364132788,
           "t_over_tcc": 4.70703125,
           "elements": 524288,
@@ -4181,7 +4181,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_095.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_095.hdf5",
           "time_code": 18.419364156279414,
           "t_over_tcc": 4.755859375,
           "elements": 524288,
@@ -4194,7 +4194,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_096.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_096.hdf5",
           "time_code": 18.608474671230947,
           "t_over_tcc": 4.8046875,
           "elements": 524288,
@@ -4207,7 +4207,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_097.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_097.hdf5",
           "time_code": 18.79758518618248,
           "t_over_tcc": 4.853515624999999,
           "elements": 524288,
@@ -4220,7 +4220,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_098.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_098.hdf5",
           "time_code": 18.986695701134018,
           "t_over_tcc": 4.90234375,
           "elements": 524288,
@@ -4233,7 +4233,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_099.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_099.hdf5",
           "time_code": 19.17580621608555,
           "t_over_tcc": 4.951171875,
           "elements": 524288,
@@ -4246,7 +4246,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_100.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_sharp13/output/snap_100.hdf5",
           "time_code": 19.364916731037084,
           "t_over_tcc": 5.0,
           "elements": 524288,
@@ -4280,7 +4280,7 @@
       "status": "complete_native_checks",
       "level": 4,
       "mode": 1,
-      "directory": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13",
+      "directory": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13",
       "physics": {
         "code": "Arepo",
         "chi": 100,
@@ -4321,13 +4321,13 @@
         "core",
         "-np",
         "8",
-        "/home/kaan/sensitivity_20260907/arepo/Arepo_pair",
+        "/home/user/sensitivity_20260907/arepo/Arepo_pair",
         "param.txt"
       ],
       "generate_command": [
-        "/home/kaan/venv/bin/python",
-        "/home/kaan/sensitivity_20260907/arepo/generator_historical.py",
-        "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13",
+        "/home/user/venv/bin/python",
+        "/home/user/sensitivity_20260907/arepo/generator_historical.py",
+        "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13",
         "100",
         "64",
         "--ndim",
@@ -4345,12 +4345,12 @@
       "launcher_sha256": "f6806defd0ff6dc139232a9a0baf385e6ba8ebe7c297147cf386941a89912356",
       "started_unix": 1788831967.4746263,
       "storage_preflight": {
-        "path": "/home/kaan/sensitivity_20260907/arepo",
+        "path": "/home/user/sensitivity_20260907/arepo",
         "filesystem_free_bytes": 38505340928,
         "filesystem_total_bytes": 1081101176832,
         "windows_backing_volume": {
           "distribution": "Ubuntu",
-          "base_path": "C:\\Users\\kaanb\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
+          "base_path": "C:\\Users\\user\\AppData\\Local\\wsl\\{9e2fe309-b1a2-426f-930a-63cb60a65bbd}",
           "drive": "C:",
           "free_bytes": 38021582848,
           "total_bytes": 1999283154944
@@ -4365,7 +4365,7 @@
       "peak_child_rss_gib": 3.658428192138672,
       "series": [
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_000.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_000.hdf5",
           "time_code": 0.0,
           "t_over_tcc": 0.0,
           "elements": 524288,
@@ -4384,7 +4384,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_001.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_001.hdf5",
           "time_code": 0.22693261794184083,
           "t_over_tcc": 0.05859375,
           "elements": 524288,
@@ -4397,7 +4397,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_002.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_002.hdf5",
           "time_code": 0.41604313289337486,
           "t_over_tcc": 0.107421875,
           "elements": 524288,
@@ -4410,7 +4410,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_003.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_003.hdf5",
           "time_code": 0.6051536478449089,
           "t_over_tcc": 0.15625,
           "elements": 524288,
@@ -4423,7 +4423,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_004.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_004.hdf5",
           "time_code": 0.7942641627964429,
           "t_over_tcc": 0.20507812499999997,
           "elements": 524288,
@@ -4436,7 +4436,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_005.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_005.hdf5",
           "time_code": 0.9833746777479769,
           "t_over_tcc": 0.25390625,
           "elements": 524288,
@@ -4449,7 +4449,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_006.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_006.hdf5",
           "time_code": 1.172485192699511,
           "t_over_tcc": 0.302734375,
           "elements": 524288,
@@ -4462,7 +4462,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_007.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_007.hdf5",
           "time_code": 1.361595707651045,
           "t_over_tcc": 0.3515625,
           "elements": 524288,
@@ -4475,7 +4475,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_008.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_008.hdf5",
           "time_code": 1.550706222602579,
           "t_over_tcc": 0.40039062499999994,
           "elements": 524288,
@@ -4488,7 +4488,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_009.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_009.hdf5",
           "time_code": 1.77763884054442,
           "t_over_tcc": 0.458984375,
           "elements": 524288,
@@ -4501,7 +4501,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_010.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_010.hdf5",
           "time_code": 1.9667493554959539,
           "t_over_tcc": 0.5078125,
           "elements": 524288,
@@ -4514,7 +4514,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_011.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_011.hdf5",
           "time_code": 2.155859870447488,
           "t_over_tcc": 0.556640625,
           "elements": 524288,
@@ -4527,7 +4527,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_012.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_012.hdf5",
           "time_code": 2.344970385399022,
           "t_over_tcc": 0.60546875,
           "elements": 524288,
@@ -4540,7 +4540,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_013.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_013.hdf5",
           "time_code": 2.5340809003505558,
           "t_over_tcc": 0.6542968749999999,
           "elements": 524288,
@@ -4553,7 +4553,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_014.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_014.hdf5",
           "time_code": 2.72319141530209,
           "t_over_tcc": 0.703125,
           "elements": 524288,
@@ -4566,7 +4566,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_015.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_015.hdf5",
           "time_code": 2.912301930253624,
           "t_over_tcc": 0.751953125,
           "elements": 524288,
@@ -4579,7 +4579,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_016.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_016.hdf5",
           "time_code": 3.101412445205158,
           "t_over_tcc": 0.8007812499999999,
           "elements": 524288,
@@ -4592,7 +4592,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_017.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_017.hdf5",
           "time_code": 3.328345063146999,
           "t_over_tcc": 0.859375,
           "elements": 524288,
@@ -4605,7 +4605,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_018.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_018.hdf5",
           "time_code": 3.517455578098533,
           "t_over_tcc": 0.908203125,
           "elements": 524288,
@@ -4618,7 +4618,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_019.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_019.hdf5",
           "time_code": 3.706566093050067,
           "t_over_tcc": 0.9570312499999999,
           "elements": 524288,
@@ -4631,7 +4631,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_020.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_020.hdf5",
           "time_code": 3.895676608001601,
           "t_over_tcc": 1.005859375,
           "elements": 524288,
@@ -4644,7 +4644,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_021.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_021.hdf5",
           "time_code": 4.084787122953135,
           "t_over_tcc": 1.0546875,
           "elements": 524288,
@@ -4657,7 +4657,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_022.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_022.hdf5",
           "time_code": 4.273897637904669,
           "t_over_tcc": 1.103515625,
           "elements": 524288,
@@ -4670,7 +4670,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_023.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_023.hdf5",
           "time_code": 4.463008152856203,
           "t_over_tcc": 1.1523437499999998,
           "elements": 524288,
@@ -4683,7 +4683,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_024.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_024.hdf5",
           "time_code": 4.652118667807737,
           "t_over_tcc": 1.201171875,
           "elements": 524288,
@@ -4696,7 +4696,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_025.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_025.hdf5",
           "time_code": 4.841229182759271,
           "t_over_tcc": 1.25,
           "elements": 524288,
@@ -4709,7 +4709,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_026.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_026.hdf5",
           "time_code": 5.0681618007011116,
           "t_over_tcc": 1.3085937499999998,
           "elements": 524288,
@@ -4722,7 +4722,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_027.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_027.hdf5",
           "time_code": 5.257272315652646,
           "t_over_tcc": 1.357421875,
           "elements": 524288,
@@ -4735,7 +4735,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_028.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_028.hdf5",
           "time_code": 5.44638283060418,
           "t_over_tcc": 1.40625,
           "elements": 524288,
@@ -4748,7 +4748,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_029.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_029.hdf5",
           "time_code": 5.635493345555714,
           "t_over_tcc": 1.455078125,
           "elements": 524288,
@@ -4761,7 +4761,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_030.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_030.hdf5",
           "time_code": 5.824603860507248,
           "t_over_tcc": 1.50390625,
           "elements": 524288,
@@ -4774,7 +4774,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_031.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_031.hdf5",
           "time_code": 6.013714375458782,
           "t_over_tcc": 1.5527343749999998,
           "elements": 524288,
@@ -4787,7 +4787,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_032.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_032.hdf5",
           "time_code": 6.202824890410316,
           "t_over_tcc": 1.6015624999999998,
           "elements": 524288,
@@ -4800,7 +4800,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_033.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_033.hdf5",
           "time_code": 6.39193540536185,
           "t_over_tcc": 1.650390625,
           "elements": 524288,
@@ -4813,7 +4813,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_034.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_034.hdf5",
           "time_code": 6.6188680233036905,
           "t_over_tcc": 1.7089843749999998,
           "elements": 524288,
@@ -4826,7 +4826,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_035.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_035.hdf5",
           "time_code": 6.807978538255225,
           "t_over_tcc": 1.7578124999999998,
           "elements": 524288,
@@ -4839,7 +4839,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_036.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_036.hdf5",
           "time_code": 6.997089053206759,
           "t_over_tcc": 1.806640625,
           "elements": 524288,
@@ -4852,7 +4852,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_037.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_037.hdf5",
           "time_code": 7.186199568158293,
           "t_over_tcc": 1.85546875,
           "elements": 524288,
@@ -4865,7 +4865,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_038.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_038.hdf5",
           "time_code": 7.375310083109827,
           "t_over_tcc": 1.904296875,
           "elements": 524288,
@@ -4878,7 +4878,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_039.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_039.hdf5",
           "time_code": 7.564420598061361,
           "t_over_tcc": 1.9531249999999998,
           "elements": 524288,
@@ -4891,7 +4891,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_040.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_040.hdf5",
           "time_code": 7.753531113012895,
           "t_over_tcc": 2.001953125,
           "elements": 524288,
@@ -4904,7 +4904,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_041.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_041.hdf5",
           "time_code": 7.942641627964429,
           "t_over_tcc": 2.05078125,
           "elements": 524288,
@@ -4917,7 +4917,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_042.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_042.hdf5",
           "time_code": 8.16957424590627,
           "t_over_tcc": 2.109375,
           "elements": 524288,
@@ -4930,7 +4930,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_043.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_043.hdf5",
           "time_code": 8.358684760857804,
           "t_over_tcc": 2.158203125,
           "elements": 524288,
@@ -4943,7 +4943,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_044.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_044.hdf5",
           "time_code": 8.547795275809339,
           "t_over_tcc": 2.20703125,
           "elements": 524288,
@@ -4956,7 +4956,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_045.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_045.hdf5",
           "time_code": 8.736905790760872,
           "t_over_tcc": 2.255859375,
           "elements": 524288,
@@ -4969,7 +4969,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_046.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_046.hdf5",
           "time_code": 8.926016305712405,
           "t_over_tcc": 2.3046874999999996,
           "elements": 524288,
@@ -4982,7 +4982,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_047.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_047.hdf5",
           "time_code": 9.11512682066394,
           "t_over_tcc": 2.353515625,
           "elements": 524288,
@@ -4995,7 +4995,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_048.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_048.hdf5",
           "time_code": 9.304237335615474,
           "t_over_tcc": 2.40234375,
           "elements": 524288,
@@ -5008,7 +5008,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_049.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_049.hdf5",
           "time_code": 9.493347850567009,
           "t_over_tcc": 2.451171875,
           "elements": 524288,
@@ -5021,7 +5021,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_050.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_050.hdf5",
           "time_code": 9.682458365518542,
           "t_over_tcc": 2.5,
           "elements": 524288,
@@ -5034,7 +5034,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_051.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_051.hdf5",
           "time_code": 9.909390983460383,
           "t_over_tcc": 2.55859375,
           "elements": 524288,
@@ -5047,7 +5047,7 @@
           "tracer_mass_over_initial": 1.0000000000000004
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_052.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_052.hdf5",
           "time_code": 10.098501498411917,
           "t_over_tcc": 2.607421875,
           "elements": 524288,
@@ -5060,7 +5060,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_053.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_053.hdf5",
           "time_code": 10.28761201336345,
           "t_over_tcc": 2.6562499999999996,
           "elements": 524288,
@@ -5073,7 +5073,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_054.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_054.hdf5",
           "time_code": 10.476722528314985,
           "t_over_tcc": 2.705078125,
           "elements": 524288,
@@ -5086,7 +5086,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_055.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_055.hdf5",
           "time_code": 10.665833043266518,
           "t_over_tcc": 2.7539062499999996,
           "elements": 524288,
@@ -5099,7 +5099,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_056.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_056.hdf5",
           "time_code": 10.854943558218054,
           "t_over_tcc": 2.802734375,
           "elements": 524288,
@@ -5112,7 +5112,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_057.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_057.hdf5",
           "time_code": 11.044054073169587,
           "t_over_tcc": 2.8515625,
           "elements": 524288,
@@ -5125,7 +5125,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_058.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_058.hdf5",
           "time_code": 11.233164588121122,
           "t_over_tcc": 2.900390625,
           "elements": 524288,
@@ -5138,7 +5138,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_059.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_059.hdf5",
           "time_code": 11.460097206062962,
           "t_over_tcc": 2.9589843749999996,
           "elements": 524288,
@@ -5151,7 +5151,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_060.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_060.hdf5",
           "time_code": 11.649207721014497,
           "t_over_tcc": 3.0078125,
           "elements": 524288,
@@ -5164,7 +5164,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_061.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_061.hdf5",
           "time_code": 11.83831823596603,
           "t_over_tcc": 3.056640625,
           "elements": 524288,
@@ -5177,7 +5177,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_062.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_062.hdf5",
           "time_code": 12.027428750917563,
           "t_over_tcc": 3.1054687499999996,
           "elements": 524288,
@@ -5190,7 +5190,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_063.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_063.hdf5",
           "time_code": 12.216539265869098,
           "t_over_tcc": 3.154296875,
           "elements": 524288,
@@ -5203,7 +5203,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_064.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_064.hdf5",
           "time_code": 12.405649780820632,
           "t_over_tcc": 3.2031249999999996,
           "elements": 524288,
@@ -5216,7 +5216,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_065.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_065.hdf5",
           "time_code": 12.594760295772167,
           "t_over_tcc": 3.251953125,
           "elements": 524288,
@@ -5229,7 +5229,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_066.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_066.hdf5",
           "time_code": 12.7838708107237,
           "t_over_tcc": 3.30078125,
           "elements": 524288,
@@ -5242,7 +5242,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_067.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_067.hdf5",
           "time_code": 13.010803428665541,
           "t_over_tcc": 3.359375,
           "elements": 524288,
@@ -5255,7 +5255,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_068.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_068.hdf5",
           "time_code": 13.199913943617075,
           "t_over_tcc": 3.4082031249999996,
           "elements": 524288,
@@ -5268,7 +5268,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_069.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_069.hdf5",
           "time_code": 13.38902445856861,
           "t_over_tcc": 3.45703125,
           "elements": 524288,
@@ -5281,7 +5281,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_070.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_070.hdf5",
           "time_code": 13.578134973520143,
           "t_over_tcc": 3.505859375,
           "elements": 524288,
@@ -5294,7 +5294,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_071.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_071.hdf5",
           "time_code": 13.767245488471676,
           "t_over_tcc": 3.5546874999999996,
           "elements": 524288,
@@ -5307,7 +5307,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_072.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_072.hdf5",
           "time_code": 13.956356003423211,
           "t_over_tcc": 3.603515625,
           "elements": 524288,
@@ -5320,7 +5320,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_073.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_073.hdf5",
           "time_code": 14.145466518374745,
           "t_over_tcc": 3.6523437499999996,
           "elements": 524288,
@@ -5333,7 +5333,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_074.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_074.hdf5",
           "time_code": 14.33457703332628,
           "t_over_tcc": 3.701171875,
           "elements": 524288,
@@ -5346,7 +5346,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_075.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_075.hdf5",
           "time_code": 14.523687548277813,
           "t_over_tcc": 3.75,
           "elements": 524288,
@@ -5359,7 +5359,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_076.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_076.hdf5",
           "time_code": 14.750620166219655,
           "t_over_tcc": 3.80859375,
           "elements": 524288,
@@ -5372,7 +5372,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_077.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_077.hdf5",
           "time_code": 14.939730681171188,
           "t_over_tcc": 3.857421875,
           "elements": 524288,
@@ -5385,7 +5385,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_078.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_078.hdf5",
           "time_code": 15.128841196122721,
           "t_over_tcc": 3.9062499999999996,
           "elements": 524288,
@@ -5398,7 +5398,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_079.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_079.hdf5",
           "time_code": 15.317951711074256,
           "t_over_tcc": 3.955078125,
           "elements": 524288,
@@ -5411,7 +5411,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_080.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_080.hdf5",
           "time_code": 15.50706222602579,
           "t_over_tcc": 4.00390625,
           "elements": 524288,
@@ -5424,7 +5424,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_081.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_081.hdf5",
           "time_code": 15.696172740977325,
           "t_over_tcc": 4.052734375,
           "elements": 524288,
@@ -5437,7 +5437,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_082.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_082.hdf5",
           "time_code": 15.885283255928858,
           "t_over_tcc": 4.1015625,
           "elements": 524288,
@@ -5450,7 +5450,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_083.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_083.hdf5",
           "time_code": 16.07439377088039,
           "t_over_tcc": 4.150390625,
           "elements": 524288,
@@ -5463,7 +5463,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_084.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_084.hdf5",
           "time_code": 16.301326388822233,
           "t_over_tcc": 4.208984375,
           "elements": 524288,
@@ -5476,7 +5476,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_085.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_085.hdf5",
           "time_code": 16.490436903773766,
           "t_over_tcc": 4.257812499999999,
           "elements": 524288,
@@ -5489,7 +5489,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_086.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_086.hdf5",
           "time_code": 16.679547418725303,
           "t_over_tcc": 4.306640625,
           "elements": 524288,
@@ -5502,7 +5502,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_087.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_087.hdf5",
           "time_code": 16.868657933676836,
           "t_over_tcc": 4.35546875,
           "elements": 524288,
@@ -5515,7 +5515,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_088.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_088.hdf5",
           "time_code": 17.05776844862837,
           "t_over_tcc": 4.404296875,
           "elements": 524288,
@@ -5528,7 +5528,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_089.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_089.hdf5",
           "time_code": 17.246878963579903,
           "t_over_tcc": 4.453125,
           "elements": 524288,
@@ -5541,7 +5541,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_090.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_090.hdf5",
           "time_code": 17.435989478531436,
           "t_over_tcc": 4.501953124999999,
           "elements": 524288,
@@ -5554,7 +5554,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_091.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_091.hdf5",
           "time_code": 17.625099993482973,
           "t_over_tcc": 4.55078125,
           "elements": 524288,
@@ -5567,7 +5567,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_092.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_092.hdf5",
           "time_code": 17.85203261142481,
           "t_over_tcc": 4.609374999999999,
           "elements": 524288,
@@ -5580,7 +5580,7 @@
           "tracer_mass_over_initial": 0.9999999999999999
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_093.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_093.hdf5",
           "time_code": 18.041143126376348,
           "t_over_tcc": 4.658203125,
           "elements": 524288,
@@ -5593,7 +5593,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_094.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_094.hdf5",
           "time_code": 18.23025364132788,
           "t_over_tcc": 4.70703125,
           "elements": 524288,
@@ -5606,7 +5606,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_095.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_095.hdf5",
           "time_code": 18.419364156279414,
           "t_over_tcc": 4.755859375,
           "elements": 524288,
@@ -5619,7 +5619,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_096.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_096.hdf5",
           "time_code": 18.608474671230947,
           "t_over_tcc": 4.8046875,
           "elements": 524288,
@@ -5632,7 +5632,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_097.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_097.hdf5",
           "time_code": 18.79758518618248,
           "t_over_tcc": 4.853515624999999,
           "elements": 524288,
@@ -5645,7 +5645,7 @@
           "tracer_mass_over_initial": 1.0
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_098.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_098.hdf5",
           "time_code": 18.986695701134018,
           "t_over_tcc": 4.90234375,
           "elements": 524288,
@@ -5658,7 +5658,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_099.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_099.hdf5",
           "time_code": 19.17580621608555,
           "t_over_tcc": 4.951171875,
           "elements": 524288,
@@ -5671,7 +5671,7 @@
           "tracer_mass_over_initial": 1.0000000000000002
         },
         {
-          "snapshot": "/home/kaan/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_100.hdf5",
+          "snapshot": "/home/user/sensitivity_20260907/arepo/runs/L4_chi100_tanh13/output/snap_100.hdf5",
           "time_code": 19.364916731037084,
           "t_over_tcc": 5.0,
           "elements": 524288,

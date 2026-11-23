@@ -81,7 +81,7 @@ and [native execution measurements](serial_observer_v1_native_result.json), plus
 all local raw files, scripts and binaries, remain preserved. The corrected test
 used new folders; no failed record was overwritten or declared successful.
 
-Native folders under `/home/kaan/sensitivity_20260907/gasoline`:
+Native folders under `/home/user/sensitivity_20260907/gasoline`:
 `serial_observer_native_v1`, `serial_observer_runner_v1`, `serial_observer_case_v1`
 and their separate version2 counterparts. Selected custom files here are
 [the guarded launcher](serial_observer_run_v2.py), [Python tests](test_serial_observer_run_v2.py),

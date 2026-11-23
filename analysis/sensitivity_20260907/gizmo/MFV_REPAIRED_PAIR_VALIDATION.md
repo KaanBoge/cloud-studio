@@ -34,7 +34,7 @@ remain unchanged. Sharp velocity is zero through1.3R and wind speed outside;
 historical velocity has the original tanh transition.
 
 The repair executable is
-`/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/repaired/GIZMO_repaired`,
+`/home/user/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/repaired/GIZMO_repaired`,
 SHA256`4784336422c25db4714c6f56ef95337347f4be18dfd622e2b7e9acf7e1fe3d3c`.
 The original failed executable and all original outputs remain retained and
 are NOT pooled with these repaired controls.
@@ -95,7 +95,7 @@ material tracer. These are published analysis controls, not new production
 
 ## Reproducible artifacts
 
-Native root: `/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1`.
+Native root: `/home/user/sensitivity_20260907/gizmo/mfv_timestep_repair_v1`.
 Fresh completed directories: `sharp_prepare_runner_v1`, `sharp_prepare_native_v1`,
 `sharp_full_runner_v1`, `sharp_full_native_v1`, `sharp_pair_plot_v1`.
 Do not relaunch completed runners or overwrite their records. Both shared

@@ -5,8 +5,8 @@ from pathlib import Path
 import subprocess
 import time
 import psutil
-ROOT=Path('/home/kaan/sensitivity_20260907/athw')
-SCRIPT='/mnt/c/Users/kaanb/CloudCrushing/sensitivity_20260907/athw/run_athw.py'
+ROOT=Path('/home/user/sensitivity_20260907/athw')
+SCRIPT='/mnt/c/Users/user/CloudCrushing/sensitivity_20260907/athw/run_athw.py'
 record=ROOT/'worker.json'
 if record.exists():
     old=json.loads(record.read_text())
@@ -17,7 +17,7 @@ if record.exists():
 proof=json.loads((ROOT/'smoke_batch.json').read_text())
 if proof['status']!='complete_native_checks':raise RuntimeError('Native smoke validation missing')
 with (ROOT/'worker.log').open('x') as log:
-    proc=subprocess.Popen(['/home/kaan/venv/bin/python',SCRIPT],stdin=subprocess.DEVNULL,
+    proc=subprocess.Popen(['/home/user/venv/bin/python',SCRIPT],stdin=subprocess.DEVNULL,
         stdout=log,stderr=subprocess.STDOUT,start_new_session=True,
         env=dict(os.environ,OMP_NUM_THREADS='1',OPENBLAS_NUM_THREADS='1'))
 record.write_text(json.dumps(dict(pid=proc.pid,started_unix=time.time(),script=SCRIPT),indent=2))

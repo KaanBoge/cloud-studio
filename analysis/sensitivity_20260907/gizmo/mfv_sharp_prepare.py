@@ -163,7 +163,7 @@ def freeze():
         potential_full_bytes=full,all_new_bytes=3*small+full,storage=disk,ic_checks=r['laws'],
         case_names=['short','timing_full','timing_half'],wall_limit=180,stop_grace=15,ranks=8)
     with (PACKAGE/'tests.log').open('x') as log:
-        subprocess.run(['/home/kaan/venv/bin/python','-m','unittest','-v','test_mfv_sharp_prepare'],cwd=PACKAGE,stdout=log,stderr=subprocess.STDOUT,check=True,timeout=60)
+        subprocess.run(['/home/user/venv/bin/python','-m','unittest','-v','test_mfv_sharp_prepare'],cwd=PACKAGE,stdout=log,stderr=subprocess.STDOUT,check=True,timeout=60)
     plan['tests_sha256']=sha(PACKAGE/'tests.log');save(PACKAGE/'plan.json',plan)
     print(json.dumps(dict(status=plan['status'],new_budget_gib=plan['all_new_bytes']/GIB,sha256=sha(PACKAGE/'plan.json'))))
 
@@ -219,7 +219,7 @@ def run(plan):
     locks=[]
     try:
         for n in ('benchmark.lock','production.lock'):
-            f=open('/home/kaan/performance_20260907/'+n,'a');fcntl.flock(f,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(f)
+            f=open('/home/user/performance_20260907/'+n,'a');fcntl.flock(f,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(f)
         DEST.mkdir()
         for kind in plan['case_names']:
             frozen(plan)

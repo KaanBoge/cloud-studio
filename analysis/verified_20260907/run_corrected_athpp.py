@@ -15,8 +15,8 @@ import subprocess
 import time
 from storage_guard import storage_snapshot, require_storage
 
-ROOT=Path('/home/kaan/codes/athenapp/runs')
-BIN=Path('/home/kaan/ic_audit_20260907/bin/athpp')
+ROOT=Path('/home/user/codes/athenapp/runs')
+BIN=Path('/home/user/ic_audit_20260907/bin/athpp')
 IC_VERSION='sharp13_20260907'
 
 
@@ -81,7 +81,7 @@ def main():
     p.add_argument('--chi',type=int,choices=[10,100,1000],required=True)
     p.add_argument('--run',action='store_true')
     args=p.parse_args()
-    proof=Path('/home/kaan/ic_audit_20260907/grid_tests')/f'athpp_chi{args.chi}'/'verification.json'
+    proof=Path('/home/user/ic_audit_20260907/grid_tests')/f'athpp_chi{args.chi}'/'verification.json'
     verified=json.loads(proof.read_text())
     binary_sha=hashlib.sha256(BIN.read_bytes()).hexdigest()
     if not verified.get('passed') or verified['binary_sha256']!=binary_sha:

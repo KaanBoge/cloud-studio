@@ -1,7 +1,7 @@
 param([ValidateSet('diagnostics','full')][string]$Stage='diagnostics')
 $ErrorActionPreference='Stop'
-$stageRoot='C:\Users\kaanb\CloudCrushing\sensitivity_20260907\enzo\l5_direct_v1'
-$rawRoot='C:\Users\kaanb\CloudCrushing\native_runs\sensitivity_20260907\enzo_L5_velocity_pair_v1'
+$stageRoot='C:\Users\user\CloudCrushing\sensitivity_20260907\enzo\l5_direct_v1'
+$rawRoot='C:\Users\user\CloudCrushing\native_runs\sensitivity_20260907\enzo_L5_velocity_pair_v1'
 $record=Join-Path $stageRoot ($Stage+'_worker.json')
 if (Test-Path -LiteralPath $record) { throw 'Existing worker record; do not relaunch completed/partial stage' }
 $planPath=Join-Path $stageRoot 'plan.json'
@@ -30,7 +30,7 @@ $tests=Join-Path $stageRoot 'test_result.json'
 if (-not (Test-Path -LiteralPath $tests)) { throw 'Test results missing' }
 $testRecord=Get-Content -LiteralPath $tests -Raw|ConvertFrom-Json
 if ($testRecord.returncode -ne 0 -or $testRecord.plan_sha256 -ne $proof.plan_sha256) { throw 'Tests did not pass for this plan' }
-$worker=Start-Process -FilePath 'wsl.exe' -ArgumentList @('-d','Ubuntu','--exec','/home/kaan/venv/bin/python','/mnt/c/Users/kaanb/CloudCrushing/sensitivity_20260907/enzo/l5_direct_v1/runner.py',$Stage) -WindowStyle Hidden -PassThru -RedirectStandardOutput (Join-Path $stageRoot ($Stage+'_worker.log')) -RedirectStandardError (Join-Path $stageRoot ($Stage+'_worker.err.log'))
+$worker=Start-Process -FilePath 'wsl.exe' -ArgumentList @('-d','Ubuntu','--exec','/home/user/venv/bin/python','/mnt/c/Users/user/CloudCrushing/sensitivity_20260907/enzo/l5_direct_v1/runner.py',$Stage) -WindowStyle Hidden -PassThru -RedirectStandardOutput (Join-Path $stageRoot ($Stage+'_worker.log')) -RedirectStandardError (Join-Path $stageRoot ($Stage+'_worker.err.log'))
 $value=[ordered]@{pid=$worker.Id; started_local=(Get-Date).ToString('o'); stage=$Stage; plan_sha256=$proof.plan_sha256; raw_root=$rawRoot}
 [IO.File]::WriteAllText($record,($value|ConvertTo-Json),[Text.UTF8Encoding]::new($false))
 Start-Sleep -Seconds 2

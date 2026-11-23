@@ -1,9 +1,9 @@
 [
   {
     "passed": false,
-    "snapshot": "/home/kaan/ic_audit_20260907/negative_controls/apk/parthenon.prim.00000.phdf",
+    "snapshot": "/home/user/ic_audit_20260907/negative_controls/apk/parthenon.prim.00000.phdf",
     "parameters": {
-      "source": "/home/kaan/ic_audit_20260907/negative_controls/apk/athinput",
+      "source": "/home/user/ic_audit_20260907/negative_controls/apk/athinput",
       "parameter_sha256": "5c36771dda4bc95a6bc46d5f05d2d04966b792074728d72dadb2346ef4030cfd",
       "assumptions": [],
       "gamma": 1.6666666666666667,
@@ -43,9 +43,9 @@
   },
   {
     "passed": false,
-    "snapshot": "/home/kaan/ic_audit_20260907/negative_controls/athpp/CloudWind.out2.00000.athdf",
+    "snapshot": "/home/user/ic_audit_20260907/negative_controls/athpp/CloudWind.out2.00000.athdf",
     "parameters": {
-      "source": "/home/kaan/ic_audit_20260907/negative_controls/athpp/athinput",
+      "source": "/home/user/ic_audit_20260907/negative_controls/athpp/athinput",
       "parameter_sha256": "772dc06ce11a5aa1aeffd10fb9d48c1170ce20b76554c53dc88a85676892be62",
       "assumptions": [
         "custom cloud_wind pgen fixes R=1, rho_wind=1 and P_wind=1"

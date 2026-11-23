@@ -4,9 +4,9 @@
   "solver_returncode": 0,
   "binary_sha256": "b8bdcbadc51986cb761a0d741001e6804d212dc7f57d0bcaf8e80e0dd6e88bb0",
   "passed": true,
-  "snapshot": "/home/kaan/ic_audit_20260907/grid_tests/athpp_chi10/CloudWind.out2.00000.athdf",
+  "snapshot": "/home/user/ic_audit_20260907/grid_tests/athpp_chi10/CloudWind.out2.00000.athdf",
   "parameters": {
-    "source": "/home/kaan/ic_audit_20260907/grid_tests/athpp_chi10/athinput",
+    "source": "/home/user/ic_audit_20260907/grid_tests/athpp_chi10/athinput",
     "parameter_sha256": "d4234632cbbedf760dfde89d3c64c094d5dd07e31fc0ed86f4723518e4daf191",
     "assumptions": [
       "custom cloud_wind pgen fixes R=1, rho_wind=1 and P_wind=1"

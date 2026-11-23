@@ -2,7 +2,7 @@
 import fcntl,json,math,os,signal,subprocess,sys,time
 from pathlib import Path
 import numpy as np,psutil
-sys.path.insert(0,'/home/kaan/sensitivity_20260907/gadget4')
+sys.path.insert(0,'/home/user/sensitivity_20260907/gadget4')
 from gadget_controls import ROOT,sha,save,parameters,metadata,dependencies,generate,read,native_summary,CONFIG,EXPECTED_BINARY,storage_snapshot,require_storage,GIB
 from verify_gadget import independent,initial_checks,paired_nonvelocity
 
@@ -110,7 +110,7 @@ def run_case(folder,mode,p,retention):
 def main():
     locks=[]
     for name in ('benchmark.lock','production.lock'):
-        handle=Path('/home/kaan/performance_20260907',name).open('a');fcntl.flock(handle,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(handle)
+        handle=Path('/home/user/performance_20260907',name).open('a');fcntl.flock(handle,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(handle)
     dependencies();bundle=json.loads((Path(__file__).parent/'bundle.json').read_text())
     for name,digest in bundle['files'].items():
         if sha(Path(__file__).parent/name)!=digest:raise ValueError('Frozen full runner changed')

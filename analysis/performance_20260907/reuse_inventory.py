@@ -7,17 +7,17 @@ import json
 from pathlib import Path
 import re
 import sys
-sys.path.insert(0,'/home/kaan/verified_20260907')
+sys.path.insert(0,'/home/user/verified_20260907')
 from run_params import find_params
 import h5py
 
 BASES={
- 'athpp':Path('/home/kaan/codes/athenapp/runs'),
- 'apk':Path('/home/kaan/codes/athenapk/runs'),
- 'enzo':Path('/home/kaan/codes/enzo/runs'),
- 'athw_flash':Path('/home/kaan/CloudCrushing/A8'),
- 'flashx':Path('/home/kaan/codes/flashx/runs'),
- 'ramses':Path('/home/kaan/codes/ramses/runs')}
+ 'athpp':Path('/home/user/codes/athenapp/runs'),
+ 'apk':Path('/home/user/codes/athenapk/runs'),
+ 'enzo':Path('/home/user/codes/enzo/runs'),
+ 'athw_flash':Path('/home/user/CloudCrushing/wind_tunnel'),
+ 'flashx':Path('/home/user/codes/flashx/runs'),
+ 'ramses':Path('/home/user/codes/ramses/runs')}
 rows=[]
 for code,base in BASES.items():
     for run in sorted(base.iterdir()):

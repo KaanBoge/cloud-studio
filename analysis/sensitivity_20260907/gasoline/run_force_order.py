@@ -13,14 +13,14 @@ import time
 import numpy as np
 import psutil
 
-ROOT=Path('/home/kaan/sensitivity_20260907/gasoline')
+ROOT=Path('/home/user/sensitivity_20260907/gasoline')
 TREE=ROOT/'force_order_native_v1'
 PREP=ROOT/'force_order_prepare_v1'
 OUT=ROOT/'force_order_runner_v1'
 CASES=ROOT/'force_order_cases_v1'
 CORE=ROOT/'force_trace_core_v1'
 NAMES=('off_a','off_b','on')
-PY='/home/kaan/venv/bin/python'
+PY='/home/user/venv/bin/python'
 BINARY_SHA='789dd4625f9ef2f3ed32bd731be207b617d5b723e66ae4d6300846af8adb686b'
 sys.path.insert(0,str(ROOT/'serial_observer_runner_v2'))
 import serial_observer_run_v2 as common

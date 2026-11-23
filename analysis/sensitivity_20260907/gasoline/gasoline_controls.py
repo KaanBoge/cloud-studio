@@ -20,10 +20,10 @@ import time
 import numpy as np
 import psutil
 
-ROOT = Path('/home/kaan/sensitivity_20260907/gasoline')
-CANON = Path('/home/kaan/codes/gasoline')
+ROOT = Path('/home/user/sensitivity_20260907/gasoline')
+CANON = Path('/home/user/codes/gasoline')
 WORK = ROOT / 'instrumentation_v1'
-PY = '/home/kaan/venv/bin/python'
+PY = '/home/user/venv/bin/python'
 GIB = 1024**3
 HEADER = np.dtype([('time','>f8'), ('nbodies','>i4'), ('ndim','>i4'),
                    ('nsph','>i4'), ('ndark','>i4'), ('nstar','>i4'), ('pad','>i4')])
@@ -106,7 +106,7 @@ def budget():
 def locks():
     with contextlib.ExitStack() as stack:
         for name in ('benchmark','production'):
-            f = stack.enter_context(open('/home/kaan/performance_20260907/'+name+'.lock','a'))
+            f = stack.enter_context(open('/home/user/performance_20260907/'+name+'.lock','a'))
             fcntl.flock(f, fcntl.LOCK_EX | fcntl.LOCK_NB)
         yield
 

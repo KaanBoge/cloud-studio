@@ -5,7 +5,7 @@ import numpy as np,psutil
 from yt.frontends.gadget.data_structures import GadgetHDF5Dataset
 from yt.frontends.gadget.io import IOHandlerGadgetHDF5
 
-sys.path.insert(0,'/home/kaan/sensitivity_20260907/gadget4')
+sys.path.insert(0,'/home/user/sensitivity_20260907/gadget4')
 from gadget_controls import ROOT,NATIVE,sha,save,parameters,metadata,dependencies,generate,read,native_summary,CONFIG,EXPECTED_BINARY,storage_snapshot,require_storage,GIB
 from native_cadence import expected_times,cadence
 
@@ -156,7 +156,7 @@ def smoke(mode,p):
 def main():
     locks=[]
     for name in ('benchmark.lock','production.lock'):
-        handle=Path('/home/kaan/performance_20260907',name).open('a');fcntl.flock(handle,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(handle)
+        handle=Path('/home/user/performance_20260907',name).open('a');fcntl.flock(handle,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(handle)
     dependencies();bundle=json.loads((Path(__file__).parent/'bundle.json').read_text())
     for path,digest in bundle['pinned_files'].items():
         if sha(path)!=digest:raise ValueError('Frozen L4 validation dependency changed: '+path)

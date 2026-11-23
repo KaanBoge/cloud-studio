@@ -26,7 +26,7 @@ at L3 and 0.92250/0.92096 at L4 (sharp/historical). Final actual times span
 This is not an all-material-retained comparison or proof of convergence.
 
 Prepared and launched 8 September 2026 at 01:44 local time. Inspect native
-`/home/kaan/sensitivity_20260907/ramses/batch.json`, `current.json`, Windows
+`/home/user/sensitivity_20260907/ramses/batch.json`, `current.json`, Windows
 `worker_windows.json/log/err.log` and actual processes for current status.
 Those worker records now describe completed work. This is a within-code
 experiment, not a blanket rerun or a production
@@ -99,13 +99,13 @@ their recorded zero sample is unavailable memory measurement, not zero RAM use.
 ## Reproduction and interpretation
 
 These scripts target this machine's WSL paths. Run them with
-`/home/kaan/venv/bin/python`. Shared helpers are in
-`/home/kaan/verified_20260907`; build hashing uses the parent study `build.py`.
+`/home/user/venv/bin/python`. Shared helpers are in
+`/home/user/verified_20260907`; build hashing uses the parent study `build.py`.
 `build_ramses.py` refuses to overwrite its isolated build. Do not relaunch an
 existing worker or silently restart partial run folders.
 
-Native outputs: `/home/kaan/sensitivity_20260907/ramses/runs`.
-Source and scripts: `C:/Users/kaanb/CloudCrushing/sensitivity_20260907/ramses`.
+Native outputs: `/home/user/sensitivity_20260907/ramses/runs`.
+Source and scripts: `C:/Users/user/CloudCrushing/sensitivity_20260907/ramses`.
 Use `test_ramses.py`, `test_analysis_ramses.py` and, after the worker finishes,
 `analyze_ramses.py`. The latter reads run metadata, not a manually supplied level.
 Dense mass is rho>rho_cloud_initial/3 with a fixed native initial denominator.

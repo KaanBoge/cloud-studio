@@ -2,7 +2,7 @@
 import json
 from pathlib import Path
 import h5py,psutil
-ROOT=Path('/home/kaan/sensitivity_20260907/gizmo')
+ROOT=Path('/home/user/sensitivity_20260907/gizmo')
 
 def main():
     root=ROOT/'full_mfm_l4_v1';record={}

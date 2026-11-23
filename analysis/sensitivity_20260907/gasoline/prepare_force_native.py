@@ -13,12 +13,12 @@ import sys
 
 import psutil
 
-ROOT=Path('/home/kaan/sensitivity_20260907/gasoline')
+ROOT=Path('/home/user/sensitivity_20260907/gasoline')
 BASE=ROOT/'native_retained'
 TREE=ROOT/'force_order_native_v1'
 OUT=ROOT/'force_order_prepare_v1'
 CORE=ROOT/'force_trace_core_v1'
-PY='/home/kaan/venv/bin/python'
+PY='/home/user/venv/bin/python'
 CHANGED=('gasoline/smooth.c','gasoline/smoothfcn.c','gasoline/SphPressureTerms.h')
 GIB=1024**3
 
@@ -59,7 +59,7 @@ def main():
         raise ValueError('Completed core evidence changed')
     with ExitStack() as stack:
         for name in ('benchmark','production'):
-            f=stack.enter_context(open('/home/kaan/performance_20260907/'+name+'.lock','a'))
+            f=stack.enter_context(open('/home/user/performance_20260907/'+name+'.lock','a'))
             fcntl.flock(f,fcntl.LOCK_EX|fcntl.LOCK_NB)
         if arg.copy:
             if OUT.exists() or TREE.exists():raise FileExistsError('New native trace stage already exists')

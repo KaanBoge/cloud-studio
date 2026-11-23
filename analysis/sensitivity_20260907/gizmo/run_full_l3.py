@@ -190,7 +190,7 @@ def run_case(case,plan):
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('--run',action='store_true');args=parser.parse_args();locks=[]
     for name in ('benchmark.lock','production.lock'):
-        f=Path('/home/kaan/performance_20260907',name).open('a');fcntl.flock(f,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(f)
+        f=Path('/home/user/performance_20260907',name).open('a');fcntl.flock(f,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(f)
     plan=preflight()
     if not args.run:print(json.dumps(plan,indent=2));return
     path=ROOT/'full_l3_batch.json'

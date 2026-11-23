@@ -6,7 +6,7 @@ from run_full_l3 import ROOT,MODULES,sha,save,storage_snapshot,require_storage,G
 def main():
     locks=[]
     for name in ('benchmark.lock','production.lock'):
-        f=Path('/home/kaan/performance_20260907',name).open('a');fcntl.flock(f,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(f)
+        f=Path('/home/user/performance_20260907',name).open('a');fcntl.flock(f,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(f)
     dest=ROOT/'runner_l3_v1'
     completing=sys.argv[1:]==['--complete-existing']
     if sys.argv[1:] and not completing:raise ValueError('Only --complete-existing is supported')
@@ -18,7 +18,7 @@ def main():
         if sha(source/name)!=sha(dest/name):raise ValueError('Bundle copy differs')
     evidence={}
     for relative in ('restart.c','run.c','allvars.h','system/system.c'):
-        src=Path('/home/kaan/codes/gizmo')/relative;out=dest/(relative.replace('/','_')+'.evidence')
+        src=Path('/home/user/codes/gizmo')/relative;out=dest/(relative.replace('/','_')+'.evidence')
         if not out.exists():shutil.copy2(src,out)
         if sha(out)!=sha(src):raise ValueError('Native evidence changed')
         evidence[relative]=dict(path=str(out),sha256=sha(out))

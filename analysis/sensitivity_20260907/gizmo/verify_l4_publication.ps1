@@ -1,6 +1,6 @@
 $ErrorActionPreference='Stop'
-$taskRepo='C:\Users\kaanb\cloud-studio-repo'
-$taskOutput='C:\Users\kaanb\CloudCrushing\sensitivity_20260907\gizmo\l4_publication.json'
+$taskRepo='C:\Users\user\cloud-studio-repo'
+$taskOutput='C:\Users\user\CloudCrushing\sensitivity_20260907\gizmo\l4_publication.json'
 $taskCommit='c58b730164e6ab193d075eb9c42d20d4d787cea6'
 $taskPrevious='5d222423e8d94e5ad6e76dc7c7e1f6b017505031'
 if(Test-Path -LiteralPath $taskOutput){throw 'Completed publication proof already exists; preserve it'}

@@ -12,7 +12,7 @@
         "core",
         "-np",
         "2",
-        "/home/kaan/followup_20260907/bin/athpp_tracking",
+        "/home/user/followup_20260907/bin/athpp_tracking",
         "-i",
         "athinput"
       ],
@@ -26,9 +26,9 @@
       "native_outputs": 101,
       "initial_fields": {
         "passed": true,
-        "snapshot": "/home/kaan/followup_20260907/tracking_tests_v2/fulltime_chi10_shift0/cloud_sharp13_20260907_L3_chi10.out2.00000.athdf",
+        "snapshot": "/home/user/followup_20260907/tracking_tests_v2/fulltime_chi10_shift0/cloud_sharp13_20260907_L3_chi10.out2.00000.athdf",
         "parameters": {
-          "source": "/home/kaan/followup_20260907/tracking_tests_v2/fulltime_chi10_shift0/athinput",
+          "source": "/home/user/followup_20260907/tracking_tests_v2/fulltime_chi10_shift0/athinput",
           "parameter_sha256": "5dec6748dd17ecb6fefc23ad8ef3c02c17fe709f39e331f3eff714b3ca18f394",
           "assumptions": [
             "custom cloud_wind pgen fixes R=1, rho_wind=1 and P_wind=1"
@@ -1091,7 +1091,7 @@
         "core",
         "-np",
         "2",
-        "/home/kaan/followup_20260907/bin/athpp_tracking",
+        "/home/user/followup_20260907/bin/athpp_tracking",
         "-i",
         "athinput"
       ],
@@ -1105,9 +1105,9 @@
       "native_outputs": 101,
       "initial_fields": {
         "passed": true,
-        "snapshot": "/home/kaan/followup_20260907/tracking_tests_v2/fulltime_chi10_shift1/cloud_sharp13_20260907_L3_chi10.out2.00000.athdf",
+        "snapshot": "/home/user/followup_20260907/tracking_tests_v2/fulltime_chi10_shift1/cloud_sharp13_20260907_L3_chi10.out2.00000.athdf",
         "parameters": {
-          "source": "/home/kaan/followup_20260907/tracking_tests_v2/fulltime_chi10_shift1/athinput",
+          "source": "/home/user/followup_20260907/tracking_tests_v2/fulltime_chi10_shift1/athinput",
           "parameter_sha256": "168d9f5cfdc5f0c9ea45e38c68382901fadb191fae621c2b1c0041ad6cf52736",
           "assumptions": [
             "custom cloud_wind pgen fixes R=1, rho_wind=1 and P_wind=1"
@@ -2171,7 +2171,7 @@
         "core",
         "-np",
         "2",
-        "/home/kaan/followup_20260907/bin/athpp_tracking",
+        "/home/user/followup_20260907/bin/athpp_tracking",
         "-i",
         "athinput"
       ],
@@ -2185,9 +2185,9 @@
       "native_outputs": 101,
       "initial_fields": {
         "passed": true,
-        "snapshot": "/home/kaan/followup_20260907/tracking_tests_v2/fulltime_chi100_shift0/cloud_sharp13_20260907_L3_chi100.out2.00000.athdf",
+        "snapshot": "/home/user/followup_20260907/tracking_tests_v2/fulltime_chi100_shift0/cloud_sharp13_20260907_L3_chi100.out2.00000.athdf",
         "parameters": {
-          "source": "/home/kaan/followup_20260907/tracking_tests_v2/fulltime_chi100_shift0/athinput",
+          "source": "/home/user/followup_20260907/tracking_tests_v2/fulltime_chi100_shift0/athinput",
           "parameter_sha256": "d5b8f797666ee6596584e9a558f47a280ac3e91dd7e2b1e2eddff134ba05430a",
           "assumptions": [
             "custom cloud_wind pgen fixes R=1, rho_wind=1 and P_wind=1"
@@ -3250,7 +3250,7 @@
         "core",
         "-np",
         "2",
-        "/home/kaan/followup_20260907/bin/athpp_tracking",
+        "/home/user/followup_20260907/bin/athpp_tracking",
         "-i",
         "athinput"
       ],
@@ -3264,9 +3264,9 @@
       "native_outputs": 101,
       "initial_fields": {
         "passed": true,
-        "snapshot": "/home/kaan/followup_20260907/tracking_tests_v2/fulltime_chi100_shift1/cloud_sharp13_20260907_L3_chi100.out2.00000.athdf",
+        "snapshot": "/home/user/followup_20260907/tracking_tests_v2/fulltime_chi100_shift1/cloud_sharp13_20260907_L3_chi100.out2.00000.athdf",
         "parameters": {
-          "source": "/home/kaan/followup_20260907/tracking_tests_v2/fulltime_chi100_shift1/athinput",
+          "source": "/home/user/followup_20260907/tracking_tests_v2/fulltime_chi100_shift1/athinput",
           "parameter_sha256": "47fc9c6f022656267600d705bc198e3b9cfc828fba96df717d2f221ac8305c22",
           "assumptions": [
             "custom cloud_wind pgen fixes R=1, rho_wind=1 and P_wind=1"
@@ -4330,7 +4330,7 @@
         "core",
         "-np",
         "2",
-        "/home/kaan/followup_20260907/bin/athpp_tracking",
+        "/home/user/followup_20260907/bin/athpp_tracking",
         "-i",
         "athinput"
       ],
@@ -4344,9 +4344,9 @@
       "native_outputs": 101,
       "initial_fields": {
         "passed": true,
-        "snapshot": "/home/kaan/followup_20260907/tracking_tests_v2/fulltime_chi1000_shift0/cloud_sharp13_20260907_L3_chi1000.out2.00000.athdf",
+        "snapshot": "/home/user/followup_20260907/tracking_tests_v2/fulltime_chi1000_shift0/cloud_sharp13_20260907_L3_chi1000.out2.00000.athdf",
         "parameters": {
-          "source": "/home/kaan/followup_20260907/tracking_tests_v2/fulltime_chi1000_shift0/athinput",
+          "source": "/home/user/followup_20260907/tracking_tests_v2/fulltime_chi1000_shift0/athinput",
           "parameter_sha256": "42816825d560838afba09f5b39c92dff49aa19b17b9ad02b3faaf1bb345aae64",
           "assumptions": [
             "custom cloud_wind pgen fixes R=1, rho_wind=1 and P_wind=1"
@@ -5409,7 +5409,7 @@
         "core",
         "-np",
         "2",
-        "/home/kaan/followup_20260907/bin/athpp_tracking",
+        "/home/user/followup_20260907/bin/athpp_tracking",
         "-i",
         "athinput"
       ],
@@ -5423,9 +5423,9 @@
       "native_outputs": 101,
       "initial_fields": {
         "passed": true,
-        "snapshot": "/home/kaan/followup_20260907/tracking_tests_v2/fulltime_chi1000_shift1/cloud_sharp13_20260907_L3_chi1000.out2.00000.athdf",
+        "snapshot": "/home/user/followup_20260907/tracking_tests_v2/fulltime_chi1000_shift1/cloud_sharp13_20260907_L3_chi1000.out2.00000.athdf",
         "parameters": {
-          "source": "/home/kaan/followup_20260907/tracking_tests_v2/fulltime_chi1000_shift1/athinput",
+          "source": "/home/user/followup_20260907/tracking_tests_v2/fulltime_chi1000_shift1/athinput",
           "parameter_sha256": "6af82f2f94411db5774f4a1e6b24971100342a64b7980f98efbf0c80174ad1a4",
           "assumptions": [
             "custom cloud_wind pgen fixes R=1, rho_wind=1 and P_wind=1"

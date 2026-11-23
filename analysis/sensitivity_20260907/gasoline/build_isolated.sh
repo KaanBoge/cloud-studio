@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 set -euo pipefail
-root=/home/kaan/sensitivity_20260907/gasoline
+root=/home/user/sensitivity_20260907/gasoline
 test ! -e "$root/build.log"
-exec 9>/home/kaan/performance_20260907/benchmark.lock
+exec 9>/home/user/performance_20260907/benchmark.lock
 flock -n 9
-exec 8>/home/kaan/performance_20260907/production.lock
+exec 8>/home/user/performance_20260907/production.lock
 flock -n 8
 guest_free=$(df -B1 --output=avail "$root" | tail -n 1)
 host_free=$(df -B1 --output=avail /mnt/c | tail -n 1)

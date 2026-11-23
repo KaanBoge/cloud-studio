@@ -9,7 +9,7 @@ import sys
 import h5py
 import numpy as np
 
-ROOT=Path('/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1')
+ROOT=Path('/home/user/sensitivity_20260907/gizmo/mfv_timestep_repair_v1')
 sys.path.insert(0,str(ROOT/'onset_runner_v1'))
 import mfv_onset as onset
 import diagnose_mfv_restart as decoder
@@ -62,7 +62,7 @@ def main():
     check('#if !defined(LONG_INTEGER_TIME)\n#define LONG_INTEGER_TIME' in header,'Native long-time default not present')
     check('#define  TIMEBINS        60' in header,'Native 60-bit branch absent')
     with (HERE/'tests.log').open('x') as stream:
-        subprocess.run(['/home/kaan/venv/bin/python','-m','unittest','-v','test_mfv_onset_clock_v2'],cwd=HERE,
+        subprocess.run(['/home/user/venv/bin/python','-m','unittest','-v','test_mfv_onset_clock_v2'],cwd=HERE,
                        stdout=stream,stderr=subprocess.STDOUT,check=True,timeout=60)
     original=json.loads((onset.DEST/'validation.json').read_text())
     check(original['failures']==['Terminal check: Restart endpoint/clock mismatch'],'Unexpected earlier validation failure')

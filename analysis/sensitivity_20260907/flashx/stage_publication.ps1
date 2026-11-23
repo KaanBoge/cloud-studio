@@ -1,6 +1,6 @@
 $ErrorActionPreference='Stop'
-$taskSource='C:\Users\kaanb\CloudCrushing\sensitivity_20260907\flashx'
-$taskDestination='C:\Users\kaanb\cloud-studio-repo\analysis\sensitivity_20260907\flashx'
+$taskSource='C:\Users\user\CloudCrushing\sensitivity_20260907\flashx'
+$taskDestination='C:\Users\user\cloud-studio-repo\analysis\sensitivity_20260907\flashx'
 $taskProof=Get-Content -LiteralPath (Join-Path $taskSource 'smoke_batch.json') -Raw | ConvertFrom-Json
 $taskYT=Get-Content -LiteralPath (Join-Path $taskSource 'yt_smoke_validation.json') -Raw | ConvertFrom-Json
 if($taskProof.status -ne 'complete_native_checks' -or $taskYT.status -ne 'passed'){throw 'Validated native setup required'}

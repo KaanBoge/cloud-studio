@@ -2,9 +2,9 @@
 import hashlib,json,os,stat
 from pathlib import Path
 
-RESULTS=Path('/mnt/c/Users/kaanb/CloudCrushing/results_A8')
-ROOTS=[Path('/home/kaan/CloudCrushing/A8'),Path('/home/kaan/codes/athenapk/runs'),Path('/home/kaan/codes/athenapp/runs')]
-DEST=Path('/mnt/c/Users/kaanb/CloudCrushing/sensitivity_20260907/gadget4/render_duplicate_audit.json')
+RESULTS=Path('/mnt/c/Users/user/CloudCrushing/results_wind_tunnel')
+ROOTS=[Path('/home/user/CloudCrushing/wind_tunnel'),Path('/home/user/codes/athenapk/runs'),Path('/home/user/codes/athenapp/runs')]
+DEST=Path('/mnt/c/Users/user/CloudCrushing/sensitivity_20260907/gadget4/render_duplicate_audit.json')
 
 def sha(path):
     with path.open('rb') as stream:return hashlib.file_digest(stream,'sha256').hexdigest()

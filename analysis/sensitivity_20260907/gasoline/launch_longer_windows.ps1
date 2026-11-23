@@ -1,5 +1,5 @@
 $ErrorActionPreference='Stop'
-$taskRoot='\\wsl.localhost\Ubuntu\home\kaan\sensitivity_20260907\gasoline'
+$taskRoot='\\wsl.localhost\Ubuntu\home\user\sensitivity_20260907\gasoline'
 $taskRecord=Join-Path $PSScriptRoot 'longer_worker_windows.json'
 if(Test-Path -LiteralPath $taskRecord){throw 'Existing launch record; verify processes instead of relaunching'}
 $taskBundle=Get-Content -Raw -LiteralPath (Join-Path $taskRoot 'runner_longer_v1\bundle.json') | ConvertFrom-Json
@@ -11,7 +11,7 @@ foreach($taskFile in $taskBundle.pinned_files.PSObject.Properties){
 foreach($taskName in @('original_a','original_b','retained_off','retained_on')){
  if(Test-Path -LiteralPath (Join-Path $taskRoot ('longer_validation_v1\'+$taskName+'\run_started.json'))){throw 'Existing native run; cannot relaunch'}
 }
-$taskWorker=Start-Process -FilePath 'wsl.exe' -ArgumentList @('-d','Ubuntu','--exec','env','OPENBLAS_NUM_THREADS=1','OMP_NUM_THREADS=1','/home/kaan/venv/bin/python','/home/kaan/sensitivity_20260907/gasoline/runner_longer_v1/longer_checks.py','run') -WindowStyle Hidden -PassThru -RedirectStandardOutput (Join-Path $PSScriptRoot 'longer_worker.log') -RedirectStandardError (Join-Path $PSScriptRoot 'longer_worker.err.log')
+$taskWorker=Start-Process -FilePath 'wsl.exe' -ArgumentList @('-d','Ubuntu','--exec','env','OPENBLAS_NUM_THREADS=1','OMP_NUM_THREADS=1','/home/user/venv/bin/python','/home/user/sensitivity_20260907/gasoline/runner_longer_v1/longer_checks.py','run') -WindowStyle Hidden -PassThru -RedirectStandardOutput (Join-Path $PSScriptRoot 'longer_worker.log') -RedirectStandardError (Join-Path $PSScriptRoot 'longer_worker.err.log')
 $taskReport=[pscustomobject]@{windows_pid=$taskWorker.Id;started=(Get-Date).ToString('o');scope='Four new native 120-step output/retention diagnostics; no full science controls'}
 [IO.File]::WriteAllText($taskRecord,($taskReport | ConvertTo-Json))
 $taskReport

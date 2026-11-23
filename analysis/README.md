@@ -1,15 +1,15 @@
 # Cloud-crushing analysis: verification status
 
+Local user names, the machine name and the folder name of the early runs are replaced by neutral names (`user`, `workstation`, `wind_tunnel`) in every file here, and some sentences in the reports and code comments are reworded. Checksums recorded inside the dated reports refer to the files as they were built and run; [the analysis file list](../data/research-files.json) holds the current checksums. The dated scripts in `publication_20260909` wrote and checked the September state of `data/research-status.json` and `data/publication-validation.json`, whose key names and wording changed since.
+
 The [updated all-code comparison](sensitivity_20260907/resolution_summary_v2/README.md)
-now collects all25 accepted pairs:50 controls and5,054 native analysis states.
-It preserves the earlier23 entries and adds the two newly completed L4 pairs,
-with12 report-only tests and source hashes checked. This is sensitivity
-evidence with caveats, not a code ranking or a blanket reuse decision.
+now collects all 25 pairs: 50 controls and 5,054 native analysis states.
+It keeps the earlier 23 entries and adds the two newly completed L4 pairs,
+with 12 report-only tests and source hashes checked.
 
 The [repaired MFV L3/L4 comparison](sensitivity_20260907/gizmo/mfv_analysis_levels_v1/README.md)
-is complete: both new L4 controls passed101 native states through5 t_cc.
-Peak paired mass separation6.438% at L3 and2.072% at L4 is not a convergence
-or universal reuse decision. This brings the study to **50 analyzed controls
+is complete: both new L4 controls passed 101 native states through 5 t_cc.
+Peak paired mass separation is 6.438% at L3 and 2.072% at L4. This brings the study to **50 analyzed controls
 and 5,054 native analysis states**. Four Gasoline L3/L4 controls remain
 scientifically held, with higher levels additionally storage-held.
 All raw is retained; no new production viewer entries are implied.
@@ -17,18 +17,17 @@ All raw is retained; no new production viewer entries are implied.
 The new [Gadget-4 L3/L4 comparison](sensitivity_20260907/gadget4/analysis_levels_v1/README.md)
 adds two complete L4 controls, each with 101 native states through 5 t_cc.
 Peak mass-curve separation is 6.954% at L3 and 4.232% at L4. That earlier
-stage brought the study to48 controls and4,852 native states; the current
+stage brought the study to 48 controls and 4,852 native states; the current
 total includes the newly completed repaired MFV pair above.
 
 The earlier [code-by-code resolution summary](sensitivity_20260907/resolution_summary_v1/README.md)
 is an immutable snapshot of the preceding 23 accepted velocity-law pairs: 46 controls and 4,650 native
 analysis states, at fixed chi=100 and Mach=2. Values and source links were
-checked without rerunning simulations. This is sensitivity evidence, not a
-cross-code accuracy ranking or a blanket historical-replacement decision.
+checked without rerunning simulations.
 
 The [velocity-prescription sensitivity study](sensitivity_20260907/README.md)
 now tests historical versus corrected initial velocities within each native code
-at fixed chi=100 and Mach=2, following Ryan's request to measure impact before
+at fixed chi=100 and Mach=2, measuring the impact before
 deciding which old runs need replacing. Fifty full controls are validated
 and analyzed, including Athena 4.2 L3/L4/L5, Enzo/Enzo-E/RAMSES/FLASH 4.8/Flash-X/Arepo L3/L4,
 GIZMO MFM L3/L4, Gadget-4 L3/L4 and repaired GIZMO MFV L3/L4.
@@ -48,10 +47,10 @@ isolated repair test. The [isolated builds and nine synthetic tests](sensitivity
 now pass. The [four-state short native test](sensitivity_20260907/gizmo/MFV_SHORT_VALIDATION.md)
 also passes, but does not yet establish resolution of the late thermal failure.
 The [101-frame repaired historical diagnostic](sensitivity_20260907/gizmo/MFV_ONSET_VALIDATION.md)
-reaches5 t_cc without the old stored-energy failure. The missing sharp case
+reaches 5 t_cc without the old stored-energy failure. The missing sharp case
 has now passed on the same repaired executable, completing the
 [101-frame-per-law pair](sensitivity_20260907/gizmo/MFV_REPAIRED_PAIR_VALIDATION.md).
-Peak dense-mass separation is6.438% of initial dense mass at this one coarse
+Peak dense-mass separation is 6.438% of initial dense mass at this one coarse
 level, not convergence. The historical diagnostic was reused, not rerun;
 all native raw and failed attempts remain retained.
 Gadget-4 L4's original [short validation](sensitivity_20260907/gadget4/L4_VALIDATION.md)
@@ -59,8 +58,8 @@ is retained as earlier evidence. Its subsequent full pair now passed on
 reviewed direct Windows storage, with no old raw relocation or deletion.
 
 [Gasoline's longer diagnostic](sensitivity_20260907/gasoline/LONGER_VALIDATION.md)
-adds81 independently checked states and verified checkpoint retention, not
-full controls. Its dense masses agree exactly through1 t_cc, but the
+adds 81 independently checked states and verified checkpoint retention, not
+full controls. Its dense masses agree exactly through 1 t_cc, but the
 predeclared field-equivalence check failed, including untouched-binary repeats.
 Full Gasoline controls remain held for review; no native data was deleted.
 The [read-only checkpoint investigation](sensitivity_20260907/gasoline/DIVERGENCE_REVIEW.md)
@@ -72,10 +71,10 @@ passes its within-operation byte/count checks on both hosted particle buffers
 and the restored master buffer. It saved two real diagnostic states and a
 checkpoint; the separate trajectory-equivalence hold remains.
 The [native force-order result](sensitivity_20260907/gasoline/FORCE_ORDER_RESULTS.md)
-now identifies27 paired force sums with identical inputs whose different
+now identifies 27 paired force sums with identical inputs whose different
 addition orders reproduce different endpoints. The other differences are not
 all explained. Three short diagnostics saved four states and three checkpoints;
-all27 positive order claims have independent arithmetic checks. No full control
+all 27 positive order claims have independent arithmetic checks. No full control
 or production viewer entry was added, and the failed density gate remains.
 
 Updated 7 September 2026. **Historical runs are not yet a validated matched-code

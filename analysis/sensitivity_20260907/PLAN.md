@@ -1,6 +1,6 @@
 # Velocity-prescription sensitivity study
 
-Ryan requested a few resolutions per code at fixed chi and Mach before deciding
+This study measures a few resolutions per code at fixed chi and Mach before deciding
 whether affected historical runs need replacing. This study preserves all old
 and new raw data. It does not authorize a blanket replacement campaign.
 
@@ -40,9 +40,9 @@ The separately frozen full pair ran sharp then historical on eight
 bound CPU workers. All original per-level numerics remain unchanged;
 tiny timing caps apply only to the completed diagnostics.
 
-Runner: `/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/l4_full_runner_v1/mfv_l4_full.py`.
+Runner: `/home/user/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/l4_full_runner_v1/mfv_l4_full.py`.
 Plan SHA256: `2b77bb64257e2826dfe241ca6fb31eedcd5b868d73eeb4761cf96ac079430d7c`.
-Raw/ledger: `C:/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1`.
+Raw/ledger: `C:/Users/user/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1`.
 The Windows-owned hidden launcher keeps the sequential pair independent of
 chat turns. Do not relaunch preparation, full workers, frozen tests or
 completed diagnostics. Check actual processes and ledger before next work.
@@ -68,8 +68,8 @@ have 101 independently checked native states through 5 t_cc. The new
 L3 scalar report and measures peak separation 6.954% / 4.232%. It adds
 12 scalar tests, an independent interpolation check and new raw hash verification.
 
-Runner: `/home/kaan/sensitivity_20260907/gadget4/runner_full_l4_ntfs_v1`.
-Raw and live ledger: `C:/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/gadget4_L4_velocity_pair_v1`.
+Runner: `/home/user/sensitivity_20260907/gadget4/runner_full_l4_ntfs_v1`.
+Raw and live ledger: `C:/Users/user/CloudCrushing/native_runs/sensitivity_20260907/gadget4_L4_velocity_pair_v1`.
 Plan SHA256: `a66c291cdaf6858a0c69560a47ed137f5d026e85851af205134b5cb0d67bdba4`.
 Do not relaunch preparation, tests, either case, or the frozen runner.
 Accepted controls are now 48, containing 4,852 native analysis states. Six
@@ -338,9 +338,9 @@ cloud material remained in the box. Cooling and tracking validation remain separ
 
 ## Commands and artifacts
 
-Source/scripts: `C:/Users/kaanb/CloudCrushing/sensitivity_20260907`.
-Native working area: `/home/kaan/sensitivity_20260907`.
-Use `/home/kaan/venv/bin/python` under WSL for `build.py`, `test_pairs.py`,
+Source/scripts: `C:/Users/user/CloudCrushing/sensitivity_20260907`.
+Native working area: `/home/user/sensitivity_20260907`.
+Use `/home/user/venv/bin/python` under WSL for `build.py`, `test_pairs.py`,
 `run_pairs.py --run` and `analyze.py`. Builds/outputs fail closed on unexpected
 state and preserve failed attempts. Runs take the existing benchmark/production
 locks and check both Windows backing-volume and WSL space.

@@ -11,7 +11,7 @@ OUTSIDE the dense edge so that no cell is simultaneously dense and fast.  Cells
 that are both dense and fast produce catastrophic cancellation between kinetic
 and total energy and poison the early evolution.  This matches the convention in
 gasoline/ics/make_gasoline_cloudwind.py (RV_SCALE = 1.3) and in the Athena++
-problem generator CloudCrushing/A8/cloud_wind.c.
+problem generator CloudCrushing/wind_tunnel/cloud_wind.c.
 
   NOTE ON REPRODUCIBILITY: the archived 2D ICs in runs/AREPO2D_chi10 and
   runs/AREPO2D_chi100 were written by the earlier version of this script, which

@@ -11,9 +11,9 @@ import sys
 import psutil
 
 SOURCE = Path(__file__).resolve().parent
-BASE = Path('/home/kaan/sensitivity_20260907/gadget4')
+BASE = Path('/home/user/sensitivity_20260907/gadget4')
 DEST = BASE/'runner_full_l4_ntfs_v1'
-RAW = Path('/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/gadget4_L4_velocity_pair_v1')
+RAW = Path('/mnt/c/Users/user/CloudCrushing/native_runs/sensitivity_20260907/gadget4_L4_velocity_pair_v1')
 GIB = 1024**3
 
 
@@ -27,7 +27,7 @@ def main():
         raise FileExistsError('Existing preparation/run must be retained, never overwritten')
     locks=[]
     for name in ('benchmark.lock','production.lock'):
-        h=Path('/home/kaan/performance_20260907',name).open('a')
+        h=Path('/home/user/performance_20260907',name).open('a')
         fcntl.flock(h,fcntl.LOCK_EX|fcntl.LOCK_NB)
         locks.append(h)
     proof_path=BASE/'validation_l4_v1/report.json'
@@ -76,7 +76,7 @@ def main():
     pins={str(DEST/name):sha(DEST/name) for name in files}
     pins.update({str(path):sha(path) for path in (BASE/'gadget_controls.py',BASE/'build.json',
                 BASE/'experiment.json',BASE/'params_L4.txt',BASE/'Gadget4_pair',proof_path,
-                Path('/home/kaan/verified_20260907/storage_guard.py'))})
+                Path('/home/user/verified_20260907/storage_guard.py'))})
     windows_files={'storage_probe.bin':sha(probe)}
     for case in proof['cases']:
         law='tanh13' if case['mode'] else 'sharp13'

@@ -19,20 +19,17 @@ software written by Kaan Boge.
 ## Native simulation packages and analysis dependencies
 
 AthenaPK, Athena++, Athena 4.2, Enzo, Enzo-E, RAMSES, FLASH 4.8, Flash-X, Arepo,
-GIZMO, Gadget-4 and Gasoline retain their upstream licenses and access terms.
+GIZMO, GADGET-4 and Gasoline retain their upstream licenses and access terms.
 The same applies to externally installed yt, NumPy, SciPy, matplotlib,
 scikit image, h5py, ffmpeg and parallel runtimes. These are not relicensed by
 Cloud Studio's root LICENSE.
 
 The `code/` exports and native source adaptations in `analysis/` are outside
-the new MIT grant. Their existing notices and provenance are preserved. This
-document is not a certification that every historical excerpt has complete
+the MIT grant. Their existing notices and provenance are preserved. This
+document does not establish that every earlier excerpt has complete
 redistribution documentation.
 
-## Scientific references and records
+## Scientific references
 
 References in the methods, reports and scripts identify published scientific
-work. They are not project coauthor labels. Original dated analyses and source
-evidence are retained as records of the work performed, including the context
-of scientific feedback. This presentation update does not rewrite them or
-assign another researcher's contributions to Kaan Boge.
+work. They are citations, not coauthor labels.

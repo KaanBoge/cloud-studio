@@ -3,7 +3,7 @@
 The [project inventory](project_storage_inventory.json) records file counts and
 logical sizes by research directory category at its stated time. It includes
 native fields, code, logs, environments and derived views inside those roots.
-It is metadata only—not a raw-only total or a backup. Personal recordings,
+It is metadata only, not a raw-only total or a backup. Personal recordings,
 installer names and whole-machine cleanup inventories are not included.
 
 The [compression probe](compression_probe.json) tested four retained Enzo

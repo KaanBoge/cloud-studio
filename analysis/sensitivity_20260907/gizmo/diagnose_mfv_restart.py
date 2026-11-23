@@ -15,7 +15,7 @@ from pathlib import Path
 import h5py
 import numpy as np
 
-ROOT = Path('/home/kaan/sensitivity_20260907/gizmo')
+ROOT = Path('/home/user/sensitivity_20260907/gizmo')
 EXPECTED_BINARY = 'b7634f844d98ceef246d66e2243827f0c5774c9997b92bd8ffeedfdf940eed91'
 FIELDS = {
     'global_data_all_processes': ['Time', 'TimeMax', 'TotNumPart', 'TotN_gas',
@@ -283,7 +283,7 @@ def main():
     old_path = args.root / 'mfv_pair_audit.json'
     old = json.loads(old_path.read_text())
     cases = [diagnose_case(args.root, law, types, old) for law in ('sharp13', 'tanh13')]
-    source_root = Path('/home/kaan/codes/gizmo')
+    source_root = Path('/home/user/codes/gizmo')
     report = dict(status='diagnostic_only_mfv_not_certified',
         script_sha256=sha(__file__), binary_sha256=sha(binary), audit_sha256=sha(old_path),
         readelf_info_sha256=hashlib.sha256(dwarf.encode()).hexdigest(), compiled_layouts=evidence,

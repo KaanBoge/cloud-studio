@@ -16,8 +16,8 @@ import shutil
 import urllib.request
 import zipfile
 
-REPO = Path('C:/Users/kaanb/cloud-studio-repo')
-PROJECT = Path('C:/Users/kaanb/CloudCrushing')
+REPO = Path('C:/Users/user/cloud-studio-repo')
+PROJECT = Path('C:/Users/user/CloudCrushing')
 WORK = PROJECT / 'publication_20260909'
 FRAMES_SHA = '7b25e3b651dafffb76716bdf0c7d778d2e441182'
 BASE_SHA = 'eb7755ea1d0585082276989e0613ec2b23d775c9'

@@ -34,7 +34,7 @@ def output_energy(value):
 
 def main():
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument('--root', type=Path, default=Path('/home/kaan/sensitivity_20260907/gizmo'))
+    p.add_argument('--root', type=Path, default=Path('/home/user/sensitivity_20260907/gizmo'))
     p.add_argument('--output', type=Path, required=True)
     args = p.parse_args()
     check(not args.output.exists(), 'Refuse to overwrite review')

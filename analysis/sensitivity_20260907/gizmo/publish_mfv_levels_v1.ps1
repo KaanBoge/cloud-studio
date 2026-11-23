@@ -1,7 +1,7 @@
 param([ValidateSet('stage','verify')][string]$Mode='stage',[string]$Commit,[long]$WorkflowId)
 $ErrorActionPreference='Stop'
-$taskRepo='C:\Users\kaanb\cloud-studio-repo'
-$taskStudy='C:\Users\kaanb\CloudCrushing\sensitivity_20260907'
+$taskRepo='C:\Users\user\cloud-studio-repo'
+$taskStudy='C:\Users\user\CloudCrushing\sensitivity_20260907'
 $taskBase='b86653c37451630f5256d8367d8aab9baeb62372'
 $taskFiles=@('README.md','PLAN.md','gizmo/README.md','gizmo/analyze_mfv_levels_v1.py','gizmo/test_mfv_levels_v1.py',
  'gizmo/publish_mfv_levels_v1.ps1',

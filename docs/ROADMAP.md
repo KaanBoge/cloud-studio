@@ -1,4 +1,3 @@
-# Current collection guide
+# Collection guide
 
-See [currently published contents](STATUS.md) for the public collection.
-This page preserves an existing link. Cloud Studio is an ongoing research project.
+The contents of the site and the repository are listed in [what the site holds](STATUS.md). This page keeps an older link working.

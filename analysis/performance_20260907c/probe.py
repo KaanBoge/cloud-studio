@@ -4,13 +4,13 @@ import json
 from pathlib import Path
 import statistics
 import sys
-sys.path.insert(0,'/mnt/c/Users/kaanb/CloudCrushing/performance_20260907b')
+sys.path.insert(0,'/mnt/c/Users/user/CloudCrushing/performance_20260907b')
 import bench
 import verify
-sys.path.insert(0,'/home/kaan/verified_20260907')
+sys.path.insert(0,'/home/user/verified_20260907')
 from storage_guard import storage_snapshot,require_storage
 
-ROOT=Path('/home/kaan/performance_20260907c')
+ROOT=Path('/home/user/performance_20260907c')
 
 
 def main():
@@ -19,7 +19,7 @@ def main():
         raise RuntimeError('Already measured; do not silently repeat')
     locks=[]
     for name in ('benchmark.lock','production.lock'):
-        lock=Path('/home/kaan/performance_20260907',name).open('a')
+        lock=Path('/home/user/performance_20260907',name).open('a')
         fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(lock)
     storage=storage_snapshot(ROOT)
     require_storage(storage,4*1024**3)

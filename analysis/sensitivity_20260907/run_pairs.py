@@ -19,7 +19,7 @@ import h5py
 import numpy as np
 import psutil
 
-sys.path.insert(0,'/mnt/c/Users/kaanb/CloudCrushing/restart_20260907')
+sys.path.insert(0,'/mnt/c/Users/user/CloudCrushing/restart_20260907')
 import run_l4 as base
 from build import ROOT, sha
 r=base.r
@@ -187,7 +187,7 @@ def main():
                 raise RuntimeError('Confounded parameter pair')
     locks=[]
     for name in ('benchmark.lock','production.lock'):
-        f=Path('/home/kaan/performance_20260907',name).open('a')
+        f=Path('/home/user/performance_20260907',name).open('a')
         fcntl.flock(f,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(f)
     batch=dict(status='running',plan=plan,finished=[])
     try:

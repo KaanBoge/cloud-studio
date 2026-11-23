@@ -1,10 +1,10 @@
 {
   "scope": "Requested Mach-2 nonradiative baseline, not a declaration that every old run must be repeated.",
-  "memory_sources": [
-    "C:/Users/kaanb/.claude/projects/C--/memory/cloud-crushing-mentorship.md",
-    "C:/Users/kaanb/.claude/projects/C--/memory/cloud-crushing-3d-ceiling.md"
+  "note_sources": [
+    "August 2026 project notes: cloud crushing project overview",
+    "August 2026 project notes: measured 3D resolution limits"
   ],
-  "memory_caveat": "August notes are historical and contain superseded IC, resolution-limit and deletion claims. Current September audit takes precedence.",
+  "note_caveat": "August notes are historical and contain superseded IC, resolution-limit and deletion claims. Current September audit takes precedence.",
   "code_families": 12,
   "solver_variants": 13,
   "target_cells": 234,
@@ -117,7 +117,7 @@
       ],
       "target_native_times": 101,
       "status": "completed_basic_native_checks",
-      "directory": "/home/kaan/codes/athenapp/runs/RESTART_sharp13_20260907_L3_chi10",
+      "directory": "/home/user/codes/athenapp/runs/RESTART_sharp13_20260907_L3_chi10",
       "native_snapshots": 101,
       "publication": "not yet published",
       "comparison_validation": "BC/tracer matching, common time and retention still need review"
@@ -135,7 +135,7 @@
       ],
       "target_native_times": 101,
       "status": "completed_basic_native_checks",
-      "directory": "/home/kaan/codes/athenapp/runs/RESTART_sharp13_20260907_L3_chi100",
+      "directory": "/home/user/codes/athenapp/runs/RESTART_sharp13_20260907_L3_chi100",
       "native_snapshots": 101,
       "publication": "not yet published",
       "comparison_validation": "BC/tracer matching, common time and retention still need review"
@@ -153,7 +153,7 @@
       ],
       "target_native_times": 101,
       "status": "completed_basic_native_checks",
-      "directory": "/home/kaan/codes/athenapp/runs/RESTART_sharp13_20260907_L3_chi1000",
+      "directory": "/home/user/codes/athenapp/runs/RESTART_sharp13_20260907_L3_chi1000",
       "native_snapshots": 101,
       "publication": "not yet published",
       "comparison_validation": "BC/tracer matching, common time and retention still need review"
@@ -171,7 +171,7 @@
       ],
       "target_native_times": 101,
       "status": "completed_basic_native_checks",
-      "directory": "/home/kaan/codes/athenapp/runs/RESTART_sharp13_20260907_L4_chi10",
+      "directory": "/home/user/codes/athenapp/runs/RESTART_sharp13_20260907_L4_chi10",
       "native_snapshots": 101,
       "publication": "not yet published",
       "comparison_validation": "BC/tracer matching, common time and retention still need review"
@@ -189,7 +189,7 @@
       ],
       "target_native_times": 101,
       "status": "completed_basic_native_checks",
-      "directory": "/home/kaan/codes/athenapp/runs/RESTART_sharp13_20260907_L4_chi100",
+      "directory": "/home/user/codes/athenapp/runs/RESTART_sharp13_20260907_L4_chi100",
       "native_snapshots": 101,
       "publication": "not yet published",
       "comparison_validation": "BC/tracer matching, common time and retention still need review"
@@ -207,7 +207,7 @@
       ],
       "target_native_times": 101,
       "status": "completed_basic_native_checks",
-      "directory": "/home/kaan/codes/athenapp/runs/RESTART_sharp13_20260907_L4_chi1000",
+      "directory": "/home/user/codes/athenapp/runs/RESTART_sharp13_20260907_L4_chi1000",
       "native_snapshots": 101,
       "publication": "not yet published",
       "comparison_validation": "BC/tracer matching, common time and retention still need review"
@@ -225,7 +225,7 @@
       ],
       "target_native_times": 101,
       "status": "queued_storage_hold",
-      "directory": "/home/kaan/codes/athenapp/runs/OPTLTO_sharp13_20260907_L5_chi10",
+      "directory": "/home/user/codes/athenapp/runs/OPTLTO_sharp13_20260907_L5_chi10",
       "required_free_gib": 48.247812499292195
     },
     {
@@ -241,7 +241,7 @@
       ],
       "target_native_times": 101,
       "status": "queued_storage_hold",
-      "directory": "/home/kaan/codes/athenapp/runs/OPTLTO_sharp13_20260907_L5_chi100",
+      "directory": "/home/user/codes/athenapp/runs/OPTLTO_sharp13_20260907_L5_chi100",
       "required_free_gib": 48.247812499292195
     },
     {
@@ -257,7 +257,7 @@
       ],
       "target_native_times": 101,
       "status": "queued_storage_hold",
-      "directory": "/home/kaan/codes/athenapp/runs/OPTLTO_sharp13_20260907_L5_chi1000",
+      "directory": "/home/user/codes/athenapp/runs/OPTLTO_sharp13_20260907_L5_chi1000",
       "required_free_gib": 48.247812499292195
     },
     {
@@ -273,7 +273,7 @@
       ],
       "target_native_times": 101,
       "status": "queued_storage_hold",
-      "directory": "/home/kaan/codes/athenapp/runs/OPT_sharp13_20260907_L6_chi10",
+      "directory": "/home/user/codes/athenapp/runs/OPT_sharp13_20260907_L6_chi10",
       "required_free_gib": 245.9824999999255
     },
     {
@@ -289,7 +289,7 @@
       ],
       "target_native_times": 101,
       "status": "queued_storage_hold",
-      "directory": "/home/kaan/codes/athenapp/runs/OPT_sharp13_20260907_L6_chi100",
+      "directory": "/home/user/codes/athenapp/runs/OPT_sharp13_20260907_L6_chi100",
       "required_free_gib": 245.9824999999255
     },
     {
@@ -305,7 +305,7 @@
       ],
       "target_native_times": 101,
       "status": "queued_storage_hold",
-      "directory": "/home/kaan/codes/athenapp/runs/OPT_sharp13_20260907_L6_chi1000",
+      "directory": "/home/user/codes/athenapp/runs/OPT_sharp13_20260907_L6_chi1000",
       "required_free_gib": 245.9824999999255
     },
     {
@@ -411,7 +411,7 @@
       ],
       "target_native_times": 101,
       "status": "completed_basic_native_checks",
-      "directory": "/home/kaan/codes/athenapk/runs/RESTART_sharp13_20260907_L3_chi10",
+      "directory": "/home/user/codes/athenapk/runs/RESTART_sharp13_20260907_L3_chi10",
       "native_snapshots": 101,
       "publication": "not yet published",
       "comparison_validation": "BC/tracer matching, common time and retention still need review"
@@ -429,7 +429,7 @@
       ],
       "target_native_times": 101,
       "status": "completed_basic_native_checks",
-      "directory": "/home/kaan/codes/athenapk/runs/RESTART_sharp13_20260907_L3_chi100",
+      "directory": "/home/user/codes/athenapk/runs/RESTART_sharp13_20260907_L3_chi100",
       "native_snapshots": 101,
       "publication": "not yet published",
       "comparison_validation": "BC/tracer matching, common time and retention still need review"
@@ -447,7 +447,7 @@
       ],
       "target_native_times": 101,
       "status": "completed_basic_native_checks",
-      "directory": "/home/kaan/codes/athenapk/runs/RESTART_sharp13_20260907_L3_chi1000",
+      "directory": "/home/user/codes/athenapk/runs/RESTART_sharp13_20260907_L3_chi1000",
       "native_snapshots": 101,
       "publication": "not yet published",
       "comparison_validation": "BC/tracer matching, common time and retention still need review"
@@ -465,7 +465,7 @@
       ],
       "target_native_times": 101,
       "status": "completed_basic_native_checks",
-      "directory": "/home/kaan/codes/athenapk/runs/RESTART_sharp13_20260907_L4_chi10",
+      "directory": "/home/user/codes/athenapk/runs/RESTART_sharp13_20260907_L4_chi10",
       "native_snapshots": 101,
       "publication": "not yet published",
       "comparison_validation": "BC/tracer matching, common time and retention still need review"
@@ -483,7 +483,7 @@
       ],
       "target_native_times": 101,
       "status": "completed_basic_native_checks",
-      "directory": "/home/kaan/codes/athenapk/runs/RESTART_sharp13_20260907_L4_chi100",
+      "directory": "/home/user/codes/athenapk/runs/RESTART_sharp13_20260907_L4_chi100",
       "native_snapshots": 101,
       "publication": "not yet published",
       "comparison_validation": "BC/tracer matching, common time and retention still need review"
@@ -501,7 +501,7 @@
       ],
       "target_native_times": 101,
       "status": "completed_basic_native_checks",
-      "directory": "/home/kaan/codes/athenapk/runs/RESTART_sharp13_20260907_L4_chi1000",
+      "directory": "/home/user/codes/athenapk/runs/RESTART_sharp13_20260907_L4_chi1000",
       "native_snapshots": 101,
       "publication": "not yet published",
       "comparison_validation": "BC/tracer matching, common time and retention still need review"
@@ -519,7 +519,7 @@
       ],
       "target_native_times": 101,
       "status": "queued_storage_hold",
-      "directory": "/home/kaan/codes/athenapk/runs/OPTIO1_sharp13_20260907_L5_chi10",
+      "directory": "/home/user/codes/athenapk/runs/OPTIO1_sharp13_20260907_L5_chi10",
       "required_free_gib": 48.247812499292195
     },
     {
@@ -535,7 +535,7 @@
       ],
       "target_native_times": 101,
       "status": "queued_storage_hold",
-      "directory": "/home/kaan/codes/athenapk/runs/OPTIO1_sharp13_20260907_L5_chi100",
+      "directory": "/home/user/codes/athenapk/runs/OPTIO1_sharp13_20260907_L5_chi100",
       "required_free_gib": 48.247812499292195
     },
     {
@@ -551,7 +551,7 @@
       ],
       "target_native_times": 101,
       "status": "queued_storage_hold",
-      "directory": "/home/kaan/codes/athenapk/runs/OPTIO1_sharp13_20260907_L5_chi1000",
+      "directory": "/home/user/codes/athenapk/runs/OPTIO1_sharp13_20260907_L5_chi1000",
       "required_free_gib": 48.247812499292195
     },
     {
@@ -567,7 +567,7 @@
       ],
       "target_native_times": 101,
       "status": "queued_storage_hold",
-      "directory": "/home/kaan/codes/athenapk/runs/OPTIO1_sharp13_20260907_L6_chi10",
+      "directory": "/home/user/codes/athenapk/runs/OPTIO1_sharp13_20260907_L6_chi10",
       "required_free_gib": 245.9824999999255
     },
     {
@@ -583,7 +583,7 @@
       ],
       "target_native_times": 101,
       "status": "queued_storage_hold",
-      "directory": "/home/kaan/codes/athenapk/runs/OPTIO1_sharp13_20260907_L6_chi100",
+      "directory": "/home/user/codes/athenapk/runs/OPTIO1_sharp13_20260907_L6_chi100",
       "required_free_gib": 245.9824999999255
     },
     {
@@ -599,7 +599,7 @@
       ],
       "target_native_times": 101,
       "status": "queued_storage_hold",
-      "directory": "/home/kaan/codes/athenapk/runs/OPTIO1_sharp13_20260907_L6_chi1000",
+      "directory": "/home/user/codes/athenapk/runs/OPTIO1_sharp13_20260907_L6_chi1000",
       "required_free_gib": 245.9824999999255
     },
     {

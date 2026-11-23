@@ -1,7 +1,7 @@
 const fs = require('node:fs');
 const vm = require('node:vm');
 const assert = require('node:assert/strict');
-const html = fs.readFileSync('C:/Users/kaanb/CloudCrushing/studio/viewer.html','utf8');
+const html = fs.readFileSync('C:/Users/user/CloudCrushing/studio/viewer.html','utf8');
 const source = html.match(/<script type="module">([\s\S]*?)<\/script>/)[1];
 new vm.SourceTextModule(source); // Parse the entire module, including browser-only code.
 const checker = source.match(/function validDiagnostics\(d\) \{[\s\S]*?\n\}/)[0];

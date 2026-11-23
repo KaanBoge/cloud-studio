@@ -4,9 +4,9 @@ from pathlib import Path
 import sys
 import numpy as np
 import h5py
-sys.path.insert(0,'/home/kaan/codes/athenapp/vis/python')
+sys.path.insert(0,'/home/user/codes/athenapp/vis/python')
 import athena_read
-ROOT=Path('/home/kaan/performance_20260907/benchmarks_v3')
+ROOT=Path('/home/user/performance_20260907/benchmarks_v3')
 
 
 def uniform_apk(path,field):

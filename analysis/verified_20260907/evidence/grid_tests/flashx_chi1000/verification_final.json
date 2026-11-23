@@ -1,8 +1,8 @@
 {
   "passed": true,
-  "snapshot": "/home/kaan/ic_audit_20260907/grid_tests/flashx_chi1000/cloudwind_hdf5_chk_0000",
+  "snapshot": "/home/user/ic_audit_20260907/grid_tests/flashx_chi1000/cloudwind_hdf5_chk_0000",
   "parameters": {
-    "source": "/home/kaan/ic_audit_20260907/grid_tests/flashx_chi1000/flash.par",
+    "source": "/home/user/ic_audit_20260907/grid_tests/flashx_chi1000/flash.par",
     "parameter_sha256": "05cc8f60bc93eecb5bc2b2460c5696f1f592d4cfc42d8fefdee212896b61c84b",
     "assumptions": [],
     "gamma": 1.6666666666666667,

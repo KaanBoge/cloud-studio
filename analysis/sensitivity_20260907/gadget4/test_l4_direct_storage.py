@@ -61,7 +61,7 @@ class DirectStorageTests(unittest.TestCase):
             run.budget_gate(20*run.GIB, 100*run.GIB, None, run.PAIR_BYTES)
 
     def test_wrong_raw_destination_fails(self):
-        with patch.object(run, 'RAW', Path('/home/kaan/unreviewed')):
+        with patch.object(run, 'RAW', Path('/home/user/unreviewed')):
             with self.assertRaises(ValueError):
                 run.verify_paths()
 

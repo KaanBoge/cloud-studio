@@ -15,7 +15,7 @@ import time
 import numpy as np
 import psutil
 
-PREP=Path('/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/l4_prepare_runner_v1')
+PREP=Path('/home/user/sensitivity_20260907/gizmo/mfv_timestep_repair_v1/l4_prepare_runner_v1')
 sys.path.insert(0,str(PREP))
 import mfv_l4_prepare as p
 import mfv_l4_native_checks as v
@@ -23,7 +23,7 @@ from mfv_l4_native_checks import check,sha,save
 
 HERE=Path(__file__).resolve().parent
 PACKAGE=p.BASE/'mfv_timestep_repair_v1/l4_full_runner_v1'
-RAW=Path('/mnt/c/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1')
+RAW=Path('/mnt/c/Users/user/CloudCrushing/native_runs/sensitivity_20260907/mfv_L4_velocity_pair_v1')
 PREP_SHA='579f85c2ca74cf7e44a8529b77d3d8f80e45e6760ccc18fa9aad9bae7c15e096'
 
 
@@ -68,7 +68,7 @@ def freeze():
     pins={str(PACKAGE/n):sha(PACKAGE/n) for n in names}
     pins.update({str(RAW/n):digest for n,digest in readback.items()})
     for f in (PREP/'plan.json',p.RAW/'validation.json',v.BINARY):pins[str(f)]=sha(f)
-    tests=subprocess.run(['/home/kaan/venv/bin/python','-m','unittest','-v','test_mfv_l4_full'],cwd=PACKAGE,capture_output=True,text=True,timeout=60)
+    tests=subprocess.run(['/home/user/venv/bin/python','-m','unittest','-v','test_mfv_l4_full'],cwd=PACKAGE,capture_output=True,text=True,timeout=60)
     save(PACKAGE/'tests.json',dict(returncode=tests.returncode,stdout=tests.stdout,stderr=tests.stderr))
     check(tests.returncode==0 and 'Ran 7 tests' in tests.stderr and '\nOK\n' in tests.stderr,'New full tests failed')
     pins[str(PACKAGE/'tests.json')]=sha(PACKAGE/'tests.json')

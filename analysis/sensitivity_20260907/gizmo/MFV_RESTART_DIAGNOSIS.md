@@ -94,9 +94,9 @@ before any larger science run. No full MFV queue has been enabled.
 [decoder](diagnose_mfv_restart.py), [independent reader](review_mfv_restart.py),
 [tests](test_mfv_restart.py), and [earlier all-state audit](mfv_pair_audit.json).
 
-Native working root: `/home/kaan/sensitivity_20260907/gizmo`.
-Windows source root: `C:/Users/kaanb/CloudCrushing/sensitivity_20260907/gizmo`.
-Use `/home/kaan/venv/bin/python -m unittest -v test_mfv_restart` from the
+Native working root: `/home/user/sensitivity_20260907/gizmo`.
+Windows source root: `C:/Users/user/CloudCrushing/sensitivity_20260907/gizmo`.
+Use `/home/user/venv/bin/python -m unittest -v test_mfv_restart` from the
 native root for synthetic tests. Completed diagnostic/review JSONs must not be
 overwritten or needlessly regenerated. Public scripts require the retained
 local raw files and exact binary; they are not themselves a raw-data backup.

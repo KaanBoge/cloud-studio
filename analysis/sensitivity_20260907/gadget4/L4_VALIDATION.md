@@ -1,6 +1,6 @@
 # Gadget-4 level-4 validation and storage hold
 
-8 September 2026, checked at approximately 09:39 Istanbul time.
+8 September 2026, checked at approximately 06:39 UTC.
 **The level-4 short validation passed; no full level-4 control has started.**
 The accepted study total remains 44. These tests are not 101-frame science runs.
 
@@ -72,7 +72,7 @@ independent check, timing, initial-field measurement and storage decision.
 unchanged native-source/build evidence. Nine level-4 regression tests and
 five native-scheduler tests pass, executed from the frozen package itself.
 
-Native evidence: `/home/kaan/sensitivity_20260907/gadget4/validation_l4_v1`.
+Native evidence: `/home/user/sensitivity_20260907/gadget4/validation_l4_v1`.
 Frozen validation runner: `runner_validation_l4_v2` beneath that Gadget-4 root.
 Do not relaunch either short test or overwrite an existing report.
 

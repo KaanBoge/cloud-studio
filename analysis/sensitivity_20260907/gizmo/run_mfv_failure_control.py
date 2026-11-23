@@ -5,13 +5,13 @@ case's zero-energy states. Original batch and all native files are retained.
 """
 import fcntl,json,sys
 from pathlib import Path
-sys.path.insert(0,'/home/kaan/sensitivity_20260907/gizmo/runner_l3_v1')
+sys.path.insert(0,'/home/user/sensitivity_20260907/gizmo/runner_l3_v1')
 from run_full_l3 import ROOT,sha,save,check_dependencies,run_case
 
 def main():
     locks=[]
     for name in ('benchmark.lock','production.lock'):
-        f=Path('/home/kaan/performance_20260907',name).open('a');fcntl.flock(f,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(f)
+        f=Path('/home/user/performance_20260907',name).open('a');fcntl.flock(f,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(f)
     dest=ROOT/'mfv_failure_control.json'
     if dest.exists():raise ValueError('Existing failure control requires review')
     batch=json.loads((ROOT/'full_l3_batch.json').read_text());plan=batch['plan'];check_dependencies(plan)

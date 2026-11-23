@@ -4,9 +4,9 @@
   "solver_returncode": 0,
   "binary_sha256": "d8d6ffe5b427216a58bda705ae0692c3cc12c3b7f072bd1a845fe11224a4af0f",
   "passed": true,
-  "snapshot": "/home/kaan/ic_audit_20260907/grid_tests/apk_chi100/parthenon.prim.00000.phdf",
+  "snapshot": "/home/user/ic_audit_20260907/grid_tests/apk_chi100/parthenon.prim.00000.phdf",
   "parameters": {
-    "source": "/home/kaan/ic_audit_20260907/grid_tests/apk_chi100/athinput",
+    "source": "/home/user/ic_audit_20260907/grid_tests/apk_chi100/athinput",
     "parameter_sha256": "81da8c365c2919d619a64208380e39bde51da5e1e56dbb6c96a8d9b569bdbb1f",
     "assumptions": [],
     "gamma": 1.6666666666666667,

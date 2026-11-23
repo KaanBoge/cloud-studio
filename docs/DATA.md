@@ -2,35 +2,34 @@
 
 ## What can I download?
 
-* [Research evidence bundle](../downloads/research-evidence-2026-09-09-current.zip): public custom analysis scripts, Markdown reports, JSON diagnostics/provenance, figures and these guides. Native code source directories, the legacy archive, binary executables and raw simulation arrays are excluded. It is not a portable prebuilt solver installation. The included [license scope](../LICENSING.md) distinguishes MIT software from research artifacts and third party material.
-* [Analysis file inventory](../data/research-files.csv), also [JSON](../data/research-files.json): repository relative paths, byte counts and SHA-256 hashes for the public analysis tree. A catalog entry is not a scientific acceptance certificate.
-* [Historical streaming inventory](../data/streaming-inventory.csv), also [JSON](../data/streaming-inventory.json): every index in a pinned snapshot of the existing public frames branch, actual index counts/times, referenced mesh bytes and any integrity warnings. Listed/unlisted viewer entries are distinguished. Binary mesh payloads were not decoded by this metadata check.
-* [Local project storage inventory](../analysis/storage_20260909/project_storage_inventory.json): dated counts and sizes by research directory category. It includes raw outputs, source, logs, environments and visuals inside those categories; it is not a raw only total, an atomic snapshot, or proof of upload.
+* [The paper](../paper/Cloud_survival_OJA.pdf) and [its source for Overleaf](../paper/Cloud_survival_OJA_Overleaf.zip): the LaTeX project with its figures and the reduced data behind the plots.
+* [Library catalog](../data/studio-catalog.json): every entry of the library with its code, contrast, level and media.
+* [Projections catalog](../assets/recent/catalog.json): the column density projections with their dense mass histories.
+* [Analysis bundle](../downloads/research-evidence-2026-09-09-current.zip): scripts, Markdown reports, JSON diagnostics, figures and these guides from the September 2026 velocity setup study. [LICENSING.md](../LICENSING.md) separates the MIT software from the research material and the third party files.
+* [Analysis file list](../data/research-files.csv), also as [JSON](../data/research-files.json): paths, byte counts and SHA-256 checksums of the analysis files.
+* [Frame list of the earlier 3D runs](../data/streaming-inventory.csv), also as [JSON](../data/streaming-inventory.json): every index on the frames branch with its frame count, times and mesh size.
+* [Storage inventory](../analysis/storage_20260909/project_storage_inventory.json): dated counts and sizes of the research folders on my workstation.
 
-## Three different kinds of data
+## Three kinds of data
 
-| Data | What it contains | What it can establish |
+| Data | What it contains | What it is for |
 |---|---|---|
-| Native simulation output | 3D fields, geometry or particles, times; separate restart formats | New quantitative analyses, subject to retained fields and code specific validation |
-| Derived diagnostics and figures | Mass curves, selected statistics, slices and provenance | The specific recorded analysis, not unrecorded fields |
-| Browser meshes and MP4s | Selected surfaces, rendered pixels or quantized geometry | Visualization, not full fluid state or certified restart recovery |
+| Native simulation output | 3D fields or particles with their times, plus restart files | Every quantitative analysis |
+| Diagnostics and figures | Mass histories, selected statistics, slices and their provenance | The recorded analysis and the paper |
+| Pictures, films and 3D surfaces | Column density pictures, rendered films and surface meshes of every saved state | Looking at the runs on the site |
 
-Native formats vary: HDF5/ATHDF, VTK, RAMSES binary records, particle HDF5 and Gasoline TIPSY. Each code is read using its native format or a validated reader. The native data and restart caveats remain in its own report.
+The native formats differ between the codes: HDF5 and ATHDF, VTK, RAMSES binary records, particle HDF5 and Gasoline TIPSY. Each code is read with its own format or a checked reader.
 
 ## Why native outputs are large
 
-The current level 5 Enzo grid contains 4,194,304 cells. Its six float64 volume fields alone require 201,326,592 bytes per snapshot, before boundaries and metadata. Saving 101 times requires about20.3GB per run. Native Enzo can also write a terminal output, and all actual outputs are retained. Level6 has eight times as many cells.
+A level 5 grid has 4,194,304 cells. Six float64 volume fields alone take 201,326,592 bytes per snapshot, so 101 snapshots take about 20.3 GB per run, before boundaries and metadata. Level 6 has eight times as many cells.
 
-The current Enzo pair's approximately75GB allowance is a conservative raw retention budget for two runs, not a movie size or the number of bytes already written.
+Read only gzip tests reduced an early level 5 snapshot from about 206.5 MB to 64.6 MB and two late level 4 snapshots from 26.6 MB to 19.5 MB and 19.9 MB. Every test restored the source bytes exactly. Evolved data compresses less than the starting state, and a whole file gzip has to be unpacked before the native tools can read the file. See [the measured report](../analysis/storage_20260909/compression_probe.json) and [the read only test script](../analysis/storage_20260909/compression_probe_v1.py).
 
-Read only gzip tests measured about206.5→64.6MB for an early L5 snapshot and26.6→19.5 to 19.9MB for two late L4 snapshots. Every test restored the source bytes exactly. Initial snapshots compress much more strongly than evolved data; these four snapshots do not predict a universal reduction. Compression is tested, **not applied to the active pair**. Whole file gzip needs extraction before native tools can open the files. See [the measured report](../analysis/storage_20260909/compression_probe.json) and [read only test script](../analysis/storage_20260909/compression_probe_v1.py).
+## Hosting
 
-## Hosting and retention
+[GitHub Pages limits a published site to 1 GB](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits) and [GitHub blocks regular files over 100 MiB](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github). The site therefore carries pictures, films and surfaces made from the runs, while the raw snapshots stay offline on my own drives. The files of the complete runs live on the `runs` branch, one folder per run, the earlier 3D frames on the `frames` branch and the 60 fps film previews on the `media-60fps` branch.
 
-[GitHub Pages limits published sites to1GB](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits). [GitHub blocks individual regular Git files over100MiB](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github) and is not a raw data backup service. The existing frames branch is a derived visualization store, not a way to claim that terabytes of native state are backed up.
+## Time
 
-No Zenodo deposit or external raw archive is verified. The published movies, size inventories and figures are derived results, not complete native data backups. Native outputs retained locally contain fields that are absent from these visualizations.
-
-## Time and completion
-
-The current sensitivity controls request output spacing0.05t_cc through5t_cc. Actual times come from native files and can differ from the requested schedule. Extra native terminal times are preserved. Historical viewer entries vary in cadence and completeness. Frame count alone does not prove completed physics, correct initial conditions, radiative cooling or complete material retention.
+The runs save a state every 0.05 t<sub>cc</sub> up to 5 t<sub>cc</sub>. The times on the site come from the native files and can differ slightly from the requested schedule; every frame prints its measured time. Runs in the archive have their own cadence and length.

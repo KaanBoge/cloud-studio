@@ -1,7 +1,7 @@
 $ErrorActionPreference='Stop'
-$taskStudy='C:\Users\kaanb\CloudCrushing\sensitivity_20260907'
+$taskStudy='C:\Users\user\CloudCrushing\sensitivity_20260907'
 $taskFrom=Join-Path $taskStudy 'gadget4'
-$taskRepo='C:\Users\kaanb\cloud-studio-repo'
+$taskRepo='C:\Users\user\cloud-studio-repo'
 $taskTo=Join-Path $taskRepo 'analysis\sensitivity_20260907\gadget4'
 if(@(git -C $taskRepo status --porcelain).Count){throw 'Review existing repo changes first'}
 $taskReport=Get-Content -Raw -LiteralPath (Join-Path $taskFrom 'l4_validation.json') | ConvertFrom-Json

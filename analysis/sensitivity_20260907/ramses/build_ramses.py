@@ -6,23 +6,23 @@ import shutil
 import subprocess
 import sys
 import time
-sys.path.insert(0,'/mnt/c/Users/kaanb/CloudCrushing/sensitivity_20260907')
+sys.path.insert(0,'/mnt/c/Users/user/CloudCrushing/sensitivity_20260907')
 from build import sha
-sys.path.insert(0,'/home/kaan/verified_20260907')
+sys.path.insert(0,'/home/user/verified_20260907')
 from storage_guard import storage_snapshot, require_storage, GIB
-ROOT=Path('/home/kaan/sensitivity_20260907/ramses')
-NATIVE=Path('/home/kaan/codes/ramses')
-STAGED=Path('/mnt/c/Users/kaanb/CloudCrushing/sensitivity_20260907/ramses/source')
+ROOT=Path('/home/user/sensitivity_20260907/ramses')
+NATIVE=Path('/home/user/codes/ramses')
+STAGED=Path('/mnt/c/Users/user/CloudCrushing/sensitivity_20260907/ramses/source')
 BUILD=NATIVE/'bin_sensitivity_20260908'
 
 def main():
     locks=[]
     for name in ('benchmark.lock','production.lock'):
-        f=Path('/home/kaan/performance_20260907',name).open('a')
+        f=Path('/home/user/performance_20260907',name).open('a')
         fcntl.flock(f,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(f)
     ROOT.mkdir(exist_ok=False)
     require_storage(storage_snapshot(ROOT),GIB)
-    historical=Path('/mnt/c/Users/kaanb/CloudCrushing/audit_20260907/before/home/kaan/codes/ramses/patch/cloudwind_l6/condinit.f90')
+    historical=Path('/mnt/c/Users/user/CloudCrushing/audit_20260907/before/home/user/codes/ramses/patch/cloudwind_l6/condinit.f90')
     if 'fv = 0.5d0*(1.0d0 - tanh((r-rv_scale*r_cloud)/edge))' not in historical.read_text():
         raise ValueError('Historical-law provenance missing')
     watched={}

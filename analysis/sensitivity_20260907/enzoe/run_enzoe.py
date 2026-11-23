@@ -20,14 +20,14 @@ import time
 import h5py
 import numpy as np
 import psutil
-sys.path.insert(0,'/mnt/c/Users/kaanb/CloudCrushing/sensitivity_20260907/enzo')
+sys.path.insert(0,'/mnt/c/Users/user/CloudCrushing/sensitivity_20260907/enzo')
 from run_enzo import save,sha
-sys.path.insert(0,'/home/kaan/verified_20260907')
+sys.path.insert(0,'/home/user/verified_20260907')
 from storage_guard import storage_snapshot,require_storage,GIB
-ROOT=Path('/home/kaan/sensitivity_20260907/enzoe')
-BASE=Path('/mnt/c/Users/kaanb/CloudCrushing/audit_20260907/evidence/enzoe_tests_v2/chi100/cloud.in')
-HISTORICAL=Path('/home/kaan/codes/enzoe/runs/ENZOE2D_chi10_512/cloud_wind_chi10.in')
-NATIVE=Path('/home/kaan/codes/enzoe/enzo-e/build/bin/enzo-e')
+ROOT=Path('/home/user/sensitivity_20260907/enzoe')
+BASE=Path('/mnt/c/Users/user/CloudCrushing/audit_20260907/evidence/enzoe_tests_v2/chi100/cloud.in')
+HISTORICAL=Path('/home/user/codes/enzoe/runs/ENZOE2D_chi10_512/cloud_wind_chi10.in')
+NATIVE=Path('/home/user/codes/enzoe/enzo-e/build/bin/enzo-e')
 FIELDS=('density','velocity_x','velocity_y','velocity_z','total_energy','internal_energy','pressure')
 
 def input_for(level,mode,smoke=False):
@@ -189,7 +189,7 @@ def run_case(level,mode,b,smoke):
 def main():
     ap=argparse.ArgumentParser();ap.add_argument('--smoke',action='store_true');a=ap.parse_args();locks=[]
     for name in ('benchmark.lock','production.lock'):
-        f=Path('/home/kaan/performance_20260907',name).open('a');fcntl.flock(f,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(f)
+        f=Path('/home/user/performance_20260907',name).open('a');fcntl.flock(f,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(f)
     b=prepare();batch=dict(status='running',finished=[],pairs=[],pid=os.getpid());out=ROOT/('smoke_batch_v2.json' if a.smoke else 'batch.json')
     try:
         if not a.smoke:

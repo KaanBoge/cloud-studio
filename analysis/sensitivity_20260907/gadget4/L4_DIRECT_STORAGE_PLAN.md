@@ -8,7 +8,7 @@ sensitivity, not a blanket replacement or a matched-pressure grid comparison.
 ## Storage change, not a physics change
 
 New native data will be written directly under
-`C:/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/gadget4_L4_velocity_pair_v1`.
+`C:/Users/user/CloudCrushing/native_runs/sensitivity_20260907/gadget4_L4_velocity_pair_v1`.
 Its WSL path is the same path prefixed by `/mnt/c` rather than `C:`.
 Both laws use that same filesystem. Completed WSL raw directories are untouched:
 no move, deletion, compaction or change to historical access paths is needed.

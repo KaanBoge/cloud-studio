@@ -9,7 +9,7 @@ import numpy as np
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-sys.path.insert(0,'/home/kaan/sensitivity_20260907/gizmo/runner_mfm_l4_v1')
+sys.path.insert(0,'/home/user/sensitivity_20260907/gizmo/runner_mfm_l4_v1')
 import mfm_l4_controls as native_l4
 from smoke_gizmo import ROOT,sha,save,params
 from verify_gizmo import native,sums
@@ -77,7 +77,7 @@ def verify_case(c):
 def main():
     locks=[]
     for name in ('benchmark.lock','production.lock'):
-        handle=Path('/home/kaan/performance_20260907',name).open('a');fcntl.flock(handle,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(handle)
+        handle=Path('/home/user/performance_20260907',name).open('a');fcntl.flock(handle,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(handle)
     native_l4.dependencies()
     dest=ROOT/'analysis_mfm_l3_l4_v1'
     if dest.exists():raise ValueError('Existing combined analysis must not be overwritten')

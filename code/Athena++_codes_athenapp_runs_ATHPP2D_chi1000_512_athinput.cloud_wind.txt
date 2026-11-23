@@ -14,7 +14,7 @@ file_type   = hst          # history data dump
 dt          = 0.0612       # matched to 0.05*t_end cadence
 
 <output2>
-file_type = hdf5          # VTK data dump, matches A8/Athena4.2 pipeline
+file_type = hdf5          # VTK data dump, matches wind_tunnel/Athena4.2 pipeline
 variable    = prim         # primitive variables (+ scalar concentration r0)
 dt = 1.531
 

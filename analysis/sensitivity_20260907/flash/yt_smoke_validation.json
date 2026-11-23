@@ -3,19 +3,19 @@
   "independent_reader": "yt FLASH frontend",
   "checks": [
     {
-      "snapshot": "/home/kaan/sensitivity_20260907/flash/smokes/L3_chi100_sharp13/cloudcrush_hdf5_chk_0000",
+      "snapshot": "/home/user/sensitivity_20260907/flash/smokes/L3_chi100_sharp13/cloudcrush_hdf5_chk_0000",
       "relative_mass_error": 0.0
     },
     {
-      "snapshot": "/home/kaan/sensitivity_20260907/flash/smokes/L3_chi100_sharp13/cloudcrush_hdf5_chk_0001",
+      "snapshot": "/home/user/sensitivity_20260907/flash/smokes/L3_chi100_sharp13/cloudcrush_hdf5_chk_0001",
       "relative_mass_error": 0.0
     },
     {
-      "snapshot": "/home/kaan/sensitivity_20260907/flash/smokes/L3_chi100_tanh13/cloudcrush_hdf5_chk_0000",
+      "snapshot": "/home/user/sensitivity_20260907/flash/smokes/L3_chi100_tanh13/cloudcrush_hdf5_chk_0000",
       "relative_mass_error": 0.0
     },
     {
-      "snapshot": "/home/kaan/sensitivity_20260907/flash/smokes/L3_chi100_tanh13/cloudcrush_hdf5_chk_0001",
+      "snapshot": "/home/user/sensitivity_20260907/flash/smokes/L3_chi100_tanh13/cloudcrush_hdf5_chk_0001",
       "relative_mass_error": 0.0
     }
   ]

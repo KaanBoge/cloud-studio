@@ -5,15 +5,15 @@
     "core",
     "-np",
     "2",
-    "/home/kaan/followup_20260907/bin/athpp_tracking",
+    "/home/user/followup_20260907/bin/athpp_tracking",
     "-i",
     "athinput",
     "-r",
-    "/home/kaan/followup_20260907/tracking_tests_v2/tracking_enabled/cloud_sharp13_20260907_L3_chi10.00001.rst"
+    "/home/user/followup_20260907/tracking_tests_v2/tracking_enabled/cloud_sharp13_20260907_L3_chi10.00001.rst"
   ],
   "binary_sha256": "3885d83e2238eae01382b88add7a168f713ef72f46420c44219ad23bc7bd7655",
   "parameter_sha256": "fb723e802dca12e2ee49379bebf1201e95d3dbccdb7a43546a9f3150269cc9d4",
-  "restart": "/home/kaan/followup_20260907/tracking_tests_v2/tracking_enabled/cloud_sharp13_20260907_L3_chi10.00001.rst",
+  "restart": "/home/user/followup_20260907/tracking_tests_v2/tracking_enabled/cloud_sharp13_20260907_L3_chi10.00001.rst",
   "scope": "native experimental validation, not production",
   "expected_t_end": 0.4,
   "returncode": 0,

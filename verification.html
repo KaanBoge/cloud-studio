@@ -1,71 +1,63 @@
 <!doctype html>
-<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Cloud Studio verification, 7 September 2026</title>
-<style>body{max-width:850px;margin:40px auto;padding:0 22px;font:17px/1.6 system-ui;background:#0a0d16;color:#e8ecf6}a{color:#90bdff}h1{font-size:28px}h2{font-size:21px}.notice{padding:18px;border:1px solid #ad874c;background:#241f18}code{font-size:.9em}</style>
-<h1>Verification report · 7 September 2026</h1>
-<p class="notice">The historical simulations are not yet a validated matched code comparison.
-The fixes below do not retroactively correct existing simulations. Published meshes and MP4s are visualizations, not complete raw data backups.</p>
-<h2>Verified and corrected</h2>
-<p>Eight native grid codes passed 24 initial output tests: Athena++, AthenaPK, Athena 4.2,
-FLASH 4.8, Flash-X, Enzo, Enzo-E and RAMSES, each at χ = 10, 100 and 1000 on a
-64 × 32 × 32 grid. Tests checked density, velocity, pressure, domain and cell count.
-The four particle code IC generators passed 12 separate input field tests; their evolved solver results were not validated here.</p>
-<p>The corrected prescription has zero velocity inside 1.3 cloud radii and constant wind velocity outside,
-with the existing tanh density edge. <a href="https://arxiv.org/pdf/1805.03903">Grønnow et al. (2018), section 2</a>
-specifies a sharp velocity boundary, not a tanh velocity law. This is not an exact reproduction of its entire setup or of Braspenning et al.</p>
-<p>Analysis now reads physical parameters from input files, handles FLASH's radius and AthenaPK's units,
-and normalizes dense mass to its fixed initial value. The rectangular RAMSES reader now includes all native cells.
-Historical mass curves are withheld from the viewer until corrected native data diagnostics exist.</p>
-<p>The destructive Athena++ rerun path was replaced, and the raw data cleanup daemon was disabled.
-The new runner preserves raw outputs and uses distinct versioned run IDs.</p>
-<h2>Measured performance improvements</h2>
-<p><strong>Performance update:</strong> Short matched setting tests on this PC reduced
-Athena++ wall time by 15% at level 5 and 18% at level 6; AthenaPK level 5 took 30% less time.
-Larger GPU blocks also reduced sampled level 6 GPU memory use from roughly 15.3 to 12.8 GiB.
-Full field test comparisons passed, including the native tracers. These are short tests,
-not full production timings or new completed comparison runs.
-<a href="https://github.com/KaanBoge/cloud-studio/tree/main/analysis/performance_20260907">Measured evidence, optimized launch scripts and reuse guidance</a>.</p>
-<p><strong>Second performance pass:</strong> The current profiles now use a separately
-validated LTO build at CPU level 5 (6.2% less time in repeated tests) and faster lossless
-snapshot encoding at GPU level 6 (12.4% less time in repeated output including tests).
-Decoded GPU fields matched exactly. The CPU level 6 candidate was slower and was rejected;
-its previous settings remain. These improvements are not universal or full run accuracy claims.
-<a href="https://github.com/KaanBoge/cloud-studio/tree/main/analysis/performance_20260907b">Second pass evidence and decisions</a>.</p>
-<h2>Not yet established</h2>
-<p><strong>Extended tracking tests:</strong> With the existing conditions unchanged,
-late restarts at all three chi values, MPI rank count checks and per step frame
-displacement checks pass. Three higher resolution L4 tests each reached 5 t_cc
-with 101 native snapshots. However, chi=100 and chi=1000 retain only 98.4% and
-95.4% of their initial tracer mass. Material retention is still not fully validated.
-<a href="https://github.com/KaanBoge/cloud-studio/blob/main/analysis/followup_20260907/TRACKING_RESULTS.md">Measured results, scope and retained data locations</a>.</p>
-<p><strong>Follow up repairs and native tests:</strong> Analysis now rechecks physical
-metadata against native inputs, rather than trusting a shared group label. The
-launchers also check Windows backing volume space, and two additional destructive
-legacy queues were retired. 42 Python tests and two viewer JavaScript checks pass.
-<a href="https://github.com/KaanBoge/cloud-studio/tree/main/analysis/followup_20260907">Full report, scripts, logs and test evidence</a>.</p>
-<p><strong>Cooling correction:</strong> All nine retained cooling labelled inputs
-omitted the cooling enable switch, and their native logs report the cooling
-parameters unused. These are not radiative results. Their physical temperature
-units and Schure table also do not implement the requested Sutherland-Dopita setup.
-The viewer labels them explicitly; the old cooling generator now refuses to write
-another such input. Physical cooling parameters still need to be agreed and tested.</p>
-<p><strong>Tracking prototype:</strong> A separate Athena++ executable passed
-tracking off and restart tests. Six level 3 integration tests reached 5 t_cc with
-101 native outputs each. Nevertheless, the tracked chi=1000 test retained only
-88.9% of initial tracer mass in the box. The full tracer/buffer scheme and a
-material retaining comparison are not complete; the prototype is not in production.</p>
-<p>Windows C: had about 35.6 GiB free at this check. Large replacement launches
-are blocked by conservative raw data retention budgets. No native output was
-deleted in this follow up. The viewer now preserves later measured times beyond
-t=5 and labels Mach variants separately; this cannot restore previously deleted
-native fields or frames that were never exported. Time labels now follow the
-displayed mesh while downloads are pending, and comparison panes show their own
-measured times. An isolated browser test verified the loading behavior and a real
-streamed final frame without JavaScript errors.</p>
-<p>Equal boundary conditions, passive tracers and effective particle resolution across every code;
-complete corrected production runs at every level; complete measured frame cadence for all historical runs;
-validated cooling and Galilean frame variants. These remain necessary before drawing a matched code scientific conclusion.</p>
-<p><a href="https://github.com/KaanBoge/cloud-studio/tree/main/analysis/verified_20260907">Corrected scripts and test evidence</a>
- · <a href="https://github.com/KaanBoge/cloud-studio/blob/main/analysis/README.md">Methods, formats, directory layout and limitations</a>
- · <a href="viewer.html">3D viewer</a> · <a href="index.html">Studio</a></p>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b1017">
+<meta name="description" content="Verification log of Kaan Boge's cloud crushing study: checks and corrections to the setup, the analysis and the run tools up to 7 September 2026.">
+<title>Verification log · Cloud Studio</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="research.css?v=20261122">
+<style>
+  .log-head{padding:4rem 0 1rem;max-width:48rem}
+  .log-head .lede{font-size:1.15rem;color:var(--text);max-width:48rem}
+  .log{max-width:48rem}
+  .log h2{margin:3rem 0 1rem}
+  .log p{color:var(--muted)}
+  .log p strong{color:var(--text);font-weight:600}
+  .log ul.links{list-style:none;padding:0;margin:2.5rem 0 0;display:flex;flex-wrap:wrap;gap:.6rem}
+  .log ul.links a{display:inline-flex;align-items:center;min-height:40px;border:1px solid var(--line);border-radius:999px;padding:.35rem 1rem;text-decoration:none;color:var(--text);font-size:.9rem;background:var(--panel)}
+  .log ul.links a:hover{border-color:#66543e}
+  @media(max-width:640px){.log-head{padding-top:2rem}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to the verification log</a>
+<header class="top"><a class="brand" href="index.html"><span class="mark" aria-hidden="true">◌</span> Cloud <b>Studio</b></a><nav aria-label="Main navigation"><a href="index.html">Library</a><a href="viewer.html">3D viewer</a><a href="recent.html">Compare</a><a href="research.html">Research</a><a href="paper/Cloud_survival_OJA.pdf">Paper</a><a href="https://github.com/KaanBoge/cloud-studio">GitHub</a></nav></header>
+<main id="main">
+<section class="log-head" aria-labelledby="title">
+  <p class="eyebrow">EARLIER LOG · SEPTEMBER 2026</p>
+  <h1 id="title">Verification <em>log</em></h1>
+  <p class="lede">This log records the checks and corrections I made to the simulation setup, the analysis and the run tools up to 7 September 2026.</p>
+</section>
+<article class="log">
+  <h2>Starting conditions</h2>
+  <p><strong>Grid codes.</strong> Eight grid codes passed 24 tests of their first saved state: Athena++, AthenaPK, Athena 4.2, FLASH 4.8, Flash-X, Enzo, Enzo-E and RAMSES, each at χ 10, 100 and 1000 on a 64 × 32 × 32 grid. The tests checked density, velocity, pressure, domain and cell count.</p>
+  <p><strong>Particle codes.</strong> The generators of the starting particles of the four particle codes passed 12 separate tests of their input fields.</p>
+  <p><strong>Sharp velocity edge.</strong> The corrected setup has zero velocity inside 1.3 cloud radii and the full wind velocity outside, and keeps the smooth tanh density edge. This follows the sharp velocity boundary described in <a href="https://arxiv.org/pdf/1805.03903">Grønnow et al. (2018), section 2</a>.</p>
+
+  <h2>Analysis and run tools</h2>
+  <p><strong>Analysis.</strong> The analysis reads the physical parameters from the input files, handles the FLASH cloud radius and the AthenaPK units, and divides the dense mass by its measured starting value. The RAMSES reader includes every cell of the rectangular box. The viewer holds back the mass curves of the earlier runs until there are diagnostics from corrected data.</p>
+  <p><strong>Run tools.</strong> The Athena++ rerun path that removed raw data was replaced, and the raw data cleanup job was switched off. The new runner keeps every raw output and gives each run its own versioned name. No native output was deleted during these repairs.</p>
+  <p><strong>Follow up repairs.</strong> The analysis checks physical metadata against the native inputs of each run, the launchers check the free space of the Windows drive behind WSL, and two older run scripts that deleted data were retired. 42 Python tests and two viewer JavaScript checks pass. <a href="https://github.com/KaanBoge/cloud-studio/tree/main/analysis/followup_20260907">Report, scripts, logs and test evidence</a></p>
+  <p><strong>Viewer.</strong> The viewer keeps measured times beyond t = 5 t<sub>cc</sub>, labels Mach variants separately, matches its time labels to the mesh on screen while downloads are pending, and shows the measured time of each comparison pane. A browser test confirmed the loading behaviour and a streamed final frame without errors.</p>
+
+  <h2>Faster runs</h2>
+  <p><strong>First pass.</strong> Short tests with matched settings cut the Athena++ wall time by 15 percent at level 5 and by 18 percent at level 6, and AthenaPK took 30 percent less time at level 5. Larger GPU blocks lowered the sampled level 6 GPU memory from about 15.3 to 12.8 GiB. Full field comparisons, tracers included, matched. <a href="https://github.com/KaanBoge/cloud-studio/tree/main/analysis/performance_20260907">Measurements, launch scripts and reuse guidance</a></p>
+  <p><strong>Second pass.</strong> A separately tested LTO build saves 6.2 percent of the time of CPU runs at level 5 in repeated tests, and faster lossless snapshot encoding saves 12.4 percent of the time of GPU runs at level 6 in repeated tests with output. The decoded GPU fields matched exactly. A CPU candidate at level 6 was slower, so the earlier settings stayed. <a href="https://github.com/KaanBoge/cloud-studio/tree/main/analysis/performance_20260907b">Measurements and decisions</a></p>
+
+  <h2>Tracking and cooling</h2>
+  <p><strong>Tracking tests.</strong> With the conditions unchanged, late restarts at all three contrasts, checks of the MPI rank count and checks of the frame displacement at every step pass. Three level 4 tests each reached 5 t<sub>cc</sub> with 101 native snapshots; at χ 100 and χ 1000 they keep 98.4 and 95.4 percent of their starting tracer mass. <a href="https://github.com/KaanBoge/cloud-studio/blob/main/analysis/followup_20260907/TRACKING_RESULTS.md">Measured results and data locations</a></p>
+  <p><strong>Tracking prototype.</strong> A separate Athena++ build passed tests with tracking off and with restarts. Six level 3 tests reached 5 t<sub>cc</sub> with 101 native outputs each, and the tracked χ 1000 test kept 88.9 percent of its starting tracer mass in the box.</p>
+  <p><strong>Cooling.</strong> The nine cooling inputs of that time did not switch cooling on, and their native logs report the cooling parameters as unused, so those runs are non radiative. The viewer labels them that way, and the old cooling generator no longer writes such an input.</p>
+
+  <ul class="links">
+    <li><a href="https://github.com/KaanBoge/cloud-studio/tree/main/analysis/verified_20260907">Corrected scripts and test evidence</a></li>
+    <li><a href="https://github.com/KaanBoge/cloud-studio/blob/main/analysis/README.md">Methods, formats and folder layout</a></li>
+    <li><a href="progress.html">Progress log</a></li>
+    <li><a href="research.html#earlier-logs">All earlier logs</a></li>
+  </ul>
+</article>
+</main>
+<footer class="foot"><span>Cloud Studio. Cloud crushing research by Kaan Boge, ongoing. MIT licence.</span><span class="foot-links"><a href="paper/Cloud_survival_OJA.pdf">Paper</a><a href="https://github.com/KaanBoge/cloud-studio">GitHub</a></span></footer>
+</body>
 </html>

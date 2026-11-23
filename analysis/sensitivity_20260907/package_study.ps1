@@ -1,6 +1,6 @@
 $ErrorActionPreference = 'Stop'
-$taskSource = 'C:\Users\kaanb\CloudCrushing\sensitivity_20260907'
-$taskDest = 'C:\Users\kaanb\cloud-studio-repo\analysis\sensitivity_20260907'
+$taskSource = 'C:\Users\user\CloudCrushing\sensitivity_20260907'
+$taskDest = 'C:\Users\user\cloud-studio-repo\analysis\sensitivity_20260907'
 if (Test-Path -LiteralPath $taskDest) { throw 'Package exists; inspect before updating' }
 New-Item -ItemType Directory -Path $taskDest | Out-Null
 $taskFiles = @('README.md','PLAN.md','build.py','run_pairs.py','test_pairs.py','analyze.py','test_analysis.py','crosscheck_l4.py','record_sources.py','build.json','batch.json','historical_sources.json')

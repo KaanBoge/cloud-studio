@@ -1,6 +1,6 @@
 param([Parameter(Mandatory=$true)][string]$ExpectedCommit,[Parameter(Mandatory=$true)][long]$WorkflowId)
 $ErrorActionPreference='Stop'
-$taskRepo='C:\Users\kaanb\cloud-studio-repo'
+$taskRepo='C:\Users\user\cloud-studio-repo'
 $taskOutput=Join-Path $PSScriptRoot 'longer_publication.json'
 $taskPrevious='8964a45421318f7759ab81570a8b2f214cc0781f'
 if(Test-Path -LiteralPath $taskOutput){throw 'Completed proof exists; do not overwrite'}

@@ -1,7 +1,7 @@
 param([ValidateSet('stage','verify')][string]$Mode='stage',[string]$Commit,[long]$WorkflowId)
 $ErrorActionPreference='Stop'
-$taskRepo='C:\Users\kaanb\cloud-studio-repo'
-$taskStudy='C:\Users\kaanb\CloudCrushing\sensitivity_20260907'
+$taskRepo='C:\Users\user\cloud-studio-repo'
+$taskStudy='C:\Users\user\CloudCrushing\sensitivity_20260907'
 $taskFrom=Join-Path $taskStudy 'gasoline'
 $taskBase='1a105f1e860298f4380d053d390c1a119ecdc5a0'
 $taskFiles=@('README.md','DIVERGENCE_REVIEW.md','DIVERGENCE_REVIEW_PLAN.md','review_divergence.py','test_review_divergence.py','divergence_review.json','publish_gasoline_divergence.ps1')
@@ -18,7 +18,7 @@ if($Mode -eq 'stage'){
  $taskReport=Get-Content -Raw -LiteralPath $taskReportPath | ConvertFrom-Json
  if($taskReport.status -ne 'read_only_divergence_review_complete_scientific_hold_unchanged' -or $taskReport.original_gate_passed -or $taskReport.full_controls_added -ne 0 -or $taskReport.summary.native_checkpoints_decoded -ne 8){throw 'Unexpected read-only result'}
  foreach($taskName in @('review_divergence.py','test_review_divergence.py','DIVERGENCE_REVIEW_PLAN.md')){
-  $taskPinned='/home/kaan/sensitivity_20260907/gasoline/read_only_divergence_v1/'+$taskName
+  $taskPinned='/home/user/sensitivity_20260907/gasoline/read_only_divergence_v1/'+$taskName
   if((Get-FileHash -LiteralPath (Join-Path $taskFrom $taskName)).Hash.ToLower() -ne $taskReport.pins.$taskPinned){throw ('Frozen analysis source changed: '+$taskName)}
  }
  foreach($taskCopy in $taskCopies){

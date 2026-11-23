@@ -1,7 +1,7 @@
 """Freeze NEW L4 validation scripts; no native solver rebuild or run here."""
 import json,shutil,subprocess,sys
 from pathlib import Path
-sys.path.insert(0,'/home/kaan/sensitivity_20260907/gadget4')
+sys.path.insert(0,'/home/user/sensitivity_20260907/gadget4')
 from gadget_controls import ROOT,STAGED,sha,save,dependencies
 
 dest=ROOT/'runner_validation_l4_v2'
@@ -14,7 +14,7 @@ for name in ('native_cadence.py','test_native_cadence.py'):
     files[name]=prior/name
 before={str(path):sha(path) for path in files.values()}
 dependencies_to_pin=[ROOT/name for name in ('gadget_controls.py','build.json','experiment.json')]
-dependencies_to_pin.append(Path('/home/kaan/verified_20260907/storage_guard.py'))
+dependencies_to_pin.append(Path('/home/user/verified_20260907/storage_guard.py'))
 pins={str(path):sha(path) for path in dependencies_to_pin}
 dest.mkdir()
 for name,path in files.items():shutil.copy2(path,dest/name)

@@ -8,7 +8,7 @@ import subprocess
 import sys
 import numpy as np
 
-ROOT=Path('/home/kaan/sensitivity_20260907/gizmo/mfv_timestep_repair_v1')
+ROOT=Path('/home/user/sensitivity_20260907/gizmo/mfv_timestep_repair_v1')
 PREP=ROOT/'sharp_prepare_runner_v1'
 sys.path.insert(0,str(PREP))
 import mfv_sharp_prepare as p
@@ -43,7 +43,7 @@ def freeze():
         case_bytes=prior['potential_full_bytes'],storage=disk,binary_sha256=p.onset.EXPECTED_BINARY,
         ic_sha256=p.SHARP_IC,input_sha256=p.onset.EXPECTED_INPUT,wall_limit=600,stop_grace=30,ranks=8)
     with (PACKAGE/'tests.log').open('x') as log:
-        subprocess.run(['/home/kaan/venv/bin/python','-m','unittest','-v','test_mfv_sharp_full'],cwd=PACKAGE,stdout=log,stderr=subprocess.STDOUT,check=True,timeout=60)
+        subprocess.run(['/home/user/venv/bin/python','-m','unittest','-v','test_mfv_sharp_full'],cwd=PACKAGE,stdout=log,stderr=subprocess.STDOUT,check=True,timeout=60)
     plan['tests_sha256']=p.sha(PACKAGE/'tests.log');p.save(PACKAGE/'plan.json',plan)
     print(json.dumps(dict(status=plan['status'],sha256=p.sha(PACKAGE/'plan.json'),budget_gib=plan['case_bytes']/p.GIB)))
 
@@ -59,7 +59,7 @@ def run(plan):
     frozen(plan);locks=[]
     try:
         for name in ('benchmark.lock','production.lock'):
-            f=open('/home/kaan/performance_20260907/'+name,'a');fcntl.flock(f,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(f)
+            f=open('/home/user/performance_20260907/'+name,'a');fcntl.flock(f,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(f)
         result=p.run_native(DEST,(p.OLD/'params.txt').read_text(),p.OLD/'ics.hdf5',plan['case_bytes'],600,30,
             dict(plan_sha256=p.sha(PACKAGE/'plan.json'),reused_historical=str(p.HIST)))
         print(json.dumps(result))

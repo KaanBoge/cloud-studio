@@ -9,8 +9,8 @@ import subprocess
 from urllib.parse import unquote, urlsplit
 import zipfile
 
-ROOT=Path('C:/Users/kaanb/cloud-studio-repo')
-WORK=Path('C:/Users/kaanb/CloudCrushing/publication_20260909')
+ROOT=Path('C:/Users/user/cloud-studio-repo')
+WORK=Path('C:/Users/user/CloudCrushing/publication_20260909')
 
 
 def require(value,message):

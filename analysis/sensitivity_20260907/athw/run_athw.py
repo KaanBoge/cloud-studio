@@ -19,15 +19,15 @@ import numpy as np
 import psutil
 import yt
 
-sys.path.insert(0,'/mnt/c/Users/kaanb/CloudCrushing/sensitivity_20260907')
+sys.path.insert(0,'/mnt/c/Users/user/CloudCrushing/sensitivity_20260907')
 from build import sha
-sys.path.insert(0,'/home/kaan/verified_20260907')
+sys.path.insert(0,'/home/user/verified_20260907')
 from run_params import parse_file
 from storage_guard import storage_snapshot,require_storage,GIB
-sys.path.insert(0,'/mnt/c/Users/kaanb/CloudCrushing/audit_20260907')
+sys.path.insert(0,'/mnt/c/Users/user/CloudCrushing/audit_20260907')
 from grid_smokes import set_sections
 
-ROOT=Path('/home/kaan/sensitivity_20260907/athw')
+ROOT=Path('/home/user/sensitivity_20260907/athw')
 LEVELS=(3,4,5)
 yt.set_log_level(40)
 
@@ -38,7 +38,7 @@ def save(path,record):
 def input_for(level,mode,end=None):
     if level not in LEVELS or mode not in (0,1):raise ValueError('Unvalidated case')
     nx=8*2**level;tcc=math.sqrt(100)/(2*math.sqrt(5/3));end=5*tcc if end is None else end
-    text=Path('/home/kaan/ic_audit_20260907/grid_tests/athw_chi100/athinput').read_text()
+    text=Path('/home/user/ic_audit_20260907/grid_tests/athw_chi100/athinput').read_text()
     text=text[text.index('<job>'):]
     text='\n'.join(line.split('#',1)[0].rstrip() for line in text.splitlines())
     return '# Isolated 3D sensitivity control; chi=100, Mach=2.\n'+set_sections(text,{
@@ -151,7 +151,7 @@ def main():
     ap=argparse.ArgumentParser();ap.add_argument('--smoke',action='store_true');args=ap.parse_args()
     locks=[]
     for name in ('benchmark.lock','production.lock'):
-        f=Path('/home/kaan/performance_20260907',name).open('a');fcntl.flock(f,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(f)
+        f=Path('/home/user/performance_20260907',name).open('a');fcntl.flock(f,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(f)
     levels=(3,) if args.smoke else LEVELS
     batch=dict(status='running',pid=os.getpid(),finished=[])
     output=ROOT/('smoke_batch.json' if args.smoke else 'batch.json')

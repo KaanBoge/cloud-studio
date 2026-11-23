@@ -15,9 +15,9 @@ import subprocess
 import sys
 import time
 
-SRC = Path('/mnt/c/Users/kaanb/CloudCrushing/sensitivity_20260907')
-ROOT = Path('/home/kaan/sensitivity_20260907')
-sys.path.insert(0, '/home/kaan/verified_20260907')
+SRC = Path('/mnt/c/Users/user/CloudCrushing/sensitivity_20260907')
+ROOT = Path('/home/user/sensitivity_20260907')
+sys.path.insert(0, '/home/user/verified_20260907')
 from storage_guard import storage_snapshot, require_storage, GIB
 
 
@@ -39,7 +39,7 @@ def main():
     ROOT.mkdir(exist_ok=True)
     locks=[]
     for name in ('benchmark.lock', 'production.lock'):
-        f=Path('/home/kaan/performance_20260907',name).open('a')
+        f=Path('/home/user/performance_20260907',name).open('a')
         fcntl.flock(f,fcntl.LOCK_EX|fcntl.LOCK_NB); locks.append(f)
     require_storage(storage_snapshot(ROOT), 2*GIB)
     if (ROOT/'build.json').exists():
@@ -47,7 +47,7 @@ def main():
     (ROOT/'bin').mkdir(exist_ok=True)
     result={'created_unix':time.time(), 'status':'building', 'codes':{}}
 
-    app=Path('/home/kaan/codes/athenapp')
+    app=Path('/home/user/codes/athenapp')
     tree=ROOT/'athpp_build'
     tree.mkdir(exist_ok=True)
     if not (tree/'src').exists():
@@ -64,7 +64,7 @@ def main():
     (ROOT/'build.partial.json').write_text(json.dumps(result,indent=2))
     print('Built Athena++ sensitivity binary',flush=True)
 
-    apk=Path('/home/kaan/codes/athenapk')
+    apk=Path('/home/user/codes/athenapk')
     build=apk/'build-cuda'
     apk_tree=ROOT/'apk_source'
     shutil.copytree(apk/'src',apk_tree)

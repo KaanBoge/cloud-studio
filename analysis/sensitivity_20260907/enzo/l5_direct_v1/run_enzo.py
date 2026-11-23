@@ -19,14 +19,14 @@ import time
 import numpy as np
 import psutil
 import yt
-sys.path.insert(0,'/home/kaan/verified_20260907')
+sys.path.insert(0,'/home/user/verified_20260907')
 from run_params import parse_file,read_values
 from storage_guard import storage_snapshot,require_storage,GIB
-sys.path.insert(0,'/mnt/c/Users/kaanb/CloudCrushing/sensitivity_20260907')
+sys.path.insert(0,'/mnt/c/Users/user/CloudCrushing/sensitivity_20260907')
 from build import sha
-sys.path.insert(0,'/mnt/c/Users/kaanb/CloudCrushing/audit_20260907')
+sys.path.insert(0,'/mnt/c/Users/user/CloudCrushing/audit_20260907')
 from grid_smokes import set_flat
-ROOT=Path('/home/kaan/sensitivity_20260907/enzo')
+ROOT=Path('/home/user/sensitivity_20260907/enzo')
 yt.set_log_level(40)
 
 def save(path,data):
@@ -35,7 +35,7 @@ def save(path,data):
 def input_for(level,mode,smoke=False):
     if level not in (3,4,5) or mode not in (0,1):raise ValueError('Unvalidated case')
     nx=8*2**level;tcc=math.sqrt(100)/(2*math.sqrt(5/3))
-    original=Path('/home/kaan/ic_audit_20260907/grid_tests/enzo_chi100/CloudWind.enzo').read_text()
+    original=Path('/home/user/ic_audit_20260907/grid_tests/enzo_chi100/CloudWind.enzo').read_text()
     original='\n'.join(re.split(r'#|//',line,maxsplit=1)[0].rstrip() for line in original.splitlines())
     return '# Isolated native Enzo velocity-IC sensitivity study.\n'+set_flat(original,{
         'TopGridDimensions':f'{nx} {nx//2} {nx//2}', 'CloudWindVelocityIC':mode,
@@ -171,7 +171,7 @@ def main():
     ap=argparse.ArgumentParser();ap.add_argument('--smoke',action='store_true');a=ap.parse_args()
     locks=[]
     for name in ('benchmark.lock','production.lock'):
-        f=Path('/home/kaan/performance_20260907',name).open('a');fcntl.flock(f,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(f)
+        f=Path('/home/user/performance_20260907',name).open('a');fcntl.flock(f,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(f)
     output=ROOT/('smoke_batch_v2.json' if a.smoke else 'batch_v2.json');batch=dict(status='running',pid=os.getpid(),finished=[],pairs=[])
     try:
         if not a.smoke:

@@ -5,15 +5,15 @@ from pathlib import Path
 import subprocess
 import sys
 
-ROOT=Path('/mnt/c/Users/kaanb/CloudCrushing')
-WORK=Path('/home/kaan/followup_20260907')
-sys.path[:0]=['/home/kaan/verified_20260907','/home/kaan/performance_20260907']
+ROOT=Path('/mnt/c/Users/user/CloudCrushing')
+WORK=Path('/home/user/followup_20260907')
+sys.path[:0]=['/home/user/verified_20260907','/home/user/performance_20260907']
 from storage_guard import storage_snapshot,require_storage,GIB
 from run_optimized import budgets
 
 
 def main():
-    env=dict(os.environ,PYTHONPATH='/home/kaan/verified_20260907:/home/kaan/performance_20260907')
+    env=dict(os.environ,PYTHONPATH='/home/user/verified_20260907:/home/user/performance_20260907')
     result={'scope':'regressions and preflight only; no production launch','suites':[]}
     for folder,pattern in [('followup_20260907','test_storage_guard.py'),('followup_20260907','test_comparison_checks.py'),
                            ('followup_20260907','test_cooling_guard.py'),('audit_20260907','test_analysis.py'),
@@ -24,10 +24,10 @@ def main():
         result['suites'].append(record);print(pattern,r.returncode,flush=True)
         if r.returncode:raise RuntimeError(record)
     for name in ('week_queue.sh','gal_queue.sh'):
-        r=subprocess.run(['bash','/home/kaan/'+name],capture_output=True,text=True)
+        r=subprocess.run(['bash','/home/user/'+name],capture_output=True,text=True)
         if r.returncode!=78:raise RuntimeError('Legacy queue guard did not refuse')
         result[name]={'returncode':r.returncode,'message':r.stdout+r.stderr}
-    disk=storage_snapshot('/home/kaan');result['storage']=disk
+    disk=storage_snapshot('/home/user');result['storage']=disk
     # Use a representative conservative size; this does not execute any launcher.
     result['large_run_preflight']={}
     for level in (5,6):

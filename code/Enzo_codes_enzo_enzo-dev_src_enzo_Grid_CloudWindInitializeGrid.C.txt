@@ -2,7 +2,7 @@
 /
 /  GRID CLASS (INITIALIZE GRID FOR A CLOUD-WIND / CLOUD CRUSHING PROBLEM)
 /
-/  written by: Claude (cloud-crushing code comparison, HARP/Horizon)
+/  written by: Kaan Boge (cloud-crushing code comparison)
 /  date:       August 2026
 /
 /  PURPOSE: set the initial state

@@ -36,7 +36,7 @@ Athena 4.2 is 13.085%, 7.591%, then 8.695% at L3/L4/L5: even the available three
 
 AthenaPK tests its actual historical constant-outer-momentum prescription, not a tanh velocity profile. Other accepted pairs compare historical tanh velocity to sharp velocity at 1.3R. Conditions are checked within each native-code pair; pressure, boundary and tracer prescriptions are not certified identical across codes.
 
-A reuse decision needs a prospective scientific tolerance agreed with Ryan and provenance checks against the particular historical run. No post-hoc cutoff or code ranking is introduced. The blanket replacement queue stays inactive.
+A reuse decision needs a prospective scientific tolerance set in advance and provenance checks against the particular historical run. No post-hoc cutoff or code ranking is introduced. The blanket replacement queue stays inactive.
 
 ## Essential code-specific caveats
 
@@ -49,7 +49,7 @@ A reuse decision needs a prospective scientific tolerance agreed with Ryan and p
 
 The [previous summary](../resolution_summary_v1/README.md) retains detailed source caveats for the original23 pairs. New [Gadget-4](../gadget4/analysis_levels_v1/README.md) and [MFV](../gizmo/mfv_analysis_levels_v1/README.md) reports provide their completed L3/L4 evidence. Full source caveats remain attached to each source/level in the machine-readable summary; historical one-level notes are not claims that the new L4 results are missing.
 
-## Remaining work and decision for Ryan
+## Remaining work and decisions
 
 Four Gasoline L3/L4 controls remain scientifically held: two velocity laws at each level. Its predeclared field-repeatability check failed in6/120 paired-time comparisons, including untouched-binary repeats, despite agreement in the density-selected mass diagnostic. The [force-order investigation](../gasoline/FORCE_ORDER_RESULTS.md) is completed evidence, not an unrun task. Do not silently loosen the criterion or rerun the same traces. A prospective acceptance decision and remaining same-executable sharp-IC validation are needed before full controls.
 

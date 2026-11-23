@@ -1,7 +1,7 @@
 param([ValidateSet('stage','verify')][string]$Mode='stage',[string]$Commit,[long]$WorkflowId)
 $ErrorActionPreference='Stop'
-$taskRepo='C:\Users\kaanb\cloud-studio-repo'
-$taskStudy='C:\Users\kaanb\CloudCrushing\sensitivity_20260907'
+$taskRepo='C:\Users\user\cloud-studio-repo'
+$taskStudy='C:\Users\user\CloudCrushing\sensitivity_20260907'
 $taskBase='be992e8080dddb7e5e5732dd4a7d9126da2ee3a0'
 $taskFiles=@('build_resolution_summary.py','test_resolution_summary.py','publish_resolution_summary.ps1','resolution_summary_v1/README.md','resolution_summary_v1/summary.json','resolution_summary_v1/validation.json','README.md','PLAN.md')
 $taskCopies=@()

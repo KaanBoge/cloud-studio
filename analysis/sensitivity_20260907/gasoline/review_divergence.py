@@ -15,7 +15,7 @@ import sys
 
 import numpy as np
 
-ROOT = Path('/home/kaan/sensitivity_20260907/gasoline')
+ROOT = Path('/home/user/sensitivity_20260907/gasoline')
 WORK = ROOT / 'longer_validation_2rank_v1'
 OUT = ROOT / 'read_only_divergence_v1'
 CASES = ('original_a', 'original_b', 'retained_off', 'retained_on')
@@ -207,7 +207,7 @@ def main():
         for path in OUT.iterdir():
             pin(path)
         objects = [ROOT/'native/gasoline/pkd.o', ROOT/'native_retained/gasoline/pkd.o',
-                   Path('/home/kaan/codes/gasoline/pkd.o')]
+                   Path('/home/user/codes/gasoline/pkd.o')]
         if len({pin(path) for path in objects}) != 1:
             raise ValueError('Native checkpoint objects differ; ABI requires new review')
         binary = ROOT/'gasoline_original'

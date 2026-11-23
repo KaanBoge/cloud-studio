@@ -9,8 +9,8 @@ AllocMem:	 Largest =    1622.54 Mb (on task=0), Smallest =    1622.54 Mb (on tas
 
 Task with the maximum commited memory
 System time: Sun Aug 23 22:26:42 2026
-This is GIZMO, version 2022, running on Axstarl as kaan.
-Build on  by kaan from master:a828c4b at https://github.com/pfhopkins/gizmo-public.git, Aug 23 2026 11:49:39
+This is GIZMO, version 2022, running on workstation as user.
+Build on  by user from master:a828c4b at https://github.com/pfhopkins/gizmo-public.git, Aug 23 2026 11:49:39
 
 Code was compiled with settings:
 

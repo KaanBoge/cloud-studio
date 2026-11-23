@@ -89,7 +89,7 @@ preflight requirements still apply.
 - `evidence/tracking_extended_inputs/<case>/`: native input, solver log, high
   precision history and provenance.
 - Local raw `.athdf` and `.rst` files remain under
-  `/home/kaan/followup_20260907/tracking_validation_v1/<case>/`.
+  `/home/user/followup_20260907/tracking_validation_v1/<case>/`.
 
 The CLI refuses existing directories unless `--resume-validation` is supplied.
 That option only reuses an identical, completed, hash-checked case and redoes

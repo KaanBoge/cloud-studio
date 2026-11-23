@@ -217,7 +217,7 @@
     }
   },
   "native_ftz_daz_evidence": {
-    "disassembly": "\n/home/kaan/sensitivity_20260907/gizmo/GIZMO_mfv_pair:     file format elf64-x86-64\n\n\nDisassembly of section .init:\n\nDisassembly of section .plt:\n\nDisassembly of section .plt.got:\n\nDisassembly of section .plt.sec:\n\nDisassembly of section .text:\n\n0000000000004040 <set_fast_math>:\n    4040:\tf3 0f 1e fa          \tendbr64\n    4044:\t55                   \tpush   %rbp\n    4045:\t48 89 e5             \tmov    %rsp,%rbp\n    4048:\t0f ae 5d fc          \tstmxcsr -0x4(%rbp)\n    404c:\t8b 45 fc             \tmov    -0x4(%rbp),%eax\n    404f:\t0d 40 80 00 00       \tor     $0x8040,%eax\n    4054:\t89 45 f8             \tmov    %eax,-0x8(%rbp)\n    4057:\t0f ae 55 f8          \tldmxcsr -0x8(%rbp)\n    405b:\t5d                   \tpop    %rbp\n    405c:\tc3                   \tret\n\nDisassembly of section .fini:\n",
+    "disassembly": "\n/home/user/sensitivity_20260907/gizmo/GIZMO_mfv_pair:     file format elf64-x86-64\n\n\nDisassembly of section .init:\n\nDisassembly of section .plt:\n\nDisassembly of section .plt.got:\n\nDisassembly of section .plt.sec:\n\nDisassembly of section .text:\n\n0000000000004040 <set_fast_math>:\n    4040:\tf3 0f 1e fa          \tendbr64\n    4044:\t55                   \tpush   %rbp\n    4045:\t48 89 e5             \tmov    %rsp,%rbp\n    4048:\t0f ae 5d fc          \tstmxcsr -0x4(%rbp)\n    404c:\t8b 45 fc             \tmov    -0x4(%rbp),%eax\n    404f:\t0d 40 80 00 00       \tor     $0x8040,%eax\n    4054:\t89 45 f8             \tmov    %eax,-0x8(%rbp)\n    4057:\t0f ae 55 f8          \tldmxcsr -0x8(%rbp)\n    405b:\t5d                   \tpop    %rbp\n    405c:\tc3                   \tret\n\nDisassembly of section .fini:\n",
     "init_array": "\nHex dump of section '.init_array':\n  0x00061980 40410000 00000000 40400000 00000000 @A......@@......\n\n",
     "relative_relocation": [
       "000000061988  000000000008 R_X86_64_RELATIVE                    4040"
@@ -246,12 +246,12 @@
         "ics.hdf5": "ae510c5a853ace97e3c55c6b234efb3e5cf6f64a1dbd512e5ee7be8d0e1b52e5"
       },
       "snapshot": {
-        "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_100.hdf5",
+        "path": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/snapshot_100.hdf5",
         "sha256": "d5ff5113ed39822a4382fe442587bf53aa99e244cae39f133255b53ae82b8dd6"
       },
       "restarts": [
         {
-          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/restartfiles/restart.0",
+          "path": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/restartfiles/restart.0",
           "sha256": "825365768f41695f55acf32f1ebfe8eadcc693850ebb9b7b686e3430d7d52dcd",
           "bytes": 6285108,
           "parsed_prefix_bytes": 5522240,
@@ -259,7 +259,7 @@
           "particles": 8194
         },
         {
-          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/restartfiles/restart.1",
+          "path": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/restartfiles/restart.1",
           "sha256": "382382d55647d7bb92493cf511709bc6f1fee6e8f613910db7d25c66d3074f7c",
           "bytes": 6352228,
           "parsed_prefix_bytes": 5515520,
@@ -267,7 +267,7 @@
           "particles": 8184
         },
         {
-          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/restartfiles/restart.2",
+          "path": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/restartfiles/restart.2",
           "sha256": "f592cb246c4b0d32341c1689745fb32a0372dc1538aa372d589513d68de2f290",
           "bytes": 6298724,
           "parsed_prefix_bytes": 5520896,
@@ -275,7 +275,7 @@
           "particles": 8192
         },
         {
-          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/restartfiles/restart.3",
+          "path": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/restartfiles/restart.3",
           "sha256": "547ca0cc5f7362140f3ec46a3a48ed1317429df41103da317de9615831b819bb",
           "bytes": 6357996,
           "parsed_prefix_bytes": 5524256,
@@ -283,7 +283,7 @@
           "particles": 8197
         },
         {
-          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/restartfiles/restart.4",
+          "path": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/restartfiles/restart.4",
           "sha256": "2d1d18d1ab81ab5c1adbab3d76afb627992fa208606a90ebe72a9e124bb4ce60",
           "bytes": 6327820,
           "parsed_prefix_bytes": 5521568,
@@ -291,7 +291,7 @@
           "particles": 8193
         },
         {
-          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/restartfiles/restart.5",
+          "path": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/restartfiles/restart.5",
           "sha256": "75e601622ef29bb7c55c74ec6e05b3cb9e2de1948fb1ced7f73a59851b0436c4",
           "bytes": 6308340,
           "parsed_prefix_bytes": 5522240,
@@ -299,7 +299,7 @@
           "particles": 8194
         },
         {
-          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/restartfiles/restart.6",
+          "path": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/restartfiles/restart.6",
           "sha256": "4beaf95aa1c1035cdbc35ff7f1404521148f2636c62ddc38f774ee0cb4c9a3ca",
           "bytes": 6317540,
           "parsed_prefix_bytes": 5520896,
@@ -307,7 +307,7 @@
           "particles": 8192
         },
         {
-          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/restartfiles/restart.7",
+          "path": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_sharp13/output/restartfiles/restart.7",
           "sha256": "3b00230ca703757edcc073ac730a5f18d259d4ae40ca84dcd52f53f9c4e14095",
           "bytes": 6330004,
           "parsed_prefix_bytes": 5519552,
@@ -404,12 +404,12 @@
         "ics.hdf5": "b85251c1ecae2dab665cec6525f06543104b11dc0a2c2763159ecfa5670bc4f0"
       },
       "snapshot": {
-        "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_100.hdf5",
+        "path": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/snapshot_100.hdf5",
         "sha256": "ff23f75f5cb5ca558ad3c82b426288564d68884c405658479cd652db960644ba"
       },
       "restarts": [
         {
-          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/restartfiles/restart.0",
+          "path": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/restartfiles/restart.0",
           "sha256": "c8f402991c196c75aca95f55d44270f041156bce265b50563ae685ce67ad656f",
           "bytes": 6317096,
           "parsed_prefix_bytes": 5489312,
@@ -417,7 +417,7 @@
           "particles": 8145
         },
         {
-          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/restartfiles/restart.1",
+          "path": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/restartfiles/restart.1",
           "sha256": "0050344fbfeee6cd4f965f74f75a785d37c5f46b1a2130519577e95f8a0f0955",
           "bytes": 6328856,
           "parsed_prefix_bytes": 5525600,
@@ -425,7 +425,7 @@
           "particles": 8199
         },
         {
-          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/restartfiles/restart.2",
+          "path": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/restartfiles/restart.2",
           "sha256": "6c97c9f9d157b91a70752223f539f2ff9e577d61c7b1eac345e36ca62f4ed734",
           "bytes": 6329344,
           "parsed_prefix_bytes": 5526272,
@@ -433,7 +433,7 @@
           "particles": 8200
         },
         {
-          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/restartfiles/restart.3",
+          "path": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/restartfiles/restart.3",
           "sha256": "563048e916fd4e3f106ed05f82453839c73751dd9e9bad232c2912f2c1dcd88c",
           "bytes": 6321296,
           "parsed_prefix_bytes": 5527616,
@@ -441,7 +441,7 @@
           "particles": 8202
         },
         {
-          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/restartfiles/restart.4",
+          "path": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/restartfiles/restart.4",
           "sha256": "783ec0cf325e9a0e693aa10fe35656bfbfe2736acb1ac9b953277c1f7ca3695a",
           "bytes": 6301192,
           "parsed_prefix_bytes": 5524256,
@@ -449,7 +449,7 @@
           "particles": 8197
         },
         {
-          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/restartfiles/restart.5",
+          "path": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/restartfiles/restart.5",
           "sha256": "15859dee15687c7af802ef78e0c9fc677079d1f9122f436ebca0c60affd9101b",
           "bytes": 6349664,
           "parsed_prefix_bytes": 5523584,
@@ -457,7 +457,7 @@
           "particles": 8196
         },
         {
-          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/restartfiles/restart.6",
+          "path": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/restartfiles/restart.6",
           "sha256": "dd3779bae3a4ba5607bab10bc12fa30efa7736f68d5f7ce0a8630ea6c752e3ec",
           "bytes": 6343136,
           "parsed_prefix_bytes": 5523584,
@@ -465,7 +465,7 @@
           "particles": 8196
         },
         {
-          "path": "/home/kaan/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/restartfiles/restart.7",
+          "path": "/home/user/sensitivity_20260907/gizmo/runs/L3_mfv_tanh13/output/restartfiles/restart.7",
           "sha256": "8f9480cc47a873009a2782fda54daa1919bcf5af037b6160df72dc2a642d6a43",
           "bytes": 6338664,
           "parsed_prefix_bytes": 5526944,

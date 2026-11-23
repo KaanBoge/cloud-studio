@@ -1,7 +1,7 @@
 $ErrorActionPreference='Stop'
-$taskStudy='C:\Users\kaanb\CloudCrushing\sensitivity_20260907'
+$taskStudy='C:\Users\user\CloudCrushing\sensitivity_20260907'
 $taskSource=Join-Path $taskStudy 'gizmo'
-$taskRepo='C:\Users\kaanb\cloud-studio-repo'
+$taskRepo='C:\Users\user\cloud-studio-repo'
 $taskTarget=Join-Path $taskRepo 'analysis\sensitivity_20260907\gizmo'
 $taskBase='ceffdc9ad3d7f6432054de541e7224c3235f51a1'
 if(@(git -C $taskRepo status --porcelain).Count){throw 'Review existing changes before staging'}

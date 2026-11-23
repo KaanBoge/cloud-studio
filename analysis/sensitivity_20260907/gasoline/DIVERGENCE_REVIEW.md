@@ -97,7 +97,7 @@ interpreted as a physical difference. No checkpoint is resumed by this checker.
 Ten synthetic tests passed for IDs, selected ABI offsets, malformed files,
 nonfinite values, signed zeros, spacing distances, temperature scaling, independent
 decoding and preservation guards. The source report is immutable:
-`/home/kaan/sensitivity_20260907/gasoline/read_only_divergence_v1/report.json`.
+`/home/user/sensitivity_20260907/gasoline/read_only_divergence_v1/report.json`.
 SHA256 `96ee1e31635feae95674bd4777a0d9e5badc288a860112cb86dc40e6ef8957b2`.
 Scripts: [review](review_divergence.py), [tests](test_review_divergence.py).
 They require the explicitly pinned local native workspace, not a standalone solver.

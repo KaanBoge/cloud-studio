@@ -74,7 +74,7 @@ moved or deleted, and the new ICs, snapshots, restart files and logs remain.
 Ten-GiB free-space reserves and the full pair budget were guarded.
 
 Raw directory:
-`C:/Users/kaanb/CloudCrushing/native_runs/sensitivity_20260907/gadget4_L4_velocity_pair_v1`.
+`C:/Users/user/CloudCrushing/native_runs/sensitivity_20260907/gadget4_L4_velocity_pair_v1`.
 Each law directory contains `ics.hdf5`, `params.txt`, `result.json`,
 `run.log`, `resources.jsonl`, `output/snapshot_000.hdf5` through
 `snapshot_100.hdf5`, and `output/restartfiles/restart.*`.

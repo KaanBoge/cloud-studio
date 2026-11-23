@@ -1,7 +1,8 @@
 {
+  "checked_on": "2026-09-09",
   "status": "passed_static_publication_checks",
   "checks": [
-    "accepted counts and scope preserved",
+    "counts and scope unchanged",
     "all public analysis catalog sizes and SHA-256 hashes match",
     "every pinned remote index has valid times and existing frame references",
     "all new guide and research-page local links resolve; HTML IDs unique",
@@ -12,11 +13,11 @@
   "site_bytes": 900222212,
   "archive_bytes": 8713902,
   "analysis_files": 919,
-  "historical_viewer_entries": 174,
   "indexed_frames": 11913,
   "limitations": [
-    "No browser visual QA requested or performed.",
-    "Native solver validation is separate.",
+    "No visual check in a browser was made.",
+    "Solver checks are reported separately.",
     "Remote mesh payloads not decoded; only their tree entries and indexes checked."
-  ]
+  ],
+  "earlier_viewer_entries": 174
 }

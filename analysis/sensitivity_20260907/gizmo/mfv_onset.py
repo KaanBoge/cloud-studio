@@ -122,7 +122,7 @@ def freeze():
        storage_preflight=disk,ranks=8,wall_limit_seconds=600,stop_grace_seconds=30,step_envelope=32768,
        scope='One historical repaired L3 diagnostic; not a full accepted pair or a higher-level launch.')
     with (PACKAGE/'tests.log').open('x') as stream:
-        subprocess.run(['/home/kaan/venv/bin/python','-m','unittest','-v','test_mfv_onset'],cwd=PACKAGE,stdout=stream,stderr=subprocess.STDOUT,check=True,timeout=60)
+        subprocess.run(['/home/user/venv/bin/python','-m','unittest','-v','test_mfv_onset'],cwd=PACKAGE,stdout=stream,stderr=subprocess.STDOUT,check=True,timeout=60)
     plan['tests_log_sha256']=sha(PACKAGE/'tests.log');save_new(PACKAGE/'plan.json',plan)
     print(json.dumps(dict(status=plan['status'],budget_gib=budget/GIB,plan_sha256=sha(PACKAGE/'plan.json'),cadence=oldcadence)))
 
@@ -142,7 +142,7 @@ def run(plan):
     locks=[];proc=None
     try:
         for name in ['benchmark.lock','production.lock']:
-            lock=open('/home/kaan/performance_20260907/'+name,'a');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(lock)
+            lock=open('/home/user/performance_20260907/'+name,'a');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB);locks.append(lock)
         DEST.mkdir();(DEST/'output').mkdir()
         for name in ['ics.hdf5','params.txt']:shutil.copy2(OLD/name,DEST/name)
         check(sha(DEST/'ics.hdf5')==EXPECTED_IC and sha(DEST/'params.txt')==EXPECTED_INPUT,'Input copy mismatch')

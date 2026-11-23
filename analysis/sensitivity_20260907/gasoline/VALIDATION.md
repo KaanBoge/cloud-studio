@@ -1,6 +1,6 @@
 # Gasoline initial-output and repeatability audit
 
-8 September 2026, approximately 10:27 Istanbul time.
+8 September 2026, approximately 07:27 UTC.
 **Preparation evidence with limitations; no full Gasoline controls completed.**
 
 Later update: [LONGER_VALIDATION.md](LONGER_VALIDATION.md) reports the new81-state,
@@ -102,7 +102,7 @@ tolerance or rewriting data.
 
 ## Preserved artifacts and next steps
 
-Native root: `/home/kaan/sensitivity_20260907/gasoline`.
+Native root: `/home/user/sensitivity_20260907/gasoline`.
 `instrumentation_v1` holds the four first cases, `repeatability_v1` holds two
 new negative controls, and `repeatability_audit_v1/report.json` records all
 measurements. Its SHA256 is

@@ -18,14 +18,14 @@ import sys
 import time
 
 HERE=Path(__file__).resolve().parent
-sys.path.insert(0,'/home/kaan/verified_20260907')
+sys.path.insert(0,'/home/user/verified_20260907')
 from run_corrected_athpp import make_input
 from run_params import parse_file
 from storage_guard import storage_snapshot, require_storage
 
 IC_VERSION='sharp13_20260907'
-WORK=Path('/home/kaan/performance_20260907')
-ROOTS={'athpp':Path('/home/kaan/codes/athenapp/runs'),'apk':Path('/home/kaan/codes/athenapk/runs')}
+WORK=Path('/home/user/performance_20260907')
+ROOTS={'athpp':Path('/home/user/codes/athenapp/runs'),'apk':Path('/home/user/codes/athenapk/runs')}
 GIB=1024**3
 
 def sha(path):return hashlib.sha256(Path(path).read_bytes()).hexdigest()
@@ -55,7 +55,7 @@ def input_for(code,level,chi,block,apk_compression=None):
     if code=='athpp':
         return set_sections(make_input(level,chi),{'meshblock':{f'nx{i+1}':shape[i] for i in range(3)}})
     # Pinned, IC-verified native template. Remove obsolete historical comments.
-    template=Path('/home/kaan/ic_audit_20260907/grid_tests/apk_chi100/athinput').read_text()
+    template=Path('/home/user/ic_audit_20260907/grid_tests/apk_chi100/athinput').read_text()
     template=template[template.index('<job>'):]
     template='\n'.join(line.split('#',1)[0].rstrip() for line in template.splitlines())
     nx=8*2**level;tcc=math.sqrt(chi)/(2*math.sqrt(5/3))
