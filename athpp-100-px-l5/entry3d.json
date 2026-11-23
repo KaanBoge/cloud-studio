@@ -1,0 +1,1 @@
+{"label":"Athena++ · χ 100 · level 5 · periodic along the wind","code":"Athena++","chi":100,"lvl":5,"frames":101,"note":"The box is periodic along the wind and open on its four side faces, and by t = 5 t_cc the gas denser than a third of the initial cloud keeps 27 percent of its starting mass.","projection_id":"athpp-100-px-l5"}

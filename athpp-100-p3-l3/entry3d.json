@@ -1,0 +1,1 @@
+{"label":"Athena++ · χ 100 · level 3 · periodic on all faces","code":"Athena++","chi":100,"lvl":3,"frames":101,"note":"All six faces are periodic, so gas leaving on the right comes back on the left, and by t = 5 t_cc the gas denser than a third of the initial cloud keeps 10 percent of its starting mass.","projection_id":"athpp-100-p3-l3"}
