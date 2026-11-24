@@ -1,7 +1,7 @@
 {
   "generated_at_utc": "2026-11-23T12:30:58.234437+00:00",
-  "count": 937,
-  "bytes": 30710070,
+  "count": 938,
+  "bytes": 30732651,
   "scope": "Public analysis files only",
   "files": [
     {
@@ -5532,8 +5532,8 @@
     },
     {
       "path": "analysis/build_60fps.py",
-      "bytes": 5291,
-      "sha256": "92fb6247a406117982bf35698fb477fe63c76115249046cc158648fb9f654d2f",
+      "bytes": 5844,
+      "sha256": "fe73467fbc6b09dda54f17d3c53ed733b9dd09488f0aa27fb3bc22f0fb739b95",
       "kind": "py"
     },
     {
@@ -5562,8 +5562,8 @@
     },
     {
       "path": "analysis/media60_publication.json",
-      "bytes": 758,
-      "sha256": "99cad3b1f2df1a7242bb7d793c88c1655abaa4aee26c92731cf3ed1bcfb8806b",
+      "bytes": 863,
+      "sha256": "7a98f1067edde1eba18d7578053e3051176ac57084f43fa57065dc03ba065712",
       "kind": "json"
     },
     {
@@ -5616,15 +5616,21 @@
     },
     {
       "path": "analysis/smooth60_receipt.json",
-      "bytes": 222054,
-      "sha256": "7a4c2077f20892f6699366efe3f528feeff8478ef82fc9288d408ce32e80b7c5",
+      "bytes": 239632,
+      "sha256": "63aeef384d1e25b3baae5183bd604273b79594b7e245101fc9ca85fedd4b85c1",
       "kind": "json"
     },
     {
       "path": "analysis/studio_refresh_README.md",
-      "bytes": 1853,
-      "sha256": "f9f9bdf29b1c189f321443c2798975bd258b3797c414a6f7d1961adf5c80c1d0",
+      "bytes": 2034,
+      "sha256": "5b69611a6450e51b529ae51a992773a797deb4144a3fc84538789649f4d89378",
       "kind": "md"
+    },
+    {
+      "path": "analysis/package_60fps_batches.py",
+      "bytes": 4164,
+      "sha256": "dbc862ad0a5e7521756d5414f9ad6f8a425c8e3b36192a3f596e39f660656584",
+      "kind": "py"
     }
   ]
 }

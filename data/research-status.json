@@ -5,8 +5,8 @@
   "analyzed_native_states": 5054,
   "earlier_viewer_entries": 174,
   "earlier_indexed_frames": 11913,
-  "analysis_files": 937,
-  "analysis_bytes": 30710070,
+  "analysis_files": 938,
+  "analysis_bytes": 30732651,
   "frames_commit": "7b25e3b651dafffb76716bdf0c7d778d2e441182",
   "summary_source": "analysis/sensitivity_20260907/resolution_summary_v2/summary.json",
   "scope": "Dated counts of the September 2026 velocity setup study and of the earlier 3D frame store. The library of current runs is listed in data/studio-catalog.json."

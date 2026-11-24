@@ -26,7 +26,8 @@ ids, file coverage, surfaces and links. The site needs only static hosting.
 `add_plm_display.py`, `prepare_studio_media.py`, `build_60fps.py`, `fix_60fps_labels.py` and
 `package_60fps.py` made the earlier displays with eleven states per run and their 60 fps previews on the
 `media-60fps` branch. The complete runs replace those displays; the films of the archive keep their
-60 fps previews.
+60 fps previews. On 24 November 2026 `build_60fps.py` rebuilt those 442 previews with a new footer line
+and `package_60fps_batches.py` committed them to `media-60fps` in batches of at most 128 MiB.
 
 The library supports search and filters, favourites saved only in the browser, shareable film links and
 compact or card layouts. Films have rate, loop, picture in picture and download controls.

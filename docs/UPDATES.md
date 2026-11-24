@@ -1,5 +1,9 @@
 # Update notes
 
+## 24 November 2026
+
+The 442 film previews of the archive at 60 fps were rebuilt from the same movies with a new footer line, "60 fps blended preview, not additional simulation states". Above the footer the frames are unchanged, apart from encoder noise of at most 11 of 255 levels in fewer than 250 pixels per frame during the last second of one terrain film. The `media-60fps` branch now holds only these previews; the earlier previews of the recent runs, which the complete runs replace, stay in its history.
+
 ## 23 November 2026
 
 Every page now shares one navigation (Library, 3D viewer, Compare, Research, Paper, GitHub), one footer and the Cloud Studio icon, and each page title names its page.
