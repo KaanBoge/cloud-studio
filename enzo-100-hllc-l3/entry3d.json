@@ -1,0 +1,1 @@
+{"label":"Enzo · χ 100 · level 3 · HLLC","code":"Enzo","chi":100,"lvl":3,"frames":101,"note":"Enzo with the HLLC Riemann solver in place of its default two shock solver, otherwise the same setup as the Enzo run at this level. By t = 5 t_cc the gas denser than a third of the initial cloud keeps 1 percent of its starting mass.","projection_id":"enzo-100-hllc-l3"}
