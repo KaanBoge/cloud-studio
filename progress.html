@@ -2,32 +2,29 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#0b1017">
+<meta name="theme-color" content="#111315">
 <meta name="description" content="Progress log of Kaan Boge's velocity setup study: every run up to 20 September 2026 with its code, level and measured run time.">
 <title>Progress log · Cloud Studio</title>
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="research.css?v=20261122">
-<link rel="stylesheet" href="progress.css?v=20261122"><script src="progress.js?v=20261122" defer></script>
+<link rel="stylesheet" href="research.css?v=20261125">
+<link rel="stylesheet" href="progress.css?v=20261125"><script src="progress.js?v=20261125" defer></script>
 </head>
 <body>
-<a class="skip" href="#main">Skip to the progress log</a>
-<header class="top"><a class="brand" href="index.html"><span class="mark" aria-hidden="true">◌</span> Cloud <b>Studio</b></a><nav aria-label="Main navigation"><a href="index.html">Library</a><a href="viewer.html">3D viewer</a><a href="recent.html">Compare</a><a href="research.html">Research</a><a href="paper/Cloud_survival_OJA.pdf">Paper</a><a href="https://github.com/KaanBoge/cloud-studio">GitHub</a></nav></header>
-<main id="main">
-<section class="log-head" aria-labelledby="title">
-  <p class="eyebrow">EARLIER LOG · SEPTEMBER 2026</p>
-  <h1 id="title">Progress <em>log</em></h1>
-  <p class="lede">This log records the runs of my velocity setup study up to 20 September 2026, with the time each run took.</p>
-  <p class="log-intro">The runs come in pairs with the same code, level and contrast. One run of each pair starts with the sharp velocity edge at 1.3 cloud radii that the paper uses, the other with the earlier velocity setup of that code, so the two histories differ only in the starting velocity. The runs of the paper are in the <a href="index.html">library</a>, and the <a href="research.html">research page</a> explains them.</p>
+<a class="skip" href="#main">Skip to the content</a>
+<header class="site-head"><div class="site-head-in"><a class="site-title" href="index.html">Cloud Studio</a><nav class="site-nav" aria-label="Site"><a href="index.html">Runs</a><a href="recent.html">Compare</a><a href="viewer.html">3D viewer</a><a href="research.html">Research</a><a href="paper/Cloud_survival_OJA.pdf">Paper</a><a href="https://github.com/KaanBoge/cloud-studio">GitHub</a></nav></div></header>
+<main id="main" class="page">
+<h1>Progress log</h1>
+<p class="lede">Runs of the velocity setup study up to 20 September 2026, with the solver time of each run.</p>
+<p class="lede">The runs come in pairs with the same code, level and contrast. One run of each pair starts with the sharp velocity edge at 1.3 cloud radii that the paper uses, the other with the earlier velocity setup of that code, so the two histories differ only in the starting velocity. The runs of the paper are on the <a href="index.html">Runs page</a>, and the <a href="research.html">research page</a> explains them.</p>
+<p class="lede"><span id="n-runs">60</span> runs of <span id="n-codes">12</span> methods, <span id="n-states">6,066</span> saved states and <span id="n-time">12.3 h</span> of solver time in total.</p>
+<section aria-labelledby="runs-title">
+  <h2 id="runs-title">Runs</h2>
+  <div class="filters"><label class="field wide">Find a run<input id="search" type="search" placeholder="Code or velocity setup"></label><label class="field">Code<select id="code"><option value="">All codes</option></select></label><label class="field">Level<select id="level"><option value="">All levels</option></select></label><label class="field">Order<select id="sort"><option value="code">Code name</option><option value="level">Highest level first</option><option value="slow">Longest run time first</option></select></label></div>
+  <p class="meta" id="shown" aria-live="polite"></p>
+  <div class="table-scroll"><table class="progress stack"><caption class="visually-hidden">Runs of the velocity setup study with their run times</caption><thead><tr><th scope="col">Code</th><th scope="col">Velocity setup</th><th scope="col">Level</th><th scope="col">Conditions</th><th scope="col">Run time</th><th scope="col">Saved states</th></tr></thead><tbody id="runs"><tr><td colspan="6"><a href="data/progress-catalog.json">The run list as JSON</a></td></tr></tbody></table></div>
+  <p class="meta note-line">Run time is the solver time on my workstation, AthenaPK on the graphics card and the other codes on the processor. <a href="data/progress-catalog.json" download>Download the run list as JSON</a></p>
 </section>
-<section class="tally" aria-label="Summary of the log"><div><strong id="n-runs">60</strong><span>runs</span></div><div><strong id="n-codes">12</strong><span>methods</span></div><div><strong id="n-states">6,066</strong><span>saved states</span></div><div><strong id="n-time">12.3 h</strong><span>total run time</span></div></section>
-<section class="section" aria-labelledby="runs-title">
-  <div class="section-head"><h2 id="runs-title">Runs</h2></div>
-  <div class="filters"><label>Code<select id="code"><option value="">All codes</option></select></label><label>Level<select id="level"><option value="">All levels</option></select></label><label>Order<select id="sort"><option value="code">Code name</option><option value="level">Highest level first</option><option value="slow">Longest run time first</option></select></label><label class="search">Find a run<input id="search" type="search" placeholder="Code or velocity setup"></label></div>
-  <p class="muted" id="shown" aria-live="polite"></p>
-  <div class="table-wrap"><table><caption class="sr-only">Runs of the velocity setup study with their run times</caption><thead><tr><th scope="col">Code</th><th scope="col">Velocity setup</th><th scope="col">Level</th><th scope="col">Conditions</th><th scope="col">Run time</th><th scope="col">Saved states</th></tr></thead><tbody id="runs"><tr><td colspan="6"><a href="data/progress-catalog.json">The run list as JSON</a></td></tr></tbody></table></div>
-  <p class="muted note-line">Run time is the solver time on my workstation, AthenaPK on the graphics card and the other codes on the processor. <a href="data/progress-catalog.json" download>Download the run list as JSON</a></p>
-</section>
-<noscript><p class="muted">The run list is also available as <a href="data/progress-catalog.json">JSON</a>.</p></noscript>
+<noscript><p class="meta">The run list is also available as <a href="data/progress-catalog.json">JSON</a>.</p></noscript>
 </main>
-<footer class="foot"><span>Cloud Studio. Cloud crushing research by Kaan Boge, ongoing. MIT licence.</span><span class="foot-links"><a href="paper/Cloud_survival_OJA.pdf">Paper</a><a href="https://github.com/KaanBoge/cloud-studio">GitHub</a></span></footer>
+<footer class="site-foot"><div class="site-foot-in"><p>Cloud Studio. Cloud crushing research by Kaan Boge, ongoing. MIT licence.</p><p><a href="paper/Cloud_survival_OJA.pdf">Paper</a><a href="research.html#downloads">Downloads</a><a href="https://github.com/KaanBoge/cloud-studio">GitHub</a></p></div></footer>
 </body></html>

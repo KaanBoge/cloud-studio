@@ -2,34 +2,19 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#0b1017">
+<meta name="theme-color" content="#111315">
 <meta name="description" content="Verification log of Kaan Boge's cloud crushing study: checks and corrections to the setup, the analysis and the run tools up to 7 September 2026.">
 <title>Verification log · Cloud Studio</title>
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="research.css?v=20261122">
-<style>
-  .log-head{padding:4rem 0 1rem;max-width:48rem}
-  .log-head .lede{font-size:1.15rem;color:var(--text);max-width:48rem}
-  .log{max-width:48rem}
-  .log h2{margin:3rem 0 1rem}
-  .log p{color:var(--muted)}
-  .log p strong{color:var(--text);font-weight:600}
-  .log ul.links{list-style:none;padding:0;margin:2.5rem 0 0;display:flex;flex-wrap:wrap;gap:.6rem}
-  .log ul.links a{display:inline-flex;align-items:center;min-height:40px;border:1px solid var(--line);border-radius:999px;padding:.35rem 1rem;text-decoration:none;color:var(--text);font-size:.9rem;background:var(--panel)}
-  .log ul.links a:hover{border-color:#66543e}
-  @media(max-width:640px){.log-head{padding-top:2rem}}
-</style>
+<link rel="stylesheet" href="research.css?v=20261125">
 </head>
 <body>
-<a class="skip" href="#main">Skip to the verification log</a>
-<header class="top"><a class="brand" href="index.html"><span class="mark" aria-hidden="true">◌</span> Cloud <b>Studio</b></a><nav aria-label="Main navigation"><a href="index.html">Library</a><a href="viewer.html">3D viewer</a><a href="recent.html">Compare</a><a href="research.html">Research</a><a href="paper/Cloud_survival_OJA.pdf">Paper</a><a href="https://github.com/KaanBoge/cloud-studio">GitHub</a></nav></header>
-<main id="main">
-<section class="log-head" aria-labelledby="title">
-  <p class="eyebrow">EARLIER LOG · SEPTEMBER 2026</p>
-  <h1 id="title">Verification <em>log</em></h1>
-  <p class="lede">This log records the checks and corrections I made to the simulation setup, the analysis and the run tools up to 7 September 2026.</p>
-</section>
-<article class="log">
+<a class="skip" href="#main">Skip to the content</a>
+<header class="site-head"><div class="site-head-in"><a class="site-title" href="index.html">Cloud Studio</a><nav class="site-nav" aria-label="Site"><a href="index.html">Runs</a><a href="recent.html">Compare</a><a href="viewer.html">3D viewer</a><a href="research.html">Research</a><a href="paper/Cloud_survival_OJA.pdf">Paper</a><a href="https://github.com/KaanBoge/cloud-studio">GitHub</a></nav></div></header>
+<main id="main" class="page">
+<h1>Verification log</h1>
+<p class="lede">Checks and corrections to the simulation setup, the analysis and the run tools, up to 7 September 2026.</p>
+<article class="prose">
   <h2>Starting conditions</h2>
   <p><strong>Grid codes.</strong> Eight grid codes passed 24 tests of their first saved state: Athena++, AthenaPK, Athena 4.2, FLASH 4.8, Flash-X, Enzo, Enzo-E and RAMSES, each at χ 10, 100 and 1000 on a 64 × 32 × 32 grid. The tests checked density, velocity, pressure, domain and cell count.</p>
   <p><strong>Particle codes.</strong> The generators of the starting particles of the four particle codes passed 12 separate tests of their input fields.</p>
@@ -50,7 +35,7 @@
   <p><strong>Tracking prototype.</strong> A separate Athena++ build passed tests with tracking off and with restarts. Six level 3 tests reached 5 t<sub>cc</sub> with 101 native outputs each, and the tracked χ 1000 test kept 88.9 percent of its starting tracer mass in the box.</p>
   <p><strong>Cooling.</strong> The nine cooling inputs of that time did not switch cooling on, and their native logs report the cooling parameters as unused, so those runs are non radiative. The viewer labels them that way, and the old cooling generator no longer writes such an input.</p>
 
-  <ul class="links">
+  <ul class="links-row">
     <li><a href="https://github.com/KaanBoge/cloud-studio/tree/main/analysis/verified_20260907">Corrected scripts and test evidence</a></li>
     <li><a href="https://github.com/KaanBoge/cloud-studio/blob/main/analysis/README.md">Methods, formats and folder layout</a></li>
     <li><a href="progress.html">Progress log</a></li>
@@ -58,6 +43,6 @@
   </ul>
 </article>
 </main>
-<footer class="foot"><span>Cloud Studio. Cloud crushing research by Kaan Boge, ongoing. MIT licence.</span><span class="foot-links"><a href="paper/Cloud_survival_OJA.pdf">Paper</a><a href="https://github.com/KaanBoge/cloud-studio">GitHub</a></span></footer>
+<footer class="site-foot"><div class="site-foot-in"><p>Cloud Studio. Cloud crushing research by Kaan Boge, ongoing. MIT licence.</p><p><a href="paper/Cloud_survival_OJA.pdf">Paper</a><a href="research.html#downloads">Downloads</a><a href="https://github.com/KaanBoge/cloud-studio">GitHub</a></p></div></footer>
 </body>
 </html>

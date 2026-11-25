@@ -89,7 +89,7 @@ for (const r of c.entries) {
   check(r.level == null || (Number.isInteger(r.level) && r.level >= 1), `${r.id}: level ${r.level}`);
   if (r.level != null) check(r.label.includes('level ' + r.level), `${r.id}: title does not name level ${r.level}`);
   if (r.chi) check(r.label.includes('χ ' + r.chi), `${r.id}: title does not name χ ${r.chi}`);
-  if (r.group != null) check(['twelve', 'boundary'].includes(r.group), `${r.id}: group ${r.group}`);
+  if (r.group != null) check(['twelve', 'boundary', 'solver', 'smooth', 'other'].includes(r.group), `${r.id}: group ${r.group}`);
   if (r.boundary != null) check(BOUNDARIES.includes(r.boundary), `${r.id}: boundary "${r.boundary}"`);
   if (r.group === 'twelve') check(TWELVE.includes(r.code) && r.chi === 100, `${r.id}: a twelve methods entry must be one of the twelve codes at χ 100`);
   if (r.group === 'boundary') check(!!r.boundary, `${r.id}: a boundary control needs its boundary`);
@@ -119,7 +119,12 @@ for (const run of recentRuns) {
   check(Math.abs(r.end - run.frames.at(-1).time) < 1e-9, `${r.id}: end time differs from the last frame`);
   check(run.frames.every((f, i) => i === 0 || f.time > run.frames[i - 1].time), `${r.id}: frame times are not increasing`);
   check(r.level === (Number.isInteger(run.level) ? run.level : 5), `${r.id}: level ${r.level}`);
-  check(r.status === 'Complete run', `${r.id}: status ${r.status}`);
+  // a run with a base address that stops before 5 t_cc carries its own status, and its frames must end before 5 t_cc
+  const ownStatus = run.base && run.status && run.status !== 'Complete run' ? run.status : 'Complete run';
+  check(r.status === ownStatus, `${r.id}: status ${r.status}, expected ${ownStatus}`);
+  if (ownStatus !== 'Complete run') check(run.frames.at(-1).time < 4.99 && /^Stops at /.test(ownStatus), `${r.id}: status "${ownStatus}" with the last frame at ${run.frames.at(-1).time}`);
+  else check(run.frames.at(-1).time > 4.99, `${r.id}: complete run whose last frame is at ${run.frames.at(-1).time}`);
+  if (run.box != null) check(run.box === 100 && /100 R box/.test(r.label), `${r.id}: box ${run.box} or the title does not name the 100 R box`);
   check(r.physics === (run.cooling === 'tabular' ? 'tabular' : run.cooling === 'none' ? 'none' : 'unknown'), `${r.id}: physics ${r.physics} for cooling ${run.cooling}`);
   check((r.group || null) === (run.group || null) && (r.boundary || null) === (run.boundary || null), `${r.id}: group or boundary not carried`);
   check(!!r.viewer === !!recent3D['new_' + run.id], `${r.id}: 3D link does not match RECENT_3D`);

@@ -2,157 +2,99 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#0b1017">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#111315">
 <title>Archive · Cloud Studio</title>
 <meta name="description" content="Kaan Boge's earlier cloud crushing runs: two dimensional runs, films, image sets, terrain views and the first 3D volumes.">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="studio.css?v=20261125">
 <style>
-  :root {
-    color-scheme: dark;
-    --page: #0b1017; --surface: #111923; --ink: #ecf1f5; --muted: #a3b1bf;
-    --faint: #8f9cab; --line: #26323f; --chip: #17212c;
-    --accent: #e5ba83; --accent2: #f1cea0; --hot: #e59ac6; --good: #47c08b; --warn: #d09a2a;
-  }
-  * { box-sizing: border-box; }
-  body { margin: 0; background: var(--page); color: var(--ink);
-    font-family: "Segoe UI", Arial, sans-serif; line-height: 1.5; }
-  a { color: var(--accent); }
-  /* shared header and footer */
-  .top { max-width: 1600px; margin: 0 auto; min-height: 88px; display: flex; align-items: center; gap: 40px;
-    padding: 0 5%; border-bottom: 1px solid var(--line); }
-  .brand b { font-weight: 650; }
-  .brand { color: var(--ink); text-decoration: none; font-size: 16.8px; font-weight: 350; letter-spacing: .14em; text-transform: uppercase; white-space: nowrap;
-    display: flex; align-items: center; gap: 9px; }
-  .mark { font-size: 30px; line-height: 1; color: var(--accent); }
-  .top nav { display: flex; flex-wrap: wrap; gap: 4px 26px; margin-left: auto; font-size: 14.9px; }
-  .top nav a { color: var(--muted); text-decoration: none; padding: 7px 0; border-bottom: 2px solid transparent; }
-  .top nav a:hover { color: var(--ink); }
-  .foot { max-width: 1180px; margin: 40px auto 0; padding: 28px 20px 40px; border-top: 1px solid var(--line);
-    display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 32px; color: var(--muted); font-size: 13px; }
-  .foot-links { display: flex; gap: 24px; }
-  .foot a { text-decoration: none; padding: 5px 0; }
-  .skip { position: absolute; left: 16px; top: -100px; background: var(--accent); color: #14110c; padding: 10px 16px; z-index: 80; }
-  .skip:focus { top: 12px; }
-
-  .wrap { max-width: 1180px; margin: 0 auto; padding: 32px 20px 20px; }
-  .eyebrow { font-size: 12px; font-weight: 650; letter-spacing: .16em; text-transform: uppercase; color: var(--accent); margin: 0 0 8px; }
-  h1 { font-size: 34px; font-weight: 450; letter-spacing: -.02em; margin: 0 0 8px; }
-  .sub { color: var(--muted); font-size: 15px; margin: 0 0 22px; max-width: 80ch; }
-  nav.tabs { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 18px; border-bottom: 1px solid var(--line); padding-bottom: 12px; }
-  nav.tabs button { font: 600 14px "Segoe UI", Arial, sans-serif; padding: 8px 16px; min-height: 40px; border-radius: 999px; border: 1.5px solid var(--line); background: var(--surface); color: var(--muted); cursor: pointer; }
-  nav.tabs button.on { border-color: var(--accent); color: #171d25; background: var(--accent); }
-  :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
-  .toolbar { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center;
-    background: color-mix(in srgb, var(--surface) 90%, transparent); backdrop-filter: blur(8px);
-    border: 1px solid var(--line); border-radius: 12px; padding: 10px 14px; margin-bottom: 16px;
-    position: sticky; top: 10px; z-index: 20; }
-  .rebtns { display: flex; flex-wrap: wrap; gap: 6px; }
-  .rebtns button { font: 600 13px "Segoe UI", Arial, sans-serif; padding: 5px 12px; min-height: 32px; border-radius: 999px; border: 1.5px solid var(--line); background: var(--surface); color: var(--muted); cursor: pointer; }
-  .rebtns button.on { border-color: var(--accent); color: var(--accent); background: color-mix(in srgb, var(--accent) 12%, transparent); }
-  .lab { font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
-  .mini { font: 600 13px "Segoe UI", Arial, sans-serif; padding: 5px 12px; min-height: 32px; border-radius: 7px; border: 1.5px solid var(--line); background: var(--surface); color: var(--muted); cursor: pointer; }
-  .mini:hover { color: var(--accent); border-color: var(--accent); }
+  /* Archive page. Colours, type, header, footer and controls come from the shared block of studio.css. */
+  .intro { max-width: 70ch; }
+  nav.tabs { display: flex; flex-wrap: wrap; gap: 8px; margin: 24px 0 16px; padding-bottom: 16px; border-bottom: 1px solid var(--line); }
+  .toolbar { display: grid; gap: 8px; margin: 0 0 24px; }
+  .filter-row { display: grid; grid-template-columns: 5rem minmax(0, 1fr); align-items: start; gap: 4px 12px; }
+  .lab { font-size: .875rem; color: var(--muted); }
+  .filter-row .lab { padding-top: 12px; }
+  @media (max-width: 599px) { .filter-row { grid-template-columns: minmax(0, 1fr); } .filter-row .lab { padding-top: 0; } }
+  .rebtns, .vbtns { display: flex; flex-wrap: wrap; gap: 8px; }
+  .rebtns button, .vbtns button { padding: 0 12px; }
+  .rebtns button.on, .vbtns button.on, #tlist button.on, #vlist button.on, #cList button.on {
+    background: var(--pressed); border-color: var(--muted); font-weight: 600; }
   .panel { display: none; }
   .panel.on { display: block; }
-  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 14px; }
-  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; }
-  .card h3 { font-size: 15px; font-weight: 600; margin: 0 0 6px; }
-  .card h3 .chi { color: var(--hot); white-space: nowrap; }
+  .panel h2 { font-size: 1.125rem; margin: 32px 0 8px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 330px), 1fr)); gap: 16px; }
+  .card { min-width: 0; border: 1px solid var(--line); border-radius: 4px; padding: 12px; }
+  .card h3 { font-size: 1rem; margin: 0 0 8px; overflow-wrap: anywhere; }
+  .card h3 .chi { white-space: nowrap; }
   .card h3 .dim { color: var(--muted); font-weight: 400; }
-  .badge { font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
-    border-radius: 999px; padding: 1px 8px; margin-left: 6px; white-space: nowrap; }
-  .badge.gpu { color: var(--good); background: color-mix(in srgb, var(--good) 16%, transparent); }
-  .badge.cpu { color: var(--muted); background: var(--chip); }
-  .vbtns { display: flex; gap: 6px; margin-top: 8px; flex-wrap: wrap; }
-  .vbtns button { font: 600 12.5px "Segoe UI", Arial, sans-serif; border: 1px solid var(--line);
-    background: var(--surface); color: var(--muted); border-radius: 999px; padding: 4px 11px; min-height: 30px; cursor: pointer; }
-  .vbtns button.on { border-color: var(--accent); color: var(--accent); background: color-mix(in srgb, var(--accent) 12%, transparent); }
-  .vbtns button:hover { color: var(--accent); }
-  .detbtn { font: 600 12.5px "Segoe UI", Arial, sans-serif; border: 1px solid var(--line); background: var(--surface);
-    color: var(--muted); border-radius: 6px; padding: 4px 10px; min-height: 30px; cursor: pointer; margin-top: 8px; }
-  .detbtn:hover { color: var(--accent); border-color: var(--accent); }
-  #rmTable td { padding: 6px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
-  #rmTable td:first-child { color: var(--muted); white-space: nowrap; width: 34%; }
-  .card img { width: 100%; display: block; border-radius: 8px; background: #000; cursor: zoom-in; aspect-ratio: 2 / 1; object-fit: cover; }
-  .fr { display: flex; align-items: center; gap: 8px; margin-top: 8px; font-size: 13px;
-    color: var(--muted); font-variant-numeric: tabular-nums; }
-  .fr .step { border: 1px solid var(--line); background: var(--surface); color: var(--muted);
-    border-radius: 6px; width: 30px; height: 28px; cursor: pointer; font-size: 13px; padding: 0;
-    display: flex; align-items: center; justify-content: center; flex: 0 0 auto; }
-  .fr .step:hover, .fr .step:focus-visible { color: var(--accent); border-color: var(--accent); }
-  .fr .count { min-width: 62px; text-align: right; }
+  .card img { display: block; width: 100%; aspect-ratio: 2 / 1; object-fit: contain; background: var(--picture); cursor: zoom-in; }
+  .card video { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: contain; background: var(--picture); }
   .imgwrap { position: relative; }
-  .imgwrap .spin { position: absolute; inset: 0; display: none; align-items: center;
-    justify-content: center; background: color-mix(in srgb, var(--surface) 55%, transparent);
-    font-size: 13px; color: var(--muted); border-radius: 8px; }
+  .imgwrap .spin { position: absolute; inset: 0; display: none; align-items: center; justify-content: center;
+    background: rgba(17, 19, 21, .6); font-size: .875rem; color: var(--text); }
   .imgwrap.loading .spin { display: flex; }
-  .fr input { flex: 1; min-width: 0; accent-color: var(--accent); height: 22px; }
-  video { width: 100%; border-radius: 8px; background: #000; display: block; aspect-ratio: 16 / 9; object-fit: contain; }
-  #lightbox { position: fixed; inset: 0; background: color-mix(in srgb, var(--page) 94%, transparent); backdrop-filter: blur(6px); display: none; align-items: center; justify-content: center; z-index: 60; flex-direction: column; gap: 8px; cursor: zoom-out; padding: 16px; }
-  #lightbox img { max-width: 96vw; max-height: 84vh; border-radius: 8px; }
-  #lightbox .cap { color: var(--muted); font-size: 14px; text-align: center; }
-  .twrap { display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 14px; }
-  #tlist button, #vlist button, #cList button { display: block; width: 100%; text-align: left; margin-bottom: 6px; background: var(--surface); border: 1.5px solid var(--line); color: var(--ink); padding: 8px 11px; border-radius: 10px; cursor: pointer; font: 600 13.5px "Segoe UI", Arial, sans-serif; overflow-wrap: anywhere; }
-  #tlist button.on, #cList button.on { border-color: var(--accent); color: var(--accent); background: color-mix(in srgb, var(--accent) 9%, transparent); }
-  #vlist button.on { border-color: var(--hot); color: var(--hot); background: color-mix(in srgb, var(--hot) 9%, transparent); }
-  #tlist .m, #vlist .m, #cList .m { display: block; color: var(--muted); font-size: 12px; font-weight: 500; }
-  #cv, #vcv { width: 100%; height: 68vh; border-radius: 12px; border: 1px solid var(--line); background: #0a0d16; display: block; touch-action: none; }
-  .ctl { display: flex; gap: 14px; align-items: center; margin-top: 8px; color: var(--muted); font-size: 13px; flex-wrap: wrap; }
-  .ctl input[type=range] { accent-color: var(--accent); width: 170px; }
-  .note { background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--accent); padding: 10px 14px; border-radius: 10px; color: var(--muted); font-size: 14px; max-width: 88ch; margin: 0 0 14px; }
-  .fullview { display: inline-flex; align-items: center; min-height: 40px; padding: 9px 16px; border-radius: 9px; text-decoration: none; border: 1px solid var(--accent); color: #171d25; background: var(--accent); font-weight: 600; font-size: 14px; }
-  .fullview:hover { background: var(--accent2); }
-  #cView { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; overflow: auto;
-    max-height: 72vh; font: 13px/1.5 ui-monospace, Consolas, monospace; white-space: pre; margin: 6px 0 0; }
-  #runmodal { position: fixed; inset: 0; display: none; align-items: center; justify-content: center; z-index: 70;
-    background: color-mix(in srgb, var(--page) 88%, transparent); backdrop-filter: blur(6px); padding: 20px; }
-  #runmodal .box { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; max-width: 640px; width: 100%; max-height: 86vh; overflow: auto; padding: 18px 20px; }
-  @media (min-width: 2200px) { .wrap, .foot { max-width: 1500px; } }
-  @media (max-width: 900px) { .twrap { grid-template-columns: 1fr; } #cv { height: 55vh; }
-    #tlist { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 6px; }
-    #tlist button { min-width: 190px; flex: 0 0 auto; } .top { gap: 20px; } }
-  @media (max-width: 640px) {
-    .top { flex-wrap: wrap; min-height: 0; padding: 16px 16px 8px; gap: 4px; }
-    .top nav { margin-left: 0; width: 100%; gap: 2px 18px; }
-    .wrap { padding: 20px 16px 20px; } h1 { font-size: 28px; }
-    .toolbar { position: static; padding: 8px 10px; }
-    nav.tabs button { padding: 7px 12px; font-size: 13.5px; }
-    .grid { grid-template-columns: 1fr; }
-    .foot { padding: 24px 16px 32px; }
-  }
-  @media (prefers-reduced-motion: no-preference) {
-    .panel.on { animation: panelIn .26s ease-out; }
-    @keyframes panelIn { from { opacity: 0; transform: translateY(7px); } to { opacity: 1; transform: none; } }
-    nav.tabs button, .rebtns button, .mini { transition: background .15s ease, color .15s ease, border-color .15s ease; }
+  .fr { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 8px; }
+  .fr .count { margin-left: auto; font-size: .875rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .fr input[type=range] { flex: 1 0 100%; width: 100%; }
+  .vbtns, .detbtn { margin-top: 8px; }
+  #rmTable { width: 100%; border-collapse: collapse; font-size: .9375rem; margin-top: 12px; }
+  #rmTable td { padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); vertical-align: top; overflow-wrap: anywhere; }
+  #rmTable td:first-child { color: var(--muted); width: 34%; }
+  .twrap { display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 16px; }
+  #tlist button, #vlist button, #cList button { display: block; width: 100%; height: auto; margin: 0 0 8px; padding: 8px 12px;
+    text-align: left; white-space: normal; overflow-wrap: anywhere; font-weight: 600; }
+  #cList .lab { display: block; margin: 12px 0 4px; }
+  .m { display: block; color: var(--muted); font-size: .8125rem; font-weight: 400; }
+  #cv, #vcv { display: block; width: 100%; height: 68vh; height: min(68vh, 75vw); border: 1px solid var(--line); background: var(--picture); touch-action: none; }
+  .ctl { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; margin-top: 8px; color: var(--muted); font-size: .875rem; }
+  .ctl label { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; }
+  .ctl input[type=range] { width: 170px; }
+  .note { color: var(--muted); max-width: 70ch; margin: 0 0 16px; }
+  #cView { margin: 8px 0 0; padding: 12px; max-height: 72vh; overflow: auto; white-space: pre; font-size: .8125rem; line-height: 1.5;
+    background: var(--surface); border: 1px solid var(--line); }
+  #lightbox { position: fixed; inset: 0; z-index: 60; display: none; flex-direction: column; align-items: center; justify-content: center;
+    gap: 8px; padding: 64px 8px 16px; background: rgba(0, 0, 0, .9); cursor: zoom-out; }
+  #lightbox img { max-width: 100%; max-height: calc(100vh - 120px); max-height: calc(100dvh - 120px); }
+  #lightbox .cap { color: var(--muted); font-size: .875rem; text-align: center; }
+  #lbClose { position: absolute; top: 8px; right: 8px; }
+  #runmodal { position: fixed; inset: 0; z-index: 70; display: none; align-items: center; justify-content: center; padding: 8px; background: rgba(0, 0, 0, .75); }
+  #runmodal .box { width: 100%; max-width: 640px; max-height: calc(100vh - 16px); max-height: calc(100dvh - 16px); overflow: auto; padding: 16px;
+    background: var(--bg); border: 1px solid var(--line-strong); border-radius: 6px; }
+  .box-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+  .box-head h2 { margin: 0; font-size: 1.125rem; }
+  @media (max-width: 900px) {
+    .twrap { grid-template-columns: minmax(0, 1fr); }
+    #tlist { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 8px; }
+    #tlist button { flex: 0 0 auto; width: auto; min-width: 190px; margin: 0; }
   }
 </style>
 </head>
 <body>
-<a class="skip" href="#main">Skip to the archive</a>
-<header class="top"><a class="brand" href="index.html"><span class="mark" aria-hidden="true">◌</span> Cloud <b>Studio</b></a><nav aria-label="Main navigation"><a href="index.html">Library</a><a href="viewer.html">3D viewer</a><a href="recent.html">Compare</a><a href="research.html">Research</a><a href="paper/Cloud_survival_OJA.pdf">Paper</a><a href="https://github.com/KaanBoge/cloud-studio">GitHub</a></nav></header>
-<main class="wrap" id="main">
-  <p class="eyebrow">Earlier runs</p>
+<a class="skip" href="#main">Skip to the content</a>
+<header class="site-head"><div class="site-head-in"><a class="site-title" href="index.html">Cloud Studio</a><nav class="site-nav" aria-label="Site"><a href="index.html">Runs</a><a href="recent.html">Compare</a><a href="viewer.html">3D viewer</a><a href="research.html">Research</a><a href="paper/Cloud_survival_OJA.pdf">Paper</a><a href="https://github.com/KaanBoge/cloud-studio">GitHub</a></nav></div></header>
+<main class="page" id="main">
   <h1>Archive</h1>
-  <p class="sub">This archive keeps my earlier runs: two dimensional runs up to level 10, films, image sets, terrain views and the first 3D volumes. They come from before the setup of the paper, so their boxes and starting conditions vary from run to run. The current runs are in the <a href="index.html">library</a>, and the <a href="research.html#about-the-data">research page</a> explains how the pictures are made.</p>
+  <p class="intro">My earlier runs: two dimensional runs up to level 10, films, image sets, terrain views and the first 3D volumes. They come from before the setup of the paper, so their boxes and starting conditions vary from run to run. The current runs are on the <a href="index.html">Runs page</a>, and the <a href="research.html#about-the-data">research page</a> explains how the pictures are made.</p>
 
   <nav class="tabs" id="tabs" aria-label="Archive sections">
-    <button data-tab="gallery" class="on" aria-pressed="true">Gallery</button>
-    <button data-tab="movies" aria-pressed="false">Movies</button>
-    <button data-tab="terrain" aria-pressed="false">3D terrain</button>
-    <button data-tab="volumes" aria-pressed="false">3D volumes</button>
-    <button data-tab="code" aria-pressed="false">Code &amp; logs</button>
+    <button type="button" data-tab="gallery" class="on" aria-pressed="true">Gallery</button>
+    <button type="button" data-tab="movies" aria-pressed="false">Movies</button>
+    <button type="button" data-tab="terrain" aria-pressed="false">3D terrain</button>
+    <button type="button" data-tab="volumes" aria-pressed="false">3D volumes</button>
+    <button type="button" data-tab="code" aria-pressed="false">Code and logs</button>
   </nav>
 
   <div class="toolbar">
-    <span class="lab">Code</span><div class="rebtns" id="codeF"></div>
-    <span class="lab">Contrast</span><div class="rebtns" id="chiF"></div>
-    <span class="lab">Sort</span>
-    <div class="rebtns" id="mSort">
-      <button data-sort="res_desc" class="on">Highest level first</button>
-      <button data-sort="res_asc">Lowest level first</button>
-      <button data-sort="code">Grouped by code</button>
-    </div>
+    <div class="filter-row"><span class="lab" id="codeLab">Code</span><div class="rebtns" id="codeF" role="group" aria-labelledby="codeLab"></div></div>
+    <div class="filter-row"><span class="lab" id="chiLab">Contrast</span><div class="rebtns" id="chiF" role="group" aria-labelledby="chiLab"></div></div>
+    <div class="filter-row"><span class="lab" id="sortLab">Sort</span>
+    <div class="rebtns" id="mSort" role="group" aria-labelledby="sortLab">
+      <button type="button" data-sort="res_desc" class="on" aria-pressed="true">Highest level first</button>
+      <button type="button" data-sort="res_asc" aria-pressed="false">Lowest level first</button>
+      <button type="button" data-sort="code" aria-pressed="false">Grouped by code</button>
+    </div></div>
   </div>
 
   <section class="panel on" id="p-gallery" aria-label="Gallery"><div class="grid" id="gGrid"></div></section>
@@ -162,8 +104,7 @@
   </section>
 
   <section class="panel" id="p-terrain" aria-label="3D terrain">
-    <div class="note">Density becomes altitude. Drag to orbit, scroll to zoom, right drag to pan.
-      The wind blows from left to right; the mountains are the cloud.</div>
+    <p class="note">Height shows column density. Drag to turn, scroll or pinch to zoom, right drag to pan. The wind blows from left to right.</p>
     <div class="twrap">
       <div id="tlist"><p class="note">Open this tab to load the terrain views.</p></div>
       <div>
@@ -174,22 +115,19 @@
         </div>
       </div>
     </div>
-    <h3 style="font-size:16px;font-weight:600;margin:26px 0 6px">Terrain flyover movies</h3>
-    <p class="note">The same landscapes recorded in motion: the camera orbits while the
-      simulation evolves.</p>
+    <h2>Terrain films</h2>
+    <p class="note">The camera turns around the terrain while the run advances.</p>
     <div class="grid" id="tmGrid"></div>
   </section>
 
   <section class="panel" id="p-volumes" aria-label="3D volumes">
-    <div class="note">A 3D run you can turn in your hands: nested density surfaces from the run itself.
-      Drag to orbit, scroll to zoom, right drag to pan. The faint outer surface is shocked wind, the
-      middle surface is the cloud surface and the solid core is the densest gas. Each run loads when you pick it.</div>
+    <p class="note">Nested density surfaces of earlier 3D runs: the faint outer surface is shocked wind, the middle surface the cloud surface and the solid core the densest gas. Drag to turn, scroll or pinch to zoom, right drag to pan. Each run loads when it is chosen.</p>
     <div class="twrap">
       <div id="vlist"><p class="note">Open this tab to load the 3D runs.</p></div>
       <div>
         <canvas id="vcv" aria-label="3D density surfaces of the selected run"></canvas>
         <div class="ctl" id="vtime" style="display:none">
-          <button class="mini" id="vplay">▶ Play</button>
+          <button type="button" id="vplay">Play</button>
           <input id="vslider" type="range" min="0" max="0" value="0" style="flex:1;min-width:160px" aria-label="Saved state">
           <span id="vtlabel"></span>
         </div>
@@ -197,26 +135,20 @@
         <div class="ctl"><span id="vinfo"></span></div>
       </div>
     </div>
-    <p class="note" style="margin-top:22px">Drag to turn the cloud, scroll to zoom and use the slider
-      to move through time. The films of these runs are in Movies and their frame sets in Gallery.</p>
-    <p style="margin:14px 0 4px;display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center">
-      <a id="fullview" class="fullview" href="viewer.html">Open the full 3D viewer</a>
-      <span style="color:var(--muted);font-size:14px">Full screen, finer surfaces and smooth playback.</span>
-    </p>
+    <p class="note" style="margin-top:24px">Use the slider to move through time. The films of these runs are in Movies and their frame sets in Gallery.</p>
+    <p><a id="fullview" href="viewer.html">3D viewer (complete runs, finer surfaces)</a></p>
   </section>
 
   <section class="panel" id="p-code" aria-label="Code and logs">
-    <div class="note">The files the simulations were built and run from: the problem
-      source each code was given, the input file for every run, the run logs, and the analysis
-      and rendering scripts. Very long logs show their head and tail.</div>
-    <div class="ctl" style="margin-bottom:12px">
-      <span class="lab">Section</span><div class="rebtns" id="cCat"></div>
+    <p class="note">The files the simulations were built and run from: the problem source each code was given, the input file for every run, the run logs, and the analysis and rendering scripts. Very long logs show their head and tail.</p>
+    <div class="filter-row" style="margin-bottom:12px">
+      <span class="lab" id="catLab">Section</span><div class="rebtns" id="cCat" role="group" aria-labelledby="catLab"></div>
     </div>
     <div class="twrap">
       <div id="cList"></div>
       <div>
         <div class="ctl" style="margin-top:0">
-          <button class="mini" id="cClose" style="display:none">✕ Close file</button>
+          <button type="button" id="cClose" hidden>Close file</button>
           <span id="cInfo"></span>
         </div>
         <pre id="cView" tabindex="0">Select a file from the list.</pre>
@@ -224,20 +156,20 @@
     </div>
   </section>
 </main>
-<footer class="foot"><span>Cloud Studio. Cloud crushing research by Kaan Boge, ongoing. MIT licence.</span><span class="foot-links"><a href="paper/Cloud_survival_OJA.pdf">Paper</a><a href="https://github.com/KaanBoge/cloud-studio">GitHub</a></span></footer>
+<footer class="site-foot"><div class="site-foot-in"><p>Cloud Studio. Cloud crushing research by Kaan Boge, ongoing. MIT licence.</p><p><a href="paper/Cloud_survival_OJA.pdf">Paper</a><a href="research.html#downloads">Downloads</a><a href="https://github.com/KaanBoge/cloud-studio">GitHub</a></p></div></footer>
 
 <div id="runmodal" role="dialog" aria-modal="true" aria-labelledby="rmTitle">
   <div class="box">
-    <div style="display:flex;align-items:baseline;gap:12px">
-      <h3 id="rmTitle" style="font-size:17px;font-weight:600;margin:0"></h3>
-      <button class="mini" id="rmClose" style="margin-left:auto">&#10005; Close</button>
+    <div class="box-head">
+      <h2 id="rmTitle"></h2>
+      <button type="button" id="rmClose">Close</button>
     </div>
-    <table id="rmTable" style="width:100%;border-collapse:collapse;font-size:14px;margin-top:12px">
+    <table id="rmTable">
     </table>
   </div>
 </div>
 <div id="lightbox">
-  <button class="mini" id="lbClose" style="position:absolute;top:16px;right:18px">✕ Close</button>
+  <button type="button" id="lbClose">Close</button>
   <img id="lbImg" alt=""><div class="cap" id="lbCap"></div>
 </div>
 
@@ -479,8 +411,10 @@
     var cf = document.getElementById("cCat"); cf.innerHTML = "";
     cats.forEach(function (c) {
       var b = document.createElement("button");
+      b.type = "button";
       b.textContent = c;
       if (c === cCat) b.classList.add("on");
+      b.setAttribute("aria-pressed", c === cCat ? "true" : "false");
       b.onclick = function () { cCat = c; drawCode(); };
       cf.appendChild(b);
     });
@@ -493,19 +427,20 @@
     shown.forEach(function (f) { var k = normCode(f.code); (byCode[k] = byCode[k] || []).push(f); });
     Object.keys(byCode).sort().forEach(function (code) {
       var h = document.createElement("div");
-      h.className = "lab"; h.style.margin = "8px 0 4px"; h.textContent = code;
+      h.className = "lab"; h.textContent = code;
       list.appendChild(h);
       byCode[code].forEach(function (f) {
         var b = document.createElement("button");
+        b.type = "button";
         b.textContent = f.name;
         var sub = document.createElement("span"); sub.className = "m";
         sub.textContent = displayPath(f.path) + (f.trunc ? " · shortened" : "");
         b.appendChild(sub);
         b.onclick = function () {
-          document.querySelectorAll("#cList button").forEach(function (x) { x.classList.remove("on"); });
-          b.classList.add("on");
+          document.querySelectorAll("#cList button").forEach(function (x) { x.classList.remove("on"); x.removeAttribute("aria-current"); });
+          b.classList.add("on"); b.setAttribute("aria-current", "true");
           document.getElementById("cInfo").textContent = "Loading " + displayPath(f.path);
-          document.getElementById("cClose").style.display = "inline-block";
+          document.getElementById("cClose").hidden = false;
           fetch(f.file + "?v=" + STUDIO_V).then(function (r) { if (!r.ok) throw new Error(); return r.text(); }).then(function (txt) {
             document.getElementById("cView").textContent = txt;
             var info = document.getElementById("cInfo"); info.textContent = normCode(f.code) + " · " + displayPath(f.path) + " · " + f.lines + " lines · ";
@@ -528,8 +463,8 @@
   function closeCodeFile() {
     document.getElementById("cView").textContent = "Select a file from the list.";
     document.getElementById("cInfo").textContent = "";
-    document.getElementById("cClose").style.display = "none";
-    document.querySelectorAll("#cList button").forEach(function (x) { x.classList.remove("on"); });
+    document.getElementById("cClose").hidden = true;
+    document.querySelectorAll("#cList button").forEach(function (x) { x.classList.remove("on"); x.removeAttribute("aria-current"); });
   }
   document.getElementById("cClose").onclick = closeCodeFile;
   document.addEventListener("keydown", function (e) {
@@ -549,6 +484,7 @@
     el.innerHTML = "";
     items.forEach(function (it) {
       var b = document.createElement("button");
+      b.type = "button";
       b.textContent = (it === "All") ? "All" : (typeof it === "number" ? chiTxt(it) : it);
       if (String(sel) === String(it)) b.classList.add("on");
       b.setAttribute("aria-pressed", String(sel) === String(it) ? "true" : "false");
@@ -627,11 +563,12 @@
     }
     return null;
   }
+  // the hardware a run used, as plain text after the title
   function hwBadge(r) {
     if (!r) return null;
     var s = document.createElement("span");
-    s.className = "badge " + (r.hw === "gpu" ? "gpu" : "cpu");
-    s.textContent = r.hw === "gpu" ? "GPU" : "CPU";
+    s.className = "dim";
+    s.textContent = r.hw === "gpu" ? " · GPU" : " · CPU";
     return s;
   }
   function showRun(r) {
@@ -663,6 +600,7 @@
   }
   function detailsButton(r) {
     var b = document.createElement("button");
+    b.type = "button";
     b.className = "detbtn";
     b.textContent = "Run details";
     b.onclick = function (e) { e.stopPropagation(); showRun(r); };
@@ -675,7 +613,7 @@
   }
   function heading(text, chi, extra, badge) {
     var h = document.createElement("h3");
-    h.appendChild(document.createTextNode(text + " "));
+    h.appendChild(document.createTextNode(text + (chi !== null && chi !== undefined ? ", " : " ")));
     if (chi !== null && chi !== undefined) { var c = document.createElement("span"); c.className = "chi"; c.textContent = chiTxt(chi); h.appendChild(c); }
     if (extra) { var d = document.createElement("span"); d.className = "dim"; d.textContent = " · " + extra; h.appendChild(d); }
     if (badge) h.appendChild(badge);
@@ -691,7 +629,7 @@
       if (!passes(g.code, g.chi)) return;
       var card = document.createElement("div"); card.className = "card";
       var rinfo = runForGallery(g);
-      var title = (normCode(g.code) + ", " + withLevel(g.kind) + (is3D(g) ? ", " + SLICE : "")).replace(/(\d)x(\d)/g, "$1 × $2");
+      var title = (normCode(g.code) + ", " + withLevel(g.kind) + (is3D(g) ? ", " + SLICE : "")).replace(/(\d)x(\d)/g, "$1 × $2").replace(/shock-driven/g, "shock driven");
       card.appendChild(heading(title, g.chi, null, hwBadge(rinfo)));
       var wrap = document.createElement("div"); wrap.className = "imgwrap";
       var img = document.createElement("img"); img.loading = "lazy"; img.decoding = "async";
@@ -701,12 +639,12 @@
       wrap.appendChild(img); wrap.appendChild(spin);
 
       var fr = document.createElement("div"); fr.className = "fr";
-      var prev = document.createElement("button"); prev.className = "step";
-      prev.innerHTML = "&#9664;"; prev.setAttribute("aria-label", "Previous frame");
-      var play = document.createElement("button"); play.className = "step";
-      play.innerHTML = "&#9654;"; play.setAttribute("aria-label", "Play through the frames");
-      var next = document.createElement("button"); next.className = "step";
-      next.innerHTML = "&#9654;|"; next.setAttribute("aria-label", "Next frame");
+      var prev = document.createElement("button"); prev.type = "button";
+      prev.textContent = "Previous"; prev.setAttribute("aria-label", "Previous picture of " + title);
+      var play = document.createElement("button"); play.type = "button";
+      play.textContent = "Play"; play.setAttribute("aria-label", "Play through the pictures of " + title);
+      var next = document.createElement("button"); next.type = "button";
+      next.textContent = "Next"; next.setAttribute("aria-label", "Next picture of " + title);
       var rng = document.createElement("input"); rng.type = "range";
       rng.min = 0; rng.max = g.files.length - 1; rng.value = g.files.length - 1;
       rng.setAttribute("aria-label", "Frame of " + title);
@@ -716,7 +654,7 @@
       var lastPaint = 0, pendingT = null;
       function paint(i) {
         img.src = g.dir + "/" + g.files[i];
-        ftxt.textContent = (Number(i) + 1) + " / " + g.files.length;
+        ftxt.textContent = (Number(i) + 1) + " of " + g.files.length;
       }
       // time-throttled repaint: dragging never queues dozens of image loads
       function setF(i) {
@@ -754,12 +692,12 @@
       prev.onclick = function () { stop(); warm(); setF(cur - 1); };
       next.onclick = function () { stop(); warm(); setF(cur + 1); };
       function stop() {
-        if (timer) { clearInterval(timer); timer = null; play.innerHTML = "&#9654;"; }
+        if (timer) { clearInterval(timer); timer = null; play.textContent = "Play"; }
       }
       play.onclick = function () {
         if (timer) { stop(); return; }
         warm();
-        play.innerHTML = "&#10073;&#10073;";
+        play.textContent = "Pause";
         timer = setInterval(function () {
           setF((cur + 1) % g.files.length);
         }, 220);
@@ -771,7 +709,7 @@
       paint(cur);
       img.onclick = function () { openLb(img.src, title + ", " + chiTxt(g.chi)); };
       fr.appendChild(prev); fr.appendChild(play); fr.appendChild(next);
-      fr.appendChild(rng); fr.appendChild(ftxt);
+      fr.appendChild(ftxt); fr.appendChild(rng);
       card.appendChild(wrap);
       if (g.files.length > 1) card.appendChild(fr);
       if (rinfo) card.appendChild(detailsButton(rinfo));
@@ -857,8 +795,10 @@
         var row = document.createElement("div"); row.className = "vbtns";
         have.forEach(function (k2) {
           var b = document.createElement("button");
+          b.type = "button";
           b.textContent = VARIANT_NAME[k2];
           if (k2 === startWith) b.classList.add("on");
+          b.setAttribute("aria-pressed", k2 === startWith ? "true" : "false");
           b.onclick = function () {
             var wasPlaying = !v.paused;
             var frac = (v.duration && isFinite(v.duration)) ? v.currentTime / v.duration : 0;
@@ -868,8 +808,8 @@
               if (frac > 0 && isFinite(v.duration)) v.currentTime = frac * v.duration;
               if (wasPlaying) v.play();
             });
-            row.querySelectorAll("button").forEach(function (x) { x.classList.remove("on"); });
-            b.classList.add("on");
+            row.querySelectorAll("button").forEach(function (x) { x.classList.remove("on"); x.setAttribute("aria-pressed", "false"); });
+            b.classList.add("on"); b.setAttribute("aria-pressed", "true");
           };
           row.appendChild(b);
         });
@@ -896,8 +836,8 @@
   };
   document.querySelectorAll("#mSort button").forEach(function (b) {
     b.onclick = function () {
-      document.querySelectorAll("#mSort button").forEach(function (x) { x.classList.remove("on"); });
-      b.classList.add("on");
+      document.querySelectorAll("#mSort button").forEach(function (x) { x.classList.remove("on"); x.setAttribute("aria-pressed", "false"); });
+      b.classList.add("on"); b.setAttribute("aria-pressed", "true");
       mSortMode = b.dataset.sort;
       drawAll();
     };
@@ -981,9 +921,10 @@
     visibleTerrains().forEach(function (id) {
       var d = STUDIO_DATA[id], m = d.meta || {};
       var b = document.createElement("button");
+      b.type = "button";
       b.textContent = (window.studioNormCode(m.code) || "Earlier run") + ", " + chiTxt2(m.chi);
       var sub = document.createElement("span"); sub.className = "m";
-      sub.append(withLevel(m.res || "") + "  ", tccNode(m.t));
+      sub.append(withLevel(m.res || "") + (isFinite(parseFloat(m.t)) ? ", " : ""), tccNode(m.t));
       b.appendChild(sub);
       b.dataset.id = id;
       b.classList.toggle("on", id === curId);
@@ -1086,9 +1027,10 @@
     ids.forEach(function (id) {
       var m = volMeta(id);
       var b = document.createElement("button");
+      b.type = "button";
       b.textContent = (window.studioNormCode(m.code) || "Earlier 3D run") + ", " + chiTxt2(m.chi);
       var sub = document.createElement("span"); sub.className = "m";
-      sub.append("3D " + withLevel(m.res || "") + "  ", tccNode(m.t));
+      sub.append("3D " + withLevel(m.res || "") + (isFinite(parseFloat(m.t)) ? ", " : ""), tccNode(m.t));
       b.appendChild(sub);
       b.dataset.id = id;
       b.classList.toggle("on", id === vCur);
@@ -1125,7 +1067,7 @@
       if (vShellsOn[si] === false) mesh.visible = false;
       vGroup.add(mesh);
       var lb = document.createElement("label");
-      lb.style.color = "var(--muted)"; lb.style.fontSize = "13px";
+      lb.className = "check";
       var cb = document.createElement("input"); cb.type = "checkbox";
       cb.checked = mesh.visible;
       cb.onchange = function () { mesh.visible = cb.checked; vShellsOn[si] = cb.checked; };
@@ -1139,7 +1081,7 @@
   var vPlayTimer = null;
   function vStopPlay() {
     if (vPlayTimer) { clearInterval(vPlayTimer); vPlayTimer = null; }
-    document.getElementById("vplay").textContent = "▶ Play";
+    document.getElementById("vplay").textContent = "Play";
   }
   async function vShow(id) {
     var m = volMeta(id);
@@ -1181,7 +1123,7 @@
       sl.oninput = function () { vStopPlay(); apply(); };
       document.getElementById("vplay").onclick = function () {
         if (vPlayTimer) { vStopPlay(); return; }
-        this.textContent = "❚❚ Pause";
+        this.textContent = "Pause";
         vPlayTimer = setInterval(function () {
           sl.value = (+sl.value + 1) % (seq.frames.length);
           apply();

@@ -103,6 +103,7 @@ function recentExtras(r, code) {
   if (r.group === 'twelve') return [];
   const out = [];
   if (r.boundary && r.boundary !== standardBoundary(code)) out.push(r.boundary);
+  if (Number(r.box) === 100) out.push('100 R box');   // the 100 R long boxes; the label words naming the box are skipped below
   for (const part of String(r.label || '').split(' · ').slice(1)) {
     const s = part.trim(), low = s.toLowerCase();
     if (!s || /^(sharp\d*|cooling off|nonradiative|periodic box|periodic|new)$/.test(low) || /periodic|inflow|outflow/.test(low)) continue;
@@ -134,9 +135,11 @@ for (const r of recent) {
     filmNote = `${n} saved states from ${span}, each held for 2 seconds.`;
   }
   const note = base ? plainNote(r.note) : (NOTES[r.id] || plainNote(r.note));
+  // a run that stops before 5 t_cc says so in its own status ("Stops at 3.55 t_cc, where the solver failed")
+  const status = r.status && r.status !== 'Complete run' && base ? String(r.status) : 'Complete run';
   const entry = {
     id: 'new_' + r.id, run: r.id, label: title(code, recentExtras(r, code), r.chi, level), code, chi: r.chi, level,
-    physics: r.cooling === 'tabular' ? 'tabular' : r.cooling === 'none' ? 'none' : 'unknown', kind: 'recent', status: 'Complete run',
+    physics: r.cooling === 'tabular' ? 'tabular' : r.cooling === 'none' ? 'none' : 'unknown', kind: 'recent', status,
     frames: n, end, poster, posterTime: end, projection: 'recent.html?run=' + encodeURIComponent(r.id), variants, note, filmNote,
   };
   if (recent3D['new_' + r.id]) entry.viewer = 'viewer.html?run=' + encodeURIComponent('new_' + r.id);

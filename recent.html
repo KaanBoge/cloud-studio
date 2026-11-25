@@ -1,14 +1,17 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0b1017">
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#111315">
 <title>Compare · Cloud Studio</title>
-<meta name="description" content="Edge-on and face-on projections of the cloud crushing runs. Play a run, compare two runs at the same time, set the twelve methods side by side, and save pictures or films.">
+<meta name="description" content="Column density maps of every saved state of the complete cloud crushing runs, edge on and face on: one run, two runs at the same time, or a set of runs side by side as in the paper.">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="recent.css?v=20261122"></head><body>
-<a class="skip" href="#screen">Skip to the picture</a>
-<header class="top"><a class="brand" href="index.html"><span class="mark" aria-hidden="true">◌</span> Cloud <b>Studio</b></a><nav aria-label="Main navigation"><a href="index.html">Library</a><a href="viewer.html">3D viewer</a><a href="recent.html" aria-current="page">Compare</a><a href="research.html">Research</a><a href="paper/Cloud_survival_OJA.pdf">Paper</a><a href="https://github.com/KaanBoge/cloud-studio">GitHub</a></nav></header>
-<main>
-<div class="intro"><div><p class="eyebrow">PROJECTIONS OF THE SAVED STATES</p><h1>The cloud, <em>through time.</em></h1><p class="sub">Play a run, compare two runs at the same moment, and save a picture or a film.</p></div><span class="pill" id="count">Loading runs</span></div>
-<section class="studio" id="studio" aria-label="Compare studio">
+<link rel="stylesheet" href="recent.css?v=20261125"></head><body>
+<a class="skip" href="#main">Skip to the content</a>
+<header class="site-head"><div class="site-head-in"><a class="site-title" href="index.html">Cloud Studio</a><nav class="site-nav" aria-label="Site"><a href="index.html">Runs</a><a href="recent.html" aria-current="page">Compare</a><a href="viewer.html">3D viewer</a><a href="research.html">Research</a><a href="paper/Cloud_survival_OJA.pdf">Paper</a><a href="https://github.com/KaanBoge/cloud-studio">GitHub</a></nav></div></header>
+<main id="main">
+<div class="page intro">
+<h1>Compare runs</h1>
+<p>Column density of every saved state of the <span id="count">123 complete runs</span>, projected edge on (across the wind) and face on (along the wind). One run, two runs at the same time, or a set of runs side by side as in the paper; pictures and videos can be saved.</p>
+</div>
+<section class="studio" id="studio" aria-label="Pictures of the runs">
 <div class="stage">
 <div class="screen" id="screen" tabindex="-1">
 <canvas id="scene" width="1920" height="1080" role="img" aria-label="Column density projection of the selected run"></canvas>
@@ -17,44 +20,46 @@
 </div>
 <div class="caption" id="caption" hidden><div id="captionRows"></div><div class="cbar" id="captionBar" aria-hidden="true"></div></div>
 <div class="transport">
-<button id="prevFrame" aria-label="Previous frame" title="Previous frame (left arrow)">‹</button>
-<button id="play" class="play" aria-label="Play" title="Play or pause (space)">▶ Play</button>
-<button id="nextFrame" aria-label="Next frame" title="Next frame (right arrow)">›</button>
+<button type="button" id="prevFrame" title="Previous saved state (left arrow)">Previous</button>
+<button type="button" id="play" title="Play or pause (space)">Play</button>
+<button type="button" id="nextFrame" title="Next saved state (right arrow)">Next</button>
 <input id="time" aria-label="Simulation time" type="range" min="0" max="5" step="0.01" value="5">
 <output id="timeLabel" for="time">t = 5.00 t<sub>cc</sub></output>
-<label class="speed">Speed<select id="speed" aria-label="Playback speed"></select></label>
+<label class="speed" for="speed"><span class="speed-word">Speed</span> <select id="speed"></select></label>
 </div>
 </div>
 <div class="side">
-<div class="modes" id="modes" role="group" aria-label="What to show" hidden><button id="modeRuns" aria-pressed="true">Runs</button><button id="modeTwelve" aria-pressed="false">Twelve methods</button></div>
+<div class="modes" id="modes" role="group" aria-label="What to show" hidden><button type="button" id="modeRuns" aria-pressed="true">Runs</button><button type="button" id="modeTwelve" aria-pressed="false">Side by side</button></div>
 <div class="selectors">
-<label class="run-only">Run<select id="run"></select></label>
-<label class="run-only">Compare with<select id="compare"><option value="">No comparison</option></select></label>
-<label class="twelve-only" hidden>Level<select id="level"></select></label>
-<label>View<select id="view"><option value="edge">Edge-on · wind from left to right</option><option value="face">Face-on · looking along the wind</option></select></label>
+<label class="field run-only">Run<select id="run"></select></label>
+<label class="field run-only">Compare with<select id="compare"><option value="">No comparison</option></select></label>
+<label class="field twelve-only" hidden>Set<select id="set"></select></label>
+<label class="field twelve-only" id="levelWrap" hidden>Level<select id="level"></select></label>
+<label class="field">View<select id="view"><option value="edge">Edge on, wind from left to right</option><option value="face">Face on, looking along the wind</option></select></label>
 </div>
 <div class="options"><label class="check"><input type="checkbox" id="smoothTime" checked> Smooth playback at 60 fps</label><label class="check"><input type="checkbox" id="labels" checked> Axes and colour bar</label></div>
 <div class="export">
-<button id="picture" class="accent">Save picture</button>
-<a id="mp4" class="button accent run-only" download>Download film</a>
-<button id="record" class="accent">Record video</button>
-<button id="shareView">Copy view link</button>
-<button id="full">Full screen</button>
-<a id="rotate3d" class="button run-only" href="viewer.html">Rotate in 3D</a>
+<button type="button" id="picture">Save picture</button>
+<a id="mp4" class="btn run-only" download>Download film</a>
+<button type="button" id="record">Record video</button>
+<button type="button" id="shareView">Copy link</button>
+<button type="button" id="full">Full screen</button>
+<a id="rotate3d" class="btn run-only" href="viewer.html">3D view</a>
 </div>
 <p id="message" role="status" aria-live="polite"></p>
-<div class="details" id="details"><p class="eyebrow">ON SCREEN</p><h2 id="title">Loading</h2><div id="detailBody"></div></div>
+<div class="details" id="details"><h2 id="title">Loading</h2><div id="detailBody"></div></div>
 </div>
 </section>
-<section class="runs" aria-labelledby="runsTitle">
-<div class="library-head"><div><p class="eyebrow">ALL RUNS ON THIS PAGE</p><h2 id="runsTitle">One archive. Different outcomes.</h2></div><label>Show<select id="filter" aria-label="Filter runs"><option value="all">All runs</option></select></label></div>
-<div id="cards" class="cards"></div>
+<section class="page runs" aria-labelledby="runsTitle">
+<div class="runs-head"><h2 id="runsTitle">All runs</h2><label class="field">Show<select id="filter"><option value="all">All runs</option></select></label></div>
+<div id="tables"><p class="meta">Loading the run list.</p></div>
 <details class="methods"><summary>How to read the pictures</summary>
-<p>Each picture is a projection of the total gas column density, divided by the initial cloud density and radius: Σ / (ρ<sub>c,0</sub> R). The colour scale is logarithmic, from 0.008 to 5, the same as in the paper. Edge-on places the wind from left to right; face-on looks along the wind. Distances are in units of the initial cloud radius. Particle and moving mesh runs are binned onto the same 256 × 128 and 128 × 128 maps as the grid runs.</p>
-<p>Every frame is a saved state of the run, and every picture prints its time as t = 1.25 t<sub>cc</sub>. When two runs are compared, each panel shows its own saved state nearest to the chosen time and prints that time. Smooth playback blends neighbouring frames at 60 frames per second; when playback stops, the picture is a saved state again. Saved pictures and videos use the chosen view, comparison and labels. Space plays and pauses, the arrow keys step one frame.</p>
-<p>The pictures are made directly from the saved simulation output. <a href="research.html#about-the-data">About the data</a></p>
-<p><a href="assets/recent/catalog.json" download>Download the catalog with the mass histories</a> · <a href="analysis/recent_gallery_export.py">Projection source</a></p>
+<p>Each picture is a projection of the total gas column density, divided by the initial cloud density and radius: Σ / (ρ<sub>c,0</sub> R). The colour scale is logarithmic, from 0.008 to 5, the same as in the paper. Edge on places the wind from left to right; face on looks along the wind. Distances are in units of the initial cloud radius. Particle and moving mesh runs are binned onto the same 256 × 128 and 128 × 128 maps as the grid runs.</p>
+<p>Every frame is a saved state of the run, and every picture prints its time as t = 1.25 t<sub>cc</sub>. When two runs are compared or a set of runs stands side by side, each panel shows its own saved state nearest to the chosen time and prints that time. Side by side, the view Edge on and face on places each edge on map next to its face on map, as in the paper. Smooth playback blends neighbouring frames at 60 frames per second; when playback stops, the picture is a saved state again. Saved pictures and videos use the chosen view, comparison or set, and labels. Space plays and pauses, the arrow keys step one saved state, Home and End go to the first and last.</p>
+<p>The pictures are made directly from the saved simulation output, as described under <a href="research.html#about-the-data">About the data</a>.</p>
+<p class="links-row"><a href="assets/recent/catalog.json" download>Catalog with the dense gas mass histories (JSON)</a><a href="analysis/recent_gallery_export.py">Projection source (Python)</a></p>
 </details>
 </section>
-<footer class="foot"><span>Cloud Studio. Cloud crushing research by Kaan Boge, ongoing. MIT licence.</span><span class="foot-links"><a href="paper/Cloud_survival_OJA.pdf">Paper</a><a href="https://github.com/KaanBoge/cloud-studio">GitHub</a></span></footer>
-</main><script src="media-download.js?v=20261122"></script><script src="recent.js?v=20261122"></script></body></html>
+</main>
+<footer class="site-foot"><div class="site-foot-in"><p>Cloud Studio. Cloud crushing research by Kaan Boge, ongoing. MIT licence.</p><p><a href="paper/Cloud_survival_OJA.pdf">Paper</a><a href="research.html#downloads">Downloads</a><a href="https://github.com/KaanBoge/cloud-studio">GitHub</a></p></div></footer>
+<script src="media-download.js?v=20261125"></script><script src="recent.js?v=20261125"></script></body></html>

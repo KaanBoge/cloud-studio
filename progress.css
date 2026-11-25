@@ -1,19 +1,20 @@
-/* Progress log. Shared header, footer, type and tables come from research.css. */
-.log-head{padding:4rem 0 1.5rem;max-width:52rem}
-.log-head .lede{font-size:1.15rem;color:var(--text);margin-bottom:1rem;max-width:48rem}
-.log-intro{color:var(--muted)}
-.tally{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:1rem}
-.tally div{padding:1.25rem 1.5rem;border-right:1px solid var(--line);display:flex;flex-direction:column;gap:.15rem}
-.tally div:last-child{border-right:0}
-.tally strong{font-size:2rem;font-weight:450;line-height:1.2;font-variant-numeric:tabular-nums}
-.tally span{color:var(--muted);font-size:.875rem}
-.filters{flex-wrap:wrap;margin:0 0 .75rem}
-.filters label,.filters label:first-child{min-width:10rem;flex:0 1 14rem}
-.filters .search{flex:1}
-td strong{font-weight:600}
-td .detail{display:block;color:var(--muted);font-size:.8125rem;margin-top:.15rem}
-td:first-child{min-width:9rem}
-.note-line{margin-top:1rem}
-@media(max-width:800px){.tally{grid-template-columns:repeat(2,minmax(0,1fr))}.tally div:nth-child(2){border-right:0}.tally div:nth-child(-n+2){border-bottom:1px solid var(--line)}}
-@media(max-width:640px){.log-head{padding-top:2rem}.tally div{padding:1rem}.tally strong{font-size:1.6rem}.filters label,.filters label:first-child,.filters .search{min-width:0;flex:none}}
-@media print{body{background:#fff;color:#000}.top nav,.filters{display:none}td,th,.muted,td .detail{color:#000}}
+/* Progress log. Shared header, footer, type, filters and tables come from research.css. */
+table.progress{min-width:40rem}
+table.progress td strong{font-weight:600}
+table.progress td .detail{display:block;color:var(--muted);font-size:.8125rem;margin-top:2px}
+table.progress td:first-child{min-width:8rem}
+.note-line{margin-top:16px;max-width:70ch}
+/* phones: one block per run (table.stack in research.css): code, velocity setup, then level, contrast, run time and states on one line */
+@media (max-width:599px){
+  table.progress{min-width:0}
+  table.progress td:first-child{min-width:0}
+  table.progress td .detail{display:inline;margin:0 0 0 8px}
+  table.progress td:nth-child(2) strong{font-weight:400}
+  table.progress td:nth-child(n+3){display:inline;font-size:.875rem;color:var(--muted)}
+  table.progress td:nth-child(n+3) strong{font-weight:400}
+  table.progress td:nth-child(n+2) .detail{display:none}
+  table.progress td:nth-child(3)::after,table.progress td:nth-child(4)::after,table.progress td:nth-child(5)::after{content:", "}
+  table.progress td:nth-child(5)::before{content:"solver time "}
+  table.progress td:nth-child(6) strong::after{content:" saved states"}
+}
+@media print{body{background:#fff;color:#000}.site-nav,.filters{display:none}td,th,.meta,td .detail{color:#000}}

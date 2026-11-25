@@ -5,100 +5,60 @@
 <title>3D viewer · Cloud Studio</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Rotate, compare and capture the 3D density surfaces of Kaan Boge's cloud crushing simulations.">
+<meta name="theme-color" content="#111315">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="studio-viewer.css?v=20261122">
+<link rel="stylesheet" href="studio-viewer.css?v=20261125">
 </head>
-<body>
-<main id="wrap" aria-label="3D view">
-  <div class="pane" id="paneA">
-    <canvas class="view" id="cvA" role="img" aria-label="3D density surfaces of the selected run. Drag to turn, scroll to zoom."></canvas>
-    <div class="ptitle" id="titleA">Loading</div>
-    <div class="legend" id="legendA" hidden></div>
-  </div>
-</main>
-<div id="msg" role="status">Loading</div>
-
-<div class="card" id="sideShow" hidden>
-  <a class="brand" href="index.html"><span class="mark" aria-hidden="true">◌</span>Cloud <b>Studio</b></a>
-  <button type="button" id="sideOpen" aria-controls="side" aria-expanded="false">Menu</button>
-</div>
-
-<div class="card" id="captureTools" role="toolbar" aria-label="Camera and capture">
-  <div class="row">
-    <button type="button" data-view="perspective">Perspective</button>
-    <button type="button" data-view="edge">Edge-on</button>
-    <button type="button" data-view="face">Face-on</button>
-    <button type="button" id="fitView">Fit view</button>
-    <span class="sep" aria-hidden="true"></span>
-    <button type="button" id="save3d">Save PNG</button>
-    <select id="picSize" aria-label="Picture size"><option value="1080">1920 × 1080</option><option value="2160">3840 × 2160</option></select>
-    <button type="button" id="orbitVideo">Record orbit</button>
-    <button type="button" id="evolutionVideo">Record evolution</button>
-    <button type="button" id="viewerShare">Copy view link</button>
-  </div>
-  <div id="captureStatus" role="status" aria-live="polite"></div>
-</div>
-
-<div class="card" id="bar">
-  <button type="button" id="prev" aria-label="Previous frame">&#9664;</button>
-  <button type="button" id="play" aria-label="Play">&#9654;</button>
-  <button type="button" id="next" aria-label="Next frame">&#9654;&#9654;</button>
-  <input id="slider" aria-label="Simulation time" type="range" min="0" max="0" value="0" step="1">
-  <span id="tlab"></span>
-  <select id="playSpeed" aria-label="Playback speed"><option value="0.25">0.25×</option><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="2">2×</option><option value="4">4×</option></select>
-</div>
-
-<aside class="card" id="side" aria-label="Runs and display settings">
-  <header class="side-head">
-    <a class="brand" href="index.html"><span class="mark" aria-hidden="true">◌</span>Cloud <b>Studio</b></a>
-    <button type="button" id="sideHide" aria-controls="side" aria-expanded="true" aria-label="Hide the menu" title="Hide the menu">&#10094;</button>
-    <nav aria-label="Site">
-      <a href="index.html">Library</a>
-      <a href="viewer.html" aria-current="page">3D viewer</a>
-      <a href="recent.html">Compare</a>
-      <a href="research.html">Research</a>
-      <a href="paper/Cloud_survival_OJA.pdf">Paper</a>
-      <a href="https://github.com/KaanBoge/cloud-studio">GitHub</a>
-    </nav>
-  </header>
+<body class="viewer-page">
+<a class="skip" href="#main">Skip to the content</a>
+<header class="site-head"><div class="site-head-in"><a class="site-title" href="index.html">Cloud Studio</a><nav class="site-nav" aria-label="Site"><a href="index.html">Runs</a><a href="recent.html">Compare</a><a href="viewer.html" aria-current="page">3D viewer</a><a href="research.html">Research</a><a href="paper/Cloud_survival_OJA.pdf">Paper</a><a href="https://github.com/KaanBoge/cloud-studio">GitHub</a></nav></div></header>
+<main class="viewer" id="main">
+<aside id="side" aria-label="Runs and display settings">
   <h1>3D viewer</h1>
-  <p class="sub">Drag to turn, scroll to zoom, right drag to pan. Space plays, the arrow keys step through the frames.</p>
+  <p class="intro">Drag to turn, scroll or pinch to zoom, right drag or two fingers to pan. Space plays, the arrow keys step through the saved states.</p>
 
   <label class="lbl" for="recentSelect">Complete runs</label>
   <select id="recentSelect"><option value="">Choose a complete run</option></select>
   <p id="viewNote" class="note"></p>
-  <p class="links"><a id="projectionLink" href="recent.html" hidden>Projections and films of this run</a></p>
+  <p class="links-row" id="runLinks" hidden><a id="filmLink" href="index.html">Film</a><a id="projectionLink" href="recent.html">Compare</a></p>
 
   <label class="lbl" for="runSearch">Find a run</label>
   <input id="runSearch" type="search" placeholder="Code, χ or level" autocomplete="off" spellcheck="false">
   <div class="lbl" id="chiLbl">Density contrast</div>
-  <div class="chips" id="chiChips" role="group" aria-labelledby="chiLbl"></div>
+  <div class="btn-row" id="chiChips" role="group" aria-labelledby="chiLbl"></div>
   <div class="lbl" id="lvlLbl">Level</div>
-  <div class="chips" id="lvlChips" role="group" aria-labelledby="lvlLbl"></div>
+  <div class="btn-row" id="lvlChips" role="group" aria-labelledby="lvlLbl"></div>
   <div id="runs"></div>
   <button type="button" id="legacyHdr" class="fold" aria-expanded="false" aria-controls="legacyRuns" hidden></button>
   <div id="legacyRuns" hidden></div>
 
-  <div class="lbl">Compare</div>
-  <div class="row">
-    <label class="chk"><input type="checkbox" id="cmpOn"> Side by side</label>
-    <label class="chk"><input type="checkbox" id="cmpLink" checked> Link cameras</label>
+  <div class="lbl" id="cmpLbl">Compare</div>
+  <div class="checks" role="group" aria-labelledby="cmpLbl">
+    <label class="check"><input type="checkbox" id="cmpOn"> Side by side</label>
+    <label class="check"><input type="checkbox" id="cmpLink" checked> Link cameras</label>
   </div>
   <select id="cmpSel" aria-label="Run in the second view" disabled></select>
 
   <div class="lbl" id="shellLbl">Surfaces</div>
-  <div id="shells" class="row" role="group" aria-labelledby="shellLbl"></div>
+  <div id="shells" class="checks col" role="group" aria-labelledby="shellLbl"></div>
 
-  <div class="lbl">Display</div>
-  <div class="row">
-    <label class="chk"><input type="checkbox" id="legendOn" checked> Legend</label>
-    <label class="chk"><input type="checkbox" id="smoothTime3d" checked> Smooth transitions</label>
-    <label class="chk"><input type="checkbox" id="smooth3d" checked> Smooth shading</label>
-    <label class="chk"><input type="checkbox" id="qShadow" checked> Shadow</label>
-    <label class="chk"><input type="checkbox" id="qBox" checked> Box</label>
-    <label class="chk"><input type="checkbox" id="qSpin"> Spin</label>
-    <label class="chk">Sharpness
+  <div class="lbl" id="dispLbl">Display</div>
+  <div class="checks" role="group" aria-labelledby="dispLbl">
+    <label class="check"><input type="checkbox" id="legendOn" checked> Legend</label>
+    <label class="check"><input type="checkbox" id="smoothTime3d" checked> Smooth transitions</label>
+    <label class="check"><input type="checkbox" id="smooth3d" checked> Smooth shading</label>
+    <label class="check"><input type="checkbox" id="qShadow" checked> Shadow</label>
+    <label class="check"><input type="checkbox" id="qBox" checked> Box</label>
+    <label class="check"><input type="checkbox" id="qSpin"> Spin</label>
+    <label class="check"><input type="checkbox" id="hudOn"> Frame rate</label>
+    <label class="check">Sharpness
       <select id="qScale"><option value="1">1×</option><option value="1.5">1.5×</option><option value="2" selected>2×</option><option value="3">3×</option></select></label>
+  </div>
+
+  <div id="chartcard" hidden>
+    <div class="lbl">Dense gas mass</div>
+    <canvas id="chart" width="576" height="320" role="img" aria-label="Dense gas mass relative to its initial value, against time"></canvas>
+    <p id="chartnote"></p>
   </div>
 
   <details class="about">
@@ -107,27 +67,50 @@
     <p>Lengths are in cloud radii and the wind blows along the long side of the box. Smooth transitions crossfade between saved states during playback; paused views and pictures show a saved state exactly as stored.</p>
   </details>
 
-  <footer class="side-foot">
-    <p>Cloud Studio. Cloud crushing research by Kaan Boge, ongoing. MIT licence.</p>
-    <a href="paper/Cloud_survival_OJA.pdf">Paper</a><a href="https://github.com/KaanBoge/cloud-studio">GitHub</a>
-  </footer>
+  <footer class="site-foot"><div class="site-foot-in"><p>Cloud Studio. Cloud crushing research by Kaan Boge, ongoing. MIT licence.</p><p><a href="paper/Cloud_survival_OJA.pdf">Paper</a><a href="research.html#downloads">Downloads</a><a href="https://github.com/KaanBoge/cloud-studio">GitHub</a></p></div></footer>
 </aside>
 
-<div class="card" id="hud" aria-hidden="true">
-  <div><b id="fps">0</b> fps</div>
-  <div><b id="tris">0</b> triangles</div>
-</div>
-
-<div class="card" id="chartcard" hidden>
-  <div class="lbl">Surviving dense mass</div>
-  <canvas id="chart" width="640" height="300" role="img" aria-label="Dense gas mass relative to its initial value, against time"></canvas>
-  <div id="chartnote"></div>
-</div>
+<section class="stage" aria-label="3D view">
+  <div id="captureTools" role="group" aria-label="Camera and capture">
+    <div class="row">
+      <button type="button" data-view="perspective">Perspective</button>
+      <button type="button" data-view="edge">Edge on</button>
+      <button type="button" data-view="face">Face on</button>
+      <button type="button" id="fitView">Fit view</button>
+      <span class="sep" aria-hidden="true"></span>
+      <button type="button" id="save3d">Save picture</button>
+      <select id="picSize" aria-label="Picture size"><option value="1080">1920 × 1080</option><option value="2160">3840 × 2160</option></select>
+      <button type="button" id="orbitVideo">Record orbit</button>
+      <button type="button" id="evolutionVideo">Record evolution</button>
+      <button type="button" id="viewerShare">Copy link</button>
+      <button type="button" id="sideToggle" aria-controls="side" aria-expanded="true">Hide panel</button>
+    </div>
+    <div id="captureStatus" role="status" aria-live="polite"></div>
+  </div>
+  <div id="wrap">
+    <div class="pane" id="paneA">
+      <canvas class="view" id="cvA" role="img" aria-label="3D density surfaces of the selected run. Drag to turn, scroll or pinch to zoom."></canvas>
+      <div class="ptitle" id="titleA">Loading</div>
+      <div class="legend" id="legendA" hidden></div>
+    </div>
+    <div id="msg" role="status">Loading</div>
+  </div>
+  <div id="bar">
+    <button type="button" id="prev">Previous</button>
+    <button type="button" id="play">Play</button>
+    <button type="button" id="next">Next</button>
+    <input id="slider" aria-label="Simulation time" type="range" min="0" max="0" value="0" step="1">
+    <span id="tlab"></span>
+    <label class="speed">Speed <select id="playSpeed"><option value="0.25">0.25×</option><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="2">2×</option><option value="4">4×</option></select></label>
+  </div>
+  <div id="hud" hidden><span><b id="fps">0</b> fps</span><span><b id="tris">0</b> triangles</span></div>
+</section>
+</main>
 
 <script>var STUDIO_DATA={},VOL_DATA={},VOLSEQ_DATA={},VOLHQ_DATA={};</script>
-<script src="data/manifest.js?v=20261122"></script>
-<script src="data/densemap.js?v=20261122"></script>
-<script src="assets/recent3d/catalog.js?v=20261122"></script>
+<script src="data/manifest.js?v=20261125"></script>
+<script src="data/densemap.js?v=20261125"></script>
+<script src="assets/recent3d/catalog.js?v=20261125"></script>
 <script type="importmap">
   {"imports": {"three": "./vendor/three.module.js",
                "three/addons/": "./vendor/addons/"}}
@@ -139,7 +122,7 @@ import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 const recent3D = window.RECENT_3D || {};
 const XL = [-3, 17], YL = [-5, 5], ZL = [-5, 5];
 const BOX_C = new THREE.Vector3((XL[0] + XL[1]) / 2, 0, 0);
-const CACHE_KEY = "20261122";
+const CACHE_KEY = "20261125";
 const $ = id => document.getElementById(id);
 const msg = $("msg");
 const qScale = $("qScale");
@@ -226,6 +209,72 @@ const dedupeAlias = {};
 }
 
 // ------------------------------------------------------------------- panes
+// shared run groups 20261125 begin: keep identical in studio.js, recent.js and viewer.html
+const RUN_GROUPS = [
+  { key: 'twelve', title: 'Twelve methods',
+    about: 'The same cloud and wind run with eight grid codes (Athena++, AthenaPK, Athena 4.2, Enzo, Enzo-E, RAMSES, FLASH 4.8, Flash-X) with an inflowing wind, the moving mesh code Arepo in a box periodic along the wind, and the particle methods GIZMO MFM, GIZMO MFV and GADGET-4 in a box periodic on all faces.' },
+  { key: 'boundary', title: 'Boundary control',
+    about: 'Athena++ with only the box faces changed. The 20 R boxes repeat the boxes of the moving mesh and particle runs: periodic along the wind, as for Arepo, and periodic on all faces, as for GIZMO and GADGET-4. The 100 R boxes are the same two boxes made 100 cloud radii long instead of 20.' },
+  { key: 'solver', title: 'Solver settings',
+    about: 'One change to the numerical method of one code, each next to the standard run of that code at the same level.' },
+  { key: 'smooth', title: 'Smooth velocity profile',
+    about: 'Runs started with the earlier smooth velocity profile at the cloud edge instead of the sharp edge at 1.3 cloud radii, each next to its sharp edge run.' },
+  { key: 'contrast', title: 'Density contrast 10 and 1000',
+    about: 'Clouds 10 and 1000 times denser than the wind, otherwise the setup of the twelve methods.' },
+  { key: 'apk', title: 'AthenaPK cooling and solver tests',
+    about: 'AthenaPK with tabulated radiative cooling switched on and off, and with different Riemann solvers and reconstructions.' },
+  { key: 'level6', title: 'Level 6',
+    about: 'Level 6 is 512 × 256 × 256 cells, 25.6 cells per cloud radius.' },
+];
+const runKey = r => String(r.run || r.projection_id || r.id || '').replace(/^new_/, '');
+const runCode = r => String(r.code || String(r.label || '').split(' · ')[0]).replace(/\s*χ\s*[\d.]+\s*$/, '');
+const runLevel = r => Number.isInteger(r.level) ? r.level : Number.isInteger(r.lvl) ? r.lvl : 5;
+function runGroup(r) {
+  if (RUN_GROUPS.some(g => g.key === r.group)) return r.group;
+  const key = runKey(r), text = key + ' ' + String(r.label || '');
+  if (runLevel(r) === 6) return 'level6';
+  if (/historical|smooth velocity|tanh/i.test(text)) return 'smooth';
+  if (/periodic|(^|[-_])(p3|px)(long)?([-_]|$)/i.test(text)) return 'boundary';
+  if (/^apk/i.test(key) && /cooling|HLLE|HLLC/i.test(text)) return 'apk';
+  if (/ppm|hllc/i.test(text)) return 'solver';
+  if (/-track-l\d+$/i.test(key) || /box moving with the cloud/i.test(text)) return 'other';   // moving box runs stay together
+  if (Number(r.chi) === 10 || Number(r.chi) === 1000) return 'contrast';
+  if (Number(r.chi) === 100 && !runVariant(r)) return 'twelve';
+  return 'other';                                   // listed last under "Other complete runs"
+}
+// 100 R long boxes: the "box" field, or "long" as a word or id part ("along the wind" does not count), or "100 R"
+const runBox = r => (Number(r.box) === 100 || /(^|[-_ ])(p3|px)?long\b|100 ?R\b/i.test(runKey(r) + ' ' + String(r.label || ''))) ? 100 : 20;
+// what this run changes, from the "variant" field or from the label words after code, χ and level
+function runVariant(r) {
+  if (r.variant) return String(r.variant);
+  return String(r.label || '').split(' · ').slice(1).map(s => s.trim())
+    .filter(s => s && !/^(χ|chi)\s*[\d.]+$/i.test(s) && !/^(level|n)\s*\d+$/i.test(s)).join(', ');
+}
+function runName(r) {           // name inside a group table: the code, then what the run changes
+  let v = runVariant(r);
+  if (runGroup(r) === 'smooth') v = v.replace(/,?\s*smooth velocity profile/i, '').replace(/^,\s*/, '');
+  return v ? runCode(r) + ', ' + v : runCode(r);
+}
+const runMeta = r => `χ ${r.chi}, level ${runLevel(r)}`;
+const runFaces = r => String(r.boundary || '') + (runBox(r) === 100 ? ', 100 R long box' : '');
+// the standard run this one is compared with, or null
+function runTwin(r, all) {
+  const g = runGroup(r);
+  if (!['boundary', 'solver', 'smooth', 'level6'].includes(g)) return null;
+  const level = g === 'level6' ? 5 : runLevel(r);
+  const same = x => x !== r && runCode(x) === runCode(r) && Number(x.chi) === Number(r.chi) && runLevel(x) === level;
+  if (g === 'level6') return all.find(x => same(x) && runGroup(x) !== 'level6' && !runVariant(x)) || null;
+  // the twelve methods run at that level; above level 5 the standard level 6 run
+  return all.find(x => same(x) && runGroup(x) === 'twelve') ||
+    (g === 'boundary' ? null : all.find(x => same(x) && runGroup(x) === 'level6' && !runVariant(x))) || null;
+}
+const filmHref = r => 'index.html?film=new_' + encodeURIComponent(runKey(r));
+const viewerHref = r => 'viewer.html?run=new_' + encodeURIComponent(runKey(r));
+const compareHref = (r, twin) => 'recent.html?run=' + encodeURIComponent(runKey(r)) + (twin ? '&compare=' + encodeURIComponent(runKey(twin)) : '');
+// shared run groups 20261125 end
+// desktop layout (side panel left of the view, one window high); keep in step with studio-viewer.css
+const WIDE = matchMedia("(min-width: 900px) and (min-height: 560px)");
+const UI_FONT = "system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif";
 const TWELVE = ["Athena++", "AthenaPK", "Athena 4.2", "Enzo", "Enzo-E", "RAMSES", "FLASH 4.8", "Flash-X",
   "Arepo", "GIZMO MFM", "GIZMO MFV", "GADGET-4"];
 const codeRank = c => { const i = TWELVE.indexOf(c); return i < 0 ? 99 : i; };
@@ -250,19 +299,11 @@ const catalogReady = fetch("assets/recent/catalog.json?v=" + CACHE_KEY)
   .then(r => r.ok ? r.json() : null)
   .then(c => { const map = new Map(); for (const run of (c && c.runs) || []) map.set(run.id, run); return map; })
   .catch(() => new Map())
-  .then(map => { recentCatalog = map; infoCache.clear(); explicitGroups = null; return map; });
+  .then(map => { recentCatalog = map; infoCache.clear(); return map; });
 function catalogRun(id) {
   const r = recent3D[id];
   if (!r || !recentCatalog) return null;
   return recentCatalog.get(r.projection_id) || recentCatalog.get(id.replace(/^new_/, "")) || null;
-}
-let explicitGroups = null;
-function anyExplicitGroup() {
-  if (explicitGroups === null) {
-    explicitGroups = Object.values(recent3D).some(r => r && r.group) ||
-      !!(recentCatalog && [...recentCatalog.values()].some(r => r && r.group));
-  }
-  return explicitGroups;
 }
 const infoCache = new Map();
 function runInfo(id) {
@@ -272,42 +313,56 @@ function runInfo(id) {
   const base = codeName((r && r.code && String(r.code).split(" · ")[0]) || (c && c.code) || m.base);
   const chi = m.chi || (c && +c.chi) || 0;
   const lvl = r ? intOr(r.lvl, intOr(r.level, intOr(c && c.level, 5))) : m.lvl;
-  let group;
-  if (r) {
-    group = r.group || (c && c.group) || null;
-    if (!group) group = (!anyExplicitGroup() && chi === 100 && TWELVE.includes(base) &&
-      (!m.variant || m.variant === "sharp velocity")) ? "twelve" : "other";
-  } else group = isDense(id) ? "earlier" : "legacy";
   const boundary = (r && r.boundary) || (c && c.boundary) || "";
+  // a complete run is the 3D entry merged with the compare page run it names,
+  // so the shared run groups name and group it as the other pages do
+  const rec = r ? { ...(c || {}), ...r, id, chi, level: lvl, lvl, label: r.label || (c && c.label) || "",
+    group: r.group || (c && c.group), boundary, cooling: (c && c.cooling) || r.cooling,
+    box: r.box ?? (c && c.box), variant: r.variant || (c && c.variant) } : null;
+  const group = rec ? runGroup(rec) : isDense(id) ? "earlier" : "legacy";
+  const box = rec ? runBox(rec) : 20;
   let variant = m.variant;
   if (group === "twelve") variant = variant.split(" · ").filter(v => v && v !== "sharp velocity").join(" · ");
-  if (group === "boundary" && boundary) variant = boundary;
+  if (group === "boundary" && boundary && !variant.includes(boundary)) variant = boundary + (variant ? " · " + variant : "");
+  if (box === 100 && !/100 ?R\b/.test(variant)) variant += (variant ? " · " : "") + "100 R box";
   const label = base + " · χ " + chi + " · level " + lvl + (variant ? " · " + variant : "");
-  const frames = frameCount(id);
-  const info = { id, base, variant, chi, lvl, group, boundary, label, frames, recent: !!r,
+  const info = { id, base, variant, chi, lvl, group, box, boundary, label, frames: frameCount(id), recent: !!r, rec,
+    name: rec ? runName(rec) : base + (variant ? ", " + variant.split(" · ").join(", ") : ""),
     cooling: c && c.cooling, projection: r && r.projection_id };
   infoCache.set(id, info);
   return info;
 }
-const GROUP_RANK = { twelve: 0, boundary: 1, other: 2 };
+// groups in the order of RUN_GROUPS; inside a group the paper order of the
+// codes, then level from high to low, then χ, then name
+const GROUP_ORDER = RUN_GROUPS.map(g => g.key).concat("other");
+const groupRank = g => { const i = GROUP_ORDER.indexOf(g); return i < 0 ? GROUP_ORDER.length : i; };
 function completeOrder(a, b) {
   const A = runInfo(a), B = runInfo(b);
-  const g = (GROUP_RANK[A.group] ?? 2) - (GROUP_RANK[B.group] ?? 2);
+  const g = groupRank(A.group) - groupRank(B.group);
   if (g) return g;
-  if (A.group === "twelve" || A.group === "boundary")
-    return (B.lvl - A.lvl) || (codeRank(A.base) - codeRank(B.base)) || A.base.localeCompare(B.base) ||
-      A.boundary.localeCompare(B.boundary) || (A.chi - B.chi) || A.label.localeCompare(B.label);
-  return (codeRank(A.base) - codeRank(B.base)) || A.base.localeCompare(B.base) || (A.chi - B.chi) ||
-    (B.lvl - A.lvl) || A.label.localeCompare(B.label);
+  if (A.group === "twelve" && A.lvl !== B.lvl) return B.lvl - A.lvl;
+  if (A.group === "boundary" && A.box !== B.box) return A.box - B.box;
+  return (codeRank(A.base) - codeRank(B.base)) || A.base.localeCompare(B.base) || (B.lvl - A.lvl) ||
+    (A.chi - B.chi) || A.name.localeCompare(B.name);
 }
 function groupHeading(info) {
-  if (info.group === "twelve") return "Twelve methods · level " + info.lvl;
-  if (info.group === "boundary") return "Boundary control · level " + info.lvl;
-  return "More complete runs";
+  if (!info.recent) return "Earlier runs";
+  if (info.group === "twelve") return "Twelve methods, level " + info.lvl;
+  if (info.group === "boundary") return "Boundary control, " + info.box + " R boxes";
+  const g = RUN_GROUPS.find(x => x.key === info.group);
+  return g ? g.title : "Other complete runs";
+}
+const completeRecs = () => completeIds().map(id => runInfo(id).rec);
+function twinOf(info) {
+  if (!info || !info.rec) return null;
+  const t = runTwin(info.rec, completeRecs());
+  return t ? completeIds().find(id => runInfo(id).rec === t) || null : null;
 }
 
 // ------------------------------------------------------------- formatting
-const tfix = t => Number(t).toFixed(3);
+// times on screen and in pictures with two decimals; links and file names keep three
+const tfix = t => Number(t).toFixed(2);
+const t3 = t => Number(t).toFixed(3);
 const timeHTML = t => "t = " + tfix(t) + " t<sub>cc</sub>";
 function densityParts(level, chi) {
   const frac = (level > 1.0001 && chi) ? level / chi : level;
@@ -354,6 +409,8 @@ function makePane(cv, titleEl, legendEl) {
   p.cam.position.copy(BOX_C).add(new THREE.Vector3(16, -24, 17).normalize().multiplyScalar(36));
   p.ctrl = new OrbitControls(p.cam, cv);
   p.ctrl.enableDamping = true; p.ctrl.dampingFactor = 0.075;
+  // on a touch screen one finger turns the cloud, two fingers zoom and pan
+  p.ctrl.touches = { ONE: THREE.TOUCH.ROTATE, TWO: THREE.TOUCH.DOLLY_PAN };
   p.ctrl.target.copy(BOX_C);
   p.ctrl.addEventListener("start", () => { p.userMoved = true; lead = p; });
   p.scene.add(new THREE.HemisphereLight(0xbcd4ff, 0x202634, 0.85));
@@ -705,7 +762,7 @@ function buildShellToggles() {
   const names = shellNames(info.length);
   if (shellOn.length !== info.length) shellOn = info.map((_, i) => shellOn[i] !== false);
   info.forEach((s, i) => {
-    const l = document.createElement("label"); l.className = "chk shell";
+    const l = document.createElement("label"); l.className = "check shell";
     const c = document.createElement("input"); c.type = "checkbox"; c.checked = shellOn[i] !== false;
     c.onchange = () => {
       shellOn[i] = c.checked;
@@ -758,31 +815,36 @@ function updateReadouts() {
       const tl = $("tlab");
       if (tl.innerHTML !== bar) tl.innerHTML = bar;
       const sl = $("slider");
-      if (t !== null) sl.setAttribute("aria-valuetext", "t = " + tfix(t) + " t_cc, frame " + (p.cur + 1) + " of " + p.times.length);
+      if (t !== null) sl.setAttribute("aria-valuetext", "t = " + tfix(t) + " t_cc, saved state " + (p.cur + 1) + " of " + p.times.length);
     }
   }
 }
 function updateRunNote() {
   const note = $("viewNote"), info = runInfo(A.id);
   if (!info) { note.textContent = ""; return; }
-  const n = A.times.length, parts = [info.recent ? "Complete run." : "Earlier run."];
-  if (n === 1) parts.push("One frame at t = " + Number(A.times[0]).toFixed(2) + " t<sub>cc</sub>.");
-  else if (n > 1) {
-    const t1 = A.times[n - 1];
-    parts.push(n + " frames from t = " + Number(A.times[0]).toFixed(2) + " to " + Number(t1).toFixed(2) + " t<sub>cc</sub>.");
-    if (!info.recent && t1 < 4.99) parts.push("Ends at t = " + Number(t1).toFixed(2) + " t<sub>cc</sub>.");
-  } else if (info.frames) parts.push(info.frames + " frames.");
-  if (info.boundary) parts.push("Domain faces: " + esc(info.boundary) + ".");
+  // a run that stops before 5 t_cc carries its own status in the catalog ("Stops at 3.55 t_cc, where the solver failed")
+  const status = info.rec && info.rec.status && !/^complete/i.test(info.rec.status) ? esc(info.rec.status).replace(/t_cc/g, "t<sub>cc</sub>") + "." : "Complete run.";
+  const n = A.times.length, parts = [info.recent ? status : "Earlier run."];
+  if (n === 1) parts.push("One saved state at t = " + tfix(A.times[0]) + " t<sub>cc</sub>.");
+  else if (n > 1) parts.push(n + " saved states from t = " + tfix(A.times[0]) + " to " + tfix(A.times[n - 1]) + " t<sub>cc</sub>.");
+  else if (info.frames) parts.push(statesText(info.frames) + ".");
+  if (info.boundary) parts.push("Box faces: " + esc(info.rec ? runFaces(info.rec) : info.boundary) + ".");
   if (info.cooling === "tabular") parts.push("Radiative cooling on.");
   note.innerHTML = parts.join(" ");
 }
+// the film and the compare page of the run on screen; with a twin the
+// compare page opens both runs side by side
 function syncRunControls() {
   const info = runInfo(A.id);
   const sel = $("recentSelect");
   sel.value = info && info.recent ? A.id : "";
-  const link = $("projectionLink");
-  if (info && info.recent && info.projection) { link.href = "recent.html?run=" + encodeURIComponent(info.projection); link.hidden = false; }
-  else link.hidden = true;
+  const links = $("runLinks");
+  if (info && info.rec) {
+    const twin = twinOf(info);
+    $("filmLink").href = filmHref(info.rec);
+    $("projectionLink").href = compareHref(info.rec, twin ? runInfo(twin).rec : null);
+    links.hidden = false;
+  } else links.hidden = true;
   document.querySelectorAll(".runbtn").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.id === A.id)));
 }
 function showMsg(text) { msg.textContent = text; msg.hidden = false; placeMsg(); }
@@ -796,8 +858,8 @@ function matches(id) {
   if (state.lvl !== "all" && String(info.lvl) !== state.lvl) return false;
   const term = state.term.trim().toLowerCase();
   if (!term) return true;
-  const hay = (info.label + " | χ" + info.chi + " chi" + info.chi + " chi " + info.chi + " level" + info.lvl +
-    " l" + info.lvl + " " + (info.recent ? "complete " : "earlier ") + info.group + " " + info.boundary).toLowerCase();
+  const hay = (info.label + " | " + info.name + " | χ" + info.chi + " chi" + info.chi + " chi " + info.chi + " level" + info.lvl +
+    " l" + info.lvl + " " + (info.recent ? "complete " : "earlier ") + info.group + " " + groupHeading(info) + " " + info.boundary).toLowerCase();
   return term.split(/\s+/).every(tok => hay.includes(tok));
 }
 function buildChips() {
@@ -816,8 +878,8 @@ function buildChips() {
   make($("chiChips"), "chi", chis, v => "χ " + v);
   make($("lvlChips"), "lvl", lvls, v => String(v));
 }
-let legacyOpen = false;
-try { legacyOpen = localStorage.getItem("cc_legacyOpen") === "1"; } catch (e) {}
+let legacyOpen = false, earlierOpen = false;
+try { legacyOpen = localStorage.getItem("cc_legacyOpen") === "1"; earlierOpen = localStorage.getItem("cc_earlierOpen") === "1"; } catch (e) {}
 function runButton(id, mainText, metaText) {
   const b = document.createElement("button");
   b.type = "button"; b.className = "runbtn"; b.dataset.id = id;
@@ -826,15 +888,16 @@ function runButton(id, mainText, metaText) {
   b.onclick = () => openRun(id);
   return b;
 }
-const framesText = n => n ? n + " frame" + (n === 1 ? "" : "s") : "";
+const statesText = n => n ? n + " saved state" + (n === 1 ? "" : "s") : "";
+function heading(tag, text) { const h = document.createElement(tag); h.textContent = text; return h; }
 function renderEarlier(host, list) {
   const byCode = new Map();
   list.forEach(id => { const c = runInfo(id).variant ? runInfo(id).base + " · " + runInfo(id).variant : runInfo(id).base; if (!byCode.has(c)) byCode.set(c, []); byCode.get(c).push(id); });
   [...byCode.keys()].sort((a, b) => (codeRank(a.split(" · ")[0]) - codeRank(b.split(" · ")[0])) || a.localeCompare(b)).forEach(code => {
-    const h = document.createElement("div"); h.className = "grp"; h.textContent = code; host.appendChild(h);
+    host.appendChild(heading("h3", code.split(" · ").join(", ")));
     byCode.get(code).sort((a, b) => (runInfo(b).lvl - runInfo(a).lvl) || (runInfo(a).chi - runInfo(b).chi)).forEach(id => {
       const i = runInfo(id);
-      host.appendChild(runButton(id, "χ " + i.chi, ["level " + i.lvl, framesText(i.frames)].filter(Boolean).join(" · ")));
+      host.appendChild(runButton(id, "χ " + i.chi, ["level " + i.lvl, statesText(i.frames)].filter(Boolean).join(", ")));
     });
   });
 }
@@ -846,25 +909,42 @@ function buildList() {
   const legacy = vis.filter(id => !isDense(id));
   const host = $("runs"); host.innerHTML = "";
   if (!vis.length) { const p = document.createElement("p"); p.className = "note"; p.textContent = "No run matches these filters."; host.appendChild(p); }
+  // complete runs under the group headings of the other pages
   if (complete.length) {
-    const s = document.createElement("div"); s.className = "sec"; s.textContent = "Complete runs"; host.appendChild(s);
+    host.appendChild(heading("h2", "Complete runs"));
     let last = "";
     complete.forEach(id => {
       const i = runInfo(id), h = groupHeading(i);
-      if (h !== last) { const g = document.createElement("div"); g.className = "grp"; g.textContent = h; host.appendChild(g); last = h; }
-      host.appendChild(runButton(id, esc(i.base + (i.variant ? " · " + i.variant : "")),
-        ["χ " + i.chi, "level " + i.lvl, framesText(i.frames)].filter(Boolean).join(" · ")));
+      if (h !== last) { host.appendChild(heading("h3", h)); last = h; }
+      host.appendChild(runButton(id, esc(i.name), esc(runMeta(i.rec))));
     });
   }
-  if (earlier.length) {
-    const s = document.createElement("div"); s.className = "sec"; s.textContent = "Earlier runs"; host.appendChild(s);
-    renderEarlier(host, earlier);
+  // the earlier runs (more than a hundred) fold away, so the settings below
+  // the list stay near on a phone; a search or filter shows its matches
+  const filtering = !!state.term.trim() || state.chi !== "all" || state.lvl !== "all";
+  const showEarlier = earlierOpen || filtering;
+  if (earlier.length || legacy.length) {
+    host.appendChild(heading("h2", "Earlier runs"));
+    if (!filtering) {
+      const b = document.createElement("button");
+      b.type = "button"; b.className = "fold"; b.id = "earlierHdr";
+      b.textContent = earlierOpen ? "Hide the earlier runs" : "Show " + (earlier.length || legacy.length) + " earlier runs";
+      b.setAttribute("aria-expanded", String(earlierOpen));
+      b.onclick = () => {
+        earlierOpen = !earlierOpen;
+        try { localStorage.setItem("cc_earlierOpen", earlierOpen ? "1" : "0"); } catch (e) {}
+        buildList();
+        const again = $("earlierHdr"); if (again) again.focus();
+      };
+      host.appendChild(b);
+    }
   }
+  if (earlier.length && showEarlier) renderEarlier(host, earlier);
   const hdr = $("legacyHdr"), lhost = $("legacyRuns");
   lhost.innerHTML = "";
-  if (legacy.length) {
+  if (legacy.length && showEarlier) {
     hdr.hidden = false;
-    hdr.textContent = (legacyOpen ? "▾ " : "▸ ") + "More earlier runs (" + legacy.length + ")";
+    hdr.textContent = legacyOpen ? "Hide these " + legacy.length + " earlier runs" : "Show " + legacy.length + " more earlier runs";
     hdr.setAttribute("aria-expanded", String(legacyOpen));
     lhost.hidden = !legacyOpen;
     if (legacyOpen) renderEarlier(lhost, legacy);
@@ -879,7 +959,13 @@ function buildList() {
     sel.appendChild(og);
   };
   const shown = new Set([...complete, ...earlier, ...(legacyOpen ? legacy : [])]);
-  add("Complete runs", complete);
+  const groups = [];
+  complete.forEach(id => {
+    const h = groupHeading(runInfo(id));
+    if (!groups.length || groups[groups.length - 1].h !== h) groups.push({ h, list: [] });
+    groups[groups.length - 1].list.push(id);
+  });
+  groups.forEach(g => add(g.h, g.list));
   add("Earlier runs", [...earlier, ...(legacyOpen ? legacy : [])]);
   if (keep && !shown.has(keep)) add("Shown now", [keep]);
   if (keep) sel.value = keep;
@@ -908,7 +994,8 @@ function openRun(id) {
   const keepTime = A.loaded && A.times.length ? A.times[A.curTarget ?? A.cur] : undefined;
   loadRun(A, id, { time: keepTime });
   updateUrl(id, B && B.id && $("cmpOn").checked ? B.id : null);
-  if (innerWidth < 850) setSide(true);
+  // on a phone the run list sits below the view: bring the view back on screen
+  if (!WIDE.matches) { const r = $("wrap").getBoundingClientRect(); if (r.top < 0 || r.top > innerHeight * 0.5) scrollTo(0, scrollY + r.top); }
 }
 function updateUrl(a, b) {
   try { history.replaceState(null, "", "?run=" + encodeURIComponent(a) + (b ? "&vs=" + encodeURIComponent(b) : "")); } catch (e) {}
@@ -918,6 +1005,9 @@ function updateUrl(a, b) {
 const cmpOn = $("cmpOn"), cmpSel = $("cmpSel");
 function defaultCompare() {
   const list = completeIds(), a = runInfo(A.id);
+  // a run of a control group opens next to its standard run, as on the compare page
+  const twin = twinOf(a);
+  if (twin) return twin;
   if (a) {
     const same = list.filter(id => id !== A.id && runInfo(id).group === a.group && runInfo(id).lvl === a.lvl);
     if (same.length) { const k = list.indexOf(A.id); return same.find(id => list.indexOf(id) > k) || same[0]; }
@@ -970,40 +1060,47 @@ function drawChart() {
   const card = $("chartcard");
   const sets = [[A, "#e5ba83", false], [B, "#8fb8ff", true]].filter(([p]) => p && p.id && p.diag);
   const show = sets.length > 0;
-  if (card.hidden === show) { card.hidden = !show; scheduleLayout(); }
+  if (card.hidden === show) card.hidden = !show;
   if (!show) return;
-  const cv = $("chart"), ctx = cv.getContext("2d");
-  const W = cv.width, H = cv.height, L = 58, R = 18, T = 12, Bm = 76;
+  // drawn in CSS pixels at the size the side panel gives the chart, so the
+  // tick labels stay 13 px on a phone and on a desktop
+  const cv = $("chart"), W = cv.clientWidth, H = cv.clientHeight;
+  if (!W || !H) return;
+  const dpr = Math.min(window.devicePixelRatio || 1, 3), bw = Math.round(W * dpr), bh = Math.round(H * dpr);
+  if (cv.width !== bw || cv.height !== bh) { cv.width = bw; cv.height = bh; }
+  const ctx = cv.getContext("2d");
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  const L = 32, R = 8, T = 8, Bm = 42;
   const values = sets.flatMap(([p]) => p.diag.series);
   const xmax = Math.max(5, ...values.map(r => r.t_over_tcc));
   const ymax = Math.max(1, ...values.map(r => r.dense_mass_over_initial_dense_mass));
   const X = t => L + (W - L - R) * Math.min(Math.max(t / xmax, 0), 1);
   const Y = v => T + (H - T - Bm) * (1 - v / ymax);
   ctx.clearRect(0, 0, W, H);
-  ctx.strokeStyle = "rgba(255,255,255,.16)"; ctx.lineWidth = 1.5;
-  ctx.strokeRect(L, T, W - L - R, H - T - Bm);
-  ctx.fillStyle = "#9baab9"; ctx.font = "22px 'Segoe UI', system-ui, sans-serif";
+  ctx.strokeStyle = "#454b53"; ctx.lineWidth = 1;
+  ctx.strokeRect(L + 0.5, T + 0.5, W - L - R - 1, H - T - Bm - 1);
+  ctx.fillStyle = "#a2a7ad"; ctx.font = "13px " + UI_FONT;
   ctx.textAlign = "right"; ctx.textBaseline = "middle";
-  for (const v of [0, 0.5, 1]) { ctx.fillText(String(v), L - 8, Y(v)); }
+  for (const v of [0, 0.5, 1]) { ctx.fillText(String(v), L - 6, Y(v)); }
   ctx.textAlign = "center"; ctx.textBaseline = "top";
-  for (let t = 0; t <= Math.floor(xmax); t++) ctx.fillText(String(t), X(t), H - Bm + 8);
+  for (let t = 0; t <= Math.floor(xmax); t++) ctx.fillText(String(t), X(t), H - Bm + 4);
   // axis label "t / t_cc" with a real subscript, centred under the ticks
   ctx.textAlign = "left";
   const lab = "t / t", wl = ctx.measureText(lab).width;
-  ctx.font = "16px 'Segoe UI', system-ui, sans-serif";
-  const ws = ctx.measureText("cc").width, x0 = L + (W - L - R - wl - ws - 2) / 2;
-  ctx.font = "22px 'Segoe UI', system-ui, sans-serif"; ctx.fillText(lab, x0, H - 34);
-  ctx.font = "16px 'Segoe UI', system-ui, sans-serif"; ctx.fillText("cc", x0 + wl + 2, H - 26);
+  ctx.font = "10px " + UI_FONT;
+  const ws = ctx.measureText("cc").width, x0 = L + (W - L - R - wl - ws - 1) / 2;
+  ctx.font = "13px " + UI_FONT; ctx.fillText(lab, x0, H - 20);
+  ctx.font = "10px " + UI_FONT; ctx.fillText("cc", x0 + wl + 1, H - 14);
   for (const [p, color, dashed] of sets) {
-    ctx.strokeStyle = color; ctx.lineWidth = 3.5; ctx.setLineDash(dashed ? [10, 7] : []);
+    ctx.strokeStyle = color; ctx.lineWidth = 2; ctx.setLineDash(dashed ? [6, 4] : []);
     ctx.beginPath();
     p.diag.series.forEach((r, i) => { const x = X(r.t_over_tcc), y = Y(r.dense_mass_over_initial_dense_mass); i ? ctx.lineTo(x, y) : ctx.moveTo(x, y); });
     ctx.stroke(); ctx.setLineDash([]);
   }
   const t = A.times.length ? A.times[A.cur] : NaN;
   if (Number.isFinite(t)) {
-    ctx.strokeStyle = "rgba(255,255,255,.5)"; ctx.lineWidth = 2;
-    ctx.beginPath(); ctx.moveTo(X(t), T); ctx.lineTo(X(t), H - Bm); ctx.stroke();
+    ctx.strokeStyle = "rgba(255,255,255,.5)"; ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.moveTo(Math.round(X(t)) + 0.5, T); ctx.lineTo(Math.round(X(t)) + 0.5, H - Bm); ctx.stroke();
   }
   $("chartnote").innerHTML = "Dense mass relative to t = 0.<br>" + sets.map(([p, color, dashed]) =>
     "<span class='sw" + (dashed ? " dash" : "") + "'" + (dashed ? "" : " style='background:" + color + "'") + "></span>" + esc(runInfo(p.id).label)).join("<br>");
@@ -1019,12 +1116,12 @@ function playInterval() {
 function stop() {
   [A, B].forEach(p => finishFade(p));
   if (timer) { clearInterval(timer); timer = null; }
-  playBtn.innerHTML = "&#9654;"; playBtn.setAttribute("aria-label", "Play");
+  playBtn.textContent = "Play";
 }
 playBtn.onclick = () => {
   if (timer) return stop();
   if (!A.loaded) return;
-  playBtn.innerHTML = "&#10074;&#10074;"; playBtn.setAttribute("aria-label", "Pause");
+  playBtn.textContent = "Pause";
   timer = setInterval(() => {
     const cur = A.curTarget ?? A.cur;
     const next = (cur + 1) % Math.max(A.frames.length, 1);
@@ -1056,9 +1153,14 @@ $("legendOn").onchange = () => { try { localStorage.setItem("cc_legend", $("lege
 try { if (localStorage.getItem("cc_legend") === "0") $("legendOn").checked = false; } catch (e) {}
 
 // ------------------------------------------------- layout and camera fit
-// Each pane keeps a free area that no floating card covers. The camera
-// centre sits in the middle of that area and "Fit view" frames the box in it.
-const OVERLAYS = ["side", "sideShow", "captureTools", "hud", "bar", "chartcard"];
+// Each pane keeps a free area that no box drawn over the view covers (only
+// the frame rate box on a desktop; the toolbars sit outside the view). The
+// camera centre sits in the middle of that area and "Fit view" frames the
+// box in it, below the run title in the top left corner. A phone sized pane
+// is "compact": its legend is a strip under the view and "Fit view" frames
+// the part of the box the cloud stays in, so the cloud is drawn larger.
+const OVERLAYS = ["hud"];
+const isCompact = pane => !WIDE.matches && (pane.clientWidth < 600 || pane.clientHeight < 360);
 function visibleRect(el) {
   if (!el || el.hidden) return null;
   const cs = getComputedStyle(el);
@@ -1067,17 +1169,19 @@ function visibleRect(el) {
   return (r.width > 0 && r.height > 0) ? r : null;
 }
 function computeLayout() {
-  const narrow = innerWidth < 850;
-  const rects = OVERLAYS.filter(id => !(narrow && id === "side")).map(id => visibleRect($(id))).filter(Boolean)
+  const rects = OVERLAYS.map(id => visibleRect($(id))).filter(Boolean)
     .sort((a, b) => b.width * b.height - a.width * a.height);
   for (const p of [A, B]) {
     if (!p || !p.cv.offsetParent) continue;
-    const pr = p.cv.parentElement.getBoundingClientRect();
+    const pane = p.cv.parentElement, compact = isCompact(pane);
+    if (compact !== !!p.compact) { p.compact = compact; pane.classList.toggle("compact", compact); p.legendKey = ""; }
+    // the view area is the canvas: in a compact pane the legend strip sits below it
+    const pr = p.cv.getBoundingClientRect();
     let f = { l: pr.left, t: pr.top, r: pr.right, b: pr.bottom };
     const score = q => { const w = q.r - q.l, h = q.b - q.t; return (w <= 0 || h <= 0) ? -1 : Math.min(w / 1.8, h); };
     for (const o of rects) {
+      if (o.right <= f.l || o.left >= f.r || o.bottom <= f.t || o.top >= f.b) continue;   // not over this pane
       const pad = 8, R = { l: o.left - pad, t: o.top - pad, r: o.right + pad, b: o.bottom + pad };
-      if (R.r <= f.l || R.l >= f.r || R.b <= f.t || R.t >= f.b) continue;
       // cut the side that keeps the most area, unless that costs more than
       // 15 percent of the size the box could be drawn at
       const cands = [{ ...f, l: Math.max(f.l, R.r) }, { ...f, r: Math.min(f.r, R.l) }, { ...f, t: Math.max(f.t, R.b) }, { ...f, b: Math.min(f.b, R.t) }];
@@ -1088,11 +1192,11 @@ function computeLayout() {
     }
     p.free = { x: f.l - pr.left, y: f.t - pr.top, w: f.r - f.l, h: f.b - f.t };
     const t = p.titleEl;
-    t.style.left = (p.free.x + p.free.w / 2) + "px";
-    t.style.top = (p.free.y + 4) + "px";
-    t.style.maxWidth = Math.max(160, p.free.w - 16) + "px";
+    t.style.left = (p.free.x + 8) + "px";
+    t.style.top = (p.free.y + 8) + "px";
+    t.style.maxWidth = Math.max(120, p.free.w - 16) + "px";
     const th = t.offsetHeight || 30;
-    let v = { x: p.free.x + 8, y: p.free.y + th + 14, w: p.free.w - 16, h: p.free.h - th - 22 };
+    let v = { x: p.free.x + 8, y: p.free.y + th + 16, w: p.free.w - 16, h: p.free.h - th - 24 };
     if (v.w < 80 || v.h < 80) v = { ...p.free };
     p.view = v;
     placeLegend(p);
@@ -1103,9 +1207,10 @@ function computeLayout() {
 }
 function placeMsg() {
   if (msg.hidden || !A.view) return;
-  const pr = A.cv.getBoundingClientRect();
-  msg.style.left = (pr.left + A.view.x + A.view.w / 2) + "px";
-  msg.style.top = (pr.top + A.view.y + A.view.h / 2) + "px";
+  // the message sits in #wrap, centred on the free area of the first pane
+  const pr = A.cv.getBoundingClientRect(), wr = $("wrap").getBoundingClientRect();
+  msg.style.left = (pr.left - wr.left + A.view.x + A.view.w / 2) + "px";
+  msg.style.top = (pr.top - wr.top + A.view.y + A.view.h / 2) + "px";
 }
 let layoutQueued = false;
 function scheduleLayout() {
@@ -1123,17 +1228,22 @@ function applyViewOffset(p) {
 const _m = new THREE.Matrix4(), _r = new THREE.Vector3(), _u = new THREE.Vector3(), _b = new THREE.Vector3(), _o = new THREE.Vector3();
 const CORNERS = [];
 for (const x of XL) for (const y of YL) for (const z of ZL) CORNERS.push(new THREE.Vector3(x, y, z).sub(BOX_C));
+// the region a compact pane frames: x from -3 to 9 R and |y|, |z| up to 3 R
+// hold the dense gas of the complete runs up to about 4.5 t_cc
+const CLOUD_C = new THREE.Vector3(3, 0, 0), CLOUD_CORNERS = [];
+for (const x of [-3, 9]) for (const y of [-3, 3]) for (const z of [-3, 3]) CLOUD_CORNERS.push(new THREE.Vector3(x, y, z).sub(CLOUD_C));
+const fitCentre = p => p.compact ? CLOUD_C : BOX_C;
 function fitDistance(p, dir) {
   const H = p.cv.clientHeight || 1, v = p.view || { w: p.cv.clientWidth || 1, h: H };
-  return fitDistanceRect(p.cam.fov, p.cam.up, dir, v.w, v.h, H);
+  return fitDistanceRect(p.cam.fov, p.cam.up, dir, v.w, v.h, H, p.compact ? CLOUD_CORNERS : CORNERS);
 }
-// camera distance that frames the box in a vw x vh area of a picture H high
-function fitDistanceRect(fov, up, dir, vw, vh, H) {
+// camera distance that frames the box (or other corners) in a vw x vh area of a picture H high
+function fitDistanceRect(fov, up, dir, vw, vh, H, corners = CORNERS) {
   const tanV = Math.tan(THREE.MathUtils.degToRad(fov / 2));
   const tx = tanV * vw / H * 0.94, ty = tanV * vh / H * 0.94;
   _m.lookAt(dir, _o.set(0, 0, 0), up); _m.extractBasis(_r, _u, _b);
   let d = 1;
-  for (const c of CORNERS) {
+  for (const c of corners) {
     const x = c.dot(_r), y = c.dot(_u), z = c.dot(_b);
     d = Math.max(d, Math.abs(x) / tx + z, Math.abs(y) / ty + z);
   }
@@ -1146,10 +1256,10 @@ function fitPanes() {
   const dirs = ps.map(p => { const d = p.cam.position.clone().sub(p.ctrl.target); return d.lengthSq() > 1e-9 ? d.normalize() : new THREE.Vector3(0, -1, 0.5).normalize(); });
   const dists = ps.map((p, i) => fitDistance(p, dirs[i]));
   ps.forEach((p, i) => {
-    const d = linked ? Math.max(...dists) : dists[i];
-    p.ctrl.target.copy(BOX_C);
-    p.cam.position.copy(BOX_C).addScaledVector(dirs[i], d);
-    p.cam.lookAt(BOX_C); p.ctrl.update();
+    const d = linked ? Math.max(...dists) : dists[i], c = fitCentre(p);
+    p.ctrl.target.copy(c);
+    p.cam.position.copy(c).addScaledVector(dirs[i], d);
+    p.cam.lookAt(c); p.ctrl.update();
     p.userMoved = false; p.fitted = true;
   });
 }
@@ -1202,9 +1312,10 @@ function windSVG(w) {
 }
 function updateLegend(p) {
   const el = p.legendEl;
-  const on = $("legendOn").checked && p.id && p.loaded && p.shellInfo.length && p.view && innerHeight > 360;
+  // the pane height decides, not the canvas height that a legend strip shortens
+  const on = $("legendOn").checked && p.id && p.loaded && p.shellInfo.length && p.view && p.cv.parentElement.clientHeight >= 200;
   if (!on) { if (!el.hidden) el.hidden = true; p.legendKey = ""; return; }
-  const m = legendModel(p, p.cam, p.ctrl.target, p.cv.clientWidth, p.cv.clientHeight, innerWidth < 850 ? 70 : 110);
+  const m = legendModel(p, p.cam, p.ctrl.target, p.cv.clientWidth, p.cv.clientHeight, p.compact ? 56 : p.cv.clientWidth < 600 ? 70 : 110);
   const chi = runInfo(p.id).chi;
   const key = p.shellInfo.map((s, i) => s.level + (shellOn[i] === false ? "x" : "")).join() + "|" + chi + "|" + m.wind.mode + Math.round(m.wind.angle * 90 / Math.PI) + "|" + m.scale.L + ":" + Math.round(m.scale.px);
   if (key === p.legendKey && !el.hidden) return;
@@ -1216,17 +1327,18 @@ function updateLegend(p) {
   placeLegend(p);
 }
 // the legend sits in the lower left corner of the pane, just above whatever
-// card is below it there
+// box is drawn over the view there; in a compact pane the style sheet puts
+// it in a strip under the view
 function placeLegend(p) {
   const el = p.legendEl;
   if (el.hidden || !p.free) return;
+  if (p.compact) { if (el.style.left || el.style.top) { el.style.left = ""; el.style.top = ""; el.style.bottom = ""; } return; }
   const pr = p.cv.parentElement.getBoundingClientRect();
   const lw = el.offsetWidth || 160, lh = el.offsetHeight || 90;
-  const x0 = pr.left + p.free.x + 4, x1 = x0 + lw;
+  const x0 = pr.left + p.free.x + 8, x1 = x0 + lw;
   let bottom = pr.bottom - 8;
-  const narrow = innerWidth < 850, freeBottom = pr.top + p.free.y + p.free.h;
+  const freeBottom = pr.top + p.free.y + p.free.h;
   for (const id of OVERLAYS) {
-    if (narrow && id === "side") continue;
     const r = visibleRect($(id));
     // cards in this column that reach below the free area
     if (!r || r.right <= x0 || r.left >= x1 || r.bottom <= freeBottom - 2 || r.top >= pr.bottom) continue;
@@ -1279,21 +1391,27 @@ function loop(now) {
 requestAnimationFrame(loop);
 
 // ----------------------------------------------------------- side panel
+// On a desktop "Hide panel" folds the side column away and the view takes
+// the whole width; on a phone the panel is part of the page below the view
+// and is never hidden.
+let sideHidden = false;
+try { sideHidden = localStorage.getItem("cc_sideHidden") === "1"; } catch (e) {}
 function setSide(hidden, remember = true) {
-  $("side").hidden = hidden; $("sideShow").hidden = !hidden;
-  document.body.classList.toggle("side-hidden", hidden);
-  $("sideOpen").setAttribute("aria-expanded", String(!hidden));
-  $("sideHide").setAttribute("aria-expanded", String(!hidden));
-  if (remember && innerWidth >= 850) { try { localStorage.setItem("cc_sideHidden", hidden ? "1" : "0"); } catch (e) {} }
+  sideHidden = hidden;
+  const h = hidden && WIDE.matches, t = $("sideToggle");
+  $("side").hidden = h;
+  document.body.classList.toggle("side-hidden", h);
+  t.textContent = h ? "Show panel" : "Hide panel";
+  t.setAttribute("aria-expanded", String(!h));
+  if (remember) { try { localStorage.setItem("cc_sideHidden", hidden ? "1" : "0"); } catch (e) {} }
   scheduleLayout();
 }
-$("sideHide").onclick = () => { setSide(true); $("sideOpen").focus(); };
-$("sideOpen").onclick = () => { setSide(false); $("sideHide").focus(); };
-{
-  let hidden = innerWidth < 850;
-  if (!hidden) { try { hidden = localStorage.getItem("cc_sideHidden") === "1"; } catch (e) {} }
-  setSide(hidden, false);
-}
+$("sideToggle").onclick = () => setSide(!sideHidden);
+if (WIDE.addEventListener) WIDE.addEventListener("change", () => setSide(sideHidden, false));
+else if (WIDE.addListener) WIDE.addListener(() => setSide(sideHidden, false));
+setSide(sideHidden, false);
+// frame rate and triangle count, off by default
+$("hudOn").onchange = () => { $("hud").hidden = !$("hudOn").checked; scheduleLayout(); };
 
 // --------------------------------------------------------- other controls
 $("smoothTime3d").checked = !matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -1313,7 +1431,7 @@ $("viewerShare").onclick = async () => {
   u.search = "";
   u.searchParams.set("run", A.id);
   if (B && B.id && cmpOn.checked) u.searchParams.set("vs", B.id);
-  if (A.times.length) u.searchParams.set("t", tfix(A.times[A.cur]));
+  if (A.times.length) u.searchParams.set("t", t3(A.times[A.cur]));
   try { await navigator.clipboard.writeText(u.href); setStatus("Link copied: it opens these runs at this time."); }
   catch (e) { setStatus(u.href); }
 };
@@ -1330,7 +1448,7 @@ function captureDownload(blob, name) {
 }
 const slug = s => s.replace(/χ\s*/g, "chi").replace(/·/g, " ").replace(/[^A-Za-z0-9+.]+/g, "-").replace(/^-+|-+$/g, "");
 function captureName(panes, ext, kind) {
-  const parts = panes.map(p => slug(runInfo(p.id).label) + (kind === "png" || kind === "orbit" ? "_t" + tfix(p.times[p.cur]) : ""));
+  const parts = panes.map(p => slug(runInfo(p.id).label) + (kind === "png" || kind === "orbit" ? "_t" + t3(p.times[p.cur]) : ""));
   return "cloud-studio_" + parts.join("_vs_") + (kind === "png" ? "" : "_" + kind) + "." + ext;
 }
 const FONT = "'Segoe UI', system-ui, -apple-system, Roboto, Arial, sans-serif";
@@ -1359,8 +1477,8 @@ function drawRich(c, x, y, segs, size, weight = 400, color = "#ecf1f5") {
 const timeSegs = t => [{ t: "t = " + tfix(t) + " t" }, { t: "cc", sub: true }];
 // The picture keeps a content area clear of the labels at the top and the
 // legend at the bottom. While the camera is in its fitted state the box is
-// framed in that area; after the visitor turns or zooms, the area shows what
-// the free part of the screen shows.
+// framed in that area; after the visitor turns or zooms, and in a compact
+// pane that frames the cloud, the area shows what the free part of the screen shows.
 function captureCameras(panes, w, h) {
   const s = h / 1080, top = 130 * s, bottom = 190 * s, mx = 60 * s;
   const cw = w - 2 * mx, ch = h - top - bottom, dy = top + ch / 2 - h / 2;
@@ -1718,6 +1836,11 @@ $("evolutionVideo").onclick = () => capture3d("evolution");
 buildChips();
 buildList();
 buildRecentSelect();
+// the chart is drawn at its on screen size: redraw it when the panel changes width
+{
+  let queued = false;
+  new ResizeObserver(() => { if (!queued) { queued = true; requestAnimationFrame(() => { queued = false; drawChart(); }); } }).observe($("chart"));
+}
 (async () => {
   const q = new URLSearchParams(location.search);
   const resolve = id => id && (ids.includes(id) ? id : (dedupeAlias[id] && ids.includes(dedupeAlias[id]) ? dedupeAlias[id] : null));
@@ -1730,7 +1853,10 @@ buildRecentSelect();
       (ids.includes("new_enzo-1000") ? "new_enzo-1000" : complete[0] || ids.find(isDense) || ids[0] || null);
   }
   if (!first) { showMsg("No 3D runs are available."); return; }
-  if (!isDense(first) && !legacyOpen) { legacyOpen = true; buildList(); }
+  // a link to an earlier run opens the fold that lists it
+  if (!recent3D[first] && (!earlierOpen || (!isDense(first) && !legacyOpen))) {
+    earlierOpen = true; if (!isDense(first)) legacyOpen = true; buildList();
+  }
   const notes = [];
   if (want && !resolve(want)) notes.push("This link names a run the viewer does not have, so it opened " + runInfo(first).label + ".");
   const t = tq !== null && tq !== "" && Number.isFinite(+tq) ? +tq : undefined;

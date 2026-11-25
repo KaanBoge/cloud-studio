@@ -1,10 +1,24 @@
 'use strict';
-// Research page: the analysis file list loads only when its section is opened.
+// Research page: the analysis file list loads only when its section is opened, and the sentences on the 100 R boxes
+// and the solver settings show once such runs are in the list of complete runs (the same file the Runs page reads).
+(() => {
+  const needs = document.querySelectorAll('[data-needs]');
+  if (needs.length) fetch('assets/recent/catalog.json?v=20261125').then(r => (r.ok ? r.json() : null)).then(data => {
+    const runs = data && Array.isArray(data.runs) ? data.runs : [];
+    const text = r => String(r.run || r.id || '') + ' ' + String(r.label || '') + ' ' + String(r.boundary || '');
+    const has = {
+      box100: runs.some(r => Number(r.box) === 100 || /(^|[-_ ])(p3|px)?long\b|100 ?R\b/i.test(text(r))),
+      solver: runs.some(r => r.group === 'solver' || (!r.group && !/^apk/i.test(String(r.id || '')) && /ppm|hllc/i.test(text(r)))),
+    };
+    for (const node of needs) node.hidden = !has[node.dataset.needs];
+  }).catch(() => { /* the sentences stay hidden */ });
+})();
 (() => {
   const byId = id => document.getElementById(id);
   const number = value => Number(value).toLocaleString('en-US');
   const size = value => value >= 1e9 ? (value / 1e9).toFixed(2) + ' GB' : value >= 1e6 ? (value / 1e6).toFixed(2) + ' MB' : (value / 1e3).toFixed(1) + ' KB';
   const REPO = 'https://github.com/KaanBoge/cloud-studio/blob/main/';
+  const KIND = { md: 'Markdown', json: 'JSON', png: 'PNG figure', py: 'Python', sh: 'Bash', ps1: 'PowerShell', csv: 'CSV', txt: 'Text' };
   function node(tag, text, className) { const el = document.createElement(tag); if (text !== undefined) el.textContent = text; if (className) el.className = className; return el; }
   function message(text) { const row = node('tr'), cell = node('td', text); cell.colSpan = 3; row.append(cell); byId('file-rows').replaceChildren(row); }
 
@@ -20,7 +34,7 @@
       const row = node('tr'), name = node('td'), link = node('a', file.path.split('/').pop());
       link.href = REPO + file.path;
       name.append(link, node('span', file.path, 'path'));
-      row.append(name, node('td', (file.kind || 'file').toUpperCase()), node('td', size(file.bytes)));
+      row.append(name, node('td', KIND[file.kind] || (file.kind ? file.kind.toUpperCase() : 'File')), node('td', size(file.bytes)));
       return row;
     });
     if (rows.length) byId('file-rows').replaceChildren(...rows);
