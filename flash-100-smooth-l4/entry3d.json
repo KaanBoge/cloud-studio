@@ -1,0 +1,1 @@
+{"label":"FLASH 4.8 · χ 100 · level 4 · smooth velocity profile","code":"FLASH 4.8","chi":100,"lvl":4,"frames":101,"note":"Uniform grid of 128 x 64 x 64 cells, with the wind entering through the left face and leaving through the right face. The wind starts with a smooth tanh velocity profile around the cloud.","projection_id":"flash-100-smooth-l4"}
