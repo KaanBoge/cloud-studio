@@ -1,0 +1,1 @@
+{"label":"GADGET-4 · χ 100 · level 3 · smooth velocity profile","code":"GADGET-4","chi":100,"lvl":3,"frames":101,"note":"Smoothed particle hydrodynamics in a box periodic on all faces; particle masses are binned onto the 64 x 32 x 32 grid for display. The wind starts with a smooth tanh velocity profile around the cloud.","projection_id":"gadget4-100-smooth-l3"}
